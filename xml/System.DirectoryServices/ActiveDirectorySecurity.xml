@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectorySecurity" />
   <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySecurity&#xA;Inherits DirectoryObjectSecurity" />
   <TypeSignature Language="F#" Value="type ActiveDirectorySecurity = class&#xA;    inherit DirectoryObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySecurity : System::Security::AccessControl::DirectoryObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectorySecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectorySecurity.AccessRightType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
       <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.DirectoryServices.ActiveDirectorySecurity.AccessRightType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="activeDirectorySecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.Guid objectGuid, valuetype System.Guid inheritedObjectGuid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType,System.Guid,System.Guid)" />
       <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType * Guid * Guid -&gt; System.Security.AccessControl.AccessRule" Usage="activeDirectorySecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type, objectGuid, inheritedObjectGuid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type, Guid objectGuid, Guid inheritedObjectGuid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectorySecurity.AccessRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
       <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.DirectoryServices.ActiveDirectorySecurity.AccessRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.AddAccessRule(System.DirectoryServices.ActiveDirectoryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As ActiveDirectoryAccessRule)" />
       <MemberSignature Language="F#" Value="override this.AddAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule -&gt; unit" Usage="activeDirectorySecurity.AddAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::DirectoryServices::ActiveDirectoryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.AddAuditRule(System.DirectoryServices.ActiveDirectoryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As ActiveDirectoryAuditRule)" />
       <MemberSignature Language="F#" Value="override this.AddAuditRule : System.DirectoryServices.ActiveDirectoryAuditRule -&gt; unit" Usage="activeDirectorySecurity.AddAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::DirectoryServices::ActiveDirectoryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="activeDirectorySecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -277,6 +286,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags, valuetype System.Guid objectGuid, valuetype System.Guid inheritedObjectGuid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags,System.Guid,System.Guid)" />
       <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags * Guid * Guid -&gt; System.Security.AccessControl.AuditRule" Usage="activeDirectorySecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags, objectGuid, inheritedObjectGuid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags, Guid objectGuid, Guid inheritedObjectGuid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectorySecurity.AuditRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
       <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.DirectoryServices.ActiveDirectorySecurity.AuditRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ModifyAccessRule (modification As AccessControlModification, rule As AccessRule, ByRef modified As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ModifyAccessRule : System.Security.AccessControl.AccessControlModification * System.Security.AccessControl.AccessRule *  -&gt; bool" Usage="activeDirectorySecurity.ModifyAccessRule (modification, rule, modified)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ModifyAccessRule(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AccessRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ModifyAuditRule (modification As AccessControlModification, rule As AuditRule, ByRef modified As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ModifyAuditRule : System.Security.AccessControl.AccessControlModification * System.Security.AccessControl.AuditRule *  -&gt; bool" Usage="activeDirectorySecurity.ModifyAuditRule (modification, rule, modified)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ModifyAuditRule(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AuditRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -407,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PurgeAccessRules (identity As IdentityReference)" />
       <MemberSignature Language="F#" Value="override this.PurgeAccessRules : System.Security.Principal.IdentityReference -&gt; unit" Usage="activeDirectorySecurity.PurgeAccessRules identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PurgeAccessRules(System::Security::Principal::IdentityReference ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -432,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PurgeAuditRules (identity As IdentityReference)" />
       <MemberSignature Language="F#" Value="override this.PurgeAuditRules : System.Security.Principal.IdentityReference -&gt; unit" Usage="activeDirectorySecurity.PurgeAuditRules identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PurgeAuditRules(System::Security::Principal::IdentityReference ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -457,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.RemoveAccess(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccess (identity As IdentityReference, type As AccessControlType)" />
       <MemberSignature Language="F#" Value="member this.RemoveAccess : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType -&gt; unit" Usage="activeDirectorySecurity.RemoveAccess (identity, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccess(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -483,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.RemoveAccessRule(System.DirectoryServices.ActiveDirectoryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As ActiveDirectoryAccessRule) As Boolean" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule -&gt; bool" Usage="activeDirectorySecurity.RemoveAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::DirectoryServices::ActiveDirectoryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -509,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.RemoveAccessRuleSpecific(System.DirectoryServices.ActiveDirectoryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As ActiveDirectoryAccessRule)" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.DirectoryServices.ActiveDirectoryAccessRule -&gt; unit" Usage="activeDirectorySecurity.RemoveAccessRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::DirectoryServices::ActiveDirectoryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -533,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.RemoveAudit(System.Security.Principal.IdentityReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAudit (identity As IdentityReference)" />
       <MemberSignature Language="F#" Value="member this.RemoveAudit : System.Security.Principal.IdentityReference -&gt; unit" Usage="activeDirectorySecurity.RemoveAudit identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAudit(System::Security::Principal::IdentityReference ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -557,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.RemoveAuditRule(System.DirectoryServices.ActiveDirectoryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As ActiveDirectoryAuditRule) As Boolean" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.DirectoryServices.ActiveDirectoryAuditRule -&gt; bool" Usage="activeDirectorySecurity.RemoveAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::DirectoryServices::ActiveDirectoryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -583,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.RemoveAuditRuleSpecific(System.DirectoryServices.ActiveDirectoryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As ActiveDirectoryAuditRule)" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.DirectoryServices.ActiveDirectoryAuditRule -&gt; unit" Usage="activeDirectorySecurity.RemoveAuditRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::DirectoryServices::ActiveDirectoryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -607,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.ResetAccessRule(System.DirectoryServices.ActiveDirectoryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As ActiveDirectoryAccessRule)" />
       <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule -&gt; unit" Usage="activeDirectorySecurity.ResetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::DirectoryServices::ActiveDirectoryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -638,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.SetAccessRule(System.DirectoryServices.ActiveDirectoryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As ActiveDirectoryAccessRule)" />
       <MemberSignature Language="F#" Value="override this.SetAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule -&gt; unit" Usage="activeDirectorySecurity.SetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::DirectoryServices::ActiveDirectoryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -669,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectorySecurity.SetAuditRule(System.DirectoryServices.ActiveDirectoryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As ActiveDirectoryAuditRule)" />
       <MemberSignature Language="F#" Value="override this.SetAuditRule : System.DirectoryServices.ActiveDirectoryAuditRule -&gt; unit" Usage="activeDirectorySecurity.SetAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::DirectoryServices::ActiveDirectoryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

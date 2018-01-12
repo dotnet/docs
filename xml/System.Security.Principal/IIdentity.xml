@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.IIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Interface IIdentity" />
   <TypeSignature Language="F#" Value="type IIdentity = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IIdentity.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationType As String" />
       <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Security.Principal.IIdentity.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IIdentity.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Security.Principal.IIdentity.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Principal.IIdentity.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal</AssemblyName>

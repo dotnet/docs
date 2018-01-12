@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BezierSegment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BezierSegment&#xA;Inherits PathSegment" />
   <TypeSignature Language="F#" Value="type BezierSegment = class&#xA;    inherit PathSegment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BezierSegment sealed : System::Windows::Media::PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BezierSegment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.#ctor(System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (point1 As Point, point2 As Point, point3 As Point, isStroked As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.BezierSegment : System.Windows.Point * System.Windows.Point * System.Windows.Point * bool -&gt; System.Windows.Media.BezierSegment" Usage="new System.Windows.Media.BezierSegment (point1, point2, point3, isStroked)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BezierSegment(System::Windows::Point point1, System::Windows::Point point2, System::Windows::Point point3, bool isStroked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BezierSegment" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.BezierSegment" Usage="bezierSegment.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::BezierSegment ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BezierSegment" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.BezierSegment" Usage="bezierSegment.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::BezierSegment ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.BezierSegment.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bezierSegment.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BezierSegment.Point1" />
       <MemberSignature Language="VB.NET" Value="Public Property Point1 As Point" />
       <MemberSignature Language="F#" Value="member this.Point1 : System.Windows.Point with get, set" Usage="System.Windows.Media.BezierSegment.Point1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point1 { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BezierSegment.Point1Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point1Property As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable Point1Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.BezierSegment.Point1Property" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Point1Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BezierSegment.Point2" />
       <MemberSignature Language="VB.NET" Value="Public Property Point2 As Point" />
       <MemberSignature Language="F#" Value="member this.Point2 : System.Windows.Point with get, set" Usage="System.Windows.Media.BezierSegment.Point2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point2 { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BezierSegment.Point2Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point2Property As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable Point2Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.BezierSegment.Point2Property" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Point2Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -297,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.BezierSegment.Point3" />
       <MemberSignature Language="VB.NET" Value="Public Property Point3 As Point" />
       <MemberSignature Language="F#" Value="member this.Point3 : System.Windows.Point with get, set" Usage="System.Windows.Media.BezierSegment.Point3" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point3 { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,6 +343,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BezierSegment.Point3Property" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Point3Property As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable Point3Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.BezierSegment.Point3Property" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ Point3Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

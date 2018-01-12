@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCreator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxItemCreator" />
   <TypeSignature Language="F#" Value="type ToolboxItemCreator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolboxItemCreator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCreator.Create(System.Windows.Forms.IDataObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (data As IDataObject) As ToolboxItem" />
       <MemberSignature Language="F#" Value="member this.Create : System.Windows.Forms.IDataObject -&gt; System.Drawing.Design.ToolboxItem" Usage="toolboxItemCreator.Create data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Design::ToolboxItem ^ Create(System::Windows::Forms::IDataObject ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemCreator.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
       <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.Drawing.Design.ToolboxItemCreator.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataReaderOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum MetadataReaderOptions" />
   <TypeSignature Language="F#" Value="type MetadataReaderOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MetadataReaderOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataReaderOptions.ApplyWindowsRuntimeProjections" />
       <MemberSignature Language="VB.NET" Value="ApplyWindowsRuntimeProjections" />
       <MemberSignature Language="F#" Value="ApplyWindowsRuntimeProjections = 1" Usage="System.Reflection.Metadata.MetadataReaderOptions.ApplyWindowsRuntimeProjections" />
+      <MemberSignature Language="C++ CLI" Value="ApplyWindowsRuntimeProjections" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataReaderOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 1" Usage="System.Reflection.Metadata.MetadataReaderOptions.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataReaderOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.Metadata.MetadataReaderOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.CommandBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum CommandBehavior" />
   <TypeSignature Language="F#" Value="type CommandBehavior = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CommandBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.CloseConnection" />
       <MemberSignature Language="VB.NET" Value="CloseConnection" />
       <MemberSignature Language="F#" Value="CloseConnection = 32" Usage="System.Data.CommandBehavior.CloseConnection" />
+      <MemberSignature Language="C++ CLI" Value="CloseConnection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.Data.CommandBehavior.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.KeyInfo" />
       <MemberSignature Language="VB.NET" Value="KeyInfo" />
       <MemberSignature Language="F#" Value="KeyInfo = 4" Usage="System.Data.CommandBehavior.KeyInfo" />
+      <MemberSignature Language="C++ CLI" Value="KeyInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SchemaOnly" />
       <MemberSignature Language="VB.NET" Value="SchemaOnly" />
       <MemberSignature Language="F#" Value="SchemaOnly = 2" Usage="System.Data.CommandBehavior.SchemaOnly" />
+      <MemberSignature Language="C++ CLI" Value="SchemaOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SequentialAccess" />
       <MemberSignature Language="VB.NET" Value="SequentialAccess" />
       <MemberSignature Language="F#" Value="SequentialAccess = 16" Usage="System.Data.CommandBehavior.SequentialAccess" />
+      <MemberSignature Language="C++ CLI" Value="SequentialAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SingleResult" />
       <MemberSignature Language="VB.NET" Value="SingleResult" />
       <MemberSignature Language="F#" Value="SingleResult = 1" Usage="System.Data.CommandBehavior.SingleResult" />
+      <MemberSignature Language="C++ CLI" Value="SingleResult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -243,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.CommandBehavior.SingleRow" />
       <MemberSignature Language="VB.NET" Value="SingleRow" />
       <MemberSignature Language="F#" Value="SingleRow = 8" Usage="System.Data.CommandBehavior.SingleRow" />
+      <MemberSignature Language="C++ CLI" Value="SingleRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

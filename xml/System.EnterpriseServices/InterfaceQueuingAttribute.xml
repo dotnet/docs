@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.InterfaceQueuingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InterfaceQueuingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type InterfaceQueuingAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InterfaceQueuingAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.InterfaceQueuingAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InterfaceQueuingAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.InterfaceQueuingAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enabled As Boolean)" />
       <MemberSignature Language="F#" Value="new System.EnterpriseServices.InterfaceQueuingAttribute : bool -&gt; System.EnterpriseServices.InterfaceQueuingAttribute" Usage="new System.EnterpriseServices.InterfaceQueuingAttribute enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InterfaceQueuingAttribute(bool enabled);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.InterfaceQueuingAttribute.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.EnterpriseServices.InterfaceQueuingAttribute.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.InterfaceQueuingAttribute.Interface" />
       <MemberSignature Language="VB.NET" Value="Public Property Interface As String" />
       <MemberSignature Language="F#" Value="member this.Interface : string with get, set" Usage="System.EnterpriseServices.InterfaceQueuingAttribute.Interface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Interface { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

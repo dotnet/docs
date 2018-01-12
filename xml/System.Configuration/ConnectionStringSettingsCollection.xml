@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringSettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionStringSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type ConnectionStringSettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionStringSettingsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Add(System.Configuration.ConnectionStringSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (settings As ConnectionStringSettings)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Configuration.ConnectionStringSettings -&gt; unit" Usage="connectionStringSettingsCollection.Add settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Configuration::ConnectionStringSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (index As Integer, element As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.BaseAdd : int * System.Configuration.ConfigurationElement -&gt; unit" Usage="connectionStringSettingsCollection.BaseAdd (index, element)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(int index, System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="connectionStringSettingsCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="connectionStringSettingsCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="connectionStringSettingsCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.IndexOf(System.Configuration.ConnectionStringSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (settings As ConnectionStringSettings) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Configuration.ConnectionStringSettings -&gt; int" Usage="connectionStringSettingsCollection.IndexOf settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Configuration::ConnectionStringSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ConnectionStringSettings" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.ConnectionStringSettings with get, set" Usage="System.Configuration.ConnectionStringSettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettings ^ default[int] { System::Configuration::ConnectionStringSettings ^ get(int index); void set(int index, System::Configuration::ConnectionStringSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Name As String) As ConnectionStringSettings" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.ConnectionStringSettings" Usage="System.Configuration.ConnectionStringSettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettings ^ default[System::String ^] { System::Configuration::ConnectionStringSettings ^ get(System::String ^ Name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ConnectionStringSettingsCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -412,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Remove(System.Configuration.ConnectionStringSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (settings As ConnectionStringSettings)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Configuration.ConnectionStringSettings -&gt; unit" Usage="connectionStringSettingsCollection.Remove settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Configuration::ConnectionStringSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -450,6 +462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="connectionStringSettingsCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -488,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="connectionStringSettingsCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Environment.SpecialFolder" />
   <TypeSignature Language="VB.NET" Value="Public Enum Environment.SpecialFolder" />
   <TypeSignature Language="F#" Value="type Environment.SpecialFolder = " />
+  <TypeSignature Language="C++ CLI" Value="public: enum class Environment::SpecialFolder" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.AdminTools" />
       <MemberSignature Language="VB.NET" Value="AdminTools" />
       <MemberSignature Language="F#" Value="AdminTools = 48" Usage="System.Environment.SpecialFolder.AdminTools" />
+      <MemberSignature Language="C++ CLI" Value="AdminTools" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.ApplicationData" />
       <MemberSignature Language="VB.NET" Value="ApplicationData" />
       <MemberSignature Language="F#" Value="ApplicationData = 26" Usage="System.Environment.SpecialFolder.ApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CDBurning" />
       <MemberSignature Language="VB.NET" Value="CDBurning" />
       <MemberSignature Language="F#" Value="CDBurning = 59" Usage="System.Environment.SpecialFolder.CDBurning" />
+      <MemberSignature Language="C++ CLI" Value="CDBurning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonAdminTools" />
       <MemberSignature Language="VB.NET" Value="CommonAdminTools" />
       <MemberSignature Language="F#" Value="CommonAdminTools = 47" Usage="System.Environment.SpecialFolder.CommonAdminTools" />
+      <MemberSignature Language="C++ CLI" Value="CommonAdminTools" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonApplicationData" />
       <MemberSignature Language="VB.NET" Value="CommonApplicationData" />
       <MemberSignature Language="F#" Value="CommonApplicationData = 35" Usage="System.Environment.SpecialFolder.CommonApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="CommonApplicationData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonDesktopDirectory" />
       <MemberSignature Language="VB.NET" Value="CommonDesktopDirectory" />
       <MemberSignature Language="F#" Value="CommonDesktopDirectory = 25" Usage="System.Environment.SpecialFolder.CommonDesktopDirectory" />
+      <MemberSignature Language="C++ CLI" Value="CommonDesktopDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonDocuments" />
       <MemberSignature Language="VB.NET" Value="CommonDocuments" />
       <MemberSignature Language="F#" Value="CommonDocuments = 46" Usage="System.Environment.SpecialFolder.CommonDocuments" />
+      <MemberSignature Language="C++ CLI" Value="CommonDocuments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonMusic" />
       <MemberSignature Language="VB.NET" Value="CommonMusic" />
       <MemberSignature Language="F#" Value="CommonMusic = 53" Usage="System.Environment.SpecialFolder.CommonMusic" />
+      <MemberSignature Language="C++ CLI" Value="CommonMusic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonOemLinks" />
       <MemberSignature Language="VB.NET" Value="CommonOemLinks" />
       <MemberSignature Language="F#" Value="CommonOemLinks = 58" Usage="System.Environment.SpecialFolder.CommonOemLinks" />
+      <MemberSignature Language="C++ CLI" Value="CommonOemLinks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonPictures" />
       <MemberSignature Language="VB.NET" Value="CommonPictures" />
       <MemberSignature Language="F#" Value="CommonPictures = 54" Usage="System.Environment.SpecialFolder.CommonPictures" />
+      <MemberSignature Language="C++ CLI" Value="CommonPictures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonProgramFiles" />
       <MemberSignature Language="VB.NET" Value="CommonProgramFiles" />
       <MemberSignature Language="F#" Value="CommonProgramFiles = 43" Usage="System.Environment.SpecialFolder.CommonProgramFiles" />
+      <MemberSignature Language="C++ CLI" Value="CommonProgramFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -374,6 +386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonProgramFilesX86" />
       <MemberSignature Language="VB.NET" Value="CommonProgramFilesX86" />
       <MemberSignature Language="F#" Value="CommonProgramFilesX86 = 44" Usage="System.Environment.SpecialFolder.CommonProgramFilesX86" />
+      <MemberSignature Language="C++ CLI" Value="CommonProgramFilesX86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonPrograms" />
       <MemberSignature Language="VB.NET" Value="CommonPrograms" />
       <MemberSignature Language="F#" Value="CommonPrograms = 23" Usage="System.Environment.SpecialFolder.CommonPrograms" />
+      <MemberSignature Language="C++ CLI" Value="CommonPrograms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonStartMenu" />
       <MemberSignature Language="VB.NET" Value="CommonStartMenu" />
       <MemberSignature Language="F#" Value="CommonStartMenu = 22" Usage="System.Environment.SpecialFolder.CommonStartMenu" />
+      <MemberSignature Language="C++ CLI" Value="CommonStartMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -458,6 +473,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonStartup" />
       <MemberSignature Language="VB.NET" Value="CommonStartup" />
       <MemberSignature Language="F#" Value="CommonStartup = 24" Usage="System.Environment.SpecialFolder.CommonStartup" />
+      <MemberSignature Language="C++ CLI" Value="CommonStartup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -486,6 +502,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonTemplates" />
       <MemberSignature Language="VB.NET" Value="CommonTemplates" />
       <MemberSignature Language="F#" Value="CommonTemplates = 45" Usage="System.Environment.SpecialFolder.CommonTemplates" />
+      <MemberSignature Language="C++ CLI" Value="CommonTemplates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -514,6 +531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.CommonVideos" />
       <MemberSignature Language="VB.NET" Value="CommonVideos" />
       <MemberSignature Language="F#" Value="CommonVideos = 55" Usage="System.Environment.SpecialFolder.CommonVideos" />
+      <MemberSignature Language="C++ CLI" Value="CommonVideos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -542,6 +560,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Cookies" />
       <MemberSignature Language="VB.NET" Value="Cookies" />
       <MemberSignature Language="F#" Value="Cookies = 33" Usage="System.Environment.SpecialFolder.Cookies" />
+      <MemberSignature Language="C++ CLI" Value="Cookies" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -570,6 +589,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Desktop" />
       <MemberSignature Language="VB.NET" Value="Desktop" />
       <MemberSignature Language="F#" Value="Desktop = 0" Usage="System.Environment.SpecialFolder.Desktop" />
+      <MemberSignature Language="C++ CLI" Value="Desktop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -598,6 +618,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.DesktopDirectory" />
       <MemberSignature Language="VB.NET" Value="DesktopDirectory" />
       <MemberSignature Language="F#" Value="DesktopDirectory = 16" Usage="System.Environment.SpecialFolder.DesktopDirectory" />
+      <MemberSignature Language="C++ CLI" Value="DesktopDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -634,6 +655,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Favorites" />
       <MemberSignature Language="VB.NET" Value="Favorites" />
       <MemberSignature Language="F#" Value="Favorites = 6" Usage="System.Environment.SpecialFolder.Favorites" />
+      <MemberSignature Language="C++ CLI" Value="Favorites" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -662,6 +684,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Fonts" />
       <MemberSignature Language="VB.NET" Value="Fonts" />
       <MemberSignature Language="F#" Value="Fonts = 20" Usage="System.Environment.SpecialFolder.Fonts" />
+      <MemberSignature Language="C++ CLI" Value="Fonts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -690,6 +713,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.History" />
       <MemberSignature Language="VB.NET" Value="History" />
       <MemberSignature Language="F#" Value="History = 34" Usage="System.Environment.SpecialFolder.History" />
+      <MemberSignature Language="C++ CLI" Value="History" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -718,6 +742,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.InternetCache" />
       <MemberSignature Language="VB.NET" Value="InternetCache" />
       <MemberSignature Language="F#" Value="InternetCache = 32" Usage="System.Environment.SpecialFolder.InternetCache" />
+      <MemberSignature Language="C++ CLI" Value="InternetCache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -746,6 +771,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.LocalApplicationData" />
       <MemberSignature Language="VB.NET" Value="LocalApplicationData" />
       <MemberSignature Language="F#" Value="LocalApplicationData = 28" Usage="System.Environment.SpecialFolder.LocalApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="LocalApplicationData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -774,6 +800,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.LocalizedResources" />
       <MemberSignature Language="VB.NET" Value="LocalizedResources" />
       <MemberSignature Language="F#" Value="LocalizedResources = 57" Usage="System.Environment.SpecialFolder.LocalizedResources" />
+      <MemberSignature Language="C++ CLI" Value="LocalizedResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -802,6 +829,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.MyComputer" />
       <MemberSignature Language="VB.NET" Value="MyComputer" />
       <MemberSignature Language="F#" Value="MyComputer = 17" Usage="System.Environment.SpecialFolder.MyComputer" />
+      <MemberSignature Language="C++ CLI" Value="MyComputer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -838,6 +866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.MyDocuments" />
       <MemberSignature Language="VB.NET" Value="MyDocuments" />
       <MemberSignature Language="F#" Value="MyDocuments = 5" Usage="System.Environment.SpecialFolder.MyDocuments" />
+      <MemberSignature Language="C++ CLI" Value="MyDocuments" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -874,6 +903,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.MyMusic" />
       <MemberSignature Language="VB.NET" Value="MyMusic" />
       <MemberSignature Language="F#" Value="MyMusic = 13" Usage="System.Environment.SpecialFolder.MyMusic" />
+      <MemberSignature Language="C++ CLI" Value="MyMusic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -902,6 +932,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.MyPictures" />
       <MemberSignature Language="VB.NET" Value="MyPictures" />
       <MemberSignature Language="F#" Value="MyPictures = 39" Usage="System.Environment.SpecialFolder.MyPictures" />
+      <MemberSignature Language="C++ CLI" Value="MyPictures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -930,6 +961,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.MyVideos" />
       <MemberSignature Language="VB.NET" Value="MyVideos" />
       <MemberSignature Language="F#" Value="MyVideos = 14" Usage="System.Environment.SpecialFolder.MyVideos" />
+      <MemberSignature Language="C++ CLI" Value="MyVideos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -958,6 +990,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.NetworkShortcuts" />
       <MemberSignature Language="VB.NET" Value="NetworkShortcuts" />
       <MemberSignature Language="F#" Value="NetworkShortcuts = 19" Usage="System.Environment.SpecialFolder.NetworkShortcuts" />
+      <MemberSignature Language="C++ CLI" Value="NetworkShortcuts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -986,6 +1019,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Personal" />
       <MemberSignature Language="VB.NET" Value="Personal" />
       <MemberSignature Language="F#" Value="Personal = 5" Usage="System.Environment.SpecialFolder.Personal" />
+      <MemberSignature Language="C++ CLI" Value="Personal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1022,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.PrinterShortcuts" />
       <MemberSignature Language="VB.NET" Value="PrinterShortcuts" />
       <MemberSignature Language="F#" Value="PrinterShortcuts = 27" Usage="System.Environment.SpecialFolder.PrinterShortcuts" />
+      <MemberSignature Language="C++ CLI" Value="PrinterShortcuts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1050,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.ProgramFiles" />
       <MemberSignature Language="VB.NET" Value="ProgramFiles" />
       <MemberSignature Language="F#" Value="ProgramFiles = 38" Usage="System.Environment.SpecialFolder.ProgramFiles" />
+      <MemberSignature Language="C++ CLI" Value="ProgramFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1080,6 +1116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.ProgramFilesX86" />
       <MemberSignature Language="VB.NET" Value="ProgramFilesX86" />
       <MemberSignature Language="F#" Value="ProgramFilesX86 = 42" Usage="System.Environment.SpecialFolder.ProgramFilesX86" />
+      <MemberSignature Language="C++ CLI" Value="ProgramFilesX86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1108,6 +1145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Programs" />
       <MemberSignature Language="VB.NET" Value="Programs" />
       <MemberSignature Language="F#" Value="Programs = 2" Usage="System.Environment.SpecialFolder.Programs" />
+      <MemberSignature Language="C++ CLI" Value="Programs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1136,6 +1174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Recent" />
       <MemberSignature Language="VB.NET" Value="Recent" />
       <MemberSignature Language="F#" Value="Recent = 8" Usage="System.Environment.SpecialFolder.Recent" />
+      <MemberSignature Language="C++ CLI" Value="Recent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1164,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Resources" />
       <MemberSignature Language="VB.NET" Value="Resources" />
       <MemberSignature Language="F#" Value="Resources = 56" Usage="System.Environment.SpecialFolder.Resources" />
+      <MemberSignature Language="C++ CLI" Value="Resources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1192,6 +1232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.SendTo" />
       <MemberSignature Language="VB.NET" Value="SendTo" />
       <MemberSignature Language="F#" Value="SendTo = 9" Usage="System.Environment.SpecialFolder.SendTo" />
+      <MemberSignature Language="C++ CLI" Value="SendTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1220,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.StartMenu" />
       <MemberSignature Language="VB.NET" Value="StartMenu" />
       <MemberSignature Language="F#" Value="StartMenu = 11" Usage="System.Environment.SpecialFolder.StartMenu" />
+      <MemberSignature Language="C++ CLI" Value="StartMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1248,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Startup" />
       <MemberSignature Language="VB.NET" Value="Startup" />
       <MemberSignature Language="F#" Value="Startup = 7" Usage="System.Environment.SpecialFolder.Startup" />
+      <MemberSignature Language="C++ CLI" Value="Startup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1284,6 +1327,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="F#" Value="System = 37" Usage="System.Environment.SpecialFolder.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1312,6 +1356,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.SystemX86" />
       <MemberSignature Language="VB.NET" Value="SystemX86" />
       <MemberSignature Language="F#" Value="SystemX86 = 41" Usage="System.Environment.SpecialFolder.SystemX86" />
+      <MemberSignature Language="C++ CLI" Value="SystemX86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1340,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Templates" />
       <MemberSignature Language="VB.NET" Value="Templates" />
       <MemberSignature Language="F#" Value="Templates = 21" Usage="System.Environment.SpecialFolder.Templates" />
+      <MemberSignature Language="C++ CLI" Value="Templates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1368,6 +1414,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.UserProfile" />
       <MemberSignature Language="VB.NET" Value="UserProfile" />
       <MemberSignature Language="F#" Value="UserProfile = 40" Usage="System.Environment.SpecialFolder.UserProfile" />
+      <MemberSignature Language="C++ CLI" Value="UserProfile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1396,6 +1443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Environment.SpecialFolder.Windows" />
       <MemberSignature Language="VB.NET" Value="Windows" />
       <MemberSignature Language="F#" Value="Windows = 36" Usage="System.Environment.SpecialFolder.Windows" />
+      <MemberSignature Language="C++ CLI" Value="Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

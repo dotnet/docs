@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.XamlMemberInvoker" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlMemberInvoker" />
   <TypeSignature Language="F#" Value="type XamlMemberInvoker = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlMemberInvoker" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlMemberInvoker.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlMemberInvoker();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlMemberInvoker.#ctor(System.Xaml.XamlMember)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As XamlMember)" />
       <MemberSignature Language="F#" Value="new System.Xaml.Schema.XamlMemberInvoker : System.Xaml.XamlMember -&gt; System.Xaml.Schema.XamlMemberInvoker" Usage="new System.Xaml.Schema.XamlMemberInvoker member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMemberInvoker(System::Xaml::XamlMember ^ member);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlMemberInvoker.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (instance As Object) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj&#xA;override this.GetValue : obj -&gt; obj" Usage="xamlMemberInvoker.GetValue instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlMemberInvoker.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetValue (instance As Object, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit&#xA;override this.SetValue : obj * obj -&gt; unit" Usage="xamlMemberInvoker.SetValue (instance, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetValue(System::Object ^ instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlMemberInvoker.ShouldSerializeValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeValue (instance As Object) As ShouldSerializeResult" />
       <MemberSignature Language="F#" Value="abstract member ShouldSerializeValue : obj -&gt; System.Xaml.Schema.ShouldSerializeResult&#xA;override this.ShouldSerializeValue : obj -&gt; System.Xaml.Schema.ShouldSerializeResult" Usage="xamlMemberInvoker.ShouldSerializeValue instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xaml::Schema::ShouldSerializeResult ShouldSerializeValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlMemberInvoker.UnderlyingGetter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingGetter As MethodInfo" />
       <MemberSignature Language="F#" Value="member this.UnderlyingGetter : System.Reflection.MethodInfo" Usage="System.Xaml.Schema.XamlMemberInvoker.UnderlyingGetter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ UnderlyingGetter { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -243,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlMemberInvoker.UnderlyingSetter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingSetter As MethodInfo" />
       <MemberSignature Language="F#" Value="member this.UnderlyingSetter : System.Reflection.MethodInfo" Usage="System.Xaml.Schema.XamlMemberInvoker.UnderlyingSetter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ UnderlyingSetter { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnknownInvoker As XamlMemberInvoker" />
       <MemberSignature Language="F#" Value="member this.UnknownInvoker : System.Xaml.Schema.XamlMemberInvoker" Usage="System.Xaml.Schema.XamlMemberInvoker.UnknownInvoker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xaml::Schema::XamlMemberInvoker ^ UnknownInvoker { System::Xaml::Schema::XamlMemberInvoker ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

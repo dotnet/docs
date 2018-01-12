@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.TypeDelegator" />
   <TypeSignature Language="VB.NET" Value="Public Class TypeDelegator&#xA;Inherits TypeInfo" />
   <TypeSignature Language="F#" Value="type TypeDelegator = class&#xA;    inherit TypeInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDelegator : System::Reflection::TypeInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypeDelegator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (delegatingType As Type)" />
       <MemberSignature Language="F#" Value="new System.Reflection.TypeDelegator : Type -&gt; System.Reflection.TypeDelegator" Usage="new System.Reflection.TypeDelegator delegatingType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDelegator(Type ^ delegatingType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Assembly As Assembly" />
       <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Reflection.TypeDelegator.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.AssemblyQualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AssemblyQualifiedName As String" />
       <MemberSignature Language="F#" Value="member this.AssemblyQualifiedName : string" Usage="System.Reflection.TypeDelegator.AssemblyQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AssemblyQualifiedName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BaseType As Type" />
       <MemberSignature Language="F#" Value="member this.BaseType : Type" Usage="System.Reflection.TypeDelegator.BaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BaseType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.FullName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FullName As String" />
       <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Reflection.TypeDelegator.FullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetAttributeFlagsImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAttributeFlagsImpl () As TypeAttributes" />
       <MemberSignature Language="F#" Value="override this.GetAttributeFlagsImpl : unit -&gt; System.Reflection.TypeAttributes" Usage="typeDelegator.GetAttributeFlagsImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::TypeAttributes GetAttributeFlagsImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Reflection.ConstructorInfo GetConstructorImpl(valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, valuetype System.Reflection.CallingConventions callConvention, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetConstructorImpl(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="F#" Value="override this.GetConstructorImpl : System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.ConstructorInfo" Usage="typeDelegator.GetConstructorImpl (bindingAttr, binder, callConvention, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::ConstructorInfo ^ GetConstructorImpl(System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, System::Reflection::CallingConventions callConvention, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetConstructors(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetConstructors (bindingAttr As BindingFlags) As ConstructorInfo()" />
       <MemberSignature Language="F#" Value="override this.GetConstructors : System.Reflection.BindingFlags -&gt; System.Reflection.ConstructorInfo[]" Usage="typeDelegator.GetConstructors bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -410,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="typeDelegator.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -444,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="typeDelegator.GetCustomAttributes (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -482,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetElementType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetElementType : unit -&gt; Type" Usage="typeDelegator.GetElementType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetElementType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -512,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetEvent(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEvent (name As String, bindingAttr As BindingFlags) As EventInfo" />
       <MemberSignature Language="F#" Value="override this.GetEvent : string * System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo" Usage="typeDelegator.GetEvent (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::EventInfo ^ GetEvent(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -565,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetEvents" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEvents () As EventInfo()" />
       <MemberSignature Language="F#" Value="override this.GetEvents : unit -&gt; System.Reflection.EventInfo[]" Usage="typeDelegator.GetEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -595,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetEvents(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEvents (bindingAttr As BindingFlags) As EventInfo()" />
       <MemberSignature Language="F#" Value="override this.GetEvents : System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo[]" Usage="typeDelegator.GetEvents bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetField(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetField (name As String, bindingAttr As BindingFlags) As FieldInfo" />
       <MemberSignature Language="F#" Value="override this.GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo" Usage="typeDelegator.GetField (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::FieldInfo ^ GetField(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -671,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetFields(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFields (bindingAttr As BindingFlags) As FieldInfo()" />
       <MemberSignature Language="F#" Value="override this.GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="typeDelegator.GetFields bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -713,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetInterface(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInterface (name As String, ignoreCase As Boolean) As Type" />
       <MemberSignature Language="F#" Value="override this.GetInterface : string * bool -&gt; Type" Usage="typeDelegator.GetInterface (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetInterface(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -750,6 +769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetInterfaceMap(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInterfaceMap (interfaceType As Type) As InterfaceMapping" />
       <MemberSignature Language="F#" Value="override this.GetInterfaceMap : Type -&gt; System.Reflection.InterfaceMapping" Usage="typeDelegator.GetInterfaceMap interfaceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::InterfaceMapping GetInterfaceMap(Type ^ interfaceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -796,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetInterfaces" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInterfaces () As Type()" />
       <MemberSignature Language="F#" Value="override this.GetInterfaces : unit -&gt; Type[]" Usage="typeDelegator.GetInterfaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;Type ^&gt; ^ GetInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -826,6 +847,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, type As MemberTypes, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.MemberTypes * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="typeDelegator.GetMember (name, type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::MemberTypes type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -871,6 +893,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="typeDelegator.GetMembers bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -910,6 +933,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Reflection.MethodInfo GetMethodImpl(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, valuetype System.Reflection.CallingConventions callConvention, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="F#" Value="override this.GetMethodImpl : string * System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="typeDelegator.GetMethodImpl (name, bindingAttr, binder, callConvention, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::MethodInfo ^ GetMethodImpl(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, System::Reflection::CallingConventions callConvention, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -963,6 +987,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetMethods(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMethods (bindingAttr As BindingFlags) As MethodInfo()" />
       <MemberSignature Language="F#" Value="override this.GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="typeDelegator.GetMethods bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -996,6 +1021,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetNestedType(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNestedType (name As String, bindingAttr As BindingFlags) As Type" />
       <MemberSignature Language="F#" Value="override this.GetNestedType : string * System.Reflection.BindingFlags -&gt; Type" Usage="typeDelegator.GetNestedType (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetNestedType(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1032,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetNestedTypes(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNestedTypes (bindingAttr As BindingFlags) As Type()" />
       <MemberSignature Language="F#" Value="override this.GetNestedTypes : System.Reflection.BindingFlags -&gt; Type[]" Usage="typeDelegator.GetNestedTypes bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;Type ^&gt; ^ GetNestedTypes(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1065,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetProperties(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (bindingAttr As BindingFlags) As PropertyInfo()" />
       <MemberSignature Language="F#" Value="override this.GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]" Usage="typeDelegator.GetProperties bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1097,6 +1125,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Reflection.PropertyInfo GetPropertyImpl(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, class System.Type returnType, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="F#" Value="override this.GetPropertyImpl : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo" Usage="typeDelegator.GetPropertyImpl (name, bindingAttr, binder, returnType, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::PropertyInfo ^ GetPropertyImpl(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1140,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.GUID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GUID As Guid" />
       <MemberSignature Language="F#" Value="member this.GUID : Guid" Usage="System.Reflection.TypeDelegator.GUID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid GUID { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1177,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.HasElementTypeImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasElementTypeImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.HasElementTypeImpl : unit -&gt; bool" Usage="typeDelegator.HasElementTypeImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool HasElementTypeImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1207,6 +1238,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args, valuetype System.Reflection.ParameterModifier[] modifiers, class System.Globalization.CultureInfo culture, string[] namedParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
       <MemberSignature Language="F#" Value="override this.InvokeMember : string * System.Reflection.BindingFlags * System.Reflection.Binder * obj * obj[] * System.Reflection.ParameterModifier[] * System.Globalization.CultureInfo * string[] -&gt; obj" Usage="typeDelegator.InvokeMember (name, invokeAttr, binder, target, args, modifiers, culture, namedParameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InvokeMember(System::String ^ name, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::String ^&gt; ^ namedParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1293,6 +1325,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsArrayImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsArrayImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsArrayImpl : unit -&gt; bool" Usage="typeDelegator.IsArrayImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsArrayImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1323,6 +1356,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsAssignableFrom(class System.Reflection.TypeInfo typeInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsAssignableFrom(System.Reflection.TypeInfo)" />
       <MemberSignature Language="F#" Value="override this.IsAssignableFrom : System.Reflection.TypeInfo -&gt; bool" Usage="typeDelegator.IsAssignableFrom typeInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAssignableFrom(System::Reflection::TypeInfo ^ typeInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1357,6 +1391,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsByRefImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsByRefImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsByRefImpl : unit -&gt; bool" Usage="typeDelegator.IsByRefImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsByRefImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1388,6 +1423,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsCOMObjectImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsCOMObjectImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsCOMObjectImpl : unit -&gt; bool" Usage="typeDelegator.IsCOMObjectImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsCOMObjectImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1419,6 +1455,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.IsConstructedGenericType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsConstructedGenericType As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsConstructedGenericType : bool" Usage="System.Reflection.TypeDelegator.IsConstructedGenericType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsConstructedGenericType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1449,6 +1486,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="typeDelegator.IsDefined (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1488,6 +1526,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsPointerImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsPointerImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsPointerImpl : unit -&gt; bool" Usage="typeDelegator.IsPointerImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsPointerImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1519,6 +1558,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsPrimitiveImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsPrimitiveImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsPrimitiveImpl : unit -&gt; bool" Usage="typeDelegator.IsPrimitiveImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsPrimitiveImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1550,6 +1590,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.IsSZArray" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSZArray As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSZArray : bool" Usage="System.Reflection.TypeDelegator.IsSZArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSZArray { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1570,6 +1611,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.IsTypeDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsTypeDefinition As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsTypeDefinition : bool" Usage="System.Reflection.TypeDelegator.IsTypeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsTypeDefinition { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1590,6 +1632,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeDelegator.IsValueTypeImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsValueTypeImpl () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsValueTypeImpl : unit -&gt; bool" Usage="typeDelegator.IsValueTypeImpl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsValueTypeImpl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1621,6 +1664,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.IsVariableBoundArray" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsVariableBoundArray As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsVariableBoundArray : bool" Usage="System.Reflection.TypeDelegator.IsVariableBoundArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsVariableBoundArray { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1641,6 +1685,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.MetadataToken" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MetadataToken As Integer" />
       <MemberSignature Language="F#" Value="member this.MetadataToken : int" Usage="System.Reflection.TypeDelegator.MetadataToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MetadataToken { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1677,6 +1722,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.Module" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
       <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Reflection.TypeDelegator.Module" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1713,6 +1759,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.TypeDelegator.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1749,6 +1796,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.Reflection.TypeDelegator.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1785,6 +1833,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.TypeHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeHandle As RuntimeTypeHandle" />
       <MemberSignature Language="F#" Value="member this.TypeHandle : RuntimeTypeHandle" Usage="System.Reflection.TypeDelegator.TypeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeTypeHandle TypeHandle { RuntimeTypeHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1822,6 +1871,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeDelegator.typeImpl" />
       <MemberSignature Language="VB.NET" Value="Protected typeImpl As Type " />
       <MemberSignature Language="F#" Value="val mutable typeImpl : Type" Usage="System.Reflection.TypeDelegator.typeImpl" />
+      <MemberSignature Language="C++ CLI" Value="protected: Type ^ typeImpl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1850,6 +1900,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.UnderlyingSystemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UnderlyingSystemType As Type" />
       <MemberSignature Language="F#" Value="member this.UnderlyingSystemType : Type" Usage="System.Reflection.TypeDelegator.UnderlyingSystemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ UnderlyingSystemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

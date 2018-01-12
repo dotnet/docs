@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MissingPrimaryKeyException" />
   <TypeSignature Language="VB.NET" Value="Public Class MissingPrimaryKeyException&#xA;Inherits DataException" />
   <TypeSignature Language="F#" Value="type MissingPrimaryKeyException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MissingPrimaryKeyException : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.MissingPrimaryKeyException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingPrimaryKeyException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MissingPrimaryKeyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="F#" Value="new System.Data.MissingPrimaryKeyException : string -&gt; System.Data.MissingPrimaryKeyException" Usage="new System.Data.MissingPrimaryKeyException s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingPrimaryKeyException(System::String ^ s);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MissingPrimaryKeyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Data.MissingPrimaryKeyException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.MissingPrimaryKeyException" Usage="new System.Data.MissingPrimaryKeyException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MissingPrimaryKeyException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MissingPrimaryKeyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.MissingPrimaryKeyException : string * Exception -&gt; System.Data.MissingPrimaryKeyException" Usage="new System.Data.MissingPrimaryKeyException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingPrimaryKeyException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

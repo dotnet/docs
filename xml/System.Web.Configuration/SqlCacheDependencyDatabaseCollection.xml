@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencyDatabaseCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCacheDependencyDatabaseCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type SqlCacheDependencyDatabaseCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlCacheDependencyDatabaseCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependencyDatabaseCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Add(System.Web.Configuration.SqlCacheDependencyDatabase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As SqlCacheDependencyDatabase)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.SqlCacheDependencyDatabase -&gt; unit" Usage="sqlCacheDependencyDatabaseCollection.Add name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::SqlCacheDependencyDatabase ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.Configuration.SqlCacheDependencyDatabaseCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="sqlCacheDependencyDatabaseCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="sqlCacheDependencyDatabaseCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As SqlCacheDependencyDatabase" />
       <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.SqlCacheDependencyDatabase" Usage="sqlCacheDependencyDatabaseCollection.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::SqlCacheDependencyDatabase ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As SqlCacheDependencyDatabase" />
       <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.Configuration.SqlCacheDependencyDatabase" Usage="sqlCacheDependencyDatabaseCollection.Get name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::SqlCacheDependencyDatabase ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="sqlCacheDependencyDatabaseCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="sqlCacheDependencyDatabaseCollection.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SqlCacheDependencyDatabase" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.SqlCacheDependencyDatabase with get, set" Usage="System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SqlCacheDependencyDatabase ^ default[int] { System::Web::Configuration::SqlCacheDependencyDatabase ^ get(int index); void set(int index, System::Web::Configuration::SqlCacheDependencyDatabase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As SqlCacheDependencyDatabase" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.SqlCacheDependencyDatabase" Usage="System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SqlCacheDependencyDatabase ^ default[System::String ^] { System::Web::Configuration::SqlCacheDependencyDatabase ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="sqlCacheDependencyDatabaseCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -440,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="sqlCacheDependencyDatabaseCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -474,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabaseCollection.Set(System.Web.Configuration.SqlCacheDependencyDatabase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (user As SqlCacheDependencyDatabase)" />
       <MemberSignature Language="F#" Value="member this.Set : System.Web.Configuration.SqlCacheDependencyDatabase -&gt; unit" Usage="sqlCacheDependencyDatabaseCollection.Set user" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Web::Configuration::SqlCacheDependencyDatabase ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

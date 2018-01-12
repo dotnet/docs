@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RIPEMD160Managed" />
   <TypeSignature Language="VB.NET" Value="Public Class RIPEMD160Managed&#xA;Inherits RIPEMD160" />
   <TypeSignature Language="F#" Value="type RIPEMD160Managed = class&#xA;    inherit RIPEMD160" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RIPEMD160Managed : System::Security::Cryptography::RIPEMD160" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160Managed.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RIPEMD160Managed();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgb As Byte(), ibStart As Integer, cbSize As Integer)" />
       <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="rIPEMD160Managed.HashCore (rgb, ibStart, cbSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgb, int ibStart, int cbSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160Managed.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="rIPEMD160Managed.HashFinal " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160Managed.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="rIPEMD160Managed.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

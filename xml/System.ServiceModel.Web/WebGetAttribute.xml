@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebGetAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebGetAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior" />
   <TypeSignature Language="F#" Value="type WebGetAttribute = class&#xA;    inherit Attribute&#xA;    interface IOperationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebGetAttribute sealed : Attribute, System::ServiceModel::Description::IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebGetAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.BodyStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BodyStyle As WebMessageBodyStyle" />
       <MemberSignature Language="F#" Value="member this.BodyStyle : System.ServiceModel.Web.WebMessageBodyStyle with get, set" Usage="System.ServiceModel.Web.WebGetAttribute.BodyStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageBodyStyle BodyStyle { System::ServiceModel::Web::WebMessageBodyStyle get(); void set(System::ServiceModel::Web::WebMessageBodyStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.IsBodyStyleSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBodyStyleSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBodyStyleSetExplicitly : bool" Usage="System.ServiceModel.Web.WebGetAttribute.IsBodyStyleSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBodyStyleSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.IsRequestFormatSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRequestFormatSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsRequestFormatSetExplicitly : bool" Usage="System.ServiceModel.Web.WebGetAttribute.IsRequestFormatSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequestFormatSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.IsResponseFormatSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsResponseFormatSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsResponseFormatSetExplicitly : bool" Usage="System.ServiceModel.Web.WebGetAttribute.IsResponseFormatSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResponseFormatSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestFormat As WebMessageFormat" />
       <MemberSignature Language="F#" Value="member this.RequestFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Web.WebGetAttribute.RequestFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageFormat RequestFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseFormat As WebMessageFormat" />
       <MemberSignature Language="F#" Value="member this.ResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Web.WebGetAttribute.ResponseFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageFormat ResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Sub AddBindingParameters (operation As OperationDescription, parameters As BindingParameterCollection) Implements IOperationBehavior.AddBindingParameters" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System::ServiceModel::Description::OperationDescription ^ operation, System::ServiceModel::Channels::BindingParameterCollection ^ parameters) = System::ServiceModel::Description::IOperationBehavior::AddBindingParameters;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -293,6 +302,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.Dispatcher.ClientOperation client) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
       <MemberSignature Language="VB.NET" Value="Sub ApplyClientBehavior (operation As OperationDescription, client As ClientOperation) Implements IOperationBehavior.ApplyClientBehavior" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System::ServiceModel::Description::OperationDescription ^ operation, System::ServiceModel::Dispatcher::ClientOperation ^ client) = System::ServiceModel::Description::IOperationBehavior::ApplyClientBehavior;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)</InterfaceMember>
@@ -328,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.Dispatcher.DispatchOperation service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
       <MemberSignature Language="VB.NET" Value="Sub ApplyDispatchBehavior (operation As OperationDescription, service As DispatchOperation) Implements IOperationBehavior.ApplyDispatchBehavior" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System::ServiceModel::Description::OperationDescription ^ operation, System::ServiceModel::Dispatcher::DispatchOperation ^ service) = System::ServiceModel::Description::IOperationBehavior::ApplyDispatchBehavior;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)</InterfaceMember>
@@ -363,6 +374,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.Validate(class System.ServiceModel.Description.OperationDescription operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#Validate(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Sub Validate (operation As OperationDescription) Implements IOperationBehavior.Validate" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.Validate(System::ServiceModel::Description::OperationDescription ^ operation) = System::ServiceModel::Description::IOperationBehavior::Validate;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)</InterfaceMember>
@@ -397,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.UriTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property UriTemplate As String" />
       <MemberSignature Language="F#" Value="member this.UriTemplate : string with get, set" Usage="System.ServiceModel.Web.WebGetAttribute.UriTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UriTemplate { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

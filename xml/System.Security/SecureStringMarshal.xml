@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecureStringMarshal" />
   <TypeSignature Language="VB.NET" Value="Public Class SecureStringMarshal" />
   <TypeSignature Language="F#" Value="type SecureStringMarshal = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecureStringMarshal abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.SecureString</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToCoTaskMemAnsi(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToCoTaskMemAnsi (s As SecureString) As IntPtr" />
       <MemberSignature Language="F#" Value="static member SecureStringToCoTaskMemAnsi : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToCoTaskMemAnsi s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToCoTaskMemAnsi(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToCoTaskMemUnicode (s As SecureString) As IntPtr" />
       <MemberSignature Language="F#" Value="static member SecureStringToCoTaskMemUnicode : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToCoTaskMemUnicode(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToGlobalAllocAnsi(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToGlobalAllocAnsi (s As SecureString) As IntPtr" />
       <MemberSignature Language="F#" Value="static member SecureStringToGlobalAllocAnsi : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToGlobalAllocAnsi s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToGlobalAllocAnsi(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToGlobalAllocUnicode(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToGlobalAllocUnicode (s As SecureString) As IntPtr" />
       <MemberSignature Language="F#" Value="static member SecureStringToGlobalAllocUnicode : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToGlobalAllocUnicode s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToGlobalAllocUnicode(System::Security::SecureString ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>

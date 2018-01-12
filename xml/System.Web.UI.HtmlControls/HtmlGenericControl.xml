@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlGenericControl" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlGenericControl&#xA;Inherits HtmlContainerControl" />
   <TypeSignature Language="F#" Value="type HtmlGenericControl = class&#xA;    inherit HtmlContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlGenericControl : System::Web::UI::HtmlControls::HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlGenericControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlGenericControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlGenericControl.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.HtmlControls.HtmlGenericControl : string -&gt; System.Web.UI.HtmlControls.HtmlGenericControl" Usage="new System.Web.UI.HtmlControls.HtmlGenericControl tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlGenericControl(System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlGenericControl.TagName" />
       <MemberSignature Language="VB.NET" Value="Public Property TagName As String" />
       <MemberSignature Language="F#" Value="member this.TagName : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlGenericControl.TagName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TagName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

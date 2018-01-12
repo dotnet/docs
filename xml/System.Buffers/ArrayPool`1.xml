@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.ArrayPool`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ArrayPool(Of T)" />
   <TypeSignature Language="F#" Value="type ArrayPool&lt;'T&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ArrayPool abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Buffers</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ArrayPool();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -63,6 +65,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As ArrayPool(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -77,8 +80,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class.</summary>
         <returns>A new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -87,6 +89,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Create(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (maxArrayLength As Integer, maxArraysPerBucket As Integer) As ArrayPool(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : int * int -&gt; System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Create (maxArrayLength, maxArraysPerBucket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create(int maxArrayLength, int maxArraysPerBucket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -122,6 +125,7 @@ The instance of the <xref:System.Buffers.ArrayPool%601> class created by this me
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Rent(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Rent (minimumLength As Integer) As T()" />
       <MemberSignature Language="F#" Value="abstract member Rent : int -&gt; 'T[]" Usage="arrayPool.Rent minimumLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;T&gt; ^ Rent(int minimumLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -189,6 +193,7 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
       <MemberSignature Language="DocId" Value="P:System.Buffers.ArrayPool`1.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As ArrayPool(Of T)" />
       <MemberSignature Language="F#" Value="member this.Shared : System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Shared" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Buffers::ArrayPool&lt;T&gt; ^ Shared { System::Buffers::ArrayPool&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>

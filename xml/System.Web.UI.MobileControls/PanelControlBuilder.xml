@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PanelControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class PanelControlBuilder&#xA;Inherits LiteralTextContainerControlBuilder" />
   <TypeSignature Language="F#" Value="type PanelControlBuilder = class&#xA;    inherit LiteralTextContainerControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PanelControlBuilder : System::Web::UI::MobileControls::LiteralTextContainerControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PanelControlBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PanelControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

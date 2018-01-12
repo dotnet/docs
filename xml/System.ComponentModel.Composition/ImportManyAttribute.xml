@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ImportManyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class ImportManyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ImportManyAttribute = class&#xA;    inherit Attribute&#xA;    interface IAttributedImport" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImportManyAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportManyAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportManyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportManyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ImportManyAttribute : string -&gt; System.ComponentModel.Composition.ImportManyAttribute" Usage="new System.ComponentModel.Composition.ImportManyAttribute contractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportManyAttribute(System::String ^ contractName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportManyAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ImportManyAttribute : Type -&gt; System.ComponentModel.Composition.ImportManyAttribute" Usage="new System.ComponentModel.Composition.ImportManyAttribute contractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportManyAttribute(Type ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportManyAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, contractType As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ImportManyAttribute : string * Type -&gt; System.ComponentModel.Composition.ImportManyAttribute" Usage="new System.ComponentModel.Composition.ImportManyAttribute (contractName, contractType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportManyAttribute(System::String ^ contractName, Type ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ImportManyAttribute.AllowRecomposition" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowRecomposition As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowRecomposition : bool with get, set" Usage="System.ComponentModel.Composition.ImportManyAttribute.AllowRecomposition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowRecomposition { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ImportManyAttribute.ContractName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
       <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.ComponentModel.Composition.ImportManyAttribute.ContractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ImportManyAttribute.ContractType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractType As Type" />
       <MemberSignature Language="F#" Value="member this.ContractType : Type" Usage="System.ComponentModel.Composition.ImportManyAttribute.ContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ImportManyAttribute.RequiredCreationPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property RequiredCreationPolicy As CreationPolicy" />
       <MemberSignature Language="F#" Value="member this.RequiredCreationPolicy : System.ComponentModel.Composition.CreationPolicy with get, set" Usage="System.ComponentModel.Composition.ImportManyAttribute.RequiredCreationPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::CreationPolicy RequiredCreationPolicy { System::ComponentModel::Composition::CreationPolicy get(); void set(System::ComponentModel::Composition::CreationPolicy value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ImportManyAttribute.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As ImportSource" />
       <MemberSignature Language="F#" Value="member this.Source : System.ComponentModel.Composition.ImportSource with get, set" Usage="System.ComponentModel.Composition.ImportManyAttribute.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::ImportSource Source { System::ComponentModel::Composition::ImportSource get(); void set(System::ComponentModel::Composition::ImportSource value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

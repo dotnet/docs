@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ProfileSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +113,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.AutomaticSaveEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticSaveEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutomaticSaveEnabled : bool with get, set" Usage="System.Web.Configuration.ProfileSection.AutomaticSaveEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticSaveEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +157,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.ProfileSection.DefaultProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,6 +203,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.Configuration.ProfileSection.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +248,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Inherits" />
       <MemberSignature Language="VB.NET" Value="Public Property Inherits As String" />
       <MemberSignature Language="F#" Value="member this.Inherits : string with get, set" Usage="System.Web.Configuration.ProfileSection.Inherits" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Inherits { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +296,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProfileSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +317,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.PropertySettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertySettings As RootProfilePropertySettingsCollection" />
       <MemberSignature Language="F#" Value="member this.PropertySettings : System.Web.Configuration.RootProfilePropertySettingsCollection" Usage="System.Web.Configuration.ProfileSection.PropertySettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::RootProfilePropertySettingsCollection ^ PropertySettings { System::Web::Configuration::RootProfilePropertySettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +362,7 @@ local Microsoft SQL Server database" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.ProfileSection.Providers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

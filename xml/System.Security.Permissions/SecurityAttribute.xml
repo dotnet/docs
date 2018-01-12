@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type SecurityAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityAttribute abstract : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (action As SecurityAction)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.SecurityAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.SecurityAttribute" Usage="new System.Security.Permissions.SecurityAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityAttribute.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As SecurityAction" />
       <MemberSignature Language="F#" Value="member this.Action : System.Security.Permissions.SecurityAction with get, set" Usage="System.Security.Permissions.SecurityAttribute.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::SecurityAction Action { System::Security::Permissions::SecurityAction get(); void set(System::Security::Permissions::SecurityAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreatePermission () As IPermission" />
       <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission" Usage="securityAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityAttribute.Unrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Property Unrestricted As Boolean" />
       <MemberSignature Language="F#" Value="member this.Unrestricted : bool with get, set" Usage="System.Security.Permissions.SecurityAttribute.Unrestricted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unrestricted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

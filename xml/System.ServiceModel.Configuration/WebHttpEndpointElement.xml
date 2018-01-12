@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebHttpEndpointElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpEndpointElement&#xA;Inherits StandardEndpointElement" />
   <TypeSignature Language="F#" Value="type WebHttpEndpointElement = class&#xA;    inherit StandardEndpointElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHttpEndpointElement : System::ServiceModel::Configuration::StandardEndpointElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpEndpointElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpEndpointElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticFormatSelectionEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutomaticFormatSelectionEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.AutomaticFormatSelectionEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticFormatSelectionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.ContentTypeMapper" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentTypeMapper As String" />
       <MemberSignature Language="F#" Value="member this.ContentTypeMapper : string with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.ContentTypeMapper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentTypeMapper { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint(class System.ServiceModel.Description.ContractDescription contractDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpEndpointElement.CreateServiceEndpoint(System.ServiceModel.Description.ContractDescription)" />
       <MemberSignature Language="F#" Value="override this.CreateServiceEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="webHttpEndpointElement.CreateServiceEndpoint contractDescription" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Description::ServiceEndpoint ^ CreateServiceEndpoint(System::ServiceModel::Description::ContractDescription ^ contractDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.CrossDomainScriptAccessEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property CrossDomainScriptAccessEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.CrossDomainScriptAccessEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.CrossDomainScriptAccessEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CrossDomainScriptAccessEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.DefaultOutgoingResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultOutgoingResponseFormat As WebMessageFormat" />
       <MemberSignature Language="F#" Value="member this.DefaultOutgoingResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.DefaultOutgoingResponseFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -167,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.EndpointType" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property EndpointType As Type" />
       <MemberSignature Language="F#" Value="member this.EndpointType : Type" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.EndpointType" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property Type ^ EndpointType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -187,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.FaultExceptionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultExceptionEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.FaultExceptionEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.FaultExceptionEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FaultExceptionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -212,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.HelpEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.HelpEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.HelpEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HelpEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -238,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.HostNameComparisonMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -266,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.MaxBufferPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.MaxBufferPoolSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -294,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.MaxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -322,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.MaxReceivedMessageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -359,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ChannelEndpointElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyConfiguration (endpoint As ServiceEndpoint, serviceEndpointElement As ChannelEndpointElement)" />
       <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="webHttpEndpointElement.OnApplyConfiguration (endpoint, serviceEndpointElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Configuration::ChannelEndpointElement ^ serviceEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -383,6 +398,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ServiceEndpointElement)" />
       <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="webHttpEndpointElement.OnApplyConfiguration (endpoint, serviceEndpointElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Configuration::ServiceEndpointElement ^ serviceEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -416,6 +432,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ChannelEndpointElement)" />
       <MemberSignature Language="F#" Value="override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="webHttpEndpointElement.OnInitializeAndValidate channelEndpointElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitializeAndValidate(System::ServiceModel::Configuration::ChannelEndpointElement ^ channelEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -438,6 +455,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ServiceEndpointElement)" />
       <MemberSignature Language="F#" Value="override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="webHttpEndpointElement.OnInitializeAndValidate serviceEndpointElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitializeAndValidate(System::ServiceModel::Configuration::ServiceEndpointElement ^ serviceEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -461,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -481,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
       <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.ReaderQuotas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -506,6 +526,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.Security" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As WebHttpSecurityElement" />
       <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.Configuration.WebHttpSecurityElement" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.Security" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::WebHttpSecurityElement ^ Security { System::ServiceModel::Configuration::WebHttpSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -531,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.TransferMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
       <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.TransferMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -566,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebHttpEndpointElement.WriteEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteEncoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.WriteEncoding : System.Text.Encoding with get, set" Usage="System.ServiceModel.Configuration.WebHttpEndpointElement.WriteEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ WriteEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

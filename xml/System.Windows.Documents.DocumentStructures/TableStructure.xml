@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.TableStructure" />
   <TypeSignature Language="VB.NET" Value="Public Class TableStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of TableRowGroupStructure)" />
   <TypeSignature Language="F#" Value="type TableStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;TableRowGroupStructure&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::TableRowGroupStructure ^&gt;, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableStructure.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableStructure();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableStructure.Add(System.Windows.Documents.DocumentStructures.TableRowGroupStructure)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (tableRowGroup As TableRowGroupStructure)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.TableRowGroupStructure -&gt; unit" Usage="tableStructure.Add tableRowGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::TableRowGroupStructure ^ tableRowGroup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Documents.DocumentStructures.TableRowGroupStructure&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.TableRowGroupStructure&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#TableRowGroupStructure&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of TableRowGroupStructure) Implements IEnumerable(Of TableRowGroupStructure).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Documents::DocumentStructures::TableRowGroupStructure ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.TableRowGroupStructure&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::TableRowGroupStructure ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -115,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableStructure.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableStructure.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -174,6 +180,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableStructure.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>

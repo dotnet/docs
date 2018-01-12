@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class PageCatalogPartDesigner&#xA;Inherits CatalogPartDesigner" />
   <TypeSignature Language="F#" Value="type PageCatalogPartDesigner = class&#xA;    inherit CatalogPartDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageCatalogPartDesigner : System::Web::UI::Design::WebControls::WebParts::CatalogPartDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageCatalogPartDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="pageCatalogPartDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="pageCatalogPartDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Interaction" />
   <TypeSignature Language="VB.NET" Value="Public Module Interaction" />
   <TypeSignature Language="F#" Value="type Interaction = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Interaction sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.AppActivate(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppActivate (ProcessId As Integer)" />
       <MemberSignature Language="F#" Value="static member AppActivate : int -&gt; unit" Usage="Microsoft.VisualBasic.Interaction.AppActivate ProcessId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppActivate(int ProcessId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -114,6 +116,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.AppActivate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AppActivate (Title As String)" />
       <MemberSignature Language="F#" Value="static member AppActivate : string -&gt; unit" Usage="Microsoft.VisualBasic.Interaction.AppActivate Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppActivate(System::String ^ Title);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -171,6 +174,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Beep" />
       <MemberSignature Language="VB.NET" Value="Public Sub Beep ()" />
       <MemberSignature Language="F#" Value="static member Beep : unit -&gt; unit" Usage="Microsoft.VisualBasic.Interaction.Beep " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Beep();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -213,6 +217,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CallByName (ObjectRef As Object, ProcName As String, UseCallType As CallType, ParamArray Args As Object()) As Object" />
       <MemberSignature Language="F#" Value="static member CallByName : obj * string * Microsoft.VisualBasic.CallType * obj[] -&gt; obj" Usage="Microsoft.VisualBasic.Interaction.CallByName (ObjectRef, ProcName, UseCallType, Args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CallByName(System::Object ^ ObjectRef, System::String ^ ProcName, Microsoft::VisualBasic::CallType UseCallType, ... cli::array &lt;System::Object ^&gt; ^ Args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -272,6 +277,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Choose(System.Double,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Choose (Index As Double, ParamArray Choice As Object()) As Object" />
       <MemberSignature Language="F#" Value="static member Choose : double * obj[] -&gt; obj" Usage="Microsoft.VisualBasic.Interaction.Choose (Index, Choice)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Choose(double Index, ... cli::array &lt;System::Object ^&gt; ^ Choice);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -327,6 +333,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Command" />
       <MemberSignature Language="VB.NET" Value="Public Function Command () As String" />
       <MemberSignature Language="F#" Value="static member Command : unit -&gt; string" Usage="Microsoft.VisualBasic.Interaction.Command " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Command();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -529,6 +536,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Environ(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Environ (Expression As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Environ : int -&gt; string" Usage="Microsoft.VisualBasic.Interaction.Environ Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Environ(int Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -580,6 +588,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Environ(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Environ (Expression As String) As String" />
       <MemberSignature Language="F#" Value="static member Environ : string -&gt; string" Usage="Microsoft.VisualBasic.Interaction.Environ Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Environ(System::String ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -626,6 +635,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.GetAllSettings(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllSettings (AppName As String, Section As String) As String(,)" />
       <MemberSignature Language="F#" Value="static member GetAllSettings : string * string -&gt; string[,]" Usage="Microsoft.VisualBasic.Interaction.GetAllSettings (AppName, Section)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^, 2&gt; ^ GetAllSettings(System::String ^ AppName, System::String ^ Section);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -856,6 +866,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.IIf(System.Boolean,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IIf (Expression As Boolean, TruePart As Object, FalsePart As Object) As Object" />
       <MemberSignature Language="F#" Value="static member IIf : bool * obj * obj -&gt; obj" Usage="Microsoft.VisualBasic.Interaction.IIf (Expression, TruePart, FalsePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ IIf(bool Expression, System::Object ^ TruePart, System::Object ^ FalsePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1104,6 +1115,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Partition(System.Int64,System.Int64,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Partition (Number As Long, Start As Long, Stop As Long, Interval As Long) As String" />
       <MemberSignature Language="F#" Value="static member Partition : int64 * int64 * int64 * int64 -&gt; string" Usage="Microsoft.VisualBasic.Interaction.Partition (Number, Start, Stop, Interval)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Partition(long Number, long Start, long Stop, long Interval);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1166,6 +1178,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.SaveSetting(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveSetting (AppName As String, Section As String, Key As String, Setting As String)" />
       <MemberSignature Language="F#" Value="static member SaveSetting : string * string * string * string -&gt; unit" Usage="Microsoft.VisualBasic.Interaction.SaveSetting (AppName, Section, Key, Setting)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SaveSetting(System::String ^ AppName, System::String ^ Section, System::String ^ Key, System::String ^ Setting);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1331,6 +1344,7 @@ ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Switch(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Switch (ParamArray VarExpr As Object()) As Object" />
       <MemberSignature Language="F#" Value="static member Switch : obj[] -&gt; obj" Usage="Microsoft.VisualBasic.Interaction.Switch VarExpr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Switch(... cli::array &lt;System::Object ^&gt; ^ VarExpr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

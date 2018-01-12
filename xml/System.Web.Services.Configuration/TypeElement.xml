@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.TypeElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type TypeElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.TypeElement : string -&gt; System.Web.Services.Configuration.TypeElement" Usage="new System.Web.Services.Configuration.TypeElement type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeElement(System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.TypeElement.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.TypeElement : Type -&gt; System.Web.Services.Configuration.TypeElement" Usage="new System.Web.Services.Configuration.TypeElement type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeElement(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.TypeElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Services.Configuration.TypeElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.TypeElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Web.Services.Configuration.TypeElement.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

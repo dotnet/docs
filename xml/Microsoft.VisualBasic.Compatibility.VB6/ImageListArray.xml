@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageListArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="F#" Value="type ImageListArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageListArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageListArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.ImageListArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.ImageListArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.ImageListArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageListArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="imageListArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="imageListArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.GetIndex(System.Windows.Forms.ImageList)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As ImageList) As Short" />
       <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.ImageList -&gt; int16" Usage="imageListArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::ImageList ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="imageListArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As ImageList" />
       <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.ImageList" Usage="Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ default[short] { System::Windows::Forms::ImageList ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -290,6 +298,7 @@ MsgBox(CStr(ImageListArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.ResetIndex(System.Windows.Forms.ImageList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As ImageList)" />
       <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.ImageList -&gt; unit" Usage="imageListArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::ImageList ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -328,6 +337,7 @@ MsgBox(CStr(ImageListArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.SetIndex(System.Windows.Forms.ImageList,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As ImageList, Index As Short)" />
       <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.ImageList * int16 -&gt; unit" Usage="imageListArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::ImageList ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -368,6 +378,7 @@ MsgBox(CStr(ImageListArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ImageListArray.ShouldSerializeIndex(System.Windows.Forms.ImageList)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As ImageList) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.ImageList -&gt; bool" Usage="imageListArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::ImageList ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

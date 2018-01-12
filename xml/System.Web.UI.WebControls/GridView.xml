@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridView" />
   <TypeSignature Language="VB.NET" Value="Public Class GridView&#xA;Inherits CompositeDataBoundControl&#xA;Implements ICallbackContainer, ICallbackEventHandler, IDataBoundListControl, IDataKeysControl, IFieldControl, IPersistedSelector, IPostBackContainer, IPostBackEventHandler" />
   <TypeSignature Language="F#" Value="type GridView = class&#xA;    inherit CompositeDataBoundControl&#xA;    interface IPostBackContainer&#xA;    interface IPostBackEventHandler&#xA;    interface ICallbackContainer&#xA;    interface ICallbackEventHandler&#xA;    interface IPersistedSelector&#xA;    interface IDataKeysControl&#xA;    interface IDataBoundListControl&#xA;    interface IDataBoundControl&#xA;    interface IFieldControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridView : System::Web::UI::WebControls::CompositeDataBoundControl, System::Web::UI::ICallbackEventHandler, System::Web::UI::IDataKeysControl, System::Web::UI::IPostBackEventHandler, System::Web::UI::WebControls::ICallbackContainer, System::Web::UI::WebControls::IDataBoundListControl, System::Web::UI::WebControls::IFieldControl, System::Web::UI::WebControls::IPersistedSelector, System::Web::UI::WebControls::IPostBackContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -588,6 +589,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -622,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AllowCustomPaging" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowCustomPaging As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowCustomPaging : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AllowCustomPaging" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowCustomPaging { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -657,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AllowPaging" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowPaging As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowPaging : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AllowPaging" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowPaging { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -733,6 +737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AllowSorting" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowSorting As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowSorting : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AllowSorting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowSorting { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -803,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlternatingRowStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.AlternatingRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ AlternatingRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -863,6 +869,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoGenerateColumns As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoGenerateColumns : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoGenerateColumns { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -922,6 +929,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoGenerateDeleteButton As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoGenerateDeleteButton : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoGenerateDeleteButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -983,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoGenerateEditButton As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoGenerateEditButton : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoGenerateEditButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1059,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoGenerateSelectButton As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoGenerateSelectButton : bool with get, set" Usage="System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoGenerateSelectButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1124,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.BackImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BackImageUrl As String" />
       <MemberSignature Language="F#" Value="member this.BackImageUrl : string with get, set" Usage="System.Web.UI.WebControls.GridView.BackImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BackImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1175,6 +1186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.BottomPagerRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BottomPagerRow As GridViewRow" />
       <MemberSignature Language="F#" Value="member this.BottomPagerRow : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridView.BottomPagerRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridViewRow ^ BottomPagerRow { System::Web::UI::WebControls::GridViewRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1228,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Caption As String" />
       <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="System.Web.UI.WebControls.GridView.Caption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1276,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.CaptionAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CaptionAlign As TableCaptionAlign" />
       <MemberSignature Language="F#" Value="member this.CaptionAlign : System.Web.UI.WebControls.TableCaptionAlign with get, set" Usage="System.Web.UI.WebControls.GridView.CaptionAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableCaptionAlign CaptionAlign { System::Web::UI::WebControls::TableCaptionAlign get(); void set(System::Web::UI::WebControls::TableCaptionAlign value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1336,6 +1350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.CellPadding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CellPadding As Integer" />
       <MemberSignature Language="F#" Value="member this.CellPadding : int with get, set" Usage="System.Web.UI.WebControls.GridView.CellPadding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellPadding { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1380,6 +1395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.CellSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CellSpacing As Integer" />
       <MemberSignature Language="F#" Value="member this.CellSpacing : int with get, set" Usage="System.Web.UI.WebControls.GridView.CellSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellSpacing { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1425,6 +1441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.ClientIDRowSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ClientIDRowSuffix As String()" />
       <MemberSignature Language="F#" Value="member this.ClientIDRowSuffix : string[] with get, set" Usage="System.Web.UI.WebControls.GridView.ClientIDRowSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix</InterfaceMember>
@@ -1464,6 +1481,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientIDRowSuffixDataKeys As DataKeyArray" />
       <MemberSignature Language="F#" Value="member this.ClientIDRowSuffixDataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.GridView.ClientIDRowSuffixDataKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKeyArray ^ ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys</InterfaceMember>
@@ -1495,6 +1513,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Columns As DataControlFieldCollection" />
       <MemberSignature Language="F#" Value="member this.Columns : System.Web.UI.WebControls.DataControlFieldCollection" Usage="System.Web.UI.WebControls.GridView.Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataControlFieldCollection ^ Columns { System::Web::UI::WebControls::DataControlFieldCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1572,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.ColumnsGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnsGenerator As IAutoFieldGenerator" />
       <MemberSignature Language="F#" Value="member this.ColumnsGenerator : System.Web.UI.IAutoFieldGenerator with get, set" Usage="System.Web.UI.WebControls.GridView.ColumnsGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::IAutoFieldGenerator ^ ColumnsGenerator { System::Web::UI::IAutoFieldGenerator ^ get(); void set(System::Web::UI::IAutoFieldGenerator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1607,6 +1627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateAutoGeneratedColumn(System.Web.UI.WebControls.AutoGeneratedFieldProperties)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateAutoGeneratedColumn (fieldProperties As AutoGeneratedFieldProperties) As AutoGeneratedField" />
       <MemberSignature Language="F#" Value="abstract member CreateAutoGeneratedColumn : System.Web.UI.WebControls.AutoGeneratedFieldProperties -&gt; System.Web.UI.WebControls.AutoGeneratedField&#xA;override this.CreateAutoGeneratedColumn : System.Web.UI.WebControls.AutoGeneratedFieldProperties -&gt; System.Web.UI.WebControls.AutoGeneratedField" Usage="gridView.CreateAutoGeneratedColumn fieldProperties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::AutoGeneratedField ^ CreateAutoGeneratedColumn(System::Web::UI::WebControls::AutoGeneratedFieldProperties ^ fieldProperties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1648,6 +1669,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateChildControls(System.Collections.IEnumerable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateChildControls (dataSource As IEnumerable, dataBinding As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : System.Collections.IEnumerable * bool -&gt; int" Usage="gridView.CreateChildControls (dataSource, dataBinding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int CreateChildControls(System::Collections::IEnumerable ^ dataSource, bool dataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1700,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateChildTable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateChildTable () As Table" />
       <MemberSignature Language="F#" Value="abstract member CreateChildTable : unit -&gt; System.Web.UI.WebControls.Table&#xA;override this.CreateChildTable : unit -&gt; System.Web.UI.WebControls.Table" Usage="gridView.CreateChildTable " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::Table ^ CreateChildTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1729,6 +1752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateColumns(System.Web.UI.WebControls.PagedDataSource,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateColumns (dataSource As PagedDataSource, useDataSource As Boolean) As ICollection" />
       <MemberSignature Language="F#" Value="abstract member CreateColumns : System.Web.UI.WebControls.PagedDataSource * bool -&gt; System.Collections.ICollection&#xA;override this.CreateColumns : System.Web.UI.WebControls.PagedDataSource * bool -&gt; System.Collections.ICollection" Usage="gridView.CreateColumns (dataSource, useDataSource)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::ICollection ^ CreateColumns(System::Web::UI::WebControls::PagedDataSource ^ dataSource, bool useDataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1768,6 +1792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
       <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="gridView.CreateControlStyle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1800,6 +1825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateDataSourceSelectArguments" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDataSourceSelectArguments () As DataSourceSelectArguments" />
       <MemberSignature Language="F#" Value="override this.CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments" Usage="gridView.CreateDataSourceSelectArguments " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceSelectArguments ^ CreateDataSourceSelectArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1833,6 +1859,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.CreateRow(System.Int32,System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateRow (rowIndex As Integer, dataSourceIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState) As GridViewRow" />
       <MemberSignature Language="F#" Value="abstract member CreateRow : int * int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.GridViewRow&#xA;override this.CreateRow : int * int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.GridViewRow" Usage="gridView.CreateRow (rowIndex, dataSourceIndex, rowType, rowState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::GridViewRow ^ CreateRow(int rowIndex, int dataSourceIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1876,6 +1903,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub DataBind ()" />
       <MemberSignature Language="F#" Value="override this.DataBind : unit -&gt; unit" Usage="gridView.DataBind " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1916,6 +1944,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataKeyNames As String()" />
       <MemberSignature Language="F#" Value="member this.DataKeyNames : string[] with get, set" Usage="System.Web.UI.WebControls.GridView.DataKeyNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
@@ -1987,6 +2016,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.DataKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataKeys As DataKeyArray" />
       <MemberSignature Language="F#" Value="member this.DataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.GridView.DataKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKeyArray ^ DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys</InterfaceMember>
@@ -2042,6 +2072,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.DeleteMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteMethod As String" />
       <MemberSignature Language="F#" Value="member this.DeleteMethod : string with get, set" Usage="System.Web.UI.WebControls.GridView.DeleteMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeleteMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2079,6 +2110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.DeleteRow(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteRow (rowIndex As Integer)" />
       <MemberSignature Language="F#" Value="abstract member DeleteRow : int -&gt; unit&#xA;override this.DeleteRow : int -&gt; unit" Usage="gridView.DeleteRow rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteRow(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2123,6 +2155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EditIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.EditIndex : int with get, set" Usage="System.Web.UI.WebControls.GridView.EditIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EditIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2184,6 +2217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditRowStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.EditRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.EditRowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ EditRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2244,6 +2278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmptyDataRowStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.EmptyDataRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ EmptyDataRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2306,6 +2341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EmptyDataTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyDataTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.EmptyDataTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.GridView.EmptyDataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EmptyDataTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2366,6 +2402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EmptyDataText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyDataText As String" />
       <MemberSignature Language="F#" Value="member this.EmptyDataText : string with get, set" Usage="System.Web.UI.WebControls.GridView.EmptyDataText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyDataText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2416,6 +2453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EnableModelValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableModelValidation As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableModelValidation : bool with get, set" Usage="System.Web.UI.WebControls.GridView.EnableModelValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableModelValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2442,6 +2480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EnablePersistedSelection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnablePersistedSelection As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnablePersistedSelection : bool with get, set" Usage="System.Web.UI.WebControls.GridView.EnablePersistedSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection</InterfaceMember>
@@ -2478,6 +2517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.EnableSortingAndPagingCallbacks" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableSortingAndPagingCallbacks As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableSortingAndPagingCallbacks : bool with get, set" Usage="System.Web.UI.WebControls.GridView.EnableSortingAndPagingCallbacks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableSortingAndPagingCallbacks { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2528,6 +2568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.ExtractRowValues(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.GridViewRow,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExtractRowValues (fieldValues As IOrderedDictionary, row As GridViewRow, includeReadOnlyFields As Boolean, includePrimaryKey As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member ExtractRowValues : System.Collections.Specialized.IOrderedDictionary * System.Web.UI.WebControls.GridViewRow * bool * bool -&gt; unit&#xA;override this.ExtractRowValues : System.Collections.Specialized.IOrderedDictionary * System.Web.UI.WebControls.GridViewRow * bool * bool -&gt; unit" Usage="gridView.ExtractRowValues (fieldValues, row, includeReadOnlyFields, includePrimaryKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExtractRowValues(System::Collections::Specialized::IOrderedDictionary ^ fieldValues, System::Web::UI::WebControls::GridViewRow ^ row, bool includeReadOnlyFields, bool includePrimaryKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2571,6 +2612,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.FooterRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FooterRow As GridViewRow" />
       <MemberSignature Language="F#" Value="member this.FooterRow : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridView.FooterRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridViewRow ^ FooterRow { System::Web::UI::WebControls::GridViewRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2624,6 +2666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.FooterStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FooterStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.FooterStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.FooterStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ FooterStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2687,6 +2730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.GetCallbackResult" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCallbackResult () As String" />
       <MemberSignature Language="F#" Value="abstract member GetCallbackResult : unit -&gt; string&#xA;override this.GetCallbackResult : unit -&gt; string" Usage="gridView.GetCallbackResult " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetCallbackResult();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.ICallbackEventHandler.GetCallbackResult</InterfaceMember>
@@ -2718,6 +2762,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetCallbackScript (buttonControl As IButtonControl, argument As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetCallbackScript : System.Web.UI.WebControls.IButtonControl * string -&gt; string&#xA;override this.GetCallbackScript : System.Web.UI.WebControls.IButtonControl * string -&gt; string" Usage="gridView.GetCallbackScript (buttonControl, argument)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetCallbackScript(System::Web::UI::WebControls::IButtonControl ^ buttonControl, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)</InterfaceMember>
@@ -2755,6 +2800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.GridLines" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GridLines As GridLines" />
       <MemberSignature Language="F#" Value="member this.GridLines : System.Web.UI.WebControls.GridLines with get, set" Usage="System.Web.UI.WebControls.GridView.GridLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridLines GridLines { System::Web::UI::WebControls::GridLines get(); void set(System::Web::UI::WebControls::GridLines value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2805,6 +2851,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.HeaderRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderRow As GridViewRow" />
       <MemberSignature Language="F#" Value="member this.HeaderRow : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridView.HeaderRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridViewRow ^ HeaderRow { System::Web::UI::WebControls::GridViewRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2858,6 +2905,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2921,6 +2969,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.HorizontalAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HorizontalAlign As HorizontalAlign" />
       <MemberSignature Language="F#" Value="member this.HorizontalAlign : System.Web.UI.WebControls.HorizontalAlign with get, set" Usage="System.Web.UI.WebControls.GridView.HorizontalAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2972,6 +3021,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializePager(class System.Web.UI.WebControls.GridViewRow row, int32 columnSpan, class System.Web.UI.WebControls.PagedDataSource pagedDataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.InitializePager(System.Web.UI.WebControls.GridViewRow,System.Int32,System.Web.UI.WebControls.PagedDataSource)" />
       <MemberSignature Language="F#" Value="abstract member InitializePager : System.Web.UI.WebControls.GridViewRow * int * System.Web.UI.WebControls.PagedDataSource -&gt; unit&#xA;override this.InitializePager : System.Web.UI.WebControls.GridViewRow * int * System.Web.UI.WebControls.PagedDataSource -&gt; unit" Usage="gridView.InitializePager (row, columnSpan, pagedDataSource)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializePager(System::Web::UI::WebControls::GridViewRow ^ row, int columnSpan, System::Web::UI::WebControls::PagedDataSource ^ pagedDataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3011,6 +3061,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.InitializeRow(System.Web.UI.WebControls.GridViewRow,System.Web.UI.WebControls.DataControlField[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeRow (row As GridViewRow, fields As DataControlField())" />
       <MemberSignature Language="F#" Value="abstract member InitializeRow : System.Web.UI.WebControls.GridViewRow * System.Web.UI.WebControls.DataControlField[] -&gt; unit&#xA;override this.InitializeRow : System.Web.UI.WebControls.GridViewRow * System.Web.UI.WebControls.DataControlField[] -&gt; unit" Usage="gridView.InitializeRow (row, fields)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeRow(System::Web::UI::WebControls::GridViewRow ^ row, cli::array &lt;System::Web::UI::WebControls::DataControlField ^&gt; ^ fields);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3047,6 +3098,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsBindableType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.IsBindableType(System.Type)" />
       <MemberSignature Language="F#" Value="abstract member IsBindableType : Type -&gt; bool&#xA;override this.IsBindableType : Type -&gt; bool" Usage="gridView.IsBindableType type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsBindableType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3112,6 +3164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="gridView.LoadControlState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3146,6 +3199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="gridView.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3177,6 +3231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="gridView.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3214,6 +3269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnDataPropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataPropertyChanged ()" />
       <MemberSignature Language="F#" Value="override this.OnDataPropertyChanged : unit -&gt; unit" Usage="gridView.OnDataPropertyChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataPropertyChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3248,6 +3304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnDataSourceViewChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataSourceViewChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnDataSourceViewChanged : obj * EventArgs -&gt; unit" Usage="gridView.OnDataSourceViewChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataSourceViewChanged(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3289,6 +3346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="gridView.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3326,6 +3384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnPageIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPageIndexChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPageIndexChanged : EventArgs -&gt; unit&#xA;override this.OnPageIndexChanged : EventArgs -&gt; unit" Usage="gridView.OnPageIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPageIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3367,6 +3426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPageIndexChanging (e As GridViewPageEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPageIndexChanging : System.Web.UI.WebControls.GridViewPageEventArgs -&gt; unit&#xA;override this.OnPageIndexChanging : System.Web.UI.WebControls.GridViewPageEventArgs -&gt; unit" Usage="gridView.OnPageIndexChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPageIndexChanging(System::Web::UI::WebControls::GridViewPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3410,6 +3470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnPagePreLoad(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPagePreLoad (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPagePreLoad : obj * EventArgs -&gt; unit" Usage="gridView.OnPagePreLoad (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPagePreLoad(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3437,6 +3498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="gridView.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3475,6 +3537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowCancelingEdit (e As GridViewCancelEditEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowCancelingEdit : System.Web.UI.WebControls.GridViewCancelEditEventArgs -&gt; unit&#xA;override this.OnRowCancelingEdit : System.Web.UI.WebControls.GridViewCancelEditEventArgs -&gt; unit" Usage="gridView.OnRowCancelingEdit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowCancelingEdit(System::Web::UI::WebControls::GridViewCancelEditEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3522,6 +3585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowCommand(System.Web.UI.WebControls.GridViewCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowCommand (e As GridViewCommandEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowCommand : System.Web.UI.WebControls.GridViewCommandEventArgs -&gt; unit&#xA;override this.OnRowCommand : System.Web.UI.WebControls.GridViewCommandEventArgs -&gt; unit" Usage="gridView.OnRowCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowCommand(System::Web::UI::WebControls::GridViewCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3571,6 +3635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowCreated (e As GridViewRowEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowCreated : System.Web.UI.WebControls.GridViewRowEventArgs -&gt; unit&#xA;override this.OnRowCreated : System.Web.UI.WebControls.GridViewRowEventArgs -&gt; unit" Usage="gridView.OnRowCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowCreated(System::Web::UI::WebControls::GridViewRowEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3620,6 +3685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowDataBound (e As GridViewRowEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowDataBound : System.Web.UI.WebControls.GridViewRowEventArgs -&gt; unit&#xA;override this.OnRowDataBound : System.Web.UI.WebControls.GridViewRowEventArgs -&gt; unit" Usage="gridView.OnRowDataBound e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowDataBound(System::Web::UI::WebControls::GridViewRowEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3663,6 +3729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowDeleted (e As GridViewDeletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowDeleted : System.Web.UI.WebControls.GridViewDeletedEventArgs -&gt; unit&#xA;override this.OnRowDeleted : System.Web.UI.WebControls.GridViewDeletedEventArgs -&gt; unit" Usage="gridView.OnRowDeleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowDeleted(System::Web::UI::WebControls::GridViewDeletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3709,6 +3776,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowDeleting (e As GridViewDeleteEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowDeleting : System.Web.UI.WebControls.GridViewDeleteEventArgs -&gt; unit&#xA;override this.OnRowDeleting : System.Web.UI.WebControls.GridViewDeleteEventArgs -&gt; unit" Usage="gridView.OnRowDeleting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowDeleting(System::Web::UI::WebControls::GridViewDeleteEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3752,6 +3820,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowEditing (e As GridViewEditEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowEditing : System.Web.UI.WebControls.GridViewEditEventArgs -&gt; unit&#xA;override this.OnRowEditing : System.Web.UI.WebControls.GridViewEditEventArgs -&gt; unit" Usage="gridView.OnRowEditing e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowEditing(System::Web::UI::WebControls::GridViewEditEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3799,6 +3868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowUpdated (e As GridViewUpdatedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowUpdated : System.Web.UI.WebControls.GridViewUpdatedEventArgs -&gt; unit&#xA;override this.OnRowUpdated : System.Web.UI.WebControls.GridViewUpdatedEventArgs -&gt; unit" Usage="gridView.OnRowUpdated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowUpdated(System::Web::UI::WebControls::GridViewUpdatedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3844,6 +3914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRowUpdating (e As GridViewUpdateEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRowUpdating : System.Web.UI.WebControls.GridViewUpdateEventArgs -&gt; unit&#xA;override this.OnRowUpdating : System.Web.UI.WebControls.GridViewUpdateEventArgs -&gt; unit" Usage="gridView.OnRowUpdating e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRowUpdating(System::Web::UI::WebControls::GridViewUpdateEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3891,6 +3962,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="gridView.OnSelectedIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3940,6 +4012,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanging (e As GridViewSelectEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanging : System.Web.UI.WebControls.GridViewSelectEventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanging : System.Web.UI.WebControls.GridViewSelectEventArgs -&gt; unit" Usage="gridView.OnSelectedIndexChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanging(System::Web::UI::WebControls::GridViewSelectEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3982,6 +4055,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSorted (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSorted : EventArgs -&gt; unit&#xA;override this.OnSorted : EventArgs -&gt; unit" Usage="gridView.OnSorted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSorted(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4024,6 +4098,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSorting (e As GridViewSortEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSorting : System.Web.UI.WebControls.GridViewSortEventArgs -&gt; unit&#xA;override this.OnSorting : System.Web.UI.WebControls.GridViewSortEventArgs -&gt; unit" Usage="gridView.OnSorting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSorting(System::Web::UI::WebControls::GridViewSortEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4068,6 +4143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.PageCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PageCount As Integer" />
       <MemberSignature Language="F#" Value="member this.PageCount : int" Usage="System.Web.UI.WebControls.GridView.PageCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4121,6 +4197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.PageIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PageIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.PageIndex : int with get, set" Usage="System.Web.UI.WebControls.GridView.PageIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4175,6 +4252,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PageIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PageIndexChanged : EventHandler " Usage="member this.PageIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PageIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4217,6 +4295,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PageIndexChanging As GridViewPageEventHandler " />
       <MemberSignature Language="F#" Value="member this.PageIndexChanging : System.Web.UI.WebControls.GridViewPageEventHandler " Usage="member this.PageIndexChanging : System.Web.UI.WebControls.GridViewPageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewPageEventHandler ^ PageIndexChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4263,6 +4342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.PagerSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PagerSettings As PagerSettings" />
       <MemberSignature Language="F#" Value="member this.PagerSettings : System.Web.UI.WebControls.PagerSettings" Usage="System.Web.UI.WebControls.GridView.PagerSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::PagerSettings ^ PagerSettings { System::Web::UI::WebControls::PagerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4325,6 +4405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.PagerStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagerStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.PagerStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.PagerStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ PagerStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4394,6 +4475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PagerTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.PagerTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.GridView.PagerTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ PagerTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4468,6 +4550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.PageSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property PageSize As Integer" />
       <MemberSignature Language="F#" Value="member this.PageSize : int with get, set" Usage="System.Web.UI.WebControls.GridView.PageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4519,6 +4602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.PerformDataBinding(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding (data As IEnumerable)" />
       <MemberSignature Language="F#" Value="override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="gridView.PerformDataBinding data" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4553,6 +4637,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.PrepareControlHierarchy" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub PrepareControlHierarchy ()" />
       <MemberSignature Language="F#" Value="abstract member PrepareControlHierarchy : unit -&gt; unit&#xA;override this.PrepareControlHierarchy : unit -&gt; unit" Usage="gridView.PrepareControlHierarchy " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PrepareControlHierarchy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4583,6 +4668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.RaiseCallbackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaiseCallbackEvent (eventArgument As String)" />
       <MemberSignature Language="F#" Value="abstract member RaiseCallbackEvent : string -&gt; unit&#xA;override this.RaiseCallbackEvent : string -&gt; unit" Usage="gridView.RaiseCallbackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaiseCallbackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)</InterfaceMember>
@@ -4617,6 +4703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="gridView.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -4656,6 +4743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="gridView.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4690,6 +4778,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowCancelingEdit As GridViewCancelEditEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowCancelingEdit : System.Web.UI.WebControls.GridViewCancelEditEventHandler " Usage="member this.RowCancelingEdit : System.Web.UI.WebControls.GridViewCancelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewCancelEditEventHandler ^ RowCancelingEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4742,6 +4831,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowCommand As GridViewCommandEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowCommand : System.Web.UI.WebControls.GridViewCommandEventHandler " Usage="member this.RowCommand : System.Web.UI.WebControls.GridViewCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewCommandEventHandler ^ RowCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4806,6 +4896,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowCreated As GridViewRowEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowCreated : System.Web.UI.WebControls.GridViewRowEventHandler " Usage="member this.RowCreated : System.Web.UI.WebControls.GridViewRowEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewRowEventHandler ^ RowCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4848,6 +4939,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowDataBound" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowDataBound As GridViewRowEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowDataBound : System.Web.UI.WebControls.GridViewRowEventHandler " Usage="member this.RowDataBound : System.Web.UI.WebControls.GridViewRowEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewRowEventHandler ^ RowDataBound;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4892,6 +4984,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowDeleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowDeleted As GridViewDeletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowDeleted : System.Web.UI.WebControls.GridViewDeletedEventHandler " Usage="member this.RowDeleted : System.Web.UI.WebControls.GridViewDeletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewDeletedEventHandler ^ RowDeleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4939,6 +5032,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowDeleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowDeleting As GridViewDeleteEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowDeleting : System.Web.UI.WebControls.GridViewDeleteEventHandler " Usage="member this.RowDeleting : System.Web.UI.WebControls.GridViewDeleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewDeleteEventHandler ^ RowDeleting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4988,6 +5082,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowEditing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowEditing As GridViewEditEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowEditing : System.Web.UI.WebControls.GridViewEditEventHandler " Usage="member this.RowEditing : System.Web.UI.WebControls.GridViewEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewEditEventHandler ^ RowEditing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5040,6 +5135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.RowHeaderColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RowHeaderColumn As String" />
       <MemberSignature Language="F#" Value="member this.RowHeaderColumn : string with get, set" Usage="System.Web.UI.WebControls.GridView.RowHeaderColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RowHeaderColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5094,6 +5190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.Rows" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Rows As GridViewRowCollection" />
       <MemberSignature Language="F#" Value="member this.Rows : System.Web.UI.WebControls.GridViewRowCollection" Usage="System.Web.UI.WebControls.GridView.Rows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridViewRowCollection ^ Rows { System::Web::UI::WebControls::GridViewRowCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5142,6 +5239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.RowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.RowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.RowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ RowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5202,6 +5300,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowUpdated As GridViewUpdatedEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowUpdated : System.Web.UI.WebControls.GridViewUpdatedEventHandler " Usage="member this.RowUpdated : System.Web.UI.WebControls.GridViewUpdatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewUpdatedEventHandler ^ RowUpdated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5253,6 +5352,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.RowUpdating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RowUpdating As GridViewUpdateEventHandler " />
       <MemberSignature Language="F#" Value="member this.RowUpdating : System.Web.UI.WebControls.GridViewUpdateEventHandler " Usage="member this.RowUpdating : System.Web.UI.WebControls.GridViewUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewUpdateEventHandler ^ RowUpdating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5303,6 +5403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="gridView.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5335,6 +5436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="gridView.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5356,6 +5458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SelectedDataKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedDataKey As DataKey" />
       <MemberSignature Language="F#" Value="member this.SelectedDataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.UI.WebControls.GridView.SelectedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey</InterfaceMember>
@@ -5417,6 +5520,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.GridView.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex</InterfaceMember>
@@ -5468,6 +5572,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.SelectedIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5508,6 +5613,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanging As GridViewSelectEventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedIndexChanging : System.Web.UI.WebControls.GridViewSelectEventHandler " Usage="member this.SelectedIndexChanging : System.Web.UI.WebControls.GridViewSelectEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewSelectEventHandler ^ SelectedIndexChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5554,6 +5660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SelectedPersistedDataKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedPersistedDataKey As DataKey" />
       <MemberSignature Language="F#" Value="member this.SelectedPersistedDataKey : System.Web.UI.WebControls.DataKey with get, set" Usage="System.Web.UI.WebControls.GridView.SelectedPersistedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedPersistedDataKey { System::Web::UI::WebControls::DataKey ^ get(); void set(System::Web::UI::WebControls::DataKey ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5582,6 +5689,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SelectedRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedRow As GridViewRow" />
       <MemberSignature Language="F#" Value="member this.SelectedRow : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridView.SelectedRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridViewRow ^ SelectedRow { System::Web::UI::WebControls::GridViewRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5634,6 +5742,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedRowStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.SelectedRowStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.SelectedRowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SelectedRowStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5694,6 +5803,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedValue As Object" />
       <MemberSignature Language="F#" Value="member this.SelectedValue : obj" Usage="System.Web.UI.WebControls.GridView.SelectedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5740,6 +5850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.SelectRow(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectRow (rowIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.SelectRow : int -&gt; unit" Usage="gridView.SelectRow rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectRow(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5770,6 +5881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.SetEditRow(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEditRow (rowIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetEditRow : int -&gt; unit" Usage="gridView.SetEditRow rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEditRow(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5800,6 +5912,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.SetPageIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPageIndex (rowIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetPageIndex : int -&gt; unit" Usage="gridView.SetPageIndex rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPageIndex(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5830,6 +5943,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.ShowFooter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowFooter As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowFooter : bool with get, set" Usage="System.Web.UI.WebControls.GridView.ShowFooter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowFooter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5873,6 +5987,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.ShowHeader" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowHeader As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowHeader : bool with get, set" Usage="System.Web.UI.WebControls.GridView.ShowHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5916,6 +6031,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.ShowHeaderWhenEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowHeaderWhenEmpty As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowHeaderWhenEmpty : bool with get, set" Usage="System.Web.UI.WebControls.GridView.ShowHeaderWhenEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHeaderWhenEmpty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5941,6 +6057,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort(string sortExpression, valuetype System.Web.UI.WebControls.SortDirection sortDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
       <MemberSignature Language="F#" Value="abstract member Sort : string * System.Web.UI.WebControls.SortDirection -&gt; unit&#xA;override this.Sort : string * System.Web.UI.WebControls.SortDirection -&gt; unit" Usage="gridView.Sort (sortExpression, sortDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort(System::String ^ sortExpression, System::Web::UI::WebControls::SortDirection sortDirection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5989,6 +6106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortDirection As SortDirection" />
       <MemberSignature Language="F#" Value="member this.SortDirection : System.Web.UI.WebControls.SortDirection" Usage="System.Web.UI.WebControls.GridView.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::SortDirection SortDirection { System::Web::UI::WebControls::SortDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6044,6 +6162,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.Sorted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Sorted As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Sorted : EventHandler " Usage="member this.Sorted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Sorted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6085,6 +6204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SortedAscendingCellStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortedAscendingCellStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.SortedAscendingCellStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.SortedAscendingCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SortedAscendingCellStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6124,6 +6244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SortedAscendingHeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortedAscendingHeaderStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.SortedAscendingHeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.SortedAscendingHeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SortedAscendingHeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6163,6 +6284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SortedDescendingCellStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortedDescendingCellStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.SortedDescendingCellStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.SortedDescendingCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SortedDescendingCellStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6202,6 +6324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SortedDescendingHeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortedDescendingHeaderStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.SortedDescendingHeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.GridView.SortedDescendingHeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SortedDescendingHeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6241,6 +6364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortExpression As String" />
       <MemberSignature Language="F#" Value="member this.SortExpression : string" Usage="System.Web.UI.WebControls.GridView.SortExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SortExpression { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6291,6 +6415,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.GridView.Sorting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Sorting As GridViewSortEventHandler " />
       <MemberSignature Language="F#" Value="member this.Sorting : System.Web.UI.WebControls.GridViewSortEventHandler " Usage="member this.Sorting : System.Web.UI.WebControls.GridViewSortEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::GridViewSortEventHandler ^ Sorting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6341,6 +6466,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.ICallbackEventHandler.GetCallbackResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.System#Web#UI#ICallbackEventHandler#GetCallbackResult" />
       <MemberSignature Language="VB.NET" Value="Function GetCallbackResult () As String Implements ICallbackEventHandler.GetCallbackResult" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.ICallbackEventHandler.GetCallbackResult() = System::Web::UI::ICallbackEventHandler::GetCallbackResult;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.ICallbackEventHandler.GetCallbackResult</InterfaceMember>
@@ -6371,6 +6497,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaiseCallbackEvent (eventArgument As String) Implements ICallbackEventHandler.RaiseCallbackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System::String ^ eventArgument) = System::Web::UI::ICallbackEventHandler::RaiseCallbackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)</InterfaceMember>
@@ -6405,6 +6532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#IDataKeysControl#ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ClientIDRowSuffixDataKeys As DataKeyArray Implements IDataKeysControl.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKeyArray ^ System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys</InterfaceMember>
@@ -6434,6 +6562,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -6472,6 +6601,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(class System.Web.UI.WebControls.IButtonControl buttonControl, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#ICallbackContainer#GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
       <MemberSignature Language="VB.NET" Value="Function GetCallbackScript (buttonControl As IButtonControl, argument As String) As String Implements ICallbackContainer.GetCallbackScript" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System::Web::UI::WebControls::IButtonControl ^ buttonControl, System::String ^ argument) = System::Web::UI::WebControls::ICallbackContainer::GetCallbackScript;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)</InterfaceMember>
@@ -6509,6 +6639,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundControl#DataKeyNames" />
       <MemberSignature Language="VB.NET" Value=" Property DataKeyNames As String() Implements IDataBoundControl.DataKeyNames" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundControl.DataKeyNames" />
+      <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundControl.DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
@@ -6543,6 +6674,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundControl#DataMember" />
       <MemberSignature Language="VB.NET" Value=" Property DataMember As String Implements IDataBoundControl.DataMember" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundControl.DataMember" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataMember</InterfaceMember>
@@ -6577,6 +6709,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundControl#DataSource" />
       <MemberSignature Language="VB.NET" Value=" Property DataSource As Object Implements IDataBoundControl.DataSource" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundControl.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.WebControls.IDataBoundControl.DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSource</InterfaceMember>
@@ -6609,6 +6742,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundControl#DataSourceID" />
       <MemberSignature Language="VB.NET" Value=" Property DataSourceID As String Implements IDataBoundControl.DataSourceID" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundControl.DataSourceID" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceID</InterfaceMember>
@@ -6641,6 +6775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundControl#DataSourceObject" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataSourceObject As IDataSource Implements IDataBoundControl.DataSourceObject" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundControl.DataSourceObject" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::IDataSource ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceObject { System::Web::UI::IDataSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceObject</InterfaceMember>
@@ -6673,6 +6808,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundListControl#ClientIDRowSuffix" />
       <MemberSignature Language="VB.NET" Value=" Property ClientIDRowSuffix As String() Implements IDataBoundListControl.ClientIDRowSuffix" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix" />
+      <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix</InterfaceMember>
@@ -6703,6 +6839,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundListControl#DataKeys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataKeys As DataKeyArray Implements IDataBoundListControl.DataKeys" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundListControl.DataKeys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKeyArray ^ System.Web.UI.WebControls.IDataBoundListControl.DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys</InterfaceMember>
@@ -6735,6 +6872,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundListControl#EnablePersistedSelection" />
       <MemberSignature Language="VB.NET" Value=" Property EnablePersistedSelection As Boolean Implements IDataBoundListControl.EnablePersistedSelection" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection</InterfaceMember>
@@ -6768,6 +6906,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundListControl#SelectedDataKey" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectedDataKey As DataKey Implements IDataBoundListControl.SelectedDataKey" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey</InterfaceMember>
@@ -6800,6 +6939,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IDataBoundListControl#SelectedIndex" />
       <MemberSignature Language="VB.NET" Value=" Property SelectedIndex As Integer Implements IDataBoundListControl.SelectedIndex" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex</InterfaceMember>
@@ -6832,6 +6972,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IFieldControl#FieldsGenerator" />
       <MemberSignature Language="VB.NET" Value=" Property FieldsGenerator As IAutoFieldGenerator Implements IFieldControl.FieldsGenerator" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IFieldControl.FieldsGenerator" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::IAutoFieldGenerator ^ System.Web.UI.WebControls.IFieldControl.FieldsGenerator { System::Web::UI::IAutoFieldGenerator ^ get(); void set(System::Web::UI::IAutoFieldGenerator ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IFieldControl.FieldsGenerator</InterfaceMember>
@@ -6864,6 +7005,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IPersistedSelector#DataKey" />
       <MemberSignature Language="VB.NET" Value=" Property DataKey As DataKey Implements IPersistedSelector.DataKey" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.GridView.System.Web.UI.WebControls.IPersistedSelector.DataKey" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IPersistedSelector.DataKey { System::Web::UI::WebControls::DataKey ^ get(); void set(System::Web::UI::WebControls::DataKey ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IPersistedSelector.DataKey</InterfaceMember>
@@ -6896,6 +7038,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.PostBackOptions System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions(class System.Web.UI.WebControls.IButtonControl buttonControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.System#Web#UI#WebControls#IPostBackContainer#GetPostBackOptions(System.Web.UI.WebControls.IButtonControl)" />
       <MemberSignature Language="VB.NET" Value="Function GetPostBackOptions (buttonControl As IButtonControl) As PostBackOptions Implements IPostBackContainer.GetPostBackOptions" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Web::UI::PostBackOptions ^ System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions(System::Web::UI::WebControls::IButtonControl ^ buttonControl) = System::Web::UI::WebControls::IPostBackContainer::GetPostBackOptions;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions(System.Web.UI.WebControls.IButtonControl)</InterfaceMember>
@@ -6926,6 +7069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.GridView.TagKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -6958,6 +7102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.TopPagerRow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TopPagerRow As GridViewRow" />
       <MemberSignature Language="F#" Value="member this.TopPagerRow : System.Web.UI.WebControls.GridViewRow" Usage="System.Web.UI.WebControls.GridView.TopPagerRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridViewRow ^ TopPagerRow { System::Web::UI::WebControls::GridViewRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -7011,6 +7156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="gridView.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -7040,6 +7186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.UpdateMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateMethod As String" />
       <MemberSignature Language="F#" Value="member this.UpdateMethod : string with get, set" Usage="System.Web.UI.WebControls.GridView.UpdateMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UpdateMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -7077,6 +7224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridView.UpdateRow(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateRow (rowIndex As Integer, causesValidation As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member UpdateRow : int * bool -&gt; unit&#xA;override this.UpdateRow : int * bool -&gt; unit" Usage="gridView.UpdateRow (rowIndex, causesValidation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateRow(int rowIndex, bool causesValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -7126,6 +7274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.UseAccessibleHeader" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UseAccessibleHeader As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseAccessibleHeader : bool with get, set" Usage="System.Web.UI.WebControls.GridView.UseAccessibleHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseAccessibleHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -7172,6 +7321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridView.VirtualItemCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property VirtualItemCount As Integer" />
       <MemberSignature Language="F#" Value="member this.VirtualItemCount : int with get, set" Usage="System.Web.UI.WebControls.GridView.VirtualItemCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VirtualItemCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

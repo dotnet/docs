@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.OfTypeExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class OfTypeExpression&#xA;Inherits DataSourceExpression" />
   <TypeSignature Language="F#" Value="type OfTypeExpression = class&#xA;    inherit DataSourceExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OfTypeExpression : System::Web::UI::WebControls::Expressions::DataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.OfTypeExpression.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OfTypeExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.OfTypeExpression.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.Expressions.OfTypeExpression : Type -&gt; System.Web.UI.WebControls.Expressions.OfTypeExpression" Usage="new System.Web.UI.WebControls.Expressions.OfTypeExpression type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OfTypeExpression(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.OfTypeExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (query As IQueryable) As IQueryable" />
       <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="ofTypeExpression.GetQueryable query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.OfTypeExpression.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
       <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Web.UI.WebControls.Expressions.OfTypeExpression.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InvalidEnumArgumentException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidEnumArgumentException&#xA;Inherits ArgumentException" />
   <TypeSignature Language="F#" Value="type InvalidEnumArgumentException = class&#xA;    inherit ArgumentException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidEnumArgumentException : ArgumentException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidEnumArgumentException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidEnumArgumentException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidEnumArgumentException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidEnumArgumentException : string -&gt; System.ComponentModel.InvalidEnumArgumentException" Usage="new System.ComponentModel.InvalidEnumArgumentException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidEnumArgumentException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidEnumArgumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidEnumArgumentException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ComponentModel.InvalidEnumArgumentException" Usage="new System.ComponentModel.InvalidEnumArgumentException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidEnumArgumentException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidEnumArgumentException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidEnumArgumentException : string * Exception -&gt; System.ComponentModel.InvalidEnumArgumentException" Usage="new System.ComponentModel.InvalidEnumArgumentException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidEnumArgumentException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InvalidEnumArgumentException.#ctor(System.String,System.Int32,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (argumentName As String, invalidValue As Integer, enumClass As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.InvalidEnumArgumentException : string * int * Type -&gt; System.ComponentModel.InvalidEnumArgumentException" Usage="new System.ComponentModel.InvalidEnumArgumentException (argumentName, invalidValue, enumClass)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidEnumArgumentException(System::String ^ argumentName, int invalidValue, Type ^ enumClass);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

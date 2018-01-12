@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.SizeFConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class SizeFConverter&#xA;Inherits TypeConverter" />
   <TypeSignature Language="F#" Value="type SizeFConverter = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SizeFConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SizeFConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="sizeFConverter.CanConvertFrom (context, sourceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="sizeFConverter.CanConvertTo (context, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
       <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="sizeFConverter.ConvertFrom (context, culture, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
       <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="sizeFConverter.ConvertTo (context, culture, value, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateInstance (context As ITypeDescriptorContext, propertyValues As IDictionary) As Object" />
       <MemberSignature Language="F#" Value="override this.CreateInstance : System.ComponentModel.ITypeDescriptorContext * System.Collections.IDictionary -&gt; obj" Usage="sizeFConverter.CreateInstance (context, propertyValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ CreateInstance(System::ComponentModel::ITypeDescriptorContext ^ context, System::Collections::IDictionary ^ propertyValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCreateInstanceSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.GetCreateInstanceSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="sizeFConverter.GetCreateInstanceSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetCreateInstanceSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="sizeFConverter.GetProperties (context, value, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -288,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeFConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="sizeFConverter.GetPropertiesSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

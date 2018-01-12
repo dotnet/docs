@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NamedPipeTransportSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeTransportSecurity" />
   <TypeSignature Language="F#" Value="type NamedPipeTransportSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeTransportSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NamedPipeTransportSecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeTransportSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NamedPipeTransportSecurity.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.NamedPipeTransportSecurity.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

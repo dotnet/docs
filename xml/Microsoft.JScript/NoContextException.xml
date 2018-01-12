@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NoContextException" />
   <TypeSignature Language="VB.NET" Value="Public Class NoContextException&#xA;Inherits ApplicationException" />
   <TypeSignature Language="F#" Value="type NoContextException = class&#xA;    inherit ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NoContextException : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoContextException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.NoContextException : string -&gt; Microsoft.JScript.NoContextException" Usage="new Microsoft.JScript.NoContextException m" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoContextException(System::String ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (s As SerializationInfo, c As StreamingContext)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.NoContextException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.JScript.NoContextException" Usage="new Microsoft.JScript.NoContextException (s, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoContextException(System::Runtime::Serialization::SerializationInfo ^ s, System::Runtime::Serialization::StreamingContext c);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NoContextException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.NoContextException : string * Exception -&gt; Microsoft.JScript.NoContextException" Usage="new Microsoft.JScript.NoContextException (m, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoContextException(System::String ^ m, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Flowchart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Flowchart&#xA;Inherits NativeActivity" />
   <TypeSignature Language="F#" Value="type Flowchart = class&#xA;    inherit NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Flowchart sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Flowchart.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Flowchart();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Flowchart.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="flowchart.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Flowchart.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="flowchart.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Flowchart.Nodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As Collection(Of FlowNode)" />
       <MemberSignature Language="F#" Value="member this.Nodes : System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.FlowNode&gt;" Usage="System.Activities.Statements.Flowchart.Nodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::FlowNode ^&gt; ^ Nodes { System::Collections::ObjectModel::Collection&lt;System::Activities::Statements::FlowNode ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Flowchart.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="flowchart.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Flowchart.StartNode" />
       <MemberSignature Language="VB.NET" Value="Public Property StartNode As FlowNode" />
       <MemberSignature Language="F#" Value="member this.StartNode : System.Activities.Statements.FlowNode with get, set" Usage="System.Activities.Statements.Flowchart.StartNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Statements::FlowNode ^ StartNode { System::Activities::Statements::FlowNode ^ get(); void set(System::Activities::Statements::FlowNode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Flowchart.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateInstance (updateContext As NativeActivityUpdateContext)" />
       <MemberSignature Language="F#" Value="override this.UpdateInstance : System.Activities.DynamicUpdate.NativeActivityUpdateContext -&gt; unit" Usage="flowchart.UpdateInstance updateContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateInstance(System::Activities::DynamicUpdate::NativeActivityUpdateContext ^ updateContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Flowchart.ValidateUnconnectedNodes" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateUnconnectedNodes As Boolean" />
       <MemberSignature Language="F#" Value="member this.ValidateUnconnectedNodes : bool with get, set" Usage="System.Activities.Statements.Flowchart.ValidateUnconnectedNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateUnconnectedNodes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Flowchart.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As Collection(Of Variable)" />
       <MemberSignature Language="F#" Value="member this.Variables : System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" Usage="System.Activities.Statements.Flowchart.Variables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ Variables { System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

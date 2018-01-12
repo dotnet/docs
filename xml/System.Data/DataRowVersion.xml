@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowVersion" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataRowVersion" />
   <TypeSignature Language="F#" Value="type DataRowVersion = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataRowVersion" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Current" />
       <MemberSignature Language="VB.NET" Value="Current" />
       <MemberSignature Language="F#" Value="Current = 512" Usage="System.Data.DataRowVersion.Current" />
+      <MemberSignature Language="C++ CLI" Value="Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 1536" Usage="System.Data.DataRowVersion.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Original" />
       <MemberSignature Language="VB.NET" Value="Original" />
       <MemberSignature Language="F#" Value="Original = 256" Usage="System.Data.DataRowVersion.Original" />
+      <MemberSignature Language="C++ CLI" Value="Original" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowVersion.Proposed" />
       <MemberSignature Language="VB.NET" Value="Proposed" />
       <MemberSignature Language="F#" Value="Proposed = 1024" Usage="System.Data.DataRowVersion.Proposed" />
+      <MemberSignature Language="C++ CLI" Value="Proposed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackWebRequestFactory" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PackWebRequestFactory&#xA;Implements IWebRequestCreate" />
   <TypeSignature Language="F#" Value="type PackWebRequestFactory = class&#xA;    interface IWebRequestCreate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PackWebRequestFactory sealed : System::Net::IWebRequestCreate" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequestFactory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PackWebRequestFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="C#" Value="System.Net.WebRequest IWebRequestCreate.Create (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Net.WebRequest System.Net.IWebRequestCreate.Create(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequestFactory.System#Net#IWebRequestCreate#Create(System.Uri)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Net::WebRequest ^ System.Net.IWebRequestCreate.Create(Uri ^ uri) = System::Net::IWebRequestCreate::Create;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Net.IWebRequestCreate.Create(System.Uri)</InterfaceMember>

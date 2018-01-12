@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EventHandlerList" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventHandlerList&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type EventHandlerList = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventHandlerList sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventHandlerList.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventHandlerList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventHandlerList.AddHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHandler (key As Object, value As Delegate)" />
       <MemberSignature Language="F#" Value="member this.AddHandler : obj * Delegate -&gt; unit" Usage="eventHandlerList.AddHandler (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandler(System::Object ^ key, Delegate ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventHandlerList.AddHandlers(System.ComponentModel.EventHandlerList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHandlers (listToAddFrom As EventHandlerList)" />
       <MemberSignature Language="F#" Value="member this.AddHandlers : System.ComponentModel.EventHandlerList -&gt; unit" Usage="eventHandlerList.AddHandlers listToAddFrom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandlers(System::ComponentModel::EventHandlerList ^ listToAddFrom);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventHandlerList.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventHandlerList.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventHandlerList.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Delegate" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : Delegate with get, set" Usage="System.ComponentModel.EventHandlerList.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Delegate ^ default[System::Object ^] { Delegate ^ get(System::Object ^ key); void set(System::Object ^ key, Delegate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventHandlerList.RemoveHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveHandler (key As Object, value As Delegate)" />
       <MemberSignature Language="F#" Value="member this.RemoveHandler : obj * Delegate -&gt; unit" Usage="eventHandlerList.RemoveHandler (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveHandler(System::Object ^ key, Delegate ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

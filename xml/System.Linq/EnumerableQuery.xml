@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.EnumerableQuery" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EnumerableQuery" />
   <TypeSignature Language="F#" Value="type EnumerableQuery = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumerableQuery abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.EnumerableQuery.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EnumerableQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>

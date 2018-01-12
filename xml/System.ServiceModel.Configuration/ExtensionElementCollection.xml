@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ExtensionElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtensionElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of ExtensionElement)" />
   <TypeSignature Language="F#" Value="type ExtensionElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;ExtensionElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtensionElementCollection : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::ExtensionElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtensionElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtensionElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtensionElementCollection.BaseAdd(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (element As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.BaseAdd : System.Configuration.ConfigurationElement -&gt; unit" Usage="extensionElementCollection.BaseAdd element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtensionElementCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (index As Integer, element As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.BaseAdd : int * System.Configuration.ConfigurationElement -&gt; unit" Usage="extensionElementCollection.BaseAdd (index, element)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(int index, System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtensionElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="extensionElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ExtensionElementCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.ServiceModel.Configuration.ExtensionElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

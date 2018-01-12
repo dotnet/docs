@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataRecord" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbDataRecord&#xA;Implements ICustomTypeDescriptor, IDataRecord" />
   <TypeSignature Language="F#" Value="type DbDataRecord = class&#xA;    interface ICustomTypeDescriptor&#xA;    interface IDataRecord" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbDataRecord abstract : System::ComponentModel::ICustomTypeDescriptor, System::Data::IDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbDataRecord();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataRecord.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.Common.DbDataRecord.FieldCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int FieldCount { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBoolean (i As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member GetBoolean : int -&gt; bool" Usage="dbDataRecord.GetBoolean i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool GetBoolean(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetByte (i As Integer) As Byte" />
       <MemberSignature Language="F#" Value="abstract member GetByte : int -&gt; byte" Usage="dbDataRecord.GetByte i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Byte GetByte(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBytes (i As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="dbDataRecord.GetBytes (i, dataIndex, buffer, bufferIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long GetBytes(int i, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChar (i As Integer) As Char" />
       <MemberSignature Language="F#" Value="abstract member GetChar : int -&gt; char" Usage="dbDataRecord.GetChar i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract char GetChar(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChars (i As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="F#" Value="abstract member GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="dbDataRecord.GetChars (i, dataIndex, buffer, bufferIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long GetChars(int i, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetData(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (i As Integer) As IDataReader" />
       <MemberSignature Language="F#" Value="abstract member GetData : int -&gt; System.Data.IDataReader&#xA;override this.GetData : int -&gt; System.Data.IDataReader" Usage="dbDataRecord.GetData i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::IDataReader ^ GetData(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
@@ -374,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDataTypeName (i As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetDataTypeName : int -&gt; string" Usage="dbDataRecord.GetDataTypeName i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetDataTypeName(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
@@ -411,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDateTime (i As Integer) As DateTime" />
       <MemberSignature Language="F#" Value="abstract member GetDateTime : int -&gt; DateTime" Usage="dbDataRecord.GetDateTime i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract DateTime GetDateTime(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
@@ -455,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetDbDataReader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDbDataReader (i As Integer) As DbDataReader" />
       <MemberSignature Language="F#" Value="abstract member GetDbDataReader : int -&gt; System.Data.Common.DbDataReader&#xA;override this.GetDbDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="dbDataRecord.GetDbDataReader i" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DbDataReader ^ GetDbDataReader(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -489,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDecimal (i As Integer) As Decimal" />
       <MemberSignature Language="F#" Value="abstract member GetDecimal : int -&gt; decimal" Usage="dbDataRecord.GetDecimal i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Decimal GetDecimal(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
@@ -533,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDouble (i As Integer) As Double" />
       <MemberSignature Language="F#" Value="abstract member GetDouble : int -&gt; double" Usage="dbDataRecord.GetDouble i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract double GetDouble(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
@@ -577,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFieldType (i As Integer) As Type" />
       <MemberSignature Language="F#" Value="abstract member GetFieldType : int -&gt; Type" Usage="dbDataRecord.GetFieldType i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetFieldType(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
@@ -614,6 +629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFloat (i As Integer) As Single" />
       <MemberSignature Language="F#" Value="abstract member GetFloat : int -&gt; single" Usage="dbDataRecord.GetFloat i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract float GetFloat(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
@@ -658,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGuid (i As Integer) As Guid" />
       <MemberSignature Language="F#" Value="abstract member GetGuid : int -&gt; Guid" Usage="dbDataRecord.GetGuid i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Guid GetGuid(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
@@ -696,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInt16 (i As Integer) As Short" />
       <MemberSignature Language="F#" Value="abstract member GetInt16 : int -&gt; int16" Usage="dbDataRecord.GetInt16 i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract short GetInt16(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
@@ -740,6 +758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInt32 (i As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetInt32 : int -&gt; int" Usage="dbDataRecord.GetInt32 i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetInt32(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
@@ -784,6 +803,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInt64 (i As Integer) As Long" />
       <MemberSignature Language="F#" Value="abstract member GetInt64 : int -&gt; int64" Usage="dbDataRecord.GetInt64 i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long GetInt64(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
@@ -828,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetName (i As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetName : int -&gt; string" Usage="dbDataRecord.GetName i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetName(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
@@ -865,6 +886,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetOrdinal (name As String) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetOrdinal : string -&gt; int" Usage="dbDataRecord.GetOrdinal name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetOrdinal(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
@@ -902,6 +924,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetString (i As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetString : int -&gt; string" Usage="dbDataRecord.GetString i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetString(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
@@ -946,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (i As Integer) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetValue : int -&gt; obj" Usage="dbDataRecord.GetValue i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
@@ -983,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetValues : obj[] -&gt; int" Usage="dbDataRecord.GetValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
@@ -1027,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsDBNull (i As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsDBNull : int -&gt; bool" Usage="dbDataRecord.IsDBNull i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsDBNull(int i);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
@@ -1082,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataRecord.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(i As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.Common.DbDataRecord.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ default[int] { System::Object ^ get(int i); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
@@ -1119,6 +1146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataRecord.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.Common.DbDataRecord.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
@@ -1155,6 +1183,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetAttributes" />
       <MemberSignature Language="VB.NET" Value="Function GetAttributes () As AttributeCollection Implements ICustomTypeDescriptor.GetAttributes" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::AttributeCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetAttributes() = System::ComponentModel::ICustomTypeDescriptor::GetAttributes;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes</InterfaceMember>
@@ -1194,6 +1223,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetClassName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetClassName" />
       <MemberSignature Language="VB.NET" Value="Function GetClassName () As String Implements ICustomTypeDescriptor.GetClassName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetClassName() = System::ComponentModel::ICustomTypeDescriptor::GetClassName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetClassName</InterfaceMember>
@@ -1233,6 +1263,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetComponentName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetComponentName" />
       <MemberSignature Language="VB.NET" Value="Function GetComponentName () As String Implements ICustomTypeDescriptor.GetComponentName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetComponentName() = System::ComponentModel::ICustomTypeDescriptor::GetComponentName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName</InterfaceMember>
@@ -1272,6 +1303,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetConverter" />
       <MemberSignature Language="VB.NET" Value="Function GetConverter () As TypeConverter Implements ICustomTypeDescriptor.GetConverter" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::TypeConverter ^ System.ComponentModel.ICustomTypeDescriptor.GetConverter() = System::ComponentModel::ICustomTypeDescriptor::GetConverter;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetConverter</InterfaceMember>
@@ -1311,6 +1343,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent" />
       <MemberSignature Language="VB.NET" Value="Function GetDefaultEvent () As EventDescriptor Implements ICustomTypeDescriptor.GetDefaultEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent</InterfaceMember>
@@ -1350,6 +1383,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="Function GetDefaultProperty () As PropertyDescriptor Implements ICustomTypeDescriptor.GetDefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultProperty;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty</InterfaceMember>
@@ -1389,6 +1423,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Function GetEditor (editorBaseType As Type) As Object Implements ICustomTypeDescriptor.GetEditor" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type ^ editorBaseType) = System::ComponentModel::ICustomTypeDescriptor::GetEditor;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)</InterfaceMember>
@@ -1431,6 +1466,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetEvents" />
       <MemberSignature Language="VB.NET" Value="Function GetEvents () As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents() = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents</InterfaceMember>
@@ -1470,6 +1506,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Function GetEvents (attributes As Attribute()) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])</InterfaceMember>
@@ -1512,6 +1549,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetProperties" />
       <MemberSignature Language="VB.NET" Value="Function GetProperties () As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties() = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties</InterfaceMember>
@@ -1551,6 +1589,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])</InterfaceMember>
@@ -1593,6 +1632,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(class System.ComponentModel.PropertyDescriptor pd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function GetPropertyOwner (pd As PropertyDescriptor) As Object Implements ICustomTypeDescriptor.GetPropertyOwner" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd) = System::ComponentModel::ICustomTypeDescriptor::GetPropertyOwner;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)</InterfaceMember>

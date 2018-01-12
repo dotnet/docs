@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationPropertyCollection&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type ConfigurationPropertyCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationPropertyCollection : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationPropertyCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.Add(System.Configuration.ConfigurationProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (property As ConfigurationProperty)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Configuration.ConfigurationProperty -&gt; unit" Usage="configurationPropertyCollection.Add property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Configuration::ConfigurationProperty ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="configurationPropertyCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="configurationPropertyCollection.Contains name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -240,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.CopyTo(System.Configuration.ConfigurationProperty[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ConfigurationProperty(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.Configuration.ConfigurationProperty[] * int -&gt; unit" Usage="configurationPropertyCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Configuration::ConfigurationProperty ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Configuration.ConfigurationPropertyCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -311,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="configurationPropertyCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -358,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Configuration.ConfigurationPropertyCollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -401,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ConfigurationProperty" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.ConfigurationProperty" Usage="System.Configuration.ConfigurationPropertyCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationProperty ^ default[System::String ^] { System::Configuration::ConfigurationProperty ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -444,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; bool" Usage="configurationPropertyCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -497,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationPropertyCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Configuration.ConfigurationPropertyCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -537,6 +549,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPropertyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>

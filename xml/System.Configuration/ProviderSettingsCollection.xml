@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProviderSettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProviderSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type ProviderSettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProviderSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderSettingsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.Add(System.Configuration.ProviderSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (provider As ProviderSettings)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Configuration.ProviderSettings -&gt; unit" Usage="providerSettingsCollection.Add provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Configuration::ProviderSettings ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="providerSettingsCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="providerSettingsCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="providerSettingsCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(n As Integer) As ProviderSettings" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.ProviderSettings with get, set" Usage="System.Configuration.ProviderSettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettings ^ default[int] { System::Configuration::ProviderSettings ^ get(int n); void set(int n, System::Configuration::ProviderSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettingsCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As ProviderSettings" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.ProviderSettings" Usage="System.Configuration.ProviderSettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettings ^ default[System::String ^] { System::Configuration::ProviderSettings ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ProviderSettingsCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettingsCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="providerSettingsCollection.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

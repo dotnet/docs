@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ExtensionsSection" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtensionsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ExtensionsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtensionsSection : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtensionsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtensionsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ExtensionsSection.BehaviorExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BehaviorExtensions As ExtensionElementCollection" />
       <MemberSignature Language="F#" Value="member this.BehaviorExtensions : System.ServiceModel.Configuration.ExtensionElementCollection" Usage="System.ServiceModel.Configuration.ExtensionsSection.BehaviorExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ExtensionElementCollection ^ BehaviorExtensions { System::ServiceModel::Configuration::ExtensionElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ExtensionsSection.BindingElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingElementExtensions As ExtensionElementCollection" />
       <MemberSignature Language="F#" Value="member this.BindingElementExtensions : System.ServiceModel.Configuration.ExtensionElementCollection" Usage="System.ServiceModel.Configuration.ExtensionsSection.BindingElementExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ExtensionElementCollection ^ BindingElementExtensions { System::ServiceModel::Configuration::ExtensionElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ExtensionsSection.BindingExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingExtensions As ExtensionElementCollection" />
       <MemberSignature Language="F#" Value="member this.BindingExtensions : System.ServiceModel.Configuration.ExtensionElementCollection" Usage="System.ServiceModel.Configuration.ExtensionsSection.BindingExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ExtensionElementCollection ^ BindingExtensions { System::ServiceModel::Configuration::ExtensionElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ExtensionsSection.EndpointExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointExtensions As ExtensionElementCollection" />
       <MemberSignature Language="F#" Value="member this.EndpointExtensions : System.ServiceModel.Configuration.ExtensionElementCollection" Usage="System.ServiceModel.Configuration.ExtensionsSection.EndpointExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ExtensionElementCollection ^ EndpointExtensions { System::ServiceModel::Configuration::ExtensionElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ExtensionsSection.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDefault ()" />
       <MemberSignature Language="F#" Value="override this.InitializeDefault : unit -&gt; unit" Usage="extensionsSection.InitializeDefault " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ExtensionsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ExtensionsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IFormatterConverter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFormatterConverter" />
   <TypeSignature Language="F#" Value="type IFormatterConverter = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFormatterConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.Convert(System.Object,System.Type)" />
       <MemberSignature Language="F#" Value="abstract member Convert : obj * Type -&gt; obj" Usage="iFormatterConverter.Convert (value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Convert(System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, valuetype System.TypeCode typeCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.Convert(System.Object,System.TypeCode)" />
       <MemberSignature Language="F#" Value="abstract member Convert : obj * TypeCode -&gt; obj" Usage="iFormatterConverter.Convert (value, typeCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Convert(System::Object ^ value, TypeCode typeCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToBoolean(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToBoolean (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ToBoolean : obj -&gt; bool" Usage="iFormatterConverter.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ToBoolean(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToByte(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByte (value As Object) As Byte" />
       <MemberSignature Language="F#" Value="abstract member ToByte : obj -&gt; byte" Usage="iFormatterConverter.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte ToByte(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToChar(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToChar (value As Object) As Char" />
       <MemberSignature Language="F#" Value="abstract member ToChar : obj -&gt; char" Usage="iFormatterConverter.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; char ToChar(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToDateTime(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDateTime (value As Object) As DateTime" />
       <MemberSignature Language="F#" Value="abstract member ToDateTime : obj -&gt; DateTime" Usage="iFormatterConverter.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime ToDateTime(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToDecimal(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDecimal (value As Object) As Decimal" />
       <MemberSignature Language="F#" Value="abstract member ToDecimal : obj -&gt; decimal" Usage="iFormatterConverter.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal ToDecimal(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToDouble(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDouble (value As Object) As Double" />
       <MemberSignature Language="F#" Value="abstract member ToDouble : obj -&gt; double" Usage="iFormatterConverter.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double ToDouble(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -358,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToInt16(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToInt16 (value As Object) As Short" />
       <MemberSignature Language="F#" Value="abstract member ToInt16 : obj -&gt; int16" Usage="iFormatterConverter.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short ToInt16(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -396,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToInt32(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToInt32 (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member ToInt32 : obj -&gt; int" Usage="iFormatterConverter.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -434,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToInt64(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToInt64 (value As Object) As Long" />
       <MemberSignature Language="F#" Value="abstract member ToInt64 : obj -&gt; int64" Usage="iFormatterConverter.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToInt64(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -472,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToSByte(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSByte (value As Object) As SByte" />
       <MemberSignature Language="F#" Value="abstract member ToSByte : obj -&gt; sbyte" Usage="iFormatterConverter.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::SByte ToSByte(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -510,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToSingle(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSingle (value As Object) As Single" />
       <MemberSignature Language="F#" Value="abstract member ToSingle : obj -&gt; single" Usage="iFormatterConverter.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float ToSingle(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -548,6 +562,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (value As Object) As String" />
       <MemberSignature Language="F#" Value="abstract member ToString : obj -&gt; string" Usage="iFormatterConverter.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -586,6 +601,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToUInt16(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt16 (value As Object) As UShort" />
       <MemberSignature Language="F#" Value="abstract member ToUInt16 : obj -&gt; uint16" Usage="iFormatterConverter.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt16 ToUInt16(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -624,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToUInt32(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt32 (value As Object) As UInteger" />
       <MemberSignature Language="F#" Value="abstract member ToUInt32 : obj -&gt; uint32" Usage="iFormatterConverter.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 ToUInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToUInt64(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt64 (value As Object) As ULong" />
       <MemberSignature Language="F#" Value="abstract member ToUInt64 : obj -&gt; uint64" Usage="iFormatterConverter.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 ToUInt64(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.UnaryOperationBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UnaryOperationBinder&#xA;Inherits DynamicMetaObjectBinder" />
   <TypeSignature Language="F#" Value="type UnaryOperationBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnaryOperationBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (operation As ExpressionType)" />
       <MemberSignature Language="F#" Value="new System.Dynamic.UnaryOperationBinder : System.Linq.Expressions.ExpressionType -&gt; System.Dynamic.UnaryOperationBinder" Usage="new System.Dynamic.UnaryOperationBinder operation" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UnaryOperationBinder(System::Linq::Expressions::ExpressionType operation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="unaryOperationBinder.Bind (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function FallbackUnaryOperation (target As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="member this.FallbackUnaryOperation : System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="unaryOperationBinder.FallbackUnaryOperation target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackUnaryOperation(System::Dynamic::DynamicMetaObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackUnaryOperation (target As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="abstract member FallbackUnaryOperation : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="unaryOperationBinder.FallbackUnaryOperation (target, errorSuggestion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackUnaryOperation(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.UnaryOperationBinder.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As ExpressionType" />
       <MemberSignature Language="F#" Value="member this.Operation : System.Linq.Expressions.ExpressionType" Usage="System.Dynamic.UnaryOperationBinder.Operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType Operation { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.UnaryOperationBinder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.UnaryOperationBinder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

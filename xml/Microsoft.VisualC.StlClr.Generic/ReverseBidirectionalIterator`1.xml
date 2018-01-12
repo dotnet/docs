@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ReverseBidirectionalIterator(Of TValue)&#xA;Implements IBidirectionalIterator(Of TValue)" />
   <TypeSignature Language="F#" Value="type ReverseBidirectionalIterator&lt;'Value&gt; = class&#xA;    interface IBidirectionalIterator&lt;'Value&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class ReverseBidirectionalIterator : Microsoft::VisualC::StlClr::Generic::IBidirectionalIterator&lt;TValue&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReverseBidirectionalIterator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Iter As IBidirectionalIterator(Of TValue))" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt; _Iter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReverseBidirectionalIterator(Microsoft::VisualC::StlClr::Generic::IBidirectionalIterator&lt;TValue&gt; ^ _Iter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ReverseBidirectionalIterator)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt; _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReverseBidirectionalIterator(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.base" />
       <MemberSignature Language="VB.NET" Value="Public Function base () As IBidirectionalIterator(Of TValue)" />
       <MemberSignature Language="F#" Value="member this.base : unit -&gt; Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;'Value&gt;" Usage="reverseBidirectionalIterator.base " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::IBidirectionalIterator&lt;TValue&gt; ^ base();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="reverseBidirectionalIterator.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.container" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function container () As Object" />
       <MemberSignature Language="F#" Value="abstract member container : unit -&gt; obj&#xA;override this.container : unit -&gt; obj" Usage="reverseBidirectionalIterator.container " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ container();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function equal_to (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool&#xA;override this.equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="reverseBidirectionalIterator.equal_to _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool equal_to(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Function equal_to (_Right As ReverseBidirectionalIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.equal_to : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; bool" Usage="reverseBidirectionalIterator.equal_to _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.next" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub next ()" />
       <MemberSignature Language="F#" Value="abstract member next : unit -&gt; unit&#xA;override this.next : unit -&gt; unit" Usage="reverseBidirectionalIterator.next " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void next();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Assign(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ReverseBidirectionalIterator) As ReverseBidirectionalIterator" />
       <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" Usage="reverseBidirectionalIterator.op_Assign _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ReverseBidirectionalIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Decrement :  -&gt; Void" Usage="reverseBidirectionalIterator.op_Decrement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -307,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ReverseBidirectionalIterator(Of TValue), A_0 As Integer) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; Void" Usage="reverseBidirectionalIterator.op_Decrement (, A_0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % , int A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -342,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( = ) : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="= _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -374,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As ReverseBidirectionalIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( = ) : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; bool" Usage="= _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -406,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Implicit~Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Widening Operator CType () As IBidirectionalIterator(Of TValue)" />
       <MemberSignature Language="F#" Value="member this.op_Implicit : unit -&gt; Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;'Value&gt;" Usage="reverseBidirectionalIterator.op_Implicit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; operator Microsoft::VisualC::StlClr::Generic::IBidirectionalIterator&lt;TValue&gt; ^();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -436,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ReverseBidirectionalIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Increment :  -&gt; Void" Usage="reverseBidirectionalIterator.op_Increment " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -460,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ReverseBidirectionalIterator(Of TValue), A_0 As Integer) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; Void" Usage="reverseBidirectionalIterator.op_Increment (, A_0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % , int A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -495,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="F#" Value="member this.op_Inequality : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="reverseBidirectionalIterator.op_Inequality _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -520,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As ReverseBidirectionalIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.op_Inequality : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; bool" Usage="reverseBidirectionalIterator.op_Inequality _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -545,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_MemberSelection(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ReverseBidirectionalIterator) As TValue" />
       <MemberSignature Language="F#" Value="static member op_MemberSelection : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt;.op_MemberSelection _Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_MemberSelection(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Left);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -577,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_PointerDereference(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ReverseBidirectionalIterator) As TValue" />
       <MemberSignature Language="F#" Value="static member op_PointerDereference : Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;'Value&gt;.op_PointerDereference _Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_PointerDereference(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator ^ _Left);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -609,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.prev" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub prev ()" />
       <MemberSignature Language="F#" Value="abstract member prev : unit -&gt; unit&#xA;override this.prev : unit -&gt; unit" Usage="reverseBidirectionalIterator.prev " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void prev();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1.prev</InterfaceMember>
@@ -632,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.valid" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function valid () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member valid : unit -&gt; bool&#xA;override this.valid : unit -&gt; bool" Usage="reverseBidirectionalIterator.valid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool valid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

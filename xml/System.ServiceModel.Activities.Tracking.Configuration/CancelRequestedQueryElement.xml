@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement" />
   <TypeSignature Language="VB.NET" Value="Public Class CancelRequestedQueryElement&#xA;Inherits TrackingQueryElement" />
   <TypeSignature Language="F#" Value="type CancelRequestedQueryElement = class&#xA;    inherit TrackingQueryElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CancelRequestedQueryElement : System::ServiceModel::Activities::Tracking::Configuration::TrackingQueryElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CancelRequestedQueryElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.ActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityName As String" />
       <MemberSignature Language="F#" Value="member this.ActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.ActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.ChildActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property ChildActivityName As String" />
       <MemberSignature Language="F#" Value="member this.ChildActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.ChildActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChildActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.NewTrackingQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewTrackingQuery () As TrackingQuery" />
       <MemberSignature Language="F#" Value="override this.NewTrackingQuery : unit -&gt; System.Activities.Tracking.TrackingQuery" Usage="cancelRequestedQueryElement.NewTrackingQuery " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Tracking::TrackingQuery ^ NewTrackingQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

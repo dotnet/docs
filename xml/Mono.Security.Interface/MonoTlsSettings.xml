@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MonoTlsSettings" />
   <TypeSignature Language="F#" Value="type MonoTlsSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MonoTlsSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MonoTlsSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CallbackNeedsCertificateChain" />
       <MemberSignature Language="VB.NET" Value="Public Property CallbackNeedsCertificateChain As Boolean" />
       <MemberSignature Language="F#" Value="member this.CallbackNeedsCertificateChain : bool with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.CallbackNeedsCertificateChain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CallbackNeedsCertificateChain { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CertificateValidator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateValidator As ICertificateValidator" />
       <MemberSignature Language="F#" Value="member this.CertificateValidator : Mono.Security.Interface.ICertificateValidator" Usage="Mono.Security.Interface.MonoTlsSettings.CertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::ICertificateValidator ^ CertificateValidator { Mono::Security::Interface::ICertificateValidator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CheckCertificateName" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCertificateName As Boolean" />
       <MemberSignature Language="F#" Value="member this.CheckCertificateName : bool with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.CheckCertificateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertificateName { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CheckCertificateRevocationStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCertificateRevocationStatus As Boolean" />
       <MemberSignature Language="F#" Value="member this.CheckCertificateRevocationStatus : bool with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.CheckCertificateRevocationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCertificateRevocationStatus { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.ClientCertificateSelectionCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCertificateSelectionCallback As MonoLocalCertificateSelectionCallback" />
       <MemberSignature Language="F#" Value="member this.ClientCertificateSelectionCallback : Mono.Security.Interface.MonoLocalCertificateSelectionCallback with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.ClientCertificateSelectionCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::MonoLocalCertificateSelectionCallback ^ ClientCertificateSelectionCallback { Mono::Security::Interface::MonoLocalCertificateSelectionCallback ^ get(); void set(Mono::Security::Interface::MonoLocalCertificateSelectionCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As MonoTlsSettings" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; Mono.Security.Interface.MonoTlsSettings" Usage="monoTlsSettings.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::Security::Interface::MonoTlsSettings ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.CloneWithValidator(Mono.Security.Interface.ICertificateValidator)" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneWithValidator (validator As ICertificateValidator) As MonoTlsSettings" />
       <MemberSignature Language="F#" Value="member this.CloneWithValidator : Mono.Security.Interface.ICertificateValidator -&gt; Mono.Security.Interface.MonoTlsSettings" Usage="monoTlsSettings.CloneWithValidator validator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::Security::Interface::MonoTlsSettings ^ CloneWithValidator(Mono::Security::Interface::ICertificateValidator ^ validator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.CopyDefaultSettings" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CopyDefaultSettings () As MonoTlsSettings" />
       <MemberSignature Language="F#" Value="static member CopyDefaultSettings : unit -&gt; Mono.Security.Interface.MonoTlsSettings" Usage="Mono.Security.Interface.MonoTlsSettings.CopyDefaultSettings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::Security::Interface::MonoTlsSettings ^ CopyDefaultSettings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.DefaultSettings" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultSettings As MonoTlsSettings" />
       <MemberSignature Language="F#" Value="member this.DefaultSettings : Mono.Security.Interface.MonoTlsSettings with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.DefaultSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Mono::Security::Interface::MonoTlsSettings ^ DefaultSettings { Mono::Security::Interface::MonoTlsSettings ^ get(); void set(Mono::Security::Interface::MonoTlsSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.EnabledCiphers" />
       <MemberSignature Language="VB.NET" Value="Public Property EnabledCiphers As CipherSuiteCode()" />
       <MemberSignature Language="F#" Value="member this.EnabledCiphers : Mono.Security.Interface.CipherSuiteCode[] with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.EnabledCiphers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Mono::Security::Interface::CipherSuiteCode&gt; ^ EnabledCiphers { cli::array &lt;Mono::Security::Interface::CipherSuiteCode&gt; ^ get(); void set(cli::array &lt;Mono::Security::Interface::CipherSuiteCode&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.EnabledProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Property EnabledProtocols As Nullable(Of TlsProtocols)" />
       <MemberSignature Language="F#" Value="member this.EnabledProtocols : Nullable&lt;Mono.Security.Interface.TlsProtocols&gt; with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.EnabledProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Mono::Security::Interface::TlsProtocols&gt; EnabledProtocols { Nullable&lt;Mono::Security::Interface::TlsProtocols&gt; get(); void set(Nullable&lt;Mono::Security::Interface::TlsProtocols&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -280,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.RemoteCertificateValidationCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoteCertificateValidationCallback As MonoRemoteCertificateValidationCallback" />
       <MemberSignature Language="F#" Value="member this.RemoteCertificateValidationCallback : Mono.Security.Interface.MonoRemoteCertificateValidationCallback with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.RemoteCertificateValidationCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::Security::Interface::MonoRemoteCertificateValidationCallback ^ RemoteCertificateValidationCallback { Mono::Security::Interface::MonoRemoteCertificateValidationCallback ^ get(); void set(Mono::Security::Interface::MonoRemoteCertificateValidationCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -300,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.SkipSystemValidators" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipSystemValidators As Boolean" />
       <MemberSignature Language="F#" Value="member this.SkipSystemValidators : bool with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.SkipSystemValidators" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipSystemValidators { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -320,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.TrustAnchors" />
       <MemberSignature Language="VB.NET" Value="Public Property TrustAnchors As X509CertificateCollection" />
       <MemberSignature Language="F#" Value="member this.TrustAnchors : System.Security.Cryptography.X509Certificates.X509CertificateCollection with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.TrustAnchors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ TrustAnchors { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); void set(System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -340,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.UserSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property UserSettings As Object" />
       <MemberSignature Language="F#" Value="member this.UserSettings : obj with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.UserSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserSettings { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -360,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.UseServicePointManagerCallback" />
       <MemberSignature Language="VB.NET" Value="Public Property UseServicePointManagerCallback As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.UseServicePointManagerCallback : Nullable&lt;bool&gt; with get, set" Usage="Mono.Security.Interface.MonoTlsSettings.UseServicePointManagerCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; UseServicePointManagerCallback { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityTokenHandlerElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type SecurityTokenHandlerElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenHandlerElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenHandlerElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="securityTokenHandlerElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="securityTokenHandlerElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.Init" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Init ()" />
       <MemberSignature Language="F#" Value="override this.Init : unit -&gt; unit" Usage="securityTokenHandlerElementCollection.Init " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Init();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.SecurityTokenHandlerConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenHandlerConfiguration As SecurityTokenHandlerConfigurationElement" />
       <MemberSignature Language="F#" Value="member this.SecurityTokenHandlerConfiguration : System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement with get, set" Usage="System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.SecurityTokenHandlerConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::SecurityTokenHandlerConfigurationElement ^ SecurityTokenHandlerConfiguration { System::IdentityModel::Configuration::SecurityTokenHandlerConfigurationElement ^ get(); void set(System::IdentityModel::Configuration::SecurityTokenHandlerConfigurationElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.WebSockets.AspNetWebSocketContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AspNetWebSocketContext&#xA;Inherits WebSocketContext" />
   <TypeSignature Language="F#" Value="type AspNetWebSocketContext = class&#xA;    inherit WebSocketContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspNetWebSocketContext abstract : System::Net::WebSockets::WebSocketContext" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebSockets.AspNetWebSocketContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AspNetWebSocketContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.AnonymousID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AnonymousID As String" />
       <MemberSignature Language="F#" Value="member this.AnonymousID : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.AnonymousID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnonymousID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Application" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Application As HttpApplicationStateBase" />
       <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationStateBase" Usage="System.Web.WebSockets.AspNetWebSocketContext.Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpApplicationStateBase ^ Application { System::Web::HttpApplicationStateBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.ApplicationPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ApplicationPath As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationPath : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.ApplicationPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Cache" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cache As Cache" />
       <MemberSignature Language="F#" Value="member this.Cache : System.Web.Caching.Cache" Usage="System.Web.WebSockets.AspNetWebSocketContext.Cache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Caching::Cache ^ Cache { System::Web::Caching::Cache ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.ClientCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ClientCertificate As HttpClientCertificate" />
       <MemberSignature Language="F#" Value="member this.ClientCertificate : System.Web.HttpClientCertificate" Usage="System.Web.WebSockets.AspNetWebSocketContext.ClientCertificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpClientCertificate ^ ClientCertificate { System::Web::HttpClientCertificate ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.ConnectionCount" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ConnectionCount As Integer" />
       <MemberSignature Language="F#" Value="member this.ConnectionCount : int" Usage="System.Web.WebSockets.AspNetWebSocketContext.ConnectionCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ConnectionCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.CookieCollection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CookieCollection As CookieCollection" />
       <MemberSignature Language="F#" Value="member this.CookieCollection : System.Net.CookieCollection" Usage="System.Web.WebSockets.AspNetWebSocketContext.CookieCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::CookieCollection ^ CookieCollection { System::Net::CookieCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Cookies" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cookies As HttpCookieCollection" />
       <MemberSignature Language="F#" Value="member this.Cookies : System.Web.HttpCookieCollection" Usage="System.Web.WebSockets.AspNetWebSocketContext.Cookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCookieCollection ^ Cookies { System::Web::HttpCookieCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.FilePath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FilePath As String" />
       <MemberSignature Language="F#" Value="member this.FilePath : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.FilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FilePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Web.WebSockets.AspNetWebSocketContext.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.WebSockets.AspNetWebSocketContext.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.IsClientConnected" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsClientConnected As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsClientConnected : bool" Usage="System.Web.WebSockets.AspNetWebSocketContext.IsClientConnected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClientConnected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -299,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.IsDebuggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsDebuggingEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDebuggingEnabled : bool" Usage="System.Web.WebSockets.AspNetWebSocketContext.IsDebuggingEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDebuggingEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.IsLocal" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsLocal As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLocal : bool" Usage="System.Web.WebSockets.AspNetWebSocketContext.IsLocal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -343,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.IsSecureConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecureConnection As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecureConnection : bool" Usage="System.Web.WebSockets.AspNetWebSocketContext.IsSecureConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecureConnection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +382,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As IDictionary" />
       <MemberSignature Language="F#" Value="member this.Items : System.Collections.IDictionary" Usage="System.Web.WebSockets.AspNetWebSocketContext.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Items { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.LogonUserIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LogonUserIdentity As WindowsIdentity" />
       <MemberSignature Language="F#" Value="member this.LogonUserIdentity : System.Security.Principal.WindowsIdentity" Usage="System.Web.WebSockets.AspNetWebSocketContext.LogonUserIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::WindowsIdentity ^ LogonUserIdentity { System::Security::Principal::WindowsIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Origin" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Origin As String" />
       <MemberSignature Language="F#" Value="member this.Origin : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Origin { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -427,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Path" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.PathInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PathInfo As String" />
       <MemberSignature Language="F#" Value="member this.PathInfo : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.PathInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PathInfo { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -483,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Profile" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Profile As ProfileBase" />
       <MemberSignature Language="F#" Value="member this.Profile : System.Web.Profile.ProfileBase" Usage="System.Web.WebSockets.AspNetWebSocketContext.Profile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Profile::ProfileBase ^ Profile { System::Web::Profile::ProfileBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -504,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.QueryString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryString As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.QueryString : System.Collections.Specialized.NameValueCollection" Usage="System.Web.WebSockets.AspNetWebSocketContext.QueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ QueryString { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -525,6 +549,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.RawUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RawUrl As String" />
       <MemberSignature Language="F#" Value="member this.RawUrl : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.RawUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RawUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -546,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Web.WebSockets.AspNetWebSocketContext.RequestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -567,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecWebSocketKey As String" />
       <MemberSignature Language="F#" Value="member this.SecWebSocketKey : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SecWebSocketKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -588,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecWebSocketProtocols As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="member this.SecWebSocketProtocols : seq&lt;string&gt;" Usage="System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ SecWebSocketProtocols { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -609,6 +637,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecWebSocketVersion As String" />
       <MemberSignature Language="F#" Value="member this.SecWebSocketVersion : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.SecWebSocketVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SecWebSocketVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -630,6 +659,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Server" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Server As HttpServerUtilityBase" />
       <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtilityBase" Usage="System.Web.WebSockets.AspNetWebSocketContext.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpServerUtilityBase ^ Server { System::Web::HttpServerUtilityBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -650,6 +680,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.ServerVariables" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerVariables As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.ServerVariables : System.Collections.Specialized.NameValueCollection" Usage="System.Web.WebSockets.AspNetWebSocketContext.ServerVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ ServerVariables { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -671,6 +702,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Timestamp As DateTime" />
       <MemberSignature Language="F#" Value="member this.Timestamp : DateTime" Usage="System.Web.WebSockets.AspNetWebSocketContext.Timestamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime Timestamp { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -692,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.Unvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Unvalidated As UnvalidatedRequestValuesBase" />
       <MemberSignature Language="F#" Value="member this.Unvalidated : System.Web.UnvalidatedRequestValuesBase" Usage="System.Web.WebSockets.AspNetWebSocketContext.Unvalidated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UnvalidatedRequestValuesBase ^ Unvalidated { System::Web::UnvalidatedRequestValuesBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -723,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.UrlReferrer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UrlReferrer As Uri" />
       <MemberSignature Language="F#" Value="member this.UrlReferrer : Uri" Usage="System.Web.WebSockets.AspNetWebSocketContext.UrlReferrer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ UrlReferrer { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -744,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.User" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property User As IPrincipal" />
       <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Web.WebSockets.AspNetWebSocketContext.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -765,6 +800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.UserAgent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserAgent As String" />
       <MemberSignature Language="F#" Value="member this.UserAgent : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.UserAgent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserAgent { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -786,6 +822,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.UserHostAddress" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserHostAddress As String" />
       <MemberSignature Language="F#" Value="member this.UserHostAddress : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.UserHostAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserHostAddress { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -807,6 +844,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.UserHostName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserHostName As String" />
       <MemberSignature Language="F#" Value="member this.UserHostName : string" Usage="System.Web.WebSockets.AspNetWebSocketContext.UserHostName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserHostName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -828,6 +866,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.UserLanguages" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserLanguages As String()" />
       <MemberSignature Language="F#" Value="member this.UserLanguages : string[]" Usage="System.Web.WebSockets.AspNetWebSocketContext.UserLanguages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ UserLanguages { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -849,6 +888,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.WebSockets.AspNetWebSocketContext.WebSocket" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WebSocket As WebSocket" />
       <MemberSignature Language="F#" Value="member this.WebSocket : System.Net.WebSockets.WebSocket" Usage="System.Web.WebSockets.AspNetWebSocketContext.WebSocket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebSockets::WebSocket ^ WebSocket { System::Net::WebSockets::WebSocket ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

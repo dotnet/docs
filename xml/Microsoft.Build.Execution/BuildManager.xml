@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildManager" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildManager&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type BuildManager = class&#xA;    interface INodePacketHandler&#xA;    interface IBuildComponentHost&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildManager : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Execution.BuildManager : string -&gt; Microsoft.Build.Execution.BuildManager" Usage="new Microsoft.Build.Execution.BuildManager hostName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildManager(System::String ^ hostName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.BeginBuild(Microsoft.Build.Execution.BuildParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginBuild (parameters As BuildParameters)" />
       <MemberSignature Language="F#" Value="member this.BeginBuild : Microsoft.Build.Execution.BuildParameters -&gt; unit" Usage="buildManager.BeginBuild parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginBuild(Microsoft::Build::Execution::BuildParameters ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.Build(Microsoft.Build.Execution.BuildParameters,Microsoft.Build.Execution.BuildRequestData)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (parameters As BuildParameters, requestData As BuildRequestData) As BuildResult" />
       <MemberSignature Language="F#" Value="member this.Build : Microsoft.Build.Execution.BuildParameters * Microsoft.Build.Execution.BuildRequestData -&gt; Microsoft.Build.Execution.BuildResult" Usage="buildManager.Build (parameters, requestData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::BuildResult ^ Build(Microsoft::Build::Execution::BuildParameters ^ parameters, Microsoft::Build::Execution::BuildRequestData ^ requestData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.BuildRequest(Microsoft.Build.Execution.BuildRequestData)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildRequest (requestData As BuildRequestData) As BuildResult" />
       <MemberSignature Language="F#" Value="member this.BuildRequest : Microsoft.Build.Execution.BuildRequestData -&gt; Microsoft.Build.Execution.BuildResult" Usage="buildManager.BuildRequest requestData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::BuildResult ^ BuildRequest(Microsoft::Build::Execution::BuildRequestData ^ requestData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.CancelAllSubmissions" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAllSubmissions ()" />
       <MemberSignature Language="F#" Value="member this.CancelAllSubmissions : unit -&gt; unit" Usage="buildManager.CancelAllSubmissions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAllSubmissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildManager.DefaultBuildManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultBuildManager As BuildManager" />
       <MemberSignature Language="F#" Value="member this.DefaultBuildManager : Microsoft.Build.Execution.BuildManager" Usage="Microsoft.Build.Execution.BuildManager.DefaultBuildManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Build::Execution::BuildManager ^ DefaultBuildManager { Microsoft::Build::Execution::BuildManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="buildManager.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -232,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.EndBuild" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndBuild ()" />
       <MemberSignature Language="F#" Value="member this.EndBuild : unit -&gt; unit" Usage="buildManager.EndBuild " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndBuild();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -260,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="buildManager.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!BuildManager ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Execution.ProjectInstance GetProjectInstanceForBuild(class Microsoft.Build.Evaluation.Project project) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.GetProjectInstanceForBuild(Microsoft.Build.Evaluation.Project)" />
       <MemberSignature Language="F#" Value="member this.GetProjectInstanceForBuild : Microsoft.Build.Evaluation.Project -&gt; Microsoft.Build.Execution.ProjectInstance" Usage="buildManager.GetProjectInstanceForBuild project" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::ProjectInstance ^ GetProjectInstanceForBuild(Microsoft::Build::Evaluation::Project ^ project);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.PendBuildRequest(Microsoft.Build.Execution.BuildRequestData)" />
       <MemberSignature Language="VB.NET" Value="Public Function PendBuildRequest (requestData As BuildRequestData) As BuildSubmission" />
       <MemberSignature Language="F#" Value="member this.PendBuildRequest : Microsoft.Build.Execution.BuildRequestData -&gt; Microsoft.Build.Execution.BuildSubmission" Usage="buildManager.PendBuildRequest requestData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Execution::BuildSubmission ^ PendBuildRequest(Microsoft::Build::Execution::BuildRequestData ^ requestData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildManager.ResetCaches" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetCaches ()" />
       <MemberSignature Language="F#" Value="member this.ResetCaches : unit -&gt; unit" Usage="buildManager.ResetCaches " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCaches();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

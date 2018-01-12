@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ProjectStartedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectStartedEventArgs&#xA;Inherits BuildStatusEventArgs" />
   <TypeSignature Language="F#" Value="type ProjectStartedEventArgs = class&#xA;    inherit BuildStatusEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectStartedEventArgs : Microsoft::Build::Framework::BuildStatusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ProjectStartedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, projectFile As String, targetNames As String, properties As IEnumerable, items As IEnumerable)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectStartedEventArgs : string * string * string * string * System.Collections.IEnumerable * System.Collections.IEnumerable -&gt; Microsoft.Build.Framework.ProjectStartedEventArgs" Usage="new Microsoft.Build.Framework.ProjectStartedEventArgs (message, helpKeyword, projectFile, targetNames, properties, items)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ targetNames, System::Collections::IEnumerable ^ properties, System::Collections::IEnumerable ^ items);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, projectFile As String, targetNames As String, properties As IEnumerable, items As IEnumerable, eventTimestamp As DateTime)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectStartedEventArgs : string * string * string * string * System.Collections.IEnumerable * System.Collections.IEnumerable * DateTime -&gt; Microsoft.Build.Framework.ProjectStartedEventArgs" Usage="new Microsoft.Build.Framework.ProjectStartedEventArgs (message, helpKeyword, projectFile, targetNames, properties, items, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ targetNames, System::Collections::IEnumerable ^ properties, System::Collections::IEnumerable ^ items, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,Microsoft.Build.Framework.BuildEventContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (projectId As Integer, message As String, helpKeyword As String, projectFile As String, targetNames As String, properties As IEnumerable, items As IEnumerable, parentBuildEventContext As BuildEventContext)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectStartedEventArgs : int * string * string * string * string * System.Collections.IEnumerable * System.Collections.IEnumerable * Microsoft.Build.Framework.BuildEventContext -&gt; Microsoft.Build.Framework.ProjectStartedEventArgs" Usage="new Microsoft.Build.Framework.ProjectStartedEventArgs (projectId, message, helpKeyword, projectFile, targetNames, properties, items, parentBuildEventContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectStartedEventArgs(int projectId, System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ targetNames, System::Collections::IEnumerable ^ properties, System::Collections::IEnumerable ^ items, Microsoft::Build::Framework::BuildEventContext ^ parentBuildEventContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,Microsoft.Build.Framework.BuildEventContext,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (projectId As Integer, message As String, helpKeyword As String, projectFile As String, targetNames As String, properties As IEnumerable, items As IEnumerable, parentBuildEventContext As BuildEventContext, eventTimestamp As DateTime)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectStartedEventArgs : int * string * string * string * string * System.Collections.IEnumerable * System.Collections.IEnumerable * Microsoft.Build.Framework.BuildEventContext * DateTime -&gt; Microsoft.Build.Framework.ProjectStartedEventArgs" Usage="new Microsoft.Build.Framework.ProjectStartedEventArgs (projectId, message, helpKeyword, projectFile, targetNames, properties, items, parentBuildEventContext, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectStartedEventArgs(int projectId, System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ targetNames, System::Collections::IEnumerable ^ properties, System::Collections::IEnumerable ^ items, Microsoft::Build::Framework::BuildEventContext ^ parentBuildEventContext, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,Microsoft.Build.Framework.BuildEventContext,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (projectId As Integer, message As String, helpKeyword As String, projectFile As String, targetNames As String, properties As IEnumerable, items As IEnumerable, parentBuildEventContext As BuildEventContext, globalProperties As IDictionary(Of String, String), toolsVersion As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.ProjectStartedEventArgs : int * string * string * string * string * System.Collections.IEnumerable * System.Collections.IEnumerable * Microsoft.Build.Framework.BuildEventContext * System.Collections.Generic.IDictionary&lt;string, string&gt; * string -&gt; Microsoft.Build.Framework.ProjectStartedEventArgs" Usage="new Microsoft.Build.Framework.ProjectStartedEventArgs (projectId, message, helpKeyword, projectFile, targetNames, properties, items, parentBuildEventContext, globalProperties, toolsVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectStartedEventArgs(int projectId, System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ targetNames, System::Collections::IEnumerable ^ properties, System::Collections::IEnumerable ^ items, Microsoft::Build::Framework::BuildEventContext ^ parentBuildEventContext, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ globalProperties, System::String ^ toolsVersion);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.GlobalProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalProperties As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.GlobalProperties : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.GlobalProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GlobalProperties { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.ProjectStartedEventArgs.InvalidProjectId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidProjectId As Integer  = -1" />
       <MemberSignature Language="F#" Value="val mutable InvalidProjectId : int" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.InvalidProjectId" />
+      <MemberSignature Language="C++ CLI" Value="public: int InvalidProjectId = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IEnumerable" />
       <MemberSignature Language="F#" Value="member this.Items : System.Collections.IEnumerable" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Items { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -304,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.ParentProjectBuildEventContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentProjectBuildEventContext As BuildEventContext" />
       <MemberSignature Language="F#" Value="member this.ParentProjectBuildEventContext : Microsoft.Build.Framework.BuildEventContext" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.ParentProjectBuildEventContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::BuildEventContext ^ ParentProjectBuildEventContext { Microsoft::Build::Framework::BuildEventContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.ProjectFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
       <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.ProjectFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -344,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.ProjectId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectId As Integer" />
       <MemberSignature Language="F#" Value="member this.ProjectId : int" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.ProjectId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProjectId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -364,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IEnumerable" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IEnumerable" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Properties { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -394,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.TargetNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetNames As String" />
       <MemberSignature Language="F#" Value="member this.TargetNames : string" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.TargetNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetNames { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -414,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ProjectStartedEventArgs.ToolsVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersion As String" />
       <MemberSignature Language="F#" Value="member this.ToolsVersion : string" Usage="Microsoft.Build.Framework.ProjectStartedEventArgs.ToolsVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

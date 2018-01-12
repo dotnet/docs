@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexNamedPipeBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MexNamedPipeBindingCollectionElement&#xA;Inherits MexBindingBindingCollectionElement(Of CustomBinding, MexNamedPipeBindingElement)" />
   <TypeSignature Language="F#" Value="type MexNamedPipeBindingCollectionElement = class&#xA;    inherit MexBindingBindingCollectionElement&lt;CustomBinding, MexNamedPipeBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MexNamedPipeBindingCollectionElement : System::ServiceModel::Configuration::MexBindingBindingCollectionElement&lt;System::ServiceModel::Channels::CustomBinding ^, System::ServiceModel::Configuration::MexNamedPipeBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexNamedPipeBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MexNamedPipeBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexNamedPipeBindingCollectionElement.GetDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
       <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="mexNamedPipeBindingCollectionElement.GetDefault " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

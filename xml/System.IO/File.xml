@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.File" />
   <TypeSignature Language="VB.NET" Value="Public Class File" />
   <TypeSignature Language="F#" Value="type File = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class File abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -101,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AppendAllLines (path As String, contents As IEnumerable(Of String))" />
       <MemberSignature Language="F#" Value="static member AppendAllLines : string * seq&lt;string&gt; -&gt; unit" Usage="System.IO.File.AppendAllLines (path, contents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppendAllLines(System::String ^ path, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ contents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -172,6 +174,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AppendAllLines(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member AppendAllLines : string * seq&lt;string&gt; * System.Text.Encoding -&gt; unit" Usage="System.IO.File.AppendAllLines (path, contents, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppendAllLines(System::String ^ path, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ contents, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -314,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllText(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AppendAllText (path As String, contents As String)" />
       <MemberSignature Language="F#" Value="static member AppendAllText : string * string -&gt; unit" Usage="System.IO.File.AppendAllText (path, contents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppendAllText(System::String ^ path, System::String ^ contents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -390,6 +394,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AppendAllText(string path, string contents, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllText(System.String,System.String,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member AppendAllText : string * string * System.Text.Encoding -&gt; unit" Usage="System.IO.File.AppendAllText (path, contents, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppendAllText(System::String ^ path, System::String ^ contents, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -525,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.AppendText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AppendText (path As String) As StreamWriter" />
       <MemberSignature Language="F#" Value="static member AppendText : string -&gt; System.IO.StreamWriter" Usage="System.IO.File.AppendText path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::StreamWriter ^ AppendText(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -602,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Copy(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (sourceFileName As String, destFileName As String)" />
       <MemberSignature Language="F#" Value="static member Copy : string * string -&gt; unit" Usage="System.IO.File.Copy (sourceFileName, destFileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(System::String ^ sourceFileName, System::String ^ destFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -684,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Copy(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (sourceFileName As String, destFileName As String, overwrite As Boolean)" />
       <MemberSignature Language="F#" Value="static member Copy : string * string * bool -&gt; unit" Usage="System.IO.File.Copy (sourceFileName, destFileName, overwrite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(System::String ^ sourceFileName, System::String ^ destFileName, bool overwrite);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -783,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String) As FileStream" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.IO.FileStream" Usage="System.IO.File.Create path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Create(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -858,6 +867,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Create(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String, bufferSize As Integer) As FileStream" />
       <MemberSignature Language="F#" Value="static member Create : string * int -&gt; System.IO.FileStream" Usage="System.IO.File.Create (path, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Create(System::String ^ path, int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -933,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Create(System.String,System.Int32,System.IO.FileOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (path As String, bufferSize As Integer, options As FileOptions) As FileStream" />
       <MemberSignature Language="F#" Value="static member Create : string * int * System.IO.FileOptions -&gt; System.IO.FileStream" Usage="System.IO.File.Create (path, bufferSize, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Create(System::String ^ path, int bufferSize, System::IO::FileOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -998,6 +1009,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.FileStream Create(string path, int32 bufferSize, valuetype System.IO.FileOptions options, class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.Create(System.String,System.Int32,System.IO.FileOptions,System.Security.AccessControl.FileSecurity)" />
       <MemberSignature Language="F#" Value="static member Create : string * int * System.IO.FileOptions * System.Security.AccessControl.FileSecurity -&gt; System.IO.FileStream" Usage="System.IO.File.Create (path, bufferSize, options, fileSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Create(System::String ^ path, int bufferSize, System::IO::FileOptions options, System::Security::AccessControl::FileSecurity ^ fileSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1057,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.CreateText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateText (path As String) As StreamWriter" />
       <MemberSignature Language="F#" Value="static member CreateText : string -&gt; System.IO.StreamWriter" Usage="System.IO.File.CreateText path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::StreamWriter ^ CreateText(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1121,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Decrypt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Decrypt (path As String)" />
       <MemberSignature Language="F#" Value="static member Decrypt : string -&gt; unit" Usage="System.IO.File.Decrypt path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Decrypt(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1201,6 +1215,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Delete(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (path As String)" />
       <MemberSignature Language="F#" Value="static member Delete : string -&gt; unit" Usage="System.IO.File.Delete path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1280,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Encrypt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Encrypt (path As String)" />
       <MemberSignature Language="F#" Value="static member Encrypt : string -&gt; unit" Usage="System.IO.File.Encrypt path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Encrypt(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1362,6 +1378,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (path As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member Exists : string -&gt; bool" Usage="System.IO.File.Exists path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1442,6 +1459,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetAccessControl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAccessControl (path As String) As FileSecurity" />
       <MemberSignature Language="F#" Value="static member GetAccessControl : string -&gt; System.Security.AccessControl.FileSecurity" Usage="System.IO.File.GetAccessControl path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::AccessControl::FileSecurity ^ GetAccessControl(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1504,6 +1522,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetAccessControl(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAccessControl (path As String, includeSections As AccessControlSections) As FileSecurity" />
       <MemberSignature Language="F#" Value="static member GetAccessControl : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.FileSecurity" Usage="System.IO.File.GetAccessControl (path, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::AccessControl::FileSecurity ^ GetAccessControl(System::String ^ path, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1559,6 +1578,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetAttributes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAttributes (path As String) As FileAttributes" />
       <MemberSignature Language="F#" Value="static member GetAttributes : string -&gt; System.IO.FileAttributes" Usage="System.IO.File.GetAttributes path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileAttributes GetAttributes(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1623,6 +1643,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetCreationTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCreationTime (path As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member GetCreationTime : string -&gt; DateTime" Usage="System.IO.File.GetCreationTime path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime GetCreationTime(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1691,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetCreationTimeUtc(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCreationTimeUtc (path As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member GetCreationTimeUtc : string -&gt; DateTime" Usage="System.IO.File.GetCreationTimeUtc path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime GetCreationTimeUtc(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1757,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetLastAccessTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastAccessTime (path As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member GetLastAccessTime : string -&gt; DateTime" Usage="System.IO.File.GetLastAccessTime path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime GetLastAccessTime(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1825,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetLastAccessTimeUtc(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastAccessTimeUtc (path As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member GetLastAccessTimeUtc : string -&gt; DateTime" Usage="System.IO.File.GetLastAccessTimeUtc path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime GetLastAccessTimeUtc(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1884,6 +1908,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetLastWriteTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastWriteTime (path As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member GetLastWriteTime : string -&gt; DateTime" Usage="System.IO.File.GetLastWriteTime path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime GetLastWriteTime(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1952,6 +1977,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.GetLastWriteTimeUtc(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLastWriteTimeUtc (path As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member GetLastWriteTimeUtc : string -&gt; DateTime" Usage="System.IO.File.GetLastWriteTimeUtc path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime GetLastWriteTimeUtc(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2011,6 +2037,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Move(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Move (sourceFileName As String, destFileName As String)" />
       <MemberSignature Language="F#" Value="static member Move : string * string -&gt; unit" Usage="System.IO.File.Move (sourceFileName, destFileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Move(System::String ^ sourceFileName, System::String ^ destFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2093,6 +2120,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Open(System.String,System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, mode As FileMode) As FileStream" />
       <MemberSignature Language="F#" Value="static member Open : string * System.IO.FileMode -&gt; System.IO.FileStream" Usage="System.IO.File.Open (path, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Open(System::String ^ path, System::IO::FileMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2178,6 +2206,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Open(System.String,System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, mode As FileMode, access As FileAccess) As FileStream" />
       <MemberSignature Language="F#" Value="static member Open : string * System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.FileStream" Usage="System.IO.File.Open (path, mode, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Open(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2263,6 +2292,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, mode As FileMode, access As FileAccess, share As FileShare) As FileStream" />
       <MemberSignature Language="F#" Value="static member Open : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare -&gt; System.IO.FileStream" Usage="System.IO.File.Open (path, mode, access, share)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ Open(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2352,6 +2382,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.OpenRead(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenRead (path As String) As FileStream" />
       <MemberSignature Language="F#" Value="static member OpenRead : string -&gt; System.IO.FileStream" Usage="System.IO.File.OpenRead path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ OpenRead(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2423,6 +2454,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.OpenText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenText (path As String) As StreamReader" />
       <MemberSignature Language="F#" Value="static member OpenText : string -&gt; System.IO.StreamReader" Usage="System.IO.File.OpenText path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::StreamReader ^ OpenText(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2488,6 +2520,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.OpenWrite(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenWrite (path As String) As FileStream" />
       <MemberSignature Language="F#" Value="static member OpenWrite : string -&gt; System.IO.FileStream" Usage="System.IO.File.OpenWrite path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::FileStream ^ OpenWrite(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2560,6 +2593,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllBytes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadAllBytes (path As String) As Byte()" />
       <MemberSignature Language="F#" Value="static member ReadAllBytes : string -&gt; byte[]" Usage="System.IO.File.ReadAllBytes path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ ReadAllBytes(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2657,6 +2691,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllLines(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadAllLines (path As String) As String()" />
       <MemberSignature Language="F#" Value="static member ReadAllLines : string -&gt; string[]" Usage="System.IO.File.ReadAllLines path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ ReadAllLines(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2733,6 +2768,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] ReadAllLines(string path, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllLines(System.String,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member ReadAllLines : string * System.Text.Encoding -&gt; string[]" Usage="System.IO.File.ReadAllLines (path, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ ReadAllLines(System::String ^ path, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2874,6 +2910,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadAllText (path As String) As String" />
       <MemberSignature Language="F#" Value="static member ReadAllText : string -&gt; string" Usage="System.IO.File.ReadAllText path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ReadAllText(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2954,6 +2991,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ReadAllText(string path, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllText(System.String,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member ReadAllText : string * System.Text.Encoding -&gt; string" Usage="System.IO.File.ReadAllText (path, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ReadAllText(System::String ^ path, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3099,6 +3137,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadLines(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadLines (path As String) As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="static member ReadLines : string -&gt; seq&lt;string&gt;" Usage="System.IO.File.ReadLines path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ReadLines(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3187,6 +3226,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; ReadLines(string path, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.ReadLines(System.String,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member ReadLines : string * System.Text.Encoding -&gt; seq&lt;string&gt;" Usage="System.IO.File.ReadLines (path, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ReadLines(System::String ^ path, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3283,6 +3323,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Replace(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Replace (sourceFileName As String, destinationFileName As String, destinationBackupFileName As String)" />
       <MemberSignature Language="F#" Value="static member Replace : string * string * string -&gt; unit" Usage="System.IO.File.Replace (sourceFileName, destinationFileName, destinationBackupFileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Replace(System::String ^ sourceFileName, System::String ^ destinationFileName, System::String ^ destinationBackupFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3374,6 +3415,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.Replace(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Replace (sourceFileName As String, destinationFileName As String, destinationBackupFileName As String, ignoreMetadataErrors As Boolean)" />
       <MemberSignature Language="F#" Value="static member Replace : string * string * string * bool -&gt; unit" Usage="System.IO.File.Replace (sourceFileName, destinationFileName, destinationBackupFileName, ignoreMetadataErrors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Replace(System::String ^ sourceFileName, System::String ^ destinationFileName, System::String ^ destinationBackupFileName, bool ignoreMetadataErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3467,6 +3509,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(string path, class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetAccessControl(System.String,System.Security.AccessControl.FileSecurity)" />
       <MemberSignature Language="F#" Value="static member SetAccessControl : string * System.Security.AccessControl.FileSecurity -&gt; unit" Usage="System.IO.File.SetAccessControl (path, fileSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAccessControl(System::String ^ path, System::Security::AccessControl::FileSecurity ^ fileSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3548,6 +3591,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAttributes(string path, valuetype System.IO.FileAttributes fileAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetAttributes(System.String,System.IO.FileAttributes)" />
       <MemberSignature Language="F#" Value="static member SetAttributes : string * System.IO.FileAttributes -&gt; unit" Usage="System.IO.File.SetAttributes (path, fileAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAttributes(System::String ^ path, System::IO::FileAttributes fileAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3628,6 +3672,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetCreationTime(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCreationTime (path As String, creationTime As DateTime)" />
       <MemberSignature Language="F#" Value="static member SetCreationTime : string * DateTime -&gt; unit" Usage="System.IO.File.SetCreationTime (path, creationTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCreationTime(System::String ^ path, DateTime creationTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3688,6 +3733,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetCreationTimeUtc(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCreationTimeUtc (path As String, creationTimeUtc As DateTime)" />
       <MemberSignature Language="F#" Value="static member SetCreationTimeUtc : string * DateTime -&gt; unit" Usage="System.IO.File.SetCreationTimeUtc (path, creationTimeUtc)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCreationTimeUtc(System::String ^ path, DateTime creationTimeUtc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3748,6 +3794,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetLastAccessTime(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLastAccessTime (path As String, lastAccessTime As DateTime)" />
       <MemberSignature Language="F#" Value="static member SetLastAccessTime : string * DateTime -&gt; unit" Usage="System.IO.File.SetLastAccessTime (path, lastAccessTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLastAccessTime(System::String ^ path, DateTime lastAccessTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3814,6 +3861,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetLastAccessTimeUtc(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLastAccessTimeUtc (path As String, lastAccessTimeUtc As DateTime)" />
       <MemberSignature Language="F#" Value="static member SetLastAccessTimeUtc : string * DateTime -&gt; unit" Usage="System.IO.File.SetLastAccessTimeUtc (path, lastAccessTimeUtc)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLastAccessTimeUtc(System::String ^ path, DateTime lastAccessTimeUtc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3871,6 +3919,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetLastWriteTime(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLastWriteTime (path As String, lastWriteTime As DateTime)" />
       <MemberSignature Language="F#" Value="static member SetLastWriteTime : string * DateTime -&gt; unit" Usage="System.IO.File.SetLastWriteTime (path, lastWriteTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLastWriteTime(System::String ^ path, DateTime lastWriteTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3937,6 +3986,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.SetLastWriteTimeUtc(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLastWriteTimeUtc (path As String, lastWriteTimeUtc As DateTime)" />
       <MemberSignature Language="F#" Value="static member SetLastWriteTimeUtc : string * DateTime -&gt; unit" Usage="System.IO.File.SetLastWriteTimeUtc (path, lastWriteTimeUtc)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLastWriteTimeUtc(System::String ^ path, DateTime lastWriteTimeUtc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -3994,6 +4044,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllBytes(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteAllBytes (path As String, bytes As Byte())" />
       <MemberSignature Language="F#" Value="static member WriteAllBytes : string * byte[] -&gt; unit" Usage="System.IO.File.WriteAllBytes (path, bytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllBytes(System::String ^ path, cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -4098,6 +4149,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteAllLines (path As String, contents As IEnumerable(Of String))" />
       <MemberSignature Language="F#" Value="static member WriteAllLines : string * seq&lt;string&gt; -&gt; unit" Usage="System.IO.File.WriteAllLines (path, contents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllLines(System::String ^ path, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ contents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -4177,6 +4229,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllLines(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteAllLines (path As String, contents As String())" />
       <MemberSignature Language="F#" Value="static member WriteAllLines : string * string[] -&gt; unit" Usage="System.IO.File.WriteAllLines (path, contents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllLines(System::String ^ path, cli::array &lt;System::String ^&gt; ^ contents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4253,6 +4306,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllLines(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllLines(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member WriteAllLines : string * seq&lt;string&gt; * System.Text.Encoding -&gt; unit" Usage="System.IO.File.WriteAllLines (path, contents, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllLines(System::String ^ path, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ contents, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -4327,6 +4381,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllLines(string path, string[] contents, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllLines(System.String,System.String[],System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member WriteAllLines : string * string[] * System.Text.Encoding -&gt; unit" Usage="System.IO.File.WriteAllLines (path, contents, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllLines(System::String ^ path, cli::array &lt;System::String ^&gt; ^ contents, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4470,6 +4525,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllText(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteAllText (path As String, contents As String)" />
       <MemberSignature Language="F#" Value="static member WriteAllText : string * string -&gt; unit" Usage="System.IO.File.WriteAllText (path, contents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllText(System::String ^ path, System::String ^ contents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -4546,6 +4602,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllText(string path, string contents, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllText(System.String,System.String,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member WriteAllText : string * string * System.Text.Encoding -&gt; unit" Usage="System.IO.File.WriteAllText (path, contents, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllText(System::String ^ path, System::String ^ contents, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

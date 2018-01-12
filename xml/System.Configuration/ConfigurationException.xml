@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationException" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type ConfigurationException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : string -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConfigurationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : string * Exception -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.String,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, node As XmlNode)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : string * System.Xml.XmlNode -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException (message, node)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException(System::String ^ message, System::Xml::XmlNode ^ node);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.String,System.Exception,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, node As XmlNode)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : string * Exception * System.Xml.XmlNode -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException (message, inner, node)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException(System::String ^ message, Exception ^ inner, System::Xml::XmlNode ^ node);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, filename As String, line As Integer)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : string * string * int -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException (message, filename, line)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException(System::String ^ message, System::String ^ filename, int line);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.#ctor(System.String,System.Exception,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, filename As String, line As Integer)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationException : string * Exception * string * int -&gt; System.Configuration.ConfigurationException" Usage="new System.Configuration.ConfigurationException (message, inner, filename, line)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationException(System::String ^ message, Exception ^ inner, System::String ^ filename, int line);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationException.BareMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BareMessage As String" />
       <MemberSignature Language="F#" Value="member this.BareMessage : string" Usage="System.Configuration.ConfigurationException.BareMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BareMessage { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -321,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationException.Filename" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Filename As String" />
       <MemberSignature Language="F#" Value="member this.Filename : string" Usage="System.Configuration.ConfigurationException.Filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Filename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="configurationException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -381,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.GetXmlNodeFilename(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXmlNodeFilename (node As XmlNode) As String" />
       <MemberSignature Language="F#" Value="static member GetXmlNodeFilename : System.Xml.XmlNode -&gt; string" Usage="System.Configuration.ConfigurationException.GetXmlNodeFilename node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetXmlNodeFilename(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -414,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationException.GetXmlNodeLineNumber(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXmlNodeLineNumber (node As XmlNode) As Integer" />
       <MemberSignature Language="F#" Value="static member GetXmlNodeLineNumber : System.Xml.XmlNode -&gt; int" Usage="System.Configuration.ConfigurationException.GetXmlNodeLineNumber node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetXmlNodeLineNumber(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -447,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationException.Line" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Line As Integer" />
       <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Configuration.ConfigurationException.Line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Line { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -471,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Configuration.ConfigurationException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

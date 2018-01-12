@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class IssuedSecurityTokenProvider&#xA;Inherits SecurityTokenProvider&#xA;Implements ICommunicationObject" />
   <TypeSignature Language="F#" Value="type IssuedSecurityTokenProvider = class&#xA;    inherit SecurityTokenProvider&#xA;    interface ICommunicationObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IssuedSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider, System::ServiceModel::ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuedSecurityTokenProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="issuedSecurityTokenProvider.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginClose : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginClose : AsyncCallback * obj -&gt; IAsyncResult" Usage="issuedSecurityTokenProvider.BeginClose (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginClose(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="issuedSecurityTokenProvider.BeginClose (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginGetTokenCore(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function BeginGetTokenCore (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="override this.BeginGetTokenCore : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="issuedSecurityTokenProvider.BeginGetTokenCore (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ BeginGetTokenCore(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginOpen : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginOpen : AsyncCallback * obj -&gt; IAsyncResult" Usage="issuedSecurityTokenProvider.BeginOpen (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginOpen(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="issuedSecurityTokenProvider.BeginOpen (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.CacheIssuedTokens" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheIssuedTokens As Boolean" />
       <MemberSignature Language="F#" Value="member this.CacheIssuedTokens : bool with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.CacheIssuedTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CacheIssuedTokens { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="issuedSecurityTokenProvider.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="abstract member Close : TimeSpan -&gt; unit&#xA;override this.Close : TimeSpan -&gt; unit" Usage="issuedSecurityTokenProvider.Close timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</InterfaceMember>
@@ -318,6 +329,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Closed : EventHandler " Usage="member this.Closed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Closed;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closed</InterfaceMember>
@@ -340,6 +352,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Closing As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Closing : EventHandler " Usage="member this.Closing : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Closing;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closing</InterfaceMember>
@@ -362,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultCloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultCloseTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultCloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -389,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultOpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultOpenTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultOpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -416,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="issuedSecurityTokenProvider.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -436,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndClose (result As IAsyncResult)" />
       <MemberSignature Language="F#" Value="abstract member EndClose : IAsyncResult -&gt; unit&#xA;override this.EndClose : IAsyncResult -&gt; unit" Usage="issuedSecurityTokenProvider.EndClose result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</InterfaceMember>
@@ -462,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndGetTokenCore(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EndGetTokenCore (result As IAsyncResult) As SecurityToken" />
       <MemberSignature Language="F#" Value="override this.EndGetTokenCore : IAsyncResult -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="issuedSecurityTokenProvider.EndGetTokenCore result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ EndGetTokenCore(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -486,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndOpen(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndOpen (result As IAsyncResult)" />
       <MemberSignature Language="F#" Value="abstract member EndOpen : IAsyncResult -&gt; unit&#xA;override this.EndOpen : IAsyncResult -&gt; unit" Usage="issuedSecurityTokenProvider.EndOpen result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndOpen(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</InterfaceMember>
@@ -512,6 +531,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Faulted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Faulted As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Faulted : EventHandler " Usage="member this.Faulted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Faulted;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Faulted</InterfaceMember>
@@ -534,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
       <MemberSignature Language="F#" Value="override this.GetTokenCore : TimeSpan -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="issuedSecurityTokenProvider.GetTokenCore timeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -565,6 +586,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IdentityVerifier" />
       <MemberSignature Language="VB.NET" Value="Public Property IdentityVerifier As IdentityVerifier" />
       <MemberSignature Language="F#" Value="member this.IdentityVerifier : System.ServiceModel.Security.IdentityVerifier with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IdentityVerifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::IdentityVerifier ^ IdentityVerifier { System::ServiceModel::Security::IdentityVerifier ^ get(); void set(System::ServiceModel::Security::IdentityVerifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -585,6 +607,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuedTokenRenewalThresholdPercentage" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuedTokenRenewalThresholdPercentage As Integer" />
       <MemberSignature Language="F#" Value="member this.IssuedTokenRenewalThresholdPercentage : int with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuedTokenRenewalThresholdPercentage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IssuedTokenRenewalThresholdPercentage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -612,6 +635,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerAddress As EndpointAddress" />
       <MemberSignature Language="F#" Value="member this.IssuerAddress : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ IssuerAddress { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -632,6 +656,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerBinding" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerBinding As Binding" />
       <MemberSignature Language="F#" Value="member this.IssuerBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ IssuerBinding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -652,6 +677,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerChannelBehaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerChannelBehaviors As KeyedByTypeCollection(Of IEndpointBehavior)" />
       <MemberSignature Language="F#" Value="member this.IssuerChannelBehaviors : System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt;" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerChannelBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IEndpointBehavior ^&gt; ^ IssuerChannelBehaviors { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IEndpointBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -679,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.KeyEntropyMode" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyEntropyMode As SecurityKeyEntropyMode" />
       <MemberSignature Language="F#" Value="member this.KeyEntropyMode : System.ServiceModel.Security.SecurityKeyEntropyMode with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.KeyEntropyMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityKeyEntropyMode KeyEntropyMode { System::ServiceModel::Security::SecurityKeyEntropyMode get(); void set(System::ServiceModel::Security::SecurityKeyEntropyMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -706,6 +733,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MaxIssuedTokenCachingTime" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxIssuedTokenCachingTime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.MaxIssuedTokenCachingTime : TimeSpan with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MaxIssuedTokenCachingTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxIssuedTokenCachingTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -726,6 +754,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MessageSecurityVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageSecurityVersion As MessageSecurityVersion" />
       <MemberSignature Language="F#" Value="member this.MessageSecurityVersion : System.ServiceModel.MessageSecurityVersion with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MessageSecurityVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageSecurityVersion ^ MessageSecurityVersion { System::ServiceModel::MessageSecurityVersion ^ get(); void set(System::ServiceModel::MessageSecurityVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -762,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="issuedSecurityTokenProvider.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
@@ -785,6 +815,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="abstract member Open : TimeSpan -&gt; unit&#xA;override this.Open : TimeSpan -&gt; unit" Usage="issuedSecurityTokenProvider.Open timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</InterfaceMember>
@@ -811,6 +842,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Opened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opened As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Opened : EventHandler " Usage="member this.Opened : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Opened;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opened</InterfaceMember>
@@ -833,6 +865,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Opening" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Opening As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Opening : EventHandler " Usage="member this.Opening : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Opening;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opening</InterfaceMember>
@@ -855,6 +888,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityAlgorithmSuite" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityAlgorithmSuite As SecurityAlgorithmSuite" />
       <MemberSignature Language="F#" Value="member this.SecurityAlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityAlgorithmSuite ^ SecurityAlgorithmSuite { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); void set(System::ServiceModel::Security::SecurityAlgorithmSuite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -882,6 +916,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityTokenSerializer" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenSerializer As SecurityTokenSerializer" />
       <MemberSignature Language="F#" Value="member this.SecurityTokenSerializer : System.IdentityModel.Selectors.SecurityTokenSerializer with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityTokenSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenSerializer ^ SecurityTokenSerializer { System::IdentityModel::Selectors::SecurityTokenSerializer ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -902,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
       <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.CommunicationState" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::CommunicationState State { System::ServiceModel::CommunicationState get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>
@@ -925,6 +961,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SupportsTokenCancellation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsTokenCancellation As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsTokenCancellation : bool" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SupportsTokenCancellation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsTokenCancellation { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -946,6 +983,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TargetAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetAddress As EndpointAddress" />
       <MemberSignature Language="F#" Value="member this.TargetAddress : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TargetAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ TargetAddress { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -966,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TokenRequestParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenRequestParameters As Collection(Of XmlElement)" />
       <MemberSignature Language="F#" Value="member this.TokenRequestParameters : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" Usage="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TokenRequestParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ TokenRequestParameters { System::Collections::ObjectModel::Collection&lt;System::Xml::XmlElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

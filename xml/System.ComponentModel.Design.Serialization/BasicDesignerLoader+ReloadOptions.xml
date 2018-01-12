@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed BasicDesignerLoader/ReloadOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions" />
   <TypeSignature Language="VB.NET" Value="Protected Enum BasicDesignerLoader.ReloadOptions" />
+  <TypeSignature Language="C++ CLI" Value="protected: enum class BasicDesignerLoader::ReloadOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.Force" />
       <MemberSignature Language="VB.NET" Value="Force" />
       <MemberSignature Language="F#" Value="Force = 2" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.Force" />
+      <MemberSignature Language="C++ CLI" Value="Force" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.ModifyOnError" />
       <MemberSignature Language="VB.NET" Value="ModifyOnError" />
       <MemberSignature Language="F#" Value="ModifyOnError = 1" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.ModifyOnError" />
+      <MemberSignature Language="C++ CLI" Value="ModifyOnError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.NoFlush" />
       <MemberSignature Language="VB.NET" Value="NoFlush" />
       <MemberSignature Language="F#" Value="NoFlush = 4" Usage="System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.NoFlush" />
+      <MemberSignature Language="C++ CLI" Value="NoFlush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

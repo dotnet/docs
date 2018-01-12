@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.VerticalLineAnnotation" />
   <TypeSignature Language="VB.NET" Value="Public Class VerticalLineAnnotation&#xA;Inherits LineAnnotation" />
   <TypeSignature Language="F#" Value="type VerticalLineAnnotation = class&#xA;    inherit LineAnnotation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VerticalLineAnnotation : System::Windows::Forms::DataVisualization::Charting::LineAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.VerticalLineAnnotation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VerticalLineAnnotation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.VerticalLineAnnotation.AnnotationType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
       <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Windows.Forms.DataVisualization.Charting.VerticalLineAnnotation.AnnotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnnotationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

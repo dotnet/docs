@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DefaultTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public Class DefaultTraceListener&#xA;Inherits TraceListener" />
   <TypeSignature Language="F#" Value="type DefaultTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultTraceListener : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DefaultTraceListener.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DefaultTraceListener.AssertUiEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AssertUiEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.AssertUiEnabled : bool with get, set" Usage="System.Diagnostics.DefaultTraceListener.AssertUiEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AssertUiEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DefaultTraceListener.Fail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Fail (message As String)" />
       <MemberSignature Language="F#" Value="override this.Fail : string -&gt; unit" Usage="defaultTraceListener.Fail message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Fail(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -237,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DefaultTraceListener.Fail(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Fail (message As String, detailMessage As String)" />
       <MemberSignature Language="F#" Value="override this.Fail : string * string -&gt; unit" Usage="defaultTraceListener.Fail (message, detailMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Fail(System::String ^ message, System::String ^ detailMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -293,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DefaultTraceListener.LogFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property LogFileName As String" />
       <MemberSignature Language="F#" Value="member this.LogFileName : string with get, set" Usage="System.Diagnostics.DefaultTraceListener.LogFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogFileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DefaultTraceListener.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
       <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="defaultTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -391,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DefaultTraceListener.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="defaultTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

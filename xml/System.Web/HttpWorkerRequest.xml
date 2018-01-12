@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpWorkerRequest" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpWorkerRequest" />
   <TypeSignature Language="F#" Value="type HttpWorkerRequest = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpWorkerRequest abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpWorkerRequest();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.BeginFlush(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginFlush (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginFlush : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginFlush : AsyncCallback * obj -&gt; IAsyncResult" Usage="httpWorkerRequest.BeginFlush (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginFlush(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="abstract member BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="httpWorkerRequest.BeginRead (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.CloseConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseConnection ()" />
       <MemberSignature Language="F#" Value="abstract member CloseConnection : unit -&gt; unit&#xA;override this.CloseConnection : unit -&gt; unit" Usage="httpWorkerRequest.CloseConnection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseConnection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.EndFlush(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndFlush (asyncResult As IAsyncResult)" />
       <MemberSignature Language="F#" Value="abstract member EndFlush : IAsyncResult -&gt; unit&#xA;override this.EndFlush : IAsyncResult -&gt; unit" Usage="httpWorkerRequest.EndFlush asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndFlush(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.EndOfRequest" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndOfRequest ()" />
       <MemberSignature Language="F#" Value="abstract member EndOfRequest : unit -&gt; unit" Usage="httpWorkerRequest.EndOfRequest " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndOfRequest();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.EndRead(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EndRead (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="F#" Value="abstract member EndRead : IAsyncResult -&gt; int&#xA;override this.EndRead : IAsyncResult -&gt; int" Usage="httpWorkerRequest.EndRead asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.FlushResponse(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub FlushResponse (finalFlush As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member FlushResponse : bool -&gt; unit" Usage="httpWorkerRequest.FlushResponse finalFlush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void FlushResponse(bool finalFlush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetAppPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAppPath () As String" />
       <MemberSignature Language="F#" Value="abstract member GetAppPath : unit -&gt; string&#xA;override this.GetAppPath : unit -&gt; string" Usage="httpWorkerRequest.GetAppPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAppPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetAppPathTranslated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAppPathTranslated () As String" />
       <MemberSignature Language="F#" Value="abstract member GetAppPathTranslated : unit -&gt; string&#xA;override this.GetAppPathTranslated : unit -&gt; string" Usage="httpWorkerRequest.GetAppPathTranslated " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAppPathTranslated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetAppPoolID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAppPoolID () As String" />
       <MemberSignature Language="F#" Value="abstract member GetAppPoolID : unit -&gt; string&#xA;override this.GetAppPoolID : unit -&gt; string" Usage="httpWorkerRequest.GetAppPoolID " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAppPoolID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetBytesRead" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytesRead () As Long" />
       <MemberSignature Language="F#" Value="abstract member GetBytesRead : unit -&gt; int64&#xA;override this.GetBytesRead : unit -&gt; int64" Usage="httpWorkerRequest.GetBytesRead " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetBytesRead();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientCertificate () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetClientCertificate : unit -&gt; byte[]&#xA;override this.GetClientCertificate : unit -&gt; byte[]" Usage="httpWorkerRequest.GetClientCertificate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetClientCertificate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateBinaryIssuer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientCertificateBinaryIssuer () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetClientCertificateBinaryIssuer : unit -&gt; byte[]&#xA;override this.GetClientCertificateBinaryIssuer : unit -&gt; byte[]" Usage="httpWorkerRequest.GetClientCertificateBinaryIssuer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetClientCertificateBinaryIssuer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientCertificateEncoding () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetClientCertificateEncoding : unit -&gt; int&#xA;override this.GetClientCertificateEncoding : unit -&gt; int" Usage="httpWorkerRequest.GetClientCertificateEncoding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetClientCertificateEncoding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -382,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificatePublicKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientCertificatePublicKey () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetClientCertificatePublicKey : unit -&gt; byte[]&#xA;override this.GetClientCertificatePublicKey : unit -&gt; byte[]" Usage="httpWorkerRequest.GetClientCertificatePublicKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetClientCertificatePublicKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -403,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateValidFrom" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientCertificateValidFrom () As DateTime" />
       <MemberSignature Language="F#" Value="abstract member GetClientCertificateValidFrom : unit -&gt; DateTime&#xA;override this.GetClientCertificateValidFrom : unit -&gt; DateTime" Usage="httpWorkerRequest.GetClientCertificateValidFrom " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime GetClientCertificateValidFrom();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -424,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateValidUntil" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClientCertificateValidUntil () As DateTime" />
       <MemberSignature Language="F#" Value="abstract member GetClientCertificateValidUntil : unit -&gt; DateTime&#xA;override this.GetClientCertificateValidUntil : unit -&gt; DateTime" Usage="httpWorkerRequest.GetClientCertificateValidUntil " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime GetClientCertificateValidUntil();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -445,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetConnectionID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConnectionID () As Long" />
       <MemberSignature Language="F#" Value="abstract member GetConnectionID : unit -&gt; int64&#xA;override this.GetConnectionID : unit -&gt; int64" Usage="httpWorkerRequest.GetConnectionID " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetConnectionID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -466,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilePath () As String" />
       <MemberSignature Language="F#" Value="abstract member GetFilePath : unit -&gt; string&#xA;override this.GetFilePath : unit -&gt; string" Usage="httpWorkerRequest.GetFilePath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFilePath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -487,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetFilePathTranslated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilePathTranslated () As String" />
       <MemberSignature Language="F#" Value="abstract member GetFilePathTranslated : unit -&gt; string&#xA;override this.GetFilePathTranslated : unit -&gt; string" Usage="httpWorkerRequest.GetFilePathTranslated " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFilePathTranslated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -508,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetHttpVerbName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHttpVerbName () As String" />
       <MemberSignature Language="F#" Value="abstract member GetHttpVerbName : unit -&gt; string" Usage="httpWorkerRequest.GetHttpVerbName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetHttpVerbName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -529,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetHttpVersion" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHttpVersion () As String" />
       <MemberSignature Language="F#" Value="abstract member GetHttpVersion : unit -&gt; string" Usage="httpWorkerRequest.GetHttpVersion " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetHttpVersion();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -550,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownRequestHeader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKnownRequestHeader (index As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetKnownRequestHeader : int -&gt; string&#xA;override this.GetKnownRequestHeader : int -&gt; string" Usage="httpWorkerRequest.GetKnownRequestHeader index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetKnownRequestHeader(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -574,6 +599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownRequestHeaderIndex(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetKnownRequestHeaderIndex (header As String) As Integer" />
       <MemberSignature Language="F#" Value="static member GetKnownRequestHeaderIndex : string -&gt; int" Usage="System.Web.HttpWorkerRequest.GetKnownRequestHeaderIndex header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetKnownRequestHeaderIndex(System::String ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -598,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownRequestHeaderName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetKnownRequestHeaderName (index As Integer) As String" />
       <MemberSignature Language="F#" Value="static member GetKnownRequestHeaderName : int -&gt; string" Usage="System.Web.HttpWorkerRequest.GetKnownRequestHeaderName index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetKnownRequestHeaderName(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -622,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownResponseHeaderIndex(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetKnownResponseHeaderIndex (header As String) As Integer" />
       <MemberSignature Language="F#" Value="static member GetKnownResponseHeaderIndex : string -&gt; int" Usage="System.Web.HttpWorkerRequest.GetKnownResponseHeaderIndex header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetKnownResponseHeaderIndex(System::String ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -646,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownResponseHeaderName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetKnownResponseHeaderName (index As Integer) As String" />
       <MemberSignature Language="F#" Value="static member GetKnownResponseHeaderName : int -&gt; string" Usage="System.Web.HttpWorkerRequest.GetKnownResponseHeaderName index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetKnownResponseHeaderName(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -670,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetLocalAddress" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocalAddress () As String" />
       <MemberSignature Language="F#" Value="abstract member GetLocalAddress : unit -&gt; string" Usage="httpWorkerRequest.GetLocalAddress " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetLocalAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -691,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetLocalPort" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocalPort () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetLocalPort : unit -&gt; int" Usage="httpWorkerRequest.GetLocalPort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetLocalPort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPathInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPathInfo () As String" />
       <MemberSignature Language="F#" Value="abstract member GetPathInfo : unit -&gt; string&#xA;override this.GetPathInfo : unit -&gt; string" Usage="httpWorkerRequest.GetPathInfo " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetPathInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +774,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPreloadedEntityBody" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreloadedEntityBody () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetPreloadedEntityBody : unit -&gt; byte[]&#xA;override this.GetPreloadedEntityBody : unit -&gt; byte[]" Usage="httpWorkerRequest.GetPreloadedEntityBody " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetPreloadedEntityBody();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -763,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPreloadedEntityBody(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreloadedEntityBody (buffer As Byte(), offset As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetPreloadedEntityBody : byte[] * int -&gt; int&#xA;override this.GetPreloadedEntityBody : byte[] * int -&gt; int" Usage="httpWorkerRequest.GetPreloadedEntityBody (buffer, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetPreloadedEntityBody(cli::array &lt;System::Byte&gt; ^ buffer, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -789,6 +823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPreloadedEntityBodyLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreloadedEntityBodyLength () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetPreloadedEntityBodyLength : unit -&gt; int&#xA;override this.GetPreloadedEntityBodyLength : unit -&gt; int" Usage="httpWorkerRequest.GetPreloadedEntityBodyLength " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetPreloadedEntityBodyLength();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -810,6 +845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProtocol () As String" />
       <MemberSignature Language="F#" Value="abstract member GetProtocol : unit -&gt; string&#xA;override this.GetProtocol : unit -&gt; string" Usage="httpWorkerRequest.GetProtocol " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetProtocol();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -831,6 +867,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetQueryString" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetQueryString () As String" />
       <MemberSignature Language="F#" Value="abstract member GetQueryString : unit -&gt; string" Usage="httpWorkerRequest.GetQueryString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetQueryString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -852,6 +889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetQueryStringRawBytes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetQueryStringRawBytes () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetQueryStringRawBytes : unit -&gt; byte[]&#xA;override this.GetQueryStringRawBytes : unit -&gt; byte[]" Usage="httpWorkerRequest.GetQueryStringRawBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetQueryStringRawBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -873,6 +911,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRawUrl" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRawUrl () As String" />
       <MemberSignature Language="F#" Value="abstract member GetRawUrl : unit -&gt; string" Usage="httpWorkerRequest.GetRawUrl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetRawUrl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -894,6 +933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRemoteAddress" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRemoteAddress () As String" />
       <MemberSignature Language="F#" Value="abstract member GetRemoteAddress : unit -&gt; string" Usage="httpWorkerRequest.GetRemoteAddress " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetRemoteAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -915,6 +955,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRemoteName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRemoteName () As String" />
       <MemberSignature Language="F#" Value="abstract member GetRemoteName : unit -&gt; string&#xA;override this.GetRemoteName : unit -&gt; string" Usage="httpWorkerRequest.GetRemoteName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetRemoteName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -936,6 +977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRemotePort" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRemotePort () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetRemotePort : unit -&gt; int" Usage="httpWorkerRequest.GetRemotePort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetRemotePort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -957,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRequestReason" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestReason () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetRequestReason : unit -&gt; int&#xA;override this.GetRequestReason : unit -&gt; int" Usage="httpWorkerRequest.GetRequestReason " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetRequestReason();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -978,6 +1021,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetServerName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServerName () As String" />
       <MemberSignature Language="F#" Value="abstract member GetServerName : unit -&gt; string&#xA;override this.GetServerName : unit -&gt; string" Usage="httpWorkerRequest.GetServerName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetServerName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -999,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetServerVariable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetServerVariable (name As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetServerVariable : string -&gt; string&#xA;override this.GetServerVariable : string -&gt; string" Usage="httpWorkerRequest.GetServerVariable name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetServerVariable(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1023,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetStatusDescription(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetStatusDescription (code As Integer) As String" />
       <MemberSignature Language="F#" Value="static member GetStatusDescription : int -&gt; string" Usage="System.Web.HttpWorkerRequest.GetStatusDescription code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetStatusDescription(int code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1047,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetTotalEntityBodyLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTotalEntityBodyLength () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetTotalEntityBodyLength : unit -&gt; int&#xA;override this.GetTotalEntityBodyLength : unit -&gt; int" Usage="httpWorkerRequest.GetTotalEntityBodyLength " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetTotalEntityBodyLength();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1068,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUnknownRequestHeader(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUnknownRequestHeader (name As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetUnknownRequestHeader : string -&gt; string&#xA;override this.GetUnknownRequestHeader : string -&gt; string" Usage="httpWorkerRequest.GetUnknownRequestHeader name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetUnknownRequestHeader(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1092,6 +1140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUnknownRequestHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUnknownRequestHeaders () As String()()" />
       <MemberSignature Language="F#" Value="abstract member GetUnknownRequestHeaders : unit -&gt; string[][]&#xA;override this.GetUnknownRequestHeaders : unit -&gt; string[][]" Usage="httpWorkerRequest.GetUnknownRequestHeaders " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;cli::array &lt;System::String ^&gt; ^&gt; ^ GetUnknownRequestHeaders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1118,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUriPath" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUriPath () As String" />
       <MemberSignature Language="F#" Value="abstract member GetUriPath : unit -&gt; string" Usage="httpWorkerRequest.GetUriPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetUriPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1139,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUrlContextID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUrlContextID () As Long" />
       <MemberSignature Language="F#" Value="abstract member GetUrlContextID : unit -&gt; int64&#xA;override this.GetUrlContextID : unit -&gt; int64" Usage="httpWorkerRequest.GetUrlContextID " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetUrlContextID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1160,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUserToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUserToken () As IntPtr" />
       <MemberSignature Language="F#" Value="abstract member GetUserToken : unit -&gt; nativeint&#xA;override this.GetUserToken : unit -&gt; nativeint" Usage="httpWorkerRequest.GetUserToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr GetUserToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1181,6 +1233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetVirtualPathToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVirtualPathToken () As IntPtr" />
       <MemberSignature Language="F#" Value="abstract member GetVirtualPathToken : unit -&gt; nativeint&#xA;override this.GetVirtualPathToken : unit -&gt; nativeint" Usage="httpWorkerRequest.GetVirtualPathToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr GetVirtualPathToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1202,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.HasEntityBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasEntityBody () As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasEntityBody : unit -&gt; bool" Usage="httpWorkerRequest.HasEntityBody " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasEntityBody();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1224,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAccept" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAccept As Integer  = 20" />
       <MemberSignature Language="F#" Value="val mutable HeaderAccept : int" Usage="System.Web.HttpWorkerRequest.HeaderAccept" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAccept = 20;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1251,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptCharset" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAcceptCharset As Integer  = 21" />
       <MemberSignature Language="F#" Value="val mutable HeaderAcceptCharset : int" Usage="System.Web.HttpWorkerRequest.HeaderAcceptCharset" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAcceptCharset = 21;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1278,6 +1334,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAcceptEncoding As Integer  = 22" />
       <MemberSignature Language="F#" Value="val mutable HeaderAcceptEncoding : int" Usage="System.Web.HttpWorkerRequest.HeaderAcceptEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAcceptEncoding = 22;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1305,6 +1362,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAcceptLanguage As Integer  = 23" />
       <MemberSignature Language="F#" Value="val mutable HeaderAcceptLanguage : int" Usage="System.Web.HttpWorkerRequest.HeaderAcceptLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAcceptLanguage = 23;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1332,6 +1390,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptRanges" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAcceptRanges As Integer  = 20" />
       <MemberSignature Language="F#" Value="val mutable HeaderAcceptRanges : int" Usage="System.Web.HttpWorkerRequest.HeaderAcceptRanges" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAcceptRanges = 20;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1359,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAge" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAge As Integer  = 21" />
       <MemberSignature Language="F#" Value="val mutable HeaderAge : int" Usage="System.Web.HttpWorkerRequest.HeaderAge" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAge = 21;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1386,6 +1446,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAllow" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAllow As Integer  = 10" />
       <MemberSignature Language="F#" Value="val mutable HeaderAllow : int" Usage="System.Web.HttpWorkerRequest.HeaderAllow" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAllow = 10;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1413,6 +1474,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAuthorization" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderAuthorization As Integer  = 24" />
       <MemberSignature Language="F#" Value="val mutable HeaderAuthorization : int" Usage="System.Web.HttpWorkerRequest.HeaderAuthorization" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderAuthorization = 24;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1440,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderCacheControl" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderCacheControl As Integer  = 0" />
       <MemberSignature Language="F#" Value="val mutable HeaderCacheControl : int" Usage="System.Web.HttpWorkerRequest.HeaderCacheControl" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderCacheControl = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1467,6 +1530,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderConnection" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderConnection As Integer  = 1" />
       <MemberSignature Language="F#" Value="val mutable HeaderConnection : int" Usage="System.Web.HttpWorkerRequest.HeaderConnection" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderConnection = 1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1494,6 +1558,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentEncoding As Integer  = 13" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentEncoding : int" Usage="System.Web.HttpWorkerRequest.HeaderContentEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentEncoding = 13;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1521,6 +1586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentLanguage As Integer  = 14" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentLanguage : int" Usage="System.Web.HttpWorkerRequest.HeaderContentLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentLanguage = 14;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1548,6 +1614,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentLength As Integer  = 11" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentLength : int" Usage="System.Web.HttpWorkerRequest.HeaderContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentLength = 11;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1575,6 +1642,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentLocation" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentLocation As Integer  = 15" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentLocation : int" Usage="System.Web.HttpWorkerRequest.HeaderContentLocation" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentLocation = 15;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1602,6 +1670,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentMd5" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentMd5 As Integer  = 16" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentMd5 : int" Usage="System.Web.HttpWorkerRequest.HeaderContentMd5" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentMd5 = 16;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1629,6 +1698,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentRange" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentRange As Integer  = 17" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentRange : int" Usage="System.Web.HttpWorkerRequest.HeaderContentRange" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentRange = 17;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1656,6 +1726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentType" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderContentType As Integer  = 12" />
       <MemberSignature Language="F#" Value="val mutable HeaderContentType : int" Usage="System.Web.HttpWorkerRequest.HeaderContentType" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderContentType = 12;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1683,6 +1754,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderCookie" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderCookie As Integer  = 25" />
       <MemberSignature Language="F#" Value="val mutable HeaderCookie : int" Usage="System.Web.HttpWorkerRequest.HeaderCookie" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderCookie = 25;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1710,6 +1782,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderDate" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderDate As Integer  = 2" />
       <MemberSignature Language="F#" Value="val mutable HeaderDate : int" Usage="System.Web.HttpWorkerRequest.HeaderDate" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderDate = 2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1737,6 +1810,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderEtag" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderEtag As Integer  = 22" />
       <MemberSignature Language="F#" Value="val mutable HeaderEtag : int" Usage="System.Web.HttpWorkerRequest.HeaderEtag" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderEtag = 22;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1764,6 +1838,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderExpect" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderExpect As Integer  = 26" />
       <MemberSignature Language="F#" Value="val mutable HeaderExpect : int" Usage="System.Web.HttpWorkerRequest.HeaderExpect" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderExpect = 26;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1791,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderExpires" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderExpires As Integer  = 18" />
       <MemberSignature Language="F#" Value="val mutable HeaderExpires : int" Usage="System.Web.HttpWorkerRequest.HeaderExpires" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderExpires = 18;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1818,6 +1894,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderFrom" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderFrom As Integer  = 27" />
       <MemberSignature Language="F#" Value="val mutable HeaderFrom : int" Usage="System.Web.HttpWorkerRequest.HeaderFrom" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderFrom = 27;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1845,6 +1922,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderHost" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderHost As Integer  = 28" />
       <MemberSignature Language="F#" Value="val mutable HeaderHost : int" Usage="System.Web.HttpWorkerRequest.HeaderHost" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderHost = 28;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1872,6 +1950,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfMatch" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderIfMatch As Integer  = 29" />
       <MemberSignature Language="F#" Value="val mutable HeaderIfMatch : int" Usage="System.Web.HttpWorkerRequest.HeaderIfMatch" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderIfMatch = 29;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1899,6 +1978,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfModifiedSince" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderIfModifiedSince As Integer  = 30" />
       <MemberSignature Language="F#" Value="val mutable HeaderIfModifiedSince : int" Usage="System.Web.HttpWorkerRequest.HeaderIfModifiedSince" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderIfModifiedSince = 30;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1926,6 +2006,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfNoneMatch" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderIfNoneMatch As Integer  = 31" />
       <MemberSignature Language="F#" Value="val mutable HeaderIfNoneMatch : int" Usage="System.Web.HttpWorkerRequest.HeaderIfNoneMatch" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderIfNoneMatch = 31;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1953,6 +2034,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfRange" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderIfRange As Integer  = 32" />
       <MemberSignature Language="F#" Value="val mutable HeaderIfRange : int" Usage="System.Web.HttpWorkerRequest.HeaderIfRange" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderIfRange = 32;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1980,6 +2062,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfUnmodifiedSince" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderIfUnmodifiedSince As Integer  = 33" />
       <MemberSignature Language="F#" Value="val mutable HeaderIfUnmodifiedSince : int" Usage="System.Web.HttpWorkerRequest.HeaderIfUnmodifiedSince" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderIfUnmodifiedSince = 33;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2007,6 +2090,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderKeepAlive" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderKeepAlive As Integer  = 3" />
       <MemberSignature Language="F#" Value="val mutable HeaderKeepAlive : int" Usage="System.Web.HttpWorkerRequest.HeaderKeepAlive" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderKeepAlive = 3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2034,6 +2118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderLastModified" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderLastModified As Integer  = 19" />
       <MemberSignature Language="F#" Value="val mutable HeaderLastModified : int" Usage="System.Web.HttpWorkerRequest.HeaderLastModified" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderLastModified = 19;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2061,6 +2146,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderLocation" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderLocation As Integer  = 23" />
       <MemberSignature Language="F#" Value="val mutable HeaderLocation : int" Usage="System.Web.HttpWorkerRequest.HeaderLocation" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderLocation = 23;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2088,6 +2174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderMaxForwards" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderMaxForwards As Integer  = 34" />
       <MemberSignature Language="F#" Value="val mutable HeaderMaxForwards : int" Usage="System.Web.HttpWorkerRequest.HeaderMaxForwards" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderMaxForwards = 34;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2115,6 +2202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderPragma" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderPragma As Integer  = 4" />
       <MemberSignature Language="F#" Value="val mutable HeaderPragma : int" Usage="System.Web.HttpWorkerRequest.HeaderPragma" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderPragma = 4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2142,6 +2230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderProxyAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderProxyAuthenticate As Integer  = 24" />
       <MemberSignature Language="F#" Value="val mutable HeaderProxyAuthenticate : int" Usage="System.Web.HttpWorkerRequest.HeaderProxyAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderProxyAuthenticate = 24;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2169,6 +2258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderProxyAuthorization" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderProxyAuthorization As Integer  = 35" />
       <MemberSignature Language="F#" Value="val mutable HeaderProxyAuthorization : int" Usage="System.Web.HttpWorkerRequest.HeaderProxyAuthorization" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderProxyAuthorization = 35;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2196,6 +2286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderRange" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderRange As Integer  = 37" />
       <MemberSignature Language="F#" Value="val mutable HeaderRange : int" Usage="System.Web.HttpWorkerRequest.HeaderRange" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderRange = 37;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2223,6 +2314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderReferer" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderReferer As Integer  = 36" />
       <MemberSignature Language="F#" Value="val mutable HeaderReferer : int" Usage="System.Web.HttpWorkerRequest.HeaderReferer" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderReferer = 36;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2250,6 +2342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderRetryAfter" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderRetryAfter As Integer  = 25" />
       <MemberSignature Language="F#" Value="val mutable HeaderRetryAfter : int" Usage="System.Web.HttpWorkerRequest.HeaderRetryAfter" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderRetryAfter = 25;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2277,6 +2370,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderServer" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderServer As Integer  = 26" />
       <MemberSignature Language="F#" Value="val mutable HeaderServer : int" Usage="System.Web.HttpWorkerRequest.HeaderServer" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderServer = 26;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2304,6 +2398,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderSetCookie" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderSetCookie As Integer  = 27" />
       <MemberSignature Language="F#" Value="val mutable HeaderSetCookie : int" Usage="System.Web.HttpWorkerRequest.HeaderSetCookie" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderSetCookie = 27;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2331,6 +2426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.HeadersSent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HeadersSent () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member HeadersSent : unit -&gt; bool&#xA;override this.HeadersSent : unit -&gt; bool" Usage="httpWorkerRequest.HeadersSent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HeadersSent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2353,6 +2449,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderTe" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderTe As Integer  = 38" />
       <MemberSignature Language="F#" Value="val mutable HeaderTe : int" Usage="System.Web.HttpWorkerRequest.HeaderTe" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderTe = 38;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2380,6 +2477,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderTrailer" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderTrailer As Integer  = 5" />
       <MemberSignature Language="F#" Value="val mutable HeaderTrailer : int" Usage="System.Web.HttpWorkerRequest.HeaderTrailer" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderTrailer = 5;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2407,6 +2505,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderTransferEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderTransferEncoding As Integer  = 6" />
       <MemberSignature Language="F#" Value="val mutable HeaderTransferEncoding : int" Usage="System.Web.HttpWorkerRequest.HeaderTransferEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderTransferEncoding = 6;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2434,6 +2533,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderUpgrade" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderUpgrade As Integer  = 7" />
       <MemberSignature Language="F#" Value="val mutable HeaderUpgrade : int" Usage="System.Web.HttpWorkerRequest.HeaderUpgrade" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderUpgrade = 7;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2461,6 +2561,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderUserAgent" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderUserAgent As Integer  = 39" />
       <MemberSignature Language="F#" Value="val mutable HeaderUserAgent : int" Usage="System.Web.HttpWorkerRequest.HeaderUserAgent" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderUserAgent = 39;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2488,6 +2589,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderVary" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderVary As Integer  = 28" />
       <MemberSignature Language="F#" Value="val mutable HeaderVary : int" Usage="System.Web.HttpWorkerRequest.HeaderVary" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderVary = 28;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2515,6 +2617,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderVia" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderVia As Integer  = 8" />
       <MemberSignature Language="F#" Value="val mutable HeaderVia : int" Usage="System.Web.HttpWorkerRequest.HeaderVia" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderVia = 8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2542,6 +2645,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderWarning" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderWarning As Integer  = 9" />
       <MemberSignature Language="F#" Value="val mutable HeaderWarning : int" Usage="System.Web.HttpWorkerRequest.HeaderWarning" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderWarning = 9;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2569,6 +2673,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderWwwAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public Const HeaderWwwAuthenticate As Integer  = 29" />
       <MemberSignature Language="F#" Value="val mutable HeaderWwwAuthenticate : int" Usage="System.Web.HttpWorkerRequest.HeaderWwwAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public: int HeaderWwwAuthenticate = 29;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2596,6 +2701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.IsClientConnected" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsClientConnected () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsClientConnected : unit -&gt; bool&#xA;override this.IsClientConnected : unit -&gt; bool" Usage="httpWorkerRequest.IsClientConnected " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsClientConnected();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2618,6 +2724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.IsEntireEntityBodyIsPreloaded" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEntireEntityBodyIsPreloaded () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsEntireEntityBodyIsPreloaded : unit -&gt; bool&#xA;override this.IsEntireEntityBodyIsPreloaded : unit -&gt; bool" Usage="httpWorkerRequest.IsEntireEntityBodyIsPreloaded " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEntireEntityBodyIsPreloaded();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2640,6 +2747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.IsSecure" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSecure () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsSecure : unit -&gt; bool&#xA;override this.IsSecure : unit -&gt; bool" Usage="httpWorkerRequest.IsSecure " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSecure();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2662,6 +2770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.MachineConfigPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MachineConfigPath As String" />
       <MemberSignature Language="F#" Value="member this.MachineConfigPath : string" Usage="System.Web.HttpWorkerRequest.MachineConfigPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MachineConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2682,6 +2791,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.MachineInstallDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MachineInstallDirectory As String" />
       <MemberSignature Language="F#" Value="member this.MachineInstallDirectory : string" Usage="System.Web.HttpWorkerRequest.MachineInstallDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MachineInstallDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2702,6 +2812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.MapPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MapPath (virtualPath As String) As String" />
       <MemberSignature Language="F#" Value="abstract member MapPath : string -&gt; string&#xA;override this.MapPath : string -&gt; string" Usage="httpWorkerRequest.MapPath virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MapPath(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2745,6 +2856,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.ReadEntityBody(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadEntityBody (buffer As Byte(), size As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member ReadEntityBody : byte[] * int -&gt; int&#xA;override this.ReadEntityBody : byte[] * int -&gt; int" Usage="httpWorkerRequest.ReadEntityBody (buffer, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadEntityBody(cli::array &lt;System::Byte&gt; ^ buffer, int size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2780,6 +2892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.ReadEntityBody(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadEntityBody (buffer As Byte(), offset As Integer, size As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member ReadEntityBody : byte[] * int * int -&gt; int&#xA;override this.ReadEntityBody : byte[] * int * int -&gt; int" Usage="httpWorkerRequest.ReadEntityBody (buffer, offset, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadEntityBody(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2817,6 +2930,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonCachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Const ReasonCachePolicy As Integer  = 2" />
       <MemberSignature Language="F#" Value="val mutable ReasonCachePolicy : int" Usage="System.Web.HttpWorkerRequest.ReasonCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReasonCachePolicy = 2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2838,6 +2952,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonCacheSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Const ReasonCacheSecurity As Integer  = 3" />
       <MemberSignature Language="F#" Value="val mutable ReasonCacheSecurity : int" Usage="System.Web.HttpWorkerRequest.ReasonCacheSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReasonCacheSecurity = 3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2859,6 +2974,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonClientDisconnect" />
       <MemberSignature Language="VB.NET" Value="Public Const ReasonClientDisconnect As Integer  = 4" />
       <MemberSignature Language="F#" Value="val mutable ReasonClientDisconnect : int" Usage="System.Web.HttpWorkerRequest.ReasonClientDisconnect" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReasonClientDisconnect = 4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2880,6 +2996,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonDefault" />
       <MemberSignature Language="VB.NET" Value="Public Const ReasonDefault As Integer  = 0" />
       <MemberSignature Language="F#" Value="val mutable ReasonDefault : int" Usage="System.Web.HttpWorkerRequest.ReasonDefault" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReasonDefault = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2901,6 +3018,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonFileHandleCacheMiss" />
       <MemberSignature Language="VB.NET" Value="Public Const ReasonFileHandleCacheMiss As Integer  = 1" />
       <MemberSignature Language="F#" Value="val mutable ReasonFileHandleCacheMiss : int" Usage="System.Web.HttpWorkerRequest.ReasonFileHandleCacheMiss" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReasonFileHandleCacheMiss = 1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2922,6 +3040,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonResponseCacheMiss" />
       <MemberSignature Language="VB.NET" Value="Public Const ReasonResponseCacheMiss As Integer  = 0" />
       <MemberSignature Language="F#" Value="val mutable ReasonResponseCacheMiss : int" Usage="System.Web.HttpWorkerRequest.ReasonResponseCacheMiss" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReasonResponseCacheMiss = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2943,6 +3062,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.RequestHeaderMaximum" />
       <MemberSignature Language="VB.NET" Value="Public Const RequestHeaderMaximum As Integer  = 40" />
       <MemberSignature Language="F#" Value="val mutable RequestHeaderMaximum : int" Usage="System.Web.HttpWorkerRequest.RequestHeaderMaximum" />
+      <MemberSignature Language="C++ CLI" Value="public: int RequestHeaderMaximum = 40;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2970,6 +3090,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.RequestTraceIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequestTraceIdentifier As Guid" />
       <MemberSignature Language="F#" Value="member this.RequestTraceIdentifier : Guid" Usage="System.Web.HttpWorkerRequest.RequestTraceIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid RequestTraceIdentifier { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3000,6 +3121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ResponseHeaderMaximum" />
       <MemberSignature Language="VB.NET" Value="Public Const ResponseHeaderMaximum As Integer  = 30" />
       <MemberSignature Language="F#" Value="val mutable ResponseHeaderMaximum : int" Usage="System.Web.HttpWorkerRequest.ResponseHeaderMaximum" />
+      <MemberSignature Language="C++ CLI" Value="public: int ResponseHeaderMaximum = 30;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3027,6 +3149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.RootWebConfigPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RootWebConfigPath As String" />
       <MemberSignature Language="F#" Value="member this.RootWebConfigPath : string" Usage="System.Web.HttpWorkerRequest.RootWebConfigPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RootWebConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3064,6 +3187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendCalculatedContentLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendCalculatedContentLength (contentLength As Integer)" />
       <MemberSignature Language="F#" Value="abstract member SendCalculatedContentLength : int -&gt; unit&#xA;override this.SendCalculatedContentLength : int -&gt; unit" Usage="httpWorkerRequest.SendCalculatedContentLength contentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SendCalculatedContentLength(int contentLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3097,6 +3221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendCalculatedContentLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendCalculatedContentLength (contentLength As Long)" />
       <MemberSignature Language="F#" Value="abstract member SendCalculatedContentLength : int64 -&gt; unit&#xA;override this.SendCalculatedContentLength : int64 -&gt; unit" Usage="httpWorkerRequest.SendCalculatedContentLength contentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SendCalculatedContentLength(long contentLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3130,6 +3255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendKnownResponseHeader(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendKnownResponseHeader (index As Integer, value As String)" />
       <MemberSignature Language="F#" Value="abstract member SendKnownResponseHeader : int * string -&gt; unit" Usage="httpWorkerRequest.SendKnownResponseHeader (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendKnownResponseHeader(int index, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3164,6 +3290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromFile(System.IntPtr,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendResponseFromFile (handle As IntPtr, offset As Long, length As Long)" />
       <MemberSignature Language="F#" Value="abstract member SendResponseFromFile : nativeint * int64 * int64 -&gt; unit" Usage="httpWorkerRequest.SendResponseFromFile (handle, offset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendResponseFromFile(IntPtr handle, long offset, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3191,6 +3318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromFile(System.String,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendResponseFromFile (filename As String, offset As Long, length As Long)" />
       <MemberSignature Language="F#" Value="abstract member SendResponseFromFile : string * int64 * int64 -&gt; unit" Usage="httpWorkerRequest.SendResponseFromFile (filename, offset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendResponseFromFile(System::String ^ filename, long offset, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3227,6 +3355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromMemory(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendResponseFromMemory (data As Byte(), length As Integer)" />
       <MemberSignature Language="F#" Value="abstract member SendResponseFromMemory : byte[] * int -&gt; unit" Usage="httpWorkerRequest.SendResponseFromMemory (data, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendResponseFromMemory(cli::array &lt;System::Byte&gt; ^ data, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3252,6 +3381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromMemory(System.IntPtr,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SendResponseFromMemory (data As IntPtr, length As Integer)" />
       <MemberSignature Language="F#" Value="abstract member SendResponseFromMemory : nativeint * int -&gt; unit&#xA;override this.SendResponseFromMemory : nativeint * int -&gt; unit" Usage="httpWorkerRequest.SendResponseFromMemory (data, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SendResponseFromMemory(IntPtr data, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3277,6 +3407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendStatus(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendStatus (statusCode As Integer, statusDescription As String)" />
       <MemberSignature Language="F#" Value="abstract member SendStatus : int * string -&gt; unit" Usage="httpWorkerRequest.SendStatus (statusCode, statusDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendStatus(int statusCode, System::String ^ statusDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3302,6 +3433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendUnknownResponseHeader(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SendUnknownResponseHeader (name As String, value As String)" />
       <MemberSignature Language="F#" Value="abstract member SendUnknownResponseHeader : string * string -&gt; unit" Usage="httpWorkerRequest.SendUnknownResponseHeader (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SendUnknownResponseHeader(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3327,6 +3459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SetEndOfSendNotification(System.Web.HttpWorkerRequest.EndOfSendNotification,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetEndOfSendNotification (callback As HttpWorkerRequest.EndOfSendNotification, extraData As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetEndOfSendNotification : System.Web.HttpWorkerRequest.EndOfSendNotification * obj -&gt; unit&#xA;override this.SetEndOfSendNotification : System.Web.HttpWorkerRequest.EndOfSendNotification * obj -&gt; unit" Usage="httpWorkerRequest.SetEndOfSendNotification (callback, extraData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetEndOfSendNotification(System::Web::HttpWorkerRequest::EndOfSendNotification ^ callback, System::Object ^ extraData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3359,6 +3492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.SupportsAsyncFlush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsAsyncFlush As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsAsyncFlush : bool" Usage="System.Web.HttpWorkerRequest.SupportsAsyncFlush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAsyncFlush { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3380,6 +3514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.SupportsAsyncRead" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsAsyncRead As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsAsyncRead : bool" Usage="System.Web.HttpWorkerRequest.SupportsAsyncRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAsyncRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

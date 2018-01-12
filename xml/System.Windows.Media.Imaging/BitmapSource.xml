@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapSource&#xA;Inherits ImageSource" />
   <TypeSignature Language="F#" Value="type BitmapSource = class&#xA;    inherit ImageSource&#xA;    interface DUCE.IResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapSource abstract : System::Windows::Media::ImageSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BitmapSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CheckIfSiteOfOrigin" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckIfSiteOfOrigin ()" />
       <MemberSignature Language="F#" Value="member this.CheckIfSiteOfOrigin : unit -&gt; unit" Usage="bitmapSource.CheckIfSiteOfOrigin " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckIfSiteOfOrigin();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapSource" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="bitmapSource.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapSource ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="bitmapSource.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapSource" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="bitmapSource.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapSource ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="bitmapSource.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CopyPixels(System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyPixels (pixels As Array, stride As Integer, offset As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyPixels : Array * int * int -&gt; unit&#xA;override this.CopyPixels : Array * int * int -&gt; unit" Usage="bitmapSource.CopyPixels (pixels, stride, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyPixels(Array ^ pixels, int stride, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CopyPixels(System.Windows.Int32Rect,System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyPixels (sourceRect As Int32Rect, pixels As Array, stride As Integer, offset As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyPixels : System.Windows.Int32Rect * Array * int * int -&gt; unit&#xA;override this.CopyPixels : System.Windows.Int32Rect * Array * int * int -&gt; unit" Usage="bitmapSource.CopyPixels (sourceRect, pixels, stride, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyPixels(System::Windows::Int32Rect sourceRect, Array ^ pixels, int stride, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.CopyPixels(System.Windows.Int32Rect,System.IntPtr,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyPixels (sourceRect As Int32Rect, buffer As IntPtr, bufferSize As Integer, stride As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyPixels : System.Windows.Int32Rect * nativeint * int * int -&gt; unit&#xA;override this.CopyPixels : System.Windows.Int32Rect * nativeint * int * int -&gt; unit" Usage="bitmapSource.CopyPixels (sourceRect, buffer, bufferSize, stride)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyPixels(System::Windows::Int32Rect sourceRect, IntPtr buffer, int bufferSize, int stride);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -372,6 +382,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSource Create(int32 pixelWidth, int32 pixelHeight, float64 dpiX, float64 dpiY, valuetype System.Windows.Media.PixelFormat pixelFormat, class System.Windows.Media.Imaging.BitmapPalette palette, class System.Array pixels, int32 stride) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.Create(System.Int32,System.Int32,System.Double,System.Double,System.Windows.Media.PixelFormat,System.Windows.Media.Imaging.BitmapPalette,System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="static member Create : int * int * double * double * System.Windows.Media.PixelFormat * System.Windows.Media.Imaging.BitmapPalette * Array * int -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="System.Windows.Media.Imaging.BitmapSource.Create (pixelWidth, pixelHeight, dpiX, dpiY, pixelFormat, palette, pixels, stride)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSource ^ Create(int pixelWidth, int pixelHeight, double dpiX, double dpiY, System::Windows::Media::PixelFormat pixelFormat, System::Windows::Media::Imaging::BitmapPalette ^ palette, Array ^ pixels, int stride);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -421,6 +432,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSource Create(int32 pixelWidth, int32 pixelHeight, float64 dpiX, float64 dpiY, valuetype System.Windows.Media.PixelFormat pixelFormat, class System.Windows.Media.Imaging.BitmapPalette palette, native int buffer, int32 bufferSize, int32 stride) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.Create(System.Int32,System.Int32,System.Double,System.Double,System.Windows.Media.PixelFormat,System.Windows.Media.Imaging.BitmapPalette,System.IntPtr,System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="static member Create : int * int * double * double * System.Windows.Media.PixelFormat * System.Windows.Media.Imaging.BitmapPalette * nativeint * int * int -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="System.Windows.Media.Imaging.BitmapSource.Create (pixelWidth, pixelHeight, dpiX, dpiY, pixelFormat, palette, buffer, bufferSize, stride)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Imaging::BitmapSource ^ Create(int pixelWidth, int pixelHeight, double dpiX, double dpiY, System::Windows::Media::PixelFormat pixelFormat, System::Windows::Media::Imaging::BitmapPalette ^ palette, IntPtr buffer, int bufferSize, int stride);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -467,6 +479,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Imaging.BitmapSource.DecodeFailed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event DecodeFailed As EventHandler(Of ExceptionEventArgs) " />
       <MemberSignature Language="F#" Value="member this.DecodeFailed : EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; " Usage="member this.DecodeFailed : System.EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Windows::Media::ExceptionEventArgs ^&gt; ^ DecodeFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -497,6 +510,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Imaging.BitmapSource.DownloadCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event DownloadCompleted As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DownloadCompleted : EventHandler " Usage="member this.DownloadCompleted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ DownloadCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -523,6 +537,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Imaging.BitmapSource.DownloadFailed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event DownloadFailed As EventHandler(Of ExceptionEventArgs) " />
       <MemberSignature Language="F#" Value="member this.DownloadFailed : EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; " Usage="member this.DownloadFailed : System.EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Windows::Media::ExceptionEventArgs ^&gt; ^ DownloadFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -553,6 +568,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Imaging.BitmapSource.DownloadProgress" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event DownloadProgress As EventHandler(Of DownloadProgressEventArgs) " />
       <MemberSignature Language="F#" Value="member this.DownloadProgress : EventHandler&lt;System.Windows.Media.Imaging.DownloadProgressEventArgs&gt; " Usage="member this.DownloadProgress : System.EventHandler&lt;System.Windows.Media.Imaging.DownloadProgressEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Windows::Media::Imaging::DownloadProgressEventArgs ^&gt; ^ DownloadProgress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -583,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.DpiX" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DpiX As Double" />
       <MemberSignature Language="F#" Value="member this.DpiX : double" Usage="System.Windows.Media.Imaging.BitmapSource.DpiX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double DpiX { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -603,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.DpiY" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DpiY As Double" />
       <MemberSignature Language="F#" Value="member this.DpiY : double" Usage="System.Windows.Media.Imaging.BitmapSource.DpiY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double DpiY { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -623,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.Format" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Format As PixelFormat" />
       <MemberSignature Language="F#" Value="member this.Format : System.Windows.Media.PixelFormat" Usage="System.Windows.Media.Imaging.BitmapSource.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::PixelFormat Format { System::Windows::Media::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -651,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="bitmapSource.FreezeCore isChecking" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -679,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="bitmapSource.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -713,6 +734,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSource.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="bitmapSource.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -745,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.Height" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Height As Double" />
       <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Media.Imaging.BitmapSource.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Height { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -765,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.IsDownloading" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsDownloading As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDownloading : bool" Usage="System.Windows.Media.Imaging.BitmapSource.IsDownloading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDownloading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -786,6 +810,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Metadata As ImageMetadata" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Windows.Media.ImageMetadata" Usage="System.Windows.Media.Imaging.BitmapSource.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::ImageMetadata ^ Metadata { System::Windows::Media::ImageMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -807,6 +832,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.Palette" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Palette As BitmapPalette" />
       <MemberSignature Language="F#" Value="member this.Palette : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.BitmapSource.Palette" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapPalette ^ Palette { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -828,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.PixelHeight" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PixelHeight As Integer" />
       <MemberSignature Language="F#" Value="member this.PixelHeight : int" Usage="System.Windows.Media.Imaging.BitmapSource.PixelHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PixelHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -848,6 +875,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.PixelWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PixelWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.PixelWidth : int" Usage="System.Windows.Media.Imaging.BitmapSource.PixelWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PixelWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -868,6 +896,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSource.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Width As Double" />
       <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Media.Imaging.BitmapSource.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Width { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

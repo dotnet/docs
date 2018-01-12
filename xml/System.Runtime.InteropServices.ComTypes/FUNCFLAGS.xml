@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.FUNCFLAGS" />
   <TypeSignature Language="VB.NET" Value="Public Enum FUNCFLAGS" />
   <TypeSignature Language="F#" Value="type FUNCFLAGS = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FUNCFLAGS" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FBINDABLE" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FBINDABLE" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FBINDABLE = 4" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FBINDABLE" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FBINDABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTBIND" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FDEFAULTBIND" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FDEFAULTBIND = 32" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTBIND" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FDEFAULTBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FDEFAULTCOLLELEM = 256" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTCOLLELEM" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FDEFAULTCOLLELEM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDISPLAYBIND" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FDISPLAYBIND" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FDISPLAYBIND = 16" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDISPLAYBIND" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FDISPLAYBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FHIDDEN" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FHIDDEN" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FHIDDEN = 64" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FHIDDEN" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FHIDDEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FIMMEDIATEBIND = 4096" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FIMMEDIATEBIND" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FIMMEDIATEBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FNONBROWSABLE" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FNONBROWSABLE" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FNONBROWSABLE = 1024" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FNONBROWSABLE" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FNONBROWSABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREPLACEABLE" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FREPLACEABLE" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FREPLACEABLE = 2048" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREPLACEABLE" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FREPLACEABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREQUESTEDIT" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FREQUESTEDIT" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FREQUESTEDIT = 8" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREQUESTEDIT" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FREQUESTEDIT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -347,6 +357,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FRESTRICTED" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FRESTRICTED" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FRESTRICTED = 1" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FRESTRICTED" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -380,6 +391,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FSOURCE" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FSOURCE" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FSOURCE = 2" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FSOURCE" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FSOURCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -413,6 +425,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUIDEFAULT" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FUIDEFAULT" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FUIDEFAULT = 512" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUIDEFAULT" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FUIDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -446,6 +459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUSESGETLASTERROR" />
       <MemberSignature Language="VB.NET" Value="FUNCFLAG_FUSESGETLASTERROR" />
       <MemberSignature Language="F#" Value="FUNCFLAG_FUSESGETLASTERROR = 128" Usage="System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUSESGETLASTERROR" />
+      <MemberSignature Language="C++ CLI" Value="FUNCFLAG_FUSESGETLASTERROR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReliableSession" />
   <TypeSignature Language="VB.NET" Value="Public Class ReliableSession" />
   <TypeSignature Language="F#" Value="type ReliableSession = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReliableSession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableSession.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReliableSession();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ReliableSession : System.ServiceModel.Channels.ReliableSessionBindingElement -&gt; System.ServiceModel.ReliableSession" Usage="new System.ServiceModel.ReliableSession binding" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binding As ReliableSessionBindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReliableSession(System::ServiceModel::Channels::ReliableSessionBindingElement ^ binding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableSession.InactivityTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property InactivityTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.InactivityTimeout : TimeSpan with get, set" Usage="System.ServiceModel.ReliableSession.InactivityTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InactivityTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ReliableSession.Ordered" />
       <MemberSignature Language="VB.NET" Value="Public Property Ordered As Boolean" />
       <MemberSignature Language="F#" Value="member this.Ordered : bool with get, set" Usage="System.ServiceModel.ReliableSession.Ordered" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Ordered { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

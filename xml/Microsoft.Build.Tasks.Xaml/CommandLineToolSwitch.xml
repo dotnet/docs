@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch" />
   <TypeSignature Language="VB.NET" Value="Public Class CommandLineToolSwitch" />
   <TypeSignature Language="F#" Value="type CommandLineToolSwitch = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommandLineToolSwitch" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandLineToolSwitch();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor(Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toolType As CommandLineToolSwitchType)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch : Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType -&gt; Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch" Usage="new Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch toolType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandLineToolSwitch(Microsoft::Build::Tasks::Xaml::CommandLineToolSwitchType toolType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.AllowMultipleValues" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowMultipleValues As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowMultipleValues : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.AllowMultipleValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowMultipleValues { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ArgumentRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property ArgumentRequired As Boolean" />
       <MemberSignature Language="F#" Value="member this.ArgumentRequired : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ArgumentRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ArgumentRequired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public Property Arguments As ICollection(Of Tuple(Of String, Boolean))" />
       <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.ICollection&lt;string * bool&gt; with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Arguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Tuple&lt;System::String ^, bool&gt; ^&gt; ^ Arguments { System::Collections::Generic::ICollection&lt;Tuple&lt;System::String ^, bool&gt; ^&gt; ^ get(); void set(System::Collections::Generic::ICollection&lt;Tuple&lt;System::String ^, bool&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.BooleanValue" />
       <MemberSignature Language="VB.NET" Value="Public Property BooleanValue As Boolean" />
       <MemberSignature Language="F#" Value="member this.BooleanValue : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.BooleanValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BooleanValue { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -170,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FallbackArgumentParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property FallbackArgumentParameter As String" />
       <MemberSignature Language="F#" Value="member this.FallbackArgumentParameter : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FallbackArgumentParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FallbackArgumentParameter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -210,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FalseSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Property FalseSuffix As String" />
       <MemberSignature Language="F#" Value="member this.FalseSuffix : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FalseSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FalseSuffix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -230,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IncludeInCommandLine" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeInCommandLine As Boolean" />
       <MemberSignature Language="F#" Value="member this.IncludeInCommandLine : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IncludeInCommandLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeInCommandLine { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -251,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IsValid" />
       <MemberSignature Language="VB.NET" Value="Public Property IsValid As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsValid : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IsValid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -272,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -292,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Number" />
       <MemberSignature Language="VB.NET" Value="Public Property Number As Integer" />
       <MemberSignature Language="F#" Value="member this.Number : int with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Number" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Number { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -312,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Overrides" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Overrides As LinkedList(Of KeyValuePair(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.Overrides : System.Collections.Generic.LinkedList&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt;" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Overrides" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedList&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ Overrides { System::Collections::Generic::LinkedList&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt;&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -332,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Parents" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parents As LinkedList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Parents : System.Collections.Generic.LinkedList&lt;string&gt;" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Parents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedList&lt;System::String ^&gt; ^ Parents { System::Collections::Generic::LinkedList&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -352,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Required" />
       <MemberSignature Language="VB.NET" Value="Public Property Required As Boolean" />
       <MemberSignature Language="F#" Value="member this.Required : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Required" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Required { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -373,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ReverseSwitchValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ReverseSwitchValue As String" />
       <MemberSignature Language="F#" Value="member this.ReverseSwitchValue : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ReverseSwitchValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReverseSwitchValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -393,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Reversible" />
       <MemberSignature Language="VB.NET" Value="Public Property Reversible As Boolean" />
       <MemberSignature Language="F#" Value="member this.Reversible : bool with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Reversible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Reversible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -414,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Separator" />
       <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
       <MemberSignature Language="F#" Value="member this.Separator : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Separator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Separator { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -434,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.StringList" />
       <MemberSignature Language="VB.NET" Value="Public Property StringList As String()" />
       <MemberSignature Language="F#" Value="member this.StringList : string[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.StringList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ StringList { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -454,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.SwitchValue" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchValue As String" />
       <MemberSignature Language="F#" Value="member this.SwitchValue : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.SwitchValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SwitchValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -474,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TaskItemArray" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskItemArray As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.TaskItemArray : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TaskItemArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TaskItemArray { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -494,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TrueSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Property TrueSuffix As String" />
       <MemberSignature Language="F#" Value="member this.TrueSuffix : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TrueSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TrueSuffix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -514,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As CommandLineToolSwitchType" />
       <MemberSignature Language="F#" Value="member this.Type : Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Xaml::CommandLineToolSwitchType Type { Microsoft::Build::Tasks::Xaml::CommandLineToolSwitchType get(); void set(Microsoft::Build::Tasks::Xaml::CommandLineToolSwitchType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -534,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

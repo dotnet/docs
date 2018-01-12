@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ToolboxItemFilterType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ToolboxItemFilterType" />
   <TypeSignature Language="F#" Value="type ToolboxItemFilterType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolboxItemFilterType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Allow" />
       <MemberSignature Language="VB.NET" Value="Allow" />
       <MemberSignature Language="F#" Value="Allow = 0" Usage="System.ComponentModel.ToolboxItemFilterType.Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="F#" Value="Custom = 1" Usage="System.ComponentModel.ToolboxItemFilterType.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Prevent" />
       <MemberSignature Language="VB.NET" Value="Prevent" />
       <MemberSignature Language="F#" Value="Prevent = 2" Usage="System.ComponentModel.ToolboxItemFilterType.Prevent" />
+      <MemberSignature Language="C++ CLI" Value="Prevent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemFilterType.Require" />
       <MemberSignature Language="VB.NET" Value="Require" />
       <MemberSignature Language="F#" Value="Require = 3" Usage="System.ComponentModel.ToolboxItemFilterType.Require" />
+      <MemberSignature Language="C++ CLI" Value="Require" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

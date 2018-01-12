@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.AmbientLight" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AmbientLight&#xA;Inherits Light" />
   <TypeSignature Language="F#" Value="type AmbientLight = class&#xA;    inherit Light" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AmbientLight sealed : System::Windows::Media::Media3D::Light" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AmbientLight.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbientLight();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AmbientLight.#ctor(System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ambientColor As Color)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.AmbientLight : System.Windows.Media.Color -&gt; System.Windows.Media.Media3D.AmbientLight" Usage="new System.Windows.Media.Media3D.AmbientLight ambientColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbientLight(System::Windows::Media::Color ambientColor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AmbientLight.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As AmbientLight" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.AmbientLight" Usage="ambientLight.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::AmbientLight ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AmbientLight.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As AmbientLight" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.AmbientLight" Usage="ambientLight.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::AmbientLight ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.AmbientLight.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="ambientLight.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

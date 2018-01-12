@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCookiesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCookiesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type HttpCookiesSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpCookiesSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCookiesSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCookiesSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpCookiesSection.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.Configuration.HttpCookiesSection.Domain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpCookiesSection.HttpOnlyCookies" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpOnlyCookies As Boolean" />
       <MemberSignature Language="F#" Value="member this.HttpOnlyCookies : bool with get, set" Usage="System.Web.Configuration.HttpCookiesSection.HttpOnlyCookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpOnlyCookies { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpCookiesSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HttpCookiesSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpCookiesSection.RequireSSL" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireSSL As Boolean" />
       <MemberSignature Language="F#" Value="member this.RequireSSL : bool with get, set" Usage="System.Web.Configuration.HttpCookiesSection.RequireSSL" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSSL { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

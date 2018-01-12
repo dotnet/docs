@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderFallbackException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderFallbackException&#xA;Inherits ArgumentException" />
   <TypeSignature Language="F#" Value="type EncoderFallbackException = class&#xA;    inherit ArgumentException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderFallbackException sealed : ArgumentException" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderFallbackException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Text.EncoderFallbackException : string -&gt; System.Text.EncoderFallbackException" Usage="new System.Text.EncoderFallbackException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderFallbackException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Text.EncoderFallbackException : string * Exception -&gt; System.Text.EncoderFallbackException" Usage="new System.Text.EncoderFallbackException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderFallbackException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.CharUnknown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharUnknown As Char" />
       <MemberSignature Language="F#" Value="member this.CharUnknown : char" Usage="System.Text.EncoderFallbackException.CharUnknown" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharUnknown { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.CharUnknownHigh" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharUnknownHigh As Char" />
       <MemberSignature Language="F#" Value="member this.CharUnknownHigh : char" Usage="System.Text.EncoderFallbackException.CharUnknownHigh" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharUnknownHigh { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.CharUnknownLow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharUnknownLow As Char" />
       <MemberSignature Language="F#" Value="member this.CharUnknownLow : char" Usage="System.Text.EncoderFallbackException.CharUnknownLow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char CharUnknownLow { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallbackException.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Text.EncoderFallbackException.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -324,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallbackException.IsUnknownSurrogate" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnknownSurrogate () As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsUnknownSurrogate : unit -&gt; bool" Usage="encoderFallbackException.IsUnknownSurrogate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUnknownSurrogate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

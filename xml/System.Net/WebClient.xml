@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebClient" />
   <TypeSignature Language="VB.NET" Value="Public Class WebClient&#xA;Inherits Component" />
   <TypeSignature Language="F#" Value="type WebClient = class&#xA;    inherit Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebClient : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -99,6 +100,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClient();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.AllowReadStreamBuffering" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowReadStreamBuffering As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowReadStreamBuffering : bool with get, set" Usage="System.Net.WebClient.AllowReadStreamBuffering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowReadStreamBuffering { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.AllowWriteStreamBuffering" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowWriteStreamBuffering As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowWriteStreamBuffering : bool with get, set" Usage="System.Net.WebClient.AllowWriteStreamBuffering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowWriteStreamBuffering { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.BaseAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseAddress As String" />
       <MemberSignature Language="F#" Value="member this.BaseAddress : string with get, set" Usage="System.Net.WebClient.BaseAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseAddress { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.CachePolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property CachePolicy As RequestCachePolicy" />
       <MemberSignature Language="F#" Value="member this.CachePolicy : System.Net.Cache.RequestCachePolicy with get, set" Usage="System.Net.WebClient.CachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::RequestCachePolicy ^ CachePolicy { System::Net::Cache::RequestCachePolicy ^ get(); void set(System::Net::Cache::RequestCachePolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.CancelAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
       <MemberSignature Language="F#" Value="member this.CancelAsync : unit -&gt; unit" Usage="webClient.CancelAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -343,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.WebClient.Credentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -403,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadData (address As String) As Byte()" />
       <MemberSignature Language="F#" Value="member this.DownloadData : string -&gt; byte[]" Usage="webClient.DownloadData address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DownloadData(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -466,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadData(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadData (address As Uri) As Byte()" />
       <MemberSignature Language="F#" Value="member this.DownloadData : Uri -&gt; byte[]" Usage="webClient.DownloadData address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DownloadData(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -523,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadDataAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadDataAsync (address As Uri)" />
       <MemberSignature Language="F#" Value="member this.DownloadDataAsync : Uri -&gt; unit" Usage="webClient.DownloadDataAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadDataAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -579,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadDataAsync(System.Uri,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadDataAsync (address As Uri, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.DownloadDataAsync : Uri * obj -&gt; unit" Usage="webClient.DownloadDataAsync (address, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadDataAsync(Uri ^ address, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -637,6 +649,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.DownloadDataCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DownloadDataCompleted As DownloadDataCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.DownloadDataCompleted : System.Net.DownloadDataCompletedEventHandler " Usage="member this.DownloadDataCompleted : System.Net.DownloadDataCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::DownloadDataCompletedEventHandler ^ DownloadDataCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -695,6 +708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadDataTaskAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadDataTaskAsync (address As String) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.DownloadDataTaskAsync : string -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.DownloadDataTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ DownloadDataTaskAsync(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -759,6 +773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadDataTaskAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadDataTaskAsync (address As Uri) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.DownloadDataTaskAsync : Uri -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.DownloadDataTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ DownloadDataTaskAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -830,6 +845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As String, fileName As String)" />
       <MemberSignature Language="F#" Value="member this.DownloadFile : string * string -&gt; unit" Usage="webClient.DownloadFile (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFile(System::String ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -903,6 +919,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadFile(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadFile (address As Uri, fileName As String)" />
       <MemberSignature Language="F#" Value="member this.DownloadFile : Uri * string -&gt; unit" Usage="webClient.DownloadFile (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFile(Uri ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -983,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadFileAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadFileAsync (address As Uri, fileName As String)" />
       <MemberSignature Language="F#" Value="member this.DownloadFileAsync : Uri * string -&gt; unit" Usage="webClient.DownloadFileAsync (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFileAsync(Uri ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1048,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadFileAsync(System.Uri,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadFileAsync (address As Uri, fileName As String, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.DownloadFileAsync : Uri * string * obj -&gt; unit" Usage="webClient.DownloadFileAsync (address, fileName, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFileAsync(Uri ^ address, System::String ^ fileName, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1115,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.DownloadFileCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DownloadFileCompleted As AsyncCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.DownloadFileCompleted : System.ComponentModel.AsyncCompletedEventHandler " Usage="member this.DownloadFileCompleted : System.ComponentModel.AsyncCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::AsyncCompletedEventHandler ^ DownloadFileCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1173,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadFileTaskAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadFileTaskAsync (address As String, fileName As String) As Task" />
       <MemberSignature Language="F#" Value="member this.DownloadFileTaskAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="webClient.DownloadFileTaskAsync (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ DownloadFileTaskAsync(System::String ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1246,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadFileTaskAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadFileTaskAsync (address As Uri, fileName As String) As Task" />
       <MemberSignature Language="F#" Value="member this.DownloadFileTaskAsync : Uri * string -&gt; System.Threading.Tasks.Task" Usage="webClient.DownloadFileTaskAsync (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ DownloadFileTaskAsync(Uri ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1319,6 +1341,7 @@
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.DownloadProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DownloadProgressChanged As DownloadProgressChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.DownloadProgressChanged : System.Net.DownloadProgressChangedEventHandler " Usage="member this.DownloadProgressChanged : System.Net.DownloadProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::DownloadProgressChangedEventHandler ^ DownloadProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1402,6 +1425,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadString (address As String) As String" />
       <MemberSignature Language="F#" Value="member this.DownloadString : string -&gt; string" Usage="webClient.DownloadString address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DownloadString(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1465,6 +1489,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadString(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadString (address As Uri) As String" />
       <MemberSignature Language="F#" Value="member this.DownloadString : Uri -&gt; string" Usage="webClient.DownloadString address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DownloadString(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1529,6 +1554,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadStringAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadStringAsync (address As Uri)" />
       <MemberSignature Language="F#" Value="member this.DownloadStringAsync : Uri -&gt; unit" Usage="webClient.DownloadStringAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadStringAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1585,6 +1611,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadStringAsync(System.Uri,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DownloadStringAsync (address As Uri, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.DownloadStringAsync : Uri * obj -&gt; unit" Usage="webClient.DownloadStringAsync (address, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadStringAsync(Uri ^ address, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1643,6 +1670,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.DownloadStringCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DownloadStringCompleted As DownloadStringCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.DownloadStringCompleted : System.Net.DownloadStringCompletedEventHandler " Usage="member this.DownloadStringCompleted : System.Net.DownloadStringCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::DownloadStringCompletedEventHandler ^ DownloadStringCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1701,6 +1729,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadStringTaskAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadStringTaskAsync (address As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.DownloadStringTaskAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webClient.DownloadStringTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ DownloadStringTaskAsync(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1764,6 +1793,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.DownloadStringTaskAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function DownloadStringTaskAsync (address As Uri) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.DownloadStringTaskAsync : Uri -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webClient.DownloadStringTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ DownloadStringTaskAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1827,6 +1857,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding with get, set" Usage="System.Net.WebClient.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1874,6 +1905,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.GetWebRequest(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetWebRequest (address As Uri) As WebRequest" />
       <MemberSignature Language="F#" Value="abstract member GetWebRequest : Uri -&gt; System.Net.WebRequest&#xA;override this.GetWebRequest : Uri -&gt; System.Net.WebRequest" Usage="webClient.GetWebRequest address" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Net::WebRequest ^ GetWebRequest(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1934,6 +1966,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.GetWebResponse(System.Net.WebRequest)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetWebResponse (request As WebRequest) As WebResponse" />
       <MemberSignature Language="F#" Value="abstract member GetWebResponse : System.Net.WebRequest -&gt; System.Net.WebResponse&#xA;override this.GetWebResponse : System.Net.WebRequest -&gt; System.Net.WebResponse" Usage="webClient.GetWebResponse request" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Net::WebResponse ^ GetWebResponse(System::Net::WebRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1984,6 +2017,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetWebResponse (request As WebRequest, result As IAsyncResult) As WebResponse" />
       <MemberSignature Language="F#" Value="abstract member GetWebResponse : System.Net.WebRequest * IAsyncResult -&gt; System.Net.WebResponse&#xA;override this.GetWebResponse : System.Net.WebRequest * IAsyncResult -&gt; System.Net.WebResponse" Usage="webClient.GetWebResponse (request, result)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Net::WebResponse ^ GetWebResponse(System::Net::WebRequest ^ request, IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2036,6 +2070,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Property Headers As WebHeaderCollection" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection with get, set" Usage="System.Net.WebClient.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); void set(System::Net::WebHeaderCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2111,6 +2146,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.IsBusy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBusy As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBusy : bool" Usage="System.Net.WebClient.IsBusy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBusy { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2141,6 +2177,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDownloadDataCompleted (e As DownloadDataCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDownloadDataCompleted : System.Net.DownloadDataCompletedEventArgs -&gt; unit&#xA;override this.OnDownloadDataCompleted : System.Net.DownloadDataCompletedEventArgs -&gt; unit" Usage="webClient.OnDownloadDataCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDownloadDataCompleted(System::Net::DownloadDataCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2195,6 +2232,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnDownloadFileCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDownloadFileCompleted (e As AsyncCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDownloadFileCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit&#xA;override this.OnDownloadFileCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit" Usage="webClient.OnDownloadFileCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDownloadFileCompleted(System::ComponentModel::AsyncCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2249,6 +2287,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnDownloadProgressChanged(System.Net.DownloadProgressChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDownloadProgressChanged (e As DownloadProgressChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDownloadProgressChanged : System.Net.DownloadProgressChangedEventArgs -&gt; unit&#xA;override this.OnDownloadProgressChanged : System.Net.DownloadProgressChangedEventArgs -&gt; unit" Usage="webClient.OnDownloadProgressChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDownloadProgressChanged(System::Net::DownloadProgressChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2303,6 +2342,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDownloadStringCompleted (e As DownloadStringCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDownloadStringCompleted : System.Net.DownloadStringCompletedEventArgs -&gt; unit&#xA;override this.OnDownloadStringCompleted : System.Net.DownloadStringCompletedEventArgs -&gt; unit" Usage="webClient.OnDownloadStringCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDownloadStringCompleted(System::Net::DownloadStringCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2357,6 +2397,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnOpenReadCompleted(System.Net.OpenReadCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpenReadCompleted (e As OpenReadCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnOpenReadCompleted : System.Net.OpenReadCompletedEventArgs -&gt; unit&#xA;override this.OnOpenReadCompleted : System.Net.OpenReadCompletedEventArgs -&gt; unit" Usage="webClient.OnOpenReadCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpenReadCompleted(System::Net::OpenReadCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2411,6 +2452,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnOpenWriteCompleted(System.Net.OpenWriteCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnOpenWriteCompleted (e As OpenWriteCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnOpenWriteCompleted : System.Net.OpenWriteCompletedEventArgs -&gt; unit&#xA;override this.OnOpenWriteCompleted : System.Net.OpenWriteCompletedEventArgs -&gt; unit" Usage="webClient.OnOpenWriteCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnOpenWriteCompleted(System::Net::OpenWriteCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2465,6 +2507,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnUploadDataCompleted(System.Net.UploadDataCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUploadDataCompleted (e As UploadDataCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUploadDataCompleted : System.Net.UploadDataCompletedEventArgs -&gt; unit&#xA;override this.OnUploadDataCompleted : System.Net.UploadDataCompletedEventArgs -&gt; unit" Usage="webClient.OnUploadDataCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUploadDataCompleted(System::Net::UploadDataCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2519,6 +2562,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUploadFileCompleted (e As UploadFileCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUploadFileCompleted : System.Net.UploadFileCompletedEventArgs -&gt; unit&#xA;override this.OnUploadFileCompleted : System.Net.UploadFileCompletedEventArgs -&gt; unit" Usage="webClient.OnUploadFileCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUploadFileCompleted(System::Net::UploadFileCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2573,6 +2617,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUploadProgressChanged (e As UploadProgressChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUploadProgressChanged : System.Net.UploadProgressChangedEventArgs -&gt; unit&#xA;override this.OnUploadProgressChanged : System.Net.UploadProgressChangedEventArgs -&gt; unit" Usage="webClient.OnUploadProgressChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUploadProgressChanged(System::Net::UploadProgressChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2627,6 +2672,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadStringCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUploadStringCompleted (e As UploadStringCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUploadStringCompleted : System.Net.UploadStringCompletedEventArgs -&gt; unit&#xA;override this.OnUploadStringCompleted : System.Net.UploadStringCompletedEventArgs -&gt; unit" Usage="webClient.OnUploadStringCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUploadStringCompleted(System::Net::UploadStringCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2681,6 +2727,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUploadValuesCompleted (e As UploadValuesCompletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUploadValuesCompleted : System.Net.UploadValuesCompletedEventArgs -&gt; unit&#xA;override this.OnUploadValuesCompleted : System.Net.UploadValuesCompletedEventArgs -&gt; unit" Usage="webClient.OnUploadValuesCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUploadValuesCompleted(System::Net::UploadValuesCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2735,6 +2782,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OnWriteStreamClosed(System.Net.WriteStreamClosedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteStreamClosed (e As WriteStreamClosedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWriteStreamClosed : System.Net.WriteStreamClosedEventArgs -&gt; unit&#xA;override this.OnWriteStreamClosed : System.Net.WriteStreamClosedEventArgs -&gt; unit" Usage="webClient.OnWriteStreamClosed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStreamClosed(System::Net::WriteStreamClosedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2781,6 +2829,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenRead(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenRead (address As String) As Stream" />
       <MemberSignature Language="F#" Value="member this.OpenRead : string -&gt; System.IO.Stream" Usage="webClient.OpenRead address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenRead(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2846,6 +2895,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenRead(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenRead (address As Uri) As Stream" />
       <MemberSignature Language="F#" Value="member this.OpenRead : Uri -&gt; System.IO.Stream" Usage="webClient.OpenRead address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenRead(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2911,6 +2961,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenReadAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenReadAsync (address As Uri)" />
       <MemberSignature Language="F#" Value="member this.OpenReadAsync : Uri -&gt; unit" Usage="webClient.OpenReadAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenReadAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2974,6 +3025,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenReadAsync(System.Uri,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenReadAsync (address As Uri, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.OpenReadAsync : Uri * obj -&gt; unit" Usage="webClient.OpenReadAsync (address, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenReadAsync(Uri ^ address, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3039,6 +3091,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.OpenReadCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event OpenReadCompleted As OpenReadCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.OpenReadCompleted : System.Net.OpenReadCompletedEventHandler " Usage="member this.OpenReadCompleted : System.Net.OpenReadCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::OpenReadCompletedEventHandler ^ OpenReadCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3097,6 +3150,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenReadTaskAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenReadTaskAsync (address As String) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.OpenReadTaskAsync : string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webClient.OpenReadTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenReadTaskAsync(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3169,6 +3223,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenReadTaskAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenReadTaskAsync (address As Uri) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.OpenReadTaskAsync : Uri -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webClient.OpenReadTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenReadTaskAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3251,6 +3306,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWrite(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWrite (address As String) As Stream" />
       <MemberSignature Language="F#" Value="member this.OpenWrite : string -&gt; System.IO.Stream" Usage="webClient.OpenWrite address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenWrite(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3313,6 +3369,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWrite(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWrite (address As Uri) As Stream" />
       <MemberSignature Language="F#" Value="member this.OpenWrite : Uri -&gt; System.IO.Stream" Usage="webClient.OpenWrite address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenWrite(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3366,6 +3423,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWrite(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWrite (address As String, method As String) As Stream" />
       <MemberSignature Language="F#" Value="member this.OpenWrite : string * string -&gt; System.IO.Stream" Usage="webClient.OpenWrite (address, method)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenWrite(System::String ^ address, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3430,6 +3488,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWrite(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWrite (address As Uri, method As String) As Stream" />
       <MemberSignature Language="F#" Value="member this.OpenWrite : Uri * string -&gt; System.IO.Stream" Usage="webClient.OpenWrite (address, method)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ OpenWrite(Uri ^ address, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3493,6 +3552,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenWriteAsync (address As Uri)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteAsync : Uri -&gt; unit" Usage="webClient.OpenWriteAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenWriteAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3542,6 +3602,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenWriteAsync (address As Uri, method As String)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteAsync : Uri * string -&gt; unit" Usage="webClient.OpenWriteAsync (address, method)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenWriteAsync(Uri ^ address, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3591,6 +3652,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteAsync(System.Uri,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenWriteAsync (address As Uri, method As String, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteAsync : Uri * string * obj -&gt; unit" Usage="webClient.OpenWriteAsync (address, method, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenWriteAsync(Uri ^ address, System::String ^ method, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3651,6 +3713,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.OpenWriteCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event OpenWriteCompleted As OpenWriteCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.OpenWriteCompleted : System.Net.OpenWriteCompletedEventHandler " Usage="member this.OpenWriteCompleted : System.Net.OpenWriteCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::OpenWriteCompletedEventHandler ^ OpenWriteCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3709,6 +3772,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteTaskAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWriteTaskAsync (address As String) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteTaskAsync : string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webClient.OpenWriteTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenWriteTaskAsync(System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3776,6 +3840,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteTaskAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWriteTaskAsync (address As Uri) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteTaskAsync : Uri -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webClient.OpenWriteTaskAsync address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenWriteTaskAsync(Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3842,6 +3907,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteTaskAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWriteTaskAsync (address As String, method As String) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteTaskAsync : string * string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webClient.OpenWriteTaskAsync (address, method)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenWriteTaskAsync(System::String ^ address, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3913,6 +3979,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.OpenWriteTaskAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWriteTaskAsync (address As Uri, method As String) As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.OpenWriteTaskAsync : Uri * string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="webClient.OpenWriteTaskAsync (address, method)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenWriteTaskAsync(Uri ^ address, System::String ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3984,6 +4051,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
       <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.WebClient.Proxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4033,6 +4101,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.QueryString" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryString As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.QueryString : System.Collections.Specialized.NameValueCollection with get, set" Usage="System.Net.WebClient.QueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ QueryString { System::Collections::Specialized::NameValueCollection ^ get(); void set(System::Collections::Specialized::NameValueCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4078,6 +4147,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.ResponseHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseHeaders As WebHeaderCollection" />
       <MemberSignature Language="F#" Value="member this.ResponseHeaders : System.Net.WebHeaderCollection" Usage="System.Net.WebClient.ResponseHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ ResponseHeaders { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4133,6 +4203,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadData(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadData (address As String, data As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadData : string * byte[] -&gt; byte[]" Usage="webClient.UploadData (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadData(System::String ^ address, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4207,6 +4278,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadData(System.Uri,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadData (address As Uri, data As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadData : Uri * byte[] -&gt; byte[]" Usage="webClient.UploadData (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadData(Uri ^ address, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4272,6 +4344,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadData(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadData (address As String, method As String, data As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadData : string * string * byte[] -&gt; byte[]" Usage="webClient.UploadData (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadData(System::String ^ address, System::String ^ method, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4348,6 +4421,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadData(System.Uri,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadData (address As Uri, method As String, data As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadData : Uri * string * byte[] -&gt; byte[]" Usage="webClient.UploadData (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadData(Uri ^ address, System::String ^ method, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4425,6 +4499,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataAsync(System.Uri,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadDataAsync (address As Uri, data As Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadDataAsync : Uri * byte[] -&gt; unit" Usage="webClient.UploadDataAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadDataAsync(Uri ^ address, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4487,6 +4562,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataAsync(System.Uri,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadDataAsync (address As Uri, method As String, data As Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadDataAsync : Uri * string * byte[] -&gt; unit" Usage="webClient.UploadDataAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadDataAsync(Uri ^ address, System::String ^ method, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4549,6 +4625,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataAsync(System.Uri,System.String,System.Byte[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadDataAsync (address As Uri, method As String, data As Byte(), userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.UploadDataAsync : Uri * string * byte[] * obj -&gt; unit" Usage="webClient.UploadDataAsync (address, method, data, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadDataAsync(Uri ^ address, System::String ^ method, cli::array &lt;System::Byte&gt; ^ data, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4613,6 +4690,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.UploadDataCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UploadDataCompleted As UploadDataCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.UploadDataCompleted : System.Net.UploadDataCompletedEventHandler " Usage="member this.UploadDataCompleted : System.Net.UploadDataCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::UploadDataCompletedEventHandler ^ UploadDataCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4671,6 +4749,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataTaskAsync(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadDataTaskAsync (address As String, data As Byte()) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadDataTaskAsync : string * byte[] -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadDataTaskAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadDataTaskAsync(System::String ^ address, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4741,6 +4820,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataTaskAsync(System.Uri,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadDataTaskAsync (address As Uri, data As Byte()) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadDataTaskAsync : Uri * byte[] -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadDataTaskAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadDataTaskAsync(Uri ^ address, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4811,6 +4891,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataTaskAsync(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadDataTaskAsync (address As String, method As String, data As Byte()) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadDataTaskAsync : string * string * byte[] -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadDataTaskAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadDataTaskAsync(System::String ^ address, System::String ^ method, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4881,6 +4962,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadDataTaskAsync(System.Uri,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadDataTaskAsync (address As Uri, method As String, data As Byte()) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadDataTaskAsync : Uri * string * byte[] -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadDataTaskAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadDataTaskAsync(Uri ^ address, System::String ^ method, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4961,6 +5043,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFile (address As String, fileName As String) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadFile : string * string -&gt; byte[]" Usage="webClient.UploadFile (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadFile(System::String ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5049,6 +5132,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFile(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFile (address As Uri, fileName As String) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadFile : Uri * string -&gt; byte[]" Usage="webClient.UploadFile (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadFile(Uri ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5123,6 +5207,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFile(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFile (address As String, method As String, fileName As String) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadFile : string * string * string -&gt; byte[]" Usage="webClient.UploadFile (address, method, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadFile(System::String ^ address, System::String ^ method, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5211,6 +5296,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFile(System.Uri,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFile (address As Uri, method As String, fileName As String) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadFile : Uri * string * string -&gt; byte[]" Usage="webClient.UploadFile (address, method, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadFile(Uri ^ address, System::String ^ method, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5295,6 +5381,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadFileAsync (address As Uri, fileName As String)" />
       <MemberSignature Language="F#" Value="member this.UploadFileAsync : Uri * string -&gt; unit" Usage="webClient.UploadFileAsync (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadFileAsync(Uri ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5370,6 +5457,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileAsync(System.Uri,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadFileAsync (address As Uri, method As String, fileName As String)" />
       <MemberSignature Language="F#" Value="member this.UploadFileAsync : Uri * string * string -&gt; unit" Usage="webClient.UploadFileAsync (address, method, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadFileAsync(Uri ^ address, System::String ^ method, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5447,6 +5535,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileAsync(System.Uri,System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadFileAsync (address As Uri, method As String, fileName As String, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.UploadFileAsync : Uri * string * string * obj -&gt; unit" Usage="webClient.UploadFileAsync (address, method, fileName, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadFileAsync(Uri ^ address, System::String ^ method, System::String ^ fileName, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5526,6 +5615,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.UploadFileCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UploadFileCompleted As UploadFileCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.UploadFileCompleted : System.Net.UploadFileCompletedEventHandler " Usage="member this.UploadFileCompleted : System.Net.UploadFileCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::UploadFileCompletedEventHandler ^ UploadFileCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5584,6 +5674,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileTaskAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFileTaskAsync (address As String, fileName As String) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadFileTaskAsync : string * string -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadFileTaskAsync (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadFileTaskAsync(System::String ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5664,6 +5755,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileTaskAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFileTaskAsync (address As Uri, fileName As String) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadFileTaskAsync : Uri * string -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadFileTaskAsync (address, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadFileTaskAsync(Uri ^ address, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5744,6 +5836,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileTaskAsync(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFileTaskAsync (address As String, method As String, fileName As String) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadFileTaskAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadFileTaskAsync (address, method, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadFileTaskAsync(System::String ^ address, System::String ^ method, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5826,6 +5919,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadFileTaskAsync(System.Uri,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadFileTaskAsync (address As Uri, method As String, fileName As String) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadFileTaskAsync : Uri * string * string -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadFileTaskAsync (address, method, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadFileTaskAsync(Uri ^ address, System::String ^ method, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5908,6 +6002,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.UploadProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UploadProgressChanged As UploadProgressChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.UploadProgressChanged : System.Net.UploadProgressChangedEventHandler " Usage="member this.UploadProgressChanged : System.Net.UploadProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::UploadProgressChangedEventHandler ^ UploadProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5978,6 +6073,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadString (address As String, data As String) As String" />
       <MemberSignature Language="F#" Value="member this.UploadString : string * string -&gt; string" Usage="webClient.UploadString (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UploadString(System::String ^ address, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6046,6 +6142,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadString(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadString (address As Uri, data As String) As String" />
       <MemberSignature Language="F#" Value="member this.UploadString : Uri * string -&gt; string" Usage="webClient.UploadString (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UploadString(Uri ^ address, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6105,6 +6202,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadString(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadString (address As String, method As String, data As String) As String" />
       <MemberSignature Language="F#" Value="member this.UploadString : string * string * string -&gt; string" Usage="webClient.UploadString (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UploadString(System::String ^ address, System::String ^ method, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6177,6 +6275,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadString(System.Uri,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadString (address As Uri, method As String, data As String) As String" />
       <MemberSignature Language="F#" Value="member this.UploadString : Uri * string * string -&gt; string" Usage="webClient.UploadString (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UploadString(Uri ^ address, System::String ^ method, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6250,6 +6349,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadStringAsync (address As Uri, data As String)" />
       <MemberSignature Language="F#" Value="member this.UploadStringAsync : Uri * string -&gt; unit" Usage="webClient.UploadStringAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadStringAsync(Uri ^ address, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6312,6 +6412,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringAsync(System.Uri,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadStringAsync (address As Uri, method As String, data As String)" />
       <MemberSignature Language="F#" Value="member this.UploadStringAsync : Uri * string * string -&gt; unit" Usage="webClient.UploadStringAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadStringAsync(Uri ^ address, System::String ^ method, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6378,6 +6479,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringAsync(System.Uri,System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadStringAsync (address As Uri, method As String, data As String, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.UploadStringAsync : Uri * string * string * obj -&gt; unit" Usage="webClient.UploadStringAsync (address, method, data, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadStringAsync(Uri ^ address, System::String ^ method, System::String ^ data, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6446,6 +6548,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.UploadStringCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UploadStringCompleted As UploadStringCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.UploadStringCompleted : System.Net.UploadStringCompletedEventHandler " Usage="member this.UploadStringCompleted : System.Net.UploadStringCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::UploadStringCompletedEventHandler ^ UploadStringCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6504,6 +6607,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringTaskAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadStringTaskAsync (address As String, data As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.UploadStringTaskAsync : string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webClient.UploadStringTaskAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ UploadStringTaskAsync(System::String ^ address, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6572,6 +6676,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringTaskAsync(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadStringTaskAsync (address As Uri, data As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.UploadStringTaskAsync : Uri * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webClient.UploadStringTaskAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ UploadStringTaskAsync(Uri ^ address, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6640,6 +6745,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringTaskAsync(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadStringTaskAsync (address As String, method As String, data As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.UploadStringTaskAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webClient.UploadStringTaskAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ UploadStringTaskAsync(System::String ^ address, System::String ^ method, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6714,6 +6820,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadStringTaskAsync(System.Uri,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadStringTaskAsync (address As Uri, method As String, data As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.UploadStringTaskAsync : Uri * string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webClient.UploadStringTaskAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ UploadStringTaskAsync(Uri ^ address, System::String ^ method, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6798,6 +6905,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValues(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValues (address As String, data As NameValueCollection) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadValues : string * System.Collections.Specialized.NameValueCollection -&gt; byte[]" Usage="webClient.UploadValues (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadValues(System::String ^ address, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6882,6 +6990,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValues(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValues (address As Uri, data As NameValueCollection) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadValues : Uri * System.Collections.Specialized.NameValueCollection -&gt; byte[]" Usage="webClient.UploadValues (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadValues(Uri ^ address, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6957,6 +7066,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValues(System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValues (address As String, method As String, data As NameValueCollection) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadValues : string * string * System.Collections.Specialized.NameValueCollection -&gt; byte[]" Usage="webClient.UploadValues (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadValues(System::String ^ address, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7041,6 +7151,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValues(System.Uri,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValues (address As Uri, method As String, data As NameValueCollection) As Byte()" />
       <MemberSignature Language="F#" Value="member this.UploadValues : Uri * string * System.Collections.Specialized.NameValueCollection -&gt; byte[]" Usage="webClient.UploadValues (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ UploadValues(Uri ^ address, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7126,6 +7237,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesAsync(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadValuesAsync (address As Uri, data As NameValueCollection)" />
       <MemberSignature Language="F#" Value="member this.UploadValuesAsync : Uri * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="webClient.UploadValuesAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadValuesAsync(Uri ^ address, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7188,6 +7300,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesAsync(System.Uri,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadValuesAsync (address As Uri, method As String, data As NameValueCollection)" />
       <MemberSignature Language="F#" Value="member this.UploadValuesAsync : Uri * string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="webClient.UploadValuesAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadValuesAsync(Uri ^ address, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7258,6 +7371,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesAsync(System.Uri,System.String,System.Collections.Specialized.NameValueCollection,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UploadValuesAsync (address As Uri, method As String, data As NameValueCollection, userToken As Object)" />
       <MemberSignature Language="F#" Value="member this.UploadValuesAsync : Uri * string * System.Collections.Specialized.NameValueCollection * obj -&gt; unit" Usage="webClient.UploadValuesAsync (address, method, data, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UploadValuesAsync(Uri ^ address, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ data, System::Object ^ userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7330,6 +7444,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.UploadValuesCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UploadValuesCompleted As UploadValuesCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.UploadValuesCompleted : System.Net.UploadValuesCompletedEventHandler " Usage="member this.UploadValuesCompleted : System.Net.UploadValuesCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::UploadValuesCompletedEventHandler ^ UploadValuesCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7379,6 +7494,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesTaskAsync(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValuesTaskAsync (address As String, data As NameValueCollection) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadValuesTaskAsync : string * System.Collections.Specialized.NameValueCollection -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadValuesTaskAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadValuesTaskAsync(System::String ^ address, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7459,6 +7575,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesTaskAsync(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValuesTaskAsync (address As Uri, data As NameValueCollection) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadValuesTaskAsync : Uri * System.Collections.Specialized.NameValueCollection -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadValuesTaskAsync (address, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadValuesTaskAsync(Uri ^ address, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7539,6 +7656,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesTaskAsync(System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValuesTaskAsync (address As String, method As String, data As NameValueCollection) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadValuesTaskAsync : string * string * System.Collections.Specialized.NameValueCollection -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadValuesTaskAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadValuesTaskAsync(System::String ^ address, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7625,6 +7743,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="M:System.Net.WebClient.UploadValuesTaskAsync(System.Uri,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UploadValuesTaskAsync (address As Uri, method As String, data As NameValueCollection) As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.UploadValuesTaskAsync : Uri * string * System.Collections.Specialized.NameValueCollection -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="webClient.UploadValuesTaskAsync (address, method, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UploadValuesTaskAsync(Uri ^ address, System::String ^ method, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7711,6 +7830,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="P:System.Net.WebClient.UseDefaultCredentials" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCredentials As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.WebClient.UseDefaultCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7757,6 +7877,7 @@ internal class MyWebClient:WebClient{
       <MemberSignature Language="DocId" Value="E:System.Net.WebClient.WriteStreamClosed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WriteStreamClosed As WriteStreamClosedEventHandler " />
       <MemberSignature Language="F#" Value="member this.WriteStreamClosed : System.Net.WriteStreamClosedEventHandler " Usage="member this.WriteStreamClosed : System.Net.WriteStreamClosedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Net::WriteStreamClosedEventHandler ^ WriteStreamClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

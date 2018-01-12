@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SafeBuffer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SafeBuffer&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="F#" Value="type SafeBuffer = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeBuffer abstract : Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (ownsHandle As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SafeBuffer : bool -&gt; System.Runtime.InteropServices.SafeBuffer" Usage="new System.Runtime.InteropServices.SafeBuffer ownsHandle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SafeBuffer(bool ownsHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcquirePointer(unsigned int8*&amp; pointer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.AcquirePointer(System.Byte*@)" />
       <MemberSignature Language="F#" Value="member this.AcquirePointer :  -&gt; unit" Usage="safeBuffer.AcquirePointer pointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcquirePointer(System::Byte* % pointer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -162,6 +165,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.SafeBuffer.ByteLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ByteLength As ULong" />
       <MemberSignature Language="F#" Value="member this.ByteLength : uint64" Usage="System.Runtime.InteropServices.SafeBuffer.ByteLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 ByteLength { System::UInt64 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -216,6 +220,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (numBytes As ULong)" />
       <MemberSignature Language="F#" Value="member this.Initialize : uint64 -&gt; unit" Usage="safeBuffer.Initialize numBytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::UInt64 numBytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -264,6 +269,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (numElements As UInteger, sizeOfEachElement As UInteger)" />
       <MemberSignature Language="F#" Value="member this.Initialize : uint32 * uint32 -&gt; unit" Usage="safeBuffer.Initialize (numElements, sizeOfEachElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::UInt32 numElements, System::UInt32 sizeOfEachElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -325,6 +331,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.Initialize``1(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize(Of T As Structure) (numElements As UInteger)" />
       <MemberSignature Language="F#" Value="member this.Initialize : uint32 -&gt; unit (requires 'T : struct)" Usage="safeBuffer.Initialize numElements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class void Initialize(System::UInt32 numElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -383,6 +390,7 @@ finally {
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.SafeBuffer.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="System.Runtime.InteropServices.SafeBuffer.IsInvalid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -407,6 +415,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.Read``1(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T As Structure) (byteOffset As ULong) As T" />
       <MemberSignature Language="F#" Value="member this.Read : uint64 -&gt; 'T (requires 'T : struct)" Usage="safeBuffer.Read byteOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class T Read(System::UInt64 byteOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -465,6 +474,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.ReadArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadArray(Of T As Structure) (byteOffset As ULong, array As T(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="member this.ReadArray : uint64 * 'T[] * int * int -&gt; unit (requires 'T : struct)" Usage="safeBuffer.ReadArray (byteOffset, array, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class void ReadArray(System::UInt64 byteOffset, cli::array &lt;T&gt; ^ array, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -537,6 +547,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.ReleasePointer" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleasePointer ()" />
       <MemberSignature Language="F#" Value="member this.ReleasePointer : unit -&gt; unit" Usage="safeBuffer.ReleasePointer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleasePointer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -584,6 +595,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.Write``1(System.UInt64,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write(Of T As Structure) (byteOffset As ULong, value As T)" />
       <MemberSignature Language="F#" Value="member this.Write : uint64 * 'T -&gt; unit (requires 'T : struct)" Usage="safeBuffer.Write (byteOffset, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class void Write(System::UInt64 byteOffset, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -654,6 +666,7 @@ finally {
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeBuffer.WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteArray(Of T As Structure) (byteOffset As ULong, array As T(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="member this.WriteArray : uint64 * 'T[] * int * int -&gt; unit (requires 'T : struct)" Usage="safeBuffer.WriteArray (byteOffset, array, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class void WriteArray(System::UInt64 byteOffset, cli::array &lt;T&gt; ^ array, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

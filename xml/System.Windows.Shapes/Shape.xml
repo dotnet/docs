@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Shape" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Shape&#xA;Inherits FrameworkElement" />
   <TypeSignature Language="F#" Value="type Shape = class&#xA;    inherit FrameworkElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Shape abstract : System::Windows::FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Shape.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Shape();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Shape.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="shape.ArrangeOverride finalSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.DefiningGeometry" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property DefiningGeometry As Geometry" />
       <MemberSignature Language="F#" Value="member this.DefiningGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Shapes.Shape.DefiningGeometry" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.Fill" />
       <MemberSignature Language="VB.NET" Value="Public Property Fill As Brush" />
       <MemberSignature Language="F#" Value="member this.Fill : System.Windows.Media.Brush with get, set" Usage="System.Windows.Shapes.Shape.Fill" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Fill { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.FillProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FillProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.FillProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.GeometryTransform" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GeometryTransform As Transform" />
       <MemberSignature Language="F#" Value="member this.GeometryTransform : System.Windows.Media.Transform" Usage="System.Windows.Shapes.Shape.GeometryTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Transform ^ GeometryTransform { System::Windows::Media::Transform ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Shape.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="shape.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Shape.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="shape.OnRender drawingContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.RenderedGeometry" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RenderedGeometry As Geometry" />
       <MemberSignature Language="F#" Value="member this.RenderedGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Shapes.Shape.RenderedGeometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Geometry ^ RenderedGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.Stretch" />
       <MemberSignature Language="VB.NET" Value="Public Property Stretch As Stretch" />
       <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.Media.Stretch with get, set" Usage="System.Windows.Shapes.Shape.Stretch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Stretch Stretch { System::Windows::Media::Stretch get(); void set(System::Windows::Media::Stretch value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +278,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StretchProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.Stroke" />
       <MemberSignature Language="VB.NET" Value="Public Property Stroke As Brush" />
       <MemberSignature Language="F#" Value="member this.Stroke : System.Windows.Media.Brush with get, set" Usage="System.Windows.Shapes.Shape.Stroke" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Stroke { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeDashArray" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeDashArray As DoubleCollection" />
       <MemberSignature Language="F#" Value="member this.StrokeDashArray : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Shapes.Shape.StrokeDashArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ StrokeDashArray { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -354,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeDashArrayProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeDashArrayProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeDashArrayProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeDashArrayProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeDashArrayProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeDashCap" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeDashCap As PenLineCap" />
       <MemberSignature Language="F#" Value="member this.StrokeDashCap : System.Windows.Media.PenLineCap with get, set" Usage="System.Windows.Shapes.Shape.StrokeDashCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineCap StrokeDashCap { System::Windows::Media::PenLineCap get(); void set(System::Windows::Media::PenLineCap value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -402,6 +418,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeDashCapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeDashCapProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeDashCapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeDashCapProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeDashCapProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -422,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeDashOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeDashOffset As Double" />
       <MemberSignature Language="F#" Value="member this.StrokeDashOffset : double with get, set" Usage="System.Windows.Shapes.Shape.StrokeDashOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrokeDashOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -443,6 +461,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeDashOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeDashOffsetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeDashOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeDashOffsetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeDashOffsetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -463,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeEndLineCap" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeEndLineCap As PenLineCap" />
       <MemberSignature Language="F#" Value="member this.StrokeEndLineCap : System.Windows.Media.PenLineCap with get, set" Usage="System.Windows.Shapes.Shape.StrokeEndLineCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineCap StrokeEndLineCap { System::Windows::Media::PenLineCap get(); void set(System::Windows::Media::PenLineCap value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -492,6 +512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeEndLineCapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeEndLineCapProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeEndLineCapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeEndLineCapProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeEndLineCapProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -512,6 +533,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeLineJoin" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeLineJoin As PenLineJoin" />
       <MemberSignature Language="F#" Value="member this.StrokeLineJoin : System.Windows.Media.PenLineJoin with get, set" Usage="System.Windows.Shapes.Shape.StrokeLineJoin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineJoin StrokeLineJoin { System::Windows::Media::PenLineJoin get(); void set(System::Windows::Media::PenLineJoin value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -552,6 +574,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeLineJoinProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeLineJoinProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeLineJoinProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeLineJoinProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeLineJoinProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -572,6 +595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeMiterLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeMiterLimit As Double" />
       <MemberSignature Language="F#" Value="member this.StrokeMiterLimit : double with get, set" Usage="System.Windows.Shapes.Shape.StrokeMiterLimit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrokeMiterLimit { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -600,6 +624,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeMiterLimitProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeMiterLimitProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeMiterLimitProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeMiterLimitProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeMiterLimitProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -620,6 +645,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -640,6 +666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeStartLineCap" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeStartLineCap As PenLineCap" />
       <MemberSignature Language="F#" Value="member this.StrokeStartLineCap : System.Windows.Media.PenLineCap with get, set" Usage="System.Windows.Shapes.Shape.StrokeStartLineCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PenLineCap StrokeStartLineCap { System::Windows::Media::PenLineCap get(); void set(System::Windows::Media::PenLineCap value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -668,6 +695,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeStartLineCapProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeStartLineCapProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeStartLineCapProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeStartLineCapProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeStartLineCapProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -688,6 +716,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Shape.StrokeThickness" />
       <MemberSignature Language="VB.NET" Value="Public Property StrokeThickness As Double" />
       <MemberSignature Language="F#" Value="member this.StrokeThickness : double with get, set" Usage="System.Windows.Shapes.Shape.StrokeThickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrokeThickness { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -714,6 +743,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Shape.StrokeThicknessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeThicknessProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StrokeThicknessProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Shape.StrokeThicknessProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokeThicknessProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

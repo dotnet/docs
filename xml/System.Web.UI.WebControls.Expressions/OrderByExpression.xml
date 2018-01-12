@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.OrderByExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class OrderByExpression&#xA;Inherits DataSourceExpression" />
   <TypeSignature Language="F#" Value="type OrderByExpression = class&#xA;    inherit DataSourceExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OrderByExpression : System::Web::UI::WebControls::Expressions::DataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.OrderByExpression.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OrderByExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.OrderByExpression.DataField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
       <MemberSignature Language="F#" Value="member this.DataField : string with get, set" Usage="System.Web.UI.WebControls.Expressions.OrderByExpression.DataField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.OrderByExpression.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Property Direction As SortDirection" />
       <MemberSignature Language="F#" Value="member this.Direction : System.Web.UI.WebControls.SortDirection with get, set" Usage="System.Web.UI.WebControls.Expressions.OrderByExpression.Direction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SortDirection Direction { System::Web::UI::WebControls::SortDirection get(); void set(System::Web::UI::WebControls::SortDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.OrderByExpression.GetQueryable(System.Linq.IQueryable)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
       <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="orderByExpression.GetQueryable source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThenByExpressions As Collection(Of ThenBy)" />
       <MemberSignature Language="F#" Value="member this.ThenByExpressions : System.Collections.ObjectModel.Collection&lt;System.Web.UI.WebControls.Expressions.ThenBy&gt;" Usage="System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Web::UI::WebControls::Expressions::ThenBy ^&gt; ^ ThenByExpressions { System::Collections::ObjectModel::Collection&lt;System::Web::UI::WebControls::Expressions::ThenBy ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

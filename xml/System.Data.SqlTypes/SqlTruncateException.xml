@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTruncateException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTruncateException&#xA;Inherits SqlTypeException" />
   <TypeSignature Language="F#" Value="type SqlTruncateException = class&#xA;    inherit SqlTypeException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlTruncateException sealed : System::Data::SqlTypes::SqlTypeException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTruncateException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTruncateException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTruncateException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTruncateException : string -&gt; System.Data.SqlTypes.SqlTruncateException" Usage="new System.Data.SqlTypes.SqlTruncateException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTruncateException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTruncateException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, e As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTruncateException : string * Exception -&gt; System.Data.SqlTypes.SqlTruncateException" Usage="new System.Data.SqlTypes.SqlTruncateException (message, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTruncateException(System::String ^ message, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

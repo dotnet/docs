@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WebServiceOutputActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServiceOutputActivity&#xA;Inherits Activity&#xA;Implements IDynamicPropertyTypeProvider" />
   <TypeSignature Language="F#" Value="type WebServiceOutputActivity = class&#xA;    inherit Activity&#xA;    interface IPropertyValueProvider&#xA;    interface IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServiceOutputActivity sealed : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceOutputActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceOutputActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceOutputActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.WebServiceOutputActivity : string -&gt; System.Workflow.Activities.WebServiceOutputActivity" Usage="new System.Workflow.Activities.WebServiceOutputActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceOutputActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceOutputActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="webServiceOutputActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceOutputActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="webServiceOutputActivity.Initialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebServiceOutputActivity.InputActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property InputActivityName As String" />
       <MemberSignature Language="F#" Value="member this.InputActivityName : string with get, set" Usage="System.Workflow.Activities.WebServiceOutputActivity.InputActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.WebServiceOutputActivity.InputActivityNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputActivityNameProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable InputActivityNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.WebServiceOutputActivity.InputActivityNameProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InputActivityNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebServiceOutputActivity.ParameterBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterBindings As WorkflowParameterBindingCollection" />
       <MemberSignature Language="F#" Value="member this.ParameterBindings : System.Workflow.ComponentModel.WorkflowParameterBindingCollection" Usage="System.Workflow.Activities.WebServiceOutputActivity.ParameterBindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ ParameterBindings { System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.WebServiceOutputActivity.ParameterBindingsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterBindingsProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ParameterBindingsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.WebServiceOutputActivity.ParameterBindingsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterBindingsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.WebServiceOutputActivity.SendingOutput" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SendingOutput As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SendingOutput : EventHandler " Usage="member this.SendingOutput : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SendingOutput;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -287,6 +297,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.WebServiceOutputActivity.SendingOutputEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SendingOutputEvent As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SendingOutputEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.WebServiceOutputActivity.SendingOutputEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ SendingOutputEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.Compiler.AccessTypes System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType(class System.IServiceProvider serviceProvider, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceOutputActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetAccessType(System.IServiceProvider,System.String)" />
       <MemberSignature Language="VB.NET" Value="Function GetAccessType (serviceProvider As IServiceProvider, propertyName As String) As AccessTypes Implements IDynamicPropertyTypeProvider.GetAccessType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Workflow::ComponentModel::Compiler::AccessTypes System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType(IServiceProvider ^ serviceProvider, System::String ^ propertyName) = System::Workflow::ComponentModel::IDynamicPropertyTypeProvider::GetAccessType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType(System.IServiceProvider,System.String)</InterfaceMember>
@@ -347,6 +359,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType(class System.IServiceProvider serviceProvider, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceOutputActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetPropertyType(System.IServiceProvider,System.String)" />
       <MemberSignature Language="VB.NET" Value="Function GetPropertyType (serviceProvider As IServiceProvider, propertyName As String) As Type Implements IDynamicPropertyTypeProvider.GetPropertyType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Type ^ System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType(IServiceProvider ^ serviceProvider, System::String ^ propertyName) = System::Workflow::ComponentModel::IDynamicPropertyTypeProvider::GetPropertyType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType(System.IServiceProvider,System.String)</InterfaceMember>

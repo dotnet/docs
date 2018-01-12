@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.RequiredAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class RequiredAttribute&#xA;Inherits ValidationAttribute" />
   <TypeSignature Language="F#" Value="type RequiredAttribute = class&#xA;    inherit ValidationAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequiredAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequiredAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.RequiredAttribute.AllowEmptyStrings" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowEmptyStrings As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowEmptyStrings : bool with get, set" Usage="System.ComponentModel.DataAnnotations.RequiredAttribute.AllowEmptyStrings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowEmptyStrings { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -130,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.RequiredAttribute.IsValid(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="requiredAttribute.IsValid value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

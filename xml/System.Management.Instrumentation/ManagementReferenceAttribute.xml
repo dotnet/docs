@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementReferenceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementReferenceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ManagementReferenceAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementReferenceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -181,6 +182,7 @@ namespace AssocExample
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementReferenceAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementReferenceAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -198,6 +200,7 @@ namespace AssocExample
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementReferenceAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Management.Instrumentation.ManagementReferenceAttribute.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

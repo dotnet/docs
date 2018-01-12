@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbCommand&#xA;Inherits DbCommand&#xA;Implements ICloneable, IDisposable" />
   <TypeSignature Language="F#" Value="type OleDbCommand = class&#xA;    inherit DbCommand&#xA;    interface ICloneable&#xA;    interface IDbCommand&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbCommand sealed : System::Data::Common::DbCommand, ICloneable, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String)" />
       <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbCommand : string -&gt; System.Data.OleDb.OleDbCommand" Usage="new System.Data.OleDb.OleDbCommand cmdText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbCommand(System::String ^ cmdText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As OleDbConnection)" />
       <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbCommand : string * System.Data.OleDb.OleDbConnection -&gt; System.Data.OleDb.OleDbCommand" Usage="new System.Data.OleDb.OleDbCommand (cmdText, connection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbCommand(System::String ^ cmdText, System::Data::OleDb::OleDbConnection ^ connection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection,System.Data.OleDb.OleDbTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As OleDbConnection, transaction As OleDbTransaction)" />
       <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbCommand : string * System.Data.OleDb.OleDbConnection * System.Data.OleDb.OleDbTransaction -&gt; System.Data.OleDb.OleDbCommand" Usage="new System.Data.OleDb.OleDbCommand (cmdText, connection, transaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbCommand(System::String ^ cmdText, System::Data::OleDb::OleDbConnection ^ connection, System::Data::OleDb::OleDbTransaction ^ transaction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -253,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Cancel ()" />
       <MemberSignature Language="F#" Value="override this.Cancel : unit -&gt; unit" Usage="oleDbCommand.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Cancel();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.Cancel</InterfaceMember>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As OleDbCommand" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Data.OleDb.OleDbCommand" Usage="oleDbCommand.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbCommand ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -312,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.CommandText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandText As String" />
       <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Data.OleDb.OleDbCommand.CommandText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.CommandText</InterfaceMember>
@@ -373,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.CommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.CommandTimeout : int with get, set" Usage="System.Data.OleDb.OleDbCommand.CommandTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CommandTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.CommandTimeout</InterfaceMember>
@@ -403,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.CommandType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandType As CommandType" />
       <MemberSignature Language="F#" Value="member this.CommandType : System.Data.CommandType with get, set" Usage="System.Data.OleDb.OleDbCommand.CommandType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.CommandType</InterfaceMember>
@@ -450,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As OleDbConnection" />
       <MemberSignature Language="F#" Value="member this.Connection : System.Data.OleDb.OleDbConnection with get, set" Usage="System.Data.OleDb.OleDbCommand.Connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OleDb::OleDbConnection ^ Connection { System::Data::OleDb::OleDbConnection ^ get(); void set(System::Data::OleDb::OleDbConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -496,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.CreateDbParameter" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbParameter () As DbParameter" />
       <MemberSignature Language="F#" Value="override this.CreateDbParameter : unit -&gt; System.Data.Common.DbParameter" Usage="oleDbCommand.CreateDbParameter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ CreateDbParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -517,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.CreateParameter" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As OleDbParameter" />
       <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.OleDb.OleDbParameter" Usage="oleDbCommand.CreateParameter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbParameter ^ CreateParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -545,6 +558,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.DbConnection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbConnection As DbConnection" />
       <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection with get, set" Usage="System.Data.OleDb.OleDbCommand.DbConnection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); void set(System::Data::Common::DbConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -565,6 +579,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.DbParameterCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbParameterCollection As DbParameterCollection" />
       <MemberSignature Language="F#" Value="member this.DbParameterCollection : System.Data.Common.DbParameterCollection" Usage="System.Data.OleDb.OleDbCommand.DbParameterCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbParameterCollection ^ DbParameterCollection { System::Data::Common::DbParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -585,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.DbTransaction" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbTransaction As DbTransaction" />
       <MemberSignature Language="F#" Value="member this.DbTransaction : System.Data.Common.DbTransaction with get, set" Usage="System.Data.OleDb.OleDbCommand.DbTransaction" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbTransaction ^ DbTransaction { System::Data::Common::DbTransaction ^ get(); void set(System::Data::Common::DbTransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -605,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.DesignTimeVisible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DesignTimeVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.DesignTimeVisible : bool with get, set" Usage="System.Data.OleDb.OleDbCommand.DesignTimeVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -639,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="oleDbCommand.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -662,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDbDataReader (behavior As CommandBehavior) As DbDataReader" />
       <MemberSignature Language="F#" Value="override this.ExecuteDbDataReader : System.Data.CommandBehavior -&gt; System.Data.Common.DbDataReader" Usage="oleDbCommand.ExecuteDbDataReader behavior" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ ExecuteDbDataReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -686,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.ExecuteNonQuery" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteNonQuery () As Integer" />
       <MemberSignature Language="F#" Value="override this.ExecuteNonQuery : unit -&gt; int" Usage="oleDbCommand.ExecuteNonQuery " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ExecuteNonQuery();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.ExecuteNonQuery</InterfaceMember>
@@ -747,6 +767,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.ExecuteReader" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As OleDbDataReader" />
       <MemberSignature Language="F#" Value="override this.ExecuteReader : unit -&gt; System.Data.OleDb.OleDbDataReader" Usage="oleDbCommand.ExecuteReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbDataReader ^ ExecuteReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -786,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.ExecuteReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As OleDbDataReader" />
       <MemberSignature Language="F#" Value="override this.ExecuteReader : System.Data.CommandBehavior -&gt; System.Data.OleDb.OleDbDataReader" Usage="oleDbCommand.ExecuteReader behavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -832,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.ExecuteScalar" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteScalar () As Object" />
       <MemberSignature Language="F#" Value="override this.ExecuteScalar : unit -&gt; obj" Usage="oleDbCommand.ExecuteScalar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ExecuteScalar();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.ExecuteScalar</InterfaceMember>
@@ -879,6 +902,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As OleDbParameterCollection" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Data.OleDb.OleDbParameterCollection" Usage="System.Data.OleDb.OleDbCommand.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OleDb::OleDbParameterCollection ^ Parameters { System::Data::OleDb::OleDbParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -928,6 +952,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.Prepare" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Prepare ()" />
       <MemberSignature Language="F#" Value="override this.Prepare : unit -&gt; unit" Usage="oleDbCommand.Prepare " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Prepare();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.Prepare</InterfaceMember>
@@ -977,6 +1002,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.ResetCommandTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetCommandTimeout ()" />
       <MemberSignature Language="F#" Value="member this.ResetCommandTimeout : unit -&gt; unit" Usage="oleDbCommand.ResetCommandTimeout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCommandTimeout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1020,6 +1046,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDbCommand.ExecuteReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader" />
       <MemberSignature Language="VB.NET" Value="Function ExecuteReader () As IDataReader Implements IDbCommand.ExecuteReader" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDataReader ^ System.Data.IDbCommand.ExecuteReader() = System::Data::IDbCommand::ExecuteReader;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.ExecuteReader</InterfaceMember>
@@ -1050,6 +1077,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDbCommand.ExecuteReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Function ExecuteReader (behavior As CommandBehavior) As IDataReader Implements IDbCommand.ExecuteReader" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDataReader ^ System.Data.IDbCommand.ExecuteReader(System::Data::CommandBehavior behavior) = System::Data::IDbCommand::ExecuteReader;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)</InterfaceMember>
@@ -1085,6 +1113,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbCommand.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -1116,6 +1145,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.Transaction" />
       <MemberSignature Language="VB.NET" Value="Public Property Transaction As OleDbTransaction" />
       <MemberSignature Language="F#" Value="member this.Transaction : System.Data.OleDb.OleDbTransaction with get, set" Usage="System.Data.OleDb.OleDbCommand.Transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OleDb::OleDbTransaction ^ Transaction { System::Data::OleDb::OleDbTransaction ^ get(); void set(System::Data::OleDb::OleDbTransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1151,6 +1181,7 @@ Int32 count = (int32) ExecuteScalar();
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbCommand.UpdatedRowSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property UpdatedRowSource As UpdateRowSource" />
       <MemberSignature Language="F#" Value="member this.UpdatedRowSource : System.Data.UpdateRowSource with get, set" Usage="System.Data.OleDb.OleDbCommand.UpdatedRowSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbCommand.UpdatedRowSource</InterfaceMember>

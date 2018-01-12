@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppContext" />
   <TypeSignature Language="VB.NET" Value="Public Class AppContext" />
   <TypeSignature Language="F#" Value="type AppContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppContext abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.AppContext</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -159,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppContext.BaseDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BaseDirectory As String" />
       <MemberSignature Language="F#" Value="member this.BaseDirectory : string" Usage="System.AppContext.BaseDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BaseDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -200,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (name As String) As Object" />
       <MemberSignature Language="F#" Value="static member GetData : string -&gt; obj" Usage="System.AppContext.GetData name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -237,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.SetSwitch(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSwitch (switchName As String, isEnabled As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetSwitch : string * bool -&gt; unit" Usage="System.AppContext.SetSwitch (switchName, isEnabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSwitch(System::String ^ switchName, bool isEnabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -322,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppContext.TargetFrameworkName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetFrameworkName As String" />
       <MemberSignature Language="F#" Value="member this.TargetFrameworkName : string" Usage="System.AppContext.TargetFrameworkName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TargetFrameworkName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -364,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetSwitch (switchName As String, ByRef isEnabled As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryGetSwitch : string *  -&gt; bool" Usage="System.AppContext.TryGetSwitch (switchName, isEnabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetSwitch(System::String ^ switchName, [Runtime::InteropServices::Out] bool % isEnabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>

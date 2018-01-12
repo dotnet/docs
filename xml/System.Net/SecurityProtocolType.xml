@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.SecurityProtocolType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityProtocolType" />
   <TypeSignature Language="F#" Value="type SecurityProtocolType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityProtocolType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Ssl3" />
       <MemberSignature Language="VB.NET" Value="Ssl3" />
       <MemberSignature Language="F#" Value="Ssl3 = 48" Usage="System.Net.SecurityProtocolType.Ssl3" />
+      <MemberSignature Language="C++ CLI" Value="Ssl3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.SystemDefault" />
       <MemberSignature Language="VB.NET" Value="SystemDefault" />
       <MemberSignature Language="F#" Value="SystemDefault = 0" Usage="System.Net.SecurityProtocolType.SystemDefault" />
+      <MemberSignature Language="C++ CLI" Value="SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Tls" />
       <MemberSignature Language="VB.NET" Value="Tls" />
       <MemberSignature Language="F#" Value="Tls = 192" Usage="System.Net.SecurityProtocolType.Tls" />
+      <MemberSignature Language="C++ CLI" Value="Tls" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Tls11" />
       <MemberSignature Language="VB.NET" Value="Tls11" />
       <MemberSignature Language="F#" Value="Tls11 = 768" Usage="System.Net.SecurityProtocolType.Tls11" />
+      <MemberSignature Language="C++ CLI" Value="Tls11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Tls12" />
       <MemberSignature Language="VB.NET" Value="Tls12" />
       <MemberSignature Language="F#" Value="Tls12 = 3072" Usage="System.Net.SecurityProtocolType.Tls12" />
+      <MemberSignature Language="C++ CLI" Value="Tls12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

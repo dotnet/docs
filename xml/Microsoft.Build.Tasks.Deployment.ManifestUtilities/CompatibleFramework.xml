@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompatibleFramework" />
   <TypeSignature Language="F#" Value="type CompatibleFramework = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFramework sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompatibleFramework();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.Profile" />
       <MemberSignature Language="VB.NET" Value="Public Property Profile As String" />
       <MemberSignature Language="F#" Value="member this.Profile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.Profile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Profile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.SupportedRuntime" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportedRuntime As String" />
       <MemberSignature Language="F#" Value="member this.SupportedRuntime : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.SupportedRuntime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportedRuntime { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.XmlProfile" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlProfile As String" />
       <MemberSignature Language="F#" Value="member this.XmlProfile : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.XmlProfile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlProfile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.XmlSupportedRuntime" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSupportedRuntime As String" />
       <MemberSignature Language="F#" Value="member this.XmlSupportedRuntime : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.XmlSupportedRuntime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSupportedRuntime { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.XmlVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlVersion As String" />
       <MemberSignature Language="F#" Value="member this.XmlVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework.XmlVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

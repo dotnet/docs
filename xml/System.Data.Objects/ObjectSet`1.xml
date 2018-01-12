@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectSet`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectSet(Of TEntity)&#xA;Inherits ObjectQuery(Of TEntity)&#xA;Implements IEnumerable(Of TEntity), IObjectSet(Of TEntity), IQueryable(Of TEntity)" />
   <TypeSignature Language="F#" Value="type ObjectSet&lt;'Entity (requires 'Entity : null)&gt; = class&#xA;    inherit ObjectQuery&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IObjectSet&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IQueryable&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface seq&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class ObjectSet : System::Data::Objects::ObjectQuery&lt;TEntity&gt;, System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::Data::Objects::IObjectSet&lt;TEntity&gt;, System::Linq::IQueryable&lt;TEntity&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.AddObject(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddObject (entity As TEntity)" />
       <MemberSignature Language="F#" Value="abstract member AddObject : 'Entity -&gt; unit&#xA;override this.AddObject : 'Entity -&gt; unit" Usage="objectSet.AddObject entity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddObject(TEntity entity);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.IObjectSet`1.AddObject(`0)</InterfaceMember>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.ApplyCurrentValues(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyCurrentValues (currentEntity As TEntity) As TEntity" />
       <MemberSignature Language="F#" Value="member this.ApplyCurrentValues : 'Entity -&gt; 'Entity" Usage="objectSet.ApplyCurrentValues currentEntity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TEntity ApplyCurrentValues(TEntity currentEntity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.ApplyOriginalValues(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyOriginalValues (originalEntity As TEntity) As TEntity" />
       <MemberSignature Language="F#" Value="member this.ApplyOriginalValues : 'Entity -&gt; 'Entity" Usage="objectSet.ApplyOriginalValues originalEntity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TEntity ApplyOriginalValues(TEntity originalEntity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.Attach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity)" />
       <MemberSignature Language="F#" Value="abstract member Attach : 'Entity -&gt; unit&#xA;override this.Attach : 'Entity -&gt; unit" Usage="objectSet.Attach entity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Attach(TEntity entity);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.IObjectSet`1.Attach(`0)</InterfaceMember>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.CreateObject" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateObject () As TEntity" />
       <MemberSignature Language="F#" Value="member this.CreateObject : unit -&gt; 'Entity" Usage="objectSet.CreateObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TEntity CreateObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.CreateObject``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateObject(Of T As {Class, TEntity}) () As T" />
       <MemberSignature Language="F#" Value="member this.CreateObject : unit -&gt; 'T" Usage="objectSet.CreateObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class, TEntity T CreateObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.DeleteObject(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteObject (entity As TEntity)" />
       <MemberSignature Language="F#" Value="abstract member DeleteObject : 'Entity -&gt; unit&#xA;override this.DeleteObject : 'Entity -&gt; unit" Usage="objectSet.DeleteObject entity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteObject(TEntity entity);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.IObjectSet`1.DeleteObject(`0)</InterfaceMember>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.Detach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (entity As TEntity)" />
       <MemberSignature Language="F#" Value="abstract member Detach : 'Entity -&gt; unit&#xA;override this.Detach : 'Entity -&gt; unit" Usage="objectSet.Detach entity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Detach(TEntity entity);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.IObjectSet`1.Detach(`0)</InterfaceMember>
@@ -304,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectSet`1.EntitySet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntitySet As EntitySet" />
       <MemberSignature Language="F#" Value="member this.EntitySet : System.Data.Metadata.Edm.EntitySet" Usage="System.Data.Objects.ObjectSet&lt;'Entity (requires 'Entity : null)&gt;.EntitySet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntitySet ^ EntitySet { System::Data::Metadata::Edm::EntitySet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListView" />
   <TypeSignature Language="VB.NET" Value="Public Class ListView&#xA;Inherits DataBoundControl&#xA;Implements IDataBoundListControl, IDataKeysControl, INamingContainer, IPageableItemContainer, IPersistedSelector" />
   <TypeSignature Language="F#" Value="type ListView = class&#xA;    inherit DataBoundControl&#xA;    interface INamingContainer&#xA;    interface IPageableItemContainer&#xA;    interface IPersistedSelector&#xA;    interface IDataKeysControl&#xA;    interface IDataBoundListControl&#xA;    interface IDataBoundControl&#xA;    interface IWizardSideBarListControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListView : System::Web::UI::WebControls::DataBoundControl, System::Web::UI::IDataKeysControl, System::Web::UI::INamingContainer, System::Web::UI::WebControls::IDataBoundListControl, System::Web::UI::WebControls::IPageableItemContainer, System::Web::UI::WebControls::IPersistedSelector" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -307,6 +308,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -333,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.AccessKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AccessKey As String" />
       <MemberSignature Language="F#" Value="member this.AccessKey : string with get, set" Usage="System.Web.UI.WebControls.ListView.AccessKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AccessKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -374,6 +377,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddControlToContainer(class System.Web.UI.Control control, class System.Web.UI.Control container, int32 addLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.AddControlToContainer(System.Web.UI.Control,System.Web.UI.Control,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member AddControlToContainer : System.Web.UI.Control * System.Web.UI.Control * int -&gt; unit&#xA;override this.AddControlToContainer : System.Web.UI.Control * System.Web.UI.Control * int -&gt; unit" Usage="listView.AddControlToContainer (control, container, addLocation)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddControlToContainer(System::Web::UI::Control ^ control, System::Web::UI::Control ^ container, int addLocation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -412,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternatingItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.AlternatingItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.AlternatingItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ AlternatingItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -474,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.ListView.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -516,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.BorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderColor As Color" />
       <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.ListView.BorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -558,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderStyle As BorderStyle" />
       <MemberSignature Language="F#" Value="member this.BorderStyle : System.Web.UI.WebControls.BorderStyle with get, set" Usage="System.Web.UI.WebControls.ListView.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BorderStyle BorderStyle { System::Web::UI::WebControls::BorderStyle get(); void set(System::Web::UI::WebControls::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -600,6 +608,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.BorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderWidth As Unit" />
       <MemberSignature Language="F#" Value="member this.BorderWidth : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.ListView.BorderWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit BorderWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -642,6 +651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ClientIDRowSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ClientIDRowSuffix As String()" />
       <MemberSignature Language="F#" Value="member this.ClientIDRowSuffix : string[] with get, set" Usage="System.Web.UI.WebControls.ListView.ClientIDRowSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix</InterfaceMember>
@@ -684,6 +694,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientIDRowSuffixDataKeys As DataKeyArray" />
       <MemberSignature Language="F#" Value="member this.ClientIDRowSuffixDataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.ListView.ClientIDRowSuffixDataKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKeyArray ^ ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys</InterfaceMember>
@@ -715,6 +726,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.ListView.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -746,6 +758,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ConvertEmptyStringToNull" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConvertEmptyStringToNull As Boolean" />
       <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool with get, set" Usage="System.Web.UI.WebControls.ListView.ConvertEmptyStringToNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -791,6 +804,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="listView.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -818,6 +832,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateChildControls(System.Collections.IEnumerable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateChildControls (dataSource As IEnumerable, dataBinding As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : System.Collections.IEnumerable * bool -&gt; int" Usage="listView.CreateChildControls (dataSource, dataBinding)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int CreateChildControls(System::Collections::IEnumerable ^ dataSource, bool dataBinding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -874,6 +889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
       <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="listView.CreateControlStyle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -903,6 +919,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateDataItem(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDataItem (dataItemIndex As Integer, displayIndex As Integer) As ListViewDataItem" />
       <MemberSignature Language="F#" Value="abstract member CreateDataItem : int * int -&gt; System.Web.UI.WebControls.ListViewDataItem&#xA;override this.CreateDataItem : int * int -&gt; System.Web.UI.WebControls.ListViewDataItem" Usage="listView.CreateDataItem (dataItemIndex, displayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ListViewDataItem ^ CreateDataItem(int dataItemIndex, int displayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -937,6 +954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateDataSourceSelectArguments" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDataSourceSelectArguments () As DataSourceSelectArguments" />
       <MemberSignature Language="F#" Value="override this.CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments" Usage="listView.CreateDataSourceSelectArguments " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceSelectArguments ^ CreateDataSourceSelectArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -968,6 +986,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateEmptyDataItem" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateEmptyDataItem ()" />
       <MemberSignature Language="F#" Value="abstract member CreateEmptyDataItem : unit -&gt; unit&#xA;override this.CreateEmptyDataItem : unit -&gt; unit" Usage="listView.CreateEmptyDataItem " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateEmptyDataItem();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1000,6 +1019,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateEmptyItem" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateEmptyItem () As ListViewItem" />
       <MemberSignature Language="F#" Value="abstract member CreateEmptyItem : unit -&gt; System.Web.UI.WebControls.ListViewItem&#xA;override this.CreateEmptyItem : unit -&gt; System.Web.UI.WebControls.ListViewItem" Usage="listView.CreateEmptyItem " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ListViewItem ^ CreateEmptyItem();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1036,6 +1056,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateInsertItem" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateInsertItem () As ListViewItem" />
       <MemberSignature Language="F#" Value="abstract member CreateInsertItem : unit -&gt; System.Web.UI.WebControls.ListViewItem&#xA;override this.CreateInsertItem : unit -&gt; System.Web.UI.WebControls.ListViewItem" Usage="listView.CreateInsertItem " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ListViewItem ^ CreateInsertItem();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1073,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateItem(System.Web.UI.WebControls.ListViewItemType)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItem (itemType As ListViewItemType) As ListViewItem" />
       <MemberSignature Language="F#" Value="abstract member CreateItem : System.Web.UI.WebControls.ListViewItemType -&gt; System.Web.UI.WebControls.ListViewItem&#xA;override this.CreateItem : System.Web.UI.WebControls.ListViewItemType -&gt; System.Web.UI.WebControls.ListViewItem" Usage="listView.CreateItem itemType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::ListViewItem ^ CreateItem(System::Web::UI::WebControls::ListViewItemType itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1109,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateItemsInGroups(System.Web.UI.WebControls.ListViewPagedDataSource,System.Boolean,System.Web.UI.WebControls.InsertItemPosition,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItemsInGroups (dataSource As ListViewPagedDataSource, dataBinding As Boolean, insertPosition As InsertItemPosition, keyArray As ArrayList) As IList(Of ListViewDataItem)" />
       <MemberSignature Language="F#" Value="abstract member CreateItemsInGroups : System.Web.UI.WebControls.ListViewPagedDataSource * bool * System.Web.UI.WebControls.InsertItemPosition * System.Collections.ArrayList -&gt; System.Collections.Generic.IList&lt;System.Web.UI.WebControls.ListViewDataItem&gt;&#xA;override this.CreateItemsInGroups : System.Web.UI.WebControls.ListViewPagedDataSource * bool * System.Web.UI.WebControls.InsertItemPosition * System.Collections.ArrayList -&gt; System.Collections.Generic.IList&lt;System.Web.UI.WebControls.ListViewDataItem&gt;" Usage="listView.CreateItemsInGroups (dataSource, dataBinding, insertPosition, keyArray)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IList&lt;System::Web::UI::WebControls::ListViewDataItem ^&gt; ^ CreateItemsInGroups(System::Web::UI::WebControls::ListViewPagedDataSource ^ dataSource, bool dataBinding, System::Web::UI::WebControls::InsertItemPosition insertPosition, System::Collections::ArrayList ^ keyArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1154,6 +1177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateItemsWithoutGroups(System.Web.UI.WebControls.ListViewPagedDataSource,System.Boolean,System.Web.UI.WebControls.InsertItemPosition,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItemsWithoutGroups (dataSource As ListViewPagedDataSource, dataBinding As Boolean, insertPosition As InsertItemPosition, keyArray As ArrayList) As IList(Of ListViewDataItem)" />
       <MemberSignature Language="F#" Value="abstract member CreateItemsWithoutGroups : System.Web.UI.WebControls.ListViewPagedDataSource * bool * System.Web.UI.WebControls.InsertItemPosition * System.Collections.ArrayList -&gt; System.Collections.Generic.IList&lt;System.Web.UI.WebControls.ListViewDataItem&gt;&#xA;override this.CreateItemsWithoutGroups : System.Web.UI.WebControls.ListViewPagedDataSource * bool * System.Web.UI.WebControls.InsertItemPosition * System.Collections.ArrayList -&gt; System.Collections.Generic.IList&lt;System.Web.UI.WebControls.ListViewDataItem&gt;" Usage="listView.CreateItemsWithoutGroups (dataSource, dataBinding, insertPosition, keyArray)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IList&lt;System::Web::UI::WebControls::ListViewDataItem ^&gt; ^ CreateItemsWithoutGroups(System::Web::UI::WebControls::ListViewPagedDataSource ^ dataSource, bool dataBinding, System::Web::UI::WebControls::InsertItemPosition insertPosition, System::Collections::ArrayList ^ keyArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1197,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateLayoutTemplate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateLayoutTemplate ()" />
       <MemberSignature Language="F#" Value="abstract member CreateLayoutTemplate : unit -&gt; unit&#xA;override this.CreateLayoutTemplate : unit -&gt; unit" Usage="listView.CreateLayoutTemplate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateLayoutTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1228,6 +1253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.CreateSuffixArrayList(System.Web.UI.WebControls.ListViewPagedDataSource,System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateSuffixArrayList (dataSource As ListViewPagedDataSource, suffixArray As ArrayList)" />
       <MemberSignature Language="F#" Value="abstract member CreateSuffixArrayList : System.Web.UI.WebControls.ListViewPagedDataSource * System.Collections.ArrayList -&gt; unit&#xA;override this.CreateSuffixArrayList : System.Web.UI.WebControls.ListViewPagedDataSource * System.Collections.ArrayList -&gt; unit" Usage="listView.CreateSuffixArrayList (dataSource, suffixArray)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateSuffixArrayList(System::Web::UI::WebControls::ListViewPagedDataSource ^ dataSource, System::Collections::ArrayList ^ suffixArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1253,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.CssClass" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CssClass As String" />
       <MemberSignature Language="F#" Value="member this.CssClass : string with get, set" Usage="System.Web.UI.WebControls.ListView.CssClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CssClass { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1298,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.DataKeyNames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataKeyNames As String()" />
       <MemberSignature Language="F#" Value="member this.DataKeyNames : string[] with get, set" Usage="System.Web.UI.WebControls.ListView.DataKeyNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
@@ -1362,6 +1390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.DataKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataKeys As DataKeyArray" />
       <MemberSignature Language="F#" Value="member this.DataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.ListView.DataKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKeyArray ^ DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys</InterfaceMember>
@@ -1418,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.DeleteItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteItem (itemIndex As Integer)" />
       <MemberSignature Language="F#" Value="abstract member DeleteItem : int -&gt; unit&#xA;override this.DeleteItem : int -&gt; unit" Usage="listView.DeleteItem itemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteItem(int itemIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1466,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.DeleteMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteMethod As String" />
       <MemberSignature Language="F#" Value="member this.DeleteMethod : string with get, set" Usage="System.Web.UI.WebControls.ListView.DeleteMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeleteMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1509,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EditIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.EditIndex : int with get, set" Usage="System.Web.UI.WebControls.ListView.EditIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EditIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1564,6 +1596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EditItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditItem As ListViewItem" />
       <MemberSignature Language="F#" Value="member this.EditItem : System.Web.UI.WebControls.ListViewItem" Usage="System.Web.UI.WebControls.ListView.EditItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListViewItem ^ EditItem { System::Web::UI::WebControls::ListViewItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1613,6 +1646,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EditItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.EditItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.EditItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EditItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1681,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EmptyDataTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyDataTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.EmptyDataTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.EmptyDataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EmptyDataTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1735,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EmptyItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.EmptyItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.EmptyItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EmptyItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1790,6 +1826,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EnableModelValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableModelValidation As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableModelValidation : bool with get, set" Usage="System.Web.UI.WebControls.ListView.EnableModelValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableModelValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1819,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.EnablePersistedSelection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnablePersistedSelection As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnablePersistedSelection : bool with get, set" Usage="System.Web.UI.WebControls.ListView.EnablePersistedSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection</InterfaceMember>
@@ -1861,6 +1899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.EnsureLayoutTemplate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureLayoutTemplate ()" />
       <MemberSignature Language="F#" Value="abstract member EnsureLayoutTemplate : unit -&gt; unit&#xA;override this.EnsureLayoutTemplate : unit -&gt; unit" Usage="listView.EnsureLayoutTemplate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureLayoutTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1890,6 +1929,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.ExtractItemValues(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.ListViewItem,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExtractItemValues (itemValues As IOrderedDictionary, item As ListViewItem, includePrimaryKey As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member ExtractItemValues : System.Collections.Specialized.IOrderedDictionary * System.Web.UI.WebControls.ListViewItem * bool -&gt; unit&#xA;override this.ExtractItemValues : System.Collections.Specialized.IOrderedDictionary * System.Web.UI.WebControls.ListViewItem * bool -&gt; unit" Usage="listView.ExtractItemValues (itemValues, item, includePrimaryKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExtractItemValues(System::Collections::Specialized::IOrderedDictionary ^ itemValues, System::Web::UI::WebControls::ListViewItem ^ item, bool includePrimaryKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1932,6 +1972,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.FindPlaceholder(System.String,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function FindPlaceholder (containerID As String, container As Control) As Control" />
       <MemberSignature Language="F#" Value="abstract member FindPlaceholder : string * System.Web.UI.Control -&gt; System.Web.UI.Control&#xA;override this.FindPlaceholder : string * System.Web.UI.Control -&gt; System.Web.UI.Control" Usage="listView.FindPlaceholder (containerID, container)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Control ^ FindPlaceholder(System::String ^ containerID, System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1965,6 +2006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Font As FontInfo" />
       <MemberSignature Language="F#" Value="member this.Font : System.Web.UI.WebControls.FontInfo" Usage="System.Web.UI.WebControls.ListView.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FontInfo ^ Font { System::Web::UI::WebControls::FontInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2006,6 +2048,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.ListView.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2048,6 +2091,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.GroupItemCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupItemCount As Integer" />
       <MemberSignature Language="F#" Value="member this.GroupItemCount : int with get, set" Usage="System.Web.UI.WebControls.ListView.GroupItemCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int GroupItemCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2099,6 +2143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.GroupPlaceholderID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupPlaceholderID As String" />
       <MemberSignature Language="F#" Value="member this.GroupPlaceholderID : string with get, set" Usage="System.Web.UI.WebControls.ListView.GroupPlaceholderID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ GroupPlaceholderID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2147,6 +2192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupSeparatorTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.GroupSeparatorTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.GroupSeparatorTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ GroupSeparatorTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2205,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.GroupTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property GroupTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.GroupTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.GroupTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ GroupTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2263,6 +2310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.Height" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Height As Unit" />
       <MemberSignature Language="F#" Value="member this.Height : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.ListView.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit Height { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2305,6 +2353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.InsertItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InsertItem As ListViewItem" />
       <MemberSignature Language="F#" Value="member this.InsertItem : System.Web.UI.WebControls.ListViewItem" Usage="System.Web.UI.WebControls.ListView.InsertItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListViewItem ^ InsertItem { System::Web::UI::WebControls::ListViewItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2356,6 +2405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.InsertItemPosition" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertItemPosition As InsertItemPosition" />
       <MemberSignature Language="F#" Value="member this.InsertItemPosition : System.Web.UI.WebControls.InsertItemPosition with get, set" Usage="System.Web.UI.WebControls.ListView.InsertItemPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::InsertItemPosition InsertItemPosition { System::Web::UI::WebControls::InsertItemPosition get(); void set(System::Web::UI::WebControls::InsertItemPosition value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2410,6 +2460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.InsertItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.InsertItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ InsertItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2481,6 +2532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.InsertMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertMethod As String" />
       <MemberSignature Language="F#" Value="member this.InsertMethod : string with get, set" Usage="System.Web.UI.WebControls.ListView.InsertMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InsertMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2524,6 +2576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InsertNewItem(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertNewItem (causesValidation As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member InsertNewItem : bool -&gt; unit&#xA;override this.InsertNewItem : bool -&gt; unit" Usage="listView.InsertNewItem causesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertNewItem(bool causesValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2583,6 +2636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateEmptyDataTemplate(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateEmptyDataTemplate (container As Control)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateEmptyDataTemplate : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateEmptyDataTemplate : System.Web.UI.Control -&gt; unit" Usage="listView.InstantiateEmptyDataTemplate container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateEmptyDataTemplate(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2618,6 +2672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateEmptyItemTemplate(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateEmptyItemTemplate (container As Control)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateEmptyItemTemplate : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateEmptyItemTemplate : System.Web.UI.Control -&gt; unit" Usage="listView.InstantiateEmptyItemTemplate container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateEmptyItemTemplate(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2653,6 +2708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateGroupSeparatorTemplate(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateGroupSeparatorTemplate (container As Control)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateGroupSeparatorTemplate : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateGroupSeparatorTemplate : System.Web.UI.Control -&gt; unit" Usage="listView.InstantiateGroupSeparatorTemplate container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateGroupSeparatorTemplate(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2685,6 +2741,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateGroupTemplate(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateGroupTemplate (container As Control)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateGroupTemplate : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateGroupTemplate : System.Web.UI.Control -&gt; unit" Usage="listView.InstantiateGroupTemplate container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateGroupTemplate(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2717,6 +2774,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateInsertItemTemplate(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateInsertItemTemplate (container As Control)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateInsertItemTemplate : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateInsertItemTemplate : System.Web.UI.Control -&gt; unit" Usage="listView.InstantiateInsertItemTemplate container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateInsertItemTemplate(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2749,6 +2807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateItemSeparatorTemplate(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateItemSeparatorTemplate (container As Control)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateItemSeparatorTemplate : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateItemSeparatorTemplate : System.Web.UI.Control -&gt; unit" Usage="listView.InstantiateItemSeparatorTemplate container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateItemSeparatorTemplate(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2781,6 +2840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.InstantiateItemTemplate(System.Web.UI.Control,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InstantiateItemTemplate (container As Control, displayIndex As Integer)" />
       <MemberSignature Language="F#" Value="abstract member InstantiateItemTemplate : System.Web.UI.Control * int -&gt; unit&#xA;override this.InstantiateItemTemplate : System.Web.UI.Control * int -&gt; unit" Usage="listView.InstantiateItemTemplate (container, displayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InstantiateItemTemplate(System::Web::UI::Control ^ container, int displayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2830,6 +2890,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.IsUsingModelBinders" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsUsingModelBinders As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsUsingModelBinders : bool" Usage="System.Web.UI.WebControls.ListView.IsUsingModelBinders" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsUsingModelBinders { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2851,6 +2912,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCanceling As EventHandler(Of ListViewCancelEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemCanceling : EventHandler&lt;System.Web.UI.WebControls.ListViewCancelEventArgs&gt; " Usage="member this.ItemCanceling : System.EventHandler&lt;System.Web.UI.WebControls.ListViewCancelEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewCancelEventArgs ^&gt; ^ ItemCanceling;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2899,6 +2961,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCommand As EventHandler(Of ListViewCommandEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemCommand : EventHandler&lt;System.Web.UI.WebControls.ListViewCommandEventArgs&gt; " Usage="member this.ItemCommand : System.EventHandler&lt;System.Web.UI.WebControls.ListViewCommandEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewCommandEventArgs ^&gt; ^ ItemCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2961,6 +3024,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCreated As EventHandler(Of ListViewItemEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemCreated : EventHandler&lt;System.Web.UI.WebControls.ListViewItemEventArgs&gt; " Usage="member this.ItemCreated : System.EventHandler&lt;System.Web.UI.WebControls.ListViewItemEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewItemEventArgs ^&gt; ^ ItemCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2999,6 +3063,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemDataBound" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDataBound As EventHandler(Of ListViewItemEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemDataBound : EventHandler&lt;System.Web.UI.WebControls.ListViewItemEventArgs&gt; " Usage="member this.ItemDataBound : System.EventHandler&lt;System.Web.UI.WebControls.ListViewItemEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewItemEventArgs ^&gt; ^ ItemDataBound;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3045,6 +3110,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDeleted As EventHandler(Of ListViewDeletedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemDeleted : EventHandler&lt;System.Web.UI.WebControls.ListViewDeletedEventArgs&gt; " Usage="member this.ItemDeleted : System.EventHandler&lt;System.Web.UI.WebControls.ListViewDeletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewDeletedEventArgs ^&gt; ^ ItemDeleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3091,6 +3157,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemDeleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDeleting As EventHandler(Of ListViewDeleteEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemDeleting : EventHandler&lt;System.Web.UI.WebControls.ListViewDeleteEventArgs&gt; " Usage="member this.ItemDeleting : System.EventHandler&lt;System.Web.UI.WebControls.ListViewDeleteEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewDeleteEventArgs ^&gt; ^ ItemDeleting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3137,6 +3204,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemEditing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemEditing As EventHandler(Of ListViewEditEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemEditing : EventHandler&lt;System.Web.UI.WebControls.ListViewEditEventArgs&gt; " Usage="member this.ItemEditing : System.EventHandler&lt;System.Web.UI.WebControls.ListViewEditEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewEditEventArgs ^&gt; ^ ItemEditing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3188,6 +3256,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemInserted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemInserted As EventHandler(Of ListViewInsertedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemInserted : EventHandler&lt;System.Web.UI.WebControls.ListViewInsertedEventArgs&gt; " Usage="member this.ItemInserted : System.EventHandler&lt;System.Web.UI.WebControls.ListViewInsertedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewInsertedEventArgs ^&gt; ^ ItemInserted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3244,6 +3313,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemInserting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemInserting As EventHandler(Of ListViewInsertEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemInserting : EventHandler&lt;System.Web.UI.WebControls.ListViewInsertEventArgs&gt; " Usage="member this.ItemInserting : System.EventHandler&lt;System.Web.UI.WebControls.ListViewInsertEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewInsertEventArgs ^&gt; ^ ItemInserting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3295,6 +3365,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ItemPlaceholderID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemPlaceholderID As String" />
       <MemberSignature Language="F#" Value="member this.ItemPlaceholderID : string with get, set" Usage="System.Web.UI.WebControls.ListView.ItemPlaceholderID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ItemPlaceholderID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3342,6 +3413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As IList(Of ListViewDataItem)" />
       <MemberSignature Language="F#" Value="member this.Items : System.Collections.Generic.IList&lt;System.Web.UI.WebControls.ListViewDataItem&gt;" Usage="System.Web.UI.WebControls.ListView.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Web::UI::WebControls::ListViewDataItem ^&gt; ^ Items { System::Collections::Generic::IList&lt;System::Web::UI::WebControls::ListViewDataItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3388,6 +3460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemSeparatorTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.ItemSeparatorTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.ItemSeparatorTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemSeparatorTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3444,6 +3517,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.ItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IWizardSideBarListControl.ItemTemplate</InterfaceMember>
@@ -3517,6 +3591,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemUpdated As EventHandler(Of ListViewUpdatedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemUpdated : EventHandler&lt;System.Web.UI.WebControls.ListViewUpdatedEventArgs&gt; " Usage="member this.ItemUpdated : System.EventHandler&lt;System.Web.UI.WebControls.ListViewUpdatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewUpdatedEventArgs ^&gt; ^ ItemUpdated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3569,6 +3644,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemUpdating As EventHandler(Of ListViewUpdateEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ItemUpdating : EventHandler&lt;System.Web.UI.WebControls.ListViewUpdateEventArgs&gt; " Usage="member this.ItemUpdating : System.EventHandler&lt;System.Web.UI.WebControls.ListViewUpdateEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewUpdateEventArgs ^&gt; ^ ItemUpdating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3623,6 +3699,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.LayoutCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LayoutCreated As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LayoutCreated : EventHandler " Usage="member this.LayoutCreated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LayoutCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3657,6 +3734,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.LayoutTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LayoutTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.LayoutTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.LayoutTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ LayoutTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3734,6 +3812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="listView.LoadControlState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3765,6 +3844,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="listView.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3796,6 +3876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property MaximumRows As Integer" />
       <MemberSignature Language="F#" Value="member this.MaximumRows : int" Usage="System.Web.UI.WebControls.ListView.MaximumRows" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int MaximumRows { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows</InterfaceMember>
@@ -3826,6 +3907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="listView.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3875,6 +3957,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="listView.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3912,6 +3995,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemCanceling(System.Web.UI.WebControls.ListViewCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCanceling (e As ListViewCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemCanceling : System.Web.UI.WebControls.ListViewCancelEventArgs -&gt; unit&#xA;override this.OnItemCanceling : System.Web.UI.WebControls.ListViewCancelEventArgs -&gt; unit" Usage="listView.OnItemCanceling e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCanceling(System::Web::UI::WebControls::ListViewCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3954,6 +4038,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemCommand(System.Web.UI.WebControls.ListViewCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCommand (e As ListViewCommandEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemCommand : System.Web.UI.WebControls.ListViewCommandEventArgs -&gt; unit&#xA;override this.OnItemCommand : System.Web.UI.WebControls.ListViewCommandEventArgs -&gt; unit" Usage="listView.OnItemCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCommand(System::Web::UI::WebControls::ListViewCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3995,6 +4080,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemCreated(System.Web.UI.WebControls.ListViewItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCreated (e As ListViewItemEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemCreated : System.Web.UI.WebControls.ListViewItemEventArgs -&gt; unit&#xA;override this.OnItemCreated : System.Web.UI.WebControls.ListViewItemEventArgs -&gt; unit" Usage="listView.OnItemCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCreated(System::Web::UI::WebControls::ListViewItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4036,6 +4122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemDataBound(System.Web.UI.WebControls.ListViewItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDataBound (e As ListViewItemEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemDataBound : System.Web.UI.WebControls.ListViewItemEventArgs -&gt; unit&#xA;override this.OnItemDataBound : System.Web.UI.WebControls.ListViewItemEventArgs -&gt; unit" Usage="listView.OnItemDataBound e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDataBound(System::Web::UI::WebControls::ListViewItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4077,6 +4164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDeleted (e As ListViewDeletedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemDeleted : System.Web.UI.WebControls.ListViewDeletedEventArgs -&gt; unit&#xA;override this.OnItemDeleted : System.Web.UI.WebControls.ListViewDeletedEventArgs -&gt; unit" Usage="listView.OnItemDeleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDeleted(System::Web::UI::WebControls::ListViewDeletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4118,6 +4206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemDeleting(System.Web.UI.WebControls.ListViewDeleteEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDeleting (e As ListViewDeleteEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemDeleting : System.Web.UI.WebControls.ListViewDeleteEventArgs -&gt; unit&#xA;override this.OnItemDeleting : System.Web.UI.WebControls.ListViewDeleteEventArgs -&gt; unit" Usage="listView.OnItemDeleting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDeleting(System::Web::UI::WebControls::ListViewDeleteEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4160,6 +4249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemEditing(System.Web.UI.WebControls.ListViewEditEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemEditing (e As ListViewEditEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemEditing : System.Web.UI.WebControls.ListViewEditEventArgs -&gt; unit&#xA;override this.OnItemEditing : System.Web.UI.WebControls.ListViewEditEventArgs -&gt; unit" Usage="listView.OnItemEditing e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemEditing(System::Web::UI::WebControls::ListViewEditEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4203,6 +4293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemInserted(System.Web.UI.WebControls.ListViewInsertedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemInserted (e As ListViewInsertedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemInserted : System.Web.UI.WebControls.ListViewInsertedEventArgs -&gt; unit&#xA;override this.OnItemInserted : System.Web.UI.WebControls.ListViewInsertedEventArgs -&gt; unit" Usage="listView.OnItemInserted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemInserted(System::Web::UI::WebControls::ListViewInsertedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4245,6 +4336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemInserting(System.Web.UI.WebControls.ListViewInsertEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemInserting (e As ListViewInsertEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemInserting : System.Web.UI.WebControls.ListViewInsertEventArgs -&gt; unit&#xA;override this.OnItemInserting : System.Web.UI.WebControls.ListViewInsertEventArgs -&gt; unit" Usage="listView.OnItemInserting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemInserting(System::Web::UI::WebControls::ListViewInsertEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4288,6 +4380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemUpdated(System.Web.UI.WebControls.ListViewUpdatedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemUpdated (e As ListViewUpdatedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemUpdated : System.Web.UI.WebControls.ListViewUpdatedEventArgs -&gt; unit&#xA;override this.OnItemUpdated : System.Web.UI.WebControls.ListViewUpdatedEventArgs -&gt; unit" Usage="listView.OnItemUpdated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemUpdated(System::Web::UI::WebControls::ListViewUpdatedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4330,6 +4423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnItemUpdating(System.Web.UI.WebControls.ListViewUpdateEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemUpdating (e As ListViewUpdateEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemUpdating : System.Web.UI.WebControls.ListViewUpdateEventArgs -&gt; unit&#xA;override this.OnItemUpdating : System.Web.UI.WebControls.ListViewUpdateEventArgs -&gt; unit" Usage="listView.OnItemUpdating e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemUpdating(System::Web::UI::WebControls::ListViewUpdateEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4373,6 +4467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnLayoutCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLayoutCreated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnLayoutCreated : EventArgs -&gt; unit&#xA;override this.OnLayoutCreated : EventArgs -&gt; unit" Usage="listView.OnLayoutCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLayoutCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4411,6 +4506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPagePropertiesChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPagePropertiesChanged : EventArgs -&gt; unit&#xA;override this.OnPagePropertiesChanged : EventArgs -&gt; unit" Usage="listView.OnPagePropertiesChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPagePropertiesChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4451,6 +4547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPagePropertiesChanging (e As PagePropertiesChangingEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPagePropertiesChanging : System.Web.UI.WebControls.PagePropertiesChangingEventArgs -&gt; unit&#xA;override this.OnPagePropertiesChanging : System.Web.UI.WebControls.PagePropertiesChangingEventArgs -&gt; unit" Usage="listView.OnPagePropertiesChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPagePropertiesChanging(System::Web::UI::WebControls::PagePropertiesChangingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4491,6 +4588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="listView.OnSelectedIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4531,6 +4629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnSelectedIndexChanging(System.Web.UI.WebControls.ListViewSelectEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanging (e As ListViewSelectEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanging : System.Web.UI.WebControls.ListViewSelectEventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanging : System.Web.UI.WebControls.ListViewSelectEventArgs -&gt; unit" Usage="listView.OnSelectedIndexChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanging(System::Web::UI::WebControls::ListViewSelectEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4573,6 +4672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnSorted(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSorted (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSorted : EventArgs -&gt; unit&#xA;override this.OnSorted : EventArgs -&gt; unit" Usage="listView.OnSorted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSorted(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4613,6 +4713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnSorting(System.Web.UI.WebControls.ListViewSortEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSorting (e As ListViewSortEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSorting : System.Web.UI.WebControls.ListViewSortEventArgs -&gt; unit&#xA;override this.OnSorting : System.Web.UI.WebControls.ListViewSortEventArgs -&gt; unit" Usage="listView.OnSorting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSorting(System::Web::UI::WebControls::ListViewSortEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4655,6 +4756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.OnTotalRowCountAvailable(System.Web.UI.WebControls.PageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTotalRowCountAvailable (e As PageEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTotalRowCountAvailable : System.Web.UI.WebControls.PageEventArgs -&gt; unit&#xA;override this.OnTotalRowCountAvailable : System.Web.UI.WebControls.PageEventArgs -&gt; unit" Usage="listView.OnTotalRowCountAvailable e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTotalRowCountAvailable(System::Web::UI::WebControls::PageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4693,6 +4795,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.PagePropertiesChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PagePropertiesChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PagePropertiesChanged : EventHandler " Usage="member this.PagePropertiesChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PagePropertiesChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4729,6 +4832,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PagePropertiesChanging As EventHandler(Of PagePropertiesChangingEventArgs) " />
       <MemberSignature Language="F#" Value="member this.PagePropertiesChanging : EventHandler&lt;System.Web.UI.WebControls.PagePropertiesChangingEventArgs&gt; " Usage="member this.PagePropertiesChanging : System.EventHandler&lt;System.Web.UI.WebControls.PagePropertiesChangingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::PagePropertiesChangingEventArgs ^&gt; ^ PagePropertiesChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4775,6 +4879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.PerformDataBinding(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding (data As IEnumerable)" />
       <MemberSignature Language="F#" Value="override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="listView.PerformDataBinding data" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4809,6 +4914,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.PerformSelect" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformSelect ()" />
       <MemberSignature Language="F#" Value="override this.PerformSelect : unit -&gt; unit" Usage="listView.PerformSelect " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformSelect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4837,6 +4943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.RemoveItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RemoveItems ()" />
       <MemberSignature Language="F#" Value="abstract member RemoveItems : unit -&gt; unit&#xA;override this.RemoveItems : unit -&gt; unit" Usage="listView.RemoveItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RemoveItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4868,6 +4975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="listView.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4902,6 +5010,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="listView.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4934,6 +5043,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="listView.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4963,6 +5073,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SelectedDataKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedDataKey As DataKey" />
       <MemberSignature Language="F#" Value="member this.SelectedDataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.UI.WebControls.ListView.SelectedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey</InterfaceMember>
@@ -5018,6 +5129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.ListView.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex</InterfaceMember>
@@ -5069,6 +5181,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.SelectedIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5113,6 +5226,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanging As EventHandler(Of ListViewSelectEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SelectedIndexChanging : EventHandler&lt;System.Web.UI.WebControls.ListViewSelectEventArgs&gt; " Usage="member this.SelectedIndexChanging : System.EventHandler&lt;System.Web.UI.WebControls.ListViewSelectEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewSelectEventArgs ^&gt; ^ SelectedIndexChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5163,6 +5277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SelectedItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.SelectedItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.SelectedItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ SelectedItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5229,6 +5344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SelectedPersistedDataKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedPersistedDataKey As DataKey" />
       <MemberSignature Language="F#" Value="member this.SelectedPersistedDataKey : System.Web.UI.WebControls.DataKey with get, set" Usage="System.Web.UI.WebControls.ListView.SelectedPersistedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedPersistedDataKey { System::Web::UI::WebControls::DataKey ^ get(); void set(System::Web::UI::WebControls::DataKey ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5254,6 +5370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedValue As Object" />
       <MemberSignature Language="F#" Value="member this.SelectedValue : obj" Usage="System.Web.UI.WebControls.ListView.SelectedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5310,6 +5427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.SelectItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectItem (rowIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.SelectItem : int -&gt; unit" Usage="listView.SelectItem rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectItem(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5341,6 +5459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.SetEditItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEditItem (rowIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetEditItem : int -&gt; unit" Usage="listView.SetEditItem rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEditItem(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5373,6 +5492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetPageProperties (startRowIndex As Integer, maximumRows As Integer, databind As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SetPageProperties : int * int * bool -&gt; unit&#xA;override this.SetPageProperties : int * int * bool -&gt; unit" Usage="listView.SetPageProperties (startRowIndex, maximumRows, databind)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetPageProperties(int startRowIndex, int maximumRows, bool databind);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(System.Int32,System.Int32,System.Boolean)</InterfaceMember>
@@ -5409,6 +5529,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort(string sortExpression, valuetype System.Web.UI.WebControls.SortDirection sortDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
       <MemberSignature Language="F#" Value="abstract member Sort : string * System.Web.UI.WebControls.SortDirection -&gt; unit&#xA;override this.Sort : string * System.Web.UI.WebControls.SortDirection -&gt; unit" Usage="listView.Sort (sortExpression, sortDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort(System::String ^ sortExpression, System::Web::UI::WebControls::SortDirection sortDirection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5459,6 +5580,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortDirection As SortDirection" />
       <MemberSignature Language="F#" Value="member this.SortDirection : System.Web.UI.WebControls.SortDirection" Usage="System.Web.UI.WebControls.ListView.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::SortDirection SortDirection { System::Web::UI::WebControls::SortDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5510,6 +5632,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.Sorted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Sorted As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Sorted : EventHandler " Usage="member this.Sorted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Sorted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5546,6 +5669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortExpression As String" />
       <MemberSignature Language="F#" Value="member this.SortExpression : string" Usage="System.Web.UI.WebControls.ListView.SortExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SortExpression { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5590,6 +5714,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListView.Sorting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Sorting As EventHandler(Of ListViewSortEventArgs) " />
       <MemberSignature Language="F#" Value="member this.Sorting : EventHandler&lt;System.Web.UI.WebControls.ListViewSortEventArgs&gt; " Usage="member this.Sorting : System.EventHandler&lt;System.Web.UI.WebControls.ListViewSortEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::ListViewSortEventArgs ^&gt; ^ Sorting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -5638,6 +5763,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property StartRowIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.StartRowIndex : int" Usage="System.Web.UI.WebControls.ListView.StartRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int StartRowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex</InterfaceMember>
@@ -5661,6 +5787,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#IDataKeysControl#ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ClientIDRowSuffixDataKeys As DataKeyArray Implements IDataKeysControl.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKeyArray ^ System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys</InterfaceMember>
@@ -5691,6 +5818,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundControl#DataKeyNames" />
       <MemberSignature Language="VB.NET" Value=" Property DataKeyNames As String() Implements IDataBoundControl.DataKeyNames" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataKeyNames" />
+      <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundControl.DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
@@ -5721,6 +5849,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundControl#DataMember" />
       <MemberSignature Language="VB.NET" Value=" Property DataMember As String Implements IDataBoundControl.DataMember" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataMember" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataMember</InterfaceMember>
@@ -5751,6 +5880,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundControl#DataSource" />
       <MemberSignature Language="VB.NET" Value=" Property DataSource As Object Implements IDataBoundControl.DataSource" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.WebControls.IDataBoundControl.DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSource</InterfaceMember>
@@ -5781,6 +5911,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundControl#DataSourceID" />
       <MemberSignature Language="VB.NET" Value=" Property DataSourceID As String Implements IDataBoundControl.DataSourceID" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataSourceID" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceID</InterfaceMember>
@@ -5811,6 +5942,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundControl#DataSourceObject" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataSourceObject As IDataSource Implements IDataBoundControl.DataSourceObject" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataSourceObject" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::IDataSource ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceObject { System::Web::UI::IDataSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceObject</InterfaceMember>
@@ -5841,6 +5973,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundListControl#ClientIDRowSuffix" />
       <MemberSignature Language="VB.NET" Value=" Property ClientIDRowSuffix As String() Implements IDataBoundListControl.ClientIDRowSuffix" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix" />
+      <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix</InterfaceMember>
@@ -5871,6 +6004,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundListControl#DataKeys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property DataKeys As DataKeyArray Implements IDataBoundListControl.DataKeys" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.DataKeys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKeyArray ^ System.Web.UI.WebControls.IDataBoundListControl.DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys</InterfaceMember>
@@ -5901,6 +6035,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundListControl#EnablePersistedSelection" />
       <MemberSignature Language="VB.NET" Value=" Property EnablePersistedSelection As Boolean Implements IDataBoundListControl.EnablePersistedSelection" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection</InterfaceMember>
@@ -5932,6 +6067,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundListControl#SelectedDataKey" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectedDataKey As DataKey Implements IDataBoundListControl.SelectedDataKey" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey</InterfaceMember>
@@ -5962,6 +6098,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IDataBoundListControl#SelectedIndex" />
       <MemberSignature Language="VB.NET" Value=" Property SelectedIndex As Integer Implements IDataBoundListControl.SelectedIndex" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex</InterfaceMember>
@@ -5992,6 +6129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IPageableItemContainer#MaximumRows" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property MaximumRows As Integer Implements IPageableItemContainer.MaximumRows" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IPageableItemContainer.MaximumRows" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IPageableItemContainer.MaximumRows { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows</InterfaceMember>
@@ -6022,6 +6160,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(int32 startRowIndex, int32 maximumRows, bool databind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IPageableItemContainer#SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Sub SetPageProperties (startRowIndex As Integer, maximumRows As Integer, databind As Boolean) Implements IPageableItemContainer.SetPageProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(int startRowIndex, int maximumRows, bool databind) = System::Web::UI::WebControls::IPageableItemContainer::SetPageProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(System.Int32,System.Int32,System.Boolean)</InterfaceMember>
@@ -6061,6 +6200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IPageableItemContainer#StartRowIndex" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property StartRowIndex As Integer Implements IPageableItemContainer.StartRowIndex" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex</InterfaceMember>
@@ -6113,6 +6253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IPersistedSelector#DataKey" />
       <MemberSignature Language="VB.NET" Value=" Property DataKey As DataKey Implements IPersistedSelector.DataKey" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IPersistedSelector.DataKey" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IPersistedSelector.DataKey { System::Web::UI::WebControls::DataKey ^ get(); void set(System::Web::UI::WebControls::DataKey ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.IPersistedSelector.DataKey</InterfaceMember>
@@ -6143,6 +6284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.TabIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property TabIndex As Short" />
       <MemberSignature Language="F#" Value="member this.TabIndex : int16 with get, set" Usage="System.Web.UI.WebControls.ListView.TabIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property short TabIndex { short get(); void set(short value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -6185,6 +6327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ToolTip As String" />
       <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.WebControls.ListView.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -6227,6 +6370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListView.UpdateItem(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateItem (itemIndex As Integer, causesValidation As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member UpdateItem : int * bool -&gt; unit&#xA;override this.UpdateItem : int * bool -&gt; unit" Usage="listView.UpdateItem (itemIndex, causesValidation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UpdateItem(int itemIndex, bool causesValidation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -6286,6 +6430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.UpdateMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateMethod As String" />
       <MemberSignature Language="F#" Value="member this.UpdateMethod : string with get, set" Usage="System.Web.UI.WebControls.ListView.UpdateMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UpdateMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -6329,6 +6474,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.Width" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Width As Unit" />
       <MemberSignature Language="F#" Value="member this.Width : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.ListView.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit Width { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.LocalPrintServer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalPrintServer&#xA;Inherits PrintServer" />
   <TypeSignature Language="F#" Value="type LocalPrintServer = class&#xA;    inherit PrintServer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalPrintServer sealed : System::Printing::PrintServer" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalPrintServer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.Printing.LocalPrintServerIndexedProperty[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertiesFilter As LocalPrintServerIndexedProperty())" />
       <MemberSignature Language="F#" Value="new System.Printing.LocalPrintServer : System.Printing.LocalPrintServerIndexedProperty[] -&gt; System.Printing.LocalPrintServer" Usage="new System.Printing.LocalPrintServer propertiesFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalPrintServer(cli::array &lt;System::Printing::LocalPrintServerIndexedProperty&gt; ^ propertiesFilter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.Printing.PrintSystemDesiredAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (desiredAccess As PrintSystemDesiredAccess)" />
       <MemberSignature Language="F#" Value="new System.Printing.LocalPrintServer : System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.LocalPrintServer" Usage="new System.Printing.LocalPrintServer desiredAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalPrintServer(System::Printing::PrintSystemDesiredAccess desiredAccess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertiesFilter As String())" />
       <MemberSignature Language="F#" Value="new System.Printing.LocalPrintServer : string[] -&gt; System.Printing.LocalPrintServer" Usage="new System.Printing.LocalPrintServer propertiesFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalPrintServer(cli::array &lt;System::String ^&gt; ^ propertiesFilter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.Printing.LocalPrintServerIndexedProperty[],System.Printing.PrintSystemDesiredAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertiesFilter As LocalPrintServerIndexedProperty(), desiredAccess As PrintSystemDesiredAccess)" />
       <MemberSignature Language="F#" Value="new System.Printing.LocalPrintServer : System.Printing.LocalPrintServerIndexedProperty[] * System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.LocalPrintServer" Usage="new System.Printing.LocalPrintServer (propertiesFilter, desiredAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalPrintServer(cli::array &lt;System::Printing::LocalPrintServerIndexedProperty&gt; ^ propertiesFilter, System::Printing::PrintSystemDesiredAccess desiredAccess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.String[],System.Printing.PrintSystemDesiredAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertiesFilter As String(), desiredAccess As PrintSystemDesiredAccess)" />
       <MemberSignature Language="F#" Value="new System.Printing.LocalPrintServer : string[] * System.Printing.PrintSystemDesiredAccess -&gt; System.Printing.LocalPrintServer" Usage="new System.Printing.LocalPrintServer (propertiesFilter, desiredAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalPrintServer(cli::array &lt;System::String ^&gt; ^ propertiesFilter, System::Printing::PrintSystemDesiredAccess desiredAccess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Commit ()" />
       <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="localPrintServer.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.ConnectToPrintQueue(System.Printing.PrintQueue)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConnectToPrintQueue (printer As PrintQueue) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ConnectToPrintQueue : System.Printing.PrintQueue -&gt; bool" Usage="localPrintServer.ConnectToPrintQueue printer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ConnectToPrintQueue(System::Printing::PrintQueue ^ printer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.ConnectToPrintQueue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConnectToPrintQueue (printQueuePath As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ConnectToPrintQueue : string -&gt; bool" Usage="localPrintServer.ConnectToPrintQueue printQueuePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ConnectToPrintQueue(System::String ^ printQueuePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.LocalPrintServer.DefaultPrintQueue" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintQueue As PrintQueue" />
       <MemberSignature Language="F#" Value="member this.DefaultPrintQueue : System.Printing.PrintQueue with get, set" Usage="System.Printing.LocalPrintServer.DefaultPrintQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintQueue ^ DefaultPrintQueue { System::Printing::PrintQueue ^ get(); void set(System::Printing::PrintQueue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.DisconnectFromPrintQueue(System.Printing.PrintQueue)" />
       <MemberSignature Language="VB.NET" Value="Public Function DisconnectFromPrintQueue (printer As PrintQueue) As Boolean" />
       <MemberSignature Language="F#" Value="member this.DisconnectFromPrintQueue : System.Printing.PrintQueue -&gt; bool" Usage="localPrintServer.DisconnectFromPrintQueue printer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DisconnectFromPrintQueue(System::Printing::PrintQueue ^ printer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.DisconnectFromPrintQueue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DisconnectFromPrintQueue (printQueuePath As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.DisconnectFromPrintQueue : string -&gt; bool" Usage="localPrintServer.DisconnectFromPrintQueue printQueuePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool DisconnectFromPrintQueue(System::String ^ printQueuePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.GetDefaultPrintQueue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultPrintQueue () As PrintQueue" />
       <MemberSignature Language="F#" Value="static member GetDefaultPrintQueue : unit -&gt; System.Printing.PrintQueue" Usage="System.Printing.LocalPrintServer.GetDefaultPrintQueue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Printing::PrintQueue ^ GetDefaultPrintQueue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Refresh ()" />
       <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="localPrintServer.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

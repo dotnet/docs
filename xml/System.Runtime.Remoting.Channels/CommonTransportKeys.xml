@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.CommonTransportKeys" />
   <TypeSignature Language="VB.NET" Value="Public Class CommonTransportKeys" />
   <TypeSignature Language="F#" Value="type CommonTransportKeys = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommonTransportKeys" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.CommonTransportKeys.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommonTransportKeys();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.CommonTransportKeys.ConnectionId" />
       <MemberSignature Language="VB.NET" Value="Public Const ConnectionId As String " />
       <MemberSignature Language="F#" Value="val mutable ConnectionId : string" Usage="System.Runtime.Remoting.Channels.CommonTransportKeys.ConnectionId" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ConnectionId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -58,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.CommonTransportKeys.IPAddress" />
       <MemberSignature Language="VB.NET" Value="Public Const IPAddress As String " />
       <MemberSignature Language="F#" Value="val mutable IPAddress : string" Usage="System.Runtime.Remoting.Channels.CommonTransportKeys.IPAddress" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ IPAddress;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -77,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.CommonTransportKeys.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Const RequestUri As String " />
       <MemberSignature Language="F#" Value="val mutable RequestUri : string" Usage="System.Runtime.Remoting.Channels.CommonTransportKeys.RequestUri" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ RequestUri;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

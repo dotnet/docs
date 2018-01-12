@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSimpleTypeContent" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaSimpleTypeContent&#xA;Inherits XmlSchemaAnnotated" />
   <TypeSignature Language="F#" Value="type XmlSchemaSimpleTypeContent = class&#xA;    inherit XmlSchemaAnnotated" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaSimpleTypeContent abstract : System::Xml::Schema::XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaSimpleTypeContent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaSimpleTypeContent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

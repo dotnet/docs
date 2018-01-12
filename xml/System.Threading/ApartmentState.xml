@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ApartmentState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ApartmentState" />
   <TypeSignature Language="F#" Value="type ApartmentState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ApartmentState" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ApartmentState.MTA" />
       <MemberSignature Language="VB.NET" Value="MTA" />
       <MemberSignature Language="F#" Value="MTA = 1" Usage="System.Threading.ApartmentState.MTA" />
+      <MemberSignature Language="C++ CLI" Value="MTA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ApartmentState.STA" />
       <MemberSignature Language="VB.NET" Value="STA" />
       <MemberSignature Language="F#" Value="STA = 0" Usage="System.Threading.ApartmentState.STA" />
+      <MemberSignature Language="C++ CLI" Value="STA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.ApartmentState.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = 2" Usage="System.Threading.ApartmentState.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

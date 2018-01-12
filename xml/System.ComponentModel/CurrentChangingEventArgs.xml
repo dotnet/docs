@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CurrentChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CurrentChangingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type CurrentChangingEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CurrentChangingEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CurrentChangingEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CurrentChangingEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.CurrentChangingEventArgs.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isCancelable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.CurrentChangingEventArgs : bool -&gt; System.ComponentModel.CurrentChangingEventArgs" Usage="new System.ComponentModel.CurrentChangingEventArgs isCancelable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CurrentChangingEventArgs(bool isCancelable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CurrentChangingEventArgs.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
       <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.ComponentModel.CurrentChangingEventArgs.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.CurrentChangingEventArgs.IsCancelable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancelable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCancelable : bool" Usage="System.ComponentModel.CurrentChangingEventArgs.IsCancelable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancelable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

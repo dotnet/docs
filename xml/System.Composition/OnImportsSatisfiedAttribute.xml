@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.OnImportsSatisfiedAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OnImportsSatisfiedAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type OnImportsSatisfiedAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OnImportsSatisfiedAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -35,6 +36,7 @@ The method that this attribute is applied to must be void, parameterless, and ei
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.OnImportsSatisfiedAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OnImportsSatisfiedAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

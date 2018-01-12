@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.DataSourceProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceProvider&#xA;Implements INotifyPropertyChanged, ISupportInitialize" />
   <TypeSignature Language="F#" Value="type DataSourceProvider = class&#xA;    interface INotifyPropertyChanged&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSourceProvider abstract : System::ComponentModel::INotifyPropertyChanged, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataSourceProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="dataSourceProvider.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.BeginQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub BeginQuery ()" />
       <MemberSignature Language="F#" Value="abstract member BeginQuery : unit -&gt; unit&#xA;override this.BeginQuery : unit -&gt; unit" Usage="dataSourceProvider.BeginQuery " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void BeginQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataSourceProvider.Data" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As Object" />
       <MemberSignature Language="F#" Value="member this.Data : obj" Usage="System.Windows.Data.DataSourceProvider.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Data { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.DataSourceProvider.DataChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DataChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DataChanged : EventHandler " Usage="member this.DataChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.DeferRefresh" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeferRefresh () As IDisposable" />
       <MemberSignature Language="F#" Value="abstract member DeferRefresh : unit -&gt; IDisposable&#xA;override this.DeferRefresh : unit -&gt; IDisposable" Usage="dataSourceProvider.DeferRefresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ DeferRefresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataSourceProvider.Dispatcher" />
       <MemberSignature Language="VB.NET" Value="Protected Property Dispatcher As Dispatcher" />
       <MemberSignature Language="F#" Value="member this.Dispatcher : System.Windows.Threading.Dispatcher with get, set" Usage="System.Windows.Data.DataSourceProvider.Dispatcher" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Threading::Dispatcher ^ Dispatcher { System::Windows::Threading::Dispatcher ^ get(); void set(System::Windows::Threading::Dispatcher ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.EndInit" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="dataSourceProvider.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataSourceProvider.Error" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As Exception" />
       <MemberSignature Language="F#" Value="member this.Error : Exception" Usage="System.Windows.Data.DataSourceProvider.Error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Error { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.InitialLoad" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitialLoad ()" />
       <MemberSignature Language="F#" Value="member this.InitialLoad : unit -&gt; unit" Usage="dataSourceProvider.InitialLoad " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitialLoad();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -288,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataSourceProvider.IsInitialLoadEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInitialLoadEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInitialLoadEnabled : bool with get, set" Usage="System.Windows.Data.DataSourceProvider.IsInitialLoadEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialLoadEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -321,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataSourceProvider.IsRefreshDeferred" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsRefreshDeferred As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsRefreshDeferred : bool" Usage="System.Windows.Data.DataSourceProvider.IsRefreshDeferred" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsRefreshDeferred { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -349,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="dataSourceProvider.OnPropertyChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -381,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.OnQueryFinished(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnQueryFinished (newData As Object)" />
       <MemberSignature Language="F#" Value="member this.OnQueryFinished : obj -&gt; unit" Usage="dataSourceProvider.OnQueryFinished newData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnQueryFinished(System::Object ^ newData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -411,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.OnQueryFinished(System.Object,System.Exception,System.Windows.Threading.DispatcherOperationCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnQueryFinished (newData As Object, error As Exception, completionWork As DispatcherOperationCallback, callbackArguments As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnQueryFinished : obj * Exception * System.Windows.Threading.DispatcherOperationCallback * obj -&gt; unit&#xA;override this.OnQueryFinished : obj * Exception * System.Windows.Threading.DispatcherOperationCallback * obj -&gt; unit" Usage="dataSourceProvider.OnQueryFinished (newData, error, completionWork, callbackArguments)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnQueryFinished(System::Object ^ newData, Exception ^ error, System::Windows::Threading::DispatcherOperationCallback ^ completionWork, System::Object ^ callbackArguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -447,6 +463,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.DataSourceProvider.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
@@ -470,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="dataSourceProvider.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -517,6 +535,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.System#ComponentModel#ISupportInitialize#BeginInit" />
       <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -539,6 +558,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataSourceProvider.System#ComponentModel#ISupportInitialize#EndInit" />
       <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>

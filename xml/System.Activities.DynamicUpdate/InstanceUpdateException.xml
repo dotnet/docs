@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.InstanceUpdateException" />
   <TypeSignature Language="VB.NET" Value="Public Class InstanceUpdateException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type InstanceUpdateException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceUpdateException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceUpdateException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (blockingActivities As IList(Of ActivityBlockingUpdate))" />
       <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.InstanceUpdateException : System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; -&gt; System.Activities.DynamicUpdate.InstanceUpdateException" Usage="new System.Activities.DynamicUpdate.InstanceUpdateException blockingActivities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceUpdateException(System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ blockingActivities);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.InstanceUpdateException : string -&gt; System.Activities.DynamicUpdate.InstanceUpdateException" Usage="new System.Activities.DynamicUpdate.InstanceUpdateException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceUpdateException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.InstanceUpdateException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Activities.DynamicUpdate.InstanceUpdateException" Usage="new System.Activities.DynamicUpdate.InstanceUpdateException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceUpdateException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, blockingActivities As IList(Of ActivityBlockingUpdate))" />
       <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.InstanceUpdateException : string * System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; -&gt; System.Activities.DynamicUpdate.InstanceUpdateException" Usage="new System.Activities.DynamicUpdate.InstanceUpdateException (message, blockingActivities)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceUpdateException(System::String ^ message, System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ blockingActivities);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.InstanceUpdateException : string * Exception -&gt; System.Activities.DynamicUpdate.InstanceUpdateException" Usage="new System.Activities.DynamicUpdate.InstanceUpdateException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceUpdateException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.#ctor(System.String,System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate},System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, blockingActivities As IList(Of ActivityBlockingUpdate), innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Activities.DynamicUpdate.InstanceUpdateException : string * System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; * Exception -&gt; System.Activities.DynamicUpdate.InstanceUpdateException" Usage="new System.Activities.DynamicUpdate.InstanceUpdateException (message, blockingActivities, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceUpdateException(System::String ^ message, System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ blockingActivities, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.InstanceUpdateException.BlockingActivities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockingActivities As IList(Of ActivityBlockingUpdate)" />
       <MemberSignature Language="F#" Value="member this.BlockingActivities : System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" Usage="System.Activities.DynamicUpdate.InstanceUpdateException.BlockingActivities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ BlockingActivities { System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.InstanceUpdateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="instanceUpdateException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

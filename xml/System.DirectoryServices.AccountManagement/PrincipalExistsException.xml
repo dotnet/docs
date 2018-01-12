@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalExistsException" />
   <TypeSignature Language="VB.NET" Value="Public Class PrincipalExistsException&#xA;Inherits PrincipalException" />
   <TypeSignature Language="F#" Value="type PrincipalExistsException = class&#xA;    inherit PrincipalException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalExistsException : System::DirectoryServices::AccountManagement::PrincipalException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalExistsException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalExistsException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalExistsException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalExistsException : string -&gt; System.DirectoryServices.AccountManagement.PrincipalExistsException" Usage="new System.DirectoryServices.AccountManagement.PrincipalExistsException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalExistsException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalExistsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalExistsException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.AccountManagement.PrincipalExistsException" Usage="new System.DirectoryServices.AccountManagement.PrincipalExistsException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrincipalExistsException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalExistsException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalExistsException : string * Exception -&gt; System.DirectoryServices.AccountManagement.PrincipalExistsException" Usage="new System.DirectoryServices.AccountManagement.PrincipalExistsException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalExistsException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

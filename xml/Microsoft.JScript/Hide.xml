@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Hide" />
   <TypeSignature Language="VB.NET" Value="Public Class Hide&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type Hide = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Hide : Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Hide.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hide();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

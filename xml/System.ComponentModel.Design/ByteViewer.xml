@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ByteViewer" />
   <TypeSignature Language="VB.NET" Value="Public Class ByteViewer&#xA;Inherits TableLayoutPanel" />
   <TypeSignature Language="F#" Value="type ByteViewer = class&#xA;    inherit TableLayoutPanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ByteViewer : System::Windows::Forms::TableLayoutPanel" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ByteViewer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.GetBytes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : unit -&gt; byte[]&#xA;override this.GetBytes : unit -&gt; byte[]" Usage="byteViewer.GetBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.GetDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDisplayMode () As DisplayMode" />
       <MemberSignature Language="F#" Value="abstract member GetDisplayMode : unit -&gt; System.ComponentModel.Design.DisplayMode&#xA;override this.GetDisplayMode : unit -&gt; System.ComponentModel.Design.DisplayMode" Usage="byteViewer.GetDisplayMode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::Design::DisplayMode GetDisplayMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="byteViewer.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="byteViewer.OnLayout e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="byteViewer.OnPaint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SaveToFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveToFile (path As String)" />
       <MemberSignature Language="F#" Value="abstract member SaveToFile : string -&gt; unit&#xA;override this.SaveToFile : string -&gt; unit" Usage="byteViewer.SaveToFile path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveToFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.ScrollChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ScrollChanged (source As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member ScrollChanged : obj * EventArgs -&gt; unit&#xA;override this.ScrollChanged : obj * EventArgs -&gt; unit" Usage="byteViewer.ScrollChanged (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ScrollChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetBytes (bytes As Byte())" />
       <MemberSignature Language="F#" Value="abstract member SetBytes : byte[] -&gt; unit&#xA;override this.SetBytes : byte[] -&gt; unit" Usage="byteViewer.SetBytes bytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetBytes(cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -260,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetDisplayMode(System.ComponentModel.Design.DisplayMode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDisplayMode (mode As DisplayMode)" />
       <MemberSignature Language="F#" Value="abstract member SetDisplayMode : System.ComponentModel.Design.DisplayMode -&gt; unit&#xA;override this.SetDisplayMode : System.ComponentModel.Design.DisplayMode -&gt; unit" Usage="byteViewer.SetDisplayMode mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDisplayMode(System::ComponentModel::Design::DisplayMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -285,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetFile (path As String)" />
       <MemberSignature Language="F#" Value="abstract member SetFile : string -&gt; unit&#xA;override this.SetFile : string -&gt; unit" Usage="byteViewer.SetFile path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -323,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetStartLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetStartLine (line As Integer)" />
       <MemberSignature Language="F#" Value="abstract member SetStartLine : int -&gt; unit&#xA;override this.SetStartLine : int -&gt; unit" Usage="byteViewer.SetStartLine line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetStartLine(int line);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

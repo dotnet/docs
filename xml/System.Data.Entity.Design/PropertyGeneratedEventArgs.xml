@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.PropertyGeneratedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyGeneratedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type PropertyGeneratedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyGeneratedEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGeneratedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.MetadataItem,System.String,System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertySource As MetadataItem, backingFieldName As String, returnType As CodeTypeReference)" />
       <MemberSignature Language="F#" Value="new System.Data.Entity.Design.PropertyGeneratedEventArgs : System.Data.Metadata.Edm.MetadataItem * string * System.CodeDom.CodeTypeReference -&gt; System.Data.Entity.Design.PropertyGeneratedEventArgs" Usage="new System.Data.Entity.Design.PropertyGeneratedEventArgs (propertySource, backingFieldName, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGeneratedEventArgs(System::Data::Metadata::Edm::MetadataItem ^ propertySource, System::String ^ backingFieldName, System::CodeDom::CodeTypeReference ^ returnType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalAttributes As List(Of CodeAttributeDeclaration)" />
       <MemberSignature Language="F#" Value="member this.AdditionalAttributes : System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt;" Usage="System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ AdditionalAttributes { System::Collections::Generic::List&lt;System::CodeDom::CodeAttributeDeclaration ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalGetStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalGetStatements As List(Of CodeStatement)" />
       <MemberSignature Language="F#" Value="member this.AdditionalGetStatements : System.Collections.Generic.List&lt;System.CodeDom.CodeStatement&gt;" Usage="System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalGetStatements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::CodeDom::CodeStatement ^&gt; ^ AdditionalGetStatements { System::Collections::Generic::List&lt;System::CodeDom::CodeStatement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdditionalSetStatements As List(Of CodeStatement)" />
       <MemberSignature Language="F#" Value="member this.AdditionalSetStatements : System.Collections.Generic.List&lt;System.CodeDom.CodeStatement&gt;" Usage="System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::CodeDom::CodeStatement ^&gt; ^ AdditionalSetStatements { System::Collections::Generic::List&lt;System::CodeDom::CodeStatement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.BackingFieldName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackingFieldName As String" />
       <MemberSignature Language="F#" Value="member this.BackingFieldName : string" Usage="System.Data.Entity.Design.PropertyGeneratedEventArgs.BackingFieldName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackingFieldName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.PropertySource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertySource As MetadataItem" />
       <MemberSignature Language="F#" Value="member this.PropertySource : System.Data.Metadata.Edm.MetadataItem" Usage="System.Data.Entity.Design.PropertyGeneratedEventArgs.PropertySource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::MetadataItem ^ PropertySource { System::Data::Metadata::Edm::MetadataItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -199,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnType As CodeTypeReference" />
       <MemberSignature Language="F#" Value="member this.ReturnType : System.CodeDom.CodeTypeReference with get, set" Usage="System.Data.Entity.Design.PropertyGeneratedEventArgs.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ ReturnType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.RequiredArgumentAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredArgumentAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type RequiredArgumentAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequiredArgumentAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.RequiredArgumentAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequiredArgumentAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RequiredArgumentAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Activities.RequiredArgumentAttribute.TypeId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

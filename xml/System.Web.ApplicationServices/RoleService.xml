@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.RoleService" />
   <TypeSignature Language="VB.NET" Value="Public Class RoleService" />
   <TypeSignature Language="F#" Value="type RoleService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoleService" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.RoleService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoleService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.RoleService.GetRolesForCurrentUser" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRolesForCurrentUser () As String()" />
       <MemberSignature Language="F#" Value="member this.GetRolesForCurrentUser : unit -&gt; string[]" Usage="roleService.GetRolesForCurrentUser " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetRolesForCurrentUser();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.RoleService.IsCurrentUserInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCurrentUserInRole (role As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCurrentUserInRole : string -&gt; bool" Usage="roleService.IsCurrentUserInRole role" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCurrentUserInRole(System::String ^ role);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.RoleService.SelectingProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event SelectingProvider As EventHandler(Of SelectingProviderEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SelectingProvider : EventHandler&lt;System.Web.ApplicationServices.SelectingProviderEventArgs&gt; " Usage="member this.SelectingProvider : System.EventHandler&lt;System.Web.ApplicationServices.SelectingProviderEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Web::ApplicationServices::SelectingProviderEventArgs ^&gt; ^ SelectingProvider;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

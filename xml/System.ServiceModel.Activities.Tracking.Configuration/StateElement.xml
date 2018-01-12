@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.StateElement" />
   <TypeSignature Language="VB.NET" Value="Public Class StateElement&#xA;Inherits TrackingConfigurationElement" />
   <TypeSignature Language="F#" Value="type StateElement = class&#xA;    inherit TrackingConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateElement : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.StateElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateElement.ElementKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementKey As Object" />
       <MemberSignature Language="F#" Value="member this.ElementKey : obj" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateElement.ElementKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ElementKey { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

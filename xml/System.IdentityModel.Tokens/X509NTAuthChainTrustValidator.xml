@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class X509NTAuthChainTrustValidator&#xA;Inherits X509CertificateValidator" />
   <TypeSignature Language="F#" Value="type X509NTAuthChainTrustValidator = class&#xA;    inherit X509CertificateValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509NTAuthChainTrustValidator : System::IdentityModel::Selectors::X509CertificateValidator" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509NTAuthChainTrustValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator.#ctor(System.Boolean,System.Security.Cryptography.X509Certificates.X509ChainPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useMachineContext As Boolean, chainPolicy As X509ChainPolicy)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509NTAuthChainTrustValidator : bool * System.Security.Cryptography.X509Certificates.X509ChainPolicy -&gt; System.IdentityModel.Tokens.X509NTAuthChainTrustValidator" Usage="new System.IdentityModel.Tokens.X509NTAuthChainTrustValidator (useMachineContext, chainPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509NTAuthChainTrustValidator(bool useMachineContext, System::Security::Cryptography::X509Certificates::X509ChainPolicy ^ chainPolicy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509NTAuthChainTrustValidator.Validate(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (certificate As X509Certificate2)" />
       <MemberSignature Language="F#" Value="override this.Validate : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="x509NTAuthChainTrustValidator.Validate certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

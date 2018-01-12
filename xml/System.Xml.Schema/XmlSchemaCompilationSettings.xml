@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaCompilationSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaCompilationSettings" />
   <TypeSignature Language="F#" Value="type XmlSchemaCompilationSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaCompilationSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCompilationSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaCompilationSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCompilationSettings.EnableUpaCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableUpaCheck As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableUpaCheck : bool with get, set" Usage="System.Xml.Schema.XmlSchemaCompilationSettings.EnableUpaCheck" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpaCheck { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

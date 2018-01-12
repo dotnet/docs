@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDown" />
   <TypeSignature Language="VB.NET" Value="Public Class NumericUpDown&#xA;Inherits UpDownBase&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type NumericUpDown = class&#xA;    inherit UpDownBase&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NumericUpDown : System::Windows::Forms::UpDownBase, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NumericUpDown();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Accelerations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Accelerations As NumericUpDownAccelerationCollection" />
       <MemberSignature Language="F#" Value="member this.Accelerations : System.Windows.Forms.NumericUpDownAccelerationCollection" Usage="System.Windows.Forms.NumericUpDown.Accelerations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::NumericUpDownAccelerationCollection ^ Accelerations { System::Windows::Forms::NumericUpDownAccelerationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="numericUpDown.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
       <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="numericUpDown.CreateAccessibilityInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.DecimalPlaces" />
       <MemberSignature Language="VB.NET" Value="Public Property DecimalPlaces As Integer" />
       <MemberSignature Language="F#" Value="member this.DecimalPlaces : int with get, set" Usage="System.Windows.Forms.NumericUpDown.DecimalPlaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DecimalPlaces { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.DownButton" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DownButton ()" />
       <MemberSignature Language="F#" Value="override this.DownButton : unit -&gt; unit" Usage="numericUpDown.DownButton " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DownButton();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="numericUpDown.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Hexadecimal" />
       <MemberSignature Language="VB.NET" Value="Public Property Hexadecimal As Boolean" />
       <MemberSignature Language="F#" Value="member this.Hexadecimal : bool with get, set" Usage="System.Windows.Forms.NumericUpDown.Hexadecimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Hexadecimal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -348,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Increment" />
       <MemberSignature Language="VB.NET" Value="Public Property Increment As Decimal" />
       <MemberSignature Language="F#" Value="member this.Increment : decimal with get, set" Usage="System.Windows.Forms.NumericUpDown.Increment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Increment { System::Decimal get(); void set(System::Decimal value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -387,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public Property Maximum As Decimal" />
       <MemberSignature Language="F#" Value="member this.Maximum : decimal with get, set" Usage="System.Windows.Forms.NumericUpDown.Maximum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Maximum { System::Decimal get(); void set(System::Decimal value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -431,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public Property Minimum As Decimal" />
       <MemberSignature Language="F#" Value="member this.Minimum : decimal with get, set" Usage="System.Windows.Forms.NumericUpDown.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Minimum { System::Decimal get(); void set(System::Decimal value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -475,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="numericUpDown.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -510,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="numericUpDown.OnKeyUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.OnLostFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLostFocus : EventArgs -&gt; unit" Usage="numericUpDown.OnLostFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -580,6 +595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.OnTextBoxKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextBoxKeyPress (source As Object, e As KeyPressEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnTextBoxKeyPress : obj * System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="numericUpDown.OnTextBoxKeyPress (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextBoxKeyPress(System::Object ^ source, System::Windows::Forms::KeyPressEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -612,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.OnValueChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnValueChanged : EventArgs -&gt; unit&#xA;override this.OnValueChanged : EventArgs -&gt; unit" Usage="numericUpDown.OnValueChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValueChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +666,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.NumericUpDown.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -688,6 +706,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NumericUpDown.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -722,6 +741,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.ParseEditText" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ParseEditText ()" />
       <MemberSignature Language="F#" Value="member this.ParseEditText : unit -&gt; unit" Usage="numericUpDown.ParseEditText " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ParseEditText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -752,6 +772,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.NumericUpDown.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -794,6 +815,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NumericUpDown.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -821,6 +843,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.ThousandsSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property ThousandsSeparator As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThousandsSeparator : bool with get, set" Usage="System.Windows.Forms.NumericUpDown.ThousandsSeparator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThousandsSeparator { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -871,6 +894,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="numericUpDown.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -899,6 +923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.UpButton" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpButton ()" />
       <MemberSignature Language="F#" Value="override this.UpButton : unit -&gt; unit" Usage="numericUpDown.UpButton " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpButton();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -931,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.UpdateEditText" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateEditText ()" />
       <MemberSignature Language="F#" Value="override this.UpdateEditText : unit -&gt; unit" Usage="numericUpDown.UpdateEditText " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateEditText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -963,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDown.ValidateEditText" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateEditText ()" />
       <MemberSignature Language="F#" Value="override this.ValidateEditText : unit -&gt; unit" Usage="numericUpDown.ValidateEditText " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateEditText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -992,6 +1019,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDown.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Decimal" />
       <MemberSignature Language="F#" Value="member this.Value : decimal with get, set" Usage="System.Windows.Forms.NumericUpDown.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Value { System::Decimal get(); void set(System::Decimal value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1041,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.NumericUpDown.ValueChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ValueChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler " Usage="member this.ValueChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ValueChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

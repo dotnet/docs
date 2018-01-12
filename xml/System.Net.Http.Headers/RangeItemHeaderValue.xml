@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.RangeItemHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class RangeItemHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type RangeItemHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RangeItemHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeItemHeaderValue.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As Nullable(Of Long), to As Nullable(Of Long))" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.RangeItemHeaderValue : Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; System.Net.Http.Headers.RangeItemHeaderValue" Usage="new System.Net.Http.Headers.RangeItemHeaderValue (from, to)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeItemHeaderValue(Nullable&lt;long&gt; from, Nullable&lt;long&gt; to);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeItemHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rangeItemHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.RangeItemHeaderValue.From" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property From As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.From : Nullable&lt;int64&gt;" Usage="System.Net.Http.Headers.RangeItemHeaderValue.From" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; From { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rangeItemHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeItemHeaderValue.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.RangeItemHeaderValue.To" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property To As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.To : Nullable&lt;int64&gt;" Usage="System.Net.Http.Headers.RangeItemHeaderValue.To" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; To { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -252,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.RangeItemHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rangeItemHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

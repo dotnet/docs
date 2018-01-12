@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RandomNumberGenerator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RandomNumberGenerator&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type RandomNumberGenerator = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RandomNumberGenerator abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RandomNumberGenerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -99,6 +101,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As RandomNumberGenerator" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.RandomNumberGenerator" Usage="System.Security.Cryptography.RandomNumberGenerator.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RandomNumberGenerator ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -132,6 +135,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (rngName As String) As RandomNumberGenerator" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.RandomNumberGenerator" Usage="System.Security.Cryptography.RandomNumberGenerator.Create rngName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RandomNumberGenerator ^ Create(System::String ^ rngName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -177,6 +181,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="randomNumberGenerator.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -224,6 +229,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="randomNumberGenerator.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -287,6 +293,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GetBytes (data As Byte())" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : byte[] -&gt; unit" Usage="randomNumberGenerator.GetBytes data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GetBytes(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -338,6 +345,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetBytes (data As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : byte[] * int * int -&gt; unit&#xA;override this.GetBytes : byte[] * int * int -&gt; unit" Usage="randomNumberGenerator.GetBytes (data, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetBytes(cli::array &lt;System::Byte&gt; ^ data, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -380,6 +388,7 @@ To create a random number generator, call the @System.Security.Cryptography.Rand
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RandomNumberGenerator.GetNonZeroBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetNonZeroBytes (data As Byte())" />
       <MemberSignature Language="F#" Value="abstract member GetNonZeroBytes : byte[] -&gt; unit&#xA;override this.GetNonZeroBytes : byte[] -&gt; unit" Usage="randomNumberGenerator.GetNonZeroBytes data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetNonZeroBytes(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

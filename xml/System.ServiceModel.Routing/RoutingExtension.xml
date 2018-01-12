@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingExtension&#xA;Implements IExtension(Of ServiceHostBase)" />
   <TypeSignature Language="F#" Value="type RoutingExtension = class&#xA;    interface IExtension&lt;ServiceHostBase&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoutingExtension sealed : System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyConfiguration(class System.ServiceModel.Routing.RoutingConfiguration routingConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration(System.ServiceModel.Routing.RoutingConfiguration)" />
       <MemberSignature Language="F#" Value="member this.ApplyConfiguration : System.ServiceModel.Routing.RoutingConfiguration -&gt; unit" Usage="routingExtension.ApplyConfiguration routingConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyConfiguration(System::ServiceModel::Routing::RoutingConfiguration ^ routingConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.IExtension&lt;System.ServiceModel.ServiceHostBase&gt;.Attach(class System.ServiceModel.ServiceHostBase owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingExtension.System#ServiceModel#IExtension&lt;System#ServiceModel#ServiceHostBase&gt;#Attach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Sub Attach (owner As ServiceHostBase) Implements IExtension(Of ServiceHostBase).Attach" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.IExtension&lt;System.ServiceModel.ServiceHostBase&gt;.Attach(System::ServiceModel::ServiceHostBase ^ owner) = System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;::Attach;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Attach(`0)</InterfaceMember>
@@ -85,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.IExtension&lt;System.ServiceModel.ServiceHostBase&gt;.Detach(class System.ServiceModel.ServiceHostBase owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingExtension.System#ServiceModel#IExtension&lt;System#ServiceModel#ServiceHostBase&gt;#Detach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Sub Detach (owner As ServiceHostBase) Implements IExtension(Of ServiceHostBase).Detach" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.IExtension&lt;System.ServiceModel.ServiceHostBase&gt;.Detach(System::ServiceModel::ServiceHostBase ^ owner) = System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;::Detach;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Detach(`0)</InterfaceMember>

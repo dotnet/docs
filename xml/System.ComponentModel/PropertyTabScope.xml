@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyTabScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyTabScope" />
   <TypeSignature Language="F#" Value="type PropertyTabScope = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertyTabScope" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Component" />
       <MemberSignature Language="VB.NET" Value="Component" />
       <MemberSignature Language="F#" Value="Component = 3" Usage="System.ComponentModel.PropertyTabScope.Component" />
+      <MemberSignature Language="C++ CLI" Value="Component" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="F#" Value="Document = 2" Usage="System.ComponentModel.PropertyTabScope.Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Global" />
       <MemberSignature Language="VB.NET" Value="Global" />
       <MemberSignature Language="F#" Value="Global = 1" Usage="System.ComponentModel.PropertyTabScope.Global" />
+      <MemberSignature Language="C++ CLI" Value="Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
       <MemberSignature Language="F#" Value="Static = 0" Usage="System.ComponentModel.PropertyTabScope.Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

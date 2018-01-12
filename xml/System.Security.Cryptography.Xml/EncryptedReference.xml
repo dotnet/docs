@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedReference" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EncryptedReference" />
   <TypeSignature Language="F#" Value="type EncryptedReference = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedReference abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EncryptedReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptedReference : string -&gt; System.Security.Cryptography.Xml.EncryptedReference" Usage="new System.Security.Cryptography.Xml.EncryptedReference uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EncryptedReference(System::String ^ uri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptedReference : string * System.Security.Cryptography.Xml.TransformChain -&gt; System.Security.Cryptography.Xml.EncryptedReference" Usage="new System.Security.Cryptography.Xml.EncryptedReference (uri, tc)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String, tc As TransformChain)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EncryptedReference(System::String ^ uri, System::Security::Cryptography::Xml::TransformChain ^ tc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTransform(class System.Security.Cryptography.Xml.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.AddTransform(System.Security.Cryptography.Xml.Transform)" />
       <MemberSignature Language="F#" Value="member this.AddTransform : System.Security.Cryptography.Xml.Transform -&gt; unit" Usage="encryptedReference.AddTransform transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddTransform(System::Security::Cryptography::Xml::Transform ^ transform);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.CacheValid" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property CacheValid As Boolean" />
       <MemberSignature Language="F#" Value="member this.CacheValid : bool" Usage="System.Security.Cryptography.Xml.EncryptedReference.CacheValid" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool CacheValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXml () As XmlElement" />
       <MemberSignature Language="F#" Value="abstract member GetXml : unit -&gt; System.Xml.XmlElement&#xA;override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptedReference.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedReference.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="F#" Value="abstract member LoadXml : System.Xml.XmlElement -&gt; unit&#xA;override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptedReference.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.ReferenceType" />
       <MemberSignature Language="VB.NET" Value="Protected Property ReferenceType As String" />
       <MemberSignature Language="F#" Value="member this.ReferenceType : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptedReference.ReferenceType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ReferenceType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.TransformChain" />
       <MemberSignature Language="VB.NET" Value="Public Property TransformChain As TransformChain" />
       <MemberSignature Language="F#" Value="member this.TransformChain : System.Security.Cryptography.Xml.TransformChain with get, set" Usage="System.Security.Cryptography.Xml.EncryptedReference.TransformChain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::TransformChain ^ TransformChain { System::Security::Cryptography::Xml::TransformChain ^ get(); void set(System::Security::Cryptography::Xml::TransformChain ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -336,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedReference.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
       <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptedReference.Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Uri { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

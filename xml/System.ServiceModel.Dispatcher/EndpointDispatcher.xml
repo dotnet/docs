@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.EndpointDispatcher" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EndpointDispatcher" />
   <TypeSignature Language="F#" Value="type EndpointDispatcher = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EndpointDispatcher sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor(System.ServiceModel.EndpointAddress,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress, contractName As String, contractNamespace As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.EndpointDispatcher : System.ServiceModel.EndpointAddress * string * string -&gt; System.ServiceModel.Dispatcher.EndpointDispatcher" Usage="new System.ServiceModel.Dispatcher.EndpointDispatcher (address, contractName, contractNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointDispatcher(System::ServiceModel::EndpointAddress ^ address, System::String ^ contractName, System::String ^ contractNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor(System.ServiceModel.EndpointAddress,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress, contractName As String, contractNamespace As String, isSystemEndpoint As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.EndpointDispatcher : System.ServiceModel.EndpointAddress * string * string * bool -&gt; System.ServiceModel.Dispatcher.EndpointDispatcher" Usage="new System.ServiceModel.Dispatcher.EndpointDispatcher (address, contractName, contractNamespace, isSystemEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointDispatcher(System::ServiceModel::EndpointAddress ^ address, System::String ^ contractName, System::String ^ contractNamespace, bool isSystemEndpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressFilter As MessageFilter" />
       <MemberSignature Language="F#" Value="member this.AddressFilter : System.ServiceModel.Dispatcher.MessageFilter with get, set" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::MessageFilter ^ AddressFilter { System::ServiceModel::Dispatcher::MessageFilter ^ get(); void set(System::ServiceModel::Dispatcher::MessageFilter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelDispatcher As ChannelDispatcher" />
       <MemberSignature Language="F#" Value="member this.ChannelDispatcher : System.ServiceModel.Dispatcher.ChannelDispatcher" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::ChannelDispatcher ^ ChannelDispatcher { System::ServiceModel::Dispatcher::ChannelDispatcher ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property ContractFilter As MessageFilter" />
       <MemberSignature Language="F#" Value="member this.ContractFilter : System.ServiceModel.Dispatcher.MessageFilter with get, set" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::MessageFilter ^ ContractFilter { System::ServiceModel::Dispatcher::MessageFilter ^ get(); void set(System::ServiceModel::Dispatcher::MessageFilter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractName As String" />
       <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.ContractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractNamespace As String" />
       <MemberSignature Language="F#" Value="member this.ContractNamespace : string" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.ContractNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DispatchRuntime As DispatchRuntime" />
       <MemberSignature Language="F#" Value="member this.DispatchRuntime : System.ServiceModel.Dispatcher.DispatchRuntime" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::DispatchRuntime ^ DispatchRuntime { System::ServiceModel::Dispatcher::DispatchRuntime ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -292,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.EndpointAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointAddress As EndpointAddress" />
       <MemberSignature Language="F#" Value="member this.EndpointAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.EndpointAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ EndpointAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterPriority As Integer" />
       <MemberSignature Language="F#" Value="member this.FilterPriority : int with get, set" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilterPriority { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -343,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.IsSystemEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSystemEndpoint As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSystemEndpoint : bool" Usage="System.ServiceModel.Dispatcher.EndpointDispatcher.IsSystemEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSystemEndpoint { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

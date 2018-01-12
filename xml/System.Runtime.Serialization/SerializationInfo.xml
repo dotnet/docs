@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializationInfo" />
   <TypeSignature Language="F#" Value="type SerializationInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializationInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Runtime.Serialization.IFormatterConverter converter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Serialization.SerializationInfo : Type * System.Runtime.Serialization.IFormatterConverter -&gt; System.Runtime.Serialization.SerializationInfo" Usage="new System.Runtime.Serialization.SerializationInfo (type, converter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializationInfo(Type ^ type, System::Runtime::Serialization::IFormatterConverter ^ converter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Runtime.Serialization.IFormatterConverter converter, bool requireSameTokenInPartialTrust) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Serialization.SerializationInfo : Type * System.Runtime.Serialization.IFormatterConverter * bool -&gt; System.Runtime.Serialization.SerializationInfo" Usage="new System.Runtime.Serialization.SerializationInfo (type, converter, requireSameTokenInPartialTrust)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializationInfo(Type ^ type, System::Runtime::Serialization::IFormatterConverter ^ converter, bool requireSameTokenInPartialTrust);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Boolean)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * bool -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -241,6 +245,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Byte)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * byte -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -289,6 +294,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Char)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * char -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -337,6 +343,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As DateTime)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * DateTime -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -385,6 +392,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Decimal)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * decimal -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -433,6 +441,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Double)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * double -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -481,6 +490,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Short)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * int16 -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -529,6 +539,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Integer)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * int -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -584,6 +595,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Long)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * int64 -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -632,6 +644,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Object)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * obj -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -683,6 +696,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As SByte)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * sbyte -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -736,6 +750,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As Single)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * single -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -784,6 +799,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As UShort)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * uint16 -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -837,6 +853,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As UInteger)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * uint32 -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -898,6 +915,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddValue (name As String, value As ULong)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * uint64 -&gt; unit" Usage="serializationInfo.AddValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -950,6 +968,7 @@ End Sub
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValue(string name, object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Object,System.Type)" />
       <MemberSignature Language="F#" Value="member this.AddValue : string * obj * Type -&gt; unit" Usage="serializationInfo.AddValue (name, value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValue(System::String ^ name, System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1002,6 +1021,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfo.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Runtime.Serialization.SerializationInfo.AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1056,6 +1076,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfo.FullTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property FullTypeName As String" />
       <MemberSignature Language="F#" Value="member this.FullTypeName : string with get, set" Usage="System.Runtime.Serialization.SerializationInfo.FullTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1103,6 +1124,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetBoolean(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBoolean (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.GetBoolean : string -&gt; bool" Usage="serializationInfo.GetBoolean name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetBoolean(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1152,6 +1174,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetByte(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByte (name As String) As Byte" />
       <MemberSignature Language="F#" Value="member this.GetByte : string -&gt; byte" Usage="serializationInfo.GetByte name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte GetByte(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1201,6 +1224,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetChar(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChar (name As String) As Char" />
       <MemberSignature Language="F#" Value="member this.GetChar : string -&gt; char" Usage="serializationInfo.GetChar name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; char GetChar(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1250,6 +1274,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetDateTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDateTime (name As String) As DateTime" />
       <MemberSignature Language="F#" Value="member this.GetDateTime : string -&gt; DateTime" Usage="serializationInfo.GetDateTime name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime GetDateTime(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1299,6 +1324,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetDecimal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDecimal (name As String) As Decimal" />
       <MemberSignature Language="F#" Value="member this.GetDecimal : string -&gt; decimal" Usage="serializationInfo.GetDecimal name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal GetDecimal(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1348,6 +1374,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetDouble(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDouble (name As String) As Double" />
       <MemberSignature Language="F#" Value="member this.GetDouble : string -&gt; double" Usage="serializationInfo.GetDouble name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetDouble(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1397,6 +1424,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As SerializationInfoEnumerator" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Runtime.Serialization.SerializationInfoEnumerator" Usage="serializationInfo.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Serialization::SerializationInfoEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1439,6 +1467,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetInt16(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInt16 (name As String) As Short" />
       <MemberSignature Language="F#" Value="member this.GetInt16 : string -&gt; int16" Usage="serializationInfo.GetInt16 name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetInt16(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1488,6 +1517,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetInt32(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInt32 (name As String) As Integer" />
       <MemberSignature Language="F#" Value="member this.GetInt32 : string -&gt; int" Usage="serializationInfo.GetInt32 name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetInt32(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1544,6 +1574,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetInt64(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInt64 (name As String) As Long" />
       <MemberSignature Language="F#" Value="member this.GetInt64 : string -&gt; int64" Usage="serializationInfo.GetInt64 name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long GetInt64(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1593,6 +1624,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetSByte(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSByte (name As String) As SByte" />
       <MemberSignature Language="F#" Value="member this.GetSByte : string -&gt; sbyte" Usage="serializationInfo.GetSByte name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::SByte GetSByte(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1647,6 +1679,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetSingle(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSingle (name As String) As Single" />
       <MemberSignature Language="F#" Value="member this.GetSingle : string -&gt; single" Usage="serializationInfo.GetSingle name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetSingle(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1696,6 +1729,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetString (name As String) As String" />
       <MemberSignature Language="F#" Value="member this.GetString : string -&gt; string" Usage="serializationInfo.GetString name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetString(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1745,6 +1779,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetUInt16(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUInt16 (name As String) As UShort" />
       <MemberSignature Language="F#" Value="member this.GetUInt16 : string -&gt; uint16" Usage="serializationInfo.GetUInt16 name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt16 GetUInt16(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1799,6 +1834,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetUInt32(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUInt32 (name As String) As UInteger" />
       <MemberSignature Language="F#" Value="member this.GetUInt32 : string -&gt; uint32" Usage="serializationInfo.GetUInt32 name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 GetUInt32(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1853,6 +1889,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetUInt64(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUInt64 (name As String) As ULong" />
       <MemberSignature Language="F#" Value="member this.GetUInt64 : string -&gt; uint64" Usage="serializationInfo.GetUInt64 name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 GetUInt64(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1906,6 +1943,7 @@ End Sub
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.GetValue(System.String,System.Type)" />
       <MemberSignature Language="F#" Value="member this.GetValue : string * Type -&gt; obj" Usage="serializationInfo.GetValue (name, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ name, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -1973,6 +2011,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfo.IsAssemblyNameSetExplicit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssemblyNameSetExplicit As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAssemblyNameSetExplicit : bool" Usage="System.Runtime.Serialization.SerializationInfo.IsAssemblyNameSetExplicit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssemblyNameSetExplicit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2003,6 +2042,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfo.IsFullTypeNameSetExplicit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFullTypeNameSetExplicit As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFullTypeNameSetExplicit : bool" Usage="System.Runtime.Serialization.SerializationInfo.IsFullTypeNameSetExplicit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFullTypeNameSetExplicit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2033,6 +2073,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfo.MemberCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberCount As Integer" />
       <MemberSignature Language="F#" Value="member this.MemberCount : int" Usage="System.Runtime.Serialization.SerializationInfo.MemberCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MemberCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -2067,6 +2108,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationInfo.ObjectType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
       <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.Runtime.Serialization.SerializationInfo.ObjectType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -2100,6 +2142,7 @@ End Sub
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.SerializationInfo.SetType(System.Type)" />
       <MemberSignature Language="F#" Value="member this.SetType : Type -&gt; unit" Usage="serializationInfo.SetType type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

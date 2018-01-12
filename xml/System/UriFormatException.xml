@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriFormatException" />
   <TypeSignature Language="VB.NET" Value="Public Class UriFormatException&#xA;Inherits FormatException" />
   <TypeSignature Language="F#" Value="type UriFormatException = class&#xA;    inherit FormatException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UriFormatException : FormatException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriFormatException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (textString As String)" />
       <MemberSignature Language="F#" Value="new UriFormatException : string -&gt; UriFormatException" Usage="new System.UriFormatException textString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriFormatException(System::String ^ textString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="F#" Value="new UriFormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; UriFormatException" Usage="new System.UriFormatException (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UriFormatException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (textString As String, e As Exception)" />
       <MemberSignature Language="F#" Value="new UriFormatException : string * Exception -&gt; UriFormatException" Usage="new System.UriFormatException (textString, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriFormatException(System::String ^ textString, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriFormatException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

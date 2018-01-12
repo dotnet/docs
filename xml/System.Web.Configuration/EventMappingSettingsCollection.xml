@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.EventMappingSettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventMappingSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type EventMappingSettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventMappingSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventMappingSettingsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.EventMappingSettings eventMappingSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.Add(System.Web.Configuration.EventMappingSettings)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.EventMappingSettings -&gt; unit" Usage="eventMappingSettingsCollection.Add eventMappingSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::EventMappingSettings ^ eventMappingSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="eventMappingSettingsCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="eventMappingSettingsCollection.Contains name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="eventMappingSettingsCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="eventMappingSettingsCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (name As String) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="eventMappingSettingsCollection.IndexOf name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Configuration.EventMappingSettings eventMappingSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.Insert(System.Int32,System.Web.Configuration.EventMappingSettings)" />
       <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Configuration.EventMappingSettings -&gt; unit" Usage="eventMappingSettingsCollection.Insert (index, eventMappingSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Configuration::EventMappingSettings ^ eventMappingSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As EventMappingSettings" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.EventMappingSettings with get, set" Usage="System.Web.Configuration.EventMappingSettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::EventMappingSettings ^ default[int] { System::Web::Configuration::EventMappingSettings ^ get(int index); void set(int index, System::Web::Configuration::EventMappingSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -360,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettingsCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As EventMappingSettings" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.EventMappingSettings" Usage="System.Web.Configuration.EventMappingSettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::EventMappingSettings ^ default[System::String ^] { System::Web::Configuration::EventMappingSettings ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.EventMappingSettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.EventMappingSettingsCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="eventMappingSettingsCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -445,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.EventMappingSettingsCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="eventMappingSettingsCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

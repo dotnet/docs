@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.CodeGenerationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CodeGenerationOptions" />
   <TypeSignature Language="F#" Value="type CodeGenerationOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CodeGenerationOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.CodeGenerationOptions.EnableDataBinding" />
       <MemberSignature Language="VB.NET" Value="EnableDataBinding" />
       <MemberSignature Language="F#" Value="EnableDataBinding = 16" Usage="System.Xml.Serialization.CodeGenerationOptions.EnableDataBinding" />
+      <MemberSignature Language="C++ CLI" Value="EnableDataBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.CodeGenerationOptions.GenerateNewAsync" />
       <MemberSignature Language="VB.NET" Value="GenerateNewAsync" />
       <MemberSignature Language="F#" Value="GenerateNewAsync = 2" Usage="System.Xml.Serialization.CodeGenerationOptions.GenerateNewAsync" />
+      <MemberSignature Language="C++ CLI" Value="GenerateNewAsync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.CodeGenerationOptions.GenerateOldAsync" />
       <MemberSignature Language="VB.NET" Value="GenerateOldAsync" />
       <MemberSignature Language="F#" Value="GenerateOldAsync = 4" Usage="System.Xml.Serialization.CodeGenerationOptions.GenerateOldAsync" />
+      <MemberSignature Language="C++ CLI" Value="GenerateOldAsync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.CodeGenerationOptions.GenerateOrder" />
       <MemberSignature Language="VB.NET" Value="GenerateOrder" />
       <MemberSignature Language="F#" Value="GenerateOrder = 8" Usage="System.Xml.Serialization.CodeGenerationOptions.GenerateOrder" />
+      <MemberSignature Language="C++ CLI" Value="GenerateOrder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.CodeGenerationOptions.GenerateProperties" />
       <MemberSignature Language="VB.NET" Value="GenerateProperties" />
       <MemberSignature Language="F#" Value="GenerateProperties = 1" Usage="System.Xml.Serialization.CodeGenerationOptions.GenerateProperties" />
+      <MemberSignature Language="C++ CLI" Value="GenerateProperties" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.CodeGenerationOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Serialization.CodeGenerationOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

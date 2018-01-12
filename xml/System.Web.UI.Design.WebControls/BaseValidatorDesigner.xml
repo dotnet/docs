@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseValidatorDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class BaseValidatorDesigner&#xA;Inherits PreviewControlDesigner" />
   <TypeSignature Language="F#" Value="type BaseValidatorDesigner = class&#xA;    inherit PreviewControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseValidatorDesigner : System::Web::UI::Design::WebControls::PreviewControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BaseValidatorDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.CreateViewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateViewControl () As Control" />
       <MemberSignature Language="F#" Value="override this.CreateViewControl : unit -&gt; System.Web.UI.Control" Usage="baseValidatorDesigner.CreateViewControl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::Control ^ CreateViewControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="baseValidatorDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="baseValidatorDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

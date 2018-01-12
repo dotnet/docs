@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.SelectorItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SelectorItemAutomationPeer&#xA;Inherits ItemAutomationPeer&#xA;Implements ISelectionItemProvider" />
   <TypeSignature Language="F#" Value="type SelectorItemAutomationPeer = class&#xA;    inherit ItemAutomationPeer&#xA;    interface ISelectionItemProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SelectorItemAutomationPeer abstract : System::Windows::Automation::Peers::ItemAutomationPeer, System::Windows::Automation::Provider::ISelectionItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object owner, class System.Windows.Automation.Peers.SelectorAutomationPeer selectorAutomationPeer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SelectorItemAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.SelectorAutomationPeer)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.SelectorItemAutomationPeer : obj * System.Windows.Automation.Peers.SelectorAutomationPeer -&gt; System.Windows.Automation.Peers.SelectorItemAutomationPeer" Usage="new System.Windows.Automation.Peers.SelectorItemAutomationPeer (owner, selectorAutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SelectorItemAutomationPeer(System::Object ^ owner, System::Windows::Automation::Peers::SelectorAutomationPeer ^ selectorAutomationPeer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SelectorItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="selectorItemAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SelectorItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection" />
       <MemberSignature Language="VB.NET" Value="Sub AddToSelection () Implements ISelectionItemProvider.AddToSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::AddToSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection</InterfaceMember>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.SelectorItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelected As Boolean Implements ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.SelectorItemAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected</InterfaceMember>
@@ -116,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SelectorItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveFromSelection () Implements ISelectionItemProvider.RemoveFromSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::RemoveFromSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection</InterfaceMember>
@@ -138,6 +144,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.SelectorItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select" />
       <MemberSignature Language="VB.NET" Value="Sub Select () Implements ISelectionItemProvider.Select" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.Select() = System::Windows::Automation::Provider::ISelectionItemProvider::Select;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.Select</InterfaceMember>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.SelectorItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectionContainer As IRawElementProviderSimple Implements ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.SelectorItemAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer</InterfaceMember>

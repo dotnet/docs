@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ReaderWriterLock" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReaderWriterLock&#xA;Inherits CriticalFinalizerObject" />
   <TypeSignature Language="F#" Value="type ReaderWriterLock = class&#xA;    inherit CriticalFinalizerObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReaderWriterLock sealed : System::Runtime::ConstrainedExecution::CriticalFinalizerObject" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReaderWriterLock();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.AcquireReaderLock(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcquireReaderLock (millisecondsTimeout As Integer)" />
       <MemberSignature Language="F#" Value="member this.AcquireReaderLock : int -&gt; unit" Usage="readerWriterLock.AcquireReaderLock millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcquireReaderLock(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.AcquireReaderLock(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcquireReaderLock (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.AcquireReaderLock : TimeSpan -&gt; unit" Usage="readerWriterLock.AcquireReaderLock timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcquireReaderLock(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.AcquireWriterLock(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcquireWriterLock (millisecondsTimeout As Integer)" />
       <MemberSignature Language="F#" Value="member this.AcquireWriterLock : int -&gt; unit" Usage="readerWriterLock.AcquireWriterLock millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcquireWriterLock(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.AcquireWriterLock(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcquireWriterLock (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.AcquireWriterLock : TimeSpan -&gt; unit" Usage="readerWriterLock.AcquireWriterLock timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcquireWriterLock(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -388,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.AnyWritersSince(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function AnyWritersSince (seqNum As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.AnyWritersSince : int -&gt; bool" Usage="readerWriterLock.AnyWritersSince seqNum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool AnyWritersSince(int seqNum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -448,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.DowngradeFromWriterLock(System.Threading.LockCookie@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DowngradeFromWriterLock (ByRef lockCookie As LockCookie)" />
       <MemberSignature Language="F#" Value="member this.DowngradeFromWriterLock :  -&gt; unit" Usage="readerWriterLock.DowngradeFromWriterLock lockCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DowngradeFromWriterLock(System::Threading::LockCookie % lockCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -511,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="readerWriterLock.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!ReaderWriterLock ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -543,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLock.IsReaderLockHeld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReaderLockHeld As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReaderLockHeld : bool" Usage="System.Threading.ReaderWriterLock.IsReaderLockHeld" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReaderLockHeld { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -589,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLock.IsWriterLockHeld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWriterLockHeld As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsWriterLockHeld : bool" Usage="System.Threading.ReaderWriterLock.IsWriterLockHeld" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWriterLockHeld { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -635,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.ReleaseLock" />
       <MemberSignature Language="VB.NET" Value="Public Function ReleaseLock () As LockCookie" />
       <MemberSignature Language="F#" Value="member this.ReleaseLock : unit -&gt; System.Threading.LockCookie" Usage="readerWriterLock.ReleaseLock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::LockCookie ReleaseLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -689,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.ReleaseReaderLock" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseReaderLock ()" />
       <MemberSignature Language="F#" Value="member this.ReleaseReaderLock : unit -&gt; unit" Usage="readerWriterLock.ReleaseReaderLock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseReaderLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -751,6 +764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.ReleaseWriterLock" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseWriterLock ()" />
       <MemberSignature Language="F#" Value="member this.ReleaseWriterLock : unit -&gt; unit" Usage="readerWriterLock.ReleaseWriterLock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseWriterLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -813,6 +827,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.RestoreLock(System.Threading.LockCookie@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RestoreLock (ByRef lockCookie As LockCookie)" />
       <MemberSignature Language="F#" Value="member this.RestoreLock :  -&gt; unit" Usage="readerWriterLock.RestoreLock lockCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RestoreLock(System::Threading::LockCookie % lockCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -887,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.UpgradeToWriterLock(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function UpgradeToWriterLock (millisecondsTimeout As Integer) As LockCookie" />
       <MemberSignature Language="F#" Value="member this.UpgradeToWriterLock : int -&gt; System.Threading.LockCookie" Usage="readerWriterLock.UpgradeToWriterLock millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::LockCookie UpgradeToWriterLock(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -955,6 +971,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.UpgradeToWriterLock(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function UpgradeToWriterLock (timeout As TimeSpan) As LockCookie" />
       <MemberSignature Language="F#" Value="member this.UpgradeToWriterLock : TimeSpan -&gt; System.Threading.LockCookie" Usage="readerWriterLock.UpgradeToWriterLock timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::LockCookie UpgradeToWriterLock(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1008,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ReaderWriterLock.WriterSeqNum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WriterSeqNum As Integer" />
       <MemberSignature Language="F#" Value="member this.WriterSeqNum : int" Usage="System.Threading.ReaderWriterLock.WriterSeqNum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WriterSeqNum { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

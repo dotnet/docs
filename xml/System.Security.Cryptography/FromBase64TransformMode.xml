@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.FromBase64TransformMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum FromBase64TransformMode" />
   <TypeSignature Language="F#" Value="type FromBase64TransformMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FromBase64TransformMode" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.FromBase64TransformMode.DoNotIgnoreWhiteSpaces" />
       <MemberSignature Language="VB.NET" Value="DoNotIgnoreWhiteSpaces" />
       <MemberSignature Language="F#" Value="DoNotIgnoreWhiteSpaces = 1" Usage="System.Security.Cryptography.FromBase64TransformMode.DoNotIgnoreWhiteSpaces" />
+      <MemberSignature Language="C++ CLI" Value="DoNotIgnoreWhiteSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.FromBase64TransformMode.IgnoreWhiteSpaces" />
       <MemberSignature Language="VB.NET" Value="IgnoreWhiteSpaces" />
       <MemberSignature Language="F#" Value="IgnoreWhiteSpaces = 0" Usage="System.Security.Cryptography.FromBase64TransformMode.IgnoreWhiteSpaces" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreWhiteSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

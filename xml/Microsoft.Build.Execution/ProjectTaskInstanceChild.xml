@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectTaskInstanceChild" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectTaskInstanceChild" />
   <TypeSignature Language="F#" Value="type ProjectTaskInstanceChild = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectTaskInstanceChild abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectTaskInstanceChild.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ProjectTaskInstanceChild();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.Condition" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Condition As String" />
       <MemberSignature Language="F#" Value="member this.Condition : string" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Condition { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.ConditionLocation" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConditionLocation As ElementLocation" />
       <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.ConditionLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.Location" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Location As ElementLocation" />
       <MemberSignature Language="F#" Value="member this.Location : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ElementLocation ^ Location { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectTaskInstanceChild.TaskParameterLocation" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TaskParameterLocation As ElementLocation" />
       <MemberSignature Language="F#" Value="member this.TaskParameterLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Execution.ProjectTaskInstanceChild.TaskParameterLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Microsoft::Build::Construction::ElementLocation ^ TaskParameterLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

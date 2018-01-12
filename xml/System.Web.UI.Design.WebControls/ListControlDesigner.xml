@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ListControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ListControlDesigner&#xA;Inherits DataBoundControlDesigner" />
   <TypeSignature Language="F#" Value="type ListControlDesigner = class&#xA;    inherit DataBoundControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListControlDesigner : System::Web::UI::Design::WebControls::DataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.ListControlDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="F#" Value="override this.DataBind : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="listControlDesigner.DataBind dataBoundControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataTextField As String" />
       <MemberSignature Language="F#" Value="member this.DataTextField : string with get, set" Usage="System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataValueField As String" />
       <MemberSignature Language="F#" Value="member this.DataValueField : string with get, set" Usage="System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataValueField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -231,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="listControlDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetResolvedSelectedDataSource" />
       <MemberSignature Language="VB.NET" Value="Public Function GetResolvedSelectedDataSource () As IEnumerable" />
       <MemberSignature Language="F#" Value="member this.GetResolvedSelectedDataSource : unit -&gt; System.Collections.IEnumerable" Usage="listControlDesigner.GetResolvedSelectedDataSource " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetResolvedSelectedDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelectedDataSource () As Object" />
       <MemberSignature Language="F#" Value="member this.GetSelectedDataSource : unit -&gt; obj" Usage="listControlDesigner.GetSelectedDataSource " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSelectedDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -342,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="listControlDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -399,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDataSourceChanged ()" />
       <MemberSignature Language="F#" Value="override this.OnDataSourceChanged : unit -&gt; unit" Usage="listControlDesigner.OnDataSourceChanged " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDataSourceChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -441,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataSourceChanged (forceUpdateView As Boolean)" />
       <MemberSignature Language="F#" Value="override this.OnDataSourceChanged : bool -&gt; unit" Usage="listControlDesigner.OnDataSourceChanged forceUpdateView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataSourceChanged(bool forceUpdateView);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -489,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="listControlDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -534,6 +547,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UseDataSourcePickerActionList As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseDataSourcePickerActionList : bool" Usage="System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UseDataSourcePickerActionList { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

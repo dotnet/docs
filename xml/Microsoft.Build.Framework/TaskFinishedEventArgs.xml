@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskFinishedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskFinishedEventArgs&#xA;Inherits BuildStatusEventArgs" />
   <TypeSignature Language="F#" Value="type TaskFinishedEventArgs = class&#xA;    inherit BuildStatusEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TaskFinishedEventArgs : Microsoft::Build::Framework::BuildStatusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TaskFinishedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, projectFile As String, taskFile As String, taskName As String, succeeded As Boolean)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TaskFinishedEventArgs : string * string * string * string * string * bool -&gt; Microsoft.Build.Framework.TaskFinishedEventArgs" Usage="new Microsoft.Build.Framework.TaskFinishedEventArgs (message, helpKeyword, projectFile, taskFile, taskName, succeeded)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ taskFile, System::String ^ taskName, bool succeeded);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, projectFile As String, taskFile As String, taskName As String, succeeded As Boolean, eventTimestamp As DateTime)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TaskFinishedEventArgs : string * string * string * string * string * bool * DateTime -&gt; Microsoft.Build.Framework.TaskFinishedEventArgs" Usage="new Microsoft.Build.Framework.TaskFinishedEventArgs (message, helpKeyword, projectFile, taskFile, taskName, succeeded, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskFinishedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ projectFile, System::String ^ taskFile, System::String ^ taskName, bool succeeded, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskFinishedEventArgs.ProjectFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProjectFile As String" />
       <MemberSignature Language="F#" Value="member this.ProjectFile : string" Usage="Microsoft.Build.Framework.TaskFinishedEventArgs.ProjectFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskFinishedEventArgs.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeeded As Boolean" />
       <MemberSignature Language="F#" Value="member this.Succeeded : bool" Usage="Microsoft.Build.Framework.TaskFinishedEventArgs.Succeeded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Succeeded { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskFinishedEventArgs.TaskFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskFile As String" />
       <MemberSignature Language="F#" Value="member this.TaskFile : string" Usage="Microsoft.Build.Framework.TaskFinishedEventArgs.TaskFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskFile { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskFinishedEventArgs.TaskName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskName As String" />
       <MemberSignature Language="F#" Value="member this.TaskName : string" Usage="Microsoft.Build.Framework.TaskFinishedEventArgs.TaskName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ResourceScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourceScope" />
   <TypeSignature Language="F#" Value="type ResourceScope = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ResourceScope" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.AppDomain" />
       <MemberSignature Language="VB.NET" Value="AppDomain" />
       <MemberSignature Language="F#" Value="AppDomain = 4" Usage="System.Runtime.Versioning.ResourceScope.AppDomain" />
+      <MemberSignature Language="C++ CLI" Value="AppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
       <MemberSignature Language="F#" Value="Assembly = 32" Usage="System.Runtime.Versioning.ResourceScope.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.Library" />
       <MemberSignature Language="VB.NET" Value="Library" />
       <MemberSignature Language="F#" Value="Library = 8" Usage="System.Runtime.Versioning.ResourceScope.Library" />
+      <MemberSignature Language="C++ CLI" Value="Library" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.Machine" />
       <MemberSignature Language="VB.NET" Value="Machine" />
       <MemberSignature Language="F#" Value="Machine = 1" Usage="System.Runtime.Versioning.ResourceScope.Machine" />
+      <MemberSignature Language="C++ CLI" Value="Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.Versioning.ResourceScope.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
       <MemberSignature Language="F#" Value="Private = 16" Usage="System.Runtime.Versioning.ResourceScope.Private" />
+      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ResourceScope.Process" />
       <MemberSignature Language="VB.NET" Value="Process" />
       <MemberSignature Language="F#" Value="Process = 2" Usage="System.Runtime.Versioning.ResourceScope.Process" />
+      <MemberSignature Language="C++ CLI" Value="Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

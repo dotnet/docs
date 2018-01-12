@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ContextConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextConfiguration" />
   <TypeSignature Language="F#" Value="type ContextConfiguration = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ContextConfiguration.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ContextConfiguration.MetadataProviderFactory" />
       <MemberSignature Language="VB.NET" Value="Public Property MetadataProviderFactory As Func(Of Type, TypeDescriptionProvider)" />
       <MemberSignature Language="F#" Value="member this.MetadataProviderFactory : Func&lt;Type, System.ComponentModel.TypeDescriptionProvider&gt; with get, set" Usage="System.Web.DynamicData.ContextConfiguration.MetadataProviderFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, System::ComponentModel::TypeDescriptionProvider ^&gt; ^ MetadataProviderFactory { Func&lt;Type ^, System::ComponentModel::TypeDescriptionProvider ^&gt; ^ get(); void set(Func&lt;Type ^, System::ComponentModel::TypeDescriptionProvider ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ContextConfiguration.ScaffoldAllTables" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaffoldAllTables As Boolean" />
       <MemberSignature Language="F#" Value="member this.ScaffoldAllTables : bool with get, set" Usage="System.Web.DynamicData.ContextConfiguration.ScaffoldAllTables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScaffoldAllTables { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

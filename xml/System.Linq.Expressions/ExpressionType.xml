@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.ExpressionType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ExpressionType" />
   <TypeSignature Language="F#" Value="type ExpressionType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ExpressionType" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="F#" Value="Add = 0" Usage="System.Linq.Expressions.ExpressionType.Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.AddAssign" />
       <MemberSignature Language="VB.NET" Value="AddAssign" />
       <MemberSignature Language="F#" Value="AddAssign = 63" Usage="System.Linq.Expressions.ExpressionType.AddAssign" />
+      <MemberSignature Language="C++ CLI" Value="AddAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.AddAssignChecked" />
       <MemberSignature Language="VB.NET" Value="AddAssignChecked" />
       <MemberSignature Language="F#" Value="AddAssignChecked = 74" Usage="System.Linq.Expressions.ExpressionType.AddAssignChecked" />
+      <MemberSignature Language="C++ CLI" Value="AddAssignChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.AddChecked" />
       <MemberSignature Language="VB.NET" Value="AddChecked" />
       <MemberSignature Language="F#" Value="AddChecked = 1" Usage="System.Linq.Expressions.ExpressionType.AddChecked" />
+      <MemberSignature Language="C++ CLI" Value="AddChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.And" />
       <MemberSignature Language="VB.NET" Value="And" />
       <MemberSignature Language="F#" Value="And = 2" Usage="System.Linq.Expressions.ExpressionType.And" />
+      <MemberSignature Language="C++ CLI" Value="And" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.AndAlso" />
       <MemberSignature Language="VB.NET" Value="AndAlso" />
       <MemberSignature Language="F#" Value="AndAlso = 3" Usage="System.Linq.Expressions.ExpressionType.AndAlso" />
+      <MemberSignature Language="C++ CLI" Value="AndAlso" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.AndAssign" />
       <MemberSignature Language="VB.NET" Value="AndAssign" />
       <MemberSignature Language="F#" Value="AndAssign = 64" Usage="System.Linq.Expressions.ExpressionType.AndAssign" />
+      <MemberSignature Language="C++ CLI" Value="AndAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ArrayIndex" />
       <MemberSignature Language="VB.NET" Value="ArrayIndex" />
       <MemberSignature Language="F#" Value="ArrayIndex = 5" Usage="System.Linq.Expressions.ExpressionType.ArrayIndex" />
+      <MemberSignature Language="C++ CLI" Value="ArrayIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -289,6 +298,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ArrayLength" />
       <MemberSignature Language="VB.NET" Value="ArrayLength" />
       <MemberSignature Language="F#" Value="ArrayLength = 4" Usage="System.Linq.Expressions.ExpressionType.ArrayLength" />
+      <MemberSignature Language="C++ CLI" Value="ArrayLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -320,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Assign" />
       <MemberSignature Language="VB.NET" Value="Assign" />
       <MemberSignature Language="F#" Value="Assign = 46" Usage="System.Linq.Expressions.ExpressionType.Assign" />
+      <MemberSignature Language="C++ CLI" Value="Assign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -351,6 +362,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Block" />
       <MemberSignature Language="VB.NET" Value="Block" />
       <MemberSignature Language="F#" Value="Block = 47" Usage="System.Linq.Expressions.ExpressionType.Block" />
+      <MemberSignature Language="C++ CLI" Value="Block" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -382,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Call" />
       <MemberSignature Language="VB.NET" Value="Call" />
       <MemberSignature Language="F#" Value="Call = 6" Usage="System.Linq.Expressions.ExpressionType.Call" />
+      <MemberSignature Language="C++ CLI" Value="Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -413,6 +426,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Coalesce" />
       <MemberSignature Language="VB.NET" Value="Coalesce" />
       <MemberSignature Language="F#" Value="Coalesce = 7" Usage="System.Linq.Expressions.ExpressionType.Coalesce" />
+      <MemberSignature Language="C++ CLI" Value="Coalesce" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -444,6 +458,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Conditional" />
       <MemberSignature Language="VB.NET" Value="Conditional" />
       <MemberSignature Language="F#" Value="Conditional = 8" Usage="System.Linq.Expressions.ExpressionType.Conditional" />
+      <MemberSignature Language="C++ CLI" Value="Conditional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -475,6 +490,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Constant" />
       <MemberSignature Language="VB.NET" Value="Constant" />
       <MemberSignature Language="F#" Value="Constant = 9" Usage="System.Linq.Expressions.ExpressionType.Constant" />
+      <MemberSignature Language="C++ CLI" Value="Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -506,6 +522,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Convert" />
       <MemberSignature Language="VB.NET" Value="Convert" />
       <MemberSignature Language="F#" Value="Convert = 10" Usage="System.Linq.Expressions.ExpressionType.Convert" />
+      <MemberSignature Language="C++ CLI" Value="Convert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -537,6 +554,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ConvertChecked" />
       <MemberSignature Language="VB.NET" Value="ConvertChecked" />
       <MemberSignature Language="F#" Value="ConvertChecked = 11" Usage="System.Linq.Expressions.ExpressionType.ConvertChecked" />
+      <MemberSignature Language="C++ CLI" Value="ConvertChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -568,6 +586,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.DebugInfo" />
       <MemberSignature Language="VB.NET" Value="DebugInfo" />
       <MemberSignature Language="F#" Value="DebugInfo = 48" Usage="System.Linq.Expressions.ExpressionType.DebugInfo" />
+      <MemberSignature Language="C++ CLI" Value="DebugInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -599,6 +618,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Decrement" />
       <MemberSignature Language="VB.NET" Value="Decrement" />
       <MemberSignature Language="F#" Value="Decrement = 49" Usage="System.Linq.Expressions.ExpressionType.Decrement" />
+      <MemberSignature Language="C++ CLI" Value="Decrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -630,6 +650,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 51" Usage="System.Linq.Expressions.ExpressionType.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -661,6 +682,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Divide" />
       <MemberSignature Language="VB.NET" Value="Divide" />
       <MemberSignature Language="F#" Value="Divide = 12" Usage="System.Linq.Expressions.ExpressionType.Divide" />
+      <MemberSignature Language="C++ CLI" Value="Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -692,6 +714,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.DivideAssign" />
       <MemberSignature Language="VB.NET" Value="DivideAssign" />
       <MemberSignature Language="F#" Value="DivideAssign = 65" Usage="System.Linq.Expressions.ExpressionType.DivideAssign" />
+      <MemberSignature Language="C++ CLI" Value="DivideAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -723,6 +746,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Dynamic" />
       <MemberSignature Language="VB.NET" Value="Dynamic" />
       <MemberSignature Language="F#" Value="Dynamic = 50" Usage="System.Linq.Expressions.ExpressionType.Dynamic" />
+      <MemberSignature Language="C++ CLI" Value="Dynamic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -754,6 +778,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Equal" />
       <MemberSignature Language="VB.NET" Value="Equal" />
       <MemberSignature Language="F#" Value="Equal = 13" Usage="System.Linq.Expressions.ExpressionType.Equal" />
+      <MemberSignature Language="C++ CLI" Value="Equal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -785,6 +810,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ExclusiveOr" />
       <MemberSignature Language="VB.NET" Value="ExclusiveOr" />
       <MemberSignature Language="F#" Value="ExclusiveOr = 14" Usage="System.Linq.Expressions.ExpressionType.ExclusiveOr" />
+      <MemberSignature Language="C++ CLI" Value="ExclusiveOr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -816,6 +842,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ExclusiveOrAssign" />
       <MemberSignature Language="VB.NET" Value="ExclusiveOrAssign" />
       <MemberSignature Language="F#" Value="ExclusiveOrAssign = 66" Usage="System.Linq.Expressions.ExpressionType.ExclusiveOrAssign" />
+      <MemberSignature Language="C++ CLI" Value="ExclusiveOrAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -847,6 +874,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Extension" />
       <MemberSignature Language="VB.NET" Value="Extension" />
       <MemberSignature Language="F#" Value="Extension = 52" Usage="System.Linq.Expressions.ExpressionType.Extension" />
+      <MemberSignature Language="C++ CLI" Value="Extension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -878,6 +906,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Goto" />
       <MemberSignature Language="VB.NET" Value="Goto" />
       <MemberSignature Language="F#" Value="Goto = 53" Usage="System.Linq.Expressions.ExpressionType.Goto" />
+      <MemberSignature Language="C++ CLI" Value="Goto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -909,6 +938,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.GreaterThan" />
       <MemberSignature Language="VB.NET" Value="GreaterThan" />
       <MemberSignature Language="F#" Value="GreaterThan = 15" Usage="System.Linq.Expressions.ExpressionType.GreaterThan" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -940,6 +970,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.GreaterThanOrEqual" />
       <MemberSignature Language="VB.NET" Value="GreaterThanOrEqual" />
       <MemberSignature Language="F#" Value="GreaterThanOrEqual = 16" Usage="System.Linq.Expressions.ExpressionType.GreaterThanOrEqual" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThanOrEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -971,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Increment" />
       <MemberSignature Language="VB.NET" Value="Increment" />
       <MemberSignature Language="F#" Value="Increment = 54" Usage="System.Linq.Expressions.ExpressionType.Increment" />
+      <MemberSignature Language="C++ CLI" Value="Increment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1002,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Index" />
       <MemberSignature Language="VB.NET" Value="Index" />
       <MemberSignature Language="F#" Value="Index = 55" Usage="System.Linq.Expressions.ExpressionType.Index" />
+      <MemberSignature Language="C++ CLI" Value="Index" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1033,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Invoke" />
       <MemberSignature Language="VB.NET" Value="Invoke" />
       <MemberSignature Language="F#" Value="Invoke = 17" Usage="System.Linq.Expressions.ExpressionType.Invoke" />
+      <MemberSignature Language="C++ CLI" Value="Invoke" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1064,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.IsFalse" />
       <MemberSignature Language="VB.NET" Value="IsFalse" />
       <MemberSignature Language="F#" Value="IsFalse = 84" Usage="System.Linq.Expressions.ExpressionType.IsFalse" />
+      <MemberSignature Language="C++ CLI" Value="IsFalse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1095,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.IsTrue" />
       <MemberSignature Language="VB.NET" Value="IsTrue" />
       <MemberSignature Language="F#" Value="IsTrue = 83" Usage="System.Linq.Expressions.ExpressionType.IsTrue" />
+      <MemberSignature Language="C++ CLI" Value="IsTrue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1126,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Label" />
       <MemberSignature Language="VB.NET" Value="Label" />
       <MemberSignature Language="F#" Value="Label = 56" Usage="System.Linq.Expressions.ExpressionType.Label" />
+      <MemberSignature Language="C++ CLI" Value="Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1157,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Lambda" />
       <MemberSignature Language="VB.NET" Value="Lambda" />
       <MemberSignature Language="F#" Value="Lambda = 18" Usage="System.Linq.Expressions.ExpressionType.Lambda" />
+      <MemberSignature Language="C++ CLI" Value="Lambda" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1188,6 +1226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.LeftShift" />
       <MemberSignature Language="VB.NET" Value="LeftShift" />
       <MemberSignature Language="F#" Value="LeftShift = 19" Usage="System.Linq.Expressions.ExpressionType.LeftShift" />
+      <MemberSignature Language="C++ CLI" Value="LeftShift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1219,6 +1258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.LeftShiftAssign" />
       <MemberSignature Language="VB.NET" Value="LeftShiftAssign" />
       <MemberSignature Language="F#" Value="LeftShiftAssign = 67" Usage="System.Linq.Expressions.ExpressionType.LeftShiftAssign" />
+      <MemberSignature Language="C++ CLI" Value="LeftShiftAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1250,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.LessThan" />
       <MemberSignature Language="VB.NET" Value="LessThan" />
       <MemberSignature Language="F#" Value="LessThan = 20" Usage="System.Linq.Expressions.ExpressionType.LessThan" />
+      <MemberSignature Language="C++ CLI" Value="LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1281,6 +1322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.LessThanOrEqual" />
       <MemberSignature Language="VB.NET" Value="LessThanOrEqual" />
       <MemberSignature Language="F#" Value="LessThanOrEqual = 21" Usage="System.Linq.Expressions.ExpressionType.LessThanOrEqual" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1312,6 +1354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ListInit" />
       <MemberSignature Language="VB.NET" Value="ListInit" />
       <MemberSignature Language="F#" Value="ListInit = 22" Usage="System.Linq.Expressions.ExpressionType.ListInit" />
+      <MemberSignature Language="C++ CLI" Value="ListInit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1343,6 +1386,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Loop" />
       <MemberSignature Language="VB.NET" Value="Loop" />
       <MemberSignature Language="F#" Value="Loop = 58" Usage="System.Linq.Expressions.ExpressionType.Loop" />
+      <MemberSignature Language="C++ CLI" Value="Loop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1374,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.MemberAccess" />
       <MemberSignature Language="VB.NET" Value="MemberAccess" />
       <MemberSignature Language="F#" Value="MemberAccess = 23" Usage="System.Linq.Expressions.ExpressionType.MemberAccess" />
+      <MemberSignature Language="C++ CLI" Value="MemberAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1405,6 +1450,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.MemberInit" />
       <MemberSignature Language="VB.NET" Value="MemberInit" />
       <MemberSignature Language="F#" Value="MemberInit = 24" Usage="System.Linq.Expressions.ExpressionType.MemberInit" />
+      <MemberSignature Language="C++ CLI" Value="MemberInit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1436,6 +1482,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Modulo" />
       <MemberSignature Language="VB.NET" Value="Modulo" />
       <MemberSignature Language="F#" Value="Modulo = 25" Usage="System.Linq.Expressions.ExpressionType.Modulo" />
+      <MemberSignature Language="C++ CLI" Value="Modulo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1467,6 +1514,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.ModuloAssign" />
       <MemberSignature Language="VB.NET" Value="ModuloAssign" />
       <MemberSignature Language="F#" Value="ModuloAssign = 68" Usage="System.Linq.Expressions.ExpressionType.ModuloAssign" />
+      <MemberSignature Language="C++ CLI" Value="ModuloAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1498,6 +1546,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Multiply" />
       <MemberSignature Language="VB.NET" Value="Multiply" />
       <MemberSignature Language="F#" Value="Multiply = 26" Usage="System.Linq.Expressions.ExpressionType.Multiply" />
+      <MemberSignature Language="C++ CLI" Value="Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1529,6 +1578,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.MultiplyAssign" />
       <MemberSignature Language="VB.NET" Value="MultiplyAssign" />
       <MemberSignature Language="F#" Value="MultiplyAssign = 69" Usage="System.Linq.Expressions.ExpressionType.MultiplyAssign" />
+      <MemberSignature Language="C++ CLI" Value="MultiplyAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1560,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.MultiplyAssignChecked" />
       <MemberSignature Language="VB.NET" Value="MultiplyAssignChecked" />
       <MemberSignature Language="F#" Value="MultiplyAssignChecked = 75" Usage="System.Linq.Expressions.ExpressionType.MultiplyAssignChecked" />
+      <MemberSignature Language="C++ CLI" Value="MultiplyAssignChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1591,6 +1642,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.MultiplyChecked" />
       <MemberSignature Language="VB.NET" Value="MultiplyChecked" />
       <MemberSignature Language="F#" Value="MultiplyChecked = 27" Usage="System.Linq.Expressions.ExpressionType.MultiplyChecked" />
+      <MemberSignature Language="C++ CLI" Value="MultiplyChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1622,6 +1674,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Negate" />
       <MemberSignature Language="VB.NET" Value="Negate" />
       <MemberSignature Language="F#" Value="Negate = 28" Usage="System.Linq.Expressions.ExpressionType.Negate" />
+      <MemberSignature Language="C++ CLI" Value="Negate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1653,6 +1706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.NegateChecked" />
       <MemberSignature Language="VB.NET" Value="NegateChecked" />
       <MemberSignature Language="F#" Value="NegateChecked = 30" Usage="System.Linq.Expressions.ExpressionType.NegateChecked" />
+      <MemberSignature Language="C++ CLI" Value="NegateChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1684,6 +1738,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.New" />
       <MemberSignature Language="VB.NET" Value="New" />
       <MemberSignature Language="F#" Value="New = 31" Usage="System.Linq.Expressions.ExpressionType.New" />
+      <MemberSignature Language="C++ CLI" Value="New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1715,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.NewArrayBounds" />
       <MemberSignature Language="VB.NET" Value="NewArrayBounds" />
       <MemberSignature Language="F#" Value="NewArrayBounds = 33" Usage="System.Linq.Expressions.ExpressionType.NewArrayBounds" />
+      <MemberSignature Language="C++ CLI" Value="NewArrayBounds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1746,6 +1802,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.NewArrayInit" />
       <MemberSignature Language="VB.NET" Value="NewArrayInit" />
       <MemberSignature Language="F#" Value="NewArrayInit = 32" Usage="System.Linq.Expressions.ExpressionType.NewArrayInit" />
+      <MemberSignature Language="C++ CLI" Value="NewArrayInit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1777,6 +1834,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Not" />
       <MemberSignature Language="VB.NET" Value="Not" />
       <MemberSignature Language="F#" Value="Not = 34" Usage="System.Linq.Expressions.ExpressionType.Not" />
+      <MemberSignature Language="C++ CLI" Value="Not" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1808,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.NotEqual" />
       <MemberSignature Language="VB.NET" Value="NotEqual" />
       <MemberSignature Language="F#" Value="NotEqual = 35" Usage="System.Linq.Expressions.ExpressionType.NotEqual" />
+      <MemberSignature Language="C++ CLI" Value="NotEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1839,6 +1898,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.OnesComplement" />
       <MemberSignature Language="VB.NET" Value="OnesComplement" />
       <MemberSignature Language="F#" Value="OnesComplement = 82" Usage="System.Linq.Expressions.ExpressionType.OnesComplement" />
+      <MemberSignature Language="C++ CLI" Value="OnesComplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1870,6 +1930,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Or" />
       <MemberSignature Language="VB.NET" Value="Or" />
       <MemberSignature Language="F#" Value="Or = 36" Usage="System.Linq.Expressions.ExpressionType.Or" />
+      <MemberSignature Language="C++ CLI" Value="Or" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1901,6 +1962,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.OrAssign" />
       <MemberSignature Language="VB.NET" Value="OrAssign" />
       <MemberSignature Language="F#" Value="OrAssign = 70" Usage="System.Linq.Expressions.ExpressionType.OrAssign" />
+      <MemberSignature Language="C++ CLI" Value="OrAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1932,6 +1994,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.OrElse" />
       <MemberSignature Language="VB.NET" Value="OrElse" />
       <MemberSignature Language="F#" Value="OrElse = 37" Usage="System.Linq.Expressions.ExpressionType.OrElse" />
+      <MemberSignature Language="C++ CLI" Value="OrElse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1963,6 +2026,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Parameter" />
       <MemberSignature Language="VB.NET" Value="Parameter" />
       <MemberSignature Language="F#" Value="Parameter = 38" Usage="System.Linq.Expressions.ExpressionType.Parameter" />
+      <MemberSignature Language="C++ CLI" Value="Parameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1994,6 +2058,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.PostDecrementAssign" />
       <MemberSignature Language="VB.NET" Value="PostDecrementAssign" />
       <MemberSignature Language="F#" Value="PostDecrementAssign = 80" Usage="System.Linq.Expressions.ExpressionType.PostDecrementAssign" />
+      <MemberSignature Language="C++ CLI" Value="PostDecrementAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2025,6 +2090,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.PostIncrementAssign" />
       <MemberSignature Language="VB.NET" Value="PostIncrementAssign" />
       <MemberSignature Language="F#" Value="PostIncrementAssign = 79" Usage="System.Linq.Expressions.ExpressionType.PostIncrementAssign" />
+      <MemberSignature Language="C++ CLI" Value="PostIncrementAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2056,6 +2122,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Power" />
       <MemberSignature Language="VB.NET" Value="Power" />
       <MemberSignature Language="F#" Value="Power = 39" Usage="System.Linq.Expressions.ExpressionType.Power" />
+      <MemberSignature Language="C++ CLI" Value="Power" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2087,6 +2154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.PowerAssign" />
       <MemberSignature Language="VB.NET" Value="PowerAssign" />
       <MemberSignature Language="F#" Value="PowerAssign = 71" Usage="System.Linq.Expressions.ExpressionType.PowerAssign" />
+      <MemberSignature Language="C++ CLI" Value="PowerAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2118,6 +2186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.PreDecrementAssign" />
       <MemberSignature Language="VB.NET" Value="PreDecrementAssign" />
       <MemberSignature Language="F#" Value="PreDecrementAssign = 78" Usage="System.Linq.Expressions.ExpressionType.PreDecrementAssign" />
+      <MemberSignature Language="C++ CLI" Value="PreDecrementAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2149,6 +2218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.PreIncrementAssign" />
       <MemberSignature Language="VB.NET" Value="PreIncrementAssign" />
       <MemberSignature Language="F#" Value="PreIncrementAssign = 77" Usage="System.Linq.Expressions.ExpressionType.PreIncrementAssign" />
+      <MemberSignature Language="C++ CLI" Value="PreIncrementAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2180,6 +2250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Quote" />
       <MemberSignature Language="VB.NET" Value="Quote" />
       <MemberSignature Language="F#" Value="Quote = 40" Usage="System.Linq.Expressions.ExpressionType.Quote" />
+      <MemberSignature Language="C++ CLI" Value="Quote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2211,6 +2282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.RightShift" />
       <MemberSignature Language="VB.NET" Value="RightShift" />
       <MemberSignature Language="F#" Value="RightShift = 41" Usage="System.Linq.Expressions.ExpressionType.RightShift" />
+      <MemberSignature Language="C++ CLI" Value="RightShift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2242,6 +2314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.RightShiftAssign" />
       <MemberSignature Language="VB.NET" Value="RightShiftAssign" />
       <MemberSignature Language="F#" Value="RightShiftAssign = 72" Usage="System.Linq.Expressions.ExpressionType.RightShiftAssign" />
+      <MemberSignature Language="C++ CLI" Value="RightShiftAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2273,6 +2346,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.RuntimeVariables" />
       <MemberSignature Language="VB.NET" Value="RuntimeVariables" />
       <MemberSignature Language="F#" Value="RuntimeVariables = 57" Usage="System.Linq.Expressions.ExpressionType.RuntimeVariables" />
+      <MemberSignature Language="C++ CLI" Value="RuntimeVariables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2304,6 +2378,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Subtract" />
       <MemberSignature Language="VB.NET" Value="Subtract" />
       <MemberSignature Language="F#" Value="Subtract = 42" Usage="System.Linq.Expressions.ExpressionType.Subtract" />
+      <MemberSignature Language="C++ CLI" Value="Subtract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2335,6 +2410,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.SubtractAssign" />
       <MemberSignature Language="VB.NET" Value="SubtractAssign" />
       <MemberSignature Language="F#" Value="SubtractAssign = 73" Usage="System.Linq.Expressions.ExpressionType.SubtractAssign" />
+      <MemberSignature Language="C++ CLI" Value="SubtractAssign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2366,6 +2442,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.SubtractAssignChecked" />
       <MemberSignature Language="VB.NET" Value="SubtractAssignChecked" />
       <MemberSignature Language="F#" Value="SubtractAssignChecked = 76" Usage="System.Linq.Expressions.ExpressionType.SubtractAssignChecked" />
+      <MemberSignature Language="C++ CLI" Value="SubtractAssignChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2397,6 +2474,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.SubtractChecked" />
       <MemberSignature Language="VB.NET" Value="SubtractChecked" />
       <MemberSignature Language="F#" Value="SubtractChecked = 43" Usage="System.Linq.Expressions.ExpressionType.SubtractChecked" />
+      <MemberSignature Language="C++ CLI" Value="SubtractChecked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2428,6 +2506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Switch" />
       <MemberSignature Language="VB.NET" Value="Switch" />
       <MemberSignature Language="F#" Value="Switch = 59" Usage="System.Linq.Expressions.ExpressionType.Switch" />
+      <MemberSignature Language="C++ CLI" Value="Switch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2459,6 +2538,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Throw" />
       <MemberSignature Language="VB.NET" Value="Throw" />
       <MemberSignature Language="F#" Value="Throw = 60" Usage="System.Linq.Expressions.ExpressionType.Throw" />
+      <MemberSignature Language="C++ CLI" Value="Throw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2490,6 +2570,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Try" />
       <MemberSignature Language="VB.NET" Value="Try" />
       <MemberSignature Language="F#" Value="Try = 61" Usage="System.Linq.Expressions.ExpressionType.Try" />
+      <MemberSignature Language="C++ CLI" Value="Try" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2521,6 +2602,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.TypeAs" />
       <MemberSignature Language="VB.NET" Value="TypeAs" />
       <MemberSignature Language="F#" Value="TypeAs = 44" Usage="System.Linq.Expressions.ExpressionType.TypeAs" />
+      <MemberSignature Language="C++ CLI" Value="TypeAs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2552,6 +2634,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.TypeEqual" />
       <MemberSignature Language="VB.NET" Value="TypeEqual" />
       <MemberSignature Language="F#" Value="TypeEqual = 81" Usage="System.Linq.Expressions.ExpressionType.TypeEqual" />
+      <MemberSignature Language="C++ CLI" Value="TypeEqual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2583,6 +2666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.TypeIs" />
       <MemberSignature Language="VB.NET" Value="TypeIs" />
       <MemberSignature Language="F#" Value="TypeIs = 45" Usage="System.Linq.Expressions.ExpressionType.TypeIs" />
+      <MemberSignature Language="C++ CLI" Value="TypeIs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2614,6 +2698,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.UnaryPlus" />
       <MemberSignature Language="VB.NET" Value="UnaryPlus" />
       <MemberSignature Language="F#" Value="UnaryPlus = 29" Usage="System.Linq.Expressions.ExpressionType.UnaryPlus" />
+      <MemberSignature Language="C++ CLI" Value="UnaryPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -2645,6 +2730,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.ExpressionType.Unbox" />
       <MemberSignature Language="VB.NET" Value="Unbox" />
       <MemberSignature Language="F#" Value="Unbox = 62" Usage="System.Linq.Expressions.ExpressionType.Unbox" />
+      <MemberSignature Language="C++ CLI" Value="Unbox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

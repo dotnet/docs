@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberTypes" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemberTypes" />
   <TypeSignature Language="F#" Value="type MemberTypes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemberTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="F#" Value="All = 191" Usage="System.Reflection.MemberTypes.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Constructor" />
       <MemberSignature Language="VB.NET" Value="Constructor" />
       <MemberSignature Language="F#" Value="Constructor = 1" Usage="System.Reflection.MemberTypes.Constructor" />
+      <MemberSignature Language="C++ CLI" Value="Constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="F#" Value="Custom = 64" Usage="System.Reflection.MemberTypes.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Event" />
       <MemberSignature Language="VB.NET" Value="Event" />
       <MemberSignature Language="F#" Value="Event = 2" Usage="System.Reflection.MemberTypes.Event" />
+      <MemberSignature Language="C++ CLI" Value="Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Field" />
       <MemberSignature Language="VB.NET" Value="Field" />
       <MemberSignature Language="F#" Value="Field = 4" Usage="System.Reflection.MemberTypes.Field" />
+      <MemberSignature Language="C++ CLI" Value="Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="F#" Value="Method = 8" Usage="System.Reflection.MemberTypes.Method" />
+      <MemberSignature Language="C++ CLI" Value="Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.NestedType" />
       <MemberSignature Language="VB.NET" Value="NestedType" />
       <MemberSignature Language="F#" Value="NestedType = 128" Usage="System.Reflection.MemberTypes.NestedType" />
+      <MemberSignature Language="C++ CLI" Value="NestedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.Property" />
       <MemberSignature Language="VB.NET" Value="Property" />
       <MemberSignature Language="F#" Value="Property = 16" Usage="System.Reflection.MemberTypes.Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -345,6 +354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.MemberTypes.TypeInfo" />
       <MemberSignature Language="VB.NET" Value="TypeInfo" />
       <MemberSignature Language="F#" Value="TypeInfo = 32" Usage="System.Reflection.MemberTypes.TypeInfo" />
+      <MemberSignature Language="C++ CLI" Value="TypeInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

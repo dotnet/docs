@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.IDtcTransaction" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDtcTransaction" />
   <TypeSignature Language="F#" Value="type IDtcTransaction = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDtcTransaction" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.Abort(System.IntPtr,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (manager As IntPtr, whatever As Integer, whatever2 As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Abort : nativeint * int * int -&gt; unit" Usage="iDtcTransaction.Abort (manager, whatever, whatever2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(IntPtr manager, int whatever, int whatever2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.Commit(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit (whatever As Integer, whatever2 As Integer, whatever3 As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Commit : int * int * int -&gt; unit" Usage="iDtcTransaction.Commit (whatever, whatever2, whatever3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(int whatever, int whatever2, int whatever3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.GetTransactionInfo(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTransactionInfo (whatever As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member GetTransactionInfo : nativeint -&gt; unit" Usage="iDtcTransaction.GetTransactionInfo whatever" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTransactionInfo(IntPtr whatever);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

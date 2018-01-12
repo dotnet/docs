@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientArrayPrototype" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientArrayPrototype&#xA;Inherits ArrayPrototype" />
   <TypeSignature Language="F#" Value="type LenientArrayPrototype = class&#xA;    inherit ArrayPrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientArrayPrototype sealed : Microsoft::JScript::ArrayPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.concat" />
       <MemberSignature Language="VB.NET" Value="Public concat As Object " />
       <MemberSignature Language="F#" Value="val mutable concat : obj" Usage="Microsoft.JScript.LenientArrayPrototype.concat" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ concat;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientArrayPrototype.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.join" />
       <MemberSignature Language="VB.NET" Value="Public join As Object " />
       <MemberSignature Language="F#" Value="val mutable join : obj" Usage="Microsoft.JScript.LenientArrayPrototype.join" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ join;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.pop" />
       <MemberSignature Language="VB.NET" Value="Public pop As Object " />
       <MemberSignature Language="F#" Value="val mutable pop : obj" Usage="Microsoft.JScript.LenientArrayPrototype.pop" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ pop;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.push" />
       <MemberSignature Language="VB.NET" Value="Public push As Object " />
       <MemberSignature Language="F#" Value="val mutable push : obj" Usage="Microsoft.JScript.LenientArrayPrototype.push" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ push;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.reverse" />
       <MemberSignature Language="VB.NET" Value="Public reverse As Object " />
       <MemberSignature Language="F#" Value="val mutable reverse : obj" Usage="Microsoft.JScript.LenientArrayPrototype.reverse" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ reverse;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.shift" />
       <MemberSignature Language="VB.NET" Value="Public shift As Object " />
       <MemberSignature Language="F#" Value="val mutable shift : obj" Usage="Microsoft.JScript.LenientArrayPrototype.shift" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ shift;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -180,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.slice" />
       <MemberSignature Language="VB.NET" Value="Public slice As Object " />
       <MemberSignature Language="F#" Value="val mutable slice : obj" Usage="Microsoft.JScript.LenientArrayPrototype.slice" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ slice;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -202,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.sort" />
       <MemberSignature Language="VB.NET" Value="Public sort As Object " />
       <MemberSignature Language="F#" Value="val mutable sort : obj" Usage="Microsoft.JScript.LenientArrayPrototype.sort" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ sort;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -224,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.splice" />
       <MemberSignature Language="VB.NET" Value="Public splice As Object " />
       <MemberSignature Language="F#" Value="val mutable splice : obj" Usage="Microsoft.JScript.LenientArrayPrototype.splice" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ splice;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -246,6 +257,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.toLocaleString" />
       <MemberSignature Language="VB.NET" Value="Public toLocaleString As Object " />
       <MemberSignature Language="F#" Value="val mutable toLocaleString : obj" Usage="Microsoft.JScript.LenientArrayPrototype.toLocaleString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -268,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.toString" />
       <MemberSignature Language="VB.NET" Value="Public toString As Object " />
       <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientArrayPrototype.toString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -290,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.unshift" />
       <MemberSignature Language="VB.NET" Value="Public unshift As Object " />
       <MemberSignature Language="F#" Value="val mutable unshift : obj" Usage="Microsoft.JScript.LenientArrayPrototype.unshift" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ unshift;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenValidationException" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenValidationException&#xA;Inherits SecurityTokenException" />
   <TypeSignature Language="F#" Value="type SecurityTokenValidationException = class&#xA;    inherit SecurityTokenException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenValidationException : System::IdentityModel::Tokens::SecurityTokenException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenValidationException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenValidationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenValidationException : string -&gt; System.IdentityModel.Tokens.SecurityTokenValidationException" Usage="new System.IdentityModel.Tokens.SecurityTokenValidationException msg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenValidationException(System::String ^ msg);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenValidationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Tokens.SecurityTokenValidationException" Usage="new System.IdentityModel.Tokens.SecurityTokenValidationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityTokenValidationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenValidationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityTokenValidationException : string * Exception -&gt; System.IdentityModel.Tokens.SecurityTokenValidationException" Usage="new System.IdentityModel.Tokens.SecurityTokenValidationException (msg, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenValidationException(System::String ^ msg, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

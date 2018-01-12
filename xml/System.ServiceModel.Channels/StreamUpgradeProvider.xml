@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamUpgradeProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamUpgradeProvider&#xA;Inherits CommunicationObject" />
   <TypeSignature Language="F#" Value="type StreamUpgradeProvider = class&#xA;    inherit CommunicationObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamUpgradeProvider abstract : System::ServiceModel::Channels::CommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamUpgradeProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeProvider.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (timeouts As IDefaultCommunicationTimeouts)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.StreamUpgradeProvider : System.ServiceModel.IDefaultCommunicationTimeouts -&gt; System.ServiceModel.Channels.StreamUpgradeProvider" Usage="new System.ServiceModel.Channels.StreamUpgradeProvider timeouts" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamUpgradeProvider(System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeAcceptor" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateUpgradeAcceptor () As StreamUpgradeAcceptor" />
       <MemberSignature Language="F#" Value="abstract member CreateUpgradeAcceptor : unit -&gt; System.ServiceModel.Channels.StreamUpgradeAcceptor" Usage="streamUpgradeProvider.CreateUpgradeAcceptor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::StreamUpgradeAcceptor ^ CreateUpgradeAcceptor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeInitiator(System.ServiceModel.EndpointAddress,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateUpgradeInitiator (remoteAddress As EndpointAddress, via As Uri) As StreamUpgradeInitiator" />
       <MemberSignature Language="F#" Value="abstract member CreateUpgradeInitiator : System.ServiceModel.EndpointAddress * Uri -&gt; System.ServiceModel.Channels.StreamUpgradeInitiator" Usage="streamUpgradeProvider.CreateUpgradeInitiator (remoteAddress, via)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::StreamUpgradeInitiator ^ CreateUpgradeInitiator(System::ServiceModel::EndpointAddress ^ remoteAddress, Uri ^ via);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.StreamUpgradeProvider.DefaultCloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Channels.StreamUpgradeProvider.DefaultCloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.StreamUpgradeProvider.DefaultOpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Channels.StreamUpgradeProvider.DefaultOpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeProvider.GetProperty``1" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperty(Of T As Class) () As T" />
       <MemberSignature Language="F#" Value="abstract member GetProperty : unit -&gt; 'T (requires 'T : null)&#xA;override this.GetProperty : unit -&gt; 'T (requires 'T : null)" Usage="streamUpgradeProvider.GetProperty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T GetProperty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

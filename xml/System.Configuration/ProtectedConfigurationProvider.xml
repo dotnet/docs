@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfigurationProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProtectedConfigurationProvider&#xA;Inherits ProviderBase" />
   <TypeSignature Language="F#" Value="type ProtectedConfigurationProvider = class&#xA;    inherit ProviderBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtectedConfigurationProvider abstract : System::Configuration::Provider::ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@ providerName="System.Data.SqlClient" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProtectedConfigurationProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ProtectedConfigurationProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -113,6 +115,7 @@ providerName="System.Data.SqlClient" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Decrypt (encrypted_node As XmlNode) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member Decrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="protectedConfigurationProvider.Decrypt encrypted_node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlNode ^ Decrypt(System::Xml::XmlNode ^ encrypted_node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -154,6 +157,7 @@ providerName="System.Data.SqlClient" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Encrypt (node As XmlNode) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member Encrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="protectedConfigurationProvider.Encrypt node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlNode ^ Encrypt(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

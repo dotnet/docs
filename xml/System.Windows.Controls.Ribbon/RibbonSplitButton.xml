@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonSplitButton" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonSplitButton&#xA;Inherits RibbonMenuButton&#xA;Implements ICommandSource" />
   <TypeSignature Language="F#" Value="type RibbonSplitButton = class&#xA;    inherit RibbonMenuButton&#xA;    interface ICommandSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonSplitButton : System::Windows::Controls::Ribbon::RibbonMenuButton, System::Windows::Input::ICommandSource" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitButton.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonSplitButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -76,6 +78,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBackground As Brush" />
       <MemberSignature Language="F#" Value="member this.CheckedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -110,6 +113,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CheckedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -129,6 +133,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBorderBrush As Brush" />
       <MemberSignature Language="F#" Value="member this.CheckedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -163,6 +168,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CheckedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CheckedBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -182,6 +188,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Ribbon.RibbonSplitButton.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Click : System.Windows.RoutedEventHandler " Usage="member this.Click : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -201,6 +208,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.ClickEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClickEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable ClickEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.ClickEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ClickEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -220,6 +228,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.Command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -254,6 +263,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CommandParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -288,6 +298,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandParameterProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CommandParameterProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandParameterProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -307,6 +318,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CommandProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -326,6 +338,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTarget As IInputElement" />
       <MemberSignature Language="F#" Value="member this.CommandTarget : System.Windows.IInputElement with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CommandTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ CommandTarget { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -360,6 +373,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.CommandTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandTargetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CommandTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.CommandTargetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandTargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -379,6 +393,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipDescription As String" />
       <MemberSignature Language="F#" Value="member this.DropDownToolTipDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -413,6 +428,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DropDownToolTipDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipDescriptionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -432,6 +448,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipFooterDescription As String" />
       <MemberSignature Language="F#" Value="member this.DropDownToolTipFooterDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipFooterDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -466,6 +483,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipFooterDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DropDownToolTipFooterDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipFooterDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -485,6 +503,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipFooterImageSource As ImageSource" />
       <MemberSignature Language="F#" Value="member this.DropDownToolTipFooterImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ DropDownToolTipFooterImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -519,6 +538,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipFooterImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DropDownToolTipFooterImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipFooterImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -538,6 +558,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipFooterTitle As String" />
       <MemberSignature Language="F#" Value="member this.DropDownToolTipFooterTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipFooterTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -572,6 +593,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipFooterTitleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DropDownToolTipFooterTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipFooterTitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipFooterTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -591,6 +613,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipImageSource As ImageSource" />
       <MemberSignature Language="F#" Value="member this.DropDownToolTipImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ DropDownToolTipImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -625,6 +648,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DropDownToolTipImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -644,6 +668,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownToolTipTitle As String" />
       <MemberSignature Language="F#" Value="member this.DropDownToolTipTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DropDownToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -678,6 +703,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownToolTipTitleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DropDownToolTipTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.DropDownToolTipTitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownToolTipTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -697,6 +723,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderKeyTip" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderKeyTip As String" />
       <MemberSignature Language="F#" Value="member this.HeaderKeyTip : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderKeyTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderKeyTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -734,6 +761,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderKeyTipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderKeyTipProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderKeyTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderKeyTipProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderKeyTipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -753,6 +781,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderQuickAccessToolBarId" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderQuickAccessToolBarId As Object" />
       <MemberSignature Language="F#" Value="member this.HeaderQuickAccessToolBarId : obj with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderQuickAccessToolBarId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HeaderQuickAccessToolBarId { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -787,6 +816,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderQuickAccessToolBarIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderQuickAccessToolBarIdProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderQuickAccessToolBarIdProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.HeaderQuickAccessToolBarIdProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderQuickAccessToolBarIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -806,6 +836,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCheckable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCheckable : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCheckable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -842,6 +873,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCheckableProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsCheckableProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckableProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCheckableProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -861,6 +893,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.IsChecked" />
       <MemberSignature Language="VB.NET" Value="Public Property IsChecked As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsChecked : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.IsChecked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsChecked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -896,6 +929,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCheckedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsCheckedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.IsCheckedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCheckedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -915,6 +949,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonSplitButton.LabelPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelPosition As RibbonSplitButtonLabelPosition" />
       <MemberSignature Language="F#" Value="member this.LabelPosition : System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.LabelPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonSplitButtonLabelPosition LabelPosition { System::Windows::Controls::Ribbon::RibbonSplitButtonLabelPosition get(); void set(System::Windows::Controls::Ribbon::RibbonSplitButtonLabelPosition value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -949,6 +984,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButton.LabelPositionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelPositionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LabelPositionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonSplitButton.LabelPositionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabelPositionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -968,6 +1004,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitButton.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonSplitButton.OnActivatingKeyTip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -991,6 +1028,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitButton.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonSplitButton.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1018,6 +1056,7 @@ Ribbon split button control with drop-down open
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonSplitButton.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonSplitButton.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGridInternal.IRootGridEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRootGridEntry" />
   <TypeSignature Language="F#" Value="type IRootGridEntry = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRootGridEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGridInternal.IRootGridEntry.BrowsableAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowsableAttributes As AttributeCollection" />
       <MemberSignature Language="F#" Value="member this.BrowsableAttributes : System.ComponentModel.AttributeCollection with get, set" Usage="System.Windows.Forms.PropertyGridInternal.IRootGridEntry.BrowsableAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::AttributeCollection ^ BrowsableAttributes { System::ComponentModel::AttributeCollection ^ get(); void set(System::ComponentModel::AttributeCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.IRootGridEntry.ResetBrowsableAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetBrowsableAttributes ()" />
       <MemberSignature Language="F#" Value="abstract member ResetBrowsableAttributes : unit -&gt; unit" Usage="iRootGridEntry.ResetBrowsableAttributes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetBrowsableAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.IRootGridEntry.ShowCategories(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowCategories (showCategories As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member ShowCategories : bool -&gt; unit" Usage="iRootGridEntry.ShowCategories showCategories" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowCategories(bool showCategories);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionStringsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ConnectionStringsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionStringsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringsSection.ConnectionStrings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionStrings As ConnectionStringSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Configuration.ConnectionStringSettingsCollection" Usage="System.Configuration.ConnectionStringsSection.ConnectionStrings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettingsCollection ^ ConnectionStrings { System::Configuration::ConnectionStringSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringsSection.GetRuntimeObject" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetRuntimeObject () As Object" />
       <MemberSignature Language="F#" Value="override this.GetRuntimeObject : unit -&gt; obj" Usage="connectionStringsSection.GetRuntimeObject " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ GetRuntimeObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ConnectionStringsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

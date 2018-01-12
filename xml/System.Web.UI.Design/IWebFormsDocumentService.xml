@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebFormsDocumentService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebFormsDocumentService" />
   <TypeSignature Language="F#" Value="type IWebFormsDocumentService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebFormsDocumentService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.CreateDiscardableUndoUnit" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDiscardableUndoUnit () As Object" />
       <MemberSignature Language="F#" Value="abstract member CreateDiscardableUndoUnit : unit -&gt; obj" Usage="iWebFormsDocumentService.CreateDiscardableUndoUnit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateDiscardableUndoUnit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.DiscardUndoUnit(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DiscardUndoUnit (discardableUndoUnit As Object)" />
       <MemberSignature Language="F#" Value="abstract member DiscardUndoUnit : obj -&gt; unit" Usage="iWebFormsDocumentService.DiscardUndoUnit discardableUndoUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardUndoUnit(System::Object ^ discardableUndoUnit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebFormsDocumentService.DocumentUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentUrl As String" />
       <MemberSignature Language="F#" Value="member this.DocumentUrl : string" Usage="System.Web.UI.Design.IWebFormsDocumentService.DocumentUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.EnableUndo(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnableUndo (enable As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member EnableUndo : bool -&gt; unit" Usage="iWebFormsDocumentService.EnableUndo enable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableUndo(bool enable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebFormsDocumentService.IsLoading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoading As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLoading : bool" Usage="System.Web.UI.Design.IWebFormsDocumentService.IsLoading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IWebFormsDocumentService.LoadComplete" />
       <MemberSignature Language="VB.NET" Value="Event LoadComplete As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LoadComplete : EventHandler " Usage="member this.LoadComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoadComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebFormsDocumentService.UpdateSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateSelection ()" />
       <MemberSignature Language="F#" Value="abstract member UpdateSelection : unit -&gt; unit" Usage="iWebFormsDocumentService.UpdateSelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.FlowSwitch`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FlowSwitch(Of T)&#xA;Inherits FlowNode" />
   <TypeSignature Language="F#" Value="type FlowSwitch&lt;'T&gt; = class&#xA;    inherit FlowNode&#xA;    interface IFlowSwitch" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class FlowSwitch sealed : System::Activities::Statements::FlowNode" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.FlowSwitch`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowSwitch();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.Cases" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cases As IDictionary(Of T, FlowNode)" />
       <MemberSignature Language="F#" Value="member this.Cases : System.Collections.Generic.IDictionary&lt;'T, System.Activities.Statements.FlowNode&gt;" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.Cases" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;T, System::Activities::Statements::FlowNode ^&gt; ^ Cases { System::Collections::Generic::IDictionary&lt;T, System::Activities::Statements::FlowNode ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As FlowNode" />
       <MemberSignature Language="F#" Value="member this.Default : System.Activities.Statements.FlowNode with get, set" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Statements::FlowNode ^ Default { System::Activities::Statements::FlowNode ^ get(); void set(System::Activities::Statements::FlowNode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowSwitch`1.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As Activity(Of T)" />
       <MemberSignature Language="F#" Value="member this.Expression : System.Activities.Activity&lt;'T&gt; with get, set" Usage="System.Activities.Statements.FlowSwitch&lt;'T&gt;.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;T&gt; ^ Expression { System::Activities::Activity&lt;T&gt; ^ get(); void set(System::Activities::Activity&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcConnection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcConnection&#xA;Inherits DbConnection&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type OdbcConnection = class&#xA;    inherit DbConnection&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcConnection sealed : System::Data::Common::DbConnection, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcConnection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcConnection : string -&gt; System.Data.Odbc.OdbcConnection" Usage="new System.Data.Odbc.OdbcConnection connectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcConnection(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="F#" Value="override this.BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="odbcConnection.BeginDbTransaction isolationLevel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As OdbcTransaction" />
       <MemberSignature Language="F#" Value="override this.BeginTransaction : unit -&gt; System.Data.Odbc.OdbcTransaction" Usage="odbcConnection.BeginTransaction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (isolevel As IsolationLevel) As OdbcTransaction" />
       <MemberSignature Language="F#" Value="override this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.Odbc.OdbcTransaction" Usage="odbcConnection.BeginTransaction isolevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcTransaction ^ BeginTransaction(System::Data::IsolationLevel isolevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -289,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ChangeDatabase (value As String)" />
       <MemberSignature Language="F#" Value="override this.ChangeDatabase : string -&gt; unit" Usage="odbcConnection.ChangeDatabase value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ChangeDatabase(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -334,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="odbcConnection.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -381,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.Odbc.OdbcConnection.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -481,6 +490,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int with get, set" Usage="System.Data.Odbc.OdbcConnection.ConnectionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -521,6 +531,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As OdbcCommand" />
       <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcConnection.CreateCommand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -546,6 +557,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.CreateDbCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommand () As DbCommand" />
       <MemberSignature Language="F#" Value="override this.CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="odbcConnection.CreateDbCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommand ^ CreateDbCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -571,6 +583,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Database As String" />
       <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.Odbc.OdbcConnection.Database" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -617,6 +630,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataSource As String" />
       <MemberSignature Language="F#" Value="member this.DataSource : string" Usage="System.Data.Odbc.OdbcConnection.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -664,6 +678,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="odbcConnection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -691,6 +706,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.Driver" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Driver As String" />
       <MemberSignature Language="F#" Value="member this.Driver : string" Usage="System.Data.Odbc.OdbcConnection.Driver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Driver { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -730,6 +746,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnlistDistributedTransaction (transaction As ITransaction)" />
       <MemberSignature Language="F#" Value="member this.EnlistDistributedTransaction : System.EnterpriseServices.ITransaction -&gt; unit" Usage="odbcConnection.EnlistDistributedTransaction transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnlistDistributedTransaction(System::EnterpriseServices::ITransaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -763,6 +780,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.EnlistTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="F#" Value="override this.EnlistTransaction : System.Transactions.Transaction -&gt; unit" Usage="odbcConnection.EnlistTransaction transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -802,6 +820,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema () As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchema : unit -&gt; System.Data.DataTable" Usage="odbcConnection.GetSchema " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -823,6 +842,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.GetSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String) As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchema : string -&gt; System.Data.DataTable" Usage="odbcConnection.GetSchema collectionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -857,6 +877,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.GetSchema(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchema : string * string[] -&gt; System.Data.DataTable" Usage="odbcConnection.GetSchema (collectionName, restrictionValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -897,6 +918,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="E:System.Data.Odbc.OdbcConnection.InfoMessage" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event InfoMessage As OdbcInfoMessageEventHandler " />
       <MemberSignature Language="F#" Value="member this.InfoMessage : System.Data.Odbc.OdbcInfoMessageEventHandler " Usage="member this.InfoMessage : System.Data.Odbc.OdbcInfoMessageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::Odbc::OdbcInfoMessageEventHandler ^ InfoMessage;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -927,6 +949,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Open ()" />
       <MemberSignature Language="F#" Value="override this.Open : unit -&gt; unit" Usage="odbcConnection.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -962,6 +985,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.ReleaseObjectPool" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseObjectPool ()" />
       <MemberSignature Language="F#" Value="static member ReleaseObjectPool : unit -&gt; unit" Usage="System.Data.Odbc.OdbcConnection.ReleaseObjectPool " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseObjectPool();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1007,6 +1031,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.ServerVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ServerVersion As String" />
       <MemberSignature Language="F#" Value="member this.ServerVersion : string" Usage="System.Data.Odbc.OdbcConnection.ServerVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ServerVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1049,6 +1074,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As ConnectionState" />
       <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.Odbc.OdbcConnection.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1094,6 +1120,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ObjectManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectManager" />
   <TypeSignature Language="F#" Value="type ObjectManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectManager" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.#ctor(System.Runtime.Serialization.ISurrogateSelector,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selector As ISurrogateSelector, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Serialization.ObjectManager : System.Runtime.Serialization.ISurrogateSelector * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Serialization.ObjectManager" Usage="new System.Runtime.Serialization.ObjectManager (selector, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectManager(System::Runtime::Serialization::ISurrogateSelector ^ selector, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.DoFixups" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DoFixups ()" />
       <MemberSignature Language="F#" Value="abstract member DoFixups : unit -&gt; unit&#xA;override this.DoFixups : unit -&gt; unit" Usage="objectManager.DoFixups " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoFixups();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.GetObject(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (objectID As Long) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetObject : int64 -&gt; obj&#xA;override this.GetObject : int64 -&gt; obj" Usage="objectManager.GetObject objectID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(long objectID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RaiseDeserializationEvent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RaiseDeserializationEvent ()" />
       <MemberSignature Language="F#" Value="abstract member RaiseDeserializationEvent : unit -&gt; unit&#xA;override this.RaiseDeserializationEvent : unit -&gt; unit" Usage="objectManager.RaiseDeserializationEvent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RaiseDeserializationEvent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RaiseOnDeserializingEvent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseOnDeserializingEvent (obj As Object)" />
       <MemberSignature Language="F#" Value="member this.RaiseOnDeserializingEvent : obj -&gt; unit" Usage="objectManager.RaiseOnDeserializingEvent obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseOnDeserializingEvent(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordArrayElementFixup(System.Int64,System.Int32,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordArrayElementFixup (arrayToBeFixed As Long, index As Integer, objectRequired As Long)" />
       <MemberSignature Language="F#" Value="abstract member RecordArrayElementFixup : int64 * int * int64 -&gt; unit&#xA;override this.RecordArrayElementFixup : int64 * int * int64 -&gt; unit" Usage="objectManager.RecordArrayElementFixup (arrayToBeFixed, index, objectRequired)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordArrayElementFixup(long arrayToBeFixed, int index, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordArrayElementFixup(System.Int64,System.Int32[],System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordArrayElementFixup (arrayToBeFixed As Long, indices As Integer(), objectRequired As Long)" />
       <MemberSignature Language="F#" Value="abstract member RecordArrayElementFixup : int64 * int[] * int64 -&gt; unit&#xA;override this.RecordArrayElementFixup : int64 * int[] * int64 -&gt; unit" Usage="objectManager.RecordArrayElementFixup (arrayToBeFixed, indices, objectRequired)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordArrayElementFixup(long arrayToBeFixed, cli::array &lt;int&gt; ^ indices, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordDelayedFixup(System.Int64,System.String,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordDelayedFixup (objectToBeFixed As Long, memberName As String, objectRequired As Long)" />
       <MemberSignature Language="F#" Value="abstract member RecordDelayedFixup : int64 * string * int64 -&gt; unit&#xA;override this.RecordDelayedFixup : int64 * string * int64 -&gt; unit" Usage="objectManager.RecordDelayedFixup (objectToBeFixed, memberName, objectRequired)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordDelayedFixup(long objectToBeFixed, System::String ^ memberName, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RecordFixup(System.Int64,System.Reflection.MemberInfo,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RecordFixup (objectToBeFixed As Long, member As MemberInfo, objectRequired As Long)" />
       <MemberSignature Language="F#" Value="abstract member RecordFixup : int64 * System.Reflection.MemberInfo * int64 -&gt; unit&#xA;override this.RecordFixup : int64 * System.Reflection.MemberInfo * int64 -&gt; unit" Usage="objectManager.RecordFixup (objectToBeFixed, member, objectRequired)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RecordFixup(long objectToBeFixed, System::Reflection::MemberInfo ^ member, long objectRequired);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -436,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterObject (obj As Object, objectID As Long)" />
       <MemberSignature Language="F#" Value="abstract member RegisterObject : obj * int64 -&gt; unit&#xA;override this.RegisterObject : obj * int64 -&gt; unit" Usage="objectManager.RegisterObject (obj, objectID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterObject(System::Object ^ obj, long objectID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -485,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64,System.Runtime.Serialization.SerializationInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object, objectID As Long, info As SerializationInfo)" />
       <MemberSignature Language="F#" Value="member this.RegisterObject : obj * int64 * System.Runtime.Serialization.SerializationInfo -&gt; unit" Usage="objectManager.RegisterObject (obj, objectID, info)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj, long objectID, System::Runtime::Serialization::SerializationInfo ^ info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -536,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64,System.Runtime.Serialization.SerializationInfo,System.Int64,System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object, objectID As Long, info As SerializationInfo, idOfContainingObj As Long, member As MemberInfo)" />
       <MemberSignature Language="F#" Value="member this.RegisterObject : obj * int64 * System.Runtime.Serialization.SerializationInfo * int64 * System.Reflection.MemberInfo -&gt; unit" Usage="objectManager.RegisterObject (obj, objectID, info, idOfContainingObj, member)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj, long objectID, System::Runtime::Serialization::SerializationInfo ^ info, long idOfContainingObj, System::Reflection::MemberInfo ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -593,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectManager.RegisterObject(System.Object,System.Int64,System.Runtime.Serialization.SerializationInfo,System.Int64,System.Reflection.MemberInfo,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObject (obj As Object, objectID As Long, info As SerializationInfo, idOfContainingObj As Long, member As MemberInfo, arrayIndex As Integer())" />
       <MemberSignature Language="F#" Value="member this.RegisterObject : obj * int64 * System.Runtime.Serialization.SerializationInfo * int64 * System.Reflection.MemberInfo * int[] -&gt; unit" Usage="objectManager.RegisterObject (obj, objectID, info, idOfContainingObj, member, arrayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObject(System::Object ^ obj, long objectID, System::Runtime::Serialization::SerializationInfo ^ info, long idOfContainingObj, System::Reflection::MemberInfo ^ member, cli::array &lt;int&gt; ^ arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

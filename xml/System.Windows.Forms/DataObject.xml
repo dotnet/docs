@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataObject" />
   <TypeSignature Language="VB.NET" Value="Public Class DataObject&#xA;Implements IDataObject, IDataObject" />
   <TypeSignature Language="F#" Value="type DataObject = class&#xA;    interface IDataObject&#xA;    interface IDataObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataObject : System::Runtime::InteropServices::ComTypes::IDataObject, System::Windows::Forms::IDataObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As Object)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataObject : obj -&gt; System.Windows.Forms.DataObject" Usage="new System.Windows.Forms.DataObject data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObject(System::Object ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (format As String, data As Object)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataObject : string * obj -&gt; System.Windows.Forms.DataObject" Usage="new System.Windows.Forms.DataObject (format, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObject(System::String ^ format, System::Object ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.ContainsAudio" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsAudio () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsAudio : unit -&gt; bool&#xA;override this.ContainsAudio : unit -&gt; bool" Usage="dataObject.ContainsAudio " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsAudio();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.ContainsFileDropList" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsFileDropList () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsFileDropList : unit -&gt; bool&#xA;override this.ContainsFileDropList : unit -&gt; bool" Usage="dataObject.ContainsFileDropList " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsFileDropList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.ContainsImage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsImage () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsImage : unit -&gt; bool&#xA;override this.ContainsImage : unit -&gt; bool" Usage="dataObject.ContainsImage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.ContainsText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsText () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsText : unit -&gt; bool&#xA;override this.ContainsText : unit -&gt; bool" Usage="dataObject.ContainsText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.ContainsText(System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsText (format As TextDataFormat) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsText : System.Windows.Forms.TextDataFormat -&gt; bool&#xA;override this.ContainsText : System.Windows.Forms.TextDataFormat -&gt; bool" Usage="dataObject.ContainsText format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsText(System::Windows::Forms::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -371,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetAudioStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAudioStream () As Stream" />
       <MemberSignature Language="F#" Value="abstract member GetAudioStream : unit -&gt; System.IO.Stream&#xA;override this.GetAudioStream : unit -&gt; System.IO.Stream" Usage="dataObject.GetAudioStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetAudioStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -419,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetData (format As String) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetData : string -&gt; obj&#xA;override this.GetData : string -&gt; obj" Usage="dataObject.GetData format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetData(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetData(System.String)</InterfaceMember>
@@ -475,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetData(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetData (format As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetData : Type -&gt; obj&#xA;override this.GetData : Type -&gt; obj" Usage="dataObject.GetData format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetData(Type ^ format);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetData(System.Type)</InterfaceMember>
@@ -530,6 +542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetData (format As String, autoConvert As Boolean) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetData : string * bool -&gt; obj&#xA;override this.GetData : string * bool -&gt; obj" Usage="dataObject.GetData (format, autoConvert)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetData(System::String ^ format, bool autoConvert);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)</InterfaceMember>
@@ -608,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetDataPresent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataPresent (format As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member GetDataPresent : string -&gt; bool&#xA;override this.GetDataPresent : string -&gt; bool" Usage="dataObject.GetDataPresent format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetDataPresent(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetDataPresent(System.String)</InterfaceMember>
@@ -662,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataPresent (format As Type) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member GetDataPresent : Type -&gt; bool&#xA;override this.GetDataPresent : Type -&gt; bool" Usage="dataObject.GetDataPresent format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetDataPresent(Type ^ format);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetDataPresent(System.Type)</InterfaceMember>
@@ -717,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetDataPresent(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDataPresent (format As String, autoConvert As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member GetDataPresent : string * bool -&gt; bool&#xA;override this.GetDataPresent : string * bool -&gt; bool" Usage="dataObject.GetDataPresent (format, autoConvert)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GetDataPresent(System::String ^ format, bool autoConvert);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)</InterfaceMember>
@@ -790,6 +806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetFileDropList" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileDropList () As StringCollection" />
       <MemberSignature Language="F#" Value="abstract member GetFileDropList : unit -&gt; System.Collections.Specialized.StringCollection&#xA;override this.GetFileDropList : unit -&gt; System.Collections.Specialized.StringCollection" Usage="dataObject.GetFileDropList " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::StringCollection ^ GetFileDropList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -837,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFormats () As String()" />
       <MemberSignature Language="F#" Value="abstract member GetFormats : unit -&gt; string[]&#xA;override this.GetFormats : unit -&gt; string[]" Usage="dataObject.GetFormats " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetFormats();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetFormats</InterfaceMember>
@@ -884,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFormats (autoConvert As Boolean) As String()" />
       <MemberSignature Language="F#" Value="abstract member GetFormats : bool -&gt; string[]&#xA;override this.GetFormats : bool -&gt; string[]" Usage="dataObject.GetFormats autoConvert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetFormats(bool autoConvert);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)</InterfaceMember>
@@ -937,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetImage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetImage () As Image" />
       <MemberSignature Language="F#" Value="abstract member GetImage : unit -&gt; System.Drawing.Image&#xA;override this.GetImage : unit -&gt; System.Drawing.Image" Usage="dataObject.GetImage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Drawing::Image ^ GetImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -983,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetText () As String" />
       <MemberSignature Language="F#" Value="abstract member GetText : unit -&gt; string&#xA;override this.GetText : unit -&gt; string" Usage="dataObject.GetText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1016,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.GetText(System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetText (format As TextDataFormat) As String" />
       <MemberSignature Language="F#" Value="abstract member GetText : System.Windows.Forms.TextDataFormat -&gt; string&#xA;override this.GetText : System.Windows.Forms.TextDataFormat -&gt; string" Usage="dataObject.GetText format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetText(System::Windows::Forms::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1066,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetAudio(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetAudio (audioBytes As Byte())" />
       <MemberSignature Language="F#" Value="abstract member SetAudio : byte[] -&gt; unit&#xA;override this.SetAudio : byte[] -&gt; unit" Usage="dataObject.SetAudio audioBytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetAudio(cli::array &lt;System::Byte&gt; ^ audioBytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1101,6 +1124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetAudio(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetAudio (audioStream As Stream)" />
       <MemberSignature Language="F#" Value="abstract member SetAudio : System.IO.Stream -&gt; unit&#xA;override this.SetAudio : System.IO.Stream -&gt; unit" Usage="dataObject.SetAudio audioStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetAudio(System::IO::Stream ^ audioStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1145,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetData (data As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetData : obj -&gt; unit&#xA;override this.SetData : obj -&gt; unit" Usage="dataObject.SetData data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetData(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.SetData(System.Object)</InterfaceMember>
@@ -1195,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetData (format As String, data As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetData : string * obj -&gt; unit&#xA;override this.SetData : string * obj -&gt; unit" Usage="dataObject.SetData (format, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetData(System::String ^ format, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.SetData(System.String,System.Object)</InterfaceMember>
@@ -1249,6 +1275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetData(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetData (format As Type, data As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetData : Type * obj -&gt; unit&#xA;override this.SetData : Type * obj -&gt; unit" Usage="dataObject.SetData (format, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetData(Type ^ format, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.SetData(System.Type,System.Object)</InterfaceMember>
@@ -1302,6 +1329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetData (format As String, autoConvert As Boolean, data As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetData : string * bool * obj -&gt; unit&#xA;override this.SetData : string * bool * obj -&gt; unit" Usage="dataObject.SetData (format, autoConvert, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetData(System::String ^ format, bool autoConvert, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)</InterfaceMember>
@@ -1359,6 +1387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetFileDropList (filePaths As StringCollection)" />
       <MemberSignature Language="F#" Value="abstract member SetFileDropList : System.Collections.Specialized.StringCollection -&gt; unit&#xA;override this.SetFileDropList : System.Collections.Specialized.StringCollection -&gt; unit" Usage="dataObject.SetFileDropList filePaths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetFileDropList(System::Collections::Specialized::StringCollection ^ filePaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1397,6 +1426,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetImage(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetImage(System.Drawing.Image)" />
       <MemberSignature Language="F#" Value="abstract member SetImage : System.Drawing.Image -&gt; unit&#xA;override this.SetImage : System.Drawing.Image -&gt; unit" Usage="dataObject.SetImage image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetImage(System::Drawing::Image ^ image);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1444,6 +1474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetText (textData As String)" />
       <MemberSignature Language="F#" Value="abstract member SetText : string -&gt; unit&#xA;override this.SetText : string -&gt; unit" Usage="dataObject.SetText textData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetText(System::String ^ textData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1479,6 +1510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.SetText(System.String,System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetText (textData As String, format As TextDataFormat)" />
       <MemberSignature Language="F#" Value="abstract member SetText : string * System.Windows.Forms.TextDataFormat -&gt; unit&#xA;override this.SetText : string * System.Windows.Forms.TextDataFormat -&gt; unit" Usage="dataObject.SetText (textData, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetText(System::String ^ textData, System::Windows::Forms::TextDataFormat format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1516,6 +1548,7 @@
       <MemberSignature Language="C#" Value="int IDataObject.DAdvise (ref System.Runtime.InteropServices.ComTypes.FORMATETC pFormatetc, System.Runtime.InteropServices.ComTypes.ADVF advf, System.Runtime.InteropServices.ComTypes.IAdviseSink pAdvSink, out int pdwConnection);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; pFormatetc, valuetype System.Runtime.InteropServices.ComTypes.ADVF advf, class System.Runtime.InteropServices.ComTypes.IAdviseSink pAdvSink, [out] int32&amp; pdwConnection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetc, System::Runtime::InteropServices::ComTypes::ADVF advf, System::Runtime::InteropServices::ComTypes::IAdviseSink ^ pAdvSink, [Runtime::InteropServices::Out] int % pdwConnection) = System::Runtime::InteropServices::ComTypes::IDataObject::DAdvise;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)</InterfaceMember>
@@ -1582,6 +1615,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(int32 dwConnection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#DUnadvise(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub DUnadvise (dwConnection As Integer) Implements IDataObject.DUnadvise" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(int dwConnection) = System::Runtime::InteropServices::ComTypes::IDataObject::DUnadvise;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(System.Int32)</InterfaceMember>
@@ -1615,6 +1649,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise([out] class System.Runtime.InteropServices.ComTypes.IEnumSTATDATA&amp; enumAdvise) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#EnumDAdvise(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)" />
       <MemberSignature Language="VB.NET" Value="Function EnumDAdvise (ByRef enumAdvise As IEnumSTATDATA) As Integer Implements IDataObject.EnumDAdvise" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % enumAdvise) = System::Runtime::InteropServices::ComTypes::IDataObject::EnumDAdvise;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)</InterfaceMember>
@@ -1663,6 +1698,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Runtime.InteropServices.ComTypes.IEnumFORMATETC System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(valuetype System.Runtime.InteropServices.ComTypes.DATADIR dwDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)" />
       <MemberSignature Language="VB.NET" Value="Function EnumFormatEtc (dwDirection As DATADIR) As IEnumFORMATETC Implements IDataObject.EnumFormatEtc" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Runtime::InteropServices::ComTypes::IEnumFORMATETC ^ System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System::Runtime::InteropServices::ComTypes::DATADIR dwDirection) = System::Runtime::InteropServices::ComTypes::IDataObject::EnumFormatEtc;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)</InterfaceMember>
@@ -1715,6 +1751,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; pformatetcIn, [out] valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; pformatetcOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)" />
       <MemberSignature Language="VB.NET" Value="Function GetCanonicalFormatEtc (ByRef pformatetcIn As FORMATETC, ByRef pformatetcOut As FORMATETC) As Integer Implements IDataObject.GetCanonicalFormatEtc" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System::Runtime::InteropServices::ComTypes::FORMATETC % pformatetcIn, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FORMATETC % pformatetcOut) = System::Runtime::InteropServices::ComTypes::IDataObject::GetCanonicalFormatEtc;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)</InterfaceMember>
@@ -1777,6 +1814,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices.ComTypes.IDataObject.GetData(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; formatetc, [out] valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; medium) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetData (ByRef formatetc As FORMATETC, ByRef medium As STGMEDIUM) Implements IDataObject.GetData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium) = System::Runtime::InteropServices::ComTypes::IDataObject::GetData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)</InterfaceMember>
@@ -1813,6 +1851,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; formatetc, valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; medium) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#GetDataHere(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetDataHere (ByRef formatetc As FORMATETC, ByRef medium As STGMEDIUM) Implements IDataObject.GetDataHere" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium) = System::Runtime::InteropServices::ComTypes::IDataObject::GetDataHere;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)</InterfaceMember>
@@ -1848,6 +1887,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; formatetc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#QueryGetData(System.Runtime.InteropServices.ComTypes.FORMATETC@)" />
       <MemberSignature Language="VB.NET" Value="Function QueryGetData (ByRef formatetc As FORMATETC) As Integer Implements IDataObject.QueryGetData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc) = System::Runtime::InteropServices::ComTypes::IDataObject::QueryGetData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System.Runtime.InteropServices.ComTypes.FORMATETC@)</InterfaceMember>
@@ -1912,6 +1952,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices.ComTypes.IDataObject.SetData(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; pFormatetcIn, valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; pmedium, bool fRelease) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Sub SetData (ByRef pFormatetcIn As FORMATETC, ByRef pmedium As STGMEDIUM, fRelease As Boolean) Implements IDataObject.SetData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetcIn, System::Runtime::InteropServices::ComTypes::STGMEDIUM % pmedium, bool fRelease) = System::Runtime::InteropServices::ComTypes::IDataObject::SetData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)</InterfaceMember>

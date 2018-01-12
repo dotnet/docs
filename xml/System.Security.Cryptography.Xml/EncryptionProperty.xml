@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptionProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptionProperty" />
   <TypeSignature Language="F#" Value="type EncryptionProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptionProperty sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionProperty.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptionProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionProperty.#ctor(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elemProp As XmlElement)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptionProperty : System.Xml.XmlElement -&gt; System.Security.Cryptography.Xml.EncryptionProperty" Usage="new System.Security.Cryptography.Xml.EncryptionProperty elemProp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptionProperty(System::Xml::XmlElement ^ elemProp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionProperty.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
       <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptionProperty.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionProperty.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.Security.Cryptography.Xml.EncryptionProperty.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionProperty.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptionProperty.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionProperty.PropertyElement" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyElement As XmlElement" />
       <MemberSignature Language="F#" Value="member this.PropertyElement : System.Xml.XmlElement with get, set" Usage="System.Security.Cryptography.Xml.EncryptionProperty.PropertyElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ PropertyElement { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionProperty.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As String" />
       <MemberSignature Language="F#" Value="member this.Target : string" Usage="System.Security.Cryptography.Xml.EncryptionProperty.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.SignatureVerificationFailedException" />
   <TypeSignature Language="VB.NET" Value="Public Class SignatureVerificationFailedException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type SignatureVerificationFailedException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignatureVerificationFailedException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.SignatureVerificationFailedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureVerificationFailedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.SignatureVerificationFailedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.SignatureVerificationFailedException : string -&gt; System.IdentityModel.SignatureVerificationFailedException" Usage="new System.IdentityModel.SignatureVerificationFailedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureVerificationFailedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.SignatureVerificationFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.SignatureVerificationFailedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.SignatureVerificationFailedException" Usage="new System.IdentityModel.SignatureVerificationFailedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureVerificationFailedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.SignatureVerificationFailedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.SignatureVerificationFailedException : string * Exception -&gt; System.IdentityModel.SignatureVerificationFailedException" Usage="new System.IdentityModel.SignatureVerificationFailedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureVerificationFailedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

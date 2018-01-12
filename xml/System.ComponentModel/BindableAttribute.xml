@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type BindableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bindable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.BindableAttribute : bool -&gt; System.ComponentModel.BindableAttribute" Usage="new System.ComponentModel.BindableAttribute bindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindableAttribute(bool bindable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.#ctor(System.ComponentModel.BindableSupport)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flags As BindableSupport)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.BindableAttribute : System.ComponentModel.BindableSupport -&gt; System.ComponentModel.BindableAttribute" Usage="new System.ComponentModel.BindableAttribute flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindableAttribute(System::ComponentModel::BindableSupport flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.#ctor(System.Boolean,System.ComponentModel.BindingDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bindable As Boolean, direction As BindingDirection)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.BindableAttribute : bool * System.ComponentModel.BindingDirection -&gt; System.ComponentModel.BindableAttribute" Usage="new System.ComponentModel.BindableAttribute (bindable, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindableAttribute(bool bindable, System::ComponentModel::BindingDirection direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.#ctor(System.ComponentModel.BindableSupport,System.ComponentModel.BindingDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flags As BindableSupport, direction As BindingDirection)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.BindableAttribute : System.ComponentModel.BindableSupport * System.ComponentModel.BindingDirection -&gt; System.ComponentModel.BindableAttribute" Usage="new System.ComponentModel.BindableAttribute (flags, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindableAttribute(System::ComponentModel::BindableSupport flags, System::ComponentModel::BindingDirection direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindableAttribute.Bindable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindable As Boolean" />
       <MemberSignature Language="F#" Value="member this.Bindable : bool" Usage="System.ComponentModel.BindableAttribute.Bindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Bindable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -304,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As BindableAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.BindableAttribute" Usage="System.ComponentModel.BindableAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::BindableAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -342,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BindableAttribute.Direction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As BindingDirection" />
       <MemberSignature Language="F#" Value="member this.Direction : System.ComponentModel.BindingDirection" Usage="System.ComponentModel.BindableAttribute.Direction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::BindingDirection Direction { System::ComponentModel::BindingDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -371,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bindableAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -405,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bindableAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -435,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BindableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="bindableAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -466,6 +477,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As BindableAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.BindableAttribute" Usage="System.ComponentModel.BindableAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::BindableAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -505,6 +517,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As BindableAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.BindableAttribute" Usage="System.ComponentModel.BindableAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::BindableAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

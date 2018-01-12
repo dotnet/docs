@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpApplication" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpApplication&#xA;Implements IComponent, IDisposable, IHttpAsyncHandler" />
   <TypeSignature Language="F#" Value="type HttpApplication = class&#xA;    interface IComponent&#xA;    interface IDisposable&#xA;    interface IHttpAsyncHandler&#xA;    interface IHttpHandler&#xA;    interface IRequestCompletedNotifier&#xA;    interface ISyncContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpApplication : IDisposable, System::ComponentModel::IComponent, System::Web::IHttpAsyncHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -162,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpApplication();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +181,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.AcquireRequestState" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AcquireRequestState As EventHandler " />
       <MemberSignature Language="F#" Value="member this.AcquireRequestState : EventHandler " Usage="member this.AcquireRequestState : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AcquireRequestState;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnAcquireRequestStateAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnAcquireRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnAcquireRequestStateAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnAcquireRequestStateAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnAcquireRequestStateAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnAcquireRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnAcquireRequestStateAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnAcquireRequestStateAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnAuthenticateRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnAuthenticateRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnAuthenticateRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnAuthenticateRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnAuthenticateRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnAuthenticateRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnAuthenticateRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnAuthenticateRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -344,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnAuthorizeRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnAuthorizeRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnAuthorizeRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnAuthorizeRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -369,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnAuthorizeRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnAuthorizeRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnAuthorizeRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnAuthorizeRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -405,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnBeginRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnBeginRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnBeginRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnBeginRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnBeginRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnBeginRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnBeginRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnBeginRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnBeginRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -466,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnEndRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnEndRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnEndRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnEndRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -491,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnEndRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnEndRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnEndRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnEndRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnEndRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -535,6 +548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnLogRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnLogRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnLogRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnLogRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -567,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnLogRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnLogRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnLogRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnLogRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -611,6 +626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnMapRequestHandlerAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnMapRequestHandlerAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnMapRequestHandlerAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnMapRequestHandlerAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -643,6 +659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnMapRequestHandlerAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnMapRequestHandlerAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnMapRequestHandlerAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnMapRequestHandlerAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -679,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostAcquireRequestStateAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostAcquireRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostAcquireRequestStateAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostAcquireRequestStateAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -704,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostAcquireRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostAcquireRequestStateAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostAcquireRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostAcquireRequestStateAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostAcquireRequestStateAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -740,6 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostAuthenticateRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostAuthenticateRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostAuthenticateRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostAuthenticateRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -765,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostAuthenticateRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostAuthenticateRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostAuthenticateRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostAuthenticateRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostAuthenticateRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -801,6 +822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostAuthorizeRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostAuthorizeRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostAuthorizeRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostAuthorizeRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -826,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostAuthorizeRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostAuthorizeRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostAuthorizeRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostAuthorizeRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostAuthorizeRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -870,6 +893,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostLogRequestAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostLogRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostLogRequestAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostLogRequestAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -902,6 +926,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostLogRequestAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostLogRequestAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostLogRequestAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostLogRequestAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostLogRequestAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -938,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostMapRequestHandlerAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostMapRequestHandlerAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostMapRequestHandlerAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostMapRequestHandlerAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -963,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostMapRequestHandlerAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostMapRequestHandlerAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostMapRequestHandlerAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostMapRequestHandlerAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostMapRequestHandlerAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -999,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostReleaseRequestStateAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostReleaseRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostReleaseRequestStateAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostReleaseRequestStateAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1024,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostReleaseRequestStateAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostReleaseRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostReleaseRequestStateAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostReleaseRequestStateAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1060,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostRequestHandlerExecuteAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostRequestHandlerExecuteAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostRequestHandlerExecuteAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostRequestHandlerExecuteAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1085,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostRequestHandlerExecuteAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostRequestHandlerExecuteAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostRequestHandlerExecuteAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostRequestHandlerExecuteAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1121,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostResolveRequestCacheAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostResolveRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostResolveRequestCacheAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostResolveRequestCacheAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1146,6 +1178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostResolveRequestCacheAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostResolveRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostResolveRequestCacheAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostResolveRequestCacheAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1182,6 +1215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostUpdateRequestCacheAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostUpdateRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPostUpdateRequestCacheAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostUpdateRequestCacheAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1207,6 +1241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPostUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPostUpdateRequestCacheAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPostUpdateRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPostUpdateRequestCacheAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPostUpdateRequestCacheAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1243,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPreRequestHandlerExecuteAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnPreRequestHandlerExecuteAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnPreRequestHandlerExecuteAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPreRequestHandlerExecuteAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1268,6 +1304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnPreRequestHandlerExecuteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnPreRequestHandlerExecuteAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnPreRequestHandlerExecuteAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnPreRequestHandlerExecuteAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPreRequestHandlerExecuteAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1304,6 +1341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnReleaseRequestStateAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnReleaseRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnReleaseRequestStateAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnReleaseRequestStateAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1329,6 +1367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnReleaseRequestStateAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnReleaseRequestStateAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnReleaseRequestStateAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnReleaseRequestStateAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnReleaseRequestStateAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1365,6 +1404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnResolveRequestCacheAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnResolveRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnResolveRequestCacheAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnResolveRequestCacheAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1390,6 +1430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnResolveRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnResolveRequestCacheAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnResolveRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnResolveRequestCacheAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnResolveRequestCacheAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1426,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnUpdateRequestCacheAsync (bh As BeginEventHandler, eh As EndEventHandler)" />
       <MemberSignature Language="F#" Value="member this.AddOnUpdateRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="httpApplication.AddOnUpdateRequestCacheAsync (bh, eh)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnUpdateRequestCacheAsync(System::Web::BeginEventHandler ^ bh, System::Web::EndEventHandler ^ eh);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1451,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.AddOnUpdateRequestCacheAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOnUpdateRequestCacheAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
       <MemberSignature Language="F#" Value="member this.AddOnUpdateRequestCacheAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="httpApplication.AddOnUpdateRequestCacheAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnUpdateRequestCacheAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1478,6 +1521,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As HttpApplicationState" />
       <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationState" Usage="System.Web.HttpApplication.Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpApplicationState ^ Application { System::Web::HttpApplicationState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1513,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.AuthenticateRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AuthenticateRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.AuthenticateRequest : EventHandler " Usage="member this.AuthenticateRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AuthenticateRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1542,6 +1587,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.AuthorizeRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AuthorizeRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.AuthorizeRequest : EventHandler " Usage="member this.AuthorizeRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AuthorizeRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1571,6 +1617,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.BeginRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeginRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BeginRequest : EventHandler " Usage="member this.BeginRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BeginRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1600,6 +1647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.CompleteRequest" />
       <MemberSignature Language="VB.NET" Value="Public Sub CompleteRequest ()" />
       <MemberSignature Language="F#" Value="member this.CompleteRequest : unit -&gt; unit" Usage="httpApplication.CompleteRequest " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteRequest();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1620,6 +1668,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.HttpApplication.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1648,6 +1697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpApplication.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1683,6 +1733,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.Disposed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Disposed;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.IComponent.Disposed</InterfaceMember>
@@ -1714,6 +1765,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.EndRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EndRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.EndRequest : EventHandler " Usage="member this.EndRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EndRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1743,6 +1795,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.Error" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Error As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Error : EventHandler " Usage="member this.Error : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Error;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1774,6 +1827,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Events" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Events As EventHandlerList" />
       <MemberSignature Language="F#" Value="member this.Events : System.ComponentModel.EventHandlerList" Usage="System.Web.HttpApplication.Events" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::EventHandlerList ^ Events { System::ComponentModel::EventHandlerList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1794,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.GetOutputCacheProviderName(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOutputCacheProviderName (context As HttpContext) As String" />
       <MemberSignature Language="F#" Value="abstract member GetOutputCacheProviderName : System.Web.HttpContext -&gt; string&#xA;override this.GetOutputCacheProviderName : System.Web.HttpContext -&gt; string" Usage="httpApplication.GetOutputCacheProviderName context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetOutputCacheProviderName(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1864,6 +1919,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetVaryByCustomString (context As HttpContext, custom As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetVaryByCustomString : System.Web.HttpContext * string -&gt; string&#xA;override this.GetVaryByCustomString : System.Web.HttpContext * string -&gt; string" Usage="httpApplication.GetVaryByCustomString (context, custom)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetVaryByCustomString(System::Web::HttpContext ^ context, System::String ^ custom);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1897,6 +1953,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.Init" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Init ()" />
       <MemberSignature Language="F#" Value="abstract member Init : unit -&gt; unit&#xA;override this.Init : unit -&gt; unit" Usage="httpApplication.Init " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1924,6 +1981,7 @@ End Sub
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.LogRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LogRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LogRequest : EventHandler " Usage="member this.LogRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LogRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1963,6 +2021,7 @@ End Sub
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.MapRequestHandler" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MapRequestHandler As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MapRequestHandler : EventHandler " Usage="member this.MapRequestHandler : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MapRequestHandler;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1994,6 +2053,7 @@ End Sub
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Modules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modules As HttpModuleCollection" />
       <MemberSignature Language="F#" Value="member this.Modules : System.Web.HttpModuleCollection" Usage="System.Web.HttpApplication.Modules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpModuleCollection ^ Modules { System::Web::HttpModuleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2022,6 +2082,7 @@ End Sub
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.OnExecuteRequestStep(System.Action{System.Web.HttpContextBase,System.Action})" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnExecuteRequestStep (callback As Action(Of HttpContextBase, Action))" />
       <MemberSignature Language="F#" Value="member this.OnExecuteRequestStep : Action&lt;System.Web.HttpContextBase, Action&gt; -&gt; unit" Usage="httpApplication.OnExecuteRequestStep callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnExecuteRequestStep(Action&lt;System::Web::HttpContextBase ^, Action ^&gt; ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2053,6 +2114,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostAcquireRequestState" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostAcquireRequestState As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostAcquireRequestState : EventHandler " Usage="member this.PostAcquireRequestState : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostAcquireRequestState;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2082,6 +2144,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostAuthenticateRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostAuthenticateRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostAuthenticateRequest : EventHandler " Usage="member this.PostAuthenticateRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostAuthenticateRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2111,6 +2174,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostAuthorizeRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostAuthorizeRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostAuthorizeRequest : EventHandler " Usage="member this.PostAuthorizeRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostAuthorizeRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2140,6 +2204,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostLogRequest" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostLogRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostLogRequest : EventHandler " Usage="member this.PostLogRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostLogRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2169,6 +2234,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostMapRequestHandler" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostMapRequestHandler As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostMapRequestHandler : EventHandler " Usage="member this.PostMapRequestHandler : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostMapRequestHandler;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2196,6 +2262,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostReleaseRequestState" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostReleaseRequestState As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostReleaseRequestState : EventHandler " Usage="member this.PostReleaseRequestState : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostReleaseRequestState;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2223,6 +2290,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostRequestHandlerExecute" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostRequestHandlerExecute As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostRequestHandlerExecute : EventHandler " Usage="member this.PostRequestHandlerExecute : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostRequestHandlerExecute;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2250,6 +2318,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostResolveRequestCache" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostResolveRequestCache As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostResolveRequestCache : EventHandler " Usage="member this.PostResolveRequestCache : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostResolveRequestCache;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2277,6 +2346,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PostUpdateRequestCache" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PostUpdateRequestCache As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PostUpdateRequestCache : EventHandler " Usage="member this.PostUpdateRequestCache : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PostUpdateRequestCache;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2306,6 +2376,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PreRequestHandlerExecute" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreRequestHandlerExecute As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PreRequestHandlerExecute : EventHandler " Usage="member this.PreRequestHandlerExecute : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreRequestHandlerExecute;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2333,6 +2404,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PreSendRequestContent" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreSendRequestContent As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PreSendRequestContent : EventHandler " Usage="member this.PreSendRequestContent : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreSendRequestContent;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2363,6 +2435,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.PreSendRequestHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreSendRequestHeaders As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PreSendRequestHeaders : EventHandler " Usage="member this.PreSendRequestHeaders : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreSendRequestHeaders;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2391,6 +2464,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.RegisterModule(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterModule (moduleType As Type)" />
       <MemberSignature Language="F#" Value="static member RegisterModule : Type -&gt; unit" Usage="System.Web.HttpApplication.RegisterModule moduleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterModule(Type ^ moduleType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2414,6 +2488,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.ReleaseRequestState" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ReleaseRequestState As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ReleaseRequestState : EventHandler " Usage="member this.ReleaseRequestState : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ReleaseRequestState;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2443,6 +2518,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Request" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Request As HttpRequest" />
       <MemberSignature Language="F#" Value="member this.Request : System.Web.HttpRequest" Usage="System.Web.HttpApplication.Request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpRequest ^ Request { System::Web::HttpRequest ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2472,6 +2548,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.RequestCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RequestCompleted As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RequestCompleted : EventHandler " Usage="member this.RequestCompleted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RequestCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2498,6 +2575,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.ResolveRequestCache" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveRequestCache As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ResolveRequestCache : EventHandler " Usage="member this.ResolveRequestCache : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ResolveRequestCache;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2525,6 +2603,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Response" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As HttpResponse" />
       <MemberSignature Language="F#" Value="member this.Response : System.Web.HttpResponse" Usage="System.Web.HttpApplication.Response" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpResponse ^ Response { System::Web::HttpResponse ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2554,6 +2633,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Server" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpServerUtility" />
       <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtility" Usage="System.Web.HttpApplication.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpServerUtility ^ Server { System::Web::HttpServerUtility ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2582,6 +2662,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Session" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As HttpSessionState" />
       <MemberSignature Language="F#" Value="member this.Session : System.Web.SessionState.HttpSessionState" Usage="System.Web.HttpApplication.Session" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::HttpSessionState ^ Session { System::Web::SessionState::HttpSessionState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2611,6 +2692,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.Site" />
       <MemberSignature Language="VB.NET" Value="Public Property Site As ISite" />
       <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Web.HttpApplication.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IComponent.Site</InterfaceMember>
@@ -2641,6 +2723,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(class System.Web.HttpContext context, class System.AsyncCallback cb, object extraData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.System#Web#IHttpAsyncHandler#BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function BeginProcessRequest (context As HttpContext, cb As AsyncCallback, extraData As Object) As IAsyncResult Implements IHttpAsyncHandler.BeginProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.Web.IHttpAsyncHandler.BeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ cb, System::Object ^ extraData) = System::Web::IHttpAsyncHandler::BeginProcessRequest;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -2671,6 +2754,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpAsyncHandler.EndProcessRequest(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.System#Web#IHttpAsyncHandler#EndProcessRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Sub EndProcessRequest (result As IAsyncResult) Implements IHttpAsyncHandler.EndProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult ^ result) = System::Web::IHttpAsyncHandler::EndProcessRequest;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpAsyncHandler.EndProcessRequest(System.IAsyncResult)</InterfaceMember>
@@ -2704,6 +2788,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
       <MemberSignature Language="F#" Usage="System.Web.HttpApplication.System.Web.IHttpHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -2734,6 +2819,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpHandler.ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplication.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Sub ProcessRequest (context As HttpContext) Implements IHttpHandler.ProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpHandler.ProcessRequest(System::Web::HttpContext ^ context) = System::Web::IHttpHandler::ProcessRequest;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
@@ -2768,6 +2854,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="E:System.Web.HttpApplication.UpdateRequestCache" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UpdateRequestCache As EventHandler " />
       <MemberSignature Language="F#" Value="member this.UpdateRequestCache : EventHandler " Usage="member this.UpdateRequestCache : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ UpdateRequestCache;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2795,6 +2882,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplication.User" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As IPrincipal" />
       <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Web.HttpApplication.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

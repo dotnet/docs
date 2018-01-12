@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.InheritanceService" />
   <TypeSignature Language="VB.NET" Value="Public Class InheritanceService&#xA;Implements IDisposable, IInheritanceService" />
   <TypeSignature Language="F#" Value="type InheritanceService = class&#xA;    interface IInheritanceService&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InheritanceService : IDisposable, System::ComponentModel::Design::IInheritanceService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritanceService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.AddInheritedComponents(System.ComponentModel.IComponent,System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddInheritedComponents (component As IComponent, container As IContainer)" />
       <MemberSignature Language="F#" Value="abstract member AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit&#xA;override this.AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit" Usage="inheritanceService.AddInheritedComponents (component, container)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddInheritedComponents(System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents(System.ComponentModel.IComponent,System.ComponentModel.IContainer)</InterfaceMember>
@@ -98,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddInheritedComponents(class System.Type type, class System.ComponentModel.IComponent component, class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.AddInheritedComponents(System.Type,System.ComponentModel.IComponent,System.ComponentModel.IContainer)" />
       <MemberSignature Language="F#" Value="abstract member AddInheritedComponents : Type * System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit&#xA;override this.AddInheritedComponents : Type * System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit" Usage="inheritanceService.AddInheritedComponents (type, component, container)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddInheritedComponents(Type ^ type, System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="inheritanceService.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="inheritanceService.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInheritanceAttribute (component As IComponent) As InheritanceAttribute" />
       <MemberSignature Language="F#" Value="abstract member GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute&#xA;override this.GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute" Usage="inheritanceService.GetInheritanceAttribute component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::InheritanceAttribute ^ GetInheritanceAttribute(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)</InterfaceMember>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.InheritanceService.IgnoreInheritedMember(System.Reflection.MemberInfo,System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function IgnoreInheritedMember (member As MemberInfo, component As IComponent) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IgnoreInheritedMember : System.Reflection.MemberInfo * System.ComponentModel.IComponent -&gt; bool&#xA;override this.IgnoreInheritedMember : System.Reflection.MemberInfo * System.ComponentModel.IComponent -&gt; bool" Usage="inheritanceService.IgnoreInheritedMember (member, component)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IgnoreInheritedMember(System::Reflection::MemberInfo ^ member, System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

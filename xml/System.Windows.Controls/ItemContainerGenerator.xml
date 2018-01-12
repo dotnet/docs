@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerGenerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ItemContainerGenerator&#xA;Implements IRecyclingItemContainerGenerator, IWeakEventListener" />
   <TypeSignature Language="F#" Value="type ItemContainerGenerator = class&#xA;    interface IRecyclingItemContainerGenerator&#xA;    interface IItemContainerGenerator&#xA;    interface IWeakEventListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemContainerGenerator sealed : System::Windows::Controls::Primitives::IRecyclingItemContainerGenerator, System::Windows::IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainerFromIndex (index As Integer) As DependencyObject" />
       <MemberSignature Language="F#" Value="member this.ContainerFromIndex : int -&gt; System.Windows.DependencyObject" Usage="itemContainerGenerator.ContainerFromIndex index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ ContainerFromIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainerFromItem (item As Object) As DependencyObject" />
       <MemberSignature Language="F#" Value="member this.ContainerFromItem : obj -&gt; System.Windows.DependencyObject" Usage="itemContainerGenerator.ContainerFromItem item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ ContainerFromItem(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.GenerateBatches" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateBatches () As IDisposable" />
       <MemberSignature Language="F#" Value="member this.GenerateBatches : unit -&gt; IDisposable" Usage="itemContainerGenerator.GenerateBatches " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ GenerateBatches();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexFromContainer (container As DependencyObject) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexFromContainer : System.Windows.DependencyObject -&gt; int" Usage="itemContainerGenerator.IndexFromContainer container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromContainer(System::Windows::DependencyObject ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexFromContainer (container As DependencyObject, returnLocalIndex As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexFromContainer : System.Windows.DependencyObject * bool -&gt; int" Usage="itemContainerGenerator.IndexFromContainer (container, returnLocalIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromContainer(System::Windows::DependencyObject ^ container, bool returnLocalIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function ItemFromContainer (container As DependencyObject) As Object" />
       <MemberSignature Language="F#" Value="member this.ItemFromContainer : System.Windows.DependencyObject -&gt; obj" Usage="itemContainerGenerator.ItemFromContainer container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ItemFromContainer(System::Windows::DependencyObject ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemContainerGenerator.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ReadOnlyCollection(Of Object)" />
       <MemberSignature Language="F#" Value="member this.Items : System.Collections.ObjectModel.ReadOnlyCollection&lt;obj&gt;" Usage="System.Windows.Controls.ItemContainerGenerator.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ Items { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ItemContainerGenerator.ItemsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ItemsChanged As ItemsChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.ItemsChanged : System.Windows.Controls.Primitives.ItemsChangedEventHandler " Usage="member this.ItemsChanged : System.Windows.Controls.Primitives.ItemsChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::Primitives::ItemsChangedEventHandler ^ ItemsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemContainerGenerator.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As GeneratorStatus" />
       <MemberSignature Language="F#" Value="member this.Status : System.Windows.Controls.Primitives.GeneratorStatus" Usage="System.Windows.Controls.ItemContainerGenerator.Status" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::GeneratorStatus Status { System::Windows::Controls::Primitives::GeneratorStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ItemContainerGenerator.StatusChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event StatusChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.StatusChanged : EventHandler " Usage="member this.StatusChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StatusChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -321,6 +332,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext" />
       <MemberSignature Language="VB.NET" Value="Function GenerateNext () As DependencyObject Implements IItemContainerGenerator.GenerateNext" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::DependencyObject ^ System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext() = System::Windows::Controls::Primitives::IItemContainerGenerator::GenerateNext;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext</InterfaceMember>
@@ -344,6 +356,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([out] bool&amp; isNewlyRealized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Function GenerateNext (ByRef isNewlyRealized As Boolean) As DependencyObject Implements IItemContainerGenerator.GenerateNext" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::DependencyObject ^ System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([Runtime::InteropServices::Out] bool % isNewlyRealized) = System::Windows::Controls::Primitives::IItemContainerGenerator::GenerateNext;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)</InterfaceMember>
@@ -370,6 +383,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Windows.Controls.Primitives.GeneratorPosition System.Windows.Controls.Primitives.IItemContainerGenerator.GeneratorPositionFromIndex(int32 itemIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GeneratorPositionFromIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Function GeneratorPositionFromIndex (itemIndex As Integer) As GeneratorPosition Implements IItemContainerGenerator.GeneratorPositionFromIndex" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Controls::Primitives::GeneratorPosition System.Windows.Controls.Primitives.IItemContainerGenerator.GeneratorPositionFromIndex(int itemIndex) = System::Windows::Controls::Primitives::IItemContainerGenerator::GeneratorPositionFromIndex;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GeneratorPositionFromIndex(System.Int32)</InterfaceMember>
@@ -395,6 +409,7 @@
       <MemberSignature Language="C#" Value="System.Windows.Controls.ItemContainerGenerator IItemContainerGenerator.GetItemContainerGeneratorForPanel (System.Windows.Controls.Panel panel);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Controls.ItemContainerGenerator System.Windows.Controls.Primitives.IItemContainerGenerator.GetItemContainerGeneratorForPanel(class System.Windows.Controls.Panel panel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GetItemContainerGeneratorForPanel(System.Windows.Controls.Panel)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Controls::ItemContainerGenerator ^ System.Windows.Controls.Primitives.IItemContainerGenerator.GetItemContainerGeneratorForPanel(System::Windows::Controls::Panel ^ panel) = System::Windows::Controls::Primitives::IItemContainerGenerator::GetItemContainerGeneratorForPanel;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GetItemContainerGeneratorForPanel(System.Windows.Controls.Panel)</InterfaceMember>
@@ -421,6 +436,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Windows.Controls.Primitives.IItemContainerGenerator.IndexFromGeneratorPosition(valuetype System.Windows.Controls.Primitives.GeneratorPosition position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#IndexFromGeneratorPosition(System.Windows.Controls.Primitives.GeneratorPosition)" />
       <MemberSignature Language="VB.NET" Value="Function IndexFromGeneratorPosition (position As GeneratorPosition) As Integer Implements IItemContainerGenerator.IndexFromGeneratorPosition" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Windows.Controls.Primitives.IItemContainerGenerator.IndexFromGeneratorPosition(System::Windows::Controls::Primitives::GeneratorPosition position) = System::Windows::Controls::Primitives::IItemContainerGenerator::IndexFromGeneratorPosition;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.IndexFromGeneratorPosition(System.Windows.Controls.Primitives.GeneratorPosition)</InterfaceMember>
@@ -447,6 +463,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer(class System.Windows.DependencyObject container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#PrepareItemContainer(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Sub PrepareItemContainer (container As DependencyObject) Implements IItemContainerGenerator.PrepareItemContainer" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer(System::Windows::DependencyObject ^ container) = System::Windows::Controls::Primitives::IItemContainerGenerator::PrepareItemContainer;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer(System.Windows.DependencyObject)</InterfaceMember>
@@ -472,6 +489,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IItemContainerGenerator.Remove(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#Remove(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (position As GeneratorPosition, count As Integer) Implements IItemContainerGenerator.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IItemContainerGenerator.Remove(System::Windows::Controls::Primitives::GeneratorPosition position, int count) = System::Windows::Controls::Primitives::IItemContainerGenerator::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.Remove(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)</InterfaceMember>
@@ -499,6 +517,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IItemContainerGenerator.RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#RemoveAll" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveAll () Implements IItemContainerGenerator.RemoveAll" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IItemContainerGenerator.RemoveAll() = System::Windows::Controls::Primitives::IItemContainerGenerator::RemoveAll;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.RemoveAll</InterfaceMember>
@@ -530,6 +549,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IDisposable System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, valuetype System.Windows.Controls.Primitives.GeneratorDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection)" />
       <MemberSignature Language="VB.NET" Value="Function StartAt (position As GeneratorPosition, direction As GeneratorDirection) As IDisposable Implements IItemContainerGenerator.StartAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IDisposable ^ System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System::Windows::Controls::Primitives::GeneratorPosition position, System::Windows::Controls::Primitives::GeneratorDirection direction) = System::Windows::Controls::Primitives::IItemContainerGenerator::StartAt;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection)</InterfaceMember>
@@ -558,6 +578,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IDisposable System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, valuetype System.Windows.Controls.Primitives.GeneratorDirection direction, bool allowStartAtRealizedItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Function StartAt (position As GeneratorPosition, direction As GeneratorDirection, allowStartAtRealizedItem As Boolean) As IDisposable Implements IItemContainerGenerator.StartAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IDisposable ^ System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System::Windows::Controls::Primitives::GeneratorPosition position, System::Windows::Controls::Primitives::GeneratorDirection direction, bool allowStartAtRealizedItem) = System::Windows::Controls::Primitives::IItemContainerGenerator::StartAt;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection,System.Boolean)</InterfaceMember>
@@ -588,6 +609,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator.Recycle(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IRecyclingItemContainerGenerator#Recycle(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub Recycle (position As GeneratorPosition, count As Integer) Implements IRecyclingItemContainerGenerator.Recycle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator.Recycle(System::Windows::Controls::Primitives::GeneratorPosition position, int count) = System::Windows::Controls::Primitives::IRecyclingItemContainerGenerator::Recycle;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator.Recycle(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)</InterfaceMember>
@@ -615,6 +637,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.IWeakEventListener.ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#IWeakEventListener#ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean Implements IWeakEventListener.ReceiveWeakEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.IWeakEventListener.ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e) = System::Windows::IWeakEventListener::ReceiveWeakEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)</InterfaceMember>

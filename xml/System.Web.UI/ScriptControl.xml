@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptControl&#xA;Inherits WebControl&#xA;Implements IScriptControl" />
   <TypeSignature Language="F#" Value="type ScriptControl = class&#xA;    inherit WebControl&#xA;    interface IScriptControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptControl abstract : System::Web::UI::WebControls::WebControl, System::Web::UI::IScriptControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ScriptControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.GetScriptDescriptors" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor)" />
       <MemberSignature Language="F#" Value="abstract member GetScriptDescriptors : unit -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;" Usage="scriptControl.GetScriptDescriptors " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptDescriptors</InterfaceMember>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
       <MemberSignature Language="F#" Value="abstract member GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;" Usage="scriptControl.GetScriptReferences " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptReferences</InterfaceMember>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="scriptControl.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="scriptControl.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptDescriptor&gt; System.Web.UI.IScriptControl.GetScriptDescriptors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.System#Web#UI#IScriptControl#GetScriptDescriptors" />
       <MemberSignature Language="VB.NET" Value="Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor) Implements IScriptControl.GetScriptDescriptors" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ System.Web.UI.IScriptControl.GetScriptDescriptors() = System::Web::UI::IScriptControl::GetScriptDescriptors;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptDescriptors</InterfaceMember>
@@ -178,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptReference&gt; System.Web.UI.IScriptControl.GetScriptReferences() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.System#Web#UI#IScriptControl#GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Function GetScriptReferences () As IEnumerable(Of ScriptReference) Implements IScriptControl.GetScriptReferences" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ System.Web.UI.IScriptControl.GetScriptReferences() = System::Web::UI::IScriptControl::GetScriptReferences;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptReferences</InterfaceMember>

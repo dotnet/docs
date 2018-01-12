@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ProgressBar" />
   <TypeSignature Language="VB.NET" Value="Public Class ProgressBar&#xA;Inherits RangeBase" />
   <TypeSignature Language="F#" Value="type ProgressBar = class&#xA;    inherit RangeBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProgressBar : System::Windows::Controls::Primitives::RangeBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProgressBar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ProgressBar.IsIndeterminate" />
       <MemberSignature Language="VB.NET" Value="Public Property IsIndeterminate As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIndeterminate : bool with get, set" Usage="System.Windows.Controls.ProgressBar.IsIndeterminate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIndeterminate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ProgressBar.IsIndeterminateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsIndeterminateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsIndeterminateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ProgressBar.IsIndeterminateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsIndeterminateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="progressBar.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="progressBar.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnMaximumChanged(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMaximumChanged (oldMaximum As Double, newMaximum As Double)" />
       <MemberSignature Language="F#" Value="override this.OnMaximumChanged : double * double -&gt; unit" Usage="progressBar.OnMaximumChanged (oldMaximum, newMaximum)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMaximumChanged(double oldMaximum, double newMaximum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnMinimumChanged(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMinimumChanged (oldMinimum As Double, newMinimum As Double)" />
       <MemberSignature Language="F#" Value="override this.OnMinimumChanged : double * double -&gt; unit" Usage="progressBar.OnMinimumChanged (oldMinimum, newMinimum)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMinimumChanged(double oldMinimum, double newMinimum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ProgressBar.OnValueChanged(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValueChanged (oldValue As Double, newValue As Double)" />
       <MemberSignature Language="F#" Value="override this.OnValueChanged : double * double -&gt; unit" Usage="progressBar.OnValueChanged (oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValueChanged(double oldValue, double newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ProgressBar.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
       <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Controls.Orientation with get, set" Usage="System.Windows.Controls.ProgressBar.Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Orientation Orientation { System::Windows::Controls::Orientation get(); void set(System::Windows::Controls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ProgressBar.OrientationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OrientationProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable OrientationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ProgressBar.OrientationProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OrientationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

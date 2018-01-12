@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceHost" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceHost&#xA;Inherits WebServiceHost" />
   <TypeSignature Language="F#" Value="type DataServiceHost = class&#xA;    inherit WebServiceHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceHost : System::ServiceModel::Web::WebServiceHost" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type, baseAddresses As Uri())" />
       <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceHost : Type * Uri[] -&gt; System.Data.Services.DataServiceHost" Usage="new System.Data.Services.DataServiceHost (serviceType, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

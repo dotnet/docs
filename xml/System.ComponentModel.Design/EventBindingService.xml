@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.EventBindingService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EventBindingService&#xA;Implements IEventBindingService" />
   <TypeSignature Language="F#" Value="type EventBindingService = class&#xA;    interface IEventBindingService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventBindingService abstract : System::ComponentModel::Design::IEventBindingService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (provider As IServiceProvider)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.EventBindingService : IServiceProvider -&gt; System.ComponentModel.Design.EventBindingService" Usage="new System.ComponentModel.Design.EventBindingService provider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventBindingService(IServiceProvider ^ provider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateUniqueMethodName (component As IComponent, e As EventDescriptor) As String" />
       <MemberSignature Language="F#" Value="abstract member CreateUniqueMethodName : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor -&gt; string" Usage="eventBindingService.CreateUniqueMethodName (component, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ CreateUniqueMethodName(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)</InterfaceMember>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.FreeMethod(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FreeMethod (component As IComponent, e As EventDescriptor, methodName As String)" />
       <MemberSignature Language="F#" Value="abstract member FreeMethod : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor * string -&gt; unit&#xA;override this.FreeMethod : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor * string -&gt; unit" Usage="eventBindingService.FreeMethod (component, e, methodName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FreeMethod(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e, System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetCompatibleMethods (e As EventDescriptor) As ICollection" />
       <MemberSignature Language="F#" Value="abstract member GetCompatibleMethods : System.ComponentModel.EventDescriptor -&gt; System.Collections.ICollection" Usage="eventBindingService.GetCompatibleMethods e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::ICollection ^ GetCompatibleMethods(System::ComponentModel::EventDescriptor ^ e);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)</InterfaceMember>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="eventBindingService.GetService serviceType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ShowCode" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ShowCode () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShowCode : unit -&gt; bool" Usage="eventBindingService.ShowCode " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ShowCode();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode</InterfaceMember>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ShowCode(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ShowCode (lineNumber As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShowCode : int -&gt; bool" Usage="eventBindingService.ShowCode lineNumber" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ShowCode(int lineNumber);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.Int32)</InterfaceMember>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ShowCode (component As IComponent, e As EventDescriptor, methodName As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShowCode : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor * string -&gt; bool" Usage="eventBindingService.ShowCode (component, e, methodName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ShowCode(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e, System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function CreateUniqueMethodName (component As IComponent, e As EventDescriptor) As String Implements IEventBindingService.CreateUniqueMethodName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::CreateUniqueMethodName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)</InterfaceMember>
@@ -351,6 +361,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ICollection System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(class System.ComponentModel.EventDescriptor e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetCompatibleMethods(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function GetCompatibleMethods (e As EventDescriptor) As ICollection Implements IEventBindingService.GetCompatibleMethods" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::GetCompatibleMethods;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)</InterfaceMember>
@@ -388,6 +399,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor System.ComponentModel.Design.IEventBindingService.GetEvent(class System.ComponentModel.PropertyDescriptor property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetEvent(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function GetEvent (property As PropertyDescriptor) As EventDescriptor Implements IEventBindingService.GetEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.Design.IEventBindingService.GetEvent(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::Design::IEventBindingService::GetEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetEvent(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
@@ -414,6 +426,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.Design.IEventBindingService.GetEventProperties(class System.ComponentModel.EventDescriptorCollection events) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetEventProperties(System.ComponentModel.EventDescriptorCollection)" />
       <MemberSignature Language="VB.NET" Value="Function GetEventProperties (events As EventDescriptorCollection) As PropertyDescriptorCollection Implements IEventBindingService.GetEventProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.Design.IEventBindingService.GetEventProperties(System::ComponentModel::EventDescriptorCollection ^ events) = System::ComponentModel::Design::IEventBindingService::GetEventProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetEventProperties(System.ComponentModel.EventDescriptorCollection)</InterfaceMember>
@@ -442,6 +455,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.Design.IEventBindingService.GetEventProperty(class System.ComponentModel.EventDescriptor e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetEventProperty(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function GetEventProperty (e As EventDescriptor) As PropertyDescriptor Implements IEventBindingService.GetEventProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.Design.IEventBindingService.GetEventProperty(System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::GetEventProperty;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetEventProperty(System.ComponentModel.EventDescriptor)</InterfaceMember>
@@ -479,6 +493,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.IEventBindingService.ShowCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode" />
       <MemberSignature Language="VB.NET" Value="Function ShowCode () As Boolean Implements IEventBindingService.ShowCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.IEventBindingService.ShowCode() = System::ComponentModel::Design::IEventBindingService::ShowCode;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode</InterfaceMember>
@@ -503,6 +518,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.IEventBindingService.ShowCode(int32 lineNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Function ShowCode (lineNumber As Integer) As Boolean Implements IEventBindingService.ShowCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.IEventBindingService.ShowCode(int lineNumber) = System::ComponentModel::Design::IEventBindingService::ShowCode;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.Int32)</InterfaceMember>
@@ -530,6 +546,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.IEventBindingService.ShowCode(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function ShowCode (component As IComponent, e As EventDescriptor) As Boolean Implements IEventBindingService.ShowCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.IEventBindingService.ShowCode(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::ShowCode;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)</InterfaceMember>
@@ -562,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.UseMethod(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UseMethod (component As IComponent, e As EventDescriptor, methodName As String)" />
       <MemberSignature Language="F#" Value="abstract member UseMethod : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor * string -&gt; unit&#xA;override this.UseMethod : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor * string -&gt; unit" Usage="eventBindingService.UseMethod (component, e, methodName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UseMethod(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e, System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -599,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ValidateMethodName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateMethodName (methodName As String)" />
       <MemberSignature Language="F#" Value="abstract member ValidateMethodName : string -&gt; unit&#xA;override this.ValidateMethodName : string -&gt; unit" Usage="eventBindingService.ValidateMethodName methodName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateMethodName(System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

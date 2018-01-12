@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRequestValidationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRequestValidationException&#xA;Inherits HttpException" />
   <TypeSignature Language="F#" Value="type HttpRequestValidationException = class&#xA;    inherit HttpException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestValidationException sealed : System::Web::HttpException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestValidationException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestValidationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Web.HttpRequestValidationException : string -&gt; System.Web.HttpRequestValidationException" Usage="new System.Web.HttpRequestValidationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestValidationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestValidationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Web.HttpRequestValidationException : string * Exception -&gt; System.Web.HttpRequestValidationException" Usage="new System.Web.HttpRequestValidationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestValidationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

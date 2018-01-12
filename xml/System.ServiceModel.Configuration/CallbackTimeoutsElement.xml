@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CallbackTimeoutsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallbackTimeoutsElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="F#" Value="type CallbackTimeoutsElement = class&#xA;    inherit BehaviorExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallbackTimeoutsElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CallbackTimeoutsElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CallbackTimeoutsElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CallbackTimeoutsElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.CallbackTimeoutsElement.BehaviorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CallbackTimeoutsElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="callbackTimeoutsElement.CopyFrom from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CallbackTimeoutsElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="callbackTimeoutsElement.CreateBehavior " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CallbackTimeoutsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.CallbackTimeoutsElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CallbackTimeoutsElement.TransactionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.TransactionTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.CallbackTimeoutsElement.TransactionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TransactionTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineException" />
   <TypeSignature Language="VB.NET" Value="Public Class CmdLineException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type CmdLineException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CmdLineException : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmdLineException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.CmdLineException : string -&gt; Microsoft.JScript.CmdLineException" Usage="new Microsoft.JScript.CmdLineException m" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmdLineException(System::String ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.#ctor(Microsoft.JScript.CmdLineError,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As CmdLineError, culture As CultureInfo)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.CmdLineException : Microsoft.JScript.CmdLineError * System.Globalization.CultureInfo -&gt; Microsoft.JScript.CmdLineException" Usage="new Microsoft.JScript.CmdLineException (errorCode, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmdLineException(Microsoft::JScript::CmdLineError errorCode, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (s As SerializationInfo, c As StreamingContext)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.CmdLineException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.JScript.CmdLineException" Usage="new Microsoft.JScript.CmdLineException (s, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CmdLineException(System::Runtime::Serialization::SerializationInfo ^ s, System::Runtime::Serialization::StreamingContext c);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.CmdLineException : string * Exception -&gt; Microsoft.JScript.CmdLineException" Usage="new Microsoft.JScript.CmdLineException (m, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmdLineException(System::String ^ m, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.#ctor(Microsoft.JScript.CmdLineError,System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As CmdLineError, context As String, culture As CultureInfo)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.CmdLineException : Microsoft.JScript.CmdLineError * string * System.Globalization.CultureInfo -&gt; Microsoft.JScript.CmdLineException" Usage="new Microsoft.JScript.CmdLineException (errorCode, context, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CmdLineException(Microsoft::JScript::CmdLineError errorCode, System::String ^ context, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (s As SerializationInfo, c As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="cmdLineException.GetObjectData (s, c)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ s, System::Runtime::Serialization::StreamingContext c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -212,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.CmdLineException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.JScript.CmdLineException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineException.ResourceKey(Microsoft.JScript.CmdLineError)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResourceKey (errorCode As CmdLineError) As String" />
       <MemberSignature Language="F#" Value="member this.ResourceKey : Microsoft.JScript.CmdLineError -&gt; string" Usage="cmdLineException.ResourceKey errorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResourceKey(Microsoft::JScript::CmdLineError errorCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

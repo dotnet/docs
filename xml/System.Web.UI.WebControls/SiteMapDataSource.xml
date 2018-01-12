@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapDataSource&#xA;Inherits HierarchicalDataSourceControl&#xA;Implements IDataSource, IListSource" />
   <TypeSignature Language="F#" Value="type SiteMapDataSource = class&#xA;    inherit HierarchicalDataSourceControl&#xA;    interface IDataSource&#xA;    interface IListSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SiteMapDataSource : System::Web::UI::HierarchicalDataSourceControl, System::ComponentModel::IListSource, System::Web::UI::IDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -125,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContainsListCollection As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContainsListCollection : bool" Usage="System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
@@ -181,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHierarchicalView (viewPath As String) As HierarchicalDataSourceView" />
       <MemberSignature Language="F#" Value="override this.GetHierarchicalView : string -&gt; System.Web.UI.HierarchicalDataSourceView" Usage="siteMapDataSource.GetHierarchicalView viewPath" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HierarchicalDataSourceView ^ GetHierarchicalView(System::String ^ viewPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetList" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetList () As IList" />
       <MemberSignature Language="F#" Value="abstract member GetList : unit -&gt; System.Collections.IList&#xA;override this.GetList : unit -&gt; System.Collections.IList" Usage="siteMapDataSource.GetList " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IList ^ GetList();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetView (viewName As String) As DataSourceView" />
       <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.DataSourceView&#xA;override this.GetView : string -&gt; System.Web.UI.DataSourceView" Usage="siteMapDataSource.GetView viewName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetView(System.String)</InterfaceMember>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetViewNames () As ICollection" />
       <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; System.Collections.ICollection&#xA;override this.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="siteMapDataSource.GetViewNames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ICollection ^ GetViewNames();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetViewNames</InterfaceMember>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Property Provider As SiteMapProvider" />
       <MemberSignature Language="F#" Value="member this.Provider : System.Web.SiteMapProvider with get, set" Usage="System.Web.UI.WebControls.SiteMapDataSource.Provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SiteMapProvider ^ Provider { System::Web::SiteMapProvider ^ get(); void set(System::Web::SiteMapProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowStartingNode As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowStartingNode : bool with get, set" Usage="System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowStartingNode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -392,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SiteMapProvider As String" />
       <MemberSignature Language="F#" Value="member this.SiteMapProvider : string with get, set" Usage="System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SiteMapProvider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -452,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartFromCurrentNode As Boolean" />
       <MemberSignature Language="F#" Value="member this.StartFromCurrentNode : bool with get, set" Usage="System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool StartFromCurrentNode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +499,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartingNodeOffset As Integer" />
       <MemberSignature Language="F#" Value="member this.StartingNodeOffset : int with get, set" Usage="System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int StartingNodeOffset { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartingNodeUrl As String" />
       <MemberSignature Language="F#" Value="member this.StartingNodeUrl : string with get, set" Usage="System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StartingNodeUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -606,6 +619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.SiteMapDataSource.System.ComponentModel.IListSource.ContainsListCollection" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
@@ -637,6 +651,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.System#ComponentModel#IListSource#GetList" />
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
@@ -689,6 +704,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.DataSourceView System.Web.UI.IDataSource.GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.System#Web#UI#IDataSource#GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function GetView (viewName As String) As DataSourceView Implements IDataSource.GetView" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Web::UI::DataSourceView ^ System.Web.UI.IDataSource.GetView(System::String ^ viewName) = System::Web::UI::IDataSource::GetView;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetView(System.String)</InterfaceMember>
@@ -725,6 +741,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ICollection System.Web.UI.IDataSource.GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.System#Web#UI#IDataSource#GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Function GetViewNames () As ICollection Implements IDataSource.GetViewNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.Web.UI.IDataSource.GetViewNames() = System::Web::UI::IDataSource::GetViewNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetViewNames</InterfaceMember>

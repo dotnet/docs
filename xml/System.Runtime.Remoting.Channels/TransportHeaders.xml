@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.TransportHeaders" />
   <TypeSignature Language="VB.NET" Value="Public Class TransportHeaders&#xA;Implements ITransportHeaders" />
   <TypeSignature Language="F#" Value="type TransportHeaders = class&#xA;    interface ITransportHeaders" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransportHeaders : System::Runtime::Remoting::Channels::ITransportHeaders" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.TransportHeaders.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportHeaders();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.TransportHeaders.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="transportHeaders.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.ITransportHeaders.GetEnumerator</InterfaceMember>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.TransportHeaders.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Runtime.Remoting.Channels.TransportHeaders.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.ITransportHeaders.Item(System.Object)</InterfaceMember>

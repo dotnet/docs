@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpContextBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSHttpContextBindingElement&#xA;Inherits WSHttpBindingElement" />
   <TypeSignature Language="F#" Value="type WSHttpContextBindingElement = class&#xA;    inherit WSHttpBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSHttpContextBindingElement : System::ServiceModel::Configuration::WSHttpBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpContextBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpContextBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpContextBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WSHttpContextBindingElement : string -&gt; System.ServiceModel.Configuration.WSHttpContextBindingElement" Usage="new System.ServiceModel.Configuration.WSHttpContextBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpContextBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpContextBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.WSHttpContextBindingElement.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpContextBindingElement.ClientCallbackAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCallbackAddress As Uri" />
       <MemberSignature Language="F#" Value="member this.ClientCallbackAddress : Uri with get, set" Usage="System.ServiceModel.Configuration.WSHttpContextBindingElement.ClientCallbackAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ClientCallbackAddress { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpContextBindingElement.ContextManagementEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextManagementEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContextManagementEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.WSHttpContextBindingElement.ContextManagementEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextManagementEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpContextBindingElement.ContextProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="F#" Value="member this.ContextProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Configuration.WSHttpContextBindingElement.ContextProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ContextProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpContextBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="wSHttpContextBindingElement.InitializeFrom binding" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -190,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpContextBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="wSHttpContextBindingElement.OnApplyConfiguration binding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpContextBindingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WSHttpContextBindingElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.DriveNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class DriveNotFoundException&#xA;Inherits IOException" />
   <TypeSignature Language="F#" Value="type DriveNotFoundException = class&#xA;    inherit IOException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DriveNotFoundException : System::IO::IOException" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.DriveNotFoundException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveNotFoundException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DriveNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.IO.DriveNotFoundException : string -&gt; System.IO.DriveNotFoundException" Usage="new System.IO.DriveNotFoundException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveNotFoundException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DriveNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.IO.DriveNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.DriveNotFoundException" Usage="new System.IO.DriveNotFoundException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DriveNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.DriveNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.IO.DriveNotFoundException : string * Exception -&gt; System.IO.DriveNotFoundException" Usage="new System.IO.DriveNotFoundException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveNotFoundException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.DriveInfo</AssemblyName>

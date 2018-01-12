@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class DataContractJsonSerializerSettings" />
   <TypeSignature Language="F#" Value="type DataContractJsonSerializerSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractJsonSerializerSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializerSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DataContractSurrogate" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
       <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DataContractSurrogate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DateTimeFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateTimeFormat As DateTimeFormat" />
       <MemberSignature Language="F#" Value="member this.DateTimeFormat : System.Runtime.Serialization.DateTimeFormat with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DateTimeFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::DateTimeFormat ^ DateTimeFormat { System::Runtime::Serialization::DateTimeFormat ^ get(); void set(System::Runtime::Serialization::DateTimeFormat ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.EmitTypeInformation" />
       <MemberSignature Language="VB.NET" Value="Public Property EmitTypeInformation As EmitTypeInformation" />
       <MemberSignature Language="F#" Value="member this.EmitTypeInformation : System.Runtime.Serialization.EmitTypeInformation with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.EmitTypeInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::EmitTypeInformation EmitTypeInformation { System::Runtime::Serialization::EmitTypeInformation get(); void set(System::Runtime::Serialization::EmitTypeInformation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.IgnoreExtensionDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
       <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.IgnoreExtensionDataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.KnownTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property KnownTypes As IEnumerable(Of Type)" />
       <MemberSignature Language="F#" Value="member this.KnownTypes : seq&lt;Type&gt; with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.KnownTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ KnownTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); void set(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.MaxItemsInObjectGraph" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.MaxItemsInObjectGraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.RootName" />
       <MemberSignature Language="VB.NET" Value="Public Property RootName As String" />
       <MemberSignature Language="F#" Value="member this.RootName : string with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.RootName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.SerializeReadOnlyTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property SerializeReadOnlyTypes As Boolean" />
       <MemberSignature Language="F#" Value="member this.SerializeReadOnlyTypes : bool with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.SerializeReadOnlyTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeReadOnlyTypes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.UseSimpleDictionaryFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property UseSimpleDictionaryFormat As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseSimpleDictionaryFormat : bool with get, set" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.UseSimpleDictionaryFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSimpleDictionaryFormat { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>

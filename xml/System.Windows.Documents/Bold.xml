@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Bold" />
   <TypeSignature Language="VB.NET" Value="Public Class Bold&#xA;Inherits Span" />
   <TypeSignature Language="F#" Value="type Bold = class&#xA;    inherit Span" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Bold : System::Windows::Documents::Span" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Bold.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Bold();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Bold.#ctor(System.Windows.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline)" />
       <MemberSignature Language="F#" Value="new System.Windows.Documents.Bold : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Bold" Usage="new System.Windows.Documents.Bold childInline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Bold(System::Windows::Documents::Inline ^ childInline);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Bold.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline, insertionPosition As TextPointer)" />
       <MemberSignature Language="F#" Value="new System.Windows.Documents.Bold : System.Windows.Documents.Inline * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Bold" Usage="new System.Windows.Documents.Bold (childInline, insertionPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Bold(System::Windows::Documents::Inline ^ childInline, System::Windows::Documents::TextPointer ^ insertionPosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Bold.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As TextPointer, end As TextPointer)" />
       <MemberSignature Language="F#" Value="new System.Windows.Documents.Bold : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Bold" Usage="new System.Windows.Documents.Bold (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Bold(System::Windows::Documents::TextPointer ^ start, System::Windows::Documents::TextPointer ^ end);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

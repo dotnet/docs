@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.WorkItem" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkItem" />
   <TypeSignature Language="F#" Value="type WorkItem = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.WorkItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.WorkItem.Post(System.Web.Util.WorkItemCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Post (callback As WorkItemCallback)" />
       <MemberSignature Language="F#" Value="static member Post : System.Web.Util.WorkItemCallback -&gt; unit" Usage="System.Web.Util.WorkItem.Post callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Post(System::Web::Util::WorkItemCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

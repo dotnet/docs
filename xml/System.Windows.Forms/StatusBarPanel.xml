@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class StatusBarPanel&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type StatusBarPanel = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatusBarPanel : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanel.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusBarPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As HorizontalAlignment" />
       <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Forms.HorizontalAlignment with get, set" Usage="System.Windows.Forms.StatusBarPanel.Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HorizontalAlignment Alignment { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As StatusBarPanelAutoSize" />
       <MemberSignature Language="F#" Value="member this.AutoSize : System.Windows.Forms.StatusBarPanelAutoSize with get, set" Usage="System.Windows.Forms.StatusBarPanel.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBarPanelAutoSize AutoSize { System::Windows::Forms::StatusBarPanelAutoSize get(); void set(System::Windows::Forms::StatusBarPanelAutoSize value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanel.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="statusBarPanel.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As StatusBarPanelBorderStyle" />
       <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.StatusBarPanelBorderStyle with get, set" Usage="System.Windows.Forms.StatusBarPanel.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBarPanelBorderStyle BorderStyle { System::Windows::Forms::StatusBarPanelBorderStyle get(); void set(System::Windows::Forms::StatusBarPanelBorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanel.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="statusBarPanel.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -322,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanel.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="statusBarPanel.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -353,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
       <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.StatusBarPanel.Icon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -393,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.MinWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MinWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.MinWidth : int with get, set" Usage="System.Windows.Forms.StatusBarPanel.MinWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.StatusBarPanel.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -466,6 +477,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As StatusBar" />
       <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.StatusBar" Usage="System.Windows.Forms.StatusBarPanel.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBar ^ Parent { System::Windows::Forms::StatusBar ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -500,6 +512,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As StatusBarPanelStyle" />
       <MemberSignature Language="F#" Value="member this.Style : System.Windows.Forms.StatusBarPanelStyle with get, set" Usage="System.Windows.Forms.StatusBarPanel.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBarPanelStyle Style { System::Windows::Forms::StatusBarPanelStyle get(); void set(System::Windows::Forms::StatusBarPanelStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -543,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.StatusBarPanel.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -577,6 +591,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.StatusBarPanel.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -622,6 +637,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.ToolTipText" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
       <MemberSignature Language="F#" Value="member this.ToolTipText : string with get, set" Usage="System.Windows.Forms.StatusBarPanel.ToolTipText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -669,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBarPanel.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="statusBarPanel.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -690,6 +707,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBarPanel.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Windows.Forms.StatusBarPanel.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

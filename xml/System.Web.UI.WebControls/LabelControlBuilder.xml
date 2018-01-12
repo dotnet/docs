@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LabelControlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class LabelControlBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="F#" Value="type LabelControlBuilder = class&#xA;    inherit ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LabelControlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LabelControlBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LabelControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LabelControlBuilder.AllowWhitespaceLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
       <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="labelControlBuilder.AllowWhitespaceLiterals " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

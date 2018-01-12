@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CompleteWizardStep" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompleteWizardStep&#xA;Inherits TemplatedWizardStep" />
   <TypeSignature Language="F#" Value="type CompleteWizardStep = class&#xA;    inherit TemplatedWizardStep" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompleteWizardStep sealed : System::Web::UI::WebControls::TemplatedWizardStep" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompleteWizardStep.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompleteWizardStep();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompleteWizardStep.StepType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property StepType As WizardStepType" />
       <MemberSignature Language="F#" Value="member this.StepType : System.Web.UI.WebControls.WizardStepType with get, set" Usage="System.Web.UI.WebControls.CompleteWizardStep.StepType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WizardStepType StepType { System::Web::UI::WebControls::WizardStepType get(); void set(System::Web::UI::WebControls::WizardStepType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompleteWizardStep.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.CompleteWizardStep.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

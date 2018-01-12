@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonCheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonCheckBox&#xA;Inherits CheckBox" />
   <TypeSignature Language="F#" Value="type RibbonCheckBox = class&#xA;    inherit CheckBox" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonCheckBox : System::Windows::Controls::CheckBox" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonCheckBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -66,6 +68,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.CanAddToQuickAccessToolBarDirectly" />
       <MemberSignature Language="VB.NET" Value="Public Property CanAddToQuickAccessToolBarDirectly As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanAddToQuickAccessToolBarDirectly : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.CanAddToQuickAccessToolBarDirectly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddToQuickAccessToolBarDirectly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -87,6 +90,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanAddToQuickAccessToolBarDirectlyProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CanAddToQuickAccessToolBarDirectlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.CanAddToQuickAccessToolBarDirectlyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanAddToQuickAccessToolBarDirectlyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -106,6 +110,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBackground As Brush" />
       <MemberSignature Language="F#" Value="member this.CheckedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -140,6 +145,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CheckedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -159,6 +165,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckedBorderBrush As Brush" />
       <MemberSignature Language="F#" Value="member this.CheckedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ CheckedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -193,6 +200,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CheckedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.CheckedBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CheckedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -212,6 +220,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlSizeDefinition As RibbonControlSizeDefinition" />
       <MemberSignature Language="F#" Value="member this.ControlSizeDefinition : System.Windows.Controls.Ribbon.RibbonControlSizeDefinition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ControlSizeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ ControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -247,6 +256,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ControlSizeDefinitionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -266,6 +276,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property FocusedBackground As Brush" />
       <MemberSignature Language="F#" Value="member this.FocusedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -300,6 +311,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FocusedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -319,6 +331,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property FocusedBorderBrush As Brush" />
       <MemberSignature Language="F#" Value="member this.FocusedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -353,6 +366,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FocusedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.FocusedBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -372,6 +386,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.IsInControlGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInControlGroup As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInControlGroup : bool" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.IsInControlGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInControlGroup { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -407,6 +422,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.IsInControlGroupProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInControlGroupProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsInControlGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.IsInControlGroupProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInControlGroupProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -426,6 +442,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.IsInQuickAccessToolBar" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInQuickAccessToolBar As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInQuickAccessToolBar : bool" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.IsInQuickAccessToolBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInQuickAccessToolBar { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -461,6 +478,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsInQuickAccessToolBarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.IsInQuickAccessToolBarProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -480,6 +498,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.KeyTip" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTip As String" />
       <MemberSignature Language="F#" Value="member this.KeyTip : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.KeyTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -517,6 +536,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.KeyTipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTipProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable KeyTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.KeyTipProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -536,6 +556,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -578,6 +599,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.LabelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LabelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.LabelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -597,6 +619,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.LargeImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property LargeImageSource As ImageSource" />
       <MemberSignature Language="F#" Value="member this.LargeImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.LargeImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ LargeImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -639,6 +662,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.LargeImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LargeImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LargeImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.LargeImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LargeImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -658,6 +682,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackground As Brush" />
       <MemberSignature Language="F#" Value="member this.MouseOverBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -692,6 +717,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MouseOverBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -711,6 +737,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseOverBorderBrush As Brush" />
       <MemberSignature Language="F#" Value="member this.MouseOverBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -745,6 +772,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MouseOverBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.MouseOverBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -764,6 +792,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit&#xA;override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonCheckBox.OnActivatingKeyTip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -787,6 +816,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonCheckBox.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -814,6 +844,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnClick" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick ()" />
       <MemberSignature Language="F#" Value="override this.OnClick : unit -&gt; unit" Usage="ribbonCheckBox.OnClick " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -841,6 +872,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonCheckBox.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -862,6 +894,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="ribbonCheckBox.OnGotKeyboardFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -894,6 +927,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit&#xA;override this.OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit" Usage="ribbonCheckBox.OnKeyTipAccessed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -917,6 +951,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLostKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="ribbonCheckBox.OnLostKeyboardFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -949,6 +984,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonCheckBox.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="ribbonCheckBox.OnMouseLeftButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -981,6 +1017,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBackground" />
       <MemberSignature Language="VB.NET" Value="Public Property PressedBackground As Brush" />
       <MemberSignature Language="F#" Value="member this.PressedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ PressedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1015,6 +1052,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PressedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1034,6 +1072,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property PressedBorderBrush As Brush" />
       <MemberSignature Language="F#" Value="member this.PressedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ PressedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1054,6 +1093,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PressedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.PressedBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1073,6 +1113,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarControlSizeDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarControlSizeDefinition As RibbonControlSizeDefinition" />
       <MemberSignature Language="F#" Value="member this.QuickAccessToolBarControlSizeDefinition : System.Windows.Controls.Ribbon.RibbonControlSizeDefinition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarControlSizeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ QuickAccessToolBarControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1109,6 +1150,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarControlSizeDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarControlSizeDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarControlSizeDefinitionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarControlSizeDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1128,6 +1170,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarId" />
       <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarId As Object" />
       <MemberSignature Language="F#" Value="member this.QuickAccessToolBarId : obj with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ QuickAccessToolBarId { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1148,6 +1191,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarIdProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarIdProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.QuickAccessToolBarIdProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1167,6 +1211,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.Ribbon" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
       <MemberSignature Language="F#" Value="member this.Ribbon : System.Windows.Controls.Ribbon.Ribbon" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.Ribbon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::Ribbon ^ Ribbon { System::Windows::Controls::Ribbon::Ribbon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1202,6 +1247,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.RibbonProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RibbonProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.RibbonProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1221,6 +1267,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ShowKeyboardCues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowKeyboardCues As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowKeyboardCues : bool" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ShowKeyboardCues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowKeyboardCues { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1256,6 +1303,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ShowKeyboardCuesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowKeyboardCuesProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ShowKeyboardCuesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ShowKeyboardCuesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowKeyboardCuesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1275,6 +1323,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.SmallImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property SmallImageSource As ImageSource" />
       <MemberSignature Language="F#" Value="member this.SmallImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.SmallImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ SmallImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1317,6 +1366,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.SmallImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmallImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SmallImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.SmallImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SmallImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1336,6 +1386,7 @@ Ribbon check box controls that are selected
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipDescription As String" />
       <MemberSignature Language="F#" Value="member this.ToolTipDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1384,6 +1435,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ToolTipDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipDescriptionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1403,6 +1455,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterDescription As String" />
       <MemberSignature Language="F#" Value="member this.ToolTipFooterDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1451,6 +1504,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterDescriptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterDescriptionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1470,6 +1524,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterImageSource As ImageSource" />
       <MemberSignature Language="F#" Value="member this.ToolTipFooterImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipFooterImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1518,6 +1573,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1537,6 +1593,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterTitle As String" />
       <MemberSignature Language="F#" Value="member this.ToolTipFooterTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1585,6 +1642,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterTitleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipFooterTitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1604,6 +1662,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipImageSource" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipImageSource As ImageSource" />
       <MemberSignature Language="F#" Value="member this.ToolTipImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1652,6 +1711,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipImageSourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipImageSourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ToolTipImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1671,6 +1731,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTipTitle As String" />
       <MemberSignature Language="F#" Value="member this.ToolTipTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1718,6 +1779,7 @@ Enhanced ToolTip
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipTitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipTitleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ToolTipTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonCheckBox.ToolTipTitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

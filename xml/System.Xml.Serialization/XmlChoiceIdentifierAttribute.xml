@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlChoiceIdentifierAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlChoiceIdentifierAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type XmlChoiceIdentifierAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlChoiceIdentifierAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -157,6 +158,7 @@ public enum ItemsChoiceType {
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlChoiceIdentifierAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlChoiceIdentifierAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -195,6 +197,7 @@ public enum ItemsChoiceType {
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlChoiceIdentifierAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlChoiceIdentifierAttribute : string -&gt; System.Xml.Serialization.XmlChoiceIdentifierAttribute" Usage="new System.Xml.Serialization.XmlChoiceIdentifierAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlChoiceIdentifierAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -225,6 +228,7 @@ public enum ItemsChoiceType {
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlChoiceIdentifierAttribute.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
       <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Xml.Serialization.XmlChoiceIdentifierAttribute.MemberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

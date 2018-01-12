@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.ResponseElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResponseElement" />
   <TypeSignature Language="F#" Value="type ResponseElement = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResponseElement abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.ResponseElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResponseElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

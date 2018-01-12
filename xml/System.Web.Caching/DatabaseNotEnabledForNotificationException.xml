@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.DatabaseNotEnabledForNotificationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DatabaseNotEnabledForNotificationException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type DatabaseNotEnabledForNotificationException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DatabaseNotEnabledForNotificationException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DatabaseNotEnabledForNotificationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Web.Caching.DatabaseNotEnabledForNotificationException : string -&gt; System.Web.Caching.DatabaseNotEnabledForNotificationException" Usage="new System.Web.Caching.DatabaseNotEnabledForNotificationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DatabaseNotEnabledForNotificationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Web.Caching.DatabaseNotEnabledForNotificationException : string * Exception -&gt; System.Web.Caching.DatabaseNotEnabledForNotificationException" Usage="new System.Web.Caching.DatabaseNotEnabledForNotificationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DatabaseNotEnabledForNotificationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

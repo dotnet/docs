@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.MissingManifestResourceException" />
   <TypeSignature Language="VB.NET" Value="Public Class MissingManifestResourceException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type MissingManifestResourceException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MissingManifestResourceException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.ResourceManager</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingManifestResourceException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingManifestResourceException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingManifestResourceException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Resources.MissingManifestResourceException : string -&gt; System.Resources.MissingManifestResourceException" Usage="new System.Resources.MissingManifestResourceException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingManifestResourceException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingManifestResourceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Resources.MissingManifestResourceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Resources.MissingManifestResourceException" Usage="new System.Resources.MissingManifestResourceException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MissingManifestResourceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingManifestResourceException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Resources.MissingManifestResourceException : string * Exception -&gt; System.Resources.MissingManifestResourceException" Usage="new System.Resources.MissingManifestResourceException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingManifestResourceException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>

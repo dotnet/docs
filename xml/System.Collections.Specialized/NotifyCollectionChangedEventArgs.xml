@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class NotifyCollectionChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type NotifyCollectionChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NotifyCollectionChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, changedItems As IList)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * System.Collections.IList -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, changedItems)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Collections::IList ^ changedItems);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, changedItem As Object)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * obj -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, changedItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Object ^ changedItem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, newItems As IList, oldItems As IList)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * System.Collections.IList * System.Collections.IList -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, newItems, oldItems)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Collections::IList ^ newItems, System::Collections::IList ^ oldItems);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, changedItems As IList, startingIndex As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * System.Collections.IList * int -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, changedItems, startingIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Collections::IList ^ changedItems, int startingIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, changedItem As Object, index As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * obj * int -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, changedItem, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Object ^ changedItem, int index);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, newItem As Object, oldItem As Object)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * obj * obj -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, newItem, oldItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Object ^ newItem, System::Object ^ oldItem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Collections.IList,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, newItems As IList, oldItems As IList, startingIndex As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * System.Collections.IList * System.Collections.IList * int -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, newItems, oldItems, startingIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Collections::IList ^ newItems, System::Collections::IList ^ oldItems, int startingIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Collections.IList,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, changedItems As IList, index As Integer, oldIndex As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * System.Collections.IList * int * int -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, changedItems, index, oldIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Collections::IList ^ changedItems, int index, int oldIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -372,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, changedItem As Object, index As Integer, oldIndex As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * obj * int * int -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, changedItem, index, oldIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Object ^ changedItem, int index, int oldIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -410,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NotifyCollectionChangedEventArgs.#ctor(System.Collections.Specialized.NotifyCollectionChangedAction,System.Object,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As NotifyCollectionChangedAction, newItem As Object, oldItem As Object, index As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NotifyCollectionChangedEventArgs : System.Collections.Specialized.NotifyCollectionChangedAction * obj * obj * int -&gt; System.Collections.Specialized.NotifyCollectionChangedEventArgs" Usage="new System.Collections.Specialized.NotifyCollectionChangedEventArgs (action, newItem, oldItem, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NotifyCollectionChangedEventArgs(System::Collections::Specialized::NotifyCollectionChangedAction action, System::Object ^ newItem, System::Object ^ oldItem, int index);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -448,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As NotifyCollectionChangedAction" />
       <MemberSignature Language="F#" Value="member this.Action : System.Collections.Specialized.NotifyCollectionChangedAction" Usage="System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NotifyCollectionChangedAction Action { System::Collections::Specialized::NotifyCollectionChangedAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -479,6 +492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewItems As IList" />
       <MemberSignature Language="F#" Value="member this.NewItems : System.Collections.IList" Usage="System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ NewItems { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -510,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewStartingIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.NewStartingIndex : int" Usage="System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewStartingIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -541,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldItems As IList" />
       <MemberSignature Language="F#" Value="member this.OldItems : System.Collections.IList" Usage="System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ OldItems { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -572,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldStartingIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.OldStartingIndex : int" Usage="System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OldStartingIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

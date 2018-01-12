@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.BuildProvider.DataServiceBuildProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceBuildProvider&#xA;Inherits BuildProvider" />
   <TypeSignature Language="F#" Value="type DataServiceBuildProvider = class&#xA;    inherit BuildProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceBuildProvider : System::Web::Compilation::BuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.BuildProvider.DataServiceBuildProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceBuildProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.BuildProvider.DataServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="F#" Value="override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="dataServiceBuildProvider.GenerateCode assemblyBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>

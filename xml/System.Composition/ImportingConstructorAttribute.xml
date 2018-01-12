@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Composition.ImportingConstructorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImportingConstructorAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ImportingConstructorAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImportingConstructorAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.AttributedModel</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -35,6 +36,7 @@ By default, only a default parameter-less constructor, if available, is used to 
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.ImportingConstructorAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportingConstructorAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.AttributedModel</AssemblyName>

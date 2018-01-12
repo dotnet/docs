@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceModelConfigurationElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type ServiceModelConfigurationElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceModelConfigurationElement abstract : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceModelConfigurationElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelConfigurationElement.SetPropertyValueIfNotDefaultValue``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetPropertyValueIfNotDefaultValue(Of T) (propertyName As String, value As T)" />
       <MemberSignature Language="F#" Value="member this.SetPropertyValueIfNotDefaultValue : string * 'T -&gt; unit" Usage="serviceModelConfigurationElement.SetPropertyValueIfNotDefaultValue (propertyName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; void SetPropertyValueIfNotDefaultValue(System::String ^ propertyName, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

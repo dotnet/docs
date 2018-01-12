@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.GenericIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class GenericIdentity&#xA;Inherits ClaimsIdentity" />
   <TypeSignature Language="F#" Value="type GenericIdentity = class&#xA;    inherit ClaimsIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenericIdentity : System::Security::Claims::ClaimsIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Claims</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.#ctor(System.Security.Principal.GenericIdentity)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (identity As GenericIdentity)" />
       <MemberSignature Language="F#" Value="new System.Security.Principal.GenericIdentity : System.Security.Principal.GenericIdentity -&gt; System.Security.Principal.GenericIdentity" Usage="new System.Security.Principal.GenericIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; GenericIdentity(System::Security::Principal::GenericIdentity ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Principal.GenericIdentity : string -&gt; System.Security.Principal.GenericIdentity" Usage="new System.Security.Principal.GenericIdentity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericIdentity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Principal.GenericIdentity : string * string -&gt; System.Security.Principal.GenericIdentity" Usage="new System.Security.Principal.GenericIdentity (name, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericIdentity(System::String ^ name, System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuthenticationType As String" />
       <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Security.Principal.GenericIdentity.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.Claims" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Claims As IEnumerable(Of Claim)" />
       <MemberSignature Language="F#" Value="member this.Claims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Principal.GenericIdentity.Claims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.GenericIdentity.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As ClaimsIdentity" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="genericIdentity.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Claims::ClaimsIdentity ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Security.Principal.GenericIdentity.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -327,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.GenericIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Principal.GenericIdentity.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>

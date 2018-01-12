@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.StyleTypedPropertyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StyleTypedPropertyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type StyleTypedPropertyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StyleTypedPropertyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.StyleTypedPropertyAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StyleTypedPropertyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.StyleTypedPropertyAttribute.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
       <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="System.Windows.StyleTypedPropertyAttribute.Property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Property { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.StyleTypedPropertyAttribute.StyleTargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property StyleTargetType As Type" />
       <MemberSignature Language="F#" Value="member this.StyleTargetType : Type with get, set" Usage="System.Windows.StyleTypedPropertyAttribute.StyleTargetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ StyleTargetType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

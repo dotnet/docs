@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ChannelTerminatedException" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelTerminatedException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="F#" Value="type ChannelTerminatedException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelTerminatedException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelTerminatedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelTerminatedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelTerminatedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ChannelTerminatedException : string -&gt; System.ServiceModel.ChannelTerminatedException" Usage="new System.ServiceModel.ChannelTerminatedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelTerminatedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelTerminatedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ChannelTerminatedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.ChannelTerminatedException" Usage="new System.ServiceModel.ChannelTerminatedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelTerminatedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelTerminatedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ChannelTerminatedException : string * Exception -&gt; System.ServiceModel.ChannelTerminatedException" Usage="new System.ServiceModel.ChannelTerminatedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelTerminatedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

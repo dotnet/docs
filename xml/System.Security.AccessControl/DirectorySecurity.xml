@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.DirectorySecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectorySecurity&#xA;Inherits FileSystemSecurity" />
   <TypeSignature Language="F#" Value="type DirectorySecurity = class&#xA;    inherit FileSystemSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectorySecurity sealed : System::Security::AccessControl::FileSystemSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectorySecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectorySecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, includeSections As AccessControlSections)" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.DirectorySecurity : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.DirectorySecurity" Usage="new System.Security.AccessControl.DirectorySecurity (name, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DependencyObject&#xA;Implements IComponent, IDisposable" />
   <TypeSignature Language="F#" Value="type DependencyObject = class&#xA;    interface IComponent&#xA;    interface IDisposable&#xA;    interface IDependencyObjectAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DependencyObject abstract : IDisposable, System::ComponentModel::IComponent" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DependencyObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.AddHandler(System.Workflow.ComponentModel.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHandler (dependencyEvent As DependencyProperty, value As Object)" />
       <MemberSignature Language="F#" Value="member this.AddHandler : System.Workflow.ComponentModel.DependencyProperty * obj -&gt; unit" Usage="dependencyObject.AddHandler (dependencyEvent, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandler(System::Workflow::ComponentModel::DependencyProperty ^ dependencyEvent, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyObject.DesignMode" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DesignMode As Boolean" />
       <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="System.Workflow.ComponentModel.DependencyObject.DesignMode" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dependencyObject.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dependencyObject.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="dependencyObject.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!DependencyObject ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.ActivityBind GetBinding(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.GetBinding(System.Workflow.ComponentModel.DependencyProperty)" />
       <MemberSignature Language="F#" Value="member this.GetBinding : System.Workflow.ComponentModel.DependencyProperty -&gt; System.Workflow.ComponentModel.ActivityBind" Usage="dependencyObject.GetBinding dependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::ActivityBind ^ GetBinding(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.GetBoundValue(System.Workflow.ComponentModel.ActivityBind,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetBoundValue (bind As ActivityBind, targetType As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetBoundValue : System.Workflow.ComponentModel.ActivityBind * Type -&gt; obj&#xA;override this.GetBoundValue : System.Workflow.ComponentModel.ActivityBind * Type -&gt; obj" Usage="dependencyObject.GetBoundValue (bind, targetType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetBoundValue(System::Workflow::ComponentModel::ActivityBind ^ bind, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.GetInvocationList``1(System.Workflow.ComponentModel.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetInvocationList(Of T) (dependencyEvent As DependencyProperty) As T()" />
       <MemberSignature Language="F#" Value="member this.GetInvocationList : System.Workflow.ComponentModel.DependencyProperty -&gt; 'T[]" Usage="dependencyObject.GetInvocationList dependencyEvent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; cli::array &lt;T&gt; ^ GetInvocationList(System::Workflow::ComponentModel::DependencyProperty ^ dependencyEvent);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.IDependencyObjectAccessor.GetInvocationList``1(System.Workflow.ComponentModel.DependencyProperty)</InterfaceMember>
@@ -317,6 +327,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.GetValue(System.Workflow.ComponentModel.DependencyProperty)" />
       <MemberSignature Language="F#" Value="member this.GetValue : System.Workflow.ComponentModel.DependencyProperty -&gt; obj" Usage="dependencyObject.GetValue dependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -355,6 +366,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValueBase(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.GetValueBase(System.Workflow.ComponentModel.DependencyProperty)" />
       <MemberSignature Language="F#" Value="member this.GetValueBase : System.Workflow.ComponentModel.DependencyProperty -&gt; obj" Usage="dependencyObject.GetValueBase dependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValueBase(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -395,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.InitializeProperties" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeProperties ()" />
       <MemberSignature Language="F#" Value="abstract member InitializeProperties : unit -&gt; unit&#xA;override this.InitializeProperties : unit -&gt; unit" Usage="dependencyObject.InitializeProperties " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -421,6 +434,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBindingSet(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.IsBindingSet(System.Workflow.ComponentModel.DependencyProperty)" />
       <MemberSignature Language="F#" Value="member this.IsBindingSet : System.Workflow.ComponentModel.DependencyProperty -&gt; bool" Usage="dependencyObject.IsBindingSet dependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBindingSet(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -447,6 +461,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MetaEquals(class System.Workflow.ComponentModel.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.MetaEquals(System.Workflow.ComponentModel.DependencyObject)" />
       <MemberSignature Language="F#" Value="member this.MetaEquals : System.Workflow.ComponentModel.DependencyObject -&gt; bool" Usage="dependencyObject.MetaEquals dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MetaEquals(System::Workflow::ComponentModel::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -479,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyObject.ParentDependencyObject" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ParentDependencyObject As DependencyObject" />
       <MemberSignature Language="F#" Value="member this.ParentDependencyObject : System.Workflow.ComponentModel.DependencyObject" Usage="System.Workflow.ComponentModel.DependencyObject.ParentDependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::DependencyObject ^ ParentDependencyObject { System::Workflow::ComponentModel::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -499,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.RemoveHandler(System.Workflow.ComponentModel.DependencyProperty,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveHandler (dependencyEvent As DependencyProperty, value As Object)" />
       <MemberSignature Language="F#" Value="member this.RemoveHandler : System.Workflow.ComponentModel.DependencyProperty * obj -&gt; unit" Usage="dependencyObject.RemoveHandler (dependencyEvent, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveHandler(System::Workflow::ComponentModel::DependencyProperty ^ dependencyEvent, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -543,6 +560,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveProperty(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.RemoveProperty(System.Workflow.ComponentModel.DependencyProperty)" />
       <MemberSignature Language="F#" Value="member this.RemoveProperty : System.Workflow.ComponentModel.DependencyProperty -&gt; bool" Usage="dependencyObject.RemoveProperty dependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveProperty(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -568,6 +586,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBinding(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty, class System.Workflow.ComponentModel.ActivityBind bind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.SetBinding(System.Workflow.ComponentModel.DependencyProperty,System.Workflow.ComponentModel.ActivityBind)" />
       <MemberSignature Language="F#" Value="member this.SetBinding : System.Workflow.ComponentModel.DependencyProperty * System.Workflow.ComponentModel.ActivityBind -&gt; unit" Usage="dependencyObject.SetBinding (dependencyProperty, bind)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBinding(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty, System::Workflow::ComponentModel::ActivityBind ^ bind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -617,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.SetBoundValue(System.Workflow.ComponentModel.ActivityBind,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetBoundValue (bind As ActivityBind, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetBoundValue : System.Workflow.ComponentModel.ActivityBind * obj -&gt; unit&#xA;override this.SetBoundValue : System.Workflow.ComponentModel.ActivityBind * obj -&gt; unit" Usage="dependencyObject.SetBoundValue (bind, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetBoundValue(System::Workflow::ComponentModel::ActivityBind ^ bind, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -648,6 +668,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetReadOnlyPropertyValue(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.SetReadOnlyPropertyValue(System.Workflow.ComponentModel.DependencyProperty,System.Object)" />
       <MemberSignature Language="F#" Value="member this.SetReadOnlyPropertyValue : System.Workflow.ComponentModel.DependencyProperty * obj -&gt; unit" Usage="dependencyObject.SetReadOnlyPropertyValue (dependencyProperty, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void SetReadOnlyPropertyValue(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -673,6 +694,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.SetValue(System.Workflow.ComponentModel.DependencyProperty,System.Object)" />
       <MemberSignature Language="F#" Value="member this.SetValue : System.Workflow.ComponentModel.DependencyProperty * obj -&gt; unit" Usage="dependencyObject.SetValue (dependencyProperty, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -716,6 +738,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueBase(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.DependencyObject.SetValueBase(System.Workflow.ComponentModel.DependencyProperty,System.Object)" />
       <MemberSignature Language="F#" Value="member this.SetValueBase : System.Workflow.ComponentModel.DependencyProperty * obj -&gt; unit" Usage="dependencyObject.SetValueBase (dependencyProperty, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValueBase(System::Workflow::ComponentModel::DependencyProperty ^ dependencyProperty, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -757,6 +780,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyObject.Site" />
       <MemberSignature Language="VB.NET" Value="Public Property Site As ISite" />
       <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Workflow.ComponentModel.DependencyObject.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IComponent.Site</InterfaceMember>
@@ -812,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.DependencyObject.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
       <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.Workflow.ComponentModel.DependencyObject.UserData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

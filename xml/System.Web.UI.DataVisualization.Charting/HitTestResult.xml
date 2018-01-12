@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.HitTestResult" />
   <TypeSignature Language="VB.NET" Value="Public Class HitTestResult" />
   <TypeSignature Language="F#" Value="type HitTestResult = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HitTestResult" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.HitTestResult.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HitTestResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.Axis" />
       <MemberSignature Language="VB.NET" Value="Public Property Axis As Axis" />
       <MemberSignature Language="F#" Value="member this.Axis : System.Web.UI.DataVisualization.Charting.Axis with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.Axis" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::Axis ^ Axis { System::Web::UI::DataVisualization::Charting::Axis ^ get(); void set(System::Web::UI::DataVisualization::Charting::Axis ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.ChartArea" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartArea As ChartArea" />
       <MemberSignature Language="F#" Value="member this.ChartArea : System.Web.UI.DataVisualization.Charting.ChartArea with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.ChartArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartArea ^ ChartArea { System::Web::UI::DataVisualization::Charting::ChartArea ^ get(); void set(System::Web::UI::DataVisualization::Charting::ChartArea ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.ChartElementType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartElementType As ChartElementType" />
       <MemberSignature Language="F#" Value="member this.ChartElementType : System.Web.UI.DataVisualization.Charting.ChartElementType with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.ChartElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartElementType ChartElementType { System::Web::UI::DataVisualization::Charting::ChartElementType get(); void set(System::Web::UI::DataVisualization::Charting::ChartElementType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.Object" />
       <MemberSignature Language="VB.NET" Value="Public Property Object As Object" />
       <MemberSignature Language="F#" Value="member this.Object : obj with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.PointIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property PointIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.PointIndex : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.PointIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.Series" />
       <MemberSignature Language="VB.NET" Value="Public Property Series As Series" />
       <MemberSignature Language="F#" Value="member this.Series : System.Web.UI.DataVisualization.Charting.Series with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.Series" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::Series ^ Series { System::Web::UI::DataVisualization::Charting::Series ^ get(); void set(System::Web::UI::DataVisualization::Charting::Series ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.HitTestResult.SubObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SubObject As Object" />
       <MemberSignature Language="F#" Value="member this.SubObject : obj with get, set" Usage="System.Web.UI.DataVisualization.Charting.HitTestResult.SubObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SubObject { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

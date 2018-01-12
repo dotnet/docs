@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceModelSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="F#" Value="type ServiceModelSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceModelSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelSectionGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceModelSectionGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.Behaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Behaviors As BehaviorsSection" />
       <MemberSignature Language="F#" Value="member this.Behaviors : System.ServiceModel.Configuration.BehaviorsSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.Behaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BehaviorsSection ^ Behaviors { System::ServiceModel::Configuration::BehaviorsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.Bindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As BindingsSection" />
       <MemberSignature Language="F#" Value="member this.Bindings : System.ServiceModel.Configuration.BindingsSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.Bindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BindingsSection ^ Bindings { System::ServiceModel::Configuration::BindingsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.Client" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Client As ClientSection" />
       <MemberSignature Language="F#" Value="member this.Client : System.ServiceModel.Configuration.ClientSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.Client" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ClientSection ^ Client { System::ServiceModel::Configuration::ClientSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.ComContracts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComContracts As ComContractsSection" />
       <MemberSignature Language="F#" Value="member this.ComContracts : System.ServiceModel.Configuration.ComContractsSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.ComContracts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ComContractsSection ^ ComContracts { System::ServiceModel::Configuration::ComContractsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.CommonBehaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommonBehaviors As CommonBehaviorsSection" />
       <MemberSignature Language="F#" Value="member this.CommonBehaviors : System.ServiceModel.Configuration.CommonBehaviorsSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.CommonBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::CommonBehaviorsSection ^ CommonBehaviors { System::ServiceModel::Configuration::CommonBehaviorsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.Diagnostic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagnostic As DiagnosticSection" />
       <MemberSignature Language="F#" Value="member this.Diagnostic : System.ServiceModel.Configuration.DiagnosticSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.Diagnostic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::DiagnosticSection ^ Diagnostic { System::ServiceModel::Configuration::DiagnosticSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As ExtensionsSection" />
       <MemberSignature Language="F#" Value="member this.Extensions : System.ServiceModel.Configuration.ExtensionsSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ExtensionsSection ^ Extensions { System::ServiceModel::Configuration::ExtensionsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelSectionGroup.GetSectionGroup(System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSectionGroup (config As Configuration) As ServiceModelSectionGroup" />
       <MemberSignature Language="F#" Value="static member GetSectionGroup : System.Configuration.Configuration -&gt; System.ServiceModel.Configuration.ServiceModelSectionGroup" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.GetSectionGroup config" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Configuration::ServiceModelSectionGroup ^ GetSectionGroup(System::Configuration::Configuration ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.ProtocolMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtocolMapping As ProtocolMappingSection" />
       <MemberSignature Language="F#" Value="member this.ProtocolMapping : System.ServiceModel.Configuration.ProtocolMappingSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.ProtocolMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ProtocolMappingSection ^ ProtocolMapping { System::ServiceModel::Configuration::ProtocolMappingSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.ServiceHostingEnvironment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceHostingEnvironment As ServiceHostingEnvironmentSection" />
       <MemberSignature Language="F#" Value="member this.ServiceHostingEnvironment : System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.ServiceHostingEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceHostingEnvironmentSection ^ ServiceHostingEnvironment { System::ServiceModel::Configuration::ServiceHostingEnvironmentSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServicesSection" />
       <MemberSignature Language="F#" Value="member this.Services : System.ServiceModel.Configuration.ServicesSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.Services" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServicesSection ^ Services { System::ServiceModel::Configuration::ServicesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelSectionGroup.StandardEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardEndpoints As StandardEndpointsSection" />
       <MemberSignature Language="F#" Value="member this.StandardEndpoints : System.ServiceModel.Configuration.StandardEndpointsSection" Usage="System.ServiceModel.Configuration.ServiceModelSectionGroup.StandardEndpoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::StandardEndpointsSection ^ StandardEndpoints { System::ServiceModel::Configuration::StandardEndpointsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

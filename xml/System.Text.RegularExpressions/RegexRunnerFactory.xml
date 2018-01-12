@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexRunnerFactory" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RegexRunnerFactory" />
   <TypeSignature Language="F#" Value="type RegexRunnerFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegexRunnerFactory abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunnerFactory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RegexRunnerFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunnerFactory.CreateInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateInstance () As RegexRunner" />
       <MemberSignature Language="F#" Value="abstract member CreateInstance : unit -&gt; System.Text.RegularExpressions.RegexRunner" Usage="regexRunnerFactory.CreateInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Text::RegularExpressions::RegexRunner ^ CreateInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>

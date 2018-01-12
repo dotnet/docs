@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.GenericParameterConstraintHandle" />
   <TypeSignature Language="VB.NET" Value="Public Structure GenericParameterConstraintHandle&#xA;Implements IEquatable(Of GenericParameterConstraintHandle)" />
   <TypeSignature Language="F#" Value="type GenericParameterConstraintHandle = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class GenericParameterConstraintHandle : IEquatable&lt;System::Reflection::Metadata::GenericParameterConstraintHandle&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="genericParameterConstraintHandle.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.Equals(System.Reflection.Metadata.GenericParameterConstraintHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As GenericParameterConstraintHandle) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.GenericParameterConstraintHandle -&gt; bool" Usage="genericParameterConstraintHandle.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::GenericParameterConstraintHandle other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="genericParameterConstraintHandle.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.GenericParameterConstraintHandle.IsNil" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNil As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNil : bool" Usage="System.Reflection.Metadata.GenericParameterConstraintHandle.IsNil" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNil { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.op_Equality(System.Reflection.Metadata.GenericParameterConstraintHandle,System.Reflection.Metadata.GenericParameterConstraintHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As GenericParameterConstraintHandle, right As GenericParameterConstraintHandle) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.GenericParameterConstraintHandle * System.Reflection.Metadata.GenericParameterConstraintHandle -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Metadata::GenericParameterConstraintHandle left, System::Reflection::Metadata::GenericParameterConstraintHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.op_Explicit(System.Reflection.Metadata.EntityHandle)~System.Reflection.Metadata.GenericParameterConstraintHandle" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (handle As EntityHandle) As GenericParameterConstraintHandle" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Reflection.Metadata.EntityHandle -&gt; System.Reflection.Metadata.GenericParameterConstraintHandle" Usage="System.Reflection.Metadata.GenericParameterConstraintHandle.op_Explicit handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Reflection::Metadata::GenericParameterConstraintHandle(System::Reflection::Metadata::EntityHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.GenericParameterConstraintHandle op_Explicit(valuetype System.Reflection.Metadata.Handle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.GenericParameterConstraintHandle" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Reflection.Metadata.Handle -&gt; System.Reflection.Metadata.GenericParameterConstraintHandle" Usage="System.Reflection.Metadata.GenericParameterConstraintHandle.op_Explicit handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Reflection::Metadata::GenericParameterConstraintHandle(System::Reflection::Metadata::Handle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.op_Implicit(System.Reflection.Metadata.GenericParameterConstraintHandle)~System.Reflection.Metadata.EntityHandle" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (handle As GenericParameterConstraintHandle) As EntityHandle" />
       <MemberSignature Language="F#" Value="static member op_Implicit : System.Reflection.Metadata.GenericParameterConstraintHandle -&gt; System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.GenericParameterConstraintHandle.op_Implicit handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Reflection::Metadata::EntityHandle(System::Reflection::Metadata::GenericParameterConstraintHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.Handle op_Implicit(valuetype System.Reflection.Metadata.GenericParameterConstraintHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.op_Implicit(System.Reflection.Metadata.GenericParameterConstraintHandle)~System.Reflection.Metadata.Handle" />
       <MemberSignature Language="F#" Value="static member op_Implicit : System.Reflection.Metadata.GenericParameterConstraintHandle -&gt; System.Reflection.Metadata.Handle" Usage="System.Reflection.Metadata.GenericParameterConstraintHandle.op_Implicit handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Reflection::Metadata::Handle(System::Reflection::Metadata::GenericParameterConstraintHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -259,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.GenericParameterConstraintHandle.op_Inequality(System.Reflection.Metadata.GenericParameterConstraintHandle,System.Reflection.Metadata.GenericParameterConstraintHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As GenericParameterConstraintHandle, right As GenericParameterConstraintHandle) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.GenericParameterConstraintHandle * System.Reflection.Metadata.GenericParameterConstraintHandle -&gt; bool" Usage="System.Reflection.Metadata.GenericParameterConstraintHandle.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Metadata::GenericParameterConstraintHandle left, System::Reflection::Metadata::GenericParameterConstraintHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

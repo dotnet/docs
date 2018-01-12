@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetNamedPipeBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetNamedPipeBindingElement&#xA;Inherits StandardBindingElement" />
   <TypeSignature Language="F#" Value="type NetNamedPipeBindingElement = class&#xA;    inherit StandardBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeBindingElement : System::ServiceModel::Configuration::StandardBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.NetNamedPipeBindingElement : string -&gt; System.ServiceModel.Configuration.NetNamedPipeBindingElement" Usage="new System.ServiceModel.Configuration.NetNamedPipeBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.HostNameComparisonMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="netNamedPipeBindingElement.InitializeFrom binding" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferPoolSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConnections As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxConnections : int with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxConnections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnections { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxReceivedMessageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.MaxReceivedMessageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +291,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="netNamedPipeBindingElement.OnApplyConfiguration binding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -304,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
       <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.ReaderQuotas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -356,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As NetNamedPipeSecurityElement" />
       <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.Configuration.NetNamedPipeSecurityElement" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.Security" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NetNamedPipeSecurityElement ^ Security { System::ServiceModel::Configuration::NetNamedPipeSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -381,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.TransactionFlow" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionFlow As Boolean" />
       <MemberSignature Language="F#" Value="member this.TransactionFlow : bool with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.TransactionFlow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionFlow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -407,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.TransactionProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionProtocol As TransactionProtocol" />
       <MemberSignature Language="F#" Value="member this.TransactionProtocol : System.ServiceModel.TransactionProtocol with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.TransactionProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransactionProtocol ^ TransactionProtocol { System::ServiceModel::TransactionProtocol ^ get(); void set(System::ServiceModel::TransactionProtocol ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -435,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeBindingElement.TransferMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
       <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeBindingElement.TransferMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

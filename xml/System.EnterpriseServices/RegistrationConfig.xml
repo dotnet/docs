@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationConfig" />
   <TypeSignature Language="VB.NET" Value="Public Class RegistrationConfig" />
   <TypeSignature Language="F#" Value="type RegistrationConfig = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegistrationConfig" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationConfig.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationConfig();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.Application" />
       <MemberSignature Language="VB.NET" Value="Public Property Application As String" />
       <MemberSignature Language="F#" Value="member this.Application : string with get, set" Usage="System.EnterpriseServices.RegistrationConfig.Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Application { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.ApplicationRootDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationRootDirectory As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationRootDirectory : string with get, set" Usage="System.EnterpriseServices.RegistrationConfig.ApplicationRootDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationRootDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.AssemblyFile" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyFile As String" />
       <MemberSignature Language="F#" Value="member this.AssemblyFile : string with get, set" Usage="System.EnterpriseServices.RegistrationConfig.AssemblyFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.InstallationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property InstallationFlags As InstallationFlags" />
       <MemberSignature Language="F#" Value="member this.InstallationFlags : System.EnterpriseServices.InstallationFlags with get, set" Usage="System.EnterpriseServices.RegistrationConfig.InstallationFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::InstallationFlags InstallationFlags { System::EnterpriseServices::InstallationFlags get(); void set(System::EnterpriseServices::InstallationFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.Partition" />
       <MemberSignature Language="VB.NET" Value="Public Property Partition As String" />
       <MemberSignature Language="F#" Value="member this.Partition : string with get, set" Usage="System.EnterpriseServices.RegistrationConfig.Partition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Partition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.TypeLibrary" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeLibrary As String" />
       <MemberSignature Language="F#" Value="member this.TypeLibrary : string with get, set" Usage="System.EnterpriseServices.RegistrationConfig.TypeLibrary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeLibrary { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

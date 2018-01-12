@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlNodeChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type XmlNodeChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlNodeChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -58,6 +59,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeChangedEventArgs.#ctor(System.Xml.XmlNode,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.Xml.XmlNodeChangedAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (node As XmlNode, oldParent As XmlNode, newParent As XmlNode, oldValue As String, newValue As String, action As XmlNodeChangedAction)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlNodeChangedEventArgs : System.Xml.XmlNode * System.Xml.XmlNode * System.Xml.XmlNode * string * string * System.Xml.XmlNodeChangedAction -&gt; System.Xml.XmlNodeChangedEventArgs" Usage="new System.Xml.XmlNodeChangedEventArgs (node, oldParent, newParent, oldValue, newValue, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNodeChangedEventArgs(System::Xml::XmlNode ^ node, System::Xml::XmlNode ^ oldParent, System::Xml::XmlNode ^ newParent, System::String ^ oldValue, System::String ^ newValue, System::Xml::XmlNodeChangedAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -101,6 +103,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As XmlNodeChangedAction" />
       <MemberSignature Language="F#" Value="member this.Action : System.Xml.XmlNodeChangedAction" Usage="System.Xml.XmlNodeChangedEventArgs.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNodeChangedAction Action { System::Xml::XmlNodeChangedAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -155,6 +158,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.NewParent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewParent As XmlNode" />
       <MemberSignature Language="F#" Value="member this.NewParent : System.Xml.XmlNode" Usage="System.Xml.XmlNodeChangedEventArgs.NewParent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNode ^ NewParent { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -193,6 +197,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As String" />
       <MemberSignature Language="F#" Value="member this.NewValue : string" Usage="System.Xml.XmlNodeChangedEventArgs.NewValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -228,6 +233,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.Node" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As XmlNode" />
       <MemberSignature Language="F#" Value="member this.Node : System.Xml.XmlNode" Usage="System.Xml.XmlNodeChangedEventArgs.Node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNode ^ Node { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -261,6 +267,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.OldParent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldParent As XmlNode" />
       <MemberSignature Language="F#" Value="member this.OldParent : System.Xml.XmlNode" Usage="System.Xml.XmlNodeChangedEventArgs.OldParent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNode ^ OldParent { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -299,6 +306,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As String" />
       <MemberSignature Language="F#" Value="member this.OldValue : string" Usage="System.Xml.XmlNodeChangedEventArgs.OldValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

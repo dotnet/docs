@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationWriter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSerializationWriter&#xA;Inherits XmlSerializationGeneratedCode" />
   <TypeSignature Language="F#" Value="type XmlSerializationWriter = class&#xA;    inherit XmlSerializationGeneratedCode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializationWriter abstract : System::Xml::Serialization::XmlSerializationGeneratedCode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSerializationWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddWriteCallback(class System.Type type, string typeName, string typeNs, class System.Xml.Serialization.XmlSerializationWriteCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.AddWriteCallback(System.Type,System.String,System.String,System.Xml.Serialization.XmlSerializationWriteCallback)" />
       <MemberSignature Language="F#" Value="member this.AddWriteCallback : Type * string * string * System.Xml.Serialization.XmlSerializationWriteCallback -&gt; unit" Usage="xmlSerializationWriter.AddWriteCallback (type, typeName, typeNs, callback)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddWriteCallback(Type ^ type, System::String ^ typeName, System::String ^ typeNs, System::Xml::Serialization::XmlSerializationWriteCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateChoiceIdentifierValueException(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateChoiceIdentifierValueException (value As String, identifier As String, name As String, ns As String) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateChoiceIdentifierValueException : string * string * string * string -&gt; Exception" Usage="xmlSerializationWriter.CreateChoiceIdentifierValueException (value, identifier, name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateChoiceIdentifierValueException(System::String ^ value, System::String ^ identifier, System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateInvalidAnyTypeException (o As Object) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateInvalidAnyTypeException : obj -&gt; Exception" Usage="xmlSerializationWriter.CreateInvalidAnyTypeException o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateInvalidAnyTypeException(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateInvalidAnyTypeException(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Type)" />
       <MemberSignature Language="F#" Value="member this.CreateInvalidAnyTypeException : Type -&gt; Exception" Usage="xmlSerializationWriter.CreateInvalidAnyTypeException type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateInvalidAnyTypeException(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidChoiceIdentifierValueException(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateInvalidChoiceIdentifierValueException (type As String, identifier As String) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateInvalidChoiceIdentifierValueException : string * string -&gt; Exception" Usage="xmlSerializationWriter.CreateInvalidChoiceIdentifierValueException (type, identifier)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateInvalidChoiceIdentifierValueException(System::String ^ type, System::String ^ identifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidEnumValueException(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateInvalidEnumValueException (value As Object, typeName As String) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateInvalidEnumValueException : obj * string -&gt; Exception" Usage="xmlSerializationWriter.CreateInvalidEnumValueException (value, typeName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateInvalidEnumValueException(System::Object ^ value, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -324,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateMismatchChoiceException(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateMismatchChoiceException (value As String, elementName As String, enumValue As String) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateMismatchChoiceException : string * string * string -&gt; Exception" Usage="xmlSerializationWriter.CreateMismatchChoiceException (value, elementName, enumValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateMismatchChoiceException(System::String ^ value, System::String ^ elementName, System::String ^ enumValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -369,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateUnknownAnyElementException(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateUnknownAnyElementException (name As String, ns As String) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateUnknownAnyElementException : string * string -&gt; Exception" Usage="xmlSerializationWriter.CreateUnknownAnyElementException (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateUnknownAnyElementException(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -422,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CreateUnknownTypeException (o As Object) As Exception" />
       <MemberSignature Language="F#" Value="member this.CreateUnknownTypeException : obj -&gt; Exception" Usage="xmlSerializationWriter.CreateUnknownTypeException o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateUnknownTypeException(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -462,6 +473,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateUnknownTypeException(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Type)" />
       <MemberSignature Language="F#" Value="member this.CreateUnknownTypeException : Type -&gt; Exception" Usage="xmlSerializationWriter.CreateUnknownTypeException type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception ^ CreateUnknownTypeException(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -503,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationWriter.EscapeName" />
       <MemberSignature Language="VB.NET" Value="Protected Property EscapeName As Boolean" />
       <MemberSignature Language="F#" Value="member this.EscapeName : bool with get, set" Usage="System.Xml.Serialization.XmlSerializationWriter.EscapeName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool EscapeName { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -541,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromByteArrayBase64 (value As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="static member FromByteArrayBase64 : byte[] -&gt; byte[]" Usage="System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64 value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static cli::array &lt;System::Byte&gt; ^ FromByteArrayBase64(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -584,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromByteArrayHex (value As Byte()) As String" />
       <MemberSignature Language="F#" Value="static member FromByteArrayHex : byte[] -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromByteArrayHex(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -627,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromChar (value As Char) As String" />
       <MemberSignature Language="F#" Value="static member FromChar : char -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromChar value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromChar(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -670,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromDate(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromDate (value As DateTime) As String" />
       <MemberSignature Language="F#" Value="static member FromDate : DateTime -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromDate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromDate(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -713,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromDateTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromDateTime (value As DateTime) As String" />
       <MemberSignature Language="F#" Value="static member FromDateTime : DateTime -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromDateTime(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -774,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[])" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromEnum (value As Long, values As String(), ids As Long()) As String" />
       <MemberSignature Language="F#" Value="static member FromEnum : int64 * string[] * int64[] -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromEnum (value, values, ids)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromEnum(long value, cli::array &lt;System::String ^&gt; ^ values, cli::array &lt;long&gt; ^ ids);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -821,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromEnum (value As Long, values As String(), ids As Long(), typeName As String) As String" />
       <MemberSignature Language="F#" Value="static member FromEnum : int64 * string[] * int64[] * string -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromEnum (value, values, ids, typeName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromEnum(long value, cli::array &lt;System::String ^&gt; ^ values, cli::array &lt;long&gt; ^ ids, System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -868,6 +888,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromTime (value As DateTime) As String" />
       <MemberSignature Language="F#" Value="static member FromTime : DateTime -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromTime value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromTime(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -911,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromXmlName (name As String) As String" />
       <MemberSignature Language="F#" Value="static member FromXmlName : string -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromXmlName name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromXmlName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -954,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromXmlNCName (ncName As String) As String" />
       <MemberSignature Language="F#" Value="static member FromXmlNCName : string -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName ncName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromXmlNCName(System::String ^ ncName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -997,6 +1020,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromXmlNmToken (nmToken As String) As String" />
       <MemberSignature Language="F#" Value="static member FromXmlNmToken : string -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken nmToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromXmlNmToken(System::String ^ nmToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1040,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FromXmlNmTokens (nmTokens As String) As String" />
       <MemberSignature Language="F#" Value="static member FromXmlNmTokens : string -&gt; string" Usage="System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens nmTokens" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ FromXmlNmTokens(System::String ^ nmTokens);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1092,6 +1117,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string FromXmlQualifiedName(class System.Xml.XmlQualifiedName xmlQualifiedName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.FromXmlQualifiedName : System.Xml.XmlQualifiedName -&gt; string" Usage="xmlSerializationWriter.FromXmlQualifiedName xmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ FromXmlQualifiedName(System::Xml::XmlQualifiedName ^ xmlQualifiedName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1132,6 +1158,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string FromXmlQualifiedName(class System.Xml.XmlQualifiedName xmlQualifiedName, bool ignoreEmpty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName,System.Boolean)" />
       <MemberSignature Language="F#" Value="member this.FromXmlQualifiedName : System.Xml.XmlQualifiedName * bool -&gt; string" Usage="xmlSerializationWriter.FromXmlQualifiedName (xmlQualifiedName, ignoreEmpty)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ FromXmlQualifiedName(System::Xml::XmlQualifiedName ^ xmlQualifiedName, bool ignoreEmpty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1169,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.InitCallbacks" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitCallbacks ()" />
       <MemberSignature Language="F#" Value="abstract member InitCallbacks : unit -&gt; unit" Usage="xmlSerializationWriter.InitCallbacks " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void InitCallbacks();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1214,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationWriter.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Protected Property Namespaces As ArrayList" />
       <MemberSignature Language="F#" Value="member this.Namespaces : System.Collections.ArrayList with get, set" Usage="System.Xml.Serialization.XmlSerializationWriter.Namespaces" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ArrayList ^ Namespaces { System::Collections::ArrayList ^ get(); void set(System::Collections::ArrayList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1251,6 +1280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.ResolveDynamicAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function ResolveDynamicAssembly (assemblyFullName As String) As Assembly" />
       <MemberSignature Language="F#" Value="static member ResolveDynamicAssembly : string -&gt; System.Reflection.Assembly" Usage="System.Xml.Serialization.XmlSerializationWriter.ResolveDynamicAssembly assemblyFullName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Reflection::Assembly ^ ResolveDynamicAssembly(System::String ^ assemblyFullName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1294,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.TopLevelElement" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TopLevelElement ()" />
       <MemberSignature Language="F#" Value="member this.TopLevelElement : unit -&gt; unit" Usage="xmlSerializationWriter.TopLevelElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TopLevelElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1345,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteAttribute (localName As String, value As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteAttribute : string * byte[] -&gt; unit" Usage="xmlSerializationWriter.WriteAttribute (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteAttribute(System::String ^ localName, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1387,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteAttribute (localName As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteAttribute : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteAttribute (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteAttribute(System::String ^ localName, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1429,6 +1462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteAttribute (localName As String, ns As String, value As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteAttribute : string * string * byte[] -&gt; unit" Usage="xmlSerializationWriter.WriteAttribute (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteAttribute(System::String ^ localName, System::String ^ ns, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1473,6 +1507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteAttribute (localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteAttribute : string * string * string -&gt; unit" Usage="xmlSerializationWriter.WriteAttribute (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteAttribute(System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1517,6 +1552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteAttribute (prefix As String, localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteAttribute : string * string * string * string -&gt; unit" Usage="xmlSerializationWriter.WriteAttribute (prefix, localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1563,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementEncoded(System.Xml.XmlNode,System.String,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementEncoded (node As XmlNode, name As String, ns As String, isNullable As Boolean, any As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteElementEncoded : System.Xml.XmlNode * string * string * bool * bool -&gt; unit" Usage="xmlSerializationWriter.WriteElementEncoded (node, name, ns, isNullable, any)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementEncoded(System::Xml::XmlNode ^ node, System::String ^ name, System::String ^ ns, bool isNullable, bool any);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1615,6 +1652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral(System.Xml.XmlNode,System.String,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementLiteral (node As XmlNode, name As String, ns As String, isNullable As Boolean, any As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteElementLiteral : System.Xml.XmlNode * string * string * bool * bool -&gt; unit" Usage="xmlSerializationWriter.WriteElementLiteral (node, name, ns, isNullable, any)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementLiteral(System::Xml::XmlNode ^ node, System::String ^ name, System::String ^ ns, bool isNullable, bool any);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1677,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementQualifiedName (localName As String, value As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementQualifiedName : string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementQualifiedName (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementQualifiedName(System::String ^ localName, System::Xml::XmlQualifiedName ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1719,6 +1758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementQualifiedName (localName As String, ns As String, value As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementQualifiedName : string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementQualifiedName (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementQualifiedName(System::String ^ localName, System::String ^ ns, System::Xml::XmlQualifiedName ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1763,6 +1803,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementQualifiedName (localName As String, value As XmlQualifiedName, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementQualifiedName : string * System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementQualifiedName (localName, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementQualifiedName(System::String ^ localName, System::Xml::XmlQualifiedName ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1807,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementQualifiedName (localName As String, ns As String, value As XmlQualifiedName, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementQualifiedName : string * string * System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementQualifiedName (localName, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementQualifiedName(System::String ^ localName, System::String ^ ns, System::Xml::XmlQualifiedName ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1863,6 +1905,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementString (localName As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteElementString (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementString(System::String ^ localName, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1905,6 +1948,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementString (localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * string -&gt; unit" Usage="xmlSerializationWriter.WriteElementString (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementString(System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1949,6 +1993,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementString (localName As String, value As String, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementString (localName, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementString(System::String ^ localName, System::String ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1993,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementString (localName As String, ns As String, value As String, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementString (localName, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementString(System::String ^ localName, System::String ^ ns, System::String ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2049,6 +2095,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, value As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * byte[] -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2091,6 +2138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2133,6 +2181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[],System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, value As Byte(), xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * byte[] * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, cli::array &lt;System::Byte&gt; ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2177,6 +2226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, ns As String, value As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * string * byte[] -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, System::String ^ ns, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2221,6 +2271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * string * string -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2265,6 +2316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, value As String, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, System::String ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2309,6 +2361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[],System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, ns As String, value As Byte(), xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * string * byte[] * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, System::String ^ ns, cli::array &lt;System::Byte&gt; ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2355,6 +2408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteElementStringRaw (localName As String, ns As String, value As String, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringRaw : string * string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteElementStringRaw (localName, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteElementStringRaw(System::String ^ localName, System::String ^ ns, System::String ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2411,6 +2465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteEmptyTag (name As String)" />
       <MemberSignature Language="F#" Value="member this.WriteEmptyTag : string -&gt; unit" Usage="xmlSerializationWriter.WriteEmptyTag name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEmptyTag(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2451,6 +2506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteEmptyTag (name As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteEmptyTag : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteEmptyTag (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEmptyTag(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2503,6 +2559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEndElement" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteEndElement ()" />
       <MemberSignature Language="F#" Value="member this.WriteEndElement : unit -&gt; unit" Usage="xmlSerializationWriter.WriteEndElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEndElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2540,6 +2597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEndElement(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteEndElement (o As Object)" />
       <MemberSignature Language="F#" Value="member this.WriteEndElement : obj -&gt; unit" Usage="xmlSerializationWriter.WriteEndElement o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEndElement(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2580,6 +2638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteId(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteId (o As Object)" />
       <MemberSignature Language="F#" Value="member this.WriteId : obj -&gt; unit" Usage="xmlSerializationWriter.WriteId o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteId(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2624,6 +2683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNamespaceDeclarations(System.Xml.Serialization.XmlSerializerNamespaces)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNamespaceDeclarations (xmlns As XmlSerializerNamespaces)" />
       <MemberSignature Language="F#" Value="member this.WriteNamespaceDeclarations : System.Xml.Serialization.XmlSerializerNamespaces -&gt; unit" Usage="xmlSerializationWriter.WriteNamespaceDeclarations xmlns" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNamespaceDeclarations(System::Xml::Serialization::XmlSerializerNamespaces ^ xmlns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2664,6 +2724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded(System.String,System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableQualifiedNameEncoded (name As String, ns As String, value As XmlQualifiedName, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableQualifiedNameEncoded : string * string * System.Xml.XmlQualifiedName * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteNullableQualifiedNameEncoded (name, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableQualifiedNameEncoded(System::String ^ name, System::String ^ ns, System::Xml::XmlQualifiedName ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2714,6 +2775,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral(System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableQualifiedNameLiteral (name As String, ns As String, value As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableQualifiedNameLiteral : string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteNullableQualifiedNameLiteral (name, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableQualifiedNameLiteral(System::String ^ name, System::String ^ ns, System::Xml::XmlQualifiedName ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2762,6 +2824,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableStringEncoded (name As String, ns As String, value As String, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableStringEncoded : string * string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteNullableStringEncoded (name, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableStringEncoded(System::String ^ name, System::String ^ ns, System::String ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2822,6 +2885,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.Byte[],System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableStringEncodedRaw (name As String, ns As String, value As Byte(), xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableStringEncodedRaw : string * string * byte[] * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteNullableStringEncodedRaw (name, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableStringEncodedRaw(System::String ^ name, System::String ^ ns, cli::array &lt;System::Byte&gt; ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2872,6 +2936,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableStringEncodedRaw (name As String, ns As String, value As String, xsiType As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableStringEncodedRaw : string * string * string * System.Xml.XmlQualifiedName -&gt; unit" Usage="xmlSerializationWriter.WriteNullableStringEncodedRaw (name, ns, value, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableStringEncodedRaw(System::String ^ name, System::String ^ ns, System::String ^ value, System::Xml::XmlQualifiedName ^ xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2922,6 +2987,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableStringLiteral (name As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableStringLiteral : string * string * string -&gt; unit" Usage="xmlSerializationWriter.WriteNullableStringLiteral (name, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableStringLiteral(System::String ^ name, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2980,6 +3046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableStringLiteralRaw (name As String, ns As String, value As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteNullableStringLiteralRaw : string * string * byte[] -&gt; unit" Usage="xmlSerializationWriter.WriteNullableStringLiteralRaw (name, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableStringLiteralRaw(System::String ^ name, System::String ^ ns, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3028,6 +3095,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullableStringLiteralRaw (name As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteNullableStringLiteralRaw : string * string * string -&gt; unit" Usage="xmlSerializationWriter.WriteNullableStringLiteralRaw (name, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullableStringLiteralRaw(System::String ^ name, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3086,6 +3154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullTagEncoded (name As String)" />
       <MemberSignature Language="F#" Value="member this.WriteNullTagEncoded : string -&gt; unit" Usage="xmlSerializationWriter.WriteNullTagEncoded name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullTagEncoded(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3130,6 +3199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullTagEncoded (name As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteNullTagEncoded : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteNullTagEncoded (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullTagEncoded(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3186,6 +3256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullTagLiteral (name As String)" />
       <MemberSignature Language="F#" Value="member this.WriteNullTagLiteral : string -&gt; unit" Usage="xmlSerializationWriter.WriteNullTagLiteral name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullTagLiteral(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3230,6 +3301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteNullTagLiteral (name As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteNullTagLiteral : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteNullTagLiteral (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteNullTagLiteral(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3286,6 +3358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePotentiallyReferencingElement (n As String, ns As String, o As Object)" />
       <MemberSignature Language="F#" Value="member this.WritePotentiallyReferencingElement : string * string * obj -&gt; unit" Usage="xmlSerializationWriter.WritePotentiallyReferencingElement (n, ns, o)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePotentiallyReferencingElement(System::String ^ n, System::String ^ ns, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3334,6 +3407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePotentiallyReferencingElement (n As String, ns As String, o As Object, ambientType As Type)" />
       <MemberSignature Language="F#" Value="member this.WritePotentiallyReferencingElement : string * string * obj * Type -&gt; unit" Usage="xmlSerializationWriter.WritePotentiallyReferencingElement (n, ns, o, ambientType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePotentiallyReferencingElement(System::String ^ n, System::String ^ ns, System::Object ^ o, Type ^ ambientType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3384,6 +3458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePotentiallyReferencingElement (n As String, ns As String, o As Object, ambientType As Type, suppressReference As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WritePotentiallyReferencingElement : string * string * obj * Type * bool -&gt; unit" Usage="xmlSerializationWriter.WritePotentiallyReferencingElement (n, ns, o, ambientType, suppressReference)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePotentiallyReferencingElement(System::String ^ n, System::String ^ ns, System::Object ^ o, Type ^ ambientType, bool suppressReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3437,6 +3512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object,System.Type,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePotentiallyReferencingElement (n As String, ns As String, o As Object, ambientType As Type, suppressReference As Boolean, isNullable As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WritePotentiallyReferencingElement : string * string * obj * Type * bool * bool -&gt; unit" Usage="xmlSerializationWriter.WritePotentiallyReferencingElement (n, ns, o, ambientType, suppressReference, isNullable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePotentiallyReferencingElement(System::String ^ n, System::String ^ ns, System::Object ^ o, Type ^ ambientType, bool suppressReference, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3493,6 +3569,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationWriter.Writer" />
       <MemberSignature Language="VB.NET" Value="Protected Property Writer As XmlWriter" />
       <MemberSignature Language="F#" Value="member this.Writer : System.Xml.XmlWriter with get, set" Usage="System.Xml.Serialization.XmlSerializationWriter.Writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Xml::XmlWriter ^ Writer { System::Xml::XmlWriter ^ get(); void set(System::Xml::XmlWriter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3530,6 +3607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteReferencedElements" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteReferencedElements ()" />
       <MemberSignature Language="F#" Value="member this.WriteReferencedElements : unit -&gt; unit" Usage="xmlSerializationWriter.WriteReferencedElements " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteReferencedElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3581,6 +3659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteReferencingElement(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteReferencingElement (n As String, ns As String, o As Object)" />
       <MemberSignature Language="F#" Value="member this.WriteReferencingElement : string * string * obj -&gt; unit" Usage="xmlSerializationWriter.WriteReferencingElement (n, ns, o)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteReferencingElement(System::String ^ n, System::String ^ ns, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3629,6 +3708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteReferencingElement(System.String,System.String,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteReferencingElement (n As String, ns As String, o As Object, isNullable As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteReferencingElement : string * string * obj * bool -&gt; unit" Usage="xmlSerializationWriter.WriteReferencingElement (n, ns, o, isNullable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteReferencingElement(System::String ^ n, System::String ^ ns, System::Object ^ o, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3680,6 +3760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteRpcResult(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteRpcResult (name As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteRpcResult : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteRpcResult (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteRpcResult(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3734,6 +3815,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(System.Xml.Serialization.IXmlSerializable,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteSerializable (serializable As IXmlSerializable, name As String, ns As String, isNullable As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteSerializable : System.Xml.Serialization.IXmlSerializable * string * string * bool -&gt; unit" Usage="xmlSerializationWriter.WriteSerializable (serializable, name, ns, isNullable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteSerializable(System::Xml::Serialization::IXmlSerializable ^ serializable, System::String ^ name, System::String ^ ns, bool isNullable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3781,6 +3863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(System.Xml.Serialization.IXmlSerializable,System.String,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteSerializable (serializable As IXmlSerializable, name As String, ns As String, isNullable As Boolean, wrapped As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteSerializable : System.Xml.Serialization.IXmlSerializable * string * string * bool * bool -&gt; unit" Usage="xmlSerializationWriter.WriteSerializable (serializable, name, ns, isNullable, wrapped)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteSerializable(System::Xml::Serialization::IXmlSerializable ^ serializable, System::String ^ name, System::String ^ ns, bool isNullable, bool wrapped);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3824,6 +3907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartDocument ()" />
       <MemberSignature Language="F#" Value="member this.WriteStartDocument : unit -&gt; unit" Usage="xmlSerializationWriter.WriteStartDocument " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3871,6 +3955,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartElement (name As String)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string -&gt; unit" Usage="xmlSerializationWriter.WriteStartElement name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartElement(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3911,6 +3996,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartElement (name As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteStartElement (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartElement(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3953,6 +4039,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartElement (name As String, ns As String, writePrefixed As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string * bool -&gt; unit" Usage="xmlSerializationWriter.WriteStartElement (name, ns, writePrefixed)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartElement(System::String ^ name, System::String ^ ns, bool writePrefixed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3998,6 +4085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartElement (name As String, ns As String, o As Object)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string * obj -&gt; unit" Usage="xmlSerializationWriter.WriteStartElement (name, ns, o)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartElement(System::String ^ name, System::String ^ ns, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4042,6 +4130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartElement (name As String, ns As String, o As Object, writePrefixed As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string * obj * bool -&gt; unit" Usage="xmlSerializationWriter.WriteStartElement (name, ns, o, writePrefixed)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartElement(System::String ^ name, System::String ^ ns, System::Object ^ o, bool writePrefixed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4089,6 +4178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean,System.Xml.Serialization.XmlSerializerNamespaces)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteStartElement (name As String, ns As String, o As Object, writePrefixed As Boolean, xmlns As XmlSerializerNamespaces)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string * obj * bool * System.Xml.Serialization.XmlSerializerNamespaces -&gt; unit" Usage="xmlSerializationWriter.WriteStartElement (name, ns, o, writePrefixed, xmlns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteStartElement(System::String ^ name, System::String ^ ns, System::Object ^ o, bool writePrefixed, System::Xml::Serialization::XmlSerializerNamespaces ^ xmlns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4131,6 +4221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteTypedPrimitive(System.String,System.String,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteTypedPrimitive (name As String, ns As String, o As Object, xsiType As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteTypedPrimitive : string * string * obj * bool -&gt; unit" Usage="xmlSerializationWriter.WriteTypedPrimitive (name, ns, o, xsiType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteTypedPrimitive(System::String ^ name, System::String ^ ns, System::Object ^ o, bool xsiType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4190,6 +4281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteValue (value As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteValue : byte[] -&gt; unit" Usage="xmlSerializationWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteValue(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4230,6 +4322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteValue (value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteValue : string -&gt; unit" Usage="xmlSerializationWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteValue(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4280,6 +4373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteXmlAttribute (node As XmlNode)" />
       <MemberSignature Language="F#" Value="member this.WriteXmlAttribute : System.Xml.XmlNode -&gt; unit" Usage="xmlSerializationWriter.WriteXmlAttribute node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteXmlAttribute(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4320,6 +4414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(System.Xml.XmlNode,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteXmlAttribute (node As XmlNode, container As Object)" />
       <MemberSignature Language="F#" Value="member this.WriteXmlAttribute : System.Xml.XmlNode * obj -&gt; unit" Usage="xmlSerializationWriter.WriteXmlAttribute (node, container)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteXmlAttribute(System::Xml::XmlNode ^ node, System::Object ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4362,6 +4457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteXsiType(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteXsiType (name As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteXsiType : string * string -&gt; unit" Usage="xmlSerializationWriter.WriteXsiType (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteXsiType(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

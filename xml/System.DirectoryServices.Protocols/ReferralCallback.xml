@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ReferralCallback" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReferralCallback" />
   <TypeSignature Language="F#" Value="type ReferralCallback = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReferralCallback sealed" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ReferralCallback.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReferralCallback();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ReferralCallback.DereferenceConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property DereferenceConnection As DereferenceConnectionCallback" />
       <MemberSignature Language="F#" Value="member this.DereferenceConnection : System.DirectoryServices.Protocols.DereferenceConnectionCallback with get, set" Usage="System.DirectoryServices.Protocols.ReferralCallback.DereferenceConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DereferenceConnectionCallback ^ DereferenceConnection { System::DirectoryServices::Protocols::DereferenceConnectionCallback ^ get(); void set(System::DirectoryServices::Protocols::DereferenceConnectionCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ReferralCallback.NotifyNewConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyNewConnection As NotifyOfNewConnectionCallback" />
       <MemberSignature Language="F#" Value="member this.NotifyNewConnection : System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback with get, set" Usage="System.DirectoryServices.Protocols.ReferralCallback.NotifyNewConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::NotifyOfNewConnectionCallback ^ NotifyNewConnection { System::DirectoryServices::Protocols::NotifyOfNewConnectionCallback ^ get(); void set(System::DirectoryServices::Protocols::NotifyOfNewConnectionCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ReferralCallback.QueryForConnection" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryForConnection As QueryForConnectionCallback" />
       <MemberSignature Language="F#" Value="member this.QueryForConnection : System.DirectoryServices.Protocols.QueryForConnectionCallback with get, set" Usage="System.DirectoryServices.Protocols.ReferralCallback.QueryForConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::QueryForConnectionCallback ^ QueryForConnection { System::DirectoryServices::Protocols::QueryForConnectionCallback ^ get(); void set(System::DirectoryServices::Protocols::QueryForConnectionCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

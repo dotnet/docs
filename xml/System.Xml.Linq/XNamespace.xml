@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNamespace" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XNamespace" />
   <TypeSignature Language="F#" Value="type XNamespace = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XNamespace sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -202,6 +203,7 @@ Console.WriteLine(e)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xNamespace.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -270,6 +272,7 @@ True
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Get (namespaceName As String) As XNamespace" />
       <MemberSignature Language="F#" Value="static member Get : string -&gt; System.Xml.Linq.XNamespace" Usage="System.Xml.Linq.XNamespace.Get namespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XNamespace ^ Get(System::String ^ namespaceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -348,6 +351,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xNamespace.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -387,6 +391,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.GetName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetName (localName As String) As XName" />
       <MemberSignature Language="F#" Value="member this.GetName : string -&gt; System.Xml.Linq.XName" Usage="xNamespace.GetName localName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Linq::XName ^ GetName(System::String ^ localName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -458,6 +463,7 @@ End Module
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNamespace.NamespaceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
       <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Xml.Linq.XNamespace.NamespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -522,6 +528,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNamespace.None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As XNamespace" />
       <MemberSignature Language="F#" Value="member this.None : System.Xml.Linq.XNamespace" Usage="System.Xml.Linq.XNamespace.None" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNamespace ^ None { System::Xml::Linq::XNamespace ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -631,6 +638,7 @@ ChildInNoNamespace element is in no namespace
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Addition(System.Xml.Linq.XNamespace,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (ns As XNamespace, localName As String) As XName" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Xml.Linq.XNamespace * string -&gt; System.Xml.Linq.XName" Usage="ns + localName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XName ^ operator +(System::Xml::Linq::XNamespace ^ ns, System::String ^ localName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -719,6 +727,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As XNamespace, right As XNamespace) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Xml.Linq.XNamespace * System.Xml.Linq.XNamespace -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xml::Linq::XNamespace ^ left, System::Xml::Linq::XNamespace ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -788,6 +797,7 @@ True
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Implicit(System.String)~System.Xml.Linq.XNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (namespaceName As String) As XNamespace" />
       <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Xml.Linq.XNamespace" Usage="System.Xml.Linq.XNamespace.op_Implicit namespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Xml::Linq::XNamespace ^(System::String ^ namespaceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -855,6 +865,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As XNamespace, right As XNamespace) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Xml.Linq.XNamespace * System.Xml.Linq.XNamespace -&gt; bool" Usage="System.Xml.Linq.XNamespace.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xml::Linq::XNamespace ^ left, System::Xml::Linq::XNamespace ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -924,6 +935,7 @@ False
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xNamespace.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -985,6 +997,7 @@ http://www.adventure-works.com
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNamespace.Xml" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Xml As XNamespace" />
       <MemberSignature Language="F#" Value="member this.Xml : System.Xml.Linq.XNamespace" Usage="System.Xml.Linq.XNamespace.Xml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNamespace ^ Xml { System::Xml::Linq::XNamespace ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1052,6 +1065,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNamespace.Xmlns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Xmlns As XNamespace" />
       <MemberSignature Language="F#" Value="member this.Xmlns : System.Xml.Linq.XNamespace" Usage="System.Xml.Linq.XNamespace.Xmlns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNamespace ^ Xmlns { System::Xml::Linq::XNamespace ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

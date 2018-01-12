@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.LogicalMethodInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LogicalMethodInfo" />
   <TypeSignature Language="F#" Value="type LogicalMethodInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogicalMethodInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.#ctor(System.Reflection.MethodInfo)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.LogicalMethodInfo : System.Reflection.MethodInfo -&gt; System.Web.Services.Protocols.LogicalMethodInfo" Usage="new System.Web.Services.Protocols.LogicalMethodInfo method_info" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method_info As MethodInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogicalMethodInfo(System::Reflection::MethodInfo ^ method_info);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncCallbackParameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncCallbackParameter As ParameterInfo" />
       <MemberSignature Language="F#" Value="member this.AsyncCallbackParameter : System.Reflection.ParameterInfo" Usage="System.Web.Services.Protocols.LogicalMethodInfo.AsyncCallbackParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ParameterInfo ^ AsyncCallbackParameter { System::Reflection::ParameterInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncResultParameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncResultParameter As ParameterInfo" />
       <MemberSignature Language="F#" Value="member this.AsyncResultParameter : System.Reflection.ParameterInfo" Usage="System.Web.Services.Protocols.LogicalMethodInfo.AsyncResultParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ParameterInfo ^ AsyncResultParameter { System::Reflection::ParameterInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncStateParameter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsyncStateParameter As ParameterInfo" />
       <MemberSignature Language="F#" Value="member this.AsyncStateParameter : System.Reflection.ParameterInfo" Usage="System.Web.Services.Protocols.LogicalMethodInfo.AsyncStateParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ParameterInfo ^ AsyncStateParameter { System::Reflection::ParameterInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke(System.Object,System.Object[],System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginInvoke (target As Object, values As Object(), callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginInvoke : obj * obj[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="logicalMethodInfo.BeginInvoke (target, values, callback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginInvoke(System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ values, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.BeginMethodInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BeginMethodInfo As MethodInfo" />
       <MemberSignature Language="F#" Value="member this.BeginMethodInfo : System.Reflection.MethodInfo" Usage="System.Web.Services.Protocols.LogicalMethodInfo.BeginMethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ BeginMethodInfo { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Create(System.Reflection.MethodInfo[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (method_infos As MethodInfo()) As LogicalMethodInfo()" />
       <MemberSignature Language="F#" Value="static member Create : System.Reflection.MethodInfo[] -&gt; System.Web.Services.Protocols.LogicalMethodInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.Create method_infos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ method_infos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Create(System.Reflection.MethodInfo[],System.Web.Services.Protocols.LogicalMethodTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (method_infos As MethodInfo(), types As LogicalMethodTypes) As LogicalMethodInfo()" />
       <MemberSignature Language="F#" Value="static member Create : System.Reflection.MethodInfo[] * System.Web.Services.Protocols.LogicalMethodTypes -&gt; System.Web.Services.Protocols.LogicalMethodInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.Create (method_infos, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ method_infos, System::Web::Services::Protocols::LogicalMethodTypes types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -352,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.CustomAttributeProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomAttributeProvider As ICustomAttributeProvider" />
       <MemberSignature Language="F#" Value="member this.CustomAttributeProvider : System.Reflection.ICustomAttributeProvider" Usage="System.Web.Services.Protocols.LogicalMethodInfo.CustomAttributeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ICustomAttributeProvider ^ CustomAttributeProvider { System::Reflection::ICustomAttributeProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Web.Services.Protocols.LogicalMethodInfo.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -417,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.EndInvoke(System.Object,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndInvoke (target As Object, asyncResult As IAsyncResult) As Object()" />
       <MemberSignature Language="F#" Value="member this.EndInvoke : obj * IAsyncResult -&gt; obj[]" Usage="logicalMethodInfo.EndInvoke (target, asyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ EndInvoke(System::Object ^ target, IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -456,6 +468,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.EndMethodInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndMethodInfo As MethodInfo" />
       <MemberSignature Language="F#" Value="member this.EndMethodInfo : System.Reflection.MethodInfo" Usage="System.Web.Services.Protocols.LogicalMethodInfo.EndMethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ EndMethodInfo { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -488,6 +501,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCustomAttribute(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.GetCustomAttribute(System.Type)" />
       <MemberSignature Language="F#" Value="member this.GetCustomAttribute : Type -&gt; obj" Usage="logicalMethodInfo.GetCustomAttribute type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCustomAttribute(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -522,6 +536,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object[] GetCustomAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.GetCustomAttributes(System.Type)" />
       <MemberSignature Language="F#" Value="member this.GetCustomAttributes : Type -&gt; obj[]" Usage="logicalMethodInfo.GetCustomAttributes type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -557,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.InParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InParameters As ParameterInfo()" />
       <MemberSignature Language="F#" Value="member this.InParameters : System.Reflection.ParameterInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.InParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ InParameters { cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -596,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Invoke(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (target As Object, values As Object()) As Object()" />
       <MemberSignature Language="F#" Value="member this.Invoke : obj * obj[] -&gt; obj[]" Usage="logicalMethodInfo.Invoke (target, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ Invoke(System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -636,6 +653,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.IsAsync" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAsync As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAsync : bool" Usage="System.Web.Services.Protocols.LogicalMethodInfo.IsAsync" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -667,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.IsBeginMethod(System.Reflection.MethodInfo)" />
       <MemberSignature Language="F#" Value="static member IsBeginMethod : System.Reflection.MethodInfo -&gt; bool" Usage="System.Web.Services.Protocols.LogicalMethodInfo.IsBeginMethod method_info" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsBeginMethod (method_info As MethodInfo) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBeginMethod(System::Reflection::MethodInfo ^ method_info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -702,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.IsEndMethod(System.Reflection.MethodInfo)" />
       <MemberSignature Language="F#" Value="static member IsEndMethod : System.Reflection.MethodInfo -&gt; bool" Usage="System.Web.Services.Protocols.LogicalMethodInfo.IsEndMethod method_info" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsEndMethod (method_info As MethodInfo) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEndMethod(System::Reflection::MethodInfo ^ method_info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -737,6 +757,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.IsVoid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVoid As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsVoid : bool" Usage="System.Web.Services.Protocols.LogicalMethodInfo.IsVoid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVoid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -768,6 +789,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.MethodInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodInfo As MethodInfo" />
       <MemberSignature Language="F#" Value="member this.MethodInfo : System.Reflection.MethodInfo" Usage="System.Web.Services.Protocols.LogicalMethodInfo.MethodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ MethodInfo { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -801,6 +823,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.Services.Protocols.LogicalMethodInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -831,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.OutParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutParameters As ParameterInfo()" />
       <MemberSignature Language="F#" Value="member this.OutParameters : System.Reflection.ParameterInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.OutParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ OutParameters { cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -868,6 +892,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ParameterInfo()" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Reflection.ParameterInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ Parameters { cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -907,6 +932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Web.Services.Protocols.LogicalMethodInfo.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -937,6 +963,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.LogicalMethodInfo.ReturnTypeCustomAttributeProvider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnTypeCustomAttributeProvider As ICustomAttributeProvider" />
       <MemberSignature Language="F#" Value="member this.ReturnTypeCustomAttributeProvider : System.Reflection.ICustomAttributeProvider" Usage="System.Web.Services.Protocols.LogicalMethodInfo.ReturnTypeCustomAttributeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ICustomAttributeProvider ^ ReturnTypeCustomAttributeProvider { System::Reflection::ICustomAttributeProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -967,6 +994,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="logicalMethodInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

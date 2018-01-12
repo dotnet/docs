@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo.TransitionTime" />
   <TypeSignature Language="VB.NET" Value="Public Structure TimeZoneInfo.TransitionTime&#xA;Implements IDeserializationCallback, IEquatable(Of TimeZoneInfo.TransitionTime), ISerializable" />
   <TypeSignature Language="F#" Value="type TimeZoneInfo.TransitionTime = struct&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public: value class TimeZoneInfo::TransitionTime : IEquatable&lt;TimeZoneInfo::TransitionTime&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.CreateFixedDateRule(System.DateTime,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFixedDateRule (timeOfDay As DateTime, month As Integer, day As Integer) As TimeZoneInfo.TransitionTime" />
       <MemberSignature Language="F#" Value="static member CreateFixedDateRule : DateTime * int * int -&gt; TimeZoneInfo.TransitionTime" Usage="System.TimeZoneInfo.TransitionTime.CreateFixedDateRule (timeOfDay, month, day)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo::TransitionTime CreateFixedDateRule(DateTime timeOfDay, int month, int day);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeZoneInfo/TransitionTime CreateFloatingDateRule(valuetype System.DateTime timeOfDay, int32 month, int32 week, valuetype System.DayOfWeek dayOfWeek) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule(System.DateTime,System.Int32,System.Int32,System.DayOfWeek)" />
       <MemberSignature Language="F#" Value="static member CreateFloatingDateRule : DateTime * int * int * DayOfWeek -&gt; TimeZoneInfo.TransitionTime" Usage="System.TimeZoneInfo.TransitionTime.CreateFloatingDateRule (timeOfDay, month, week, dayOfWeek)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo::TransitionTime CreateFloatingDateRule(DateTime timeOfDay, int month, int week, DayOfWeek dayOfWeek);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.TransitionTime.Day" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Day As Integer" />
       <MemberSignature Language="F#" Value="member this.Day : int" Usage="System.TimeZoneInfo.TransitionTime.Day" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Day { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.TransitionTime.DayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayOfWeek As DayOfWeek" />
       <MemberSignature Language="F#" Value="member this.DayOfWeek : DayOfWeek" Usage="System.TimeZoneInfo.TransitionTime.DayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DayOfWeek DayOfWeek { DayOfWeek get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="transitionTime.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -365,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.Equals(System.TimeZoneInfo.TransitionTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As TimeZoneInfo.TransitionTime) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : TimeZoneInfo.TransitionTime -&gt; bool" Usage="transitionTime.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(TimeZoneInfo::TransitionTime other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -417,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="transitionTime.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.TransitionTime.IsFixedDateRule" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedDateRule As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFixedDateRule : bool" Usage="System.TimeZoneInfo.TransitionTime.IsFixedDateRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedDateRule { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -502,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.TransitionTime.Month" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Month As Integer" />
       <MemberSignature Language="F#" Value="member this.Month : int" Usage="System.TimeZoneInfo.TransitionTime.Month" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Month { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (t1 As TimeZoneInfo.TransitionTime, t2 As TimeZoneInfo.TransitionTime) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="t1 = t2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(TimeZoneInfo::TransitionTime t1, TimeZoneInfo::TransitionTime t2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -591,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (t1 As TimeZoneInfo.TransitionTime, t2 As TimeZoneInfo.TransitionTime) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; bool" Usage="System.TimeZoneInfo.TransitionTime.op_Inequality (t1, t2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(TimeZoneInfo::TransitionTime t1, TimeZoneInfo::TransitionTime t2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -633,6 +645,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -667,6 +680,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -710,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.TransitionTime.TimeOfDay" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeOfDay As DateTime" />
       <MemberSignature Language="F#" Value="member this.TimeOfDay : DateTime" Usage="System.TimeZoneInfo.TransitionTime.TimeOfDay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeOfDay { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -758,6 +773,7 @@
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.TransitionTime.Week" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Week As Integer" />
       <MemberSignature Language="F#" Value="member this.Week : int" Usage="System.TimeZoneInfo.TransitionTime.Week" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Week { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

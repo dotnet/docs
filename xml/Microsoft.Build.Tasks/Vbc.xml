@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Vbc" />
   <TypeSignature Language="VB.NET" Value="Public Class Vbc&#xA;Inherits ManagedCompiler" />
   <TypeSignature Language="F#" Value="type Vbc = class&#xA;    inherit ManagedCompiler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Vbc : Microsoft::Build::Tasks::ManagedCompiler" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vbc();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.AddResponseFileCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub AddResponseFileCommands (commandLine As CommandLineBuilderExtension)" />
       <MemberSignature Language="F#" Value="override this.AddResponseFileCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit" Usage="vbc.AddResponseFileCommands commandLine" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void AddResponseFileCommands(Microsoft::Build::Tasks::CommandLineBuilderExtension ^ commandLine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.BaseAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseAddress As String" />
       <MemberSignature Language="F#" Value="member this.BaseAddress : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.BaseAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseAddress { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.CallHostObjectToExecute" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CallHostObjectToExecute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.CallHostObjectToExecute : unit -&gt; bool" Usage="vbc.CallHostObjectToExecute " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CallHostObjectToExecute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.DisabledWarnings" />
       <MemberSignature Language="VB.NET" Value="Public Property DisabledWarnings As String" />
       <MemberSignature Language="F#" Value="member this.DisabledWarnings : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.DisabledWarnings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisabledWarnings { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.DocumentationFile" />
       <MemberSignature Language="VB.NET" Value="Public Property DocumentationFile As String" />
       <MemberSignature Language="F#" Value="member this.DocumentationFile : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.DocumentationFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentationFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.ErrorReport" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorReport As String" />
       <MemberSignature Language="F#" Value="member this.ErrorReport : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.ErrorReport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorReport { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -212,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="vbc.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.GenerateDocumentation" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateDocumentation As Boolean" />
       <MemberSignature Language="F#" Value="member this.GenerateDocumentation : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.GenerateDocumentation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateDocumentation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -263,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.GenerateFullPathToTool" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateFullPathToTool () As String" />
       <MemberSignature Language="F#" Value="override this.GenerateFullPathToTool : unit -&gt; string" Usage="vbc.GenerateFullPathToTool " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateFullPathToTool();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -285,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.Imports" />
       <MemberSignature Language="VB.NET" Value="Public Property Imports As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.Imports : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Vbc.Imports" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Imports { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -306,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.InitializeHostObject" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InitializeHostObject () As HostObjectInitializationStatus" />
       <MemberSignature Language="F#" Value="override this.InitializeHostObject : unit -&gt; Microsoft.Build.Utilities.HostObjectInitializationStatus" Usage="vbc.InitializeHostObject " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Build::Utilities::HostObjectInitializationStatus InitializeHostObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -335,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.LangVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property LangVersion As String" />
       <MemberSignature Language="F#" Value="member this.LangVersion : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.LangVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LangVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -355,6 +369,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LogEventsFromTextOutput(string singleLine, valuetype Microsoft.Build.Framework.MessageImportance messageImportance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.LogEventsFromTextOutput(System.String,Microsoft.Build.Framework.MessageImportance)" />
       <MemberSignature Language="F#" Value="override this.LogEventsFromTextOutput : string * Microsoft.Build.Framework.MessageImportance -&gt; unit" Usage="vbc.LogEventsFromTextOutput (singleLine, messageImportance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LogEventsFromTextOutput(System::String ^ singleLine, Microsoft::Build::Framework::MessageImportance messageImportance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -388,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.ModuleAssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property ModuleAssemblyName As String" />
       <MemberSignature Language="F#" Value="member this.ModuleAssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.ModuleAssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModuleAssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -409,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.NoStandardLib" />
       <MemberSignature Language="VB.NET" Value="Public Property NoStandardLib As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoStandardLib : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.NoStandardLib" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoStandardLib { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -431,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.NoVBRuntimeReference" />
       <MemberSignature Language="VB.NET" Value="Public Property NoVBRuntimeReference As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoVBRuntimeReference : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.NoVBRuntimeReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoVBRuntimeReference { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -453,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.NoWarnings" />
       <MemberSignature Language="VB.NET" Value="Public Property NoWarnings As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoWarnings : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.NoWarnings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoWarnings { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -475,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.OptionCompare" />
       <MemberSignature Language="VB.NET" Value="Public Property OptionCompare As String" />
       <MemberSignature Language="F#" Value="member this.OptionCompare : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.OptionCompare" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OptionCompare { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -509,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.OptionExplicit" />
       <MemberSignature Language="VB.NET" Value="Public Property OptionExplicit As Boolean" />
       <MemberSignature Language="F#" Value="member this.OptionExplicit : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.OptionExplicit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OptionExplicit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -531,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.OptionInfer" />
       <MemberSignature Language="VB.NET" Value="Public Property OptionInfer As Boolean" />
       <MemberSignature Language="F#" Value="member this.OptionInfer : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.OptionInfer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OptionInfer { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -553,6 +575,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.OptionStrict" />
       <MemberSignature Language="VB.NET" Value="Public Property OptionStrict As Boolean" />
       <MemberSignature Language="F#" Value="member this.OptionStrict : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.OptionStrict" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OptionStrict { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -575,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.OptionStrictType" />
       <MemberSignature Language="VB.NET" Value="Public Property OptionStrictType As String" />
       <MemberSignature Language="F#" Value="member this.OptionStrictType : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.OptionStrictType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OptionStrictType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -596,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.PdbFile" />
       <MemberSignature Language="VB.NET" Value="Public Property PdbFile As String" />
       <MemberSignature Language="F#" Value="member this.PdbFile : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.PdbFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PdbFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -617,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.RemoveIntegerChecks" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoveIntegerChecks As Boolean" />
       <MemberSignature Language="F#" Value="member this.RemoveIntegerChecks : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.RemoveIntegerChecks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RemoveIntegerChecks { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -646,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
       <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.RootNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -667,6 +694,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.SdkPath" />
       <MemberSignature Language="VB.NET" Value="Public Property SdkPath As String" />
       <MemberSignature Language="F#" Value="member this.SdkPath : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.SdkPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SdkPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -688,6 +716,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.TargetCompactFramework" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetCompactFramework As Boolean" />
       <MemberSignature Language="F#" Value="member this.TargetCompactFramework : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.TargetCompactFramework" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TargetCompactFramework { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -710,6 +739,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.ToolName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ToolName As String" />
       <MemberSignature Language="F#" Value="member this.ToolName : string" Usage="Microsoft.Build.Tasks.Vbc.ToolName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ToolName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -731,6 +761,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.UseHostCompilerIfAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Property UseHostCompilerIfAvailable As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseHostCompilerIfAvailable : bool with get, set" Usage="Microsoft.Build.Tasks.Vbc.UseHostCompilerIfAvailable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseHostCompilerIfAvailable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -753,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Vbc.ValidateParameters" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateParameters () As Boolean" />
       <MemberSignature Language="F#" Value="override this.ValidateParameters : unit -&gt; bool" Usage="vbc.ValidateParameters " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ValidateParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -776,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.VBRuntime" />
       <MemberSignature Language="VB.NET" Value="Public Property VBRuntime As String" />
       <MemberSignature Language="F#" Value="member this.VBRuntime : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.VBRuntime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VBRuntime { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -797,6 +830,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.VBRuntimePath" />
       <MemberSignature Language="VB.NET" Value="Public Property VBRuntimePath As String" />
       <MemberSignature Language="F#" Value="member this.VBRuntimePath : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.VBRuntimePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VBRuntimePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -818,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.Verbosity" />
       <MemberSignature Language="VB.NET" Value="Public Property Verbosity As String" />
       <MemberSignature Language="F#" Value="member this.Verbosity : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.Verbosity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Verbosity { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -846,6 +881,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.WarningsAsErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property WarningsAsErrors As String" />
       <MemberSignature Language="F#" Value="member this.WarningsAsErrors : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.WarningsAsErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WarningsAsErrors { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -867,6 +903,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Vbc.WarningsNotAsErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property WarningsNotAsErrors As String" />
       <MemberSignature Language="F#" Value="member this.WarningsNotAsErrors : string with get, set" Usage="Microsoft.Build.Tasks.Vbc.WarningsNotAsErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WarningsNotAsErrors { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

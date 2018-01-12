@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SecurityPolicySection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityPolicySection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type SecurityPolicySection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityPolicySection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SecurityPolicySection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityPolicySection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SecurityPolicySection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.SecurityPolicySection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SecurityPolicySection.TrustLevels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrustLevels As TrustLevelCollection" />
       <MemberSignature Language="F#" Value="member this.TrustLevels : System.Web.Configuration.TrustLevelCollection" Usage="System.Web.Configuration.SecurityPolicySection.TrustLevels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TrustLevelCollection ^ TrustLevels { System::Web::Configuration::TrustLevelCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

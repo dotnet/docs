@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.UpdateRowSource" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdateRowSource" />
   <TypeSignature Language="F#" Value="type UpdateRowSource = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpdateRowSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.Both" />
       <MemberSignature Language="VB.NET" Value="Both" />
       <MemberSignature Language="F#" Value="Both = 3" Usage="System.Data.UpdateRowSource.Both" />
+      <MemberSignature Language="C++ CLI" Value="Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.FirstReturnedRecord" />
       <MemberSignature Language="VB.NET" Value="FirstReturnedRecord" />
       <MemberSignature Language="F#" Value="FirstReturnedRecord = 2" Usage="System.Data.UpdateRowSource.FirstReturnedRecord" />
+      <MemberSignature Language="C++ CLI" Value="FirstReturnedRecord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.UpdateRowSource.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.OutputParameters" />
       <MemberSignature Language="VB.NET" Value="OutputParameters" />
       <MemberSignature Language="F#" Value="OutputParameters = 1" Usage="System.Data.UpdateRowSource.OutputParameters" />
+      <MemberSignature Language="C++ CLI" Value="OutputParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

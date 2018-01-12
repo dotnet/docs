@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaParameter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetaParameter" />
   <TypeSignature Language="F#" Value="type MetaParameter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetaParameter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MetaParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaParameter.DbType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DbType As String" />
       <MemberSignature Language="F#" Value="member this.DbType : string" Usage="System.Data.Linq.Mapping.MetaParameter.DbType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DbType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaParameter.MappedName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MappedName As String" />
       <MemberSignature Language="F#" Value="member this.MappedName : string" Usage="System.Data.Linq.Mapping.MetaParameter.MappedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ MappedName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaParameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Linq.Mapping.MetaParameter.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaParameter.Parameter" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Parameter As ParameterInfo" />
       <MemberSignature Language="F#" Value="member this.Parameter : System.Reflection.ParameterInfo" Usage="System.Data.Linq.Mapping.MetaParameter.Parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::ParameterInfo ^ Parameter { System::Reflection::ParameterInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaParameter.ParameterType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ParameterType As Type" />
       <MemberSignature Language="F#" Value="member this.ParameterType : Type" Usage="System.Data.Linq.Mapping.MetaParameter.ParameterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ParameterType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

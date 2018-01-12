@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuntimeCompatibilityAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type RuntimeCompatibilityAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuntimeCompatibilityAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuntimeCompatibilityAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.WrapNonExceptionThrows" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapNonExceptionThrows As Boolean" />
       <MemberSignature Language="F#" Value="member this.WrapNonExceptionThrows : bool with get, set" Usage="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.WrapNonExceptionThrows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrapNonExceptionThrows { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

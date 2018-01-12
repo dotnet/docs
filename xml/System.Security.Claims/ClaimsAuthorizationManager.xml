@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimsAuthorizationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsAuthorizationManager&#xA;Implements ICustomIdentityConfiguration" />
   <TypeSignature Language="F#" Value="type ClaimsAuthorizationManager = class&#xA;    interface ICustomIdentityConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsAuthorizationManager : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -164,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClaimsAuthorizationManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -181,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess(System.Security.Claims.AuthorizationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckAccess (context As AuthorizationContext) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CheckAccess : System.Security.Claims.AuthorizationContext -&gt; bool&#xA;override this.CheckAccess : System.Security.Claims.AuthorizationContext -&gt; bool" Usage="claimsAuthorizationManager.CheckAccess context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CheckAccess(System::Security::Claims::AuthorizationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -259,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
       <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="claimsAuthorizationManager.LoadCustomConfiguration nodelist" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexMatchTimeoutException" />
   <TypeSignature Language="VB.NET" Value="Public Class RegexMatchTimeoutException&#xA;Inherits TimeoutException" />
   <TypeSignature Language="F#" Value="type RegexMatchTimeoutException = class&#xA;    inherit TimeoutException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegexMatchTimeoutException : TimeoutException" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexMatchTimeoutException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Text.RegularExpressions.RegexMatchTimeoutException : string -&gt; System.Text.RegularExpressions.RegexMatchTimeoutException" Usage="new System.Text.RegularExpressions.RegexMatchTimeoutException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexMatchTimeoutException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Text.RegularExpressions.RegexMatchTimeoutException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Text.RegularExpressions.RegexMatchTimeoutException" Usage="new System.Text.RegularExpressions.RegexMatchTimeoutException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RegexMatchTimeoutException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Text.RegularExpressions.RegexMatchTimeoutException : string * Exception -&gt; System.Text.RegularExpressions.RegexMatchTimeoutException" Usage="new System.Text.RegularExpressions.RegexMatchTimeoutException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexMatchTimeoutException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor(System.String,System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (regexInput As String, regexPattern As String, matchTimeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Text.RegularExpressions.RegexMatchTimeoutException : string * string * TimeSpan -&gt; System.Text.RegularExpressions.RegexMatchTimeoutException" Usage="new System.Text.RegularExpressions.RegexMatchTimeoutException (regexInput, regexPattern, matchTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexMatchTimeoutException(System::String ^ regexInput, System::String ^ regexPattern, TimeSpan matchTimeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -278,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexMatchTimeoutException.Input" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Input As String" />
       <MemberSignature Language="F#" Value="member this.Input : string" Usage="System.Text.RegularExpressions.RegexMatchTimeoutException.Input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Input { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexMatchTimeoutException.MatchTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MatchTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.MatchTimeout : TimeSpan" Usage="System.Text.RegularExpressions.RegexMatchTimeoutException.MatchTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MatchTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexMatchTimeoutException.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pattern As String" />
       <MemberSignature Language="F#" Value="member this.Pattern : string" Usage="System.Text.RegularExpressions.RegexMatchTimeoutException.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pattern { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -401,6 +410,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexMatchTimeoutException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

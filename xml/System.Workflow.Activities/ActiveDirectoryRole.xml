@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ActiveDirectoryRole" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActiveDirectoryRole&#xA;Inherits WorkflowRole&#xA;Implements IDisposable, ISerializable" />
   <TypeSignature Language="F#" Value="type ActiveDirectoryRole = class&#xA;    inherit WorkflowRole&#xA;    interface ISerializable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectoryRole sealed : System::Workflow::Activities::WorkflowRole, IDisposable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAllReports () As ActiveDirectoryRole" />
       <MemberSignature Language="F#" Value="member this.GetAllReports : unit -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="activeDirectoryRole.GetAllReports " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::ActiveDirectoryRole ^ GetAllReports();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDirectReports () As ActiveDirectoryRole" />
       <MemberSignature Language="F#" Value="member this.GetDirectReports : unit -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="activeDirectoryRole.GetDirectReports " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::ActiveDirectoryRole ^ GetDirectReports();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetEntries" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEntries () As ICollection(Of DirectoryEntry)" />
       <MemberSignature Language="F#" Value="member this.GetEntries : unit -&gt; System.Collections.Generic.ICollection&lt;System.DirectoryServices.DirectoryEntry&gt;" Usage="activeDirectoryRole.GetEntries " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::ICollection&lt;System::DirectoryServices::DirectoryEntry ^&gt; ^ GetEntries();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetIdentities" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIdentities () As IList(Of String)" />
       <MemberSignature Language="F#" Value="override this.GetIdentities : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="activeDirectoryRole.GetIdentities " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetIdentities();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetManager" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManager () As ActiveDirectoryRole" />
       <MemberSignature Language="F#" Value="member this.GetManager : unit -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="activeDirectoryRole.GetManager " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::ActiveDirectoryRole ^ GetManager();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain" />
       <MemberSignature Language="VB.NET" Value="Public Function GetManagerialChain () As ActiveDirectoryRole" />
       <MemberSignature Language="F#" Value="member this.GetManagerialChain : unit -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="activeDirectoryRole.GetManagerialChain " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::ActiveDirectoryRole ^ GetManagerialChain();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetPeers" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPeers () As ActiveDirectoryRole" />
       <MemberSignature Language="F#" Value="member this.GetPeers : unit -&gt; System.Workflow.Activities.ActiveDirectoryRole" Usage="activeDirectoryRole.GetPeers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::ActiveDirectoryRole ^ GetPeers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSecurityIdentifiers () As IList(Of SecurityIdentifier)" />
       <MemberSignature Language="F#" Value="member this.GetSecurityIdentifiers : unit -&gt; System.Collections.Generic.IList&lt;System.Security.Principal.SecurityIdentifier&gt;" Usage="activeDirectoryRole.GetSecurityIdentifiers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Security::Principal::SecurityIdentifier ^&gt; ^ GetSecurityIdentifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.IncludesIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IncludesIdentity (identity As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IncludesIdentity : string -&gt; bool" Usage="activeDirectoryRole.IncludesIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IncludesIdentity(System::String ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ActiveDirectoryRole.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.ActiveDirectoryRole.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -332,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ActiveDirectoryRole.RootEntry" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootEntry As DirectoryEntry" />
       <MemberSignature Language="F#" Value="member this.RootEntry : System.DirectoryServices.DirectoryEntry" Usage="System.Workflow.Activities.ActiveDirectoryRole.RootEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryEntry ^ RootEntry { System::DirectoryServices::DirectoryEntry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -358,6 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -380,6 +393,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

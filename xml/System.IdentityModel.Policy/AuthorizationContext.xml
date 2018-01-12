@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.AuthorizationContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AuthorizationContext&#xA;Implements IAuthorizationComponent" />
   <TypeSignature Language="F#" Value="type AuthorizationContext = class&#xA;    interface IAuthorizationComponent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationContext abstract : System::IdentityModel::Policy::IAuthorizationComponent" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AuthorizationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.ClaimSets" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ClaimSets As ReadOnlyCollection(Of ClaimSet)" />
       <MemberSignature Language="F#" Value="member this.ClaimSets : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt;" Usage="System.IdentityModel.Policy.AuthorizationContext.ClaimSets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::ClaimSet ^&gt; ^ ClaimSets { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::ClaimSet ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext(System.Collections.Generic.IList{System.IdentityModel.Policy.IAuthorizationPolicy})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDefaultAuthorizationContext (policies As IList(Of IAuthorizationPolicy)) As AuthorizationContext" />
       <MemberSignature Language="F#" Value="static member CreateDefaultAuthorizationContext : System.Collections.Generic.IList&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; -&gt; System.IdentityModel.Policy.AuthorizationContext" Usage="System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext policies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Policy::AuthorizationContext ^ CreateDefaultAuthorizationContext(System::Collections::Generic::IList&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ policies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ExpirationTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.ExpirationTime : DateTime" Usage="System.IdentityModel.Policy.AuthorizationContext.ExpirationTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTime ExpirationTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.Id" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Policy.AuthorizationContext.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.IdentityModel.Policy.IAuthorizationComponent.Id</InterfaceMember>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.AuthorizationContext.Properties" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.IdentityModel.Policy.AuthorizationContext.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

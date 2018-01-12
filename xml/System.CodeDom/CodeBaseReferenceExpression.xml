@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBaseReferenceExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeBaseReferenceExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="F#" Value="type CodeBaseReferenceExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeBaseReferenceExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeBaseReferenceExpression.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBaseReferenceExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

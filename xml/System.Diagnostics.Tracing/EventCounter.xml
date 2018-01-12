@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventCounter" />
   <TypeSignature Language="VB.NET" Value="Public Class EventCounter" />
   <TypeSignature Language="F#" Value="type EventCounter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventCounter" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Diagnostics.Tracing.EventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.#ctor(System.String,System.Diagnostics.Tracing.EventSource)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventCounter : string * System.Diagnostics.Tracing.EventSource -&gt; System.Diagnostics.Tracing.EventCounter" Usage="new System.Diagnostics.Tracing.EventCounter (name, eventSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventCounter(System::String ^ name, System::Diagnostics::Tracing::EventSource ^ eventSource);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteMetric (value As Single)" />
       <MemberSignature Language="F#" Value="member this.WriteMetric : single -&gt; unit" Usage="eventCounter.WriteMetric value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMetric(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

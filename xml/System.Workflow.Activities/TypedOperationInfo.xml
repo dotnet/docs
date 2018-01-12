@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.TypedOperationInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypedOperationInfo&#xA;Inherits OperationInfoBase" />
   <TypeSignature Language="F#" Value="type TypedOperationInfo = class&#xA;    inherit OperationInfoBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypedOperationInfo sealed : System::Workflow::Activities::OperationInfoBase" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedOperationInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.#ctor(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type, operationName As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.TypedOperationInfo : Type * string -&gt; System.Workflow.Activities.TypedOperationInfo" Usage="new System.Workflow.Activities.TypedOperationInfo (contractType, operationName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedOperationInfo(Type ^ contractType, System::String ^ operationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As OperationInfoBase" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Workflow.Activities.OperationInfoBase" Usage="typedOperationInfo.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::Activities::OperationInfoBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.TypedOperationInfo.ContractType" />
       <MemberSignature Language="VB.NET" Value="Public Property ContractType As Type" />
       <MemberSignature Language="F#" Value="member this.ContractType : Type with get, set" Usage="System.Workflow.Activities.TypedOperationInfo.ContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="typedOperationInfo.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetContractFullName(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetContractFullName (provider As IServiceProvider) As String" />
       <MemberSignature Language="F#" Value="override this.GetContractFullName : IServiceProvider -&gt; string" Usage="typedOperationInfo.GetContractFullName provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetContractFullName(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetContractType(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetContractType (provider As IServiceProvider) As Type" />
       <MemberSignature Language="F#" Value="override this.GetContractType : IServiceProvider -&gt; Type" Usage="typedOperationInfo.GetContractType provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override Type ^ GetContractType(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="typedOperationInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetIsOneWay(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetIsOneWay (provider As IServiceProvider) As Boolean" />
       <MemberSignature Language="F#" Value="override this.GetIsOneWay : IServiceProvider -&gt; bool" Usage="typedOperationInfo.GetIsOneWay provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool GetIsOneWay(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -251,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetMethodInfo(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetMethodInfo (provider As IServiceProvider) As MethodInfo" />
       <MemberSignature Language="F#" Value="override this.GetMethodInfo : IServiceProvider -&gt; System.Reflection.MethodInfo" Usage="typedOperationInfo.GetMethodInfo provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Reflection::MethodInfo ^ GetMethodInfo(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -275,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.GetParameters(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetParameters (provider As IServiceProvider) As OperationParameterInfoCollection" />
       <MemberSignature Language="F#" Value="override this.GetParameters : IServiceProvider -&gt; System.Workflow.Activities.OperationParameterInfoCollection" Usage="typedOperationInfo.GetParameters provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::Activities::OperationParameterInfoCollection ^ GetParameters(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -299,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.TypedOperationInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="typedOperationInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

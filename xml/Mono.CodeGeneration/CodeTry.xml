@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeTry" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTry&#xA;Inherits CodeStatement" />
   <TypeSignature Language="F#" Value="type CodeTry = class&#xA;    inherit CodeStatement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTry : Mono::CodeGeneration::CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeTry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeTry.CatchBlocks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CatchBlocks As List(Of KeyValuePair(Of CodeVariableDeclaration, CodeBlock))" />
       <MemberSignature Language="F#" Value="member this.CatchBlocks : System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;Mono.CodeGeneration.CodeVariableDeclaration, Mono.CodeGeneration.CodeBlock&gt;&gt;" Usage="Mono.CodeGeneration.CodeTry.CatchBlocks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Collections::Generic::KeyValuePair&lt;Mono::CodeGeneration::CodeVariableDeclaration ^, Mono::CodeGeneration::CodeBlock ^&gt;&gt; ^ CatchBlocks { System::Collections::Generic::List&lt;System::Collections::Generic::KeyValuePair&lt;Mono::CodeGeneration::CodeVariableDeclaration ^, Mono::CodeGeneration::CodeBlock ^&gt;&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeTry.FinallyBlock" />
       <MemberSignature Language="VB.NET" Value="Public Property FinallyBlock As CodeBlock" />
       <MemberSignature Language="F#" Value="member this.FinallyBlock : Mono.CodeGeneration.CodeBlock with get, set" Usage="Mono.CodeGeneration.CodeTry.FinallyBlock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeBlock ^ FinallyBlock { Mono::CodeGeneration::CodeBlock ^ get(); void set(Mono::CodeGeneration::CodeBlock ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeTry.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeTry.Generate gen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeTry.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeTry.PrintCode cp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeTry.TryBlock" />
       <MemberSignature Language="VB.NET" Value="Public Property TryBlock As CodeBlock" />
       <MemberSignature Language="F#" Value="member this.TryBlock : Mono.CodeGeneration.CodeBlock with get, set" Usage="Mono.CodeGeneration.CodeTry.TryBlock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeBlock ^ TryBlock { Mono::CodeGeneration::CodeBlock ^ get(); void set(Mono::CodeGeneration::CodeBlock ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

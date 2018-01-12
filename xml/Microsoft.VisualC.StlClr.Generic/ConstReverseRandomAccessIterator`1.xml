@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ConstReverseRandomAccessIterator(Of TValue)&#xA;Implements IRandomAccessIterator(Of TValue)" />
   <TypeSignature Language="F#" Value="type ConstReverseRandomAccessIterator&lt;'Value&gt; = class&#xA;    interface IRandomAccessIterator&lt;'Value&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class ConstReverseRandomAccessIterator : Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstReverseRandomAccessIterator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ConstReverseRandomAccessIterator)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt; _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstReverseRandomAccessIterator(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Iter As IRandomAccessIterator(Of TValue))" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt; _Iter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstReverseRandomAccessIterator(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Iter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_Iter As ReverseRandomAccessIterator)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator -&gt; Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt; _Iter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstReverseRandomAccessIterator(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator ^ _Iter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.base" />
       <MemberSignature Language="VB.NET" Value="Public Function base () As IRandomAccessIterator(Of TValue)" />
       <MemberSignature Language="F#" Value="member this.base : unit -&gt; Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt;" Usage="constReverseRandomAccessIterator.base " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ base();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="constReverseRandomAccessIterator.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.container" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function container () As Object" />
       <MemberSignature Language="F#" Value="abstract member container : unit -&gt; obj&#xA;override this.container : unit -&gt; obj" Usage="constReverseRandomAccessIterator.container " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ container();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Function distance (_Right As ConstReverseRandomAccessIterator) As Integer" />
       <MemberSignature Language="F#" Value="member this.distance : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; int" Usage="constReverseRandomAccessIterator.distance _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int distance(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function distance (_Right As IRandomAccessIterator(Of TValue)) As Integer" />
       <MemberSignature Language="F#" Value="abstract member distance : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int&#xA;override this.distance : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int" Usage="constReverseRandomAccessIterator.distance _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int distance(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.distance(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})</InterfaceMember>
@@ -255,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Function equal_to (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.equal_to : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="constReverseRandomAccessIterator.equal_to _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -280,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function equal_to (_Right As IInputIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool&#xA;override this.equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="constReverseRandomAccessIterator.equal_to _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool equal_to(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -305,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(_Pos As Integer) As TValue" />
       <MemberSignature Language="F#" Value="member this.Item(int) : " Usage="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue % default[int] { TValue % get(int _Pos); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -338,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Function less_than (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.less_than : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="constReverseRandomAccessIterator.less_than _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool less_than(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -363,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function less_than (_Right As IRandomAccessIterator(Of TValue)) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member less_than : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool&#xA;override this.less_than : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; bool" Usage="constReverseRandomAccessIterator.less_than _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool less_than(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.less_than(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})</InterfaceMember>
@@ -391,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.move(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function move (_Offset As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member move : int -&gt; int&#xA;override this.move : int -&gt; int" Usage="constReverseRandomAccessIterator.move _Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int move(int _Offset);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1.move(System.Int32)</InterfaceMember>
@@ -418,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.next" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub next ()" />
       <MemberSignature Language="F#" Value="abstract member next : unit -&gt; unit&#xA;override this.next : unit -&gt; unit" Usage="constReverseRandomAccessIterator.next " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void next();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -447,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Operator + (ByRef  As ConstReverseRandomAccessIterator(Of TValue), _Right As Integer) As Void" />
       <MemberSignature Language="F#" Value="member this.( + ) :  * int -&gt; Void" Usage=" + _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator +(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -475,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32,Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (ByRef  As ConstReverseRandomAccessIterator(Of TValue), _Left As Integer, _Right As ConstReverseRandomAccessIterator) As Void" />
       <MemberSignature Language="F#" Value="static member ( + ) :  * int * Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; Void" Usage=" + _Left _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ^ operator +(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int _Left, Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -519,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Assign(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ConstReverseRandomAccessIterator) As ConstReverseRandomAccessIterator" />
       <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator" Usage="constReverseRandomAccessIterator.op_Assign _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -543,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Assign(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ReverseRandomAccessIterator) As ConstReverseRandomAccessIterator" />
       <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator -&gt; Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator" Usage="constReverseRandomAccessIterator.op_Assign _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -576,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ConstReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Decrement :  -&gt; Void" Usage="constReverseRandomAccessIterator.op_Decrement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -600,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ConstReverseRandomAccessIterator(Of TValue), A_0 As Integer) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; Void" Usage="constReverseRandomAccessIterator.op_Decrement (, A_0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -626,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( = ) : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="= _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -658,6 +682,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_GreaterThan(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator &gt; (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( &gt; ) : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="&gt; _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -690,6 +715,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_GreaterThanOrEqual(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator &gt;= (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( &gt;= ) : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="&gt;= _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &gt;=(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -717,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Implicit~Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Widening Operator CType () As IRandomAccessIterator(Of TValue)" />
       <MemberSignature Language="F#" Value="member this.op_Implicit : unit -&gt; Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt;" Usage="constReverseRandomAccessIterator.op_Implicit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; operator Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -747,6 +774,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ConstReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Increment :  -&gt; Void" Usage="constReverseRandomAccessIterator.op_Increment " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -771,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ConstReverseRandomAccessIterator(Of TValue), A_0 As Integer) As Void" />
       <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; Void" Usage="constReverseRandomAccessIterator.op_Increment (, A_0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -797,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.op_Inequality : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="constReverseRandomAccessIterator.op_Inequality _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -824,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_LessThan(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator &lt; (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( &lt; ) : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="&lt; _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -856,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_LessThanOrEqual(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Operator &lt;= (_Right As ConstReverseRandomAccessIterator) As Boolean" />
       <MemberSignature Language="F#" Value="member this.( &lt;= ) : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; bool" Usage="&lt;= _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator &lt;=(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -883,6 +915,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_MemberSelection(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ConstReverseRandomAccessIterator) As TValue" />
       <MemberSignature Language="F#" Value="static member op_MemberSelection : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt;.op_MemberSelection _Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_MemberSelection(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Left);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -915,6 +948,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_PointerDereference(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ConstReverseRandomAccessIterator) As TValue" />
       <MemberSignature Language="F#" Value="static member op_PointerDereference : Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;'Value&gt;.op_PointerDereference _Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_PointerDereference(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator ^ _Left);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -956,6 +990,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Operator - (_Right As IRandomAccessIterator(Of TValue)) As Integer" />
       <MemberSignature Language="F#" Value="member this.( - ) : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;'Value&gt; -&gt; int" Usage="- _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int operator -(Microsoft::VisualC::StlClr::Generic::IRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -987,6 +1022,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Operator - (ByRef  As ConstReverseRandomAccessIterator(Of TValue), _Right As Integer) As Void" />
       <MemberSignature Language="F#" Value="member this.( - ) :  * int -&gt; Void" Usage=" - _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator -(Microsoft::VisualC::StlClr::Generic::ConstReverseRandomAccessIterator&lt;TValue&gt; ^ % , int _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1015,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.prev" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub prev ()" />
       <MemberSignature Language="F#" Value="abstract member prev : unit -&gt; unit&#xA;override this.prev : unit -&gt; unit" Usage="constReverseRandomAccessIterator.prev " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void prev();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1035,6 +1072,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.valid" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function valid () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member valid : unit -&gt; bool&#xA;override this.valid : unit -&gt; bool" Usage="constReverseRandomAccessIterator.valid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool valid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

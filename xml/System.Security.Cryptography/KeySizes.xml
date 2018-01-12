@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeySizes" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeySizes" />
   <TypeSignature Language="F#" Value="type KeySizes = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeySizes sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeySizes.#ctor(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (minSize As Integer, maxSize As Integer, skipSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.KeySizes : int * int * int -&gt; System.Security.Cryptography.KeySizes" Usage="new System.Security.Cryptography.KeySizes (minSize, maxSize, skipSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeySizes(int minSize, int maxSize, int skipSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.KeySizes.MaxSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxSize : int" Usage="System.Security.Cryptography.KeySizes.MaxSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.KeySizes.MinSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MinSize : int" Usage="System.Security.Cryptography.KeySizes.MinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.KeySizes.SkipSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SkipSize As Integer" />
       <MemberSignature Language="F#" Value="member this.SkipSize : int" Usage="System.Security.Cryptography.KeySizes.SkipSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SkipSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>

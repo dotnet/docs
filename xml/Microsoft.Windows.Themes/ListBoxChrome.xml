@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ListBoxChrome" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListBoxChrome&#xA;Inherits Decorator" />
   <TypeSignature Language="F#" Value="type ListBoxChrome = class&#xA;    inherit Decorator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListBoxChrome sealed : System::Windows::Controls::Decorator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ListBoxChrome.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxChrome();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ListBoxChrome.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="listBoxChrome.ArrangeOverride finalSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ListBoxChrome.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
       <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="Microsoft.Windows.Themes.ListBoxChrome.Background" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ListBoxChrome.BackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.ListBoxChrome.BackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ListBoxChrome.BorderBrush" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
       <MemberSignature Language="F#" Value="member this.BorderBrush : System.Windows.Media.Brush with get, set" Usage="Microsoft.Windows.Themes.ListBoxChrome.BorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ BorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ListBoxChrome.BorderBrushProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderBrushProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BorderBrushProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.ListBoxChrome.BorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ListBoxChrome.BorderThickness" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
       <MemberSignature Language="F#" Value="member this.BorderThickness : System.Windows.Thickness with get, set" Usage="Microsoft.Windows.Themes.ListBoxChrome.BorderThickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness BorderThickness { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ListBoxChrome.BorderThicknessProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderThicknessProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BorderThicknessProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.ListBoxChrome.BorderThicknessProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderThicknessProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ListBoxChrome.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="listBoxChrome.MeasureOverride availableSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ListBoxChrome.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRender (dc As DrawingContext)" />
       <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="listBoxChrome.OnRender dc" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ dc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -336,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ListBoxChrome.RenderFocused" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderFocused As Boolean" />
       <MemberSignature Language="F#" Value="member this.RenderFocused : bool with get, set" Usage="Microsoft.Windows.Themes.ListBoxChrome.RenderFocused" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderFocused { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ListBoxChrome.RenderFocusedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderFocusedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RenderFocusedProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.ListBoxChrome.RenderFocusedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderFocusedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -398,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.ListBoxChrome.RenderMouseOver" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderMouseOver As Boolean" />
       <MemberSignature Language="F#" Value="member this.RenderMouseOver : bool with get, set" Usage="Microsoft.Windows.Themes.ListBoxChrome.RenderMouseOver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RenderMouseOver { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ListBoxChrome.RenderMouseOverProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RenderMouseOverProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RenderMouseOverProperty : System.Windows.DependencyProperty" Usage="Microsoft.Windows.Themes.ListBoxChrome.RenderMouseOverProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RenderMouseOverProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>

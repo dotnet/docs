@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartConnection" />
   <TypeSignature Language="F#" Value="type WebPartConnection = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartConnection sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartConnection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Consumer As WebPart" />
       <MemberSignature Language="F#" Value="member this.Consumer : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ Consumer { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsumerConnectionPoint As ConsumerConnectionPoint" />
       <MemberSignature Language="F#" Value="member this.ConsumerConnectionPoint : System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ ConsumerConnectionPoint { System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID" />
       <MemberSignature Language="VB.NET" Value="Public Property ConsumerConnectionPointID As String" />
       <MemberSignature Language="F#" Value="member this.ConsumerConnectionPointID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConsumerConnectionPointID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" />
       <MemberSignature Language="VB.NET" Value="Public Property ConsumerID As String" />
       <MemberSignature Language="F#" Value="member this.ConsumerID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConsumerID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -417,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ID" />
       <MemberSignature Language="VB.NET" Value="Public Property ID As String" />
       <MemberSignature Language="F#" Value="member this.ID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +492,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -554,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsShared As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsShared : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsShared { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -645,6 +654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStatic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsStatic : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStatic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,6 +722,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As WebPart" />
       <MemberSignature Language="F#" Value="member this.Provider : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ Provider { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -777,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderConnectionPoint As ProviderConnectionPoint" />
       <MemberSignature Language="F#" Value="member this.ProviderConnectionPoint : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ ProviderConnectionPoint { System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -849,6 +861,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderConnectionPointID As String" />
       <MemberSignature Language="F#" Value="member this.ProviderConnectionPointID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderConnectionPointID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -920,6 +933,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderID As String" />
       <MemberSignature Language="F#" Value="member this.ProviderID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -985,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="webPartConnection.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1039,6 +1054,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transformer As WebPartTransformer" />
       <MemberSignature Language="F#" Value="member this.Transformer : System.Web.UI.WebControls.WebParts.WebPartTransformer" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartTransformer ^ Transformer { System::Web::UI::WebControls::WebParts::WebPartTransformer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1077,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transformers As WebPartTransformerCollection" />
       <MemberSignature Language="F#" Value="member this.Transformers : System.Web.UI.WebControls.WebParts.WebPartTransformerCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartTransformerCollection ^ Transformers { System::Web::UI::WebControls::WebParts::WebPartTransformerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

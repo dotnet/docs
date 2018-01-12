@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SmtpSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SmtpSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type SmtpSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SmtpSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.SmtpSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSection.DeliveryFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DeliveryFormat As SmtpDeliveryFormat" />
       <MemberSignature Language="F#" Value="member this.DeliveryFormat : System.Net.Mail.SmtpDeliveryFormat with get, set" Usage="System.Net.Configuration.SmtpSection.DeliveryFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::SmtpDeliveryFormat DeliveryFormat { System::Net::Mail::SmtpDeliveryFormat get(); void set(System::Net::Mail::SmtpDeliveryFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
       <MemberSignature Language="VB.NET" Value="Public Property DeliveryMethod As SmtpDeliveryMethod" />
       <MemberSignature Language="F#" Value="member this.DeliveryMethod : System.Net.Mail.SmtpDeliveryMethod with get, set" Usage="System.Net.Configuration.SmtpSection.DeliveryMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::SmtpDeliveryMethod DeliveryMethod { System::Net::Mail::SmtpDeliveryMethod get(); void set(System::Net::Mail::SmtpDeliveryMethod value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSection.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As String" />
       <MemberSignature Language="F#" Value="member this.From : string with get, set" Usage="System.Net.Configuration.SmtpSection.From" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ From { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSection.Network" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Network As SmtpNetworkElement" />
       <MemberSignature Language="F#" Value="member this.Network : System.Net.Configuration.SmtpNetworkElement" Usage="System.Net.Configuration.SmtpSection.Network" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::SmtpNetworkElement ^ Network { System::Net::Configuration::SmtpNetworkElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.SmtpSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SmtpSection.SpecifiedPickupDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecifiedPickupDirectory As SmtpSpecifiedPickupDirectoryElement" />
       <MemberSignature Language="F#" Value="member this.SpecifiedPickupDirectory : System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement" Usage="System.Net.Configuration.SmtpSection.SpecifiedPickupDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::SmtpSpecifiedPickupDirectoryElement ^ SpecifiedPickupDirectory { System::Net::Configuration::SmtpSpecifiedPickupDirectoryElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

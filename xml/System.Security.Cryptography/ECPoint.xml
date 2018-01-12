@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECPoint" />
   <TypeSignature Language="VB.NET" Value="Public Structure ECPoint" />
   <TypeSignature Language="F#" Value="type ECPoint = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ECPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECPoint.X" />
       <MemberSignature Language="VB.NET" Value="Public X As Byte() " />
       <MemberSignature Language="F#" Value="val mutable X : byte[]" Usage="System.Security.Cryptography.ECPoint.X" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ X;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECPoint.Y" />
       <MemberSignature Language="VB.NET" Value="Public Y As Byte() " />
       <MemberSignature Language="F#" Value="val mutable Y : byte[]" Usage="System.Security.Cryptography.ECPoint.Y" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Y;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

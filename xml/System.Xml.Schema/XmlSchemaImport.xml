@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaImport" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaImport&#xA;Inherits XmlSchemaExternal" />
   <TypeSignature Language="F#" Value="type XmlSchemaImport = class&#xA;    inherit XmlSchemaExternal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaImport : System::Xml::Schema::XmlSchemaExternal" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaImport.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaImport();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaImport.Annotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Annotation As XmlSchemaAnnotation" />
       <MemberSignature Language="F#" Value="member this.Annotation : System.Xml.Schema.XmlSchemaAnnotation with get, set" Usage="System.Xml.Schema.XmlSchemaImport.Annotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnnotation ^ Annotation { System::Xml::Schema::XmlSchemaAnnotation ^ get(); void set(System::Xml::Schema::XmlSchemaAnnotation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaImport.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Schema.XmlSchemaImport.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityIdentifierElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of SecurityIdentifierElement)" />
   <TypeSignature Language="F#" Value="type SecurityIdentifierElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;SecurityIdentifierElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityIdentifierElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Activation::Configuration::SecurityIdentifierElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityIdentifierElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="securityIdentifierElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

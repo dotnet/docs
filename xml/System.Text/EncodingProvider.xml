@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.EncodingProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EncodingProvider" />
   <TypeSignature Language="F#" Value="type EncodingProvider = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncodingProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncodingProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -117,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEncoding (codepage As Integer) As Encoding" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : int -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding codepage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::Encoding ^ GetEncoding(int codepage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -177,6 +180,7 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Enc
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEncoding (name As String) As Encoding" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : string -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::Encoding ^ GetEncoding(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -231,6 +235,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.Encoding GetEncoding(int32 codepage, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : int * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding&#xA;override this.GetEncoding : int * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding (codepage, encoderFallback, decoderFallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoding ^ GetEncoding(int codepage, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -291,6 +296,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.Encoding GetEncoding(string name, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : string * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding&#xA;override this.GetEncoding : string * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding (name, encoderFallback, decoderFallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoding ^ GetEncoding(System::String ^ name, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowRootDesigner&#xA;Implements IDisposable, IRootDesigner" />
   <TypeSignature Language="F#" Value="type IWorkflowRootDesigner = interface&#xA;    interface IRootDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowRootDesigner : IDisposable, System::ComponentModel::Design::IRootDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
       <MemberSignature Language="VB.NET" Value="Public Property InvokingDesigner As CompositeActivityDesigner" />
       <MemberSignature Language="F#" Value="member this.InvokingDesigner : System.Workflow.ComponentModel.Design.CompositeActivityDesigner with get, set" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.InvokingDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ InvokingDesigner { System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ get(); void set(System::Workflow::ComponentModel::Design::CompositeActivityDesigner ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.IsSupportedActivityType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSupportedActivityType (activityType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsSupportedActivityType : Type -&gt; bool" Usage="iWorkflowRootDesigner.IsSupportedActivityType activityType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSupportedActivityType(Type ^ activityType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageFilters As ReadOnlyCollection(Of WorkflowDesignerMessageFilter)" />
       <MemberSignature Language="F#" Value="member this.MessageFilters : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter&gt;" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.MessageFilters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ MessageFilters { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::WorkflowDesignerMessageFilter ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsLayoutPersistence As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsLayoutPersistence : bool" Usage="System.Workflow.ComponentModel.Design.IWorkflowRootDesigner.SupportsLayoutPersistence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsLayoutPersistence { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

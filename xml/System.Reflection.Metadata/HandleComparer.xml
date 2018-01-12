@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.HandleComparer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HandleComparer&#xA;Implements IComparer(Of EntityHandle), IComparer(Of Handle), IEqualityComparer(Of EntityHandle), IEqualityComparer(Of Handle)" />
   <TypeSignature Language="F#" Value="type HandleComparer = class&#xA;    interface IComparer&lt;EntityHandle&gt;&#xA;    interface IComparer&lt;Handle&gt;&#xA;    interface IEqualityComparer&lt;EntityHandle&gt;&#xA;    interface IEqualityComparer&lt;Handle&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HandleComparer sealed : System::Collections::Generic::IComparer&lt;System::Reflection::Metadata::EntityHandle&gt;, System::Collections::Generic::IComparer&lt;System::Reflection::Metadata::Handle&gt;, System::Collections::Generic::IEqualityComparer&lt;System::Reflection::Metadata::EntityHandle&gt;, System::Collections::Generic::IEqualityComparer&lt;System::Reflection::Metadata::Handle&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Compare(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (x As EntityHandle, y As EntityHandle) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Compare : System.Reflection.Metadata.EntityHandle * System.Reflection.Metadata.EntityHandle -&gt; int&#xA;override this.Compare : System.Reflection.Metadata.EntityHandle * System.Reflection.Metadata.EntityHandle -&gt; int" Usage="handleComparer.Compare (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Reflection::Metadata::EntityHandle x, System::Reflection::Metadata::EntityHandle y);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Compare(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (x As Handle, y As Handle) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Compare : System.Reflection.Metadata.Handle * System.Reflection.Metadata.Handle -&gt; int&#xA;override this.Compare : System.Reflection.Metadata.Handle * System.Reflection.Metadata.Handle -&gt; int" Usage="handleComparer.Compare (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Reflection::Metadata::Handle x, System::Reflection::Metadata::Handle y);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.HandleComparer.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As HandleComparer" />
       <MemberSignature Language="F#" Value="member this.Default : System.Reflection.Metadata.HandleComparer" Usage="System.Reflection.Metadata.HandleComparer.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Reflection::Metadata::HandleComparer ^ Default { System::Reflection::Metadata::HandleComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Equals(System.Reflection.Metadata.EntityHandle,System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As EntityHandle, y As EntityHandle) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.EntityHandle * System.Reflection.Metadata.EntityHandle -&gt; bool" Usage="handleComparer.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::EntityHandle x, System::Reflection::Metadata::EntityHandle y);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.Equals(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (x As Handle, y As Handle) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.Handle * System.Reflection.Metadata.Handle -&gt; bool" Usage="handleComparer.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::Handle x, System::Reflection::Metadata::Handle y);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.GetHashCode(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As EntityHandle) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : System.Reflection.Metadata.EntityHandle -&gt; int" Usage="handleComparer.GetHashCode obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Reflection::Metadata::EntityHandle obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.HandleComparer.GetHashCode(System.Reflection.Metadata.Handle)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Handle) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : System.Reflection.Metadata.Handle -&gt; int" Usage="handleComparer.GetHashCode obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Reflection::Metadata::Handle obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>

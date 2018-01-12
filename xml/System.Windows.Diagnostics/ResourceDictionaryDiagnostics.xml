@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.ResourceDictionaryDiagnostics" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceDictionaryDiagnostics" />
   <TypeSignature Language="F#" Value="type ResourceDictionaryDiagnostics = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceDictionaryDiagnostics abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaries" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GenericResourceDictionaries As IEnumerable(Of ResourceDictionaryInfo)" />
       <MemberSignature Language="F#" Value="member this.GenericResourceDictionaries : seq&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt;" Usage="System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IEnumerable&lt;System::Windows::Diagnostics::ResourceDictionaryInfo ^&gt; ^ GenericResourceDictionaries { System::Collections::Generic::IEnumerable&lt;System::Windows::Diagnostics::ResourceDictionaryInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaryLoaded" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event GenericResourceDictionaryLoaded As EventHandler(Of ResourceDictionaryLoadedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.GenericResourceDictionaryLoaded : EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; " Usage="member this.GenericResourceDictionaryLoaded : System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Diagnostics::ResourceDictionaryLoadedEventArgs ^&gt; ^ GenericResourceDictionaryLoaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThemedResourceDictionaries As IEnumerable(Of ResourceDictionaryInfo)" />
       <MemberSignature Language="F#" Value="member this.ThemedResourceDictionaries : seq&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt;" Usage="System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IEnumerable&lt;System::Windows::Diagnostics::ResourceDictionaryInfo ^&gt; ^ ThemedResourceDictionaries { System::Collections::Generic::IEnumerable&lt;System::Windows::Diagnostics::ResourceDictionaryInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryLoaded" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThemedResourceDictionaryLoaded As EventHandler(Of ResourceDictionaryLoadedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ThemedResourceDictionaryLoaded : EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; " Usage="member this.ThemedResourceDictionaryLoaded : System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Diagnostics::ResourceDictionaryLoadedEventArgs ^&gt; ^ ThemedResourceDictionaryLoaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +117,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryUnloaded" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ThemedResourceDictionaryUnloaded As EventHandler(Of ResourceDictionaryUnloadedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ThemedResourceDictionaryUnloaded : EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs&gt; " Usage="member this.ThemedResourceDictionaryUnloaded : System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Windows::Diagnostics::ResourceDictionaryUnloadedEventArgs ^&gt; ^ ThemedResourceDictionaryUnloaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

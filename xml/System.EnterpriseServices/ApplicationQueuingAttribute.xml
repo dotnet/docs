@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationQueuingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationQueuingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ApplicationQueuingAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationQueuingAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationQueuingAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationQueuingAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationQueuingAttribute.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.EnterpriseServices.ApplicationQueuingAttribute.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationQueuingAttribute.MaxListenerThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxListenerThreads As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxListenerThreads : int with get, set" Usage="System.EnterpriseServices.ApplicationQueuingAttribute.MaxListenerThreads" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxListenerThreads { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationQueuingAttribute.QueueListenerEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property QueueListenerEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.QueueListenerEnabled : bool with get, set" Usage="System.EnterpriseServices.ApplicationQueuingAttribute.QueueListenerEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueueListenerEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

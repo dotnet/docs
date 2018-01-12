@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CompositeControl&#xA;Inherits WebControl&#xA;Implements ICompositeControlDesignerAccessor, INamingContainer" />
   <TypeSignature Language="F#" Value="type CompositeControl = class&#xA;    inherit WebControl&#xA;    interface INamingContainer&#xA;    interface ICompositeControlDesignerAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeControl abstract : System::Web::UI::WebControls::WebControl, System::Web::UI::INamingContainer, System::Web::UI::WebControls::ICompositeControlDesignerAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CompositeControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeControl.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.CompositeControl.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeControl.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
       <MemberSignature Language="F#" Value="override this.DataBind : unit -&gt; unit" Usage="compositeControl.DataBind " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeControl.RecreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RecreateChildControls ()" />
       <MemberSignature Language="F#" Value="abstract member RecreateChildControls : unit -&gt; unit&#xA;override this.RecreateChildControls : unit -&gt; unit" Usage="compositeControl.RecreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RecreateChildControls();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls</InterfaceMember>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="compositeControl.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeControl.SupportsDisabledAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsDisabledAttribute : bool" Usage="System.Web.UI.WebControls.CompositeControl.SupportsDisabledAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeControl.System#Web#UI#WebControls#ICompositeControlDesignerAccessor#RecreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Sub RecreateChildControls () Implements ICompositeControlDesignerAccessor.RecreateChildControls" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls() = System::Web::UI::WebControls::ICompositeControlDesignerAccessor::RecreateChildControls;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls</InterfaceMember>

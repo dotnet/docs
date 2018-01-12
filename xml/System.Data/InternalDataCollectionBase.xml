@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.InternalDataCollectionBase" />
   <TypeSignature Language="VB.NET" Value="Public Class InternalDataCollectionBase&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type InternalDataCollectionBase = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InternalDataCollectionBase : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.InternalDataCollectionBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalDataCollectionBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InternalDataCollectionBase.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (ar As Array, index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="internalDataCollectionBase.CopyTo (ar, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ ar, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.InternalDataCollectionBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.InternalDataCollectionBase.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InternalDataCollectionBase.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="internalDataCollectionBase.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.InternalDataCollectionBase.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.InternalDataCollectionBase.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.InternalDataCollectionBase.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Data.InternalDataCollectionBase.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -292,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.InternalDataCollectionBase.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property List As ArrayList" />
       <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Data.InternalDataCollectionBase.List" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -328,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.InternalDataCollectionBase.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Data.InternalDataCollectionBase.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

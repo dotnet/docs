@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerHost&#xA;Implements IServiceContainer, IServiceProvider" />
   <TypeSignature Language="F#" Value="type IDesignerHost = interface&#xA;    interface IServiceContainer&#xA;    interface IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerHost : IServiceProvider, System::ComponentModel::Design::IServiceContainer" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -115,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="iDesignerHost.Activate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +153,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.Activated" />
       <MemberSignature Language="VB.NET" Value="Event Activated As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.Container" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Container As IContainer" />
       <MemberSignature Language="F#" Value="member this.Container : System.ComponentModel.IContainer" Usage="System.ComponentModel.Design.IDesignerHost.Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IContainer ^ Container { System::ComponentModel::IContainer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateComponent (componentClass As Type) As IComponent" />
       <MemberSignature Language="F#" Value="abstract member CreateComponent : Type -&gt; System.ComponentModel.IComponent" Usage="iDesignerHost.CreateComponent componentClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IComponent ^ CreateComponent(Type ^ componentClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateComponent (componentClass As Type, name As String) As IComponent" />
       <MemberSignature Language="F#" Value="abstract member CreateComponent : Type * string -&gt; System.ComponentModel.IComponent" Usage="iDesignerHost.CreateComponent (componentClass, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IComponent ^ CreateComponent(Type ^ componentClass, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -331,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateTransaction () As DesignerTransaction" />
       <MemberSignature Language="F#" Value="abstract member CreateTransaction : unit -&gt; System.ComponentModel.Design.DesignerTransaction" Usage="iDesignerHost.CreateTransaction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::DesignerTransaction ^ CreateTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -370,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateTransaction (description As String) As DesignerTransaction" />
       <MemberSignature Language="F#" Value="abstract member CreateTransaction : string -&gt; System.ComponentModel.Design.DesignerTransaction" Usage="iDesignerHost.CreateTransaction description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::DesignerTransaction ^ CreateTransaction(System::String ^ description);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -412,6 +420,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.Deactivated" />
       <MemberSignature Language="VB.NET" Value="Event Deactivated As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Deactivated : EventHandler " Usage="member this.Deactivated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -448,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DestroyComponent (component As IComponent)" />
       <MemberSignature Language="F#" Value="abstract member DestroyComponent : System.ComponentModel.IComponent -&gt; unit" Usage="iDesignerHost.DestroyComponent component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DestroyComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -482,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDesigner (component As IComponent) As IDesigner" />
       <MemberSignature Language="F#" Value="abstract member GetDesigner : System.ComponentModel.IComponent -&gt; System.ComponentModel.Design.IDesigner" Usage="iDesignerHost.GetDesigner component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::IDesigner ^ GetDesigner(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -515,6 +526,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (typeName As String) As Type" />
       <MemberSignature Language="F#" Value="abstract member GetType : string -&gt; Type" Usage="iDesignerHost.GetType typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -548,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.InTransaction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InTransaction As Boolean" />
       <MemberSignature Language="F#" Value="member this.InTransaction : bool" Usage="System.ComponentModel.Design.IDesignerHost.InTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InTransaction { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -578,6 +591,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.LoadComplete" />
       <MemberSignature Language="VB.NET" Value="Event LoadComplete As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LoadComplete : EventHandler " Usage="member this.LoadComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoadComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -614,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.Loading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Loading As Boolean" />
       <MemberSignature Language="F#" Value="member this.Loading : bool" Usage="System.ComponentModel.Design.IDesignerHost.Loading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Loading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -644,6 +659,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.RootComponent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootComponent As IComponent" />
       <MemberSignature Language="F#" Value="member this.RootComponent : System.ComponentModel.IComponent" Usage="System.ComponentModel.Design.IDesignerHost.RootComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ RootComponent { System::ComponentModel::IComponent ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -680,6 +696,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.RootComponentClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootComponentClassName As String" />
       <MemberSignature Language="F#" Value="member this.RootComponentClassName : string" Usage="System.ComponentModel.Design.IDesignerHost.RootComponentClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootComponentClassName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -709,6 +726,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" />
       <MemberSignature Language="VB.NET" Value="Event TransactionClosed As DesignerTransactionCloseEventHandler " />
       <MemberSignature Language="F#" Value="member this.TransactionClosed : System.ComponentModel.Design.DesignerTransactionCloseEventHandler " Usage="member this.TransactionClosed : System.ComponentModel.Design.DesignerTransactionCloseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::DesignerTransactionCloseEventHandler ^ TransactionClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -750,6 +768,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" />
       <MemberSignature Language="VB.NET" Value="Event TransactionClosing As DesignerTransactionCloseEventHandler " />
       <MemberSignature Language="F#" Value="member this.TransactionClosing : System.ComponentModel.Design.DesignerTransactionCloseEventHandler " Usage="member this.TransactionClosing : System.ComponentModel.Design.DesignerTransactionCloseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::DesignerTransactionCloseEventHandler ^ TransactionClosing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -791,6 +810,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.TransactionDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransactionDescription As String" />
       <MemberSignature Language="F#" Value="member this.TransactionDescription : string" Usage="System.ComponentModel.Design.IDesignerHost.TransactionDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TransactionDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -828,6 +848,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" />
       <MemberSignature Language="VB.NET" Value="Event TransactionOpened As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TransactionOpened : EventHandler " Usage="member this.TransactionOpened : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TransactionOpened;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -869,6 +890,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" />
       <MemberSignature Language="VB.NET" Value="Event TransactionOpening As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TransactionOpening : EventHandler " Usage="member this.TransactionOpening : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TransactionOpening;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

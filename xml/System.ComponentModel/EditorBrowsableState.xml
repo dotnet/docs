@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EditorBrowsableState" />
   <TypeSignature Language="VB.NET" Value="Public Enum EditorBrowsableState" />
   <TypeSignature Language="F#" Value="type EditorBrowsableState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EditorBrowsableState" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Advanced" />
       <MemberSignature Language="VB.NET" Value="Advanced" />
       <MemberSignature Language="F#" Value="Advanced = 2" Usage="System.ComponentModel.EditorBrowsableState.Advanced" />
+      <MemberSignature Language="C++ CLI" Value="Advanced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="F#" Value="Always = 0" Usage="System.ComponentModel.EditorBrowsableState.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="F#" Value="Never = 1" Usage="System.ComponentModel.EditorBrowsableState.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

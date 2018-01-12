@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class AxisScaleBreakStyle" />
   <TypeSignature Language="F#" Value="type AxisScaleBreakStyle = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AxisScaleBreakStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AxisScaleBreakStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.BreakLineStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BreakLineStyle As BreakLineStyle" />
       <MemberSignature Language="F#" Value="member this.BreakLineStyle : System.Windows.Forms.DataVisualization.Charting.BreakLineStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.BreakLineStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::BreakLineStyle BreakLineStyle { System::Windows::Forms::DataVisualization::Charting::BreakLineStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::BreakLineStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.CollapsibleSpaceThreshold" />
       <MemberSignature Language="VB.NET" Value="Public Property CollapsibleSpaceThreshold As Integer" />
       <MemberSignature Language="F#" Value="member this.CollapsibleSpaceThreshold : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.CollapsibleSpaceThreshold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CollapsibleSpaceThreshold { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LineColor As Color" />
       <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.LineColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.LineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LineDashStyle As ChartDashStyle" />
       <MemberSignature Language="F#" Value="member this.LineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.LineDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle LineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property LineWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.LineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.LineWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.MaxNumberOfBreaks" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxNumberOfBreaks As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxNumberOfBreaks : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.MaxNumberOfBreaks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxNumberOfBreaks { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.Spacing" />
       <MemberSignature Language="VB.NET" Value="Public Property Spacing As Double" />
       <MemberSignature Language="F#" Value="member this.Spacing : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.Spacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Spacing { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.StartFromZero" />
       <MemberSignature Language="VB.NET" Value="Public Property StartFromZero As StartFromZero" />
       <MemberSignature Language="F#" Value="member this.StartFromZero : System.Windows.Forms.DataVisualization.Charting.StartFromZero with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle.StartFromZero" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::StartFromZero StartFromZero { System::Windows::Forms::DataVisualization::Charting::StartFromZero get(); void set(System::Windows::Forms::DataVisualization::Charting::StartFromZero value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

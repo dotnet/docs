@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LazyCommitControl" />
   <TypeSignature Language="VB.NET" Value="Public Class LazyCommitControl&#xA;Inherits DirectoryControl" />
   <TypeSignature Language="F#" Value="type LazyCommitControl = class&#xA;    inherit DirectoryControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LazyCommitControl : System::DirectoryServices::Protocols::DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LazyCommitControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LazyCommitControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

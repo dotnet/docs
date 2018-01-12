@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HealthMonitoringSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HealthMonitoringSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type HealthMonitoringSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HealthMonitoringSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -193,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HealthMonitoringSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HealthMonitoringSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.BufferModes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferModes As BufferModesCollection" />
       <MemberSignature Language="F#" Value="member this.BufferModes : System.Web.Configuration.BufferModesCollection" Usage="System.Web.Configuration.HealthMonitoringSection.BufferModes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::BufferModesCollection ^ BufferModes { System::Web::Configuration::BufferModesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.Configuration.HealthMonitoringSection.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.EventMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventMappings As EventMappingSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.EventMappings : System.Web.Configuration.EventMappingSettingsCollection" Usage="System.Web.Configuration.HealthMonitoringSection.EventMappings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::EventMappingSettingsCollection ^ EventMappings { System::Web::Configuration::EventMappingSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.HeartbeatInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property HeartbeatInterval As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.HeartbeatInterval : TimeSpan with get, set" Usage="System.Web.Configuration.HealthMonitoringSection.HeartbeatInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan HeartbeatInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Profiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Profiles As ProfileSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.Profiles : System.Web.Configuration.ProfileSettingsCollection" Usage="System.Web.Configuration.HealthMonitoringSection.Profiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfileSettingsCollection ^ Profiles { System::Web::Configuration::ProfileSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -423,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HealthMonitoringSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.HealthMonitoringSection.Providers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Rules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rules As RuleSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.Rules : System.Web.Configuration.RuleSettingsCollection" Usage="System.Web.Configuration.HealthMonitoringSection.Rules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::RuleSettingsCollection ^ Rules { System::Web::Configuration::RuleSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

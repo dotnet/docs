@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CallbackCorrelationInitializer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallbackCorrelationInitializer&#xA;Inherits CorrelationInitializer" />
   <TypeSignature Language="F#" Value="type CallbackCorrelationInitializer = class&#xA;    inherit CorrelationInitializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallbackCorrelationInitializer sealed : System::ServiceModel::Activities::CorrelationInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CallbackCorrelationInitializer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CallbackCorrelationInitializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

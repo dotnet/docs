@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.GeneralTransform3DGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GeneralTransform3DGroup&#xA;Inherits GeneralTransform3D" />
   <TypeSignature Language="F#" Value="type GeneralTransform3DGroup = class&#xA;    inherit GeneralTransform3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GeneralTransform3DGroup sealed : System::Windows::Media::Media3D::GeneralTransform3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeneralTransform3DGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.GeneralTransform3DGroup.Children" />
       <MemberSignature Language="VB.NET" Value="Public Property Children As GeneralTransform3DCollection" />
       <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.Media3D.GeneralTransform3DCollection with get, set" Usage="System.Windows.Media.Media3D.GeneralTransform3DGroup.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::GeneralTransform3DCollection ^ Children { System::Windows::Media::Media3D::GeneralTransform3DCollection ^ get(); void set(System::Windows::Media::Media3D::GeneralTransform3DCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.GeneralTransform3DGroup.ChildrenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ChildrenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.GeneralTransform3DGroup.ChildrenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As GeneralTransform3DGroup" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.GeneralTransform3DGroup" Usage="generalTransform3DGroup.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::GeneralTransform3DGroup ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GeneralTransform3DGroup" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.GeneralTransform3DGroup" Usage="generalTransform3DGroup.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::GeneralTransform3DGroup ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="generalTransform3DGroup.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.GeneralTransform3DGroup.Inverse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Inverse As GeneralTransform3D" />
       <MemberSignature Language="F#" Value="member this.Inverse : System.Windows.Media.Media3D.GeneralTransform3D" Usage="System.Windows.Media.Media3D.GeneralTransform3DGroup.Inverse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::GeneralTransform3D ^ Inverse { System::Windows::Media::Media3D::GeneralTransform3D ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.TransformBounds(System.Windows.Media.Media3D.Rect3D)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TransformBounds (rect As Rect3D) As Rect3D" />
       <MemberSignature Language="F#" Value="override this.TransformBounds : System.Windows.Media.Media3D.Rect3D -&gt; System.Windows.Media.Media3D.Rect3D" Usage="generalTransform3DGroup.TransformBounds rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Media::Media3D::Rect3D TransformBounds(System::Windows::Media::Media3D::Rect3D rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryTransform (inPoint As Point3D, ByRef result As Point3D) As Boolean" />
       <MemberSignature Language="F#" Value="override this.TryTransform : System.Windows.Media.Media3D.Point3D *  -&gt; bool" Usage="generalTransform3DGroup.TryTransform (inPoint, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryTransform(System::Windows::Media::Media3D::Point3D inPoint, [Runtime::InteropServices::Out] System::Windows::Media::Media3D::Point3D % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

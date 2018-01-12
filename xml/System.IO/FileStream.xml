@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileStream" />
   <TypeSignature Language="VB.NET" Value="Public Class FileStream&#xA;Inherits Stream" />
   <TypeSignature Language="F#" Value="type FileStream = class&#xA;    inherit Stream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileStream : System::IO::Stream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -104,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As SafeFileHandle, access As FileAccess)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : Microsoft.Win32.SafeHandles.SafeFileHandle * System.IO.FileAccess -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(Microsoft::Win32::SafeHandles::SafeFileHandle ^ handle, System::IO::FileAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -165,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr, access As FileAccess)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : nativeint * System.IO.FileAccess -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(IntPtr handle, System::IO::FileAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -323,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As SafeFileHandle, access As FileAccess, bufferSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : Microsoft.Win32.SafeHandles.SafeFileHandle * System.IO.FileAccess * int -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(Microsoft::Win32::SafeHandles::SafeFileHandle ^ handle, System::IO::FileAccess access, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -389,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr, access As FileAccess, ownsHandle As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : nativeint * System.IO.FileAccess * bool -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access, ownsHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(IntPtr handle, System::IO::FileAccess access, bool ownsHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -454,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -537,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As SafeFileHandle, access As FileAccess, bufferSize As Integer, isAsync As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : Microsoft.Win32.SafeHandles.SafeFileHandle * System.IO.FileAccess * int * bool -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access, bufferSize, isAsync)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(Microsoft::Win32::SafeHandles::SafeFileHandle ^ handle, System::IO::FileAccess access, int bufferSize, bool isAsync);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -608,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr, access As FileAccess, ownsHandle As Boolean, bufferSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : nativeint * System.IO.FileAccess * bool * int -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access, ownsHandle, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(IntPtr handle, System::IO::FileAccess access, bool ownsHandle, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -675,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess, share As FileShare)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, access, share)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -771,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr, access As FileAccess, ownsHandle As Boolean, bufferSize As Integer, isAsync As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : nativeint * System.IO.FileAccess * bool * int * bool -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (handle, access, ownsHandle, bufferSize, isAsync)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(IntPtr handle, System::IO::FileAccess access, bool ownsHandle, int bufferSize, bool isAsync);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -842,6 +853,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess, share As FileShare, bufferSize As Integer)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare * int -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, access, share, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -933,6 +945,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess, share As FileShare, bufferSize As Integer, useAsync As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare * int * bool -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, access, share, bufferSize, useAsync)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share, int bufferSize, bool useAsync);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1036,6 +1049,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, access As FileAccess, share As FileShare, bufferSize As Integer, options As FileOptions)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare * int * System.IO.FileOptions -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, access, share, bufferSize, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share, int bufferSize, System::IO::FileOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1140,6 +1154,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.Security.AccessControl.FileSystemRights,System.IO.FileShare,System.Int32,System.IO.FileOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, mode As FileMode, rights As FileSystemRights, share As FileShare, bufferSize As Integer, options As FileOptions)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.Security.AccessControl.FileSystemRights * System.IO.FileShare * int * System.IO.FileOptions -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, rights, share, bufferSize, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::Security::AccessControl::FileSystemRights rights, System::IO::FileShare share, int bufferSize, System::IO::FileOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1225,6 +1240,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileMode mode, valuetype System.Security.AccessControl.FileSystemRights rights, valuetype System.IO.FileShare share, int32 bufferSize, valuetype System.IO.FileOptions options, class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.Security.AccessControl.FileSystemRights,System.IO.FileShare,System.Int32,System.IO.FileOptions,System.Security.AccessControl.FileSecurity)" />
       <MemberSignature Language="F#" Value="new System.IO.FileStream : string * System.IO.FileMode * System.Security.AccessControl.FileSystemRights * System.IO.FileShare * int * System.IO.FileOptions * System.Security.AccessControl.FileSecurity -&gt; System.IO.FileStream" Usage="new System.IO.FileStream (path, mode, rights, share, bufferSize, options, fileSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileStream(System::String ^ path, System::IO::FileMode mode, System::Security::AccessControl::FileSystemRights rights, System::IO::FileShare share, int bufferSize, System::IO::FileOptions options, System::Security::AccessControl::FileSecurity ^ fileSecurity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1322,6 +1338,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (array As Byte(), offset As Integer, numBytes As Integer, userCallback As AsyncCallback, stateObject As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginRead (array, offset, numBytes, userCallback, stateObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ array, int offset, int numBytes, AsyncCallback ^ userCallback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1400,6 +1417,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (array As Byte(), offset As Integer, numBytes As Integer, userCallback As AsyncCallback, stateObject As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginWrite (array, offset, numBytes, userCallback, stateObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ array, int offset, int numBytes, AsyncCallback ^ userCallback, System::Object ^ stateObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1478,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.IO.FileStream.CanRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1530,6 +1549,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.CanSeek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.IO.FileStream.CanSeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1582,6 +1602,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.IO.FileStream.CanWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1640,6 +1661,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="fileStream.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1692,6 +1714,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.EndRead(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="F#" Value="override this.EndRead : IAsyncResult -&gt; int" Usage="fileStream.EndRead asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1753,6 +1776,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.EndWrite(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
       <MemberSignature Language="F#" Value="override this.EndWrite : IAsyncResult -&gt; unit" Usage="fileStream.EndWrite asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1811,6 +1835,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="fileStream.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!FileStream ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1860,6 +1885,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="fileStream.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1924,6 +1950,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Flush(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush (flushToDisk As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Flush : bool -&gt; unit" Usage="fileStream.Flush flushToDisk" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush(bool flushToDisk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1970,6 +1997,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.FlushAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fileStream.FlushAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2017,6 +2045,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As FileSecurity" />
       <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.FileSecurity" Usage="fileStream.GetAccessControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::FileSecurity ^ GetAccessControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2058,6 +2087,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.Handle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.IO.FileStream.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2107,6 +2137,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.IsAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAsync As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAsync : bool" Usage="System.IO.FileStream.IsAsync" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAsync { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2159,6 +2190,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
       <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.FileStream.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2211,6 +2243,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Lock(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Lock (position As Long, length As Long)" />
       <MemberSignature Language="F#" Value="abstract member Lock : int64 * int64 -&gt; unit&#xA;override this.Lock : int64 * int64 -&gt; unit" Usage="fileStream.Lock (position, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Lock(long position, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2267,6 +2300,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.FileStream.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2317,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
       <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.IO.FileStream.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2376,6 +2411,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (array As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="fileStream.Read (array, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2450,6 +2486,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="fileStream.ReadAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2520,6 +2557,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
       <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="fileStream.ReadByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2580,6 +2618,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.FileStream.SafeFileHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SafeFileHandle As SafeFileHandle" />
       <MemberSignature Language="F#" Value="member this.SafeFileHandle : Microsoft.Win32.SafeHandles.SafeFileHandle" Usage="System.IO.FileStream.SafeFileHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Win32::SafeHandles::SafeFileHandle ^ SafeFileHandle { Microsoft::Win32::SafeHandles::SafeFileHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2626,6 +2665,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
       <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="fileStream.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2696,6 +2736,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.SetAccessControl(System.Security.AccessControl.FileSecurity)" />
       <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.FileSecurity -&gt; unit" Usage="fileStream.SetAccessControl fileSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::FileSecurity ^ fileSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2738,6 +2779,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="fileStream.SetLength value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2793,6 +2835,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Unlock(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Unlock (position As Long, length As Long)" />
       <MemberSignature Language="F#" Value="abstract member Unlock : int64 * int64 -&gt; unit&#xA;override this.Unlock : int64 * int64 -&gt; unit" Usage="fileStream.Unlock (position, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Unlock(long position, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2845,6 +2888,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (array As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="fileStream.Write (array, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ array, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2922,6 +2966,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fileStream.WriteAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -2992,6 +3037,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.WriteByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
       <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="fileStream.WriteByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

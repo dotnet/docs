@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceBuildProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceBuildProvider&#xA;Inherits BuildProvider" />
   <TypeSignature Language="F#" Value="type ServiceBuildProvider = class&#xA;    inherit BuildProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceBuildProvider sealed : System::Web::Compilation::BuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceBuildProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.ServiceBuildProvider.CodeCompilerType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CodeCompilerType As CompilerType" />
       <MemberSignature Language="F#" Value="member this.CodeCompilerType : System.Web.Compilation.CompilerType" Usage="System.ServiceModel.Activation.ServiceBuildProvider.CodeCompilerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Compilation::CompilerType ^ CodeCompilerType { System::Web::Compilation::CompilerType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="F#" Value="override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="serviceBuildProvider.GenerateCode assemblyBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCodeCompileUnit (ByRef linePragmasTable As IDictionary) As CodeCompileUnit" />
       <MemberSignature Language="F#" Value="override this.GetCodeCompileUnit :  -&gt; System.CodeDom.CodeCompileUnit" Usage="serviceBuildProvider.GetCodeCompileUnit linePragmasTable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::CodeDom::CodeCompileUnit ^ GetCodeCompileUnit([Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomString (results As CompilerResults) As String" />
       <MemberSignature Language="F#" Value="override this.GetCustomString : System.CodeDom.Compiler.CompilerResults -&gt; string" Usage="serviceBuildProvider.GetCustomString results" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCustomString(System::CodeDom::Compiler::CompilerResults ^ results);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultFlags (results As CompilerResults) As BuildProviderResultFlags" />
       <MemberSignature Language="F#" Value="override this.GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags" Usage="serviceBuildProvider.GetResultFlags results" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Compilation::BuildProviderResultFlags GetResultFlags(System::CodeDom::Compiler::CompilerResults ^ results);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.ServiceBuildProvider.VirtualPathDependencies" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VirtualPathDependencies As ICollection" />
       <MemberSignature Language="F#" Value="member this.VirtualPathDependencies : System.Collections.ICollection" Usage="System.ServiceModel.Activation.ServiceBuildProvider.VirtualPathDependencies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ VirtualPathDependencies { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

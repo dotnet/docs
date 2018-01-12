@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.RsaProtectedConfigurationProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RsaProtectedConfigurationProvider&#xA;Inherits ProtectedConfigurationProvider" />
   <TypeSignature Language="F#" Value="type RsaProtectedConfigurationProvider = class&#xA;    inherit ProtectedConfigurationProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RsaProtectedConfigurationProvider sealed : System::Configuration::ProtectedConfigurationProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaProtectedConfigurationProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.AddKey(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddKey (keySize As Integer, exportable As Boolean)" />
       <MemberSignature Language="F#" Value="member this.AddKey : int * bool -&gt; unit" Usage="rsaProtectedConfigurationProvider.AddKey (keySize, exportable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddKey(int keySize, bool exportable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.RsaProtectedConfigurationProvider.CspProviderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CspProviderName As String" />
       <MemberSignature Language="F#" Value="member this.CspProviderName : string" Usage="System.Configuration.RsaProtectedConfigurationProvider.CspProviderName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CspProviderName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decrypt (encrypted_node As XmlNode) As XmlNode" />
       <MemberSignature Language="F#" Value="override this.Decrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="rsaProtectedConfigurationProvider.Decrypt encrypted_node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ Decrypt(System::Xml::XmlNode ^ encrypted_node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.DeleteKey" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteKey ()" />
       <MemberSignature Language="F#" Value="member this.DeleteKey : unit -&gt; unit" Usage="rsaProtectedConfigurationProvider.DeleteKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encrypt (node As XmlNode) As XmlNode" />
       <MemberSignature Language="F#" Value="override this.Encrypt : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="rsaProtectedConfigurationProvider.Encrypt node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ Encrypt(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.ExportKey(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExportKey (xmlFileName As String, includePrivateParameters As Boolean)" />
       <MemberSignature Language="F#" Value="member this.ExportKey : string * bool -&gt; unit" Usage="rsaProtectedConfigurationProvider.ExportKey (xmlFileName, includePrivateParameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportKey(System::String ^ xmlFileName, bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.ImportKey(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportKey (xmlFileName As String, exportable As Boolean)" />
       <MemberSignature Language="F#" Value="member this.ImportKey : string * bool -&gt; unit" Usage="rsaProtectedConfigurationProvider.ImportKey (xmlFileName, exportable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImportKey(System::String ^ xmlFileName, bool exportable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.RsaProtectedConfigurationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, configurationValues As NameValueCollection)" />
       <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="rsaProtectedConfigurationProvider.Initialize (name, configurationValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ configurationValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.RsaProtectedConfigurationProvider.KeyContainerName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyContainerName As String" />
       <MemberSignature Language="F#" Value="member this.KeyContainerName : string" Usage="System.Configuration.RsaProtectedConfigurationProvider.KeyContainerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainerName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -406,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.RsaProtectedConfigurationProvider.RsaPublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RsaPublicKey As RSAParameters" />
       <MemberSignature Language="F#" Value="member this.RsaPublicKey : System.Security.Cryptography.RSAParameters" Usage="System.Configuration.RsaProtectedConfigurationProvider.RsaPublicKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RSAParameters RsaPublicKey { System::Security::Cryptography::RSAParameters get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -431,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.RsaProtectedConfigurationProvider.UseFIPS" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseFIPS As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseFIPS : bool" Usage="System.Configuration.RsaProtectedConfigurationProvider.UseFIPS" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseFIPS { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -456,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.RsaProtectedConfigurationProvider.UseMachineContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseMachineContainer As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseMachineContainer : bool" Usage="System.Configuration.RsaProtectedConfigurationProvider.UseMachineContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseMachineContainer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -481,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.RsaProtectedConfigurationProvider.UseOAEP" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseOAEP As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseOAEP : bool" Usage="System.Configuration.RsaProtectedConfigurationProvider.UseOAEP" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseOAEP { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ParserError" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParserError" />
   <TypeSignature Language="F#" Value="type ParserError = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParserError sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserError.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserError();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ParserError.#ctor(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorText As String, virtualPath As String, line As Integer)" />
       <MemberSignature Language="F#" Value="new System.Web.ParserError : string * string * int -&gt; System.Web.ParserError" Usage="new System.Web.ParserError (errorText, virtualPath, line)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserError(System::String ^ errorText, System::String ^ virtualPath, int line);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ParserError.ErrorText" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
       <MemberSignature Language="F#" Value="member this.ErrorText : string with get, set" Usage="System.Web.ParserError.ErrorText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ParserError.Line" />
       <MemberSignature Language="VB.NET" Value="Public Property Line As Integer" />
       <MemberSignature Language="F#" Value="member this.Line : int with get, set" Usage="System.Web.ParserError.Line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ParserError.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualPath As String" />
       <MemberSignature Language="F#" Value="member this.VirtualPath : string with get, set" Usage="System.Web.ParserError.VirtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.IFieldInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IFieldInfo" />
   <TypeSignature Language="F#" Value="type IFieldInfo = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFieldInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldNames As String()" />
       <MemberSignature Language="F#" Value="member this.FieldNames : string[] with get, set" Usage="System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FieldNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldTypes As Type()" />
       <MemberSignature Language="F#" Value="member this.FieldTypes : Type[] with get, set" Usage="System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ FieldTypes { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IEnumConnections" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumConnections" />
   <TypeSignature Language="F#" Value="type IEnumConnections = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEnumConnections" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnections.Clone(System.Runtime.InteropServices.ComTypes.IEnumConnections@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As IEnumConnections)" />
       <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumConnections.Clone ppenum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumConnections ^ % ppenum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnections.Next(System.Int32,System.Runtime.InteropServices.ComTypes.CONNECTDATA[],System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As CONNECTDATA(), pceltFetched As IntPtr) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Next : int * System.Runtime.InteropServices.ComTypes.CONNECTDATA[] * nativeint -&gt; int" Usage="iEnumConnections.Next (celt, rgelt, pceltFetched)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::ComTypes::CONNECTDATA&gt; ^ rgelt, IntPtr pceltFetched);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnections.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumConnections.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnections.Skip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="iEnumConnections.Skip celt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

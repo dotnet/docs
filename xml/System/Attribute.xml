@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Attribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Attribute&#xA;Implements _Attribute" />
   <TypeSignature Language="F#" Value="type Attribute = class&#xA;    interface _Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Attribute abstract : System::Runtime::InteropServices::_Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Attribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Attribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="attribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -192,6 +195,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.Assembly,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As Assembly, attributeType As Type) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Assembly * Type -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::Assembly ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -251,6 +255,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As MemberInfo, attributeType As Type) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.MemberInfo * Type -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::MemberInfo ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -313,6 +318,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.Module,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As Module, attributeType As Type) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Module * Type -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::Module ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -364,6 +370,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As ParameterInfo, attributeType As Type) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.ParameterInfo * Type -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::ParameterInfo ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -421,6 +428,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.Assembly,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As Assembly, attributeType As Type, inherit As Boolean) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Assembly * Type * bool -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::Assembly ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -481,6 +489,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As MemberInfo, attributeType As Type, inherit As Boolean) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.MemberInfo * Type * bool -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::MemberInfo ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -544,6 +553,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.Module,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As Module, attributeType As Type, inherit As Boolean) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.Module * Type * bool -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::Module ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -597,6 +607,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttribute (element As ParameterInfo, attributeType As Type, inherit As Boolean) As Attribute" />
       <MemberSignature Language="F#" Value="static member GetCustomAttribute : System.Reflection.ParameterInfo * Type * bool -&gt; Attribute" Usage="System.Attribute.GetCustomAttribute (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Attribute ^ GetCustomAttribute(System::Reflection::ParameterInfo ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -666,6 +677,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Assembly) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -719,6 +731,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As MemberInfo) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -776,6 +789,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Module) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -822,6 +836,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As ParameterInfo) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -874,6 +889,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Assembly, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -929,6 +945,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Assembly, attributeType As Type) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly * Type -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -986,6 +1003,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As MemberInfo, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1044,6 +1062,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Attribute[] GetCustomAttributes(class System.Reflection.MemberInfo element, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * Type -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1105,6 +1124,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Module, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1158,6 +1178,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Module, attributeType As Type) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module * Type -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1208,6 +1229,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As ParameterInfo, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1263,6 +1285,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As ParameterInfo, attributeType As Type) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * Type -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1319,6 +1342,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Assembly, attributeType As Type, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Assembly * Type * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Assembly ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1377,6 +1401,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Attribute[] GetCustomAttributes(class System.Reflection.MemberInfo element, class System.Type type, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.MemberInfo * Type * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, type, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::MemberInfo ^ element, Type ^ type, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1440,6 +1465,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As Module, attributeType As Type, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.Module * Type * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::Module ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1497,6 +1523,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomAttributes (element As ParameterInfo, attributeType As Type, inherit As Boolean) As Attribute()" />
       <MemberSignature Language="F#" Value="static member GetCustomAttributes : System.Reflection.ParameterInfo * Type * bool -&gt; Attribute[]" Usage="System.Attribute.GetCustomAttributes (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;Attribute ^&gt; ^ GetCustomAttributes(System::Reflection::ParameterInfo ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1555,6 +1582,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="attribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1604,6 +1632,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsDefaultAttribute : unit -&gt; bool&#xA;override this.IsDefaultAttribute : unit -&gt; bool" Usage="attribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1663,6 +1692,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.Assembly,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As Assembly, attributeType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.Assembly * Type -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::Assembly ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1721,6 +1751,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.MemberInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As MemberInfo, attributeType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.MemberInfo * Type -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::MemberInfo ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1782,6 +1813,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.Module,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As Module, attributeType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.Module * Type -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::Module ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1838,6 +1870,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.ParameterInfo,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As ParameterInfo, attributeType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.ParameterInfo * Type -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::ParameterInfo ^ element, Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1894,6 +1927,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.Assembly,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As Assembly, attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.Assembly * Type * bool -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::Assembly ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1954,6 +1988,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.MemberInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As MemberInfo, attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.MemberInfo * Type * bool -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::MemberInfo ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2016,6 +2051,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.Module,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As Module, attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.Module * Type * bool -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::Module ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2074,6 +2110,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.IsDefined(System.Reflection.ParameterInfo,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (element As ParameterInfo, attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDefined : System.Reflection.ParameterInfo * Type * bool -&gt; bool" Usage="System.Attribute.IsDefined (element, attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(System::Reflection::ParameterInfo ^ element, Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2129,6 +2166,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="M:System.Attribute.Match(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Match (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Match : obj -&gt; bool&#xA;override this.Match : obj -&gt; bool" Usage="attribute.Match obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Match(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2182,6 +2220,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _Attribute.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Attribute.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_Attribute::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Attribute.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -2223,6 +2262,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _Attribute.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Attribute.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_Attribute::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Attribute.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -2260,6 +2300,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _Attribute.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Attribute.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_Attribute::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Attribute.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -2293,6 +2334,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _Attribute.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Attribute.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_Attribute::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Attribute.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
@@ -2341,6 +2383,7 @@ When implementing your own class derived from <xref:System.Attribute>, you can o
       <MemberSignature Language="DocId" Value="P:System.Attribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TypeId As Object" />
       <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Attribute.TypeId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

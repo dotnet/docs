@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.InvalidCommandTreeException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvalidCommandTreeException&#xA;Inherits DataException" />
   <TypeSignature Language="F#" Value="type InvalidCommandTreeException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidCommandTreeException sealed : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidCommandTreeException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidCommandTreeException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidCommandTreeException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Data.InvalidCommandTreeException : string -&gt; System.Data.InvalidCommandTreeException" Usage="new System.Data.InvalidCommandTreeException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidCommandTreeException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidCommandTreeException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.InvalidCommandTreeException : string * Exception -&gt; System.Data.InvalidCommandTreeException" Usage="new System.Data.InvalidCommandTreeException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidCommandTreeException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

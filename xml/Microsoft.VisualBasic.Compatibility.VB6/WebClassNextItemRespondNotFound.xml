@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound" />
   <TypeSignature Language="VB.NET" Value="Public Class WebClassNextItemRespondNotFound&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type WebClassNextItemRespondNotFound = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebClassNextItemRespondNotFound : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClassNextItemRespondNotFound();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

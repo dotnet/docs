@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.MessageEventSubscription" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageEventSubscription" />
   <TypeSignature Language="F#" Value="type MessageEventSubscription = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageEventSubscription" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageEventSubscription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, instanceId As Guid)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.MessageEventSubscription : IComparable * Guid -&gt; System.Workflow.Activities.MessageEventSubscription" Usage="new System.Workflow.Activities.MessageEventSubscription (queueName, instanceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, instanceId As Guid, subscriptionId As Guid)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.MessageEventSubscription : IComparable * Guid * Guid -&gt; System.Workflow.Activities.MessageEventSubscription" Usage="new System.Workflow.Activities.MessageEventSubscription (queueName, instanceId, subscriptionId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid instanceId, Guid subscriptionId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, subscriptionId As Guid, interfaceType As Type, operation As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.MessageEventSubscription : IComparable * Guid * Type * string -&gt; System.Workflow.Activities.MessageEventSubscription" Usage="new System.Workflow.Activities.MessageEventSubscription (queueName, subscriptionId, interfaceType, operation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid subscriptionId, Type ^ interfaceType, System::String ^ operation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queueName As IComparable, instanceId As Guid, interfaceType As Type, operation As String, subscriptionId As Guid)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.MessageEventSubscription : IComparable * Guid * Type * string * Guid -&gt; System.Workflow.Activities.MessageEventSubscription" Usage="new System.Workflow.Activities.MessageEventSubscription (queueName, instanceId, interfaceType, operation, subscriptionId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEventSubscription(IComparable ^ queueName, Guid instanceId, Type ^ interfaceType, System::String ^ operation, Guid subscriptionId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.CorrelationProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CorrelationProperties As ICollection(Of CorrelationProperty)" />
       <MemberSignature Language="F#" Value="member this.CorrelationProperties : System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt;" Usage="System.Workflow.Activities.MessageEventSubscription.CorrelationProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::ICollection&lt;System::Workflow::Runtime::CorrelationProperty ^&gt; ^ CorrelationProperties { System::Collections::Generic::ICollection&lt;System::Workflow::Runtime::CorrelationProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.InterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InterfaceType As Type" />
       <MemberSignature Language="F#" Value="member this.InterfaceType : Type with get, set" Usage="System.Workflow.Activities.MessageEventSubscription.InterfaceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ InterfaceType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MethodName As String" />
       <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Workflow.Activities.MessageEventSubscription.MethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -222,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.QueueName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property QueueName As IComparable" />
       <MemberSignature Language="F#" Value="member this.QueueName : IComparable with get, set" Usage="System.Workflow.Activities.MessageEventSubscription.QueueName" />
+      <MemberSignature Language="C++ CLI" Value="public:  virtual property IComparable ^ QueueName {  public:&#xA;IComparable ^ get(); protected:&#xA; void set(IComparable ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -242,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubscriptionId As Guid" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : Guid" Usage="System.Workflow.Activities.MessageEventSubscription.SubscriptionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid SubscriptionId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -262,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.MessageEventSubscription.WorkflowInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WorkflowInstanceId As Guid" />
       <MemberSignature Language="F#" Value="member this.WorkflowInstanceId : Guid" Usage="System.Workflow.Activities.MessageEventSubscription.WorkflowInstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid WorkflowInstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

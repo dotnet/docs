@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceValidationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityDataSourceValidationException&#xA;Inherits Exception&#xA;Implements IDynamicValidatorException" />
   <TypeSignature Language="F#" Value="type EntityDataSourceValidationException = class&#xA;    inherit Exception&#xA;    interface IDynamicValidatorException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceValidationException sealed : Exception, System::Web::DynamicData::IDynamicValidatorException" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSourceValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.EntityDataSourceValidationException : string -&gt; System.Web.UI.WebControls.EntityDataSourceValidationException" Usage="new System.Web.UI.WebControls.EntityDataSourceValidationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSourceValidationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.EntityDataSourceValidationException : string * Exception -&gt; System.Web.UI.WebControls.EntityDataSourceValidationException" Usage="new System.Web.UI.WebControls.EntityDataSourceValidationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSourceValidationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceValidationException.System#Web#DynamicData#IDynamicValidatorException#InnerExceptions" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property InnerExceptions As IDictionary(Of String, Exception) Implements IDynamicValidatorException.InnerExceptions" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.EntityDataSourceValidationException.System.Web.DynamicData.IDynamicValidatorException.InnerExceptions" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ System.Web.DynamicData.IDynamicValidatorException.InnerExceptions { System::Collections::Generic::IDictionary&lt;System::String ^, Exception ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions</InterfaceMember>

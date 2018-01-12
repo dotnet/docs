@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class PeerCustomResolverSettings" />
   <TypeSignature Language="F#" Value="type PeerCustomResolverSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerCustomResolverSettings" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerCustomResolverSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As EndpointAddress" />
       <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As Binding" />
       <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ Binding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.IsBindingSpecified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBindingSpecified As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBindingSpecified : bool" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.IsBindingSpecified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBindingSpecified { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Resolver" />
       <MemberSignature Language="VB.NET" Value="Public Property Resolver As PeerResolver" />
       <MemberSignature Language="F#" Value="member this.Resolver : System.ServiceModel.PeerResolver with get, set" Usage="System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Resolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolver ^ Resolver { System::ServiceModel::PeerResolver ^ get(); void set(System::ServiceModel::PeerResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

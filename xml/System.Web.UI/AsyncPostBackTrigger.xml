@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.AsyncPostBackTrigger" />
   <TypeSignature Language="VB.NET" Value="Public Class AsyncPostBackTrigger&#xA;Inherits UpdatePanelControlTrigger" />
   <TypeSignature Language="F#" Value="type AsyncPostBackTrigger = class&#xA;    inherit UpdatePanelControlTrigger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsyncPostBackTrigger : System::Web::UI::UpdatePanelControlTrigger" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackTrigger.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncPostBackTrigger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.AsyncPostBackTrigger.ControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
       <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.UI.AsyncPostBackTrigger.ControlID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.AsyncPostBackTrigger.EventName" />
       <MemberSignature Language="VB.NET" Value="Public Property EventName As String" />
       <MemberSignature Language="F#" Value="member this.EventName : string with get, set" Usage="System.Web.UI.AsyncPostBackTrigger.EventName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackTrigger.HasTriggered" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function HasTriggered () As Boolean" />
       <MemberSignature Language="F#" Value="override this.HasTriggered : unit -&gt; bool" Usage="asyncPostBackTrigger.HasTriggered " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool HasTriggered();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackTrigger.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize ()" />
       <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="asyncPostBackTrigger.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackTrigger.OnEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnEvent (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="member this.OnEvent : obj * EventArgs -&gt; unit" Usage="asyncPostBackTrigger.OnEvent (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnEvent(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AsyncPostBackTrigger.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="asyncPostBackTrigger.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

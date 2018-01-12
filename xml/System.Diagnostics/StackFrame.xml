@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class StackFrame" />
   <TypeSignature Language="F#" Value="type StackFrame = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StackFrame" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fNeedFileInfo As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackFrame : bool -&gt; System.Diagnostics.StackFrame" Usage="new System.Diagnostics.StackFrame fNeedFileInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (skipFrames As Integer)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackFrame : int -&gt; System.Diagnostics.StackFrame" Usage="new System.Diagnostics.StackFrame skipFrames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(int skipFrames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (skipFrames As Integer, fNeedFileInfo As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackFrame : int * bool -&gt; System.Diagnostics.StackFrame" Usage="new System.Diagnostics.StackFrame (skipFrames, fNeedFileInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(int skipFrames, bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, lineNumber As Integer)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackFrame : string * int -&gt; System.Diagnostics.StackFrame" Usage="new System.Diagnostics.StackFrame (fileName, lineNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(System::String ^ fileName, int lineNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, lineNumber As Integer, colNumber As Integer)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackFrame : string * int * int -&gt; System.Diagnostics.StackFrame" Usage="new System.Diagnostics.StackFrame (fileName, lineNumber, colNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackFrame(System::String ^ fileName, int lineNumber, int colNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -318,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetFileColumnNumber" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileColumnNumber () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetFileColumnNumber : unit -&gt; int&#xA;override this.GetFileColumnNumber : unit -&gt; int" Usage="stackFrame.GetFileColumnNumber " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetFileColumnNumber();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -360,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetFileLineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileLineNumber () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetFileLineNumber : unit -&gt; int&#xA;override this.GetFileLineNumber : unit -&gt; int" Usage="stackFrame.GetFileLineNumber " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetFileLineNumber();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -402,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetFileName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileName () As String" />
       <MemberSignature Language="F#" Value="abstract member GetFileName : unit -&gt; string&#xA;override this.GetFileName : unit -&gt; string" Usage="stackFrame.GetFileName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFileName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -445,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetILOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetILOffset () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetILOffset : unit -&gt; int&#xA;override this.GetILOffset : unit -&gt; int" Usage="stackFrame.GetILOffset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetILOffset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -488,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMethod () As MethodBase" />
       <MemberSignature Language="F#" Value="abstract member GetMethod : unit -&gt; System.Reflection.MethodBase&#xA;override this.GetMethod : unit -&gt; System.Reflection.MethodBase" Usage="stackFrame.GetMethod " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodBase ^ GetMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -535,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.GetNativeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNativeOffset () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetNativeOffset : unit -&gt; int&#xA;override this.GetNativeOffset : unit -&gt; int" Usage="stackFrame.GetNativeOffset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetNativeOffset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -577,6 +590,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.StackFrame.OFFSET_UNKNOWN" />
       <MemberSignature Language="VB.NET" Value="Public Const OFFSET_UNKNOWN As Integer  = -1" />
       <MemberSignature Language="F#" Value="val mutable OFFSET_UNKNOWN : int" Usage="System.Diagnostics.StackFrame.OFFSET_UNKNOWN" />
+      <MemberSignature Language="C++ CLI" Value="public: int OFFSET_UNKNOWN = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -614,6 +628,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrame.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stackFrame.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>

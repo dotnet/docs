@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION" />
   <TypeSignature Language="VB.NET" Value="Public Structure VARDESC.DESCUNION" />
   <TypeSignature Language="F#" Value="type VARDESC.DESCUNION = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class VARDESC::DESCUNION" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
       <MemberSignature Language="VB.NET" Value="Public lpvarValue As IntPtr " />
       <MemberSignature Language="F#" Value="val mutable lpvarValue : nativeint" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpvarValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
       <MemberSignature Language="VB.NET" Value="Public oInst As Integer " />
       <MemberSignature Language="F#" Value="val mutable oInst : int" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
+      <MemberSignature Language="C++ CLI" Value="public: int oInst;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

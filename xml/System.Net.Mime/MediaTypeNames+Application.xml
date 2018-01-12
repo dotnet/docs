@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.MediaTypeNames.Application" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaTypeNames.Application" />
   <TypeSignature Language="F#" Value="type MediaTypeNames.Application = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class MediaTypeNames::Application abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Octet" />
       <MemberSignature Language="VB.NET" Value="Public Const Octet As String " />
       <MemberSignature Language="F#" Value="val mutable Octet : string" Usage="System.Net.Mime.MediaTypeNames.Application.Octet" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Octet;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Pdf" />
       <MemberSignature Language="VB.NET" Value="Public Const Pdf As String " />
       <MemberSignature Language="F#" Value="val mutable Pdf : string" Usage="System.Net.Mime.MediaTypeNames.Application.Pdf" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Pdf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Rtf" />
       <MemberSignature Language="VB.NET" Value="Public Const Rtf As String " />
       <MemberSignature Language="F#" Value="val mutable Rtf : string" Usage="System.Net.Mime.MediaTypeNames.Application.Rtf" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Rtf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Soap" />
       <MemberSignature Language="VB.NET" Value="Public Const Soap As String " />
       <MemberSignature Language="F#" Value="val mutable Soap : string" Usage="System.Net.Mime.MediaTypeNames.Application.Soap" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Soap;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Application.Zip" />
       <MemberSignature Language="VB.NET" Value="Public Const Zip As String " />
       <MemberSignature Language="F#" Value="val mutable Zip : string" Usage="System.Net.Mime.MediaTypeNames.Application.Zip" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Zip;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

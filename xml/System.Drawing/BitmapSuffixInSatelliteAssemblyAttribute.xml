@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.BitmapSuffixInSatelliteAssemblyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class BitmapSuffixInSatelliteAssemblyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type BitmapSuffixInSatelliteAssemblyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapSuffixInSatelliteAssemblyAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.BitmapSuffixInSatelliteAssemblyAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapSuffixInSatelliteAssemblyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

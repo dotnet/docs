@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTabAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonTabAutomationPeer&#xA;Inherits ItemsControlAutomationPeer" />
   <TypeSignature Language="F#" Value="type RibbonTabAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonTabAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonTab)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonTab)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonTabAutomationPeer : System.Windows.Controls.Ribbon.RibbonTab -&gt; System.Windows.Automation.Peers.RibbonTabAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonTabAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTabAutomationPeer(System::Windows::Controls::Ribbon::RibbonTab ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="ribbonTabAutomationPeer.CreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabAutomationPeer.GetBoundingRectangleCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBoundingRectangleCore () As Rect" />
       <MemberSignature Language="F#" Value="override this.GetBoundingRectangleCore : unit -&gt; System.Windows.Rect" Usage="ribbonTabAutomationPeer.GetBoundingRectangleCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Rect GetBoundingRectangleCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="ribbonTabAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonTabAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

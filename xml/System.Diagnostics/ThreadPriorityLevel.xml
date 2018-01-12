@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ThreadPriorityLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThreadPriorityLevel" />
   <TypeSignature Language="F#" Value="type ThreadPriorityLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ThreadPriorityLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.AboveNormal" />
       <MemberSignature Language="VB.NET" Value="AboveNormal" />
       <MemberSignature Language="F#" Value="AboveNormal = 1" Usage="System.Diagnostics.ThreadPriorityLevel.AboveNormal" />
+      <MemberSignature Language="C++ CLI" Value="AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.BelowNormal" />
       <MemberSignature Language="VB.NET" Value="BelowNormal" />
       <MemberSignature Language="F#" Value="BelowNormal = -1" Usage="System.Diagnostics.ThreadPriorityLevel.BelowNormal" />
+      <MemberSignature Language="C++ CLI" Value="BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.Highest" />
       <MemberSignature Language="VB.NET" Value="Highest" />
       <MemberSignature Language="F#" Value="Highest = 2" Usage="System.Diagnostics.ThreadPriorityLevel.Highest" />
+      <MemberSignature Language="C++ CLI" Value="Highest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.Idle" />
       <MemberSignature Language="VB.NET" Value="Idle" />
       <MemberSignature Language="F#" Value="Idle = -15" Usage="System.Diagnostics.ThreadPriorityLevel.Idle" />
+      <MemberSignature Language="C++ CLI" Value="Idle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.Lowest" />
       <MemberSignature Language="VB.NET" Value="Lowest" />
       <MemberSignature Language="F#" Value="Lowest = -2" Usage="System.Diagnostics.ThreadPriorityLevel.Lowest" />
+      <MemberSignature Language="C++ CLI" Value="Lowest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Diagnostics.ThreadPriorityLevel.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ThreadPriorityLevel.TimeCritical" />
       <MemberSignature Language="VB.NET" Value="TimeCritical" />
       <MemberSignature Language="F#" Value="TimeCritical = 15" Usage="System.Diagnostics.ThreadPriorityLevel.TimeCritical" />
+      <MemberSignature Language="C++ CLI" Value="TimeCritical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

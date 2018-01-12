@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EventArgs" />
   <TypeSignature Language="F#" Value="type EventArgs = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.EventArgs.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As EventArgs " />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : EventArgs" Usage="System.EventArgs.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly EventArgs ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

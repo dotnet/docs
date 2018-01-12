@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Oid" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Oid" />
   <TypeSignature Language="F#" Value="type Oid = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Oid sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.Security.Cryptography.Oid)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : System.Security.Cryptography.Oid -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::Security::Cryptography::Oid ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oid As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : string -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, friendlyName As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : string * string -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid (value, friendlyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ value, System::String ^ friendlyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
       <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="System.Security.Cryptography.Oid.FriendlyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -287,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromFriendlyName(System.String,System.Security.Cryptography.OidGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromFriendlyName (friendlyName As String, group As OidGroup) As Oid" />
       <MemberSignature Language="F#" Value="static member FromFriendlyName : string * System.Security.Cryptography.OidGroup -&gt; System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Oid.FromFriendlyName (friendlyName, group)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromFriendlyName(System::String ^ friendlyName, System::Security::Cryptography::OidGroup group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -326,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromOidValue(System.String,System.Security.Cryptography.OidGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOidValue (oidValue As String, group As OidGroup) As Oid" />
       <MemberSignature Language="F#" Value="static member FromOidValue : string * System.Security.Cryptography.OidGroup -&gt; System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Oid.FromOidValue (oidValue, group)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromOidValue(System::String ^ oidValue, System::Security::Cryptography::OidGroup group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -365,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Security.Cryptography.Oid.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlSignificantWhitespace" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSignificantWhitespace&#xA;Inherits XmlCharacterData" />
   <TypeSignature Language="F#" Value="type XmlSignificantWhitespace = class&#xA;    inherit XmlCharacterData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSignificantWhitespace : System::Xml::XmlCharacterData" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSignificantWhitespace.#ctor(System.String,System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (strData As String, doc As XmlDocument)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlSignificantWhitespace : string * System.Xml.XmlDocument -&gt; System.Xml.XmlSignificantWhitespace" Usage="new System.Xml.XmlSignificantWhitespace (strData, doc)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlSignificantWhitespace(System::String ^ strData, System::Xml::XmlDocument ^ doc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSignificantWhitespace.CloneNode(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
       <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlSignificantWhitespace.CloneNode deep" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSignificantWhitespace.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
       <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlSignificantWhitespace.LocalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSignificantWhitespace.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlSignificantWhitespace.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSignificantWhitespace.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlSignificantWhitespace.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSignificantWhitespace.ParentNode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ParentNode As XmlNode" />
       <MemberSignature Language="F#" Value="member this.ParentNode : System.Xml.XmlNode" Usage="System.Xml.XmlSignificantWhitespace.ParentNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ ParentNode { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSignificantWhitespace.PreviousText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PreviousText As XmlNode" />
       <MemberSignature Language="F#" Value="member this.PreviousText : System.Xml.XmlNode" Usage="System.Xml.XmlSignificantWhitespace.PreviousText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ PreviousText { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -310,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlSignificantWhitespace.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Xml.XmlSignificantWhitespace.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSignificantWhitespace.WriteContentTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (w As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteContentTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlSignificantWhitespace.WriteContentTo w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteContentTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -394,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlSignificantWhitespace.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlSignificantWhitespace.WriteTo w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

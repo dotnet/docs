@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Grid" />
   <TypeSignature Language="VB.NET" Value="Public Class Grid" />
   <TypeSignature Language="F#" Value="type Grid = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Grid" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Grid.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Grid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
       <MemberSignature Language="F#" Value="member this.Interval : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.Interval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.IntervalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalOffset As Double" />
       <MemberSignature Language="F#" Value="member this.IntervalOffset : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.IntervalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double IntervalOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.IntervalOffsetType" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalOffsetType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.IntervalOffsetType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.IntervalOffsetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType IntervalOffsetType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.IntervalType" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.IntervalType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.IntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType IntervalType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LineColor As Color" />
       <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.LineColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -315,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.LineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LineDashStyle As ChartDashStyle" />
       <MemberSignature Language="F#" Value="member this.LineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.LineDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle LineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -350,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Grid.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property LineWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.LineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Grid.LineWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

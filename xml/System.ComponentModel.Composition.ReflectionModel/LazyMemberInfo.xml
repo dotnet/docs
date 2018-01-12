@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" />
   <TypeSignature Language="VB.NET" Value="Public Structure LazyMemberInfo" />
   <TypeSignature Language="F#" Value="type LazyMemberInfo = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class LazyMemberInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As MemberInfo)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo : System.Reflection.MemberInfo -&gt; System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" Usage="new System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LazyMemberInfo(System::Reflection::MemberInfo ^ member);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberTypes,System.Func{System.Reflection.MemberInfo[]})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberType As MemberTypes, accessorsCreator As Func(Of MemberInfo()))" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo : System.Reflection.MemberTypes * Func&lt;System.Reflection.MemberInfo[]&gt; -&gt; System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" Usage="new System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo (memberType, accessorsCreator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LazyMemberInfo(System::Reflection::MemberTypes memberType, Func&lt;cli::array &lt;System::Reflection::MemberInfo ^&gt; ^&gt; ^ accessorsCreator);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberTypes,System.Reflection.MemberInfo[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberType As MemberTypes, ParamArray accessors As MemberInfo())" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo : System.Reflection.MemberTypes * System.Reflection.MemberInfo[] -&gt; System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" Usage="new System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo (memberType, accessors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LazyMemberInfo(System::Reflection::MemberTypes memberType, ... cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ accessors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="lazyMemberInfo.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.GetAccessors" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessors () As MemberInfo()" />
       <MemberSignature Language="F#" Value="member this.GetAccessors : unit -&gt; System.Reflection.MemberInfo[]" Usage="lazyMemberInfo.GetAccessors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetAccessors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="lazyMemberInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.op_Equality(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As LazyMemberInfo, right As LazyMemberInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo * System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::ComponentModel::Composition::ReflectionModel::LazyMemberInfo left, System::ComponentModel::Composition::ReflectionModel::LazyMemberInfo right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.op_Inequality(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As LazyMemberInfo, right As LazyMemberInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo * System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo -&gt; bool" Usage="System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::ComponentModel::Composition::ReflectionModel::LazyMemberInfo left, System::ComponentModel::Composition::ReflectionModel::LazyMemberInfo right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

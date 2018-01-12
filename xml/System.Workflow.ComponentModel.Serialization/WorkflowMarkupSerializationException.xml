@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowMarkupSerializationException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type WorkflowMarkupSerializationException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowMarkupSerializationException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSerializationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException : string -&gt; System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" Usage="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSerializationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" Usage="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowMarkupSerializationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException : string * Exception -&gt; System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" Usage="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSerializationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, lineNumber As Integer, columnNumber As Integer)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException : string * int * int -&gt; System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" Usage="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException (message, lineNumber, columnNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSerializationException(System::String ^ message, int lineNumber, int columnNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor(System.String,System.Exception,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, lineNumber As Integer, columnNumber As Integer)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException : string * Exception * int * int -&gt; System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" Usage="new System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException (message, innerException, lineNumber, columnNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSerializationException(System::String ^ message, Exception ^ innerException, int lineNumber, int columnNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -173,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="workflowMarkupSerializationException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -225,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

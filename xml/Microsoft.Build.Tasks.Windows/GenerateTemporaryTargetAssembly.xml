@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenerateTemporaryTargetAssembly&#xA;Inherits Task" />
   <TypeSignature Language="F#" Value="type GenerateTemporaryTargetAssembly = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenerateTemporaryTargetAssembly sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenerateTemporaryTargetAssembly();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.CompileTargetName" />
       <MemberSignature Language="VB.NET" Value="Public Property CompileTargetName As String" />
       <MemberSignature Language="F#" Value="member this.CompileTargetName : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.CompileTargetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompileTargetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.CompileTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property CompileTypeName As String" />
       <MemberSignature Language="F#" Value="member this.CompileTypeName : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.CompileTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompileTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.CurrentProject" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentProject As String" />
       <MemberSignature Language="F#" Value="member this.CurrentProject : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.CurrentProject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentProject { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="generateTemporaryTargetAssembly.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.GeneratedCodeFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedCodeFiles As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.GeneratedCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.GeneratedCodeFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedCodeFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.IntermediateOutputPath" />
       <MemberSignature Language="VB.NET" Value="Public Property IntermediateOutputPath As String" />
       <MemberSignature Language="F#" Value="member this.IntermediateOutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.IntermediateOutputPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IntermediateOutputPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.MSBuildBinPath" />
       <MemberSignature Language="VB.NET" Value="Public Property MSBuildBinPath As String" />
       <MemberSignature Language="F#" Value="member this.MSBuildBinPath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.MSBuildBinPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MSBuildBinPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -241,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.ReferencePath" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferencePath As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.ReferencePath : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.ReferencePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ReferencePath { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -262,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.ReferencePathTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferencePathTypeName As String" />
       <MemberSignature Language="F#" Value="member this.ReferencePathTypeName : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly.ReferencePathTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReferencePathTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

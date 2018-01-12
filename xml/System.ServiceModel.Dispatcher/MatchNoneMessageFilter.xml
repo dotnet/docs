@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.MatchNoneMessageFilter" />
   <TypeSignature Language="VB.NET" Value="Public Class MatchNoneMessageFilter&#xA;Inherits MessageFilter" />
   <TypeSignature Language="F#" Value="type MatchNoneMessageFilter = class&#xA;    inherit MessageFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MatchNoneMessageFilter : System::ServiceModel::Dispatcher::MessageFilter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MatchNoneMessageFilter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MatchNoneMessageFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MatchNoneMessageFilter.Match(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="matchNoneMessageFilter.Match message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MatchNoneMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="matchNoneMessageFilter.Match buffer" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (buffer As MessageBuffer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

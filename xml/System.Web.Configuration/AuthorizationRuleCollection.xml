@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthorizationRuleCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthorizationRuleCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type AuthorizationRuleCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationRuleCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthorizationRuleCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.Add(System.Web.Configuration.AuthorizationRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (rule As AuthorizationRule)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.AuthorizationRule -&gt; unit" Usage="authorizationRuleCollection.Add rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::AuthorizationRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="authorizationRuleCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRuleCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.Configuration.AuthorizationRuleCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="authorizationRuleCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.CreateNewElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement (elementName As String) As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : string -&gt; System.Configuration.ConfigurationElement" Usage="authorizationRuleCollection.CreateNewElement elementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement(System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRuleCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Web.Configuration.AuthorizationRuleCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As AuthorizationRule" />
       <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.AuthorizationRule" Usage="authorizationRuleCollection.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::AuthorizationRule ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="authorizationRuleCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.IndexOf(System.Web.Configuration.AuthorizationRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (rule As AuthorizationRule) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Configuration.AuthorizationRule -&gt; int" Usage="authorizationRuleCollection.IndexOf rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Configuration::AuthorizationRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.IsElementName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsElementName (elementname As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsElementName : string -&gt; bool" Usage="authorizationRuleCollection.IsElementName elementname" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsElementName(System::String ^ elementname);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRuleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As AuthorizationRule" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.AuthorizationRule with get, set" Usage="System.Web.Configuration.AuthorizationRuleCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AuthorizationRule ^ default[int] { System::Web::Configuration::AuthorizationRule ^ get(int index); void set(int index, System::Web::Configuration::AuthorizationRule ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthorizationRuleCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.AuthorizationRuleCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.Remove(System.Web.Configuration.AuthorizationRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (rule As AuthorizationRule)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.AuthorizationRule -&gt; unit" Usage="authorizationRuleCollection.Remove rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::AuthorizationRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -434,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="authorizationRuleCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -473,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthorizationRuleCollection.Set(System.Int32,System.Web.Configuration.AuthorizationRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (index As Integer, rule As AuthorizationRule)" />
       <MemberSignature Language="F#" Value="member this.Set : int * System.Web.Configuration.AuthorizationRule -&gt; unit" Usage="authorizationRuleCollection.Set (index, rule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(int index, System::Web::Configuration::AuthorizationRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

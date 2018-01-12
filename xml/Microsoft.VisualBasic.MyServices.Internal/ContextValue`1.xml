@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.Internal.ContextValue`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextValue(Of T)" />
   <TypeSignature Language="F#" Value="type ContextValue&lt;'T&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ContextValue" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.Internal.ContextValue`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextValue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.Internal.ContextValue`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="Microsoft.VisualBasic.MyServices.Internal.ContextValue&lt;'T&gt;.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

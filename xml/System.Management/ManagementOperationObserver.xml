@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementOperationObserver" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementOperationObserver" />
   <TypeSignature Language="F#" Value="type ManagementOperationObserver = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementOperationObserver" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementOperationObserver.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementOperationObserver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementOperationObserver.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="managementOperationObserver.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.Completed" />
       <MemberSignature Language="VB.NET" Value="Public Event Completed As CompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Completed : System.Management.CompletedEventHandler " Usage="member this.Completed : System.Management.CompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::CompletedEventHandler ^ Completed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.ObjectPut" />
       <MemberSignature Language="VB.NET" Value="Public Event ObjectPut As ObjectPutEventHandler " />
       <MemberSignature Language="F#" Value="member this.ObjectPut : System.Management.ObjectPutEventHandler " Usage="member this.ObjectPut : System.Management.ObjectPutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::ObjectPutEventHandler ^ ObjectPut;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.ObjectReady" />
       <MemberSignature Language="VB.NET" Value="Public Event ObjectReady As ObjectReadyEventHandler " />
       <MemberSignature Language="F#" Value="member this.ObjectReady : System.Management.ObjectReadyEventHandler " Usage="member this.ObjectReady : System.Management.ObjectReadyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::ObjectReadyEventHandler ^ ObjectReady;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.Progress" />
       <MemberSignature Language="VB.NET" Value="Public Event Progress As ProgressEventHandler " />
       <MemberSignature Language="F#" Value="member this.Progress : System.Management.ProgressEventHandler " Usage="member this.Progress : System.Management.ProgressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::ProgressEventHandler ^ Progress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.WebServiceHandlerFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class WebServiceHandlerFactory&#xA;Implements IHttpHandlerFactory" />
   <TypeSignature Language="F#" Value="type WebServiceHandlerFactory = class&#xA;    interface IHttpHandlerFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServiceHandlerFactory : System::Web::IHttpHandlerFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.WebServiceHandlerFactory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceHandlerFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.WebServiceHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHandler (context As HttpContext, verb As String, url As String, filePath As String) As IHttpHandler" />
       <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler&#xA;override this.GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="webServiceHandlerFactory.GetHandler (context, verb, url, filePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ verb, System::String ^ url, System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.WebServiceHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseHandler (handler As IHttpHandler)" />
       <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit&#xA;override this.ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="webServiceHandlerFactory.ReleaseHandler handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)</InterfaceMember>

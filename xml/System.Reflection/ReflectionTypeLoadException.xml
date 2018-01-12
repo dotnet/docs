@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ReflectionTypeLoadException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReflectionTypeLoadException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type ReflectionTypeLoadException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReflectionTypeLoadException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (classes As Type(), exceptions As Exception())" />
       <MemberSignature Language="F#" Value="new System.Reflection.ReflectionTypeLoadException : Type[] * Exception[] -&gt; System.Reflection.ReflectionTypeLoadException" Usage="new System.Reflection.ReflectionTypeLoadException (classes, exceptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReflectionTypeLoadException(cli::array &lt;Type ^&gt; ^ classes, cli::array &lt;Exception ^&gt; ^ exceptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (classes As Type(), exceptions As Exception(), message As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.ReflectionTypeLoadException : Type[] * Exception[] * string -&gt; System.Reflection.ReflectionTypeLoadException" Usage="new System.Reflection.ReflectionTypeLoadException (classes, exceptions, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReflectionTypeLoadException(cli::array &lt;Type ^&gt; ^ classes, cli::array &lt;Exception ^&gt; ^ exceptions, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ReflectionTypeLoadException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="reflectionTypeLoadException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ReflectionTypeLoadException.LoaderExceptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoaderExceptions As Exception()" />
       <MemberSignature Language="F#" Value="member this.LoaderExceptions : Exception[]" Usage="System.Reflection.ReflectionTypeLoadException.LoaderExceptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Exception ^&gt; ^ LoaderExceptions { cli::array &lt;Exception ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ReflectionTypeLoadException.Types" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Types As Type()" />
       <MemberSignature Language="F#" Value="member this.Types : Type[]" Usage="System.Reflection.ReflectionTypeLoadException.Types" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ Types { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

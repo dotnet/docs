@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.HyperlinkAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class HyperlinkAutomationPeer&#xA;Inherits TextElementAutomationPeer&#xA;Implements IInvokeProvider" />
   <TypeSignature Language="F#" Value="type HyperlinkAutomationPeer = class&#xA;    inherit TextElementAutomationPeer&#xA;    interface IInvokeProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HyperlinkAutomationPeer : System::Windows::Automation::Peers::TextElementAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.#ctor(System.Windows.Documents.Hyperlink)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Hyperlink)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.HyperlinkAutomationPeer : System.Windows.Documents.Hyperlink -&gt; System.Windows.Automation.Peers.HyperlinkAutomationPeer" Usage="new System.Windows.Automation.Peers.HyperlinkAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HyperlinkAutomationPeer(System::Windows::Documents::Hyperlink ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="hyperlinkAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="hyperlinkAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="hyperlinkAutomationPeer.GetNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="hyperlinkAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.IsControlElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="hyperlinkAutomationPeer.IsControlElementCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IInvokeProvider.Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.HyperlinkAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke () Implements IInvokeProvider.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IInvokeProvider.Invoke() = System::Windows::Automation::Provider::IInvokeProvider::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IInvokeProvider.Invoke</InterfaceMember>

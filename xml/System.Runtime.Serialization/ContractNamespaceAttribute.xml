@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ContractNamespaceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractNamespaceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ContractNamespaceAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractNamespaceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ContractNamespaceAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractNamespace As String)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Serialization.ContractNamespaceAttribute : string -&gt; System.Runtime.Serialization.ContractNamespaceAttribute" Usage="new System.Runtime.Serialization.ContractNamespaceAttribute contractNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractNamespaceAttribute(System::String ^ contractNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ContractNamespaceAttribute.ClrNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property ClrNamespace As String" />
       <MemberSignature Language="F#" Value="member this.ClrNamespace : string with get, set" Usage="System.Runtime.Serialization.ContractNamespaceAttribute.ClrNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClrNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ContractNamespaceAttribute.ContractNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractNamespace As String" />
       <MemberSignature Language="F#" Value="member this.ContractNamespace : string" Usage="System.Runtime.Serialization.ContractNamespaceAttribute.ContractNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContractNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.FormatUrl" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormatUrl&#xA;Inherits TaskExtension" />
   <TypeSignature Language="F#" Value="type FormatUrl = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormatUrl sealed : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.FormatUrl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormatUrl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.FormatUrl.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="formatUrl.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FormatUrl.InputUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property InputUrl As String" />
       <MemberSignature Language="F#" Value="member this.InputUrl : string with get, set" Usage="Microsoft.Build.Tasks.FormatUrl.InputUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FormatUrl.OutputUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputUrl As String" />
       <MemberSignature Language="F#" Value="member this.OutputUrl : string with get, set" Usage="Microsoft.Build.Tasks.FormatUrl.OutputUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.NativeActivityUpdateContext" />
   <TypeSignature Language="VB.NET" Value="Public Class NativeActivityUpdateContext" />
   <TypeSignature Language="F#" Value="type NativeActivityUpdateContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityUpdateContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ActivityInstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityInstanceId As String" />
       <MemberSignature Language="F#" Value="member this.ActivityInstanceId : string" Usage="System.Activities.DynamicUpdate.NativeActivityUpdateContext.ActivityInstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActivityInstanceId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark () As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : unit -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.Activities.BookmarkCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (callback As BookmarkCallback) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : System.Activities.BookmarkCallback -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::Activities::BookmarkCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.Activities.BookmarkCallback,System.Activities.BookmarkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (callback As BookmarkCallback, options As BookmarkOptions) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : System.Activities.BookmarkCallback * System.Activities.BookmarkOptions -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark (callback, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark (name, callback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, options As BookmarkOptions) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback * System.Activities.BookmarkOptions -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark (name, callback, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, scope As BookmarkScope) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback * System.Activities.BookmarkScope -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark (name, callback, scope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkScope ^ scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkScope,System.Activities.BookmarkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, scope As BookmarkScope, options As BookmarkOptions) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback * System.Activities.BookmarkScope * System.Activities.BookmarkOptions -&gt; System.Activities.Bookmark" Usage="nativeActivityUpdateContext.CreateBookmark (name, callback, scope, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkScope ^ scope, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.NativeActivityUpdateContext.DefaultBookmarkScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultBookmarkScope As BookmarkScope" />
       <MemberSignature Language="F#" Value="member this.DefaultBookmarkScope : System.Activities.BookmarkScope" Usage="System.Activities.DynamicUpdate.NativeActivityUpdateContext.DefaultBookmarkScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::BookmarkScope ^ DefaultBookmarkScope { System::Activities::BookmarkScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -304,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.DisallowUpdate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisallowUpdate (reason As String)" />
       <MemberSignature Language="F#" Value="member this.DisallowUpdate : string -&gt; unit" Usage="nativeActivityUpdateContext.DisallowUpdate reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisallowUpdate(System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -327,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.FindExecutionProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindExecutionProperty (name As String) As Object" />
       <MemberSignature Language="F#" Value="member this.FindExecutionProperty : string -&gt; obj" Usage="nativeActivityUpdateContext.FindExecutionProperty name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindExecutionProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -350,6 +363,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!!T&gt; GetLocation&lt;T&gt;(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetLocation``1(System.Activities.Variable)" />
       <MemberSignature Language="F#" Value="member this.GetLocation : System.Activities.Variable -&gt; System.Activities.Location&lt;'T&gt;" Usage="nativeActivityUpdateContext.GetLocation variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -387,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetSavedOriginalValue(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSavedOriginalValue (childActivity As Activity) As Object" />
       <MemberSignature Language="F#" Value="member this.GetSavedOriginalValue : System.Activities.Activity -&gt; obj" Usage="nativeActivityUpdateContext.GetSavedOriginalValue childActivity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSavedOriginalValue(System::Activities::Activity ^ childActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -411,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetSavedOriginalValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSavedOriginalValue (propertyName As String) As Object" />
       <MemberSignature Language="F#" Value="member this.GetSavedOriginalValue : string -&gt; obj" Usage="nativeActivityUpdateContext.GetSavedOriginalValue propertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSavedOriginalValue(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -443,6 +459,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.Argument argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue(System.Activities.Argument)" />
       <MemberSignature Language="F#" Value="member this.GetValue : System.Activities.Argument -&gt; obj" Usage="nativeActivityUpdateContext.GetValue argument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::Argument ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -466,6 +483,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.RuntimeArgument runtimeArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue(System.Activities.RuntimeArgument)" />
       <MemberSignature Language="F#" Value="member this.GetValue : System.Activities.RuntimeArgument -&gt; obj" Usage="nativeActivityUpdateContext.GetValue runtimeArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::RuntimeArgument ^ runtimeArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -489,6 +507,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue(System.Activities.Variable)" />
       <MemberSignature Language="F#" Value="member this.GetValue : System.Activities.Variable -&gt; obj" Usage="nativeActivityUpdateContext.GetValue variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -513,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetValue``1(System.Activities.Variable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue(Of T) (variable As Variable(Of T)) As T" />
       <MemberSignature Language="F#" Value="member this.GetValue : System.Activities.Variable&lt;'T&gt; -&gt; 'T" Usage="nativeActivityUpdateContext.GetValue variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetValue(System::Activities::Variable&lt;T&gt; ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -541,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.NativeActivityUpdateContext.IsCancellationRequested" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellationRequested As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCancellationRequested : bool" Usage="System.Activities.DynamicUpdate.NativeActivityUpdateContext.IsCancellationRequested" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancellationRequested { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -562,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.IsNewlyAdded(System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsNewlyAdded (childActivity As Activity) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNewlyAdded : System.Activities.Activity -&gt; bool" Usage="nativeActivityUpdateContext.IsNewlyAdded childActivity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNewlyAdded(System::Activities::Activity ^ childActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -587,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveAllBookmarks" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllBookmarks ()" />
       <MemberSignature Language="F#" Value="member this.RemoveAllBookmarks : unit -&gt; unit" Usage="nativeActivityUpdateContext.RemoveAllBookmarks " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllBookmarks();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -615,6 +638,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveBookmark(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveBookmark(System.Activities.Bookmark)" />
       <MemberSignature Language="F#" Value="member this.RemoveBookmark : System.Activities.Bookmark -&gt; bool" Usage="nativeActivityUpdateContext.RemoveBookmark bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::Activities::Bookmark ^ bookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -640,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveBookmark(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveBookmark (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.RemoveBookmark : string -&gt; bool" Usage="nativeActivityUpdateContext.RemoveBookmark name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -665,6 +690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.RemoveBookmark(System.String,System.Activities.BookmarkScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveBookmark (name As String, scope As BookmarkScope) As Boolean" />
       <MemberSignature Language="F#" Value="member this.RemoveBookmark : string * System.Activities.BookmarkScope -&gt; bool" Usage="nativeActivityUpdateContext.RemoveBookmark (name, scope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::String ^ name, System::Activities::BookmarkScope ^ scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1734,6 +1760,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity -&gt; unit" Usage="nativeActivityUpdateContext.ScheduleActivity activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1756,6 +1783,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity, class System.Activities.CompletionCallback onCompleted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity,System.Activities.CompletionCallback)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity * System.Activities.CompletionCallback -&gt; unit" Usage="nativeActivityUpdateContext.ScheduleActivity (activity, onCompleted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::CompletionCallback ^ onCompleted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1780,6 +1808,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity,System.Activities.FaultCallback)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity * System.Activities.FaultCallback -&gt; unit" Usage="nativeActivityUpdateContext.ScheduleActivity (activity, onFaulted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::FaultCallback ^ onFaulted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1804,6 +1833,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleActivity(class System.Activities.Activity activity, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.ScheduleActivity(System.Activities.Activity,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity * System.Activities.CompletionCallback * System.Activities.FaultCallback -&gt; unit" Usage="nativeActivityUpdateContext.ScheduleActivity (activity, onCompleted, onFaulted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::CompletionCallback ^ onCompleted, System::Activities::FaultCallback ^ onFaulted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2969,6 +2999,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Activities.Argument argument, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.SetValue(System.Activities.Argument,System.Object)" />
       <MemberSignature Language="F#" Value="member this.SetValue : System.Activities.Argument * obj -&gt; unit" Usage="nativeActivityUpdateContext.SetValue (argument, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Activities::Argument ^ argument, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2993,6 +3024,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Activities.Variable variable, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.SetValue(System.Activities.Variable,System.Object)" />
       <MemberSignature Language="F#" Value="member this.SetValue : System.Activities.Variable * obj -&gt; unit" Usage="nativeActivityUpdateContext.SetValue (variable, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Activities::Variable ^ variable, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3018,6 +3050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateContext.SetValue``1(System.Activities.Variable{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue(Of T) (variable As Variable(Of T), value As T)" />
       <MemberSignature Language="F#" Value="member this.SetValue : System.Activities.Variable&lt;'T&gt; * 'T -&gt; unit" Usage="nativeActivityUpdateContext.SetValue (variable, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void SetValue(System::Activities::Variable&lt;T&gt; ^ variable, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

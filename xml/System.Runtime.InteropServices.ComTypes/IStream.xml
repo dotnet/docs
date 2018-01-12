@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IStream" />
   <TypeSignature Language="VB.NET" Value="Public Interface IStream" />
   <TypeSignature Language="F#" Value="type IStream = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStream" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Clone(System.Runtime.InteropServices.ComTypes.IStream@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppstm As IStream)" />
       <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iStream.Clone ppstm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IStream ^ % ppstm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit (grfCommitFlags As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Commit : int -&gt; unit" Usage="iStream.Commit grfCommitFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(int grfCommitFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (pstm As IStream, cb As Long, pcbRead As IntPtr, pcbWritten As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : System.Runtime.InteropServices.ComTypes.IStream * int64 * nativeint * nativeint -&gt; unit" Usage="iStream.CopyTo (pstm, cb, pcbRead, pcbWritten)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::Runtime::InteropServices::ComTypes::IStream ^ pstm, long cb, IntPtr pcbRead, IntPtr pcbWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LockRegion (libOffset As Long, cb As Long, dwLockType As Integer)" />
       <MemberSignature Language="F#" Value="abstract member LockRegion : int64 * int64 * int -&gt; unit" Usage="iStream.LockRegion (libOffset, cb, dwLockType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LockRegion(long libOffset, long cb, int dwLockType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[],System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Read (pv As Byte(), cb As Integer, pcbRead As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member Read : byte[] * int * nativeint -&gt; unit" Usage="iStream.Read (pv, cb, pcbRead)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Read(cli::array &lt;System::Byte&gt; ^ pv, int cb, IntPtr pcbRead);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Revert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Revert ()" />
       <MemberSignature Language="F#" Value="abstract member Revert : unit -&gt; unit" Usage="iStream.Revert " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Revert();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -326,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Seek(System.Int64,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (dlibMove As Long, dwOrigin As Integer, plibNewPosition As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member Seek : int64 * int * nativeint -&gt; unit" Usage="iStream.Seek (dlibMove, dwOrigin, plibNewPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(long dlibMove, int dwOrigin, IntPtr plibNewPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -374,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.SetSize(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSize (libNewSize As Long)" />
       <MemberSignature Language="F#" Value="abstract member SetSize : int64 -&gt; unit" Usage="iStream.SetSize libNewSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSize(long libNewSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -418,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stat (ByRef pstatstg As STATSTG, grfStatFlag As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Stat :  * int -&gt; unit" Usage="iStream.Stat (pstatstg, grfStatFlag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stat([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STATSTG % pstatstg, int grfStatFlag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -464,6 +474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.UnlockRegion(System.Int64,System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnlockRegion (libOffset As Long, cb As Long, dwLockType As Integer)" />
       <MemberSignature Language="F#" Value="abstract member UnlockRegion : int64 * int64 * int -&gt; unit" Usage="iStream.UnlockRegion (libOffset, cb, dwLockType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnlockRegion(long libOffset, long cb, int dwLockType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -512,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte[],System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (pv As Byte(), cb As Integer, pcbWritten As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * nativeint -&gt; unit" Usage="iStream.Write (pv, cb, pcbWritten)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ pv, int cb, IntPtr pcbWritten);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

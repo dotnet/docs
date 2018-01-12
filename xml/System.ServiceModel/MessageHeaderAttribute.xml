@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageHeaderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageHeaderAttribute&#xA;Inherits MessageContractMemberAttribute" />
   <TypeSignature Language="F#" Value="type MessageHeaderAttribute = class&#xA;    inherit MessageContractMemberAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageHeaderAttribute : System::ServiceModel::MessageContractMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageHeaderAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageHeaderAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeaderAttribute.Actor" />
       <MemberSignature Language="VB.NET" Value="Public Property Actor As String" />
       <MemberSignature Language="F#" Value="member this.Actor : string with get, set" Usage="System.ServiceModel.MessageHeaderAttribute.Actor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Actor { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeaderAttribute.MustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property MustUnderstand As Boolean" />
       <MemberSignature Language="F#" Value="member this.MustUnderstand : bool with get, set" Usage="System.ServiceModel.MessageHeaderAttribute.MustUnderstand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustUnderstand { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeaderAttribute.Relay" />
       <MemberSignature Language="VB.NET" Value="Public Property Relay As Boolean" />
       <MemberSignature Language="F#" Value="member this.Relay : bool with get, set" Usage="System.ServiceModel.MessageHeaderAttribute.Relay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Relay { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

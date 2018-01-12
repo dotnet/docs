@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.TypedReference" />
   <TypeSignature Language="VB.NET" Value="Public Structure TypedReference" />
   <TypeSignature Language="F#" Value="type TypedReference = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class TypedReference" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="typedReference.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="typedReference.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.GetTargetType(System.TypedReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTargetType (value As TypedReference) As Type" />
       <MemberSignature Language="F#" Value="static member GetTargetType : TypedReference -&gt; Type" Usage="System.TypedReference.GetTargetType value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetTargetType(TypedReference value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.MakeTypedReference(System.Object,System.Reflection.FieldInfo[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeTypedReference (target As Object, flds As FieldInfo()) As TypedReference" />
       <MemberSignature Language="F#" Value="static member MakeTypedReference : obj * System.Reflection.FieldInfo[] -&gt; TypedReference" Usage="System.TypedReference.MakeTypedReference (target, flds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TypedReference MakeTypedReference(System::Object ^ target, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ flds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.SetTypedReference(System.TypedReference,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTypedReference (target As TypedReference, value As Object)" />
       <MemberSignature Language="F#" Value="static member SetTypedReference : TypedReference * obj -&gt; unit" Usage="System.TypedReference.SetTypedReference (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTypedReference(TypedReference target, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.TargetTypeToken(System.TypedReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TargetTypeToken (value As TypedReference) As RuntimeTypeHandle" />
       <MemberSignature Language="F#" Value="static member TargetTypeToken : TypedReference -&gt; RuntimeTypeHandle" Usage="System.TypedReference.TargetTypeToken value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static RuntimeTypeHandle TargetTypeToken(TypedReference value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.TypedReference.ToObject(System.TypedReference)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (value As TypedReference) As Object" />
       <MemberSignature Language="F#" Value="static member ToObject : TypedReference -&gt; obj" Usage="System.TypedReference.ToObject value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(TypedReference value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

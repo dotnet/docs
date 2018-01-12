@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSObject" />
   <TypeSignature Language="VB.NET" Value="Public Class JSObject&#xA;Inherits ScriptObject&#xA;Implements IEnumerable, IExpando" />
   <TypeSignature Language="F#" Value="type JSObject = class&#xA;    inherit ScriptObject&#xA;    interface IEnumerable&#xA;    interface IExpando&#xA;    interface IReflect" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSObject : Microsoft::JScript::ScriptObject, System::Collections::IEnumerable, System::Runtime::InteropServices::Expando::IExpando" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.AddField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddField (name As String) As FieldInfo" />
       <MemberSignature Language="F#" Value="abstract member AddField : string -&gt; System.Reflection.FieldInfo&#xA;override this.AddField : string -&gt; System.Reflection.FieldInfo" Usage="jSObject.AddField name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ AddField(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.AddField(System.String)</InterfaceMember>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSObject.field_table" />
       <MemberSignature Language="VB.NET" Value="Protected field_table As ArrayList " />
       <MemberSignature Language="F#" Value="val mutable field_table : System.Collections.ArrayList" Usage="Microsoft.JScript.JSObject.field_table" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::ArrayList ^ field_table;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.GetMember(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="jSObject.GetMember (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMember(System.String,System.Reflection.BindingFlags)</InterfaceMember>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="jSObject.GetMembers bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.IReflect.GetMembers(System.Reflection.BindingFlags)</InterfaceMember>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.SetMemberValue2(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMemberValue2 (name As String, value As Object)" />
       <MemberSignature Language="F#" Value="member this.SetMemberValue2 : string * obj -&gt; unit" Usage="jSObject.SetMemberValue2 (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMemberValue2(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -223,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Reflection.MethodInfo System.Runtime.InteropServices.Expando.IExpando.AddMethod(string name, class System.Delegate method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.System#Runtime#InteropServices#Expando#IExpando#AddMethod(System.String,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Function AddMethod (name As String, method As Delegate) As MethodInfo Implements IExpando.AddMethod" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Reflection::MethodInfo ^ System.Runtime.InteropServices.Expando.IExpando.AddMethod(System::String ^ name, Delegate ^ method) = System::Runtime::InteropServices::Expando::IExpando::AddMethod;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.AddMethod(System.String,System.Delegate)</InterfaceMember>
@@ -255,6 +264,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Reflection.PropertyInfo System.Runtime.InteropServices.Expando.IExpando.AddProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.System#Runtime#InteropServices#Expando#IExpando#AddProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function AddProperty (name As String) As PropertyInfo Implements IExpando.AddProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Reflection::PropertyInfo ^ System.Runtime.InteropServices.Expando.IExpando.AddProperty(System::String ^ name) = System::Runtime::InteropServices::Expando::IExpando::AddProperty;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.AddProperty(System.String)</InterfaceMember>
@@ -285,6 +295,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices.Expando.IExpando.RemoveMember(class System.Reflection.MemberInfo m) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.System#Runtime#InteropServices#Expando#IExpando#RemoveMember(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveMember (m As MemberInfo) Implements IExpando.RemoveMember" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System::Reflection::MemberInfo ^ m) = System::Runtime::InteropServices::Expando::IExpando::RemoveMember;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System.Reflection.MemberInfo)</InterfaceMember>
@@ -315,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSObject.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jSObject.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryAttribute&#xA;Inherits CollectionBase" />
   <TypeSignature Language="F#" Value="type DirectoryAttribute = class&#xA;    inherit CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryAttribute : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Byte())" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryAttribute : string * byte[] -&gt; System.DirectoryServices.Protocols.DirectoryAttribute" Usage="new System.DirectoryServices.Protocols.DirectoryAttribute (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryAttribute(System::String ^ name, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ParamArray values As Object())" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryAttribute : string * obj[] -&gt; System.DirectoryServices.Protocols.DirectoryAttribute" Usage="new System.DirectoryServices.Protocols.DirectoryAttribute (name, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryAttribute(System::String ^ name, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryAttribute : string * string -&gt; System.DirectoryServices.Protocols.DirectoryAttribute" Usage="new System.DirectoryServices.Protocols.DirectoryAttribute (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Uri)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryAttribute : string * Uri -&gt; System.DirectoryServices.Protocols.DirectoryAttribute" Usage="new System.DirectoryServices.Protocols.DirectoryAttribute (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryAttribute(System::String ^ name, Uri ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Add(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As Byte()) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : byte[] -&gt; int" Usage="directoryAttribute.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As String) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : string -&gt; int" Usage="directoryAttribute.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Add(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As Uri) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : Uri -&gt; int" Usage="directoryAttribute.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(Uri ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -249,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.AddRange(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As Object())" />
       <MemberSignature Language="F#" Value="member this.AddRange : obj[] -&gt; unit" Usage="directoryAttribute.AddRange values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : obj -&gt; bool" Usage="directoryAttribute.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -303,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.CopyTo(System.Object[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Object(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : obj[] * int -&gt; unit" Usage="directoryAttribute.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Object ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -341,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.GetValues(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValues (valuesType As Type) As Object()" />
       <MemberSignature Language="F#" Value="member this.GetValues : Type -&gt; obj[]" Usage="directoryAttribute.GetValues valuesType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetValues(Type ^ valuesType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -369,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : obj -&gt; int" Usage="directoryAttribute.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -404,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Byte())" />
       <MemberSignature Language="F#" Value="member this.Insert : int * byte[] -&gt; unit" Usage="directoryAttribute.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -434,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As String)" />
       <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; unit" Usage="directoryAttribute.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -464,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Uri)" />
       <MemberSignature Language="F#" Value="member this.Insert : int * Uri -&gt; unit" Usage="directoryAttribute.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, Uri ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -494,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryAttribute.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.DirectoryServices.Protocols.DirectoryAttribute.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -530,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.DirectoryServices.Protocols.DirectoryAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -553,6 +572,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="directoryAttribute.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -588,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttribute.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As Object)" />
       <MemberSignature Language="F#" Value="member this.Remove : obj -&gt; unit" Usage="directoryAttribute.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

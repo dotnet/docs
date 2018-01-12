@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaChoice" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaChoice&#xA;Inherits XmlSchemaGroupBase" />
   <TypeSignature Language="F#" Value="type XmlSchemaChoice = class&#xA;    inherit XmlSchemaGroupBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaChoice : System::Xml::Schema::XmlSchemaGroupBase" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaChoice.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaChoice();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaChoice.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Items As XmlSchemaObjectCollection" />
       <MemberSignature Language="F#" Value="member this.Items : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaChoice.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaObjectCollection ^ Items { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

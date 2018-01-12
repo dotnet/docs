@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Structure AsyncVoidMethodBuilder" />
   <TypeSignature Language="F#" Value="type AsyncVoidMethodBuilder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class AsyncVoidMethodBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted``2(``0@,``1@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AwaitOnCompleted(Of TAwaiter As INotifyCompletion, TStateMachine As INotifyCompletion) (ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)" />
       <MemberSignature Language="F#" Value="member this.AwaitOnCompleted :  *  -&gt; unit (requires 'Awaiter :&gt; System.Runtime.CompilerServices.INotifyCompletion and 'StateMachine :&gt; System.Runtime.CompilerServices.IAsyncStateMachine)" Usage="asyncVoidMethodBuilder.AwaitOnCompleted (awaiter, stateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAwaiter, typename TStateMachine&gt;&#xA; where TAwaiter : System::Runtime::CompilerServices::INotifyCompletion where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void AwaitOnCompleted(TAwaiter % awaiter, TStateMachine % stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AwaitUnsafeOnCompleted(Of TAwaiter As ICriticalNotifyCompletion, TStateMachine As ICriticalNotifyCompletion) (ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)" />
       <MemberSignature Language="F#" Value="member this.AwaitUnsafeOnCompleted :  *  -&gt; unit (requires 'Awaiter :&gt; System.Runtime.CompilerServices.ICriticalNotifyCompletion and 'StateMachine :&gt; System.Runtime.CompilerServices.IAsyncStateMachine)" Usage="asyncVoidMethodBuilder.AwaitUnsafeOnCompleted (awaiter, stateMachine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TAwaiter, typename TStateMachine&gt;&#xA; where TAwaiter : System::Runtime::CompilerServices::ICriticalNotifyCompletion where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void AwaitUnsafeOnCompleted(TAwaiter % awaiter, TStateMachine % stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As AsyncVoidMethodBuilder" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Runtime.CompilerServices.AsyncVoidMethodBuilder" Usage="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::AsyncVoidMethodBuilder Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException(System.Exception)" />
       <MemberSignature Language="F#" Value="member this.SetException : Exception -&gt; unit" Usage="asyncVoidMethodBuilder.SetException exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResult ()" />
       <MemberSignature Language="F#" Value="member this.SetResult : unit -&gt; unit" Usage="asyncVoidMethodBuilder.SetResult " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetStateMachine (stateMachine As IAsyncStateMachine)" />
       <MemberSignature Language="F#" Value="member this.SetStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine -&gt; unit" Usage="asyncVoidMethodBuilder.SetStateMachine stateMachine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStateMachine(System::Runtime::CompilerServices::IAsyncStateMachine ^ stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -304,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start(Of TStateMachine As IAsyncStateMachine) (ByRef stateMachine As TStateMachine)" />
       <MemberSignature Language="F#" Value="member this.Start :  -&gt; unit (requires 'StateMachine :&gt; System.Runtime.CompilerServices.IAsyncStateMachine)" Usage="asyncVoidMethodBuilder.Start stateMachine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TStateMachine&gt;&#xA; where TStateMachine : System::Runtime::CompilerServices::IAsyncStateMachine void Start(TStateMachine % stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

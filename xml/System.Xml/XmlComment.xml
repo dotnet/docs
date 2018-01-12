@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlComment" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlComment&#xA;Inherits XmlCharacterData" />
   <TypeSignature Language="F#" Value="type XmlComment = class&#xA;    inherit XmlCharacterData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlComment : System::Xml::XmlCharacterData" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlComment.#ctor(System.String,System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (comment As String, doc As XmlDocument)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlComment : string * System.Xml.XmlDocument -&gt; System.Xml.XmlComment" Usage="new System.Xml.XmlComment (comment, doc)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlComment(System::String ^ comment, System::Xml::XmlDocument ^ doc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlComment.CloneNode(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
       <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlComment.CloneNode deep" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlComment.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
       <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlComment.LocalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlComment.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlComment.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlComment.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlComment.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlComment.WriteContentTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (w As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteContentTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlComment.WriteContentTo w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteContentTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -269,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlComment.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlComment.WriteTo w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

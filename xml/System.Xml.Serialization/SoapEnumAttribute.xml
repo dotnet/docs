@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapEnumAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapEnumAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type SoapEnumAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapEnumAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapEnumAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapEnumAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapEnumAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapEnumAttribute : string -&gt; System.Xml.Serialization.SoapEnumAttribute" Usage="new System.Xml.Serialization.SoapEnumAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapEnumAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -168,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapEnumAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Serialization.SoapEnumAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

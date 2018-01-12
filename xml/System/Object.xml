@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Object" />
   <TypeSignature Language="VB.NET" Value="Public Class Object" />
   <TypeSignature Language="F#" Value="type obj = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Object" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Object.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Object();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Object.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="obj.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -313,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Object.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (objA As Object, objB As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member Equals : obj * obj -&gt; bool" Usage="System.obj.Equals (objA, objB)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Object ^ objA, System::Object ^ objB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -376,6 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Object.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="obj.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!Object ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -518,6 +523,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
       <MemberSignature Language="DocId" Value="M:System.Object.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="obj.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -663,6 +669,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
       <MemberSignature Language="DocId" Value="M:System.Object.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="F#" Value="member this.GetType : unit -&gt; Type" Usage="obj.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -739,6 +746,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
       <MemberSignature Language="DocId" Value="M:System.Object.MemberwiseClone" />
       <MemberSignature Language="VB.NET" Value="Protected Function MemberwiseClone () As Object" />
       <MemberSignature Language="F#" Value="member this.MemberwiseClone : unit -&gt; obj" Usage="obj.MemberwiseClone " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ MemberwiseClone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -802,6 +810,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
       <MemberSignature Language="DocId" Value="M:System.Object.ReferenceEquals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReferenceEquals (objA As Object, objB As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member ReferenceEquals : obj * obj -&gt; bool" Usage="System.obj.ReferenceEquals (objA, objB)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ReferenceEquals(System::Object ^ objA, System::Object ^ objB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -880,6 +889,7 @@ The scope of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> m
       <MemberSignature Language="DocId" Value="M:System.Object.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToString () As String" />
       <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="obj.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

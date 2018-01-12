@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Convert" />
   <TypeSignature Language="VB.NET" Value="Public Class Convert" />
   <TypeSignature Language="F#" Value="type Convert = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Convert abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -194,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ChangeType(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ChangeType (value As Object, conversionType As Type) As Object" />
       <MemberSignature Language="F#" Value="static member ChangeType : obj * Type -&gt; obj" Usage="System.Convert.ChangeType (value, conversionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ChangeType(System::Object ^ value, Type ^ conversionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -279,6 +281,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ChangeType(object value, valuetype System.TypeCode typeCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Convert.ChangeType(System.Object,System.TypeCode)" />
       <MemberSignature Language="F#" Value="static member ChangeType : obj * TypeCode -&gt; obj" Usage="System.Convert.ChangeType (value, typeCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ChangeType(System::Object ^ value, TypeCode typeCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -351,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ChangeType(System.Object,System.Type,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ChangeType (value As Object, conversionType As Type, provider As IFormatProvider) As Object" />
       <MemberSignature Language="F#" Value="static member ChangeType : obj * Type * IFormatProvider -&gt; obj" Usage="System.Convert.ChangeType (value, conversionType, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ChangeType(System::Object ^ value, Type ^ conversionType, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -454,6 +458,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ChangeType(object value, valuetype System.TypeCode typeCode, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Convert.ChangeType(System.Object,System.TypeCode,System.IFormatProvider)" />
       <MemberSignature Language="F#" Value="static member ChangeType : obj * TypeCode * IFormatProvider -&gt; obj" Usage="System.Convert.ChangeType (value, typeCode, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ChangeType(System::Object ^ value, TypeCode typeCode, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -538,6 +543,7 @@
       <MemberSignature Language="DocId" Value="F:System.Convert.DBNull" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DBNull As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable DBNull : obj" Usage="System.Convert.DBNull" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ DBNull;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -578,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromBase64CharArray (inArray As Char(), offset As Integer, length As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="static member FromBase64CharArray : char[] * int * int -&gt; byte[]" Usage="System.Convert.FromBase64CharArray (inArray, offset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ FromBase64CharArray(cli::array &lt;char&gt; ^ inArray, int offset, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -669,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.FromBase64String(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromBase64String (s As String) As Byte()" />
       <MemberSignature Language="F#" Value="static member FromBase64String : string -&gt; byte[]" Usage="System.Convert.FromBase64String s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ FromBase64String(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -746,6 +754,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.GetTypeCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeCode (value As Object) As TypeCode" />
       <MemberSignature Language="F#" Value="static member GetTypeCode : obj -&gt; TypeCode" Usage="System.Convert.GetTypeCode value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TypeCode GetTypeCode(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -781,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.IsDBNull(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDBNull (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDBNull : obj -&gt; bool" Usage="System.Convert.IsDBNull value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDBNull(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -851,6 +861,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBase64CharArray(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBase64CharArray (inArray As Byte(), offsetIn As Integer, length As Integer, outArray As Char(), offsetOut As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member ToBase64CharArray : byte[] * int * int * char[] * int -&gt; int" Usage="System.Convert.ToBase64CharArray (inArray, offsetIn, length, outArray, offsetOut)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToBase64CharArray(cli::array &lt;System::Byte&gt; ^ inArray, int offsetIn, int length, cli::array &lt;char&gt; ^ outArray, int offsetOut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -932,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBase64CharArray(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Base64FormattingOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBase64CharArray (inArray As Byte(), offsetIn As Integer, length As Integer, outArray As Char(), offsetOut As Integer, options As Base64FormattingOptions) As Integer" />
       <MemberSignature Language="F#" Value="static member ToBase64CharArray : byte[] * int * int * char[] * int * Base64FormattingOptions -&gt; int" Usage="System.Convert.ToBase64CharArray (inArray, offsetIn, length, outArray, offsetOut, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToBase64CharArray(cli::array &lt;System::Byte&gt; ^ inArray, int offsetIn, int length, cli::array &lt;char&gt; ^ outArray, int offsetOut, Base64FormattingOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1041,6 +1053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBase64String(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBase64String (inArray As Byte()) As String" />
       <MemberSignature Language="F#" Value="static member ToBase64String : byte[] -&gt; string" Usage="System.Convert.ToBase64String inArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToBase64String(cli::array &lt;System::Byte&gt; ^ inArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1108,6 +1121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBase64String(System.Byte[],System.Base64FormattingOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBase64String (inArray As Byte(), options As Base64FormattingOptions) As String" />
       <MemberSignature Language="F#" Value="static member ToBase64String : byte[] * Base64FormattingOptions -&gt; string" Usage="System.Convert.ToBase64String (inArray, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToBase64String(cli::array &lt;System::Byte&gt; ^ inArray, Base64FormattingOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1179,6 +1193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBase64String(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBase64String (inArray As Byte(), offset As Integer, length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToBase64String : byte[] * int * int -&gt; string" Usage="System.Convert.ToBase64String (inArray, offset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToBase64String(cli::array &lt;System::Byte&gt; ^ inArray, int offset, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1243,6 +1258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBase64String(System.Byte[],System.Int32,System.Int32,System.Base64FormattingOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBase64String (inArray As Byte(), offset As Integer, length As Integer, options As Base64FormattingOptions) As String" />
       <MemberSignature Language="F#" Value="static member ToBase64String : byte[] * int * int * Base64FormattingOptions -&gt; string" Usage="System.Convert.ToBase64String (inArray, offset, length, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToBase64String(cli::array &lt;System::Byte&gt; ^ inArray, int offset, int length, Base64FormattingOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1342,6 +1358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : bool -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1380,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Byte) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : byte -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1429,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : char -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1464,6 +1483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As DateTime) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : DateTime -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1509,6 +1529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Decimal) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : decimal -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1558,6 +1579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Double) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : double -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1607,6 +1629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Short) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : int16 -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1656,6 +1679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : int -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1705,6 +1729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Long) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : int64 -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1754,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : obj -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1811,6 +1837,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As SByte) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : sbyte -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1865,6 +1892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Single) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : single -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1914,6 +1942,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : string -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1972,6 +2001,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As UShort) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : uint16 -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2026,6 +2056,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As UInteger) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : uint32 -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2080,6 +2111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As ULong) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : uint64 -&gt; bool" Usage="System.Convert.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2134,6 +2166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Object, provider As IFormatProvider) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : obj * IFormatProvider -&gt; bool" Usage="System.Convert.ToBoolean (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2198,6 +2231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToBoolean(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As String, provider As IFormatProvider) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : string * IFormatProvider -&gt; bool" Usage="System.Convert.ToBoolean (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2259,6 +2293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Boolean) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : bool -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2306,6 +2341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Byte) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : byte -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2343,6 +2379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Char) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : char -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2396,6 +2433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As DateTime) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : DateTime -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2430,6 +2468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Decimal) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : decimal -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2480,6 +2519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Double) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : double -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2530,6 +2570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Short) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : int16 -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2578,6 +2619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Integer) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : int -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2626,6 +2668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Long) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : int64 -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2674,6 +2717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Object) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : obj -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2735,6 +2779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As SByte) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : sbyte -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2788,6 +2833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Single) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : single -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2839,6 +2885,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As String) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : string -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2897,6 +2944,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As UShort) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : uint16 -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2950,6 +2998,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As UInteger) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : uint32 -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3003,6 +3052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As ULong) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : uint64 -&gt; byte" Usage="System.Convert.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3056,6 +3106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As Object, provider As IFormatProvider) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : obj * IFormatProvider -&gt; byte" Usage="System.Convert.ToByte (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3124,6 +3175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As String, provider As IFormatProvider) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : string * IFormatProvider -&gt; byte" Usage="System.Convert.ToByte (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3184,6 +3236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToByte(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte (value As String, fromBase As Integer) As Byte" />
       <MemberSignature Language="F#" Value="static member ToByte : string * int -&gt; byte" Usage="System.Convert.ToByte (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ToByte(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3273,6 +3326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Boolean) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : bool -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3307,6 +3361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Byte) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : byte -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3353,6 +3408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Char) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : char -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3387,6 +3443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As DateTime) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : DateTime -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3421,6 +3478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Decimal) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : decimal -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3466,6 +3524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Double) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : double -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3500,6 +3559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Short) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : int16 -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3548,6 +3608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Integer) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : int -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3596,6 +3657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Long) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : int64 -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3645,6 +3707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Object) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : obj -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3706,6 +3769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As SByte) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : sbyte -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3759,6 +3823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Single) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : single -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3793,6 +3858,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As String) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : string -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3849,6 +3915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As UShort) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : uint16 -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3900,6 +3967,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As UInteger) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : uint32 -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -3953,6 +4021,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As ULong) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : uint64 -&gt; char" Usage="System.Convert.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4006,6 +4075,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Object, provider As IFormatProvider) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : obj * IFormatProvider -&gt; char" Usage="System.Convert.ToChar (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4072,6 +4142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToChar(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As String, provider As IFormatProvider) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : string * IFormatProvider -&gt; char" Usage="System.Convert.ToChar (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4141,6 +4212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Boolean) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : bool -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4176,6 +4248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Byte) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : byte -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4211,6 +4284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Char) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : char -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4246,6 +4320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As DateTime) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : DateTime -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4280,6 +4355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Decimal) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : decimal -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4314,6 +4390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Double) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : double -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4349,6 +4426,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Short) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : int16 -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4384,6 +4462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Integer) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : int -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4419,6 +4498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Long) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : int64 -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4454,6 +4534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Object) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : obj -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4515,6 +4596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As SByte) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : sbyte -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4555,6 +4637,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Single) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : single -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4590,6 +4673,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As String) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : string -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4648,6 +4732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As UShort) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : uint16 -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4688,6 +4773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As UInteger) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : uint32 -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4728,6 +4814,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As ULong) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : uint64 -&gt; DateTime" Usage="System.Convert.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4768,6 +4855,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As Object, provider As IFormatProvider) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : obj * IFormatProvider -&gt; DateTime" Usage="System.Convert.ToDateTime (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4831,6 +4919,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDateTime(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDateTime (value As String, provider As IFormatProvider) As DateTime" />
       <MemberSignature Language="F#" Value="static member ToDateTime : string * IFormatProvider -&gt; DateTime" Usage="System.Convert.ToDateTime (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ToDateTime(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4902,6 +4991,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Boolean) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : bool -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4949,6 +5039,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Byte) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : byte -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4997,6 +5088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Char) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : char -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5043,6 +5135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As DateTime) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : DateTime -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5077,6 +5170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Decimal) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : decimal -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5114,6 +5208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Double) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : double -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5173,6 +5268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Short) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : int16 -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5220,6 +5316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Integer) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : int -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5267,6 +5364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Long) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : int64 -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5315,6 +5413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Object) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : obj -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5377,6 +5476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As SByte) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : sbyte -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5429,6 +5529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Single) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : single -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5486,6 +5587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As String) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : string -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5544,6 +5646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As UShort) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : uint16 -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5596,6 +5699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As UInteger) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : uint32 -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5648,6 +5752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As ULong) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : uint64 -&gt; decimal" Usage="System.Convert.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5700,6 +5805,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As Object, provider As IFormatProvider) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : obj * IFormatProvider -&gt; decimal" Usage="System.Convert.ToDecimal (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5771,6 +5877,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDecimal(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal (value As String, provider As IFormatProvider) As Decimal" />
       <MemberSignature Language="F#" Value="static member ToDecimal : string * IFormatProvider -&gt; decimal" Usage="System.Convert.ToDecimal (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal ToDecimal(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5844,6 +5951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Boolean) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : bool -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5891,6 +5999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Byte) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : byte -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -5938,6 +6047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Char) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : char -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5973,6 +6083,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As DateTime) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : DateTime -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6007,6 +6118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Decimal) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : decimal -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6054,6 +6166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Double) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : double -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6092,6 +6205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Short) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : int16 -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6138,6 +6252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Integer) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : int -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6185,6 +6300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Long) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : int64 -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6231,6 +6347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Object) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : obj -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6292,6 +6409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As SByte) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : sbyte -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6343,6 +6461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Single) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : single -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6391,6 +6510,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As String) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : string -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6448,6 +6568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As UShort) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : uint16 -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6499,6 +6620,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As UInteger) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : uint32 -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6550,6 +6672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As ULong) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : uint64 -&gt; double" Usage="System.Convert.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6601,6 +6724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Object, provider As IFormatProvider) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : obj * IFormatProvider -&gt; double" Usage="System.Convert.ToDouble (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6665,6 +6789,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToDouble(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As String, provider As IFormatProvider) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : string * IFormatProvider -&gt; double" Usage="System.Convert.ToDouble (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6738,6 +6863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Boolean) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : bool -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6784,6 +6910,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Byte) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : byte -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6830,6 +6957,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Char) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : char -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6878,6 +7006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As DateTime) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : DateTime -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6912,6 +7041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Decimal) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : decimal -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -6962,6 +7092,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Double) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : double -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7013,6 +7144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Short) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : int16 -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7050,6 +7182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Integer) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : int -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7098,6 +7231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Long) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : int64 -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7146,6 +7280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Object) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : obj -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7207,6 +7342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As SByte) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : sbyte -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7258,6 +7394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Single) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : single -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7309,6 +7446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As String) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : string -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7368,6 +7506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As UShort) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : uint16 -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7421,6 +7560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As UInteger) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : uint32 -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7474,6 +7614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As ULong) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : uint64 -&gt; int16" Usage="System.Convert.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7527,6 +7668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Object, provider As IFormatProvider) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : obj * IFormatProvider -&gt; int16" Usage="System.Convert.ToInt16 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7589,6 +7731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As String, provider As IFormatProvider) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : string * IFormatProvider -&gt; int16" Usage="System.Convert.ToInt16 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7650,6 +7793,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt16(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As String, fromBase As Integer) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : string * int -&gt; int16" Usage="System.Convert.ToInt16 (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7741,6 +7885,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : bool -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7787,6 +7932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Byte) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : byte -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7833,6 +7979,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Char) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : char -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7884,6 +8031,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As DateTime) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : DateTime -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -7918,6 +8066,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Decimal) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : decimal -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -7973,6 +8122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Double) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : double -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8024,6 +8174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Short) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : int16 -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8070,6 +8221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : int -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8107,6 +8259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Long) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : int64 -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8155,6 +8308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : obj -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8216,6 +8370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As SByte) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : sbyte -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8267,6 +8422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Single) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : single -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8318,6 +8474,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As String) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : string -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8375,6 +8532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As UShort) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : uint16 -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8426,6 +8584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As UInteger) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : uint32 -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8479,6 +8638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As ULong) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : uint64 -&gt; int" Usage="System.Convert.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8532,6 +8692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Object, provider As IFormatProvider) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : obj * IFormatProvider -&gt; int" Usage="System.Convert.ToInt32 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8596,6 +8757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As String, provider As IFormatProvider) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : string * IFormatProvider -&gt; int" Usage="System.Convert.ToInt32 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8657,6 +8819,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt32(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As String, fromBase As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : string * int -&gt; int" Usage="System.Convert.ToInt32 (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8742,6 +8905,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Boolean) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : bool -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8788,6 +8952,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Byte) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : byte -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8834,6 +8999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Char) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : char -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8880,6 +9046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As DateTime) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : DateTime -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -8914,6 +9081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Decimal) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : decimal -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -8964,6 +9132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Double) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : double -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9015,6 +9184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Short) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : int16 -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9061,6 +9231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Integer) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : int -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9097,6 +9268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Long) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : int64 -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9144,6 +9316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Object) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : obj -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9205,6 +9378,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As SByte) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : sbyte -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9256,6 +9430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Single) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : single -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9307,6 +9482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As String) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : string -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9364,6 +9540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As UShort) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : uint16 -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9415,6 +9592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As UInteger) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : uint32 -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9466,6 +9644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As ULong) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : uint64 -&gt; int64" Usage="System.Convert.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9519,6 +9698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Object, provider As IFormatProvider) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : obj * IFormatProvider -&gt; int64" Usage="System.Convert.ToInt64 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9587,6 +9767,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As String, provider As IFormatProvider) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : string * IFormatProvider -&gt; int64" Usage="System.Convert.ToInt64 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9648,6 +9829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToInt64(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As String, fromBase As Integer) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : string * int -&gt; int64" Usage="System.Convert.ToInt64 (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9736,6 +9918,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Boolean) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : bool -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9787,6 +9970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Byte) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : byte -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9840,6 +10024,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Char) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : char -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9893,6 +10078,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As DateTime) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : DateTime -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -9932,6 +10118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Decimal) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : decimal -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -9987,6 +10174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Double) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : double -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10043,6 +10231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Short) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : int16 -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10096,6 +10285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Integer) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : int -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10149,6 +10339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Long) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : int64 -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10202,6 +10393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Object) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : obj -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10268,6 +10460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As SByte) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : sbyte -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10310,6 +10503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Single) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : single -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10366,6 +10560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As String) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : string -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10430,6 +10625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As UShort) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : uint16 -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10483,6 +10679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As UInteger) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : uint32 -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10536,6 +10733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As ULong) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : uint64 -&gt; sbyte" Usage="System.Convert.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10589,6 +10787,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As Object, provider As IFormatProvider) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : obj * IFormatProvider -&gt; sbyte" Usage="System.Convert.ToSByte (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10664,6 +10863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As String, provider As IFormatProvider) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : string * IFormatProvider -&gt; sbyte" Usage="System.Convert.ToSByte (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10732,6 +10932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSByte(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte (value As String, fromBase As Integer) As SByte" />
       <MemberSignature Language="F#" Value="static member ToSByte : string * int -&gt; sbyte" Usage="System.Convert.ToSByte (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ToSByte(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10828,6 +11029,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Boolean) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : bool -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10874,6 +11076,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Byte) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : byte -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -10920,6 +11123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Char) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : char -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -10955,6 +11159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As DateTime) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : DateTime -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -10989,6 +11194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Decimal) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : decimal -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11038,6 +11244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Double) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : double -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11088,6 +11295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Short) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : int16 -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11134,6 +11342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Integer) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : int -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11180,6 +11389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Long) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : int64 -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11226,6 +11436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Object) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : obj -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11287,6 +11498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As SByte) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : sbyte -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11338,6 +11550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Single) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : single -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11376,6 +11589,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As String) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : string -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11433,6 +11647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As UShort) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : uint16 -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11484,6 +11699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As UInteger) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : uint32 -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11535,6 +11751,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As ULong) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : uint64 -&gt; single" Usage="System.Convert.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11586,6 +11803,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Object, provider As IFormatProvider) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : obj * IFormatProvider -&gt; single" Usage="System.Convert.ToSingle (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11654,6 +11872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToSingle(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As String, provider As IFormatProvider) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : string * IFormatProvider -&gt; single" Usage="System.Convert.ToSingle (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11727,6 +11946,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Boolean) As String" />
       <MemberSignature Language="F#" Value="static member ToString : bool -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11779,6 +11999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte) As String" />
       <MemberSignature Language="F#" Value="static member ToString : byte -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11831,6 +12052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Char) As String" />
       <MemberSignature Language="F#" Value="static member ToString : char -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11883,6 +12105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime) As String" />
       <MemberSignature Language="F#" Value="static member ToString : DateTime -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11934,6 +12157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Decimal) As String" />
       <MemberSignature Language="F#" Value="static member ToString : decimal -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -11986,6 +12210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Double) As String" />
       <MemberSignature Language="F#" Value="static member ToString : double -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12038,6 +12263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Short) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int16 -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12089,6 +12315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12140,6 +12367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Long) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int64 -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12191,6 +12419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Object) As String" />
       <MemberSignature Language="F#" Value="static member ToString : obj -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12242,6 +12471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As SByte) As String" />
       <MemberSignature Language="F#" Value="static member ToString : sbyte -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12298,6 +12528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Single) As String" />
       <MemberSignature Language="F#" Value="static member ToString : single -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12349,6 +12580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As String) As String" />
       <MemberSignature Language="F#" Value="static member ToString : string -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -12393,6 +12625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As UShort) As String" />
       <MemberSignature Language="F#" Value="static member ToString : uint16 -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12449,6 +12682,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As UInteger) As String" />
       <MemberSignature Language="F#" Value="static member ToString : uint32 -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12505,6 +12739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As ULong) As String" />
       <MemberSignature Language="F#" Value="static member ToString : uint64 -&gt; string" Usage="System.Convert.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12561,6 +12796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Boolean,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Boolean, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : bool * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(bool value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12615,6 +12851,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Byte,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : byte * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Byte value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12668,6 +12905,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Byte,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte, toBase As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : byte * int -&gt; string" Usage="System.Convert.ToString (value, toBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Byte value, int toBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12729,6 +12967,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Char,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Char, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : char * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(char value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12783,6 +13022,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.DateTime,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : DateTime * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12836,6 +13076,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Decimal,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Decimal, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : decimal * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Decimal value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12889,6 +13130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Double,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Double, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : double * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(double value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12942,6 +13184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int16,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Short, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int16 * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(short value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -12995,6 +13238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int16,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Short, toBase As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int16 * int -&gt; string" Usage="System.Convert.ToString (value, toBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(short value, int toBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13056,6 +13300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int32,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Integer, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(int value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13109,6 +13354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Integer, toBase As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int * int -&gt; string" Usage="System.Convert.ToString (value, toBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(int value, int toBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13170,6 +13416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int64,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Long, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int64 * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(long value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13223,6 +13470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Long, toBase As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : int64 * int -&gt; string" Usage="System.Convert.ToString (value, toBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(long value, int toBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13284,6 +13532,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Object, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : obj * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13344,6 +13593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.SByte,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As SByte, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : sbyte * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::SByte value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13402,6 +13652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.Single,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Single, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : single * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(float value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13455,6 +13706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : string * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -13502,6 +13754,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.UInt16,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As UShort, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : uint16 * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt16 value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13560,6 +13813,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.UInt32,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As UInteger, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : uint32 * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt32 value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13618,6 +13872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToString(System.UInt64,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As ULong, provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="static member ToString : uint64 * IFormatProvider -&gt; string" Usage="System.Convert.ToString (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::UInt64 value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13688,6 +13943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Boolean) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : bool -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13739,6 +13995,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Byte) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : byte -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13790,6 +14047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Char) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : char -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13841,6 +14099,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As DateTime) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : DateTime -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -13880,6 +14139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Decimal) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : decimal -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13935,6 +14195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Double) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : double -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -13991,6 +14252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Short) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : int16 -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14044,6 +14306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Integer) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : int -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14097,6 +14360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Long) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : int64 -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14150,6 +14414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Object) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : obj -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14216,6 +14481,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As SByte) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : sbyte -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14269,6 +14535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Single) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : single -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14325,6 +14592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As String) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : string -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14387,6 +14655,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As UShort) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : uint16 -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14429,6 +14698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As UInteger) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : uint32 -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14482,6 +14752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As ULong) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : uint64 -&gt; uint16" Usage="System.Convert.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14535,6 +14806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Object, provider As IFormatProvider) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : obj * IFormatProvider -&gt; uint16" Usage="System.Convert.ToUInt16 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14612,6 +14884,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As String, provider As IFormatProvider) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : string * IFormatProvider -&gt; uint16" Usage="System.Convert.ToUInt16 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14678,6 +14951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt16(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As String, fromBase As Integer) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : string * int -&gt; uint16" Usage="System.Convert.ToUInt16 (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14774,6 +15048,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Boolean) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : bool -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14825,6 +15100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Byte) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : byte -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14876,6 +15152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Char) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : char -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -14927,6 +15204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As DateTime) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : DateTime -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -14966,6 +15244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Decimal) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : decimal -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15021,6 +15300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Double) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : double -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15077,6 +15357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Short) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : int16 -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15130,6 +15411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Integer) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : int -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15183,6 +15465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Long) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : int64 -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15236,6 +15519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Object) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : obj -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15302,6 +15586,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As SByte) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : sbyte -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15355,6 +15640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Single) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : single -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15411,6 +15697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As String) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : string -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15473,6 +15760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As UShort) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : uint16 -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15524,6 +15812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As UInteger) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : uint32 -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15566,6 +15855,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As ULong) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : uint64 -&gt; uint32" Usage="System.Convert.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15619,6 +15909,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Object, provider As IFormatProvider) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : obj * IFormatProvider -&gt; uint32" Usage="System.Convert.ToUInt32 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15696,6 +15987,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As String, provider As IFormatProvider) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : string * IFormatProvider -&gt; uint32" Usage="System.Convert.ToUInt32 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15762,6 +16054,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt32(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As String, fromBase As Integer) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : string * int -&gt; uint32" Usage="System.Convert.ToUInt32 (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15858,6 +16151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Boolean) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : bool -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15909,6 +16203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Byte) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : byte -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -15960,6 +16255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Char) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : char -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16011,6 +16307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As DateTime) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : DateTime -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -16050,6 +16347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Decimal) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : decimal -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16105,6 +16403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Double) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : double -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16161,6 +16460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Short) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : int16 -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16214,6 +16514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Integer) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : int -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16267,6 +16568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Long) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : int64 -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16320,6 +16622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Object) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : obj -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16386,6 +16689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As SByte) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : sbyte -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16439,6 +16743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Single) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : single -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16495,6 +16800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As String) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : string -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16557,6 +16863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As UShort) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : uint16 -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16608,6 +16915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As UInteger) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : uint32 -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16659,6 +16967,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As ULong) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : uint64 -&gt; uint64" Usage="System.Convert.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16701,6 +17010,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.Object,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Object, provider As IFormatProvider) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : obj * IFormatProvider -&gt; uint64" Usage="System.Convert.ToUInt64 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::Object ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16778,6 +17088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As String, provider As IFormatProvider) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : string * IFormatProvider -&gt; uint64" Usage="System.Convert.ToUInt64 (value, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::String ^ value, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -16844,6 +17155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Convert.ToUInt64(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As String, fromBase As Integer) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : string * int -&gt; uint64" Usage="System.Convert.ToUInt64 (value, fromBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(System::String ^ value, int fromBase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

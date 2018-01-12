@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IExtenderListService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtenderListService" />
   <TypeSignature Language="F#" Value="type IExtenderListService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtenderListService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderListService.GetExtenderProviders" />
       <MemberSignature Language="VB.NET" Value="Public Function GetExtenderProviders () As IExtenderProvider()" />
       <MemberSignature Language="F#" Value="abstract member GetExtenderProviders : unit -&gt; System.ComponentModel.IExtenderProvider[]" Usage="iExtenderListService.GetExtenderProviders " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::ComponentModel::IExtenderProvider ^&gt; ^ GetExtenderProviders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

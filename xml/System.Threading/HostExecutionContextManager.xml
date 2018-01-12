@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.HostExecutionContextManager" />
   <TypeSignature Language="VB.NET" Value="Public Class HostExecutionContextManager" />
   <TypeSignature Language="F#" Value="type HostExecutionContextManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostExecutionContextManager" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContextManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostExecutionContextManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContextManager.Capture" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Capture () As HostExecutionContext" />
       <MemberSignature Language="F#" Value="abstract member Capture : unit -&gt; System.Threading.HostExecutionContext&#xA;override this.Capture : unit -&gt; System.Threading.HostExecutionContext" Usage="hostExecutionContextManager.Capture " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::HostExecutionContext ^ Capture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContextManager.Revert(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Revert (previousState As Object)" />
       <MemberSignature Language="F#" Value="abstract member Revert : obj -&gt; unit&#xA;override this.Revert : obj -&gt; unit" Usage="hostExecutionContextManager.Revert previousState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Revert(System::Object ^ previousState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SetHostExecutionContext(class System.Threading.HostExecutionContext hostExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContextManager.SetHostExecutionContext(System.Threading.HostExecutionContext)" />
       <MemberSignature Language="F#" Value="abstract member SetHostExecutionContext : System.Threading.HostExecutionContext -&gt; obj&#xA;override this.SetHostExecutionContext : System.Threading.HostExecutionContext -&gt; obj" Usage="hostExecutionContextManager.SetHostExecutionContext hostExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ SetHostExecutionContext(System::Threading::HostExecutionContext ^ hostExecutionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

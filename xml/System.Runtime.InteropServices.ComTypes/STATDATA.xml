@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.STATDATA" />
   <TypeSignature Language="VB.NET" Value="Public Structure STATDATA" />
   <TypeSignature Language="F#" Value="type STATDATA = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class STATDATA" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.advf" />
       <MemberSignature Language="VB.NET" Value="Public advf As ADVF " />
       <MemberSignature Language="F#" Value="val mutable advf : System.Runtime.InteropServices.ComTypes.ADVF" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.advf" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::ADVF advf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.advSink" />
       <MemberSignature Language="VB.NET" Value="Public advSink As IAdviseSink " />
       <MemberSignature Language="F#" Value="val mutable advSink : System.Runtime.InteropServices.ComTypes.IAdviseSink" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.advSink" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::IAdviseSink ^ advSink;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.connection" />
       <MemberSignature Language="VB.NET" Value="Public connection As Integer " />
       <MemberSignature Language="F#" Value="val mutable connection : int" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.connection" />
+      <MemberSignature Language="C++ CLI" Value="public: int connection;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATDATA.formatetc" />
       <MemberSignature Language="VB.NET" Value="Public formatetc As FORMATETC " />
       <MemberSignature Language="F#" Value="val mutable formatetc : System.Runtime.InteropServices.ComTypes.FORMATETC" Usage="System.Runtime.InteropServices.ComTypes.STATDATA.formatetc" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::FORMATETC formatetc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

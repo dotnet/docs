@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationSectionGroup" />
   <TypeSignature Language="F#" Value="type ConfigurationSectionGroup = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationSectionGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration ()" />
       <MemberSignature Language="F#" Value="member this.ForceDeclaration : unit -&gt; unit" Usage="configurationSectionGroup.ForceDeclaration " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" />
       <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="configurationSectionGroup.ForceDeclaration require" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool require);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclarationRequired As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDeclarationRequired : bool" Usage="System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeclarationRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.IsDeclared" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclared As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDeclared : bool" Usage="System.Configuration.ConfigurationSectionGroup.IsDeclared" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeclared { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -280,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.ConfigurationSectionGroup.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -322,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.SectionGroupName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroupName As String" />
       <MemberSignature Language="F#" Value="member this.SectionGroupName : string" Usage="System.Configuration.ConfigurationSectionGroup.SectionGroupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SectionGroupName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -364,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.SectionGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroups As ConfigurationSectionGroupCollection" />
       <MemberSignature Language="F#" Value="member this.SectionGroups : System.Configuration.ConfigurationSectionGroupCollection" Usage="System.Configuration.ConfigurationSectionGroup.SectionGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionGroupCollection ^ SectionGroups { System::Configuration::ConfigurationSectionGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -401,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Sections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sections As ConfigurationSectionCollection" />
       <MemberSignature Language="F#" Value="member this.Sections : System.Configuration.ConfigurationSectionCollection" Usage="System.Configuration.ConfigurationSectionGroup.Sections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionCollection ^ Sections { System::Configuration::ConfigurationSectionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -438,6 +448,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeSectionGroupInTargetVersion (targetFramework As FrameworkName) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShouldSerializeSectionGroupInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool&#xA;override this.ShouldSerializeSectionGroupInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="configurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion targetFramework" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializeSectionGroupInTargetVersion(System::Runtime::Versioning::FrameworkName ^ targetFramework);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -476,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Configuration.ConfigurationSectionGroup.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.NewArray`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NewArray(Of TResult)&#xA;Inherits CodeActivity(Of TResult)" />
   <TypeSignature Language="F#" Value="type NewArray&lt;'Result&gt; = class&#xA;    inherit CodeActivity&lt;'Result&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class NewArray sealed : System::Activities::CodeActivity&lt;TResult&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NewArray`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NewArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.NewArray`1.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Collection(Of Argument)" />
       <MemberSignature Language="F#" Value="member this.Bounds : System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt;" Usage="System.Activities.Expressions.NewArray&lt;'Result&gt;.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ Bounds { System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NewArray`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="newArray.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.NewArray`1.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TResult" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'Result" Usage="newArray.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

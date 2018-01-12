@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HostingEnvironmentSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostingEnvironmentSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type HostingEnvironmentSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostingEnvironmentSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HostingEnvironmentSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostingEnvironmentSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HostingEnvironmentSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.ShadowCopyBinAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowCopyBinAssemblies As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShadowCopyBinAssemblies : bool with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.ShadowCopyBinAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShadowCopyBinAssemblies { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.ShutdownTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ShutdownTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.ShutdownTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.ShutdownTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ShutdownTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.UrlMetadataSlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Property UrlMetadataSlidingExpiration As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.UrlMetadataSlidingExpiration : TimeSpan with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.UrlMetadataSlidingExpiration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UrlMetadataSlidingExpiration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

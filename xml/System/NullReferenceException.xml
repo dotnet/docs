@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.NullReferenceException" />
   <TypeSignature Language="VB.NET" Value="Public Class NullReferenceException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type NullReferenceException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NullReferenceException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.NullReferenceException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NullReferenceException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -189,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.NullReferenceException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new NullReferenceException : string -&gt; NullReferenceException" Usage="new System.NullReferenceException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NullReferenceException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -234,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:System.NullReferenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new NullReferenceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; NullReferenceException" Usage="new System.NullReferenceException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NullReferenceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -272,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.NullReferenceException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new NullReferenceException : string * Exception -&gt; NullReferenceException" Usage="new System.NullReferenceException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NullReferenceException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.MissingFieldException" />
   <TypeSignature Language="VB.NET" Value="Public Class MissingFieldException&#xA;Inherits MissingMemberException" />
   <TypeSignature Language="F#" Value="type MissingFieldException = class&#xA;    inherit MissingMemberException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MissingFieldException : MissingMemberException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MissingFieldException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingFieldException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingFieldException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new MissingFieldException : string -&gt; MissingFieldException" Usage="new System.MissingFieldException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingFieldException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingFieldException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new MissingFieldException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; MissingFieldException" Usage="new System.MissingFieldException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MissingFieldException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingFieldException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new MissingFieldException : string * Exception -&gt; MissingFieldException" Usage="new System.MissingFieldException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingFieldException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -243,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.MissingFieldException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (className As String, fieldName As String)" />
       <MemberSignature Language="F#" Value="new MissingFieldException : string * string -&gt; MissingFieldException" Usage="new System.MissingFieldException (className, fieldName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingFieldException(System::String ^ className, System::String ^ fieldName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -274,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.MissingFieldException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.MissingFieldException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogInvalidDataException&#xA;Inherits EventLogException" />
   <TypeSignature Language="F#" Value="type EventLogInvalidDataException = class&#xA;    inherit EventLogException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogInvalidDataException : System::Diagnostics::Eventing::Reader::EventLogException" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogInvalidDataException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogInvalidDataException : string -&gt; System.Diagnostics.Eventing.Reader.EventLogInvalidDataException" Usage="new System.Diagnostics.Eventing.Reader.EventLogInvalidDataException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogInvalidDataException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogInvalidDataException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Diagnostics.Eventing.Reader.EventLogInvalidDataException" Usage="new System.Diagnostics.Eventing.Reader.EventLogInvalidDataException (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventLogInvalidDataException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogInvalidDataException : string * Exception -&gt; System.Diagnostics.Eventing.Reader.EventLogInvalidDataException" Usage="new System.Diagnostics.Eventing.Reader.EventLogInvalidDataException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogInvalidDataException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
   <TypeSignature Language="VB.NET" Value="Public Class SpecialDirectories" />
   <TypeSignature Language="F#" Value="type SpecialDirectories = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpecialDirectories" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.SpecialDirectories.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpecialDirectories();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.AllUsersApplicationData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AllUsersApplicationData As String" />
       <MemberSignature Language="F#" Value="member this.AllUsersApplicationData : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.AllUsersApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ AllUsersApplicationData { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.CurrentUserApplicationData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentUserApplicationData As String" />
       <MemberSignature Language="F#" Value="member this.CurrentUserApplicationData : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.CurrentUserApplicationData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CurrentUserApplicationData { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.Desktop" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Desktop As String" />
       <MemberSignature Language="F#" Value="member this.Desktop : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.Desktop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Desktop { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.MyDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MyDocuments As String" />
       <MemberSignature Language="F#" Value="member this.MyDocuments : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.MyDocuments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MyDocuments { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.MyMusic" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MyMusic As String" />
       <MemberSignature Language="F#" Value="member this.MyMusic : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.MyMusic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MyMusic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -264,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.MyPictures" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MyPictures As String" />
       <MemberSignature Language="F#" Value="member this.MyPictures : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.MyPictures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ MyPictures { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.ProgramFiles" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ProgramFiles As String" />
       <MemberSignature Language="F#" Value="member this.ProgramFiles : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.ProgramFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ProgramFiles { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.Programs" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Programs As String" />
       <MemberSignature Language="F#" Value="member this.Programs : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.Programs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Programs { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.Temp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Temp As String" />
       <MemberSignature Language="F#" Value="member this.Temp : string" Usage="Microsoft.VisualBasic.FileIO.SpecialDirectories.Temp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Temp { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class HierarchicalDataBoundControlAdapter&#xA;Inherits WebControlAdapter" />
   <TypeSignature Language="F#" Value="type HierarchicalDataBoundControlAdapter = class&#xA;    inherit WebControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataBoundControlAdapter : System::Web::UI::WebControls::Adapters::WebControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalDataBoundControlAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As HierarchicalDataBoundControl" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.WebControls.HierarchicalDataBoundControl" Usage="System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::HierarchicalDataBoundControl ^ Control { System::Web::UI::WebControls::HierarchicalDataBoundControl ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.PerformDataBinding" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub PerformDataBinding ()" />
       <MemberSignature Language="F#" Value="abstract member PerformDataBinding : unit -&gt; unit&#xA;override this.PerformDataBinding : unit -&gt; unit" Usage="hierarchicalDataBoundControlAdapter.PerformDataBinding " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PerformDataBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

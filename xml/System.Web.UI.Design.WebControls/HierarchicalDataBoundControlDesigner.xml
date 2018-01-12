@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class HierarchicalDataBoundControlDesigner&#xA;Inherits BaseDataBoundControlDesigner" />
   <TypeSignature Language="F#" Value="type HierarchicalDataBoundControlDesigner = class&#xA;    inherit BaseDataBoundControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataBoundControlDesigner : System::Web::UI::Design::WebControls::BaseDataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalDataBoundControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.ConnectToDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ConnectToDataSource () As Boolean" />
       <MemberSignature Language="F#" Value="override this.ConnectToDataSource : unit -&gt; bool" Usage="hierarchicalDataBoundControlDesigner.ConnectToDataSource " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ConnectToDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.CreateDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateDataSource ()" />
       <MemberSignature Language="F#" Value="override this.CreateDataSource : unit -&gt; unit" Usage="hierarchicalDataBoundControlDesigner.CreateDataSource " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="F#" Value="override this.DataBind : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="hierarchicalDataBoundControlDesigner.DataBind dataBoundControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DataSourceDesigner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceDesigner As IHierarchicalDataSourceDesigner" />
       <MemberSignature Language="F#" Value="member this.DataSourceDesigner : System.Web.UI.Design.IHierarchicalDataSourceDesigner" Usage="System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DataSourceDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IHierarchicalDataSourceDesigner ^ DataSourceDesigner { System::Web::UI::Design::IHierarchicalDataSourceDesigner ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DesignerView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerView As DesignerHierarchicalDataSourceView" />
       <MemberSignature Language="F#" Value="member this.DesignerView : System.Web.UI.Design.DesignerHierarchicalDataSourceView" Usage="System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DesignerView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerHierarchicalDataSourceView ^ DesignerView { System::Web::UI::Design::DesignerHierarchicalDataSourceView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.DisconnectFromDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DisconnectFromDataSource ()" />
       <MemberSignature Language="F#" Value="override this.DisconnectFromDataSource : unit -&gt; unit" Usage="hierarchicalDataBoundControlDesigner.DisconnectFromDataSource " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DisconnectFromDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.GetDesignTimeDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDesignTimeDataSource () As IHierarchicalEnumerable" />
       <MemberSignature Language="F#" Value="abstract member GetDesignTimeDataSource : unit -&gt; System.Web.UI.IHierarchicalEnumerable&#xA;override this.GetDesignTimeDataSource : unit -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="hierarchicalDataBoundControlDesigner.GetDesignTimeDataSource " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::IHierarchicalEnumerable ^ GetDesignTimeDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.GetSampleDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSampleDataSource () As IHierarchicalEnumerable" />
       <MemberSignature Language="F#" Value="abstract member GetSampleDataSource : unit -&gt; System.Web.UI.IHierarchicalEnumerable&#xA;override this.GetSampleDataSource : unit -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="hierarchicalDataBoundControlDesigner.GetSampleDataSource " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::IHierarchicalEnumerable ^ GetSampleDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="hierarchicalDataBoundControlDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -433,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.UseDataSourcePickerActionList" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property UseDataSourcePickerActionList As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseDataSourcePickerActionList : bool" Usage="System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner.UseDataSourcePickerActionList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UseDataSourcePickerActionList { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

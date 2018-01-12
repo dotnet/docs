@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.IdentityConfigurationElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdentityConfigurationElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type IdentityConfigurationElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IdentityConfigurationElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IdentityConfigurationElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (element As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.BaseAdd : System.Configuration.ConfigurationElement -&gt; unit" Usage="identityConfigurationElementCollection.BaseAdd element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="identityConfigurationElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.GetElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetElement (name As String) As IdentityConfigurationElement" />
       <MemberSignature Language="F#" Value="member this.GetElement : string -&gt; System.IdentityModel.Configuration.IdentityConfigurationElement" Usage="identityConfigurationElementCollection.GetElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Configuration::IdentityConfigurationElement ^ GetElement(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="identityConfigurationElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityConfigurationElementCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.IdentityModel.Configuration.IdentityConfigurationElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

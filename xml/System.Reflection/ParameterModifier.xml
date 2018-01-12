@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ParameterModifier" />
   <TypeSignature Language="VB.NET" Value="Public Structure ParameterModifier" />
   <TypeSignature Language="F#" Value="type ParameterModifier = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ParameterModifier" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ParameterModifier.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameterCount As Integer)" />
       <MemberSignature Language="F#" Value="new System.Reflection.ParameterModifier : int -&gt; System.Reflection.ParameterModifier" Usage="new System.Reflection.ParameterModifier parameterCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterModifier(int parameterCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ParameterModifier.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Item(int) : bool with get, set" Usage="System.Reflection.ParameterModifier.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default[int] { bool get(int index); void set(int index, bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

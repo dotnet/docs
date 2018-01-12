@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SemaphoreSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SemaphoreSecurity&#xA;Inherits NativeObjectSecurity" />
   <TypeSignature Language="F#" Value="type SemaphoreSecurity = class&#xA;    inherit NativeObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SemaphoreSecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemaphoreSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, includeSections As AccessControlSections)" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.SemaphoreSecurity : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.SemaphoreSecurity" Usage="new System.Security.AccessControl.SemaphoreSecurity (name, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemaphoreSecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.SemaphoreSecurity.AccessRightType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
       <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.Security.AccessControl.SemaphoreSecurity.AccessRightType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -204,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="semaphoreSecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -264,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.SemaphoreSecurity.AccessRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
       <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.Security.AccessControl.SemaphoreSecurity.AccessRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.AddAccessRule(System.Security.AccessControl.SemaphoreAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As SemaphoreAccessRule)" />
       <MemberSignature Language="F#" Value="override this.AddAccessRule : System.Security.AccessControl.SemaphoreAccessRule -&gt; unit" Usage="semaphoreSecurity.AddAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::SemaphoreAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -346,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.AddAuditRule(System.Security.AccessControl.SemaphoreAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As SemaphoreAuditRule)" />
       <MemberSignature Language="F#" Value="override this.AddAuditRule : System.Security.AccessControl.SemaphoreAuditRule -&gt; unit" Usage="semaphoreSecurity.AddAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::SemaphoreAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -381,6 +389,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="semaphoreSecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -441,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.SemaphoreSecurity.AuditRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
       <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.Security.AccessControl.SemaphoreSecurity.AuditRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -474,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRule(System.Security.AccessControl.SemaphoreAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As SemaphoreAccessRule) As Boolean" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.Security.AccessControl.SemaphoreAccessRule -&gt; bool" Usage="semaphoreSecurity.RemoveAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::SemaphoreAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -530,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll(System.Security.AccessControl.SemaphoreAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleAll (rule As SemaphoreAccessRule)" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleAll : System.Security.AccessControl.SemaphoreAccessRule -&gt; unit" Usage="semaphoreSecurity.RemoveAccessRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::SemaphoreAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -581,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.SemaphoreAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As SemaphoreAccessRule)" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.Security.AccessControl.SemaphoreAccessRule -&gt; unit" Usage="semaphoreSecurity.RemoveAccessRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::SemaphoreAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -635,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRule(System.Security.AccessControl.SemaphoreAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As SemaphoreAuditRule) As Boolean" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.Security.AccessControl.SemaphoreAuditRule -&gt; bool" Usage="semaphoreSecurity.RemoveAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::SemaphoreAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -678,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRuleAll(System.Security.AccessControl.SemaphoreAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As SemaphoreAuditRule)" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleAll : System.Security.AccessControl.SemaphoreAuditRule -&gt; unit" Usage="semaphoreSecurity.RemoveAuditRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::SemaphoreAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -716,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.SemaphoreAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As SemaphoreAuditRule)" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.Security.AccessControl.SemaphoreAuditRule -&gt; unit" Usage="semaphoreSecurity.RemoveAuditRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::SemaphoreAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -757,6 +773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.ResetAccessRule(System.Security.AccessControl.SemaphoreAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As SemaphoreAccessRule)" />
       <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.Security.AccessControl.SemaphoreAccessRule -&gt; unit" Usage="semaphoreSecurity.ResetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::SemaphoreAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -808,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.SetAccessRule(System.Security.AccessControl.SemaphoreAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As SemaphoreAccessRule)" />
       <MemberSignature Language="F#" Value="override this.SetAccessRule : System.Security.AccessControl.SemaphoreAccessRule -&gt; unit" Usage="semaphoreSecurity.SetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::SemaphoreAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -861,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreSecurity.SetAuditRule(System.Security.AccessControl.SemaphoreAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As SemaphoreAuditRule)" />
       <MemberSignature Language="F#" Value="override this.SetAuditRule : System.Security.AccessControl.SemaphoreAuditRule -&gt; unit" Usage="semaphoreSecurity.SetAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::SemaphoreAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>

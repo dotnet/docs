@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ApplicationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationContext&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type ApplicationContext = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationContext : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.#ctor(System.Windows.Forms.Form)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mainForm As Form)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ApplicationContext : System.Windows.Forms.Form -&gt; System.Windows.Forms.ApplicationContext" Usage="new System.Windows.Forms.ApplicationContext mainForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationContext(System::Windows::Forms::Form ^ mainForm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="applicationContext.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="applicationContext.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.ExitThread" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExitThread ()" />
       <MemberSignature Language="F#" Value="member this.ExitThread : unit -&gt; unit" Usage="applicationContext.ExitThread " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitThread();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.ExitThreadCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExitThreadCore ()" />
       <MemberSignature Language="F#" Value="abstract member ExitThreadCore : unit -&gt; unit&#xA;override this.ExitThreadCore : unit -&gt; unit" Usage="applicationContext.ExitThreadCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExitThreadCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="applicationContext.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!ApplicationContext ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ApplicationContext.MainForm" />
       <MemberSignature Language="VB.NET" Value="Public Property MainForm As Form" />
       <MemberSignature Language="F#" Value="member this.MainForm : System.Windows.Forms.Form with get, set" Usage="System.Windows.Forms.ApplicationContext.MainForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ MainForm { System::Windows::Forms::Form ^ get(); void set(System::Windows::Forms::Form ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ApplicationContext.OnMainFormClosed(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMainFormClosed (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnMainFormClosed : obj * EventArgs -&gt; unit&#xA;override this.OnMainFormClosed : obj * EventArgs -&gt; unit" Usage="applicationContext.OnMainFormClosed (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMainFormClosed(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -341,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ApplicationContext.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.ApplicationContext.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ApplicationContext.ThreadExit" />
       <MemberSignature Language="VB.NET" Value="Public Event ThreadExit As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ThreadExit : EventHandler " Usage="member this.ThreadExit : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ThreadExit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

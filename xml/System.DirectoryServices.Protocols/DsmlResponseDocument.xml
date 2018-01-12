@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class DsmlResponseDocument&#xA;Inherits DsmlDocument&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type DsmlResponseDocument = class&#xA;    inherit DsmlDocument&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DsmlResponseDocument : System::DirectoryServices::Protocols::DsmlDocument, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlResponseDocument.CopyTo(System.DirectoryServices.Protocols.DirectoryResponse[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (value As DirectoryResponse(), i As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.Protocols.DirectoryResponse[] * int -&gt; unit" Usage="dsmlResponseDocument.CopyTo (value, i)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::Protocols::DirectoryResponse ^&gt; ^ value, int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlResponseDocument.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dsmlResponseDocument.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.IsErrorResponse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsErrorResponse As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsErrorResponse : bool" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.IsErrorResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsErrorResponse { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.IsOperationError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOperationError As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsOperationError : bool" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.IsOperationError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOperationError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DirectoryResponse" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.Protocols.DirectoryResponse" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectoryResponse ^ default[int] { System::DirectoryServices::Protocols::DirectoryResponse ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.RequestId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestId As String" />
       <MemberSignature Language="F#" Value="member this.RequestId : string" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.RequestId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -255,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array value, int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlResponseDocument.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub CopyTo (value As Array, i As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ value, int i) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -306,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -330,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlResponseDocument.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.DirectoryServices.Protocols.DsmlResponseDocument.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -353,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlResponseDocument.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As XmlDocument" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Xml.XmlDocument" Usage="dsmlResponseDocument.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlDocument ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

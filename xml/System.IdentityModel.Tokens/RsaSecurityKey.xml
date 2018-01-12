@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.RsaSecurityKey" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RsaSecurityKey&#xA;Inherits AsymmetricSecurityKey" />
   <TypeSignature Language="F#" Value="type RsaSecurityKey = class&#xA;    inherit AsymmetricSecurityKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RsaSecurityKey sealed : System::IdentityModel::Tokens::AsymmetricSecurityKey" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.RSA rsa) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.#ctor(System.Security.Cryptography.RSA)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.RsaSecurityKey : System.Security.Cryptography.RSA -&gt; System.IdentityModel.Tokens.RsaSecurityKey" Usage="new System.IdentityModel.Tokens.RsaSecurityKey rsa" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaSecurityKey(System::Security::Cryptography::RSA ^ rsa);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.DecryptKey(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptKey (algorithm As String, keyData As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.DecryptKey : string * byte[] -&gt; byte[]" Usage="rsaSecurityKey.DecryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.EncryptKey(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptKey (algorithm As String, keyData As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.EncryptKey : string * byte[] -&gt; byte[]" Usage="rsaSecurityKey.EncryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.GetAsymmetricAlgorithm(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAsymmetricAlgorithm (algorithm As String, privateKey As Boolean) As AsymmetricAlgorithm" />
       <MemberSignature Language="F#" Value="override this.GetAsymmetricAlgorithm : string * bool -&gt; System.Security.Cryptography.AsymmetricAlgorithm" Usage="rsaSecurityKey.GetAsymmetricAlgorithm (algorithm, privateKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricAlgorithm ^ GetAsymmetricAlgorithm(System::String ^ algorithm, bool privateKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.GetHashAlgorithmForSignature(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashAlgorithmForSignature (algorithm As String) As HashAlgorithm" />
       <MemberSignature Language="F#" Value="override this.GetHashAlgorithmForSignature : string -&gt; System.Security.Cryptography.HashAlgorithm" Usage="rsaSecurityKey.GetHashAlgorithmForSignature algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::HashAlgorithm ^ GetHashAlgorithmForSignature(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.GetSignatureDeformatter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSignatureDeformatter (algorithm As String) As AsymmetricSignatureDeformatter" />
       <MemberSignature Language="F#" Value="override this.GetSignatureDeformatter : string -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter" Usage="rsaSecurityKey.GetSignatureDeformatter algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureDeformatter ^ GetSignatureDeformatter(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.GetSignatureFormatter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSignatureFormatter (algorithm As String) As AsymmetricSignatureFormatter" />
       <MemberSignature Language="F#" Value="override this.GetSignatureFormatter : string -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter" Usage="rsaSecurityKey.GetSignatureFormatter algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureFormatter ^ GetSignatureFormatter(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -210,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.HasPrivateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HasPrivateKey () As Boolean" />
       <MemberSignature Language="F#" Value="override this.HasPrivateKey : unit -&gt; bool" Usage="rsaSecurityKey.HasPrivateKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HasPrivateKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -232,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.IsAsymmetricAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsAsymmetricAlgorithm (algorithm As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsAsymmetricAlgorithm : string -&gt; bool" Usage="rsaSecurityKey.IsAsymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAsymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.IsSupportedAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSupportedAlgorithm (algorithm As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsSupportedAlgorithm : string -&gt; bool" Usage="rsaSecurityKey.IsSupportedAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSupportedAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -282,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.RsaSecurityKey.IsSymmetricAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSymmetricAlgorithm (algorithm As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsSymmetricAlgorithm : string -&gt; bool" Usage="rsaSecurityKey.IsSymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -307,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.RsaSecurityKey.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeySize As Integer" />
       <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.IdentityModel.Tokens.RsaSecurityKey.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

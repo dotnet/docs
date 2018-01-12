@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobilePage" />
   <TypeSignature Language="VB.NET" Value="Public Class MobilePage&#xA;Inherits Page" />
   <TypeSignature Language="F#" Value="type MobilePage = class&#xA;    inherit Page" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MobilePage : System::Web::UI::Page" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MobilePage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.AbsoluteFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbsoluteFilePath As String" />
       <MemberSignature Language="F#" Value="member this.AbsoluteFilePath : string" Usage="System.Web.UI.MobileControls.MobilePage.AbsoluteFilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AbsoluteFilePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.ActiveForm" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveForm As Form" />
       <MemberSignature Language="F#" Value="member this.ActiveForm : System.Web.UI.MobileControls.Form with get, set" Usage="System.Web.UI.MobileControls.MobilePage.ActiveForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Form ^ ActiveForm { System::Web::UI::MobileControls::Form ^ get(); void set(System::Web::UI::MobileControls::Form ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Adapter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adapter As IPageAdapter" />
       <MemberSignature Language="F#" Value="member this.Adapter : System.Web.UI.MobileControls.IPageAdapter" Usage="System.Web.UI.MobileControls.MobilePage.Adapter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::IPageAdapter ^ Adapter { System::Web::UI::MobileControls::IPageAdapter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddedControl(class System.Web.UI.Control control, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.AddedControl(System.Web.UI.Control,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.AddedControl : System.Web.UI.Control * int -&gt; unit" Usage="mobilePage.AddedControl (control, index)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddedControl(System::Web::UI::Control ^ control, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (o As Object)" />
       <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="mobilePage.AddParsedSubObject o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowCustomAttributes As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowCustomAttributes : bool with get, set" Usage="System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCustomAttributes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -299,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.ClientViewState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientViewState As String" />
       <MemberSignature Language="F#" Value="member this.ClientViewState : string" Usage="System.Web.UI.MobileControls.MobilePage.ClientViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientViewState { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -330,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.CreateHtmlTextWriter(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateHtmlTextWriter (writer As TextWriter) As HtmlTextWriter" />
       <MemberSignature Language="F#" Value="override this.CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="mobilePage.CreateHtmlTextWriter writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HtmlTextWriter ^ CreateHtmlTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -367,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.DesignMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignMode As Boolean" />
       <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="System.Web.UI.MobileControls.MobilePage.DesignMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.DeterminePostBackMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DeterminePostBackMode () As NameValueCollection" />
       <MemberSignature Language="F#" Value="override this.DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="mobilePage.DeterminePostBackMode " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -430,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Device" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Device As MobileCapabilities" />
       <MemberSignature Language="F#" Value="member this.Device : System.Web.Mobile.MobileCapabilities" Usage="System.Web.UI.MobileControls.MobilePage.Device" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Mobile::MobileCapabilities ^ Device { System::Web::Mobile::MobileCapabilities ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -470,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.EnableEventValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableEventValidation As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableEventValidation : bool with get, set" Usage="System.Web.UI.MobileControls.MobilePage.EnableEventValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableEventValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -501,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.MobileControls.MobilePage.EnableTheming" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -538,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Forms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Forms As IList" />
       <MemberSignature Language="F#" Value="member this.Forms : System.Collections.IList" Usage="System.Web.UI.MobileControls.MobilePage.Forms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Forms { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -569,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.GetControlAdapter(System.Web.UI.MobileControls.MobileControl)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetControlAdapter (control As MobileControl) As IControlAdapter" />
       <MemberSignature Language="F#" Value="abstract member GetControlAdapter : System.Web.UI.MobileControls.MobileControl -&gt; System.Web.UI.MobileControls.IControlAdapter&#xA;override this.GetControlAdapter : System.Web.UI.MobileControls.MobileControl -&gt; System.Web.UI.MobileControls.IControlAdapter" Usage="mobilePage.GetControlAdapter control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::MobileControls::IControlAdapter ^ GetControlAdapter(System::Web::UI::MobileControls::MobileControl ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -600,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.GetForm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetForm (id As String) As Form" />
       <MemberSignature Language="F#" Value="member this.GetForm : string -&gt; System.Web.UI.MobileControls.Form" Usage="mobilePage.GetForm id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::MobileControls::Form ^ GetForm(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -633,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.GetPrivateViewState(System.Web.UI.MobileControls.MobileControl)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrivateViewState (ctl As MobileControl) As Object" />
       <MemberSignature Language="F#" Value="member this.GetPrivateViewState : System.Web.UI.MobileControls.MobileControl -&gt; obj" Usage="mobilePage.GetPrivateViewState ctl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPrivateViewState(System::Web::UI::MobileControls::MobileControl ^ ctl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -664,6 +683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.HasHiddenVariables" />
       <MemberSignature Language="VB.NET" Value="Public Function HasHiddenVariables () As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasHiddenVariables : unit -&gt; bool" Usage="mobilePage.HasHiddenVariables " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasHiddenVariables();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -686,6 +706,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.HiddenPostEventArgumentId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HiddenPostEventArgumentId As String " />
       <MemberSignature Language="F#" Value=" staticval mutable HiddenPostEventArgumentId : string" Usage="System.Web.UI.MobileControls.MobilePage.HiddenPostEventArgumentId" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HiddenPostEventArgumentId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -712,6 +733,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.HiddenPostEventSourceId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HiddenPostEventSourceId As String " />
       <MemberSignature Language="F#" Value=" staticval mutable HiddenPostEventSourceId : string" Usage="System.Web.UI.MobileControls.MobilePage.HiddenPostEventSourceId" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HiddenPostEventSourceId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -740,6 +762,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HiddenVariablePrefix As String " />
       <MemberSignature Language="F#" Value=" staticval mutable HiddenVariablePrefix : string" Usage="System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HiddenVariablePrefix;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -759,6 +782,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HiddenVariables As IDictionary" />
       <MemberSignature Language="F#" Value="member this.HiddenVariables : System.Collections.IDictionary" Usage="System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ HiddenVariables { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -790,6 +814,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.IdSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IdSeparator As Char" />
       <MemberSignature Language="F#" Value="member this.IdSeparator : char" Usage="System.Web.UI.MobileControls.MobilePage.IdSeparator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property char IdSeparator { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -835,6 +860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitOutputCache (duration As Integer, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
       <MemberSignature Language="F#" Value="override this.InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByHeader, varyByCustom, location, varyByParam)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitOutputCache(int duration, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -873,6 +899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitOutputCache (duration As Integer, varyByContentEncoding As String, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
       <MemberSignature Language="F#" Value="override this.InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByContentEncoding, varyByHeader, varyByCustom, location, varyByParam)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitOutputCache(int duration, System::String ^ varyByContentEncoding, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -913,6 +940,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function LoadPageStateFromPersistenceMedium () As Object" />
       <MemberSignature Language="F#" Value="override this.LoadPageStateFromPersistenceMedium : unit -&gt; obj" Usage="mobilePage.LoadPageStateFromPersistenceMedium " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ LoadPageStateFromPersistenceMedium();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -942,6 +970,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="mobilePage.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -975,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.MakePathAbsolute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MakePathAbsolute (virtualPath As String) As String" />
       <MemberSignature Language="F#" Value="member this.MakePathAbsolute : string -&gt; string" Usage="mobilePage.MakePathAbsolute virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ MakePathAbsolute(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1006,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.MasterPageFile" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Property MasterPageFile As String" />
       <MemberSignature Language="F#" Value="member this.MasterPageFile : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.MasterPageFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MasterPageFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1049,6 +1080,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnDeviceCustomize(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeviceCustomize (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDeviceCustomize : EventArgs -&gt; unit&#xA;override this.OnDeviceCustomize : EventArgs -&gt; unit" Usage="mobilePage.OnDeviceCustomize e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeviceCustomize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1079,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnError(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnError (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnError : EventArgs -&gt; unit" Usage="mobilePage.OnError e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnError(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1109,6 +1142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="mobilePage.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1139,6 +1173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="mobilePage.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1169,6 +1204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnPreInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreInit : EventArgs -&gt; unit" Usage="mobilePage.OnPreInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1199,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="mobilePage.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1229,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnUnload(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUnload (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnUnload : EventArgs -&gt; unit" Usage="mobilePage.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1259,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnViewStateExpire(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewStateExpire (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnViewStateExpire : EventArgs -&gt; unit&#xA;override this.OnViewStateExpire : EventArgs -&gt; unit" Usage="mobilePage.OnViewStateExpire e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewStateExpire(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1298,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.PageClientViewStateKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageClientViewStateKey As String " />
       <MemberSignature Language="F#" Value=" staticval mutable PageClientViewStateKey : string" Usage="System.Web.UI.MobileControls.MobilePage.PageClientViewStateKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ PageClientViewStateKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1324,6 +1364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.QueryStringText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryStringText As String" />
       <MemberSignature Language="F#" Value="member this.QueryStringText : string" Usage="System.Web.UI.MobileControls.MobilePage.QueryStringText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryStringText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1359,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RaisePostBackEvent (sourceControl As IPostBackEventHandler, eventArgument As String)" />
       <MemberSignature Language="F#" Value="override this.RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit" Usage="mobilePage.RaisePostBackEvent (sourceControl, eventArgument)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RaisePostBackEvent(System::Web::UI::IPostBackEventHandler ^ sourceControl, System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1400,6 +1442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToMobilePage (url As String)" />
       <MemberSignature Language="F#" Value="member this.RedirectToMobilePage : string -&gt; unit" Usage="mobilePage.RedirectToMobilePage url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToMobilePage(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1423,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToMobilePage (url As String, endResponse As Boolean)" />
       <MemberSignature Language="F#" Value="member this.RedirectToMobilePage : string * bool -&gt; unit" Usage="mobilePage.RedirectToMobilePage (url, endResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToMobilePage(System::String ^ url, bool endResponse);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1449,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.RelativeFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativeFilePath As String" />
       <MemberSignature Language="F#" Value="member this.RelativeFilePath : string" Usage="System.Web.UI.MobileControls.MobilePage.RelativeFilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeFilePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1473,6 +1518,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemovedControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RemovedControl(System.Web.UI.Control)" />
       <MemberSignature Language="F#" Value="override this.RemovedControl : System.Web.UI.Control -&gt; unit" Usage="mobilePage.RemovedControl control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemovedControl(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1505,6 +1551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1535,6 +1582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RenderControl(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderControl (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.RenderControl writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1565,6 +1613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SavePageStateToPersistenceMedium (view As Object)" />
       <MemberSignature Language="F#" Value="override this.SavePageStateToPersistenceMedium : obj -&gt; unit" Usage="mobilePage.SavePageStateToPersistenceMedium view" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SavePageStateToPersistenceMedium(System::Object ^ view);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1597,6 +1646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="mobilePage.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1626,6 +1676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.StyleSheet" />
       <MemberSignature Language="VB.NET" Value="Public Property StyleSheet As StyleSheet" />
       <MemberSignature Language="F#" Value="member this.StyleSheet : System.Web.UI.MobileControls.StyleSheet with get, set" Usage="System.Web.UI.MobileControls.MobilePage.StyleSheet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::StyleSheet ^ StyleSheet { System::Web::UI::MobileControls::StyleSheet ^ get(); void set(System::Web::UI::MobileControls::StyleSheet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1664,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.StyleSheetTheme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleSheetTheme As String" />
       <MemberSignature Language="F#" Value="member this.StyleSheetTheme : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.StyleSheetTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleSheetTheme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1698,6 +1750,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Theme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Theme As String" />
       <MemberSignature Language="F#" Value="member this.Theme : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.Theme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Theme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1731,6 +1784,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1763,6 +1817,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.UniqueFilePathSuffix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UniqueFilePathSuffix As String" />
       <MemberSignature Language="F#" Value="member this.UniqueFilePathSuffix : string" Usage="System.Web.UI.MobileControls.MobilePage.UniqueFilePathSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UniqueFilePathSuffix { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1795,6 +1850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="mobilePage.Validate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1814,6 +1870,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void VerifyRenderingInServerForm(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.VerifyRenderingInServerForm(System.Web.UI.Control)" />
       <MemberSignature Language="F#" Value="override this.VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit" Usage="mobilePage.VerifyRenderingInServerForm control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void VerifyRenderingInServerForm(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1851,6 +1908,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.ViewStateID" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewStateID As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ViewStateID : string" Usage="System.Web.UI.MobileControls.MobilePage.ViewStateID" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ViewStateID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

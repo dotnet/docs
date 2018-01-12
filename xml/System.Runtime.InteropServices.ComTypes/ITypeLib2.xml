@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ITypeLib2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeLib2&#xA;Implements ITypeLib" />
   <TypeSignature Language="F#" Value="type ITypeLib2 = interface&#xA;    interface ITypeLib" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITypeLib2 : System::Runtime::InteropServices::ComTypes::ITypeLib" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindName (szNameBuf As String, lHashVal As Integer, ppTInfo As ITypeInfo(), rgMemId As Integer(), ByRef pcFound As Short)" />
       <MemberSignature Language="F#" Value="abstract member FindName : string * int * System.Runtime.InteropServices.ComTypes.ITypeInfo[] * int[] *  -&gt; unit" Usage="iTypeLib2.FindName (szNameBuf, lHashVal, ppTInfo, rgMemId, pcFound)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindName(System::String ^ szNameBuf, int lHashVal, cli::array &lt;System::Runtime::InteropServices::ComTypes::ITypeInfo ^&gt; ^ ppTInfo, cli::array &lt;int&gt; ^ rgMemId, short % pcFound);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16@)</InterfaceMember>
@@ -114,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetAllCustData(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllCustData (pCustData As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member GetAllCustData : nativeint -&gt; unit" Usage="iTypeLib2.GetAllCustData pCustData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllCustData(IntPtr pCustData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetCustData(System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetCustData (ByRef guid As Guid, ByRef pVarVal As Object)" />
       <MemberSignature Language="F#" Value="abstract member GetCustData :  *  -&gt; unit" Usage="iTypeLib2.GetCustData (guid, pVarVal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCustData(Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation (index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)" />
       <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeLib2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation(int index, [Runtime::InteropServices::Out] System::String ^ % strName, [Runtime::InteropServices::Out] System::String ^ % strDocString, [Runtime::InteropServices::Out] int % dwHelpContext, [Runtime::InteropServices::Out] System::String ^ % strHelpFile);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)</InterfaceMember>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetDocumentation2(System.Int32,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation2 (index As Integer, ByRef pbstrHelpString As String, ByRef pdwHelpStringContext As Integer, ByRef pbstrHelpStringDll As String)" />
       <MemberSignature Language="F#" Value="abstract member GetDocumentation2 : int *  *  *  -&gt; unit" Usage="iTypeLib2.GetDocumentation2 (index, pbstrHelpString, pdwHelpStringContext, pbstrHelpStringDll)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation2(int index, [Runtime::InteropServices::Out] System::String ^ % pbstrHelpString, [Runtime::InteropServices::Out] int % pdwHelpStringContext, [Runtime::InteropServices::Out] System::String ^ % pbstrHelpStringDll);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -293,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetLibAttr(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetLibAttr (ByRef ppTLibAttr As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member GetLibAttr :  -&gt; unit" Usage="iTypeLib2.GetLibAttr ppTLibAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLibAttr([Runtime::InteropServices::Out] IntPtr % ppTLibAttr);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr@)</InterfaceMember>
@@ -342,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetLibStatistics(System.IntPtr,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetLibStatistics (pcUniqueNames As IntPtr, ByRef pcchUniqueNames As Integer)" />
       <MemberSignature Language="F#" Value="abstract member GetLibStatistics : nativeint *  -&gt; unit" Usage="iTypeLib2.GetLibStatistics (pcUniqueNames, pcchUniqueNames)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLibStatistics(IntPtr pcUniqueNames, [Runtime::InteropServices::Out] int % pcchUniqueNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -388,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeComp (ByRef ppTComp As ITypeComp)" />
       <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeLib2.GetTypeComp ppTComp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeComp([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeComp ^ % ppTComp);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)</InterfaceMember>
@@ -435,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (index As Integer, ByRef ppTI As ITypeInfo)" />
       <MemberSignature Language="F#" Value="abstract member GetTypeInfo : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfo (index, ppTI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTI);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
@@ -484,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfoCount" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeInfoCount () As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount : unit -&gt; int" Usage="iTypeLib2.GetTypeInfoCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTypeInfoCount();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoCount</InterfaceMember>
@@ -529,6 +540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoOfGuid (ByRef guid As Guid, ByRef ppTInfo As ITypeInfo)" />
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoOfGuid :  *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoOfGuid (guid, ppTInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoOfGuid(Guid % guid, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTInfo);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
@@ -578,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoType (index As Integer, ByRef pTKind As TYPEKIND)" />
       <MemberSignature Language="F#" Value="abstract member GetTypeInfoType : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoType (index, pTKind)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoType(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::TYPEKIND % pTKind);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND@)</InterfaceMember>
@@ -627,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.IsName(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsName (szNameBuf As String, lHashVal As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsName : string * int -&gt; bool" Usage="iTypeLib2.IsName (szNameBuf, lHashVal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsName(System::String ^ szNameBuf, int lHashVal);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.IsName(System.String,System.Int32)</InterfaceMember>
@@ -678,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.ReleaseTLibAttr(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseTLibAttr (pTLibAttr As IntPtr)" />
       <MemberSignature Language="F#" Value="abstract member ReleaseTLibAttr : nativeint -&gt; unit" Usage="iTypeLib2.ReleaseTLibAttr pTLibAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTLibAttr(IntPtr pTLibAttr);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.ReleaseTLibAttr(System.IntPtr)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlDocument" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DsmlDocument" />
   <TypeSignature Language="F#" Value="type DsmlDocument = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DsmlDocument abstract" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDocument.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DsmlDocument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDocument.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToXml () As XmlDocument" />
       <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Xml.XmlDocument" Usage="dsmlDocument.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlDocument ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

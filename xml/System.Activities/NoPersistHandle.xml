@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.NoPersistHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class NoPersistHandle&#xA;Inherits Handle" />
   <TypeSignature Language="F#" Value="type NoPersistHandle = class&#xA;    inherit Handle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NoPersistHandle : System::Activities::Handle" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NoPersistHandle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoPersistHandle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NoPersistHandle.Enter(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enter (context As NativeActivityContext)" />
       <MemberSignature Language="F#" Value="member this.Enter : System.Activities.NativeActivityContext -&gt; unit" Usage="noPersistHandle.Enter context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enter(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NoPersistHandle.Exit(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Exit (context As NativeActivityContext)" />
       <MemberSignature Language="F#" Value="member this.Exit : System.Activities.NativeActivityContext -&gt; unit" Usage="noPersistHandle.Exit context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Exit(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

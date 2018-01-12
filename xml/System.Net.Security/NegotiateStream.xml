@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.NegotiateStream" />
   <TypeSignature Language="VB.NET" Value="Public Class NegotiateStream&#xA;Inherits AuthenticatedStream" />
   <TypeSignature Language="F#" Value="type NegotiateStream = class&#xA;    inherit AuthenticatedStream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NegotiateStream : System::Net::Security::AuthenticatedStream" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (innerStream As Stream)" />
       <MemberSignature Language="F#" Value="new System.Net.Security.NegotiateStream : System.IO.Stream -&gt; System.Net.Security.NegotiateStream" Usage="new System.Net.Security.NegotiateStream innerStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NegotiateStream(System::IO::Stream ^ innerStream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.#ctor(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (innerStream As Stream, leaveInnerStreamOpen As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Net.Security.NegotiateStream : System.IO.Stream * bool -&gt; System.Net.Security.NegotiateStream" Usage="new System.Net.Security.NegotiateStream (innerStream, leaveInnerStreamOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NegotiateStream(System::IO::Stream ^ innerStream, bool leaveInnerStreamOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -200,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClient" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsClient ()" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : unit -&gt; unit&#xA;override this.AuthenticateAsClient : unit -&gt; unit" Usage="negotiateStream.AuthenticateAsClient " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsClient();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClient(System.Net.NetworkCredential,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsClient (credential As NetworkCredential, targetName As String)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : System.Net.NetworkCredential * string -&gt; unit&#xA;override this.AuthenticateAsClient : System.Net.NetworkCredential * string -&gt; unit" Usage="negotiateStream.AuthenticateAsClient (credential, targetName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -313,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClient(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ChannelBinding,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsClient (credential As NetworkCredential, binding As ChannelBinding, targetName As String)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string -&gt; unit&#xA;override this.AuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string -&gt; unit" Usage="negotiateStream.AuthenticateAsClient (credential, binding, targetName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ binding, System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -380,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClient(System.Net.NetworkCredential,System.String,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsClient (credential As NetworkCredential, targetName As String, requiredProtectionLevel As ProtectionLevel, allowedImpersonationLevel As TokenImpersonationLevel)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : System.Net.NetworkCredential * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit&#xA;override this.AuthenticateAsClient : System.Net.NetworkCredential * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit" Usage="negotiateStream.AuthenticateAsClient (credential, targetName, requiredProtectionLevel, allowedImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::String ^ targetName, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -445,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClient(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ChannelBinding,System.String,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsClient (credential As NetworkCredential, binding As ChannelBinding, targetName As String, requiredProtectionLevel As ProtectionLevel, allowedImpersonationLevel As TokenImpersonationLevel)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit&#xA;override this.AuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit" Usage="negotiateStream.AuthenticateAsClient (credential, binding, targetName, requiredProtectionLevel, allowedImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ binding, System::String ^ targetName, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -528,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClientAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsClientAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsClientAsync : unit -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsClientAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsClientAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -581,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClientAsync(System.Net.NetworkCredential,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsClientAsync (credential As NetworkCredential, targetName As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : System.Net.NetworkCredential * string -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsClientAsync : System.Net.NetworkCredential * string -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsClientAsync (credential, targetName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::Net::NetworkCredential ^ credential, System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -639,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClientAsync(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ChannelBinding,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsClientAsync (credential As NetworkCredential, binding As ChannelBinding, targetName As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsClientAsync : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsClientAsync (credential, binding, targetName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ binding, System::String ^ targetName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -705,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClientAsync(System.Net.NetworkCredential,System.String,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsClientAsync (credential As NetworkCredential, targetName As String, requiredProtectionLevel As ProtectionLevel, allowedImpersonationLevel As TokenImpersonationLevel) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : System.Net.NetworkCredential * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsClientAsync : System.Net.NetworkCredential * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsClientAsync (credential, targetName, requiredProtectionLevel, allowedImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::Net::NetworkCredential ^ credential, System::String ^ targetName, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -769,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsClientAsync(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ChannelBinding,System.String,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsClientAsync (credential As NetworkCredential, binding As ChannelBinding, targetName As String, requiredProtectionLevel As ProtectionLevel, allowedImpersonationLevel As TokenImpersonationLevel) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsClientAsync : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsClientAsync : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsClientAsync (credential, binding, targetName, requiredProtectionLevel, allowedImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ binding, System::String ^ targetName, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -859,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsServer ()" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServer : unit -&gt; unit&#xA;override this.AuthenticateAsServer : unit -&gt; unit" Usage="negotiateStream.AuthenticateAsServer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsServer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -911,6 +925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServer(System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsServer (policy As ExtendedProtectionPolicy)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServer : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy -&gt; unit&#xA;override this.AuthenticateAsServer : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy -&gt; unit" Usage="negotiateStream.AuthenticateAsServer policy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsServer(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ policy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -970,6 +985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServer(System.Net.NetworkCredential,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsServer (credential As NetworkCredential, requiredProtectionLevel As ProtectionLevel, requiredImpersonationLevel As TokenImpersonationLevel)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServer : System.Net.NetworkCredential * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit&#xA;override this.AuthenticateAsServer : System.Net.NetworkCredential * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit" Usage="negotiateStream.AuthenticateAsServer (credential, requiredProtectionLevel, requiredImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsServer(System::Net::NetworkCredential ^ credential, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel requiredImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1036,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServer(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateAsServer (credential As NetworkCredential, policy As ExtendedProtectionPolicy, requiredProtectionLevel As ProtectionLevel, requiredImpersonationLevel As TokenImpersonationLevel)" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServer : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit&#xA;override this.AuthenticateAsServer : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; unit" Usage="negotiateStream.AuthenticateAsServer (credential, policy, requiredProtectionLevel, requiredImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateAsServer(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ policy, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel requiredImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1118,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServerAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsServerAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServerAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsServerAsync : unit -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsServerAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsServerAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -1167,6 +1185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServerAsync(System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsServerAsync (policy As ExtendedProtectionPolicy) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServerAsync : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsServerAsync : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsServerAsync policy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ policy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -1223,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServerAsync(System.Net.NetworkCredential,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsServerAsync (credential As NetworkCredential, requiredProtectionLevel As ProtectionLevel, requiredImpersonationLevel As TokenImpersonationLevel) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServerAsync : System.Net.NetworkCredential * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsServerAsync : System.Net.NetworkCredential * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsServerAsync (credential, requiredProtectionLevel, requiredImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Net::NetworkCredential ^ credential, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel requiredImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -1286,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.AuthenticateAsServerAsync(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AuthenticateAsServerAsync (credential As NetworkCredential, policy As ExtendedProtectionPolicy, requiredProtectionLevel As ProtectionLevel, requiredImpersonationLevel As TokenImpersonationLevel) As Task" />
       <MemberSignature Language="F#" Value="abstract member AuthenticateAsServerAsync : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task&#xA;override this.AuthenticateAsServerAsync : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.AuthenticateAsServerAsync (credential, policy, requiredProtectionLevel, requiredImpersonationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ policy, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel requiredImpersonationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -1372,6 +1393,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsClient : AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsClient (asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsClient(AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1441,6 +1463,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(class System.Net.NetworkCredential credential, string targetName, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient(System.Net.NetworkCredential,System.String,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : System.Net.NetworkCredential * string * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsClient : System.Net.NetworkCredential * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsClient (credential, targetName, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::String ^ targetName, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1510,6 +1533,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(class System.Net.NetworkCredential credential, class System.Security.Authentication.ExtendedProtection.ChannelBinding binding, string targetName, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ChannelBinding,System.String,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsClient (credential, binding, targetName, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ binding, System::String ^ targetName, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1581,6 +1605,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(class System.Net.NetworkCredential credential, string targetName, valuetype System.Net.Security.ProtectionLevel requiredProtectionLevel, valuetype System.Security.Principal.TokenImpersonationLevel allowedImpersonationLevel, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient(System.Net.NetworkCredential,System.String,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : System.Net.NetworkCredential * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsClient : System.Net.NetworkCredential * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsClient (credential, targetName, requiredProtectionLevel, allowedImpersonationLevel, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::String ^ targetName, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1656,6 +1681,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(class System.Net.NetworkCredential credential, class System.Security.Authentication.ExtendedProtection.ChannelBinding binding, string targetName, valuetype System.Net.Security.ProtectionLevel requiredProtectionLevel, valuetype System.Security.Principal.TokenImpersonationLevel allowedImpersonationLevel, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ChannelBinding,System.String,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsClient : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ChannelBinding * string * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsClient (credential, binding, targetName, requiredProtectionLevel, allowedImpersonationLevel, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsClient(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ChannelBinding ^ binding, System::String ^ targetName, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel allowedImpersonationLevel, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1751,6 +1777,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsServer : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsServer : AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsServer (asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsServer(AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1808,6 +1835,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy policy, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer(System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsServer : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsServer : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsServer (policy, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsServer(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ policy, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1871,6 +1899,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.Net.NetworkCredential credential, valuetype System.Net.Security.ProtectionLevel requiredProtectionLevel, valuetype System.Security.Principal.TokenImpersonationLevel requiredImpersonationLevel, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer(System.Net.NetworkCredential,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsServer : System.Net.NetworkCredential * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsServer : System.Net.NetworkCredential * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsServer (credential, requiredProtectionLevel, requiredImpersonationLevel, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsServer(System::Net::NetworkCredential ^ credential, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel requiredImpersonationLevel, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1943,6 +1972,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.Net.NetworkCredential credential, class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy policy, valuetype System.Net.Security.ProtectionLevel requiredProtectionLevel, valuetype System.Security.Principal.TokenImpersonationLevel requiredImpersonationLevel, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer(System.Net.NetworkCredential,System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy,System.Net.Security.ProtectionLevel,System.Security.Principal.TokenImpersonationLevel,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="abstract member BeginAuthenticateAsServer : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAuthenticateAsServer : System.Net.NetworkCredential * System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy * System.Net.Security.ProtectionLevel * System.Security.Principal.TokenImpersonationLevel * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginAuthenticateAsServer (credential, policy, requiredProtectionLevel, requiredImpersonationLevel, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAuthenticateAsServer(System::Net::NetworkCredential ^ credential, System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ policy, System::Net::Security::ProtectionLevel requiredProtectionLevel, System::Security::Principal::TokenImpersonationLevel requiredImpersonationLevel, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2021,6 +2051,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginRead (buffer, offset, count, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2109,6 +2140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="negotiateStream.BeginWrite (buffer, offset, count, asyncCallback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ asyncCallback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2203,6 +2235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.Net.Security.NegotiateStream.CanRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2249,6 +2282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.CanSeek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.Net.Security.NegotiateStream.CanSeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2295,6 +2329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.CanTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanTimeout As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanTimeout : bool" Usage="System.Net.Security.NegotiateStream.CanTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanTimeout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2346,6 +2381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.Net.Security.NegotiateStream.CanWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2392,6 +2428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="negotiateStream.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2445,6 +2482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.EndAuthenticateAsClient(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndAuthenticateAsClient (asyncResult As IAsyncResult)" />
       <MemberSignature Language="F#" Value="abstract member EndAuthenticateAsClient : IAsyncResult -&gt; unit&#xA;override this.EndAuthenticateAsClient : IAsyncResult -&gt; unit" Usage="negotiateStream.EndAuthenticateAsClient asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndAuthenticateAsClient(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2500,6 +2538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.EndAuthenticateAsServer(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndAuthenticateAsServer (asyncResult As IAsyncResult)" />
       <MemberSignature Language="F#" Value="abstract member EndAuthenticateAsServer : IAsyncResult -&gt; unit&#xA;override this.EndAuthenticateAsServer : IAsyncResult -&gt; unit" Usage="negotiateStream.EndAuthenticateAsServer asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndAuthenticateAsServer(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2557,6 +2596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.EndRead(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="F#" Value="override this.EndRead : IAsyncResult -&gt; int" Usage="negotiateStream.EndRead asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2619,6 +2659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.EndWrite(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
       <MemberSignature Language="F#" Value="override this.EndWrite : IAsyncResult -&gt; unit" Usage="negotiateStream.EndWrite asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2680,6 +2721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="negotiateStream.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2729,6 +2771,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.FlushAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="negotiateStream.FlushAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2753,6 +2796,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.Security.Principal.TokenImpersonationLevel" Usage="System.Net.Security.NegotiateStream.ImpersonationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2804,6 +2848,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Net.Security.NegotiateStream.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2855,6 +2900,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.IsEncrypted" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEncrypted As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEncrypted : bool" Usage="System.Net.Security.NegotiateStream.IsEncrypted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEncrypted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2907,6 +2953,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsMutuallyAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMutuallyAuthenticated : bool" Usage="System.Net.Security.NegotiateStream.IsMutuallyAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMutuallyAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -2960,6 +3007,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.IsServer" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsServer As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsServer : bool" Usage="System.Net.Security.NegotiateStream.IsServer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsServer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3013,6 +3061,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.IsSigned" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSigned As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSigned : bool" Usage="System.Net.Security.NegotiateStream.IsSigned" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSigned { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3064,6 +3113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
       <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Net.Security.NegotiateStream.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3110,6 +3160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
       <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.Net.Security.NegotiateStream.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3152,6 +3203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="negotiateStream.Read (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3217,6 +3269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.ReadTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="System.Net.Security.NegotiateStream.ReadTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ReadTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3264,6 +3317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.RemoteIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RemoteIdentity As IIdentity" />
       <MemberSignature Language="F#" Value="member this.RemoteIdentity : System.Security.Principal.IIdentity" Usage="System.Net.Security.NegotiateStream.RemoteIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IIdentity ^ RemoteIdentity { System::Security::Principal::IIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3315,6 +3369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
       <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="negotiateStream.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3364,6 +3419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="negotiateStream.SetLength value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3402,6 +3458,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="negotiateStream.Write (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -3485,6 +3542,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Security.NegotiateStream.WriteTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property WriteTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.WriteTimeout : int with get, set" Usage="System.Net.Security.NegotiateStream.WriteTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int WriteTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

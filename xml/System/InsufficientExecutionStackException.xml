@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.InsufficientExecutionStackException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InsufficientExecutionStackException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type InsufficientExecutionStackException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InsufficientExecutionStackException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.InsufficientExecutionStackException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InsufficientExecutionStackException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.InsufficientExecutionStackException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new InsufficientExecutionStackException : string -&gt; InsufficientExecutionStackException" Usage="new System.InsufficientExecutionStackException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InsufficientExecutionStackException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.InsufficientExecutionStackException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new InsufficientExecutionStackException : string * Exception -&gt; InsufficientExecutionStackException" Usage="new System.InsufficientExecutionStackException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InsufficientExecutionStackException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

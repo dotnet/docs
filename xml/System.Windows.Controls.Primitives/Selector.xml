@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.Selector" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Selector&#xA;Inherits ItemsControl" />
   <TypeSignature Language="F#" Value="type Selector = class&#xA;    inherit ItemsControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Selector abstract : System::Windows::Controls::ItemsControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Selector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.AddSelectedHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddSelectedHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddSelectedHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Controls.Primitives.Selector.AddSelectedHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddSelectedHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.AddUnselectedHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddUnselectedHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddUnselectedHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Controls.Primitives.Selector.AddUnselectedHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddUnselectedHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="selector.ClearContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.GetIsSelected(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsSelected (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsSelected : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Primitives.Selector.GetIsSelected element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsSelected(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.GetIsSelectionActive(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsSelectionActive (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsSelectionActive : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Primitives.Selector.GetIsSelectionActive element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsSelectionActive(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.IsSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.IsSelectedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.IsSelectionActiveProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionActiveProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSelectionActiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.IsSelectionActiveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectionActiveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSynchronizedWithCurrentItem As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsSynchronizedWithCurrentItem : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsSynchronizedWithCurrentItem { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItemProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSynchronizedWithCurrentItemProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSynchronizedWithCurrentItemProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItemProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSynchronizedWithCurrentItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -331,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="selector.OnInitialized e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="selector.OnIsKeyboardFocusWithinChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -377,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="selector.OnItemsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -400,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsSourceChanged (oldValue As IEnumerable, newValue As IEnumerable)" />
       <MemberSignature Language="F#" Value="override this.OnItemsSourceChanged : System.Collections.IEnumerable * System.Collections.IEnumerable -&gt; unit" Usage="selector.OnItemsSourceChanged (oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsSourceChanged(System::Collections::IEnumerable ^ oldValue, System::Collections::IEnumerable ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -425,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.OnSelectionChanged(System.Windows.Controls.SelectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChanged (e As SelectionChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectionChanged : System.Windows.Controls.SelectionChangedEventArgs -&gt; unit&#xA;override this.OnSelectionChanged : System.Windows.Controls.SelectionChangedEventArgs -&gt; unit" Usage="selector.OnSelectionChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanged(System::Windows::Controls::SelectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -448,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="selector.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -473,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.RemoveSelectedHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveSelectedHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveSelectedHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Controls.Primitives.Selector.RemoveSelectedHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveSelectedHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -498,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.RemoveUnselectedHandler(System.Windows.DependencyObject,System.Windows.RoutedEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveUnselectedHandler (element As DependencyObject, handler As RoutedEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveUnselectedHandler : System.Windows.DependencyObject * System.Windows.RoutedEventHandler -&gt; unit" Usage="System.Windows.Controls.Primitives.Selector.RemoveUnselectedHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveUnselectedHandler(System::Windows::DependencyObject ^ element, System::Windows::RoutedEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -539,6 +558,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.SelectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Primitives.Selector.SelectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SelectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -558,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Selector.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Windows.Controls.Primitives.Selector.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -623,6 +644,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.SelectedIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedIndexProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.SelectedIndexProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedIndexProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -642,6 +664,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Selector.SelectedItem" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedItem As Object" />
       <MemberSignature Language="F#" Value="member this.SelectedItem : obj with get, set" Usage="System.Windows.Controls.Primitives.Selector.SelectedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -698,6 +721,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.SelectedItemProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedItemProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedItemProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.SelectedItemProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -717,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Selector.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedValue As Object" />
       <MemberSignature Language="F#" Value="member this.SelectedValue : obj with get, set" Usage="System.Windows.Controls.Primitives.Selector.SelectedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -775,6 +800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Selector.SelectedValuePath" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedValuePath As String" />
       <MemberSignature Language="F#" Value="member this.SelectedValuePath : string with get, set" Usage="System.Windows.Controls.Primitives.Selector.SelectedValuePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedValuePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -830,6 +856,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.SelectedValuePathProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedValuePathProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedValuePathProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.SelectedValuePathProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedValuePathProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -849,6 +876,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.SelectedValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedValueProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.Selector.SelectedValueProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedValueProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -868,6 +896,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectionChanged As SelectionChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectionChanged : System.Windows.Controls.SelectionChangedEventHandler " Usage="member this.SelectionChanged : System.Windows.Controls.SelectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::SelectionChangedEventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -920,6 +949,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.SelectionChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionChangedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectionChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Primitives.Selector.SelectionChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SelectionChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -939,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Selector.SetIsSelected(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsSelected (element As DependencyObject, isSelected As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsSelected : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.Primitives.Selector.SetIsSelected (element, isSelected)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsSelected(System::Windows::DependencyObject ^ element, bool isSelected);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -980,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Selector.UnselectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnselectedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable UnselectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.Primitives.Selector.UnselectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UnselectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

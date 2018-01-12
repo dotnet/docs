@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Repeater" />
   <TypeSignature Language="VB.NET" Value="Public Class Repeater&#xA;Inherits Control&#xA;Implements INamingContainer" />
   <TypeSignature Language="F#" Value="type Repeater = class&#xA;    inherit Control&#xA;    interface INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Repeater : System::Web::UI::Control, System::Web::UI::INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Repeater();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternatingItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.AlternatingItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ AlternatingItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +223,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Repeater.CallingDataMethods" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CallingDataMethods As CallingDataMethodsEventHandler " />
       <MemberSignature Language="F#" Value="member this.CallingDataMethods : System.Web.UI.WebControls.CallingDataMethodsEventHandler " Usage="member this.CallingDataMethods : System.Web.UI.WebControls.CallingDataMethodsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CallingDataMethodsEventHandler ^ CallingDataMethods;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.Repeater.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="repeater.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -298,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.CreateControlHierarchy(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateControlHierarchy (useDataSource As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member CreateControlHierarchy : bool -&gt; unit&#xA;override this.CreateControlHierarchy : bool -&gt; unit" Usage="repeater.CreateControlHierarchy useDataSource" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateControlHierarchy(bool useDataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.CreateDataSourceSelectArguments" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDataSourceSelectArguments () As DataSourceSelectArguments" />
       <MemberSignature Language="F#" Value="abstract member CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments&#xA;override this.CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments" Usage="repeater.CreateDataSourceSelectArguments " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::DataSourceSelectArguments ^ CreateDataSourceSelectArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -349,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.CreateItem(System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItem (itemIndex As Integer, itemType As ListItemType) As RepeaterItem" />
       <MemberSignature Language="F#" Value="abstract member CreateItem : int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.RepeaterItem&#xA;override this.CreateItem : int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.RepeaterItem" Usage="repeater.CreateItem (itemIndex, itemType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::RepeaterItem ^ CreateItem(int itemIndex, System::Web::UI::WebControls::ListItemType itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -388,6 +397,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Repeater.CreatingModelDataSource" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CreatingModelDataSource As CreatingModelDataSourceEventHandler " />
       <MemberSignature Language="F#" Value="member this.CreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventHandler " Usage="member this.CreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CreatingModelDataSourceEventHandler ^ CreatingModelDataSource;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
       <MemberSignature Language="F#" Value="override this.DataBind : unit -&gt; unit" Usage="repeater.DataBind " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.DataMember" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataMember As String" />
       <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Web.UI.WebControls.Repeater.DataMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,6 +513,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataSource As Object" />
       <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Web.UI.WebControls.Repeater.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +570,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataSourceID As String" />
       <MemberSignature Language="F#" Value="member this.DataSourceID : string with get, set" Usage="System.Web.UI.WebControls.Repeater.DataSourceID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -614,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.Repeater.EnableTheming" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -648,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.EnsureDataBound" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EnsureDataBound ()" />
       <MemberSignature Language="F#" Value="member this.EnsureDataBound : unit -&gt; unit" Usage="repeater.EnsureDataBound " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureDataBound();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -677,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.FooterTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Repeater.FooterTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ FooterTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -733,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.GetData" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetData () As IEnumerable" />
       <MemberSignature Language="F#" Value="abstract member GetData : unit -&gt; System.Collections.IEnumerable&#xA;override this.GetData : unit -&gt; System.Collections.IEnumerable" Usage="repeater.GetData " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerable ^ GetData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -761,6 +779,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Repeater.HeaderTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ HeaderTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -817,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.Initialized" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Initialized As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialized : bool" Usage="System.Web.UI.WebControls.Repeater.Initialized" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool Initialized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -845,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.InitializeItem(System.Web.UI.WebControls.RepeaterItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeItem (item As RepeaterItem)" />
       <MemberSignature Language="F#" Value="abstract member InitializeItem : System.Web.UI.WebControls.RepeaterItem -&gt; unit&#xA;override this.InitializeItem : System.Web.UI.WebControls.RepeaterItem -&gt; unit" Usage="repeater.InitializeItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeItem(System::Web::UI::WebControls::RepeaterItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -868,6 +889,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.IsBoundUsingDataSourceID" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsBoundUsingDataSourceID As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBoundUsingDataSourceID : bool" Usage="System.Web.UI.WebControls.Repeater.IsBoundUsingDataSourceID" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsBoundUsingDataSourceID { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -896,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.IsDataBindingAutomatic" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDataBindingAutomatic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDataBindingAutomatic : bool" Usage="System.Web.UI.WebControls.Repeater.IsDataBindingAutomatic" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDataBindingAutomatic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -924,6 +947,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Repeater.ItemCommand" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCommand As RepeaterCommandEventHandler " />
       <MemberSignature Language="F#" Value="member this.ItemCommand : System.Web.UI.WebControls.RepeaterCommandEventHandler " Usage="member this.ItemCommand : System.Web.UI.WebControls.RepeaterCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::RepeaterCommandEventHandler ^ ItemCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -965,6 +989,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Repeater.ItemCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCreated As RepeaterItemEventHandler " />
       <MemberSignature Language="F#" Value="member this.ItemCreated : System.Web.UI.WebControls.RepeaterItemEventHandler " Usage="member this.ItemCreated : System.Web.UI.WebControls.RepeaterItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::RepeaterItemEventHandler ^ ItemCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1004,6 +1029,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Repeater.ItemDataBound" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDataBound As RepeaterItemEventHandler " />
       <MemberSignature Language="F#" Value="member this.ItemDataBound : System.Web.UI.WebControls.RepeaterItemEventHandler " Usage="member this.ItemDataBound : System.Web.UI.WebControls.RepeaterItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::RepeaterItemEventHandler ^ ItemDataBound;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1043,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As RepeaterItemCollection" />
       <MemberSignature Language="F#" Value="member this.Items : System.Web.UI.WebControls.RepeaterItemCollection" Usage="System.Web.UI.WebControls.Repeater.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::RepeaterItemCollection ^ Items { System::Web::UI::WebControls::RepeaterItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1087,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Repeater.ItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1143,6 +1171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemType As String" />
       <MemberSignature Language="F#" Value="member this.ItemType : string with get, set" Usage="System.Web.UI.WebControls.Repeater.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1180,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="repeater.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1203,6 +1233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (sender As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="repeater.OnBubbleEvent (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1243,6 +1274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnCreatingModelDataSource(System.Web.UI.WebControls.CreatingModelDataSourceEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreatingModelDataSource (e As CreatingModelDataSourceEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnCreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventArgs -&gt; unit&#xA;override this.OnCreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventArgs -&gt; unit" Usage="repeater.OnCreatingModelDataSource e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreatingModelDataSource(System::Web::UI::WebControls::CreatingModelDataSourceEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1266,6 +1298,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnDataBinding(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnDataBinding : EventArgs -&gt; unit" Usage="repeater.OnDataBinding e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1302,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnDataPropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataPropertyChanged ()" />
       <MemberSignature Language="F#" Value="abstract member OnDataPropertyChanged : unit -&gt; unit&#xA;override this.OnDataPropertyChanged : unit -&gt; unit" Usage="repeater.OnDataPropertyChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataPropertyChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1332,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnDataSourceViewChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceViewChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDataSourceViewChanged : obj * EventArgs -&gt; unit&#xA;override this.OnDataSourceViewChanged : obj * EventArgs -&gt; unit" Usage="repeater.OnDataSourceViewChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceViewChanged(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1365,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="repeater.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1388,6 +1424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnItemCommand(System.Web.UI.WebControls.RepeaterCommandEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCommand (e As RepeaterCommandEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemCommand : System.Web.UI.WebControls.RepeaterCommandEventArgs -&gt; unit&#xA;override this.OnItemCommand : System.Web.UI.WebControls.RepeaterCommandEventArgs -&gt; unit" Usage="repeater.OnItemCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCommand(System::Web::UI::WebControls::RepeaterCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1432,6 +1469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCreated (e As RepeaterItemEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemCreated : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit&#xA;override this.OnItemCreated : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit" Usage="repeater.OnItemCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCreated(System::Web::UI::WebControls::RepeaterItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1476,6 +1514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnItemDataBound(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDataBound (e As RepeaterItemEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnItemDataBound : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit&#xA;override this.OnItemDataBound : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit" Usage="repeater.OnItemDataBound e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDataBound(System::Web::UI::WebControls::RepeaterItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1520,6 +1559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="repeater.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1551,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="repeater.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1582,6 +1623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.RequiresDataBinding" />
       <MemberSignature Language="VB.NET" Value="Protected Property RequiresDataBinding As Boolean" />
       <MemberSignature Language="F#" Value="member this.RequiresDataBinding : bool with get, set" Usage="System.Web.UI.WebControls.Repeater.RequiresDataBinding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool RequiresDataBinding { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1617,6 +1659,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="repeater.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1638,6 +1681,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.SelectArguments" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SelectArguments As DataSourceSelectArguments" />
       <MemberSignature Language="F#" Value="member this.SelectArguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.Repeater.SelectArguments" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::DataSourceSelectArguments ^ SelectArguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1665,6 +1709,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.SelectMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectMethod As String" />
       <MemberSignature Language="F#" Value="member this.SelectMethod : string with get, set" Usage="System.Web.UI.WebControls.Repeater.SelectMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1700,6 +1745,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SeparatorTemplate As ITemplate" />
       <MemberSignature Language="F#" Value="member this.SeparatorTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ SeparatorTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1756,6 +1802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Repeater.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="repeater.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

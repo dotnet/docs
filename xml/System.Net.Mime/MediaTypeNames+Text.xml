@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mime.MediaTypeNames.Text" />
   <TypeSignature Language="VB.NET" Value="Public Class MediaTypeNames.Text" />
   <TypeSignature Language="F#" Value="type MediaTypeNames.Text = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class MediaTypeNames::Text abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Text.Html" />
       <MemberSignature Language="VB.NET" Value="Public Const Html As String " />
       <MemberSignature Language="F#" Value="val mutable Html : string" Usage="System.Net.Mime.MediaTypeNames.Text.Html" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Html;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Text.Plain" />
       <MemberSignature Language="VB.NET" Value="Public Const Plain As String " />
       <MemberSignature Language="F#" Value="val mutable Plain : string" Usage="System.Net.Mime.MediaTypeNames.Text.Plain" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Plain;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Text.RichText" />
       <MemberSignature Language="VB.NET" Value="Public Const RichText As String " />
       <MemberSignature Language="F#" Value="val mutable RichText : string" Usage="System.Net.Mime.MediaTypeNames.Text.RichText" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ RichText;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mime.MediaTypeNames.Text.Xml" />
       <MemberSignature Language="VB.NET" Value="Public Const Xml As String " />
       <MemberSignature Language="F#" Value="val mutable Xml : string" Usage="System.Net.Mime.MediaTypeNames.Text.Xml" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Xml;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

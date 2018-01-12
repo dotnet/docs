@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509KeyUsageExtension&#xA;Inherits X509Extension" />
   <TypeSignature Language="F#" Value="type X509KeyUsageExtension = class&#xA;    inherit X509Extension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509KeyUsageExtension sealed : System::Security::Cryptography::X509Certificates::X509Extension" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509KeyUsageExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.#ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedKeyUsage As AsnEncodedData, critical As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509KeyUsageExtension : System.Security.Cryptography.AsnEncodedData * bool -&gt; System.Security.Cryptography.X509Certificates.X509KeyUsageExtension" Usage="new System.Security.Cryptography.X509Certificates.X509KeyUsageExtension (encodedKeyUsage, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509KeyUsageExtension(System::Security::Cryptography::AsnEncodedData ^ encodedKeyUsage, bool critical);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.#ctor(System.Security.Cryptography.X509Certificates.X509KeyUsageFlags,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyUsages As X509KeyUsageFlags, critical As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509KeyUsageExtension : System.Security.Cryptography.X509Certificates.X509KeyUsageFlags * bool -&gt; System.Security.Cryptography.X509Certificates.X509KeyUsageExtension" Usage="new System.Security.Cryptography.X509Certificates.X509KeyUsageExtension (keyUsages, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509KeyUsageExtension(System::Security::Cryptography::X509Certificates::X509KeyUsageFlags keyUsages, bool critical);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="F#" Value="override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="x509KeyUsageExtension.CopyFrom asnEncodedData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.KeyUsages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyUsages As X509KeyUsageFlags" />
       <MemberSignature Language="F#" Value="member this.KeyUsages : System.Security.Cryptography.X509Certificates.X509KeyUsageFlags" Usage="System.Security.Cryptography.X509Certificates.X509KeyUsageExtension.KeyUsages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509KeyUsageFlags KeyUsages { System::Security::Cryptography::X509Certificates::X509KeyUsageFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectStateFormatter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectStateFormatter&#xA;Implements IFormatter" />
   <TypeSignature Language="F#" Value="type ObjectStateFormatter = class&#xA;    interface IStateFormatter&#xA;    interface IStateFormatter2&#xA;    interface IFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectStateFormatter sealed : System::Runtime::Serialization::IFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectStateFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (inputStream As Stream) As Object" />
       <MemberSignature Language="F#" Value="member this.Deserialize : System.IO.Stream -&gt; obj" Usage="objectStateFormatter.Deserialize inputStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::IO::Stream ^ inputStream);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (inputString As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Deserialize : string -&gt; obj" Usage="objectStateFormatter.Deserialize inputString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::String ^ inputString);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateFormatter.Deserialize(System.String)</InterfaceMember>
@@ -202,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Serialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Serialize (stateGraph As Object) As String" />
       <MemberSignature Language="F#" Value="member this.Serialize : obj -&gt; string" Usage="objectStateFormatter.Serialize stateGraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Serialize(System::Object ^ stateGraph);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateFormatter.Serialize(System.Object)</InterfaceMember>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Serialize(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (outputStream As Stream, stateGraph As Object)" />
       <MemberSignature Language="F#" Value="member this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="objectStateFormatter.Serialize (outputStream, stateGraph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::Stream ^ outputStream, System::Object ^ stateGraph);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
@@ -288,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Binder" />
       <MemberSignature Language="VB.NET" Value=" Property Binder As SerializationBinder Implements IFormatter.Binder" />
       <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.Binder" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::SerializationBinder ^ System.Runtime.Serialization.IFormatter.Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Binder</InterfaceMember>
@@ -318,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Context" />
       <MemberSignature Language="VB.NET" Value=" Property Context As StreamingContext Implements IFormatter.Context" />
       <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.Context" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::StreamingContext System.Runtime.Serialization.IFormatter.Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Context</InterfaceMember>
@@ -347,6 +355,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.Serialization.IFormatter.Deserialize(class System.IO.Stream serializationStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Deserialize(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Function Deserialize (serializationStream As Stream) As Object Implements IFormatter.Deserialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Runtime.Serialization.IFormatter.Deserialize(System::IO::Stream ^ serializationStream) = System::Runtime::Serialization::IFormatter::Deserialize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
@@ -380,6 +389,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IFormatter.Serialize(class System.IO.Stream serializationStream, object stateGraph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Serialize(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Serialize (serializationStream As Stream, stateGraph As Object) Implements IFormatter.Serialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IFormatter.Serialize(System::IO::Stream ^ serializationStream, System::Object ^ stateGraph) = System::Runtime::Serialization::IFormatter::Serialize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
@@ -415,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#SurrogateSelector" />
       <MemberSignature Language="VB.NET" Value=" Property SurrogateSelector As ISurrogateSelector Implements IFormatter.SurrogateSelector" />
       <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.SurrogateSelector" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::ISurrogateSelector ^ System.Runtime.Serialization.IFormatter.SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.SurrogateSelector</InterfaceMember>
@@ -444,6 +455,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateFormatter.Deserialize(string serializedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Web#UI#IStateFormatter#Deserialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function Deserialize (serializedState As String) As Object Implements IStateFormatter.Deserialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateFormatter.Deserialize(System::String ^ serializedState) = System::Web::UI::IStateFormatter::Deserialize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateFormatter.Deserialize(System.String)</InterfaceMember>
@@ -477,6 +489,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IStateFormatter.Serialize(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.System#Web#UI#IStateFormatter#Serialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Serialize (state As Object) As String Implements IStateFormatter.Serialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IStateFormatter.Serialize(System::Object ^ state) = System::Web::UI::IStateFormatter::Serialize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateFormatter.Serialize(System.Object)</InterfaceMember>

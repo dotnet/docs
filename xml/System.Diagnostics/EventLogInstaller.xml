@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogInstaller" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogInstaller&#xA;Inherits ComponentInstaller" />
   <TypeSignature Language="F#" Value="type EventLogInstaller = class&#xA;    inherit ComponentInstaller" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogInstaller : System::Configuration::Install::ComponentInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogInstaller.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogInstaller();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.CategoryCount" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryCount As Integer" />
       <MemberSignature Language="F#" Value="member this.CategoryCount : int with get, set" Usage="System.Diagnostics.EventLogInstaller.CategoryCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CategoryCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -245,6 +248,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.CategoryResourceFile" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryResourceFile As String" />
       <MemberSignature Language="F#" Value="member this.CategoryResourceFile : string with get, set" Usage="System.Diagnostics.EventLogInstaller.CategoryResourceFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryResourceFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -412,6 +416,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogInstaller.CopyFromComponent(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFromComponent (component As IComponent)" />
       <MemberSignature Language="F#" Value="override this.CopyFromComponent : System.ComponentModel.IComponent -&gt; unit" Usage="eventLogInstaller.CopyFromComponent component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFromComponent(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -451,6 +456,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogInstaller.Install(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Install (stateSaver As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.Install : System.Collections.IDictionary -&gt; unit" Usage="eventLogInstaller.Install stateSaver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Install(System::Collections::IDictionary ^ stateSaver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -492,6 +498,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogInstaller.IsEquivalentInstaller(System.Configuration.Install.ComponentInstaller)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEquivalentInstaller (otherInstaller As ComponentInstaller) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsEquivalentInstaller : System.Configuration.Install.ComponentInstaller -&gt; bool" Usage="eventLogInstaller.IsEquivalentInstaller otherInstaller" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEquivalentInstaller(System::Configuration::Install::ComponentInstaller ^ otherInstaller);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -525,6 +532,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.Log" />
       <MemberSignature Language="VB.NET" Value="Public Property Log As String" />
       <MemberSignature Language="F#" Value="member this.Log : string with get, set" Usage="System.Diagnostics.EventLogInstaller.Log" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Log { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -567,6 +575,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.MessageResourceFile" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageResourceFile As String" />
       <MemberSignature Language="F#" Value="member this.MessageResourceFile : string with get, set" Usage="System.Diagnostics.EventLogInstaller.MessageResourceFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageResourceFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -738,6 +747,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.ParameterResourceFile" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterResourceFile As String" />
       <MemberSignature Language="F#" Value="member this.ParameterResourceFile : string with get, set" Usage="System.Diagnostics.EventLogInstaller.ParameterResourceFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterResourceFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -930,6 +940,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogInstaller.Rollback(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback (savedState As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.Rollback : System.Collections.IDictionary -&gt; unit" Usage="eventLogInstaller.Rollback savedState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -967,6 +978,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
       <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Diagnostics.EventLogInstaller.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -1009,6 +1021,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogInstaller.Uninstall(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Uninstall (savedState As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.Uninstall : System.Collections.IDictionary -&gt; unit" Usage="eventLogInstaller.Uninstall savedState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Uninstall(System::Collections::IDictionary ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -1045,6 +1058,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogInstaller.UninstallAction" />
       <MemberSignature Language="VB.NET" Value="Public Property UninstallAction As UninstallAction" />
       <MemberSignature Language="F#" Value="member this.UninstallAction : System.Configuration.Install.UninstallAction with get, set" Usage="System.Diagnostics.EventLogInstaller.UninstallAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Install::UninstallAction UninstallAction { System::Configuration::Install::UninstallAction get(); void set(System::Configuration::Install::UninstallAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>

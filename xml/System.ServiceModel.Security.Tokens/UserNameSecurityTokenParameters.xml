@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class UserNameSecurityTokenParameters&#xA;Inherits SecurityTokenParameters" />
   <TypeSignature Language="F#" Value="type UserNameSecurityTokenParameters = class&#xA;    inherit SecurityTokenParameters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserNameSecurityTokenParameters : System::ServiceModel::Security::Tokens::SecurityTokenParameters" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserNameSecurityTokenParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As UserNameSecurityTokenParameters)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters : System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters -&gt; System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UserNameSecurityTokenParameters(System::ServiceModel::Security::Tokens::UserNameSecurityTokenParameters ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.CloneCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CloneCore () As SecurityTokenParameters" />
       <MemberSignature Language="F#" Value="override this.CloneCore : unit -&gt; System.ServiceModel.Security.Tokens.SecurityTokenParameters" Usage="userNameSecurityTokenParameters.CloneCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Security::Tokens::SecurityTokenParameters ^ CloneCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateKeyIdentifierClause (token As SecurityToken, referenceStyle As SecurityTokenReferenceStyle) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="F#" Value="override this.CreateKeyIdentifierClause : System.IdentityModel.Tokens.SecurityToken * System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="userNameSecurityTokenParameters.CreateKeyIdentifierClause (token, referenceStyle)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ CreateKeyIdentifierClause(System::IdentityModel::Tokens::SecurityToken ^ token, System::ServiceModel::Security::Tokens::SecurityTokenReferenceStyle referenceStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.HasAsymmetricKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HasAsymmetricKey As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasAsymmetricKey : bool" Usage="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.HasAsymmetricKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasAsymmetricKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.InitializeSecurityTokenRequirement(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub InitializeSecurityTokenRequirement (requirement As SecurityTokenRequirement)" />
       <MemberSignature Language="F#" Value="override this.InitializeSecurityTokenRequirement : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; unit" Usage="userNameSecurityTokenParameters.InitializeSecurityTokenRequirement requirement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeSecurityTokenRequirement(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.SupportsClientAuthentication" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SupportsClientAuthentication As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsClientAuthentication : bool" Usage="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.SupportsClientAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool SupportsClientAuthentication { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -276,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.SupportsClientWindowsIdentity" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SupportsClientWindowsIdentity As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsClientWindowsIdentity : bool" Usage="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.SupportsClientWindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool SupportsClientWindowsIdentity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -298,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.SupportsServerAuthentication" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SupportsServerAuthentication As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsServerAuthentication : bool" Usage="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.SupportsServerAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool SupportsServerAuthentication { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

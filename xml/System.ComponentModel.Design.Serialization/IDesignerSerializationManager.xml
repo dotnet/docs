@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerSerializationManager&#xA;Implements IServiceProvider" />
   <TypeSignature Language="F#" Value="type IDesignerSerializationManager = interface&#xA;    interface IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerSerializationManager : IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.AddSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSerializationProvider (provider As IDesignerSerializationProvider)" />
       <MemberSignature Language="F#" Value="abstract member AddSerializationProvider : System.ComponentModel.Design.Serialization.IDesignerSerializationProvider -&gt; unit" Usage="iDesignerSerializationManager.AddSerializationProvider provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ContextStack" />
       <MemberSignature Language="F#" Value="member this.Context : System.ComponentModel.Design.Serialization.ContextStack" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ContextStack ^ Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstance(class System.Type type, class System.Collections.ICollection arguments, string name, bool addToContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj" Usage="iDesignerSerializationManager.CreateInstance (type, arguments, name, addToContainer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance(Type ^ type, System::Collections::ICollection ^ arguments, System::String ^ name, bool addToContainer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetInstance(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInstance (name As String) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetInstance : string -&gt; obj" Usage="iDesignerSerializationManager.GetInstance name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetInstance(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetName(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetName (value As Object) As String" />
       <MemberSignature Language="F#" Value="abstract member GetName : obj -&gt; string" Usage="iDesignerSerializationManager.GetName value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSerializer (objectType As Type, serializerType As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetSerializer : Type * Type -&gt; obj" Usage="iDesignerSerializationManager.GetSerializer (objectType, serializerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSerializer(Type ^ objectType, Type ^ serializerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType (typeName As String) As Type" />
       <MemberSignature Language="F#" Value="abstract member GetType : string -&gt; Type" Usage="iDesignerSerializationManager.GetType typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.ComponentModel.PropertyDescriptorCollection" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyDescriptorCollection ^ Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -350,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.RemoveSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveSerializationProvider (provider As IDesignerSerializationProvider)" />
       <MemberSignature Language="F#" Value="abstract member RemoveSerializationProvider : System.ComponentModel.Design.Serialization.IDesignerSerializationProvider -&gt; unit" Usage="iDesignerSerializationManager.RemoveSerializationProvider provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ReportError(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportError (errorInformation As Object)" />
       <MemberSignature Language="F#" Value="abstract member ReportError : obj -&gt; unit" Usage="iDesignerSerializationManager.ReportError errorInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportError(System::Object ^ errorInformation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -424,6 +435,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" />
       <MemberSignature Language="VB.NET" Value="Event ResolveName As ResolveNameEventHandler " />
       <MemberSignature Language="F#" Value="member this.ResolveName : System.ComponentModel.Design.Serialization.ResolveNameEventHandler " Usage="member this.ResolveName : System.ComponentModel.Design.Serialization.ResolveNameEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::Serialization::ResolveNameEventHandler ^ ResolveName;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -459,6 +471,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete" />
       <MemberSignature Language="VB.NET" Value="Event SerializationComplete As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SerializationComplete : EventHandler " Usage="member this.SerializationComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SerializationComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -498,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetName (instance As Object, name As String)" />
       <MemberSignature Language="F#" Value="abstract member SetName : obj * string -&gt; unit" Usage="iDesignerSerializationManager.SetName (instance, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetName(System::Object ^ instance, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

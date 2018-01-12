@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebChannelFactory`1" />
   <TypeSignature Language="VB.NET" Value="Public Class WebChannelFactory(Of TChannel)&#xA;Inherits ChannelFactory(Of TChannel)" />
   <TypeSignature Language="F#" Value="type WebChannelFactory&lt;'Channel&gt; = class&#xA;    inherit ChannelFactory&lt;'Channel&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA;public ref class WebChannelFactory : System::ServiceModel::ChannelFactory&lt;TChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; endpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : string -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; configurationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::String ^ configurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : Type -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; serviceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(Type ^ serviceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (remoteAddress As Uri)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : Uri -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; remoteAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(Uri ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.Uri remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.Uri)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : System.ServiceModel.Channels.Binding * Uri -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; (binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::ServiceModel::Channels::Binding ^ binding, Uri ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -265,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String, remoteAddress As Uri)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : string * Uri -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; (endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::String ^ endpointConfigurationName, Uri ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.OnOpening" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpening ()" />
       <MemberSignature Language="F#" Value="override this.OnOpening : unit -&gt; unit" Usage="webChannelFactory.OnOpening " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpening();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

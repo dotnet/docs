@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualBasicSettings" />
   <TypeSignature Language="F#" Value="type VisualBasicSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualBasicSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualBasicSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicSettings.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As VisualBasicSettings" />
       <MemberSignature Language="F#" Value="member this.Default : Microsoft.VisualBasic.Activities.VisualBasicSettings" Usage="Microsoft.VisualBasic.Activities.VisualBasicSettings.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::VisualBasic::Activities::VisualBasicSettings ^ Default { Microsoft::VisualBasic::Activities::VisualBasicSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicSettings.ImportReferences" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportReferences As ISet(Of VisualBasicImportReference)" />
       <MemberSignature Language="F#" Value="member this.ImportReferences : System.Collections.Generic.ISet&lt;Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt;" Usage="Microsoft.VisualBasic.Activities.VisualBasicSettings.ImportReferences" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ISet&lt;Microsoft::VisualBasic::Activities::VisualBasicImportReference ^&gt; ^ ImportReferences { System::Collections::Generic::ISet&lt;Microsoft::VisualBasic::Activities::VisualBasicImportReference ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

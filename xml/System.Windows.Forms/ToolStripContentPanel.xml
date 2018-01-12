@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripContentPanel" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripContentPanel&#xA;Inherits Panel" />
   <TypeSignature Language="F#" Value="type ToolStripContentPanel = class&#xA;    inherit Panel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripContentPanel : System::Windows::Forms::Panel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContentPanel.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripContentPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.Anchor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Anchor As AnchorStyles" />
       <MemberSignature Language="F#" Value="member this.Anchor : System.Windows.Forms.AnchorStyles with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.Anchor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AnchorStyles Anchor { System::Windows::Forms::AnchorStyles get(); void set(System::Windows::Forms::AnchorStyles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.AutoScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.AutoScrollMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.AutoScrollMargin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.AutoScrollMinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.AutoScrollMinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -268,6 +275,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.AutoSizeMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSizeMode As AutoSizeMode" />
       <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.AutoSizeMode with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.AutoSizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AutoSizeMode AutoSizeMode { System::Windows::Forms::AutoSizeMode get(); void set(System::Windows::Forms::AutoSizeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -366,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Property CausesValidation As Boolean" />
       <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -405,6 +416,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.CausesValidationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CausesValidationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -439,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.Dock" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
       <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.Dock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -477,6 +490,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.DockChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DockChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +528,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.Load" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Load As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Load : EventHandler " Usage="member this.Load : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Load;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -550,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
       <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -588,6 +604,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.LocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LocationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -625,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.MaximumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MaximumSize As Size" />
       <MemberSignature Language="F#" Value="member this.MaximumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.MaximumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MaximumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -663,6 +681,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.MinimumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MinimumSize As Size" />
       <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.MinimumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -701,6 +720,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -739,6 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContentPanel.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="toolStripContentPanel.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -763,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContentPanel.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="toolStripContentPanel.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -803,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContentPanel.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStripContentPanel.OnPaintBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -845,6 +868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContentPanel.OnRendererChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRendererChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRendererChanged : EventArgs -&gt; unit&#xA;override this.OnRendererChanged : EventArgs -&gt; unit" Usage="toolStripContentPanel.OnRendererChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRendererChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -880,6 +904,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.Renderer" />
       <MemberSignature Language="VB.NET" Value="Public Property Renderer As ToolStripRenderer" />
       <MemberSignature Language="F#" Value="member this.Renderer : System.Windows.Forms.ToolStripRenderer with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.Renderer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripRenderer ^ Renderer { System::Windows::Forms::ToolStripRenderer ^ get(); void set(System::Windows::Forms::ToolStripRenderer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -908,6 +933,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.RendererChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RendererChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RendererChanged : EventHandler " Usage="member this.RendererChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RendererChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -944,6 +970,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.RenderMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RenderMode As ToolStripRenderMode" />
       <MemberSignature Language="F#" Value="member this.RenderMode : System.Windows.Forms.ToolStripRenderMode with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.RenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripRenderMode RenderMode { System::Windows::Forms::ToolStripRenderMode get(); void set(System::Windows::Forms::ToolStripRenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -964,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.TabIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property TabIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.TabIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1002,6 +1030,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.TabIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1036,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContentPanel.TabStop" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
       <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.ToolStripContentPanel.TabStop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1075,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContentPanel.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabStopChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProtocolsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ProtocolsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProtocolsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolsSection.Protocols" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocols As ProtocolCollection" />
       <MemberSignature Language="F#" Value="member this.Protocols : System.Web.Configuration.ProtocolCollection" Usage="System.Web.Configuration.ProtocolsSection.Protocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProtocolCollection ^ Protocols { System::Web::Configuration::ProtocolCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

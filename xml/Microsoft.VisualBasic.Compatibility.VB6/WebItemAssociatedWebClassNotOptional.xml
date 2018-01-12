@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebItemAssociatedWebClassNotOptional" />
   <TypeSignature Language="VB.NET" Value="Public Class WebItemAssociatedWebClassNotOptional&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type WebItemAssociatedWebClassNotOptional = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebItemAssociatedWebClassNotOptional : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebItemAssociatedWebClassNotOptional.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebItemAssociatedWebClassNotOptional();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

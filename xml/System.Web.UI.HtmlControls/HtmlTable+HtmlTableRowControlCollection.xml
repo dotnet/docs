@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit HtmlTable/HtmlTableRowControlCollection extends System.Web.UI.ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection" />
   <TypeSignature Language="VB.NET" Value="Protected Class HtmlTable.HtmlTableRowControlCollection&#xA;Inherits ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class HtmlTable::HtmlTableRowControlCollection : System::Web::UI::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (child As Control)" />
       <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.Control -&gt; unit" Usage="htmlTableRowControlCollection.Add child" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, child As Control)" />
       <MemberSignature Language="F#" Value="override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="htmlTableRowControlCollection.AddAt (index, child)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class UserTrackingLocationCollection&#xA;Inherits List(Of UserTrackingLocation)" />
   <TypeSignature Language="F#" Value="type UserTrackingLocationCollection = class&#xA;    inherit List&lt;UserTrackingLocation&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserTrackingLocationCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::UserTrackingLocation ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserTrackingLocationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.UserTrackingLocation})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (locations As IEnumerable(Of UserTrackingLocation))" />
       <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.UserTrackingLocationCollection : seq&lt;System.Workflow.Runtime.Tracking.UserTrackingLocation&gt; -&gt; System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" Usage="new System.Workflow.Runtime.Tracking.UserTrackingLocationCollection locations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserTrackingLocationCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::UserTrackingLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

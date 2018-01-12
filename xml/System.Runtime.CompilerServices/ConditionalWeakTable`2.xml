@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConditionalWeakTable(Of TKey, TValue)" />
   <TypeSignature Language="F#" Value="type ConditionalWeakTable&lt;'Key, 'Value (requires 'Key : null and 'Value : null)&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA; where TKey : class where TValue : classpublic ref class ConditionalWeakTable sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -78,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConditionalWeakTable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Add(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As TKey, value As TValue)" />
       <MemberSignature Language="F#" Value="member this.Add : 'Key * 'Value -&gt; unit" Usage="conditionalWeakTable.Add (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(TKey key, TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -174,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.AddOrUpdate(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOrUpdate (key As TKey, value As TValue)" />
       <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * 'Value -&gt; unit" Usage="conditionalWeakTable.AddOrUpdate (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOrUpdate(TKey key, TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="conditionalWeakTable.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="conditionalWeakTable.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!ConditionalWeakTable`2 ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetOrCreateValue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrCreateValue (key As TKey) As TValue" />
       <MemberSignature Language="F#" Value="member this.GetOrCreateValue : 'Key -&gt; 'Value" Usage="conditionalWeakTable.GetOrCreateValue key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue GetOrCreateValue(TKey key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -320,6 +327,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue GetValue(!TKey key, class System.Runtime.CompilerServices.ConditionalWeakTable`2/CreateValueCallback&lt;!TKey, !TValue&gt; createValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback{`0,`1})" />
       <MemberSignature Language="F#" Value="member this.GetValue : 'Key * System.Runtime.CompilerServices.ConditionalWeakTable&lt;'Key, 'Value (requires 'Key : null and 'Value : null)&gt;.CreateValueCallback -&gt; 'Value" Usage="conditionalWeakTable.GetValue (key, createValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue GetValue(TKey key, System::Runtime::CompilerServices::ConditionalWeakTable&lt;TKey, TValue&gt;::CreateValueCallback ^ createValueCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -382,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (key As TKey) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Remove : 'Key -&gt; bool" Usage="conditionalWeakTable.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(TKey key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -427,6 +436,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue)) Implements IEnumerable(Of KeyValuePair(Of TKey, TValue)).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -450,6 +460,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -474,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryGetValue : 'Key *  -&gt; bool" Usage="conditionalWeakTable.TryGetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

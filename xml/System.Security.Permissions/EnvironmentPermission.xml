@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.EnvironmentPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnvironmentPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="F#" Value="type EnvironmentPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission&#xA;    interface IBuiltInPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnvironmentPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.EnvironmentPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.EnvironmentPermission" Usage="new System.Security.Permissions.EnvironmentPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvironmentPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.#ctor(System.Security.Permissions.EnvironmentPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flag As EnvironmentPermissionAccess, pathList As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.EnvironmentPermission : System.Security.Permissions.EnvironmentPermissionAccess * string -&gt; System.Security.Permissions.EnvironmentPermission" Usage="new System.Security.Permissions.EnvironmentPermission (flag, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvironmentPermission(System::Security::Permissions::EnvironmentPermissionAccess flag, System::String ^ pathList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.AddPathList(System.Security.Permissions.EnvironmentPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (flag As EnvironmentPermissionAccess, pathList As String)" />
       <MemberSignature Language="F#" Value="member this.AddPathList : System.Security.Permissions.EnvironmentPermissionAccess * string -&gt; unit" Usage="environmentPermission.AddPathList (flag, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::EnvironmentPermissionAccess flag, System::String ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="environmentPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" />
       <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="environmentPermission.FromXml esd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.GetPathList(System.Security.Permissions.EnvironmentPermissionAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPathList (flag As EnvironmentPermissionAccess) As String" />
       <MemberSignature Language="F#" Value="member this.GetPathList : System.Security.Permissions.EnvironmentPermissionAccess -&gt; string" Usage="environmentPermission.GetPathList flag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPathList(System::Security::Permissions::EnvironmentPermissionAccess flag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="environmentPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="environmentPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -370,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="environmentPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
@@ -407,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.SetPathList(System.Security.Permissions.EnvironmentPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPathList (flag As EnvironmentPermissionAccess, pathList As String)" />
       <MemberSignature Language="F#" Value="member this.SetPathList : System.Security.Permissions.EnvironmentPermissionAccess * string -&gt; unit" Usage="environmentPermission.SetPathList (flag, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPathList(System::Security::Permissions::EnvironmentPermissionAccess flag, System::String ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="environmentPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -480,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.EnvironmentPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" />
       <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="environmentPermission.Union other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

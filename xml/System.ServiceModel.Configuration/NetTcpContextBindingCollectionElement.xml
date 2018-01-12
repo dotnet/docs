@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetTcpContextBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetTcpContextBinding, NetTcpContextBindingElement)" />
   <TypeSignature Language="F#" Value="type NetTcpContextBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetTcpContextBinding, NetTcpContextBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetTcpContextBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetTcpContextBinding ^, System::ServiceModel::Configuration::NetTcpContextBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetTcpContextBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

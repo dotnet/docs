@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebHeaderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHeaderCollection&#xA;Inherits NameValueCollection&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type WebHeaderCollection = class&#xA;    inherit NameValueCollection&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHeaderCollection : System::Collections::Specialized::NameValueCollection, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHeaderCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Net.WebHeaderCollection : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.WebHeaderCollection" Usage="new System.Net.WebHeaderCollection (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebHeaderCollection(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (header As String)" />
       <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="webHeaderCollection.Add header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Add(System.Net.HttpRequestHeader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (header As HttpRequestHeader, value As String)" />
       <MemberSignature Language="F#" Value="override this.Add : System.Net.HttpRequestHeader * string -&gt; unit" Usage="webHeaderCollection.Add (header, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::HttpRequestHeader header, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Add(System.Net.HttpResponseHeader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (header As HttpResponseHeader, value As String)" />
       <MemberSignature Language="F#" Value="override this.Add : System.Net.HttpResponseHeader * string -&gt; unit" Usage="webHeaderCollection.Add (header, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::HttpResponseHeader header, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -324,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (name As String, value As String)" />
       <MemberSignature Language="F#" Value="override this.Add : string * string -&gt; unit" Usage="webHeaderCollection.Add (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -387,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.AddWithoutValidate(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddWithoutValidate (headerName As String, headerValue As String)" />
       <MemberSignature Language="F#" Value="member this.AddWithoutValidate : string * string -&gt; unit" Usage="webHeaderCollection.AddWithoutValidate (headerName, headerValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddWithoutValidate(System::String ^ headerName, System::String ^ headerValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -439,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Net.WebHeaderCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -478,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
       <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="webHeaderCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -516,6 +526,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Net.WebHeaderCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -565,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (index As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.Get : int -&gt; string" Usage="webHeaderCollection.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -613,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (name As String) As String" />
       <MemberSignature Language="F#" Value="override this.Get : string -&gt; string" Usage="webHeaderCollection.Get name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -660,6 +673,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="webHeaderCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -690,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.GetKey : int -&gt; string" Usage="webHeaderCollection.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -737,6 +752,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webHeaderCollection.GetObjectData (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -791,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.GetValues(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (index As Integer) As String()" />
       <MemberSignature Language="F#" Value="override this.GetValues : int -&gt; string[]" Usage="webHeaderCollection.GetValues index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetValues(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -831,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.GetValues(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (header As String) As String()" />
       <MemberSignature Language="F#" Value="override this.GetValues : string -&gt; string[]" Usage="webHeaderCollection.GetValues header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetValues(System::String ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -890,6 +908,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.IsRestricted(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsRestricted (headerName As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsRestricted : string -&gt; bool" Usage="System.Net.WebHeaderCollection.IsRestricted headerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsRestricted(System::String ^ headerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -970,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.IsRestricted(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsRestricted (headerName As String, response As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsRestricted : string * bool -&gt; bool" Usage="System.Net.WebHeaderCollection.IsRestricted (headerName, response)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsRestricted(System::String ^ headerName, bool response);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1062,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Item(System.Net.HttpRequestHeader)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(header As HttpRequestHeader) As String" />
       <MemberSignature Language="F#" Value="member this.Item(System.Net.HttpRequestHeader) : string with get, set" Usage="System.Net.WebHeaderCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::Net::HttpRequestHeader] { System::String ^ get(System::Net::HttpRequestHeader header); void set(System::Net::HttpRequestHeader header, System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -1097,6 +1118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Item(System.Net.HttpResponseHeader)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(header As HttpResponseHeader) As String" />
       <MemberSignature Language="F#" Value="member this.Item(System.Net.HttpResponseHeader) : string with get, set" Usage="System.Net.WebHeaderCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::Net::HttpResponseHeader] { System::String ^ get(System::Net::HttpResponseHeader header); void set(System::Net::HttpResponseHeader header, System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -1133,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As String" />
       <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Net.WebHeaderCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ name); void set(System::String ^ name, System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -1158,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebHeaderCollection.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" Usage="System.Net.WebHeaderCollection.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1187,6 +1211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="F#" Value="override this.OnDeserialization : obj -&gt; unit" Usage="webHeaderCollection.OnDeserialization sender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1229,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Remove(System.Net.HttpRequestHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (header As HttpRequestHeader)" />
       <MemberSignature Language="F#" Value="override this.Remove : System.Net.HttpRequestHeader -&gt; unit" Usage="webHeaderCollection.Remove header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::HttpRequestHeader header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1269,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Remove(System.Net.HttpResponseHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (header As HttpResponseHeader)" />
       <MemberSignature Language="F#" Value="override this.Remove : System.Net.HttpResponseHeader -&gt; unit" Usage="webHeaderCollection.Remove header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::HttpResponseHeader header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1309,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="override this.Remove : string -&gt; unit" Usage="webHeaderCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>
@@ -1376,6 +1404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Set(System.Net.HttpRequestHeader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (header As HttpRequestHeader, value As String)" />
       <MemberSignature Language="F#" Value="override this.Set : System.Net.HttpRequestHeader * string -&gt; unit" Usage="webHeaderCollection.Set (header, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Net::HttpRequestHeader header, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1421,6 +1450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Set(System.Net.HttpResponseHeader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (header As HttpResponseHeader, value As String)" />
       <MemberSignature Language="F#" Value="override this.Set : System.Net.HttpResponseHeader * string -&gt; unit" Usage="webHeaderCollection.Set (header, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Net::HttpResponseHeader header, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1466,6 +1496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.Set(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Set (name As String, value As String)" />
       <MemberSignature Language="F#" Value="override this.Set : string * string -&gt; unit" Usage="webHeaderCollection.Set (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Set(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1526,6 +1557,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1548,6 +1580,7 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -1585,6 +1618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.ToByteArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByteArray () As Byte()" />
       <MemberSignature Language="F#" Value="member this.ToByteArray : unit -&gt; byte[]" Usage="webHeaderCollection.ToByteArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ToByteArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1615,6 +1649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebHeaderCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="webHeaderCollection.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebHeaderCollection</AssemblyName>

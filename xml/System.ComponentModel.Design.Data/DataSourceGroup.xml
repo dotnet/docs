@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DataSourceGroup" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataSourceGroup" />
   <TypeSignature Language="F#" Value="type DataSourceGroup = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSourceGroup abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DataSourceGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataSourceGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.DataSources" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DataSources As DataSourceDescriptorCollection" />
       <MemberSignature Language="F#" Value="member this.DataSources : System.ComponentModel.Design.Data.DataSourceDescriptorCollection" Usage="System.ComponentModel.Design.Data.DataSourceGroup.DataSources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ComponentModel::Design::Data::DataSourceDescriptorCollection ^ DataSources { System::ComponentModel::Design::Data::DataSourceDescriptorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.Image" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Image As Bitmap" />
       <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Bitmap" Usage="System.ComponentModel.Design.Data.DataSourceGroup.Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Drawing::Bitmap ^ Image { System::Drawing::Bitmap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.ComponentModel.Design.Data.DataSourceGroup.IsDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -107,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DataSourceGroup.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DataSourceGroup.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

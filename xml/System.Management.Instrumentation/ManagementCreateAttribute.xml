@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementCreateAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementCreateAttribute&#xA;Inherits ManagementNewInstanceAttribute" />
   <TypeSignature Language="F#" Value="type ManagementCreateAttribute = class&#xA;    inherit ManagementNewInstanceAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementCreateAttribute sealed : System::Management::Instrumentation::ManagementNewInstanceAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ public class ProcessInstance
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementCreateAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementCreateAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

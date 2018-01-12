@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolScope" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolScope" />
   <TypeSignature Language="F#" Value="type ISymbolScope = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolScope" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolScope.EndOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndOffset As Integer" />
       <MemberSignature Language="F#" Value="member this.EndOffset : int" Usage="System.Diagnostics.SymbolStore.ISymbolScope.EndOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolScope.GetChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As ISymbolScope()" />
       <MemberSignature Language="F#" Value="abstract member GetChildren : unit -&gt; System.Diagnostics.SymbolStore.ISymbolScope[]" Usage="iSymbolScope.GetChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolScope ^&gt; ^ GetChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolScope.GetLocals" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLocals () As ISymbolVariable()" />
       <MemberSignature Language="F#" Value="abstract member GetLocals : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="iSymbolScope.GetLocals " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetLocals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolScope.GetNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespaces () As ISymbolNamespace()" />
       <MemberSignature Language="F#" Value="abstract member GetNamespaces : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace[]" Usage="iSymbolScope.GetNamespaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolNamespace ^&gt; ^ GetNamespaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolScope.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As ISymbolMethod" />
       <MemberSignature Language="F#" Value="member this.Method : System.Diagnostics.SymbolStore.ISymbolMethod" Usage="System.Diagnostics.SymbolStore.ISymbolScope.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SymbolStore::ISymbolMethod ^ Method { System::Diagnostics::SymbolStore::ISymbolMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolScope.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As ISymbolScope" />
       <MemberSignature Language="F#" Value="member this.Parent : System.Diagnostics.SymbolStore.ISymbolScope" Usage="System.Diagnostics.SymbolStore.ISymbolScope.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SymbolStore::ISymbolScope ^ Parent { System::Diagnostics::SymbolStore::ISymbolScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolScope.StartOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartOffset As Integer" />
       <MemberSignature Language="F#" Value="member this.StartOffset : int" Usage="System.Diagnostics.SymbolStore.ISymbolScope.StartOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

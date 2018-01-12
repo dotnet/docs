@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMemberEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeMemberEvent&#xA;Inherits CodeTypeMember" />
   <TypeSignature Language="F#" Value="type CodeMemberEvent = class&#xA;    inherit CodeTypeMember" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeMemberEvent : System::CodeDom::CodeTypeMember" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMemberEvent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMemberEvent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberEvent.ImplementationTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementationTypes As CodeTypeReferenceCollection" />
       <MemberSignature Language="F#" Value="member this.ImplementationTypes : System.CodeDom.CodeTypeReferenceCollection" Usage="System.CodeDom.CodeMemberEvent.ImplementationTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ ImplementationTypes { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberEvent.PrivateImplementationType" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivateImplementationType As CodeTypeReference" />
       <MemberSignature Language="F#" Value="member this.PrivateImplementationType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeMemberEvent.PrivateImplementationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ PrivateImplementationType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMemberEvent.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
       <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeMemberEvent.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ Type { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

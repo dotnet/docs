@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.RuntimeVariablesExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuntimeVariablesExpression&#xA;Inherits Expression" />
   <TypeSignature Language="F#" Value="type RuntimeVariablesExpression = class&#xA;    inherit Expression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuntimeVariablesExpression sealed : System::Linq::Expressions::Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.RuntimeVariablesExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="runtimeVariablesExpression.Accept visitor" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.RuntimeVariablesExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.RuntimeVariablesExpression.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.RuntimeVariablesExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.RuntimeVariablesExpression.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.RuntimeVariablesExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (variables As IEnumerable(Of ParameterExpression)) As RuntimeVariablesExpression" />
       <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.ParameterExpression&gt; -&gt; System.Linq.Expressions.RuntimeVariablesExpression" Usage="runtimeVariablesExpression.Update variables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::RuntimeVariablesExpression ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ variables);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.RuntimeVariablesExpression.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As ReadOnlyCollection(Of ParameterExpression)" />
       <MemberSignature Language="F#" Value="member this.Variables : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.ParameterExpression&gt;" Usage="System.Linq.Expressions.RuntimeVariablesExpression.Variables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ Variables { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

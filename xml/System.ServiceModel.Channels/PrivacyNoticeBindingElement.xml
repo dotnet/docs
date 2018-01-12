@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.PrivacyNoticeBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrivacyNoticeBindingElement&#xA;Inherits BindingElement&#xA;Implements IPolicyExportExtension" />
   <TypeSignature Language="F#" Value="type PrivacyNoticeBindingElement = class&#xA;    inherit BindingElement&#xA;    interface IPolicyExportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrivacyNoticeBindingElement sealed : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Description::IPolicyExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PrivacyNoticeBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrivacyNoticeBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PrivacyNoticeBindingElement.#ctor(System.ServiceModel.Channels.PrivacyNoticeBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementToBeCloned As PrivacyNoticeBindingElement)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.PrivacyNoticeBindingElement : System.ServiceModel.Channels.PrivacyNoticeBindingElement -&gt; System.ServiceModel.Channels.PrivacyNoticeBindingElement" Usage="new System.ServiceModel.Channels.PrivacyNoticeBindingElement elementToBeCloned" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrivacyNoticeBindingElement(System::ServiceModel::Channels::PrivacyNoticeBindingElement ^ elementToBeCloned);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PrivacyNoticeBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="privacyNoticeBindingElement.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PrivacyNoticeBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="privacyNoticeBindingElement.GetProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PrivacyNoticeBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PrivacyNoticeBindingElement.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As Uri" />
       <MemberSignature Language="F#" Value="member this.Url : Uri with get, set" Usage="System.ServiceModel.Channels.PrivacyNoticeBindingElement.Url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PrivacyNoticeBindingElement.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Integer" />
       <MemberSignature Language="F#" Value="member this.Version : int with get, set" Usage="System.ServiceModel.Channels.PrivacyNoticeBindingElement.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

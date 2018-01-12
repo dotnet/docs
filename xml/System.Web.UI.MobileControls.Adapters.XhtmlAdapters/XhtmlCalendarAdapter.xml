@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlCalendarAdapter&#xA;Inherits XhtmlControlAdapter" />
   <TypeSignature Language="F#" Value="type XhtmlCalendarAdapter = class&#xA;    inherit XhtmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XhtmlCalendarAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XhtmlCalendarAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As Calendar" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.Calendar" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Calendar ^ Control { System::Web::UI::MobileControls::Calendar ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.HandlePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HandlePostBackEvent (eventArgument As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.HandlePostBackEvent : string -&gt; bool" Usage="xhtmlCalendarAdapter.HandlePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HandlePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.LoadAdapterState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadAdapterState (state As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadAdapterState : obj -&gt; unit" Usage="xhtmlCalendarAdapter.LoadAdapterState state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadAdapterState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="xhtmlCalendarAdapter.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="xhtmlCalendarAdapter.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="xhtmlCalendarAdapter.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlCalendarAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -244,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlCalendarAdapter.SaveAdapterState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SaveAdapterState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveAdapterState : unit -&gt; obj" Usage="xhtmlCalendarAdapter.SaveAdapterState " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ SaveAdapterState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

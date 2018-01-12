@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.UrlMappingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UrlMappingCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type UrlMappingCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UrlMappingCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlMappingCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.UrlMapping urlMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.Add(System.Web.Configuration.UrlMapping)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.UrlMapping -&gt; unit" Usage="urlMappingCollection.Add urlMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::UrlMapping ^ urlMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.UrlMappingCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.Configuration.UrlMappingCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="urlMappingCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="urlMappingCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="urlMappingCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="urlMappingCollection.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.UrlMappingCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As UrlMapping" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.UrlMapping with get, set" Usage="System.Web.Configuration.UrlMappingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::UrlMapping ^ default[int] { System::Web::Configuration::UrlMapping ^ get(int index); void set(int index, System::Web::Configuration::UrlMapping ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.UrlMappingCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As UrlMapping" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.UrlMapping" Usage="System.Web.Configuration.UrlMappingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::UrlMapping ^ default[System::String ^] { System::Web::Configuration::UrlMapping ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.UrlMappingCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.UrlMappingCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="urlMappingCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -380,6 +392,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Configuration.UrlMapping urlMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.Remove(System.Web.Configuration.UrlMapping)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.UrlMapping -&gt; unit" Usage="urlMappingCollection.Remove urlMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::UrlMapping ^ urlMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -422,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.UrlMappingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="urlMappingCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureHeader" />
   <TypeSignature Language="VB.NET" Value="Public Structure SignatureHeader&#xA;Implements IEquatable(Of SignatureHeader)" />
   <TypeSignature Language="F#" Value="type SignatureHeader = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SignatureHeader : IEquatable&lt;System::Reflection::Metadata::SignatureHeader&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.#ctor(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawValue As Byte)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.SignatureHeader : byte -&gt; System.Reflection.Metadata.SignatureHeader" Usage="new System.Reflection.Metadata.SignatureHeader rawValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureHeader(System::Byte rawValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.#ctor(System.Reflection.Metadata.SignatureKind,System.Reflection.Metadata.SignatureCallingConvention,System.Reflection.Metadata.SignatureAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (kind As SignatureKind, convention As SignatureCallingConvention, attributes As SignatureAttributes)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.SignatureHeader : System.Reflection.Metadata.SignatureKind * System.Reflection.Metadata.SignatureCallingConvention * System.Reflection.Metadata.SignatureAttributes -&gt; System.Reflection.Metadata.SignatureHeader" Usage="new System.Reflection.Metadata.SignatureHeader (kind, convention, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureHeader(System::Reflection::Metadata::SignatureKind kind, System::Reflection::Metadata::SignatureCallingConvention convention, System::Reflection::Metadata::SignatureAttributes attributes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As SignatureAttributes" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.Metadata.SignatureAttributes" Usage="System.Reflection.Metadata.SignatureHeader.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::SignatureAttributes Attributes { System::Reflection::Metadata::SignatureAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.CallingConvention" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallingConvention As SignatureCallingConvention" />
       <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.Metadata.SignatureCallingConvention" Usage="System.Reflection.Metadata.SignatureHeader.CallingConvention" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::SignatureCallingConvention CallingConvention { System::Reflection::Metadata::SignatureCallingConvention get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureHeader.CallingConventionOrKindMask" />
       <MemberSignature Language="VB.NET" Value="Public Const CallingConventionOrKindMask As Byte  = 15" />
       <MemberSignature Language="F#" Value="val mutable CallingConventionOrKindMask : byte" Usage="System.Reflection.Metadata.SignatureHeader.CallingConventionOrKindMask" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Byte CallingConventionOrKindMask = 15;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="signatureHeader.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.Equals(System.Reflection.Metadata.SignatureHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SignatureHeader) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.SignatureHeader -&gt; bool" Usage="signatureHeader.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::SignatureHeader other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="signatureHeader.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -230,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.HasExplicitThis" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasExplicitThis As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasExplicitThis : bool" Usage="System.Reflection.Metadata.SignatureHeader.HasExplicitThis" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasExplicitThis { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.IsGeneric" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGeneric As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsGeneric : bool" Usage="System.Reflection.Metadata.SignatureHeader.IsGeneric" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsGeneric { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -276,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.IsInstance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInstance As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInstance : bool" Usage="System.Reflection.Metadata.SignatureHeader.IsInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInstance { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -299,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As SignatureKind" />
       <MemberSignature Language="F#" Value="member this.Kind : System.Reflection.Metadata.SignatureKind" Usage="System.Reflection.Metadata.SignatureHeader.Kind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::SignatureKind Kind { System::Reflection::Metadata::SignatureKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -321,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.op_Equality(System.Reflection.Metadata.SignatureHeader,System.Reflection.Metadata.SignatureHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SignatureHeader, right As SignatureHeader) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.SignatureHeader * System.Reflection.Metadata.SignatureHeader -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Metadata::SignatureHeader left, System::Reflection::Metadata::SignatureHeader right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -350,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.op_Inequality(System.Reflection.Metadata.SignatureHeader,System.Reflection.Metadata.SignatureHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SignatureHeader, right As SignatureHeader) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.SignatureHeader * System.Reflection.Metadata.SignatureHeader -&gt; bool" Usage="System.Reflection.Metadata.SignatureHeader.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Metadata::SignatureHeader left, System::Reflection::Metadata::SignatureHeader right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -379,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.SignatureHeader.RawValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawValue As Byte" />
       <MemberSignature Language="F#" Value="member this.RawValue : byte" Usage="System.Reflection.Metadata.SignatureHeader.RawValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte RawValue { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -401,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="signatureHeader.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

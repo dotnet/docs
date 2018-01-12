@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.StringComparison" />
   <TypeSignature Language="VB.NET" Value="Public Enum StringComparison" />
   <TypeSignature Language="F#" Value="type StringComparison = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StringComparison" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.StringComparison.CurrentCulture" />
       <MemberSignature Language="VB.NET" Value="CurrentCulture" />
       <MemberSignature Language="F#" Value="CurrentCulture = 0" Usage="System.StringComparison.CurrentCulture" />
+      <MemberSignature Language="C++ CLI" Value="CurrentCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.StringComparison.CurrentCultureIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="CurrentCultureIgnoreCase" />
       <MemberSignature Language="F#" Value="CurrentCultureIgnoreCase = 1" Usage="System.StringComparison.CurrentCultureIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="CurrentCultureIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.StringComparison.InvariantCulture" />
       <MemberSignature Language="VB.NET" Value="InvariantCulture" />
       <MemberSignature Language="F#" Value="InvariantCulture = 2" Usage="System.StringComparison.InvariantCulture" />
+      <MemberSignature Language="C++ CLI" Value="InvariantCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.StringComparison.InvariantCultureIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="InvariantCultureIgnoreCase" />
       <MemberSignature Language="F#" Value="InvariantCultureIgnoreCase = 3" Usage="System.StringComparison.InvariantCultureIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="InvariantCultureIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.StringComparison.Ordinal" />
       <MemberSignature Language="VB.NET" Value="Ordinal" />
       <MemberSignature Language="F#" Value="Ordinal = 4" Usage="System.StringComparison.Ordinal" />
+      <MemberSignature Language="C++ CLI" Value="Ordinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.StringComparison.OrdinalIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="OrdinalIgnoreCase" />
       <MemberSignature Language="F#" Value="OrdinalIgnoreCase = 5" Usage="System.StringComparison.OrdinalIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="OrdinalIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

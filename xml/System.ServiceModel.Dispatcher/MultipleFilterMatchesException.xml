@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" />
   <TypeSignature Language="VB.NET" Value="Public Class MultipleFilterMatchesException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type MultipleFilterMatchesException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultipleFilterMatchesException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleFilterMatchesException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException : string -&gt; System.ServiceModel.Dispatcher.MultipleFilterMatchesException" Usage="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException msg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleFilterMatchesException(System::String ^ msg);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Dispatcher.MultipleFilterMatchesException" Usage="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MultipleFilterMatchesException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor(System.String,System.Collections.ObjectModel.Collection{System.ServiceModel.Dispatcher.MessageFilter})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, filters As Collection(Of MessageFilter))" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException : string * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; System.ServiceModel.Dispatcher.MultipleFilterMatchesException" Usage="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException (msg, filters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleFilterMatchesException(System::String ^ msg, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ filters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException : string * Exception -&gt; System.ServiceModel.Dispatcher.MultipleFilterMatchesException" Usage="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException (msg, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleFilterMatchesException(System::String ^ msg, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor(System.String,System.Exception,System.Collections.ObjectModel.Collection{System.ServiceModel.Dispatcher.MessageFilter})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, inner As Exception, filters As Collection(Of MessageFilter))" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException : string * Exception * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; -&gt; System.ServiceModel.Dispatcher.MultipleFilterMatchesException" Usage="new System.ServiceModel.Dispatcher.MultipleFilterMatchesException (msg, inner, filters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleFilterMatchesException(System::String ^ msg, Exception ^ inner, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ filters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.MultipleFilterMatchesException.Filters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filters As Collection(Of MessageFilter)" />
       <MemberSignature Language="F#" Value="member this.Filters : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" Usage="System.ServiceModel.Dispatcher.MultipleFilterMatchesException.Filters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ Filters { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Dispatcher::MessageFilter ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

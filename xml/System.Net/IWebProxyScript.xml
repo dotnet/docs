@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IWebProxyScript" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebProxyScript" />
   <TypeSignature Language="F#" Value="type IWebProxyScript = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebProxyScript" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxyScript.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iWebProxyScript.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxyScript.Load(System.Uri,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (scriptLocation As Uri, script As String, helperType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Load : Uri * string * Type -&gt; bool" Usage="iWebProxyScript.Load (scriptLocation, script, helperType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Load(Uri ^ scriptLocation, System::String ^ script, Type ^ helperType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxyScript.Run(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Run (url As String, host As String) As String" />
       <MemberSignature Language="F#" Value="abstract member Run : string * string -&gt; string" Usage="iWebProxyScript.Run (url, host)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Run(System::String ^ url, System::String ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

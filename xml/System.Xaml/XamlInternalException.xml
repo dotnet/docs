@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlInternalException" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlInternalException&#xA;Inherits XamlException" />
   <TypeSignature Language="F#" Value="type XamlInternalException = class&#xA;    inherit XamlException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlInternalException : System::Xaml::XamlException" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlInternalException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlInternalException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlInternalException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlInternalException : string -&gt; System.Xaml.XamlInternalException" Usage="new System.Xaml.XamlInternalException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlInternalException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlInternalException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlInternalException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xaml.XamlInternalException" Usage="new System.Xaml.XamlInternalException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlInternalException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlInternalException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlInternalException : string * Exception -&gt; System.Xaml.XamlInternalException" Usage="new System.Xaml.XamlInternalException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlInternalException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

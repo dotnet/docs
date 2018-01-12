@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.TcpListener" />
   <TypeSignature Language="VB.NET" Value="Public Class TcpListener" />
   <TypeSignature Language="F#" Value="type TcpListener = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TcpListener" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpListener : int -&gt; System.Net.Sockets.TcpListener" Usage="new System.Net.Sockets.TcpListener port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpListener(int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.#ctor(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localEP As IPEndPoint)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpListener : System.Net.IPEndPoint -&gt; System.Net.Sockets.TcpListener" Usage="new System.Net.Sockets.TcpListener localEP" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpListener(System::Net::IPEndPoint ^ localEP);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -184,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.#ctor(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localaddr As IPAddress, port As Integer)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpListener : System.Net.IPAddress * int -&gt; System.Net.Sockets.TcpListener" Usage="new System.Net.Sockets.TcpListener (localaddr, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpListener(System::Net::IPAddress ^ localaddr, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -243,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.AcceptSocket" />
       <MemberSignature Language="VB.NET" Value="Public Function AcceptSocket () As Socket" />
       <MemberSignature Language="F#" Value="member this.AcceptSocket : unit -&gt; System.Net.Sockets.Socket" Usage="tcpListener.AcceptSocket " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::Socket ^ AcceptSocket();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -298,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.AcceptSocketAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function AcceptSocketAsync () As Task(Of Socket)" />
       <MemberSignature Language="F#" Value="member this.AcceptSocketAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt;" Usage="tcpListener.AcceptSocketAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::Sockets::Socket ^&gt; ^ AcceptSocketAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -347,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
       <MemberSignature Language="VB.NET" Value="Public Function AcceptTcpClient () As TcpClient" />
       <MemberSignature Language="F#" Value="member this.AcceptTcpClient : unit -&gt; System.Net.Sockets.TcpClient" Usage="tcpListener.AcceptTcpClient " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::TcpClient ^ AcceptTcpClient();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -404,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.AcceptTcpClientAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function AcceptTcpClientAsync () As Task(Of TcpClient)" />
       <MemberSignature Language="F#" Value="member this.AcceptTcpClientAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.Sockets.TcpClient&gt;" Usage="tcpListener.AcceptTcpClientAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::Sockets::TcpClient ^&gt; ^ AcceptTcpClientAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -455,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpListener.Active" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Active As Boolean" />
       <MemberSignature Language="F#" Value="member this.Active : bool" Usage="System.Net.Sockets.TcpListener.Active" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool Active { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -494,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AllowNatTraversal (allowed As Boolean)" />
       <MemberSignature Language="F#" Value="member this.AllowNatTraversal : bool -&gt; unit" Usage="tcpListener.AllowNatTraversal allowed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllowNatTraversal(bool allowed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -547,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.BeginAcceptSocket(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginAcceptSocket (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginAcceptSocket : AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpListener.BeginAcceptSocket (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAcceptSocket(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -613,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.BeginAcceptTcpClient(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginAcceptTcpClient (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginAcceptTcpClient : AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpListener.BeginAcceptTcpClient (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAcceptTcpClient(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -676,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.Create(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (port As Integer) As TcpListener" />
       <MemberSignature Language="F#" Value="static member Create : int -&gt; System.Net.Sockets.TcpListener" Usage="System.Net.Sockets.TcpListener.Create port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Sockets::TcpListener ^ Create(int port);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -711,6 +724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.EndAcceptSocket(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndAcceptSocket (asyncResult As IAsyncResult) As Socket" />
       <MemberSignature Language="F#" Value="member this.EndAcceptSocket : IAsyncResult -&gt; System.Net.Sockets.Socket" Usage="tcpListener.EndAcceptSocket asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::Socket ^ EndAcceptSocket(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -776,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.EndAcceptTcpClient(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndAcceptTcpClient (asyncResult As IAsyncResult) As TcpClient" />
       <MemberSignature Language="F#" Value="member this.EndAcceptTcpClient : IAsyncResult -&gt; System.Net.Sockets.TcpClient" Usage="tcpListener.EndAcceptTcpClient asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::TcpClient ^ EndAcceptTcpClient(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -836,6 +851,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpListener.ExclusiveAddressUse" />
       <MemberSignature Language="VB.NET" Value="Public Property ExclusiveAddressUse As Boolean" />
       <MemberSignature Language="F#" Value="member this.ExclusiveAddressUse : bool with get, set" Usage="System.Net.Sockets.TcpListener.ExclusiveAddressUse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExclusiveAddressUse { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -888,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="tcpListener.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!TcpListener ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -909,6 +926,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpListener.LocalEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalEndpoint As EndPoint" />
       <MemberSignature Language="F#" Value="member this.LocalEndpoint : System.Net.EndPoint" Usage="System.Net.Sockets.TcpListener.LocalEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::EndPoint ^ LocalEndpoint { System::Net::EndPoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -957,6 +975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.Pending" />
       <MemberSignature Language="VB.NET" Value="Public Function Pending () As Boolean" />
       <MemberSignature Language="F#" Value="member this.Pending : unit -&gt; bool" Usage="tcpListener.Pending " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Pending();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1009,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpListener.Server" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As Socket" />
       <MemberSignature Language="F#" Value="member this.Server : System.Net.Sockets.Socket" Usage="System.Net.Sockets.TcpListener.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::Socket ^ Server { System::Net::Sockets::Socket ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1070,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="tcpListener.Start " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1128,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.Start(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (backlog As Integer)" />
       <MemberSignature Language="F#" Value="member this.Start : int -&gt; unit" Usage="tcpListener.Start backlog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(int backlog);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1195,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpListener.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="tcpListener.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

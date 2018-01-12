@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridColumn" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataGridColumn&#xA;Inherits DependencyObject" />
   <TypeSignature Language="F#" Value="type DataGridColumn = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumn abstract : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataGridColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.ActualWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualWidth As Double" />
       <MemberSignature Language="F#" Value="member this.ActualWidth : double" Usage="System.Windows.Controls.DataGridColumn.ActualWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ActualWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.ActualWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ActualWidthProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ActualWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.ActualWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ActualWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.CancelCellEdit(System.Windows.FrameworkElement,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CancelCellEdit (editingElement As FrameworkElement, uneditedValue As Object)" />
       <MemberSignature Language="F#" Value="abstract member CancelCellEdit : System.Windows.FrameworkElement * obj -&gt; unit&#xA;override this.CancelCellEdit : System.Windows.FrameworkElement * obj -&gt; unit" Usage="dataGridColumn.CancelCellEdit (editingElement, uneditedValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CancelCellEdit(System::Windows::FrameworkElement ^ editingElement, System::Object ^ uneditedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.CanUserReorder" />
       <MemberSignature Language="VB.NET" Value="Public Property CanUserReorder As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanUserReorder : bool with get, set" Usage="System.Windows.Controls.DataGridColumn.CanUserReorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUserReorder { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.CanUserReorderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanUserReorderProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CanUserReorderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.CanUserReorderProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanUserReorderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.CanUserResize" />
       <MemberSignature Language="VB.NET" Value="Public Property CanUserResize As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanUserResize : bool with get, set" Usage="System.Windows.Controls.DataGridColumn.CanUserResize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUserResize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.CanUserResizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanUserResizeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CanUserResizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.CanUserResizeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanUserResizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.CanUserSort" />
       <MemberSignature Language="VB.NET" Value="Public Property CanUserSort As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanUserSort : bool with get, set" Usage="System.Windows.Controls.DataGridColumn.CanUserSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUserSort { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -248,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.CanUserSortProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanUserSortProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CanUserSortProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.CanUserSortProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanUserSortProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.CellStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property CellStyle As Style" />
       <MemberSignature Language="F#" Value="member this.CellStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.DataGridColumn.CellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ CellStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -297,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.CellStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CellStyleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CellStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.CellStyleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CellStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -316,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.ClipboardContentBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ClipboardContentBinding As BindingBase" />
       <MemberSignature Language="F#" Value="member this.ClipboardContentBinding : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.Controls.DataGridColumn.ClipboardContentBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Data::BindingBase ^ ClipboardContentBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -336,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.CommitCellEdit(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CommitCellEdit (editingElement As FrameworkElement) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CommitCellEdit : System.Windows.FrameworkElement -&gt; bool&#xA;override this.CommitCellEdit : System.Windows.FrameworkElement -&gt; bool" Usage="dataGridColumn.CommitCellEdit editingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CommitCellEdit(System::Windows::FrameworkElement ^ editingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -361,6 +376,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent" />
       <MemberSignature Language="VB.NET" Value="Public Event CopyingCellClipboardContent As EventHandler(Of DataGridCellClipboardEventArgs) " />
       <MemberSignature Language="F#" Value="member this.CopyingCellClipboardContent : EventHandler&lt;System.Windows.Controls.DataGridCellClipboardEventArgs&gt; " Usage="member this.CopyingCellClipboardContent : System.EventHandler&lt;System.Windows.Controls.DataGridCellClipboardEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Controls::DataGridCellClipboardEventArgs ^&gt; ^ CopyingCellClipboardContent;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -387,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.DataGridOwner" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DataGridOwner As DataGrid" />
       <MemberSignature Language="F#" Value="member this.DataGridOwner : System.Windows.Controls.DataGrid" Usage="System.Windows.Controls.DataGridColumn.DataGridOwner" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Controls::DataGrid ^ DataGridOwner { System::Windows::Controls::DataGrid ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -407,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.DisplayIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.DisplayIndex : int with get, set" Usage="System.Windows.Controls.DataGridColumn.DisplayIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisplayIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -441,6 +459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.DisplayIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayIndexProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DisplayIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.DisplayIndexProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayIndexProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -460,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.DragIndicatorStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DragIndicatorStyle As Style" />
       <MemberSignature Language="F#" Value="member this.DragIndicatorStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.DataGridColumn.DragIndicatorStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ DragIndicatorStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -490,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.DragIndicatorStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DragIndicatorStyleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DragIndicatorStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.DragIndicatorStyleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DragIndicatorStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -509,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.GenerateEditingElement(System.Windows.Controls.DataGridCell,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GenerateEditingElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
       <MemberSignature Language="F#" Value="abstract member GenerateEditingElement : System.Windows.Controls.DataGridCell * obj -&gt; System.Windows.FrameworkElement" Usage="dataGridColumn.GenerateEditingElement (cell, dataItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::FrameworkElement ^ GenerateEditingElement(System::Windows::Controls::DataGridCell ^ cell, System::Object ^ dataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -544,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.GenerateElement(System.Windows.Controls.DataGridCell,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GenerateElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
       <MemberSignature Language="F#" Value="abstract member GenerateElement : System.Windows.Controls.DataGridCell * obj -&gt; System.Windows.FrameworkElement" Usage="dataGridColumn.GenerateElement (cell, dataItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::FrameworkElement ^ GenerateElement(System::Windows::Controls::DataGridCell ^ cell, System::Object ^ dataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -588,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.GetCellContent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCellContent (dataItem As Object) As FrameworkElement" />
       <MemberSignature Language="F#" Value="member this.GetCellContent : obj -&gt; System.Windows.FrameworkElement" Usage="dataGridColumn.GetCellContent dataItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::FrameworkElement ^ GetCellContent(System::Object ^ dataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -613,6 +637,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.FrameworkElement GetCellContent(class System.Windows.Controls.DataGridRow dataGridRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.GetCellContent(System.Windows.Controls.DataGridRow)" />
       <MemberSignature Language="F#" Value="member this.GetCellContent : System.Windows.Controls.DataGridRow -&gt; System.Windows.FrameworkElement" Usage="dataGridColumn.GetCellContent dataGridRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::FrameworkElement ^ GetCellContent(System::Windows::Controls::DataGridRow ^ dataGridRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -639,6 +664,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.Header" />
       <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
       <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="System.Windows.Controls.DataGridColumn.Header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Header { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -659,6 +685,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.HeaderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.HeaderProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -678,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.HeaderStringFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderStringFormat As String" />
       <MemberSignature Language="F#" Value="member this.HeaderStringFormat : string with get, set" Usage="System.Windows.Controls.DataGridColumn.HeaderStringFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -698,6 +726,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.HeaderStringFormatProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStringFormatProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.HeaderStringFormatProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderStringFormatProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -717,6 +746,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
       <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.DataGridColumn.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ HeaderStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -755,6 +785,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.HeaderStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStyleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.HeaderStyleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -774,6 +805,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
       <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.DataGridColumn.HeaderTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ HeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -794,6 +826,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.HeaderTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.HeaderTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -813,6 +846,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.HeaderTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="F#" Value="member this.HeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.DataGridColumn.HeaderTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ HeaderTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -833,6 +867,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.HeaderTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.HeaderTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -852,6 +887,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.IsAutoGenerated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAutoGenerated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAutoGenerated : bool" Usage="System.Windows.Controls.DataGridColumn.IsAutoGenerated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAutoGenerated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -874,6 +910,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.IsAutoGeneratedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsAutoGeneratedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsAutoGeneratedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.IsAutoGeneratedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsAutoGeneratedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -893,6 +930,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.IsFrozen" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrozen As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFrozen : bool" Usage="System.Windows.Controls.DataGridColumn.IsFrozen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrozen { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -935,6 +973,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.IsFrozenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFrozenProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsFrozenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.IsFrozenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFrozenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -954,6 +993,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Windows.Controls.DataGridColumn.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -984,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.IsReadOnlyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnlyProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsReadOnlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.IsReadOnlyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsReadOnlyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1003,6 +1044,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.MaxWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxWidth As Double" />
       <MemberSignature Language="F#" Value="member this.MaxWidth : double with get, set" Usage="System.Windows.Controls.DataGridColumn.MaxWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1045,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.MaxWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxWidthProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MaxWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.MaxWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1064,6 +1107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.MinWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property MinWidth As Double" />
       <MemberSignature Language="F#" Value="member this.MinWidth : double with get, set" Usage="System.Windows.Controls.DataGridColumn.MinWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1106,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.MinWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinWidthProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MinWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.MinWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinWidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1125,6 +1170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.NotifyPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub NotifyPropertyChanged (propertyName As String)" />
       <MemberSignature Language="F#" Value="member this.NotifyPropertyChanged : string -&gt; unit" Usage="dataGridColumn.NotifyPropertyChanged propertyName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void NotifyPropertyChanged(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1148,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.OnCoerceIsReadOnly(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnCoerceIsReadOnly (baseValue As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member OnCoerceIsReadOnly : bool -&gt; bool&#xA;override this.OnCoerceIsReadOnly : bool -&gt; bool" Usage="dataGridColumn.OnCoerceIsReadOnly baseValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnCoerceIsReadOnly(bool baseValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1173,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.OnCopyingCellClipboardContent(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnCopyingCellClipboardContent (item As Object) As Object" />
       <MemberSignature Language="F#" Value="abstract member OnCopyingCellClipboardContent : obj -&gt; obj&#xA;override this.OnCopyingCellClipboardContent : obj -&gt; obj" Usage="dataGridColumn.OnCopyingCellClipboardContent item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ OnCopyingCellClipboardContent(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1206,6 +1254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.OnPastingCellClipboardContent(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnPastingCellClipboardContent (item As Object, cellContent As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnPastingCellClipboardContent : obj * obj -&gt; unit&#xA;override this.OnPastingCellClipboardContent : obj * obj -&gt; unit" Usage="dataGridColumn.OnPastingCellClipboardContent (item, cellContent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnPastingCellClipboardContent(System::Object ^ item, System::Object ^ cellContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1243,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" />
       <MemberSignature Language="VB.NET" Value="Public Event PastingCellClipboardContent As EventHandler(Of DataGridCellClipboardEventArgs) " />
       <MemberSignature Language="F#" Value="member this.PastingCellClipboardContent : EventHandler&lt;System.Windows.Controls.DataGridCellClipboardEventArgs&gt; " Usage="member this.PastingCellClipboardContent : System.EventHandler&lt;System.Windows.Controls.DataGridCellClipboardEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Controls::DataGridCellClipboardEventArgs ^&gt; ^ PastingCellClipboardContent;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1269,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.PrepareCellForEdit(System.Windows.FrameworkElement,System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function PrepareCellForEdit (editingElement As FrameworkElement, editingEventArgs As RoutedEventArgs) As Object" />
       <MemberSignature Language="F#" Value="abstract member PrepareCellForEdit : System.Windows.FrameworkElement * System.Windows.RoutedEventArgs -&gt; obj&#xA;override this.PrepareCellForEdit : System.Windows.FrameworkElement * System.Windows.RoutedEventArgs -&gt; obj" Usage="dataGridColumn.PrepareCellForEdit (editingElement, editingEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ PrepareCellForEdit(System::Windows::FrameworkElement ^ editingElement, System::Windows::RoutedEventArgs ^ editingEventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1304,6 +1355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumn.RefreshCellContent(System.Windows.FrameworkElement,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub RefreshCellContent (element As FrameworkElement, propertyName As String)" />
       <MemberSignature Language="F#" Value="abstract member RefreshCellContent : System.Windows.FrameworkElement * string -&gt; unit&#xA;override this.RefreshCellContent : System.Windows.FrameworkElement * string -&gt; unit" Usage="dataGridColumn.RefreshCellContent (element, propertyName)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void RefreshCellContent(System::Windows::FrameworkElement ^ element, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1329,6 +1381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property SortDirection As Nullable(Of ListSortDirection)" />
       <MemberSignature Language="F#" Value="member this.SortDirection : Nullable&lt;System.ComponentModel.ListSortDirection&gt; with get, set" Usage="System.Windows.Controls.DataGridColumn.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::ComponentModel::ListSortDirection&gt; SortDirection { Nullable&lt;System::ComponentModel::ListSortDirection&gt; get(); void set(Nullable&lt;System::ComponentModel::ListSortDirection&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1349,6 +1402,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.SortDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SortDirectionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SortDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.SortDirectionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SortDirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1368,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.SortMemberPath" />
       <MemberSignature Language="VB.NET" Value="Public Property SortMemberPath As String" />
       <MemberSignature Language="F#" Value="member this.SortMemberPath : string with get, set" Usage="System.Windows.Controls.DataGridColumn.SortMemberPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortMemberPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1388,6 +1443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.SortMemberPathProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SortMemberPathProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SortMemberPathProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.SortMemberPathProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SortMemberPathProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1407,6 +1463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.Visibility" />
       <MemberSignature Language="VB.NET" Value="Public Property Visibility As Visibility" />
       <MemberSignature Language="F#" Value="member this.Visibility : System.Windows.Visibility with get, set" Usage="System.Windows.Controls.DataGridColumn.Visibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility Visibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1446,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.VisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VisibilityProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable VisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.VisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1465,6 +1523,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumn.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As DataGridLength" />
       <MemberSignature Language="F#" Value="member this.Width : System.Windows.Controls.DataGridLength with get, set" Usage="System.Windows.Controls.DataGridColumn.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridLength Width { System::Windows::Controls::DataGridLength get(); void set(System::Windows::Controls::DataGridLength value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1505,6 +1564,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridColumn.WidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WidthProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable WidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridColumn.WidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

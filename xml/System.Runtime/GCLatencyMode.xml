@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.GCLatencyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum GCLatencyMode" />
   <TypeSignature Language="F#" Value="type GCLatencyMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GCLatencyMode" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLatencyMode.Batch" />
       <MemberSignature Language="VB.NET" Value="Batch" />
       <MemberSignature Language="F#" Value="Batch = 0" Usage="System.Runtime.GCLatencyMode.Batch" />
+      <MemberSignature Language="C++ CLI" Value="Batch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLatencyMode.Interactive" />
       <MemberSignature Language="VB.NET" Value="Interactive" />
       <MemberSignature Language="F#" Value="Interactive = 1" Usage="System.Runtime.GCLatencyMode.Interactive" />
+      <MemberSignature Language="C++ CLI" Value="Interactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLatencyMode.LowLatency" />
       <MemberSignature Language="VB.NET" Value="LowLatency" />
       <MemberSignature Language="F#" Value="LowLatency = 2" Usage="System.Runtime.GCLatencyMode.LowLatency" />
+      <MemberSignature Language="C++ CLI" Value="LowLatency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLatencyMode.NoGCRegion" />
       <MemberSignature Language="VB.NET" Value="NoGCRegion" />
       <MemberSignature Language="F#" Value="NoGCRegion = 4" Usage="System.Runtime.GCLatencyMode.NoGCRegion" />
+      <MemberSignature Language="C++ CLI" Value="NoGCRegion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLatencyMode.SustainedLowLatency" />
       <MemberSignature Language="VB.NET" Value="SustainedLowLatency" />
       <MemberSignature Language="F#" Value="SustainedLowLatency = 3" Usage="System.Runtime.GCLatencyMode.SustainedLowLatency" />
+      <MemberSignature Language="C++ CLI" Value="SustainedLowLatency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

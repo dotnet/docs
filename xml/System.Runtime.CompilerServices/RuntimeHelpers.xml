@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeHelpers" />
   <TypeSignature Language="VB.NET" Value="Public Class RuntimeHelpers" />
   <TypeSignature Language="F#" Value="type RuntimeHelpers = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuntimeHelpers abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.EnsureSufficientExecutionStack" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnsureSufficientExecutionStack ()" />
       <MemberSignature Language="F#" Value="static member EnsureSufficientExecutionStack : unit -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.EnsureSufficientExecutionStack " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnsureSufficientExecutionStack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.Equals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (o1 As Object, o2 As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member Equals : obj * obj -&gt; bool" Usage="System.Runtime.CompilerServices.RuntimeHelpers.Equals (o1, o2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Object ^ o1, System::Object ^ o2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(System.Runtime.CompilerServices.RuntimeHelpers.TryCode,System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ExecuteCodeWithGuaranteedCleanup (code As RuntimeHelpers.TryCode, backoutCode As RuntimeHelpers.CleanupCode, userData As Object)" />
       <MemberSignature Language="F#" Value="static member ExecuteCodeWithGuaranteedCleanup : System.Runtime.CompilerServices.RuntimeHelpers.TryCode * System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode * obj -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup (code, backoutCode, userData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExecuteCodeWithGuaranteedCleanup(System::Runtime::CompilerServices::RuntimeHelpers::TryCode ^ code, System::Runtime::CompilerServices::RuntimeHelpers::CleanupCode ^ backoutCode, System::Object ^ userData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHashCode (o As Object) As Integer" />
       <MemberSignature Language="F#" Value="static member GetHashCode : obj -&gt; int" Usage="System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetHashCode(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectValue (obj As Object) As Object" />
       <MemberSignature Language="F#" Value="static member GetObjectValue : obj -&gt; obj" Usage="System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetObjectValue(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -339,6 +345,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetUninitializedObject(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.GetUninitializedObject(System.Type)" />
       <MemberSignature Language="F#" Value="static member GetUninitializedObject : Type -&gt; obj" Usage="System.Runtime.CompilerServices.RuntimeHelpers.GetUninitializedObject type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetUninitializedObject(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -362,6 +369,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitializeArray(class System.Array array, valuetype System.RuntimeFieldHandle fldHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(System.Array,System.RuntimeFieldHandle)" />
       <MemberSignature Language="F#" Value="static member InitializeArray : Array * RuntimeFieldHandle -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray (array, fldHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitializeArray(Array ^ array, RuntimeFieldHandle fldHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -407,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.IsReferenceOrContainsReferences``1" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsReferenceOrContainsReferences(Of T) () As Boolean" />
       <MemberSignature Language="F#" Value="static member IsReferenceOrContainsReferences : unit -&gt; bool" Usage="System.Runtime.CompilerServices.RuntimeHelpers.IsReferenceOrContainsReferences " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool IsReferenceOrContainsReferences();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -432,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OffsetToStringData As Integer" />
       <MemberSignature Language="F#" Value="member this.OffsetToStringData : int" Usage="System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int OffsetToStringData { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -472,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareConstrainedRegions ()" />
       <MemberSignature Language="F#" Value="static member PrepareConstrainedRegions : unit -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareConstrainedRegions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -528,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegionsNoOP" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareConstrainedRegionsNoOP ()" />
       <MemberSignature Language="F#" Value="static member PrepareConstrainedRegionsNoOP : unit -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegionsNoOP " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareConstrainedRegionsNoOP();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -570,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareContractedDelegate(System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareContractedDelegate (d As Delegate)" />
       <MemberSignature Language="F#" Value="static member PrepareContractedDelegate : Delegate -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.PrepareContractedDelegate d" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareContractedDelegate(Delegate ^ d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -623,6 +636,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareDelegate(System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareDelegate (d As Delegate)" />
       <MemberSignature Language="F#" Value="static member PrepareDelegate : Delegate -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.PrepareDelegate d" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareDelegate(Delegate ^ d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod(System.RuntimeMethodHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareMethod (method As RuntimeMethodHandle)" />
       <MemberSignature Language="F#" Value="static member PrepareMethod : RuntimeMethodHandle -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareMethod(RuntimeMethodHandle method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -718,6 +733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod(System.RuntimeMethodHandle,System.RuntimeTypeHandle[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareMethod (method As RuntimeMethodHandle, instantiation As RuntimeTypeHandle())" />
       <MemberSignature Language="F#" Value="static member PrepareMethod : RuntimeMethodHandle * RuntimeTypeHandle[] -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod (method, instantiation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareMethod(RuntimeMethodHandle method, cli::array &lt;RuntimeTypeHandle&gt; ^ instantiation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -762,6 +778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.ProbeForSufficientStack" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ProbeForSufficientStack ()" />
       <MemberSignature Language="F#" Value="static member ProbeForSufficientStack : unit -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.ProbeForSufficientStack " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ProbeForSufficientStack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -808,6 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RunClassConstructor (type As RuntimeTypeHandle)" />
       <MemberSignature Language="F#" Value="static member RunClassConstructor : RuntimeTypeHandle -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RunClassConstructor(RuntimeTypeHandle type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -852,6 +870,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.RunModuleConstructor(System.ModuleHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RunModuleConstructor (module As ModuleHandle)" />
       <MemberSignature Language="F#" Value="static member RunModuleConstructor : ModuleHandle -&gt; unit" Usage="System.Runtime.CompilerServices.RuntimeHelpers.RunModuleConstructor module" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RunModuleConstructor(ModuleHandle module);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -892,6 +911,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeHelpers.TryEnsureSufficientExecutionStack" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryEnsureSufficientExecutionStack () As Boolean" />
       <MemberSignature Language="F#" Value="static member TryEnsureSufficientExecutionStack : unit -&gt; bool" Usage="System.Runtime.CompilerServices.RuntimeHelpers.TryEnsureSufficientExecutionStack " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryEnsureSufficientExecutionStack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

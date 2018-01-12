@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.StaticResourceExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class StaticResourceExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="F#" Value="type StaticResourceExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StaticResourceExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.StaticResourceExtension.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticResourceExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.StaticResourceExtension.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resourceKey As Object)" />
       <MemberSignature Language="F#" Value="new System.Windows.StaticResourceExtension : obj -&gt; System.Windows.StaticResourceExtension" Usage="new System.Windows.StaticResourceExtension resourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticResourceExtension(System::Object ^ resourceKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.StaticResourceExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="staticResourceExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.StaticResourceExtension.ResourceKey" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceKey As Object" />
       <MemberSignature Language="F#" Value="member this.ResourceKey : obj with get, set" Usage="System.Windows.StaticResourceExtension.ResourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResourceKey { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

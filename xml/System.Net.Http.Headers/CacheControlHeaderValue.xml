@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.CacheControlHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class CacheControlHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type CacheControlHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheControlHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheControlHeaderValue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cacheControlHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As ICollection(Of NameValueHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.Extensions : System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt;" Usage="System.Net.Http.Headers.CacheControlHeaderValue.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Extensions { System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cacheControlHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.MaxAge" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxAge As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.MaxAge : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.MaxAge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; MaxAge { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.MaxStale" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxStale As Boolean" />
       <MemberSignature Language="F#" Value="member this.MaxStale : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.MaxStale" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaxStale { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxStaleLimit As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.MaxStaleLimit : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.MaxStaleLimit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; MaxStaleLimit { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.MinFresh" />
       <MemberSignature Language="VB.NET" Value="Public Property MinFresh As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.MinFresh : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.MinFresh" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; MinFresh { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.MustRevalidate" />
       <MemberSignature Language="VB.NET" Value="Public Property MustRevalidate As Boolean" />
       <MemberSignature Language="F#" Value="member this.MustRevalidate : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.MustRevalidate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustRevalidate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.NoCache" />
       <MemberSignature Language="VB.NET" Value="Public Property NoCache As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoCache : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.NoCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoCache { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.NoCacheHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NoCacheHeaders As ICollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.NoCacheHeaders : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Net.Http.Headers.CacheControlHeaderValue.NoCacheHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ NoCacheHeaders { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -409,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.NoStore" />
       <MemberSignature Language="VB.NET" Value="Public Property NoStore As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoStore : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.NoStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoStore { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -446,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.NoTransform" />
       <MemberSignature Language="VB.NET" Value="Public Property NoTransform As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoTransform : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.NoTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoTransform { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -483,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.OnlyIfCached" />
       <MemberSignature Language="VB.NET" Value="Public Property OnlyIfCached As Boolean" />
       <MemberSignature Language="F#" Value="member this.OnlyIfCached : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.OnlyIfCached" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OnlyIfCached { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -518,6 +533,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As CacheControlHeaderValue" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.CacheControlHeaderValue" Usage="System.Net.Http.Headers.CacheControlHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::CacheControlHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -553,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.Private" />
       <MemberSignature Language="VB.NET" Value="Public Property Private As Boolean" />
       <MemberSignature Language="F#" Value="member this.Private : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.Private" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Private { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -588,6 +605,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.PrivateHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateHeaders As ICollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.PrivateHeaders : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Net.Http.Headers.CacheControlHeaderValue.PrivateHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ PrivateHeaders { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -622,6 +640,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.ProxyRevalidate" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyRevalidate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ProxyRevalidate : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.ProxyRevalidate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProxyRevalidate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -659,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.Public" />
       <MemberSignature Language="VB.NET" Value="Public Property Public As Boolean" />
       <MemberSignature Language="F#" Value="member this.Public : bool with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.Public" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Public { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -694,6 +714,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.CacheControlHeaderValue.SharedMaxAge" />
       <MemberSignature Language="VB.NET" Value="Public Property SharedMaxAge As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.SharedMaxAge : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Net.Http.Headers.CacheControlHeaderValue.SharedMaxAge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; SharedMaxAge { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -727,6 +748,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -756,6 +778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cacheControlHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -784,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.CacheControlHeaderValue.TryParse(System.String,System.Net.Http.Headers.CacheControlHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As CacheControlHeaderValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.CacheControlHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::CacheControlHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

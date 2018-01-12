@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerTransportSecuritySettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PeerTransportSecuritySettings" />
   <TypeSignature Language="F#" Value="type PeerTransportSecuritySettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerTransportSecuritySettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerTransportSecuritySettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerTransportSecuritySettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerTransportSecuritySettings.CredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Property CredentialType As PeerTransportCredentialType" />
       <MemberSignature Language="F#" Value="member this.CredentialType : System.ServiceModel.PeerTransportCredentialType with get, set" Usage="System.ServiceModel.PeerTransportSecuritySettings.CredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerTransportCredentialType CredentialType { System::ServiceModel::PeerTransportCredentialType get(); void set(System::ServiceModel::PeerTransportCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComMethodElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComMethodElementCollection&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of ComMethodElement)" />
   <TypeSignature Language="F#" Value="type ComMethodElementCollection = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;ComMethodElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComMethodElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;System::ServiceModel::Configuration::ComMethodElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComMethodElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComMethodElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComMethodElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="comMethodElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComMethodElementCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.ServiceModel.Configuration.ComMethodElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

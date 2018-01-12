@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetNamedPipeBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetNamedPipeBinding, NetNamedPipeBindingElement)" />
   <TypeSignature Language="F#" Value="type NetNamedPipeBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetNamedPipeBinding, NetNamedPipeBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetNamedPipeBinding ^, System::ServiceModel::Configuration::NetNamedPipeBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.HttpResponseHeaders" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpResponseHeaders&#xA;Inherits HttpHeaders" />
   <TypeSignature Language="F#" Value="type HttpResponseHeaders = class&#xA;    inherit HttpHeaders" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseHeaders sealed : System::Net::Http::Headers::HttpHeaders" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.AcceptRanges" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceptRanges As HttpHeaderValueCollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.AcceptRanges : System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.AcceptRanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ AcceptRanges { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Age" />
       <MemberSignature Language="VB.NET" Value="Public Property Age As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.Age : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.Age" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; Age { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.CacheControl" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheControl As CacheControlHeaderValue" />
       <MemberSignature Language="F#" Value="member this.CacheControl : System.Net.Http.Headers.CacheControlHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.CacheControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::CacheControlHeaderValue ^ CacheControl { System::Net::Http::Headers::CacheControlHeaderValue ^ get(); void set(System::Net::Http::Headers::CacheControlHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As HttpHeaderValueCollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.Connection : System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ Connection { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.ConnectionClose" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionClose As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ConnectionClose : Nullable&lt;bool&gt; with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.ConnectionClose" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ConnectionClose { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Date" />
       <MemberSignature Language="VB.NET" Value="Public Property Date As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="F#" Value="member this.Date : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.Date" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; Date { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.ETag" />
       <MemberSignature Language="VB.NET" Value="Public Property ETag As EntityTagHeaderValue" />
       <MemberSignature Language="F#" Value="member this.ETag : System.Net.Http.Headers.EntityTagHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.ETag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::EntityTagHeaderValue ^ ETag { System::Net::Http::Headers::EntityTagHeaderValue ^ get(); void set(System::Net::Http::Headers::EntityTagHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As Uri" />
       <MemberSignature Language="F#" Value="member this.Location : Uri with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Location { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Pragma" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pragma As HttpHeaderValueCollection(Of NameValueHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.Pragma : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Pragma" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Pragma { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.ProxyAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProxyAuthenticate As HttpHeaderValueCollection(Of AuthenticationHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.ProxyAuthenticate : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.AuthenticationHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.ProxyAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::AuthenticationHeaderValue ^&gt; ^ ProxyAuthenticate { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::AuthenticationHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.RetryAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property RetryAfter As RetryConditionHeaderValue" />
       <MemberSignature Language="F#" Value="member this.RetryAfter : System.Net.Http.Headers.RetryConditionHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.RetryAfter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::RetryConditionHeaderValue ^ RetryAfter { System::Net::Http::Headers::RetryConditionHeaderValue ^ get(); void set(System::Net::Http::Headers::RetryConditionHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -337,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Server" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpHeaderValueCollection(Of ProductInfoHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.Server : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductInfoHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductInfoHeaderValue ^&gt; ^ Server { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductInfoHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -364,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Trailer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trailer As HttpHeaderValueCollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.Trailer : System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Trailer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ Trailer { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -391,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.TransferEncoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransferEncoding As HttpHeaderValueCollection(Of TransferCodingHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.TransferEncoding : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.TransferEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::TransferCodingHeaderValue ^&gt; ^ TransferEncoding { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::TransferCodingHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -418,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.TransferEncodingChunked" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferEncodingChunked As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TransferEncodingChunked : Nullable&lt;bool&gt; with get, set" Usage="System.Net.Http.Headers.HttpResponseHeaders.TransferEncodingChunked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; TransferEncodingChunked { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -446,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Upgrade" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Upgrade As HttpHeaderValueCollection(Of ProductHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.Upgrade : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Upgrade" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductHeaderValue ^&gt; ^ Upgrade { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -473,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Vary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vary As HttpHeaderValueCollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.Vary : System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Vary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ Vary { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -500,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Via" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Via As HttpHeaderValueCollection(Of ViaHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.Via : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ViaHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Via" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ViaHeaderValue ^&gt; ^ Via { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ViaHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -527,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.Warning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Warning As HttpHeaderValueCollection(Of WarningHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.Warning : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.WarningHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.Warning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::WarningHeaderValue ^&gt; ^ Warning { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::WarningHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -554,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpResponseHeaders.WwwAuthenticate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WwwAuthenticate As HttpHeaderValueCollection(Of AuthenticationHeaderValue)" />
       <MemberSignature Language="F#" Value="member this.WwwAuthenticate : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.AuthenticationHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpResponseHeaders.WwwAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::AuthenticationHeaderValue ^&gt; ^ WwwAuthenticate { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::AuthenticationHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

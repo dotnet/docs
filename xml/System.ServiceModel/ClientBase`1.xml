@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ClientBase(Of TChannel)&#xA;Implements ICommunicationObject, IDisposable" />
   <TypeSignature Language="F#" Value="type ClientBase&lt;'Channel (requires 'Channel : null)&gt; = class&#xA;    interface IDisposable&#xA;    interface ICommunicationObject" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA; where TChannel : classpublic ref class ClientBase abstract : IDisposable, System::ServiceModel::ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; endpoint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; instance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; endpointConfigurationName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::String ^ endpointConfigurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -256,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpoint As ServiceEndpoint)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpoint)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (endpointConfigurationName As String, remoteAddress As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -387,6 +397,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -448,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -483,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="clientBase.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
@@ -520,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.CacheSetting" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CacheSetting As CacheSetting" />
       <MemberSignature Language="F#" Value="member this.CacheSetting : System.ServiceModel.CacheSetting with get, set" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.CacheSetting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::CacheSetting CacheSetting { System::ServiceModel::CacheSetting get(); void set(System::ServiceModel::CacheSetting value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -540,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.Channel" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Channel As TChannel" />
       <MemberSignature Language="F#" Value="member this.Channel : 'Channel" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.Channel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property TChannel Channel { TChannel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -567,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ChannelFactory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelFactory As ChannelFactory(Of TChannel)" />
       <MemberSignature Language="F#" Value="member this.ChannelFactory : System.ServiceModel.ChannelFactory&lt;'Channel (requires 'Channel : null)&gt;" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.ChannelFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ChannelFactory&lt;TChannel&gt; ^ ChannelFactory { System::ServiceModel::ChannelFactory&lt;TChannel&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -601,6 +618,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.ClientCredentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCredentials As ClientCredentials" />
       <MemberSignature Language="F#" Value="member this.ClientCredentials : System.ServiceModel.Description.ClientCredentials" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.ClientCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ClientCredentials ^ ClientCredentials { System::ServiceModel::Description::ClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -644,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="clientBase.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
@@ -675,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.CreateChannel" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateChannel () As TChannel" />
       <MemberSignature Language="F#" Value="abstract member CreateChannel : unit -&gt; 'Channel&#xA;override this.CreateChannel : unit -&gt; 'Channel" Usage="clientBase.CreateChannel " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual TChannel CreateChannel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -710,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.DisplayInitializationUI" />
       <MemberSignature Language="VB.NET" Value="Public Sub DisplayInitializationUI ()" />
       <MemberSignature Language="F#" Value="member this.DisplayInitializationUI : unit -&gt; unit" Usage="clientBase.DisplayInitializationUI " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisplayInitializationUI();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -739,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.Endpoint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
       <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Description.ServiceEndpoint" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.Endpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceEndpoint ^ Endpoint { System::ServiceModel::Description::ServiceEndpoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -774,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.GetDefaultValueForInitialization``1" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultValueForInitialization(Of T) () As T" />
       <MemberSignature Language="F#" Value="member this.GetDefaultValueForInitialization : unit -&gt; 'T" Usage="clientBase.GetDefaultValueForInitialization " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; T GetDefaultValueForInitialization();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -806,6 +829,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.InnerChannel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerChannel As IClientChannel" />
       <MemberSignature Language="F#" Value="member this.InnerChannel : System.ServiceModel.IClientChannel" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.InnerChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IClientChannel ^ InnerChannel { System::ServiceModel::IClientChannel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -839,6 +863,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvokeAsync(class System.ServiceModel.ClientBase`1/BeginOperationDelegate&lt;!TChannel&gt; beginOperationDelegate, object[] inValues, class System.ServiceModel.ClientBase`1/EndOperationDelegate&lt;!TChannel&gt; endOperationDelegate, class System.Threading.SendOrPostCallback operationCompletedCallback, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase`1.BeginOperationDelegate{`0},System.Object[],System.ServiceModel.ClientBase`1.EndOperationDelegate{`0},System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="F#" Value="member this.InvokeAsync : System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.BeginOperationDelegate * obj[] * System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.EndOperationDelegate * System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="clientBase.InvokeAsync (beginOperationDelegate, inValues, endOperationDelegate, operationCompletedCallback, userState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvokeAsync(System::ServiceModel::ClientBase&lt;TChannel&gt;::BeginOperationDelegate ^ beginOperationDelegate, cli::array &lt;System::Object ^&gt; ^ inValues, System::ServiceModel::ClientBase&lt;TChannel&gt;::EndOperationDelegate ^ endOperationDelegate, System::Threading::SendOrPostCallback ^ operationCompletedCallback, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -884,6 +909,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="clientBase.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
@@ -915,6 +941,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ClientBase`1.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
       <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.CommunicationState" Usage="System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::CommunicationState State { System::ServiceModel::CommunicationState get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>
@@ -951,6 +978,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -991,6 +1019,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginClose(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginClose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginClose(AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginClose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -1033,6 +1062,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginClose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginClose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -1087,6 +1117,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginOpen(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginOpen" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginOpen(AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginOpen;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)</InterfaceMember>
@@ -1129,6 +1160,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginOpen" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginOpen;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -1173,6 +1205,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close" />
       <MemberSignature Language="VB.NET" Value="Sub Close () Implements ICommunicationObject.Close" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Close() = System::ServiceModel::ICommunicationObject::Close;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
@@ -1197,6 +1230,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Sub Close (timeout As TimeSpan) Implements ICommunicationObject.Close" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Close(TimeSpan timeout) = System::ServiceModel::ICommunicationObject::Close;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</InterfaceMember>
@@ -1292,6 +1326,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.EndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Sub EndClose (result As IAsyncResult) Implements ICommunicationObject.EndClose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.EndClose(IAsyncResult ^ result) = System::ServiceModel::ICommunicationObject::EndClose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</InterfaceMember>
@@ -1331,6 +1366,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.EndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Sub EndOpen (result As IAsyncResult) Implements ICommunicationObject.EndOpen" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.EndOpen(IAsyncResult ^ result) = System::ServiceModel::ICommunicationObject::EndOpen;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</InterfaceMember>
@@ -1398,6 +1434,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open" />
       <MemberSignature Language="VB.NET" Value="Sub Open () Implements ICommunicationObject.Open" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Open() = System::ServiceModel::ICommunicationObject::Open;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
@@ -1422,6 +1459,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Sub Open (timeout As TimeSpan) Implements ICommunicationObject.Open" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Open(TimeSpan timeout) = System::ServiceModel::ICommunicationObject::Open;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</InterfaceMember>

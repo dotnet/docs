@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetHttpsBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetHttpsBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetHttpsBinding, NetHttpsBindingElement)" />
   <TypeSignature Language="F#" Value="type NetHttpsBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetHttpsBinding, NetHttpsBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetHttpsBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetHttpsBinding ^, System::ServiceModel::Configuration::NetHttpsBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpsBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetHttpsBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.DefaultAuthenticationModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultAuthenticationModule&#xA;Implements IHttpModule" />
   <TypeSignature Language="F#" Value="type DefaultAuthenticationModule = class&#xA;    interface IHttpModule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultAuthenticationModule sealed : System::Web::IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.DefaultAuthenticationModule.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultAuthenticationModule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Security.DefaultAuthenticationModule.Authenticate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Authenticate As DefaultAuthenticationEventHandler " />
       <MemberSignature Language="F#" Value="member this.Authenticate : System.Web.Security.DefaultAuthenticationEventHandler " Usage="member this.Authenticate : System.Web.Security.DefaultAuthenticationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Security::DefaultAuthenticationEventHandler ^ Authenticate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.DefaultAuthenticationModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="defaultAuthenticationModule.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.DefaultAuthenticationModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
       <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="defaultAuthenticationModule.Init app" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>

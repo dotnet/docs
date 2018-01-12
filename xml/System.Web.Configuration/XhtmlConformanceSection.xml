@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.XhtmlConformanceSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XhtmlConformanceSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type XhtmlConformanceSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XhtmlConformanceSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.XhtmlConformanceSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XhtmlConformanceSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.XhtmlConformanceSection.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As XhtmlConformanceMode" />
       <MemberSignature Language="F#" Value="member this.Mode : System.Web.Configuration.XhtmlConformanceMode with get, set" Usage="System.Web.Configuration.XhtmlConformanceSection.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::XhtmlConformanceMode Mode { System::Web::Configuration::XhtmlConformanceMode get(); void set(System::Web::Configuration::XhtmlConformanceMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.XhtmlConformanceSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.XhtmlConformanceSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

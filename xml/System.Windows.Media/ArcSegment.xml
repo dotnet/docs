@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ArcSegment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArcSegment&#xA;Inherits PathSegment" />
   <TypeSignature Language="F#" Value="type ArcSegment = class&#xA;    inherit PathSegment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArcSegment sealed : System::Windows::Media::PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ArcSegment.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArcSegment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +110,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point, valuetype System.Windows.Size size, float64 rotationAngle, bool isLargeArc, valuetype System.Windows.Media.SweepDirection sweepDirection, bool isStroked) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ArcSegment.#ctor(System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.ArcSegment : System.Windows.Point * System.Windows.Size * double * bool * System.Windows.Media.SweepDirection * bool -&gt; System.Windows.Media.ArcSegment" Usage="new System.Windows.Media.ArcSegment (point, size, rotationAngle, isLargeArc, sweepDirection, isStroked)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArcSegment(System::Windows::Point point, System::Windows::Size size, double rotationAngle, bool isLargeArc, System::Windows::Media::SweepDirection sweepDirection, bool isStroked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +154,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ArcSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ArcSegment" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.ArcSegment" Usage="arcSegment.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ArcSegment ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,6 +185,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ArcSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ArcSegment" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.ArcSegment" Usage="arcSegment.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ArcSegment ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +216,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ArcSegment.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="arcSegment.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +238,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ArcSegment.IsLargeArc" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLargeArc As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLargeArc : bool with get, set" Usage="System.Windows.Media.ArcSegment.IsLargeArc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLargeArc { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -274,6 +281,7 @@ ArcSegment objects with different IsLargeArc settings
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ArcSegment.IsLargeArcProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLargeArcProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsLargeArcProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ArcSegment.IsLargeArcProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsLargeArcProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,6 +301,7 @@ ArcSegment objects with different IsLargeArc settings
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ArcSegment.Point" />
       <MemberSignature Language="VB.NET" Value="Public Property Point As Point" />
       <MemberSignature Language="F#" Value="member this.Point : System.Windows.Point with get, set" Usage="System.Windows.Media.ArcSegment.Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -339,6 +348,7 @@ Several ArcSegment objects with different Point settings
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ArcSegment.PointProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PointProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ArcSegment.PointProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -358,6 +368,7 @@ Several ArcSegment objects with different Point settings
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ArcSegment.RotationAngle" />
       <MemberSignature Language="VB.NET" Value="Public Property RotationAngle As Double" />
       <MemberSignature Language="F#" Value="member this.RotationAngle : double with get, set" Usage="System.Windows.Media.ArcSegment.RotationAngle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RotationAngle { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -398,6 +409,7 @@ Several ArcSegment objects with different RotationAngle settings
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ArcSegment.RotationAngleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RotationAngleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RotationAngleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ArcSegment.RotationAngleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RotationAngleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -417,6 +429,7 @@ Several ArcSegment objects with different RotationAngle settings
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ArcSegment.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="F#" Value="member this.Size : System.Windows.Size with get, set" Usage="System.Windows.Media.ArcSegment.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size Size { System::Windows::Size get(); void set(System::Windows::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -455,6 +468,7 @@ Several ArcSegment objects with different Size settings
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ArcSegment.SizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ArcSegment.SizeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -474,6 +488,7 @@ Several ArcSegment objects with different Size settings
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ArcSegment.SweepDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property SweepDirection As SweepDirection" />
       <MemberSignature Language="F#" Value="member this.SweepDirection : System.Windows.Media.SweepDirection with get, set" Usage="System.Windows.Media.ArcSegment.SweepDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::SweepDirection SweepDirection { System::Windows::Media::SweepDirection get(); void set(System::Windows::Media::SweepDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -514,6 +529,7 @@ ArcSegment objects with different SweepDirection settings
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ArcSegment.SweepDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SweepDirectionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SweepDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.ArcSegment.SweepDirectionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SweepDirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

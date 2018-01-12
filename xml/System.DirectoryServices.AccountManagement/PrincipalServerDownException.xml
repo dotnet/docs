@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalServerDownException" />
   <TypeSignature Language="VB.NET" Value="Public Class PrincipalServerDownException&#xA;Inherits PrincipalException" />
   <TypeSignature Language="F#" Value="type PrincipalServerDownException = class&#xA;    inherit PrincipalException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalServerDownException : System::DirectoryServices::AccountManagement::PrincipalException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalServerDownException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalServerDownException : string -&gt; System.DirectoryServices.AccountManagement.PrincipalServerDownException" Usage="new System.DirectoryServices.AccountManagement.PrincipalServerDownException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalServerDownException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalServerDownException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.AccountManagement.PrincipalServerDownException" Usage="new System.DirectoryServices.AccountManagement.PrincipalServerDownException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrincipalServerDownException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalServerDownException : string * Exception -&gt; System.DirectoryServices.AccountManagement.PrincipalServerDownException" Usage="new System.DirectoryServices.AccountManagement.PrincipalServerDownException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalServerDownException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalServerDownException : string * int -&gt; System.DirectoryServices.AccountManagement.PrincipalServerDownException" Usage="new System.DirectoryServices.AccountManagement.PrincipalServerDownException (message, errorCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalServerDownException(System::String ^ message, int errorCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor(System.String,System.Exception,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, errorCode As Integer)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalServerDownException : string * Exception * int -&gt; System.DirectoryServices.AccountManagement.PrincipalServerDownException" Usage="new System.DirectoryServices.AccountManagement.PrincipalServerDownException (message, innerException, errorCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalServerDownException(System::String ^ message, Exception ^ innerException, int errorCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.#ctor(System.String,System.Exception,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, errorCode As Integer, serverName As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalServerDownException : string * Exception * int * string -&gt; System.DirectoryServices.AccountManagement.PrincipalServerDownException" Usage="new System.DirectoryServices.AccountManagement.PrincipalServerDownException (message, innerException, errorCode, serverName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalServerDownException(System::String ^ message, Exception ^ innerException, int errorCode, System::String ^ serverName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalServerDownException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="principalServerDownException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowHostingOptionsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type WorkflowHostingOptionsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowHostingOptionsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowHostingOptionsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.OverrideSiteName" />
       <MemberSignature Language="VB.NET" Value="Public Property OverrideSiteName As Boolean" />
       <MemberSignature Language="F#" Value="member this.OverrideSiteName : bool with get, set" Usage="System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.OverrideSiteName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverrideSiteName { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

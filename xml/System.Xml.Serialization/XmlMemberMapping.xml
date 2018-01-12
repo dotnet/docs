@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMemberMapping" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlMemberMapping" />
   <TypeSignature Language="F#" Value="type XmlMemberMapping = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlMemberMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.Any" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Any As Boolean" />
       <MemberSignature Language="F#" Value="member this.Any : bool" Usage="System.Xml.Serialization.XmlMemberMapping.Any" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Any { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.CheckSpecified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckSpecified As Boolean" />
       <MemberSignature Language="F#" Value="member this.CheckSpecified : bool" Usage="System.Xml.Serialization.XmlMemberMapping.CheckSpecified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckSpecified { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.ElementName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Xml.Serialization.XmlMemberMapping.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlMemberMapping.GenerateTypeName(System.CodeDom.Compiler.CodeDomProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateTypeName (codeProvider As CodeDomProvider) As String" />
       <MemberSignature Language="F#" Value="member this.GenerateTypeName : System.CodeDom.Compiler.CodeDomProvider -&gt; string" Usage="xmlMemberMapping.GenerateTypeName codeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateTypeName(System::CodeDom::Compiler::CodeDomProvider ^ codeProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
       <MemberSignature Language="F#" Value="member this.MemberName : string" Usage="System.Xml.Serialization.XmlMemberMapping.MemberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.Xml.Serialization.XmlMemberMapping.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.TypeFullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeFullName As String" />
       <MemberSignature Language="F#" Value="member this.TypeFullName : string" Usage="System.Xml.Serialization.XmlMemberMapping.TypeFullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeFullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Xml.Serialization.XmlMemberMapping.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -320,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.TypeNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeNamespace As String" />
       <MemberSignature Language="F#" Value="member this.TypeNamespace : string" Usage="System.Xml.Serialization.XmlMemberMapping.TypeNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -350,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMemberMapping.XsdElementName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XsdElementName As String" />
       <MemberSignature Language="F#" Value="member this.XsdElementName : string" Usage="System.Xml.Serialization.XmlMemberMapping.XsdElementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XsdElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

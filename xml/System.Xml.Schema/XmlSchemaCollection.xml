@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaCollection&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type XmlSchemaCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.#ctor(System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nametable As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaCollection : System.Xml.XmlNameTable -&gt; System.Xml.Schema.XmlSchemaCollection" Usage="new System.Xml.Schema.XmlSchemaCollection nametable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaCollection(System::Xml::XmlNameTable ^ nametable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -169,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (schema As XmlSchema) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Schema.XmlSchema -&gt; System.Xml.Schema.XmlSchema" Usage="xmlSchemaCollection.Add schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchema ^ Add(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.Xml.Schema.XmlSchemaCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (schema As XmlSchemaCollection)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Schema.XmlSchemaCollection -&gt; unit" Usage="xmlSchemaCollection.Add schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Xml::Schema::XmlSchemaCollection ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -271,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (ns As String, uri As String) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; System.Xml.Schema.XmlSchema" Usage="xmlSchemaCollection.Add (ns, uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchema ^ Add(System::String ^ ns, System::String ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -362,6 +368,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (ns As String, reader As XmlReader) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Add : string * System.Xml.XmlReader -&gt; System.Xml.Schema.XmlSchema" Usage="xmlSchemaCollection.Add (ns, reader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchema ^ Add(System::String ^ ns, System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -420,6 +427,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.Xml.Schema.XmlSchema,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (schema As XmlSchema, resolver As XmlResolver) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Schema.XmlSchema * System.Xml.XmlResolver -&gt; System.Xml.Schema.XmlSchema" Usage="xmlSchemaCollection.Add (schema, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchema ^ Add(System::Xml::Schema::XmlSchema ^ schema, System::Xml::XmlResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -480,6 +488,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.String,System.Xml.XmlReader,System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (ns As String, reader As XmlReader, resolver As XmlResolver) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Add : string * System.Xml.XmlReader * System.Xml.XmlResolver -&gt; System.Xml.Schema.XmlSchema" Usage="xmlSchemaCollection.Add (ns, reader, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchema ^ Add(System::String ^ ns, System::Xml::XmlReader ^ reader, System::Xml::XmlResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -556,6 +565,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (ns As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="xmlSchemaCollection.Contains ns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -608,6 +618,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Contains(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (schema As XmlSchema) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : System.Xml.Schema.XmlSchema -&gt; bool" Usage="xmlSchemaCollection.Contains schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -651,6 +662,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.CopyTo(System.Xml.Schema.XmlSchema[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As XmlSchema(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.Xml.Schema.XmlSchema[] * int -&gt; unit" Usage="xmlSchemaCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Xml::Schema::XmlSchema ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -694,6 +706,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Xml.Schema.XmlSchemaCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -735,6 +748,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As XmlSchemaCollectionEnumerator" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Xml.Schema.XmlSchemaCollectionEnumerator" Usage="xmlSchemaCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchemaCollectionEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -784,6 +798,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ns As String) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Xml.Schema.XmlSchema" Usage="System.Xml.Schema.XmlSchemaCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchema ^ default[System::String ^] { System::Xml::Schema::XmlSchema ^ get(System::String ^ ns); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -835,6 +850,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameTable As XmlNameTable" />
       <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.Schema.XmlSchemaCollection.NameTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -872,6 +888,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -916,6 +933,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="F#" Usage="System.Xml.Schema.XmlSchemaCollection.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -955,6 +973,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Xml.Schema.XmlSchemaCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -994,6 +1013,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Xml.Schema.XmlSchemaCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1032,6 +1052,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1071,6 +1092,7 @@ schemaColl.Add("urn:author", "names.xsd");
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Schema.ValidationEventHandler ValidationEventHandler" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Schema.XmlSchemaCollection.ValidationEventHandler" />
       <MemberSignature Language="F#" Value="member this.ValidationEventHandler : System.Xml.Schema.ValidationEventHandler " Usage="member this.ValidationEventHandler : System.Xml.Schema.ValidationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::Schema::ValidationEventHandler ^ ValidationEventHandler;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

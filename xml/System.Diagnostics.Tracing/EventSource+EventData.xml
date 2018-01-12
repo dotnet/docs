@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected sequential ansi sealed beforefieldinit EventSource/EventData extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSource.EventData" />
   <TypeSignature Language="VB.NET" Value="Protected Friend Structure EventSource.EventData" />
+  <TypeSignature Language="C++ CLI" Value="public protected value class EventSource::EventData" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
       <MemberSignature Language="VB.NET" Value="Public Property DataPointer As IntPtr" />
       <MemberSignature Language="F#" Value="member this.DataPointer : nativeint with get, set" Usage="System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr DataPointer { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -95,6 +97,7 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
       <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Diagnostics.Tracing.EventSource.EventData.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

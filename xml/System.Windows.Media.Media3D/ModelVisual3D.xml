@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.ModelVisual3D" />
   <TypeSignature Language="VB.NET" Value="Public Class ModelVisual3D&#xA;Inherits Visual3D&#xA;Implements IAddChild" />
   <TypeSignature Language="F#" Value="type ModelVisual3D = class&#xA;    inherit Visual3D&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelVisual3D : System::Windows::Media::Media3D::Visual3D, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelVisual3D.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelVisual3D();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ModelVisual3D.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As Visual3DCollection" />
       <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.Media3D.Visual3DCollection" Usage="System.Windows.Media.Media3D.ModelVisual3D.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Visual3DCollection ^ Children { System::Windows::Media::Media3D::Visual3DCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ModelVisual3D.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As Model3D" />
       <MemberSignature Language="F#" Value="member this.Content : System.Windows.Media.Media3D.Model3D with get, set" Usage="System.Windows.Media.Media3D.ModelVisual3D.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Model3D ^ Content { System::Windows::Media::Media3D::Model3D ^ get(); void set(System::Windows::Media::Media3D::Model3D ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ModelVisual3D.ContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ModelVisual3D.ContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelVisual3D.GetVisual3DChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function GetVisual3DChild (index As Integer) As Visual3D" />
       <MemberSignature Language="F#" Value="override this.GetVisual3DChild : int -&gt; System.Windows.Media.Media3D.Visual3D" Usage="modelVisual3D.GetVisual3DChild index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Visual3D ^ GetVisual3DChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelVisual3D.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -219,6 +226,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.ModelVisual3D.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ModelVisual3D.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform3D" />
       <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Media3D.Transform3D with get, set" Usage="System.Windows.Media.Media3D.ModelVisual3D.Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Transform3D ^ Transform { System::Windows::Media::Media3D::Transform3D ^ get(); void set(System::Windows::Media::Media3D::Transform3D ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.ModelVisual3D.TransformProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TransformProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.ModelVisual3D.TransformProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.ModelVisual3D.Visual3DChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable ReadOnly Property Visual3DChildrenCount As Integer" />
       <MemberSignature Language="F#" Value="member this.Visual3DChildrenCount : int" Usage="System.Windows.Media.Media3D.ModelVisual3D.Visual3DChildrenCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Visual3DChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

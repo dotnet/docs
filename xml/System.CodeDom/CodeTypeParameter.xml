@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTypeParameter&#xA;Inherits CodeObject" />
   <TypeSignature Language="F#" Value="type CodeTypeParameter = class&#xA;    inherit CodeObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeParameter : System::CodeDom::CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameter.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeParameter : string -&gt; System.CodeDom.CodeTypeParameter" Usage="new System.CodeDom.CodeTypeParameter name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeParameter(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constraints As CodeTypeReferenceCollection" />
       <MemberSignature Language="F#" Value="member this.Constraints : System.CodeDom.CodeTypeReferenceCollection" Usage="System.CodeDom.CodeTypeParameter.Constraints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ Constraints { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.CustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomAttributes As CodeAttributeDeclarationCollection" />
       <MemberSignature Language="F#" Value="member this.CustomAttributes : System.CodeDom.CodeAttributeDeclarationCollection" Usage="System.CodeDom.CodeTypeParameter.CustomAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeAttributeDeclarationCollection ^ CustomAttributes { System::CodeDom::CodeAttributeDeclarationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.HasConstructorConstraint" />
       <MemberSignature Language="VB.NET" Value="Public Property HasConstructorConstraint As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasConstructorConstraint : bool with get, set" Usage="System.CodeDom.CodeTypeParameter.HasConstructorConstraint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasConstructorConstraint { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameter.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeTypeParameter.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

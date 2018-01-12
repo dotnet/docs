@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.ManagedInstallerClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagedInstallerClass&#xA;Implements IManagedInstaller" />
   <TypeSignature Language="F#" Value="type ManagedInstallerClass = class&#xA;    interface IManagedInstaller" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagedInstallerClass : System::Configuration::Install::IManagedInstaller" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.ManagedInstallerClass.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagedInstallerClass();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.ManagedInstallerClass.InstallHelper(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallHelper (args As String())" />
       <MemberSignature Language="F#" Value="static member InstallHelper : string[] -&gt; unit" Usage="System.Configuration.Install.ManagedInstallerClass.InstallHelper args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallHelper(cli::array &lt;System::String ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Configuration.Install.IManagedInstaller.ManagedInstall(string argString, int32 hInstall) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.ManagedInstallerClass.System#Configuration#Install#IManagedInstaller#ManagedInstall(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Function ManagedInstall (argString As String, hInstall As Integer) As Integer Implements IManagedInstaller.ManagedInstall" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Configuration.Install.IManagedInstaller.ManagedInstall(System::String ^ argString, int hInstall) = System::Configuration::Install::IManagedInstaller::ManagedInstall;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.Install.IManagedInstaller.ManagedInstall(System.String,System.Int32)</InterfaceMember>

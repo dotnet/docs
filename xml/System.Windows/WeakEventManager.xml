@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.WeakEventManager" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WeakEventManager&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="F#" Value="type WeakEventManager = class&#xA;    inherit DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WeakEventManager abstract : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WeakEventManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.DeliverEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DeliverEvent (sender As Object, args As EventArgs)" />
       <MemberSignature Language="F#" Value="member this.DeliverEvent : obj * EventArgs -&gt; unit" Usage="weakEventManager.DeliverEvent (sender, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DeliverEvent(System::Object ^ sender, EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.GetCurrentManager(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetCurrentManager (managerType As Type) As WeakEventManager" />
       <MemberSignature Language="F#" Value="static member GetCurrentManager : Type -&gt; System.Windows.WeakEventManager" Usage="System.Windows.WeakEventManager.GetCurrentManager managerType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Windows::WeakEventManager ^ GetCurrentManager(Type ^ managerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Protected Property Item(source As Object) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Windows.WeakEventManager.Item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ source); void set(System::Object ^ source, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedAddHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProtectedAddHandler (source As Object, handler As Delegate)" />
       <MemberSignature Language="F#" Value="member this.ProtectedAddHandler : obj * Delegate -&gt; unit" Usage="weakEventManager.ProtectedAddHandler (source, handler)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProtectedAddHandler(System::Object ^ source, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedAddListener(System.Object,System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProtectedAddListener (source As Object, listener As IWeakEventListener)" />
       <MemberSignature Language="F#" Value="member this.ProtectedAddListener : obj * System.Windows.IWeakEventListener -&gt; unit" Usage="weakEventManager.ProtectedAddListener (source, listener)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProtectedAddListener(System::Object ^ source, System::Windows::IWeakEventListener ^ listener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedRemoveHandler(System.Object,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProtectedRemoveHandler (source As Object, handler As Delegate)" />
       <MemberSignature Language="F#" Value="member this.ProtectedRemoveHandler : obj * Delegate -&gt; unit" Usage="weakEventManager.ProtectedRemoveHandler (source, handler)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProtectedRemoveHandler(System::Object ^ source, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedRemoveListener(System.Object,System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ProtectedRemoveListener (source As Object, listener As IWeakEventListener)" />
       <MemberSignature Language="F#" Value="member this.ProtectedRemoveListener : obj * System.Windows.IWeakEventListener -&gt; unit" Usage="weakEventManager.ProtectedRemoveListener (source, listener)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ProtectedRemoveListener(System::Object ^ source, System::Windows::IWeakEventListener ^ listener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Purge (source As Object, data As Object, purgeAll As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Purge : obj * obj * bool -&gt; bool&#xA;override this.Purge : obj * obj * bool -&gt; bool" Usage="weakEventManager.Purge (source, data, purgeAll)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool Purge(System::Object ^ source, System::Object ^ data, bool purgeAll);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -382,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.ReadLock" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ReadLock As IDisposable" />
       <MemberSignature Language="F#" Value="member this.ReadLock : IDisposable" Usage="System.Windows.WeakEventManager.ReadLock" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property IDisposable ^ ReadLock { IDisposable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -412,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Remove (source As Object)" />
       <MemberSignature Language="F#" Value="member this.Remove : obj -&gt; unit" Usage="weakEventManager.Remove source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Remove(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -438,6 +450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ScheduleCleanup" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ScheduleCleanup ()" />
       <MemberSignature Language="F#" Value="member this.ScheduleCleanup : unit -&gt; unit" Usage="weakEventManager.ScheduleCleanup " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ScheduleCleanup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -467,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.SetCurrentManager(System.Type,System.Windows.WeakEventManager)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Sub SetCurrentManager (managerType As Type, manager As WeakEventManager)" />
       <MemberSignature Language="F#" Value="static member SetCurrentManager : Type * System.Windows.WeakEventManager -&gt; unit" Usage="System.Windows.WeakEventManager.SetCurrentManager (managerType, manager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void SetCurrentManager(Type ^ managerType, System::Windows::WeakEventManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -501,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub StartListening (source As Object)" />
       <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit" Usage="weakEventManager.StartListening source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void StartListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -530,6 +545,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub StopListening (source As Object)" />
       <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit" Usage="weakEventManager.StopListening source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void StopListening(System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -560,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.WriteLock" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WriteLock As IDisposable" />
       <MemberSignature Language="F#" Value="member this.WriteLock : IDisposable" Usage="System.Windows.WeakEventManager.WriteLock" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property IDisposable ^ WriteLock { IDisposable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

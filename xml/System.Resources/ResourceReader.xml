@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceReader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceReader&#xA;Implements IResourceReader" />
   <TypeSignature Language="F#" Value="type ResourceReader = class&#xA;    interface IResourceReader&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceReader sealed : System::Resources::IResourceReader" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.Reader</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -207,6 +208,7 @@ Label15="Alternate Email Address:"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="new System.Resources.ResourceReader : System.IO.Stream -&gt; System.Resources.ResourceReader" Usage="new System.Resources.ResourceReader stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceReader(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.Reader</AssemblyName>
@@ -301,6 +303,7 @@ Label11="Mobile Phone:"
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="F#" Value="new System.Resources.ResourceReader : string -&gt; System.Resources.ResourceReader" Usage="new System.Resources.ResourceReader fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceReader(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -380,6 +383,7 @@ Label11="Mobile Phone:"
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="resourceReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Resources.IResourceReader.Close</InterfaceMember>
@@ -428,6 +432,7 @@ Label11="Mobile Phone:"
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="resourceReader.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -474,6 +479,7 @@ Label11="Mobile Phone:"
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="resourceReader.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Resources.IResourceReader.GetEnumerator</InterfaceMember>
@@ -572,6 +578,7 @@ Label11="Mobile Phone:"
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.GetResourceData(System.String,System.String@,System.Byte[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetResourceData (resourceName As String, ByRef resourceType As String, ByRef resourceData As Byte())" />
       <MemberSignature Language="F#" Value="member this.GetResourceData : string *  *  -&gt; unit" Usage="resourceReader.GetResourceData (resourceName, resourceType, resourceData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetResourceData(System::String ^ resourceName, [Runtime::InteropServices::Out] System::String ^ % resourceType, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % resourceData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -643,6 +650,7 @@ Label11="Mobile Phone:"
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

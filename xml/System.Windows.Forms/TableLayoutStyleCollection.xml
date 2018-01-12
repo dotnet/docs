@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutStyleCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TableLayoutStyleCollection&#xA;Implements IList" />
   <TypeSignature Language="F#" Value="type TableLayoutStyleCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableLayoutStyleCollection abstract : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.Add(System.Windows.Forms.TableLayoutStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (style As TableLayoutStyle) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : System.Windows.Forms.TableLayoutStyle -&gt; int" Usage="tableLayoutStyleCollection.Add style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Forms::TableLayoutStyle ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="tableLayoutStyleCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.TableLayoutStyleCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TableLayoutStyle" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.TableLayoutStyle with get, set" Usage="System.Windows.Forms.TableLayoutStyleCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutStyle ^ default[int] { System::Windows::Forms::TableLayoutStyle ^ get(int index); void set(int index, System::Windows::Forms::TableLayoutStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="tableLayoutStyleCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -225,6 +231,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int startIndex) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.TableLayoutStyleCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.TableLayoutStyleCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -320,6 +329,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -350,6 +360,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Add (style As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ style) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -383,6 +394,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (style As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ style) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -417,6 +429,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (style As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ style) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -450,6 +463,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, style As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ style) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -487,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.TableLayoutStyleCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -518,6 +533,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.TableLayoutStyleCollection.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -549,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.TableLayoutStyleCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -582,6 +599,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutStyleCollection.System#Collections#IList#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (style As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ style) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>

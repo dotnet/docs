@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" />
   <TypeSignature Language="VB.NET" Value="Public Class FilterTableEntryElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type FilterTableEntryElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FilterTableEntryElement : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterTableEntryElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.BackupList" />
       <MemberSignature Language="VB.NET" Value="Public Property BackupList As String" />
       <MemberSignature Language="F#" Value="member this.BackupList : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterTableEntryElement.BackupList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackupList { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointName As String" />
       <MemberSignature Language="F#" Value="member this.EndpointName : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.FilterName" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterName As String" />
       <MemberSignature Language="F#" Value="member this.FilterName : string with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterTableEntryElement.FilterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
       <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

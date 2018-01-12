@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoEncryptedKey" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyInfoEncryptedKey&#xA;Inherits KeyInfoClause" />
   <TypeSignature Language="F#" Value="type KeyInfoEncryptedKey = class&#xA;    inherit KeyInfoClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoEncryptedKey : System::Security::Cryptography::Xml::KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoEncryptedKey.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoEncryptedKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoEncryptedKey.#ctor(System.Security.Cryptography.Xml.EncryptedKey)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoEncryptedKey : System.Security.Cryptography.Xml.EncryptedKey -&gt; System.Security.Cryptography.Xml.KeyInfoEncryptedKey" Usage="new System.Security.Cryptography.Xml.KeyInfoEncryptedKey ek" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ek As EncryptedKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoEncryptedKey(System::Security::Cryptography::Xml::EncryptedKey ^ ek);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoEncryptedKey.EncryptedKey" />
       <MemberSignature Language="VB.NET" Value="Public Property EncryptedKey As EncryptedKey" />
       <MemberSignature Language="F#" Value="member this.EncryptedKey : System.Security.Cryptography.Xml.EncryptedKey with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoEncryptedKey.EncryptedKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::EncryptedKey ^ EncryptedKey { System::Security::Cryptography::Xml::EncryptedKey ^ get(); void set(System::Security::Cryptography::Xml::EncryptedKey ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoEncryptedKey.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
       <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoEncryptedKey.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoEncryptedKey.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoEncryptedKey.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.EntityHandling" />
   <TypeSignature Language="VB.NET" Value="Public Enum EntityHandling" />
   <TypeSignature Language="F#" Value="type EntityHandling = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EntityHandling" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.EntityHandling.ExpandCharEntities" />
       <MemberSignature Language="VB.NET" Value="ExpandCharEntities" />
       <MemberSignature Language="F#" Value="ExpandCharEntities = 2" Usage="System.Xml.EntityHandling.ExpandCharEntities" />
+      <MemberSignature Language="C++ CLI" Value="ExpandCharEntities" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.EntityHandling.ExpandEntities" />
       <MemberSignature Language="VB.NET" Value="ExpandEntities" />
       <MemberSignature Language="F#" Value="ExpandEntities = 1" Usage="System.Xml.EntityHandling.ExpandEntities" />
+      <MemberSignature Language="C++ CLI" Value="ExpandEntities" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

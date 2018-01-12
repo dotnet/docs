@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceHostFactoryBase" />
   <TypeSignature Language="F#" Value="type ServiceHostFactoryBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostFactoryBase abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactoryBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceHostFactoryBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactoryBase.CreateServiceHost(System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
       <MemberSignature Language="F#" Value="abstract member CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="serviceHostFactoryBase.CreateServiceHost (constructorString, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointAddress10" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointAddress10&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="F#" Value="type EndpointAddress10 = class&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EndpointAddress10 : System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress10.FromEndpointAddress(System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromEndpointAddress (address As EndpointAddress) As EndpointAddress10" />
       <MemberSignature Language="F#" Value="static member FromEndpointAddress : System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.EndpointAddress10" Usage="System.ServiceModel.EndpointAddress10.FromEndpointAddress address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointAddress10 ^ FromEndpointAddress(System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlQualifiedName GetSchema(class System.Xml.Schema.XmlSchemaSet xmlSchemaSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress10.GetSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="F#" Value="static member GetSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.ServiceModel.EndpointAddress10.GetSchema xmlSchemaSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetSchema(System::Xml::Schema::XmlSchemaSet ^ xmlSchemaSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress10.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -145,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress10.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -170,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress10.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddress10.ToEndpointAddress" />
       <MemberSignature Language="VB.NET" Value="Public Function ToEndpointAddress () As EndpointAddress" />
       <MemberSignature Language="F#" Value="member this.ToEndpointAddress : unit -&gt; System.ServiceModel.EndpointAddress" Usage="endpointAddress10.ToEndpointAddress " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointAddress ^ ToEndpointAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

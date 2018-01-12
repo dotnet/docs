@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DataControlReference" />
   <TypeSignature Language="VB.NET" Value="Public Class DataControlReference" />
   <TypeSignature Language="F#" Value="type DataControlReference = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataControlReference" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReference.ControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
       <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.DynamicData.DataControlReference.ControlID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReference.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As DynamicDataManager" />
       <MemberSignature Language="F#" Value="member this.Owner : System.Web.DynamicData.DynamicDataManager" Usage="System.Web.DynamicData.DataControlReference.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::DynamicDataManager ^ Owner { System::Web::DynamicData::DynamicDataManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReference.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataControlReference.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

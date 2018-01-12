@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowSchedulerService&#xA;Inherits WorkflowRuntimeService" />
   <TypeSignature Language="F#" Value="type WorkflowSchedulerService = class&#xA;    inherit WorkflowRuntimeService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowSchedulerService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowSchedulerService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Cancel (timerId As Guid)" />
       <MemberSignature Language="F#" Value="abstract member Cancel : Guid -&gt; unit" Usage="workflowSchedulerService.Cancel timerId" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Cancel(Guid timerId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Schedule (callback As WaitCallback, workflowInstanceId As Guid)" />
       <MemberSignature Language="F#" Value="abstract member Schedule : System.Threading.WaitCallback * Guid -&gt; unit" Usage="workflowSchedulerService.Schedule (callback, workflowInstanceId)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Schedule(System::Threading::WaitCallback ^ callback, Guid workflowInstanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Schedule (callback As WaitCallback, workflowInstanceId As Guid, whenUtc As DateTime, timerId As Guid)" />
       <MemberSignature Language="F#" Value="abstract member Schedule : System.Threading.WaitCallback * Guid * DateTime * Guid -&gt; unit" Usage="workflowSchedulerService.Schedule (callback, workflowInstanceId, whenUtc, timerId)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Schedule(System::Threading::WaitCallback ^ callback, Guid workflowInstanceId, DateTime whenUtc, Guid timerId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

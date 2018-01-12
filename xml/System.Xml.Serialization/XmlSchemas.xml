@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSchemas" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemas&#xA;Inherits CollectionBase&#xA;Implements IEnumerable(Of XmlSchema)" />
   <TypeSignature Language="F#" Value="type XmlSchemas = class&#xA;    inherit CollectionBase&#xA;    interface seq&lt;XmlSchema&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemas : System::Collections::CollectionBase, System::Collections::Generic::IEnumerable&lt;System::Xml::Schema::XmlSchema ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemas();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Add(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (schema As XmlSchema) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Schema.XmlSchema -&gt; int" Usage="xmlSchemas.Add schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Add(System.Xml.Serialization.XmlSchemas)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (schemas As XmlSchemas)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Serialization.XmlSchemas -&gt; unit" Usage="xmlSchemas.Add schemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Xml::Serialization::XmlSchemas ^ schemas);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Add(System.Xml.Schema.XmlSchema,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (schema As XmlSchema, baseUri As Uri) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Schema.XmlSchema * Uri -&gt; int" Usage="xmlSchemas.Add (schema, baseUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Xml::Schema::XmlSchema ^ schema, Uri ^ baseUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.AddReference(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddReference (schema As XmlSchema)" />
       <MemberSignature Language="F#" Value="member this.AddReference : System.Xml.Schema.XmlSchema -&gt; unit" Usage="xmlSchemas.AddReference schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReference(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Compile(System.Xml.Schema.ValidationEventHandler,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Compile (handler As ValidationEventHandler, fullCompile As Boolean)" />
       <MemberSignature Language="F#" Value="member this.Compile : System.Xml.Schema.ValidationEventHandler * bool -&gt; unit" Usage="xmlSchemas.Compile (handler, fullCompile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Compile(System::Xml::Schema::ValidationEventHandler ^ handler, bool fullCompile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (targetNamespace As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="xmlSchemas.Contains targetNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ targetNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Contains(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (schema As XmlSchema) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : System.Xml.Schema.XmlSchema -&gt; bool" Usage="xmlSchemas.Contains schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.CopyTo(System.Xml.Schema.XmlSchema[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As XmlSchema(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.Xml.Schema.XmlSchema[] * int -&gt; unit" Usage="xmlSchemas.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Xml::Schema::XmlSchema ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -374,6 +384,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Find(class System.Xml.XmlQualifiedName name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Find(System.Xml.XmlQualifiedName,System.Type)" />
       <MemberSignature Language="F#" Value="member this.Find : System.Xml.XmlQualifiedName * Type -&gt; obj" Usage="xmlSchemas.Find (name, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Find(System::Xml::XmlQualifiedName ^ name, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -410,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.GetSchemas(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchemas (ns As String) As IList" />
       <MemberSignature Language="F#" Value="member this.GetSchemas : string -&gt; System.Collections.IList" Usage="xmlSchemas.GetSchemas ns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IList ^ GetSchemas(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -451,6 +463,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.IndexOf(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (schema As XmlSchema) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Xml.Schema.XmlSchema -&gt; int" Usage="xmlSchemas.IndexOf schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -485,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Insert(System.Int32,System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, schema As XmlSchema)" />
       <MemberSignature Language="F#" Value="member this.Insert : int * System.Xml.Schema.XmlSchema -&gt; unit" Usage="xmlSchemas.Insert (index, schema)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -520,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemas.IsCompiled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompiled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCompiled : bool" Usage="System.Xml.Serialization.XmlSchemas.IsCompiled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompiled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -558,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.IsDataSet(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDataSet (schema As XmlSchema) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDataSet : System.Xml.Schema.XmlSchema -&gt; bool" Usage="System.Xml.Serialization.XmlSchemas.IsDataSet schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDataSet(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -612,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemas.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Xml.Schema.XmlSchema with get, set" Usage="System.Xml.Serialization.XmlSchemas.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchema ^ default[int] { System::Xml::Schema::XmlSchema ^ get(int index); void set(int index, System::Xml::Schema::XmlSchema ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -646,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemas.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ns As String) As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Xml.Schema.XmlSchema" Usage="System.Xml.Serialization.XmlSchemas.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchema ^ default[System::String ^] { System::Xml::Schema::XmlSchema ^ get(System::String ^ ns); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -680,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="xmlSchemas.OnClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -710,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="xmlSchemas.OnInsert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -745,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="override this.OnRemove : int * obj -&gt; unit" Usage="xmlSchemas.OnRemove (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -780,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="F#" Value="override this.OnSet : int * obj * obj -&gt; unit" Usage="xmlSchemas.OnSet (index, oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -817,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.Remove(System.Xml.Schema.XmlSchema)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (schema As XmlSchema)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Xml.Schema.XmlSchema -&gt; unit" Usage="xmlSchemas.Remove schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -849,6 +872,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Xml.Schema.XmlSchema&gt; System.Collections.Generic.IEnumerable&lt;System.Xml.Schema.XmlSchema&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.System#Collections#Generic#IEnumerable&lt;System#Xml#Schema#XmlSchema&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of XmlSchema) Implements IEnumerable(Of XmlSchema).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Xml::Schema::XmlSchema ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Xml.Schema.XmlSchema&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Xml::Schema::XmlSchema ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>

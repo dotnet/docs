@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.TypeDescriptionProviderService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TypeDescriptionProviderService" />
   <TypeSignature Language="F#" Value="type TypeDescriptionProviderService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptionProviderService abstract" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.TypeDescriptionProviderService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypeDescriptionProviderService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.TypeDescriptionProviderService.GetProvider(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetProvider (instance As Object) As TypeDescriptionProvider" />
       <MemberSignature Language="F#" Value="abstract member GetProvider : obj -&gt; System.ComponentModel.TypeDescriptionProvider" Usage="typeDescriptionProviderService.GetProvider instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::TypeDescriptionProvider ^ GetProvider(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.TypeDescriptionProvider GetProvider(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.TypeDescriptionProviderService.GetProvider(System.Type)" />
       <MemberSignature Language="F#" Value="abstract member GetProvider : Type -&gt; System.ComponentModel.TypeDescriptionProvider" Usage="typeDescriptionProviderService.GetProvider type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::TypeDescriptionProvider ^ GetProvider(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

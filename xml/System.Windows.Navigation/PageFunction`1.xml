@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.PageFunction`1" />
   <TypeSignature Language="VB.NET" Value="Public Class PageFunction(Of T)&#xA;Inherits PageFunctionBase" />
   <TypeSignature Language="F#" Value="type PageFunction&lt;'T&gt; = class&#xA;    inherit PageFunctionBase" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class PageFunction : System::Windows::Navigation::PageFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.PageFunction`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageFunction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.PageFunction`1.OnReturn(System.Windows.Navigation.ReturnEventArgs{`0})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReturn (e As ReturnEventArgs(Of T))" />
       <MemberSignature Language="F#" Value="abstract member OnReturn : System.Windows.Navigation.ReturnEventArgs&lt;'T&gt; -&gt; unit&#xA;override this.OnReturn : System.Windows.Navigation.ReturnEventArgs&lt;'T&gt; -&gt; unit" Usage="pageFunction.OnReturn e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReturn(System::Windows::Navigation::ReturnEventArgs&lt;T&gt; ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.PageFunction`1.Return" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Return As ReturnEventHandler(Of T) " />
       <MemberSignature Language="F#" Value="member this.Return : System.Windows.Navigation.ReturnEventHandler&lt;'T&gt; " Usage="member this.Return : System.Windows.Navigation.ReturnEventHandler&lt;'T&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::ReturnEventHandler&lt;T&gt; ^ Return;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

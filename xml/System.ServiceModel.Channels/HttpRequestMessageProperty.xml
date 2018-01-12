@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpRequestMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRequestMessageProperty&#xA;Implements IMessageProperty" />
   <TypeSignature Language="F#" Value="type HttpRequestMessageProperty = class&#xA;    interface IMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestMessageProperty sealed : System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageProperty.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestMessageProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As WebHeaderCollection" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.ServiceModel.Channels.HttpRequestMessageProperty.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Method" />
       <MemberSignature Language="VB.NET" Value="Public Property Method As String" />
       <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.ServiceModel.Channels.HttpRequestMessageProperty.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.HttpRequestMessageProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString" />
       <MemberSignature Language="VB.NET" Value="Public Property QueryString As String" />
       <MemberSignature Language="F#" Value="member this.QueryString : string with get, set" Usage="System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody" />
       <MemberSignature Language="VB.NET" Value="Public Property SuppressEntityBody As Boolean" />
       <MemberSignature Language="F#" Value="member this.SuppressEntityBody : bool with get, set" Usage="System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressEntityBody { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty System.ServiceModel.Channels.IMessageProperty.CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageProperty.System#ServiceModel#Channels#IMessageProperty#CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Function CreateCopy () As IMessageProperty Implements IMessageProperty.CreateCopy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ServiceModel::Channels::IMessageProperty ^ System.ServiceModel.Channels.IMessageProperty.CreateCopy() = System::ServiceModel::Channels::IMessageProperty::CreateCopy;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>

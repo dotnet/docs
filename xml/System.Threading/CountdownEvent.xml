@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.CountdownEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class CountdownEvent&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type CountdownEvent = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CountdownEvent : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer)" />
       <MemberSignature Language="F#" Value="new System.Threading.CountdownEvent : int -&gt; System.Threading.CountdownEvent" Usage="new System.Threading.CountdownEvent initialCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CountdownEvent(int initialCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.AddCount" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCount ()" />
       <MemberSignature Language="F#" Value="member this.AddCount : unit -&gt; unit" Usage="countdownEvent.AddCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.AddCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCount (signalCount As Integer)" />
       <MemberSignature Language="F#" Value="member this.AddCount : int -&gt; unit" Usage="countdownEvent.AddCount signalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCount(int signalCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.CurrentCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentCount As Integer" />
       <MemberSignature Language="F#" Value="member this.CurrentCount : int" Usage="System.Threading.CountdownEvent.CurrentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -226,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="countdownEvent.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="countdownEvent.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -313,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.InitialCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialCount As Integer" />
       <MemberSignature Language="F#" Value="member this.InitialCount : int" Usage="System.Threading.CountdownEvent.InitialCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InitialCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.IsSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSet As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSet : bool" Usage="System.Threading.CountdownEvent.IsSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSet { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -394,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="countdownEvent.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -433,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Reset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset (count As Integer)" />
       <MemberSignature Language="F#" Value="member this.Reset : int -&gt; unit" Usage="countdownEvent.Reset count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -488,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Signal" />
       <MemberSignature Language="VB.NET" Value="Public Function Signal () As Boolean" />
       <MemberSignature Language="F#" Value="member this.Signal : unit -&gt; bool" Usage="countdownEvent.Signal " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Signal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -522,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Signal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Signal (signalCount As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Signal : int -&gt; bool" Usage="countdownEvent.Signal signalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Signal(int signalCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -572,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.TryAddCount" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAddCount () As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryAddCount : unit -&gt; bool" Usage="countdownEvent.TryAddCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -607,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.TryAddCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAddCount (signalCount As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryAddCount : int -&gt; bool" Usage="countdownEvent.TryAddCount signalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAddCount(int signalCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -661,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait" />
       <MemberSignature Language="VB.NET" Value="Public Sub Wait ()" />
       <MemberSignature Language="F#" Value="member this.Wait : unit -&gt; unit" Usage="countdownEvent.Wait " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -700,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : int -&gt; bool" Usage="countdownEvent.Wait millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -737,6 +754,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : System.Threading.CancellationToken -&gt; unit" Usage="countdownEvent.Wait cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -781,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan -&gt; bool" Usage="countdownEvent.Wait timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -818,6 +837,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : int * System.Threading.CancellationToken -&gt; bool" Usage="countdownEvent.Wait (millisecondsTimeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -859,6 +879,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan * System.Threading.CancellationToken -&gt; bool" Usage="countdownEvent.Wait (timeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -901,6 +922,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.CountdownEvent.WaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitHandle As WaitHandle" />
       <MemberSignature Language="F#" Value="member this.WaitHandle : System.Threading.WaitHandle" Usage="System.Threading.CountdownEvent.WaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

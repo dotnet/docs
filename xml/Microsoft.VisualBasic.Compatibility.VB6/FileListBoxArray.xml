@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray" />
   <TypeSignature Language="VB.NET" Value="Public Class FileListBoxArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="F#" Value="type FileListBoxArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileListBoxArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileListBoxArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileListBoxArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.BackColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.BindingContextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="fileListBoxArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CausesValidationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -246,6 +253,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ChangeUICues" />
       <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
       <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -275,6 +283,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ContextMenuChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.CursorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -368,6 +379,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DisplayMemberChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DisplayMemberChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DisplayMemberChanged : EventHandler " Usage="member this.DisplayMemberChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DisplayMemberChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -399,6 +411,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DockChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -430,6 +443,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -459,6 +473,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragDrop" />
       <MemberSignature Language="VB.NET" Value="Public Event DragDrop As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -489,6 +504,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragEnter" />
       <MemberSignature Language="VB.NET" Value="Public Event DragEnter As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -521,6 +537,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragLeave" />
       <MemberSignature Language="VB.NET" Value="Public Event DragLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -553,6 +570,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DragOver" />
       <MemberSignature Language="VB.NET" Value="Public Event DragOver As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -585,6 +603,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.DrawItem" />
       <MemberSignature Language="VB.NET" Value="Public Event DrawItem As DrawItemEventHandler " />
       <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -616,6 +635,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.EnabledChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -647,6 +667,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Enter" />
       <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -696,6 +717,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -727,6 +749,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -758,6 +781,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="fileListBoxArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -789,6 +813,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As FileListBox) As Short" />
       <MemberSignature Language="F#" Value="member this.GetIndex : Microsoft.VisualBasic.Compatibility.VB6.FileListBox -&gt; int16" Usage="fileListBoxArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(Microsoft::VisualBasic::Compatibility::VB6::FileListBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -823,6 +848,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.GiveFeedback" />
       <MemberSignature Language="VB.NET" Value="Public Event GiveFeedback As GiveFeedbackEventHandler " />
       <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -855,6 +881,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.HelpRequested" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
       <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -887,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="fileListBoxArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -920,6 +948,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -951,6 +980,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As FileListBox" />
       <MemberSignature Language="F#" Value="member this.Item(int16) : Microsoft.VisualBasic.Compatibility.VB6.FileListBox" Usage="Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::FileListBox ^ default[short] { Microsoft::VisualBasic::Compatibility::VB6::FileListBox ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -990,6 +1020,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1030,6 +1061,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1074,6 +1106,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1114,6 +1147,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
       <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1146,6 +1180,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1196,6 +1231,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.LocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1227,6 +1263,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MeasureItem" />
       <MemberSignature Language="VB.NET" Value="Public Event MeasureItem As MeasureItemEventHandler " />
       <MemberSignature Language="F#" Value="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " Usage="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MeasureItemEventHandler ^ MeasureItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1258,6 +1295,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1304,6 +1342,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1346,6 +1385,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1394,6 +1434,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1436,6 +1477,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1478,6 +1520,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1520,6 +1563,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Move" />
       <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1550,6 +1594,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ParentChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1581,6 +1626,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.PathChange" />
       <MemberSignature Language="VB.NET" Value="Public Event PathChange As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PathChange : EventHandler " Usage="member this.PathChange : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PathChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1609,6 +1655,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.PatternChange" />
       <MemberSignature Language="VB.NET" Value="Public Event PatternChange As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PatternChange : EventHandler " Usage="member this.PatternChange : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PatternChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1635,6 +1682,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.QueryAccessibilityHelp" />
       <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
       <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1665,6 +1713,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.QueryContinueDrag" />
       <MemberSignature Language="VB.NET" Value="Public Event QueryContinueDrag As QueryContinueDragEventHandler " />
       <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1695,6 +1744,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ResetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As FileListBox)" />
       <MemberSignature Language="F#" Value="member this.ResetIndex : Microsoft.VisualBasic.Compatibility.VB6.FileListBox -&gt; unit" Usage="fileListBoxArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(Microsoft::VisualBasic::Compatibility::VB6::FileListBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1733,6 +1783,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Resize" />
       <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1767,6 +1818,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.RightToLeftChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1798,6 +1850,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SelectedIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SelectedIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1829,6 +1882,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SelectedValueChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SelectedValueChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedValueChanged : EventHandler " Usage="member this.SelectedValueChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedValueChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1860,6 +1914,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SetIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As FileListBox, Index As Short)" />
       <MemberSignature Language="F#" Value="member this.SetIndex : Microsoft.VisualBasic.Compatibility.VB6.FileListBox * int16 -&gt; unit" Usage="fileListBoxArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(Microsoft::VisualBasic::Compatibility::VB6::FileListBox ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1900,6 +1955,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ShouldSerializeIndex(Microsoft.VisualBasic.Compatibility.VB6.FileListBox)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As FileListBox) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : Microsoft.VisualBasic.Compatibility.VB6.FileListBox -&gt; bool" Usage="fileListBoxArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(Microsoft::VisualBasic::Compatibility::VB6::FileListBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1940,6 +1996,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1971,6 +2028,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.StyleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2004,6 +2062,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.SystemColorsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2036,6 +2095,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.TabIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2067,6 +2127,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2098,6 +2159,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Validated" />
       <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2160,6 +2222,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.Validating" />
       <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2222,6 +2285,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.ValueMemberChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ValueMemberChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ValueMemberChanged : EventHandler " Usage="member this.ValueMemberChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ValueMemberChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2253,6 +2317,7 @@ MsgBox(CStr(FileListBoxArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.VisibleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

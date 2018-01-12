@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LazyFormattedBuildEventArgs&#xA;Inherits BuildEventArgs" />
   <TypeSignature Language="F#" Value="type LazyFormattedBuildEventArgs = class&#xA;    inherit BuildEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LazyFormattedBuildEventArgs : Microsoft::Build::Framework::BuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LazyFormattedBuildEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LazyFormattedBuildEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LazyFormattedBuildEventArgs.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.LazyFormattedBuildEventArgs : string * string * string -&gt; Microsoft.Build.Framework.LazyFormattedBuildEventArgs" Usage="new Microsoft.Build.Framework.LazyFormattedBuildEventArgs (message, helpKeyword, senderName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LazyFormattedBuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LazyFormattedBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.LazyFormattedBuildEventArgs : string * string * string * DateTime * obj[] -&gt; Microsoft.Build.Framework.LazyFormattedBuildEventArgs" Usage="new Microsoft.Build.Framework.LazyFormattedBuildEventArgs (message, helpKeyword, senderName, eventTimestamp, messageArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LazyFormattedBuildEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.LazyFormattedBuildEventArgs.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.Build.Framework.LazyFormattedBuildEventArgs.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

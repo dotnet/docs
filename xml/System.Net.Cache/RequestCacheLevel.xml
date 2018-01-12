@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.RequestCacheLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum RequestCacheLevel" />
   <TypeSignature Language="F#" Value="type RequestCacheLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RequestCacheLevel" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.BypassCache" />
       <MemberSignature Language="VB.NET" Value="BypassCache" />
       <MemberSignature Language="F#" Value="BypassCache = 1" Usage="System.Net.Cache.RequestCacheLevel.BypassCache" />
+      <MemberSignature Language="C++ CLI" Value="BypassCache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.CacheIfAvailable" />
       <MemberSignature Language="VB.NET" Value="CacheIfAvailable" />
       <MemberSignature Language="F#" Value="CacheIfAvailable = 3" Usage="System.Net.Cache.RequestCacheLevel.CacheIfAvailable" />
+      <MemberSignature Language="C++ CLI" Value="CacheIfAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.CacheOnly" />
       <MemberSignature Language="VB.NET" Value="CacheOnly" />
       <MemberSignature Language="F#" Value="CacheOnly = 2" Usage="System.Net.Cache.RequestCacheLevel.CacheOnly" />
+      <MemberSignature Language="C++ CLI" Value="CacheOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.Net.Cache.RequestCacheLevel.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.NoCacheNoStore" />
       <MemberSignature Language="VB.NET" Value="NoCacheNoStore" />
       <MemberSignature Language="F#" Value="NoCacheNoStore = 6" Usage="System.Net.Cache.RequestCacheLevel.NoCacheNoStore" />
+      <MemberSignature Language="C++ CLI" Value="NoCacheNoStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.Reload" />
       <MemberSignature Language="VB.NET" Value="Reload" />
       <MemberSignature Language="F#" Value="Reload = 5" Usage="System.Net.Cache.RequestCacheLevel.Reload" />
+      <MemberSignature Language="C++ CLI" Value="Reload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.RequestCacheLevel.Revalidate" />
       <MemberSignature Language="VB.NET" Value="Revalidate" />
       <MemberSignature Language="F#" Value="Revalidate = 4" Usage="System.Net.Cache.RequestCacheLevel.Revalidate" />
+      <MemberSignature Language="C++ CLI" Value="Revalidate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

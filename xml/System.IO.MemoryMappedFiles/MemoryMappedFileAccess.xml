@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemoryMappedFileAccess" />
   <TypeSignature Language="F#" Value="type MemoryMappedFileAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemoryMappedFileAccess" />
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.CopyOnWrite" />
       <MemberSignature Language="VB.NET" Value="CopyOnWrite" />
       <MemberSignature Language="F#" Value="CopyOnWrite = 3" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileAccess.CopyOnWrite" />
+      <MemberSignature Language="C++ CLI" Value="CopyOnWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="F#" Value="Read = 1" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadExecute" />
       <MemberSignature Language="VB.NET" Value="ReadExecute" />
       <MemberSignature Language="F#" Value="ReadExecute = 4" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadExecute" />
+      <MemberSignature Language="C++ CLI" Value="ReadExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />
       <MemberSignature Language="VB.NET" Value="ReadWrite" />
       <MemberSignature Language="F#" Value="ReadWrite = 0" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWriteExecute" />
       <MemberSignature Language="VB.NET" Value="ReadWriteExecute" />
       <MemberSignature Language="F#" Value="ReadWriteExecute = 5" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWriteExecute" />
+      <MemberSignature Language="C++ CLI" Value="ReadWriteExecute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="F#" Value="Write = 2" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>

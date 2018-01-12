@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ClientSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ClientSection = class&#xA;    inherit ConfigurationSection&#xA;    interface IConfigurationContextProviderInternal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClientSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClientSection.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As ChannelEndpointElementCollection" />
       <MemberSignature Language="F#" Value="member this.Endpoints : System.ServiceModel.Configuration.ChannelEndpointElementCollection" Usage="System.ServiceModel.Configuration.ClientSection.Endpoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ChannelEndpointElementCollection ^ Endpoints { System::ServiceModel::Configuration::ChannelEndpointElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClientSection.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDefault ()" />
       <MemberSignature Language="F#" Value="override this.InitializeDefault : unit -&gt; unit" Usage="clientSection.InitializeDefault " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClientSection.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As MetadataElement" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.ServiceModel.Configuration.MetadataElement" Usage="System.ServiceModel.Configuration.ClientSection.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::MetadataElement ^ Metadata { System::ServiceModel::Configuration::MetadataElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ClientSection.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="clientSection.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ClientSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ClientSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

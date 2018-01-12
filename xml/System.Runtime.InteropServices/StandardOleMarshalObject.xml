@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.StandardOleMarshalObject" />
   <TypeSignature Language="VB.NET" Value="Public Class StandardOleMarshalObject&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="F#" Value="type StandardOleMarshalObject = class&#xA;    inherit MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StandardOleMarshalObject : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.StandardOleMarshalObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StandardOleMarshalObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

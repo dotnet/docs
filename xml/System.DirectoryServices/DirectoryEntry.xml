@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryEntry&#xA;Inherits Component" />
   <TypeSignature Language="F#" Value="type DirectoryEntry = class&#xA;    inherit Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryEntry : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (adsObject As Object)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryEntry : obj -&gt; System.DirectoryServices.DirectoryEntry" Usage="new System.DirectoryServices.DirectoryEntry adsObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryEntry(System::Object ^ adsObject);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryEntry : string -&gt; System.DirectoryServices.DirectoryEntry" Usage="new System.DirectoryServices.DirectoryEntry path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryEntry(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -215,6 +219,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, username As String, password As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryEntry : string * string * string -&gt; System.DirectoryServices.DirectoryEntry" Usage="new System.DirectoryServices.DirectoryEntry (path, username, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryEntry(System::String ^ path, System::String ^ username, System::String ^ password);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -243,6 +248,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.#ctor(System.String,System.String,System.String,System.DirectoryServices.AuthenticationTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, username As String, password As String, authenticationType As AuthenticationTypes)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryEntry : string * string * string * System.DirectoryServices.AuthenticationTypes -&gt; System.DirectoryServices.DirectoryEntry" Usage="new System.DirectoryServices.DirectoryEntry (path, username, password, authenticationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryEntry(System::String ^ path, System::String ^ username, System::String ^ password, System::DirectoryServices::AuthenticationTypes authenticationType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -278,6 +284,7 @@ int main()
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationType As AuthenticationTypes" />
       <MemberSignature Language="F#" Value="member this.AuthenticationType : System.DirectoryServices.AuthenticationTypes with get, set" Usage="System.DirectoryServices.DirectoryEntry.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AuthenticationTypes AuthenticationType { System::DirectoryServices::AuthenticationTypes get(); void set(System::DirectoryServices::AuthenticationTypes value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -315,6 +322,7 @@ int main()
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As DirectoryEntries" />
       <MemberSignature Language="F#" Value="member this.Children : System.DirectoryServices.DirectoryEntries" Usage="System.DirectoryServices.DirectoryEntry.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryEntries ^ Children { System::DirectoryServices::DirectoryEntries ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -365,6 +373,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="directoryEntry.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -395,6 +404,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.CommitChanges" />
       <MemberSignature Language="VB.NET" Value="Public Sub CommitChanges ()" />
       <MemberSignature Language="F#" Value="member this.CommitChanges : unit -&gt; unit" Usage="directoryEntry.CommitChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CommitChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -447,6 +457,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.CopyTo(System.DirectoryServices.DirectoryEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (newParent As DirectoryEntry) As DirectoryEntry" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.DirectoryEntry -&gt; System.DirectoryServices.DirectoryEntry" Usage="directoryEntry.CopyTo newParent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ CopyTo(System::DirectoryServices::DirectoryEntry ^ newParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -483,6 +494,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.CopyTo(System.DirectoryServices.DirectoryEntry,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (newParent As DirectoryEntry, newName As String) As DirectoryEntry" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.DirectoryEntry * string -&gt; System.DirectoryServices.DirectoryEntry" Usage="directoryEntry.CopyTo (newParent, newName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ CopyTo(System::DirectoryServices::DirectoryEntry ^ newParent, System::String ^ newName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -523,6 +535,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.DeleteTree" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteTree ()" />
       <MemberSignature Language="F#" Value="member this.DeleteTree : unit -&gt; unit" Usage="directoryEntry.DeleteTree " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteTree();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -560,6 +573,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="directoryEntry.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -601,6 +615,7 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (path As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member Exists : string -&gt; bool" Usage="System.DirectoryServices.DirectoryEntry.Exists path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -674,6 +689,7 @@ else
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Guid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Guid" />
       <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.DirectoryServices.DirectoryEntry.Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Guid { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -752,6 +768,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (methodName As String, ParamArray args As Object()) As Object" />
       <MemberSignature Language="F#" Value="member this.Invoke : string * obj[] -&gt; obj" Usage="directoryEntry.Invoke (methodName, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::String ^ methodName, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -795,6 +812,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.InvokeGet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeGet (propertyName As String) As Object" />
       <MemberSignature Language="F#" Value="member this.InvokeGet : string -&gt; obj" Usage="directoryEntry.InvokeGet propertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeGet(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -834,6 +852,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.InvokeSet(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvokeSet (propertyName As String, ParamArray args As Object())" />
       <MemberSignature Language="F#" Value="member this.InvokeSet : string * obj[] -&gt; unit" Usage="directoryEntry.InvokeSet (propertyName, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvokeSet(System::String ^ propertyName, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -890,6 +909,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.MoveTo(System.DirectoryServices.DirectoryEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (newParent As DirectoryEntry)" />
       <MemberSignature Language="F#" Value="member this.MoveTo : System.DirectoryServices.DirectoryEntry -&gt; unit" Usage="directoryEntry.MoveTo newParent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::DirectoryServices::DirectoryEntry ^ newParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -925,6 +945,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.MoveTo(System.DirectoryServices.DirectoryEntry,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (newParent As DirectoryEntry, newName As String)" />
       <MemberSignature Language="F#" Value="member this.MoveTo : System.DirectoryServices.DirectoryEntry * string -&gt; unit" Usage="directoryEntry.MoveTo (newParent, newName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::DirectoryServices::DirectoryEntry ^ newParent, System::String ^ newName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -961,6 +982,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.DirectoryEntry.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1053,6 +1075,7 @@ while (myEnumerator->MoveNext())
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.NativeGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NativeGuid As String" />
       <MemberSignature Language="F#" Value="member this.NativeGuid : string" Usage="System.DirectoryServices.DirectoryEntry.NativeGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NativeGuid { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1135,6 +1158,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.NativeObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NativeObject As Object" />
       <MemberSignature Language="F#" Value="member this.NativeObject : obj" Usage="System.DirectoryServices.DirectoryEntry.NativeObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NativeObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1176,6 +1200,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.ObjectSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectSecurity As ActiveDirectorySecurity" />
       <MemberSignature Language="F#" Value="member this.ObjectSecurity : System.DirectoryServices.ActiveDirectorySecurity with get, set" Usage="System.DirectoryServices.DirectoryEntry.ObjectSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectorySecurity ^ ObjectSecurity { System::DirectoryServices::ActiveDirectorySecurity ^ get(); void set(System::DirectoryServices::ActiveDirectorySecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1210,6 +1235,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Options" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As DirectoryEntryConfiguration" />
       <MemberSignature Language="F#" Value="member this.Options : System.DirectoryServices.DirectoryEntryConfiguration" Usage="System.DirectoryServices.DirectoryEntry.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryEntryConfiguration ^ Options { System::DirectoryServices::DirectoryEntryConfiguration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1247,6 +1273,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As DirectoryEntry" />
       <MemberSignature Language="F#" Value="member this.Parent : System.DirectoryServices.DirectoryEntry" Usage="System.DirectoryServices.DirectoryEntry.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryEntry ^ Parent { System::DirectoryServices::DirectoryEntry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1311,6 +1338,7 @@ Console::WriteLine("Parent is :{0}", myDirectoryEntry->Parent->Path);
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.DirectoryServices.DirectoryEntry.Password" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password {  void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1409,6 +1437,7 @@ while (myEnum->MoveNext())
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.DirectoryServices.DirectoryEntry.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1491,6 +1520,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As PropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.DirectoryServices.PropertyCollection" Usage="System.DirectoryServices.DirectoryEntry.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::PropertyCollection ^ Properties { System::DirectoryServices::PropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1544,6 +1574,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.RefreshCache" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshCache ()" />
       <MemberSignature Language="F#" Value="member this.RefreshCache : unit -&gt; unit" Usage="directoryEntry.RefreshCache " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1576,6 +1607,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.RefreshCache(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshCache (propertyNames As String())" />
       <MemberSignature Language="F#" Value="member this.RefreshCache : string[] -&gt; unit" Usage="directoryEntry.RefreshCache propertyNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshCache(cli::array &lt;System::String ^&gt; ^ propertyNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1611,6 +1643,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Rename(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rename (newName As String)" />
       <MemberSignature Language="F#" Value="member this.Rename : string -&gt; unit" Usage="directoryEntry.Rename newName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rename(System::String ^ newName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1648,6 +1681,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.SchemaClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaClassName As String" />
       <MemberSignature Language="F#" Value="member this.SchemaClassName : string" Usage="System.DirectoryServices.DirectoryEntry.SchemaClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaClassName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1759,6 +1793,7 @@ if (!String::Compare(mySchemaEntry->Name, "container"))
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.SchemaEntry" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaEntry As DirectoryEntry" />
       <MemberSignature Language="F#" Value="member this.SchemaEntry : System.DirectoryServices.DirectoryEntry" Usage="System.DirectoryServices.DirectoryEntry.SchemaEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryEntry ^ SchemaEntry { System::DirectoryServices::DirectoryEntry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1870,6 +1905,7 @@ if (!String::Compare(mySchemaEntry->Name, S"container"))
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.UsePropertyCache" />
       <MemberSignature Language="VB.NET" Value="Public Property UsePropertyCache As Boolean" />
       <MemberSignature Language="F#" Value="member this.UsePropertyCache : bool with get, set" Usage="System.DirectoryServices.DirectoryEntry.UsePropertyCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsePropertyCache { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1917,6 +1953,7 @@ if (!String::Compare(mySchemaEntry->Name, S"container"))
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Username" />
       <MemberSignature Language="VB.NET" Value="Public Property Username As String" />
       <MemberSignature Language="F#" Value="member this.Username : string with get, set" Usage="System.DirectoryServices.DirectoryEntry.Username" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Username { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

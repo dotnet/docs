@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.AuthorizationFailedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthorizationFailedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type AuthorizationFailedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthorizationFailedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AuthorizationFailedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthorizationFailedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.AuthorizationFailedEventArgs.RedirectToIdentityProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property RedirectToIdentityProvider As Boolean" />
       <MemberSignature Language="F#" Value="member this.RedirectToIdentityProvider : bool with get, set" Usage="System.IdentityModel.Services.AuthorizationFailedEventArgs.RedirectToIdentityProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RedirectToIdentityProvider { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CallSiteBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CallSiteBinder" />
   <TypeSignature Language="F#" Value="type CallSiteBinder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallSiteBinder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CallSiteBinder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Bind (args As Object(), parameters As ReadOnlyCollection(Of ParameterExpression), returnLabel As LabelTarget) As Expression" />
       <MemberSignature Language="F#" Value="abstract member Bind : obj[] * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.ParameterExpression&gt; * System.Linq.Expressions.LabelTarget -&gt; System.Linq.Expressions.Expression" Usage="callSiteBinder.Bind (args, parameters, returnLabel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Linq::Expressions::Expression ^ Bind(cli::array &lt;System::Object ^&gt; ^ args, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::ParameterExpression ^&gt; ^ parameters, System::Linq::Expressions::LabelTarget ^ returnLabel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BindDelegate(Of T As Class) (site As CallSite(Of T), args As Object()) As T" />
       <MemberSignature Language="F#" Value="abstract member BindDelegate : System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; * obj[] -&gt; 'T (requires 'T : null)&#xA;override this.BindDelegate : System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt; * obj[] -&gt; 'T (requires 'T : null)" Usage="callSiteBinder.BindDelegate (site, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T BindDelegate(System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ site, cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CacheTarget(Of T As Class) (target As T)" />
       <MemberSignature Language="F#" Value="member this.CacheTarget : 'T -&gt; unit (requires 'T : null)" Usage="callSiteBinder.CacheTarget target" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; where T : class void CacheTarget(T target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UpdateLabel As LabelTarget" />
       <MemberSignature Language="F#" Value="member this.UpdateLabel : System.Linq.Expressions.LabelTarget" Usage="System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Linq::Expressions::LabelTarget ^ UpdateLabel { System::Linq::Expressions::LabelTarget ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

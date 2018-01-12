@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.TickBar" />
   <TypeSignature Language="VB.NET" Value="Public Class TickBar&#xA;Inherits FrameworkElement" />
   <TypeSignature Language="F#" Value="type TickBar = class&#xA;    inherit FrameworkElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TickBar : System::Windows::FrameworkElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.TickBar.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TickBar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.Fill" />
       <MemberSignature Language="VB.NET" Value="Public Property Fill As Brush" />
       <MemberSignature Language="F#" Value="member this.Fill : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Primitives.TickBar.Fill" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Fill { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.FillProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FillProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.FillProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.IsDirectionReversed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDirectionReversed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDirectionReversed : bool with get, set" Usage="System.Windows.Controls.Primitives.TickBar.IsDirectionReversed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirectionReversed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.IsDirectionReversedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDirectionReversedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsDirectionReversedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.IsDirectionReversedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDirectionReversedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.IsSelectionRangeEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSelectionRangeEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSelectionRangeEnabled : bool with get, set" Usage="System.Windows.Controls.Primitives.TickBar.IsSelectionRangeEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionRangeEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.IsSelectionRangeEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionRangeEnabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSelectionRangeEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.IsSelectionRangeEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectionRangeEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
       <MemberSignature Language="F#" Value="member this.Maximum : double with get, set" Usage="System.Windows.Controls.Primitives.TickBar.Maximum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.MaximumProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MaximumProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.MaximumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaximumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
       <MemberSignature Language="F#" Value="member this.Minimum : double with get, set" Usage="System.Windows.Controls.Primitives.TickBar.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.MinimumProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MinimumProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.MinimumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinimumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.TickBar.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRender (dc As DrawingContext)" />
       <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="tickBar.OnRender dc" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ dc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -437,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.Placement" />
       <MemberSignature Language="VB.NET" Value="Public Property Placement As TickBarPlacement" />
       <MemberSignature Language="F#" Value="member this.Placement : System.Windows.Controls.Primitives.TickBarPlacement with get, set" Usage="System.Windows.Controls.Primitives.TickBar.Placement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::TickBarPlacement Placement { System::Windows::Controls::Primitives::TickBarPlacement get(); void set(System::Windows::Controls::Primitives::TickBarPlacement value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -480,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.PlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.PlacementProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -499,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.ReservedSpace" />
       <MemberSignature Language="VB.NET" Value="Public Property ReservedSpace As Double" />
       <MemberSignature Language="F#" Value="member this.ReservedSpace : double with get, set" Usage="System.Windows.Controls.Primitives.TickBar.ReservedSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ReservedSpace { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -542,6 +558,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.ReservedSpaceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ReservedSpaceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ReservedSpaceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.ReservedSpaceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ReservedSpaceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -561,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.SelectionEnd" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionEnd As Double" />
       <MemberSignature Language="F#" Value="member this.SelectionEnd : double with get, set" Usage="System.Windows.Controls.Primitives.TickBar.SelectionEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SelectionEnd { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -606,6 +624,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.SelectionEndProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionEndProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectionEndProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.SelectionEndProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionEndProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -625,6 +644,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.SelectionStart" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionStart As Double" />
       <MemberSignature Language="F#" Value="member this.SelectionStart : double with get, set" Usage="System.Windows.Controls.Primitives.TickBar.SelectionStart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SelectionStart { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -670,6 +690,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.SelectionStartProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionStartProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectionStartProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.SelectionStartProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionStartProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -689,6 +710,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.TickFrequency" />
       <MemberSignature Language="VB.NET" Value="Public Property TickFrequency As Double" />
       <MemberSignature Language="F#" Value="member this.TickFrequency : double with get, set" Usage="System.Windows.Controls.Primitives.TickBar.TickFrequency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TickFrequency { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -733,6 +755,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.TickFrequencyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TickFrequencyProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TickFrequencyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.TickFrequencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TickFrequencyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -752,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.TickBar.Ticks" />
       <MemberSignature Language="VB.NET" Value="Public Property Ticks As DoubleCollection" />
       <MemberSignature Language="F#" Value="member this.Ticks : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Controls.Primitives.TickBar.Ticks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ Ticks { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -798,6 +822,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.TickBar.TicksProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TicksProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TicksProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.TickBar.TicksProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TicksProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

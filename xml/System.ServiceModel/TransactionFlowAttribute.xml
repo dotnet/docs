@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionFlowAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionFlowAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior" />
   <TypeSignature Language="F#" Value="type TransactionFlowAttribute = class&#xA;    inherit Attribute&#xA;    interface IOperationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionFlowAttribute sealed : Attribute, System::ServiceModel::Description::IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -124,6 +125,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionFlowAttribute.#ctor(System.ServiceModel.TransactionFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactions As TransactionFlowOption)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.TransactionFlowAttribute : System.ServiceModel.TransactionFlowOption -&gt; System.ServiceModel.TransactionFlowAttribute" Usage="new System.ServiceModel.TransactionFlowAttribute transactions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionFlowAttribute(System::ServiceModel::TransactionFlowOption transactions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +155,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(class System.ServiceModel.Description.OperationDescription description, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionFlowAttribute.System#ServiceModel#Description#IOperationBehavior#AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Sub AddBindingParameters (description As OperationDescription, parameters As BindingParameterCollection) Implements IOperationBehavior.AddBindingParameters" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System::ServiceModel::Description::OperationDescription ^ description, System::ServiceModel::Channels::BindingParameterCollection ^ parameters) = System::ServiceModel::Description::IOperationBehavior::AddBindingParameters;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
@@ -187,6 +190,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(class System.ServiceModel.Description.OperationDescription description, class System.ServiceModel.Dispatcher.ClientOperation proxy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionFlowAttribute.System#ServiceModel#Description#IOperationBehavior#ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
       <MemberSignature Language="VB.NET" Value="Sub ApplyClientBehavior (description As OperationDescription, proxy As ClientOperation) Implements IOperationBehavior.ApplyClientBehavior" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System::ServiceModel::Description::OperationDescription ^ description, System::ServiceModel::Dispatcher::ClientOperation ^ proxy) = System::ServiceModel::Description::IOperationBehavior::ApplyClientBehavior;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)</InterfaceMember>
@@ -221,6 +225,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.OperationDescription description, class System.ServiceModel.Dispatcher.DispatchOperation dispatch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionFlowAttribute.System#ServiceModel#Description#IOperationBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
       <MemberSignature Language="VB.NET" Value="Sub ApplyDispatchBehavior (description As OperationDescription, dispatch As DispatchOperation) Implements IOperationBehavior.ApplyDispatchBehavior" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System::ServiceModel::Description::OperationDescription ^ description, System::ServiceModel::Dispatcher::DispatchOperation ^ dispatch) = System::ServiceModel::Description::IOperationBehavior::ApplyDispatchBehavior;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)</InterfaceMember>
@@ -255,6 +260,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.Validate(class System.ServiceModel.Description.OperationDescription description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionFlowAttribute.System#ServiceModel#Description#IOperationBehavior#Validate(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="VB.NET" Value="Sub Validate (description As OperationDescription) Implements IOperationBehavior.Validate" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IOperationBehavior.Validate(System::ServiceModel::Description::OperationDescription ^ description) = System::ServiceModel::Description::IOperationBehavior::Validate;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)</InterfaceMember>
@@ -288,6 +294,7 @@ namespace Microsoft.WCF.Documentation
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionFlowAttribute.Transactions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transactions As TransactionFlowOption" />
       <MemberSignature Language="F#" Value="member this.Transactions : System.ServiceModel.TransactionFlowOption" Usage="System.ServiceModel.TransactionFlowAttribute.Transactions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransactionFlowOption Transactions { System::ServiceModel::TransactionFlowOption get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

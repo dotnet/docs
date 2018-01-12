@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.OneWayBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class OneWayBindingElementImporter&#xA;Implements IPolicyImportExtension" />
   <TypeSignature Language="F#" Value="type OneWayBindingElementImporter = class&#xA;    interface IPolicyImportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OneWayBindingElementImporter : System::ServiceModel::Description::IPolicyImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElementImporter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OneWayBindingElementImporter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(class System.ServiceModel.Description.MetadataImporter importer, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.OneWayBindingElementImporter.System#ServiceModel#Description#IPolicyImportExtension#ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Sub ImportPolicy (importer As MetadataImporter, context As PolicyConversionContext) Implements IPolicyImportExtension.ImportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyImportExtension::ImportPolicy;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>

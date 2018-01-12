@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientMathObject" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientMathObject&#xA;Inherits MathObject" />
   <TypeSignature Language="F#" Value="type LenientMathObject = class&#xA;    inherit MathObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientMathObject sealed : Microsoft::JScript::MathObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.abs" />
       <MemberSignature Language="VB.NET" Value="Public abs As Object " />
       <MemberSignature Language="F#" Value="val mutable abs : obj" Usage="Microsoft.JScript.LenientMathObject.abs" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ abs;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.acos" />
       <MemberSignature Language="VB.NET" Value="Public acos As Object " />
       <MemberSignature Language="F#" Value="val mutable acos : obj" Usage="Microsoft.JScript.LenientMathObject.acos" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ acos;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.asin" />
       <MemberSignature Language="VB.NET" Value="Public asin As Object " />
       <MemberSignature Language="F#" Value="val mutable asin : obj" Usage="Microsoft.JScript.LenientMathObject.asin" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ asin;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.atan" />
       <MemberSignature Language="VB.NET" Value="Public atan As Object " />
       <MemberSignature Language="F#" Value="val mutable atan : obj" Usage="Microsoft.JScript.LenientMathObject.atan" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ atan;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.atan2" />
       <MemberSignature Language="VB.NET" Value="Public atan2 As Object " />
       <MemberSignature Language="F#" Value="val mutable atan2 : obj" Usage="Microsoft.JScript.LenientMathObject.atan2" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ atan2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -124,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.ceil" />
       <MemberSignature Language="VB.NET" Value="Public ceil As Object " />
       <MemberSignature Language="F#" Value="val mutable ceil : obj" Usage="Microsoft.JScript.LenientMathObject.ceil" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ ceil;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.cos" />
       <MemberSignature Language="VB.NET" Value="Public cos As Object " />
       <MemberSignature Language="F#" Value="val mutable cos : obj" Usage="Microsoft.JScript.LenientMathObject.cos" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ cos;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -164,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.E" />
       <MemberSignature Language="VB.NET" Value="Public Const E As Double  = 2.71828182845905" />
       <MemberSignature Language="F#" Value="val mutable E : double" Usage="Microsoft.JScript.LenientMathObject.E" />
+      <MemberSignature Language="C++ CLI" Value="public: double E = 2.71828182845905;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -186,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.exp" />
       <MemberSignature Language="VB.NET" Value="Public exp As Object " />
       <MemberSignature Language="F#" Value="val mutable exp : obj" Usage="Microsoft.JScript.LenientMathObject.exp" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ exp;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.floor" />
       <MemberSignature Language="VB.NET" Value="Public floor As Object " />
       <MemberSignature Language="F#" Value="val mutable floor : obj" Usage="Microsoft.JScript.LenientMathObject.floor" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ floor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -226,6 +237,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LN10" />
       <MemberSignature Language="VB.NET" Value="Public Const LN10 As Double  = 2.30258509299405" />
       <MemberSignature Language="F#" Value="val mutable LN10 : double" Usage="Microsoft.JScript.LenientMathObject.LN10" />
+      <MemberSignature Language="C++ CLI" Value="public: double LN10 = 2.30258509299405;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -248,6 +260,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LN2" />
       <MemberSignature Language="VB.NET" Value="Public Const LN2 As Double  = 0.693147180559945" />
       <MemberSignature Language="F#" Value="val mutable LN2 : double" Usage="Microsoft.JScript.LenientMathObject.LN2" />
+      <MemberSignature Language="C++ CLI" Value="public: double LN2 = 0.693147180559945;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -270,6 +283,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.log" />
       <MemberSignature Language="VB.NET" Value="Public log As Object " />
       <MemberSignature Language="F#" Value="val mutable log : obj" Usage="Microsoft.JScript.LenientMathObject.log" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ log;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -290,6 +304,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LOG10E" />
       <MemberSignature Language="VB.NET" Value="Public Const LOG10E As Double  = 0.434294481903252" />
       <MemberSignature Language="F#" Value="val mutable LOG10E : double" Usage="Microsoft.JScript.LenientMathObject.LOG10E" />
+      <MemberSignature Language="C++ CLI" Value="public: double LOG10E = 0.434294481903252;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -312,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LOG2E" />
       <MemberSignature Language="VB.NET" Value="Public Const LOG2E As Double  = 1.44269504088896" />
       <MemberSignature Language="F#" Value="val mutable LOG2E : double" Usage="Microsoft.JScript.LenientMathObject.LOG2E" />
+      <MemberSignature Language="C++ CLI" Value="public: double LOG2E = 1.44269504088896;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -334,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.max" />
       <MemberSignature Language="VB.NET" Value="Public max As Object " />
       <MemberSignature Language="F#" Value="val mutable max : obj" Usage="Microsoft.JScript.LenientMathObject.max" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ max;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -354,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.min" />
       <MemberSignature Language="VB.NET" Value="Public min As Object " />
       <MemberSignature Language="F#" Value="val mutable min : obj" Usage="Microsoft.JScript.LenientMathObject.min" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ min;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -374,6 +392,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.PI" />
       <MemberSignature Language="VB.NET" Value="Public Const PI As Double  = 3.14159265358979" />
       <MemberSignature Language="F#" Value="val mutable PI : double" Usage="Microsoft.JScript.LenientMathObject.PI" />
+      <MemberSignature Language="C++ CLI" Value="public: double PI = 3.14159265358979;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -396,6 +415,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.pow" />
       <MemberSignature Language="VB.NET" Value="Public pow As Object " />
       <MemberSignature Language="F#" Value="val mutable pow : obj" Usage="Microsoft.JScript.LenientMathObject.pow" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ pow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -416,6 +436,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.random" />
       <MemberSignature Language="VB.NET" Value="Public random As Object " />
       <MemberSignature Language="F#" Value="val mutable random : obj" Usage="Microsoft.JScript.LenientMathObject.random" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ random;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -436,6 +457,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.round" />
       <MemberSignature Language="VB.NET" Value="Public round As Object " />
       <MemberSignature Language="F#" Value="val mutable round : obj" Usage="Microsoft.JScript.LenientMathObject.round" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ round;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -456,6 +478,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.sin" />
       <MemberSignature Language="VB.NET" Value="Public sin As Object " />
       <MemberSignature Language="F#" Value="val mutable sin : obj" Usage="Microsoft.JScript.LenientMathObject.sin" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ sin;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -476,6 +499,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.sqrt" />
       <MemberSignature Language="VB.NET" Value="Public sqrt As Object " />
       <MemberSignature Language="F#" Value="val mutable sqrt : obj" Usage="Microsoft.JScript.LenientMathObject.sqrt" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ sqrt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -496,6 +520,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.SQRT1_2" />
       <MemberSignature Language="VB.NET" Value="Public Const SQRT1_2 As Double  = 0.707106781186548" />
       <MemberSignature Language="F#" Value="val mutable SQRT1_2 : double" Usage="Microsoft.JScript.LenientMathObject.SQRT1_2" />
+      <MemberSignature Language="C++ CLI" Value="public: double SQRT1_2 = 0.707106781186548;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -518,6 +543,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.SQRT2" />
       <MemberSignature Language="VB.NET" Value="Public Const SQRT2 As Double  = 1.4142135623731" />
       <MemberSignature Language="F#" Value="val mutable SQRT2 : double" Usage="Microsoft.JScript.LenientMathObject.SQRT2" />
+      <MemberSignature Language="C++ CLI" Value="public: double SQRT2 = 1.4142135623731;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -540,6 +566,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.tan" />
       <MemberSignature Language="VB.NET" Value="Public tan As Object " />
       <MemberSignature Language="F#" Value="val mutable tan : obj" Usage="Microsoft.JScript.LenientMathObject.tan" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ tan;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

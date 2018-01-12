@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HtmlControl&#xA;Inherits Control&#xA;Implements IAttributeAccessor" />
   <TypeSignature Language="F#" Value="type HtmlControl = class&#xA;    inherit Control&#xA;    interface IAttributeAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlControl abstract : System::Web::UI::Control, System::Web::UI::IAttributeAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HtmlControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (tag As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.HtmlControls.HtmlControl : string -&gt; System.Web.UI.HtmlControls.HtmlControl" Usage="new System.Web.UI.HtmlControls.HtmlControl tag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HtmlControl(System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.HtmlControls.HtmlControl.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ Attributes { System::Web::UI::AttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="htmlControl.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.Disabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Disabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Disabled : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlControl.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Disabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetAttribute (name As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetAttribute : string -&gt; string&#xA;override this.GetAttribute : string -&gt; string" Usage="htmlControl.GetAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
@@ -275,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlControl.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlControl.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBeginTag (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderBeginTag : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderBeginTag : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlControl.RenderBeginTag writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.SetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetAttribute (name As String, value As String)" />
       <MemberSignature Language="F#" Value="abstract member SetAttribute : string * string -&gt; unit&#xA;override this.SetAttribute : string * string -&gt; unit" Usage="htmlControl.SetAttribute (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
@@ -414,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.Style" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As CssStyleCollection" />
       <MemberSignature Language="F#" Value="member this.Style : System.Web.UI.CssStyleCollection" Usage="System.Web.UI.HtmlControls.HtmlControl.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CssStyleCollection ^ Style { System::Web::UI::CssStyleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -460,6 +472,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function GetAttribute (name As String) As String Implements IAttributeAccessor.GetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ name) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
@@ -497,6 +510,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlControl.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub SetAttribute (name As String, value As String) Implements IAttributeAccessor.SetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ name, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
@@ -536,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.TagName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TagName As String" />
       <MemberSignature Language="F#" Value="member this.TagName : string" Usage="System.Web.UI.HtmlControls.HtmlControl.TagName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TagName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -579,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlControl.ViewStateIgnoresCase" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ViewStateIgnoresCase As Boolean" />
       <MemberSignature Language="F#" Value="member this.ViewStateIgnoresCase : bool" Usage="System.Web.UI.HtmlControls.HtmlControl.ViewStateIgnoresCase" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ViewStateIgnoresCase { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

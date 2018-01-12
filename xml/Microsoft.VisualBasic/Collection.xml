@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Collection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Collection&#xA;Implements IDeserializationCallback, IList, ISerializable" />
   <TypeSignature Language="F#" Value="type Collection = class&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Collection sealed : System::Collections::IList, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Collection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -172,6 +174,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="collection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -207,6 +210,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (Key As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="collection.Contains Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ Key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -247,6 +251,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.VisualBasic.Collection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -287,6 +292,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="collection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -341,6 +347,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="Microsoft.VisualBasic.Collection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -389,6 +396,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : obj" Usage="Microsoft.VisualBasic.Collection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -442,6 +450,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Key As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="Microsoft.VisualBasic.Collection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ Key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -499,6 +508,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Remove(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (Index As Integer)" />
       <MemberSignature Language="F#" Value="member this.Remove : int -&gt; unit" Usage="collection.Remove Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(int Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -545,6 +555,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (Key As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="collection.Remove Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ Key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -589,6 +600,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void ICollectionCopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.ICollectionCopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void ICollectionCopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -638,6 +650,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionCount As Integer Implements ICollection.ICollectionCount" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.ICollectionCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -658,6 +671,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionIsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionIsSynchronized As Boolean Implements ICollection.ICollectionIsSynchronized" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionIsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.ICollectionIsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -678,6 +692,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.ICollectionSyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ICollectionSyncRoot As Object Implements ICollection.ICollectionSyncRoot" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.ICollectionSyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.ICollectionSyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -697,6 +712,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance class System.Collections.IEnumerator ICollectionGetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.ICollectionGetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function ICollectionGetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ ICollectionGetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -742,6 +758,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance int32 IListAdd(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListAdd(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IListAdd (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int IListAdd(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -781,6 +798,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListClear" />
       <MemberSignature Language="VB.NET" Value="Sub IListClear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void IListClear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -811,6 +829,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance bool IListContains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListContains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IListContains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool IListContains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -845,6 +864,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsFixedSize As Boolean Implements IList.IListIsFixedSize" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListIsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IListIsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -865,6 +885,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListIsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IListIsReadOnly As Boolean Implements IList.IListIsReadOnly" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListIsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IListIsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -885,6 +906,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Collection.IListItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property IListItem(index As Integer) As Object Implements IList.IListItem" />
       <MemberSignature Language="F#" Usage="Microsoft.VisualBasic.Collection.IListItem" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.IListItem[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -908,6 +930,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance int32 IListIndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListIndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IListIndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int IListIndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -941,6 +964,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub IListInsert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void IListInsert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -986,6 +1010,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListRemove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListRemove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub IListRemove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void IListRemove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1023,6 +1048,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void IListRemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.IListRemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub IListRemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void IListRemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1062,6 +1088,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -1097,6 +1124,7 @@ MsgBox(CStr(customers(1)))
       <MemberSignature Language="ILAsm" Value=".method newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Collection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

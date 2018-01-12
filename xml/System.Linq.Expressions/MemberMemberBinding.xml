@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberMemberBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemberMemberBinding&#xA;Inherits MemberBinding" />
   <TypeSignature Language="F#" Value="type MemberMemberBinding = class&#xA;    inherit MemberBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemberMemberBinding sealed : System::Linq::Expressions::MemberBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberMemberBinding.Bindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As ReadOnlyCollection(Of MemberBinding)" />
       <MemberSignature Language="F#" Value="member this.Bindings : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.MemberBinding&gt;" Usage="System.Linq.Expressions.MemberMemberBinding.Bindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::MemberBinding ^&gt; ^ Bindings { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::MemberBinding ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberMemberBinding.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.MemberBinding})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (bindings As IEnumerable(Of MemberBinding)) As MemberMemberBinding" />
       <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.MemberBinding&gt; -&gt; System.Linq.Expressions.MemberMemberBinding" Usage="memberMemberBinding.Update bindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::MemberMemberBinding ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::MemberBinding ^&gt; ^ bindings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

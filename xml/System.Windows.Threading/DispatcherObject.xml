@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DispatcherObject" />
   <TypeSignature Language="F#" Value="type DispatcherObject = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherObject abstract" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DispatcherObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherObject.CheckAccess" />
       <MemberSignature Language="VB.NET" Value="Public Function CheckAccess () As Boolean" />
       <MemberSignature Language="F#" Value="member this.CheckAccess : unit -&gt; bool" Usage="dispatcherObject.CheckAccess " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckAccess();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherObject.Dispatcher" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dispatcher As Dispatcher" />
       <MemberSignature Language="F#" Value="member this.Dispatcher : System.Windows.Threading.Dispatcher" Usage="System.Windows.Threading.DispatcherObject.Dispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::Dispatcher ^ Dispatcher { System::Windows::Threading::Dispatcher ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherObject.VerifyAccess" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyAccess ()" />
       <MemberSignature Language="F#" Value="member this.VerifyAccess : unit -&gt; unit" Usage="dispatcherObject.VerifyAccess " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyAccess();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

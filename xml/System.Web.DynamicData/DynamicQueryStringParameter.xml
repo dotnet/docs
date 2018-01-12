@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicQueryStringParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicQueryStringParameter&#xA;Inherits Parameter&#xA;Implements IWhereParametersProvider" />
   <TypeSignature Language="F#" Value="type DynamicQueryStringParameter = class&#xA;    inherit Parameter&#xA;    interface IWhereParametersProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicQueryStringParameter : System::Web::UI::WebControls::Parameter, System::Web::DynamicData::IWhereParametersProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicQueryStringParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="dynamicQueryStringParameter.Evaluate (context, control)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWhereParameters (dataSource As IDynamicDataSource) As IEnumerable(Of Parameter)" />
       <MemberSignature Language="F#" Value="abstract member GetWhereParameters : System.Web.DynamicData.IDynamicDataSource -&gt; seq&lt;System.Web.UI.WebControls.Parameter&gt;&#xA;override this.GetWhereParameters : System.Web.DynamicData.IDynamicDataSource -&gt; seq&lt;System.Web.UI.WebControls.Parameter&gt;" Usage="dynamicQueryStringParameter.GetWhereParameters dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::WebControls::Parameter ^&gt; ^ GetWhereParameters(System::Web::DynamicData::IDynamicDataSource ^ dataSource);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.DynamicData.IWhereParametersProvider.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)</InterfaceMember>

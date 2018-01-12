@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextEmbeddedObject&#xA;Inherits TextRun" />
   <TypeSignature Language="F#" Value="type TextEmbeddedObject = class&#xA;    inherit TextRun" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextEmbeddedObject abstract : System::Windows::Media::TextFormatting::TextRun" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEmbeddedObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextEmbeddedObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEmbeddedObject.BreakAfter" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BreakAfter As LineBreakCondition" />
       <MemberSignature Language="F#" Value="member this.BreakAfter : System.Windows.LineBreakCondition" Usage="System.Windows.Media.TextFormatting.TextEmbeddedObject.BreakAfter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::LineBreakCondition BreakAfter { System::Windows::LineBreakCondition get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEmbeddedObject.BreakBefore" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BreakBefore As LineBreakCondition" />
       <MemberSignature Language="F#" Value="member this.BreakBefore : System.Windows.LineBreakCondition" Usage="System.Windows.Media.TextFormatting.TextEmbeddedObject.BreakBefore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::LineBreakCondition BreakBefore { System::Windows::LineBreakCondition get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEmbeddedObject.ComputeBoundingBox(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ComputeBoundingBox (rightToLeft As Boolean, sideways As Boolean) As Rect" />
       <MemberSignature Language="F#" Value="abstract member ComputeBoundingBox : bool * bool -&gt; System.Windows.Rect" Usage="textEmbeddedObject.ComputeBoundingBox (rightToLeft, sideways)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Rect ComputeBoundingBox(bool rightToLeft, bool sideways);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Draw(class System.Windows.Media.DrawingContext drawingContext, valuetype System.Windows.Point origin, bool rightToLeft, bool sideways) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEmbeddedObject.Draw(System.Windows.Media.DrawingContext,System.Windows.Point,System.Boolean,System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Draw : System.Windows.Media.DrawingContext * System.Windows.Point * bool * bool -&gt; unit" Usage="textEmbeddedObject.Draw (drawingContext, origin, rightToLeft, sideways)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Draw(System::Windows::Media::DrawingContext ^ drawingContext, System::Windows::Point origin, bool rightToLeft, bool sideways);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEmbeddedObject.Format(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Format (remainingParagraphWidth As Double) As TextEmbeddedObjectMetrics" />
       <MemberSignature Language="F#" Value="abstract member Format : double -&gt; System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" Usage="textEmbeddedObject.Format remainingParagraphWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextEmbeddedObjectMetrics ^ Format(double remainingParagraphWidth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEmbeddedObject.HasFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HasFixedSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasFixedSize : bool" Usage="System.Windows.Media.TextFormatting.TextEmbeddedObject.HasFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HasFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

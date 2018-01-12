@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.Symbol.WorkflowSymbol" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowSymbol" />
   <TypeSignature Language="F#" Value="type WorkflowSymbol = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowSymbol" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowSymbol();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.CalculateChecksum" />
       <MemberSignature Language="VB.NET" Value="Public Function CalculateChecksum () As Boolean" />
       <MemberSignature Language="F#" Value="member this.CalculateChecksum : unit -&gt; bool" Usage="workflowSymbol.CalculateChecksum " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CalculateChecksum();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.Decode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decode (symbolString As String) As WorkflowSymbol" />
       <MemberSignature Language="F#" Value="static member Decode : string -&gt; System.Activities.Debugger.Symbol.WorkflowSymbol" Usage="System.Activities.Debugger.Symbol.WorkflowSymbol.Decode symbolString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Debugger::Symbol::WorkflowSymbol ^ Decode(System::String ^ symbolString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.Encode" />
       <MemberSignature Language="VB.NET" Value="Public Function Encode () As String" />
       <MemberSignature Language="F#" Value="member this.Encode : unit -&gt; string" Usage="workflowSymbol.Encode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Encode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.Symbol.WorkflowSymbol.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
       <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Activities.Debugger.Symbol.WorkflowSymbol.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.GetChecksum" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChecksum () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetChecksum : unit -&gt; byte[]" Usage="workflowSymbol.GetChecksum " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetChecksum();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -147,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.Symbol.WorkflowSymbol.Symbols" />
       <MemberSignature Language="VB.NET" Value="Public Property Symbols As ICollection(Of ActivitySymbol)" />
       <MemberSignature Language="F#" Value="member this.Symbols : System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt; with get, set" Usage="System.Activities.Debugger.Symbol.WorkflowSymbol.Symbols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ Symbols { System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ get(); void set(System::Collections::Generic::ICollection&lt;System::Activities::Debugger::Symbol::ActivitySymbol ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -167,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="workflowSymbol.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

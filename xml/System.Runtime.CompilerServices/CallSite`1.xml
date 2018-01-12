@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CallSite`1" />
   <TypeSignature Language="VB.NET" Value="Public Class CallSite(Of T)&#xA;Inherits CallSite" />
   <TypeSignature Language="F#" Value="type CallSite&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit CallSite" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : classpublic ref class CallSite : System::Runtime::CompilerServices::CallSite" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallSite`1.Create(System.Runtime.CompilerServices.CallSiteBinder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (binder As CallSiteBinder) As CallSite(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : System.Runtime.CompilerServices.CallSiteBinder -&gt; System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt;" Usage="System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt;.Create binder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::CompilerServices::CallSite&lt;T&gt; ^ Create(System::Runtime::CompilerServices::CallSiteBinder ^ binder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.CallSite`1.Target" />
       <MemberSignature Language="VB.NET" Value="Public Target As T " />
       <MemberSignature Language="F#" Value="val mutable Target : 'T" Usage="System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt;.Target" />
+      <MemberSignature Language="C++ CLI" Value="public: T Target;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.CallSite`1.Update" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Update As T" />
       <MemberSignature Language="F#" Value="member this.Update : 'T" Usage="System.Runtime.CompilerServices.CallSite&lt;'T (requires 'T : null)&gt;.Update" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Update { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

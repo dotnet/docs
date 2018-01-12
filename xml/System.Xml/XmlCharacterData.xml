@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlCharacterData" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlCharacterData&#xA;Inherits XmlLinkedNode" />
   <TypeSignature Language="F#" Value="type XmlCharacterData = class&#xA;    inherit XmlLinkedNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlCharacterData abstract : System::Xml::XmlLinkedNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.#ctor(System.String,System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (data As String, doc As XmlDocument)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlCharacterData : string * System.Xml.XmlDocument -&gt; System.Xml.XmlCharacterData" Usage="new System.Xml.XmlCharacterData (data, doc)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlCharacterData(System::String ^ data, System::Xml::XmlDocument ^ doc);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.AppendData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AppendData (strData As String)" />
       <MemberSignature Language="F#" Value="abstract member AppendData : string -&gt; unit&#xA;override this.AppendData : string -&gt; unit" Usage="xmlCharacterData.AppendData strData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AppendData(System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.Data" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Data As String" />
       <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="System.Xml.XmlCharacterData.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.DeleteData(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteData (offset As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member DeleteData : int * int -&gt; unit&#xA;override this.DeleteData : int * int -&gt; unit" Usage="xmlCharacterData.DeleteData (offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteData(int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.InnerText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
       <MemberSignature Language="F#" Value="member this.InnerText : string with get, set" Usage="System.Xml.XmlCharacterData.InnerText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.InsertData(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertData (offset As Integer, strData As String)" />
       <MemberSignature Language="F#" Value="abstract member InsertData : int * string -&gt; unit&#xA;override this.InsertData : int * string -&gt; unit" Usage="xmlCharacterData.InsertData (offset, strData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertData(int offset, System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Xml.XmlCharacterData.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.ReplaceData(System.Int32,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReplaceData (offset As Integer, count As Integer, strData As String)" />
       <MemberSignature Language="F#" Value="abstract member ReplaceData : int * int * string -&gt; unit&#xA;override this.ReplaceData : int * int * string -&gt; unit" Usage="xmlCharacterData.ReplaceData (offset, count, strData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReplaceData(int offset, int count, System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -373,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlCharacterData.Substring(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Substring (offset As Integer, count As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member Substring : int * int -&gt; string&#xA;override this.Substring : int * int -&gt; string" Usage="xmlCharacterData.Substring (offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Substring(int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -412,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlCharacterData.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Xml.XmlCharacterData.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

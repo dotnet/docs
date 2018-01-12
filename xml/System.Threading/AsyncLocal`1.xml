@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.AsyncLocal`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncLocal(Of T)" />
   <TypeSignature Language="F#" Value="type AsyncLocal&lt;'T&gt; = class&#xA;    interface IAsyncLocal" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class AsyncLocal sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncLocal`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncLocal();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncLocal`1.#ctor(System.Action{System.Threading.AsyncLocalValueChangedArgs{`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueChangedHandler As Action(Of AsyncLocalValueChangedArgs(Of T)))" />
       <MemberSignature Language="F#" Value="new System.Threading.AsyncLocal&lt;'T&gt; : Action&lt;System.Threading.AsyncLocalValueChangedArgs&lt;'T&gt;&gt; -&gt; System.Threading.AsyncLocal&lt;'T&gt;" Usage="new System.Threading.AsyncLocal&lt;'T&gt; valueChangedHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsyncLocal(Action&lt;System::Threading::AsyncLocalValueChangedArgs&lt;T&gt;&gt; ^ valueChangedHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.AsyncLocal`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Threading.AsyncLocal&lt;'T&gt;.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

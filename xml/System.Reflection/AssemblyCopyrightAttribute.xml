@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyCopyrightAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyCopyrightAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyCopyrightAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyCopyrightAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyCopyrightAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (copyright As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AssemblyCopyrightAttribute : string -&gt; System.Reflection.AssemblyCopyrightAttribute" Usage="new System.Reflection.AssemblyCopyrightAttribute copyright" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyCopyrightAttribute(System::String ^ copyright);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyCopyrightAttribute.Copyright" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Copyright As String" />
       <MemberSignature Language="F#" Value="member this.Copyright : string" Usage="System.Reflection.AssemblyCopyrightAttribute.Copyright" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Copyright { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ServiceReferenceCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceReferenceCollection&#xA;Inherits Collection(Of ServiceReference)" />
   <TypeSignature Language="F#" Value="type ServiceReferenceCollection = class&#xA;    inherit Collection&lt;ServiceReference&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceReferenceCollection : System::Collections::ObjectModel::Collection&lt;System::Web::UI::ServiceReference ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ServiceReferenceCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceReferenceCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure GenericTypeArgumentsEncoder" />
   <TypeSignature Language="F#" Value="type GenericTypeArgumentsEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class GenericTypeArgumentsEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder" Usage="new System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericTypeArgumentsEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder.AddArgument" />
       <MemberSignature Language="VB.NET" Value="Public Function AddArgument () As SignatureTypeEncoder" />
       <MemberSignature Language="F#" Value="member this.AddArgument : unit -&gt; System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" Usage="genericTypeArgumentsEncoder.AddArgument " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::SignatureTypeEncoder AddArgument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

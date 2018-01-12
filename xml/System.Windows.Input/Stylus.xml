@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Stylus" />
   <TypeSignature Language="VB.NET" Value="Public Class Stylus" />
   <TypeSignature Language="F#" Value="type Stylus = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Stylus abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddGotStylusCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddGotStylusCaptureHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddGotStylusCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddGotStylusCaptureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddGotStylusCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddLostStylusCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddLostStylusCaptureHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddLostStylusCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddLostStylusCaptureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddLostStylusCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusButtonDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusButtonDownHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusButtonDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusButtonDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusButtonDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusButtonUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusButtonUpHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusButtonUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusButtonUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusButtonUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusDownEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusDownHandler (element As DependencyObject, handler As StylusDownEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusDownEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusDownEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusInAirMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusInAirMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusInAirMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusInAirMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusInAirMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusInRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusInRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusInRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusInRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusInRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusOutOfRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusOutOfRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusOutOfRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusOutOfRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusOutOfRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusSystemGestureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusSystemGestureEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusSystemGestureHandler (element As DependencyObject, handler As StylusSystemGestureEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusSystemGestureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusSystemGestureEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusSystemGestureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusSystemGestureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusSystemGestureEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddPreviewStylusUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddPreviewStylusUpHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddPreviewStylusUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddPreviewStylusUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPreviewStylusUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -308,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusButtonDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusButtonDownHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusButtonDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusButtonDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusButtonDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusButtonUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusButtonUpHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusButtonUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusButtonUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusButtonUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -358,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusDownEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusDownHandler (element As DependencyObject, handler As StylusDownEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusDownEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusDownEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -383,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusEnterHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusEnterHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusEnterHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusEnterHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusEnterHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -408,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusInAirMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusInAirMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusInAirMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusInAirMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusInAirMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -433,6 +450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusInRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusInRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusInRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusInRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusInRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -458,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusLeaveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusLeaveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusLeaveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusLeaveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusLeaveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -483,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -508,6 +528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusOutOfRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusOutOfRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusOutOfRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusOutOfRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusOutOfRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -533,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusSystemGestureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusSystemGestureEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusSystemGestureHandler (element As DependencyObject, handler As StylusSystemGestureEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusSystemGestureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusSystemGestureEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusSystemGestureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusSystemGestureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusSystemGestureEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -558,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.AddStylusUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStylusUpHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddStylusUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.AddStylusUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStylusUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -592,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.Capture(System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Capture (element As IInputElement) As Boolean" />
       <MemberSignature Language="F#" Value="static member Capture : System.Windows.IInputElement -&gt; bool" Usage="System.Windows.Input.Stylus.Capture element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Capture(System::Windows::IInputElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -633,6 +657,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
       <MemberSignature Language="F#" Value="static member Capture : System.Windows.IInputElement * System.Windows.Input.CaptureMode -&gt; bool" Usage="System.Windows.Input.Stylus.Capture (element, captureMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Capture(System::Windows::IInputElement ^ element, System::Windows::Input::CaptureMode captureMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -677,6 +702,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Stylus.Captured" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Captured As IInputElement" />
       <MemberSignature Language="F#" Value="member this.Captured : System.Windows.IInputElement" Usage="System.Windows.Input.Stylus.Captured" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::IInputElement ^ Captured { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -707,6 +733,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Stylus.CurrentStylusDevice" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentStylusDevice As StylusDevice" />
       <MemberSignature Language="F#" Value="member this.CurrentStylusDevice : System.Windows.Input.StylusDevice" Usage="System.Windows.Input.Stylus.CurrentStylusDevice" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::StylusDevice ^ CurrentStylusDevice { System::Windows::Input::StylusDevice ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -742,6 +769,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Stylus.DirectlyOver" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DirectlyOver As IInputElement" />
       <MemberSignature Language="F#" Value="member this.DirectlyOver : System.Windows.IInputElement" Usage="System.Windows.Input.Stylus.DirectlyOver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::IInputElement ^ DirectlyOver { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -772,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.GetIsFlicksEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsFlicksEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsFlicksEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.Stylus.GetIsFlicksEnabled element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsFlicksEnabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -817,6 +846,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.GetIsPressAndHoldEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsPressAndHoldEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsPressAndHoldEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.Stylus.GetIsPressAndHoldEnabled element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsPressAndHoldEnabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -857,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.GetIsTapFeedbackEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsTapFeedbackEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsTapFeedbackEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.Stylus.GetIsTapFeedbackEnabled element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsTapFeedbackEnabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -902,6 +933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.GetIsTouchFeedbackEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsTouchFeedbackEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsTouchFeedbackEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.Stylus.GetIsTouchFeedbackEnabled element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsTouchFeedbackEnabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -953,6 +985,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.GotStylusCaptureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GotStylusCaptureEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable GotStylusCaptureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.GotStylusCaptureEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ GotStylusCaptureEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -988,6 +1021,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.IsFlicksEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFlicksEnabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsFlicksEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.Stylus.IsFlicksEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFlicksEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1023,6 +1057,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.IsPressAndHoldEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsPressAndHoldEnabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsPressAndHoldEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.Stylus.IsPressAndHoldEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsPressAndHoldEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1058,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.IsTapFeedbackEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTapFeedbackEnabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsTapFeedbackEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.Stylus.IsTapFeedbackEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsTapFeedbackEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1093,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.IsTouchFeedbackEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTouchFeedbackEnabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsTouchFeedbackEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.Stylus.IsTouchFeedbackEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsTouchFeedbackEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1128,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.LostStylusCaptureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LostStylusCaptureEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable LostStylusCaptureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.LostStylusCaptureEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ LostStylusCaptureEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1163,6 +1201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusButtonDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusButtonDownEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusButtonDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusButtonDownEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusButtonDownEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1198,6 +1237,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusButtonUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusButtonUpEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusButtonUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusButtonUpEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusButtonUpEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1233,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusDownEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusDownEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusDownEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1268,6 +1309,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusInAirMoveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusInAirMoveEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusInAirMoveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusInAirMoveEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusInAirMoveEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1303,6 +1345,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusInRangeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusInRangeEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusInRangeEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusInRangeEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusInRangeEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1338,6 +1381,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusMoveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusMoveEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusMoveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusMoveEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusMoveEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1373,6 +1417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusOutOfRangeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusOutOfRangeEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusOutOfRangeEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusOutOfRangeEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusOutOfRangeEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1408,6 +1453,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusSystemGestureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusSystemGestureEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusSystemGestureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusSystemGestureEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusSystemGestureEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1443,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.PreviewStylusUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviewStylusUpEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable PreviewStylusUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.PreviewStylusUpEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ PreviewStylusUpEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1462,6 +1509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveGotStylusCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveGotStylusCaptureHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveGotStylusCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveGotStylusCaptureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveGotStylusCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1487,6 +1535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveLostStylusCaptureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveLostStylusCaptureHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveLostStylusCaptureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveLostStylusCaptureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveLostStylusCaptureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1512,6 +1561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusButtonDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusButtonDownHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusButtonDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusButtonDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusButtonDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1537,6 +1587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusButtonUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusButtonUpHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusButtonUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusButtonUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusButtonUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1562,6 +1613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusDownEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusDownHandler (element As DependencyObject, handler As StylusDownEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusDownEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusDownEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1587,6 +1639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusInAirMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusInAirMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusInAirMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusInAirMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusInAirMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1612,6 +1665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusInRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusInRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusInRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusInRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusInRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1637,6 +1691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1662,6 +1717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusOutOfRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusOutOfRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusOutOfRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusOutOfRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusOutOfRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1687,6 +1743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusSystemGestureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusSystemGestureEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusSystemGestureHandler (element As DependencyObject, handler As StylusSystemGestureEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusSystemGestureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusSystemGestureEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusSystemGestureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusSystemGestureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusSystemGestureEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1712,6 +1769,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemovePreviewStylusUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemovePreviewStylusUpHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemovePreviewStylusUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemovePreviewStylusUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePreviewStylusUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1737,6 +1795,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusButtonDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusButtonDownHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusButtonDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusButtonDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusButtonDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1762,6 +1821,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusButtonUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusButtonEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusButtonUpHandler (element As DependencyObject, handler As StylusButtonEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusButtonUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusButtonEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusButtonUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusButtonUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusButtonEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1787,6 +1847,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusDownHandler(System.Windows.DependencyObject,System.Windows.Input.StylusDownEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusDownHandler (element As DependencyObject, handler As StylusDownEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusDownHandler : System.Windows.DependencyObject * System.Windows.Input.StylusDownEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusDownHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusDownHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusDownEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1812,6 +1873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusEnterHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusEnterHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusEnterHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusEnterHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusEnterHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1837,6 +1899,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusInAirMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusInAirMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusInAirMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusInAirMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusInAirMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1862,6 +1925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusInRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusInRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusInRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusInRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusInRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1887,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusLeaveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusLeaveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusLeaveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusLeaveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusLeaveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1912,6 +1977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusMoveHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusMoveHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusMoveHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusMoveHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusMoveHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1937,6 +2003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusOutOfRangeHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusOutOfRangeHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusOutOfRangeHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusOutOfRangeHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusOutOfRangeHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1962,6 +2029,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusSystemGestureHandler(System.Windows.DependencyObject,System.Windows.Input.StylusSystemGestureEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusSystemGestureHandler (element As DependencyObject, handler As StylusSystemGestureEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusSystemGestureHandler : System.Windows.DependencyObject * System.Windows.Input.StylusSystemGestureEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusSystemGestureHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusSystemGestureHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusSystemGestureEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1987,6 +2055,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.RemoveStylusUpHandler(System.Windows.DependencyObject,System.Windows.Input.StylusEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStylusUpHandler (element As DependencyObject, handler As StylusEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveStylusUpHandler : System.Windows.DependencyObject * System.Windows.Input.StylusEventHandler -&gt; unit" Usage="System.Windows.Input.Stylus.RemoveStylusUpHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStylusUpHandler(System::Windows::DependencyObject ^ element, System::Windows::Input::StylusEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2012,6 +2081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.SetIsFlicksEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsFlicksEnabled (element As DependencyObject, enabled As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsFlicksEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.Stylus.SetIsFlicksEnabled (element, enabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsFlicksEnabled(System::Windows::DependencyObject ^ element, bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2053,6 +2123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.SetIsPressAndHoldEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsPressAndHoldEnabled (element As DependencyObject, enabled As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsPressAndHoldEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.Stylus.SetIsPressAndHoldEnabled (element, enabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsPressAndHoldEnabled(System::Windows::DependencyObject ^ element, bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2094,6 +2165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.SetIsTapFeedbackEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsTapFeedbackEnabled (element As DependencyObject, enabled As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsTapFeedbackEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.Stylus.SetIsTapFeedbackEnabled (element, enabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsTapFeedbackEnabled(System::Windows::DependencyObject ^ element, bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2135,6 +2207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.SetIsTouchFeedbackEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsTouchFeedbackEnabled (element As DependencyObject, enabled As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsTouchFeedbackEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.Stylus.SetIsTouchFeedbackEnabled (element, enabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsTouchFeedbackEnabled(System::Windows::DependencyObject ^ element, bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2187,6 +2260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusButtonDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusButtonDownEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusButtonDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusButtonDownEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusButtonDownEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2222,6 +2296,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusButtonUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusButtonUpEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusButtonUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusButtonUpEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusButtonUpEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2257,6 +2332,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusDownEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusDownEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusDownEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusDownEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusDownEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2292,6 +2368,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusEnterEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusEnterEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusEnterEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusEnterEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusEnterEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2327,6 +2404,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusInAirMoveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusInAirMoveEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusInAirMoveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusInAirMoveEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusInAirMoveEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2362,6 +2440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusInRangeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusInRangeEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusInRangeEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusInRangeEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusInRangeEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2397,6 +2476,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusLeaveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusLeaveEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusLeaveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusLeaveEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusLeaveEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2432,6 +2512,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusMoveEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusMoveEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusMoveEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusMoveEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusMoveEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2467,6 +2548,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusOutOfRangeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusOutOfRangeEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusOutOfRangeEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusOutOfRangeEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusOutOfRangeEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2502,6 +2584,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusSystemGestureEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusSystemGestureEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusSystemGestureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusSystemGestureEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusSystemGestureEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2537,6 +2620,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.Stylus.StylusUpEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylusUpEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable StylusUpEvent : System.Windows.RoutedEvent" Usage="System.Windows.Input.Stylus.StylusUpEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StylusUpEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -2556,6 +2640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Stylus.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Synchronize ()" />
       <MemberSignature Language="F#" Value="static member Synchronize : unit -&gt; unit" Usage="System.Windows.Input.Stylus.Synchronize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Synchronize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

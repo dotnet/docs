@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextLine" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextLine&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type TextLine = class&#xA;    interface ITextMetrics&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextLine abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextLine();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (pixelsPerDip As Double)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.TextFormatting.TextLine : double -&gt; System.Windows.Media.TextFormatting.TextLine" Usage="new System.Windows.Media.TextFormatting.TextLine pixelsPerDip" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextLine(double pixelsPerDip);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Baseline" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Baseline As Double" />
       <MemberSignature Language="F#" Value="member this.Baseline : double" Usage="System.Windows.Media.TextFormatting.TextLine.Baseline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Baseline { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.Baseline</InterfaceMember>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.Collapse(System.Windows.Media.TextFormatting.TextCollapsingProperties[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Collapse (ParamArray collapsingPropertiesList As TextCollapsingProperties()) As TextLine" />
       <MemberSignature Language="F#" Value="abstract member Collapse : System.Windows.Media.TextFormatting.TextCollapsingProperties[] -&gt; System.Windows.Media.TextFormatting.TextLine" Usage="textLine.Collapse collapsingPropertiesList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextLine ^ Collapse(... cli::array &lt;System::Windows::Media::TextFormatting::TextCollapsingProperties ^&gt; ^ collapsingPropertiesList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.DependentLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DependentLength As Integer" />
       <MemberSignature Language="F#" Value="member this.DependentLength : int" Usage="System.Windows.Media.TextFormatting.TextLine.DependentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DependentLength { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.DependentLength</InterfaceMember>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="textLine.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -169,6 +176,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Draw(class System.Windows.Media.DrawingContext drawingContext, valuetype System.Windows.Point origin, valuetype System.Windows.Media.TextFormatting.InvertAxes inversion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.Draw(System.Windows.Media.DrawingContext,System.Windows.Point,System.Windows.Media.TextFormatting.InvertAxes)" />
       <MemberSignature Language="F#" Value="abstract member Draw : System.Windows.Media.DrawingContext * System.Windows.Point * System.Windows.Media.TextFormatting.InvertAxes -&gt; unit" Usage="textLine.Draw (drawingContext, origin, inversion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Draw(System::Windows::Media::DrawingContext ^ drawingContext, System::Windows::Point origin, System::Windows::Media::TextFormatting::InvertAxes inversion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Extent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Extent As Double" />
       <MemberSignature Language="F#" Value="member this.Extent : double" Usage="System.Windows.Media.TextFormatting.TextLine.Extent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Extent { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +224,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetBackspaceCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetBackspaceCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="F#" Value="abstract member GetBackspaceCaretCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="textLine.GetBackspaceCaretCharacterHit characterHit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::CharacterHit GetBackspaceCaretCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetCharacterHitFromDistance(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCharacterHitFromDistance (distance As Double) As CharacterHit" />
       <MemberSignature Language="F#" Value="abstract member GetCharacterHitFromDistance : double -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="textLine.GetCharacterHitFromDistance distance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::CharacterHit GetCharacterHitFromDistance(double distance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -269,6 +280,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetDistanceFromCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetDistanceFromCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="F#" Value="abstract member GetDistanceFromCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; double" Usage="textLine.GetDistanceFromCharacterHit characterHit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract double GetDistanceFromCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetIndexedGlyphRuns" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIndexedGlyphRuns () As IEnumerable(Of IndexedGlyphRun)" />
       <MemberSignature Language="F#" Value="abstract member GetIndexedGlyphRuns : unit -&gt; seq&lt;System.Windows.Media.TextFormatting.IndexedGlyphRun&gt;" Usage="textLine.GetIndexedGlyphRuns " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Windows::Media::TextFormatting::IndexedGlyphRun ^&gt; ^ GetIndexedGlyphRuns();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -327,6 +340,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetNextCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="F#" Value="abstract member GetNextCaretCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="textLine.GetNextCaretCharacterHit characterHit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::CharacterHit GetNextCaretCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +364,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetPreviousCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
       <MemberSignature Language="F#" Value="abstract member GetPreviousCaretCharacterHit : System.Windows.Media.TextFormatting.CharacterHit -&gt; System.Windows.Media.TextFormatting.CharacterHit" Usage="textLine.GetPreviousCaretCharacterHit characterHit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::CharacterHit GetPreviousCaretCharacterHit(System::Windows::Media::TextFormatting::CharacterHit characterHit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -374,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextBounds(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTextBounds (firstTextSourceCharacterIndex As Integer, textLength As Integer) As IList(Of TextBounds)" />
       <MemberSignature Language="F#" Value="abstract member GetTextBounds : int * int -&gt; System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextBounds&gt;" Usage="textLine.GetTextBounds (firstTextSourceCharacterIndex, textLength)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextBounds ^&gt; ^ GetTextBounds(int firstTextSourceCharacterIndex, int textLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -400,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextCollapsedRanges" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTextCollapsedRanges () As IList(Of TextCollapsedRange)" />
       <MemberSignature Language="F#" Value="abstract member GetTextCollapsedRanges : unit -&gt; System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextCollapsedRange&gt;" Usage="textLine.GetTextCollapsedRanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextCollapsedRange ^&gt; ^ GetTextCollapsedRanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -421,6 +438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextLineBreak" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTextLineBreak () As TextLineBreak" />
       <MemberSignature Language="F#" Value="abstract member GetTextLineBreak : unit -&gt; System.Windows.Media.TextFormatting.TextLineBreak" Usage="textLine.GetTextLineBreak " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Media::TextFormatting::TextLineBreak ^ GetTextLineBreak();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -451,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextRunSpans" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTextRunSpans () As IList(Of TextSpan(Of TextRun))" />
       <MemberSignature Language="F#" Value="abstract member GetTextRunSpans : unit -&gt; System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextSpan&lt;System.Windows.Media.TextFormatting.TextRun&gt;&gt;" Usage="textLine.GetTextRunSpans " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextSpan&lt;System::Windows::Media::TextFormatting::TextRun ^&gt; ^&gt; ^ GetTextRunSpans();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -472,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.HasCollapsed" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HasCollapsed As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasCollapsed : bool" Usage="System.Windows.Media.TextFormatting.TextLine.HasCollapsed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HasCollapsed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -493,6 +513,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.HasOverflowed" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HasOverflowed As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasOverflowed : bool" Usage="System.Windows.Media.TextFormatting.TextLine.HasOverflowed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HasOverflowed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -514,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Height" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Height As Double" />
       <MemberSignature Language="F#" Value="member this.Height : double" Usage="System.Windows.Media.TextFormatting.TextLine.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Height { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.Height</InterfaceMember>
@@ -537,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.IsTruncated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsTruncated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsTruncated : bool" Usage="System.Windows.Media.TextFormatting.TextLine.IsTruncated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsTruncated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -565,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Length" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Media.TextFormatting.TextLine.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.Length</InterfaceMember>
@@ -588,6 +612,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.MarkerBaseline" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MarkerBaseline As Double" />
       <MemberSignature Language="F#" Value="member this.MarkerBaseline : double" Usage="System.Windows.Media.TextFormatting.TextLine.MarkerBaseline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double MarkerBaseline { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.MarkerBaseline</InterfaceMember>
@@ -611,6 +636,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.MarkerHeight" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MarkerHeight As Double" />
       <MemberSignature Language="F#" Value="member this.MarkerHeight : double" Usage="System.Windows.Media.TextFormatting.TextLine.MarkerHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double MarkerHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.MarkerHeight</InterfaceMember>
@@ -634,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.NewlineLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NewlineLength As Integer" />
       <MemberSignature Language="F#" Value="member this.NewlineLength : int" Usage="System.Windows.Media.TextFormatting.TextLine.NewlineLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int NewlineLength { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.NewlineLength</InterfaceMember>
@@ -657,6 +684,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.OverhangAfter" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OverhangAfter As Double" />
       <MemberSignature Language="F#" Value="member this.OverhangAfter : double" Usage="System.Windows.Media.TextFormatting.TextLine.OverhangAfter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double OverhangAfter { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -677,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.OverhangLeading" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OverhangLeading As Double" />
       <MemberSignature Language="F#" Value="member this.OverhangLeading : double" Usage="System.Windows.Media.TextFormatting.TextLine.OverhangLeading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double OverhangLeading { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -697,6 +726,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.OverhangTrailing" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property OverhangTrailing As Double" />
       <MemberSignature Language="F#" Value="member this.OverhangTrailing : double" Usage="System.Windows.Media.TextFormatting.TextLine.OverhangTrailing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double OverhangTrailing { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -717,6 +747,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.PixelsPerDip" />
       <MemberSignature Language="VB.NET" Value="Public Property PixelsPerDip As Double" />
       <MemberSignature Language="F#" Value="member this.PixelsPerDip : double with get, set" Usage="System.Windows.Media.TextFormatting.TextLine.PixelsPerDip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerDip { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -737,6 +768,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Start" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Start As Double" />
       <MemberSignature Language="F#" Value="member this.Start : double" Usage="System.Windows.Media.TextFormatting.TextLine.Start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Start { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.Start</InterfaceMember>
@@ -760,6 +792,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.TextBaseline" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextBaseline As Double" />
       <MemberSignature Language="F#" Value="member this.TextBaseline : double" Usage="System.Windows.Media.TextFormatting.TextLine.TextBaseline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double TextBaseline { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -780,6 +813,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.TextHeight" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextHeight As Double" />
       <MemberSignature Language="F#" Value="member this.TextHeight : double" Usage="System.Windows.Media.TextFormatting.TextLine.TextHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double TextHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -807,6 +841,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.TrailingWhitespaceLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TrailingWhitespaceLength As Integer" />
       <MemberSignature Language="F#" Value="member this.TrailingWhitespaceLength : int" Usage="System.Windows.Media.TextFormatting.TextLine.TrailingWhitespaceLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int TrailingWhitespaceLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -827,6 +862,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Width" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Width As Double" />
       <MemberSignature Language="F#" Value="member this.Width : double" Usage="System.Windows.Media.TextFormatting.TextLine.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Width { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.Width</InterfaceMember>
@@ -850,6 +886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.WidthIncludingTrailingWhitespace" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property WidthIncludingTrailingWhitespace As Double" />
       <MemberSignature Language="F#" Value="member this.WidthIncludingTrailingWhitespace : double" Usage="System.Windows.Media.TextFormatting.TextLine.WidthIncludingTrailingWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double WidthIncludingTrailingWhitespace { double get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.TextFormatting.ITextMetrics.WidthIncludingTrailingWhitespace</InterfaceMember>

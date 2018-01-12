@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IApplicationResourceStreamResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationResourceStreamResolver" />
   <TypeSignature Language="F#" Value="type IApplicationResourceStreamResolver = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplicationResourceStreamResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.IApplicationResourceStreamResolver.GetApplicationResourceStream(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetApplicationResourceStream (relativeUri As Uri) As Stream" />
       <MemberSignature Language="F#" Value="abstract member GetApplicationResourceStream : Uri -&gt; System.IO.Stream" Usage="iApplicationResourceStreamResolver.GetApplicationResourceStream relativeUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetApplicationResourceStream(Uri ^ relativeUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

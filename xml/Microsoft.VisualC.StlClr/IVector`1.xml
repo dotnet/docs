@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IVector`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IVector(Of TValue)&#xA;Implements ICloneable, ICollection, IRandomAccessContainer(Of TValue)" />
   <TypeSignature Language="F#" Value="type IVector&lt;'Value&gt; = interface&#xA;    interface IRandomAccessContainer&lt;'Value&gt;&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IVector : ICloneable, Microsoft::VisualC::StlClr::Generic::IRandomAccessContainer&lt;TValue&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.assign(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub assign (_Right As IEnumerable)" />
       <MemberSignature Language="F#" Value="abstract member assign : System.Collections.IEnumerable -&gt; unit" Usage="iVector.assign _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(System::Collections::IEnumerable ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.assign(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub assign (_First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
       <MemberSignature Language="F#" Value="abstract member assign : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; unit" Usage="iVector.assign (_First, _Last)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.assign(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub assign (_Count As Integer, _Val As TValue)" />
       <MemberSignature Language="F#" Value="abstract member assign : int * 'Value -&gt; unit" Usage="iVector.assign (_Count, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(int _Count, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.at(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function at (_Pos As Integer) As TValue" />
       <MemberSignature Language="F#" Value="abstract member at : int -&gt; " Usage="iVector.at _Pos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % at(int _Pos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.back" />
       <MemberSignature Language="VB.NET" Value="Public Function back () As TValue" />
       <MemberSignature Language="F#" Value="abstract member back : unit -&gt; " Usage="iVector.back " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % back();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IVector`1.back_item" />
       <MemberSignature Language="VB.NET" Value="Public Property back_item As TValue" />
       <MemberSignature Language="F#" Value="member this.back_item : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.IVector&lt;'Value&gt;.back_item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue back_item { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.begin(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function begin (ByRef  As ContainerRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="abstract member begin :  -&gt; Void" Usage="iVector.begin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ begin(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.capacity" />
       <MemberSignature Language="VB.NET" Value="Public Function capacity () As Integer" />
       <MemberSignature Language="F#" Value="abstract member capacity : unit -&gt; int" Usage="iVector.capacity " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int capacity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub clear ()" />
       <MemberSignature Language="F#" Value="abstract member clear : unit -&gt; unit" Usage="iVector.clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -324,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.empty" />
       <MemberSignature Language="VB.NET" Value="Public Function empty () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member empty : unit -&gt; bool" Usage="iVector.empty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool empty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.end(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function end (ByRef  As ContainerRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="abstract member end :  -&gt; Void" Usage="iVector.end " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ end(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -401,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
       <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerRandomAccessIterator(Of TValue), _Where As ContainerRandomAccessIterator) As Void" />
       <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator -&gt; Void" Usage="iVector.erase (, _Where)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -434,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
       <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerRandomAccessIterator(Of TValue), _First_iter As ContainerRandomAccessIterator, _Last_iter As ContainerRandomAccessIterator) As Void" />
       <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator -&gt; Void" Usage="iVector.erase (, _First_iter, _Last_iter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Last_iter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -469,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.front" />
       <MemberSignature Language="VB.NET" Value="Public Function front () As TValue" />
       <MemberSignature Language="F#" Value="abstract member front : unit -&gt; " Usage="iVector.front " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % front();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -497,6 +512,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IVector`1.front_item" />
       <MemberSignature Language="VB.NET" Value="Public Property front_item As TValue" />
       <MemberSignature Language="F#" Value="member this.front_item : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.IVector&lt;'Value&gt;.front_item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue front_item { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -541,6 +557,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where_iter As ContainerRandomAccessIterator, _Right As IEnumerable)" />
       <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator * System.Collections.IEnumerable -&gt; unit" Usage="iVector.insert (_Where_iter, _Right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where_iter, System::Collections::IEnumerable ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -573,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerRandomAccessIterator, _First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
       <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; unit" Usage="iVector.insert (_Where, _First, _Last)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -607,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerRandomAccessIterator, _Count As Integer, _Val As TValue)" />
       <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator * int * 'Value -&gt; unit" Usage="iVector.insert (_Where, _Count, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where, int _Count, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -641,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerRandomAccessIterator(Of TValue), _Where As ContainerRandomAccessIterator, _Val As TValue) As Void" />
       <MemberSignature Language="F#" Value="abstract member insert :  * Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator * 'Value -&gt; Void" Usage="iVector.insert (, _Where, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -676,6 +696,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IVector`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(_Pos As Integer) As TValue" />
       <MemberSignature Language="F#" Value="member this.Item(int) : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.IVector&lt;'Value&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[int] { TValue get(int _Pos); void set(int _Pos, TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -707,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.pop_back" />
       <MemberSignature Language="VB.NET" Value="Public Sub pop_back ()" />
       <MemberSignature Language="F#" Value="abstract member pop_back : unit -&gt; unit" Usage="iVector.pop_back " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void pop_back();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -734,6 +756,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.push_back(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub push_back (_Val As TValue)" />
       <MemberSignature Language="F#" Value="abstract member push_back : 'Value -&gt; unit" Usage="iVector.push_back _Val" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void push_back(TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -764,6 +787,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function rbegin (ByRef  As ReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="abstract member rbegin :  -&gt; Void" Usage="iVector.rbegin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rbegin(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -795,6 +819,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.rend(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function rend (ByRef  As ReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="F#" Value="abstract member rend :  -&gt; Void" Usage="iVector.rend " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rend(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -826,6 +851,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.reserve(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub reserve (_Capacity As Integer)" />
       <MemberSignature Language="F#" Value="abstract member reserve : int -&gt; unit" Usage="iVector.reserve _Capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void reserve(int _Capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -873,6 +899,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.resize(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub resize (_Newsize As Integer)" />
       <MemberSignature Language="F#" Value="abstract member resize : int -&gt; unit" Usage="iVector.resize _Newsize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void resize(int _Newsize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -903,6 +930,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.resize(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub resize (_Newsize As Integer, _Val As TValue)" />
       <MemberSignature Language="F#" Value="abstract member resize : int * 'Value -&gt; unit" Usage="iVector.resize (_Newsize, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void resize(int _Newsize, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -935,6 +963,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.size" />
       <MemberSignature Language="VB.NET" Value="Public Function size () As Integer" />
       <MemberSignature Language="F#" Value="abstract member size : unit -&gt; int" Usage="iVector.size " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int size();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -963,6 +992,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.swap(Microsoft.VisualC.StlClr.IVector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub swap (A_0 As IVector(Of TValue))" />
       <MemberSignature Language="F#" Value="abstract member swap : Microsoft.VisualC.StlClr.IVector&lt;'Value&gt; -&gt; unit" Usage="iVector.swap A_0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IVector&lt;TValue&gt; ^ A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

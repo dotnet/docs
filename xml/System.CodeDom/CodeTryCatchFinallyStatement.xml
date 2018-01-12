@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTryCatchFinallyStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTryCatchFinallyStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="F#" Value="type CodeTryCatchFinallyStatement = class&#xA;    inherit CodeStatement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTryCatchFinallyStatement : System::CodeDom::CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTryCatchFinallyStatement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTryCatchFinallyStatement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tryStatements As CodeStatement(), catchClauses As CodeCatchClause())" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTryCatchFinallyStatement : System.CodeDom.CodeStatement[] * System.CodeDom.CodeCatchClause[] -&gt; System.CodeDom.CodeTryCatchFinallyStatement" Usage="new System.CodeDom.CodeTryCatchFinallyStatement (tryStatements, catchClauses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTryCatchFinallyStatement(cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ tryStatements, cli::array &lt;System::CodeDom::CodeCatchClause ^&gt; ^ catchClauses);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[],System.CodeDom.CodeStatement[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tryStatements As CodeStatement(), catchClauses As CodeCatchClause(), finallyStatements As CodeStatement())" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTryCatchFinallyStatement : System.CodeDom.CodeStatement[] * System.CodeDom.CodeCatchClause[] * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeTryCatchFinallyStatement" Usage="new System.CodeDom.CodeTryCatchFinallyStatement (tryStatements, catchClauses, finallyStatements)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTryCatchFinallyStatement(cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ tryStatements, cli::array &lt;System::CodeDom::CodeCatchClause ^&gt; ^ catchClauses, cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ finallyStatements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CatchClauses As CodeCatchClauseCollection" />
       <MemberSignature Language="F#" Value="member this.CatchClauses : System.CodeDom.CodeCatchClauseCollection" Usage="System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeCatchClauseCollection ^ CatchClauses { System::CodeDom::CodeCatchClauseCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTryCatchFinallyStatement.FinallyStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinallyStatements As CodeStatementCollection" />
       <MemberSignature Language="F#" Value="member this.FinallyStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeTryCatchFinallyStatement.FinallyStatements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ FinallyStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTryCatchFinallyStatement.TryStatements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TryStatements As CodeStatementCollection" />
       <MemberSignature Language="F#" Value="member this.TryStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeTryCatchFinallyStatement.TryStatements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ TryStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

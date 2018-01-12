@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Cookie" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Cookie" />
   <TypeSignature Language="F#" Value="type Cookie = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Cookie sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>3.9.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Cookie();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Cookie : string * string -&gt; System.Net.Cookie" Usage="new System.Net.Cookie (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Cookie(System::String ^ name, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -182,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String, path As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Cookie : string * string * string -&gt; System.Net.Cookie" Usage="new System.Net.Cookie (name, value, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Cookie(System::String ^ name, System::String ^ value, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -263,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String, path As String, domain As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Cookie : string * string * string * string -&gt; System.Net.Cookie" Usage="new System.Net.Cookie (name, value, path, domain)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Cookie(System::String ^ name, System::String ^ value, System::String ^ path, System::String ^ domain);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -344,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Comment" />
       <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
       <MemberSignature Language="F#" Value="member this.Comment : string with get, set" Usage="System.Net.Cookie.Comment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -395,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.CommentUri" />
       <MemberSignature Language="VB.NET" Value="Public Property CommentUri As Uri" />
       <MemberSignature Language="F#" Value="member this.CommentUri : Uri with get, set" Usage="System.Net.Cookie.CommentUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ CommentUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -446,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Discard" />
       <MemberSignature Language="VB.NET" Value="Public Property Discard As Boolean" />
       <MemberSignature Language="F#" Value="member this.Discard : bool with get, set" Usage="System.Net.Cookie.Discard" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Discard { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -498,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Net.Cookie.Domain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -549,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cookie.Equals comparand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -588,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Expired" />
       <MemberSignature Language="VB.NET" Value="Public Property Expired As Boolean" />
       <MemberSignature Language="F#" Value="member this.Expired : bool with get, set" Usage="System.Net.Cookie.Expired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Expired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -640,6 +651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Expires" />
       <MemberSignature Language="VB.NET" Value="Public Property Expires As DateTime" />
       <MemberSignature Language="F#" Value="member this.Expires : DateTime with get, set" Usage="System.Net.Cookie.Expires" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Expires { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -693,6 +705,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cookie.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -733,6 +746,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.HttpOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.HttpOnly : bool with get, set" Usage="System.Net.Cookie.HttpOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -772,6 +786,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Net.Cookie.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -830,6 +845,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Net.Cookie.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -881,6 +897,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As String" />
       <MemberSignature Language="F#" Value="member this.Port : string with get, set" Usage="System.Net.Cookie.Port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Port { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -933,6 +950,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Secure" />
       <MemberSignature Language="VB.NET" Value="Public Property Secure As Boolean" />
       <MemberSignature Language="F#" Value="member this.Secure : bool with get, set" Usage="System.Net.Cookie.Secure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Secure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -985,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.TimeStamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeStamp As DateTime" />
       <MemberSignature Language="F#" Value="member this.TimeStamp : DateTime" Usage="System.Net.Cookie.TimeStamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeStamp { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1036,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Cookie.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cookie.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1085,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Net.Cookie.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1138,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Cookie.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Integer" />
       <MemberSignature Language="F#" Value="member this.Version : int with get, set" Usage="System.Net.Cookie.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

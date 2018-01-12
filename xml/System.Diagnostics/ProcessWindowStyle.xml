@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessWindowStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProcessWindowStyle" />
   <TypeSignature Language="F#" Value="type ProcessWindowStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessWindowStyle" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="F#" Value="Hidden = 1" Usage="System.Diagnostics.ProcessWindowStyle.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Maximized" />
       <MemberSignature Language="VB.NET" Value="Maximized" />
       <MemberSignature Language="F#" Value="Maximized = 3" Usage="System.Diagnostics.ProcessWindowStyle.Maximized" />
+      <MemberSignature Language="C++ CLI" Value="Maximized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Minimized" />
       <MemberSignature Language="VB.NET" Value="Minimized" />
       <MemberSignature Language="F#" Value="Minimized = 2" Usage="System.Diagnostics.ProcessWindowStyle.Minimized" />
+      <MemberSignature Language="C++ CLI" Value="Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Diagnostics.ProcessWindowStyle.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

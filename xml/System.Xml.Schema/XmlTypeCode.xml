@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlTypeCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlTypeCode" />
   <TypeSignature Language="F#" Value="type XmlTypeCode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlTypeCode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.AnyAtomicType" />
       <MemberSignature Language="VB.NET" Value="AnyAtomicType" />
       <MemberSignature Language="F#" Value="AnyAtomicType = 10" Usage="System.Xml.Schema.XmlTypeCode.AnyAtomicType" />
+      <MemberSignature Language="C++ CLI" Value="AnyAtomicType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.AnyUri" />
       <MemberSignature Language="VB.NET" Value="AnyUri" />
       <MemberSignature Language="F#" Value="AnyUri = 28" Usage="System.Xml.Schema.XmlTypeCode.AnyUri" />
+      <MemberSignature Language="C++ CLI" Value="AnyUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="F#" Value="Attribute = 5" Usage="System.Xml.Schema.XmlTypeCode.Attribute" />
+      <MemberSignature Language="C++ CLI" Value="Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Base64Binary" />
       <MemberSignature Language="VB.NET" Value="Base64Binary" />
       <MemberSignature Language="F#" Value="Base64Binary = 27" Usage="System.Xml.Schema.XmlTypeCode.Base64Binary" />
+      <MemberSignature Language="C++ CLI" Value="Base64Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="F#" Value="Boolean = 13" Usage="System.Xml.Schema.XmlTypeCode.Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
       <MemberSignature Language="F#" Value="Byte = 46" Usage="System.Xml.Schema.XmlTypeCode.Byte" />
+      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Comment" />
       <MemberSignature Language="VB.NET" Value="Comment" />
       <MemberSignature Language="F#" Value="Comment = 8" Usage="System.Xml.Schema.XmlTypeCode.Comment" />
+      <MemberSignature Language="C++ CLI" Value="Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Date" />
       <MemberSignature Language="VB.NET" Value="Date" />
       <MemberSignature Language="F#" Value="Date = 20" Usage="System.Xml.Schema.XmlTypeCode.Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
       <MemberSignature Language="F#" Value="DateTime = 18" Usage="System.Xml.Schema.XmlTypeCode.DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.DayTimeDuration" />
       <MemberSignature Language="VB.NET" Value="DayTimeDuration" />
       <MemberSignature Language="F#" Value="DayTimeDuration = 54" Usage="System.Xml.Schema.XmlTypeCode.DayTimeDuration" />
+      <MemberSignature Language="C++ CLI" Value="DayTimeDuration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -311,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
       <MemberSignature Language="F#" Value="Decimal = 14" Usage="System.Xml.Schema.XmlTypeCode.Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -339,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Document" />
       <MemberSignature Language="VB.NET" Value="Document" />
       <MemberSignature Language="F#" Value="Document = 3" Usage="System.Xml.Schema.XmlTypeCode.Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
       <MemberSignature Language="F#" Value="Double = 16" Usage="System.Xml.Schema.XmlTypeCode.Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Duration" />
       <MemberSignature Language="VB.NET" Value="Duration" />
       <MemberSignature Language="F#" Value="Duration = 17" Usage="System.Xml.Schema.XmlTypeCode.Duration" />
+      <MemberSignature Language="C++ CLI" Value="Duration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -423,6 +438,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="F#" Value="Element = 4" Usage="System.Xml.Schema.XmlTypeCode.Element" />
+      <MemberSignature Language="C++ CLI" Value="Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -451,6 +467,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Entity" />
       <MemberSignature Language="VB.NET" Value="Entity" />
       <MemberSignature Language="F#" Value="Entity = 39" Usage="System.Xml.Schema.XmlTypeCode.Entity" />
+      <MemberSignature Language="C++ CLI" Value="Entity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -479,6 +496,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Float" />
       <MemberSignature Language="VB.NET" Value="Float" />
       <MemberSignature Language="F#" Value="Float = 15" Usage="System.Xml.Schema.XmlTypeCode.Float" />
+      <MemberSignature Language="C++ CLI" Value="Float" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -507,6 +525,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GDay" />
       <MemberSignature Language="VB.NET" Value="GDay" />
       <MemberSignature Language="F#" Value="GDay = 24" Usage="System.Xml.Schema.XmlTypeCode.GDay" />
+      <MemberSignature Language="C++ CLI" Value="GDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -535,6 +554,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GMonth" />
       <MemberSignature Language="VB.NET" Value="GMonth" />
       <MemberSignature Language="F#" Value="GMonth = 25" Usage="System.Xml.Schema.XmlTypeCode.GMonth" />
+      <MemberSignature Language="C++ CLI" Value="GMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -563,6 +583,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GMonthDay" />
       <MemberSignature Language="VB.NET" Value="GMonthDay" />
       <MemberSignature Language="F#" Value="GMonthDay = 23" Usage="System.Xml.Schema.XmlTypeCode.GMonthDay" />
+      <MemberSignature Language="C++ CLI" Value="GMonthDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -591,6 +612,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GYear" />
       <MemberSignature Language="VB.NET" Value="GYear" />
       <MemberSignature Language="F#" Value="GYear = 22" Usage="System.Xml.Schema.XmlTypeCode.GYear" />
+      <MemberSignature Language="C++ CLI" Value="GYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -619,6 +641,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.GYearMonth" />
       <MemberSignature Language="VB.NET" Value="GYearMonth" />
       <MemberSignature Language="F#" Value="GYearMonth = 21" Usage="System.Xml.Schema.XmlTypeCode.GYearMonth" />
+      <MemberSignature Language="C++ CLI" Value="GYearMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -647,6 +670,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.HexBinary" />
       <MemberSignature Language="VB.NET" Value="HexBinary" />
       <MemberSignature Language="F#" Value="HexBinary = 26" Usage="System.Xml.Schema.XmlTypeCode.HexBinary" />
+      <MemberSignature Language="C++ CLI" Value="HexBinary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -675,6 +699,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Id" />
       <MemberSignature Language="VB.NET" Value="Id" />
       <MemberSignature Language="F#" Value="Id = 37" Usage="System.Xml.Schema.XmlTypeCode.Id" />
+      <MemberSignature Language="C++ CLI" Value="Id" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -703,6 +728,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Idref" />
       <MemberSignature Language="VB.NET" Value="Idref" />
       <MemberSignature Language="F#" Value="Idref = 38" Usage="System.Xml.Schema.XmlTypeCode.Idref" />
+      <MemberSignature Language="C++ CLI" Value="Idref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -731,6 +757,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Int" />
       <MemberSignature Language="VB.NET" Value="Int" />
       <MemberSignature Language="F#" Value="Int = 44" Usage="System.Xml.Schema.XmlTypeCode.Int" />
+      <MemberSignature Language="C++ CLI" Value="Int" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -759,6 +786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Integer" />
       <MemberSignature Language="VB.NET" Value="Integer" />
       <MemberSignature Language="F#" Value="Integer = 40" Usage="System.Xml.Schema.XmlTypeCode.Integer" />
+      <MemberSignature Language="C++ CLI" Value="Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -787,6 +815,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Item" />
       <MemberSignature Language="VB.NET" Value="Item" />
       <MemberSignature Language="F#" Value="Item = 1" Usage="System.Xml.Schema.XmlTypeCode.Item" />
+      <MemberSignature Language="C++ CLI" Value="Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -815,6 +844,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Language" />
       <MemberSignature Language="VB.NET" Value="Language" />
       <MemberSignature Language="F#" Value="Language = 33" Usage="System.Xml.Schema.XmlTypeCode.Language" />
+      <MemberSignature Language="C++ CLI" Value="Language" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -843,6 +873,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Long" />
       <MemberSignature Language="VB.NET" Value="Long" />
       <MemberSignature Language="F#" Value="Long = 43" Usage="System.Xml.Schema.XmlTypeCode.Long" />
+      <MemberSignature Language="C++ CLI" Value="Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -871,6 +902,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Name" />
       <MemberSignature Language="VB.NET" Value="Name" />
       <MemberSignature Language="F#" Value="Name = 35" Usage="System.Xml.Schema.XmlTypeCode.Name" />
+      <MemberSignature Language="C++ CLI" Value="Name" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -899,6 +931,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Namespace" />
       <MemberSignature Language="VB.NET" Value="Namespace" />
       <MemberSignature Language="F#" Value="Namespace = 6" Usage="System.Xml.Schema.XmlTypeCode.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -927,6 +960,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NCName" />
       <MemberSignature Language="VB.NET" Value="NCName" />
       <MemberSignature Language="F#" Value="NCName = 36" Usage="System.Xml.Schema.XmlTypeCode.NCName" />
+      <MemberSignature Language="C++ CLI" Value="NCName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -955,6 +989,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NegativeInteger" />
       <MemberSignature Language="VB.NET" Value="NegativeInteger" />
       <MemberSignature Language="F#" Value="NegativeInteger = 42" Usage="System.Xml.Schema.XmlTypeCode.NegativeInteger" />
+      <MemberSignature Language="C++ CLI" Value="NegativeInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -983,6 +1018,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NmToken" />
       <MemberSignature Language="VB.NET" Value="NmToken" />
       <MemberSignature Language="F#" Value="NmToken = 34" Usage="System.Xml.Schema.XmlTypeCode.NmToken" />
+      <MemberSignature Language="C++ CLI" Value="NmToken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1011,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Node" />
       <MemberSignature Language="VB.NET" Value="Node" />
       <MemberSignature Language="F#" Value="Node = 2" Usage="System.Xml.Schema.XmlTypeCode.Node" />
+      <MemberSignature Language="C++ CLI" Value="Node" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1039,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Schema.XmlTypeCode.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1067,6 +1105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NonNegativeInteger" />
       <MemberSignature Language="VB.NET" Value="NonNegativeInteger" />
       <MemberSignature Language="F#" Value="NonNegativeInteger = 47" Usage="System.Xml.Schema.XmlTypeCode.NonNegativeInteger" />
+      <MemberSignature Language="C++ CLI" Value="NonNegativeInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1095,6 +1134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NonPositiveInteger" />
       <MemberSignature Language="VB.NET" Value="NonPositiveInteger" />
       <MemberSignature Language="F#" Value="NonPositiveInteger = 41" Usage="System.Xml.Schema.XmlTypeCode.NonPositiveInteger" />
+      <MemberSignature Language="C++ CLI" Value="NonPositiveInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1123,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.NormalizedString" />
       <MemberSignature Language="VB.NET" Value="NormalizedString" />
       <MemberSignature Language="F#" Value="NormalizedString = 31" Usage="System.Xml.Schema.XmlTypeCode.NormalizedString" />
+      <MemberSignature Language="C++ CLI" Value="NormalizedString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1151,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Notation" />
       <MemberSignature Language="VB.NET" Value="Notation" />
       <MemberSignature Language="F#" Value="Notation = 30" Usage="System.Xml.Schema.XmlTypeCode.Notation" />
+      <MemberSignature Language="C++ CLI" Value="Notation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1179,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.PositiveInteger" />
       <MemberSignature Language="VB.NET" Value="PositiveInteger" />
       <MemberSignature Language="F#" Value="PositiveInteger = 52" Usage="System.Xml.Schema.XmlTypeCode.PositiveInteger" />
+      <MemberSignature Language="C++ CLI" Value="PositiveInteger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1207,6 +1250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.ProcessingInstruction" />
       <MemberSignature Language="VB.NET" Value="ProcessingInstruction" />
       <MemberSignature Language="F#" Value="ProcessingInstruction = 7" Usage="System.Xml.Schema.XmlTypeCode.ProcessingInstruction" />
+      <MemberSignature Language="C++ CLI" Value="ProcessingInstruction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1235,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.QName" />
       <MemberSignature Language="VB.NET" Value="QName" />
       <MemberSignature Language="F#" Value="QName = 29" Usage="System.Xml.Schema.XmlTypeCode.QName" />
+      <MemberSignature Language="C++ CLI" Value="QName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1263,6 +1308,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Short" />
       <MemberSignature Language="VB.NET" Value="Short" />
       <MemberSignature Language="F#" Value="Short = 45" Usage="System.Xml.Schema.XmlTypeCode.Short" />
+      <MemberSignature Language="C++ CLI" Value="Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1291,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="F#" Value="String = 12" Usage="System.Xml.Schema.XmlTypeCode.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1319,6 +1366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="F#" Value="Text = 9" Usage="System.Xml.Schema.XmlTypeCode.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1347,6 +1395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Time" />
       <MemberSignature Language="VB.NET" Value="Time" />
       <MemberSignature Language="F#" Value="Time = 19" Usage="System.Xml.Schema.XmlTypeCode.Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1375,6 +1424,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.Token" />
       <MemberSignature Language="VB.NET" Value="Token" />
       <MemberSignature Language="F#" Value="Token = 32" Usage="System.Xml.Schema.XmlTypeCode.Token" />
+      <MemberSignature Language="C++ CLI" Value="Token" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1403,6 +1453,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedByte" />
       <MemberSignature Language="VB.NET" Value="UnsignedByte" />
       <MemberSignature Language="F#" Value="UnsignedByte = 51" Usage="System.Xml.Schema.XmlTypeCode.UnsignedByte" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1431,6 +1482,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedInt" />
       <MemberSignature Language="VB.NET" Value="UnsignedInt" />
       <MemberSignature Language="F#" Value="UnsignedInt = 49" Usage="System.Xml.Schema.XmlTypeCode.UnsignedInt" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1459,6 +1511,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedLong" />
       <MemberSignature Language="VB.NET" Value="UnsignedLong" />
       <MemberSignature Language="F#" Value="UnsignedLong = 48" Usage="System.Xml.Schema.XmlTypeCode.UnsignedLong" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1487,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UnsignedShort" />
       <MemberSignature Language="VB.NET" Value="UnsignedShort" />
       <MemberSignature Language="F#" Value="UnsignedShort = 50" Usage="System.Xml.Schema.XmlTypeCode.UnsignedShort" />
+      <MemberSignature Language="C++ CLI" Value="UnsignedShort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1515,6 +1569,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.UntypedAtomic" />
       <MemberSignature Language="VB.NET" Value="UntypedAtomic" />
       <MemberSignature Language="F#" Value="UntypedAtomic = 11" Usage="System.Xml.Schema.XmlTypeCode.UntypedAtomic" />
+      <MemberSignature Language="C++ CLI" Value="UntypedAtomic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1543,6 +1598,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlTypeCode.YearMonthDuration" />
       <MemberSignature Language="VB.NET" Value="YearMonthDuration" />
       <MemberSignature Language="F#" Value="YearMonthDuration = 53" Usage="System.Xml.Schema.XmlTypeCode.YearMonthDuration" />
+      <MemberSignature Language="C++ CLI" Value="YearMonthDuration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

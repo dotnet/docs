@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.InvalidConstraintException" />
   <TypeSignature Language="VB.NET" Value="Public Class InvalidConstraintException&#xA;Inherits DataException" />
   <TypeSignature Language="F#" Value="type InvalidConstraintException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidConstraintException : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidConstraintException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidConstraintException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidConstraintException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="F#" Value="new System.Data.InvalidConstraintException : string -&gt; System.Data.InvalidConstraintException" Usage="new System.Data.InvalidConstraintException s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidConstraintException(System::String ^ s);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidConstraintException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Data.InvalidConstraintException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.InvalidConstraintException" Usage="new System.Data.InvalidConstraintException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidConstraintException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.InvalidConstraintException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.InvalidConstraintException : string * Exception -&gt; System.Data.InvalidConstraintException" Usage="new System.Data.InvalidConstraintException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidConstraintException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

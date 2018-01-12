@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PolyBezierSegment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolyBezierSegment&#xA;Inherits PathSegment" />
   <TypeSignature Language="F#" Value="type PolyBezierSegment = class&#xA;    inherit PathSegment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PolyBezierSegment sealed : System::Windows::Media::PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyBezierSegment.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolyBezierSegment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyBezierSegment.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of Point), isStroked As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.PolyBezierSegment : seq&lt;System.Windows.Point&gt; * bool -&gt; System.Windows.Media.PolyBezierSegment" Usage="new System.Windows.Media.PolyBezierSegment (points, isStroked)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolyBezierSegment(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points, bool isStroked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyBezierSegment.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As PolyBezierSegment" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.PolyBezierSegment" Usage="polyBezierSegment.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PolyBezierSegment ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyBezierSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PolyBezierSegment" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.PolyBezierSegment" Usage="polyBezierSegment.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PolyBezierSegment ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PolyBezierSegment.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="polyBezierSegment.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.PolyBezierSegment.Points" />
       <MemberSignature Language="VB.NET" Value="Public Property Points As PointCollection" />
       <MemberSignature Language="F#" Value="member this.Points : System.Windows.Media.PointCollection with get, set" Usage="System.Windows.Media.PolyBezierSegment.Points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PointCollection ^ Points { System::Windows::Media::PointCollection ^ get(); void set(System::Windows::Media::PointCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PolyBezierSegment.PointsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointsProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PointsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.PolyBezierSegment.PointsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

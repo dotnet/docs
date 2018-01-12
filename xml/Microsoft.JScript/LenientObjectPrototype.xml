@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientObjectPrototype" />
   <TypeSignature Language="VB.NET" Value="Public Class LenientObjectPrototype&#xA;Inherits ObjectPrototype" />
   <TypeSignature Language="F#" Value="type LenientObjectPrototype = class&#xA;    inherit ObjectPrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientObjectPrototype : Microsoft::JScript::ObjectPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.constructor" />
       <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
       <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientObjectPrototype.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.hasOwnProperty" />
       <MemberSignature Language="VB.NET" Value="Public hasOwnProperty As Object " />
       <MemberSignature Language="F#" Value="val mutable hasOwnProperty : obj" Usage="Microsoft.JScript.LenientObjectPrototype.hasOwnProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ hasOwnProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.isPrototypeOf" />
       <MemberSignature Language="VB.NET" Value="Public isPrototypeOf As Object " />
       <MemberSignature Language="F#" Value="val mutable isPrototypeOf : obj" Usage="Microsoft.JScript.LenientObjectPrototype.isPrototypeOf" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ isPrototypeOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.propertyIsEnumerable" />
       <MemberSignature Language="VB.NET" Value="Public propertyIsEnumerable As Object " />
       <MemberSignature Language="F#" Value="val mutable propertyIsEnumerable : obj" Usage="Microsoft.JScript.LenientObjectPrototype.propertyIsEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ propertyIsEnumerable;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.toLocaleString" />
       <MemberSignature Language="VB.NET" Value="Public toLocaleString As Object " />
       <MemberSignature Language="F#" Value="val mutable toLocaleString : obj" Usage="Microsoft.JScript.LenientObjectPrototype.toLocaleString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.toString" />
       <MemberSignature Language="VB.NET" Value="Public toString As Object " />
       <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientObjectPrototype.toString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.valueOf" />
       <MemberSignature Language="VB.NET" Value="Public valueOf As Object " />
       <MemberSignature Language="F#" Value="val mutable valueOf : obj" Usage="Microsoft.JScript.LenientObjectPrototype.valueOf" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ valueOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

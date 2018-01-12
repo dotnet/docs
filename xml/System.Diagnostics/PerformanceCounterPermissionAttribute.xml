@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class PerformanceCounterPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="F#" Value="type PerformanceCounterPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterPermissionAttribute : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Diagnostics.PerformanceCounterPermissionAttribute" Usage="new System.Diagnostics.PerformanceCounterPermissionAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryName As String" />
       <MemberSignature Language="F#" Value="member this.CategoryName : string with get, set" Usage="System.Diagnostics.PerformanceCounterPermissionAttribute.CategoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="performanceCounterPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.PerformanceCounterPermissionAttribute.MachineName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.PermissionAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionAccess As PerformanceCounterPermissionAccess" />
       <MemberSignature Language="F#" Value="member this.PermissionAccess : System.Diagnostics.PerformanceCounterPermissionAccess with get, set" Usage="System.Diagnostics.PerformanceCounterPermissionAttribute.PermissionAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterPermissionAccess PermissionAccess { System::Diagnostics::PerformanceCounterPermissionAccess get(); void set(System::Diagnostics::PerformanceCounterPermissionAccess value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

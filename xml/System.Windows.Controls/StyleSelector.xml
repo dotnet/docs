@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StyleSelector" />
   <TypeSignature Language="VB.NET" Value="Public Class StyleSelector" />
   <TypeSignature Language="F#" Value="type StyleSelector = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StyleSelector" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StyleSelector.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StyleSelector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StyleSelector.SelectStyle(System.Object,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function SelectStyle (item As Object, container As DependencyObject) As Style" />
       <MemberSignature Language="F#" Value="abstract member SelectStyle : obj * System.Windows.DependencyObject -&gt; System.Windows.Style&#xA;override this.SelectStyle : obj * System.Windows.DependencyObject -&gt; System.Windows.Style" Usage="styleSelector.SelectStyle (item, container)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Style ^ SelectStyle(System::Object ^ item, System::Windows::DependencyObject ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

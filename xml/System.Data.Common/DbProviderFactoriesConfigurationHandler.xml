@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactoriesConfigurationHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class DbProviderFactoriesConfigurationHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="F#" Value="type DbProviderFactoriesConfigurationHandler = class&#xA;    interface IConfigurationSectionHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbProviderFactoriesConfigurationHandler : System::Configuration::IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactoriesConfigurationHandler.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DbProviderFactoriesConfigurationHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactoriesConfigurationHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
       <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="dbProviderFactoriesConfigurationHandler.Create (parent, configContext, section)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ configContext, System::Xml::XmlNode ^ section);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>

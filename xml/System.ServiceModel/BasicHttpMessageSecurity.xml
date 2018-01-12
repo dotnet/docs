@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpMessageSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BasicHttpMessageSecurity" />
   <TypeSignature Language="F#" Value="type BasicHttpMessageSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpMessageSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpMessageSecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpMessageSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpMessageSecurity.AlgorithmSuite" />
       <MemberSignature Language="VB.NET" Value="Public Property AlgorithmSuite As SecurityAlgorithmSuite" />
       <MemberSignature Language="F#" Value="member this.AlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.BasicHttpMessageSecurity.AlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityAlgorithmSuite ^ AlgorithmSuite { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); void set(System::ServiceModel::Security::SecurityAlgorithmSuite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As BasicHttpMessageCredentialType" />
       <MemberSignature Language="F#" Value="member this.ClientCredentialType : System.ServiceModel.BasicHttpMessageCredentialType with get, set" Usage="System.ServiceModel.BasicHttpMessageSecurity.ClientCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::BasicHttpMessageCredentialType ClientCredentialType { System::ServiceModel::BasicHttpMessageCredentialType get(); void set(System::ServiceModel::BasicHttpMessageCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpMessageSecurity.ShouldSerializeAlgorithmSuite" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeAlgorithmSuite () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeAlgorithmSuite : unit -&gt; bool" Usage="basicHttpMessageSecurity.ShouldSerializeAlgorithmSuite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeAlgorithmSuite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpMessageSecurity.ShouldSerializeClientCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeClientCredentialType () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeClientCredentialType : unit -&gt; bool" Usage="basicHttpMessageSecurity.ShouldSerializeClientCredentialType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeClientCredentialType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

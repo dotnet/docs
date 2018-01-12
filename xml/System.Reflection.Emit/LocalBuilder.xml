@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.LocalBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalBuilder&#xA;Inherits LocalVariableInfo&#xA;Implements _LocalBuilder" />
   <TypeSignature Language="F#" Value="type LocalBuilder = class&#xA;    inherit LocalVariableInfo&#xA;    interface _LocalBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalBuilder sealed : System::Reflection::LocalVariableInfo, System::Runtime::InteropServices::_LocalBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.LocalBuilder.IsPinned" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsPinned As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPinned : bool" Usage="System.Reflection.Emit.LocalBuilder.IsPinned" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPinned { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.LocalBuilder.LocalIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.LocalIndex : int" Usage="System.Reflection.Emit.LocalBuilder.LocalIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LocalIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.LocalBuilder.LocalType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalType As Type" />
       <MemberSignature Language="F#" Value="member this.LocalType : Type" Usage="System.Reflection.Emit.LocalBuilder.LocalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ LocalType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLocalSymInfo (name As String)" />
       <MemberSignature Language="F#" Value="member this.SetLocalSymInfo : string -&gt; unit" Usage="localBuilder.SetLocalSymInfo name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSymInfo(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLocalSymInfo (name As String, startOffset As Integer, endOffset As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetLocalSymInfo : string * int * int -&gt; unit" Usage="localBuilder.SetLocalSymInfo (name, startOffset, endOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLocalSymInfo(System::String ^ name, int startOffset, int endOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._LocalBuilder.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.System#Runtime#InteropServices#_LocalBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _LocalBuilder.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._LocalBuilder.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_LocalBuilder::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._LocalBuilder.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -311,6 +318,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._LocalBuilder.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.System#Runtime#InteropServices#_LocalBuilder#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _LocalBuilder.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._LocalBuilder.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_LocalBuilder::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._LocalBuilder.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -349,6 +357,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._LocalBuilder.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.System#Runtime#InteropServices#_LocalBuilder#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _LocalBuilder.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._LocalBuilder.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_LocalBuilder::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._LocalBuilder.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -383,6 +392,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._LocalBuilder.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.LocalBuilder.System#Runtime#InteropServices#_LocalBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _LocalBuilder.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._LocalBuilder.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_LocalBuilder::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._LocalBuilder.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>

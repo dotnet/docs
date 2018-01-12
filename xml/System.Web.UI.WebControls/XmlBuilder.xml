@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.XmlBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlBuilder&#xA;Inherits ControlBuilder" />
   <TypeSignature Language="F#" Value="type XmlBuilder = class&#xA;    inherit ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlBuilder.AppendLiteralString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (s As String)" />
       <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="xmlBuilder.AppendLiteralString s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attribs As IDictionary) As Type" />
       <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="xmlBuilder.GetChildControlType (tagName, attribs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attribs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlBuilder.NeedsTagInnerText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NeedsTagInnerText () As Boolean" />
       <MemberSignature Language="F#" Value="override this.NeedsTagInnerText : unit -&gt; bool" Usage="xmlBuilder.NeedsTagInnerText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NeedsTagInnerText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.XmlBuilder.SetTagInnerText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetTagInnerText (text As String)" />
       <MemberSignature Language="F#" Value="override this.SetTagInnerText : string -&gt; unit" Usage="xmlBuilder.SetTagInnerText text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetTagInnerText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

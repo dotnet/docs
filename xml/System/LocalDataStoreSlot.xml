@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.LocalDataStoreSlot" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalDataStoreSlot" />
   <TypeSignature Language="F#" Value="type LocalDataStoreSlot = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalDataStoreSlot sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.LocalDataStoreSlot.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="localDataStoreSlot.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!LocalDataStoreSlot ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExternalDataExchangeServiceSection" />
   <TypeSignature Language="VB.NET" Value="Public Class ExternalDataExchangeServiceSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ExternalDataExchangeServiceSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExternalDataExchangeServiceSection : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeServiceSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataExchangeServiceSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataExchangeServiceSection.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As WorkflowRuntimeServiceElementCollection" />
       <MemberSignature Language="F#" Value="member this.Services : System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" Usage="System.Workflow.Activities.ExternalDataExchangeServiceSection.Services" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElementCollection ^ Services { System::Workflow::Runtime::Configuration::WorkflowRuntimeServiceElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

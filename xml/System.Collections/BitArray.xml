@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.BitArray" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitArray&#xA;Implements ICloneable, ICollection" />
   <TypeSignature Language="F#" Value="type BitArray = class&#xA;    interface ICollection&#xA;    interface ICloneable&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitArray sealed : ICloneable, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.#ctor(System.Boolean[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (values As Boolean())" />
       <MemberSignature Language="F#" Value="new System.Collections.BitArray : bool[] -&gt; System.Collections.BitArray" Usage="new System.Collections.BitArray values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitArray(cli::array &lt;bool&gt; ^ values);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -127,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bytes As Byte())" />
       <MemberSignature Language="F#" Value="new System.Collections.BitArray : byte[] -&gt; System.Collections.BitArray" Usage="new System.Collections.BitArray bytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitArray(cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -170,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.#ctor(System.Collections.BitArray)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bits As BitArray)" />
       <MemberSignature Language="F#" Value="new System.Collections.BitArray : System.Collections.BitArray -&gt; System.Collections.BitArray" Usage="new System.Collections.BitArray bits" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitArray(System::Collections::BitArray ^ bits);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -210,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.BitArray : int -&gt; System.Collections.BitArray" Usage="new System.Collections.BitArray length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitArray(int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.#ctor(System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (values As Integer())" />
       <MemberSignature Language="F#" Value="new System.Collections.BitArray : int[] -&gt; System.Collections.BitArray" Usage="new System.Collections.BitArray values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitArray(cli::array &lt;int&gt; ^ values);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -293,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer, defaultValue As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Collections.BitArray : int * bool -&gt; System.Collections.BitArray" Usage="new System.Collections.BitArray (length, defaultValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitArray(int length, bool defaultValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -335,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.And(System.Collections.BitArray)" />
       <MemberSignature Language="VB.NET" Value="Public Function And (value As BitArray) As BitArray" />
       <MemberSignature Language="F#" Value="member this.And : System.Collections.BitArray -&gt; System.Collections.BitArray" Usage="bitArray.And value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::BitArray ^ And(System::Collections::BitArray ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -392,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="bitArray.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -435,6 +444,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="bitArray.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -504,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.BitArray.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -545,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Get : int -&gt; bool" Usage="bitArray.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -602,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="bitArray.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -659,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Collections.BitArray.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -701,6 +715,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.BitArray.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -754,6 +769,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Item(int) : bool with get, set" Usage="System.Collections.BitArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default[int] { bool get(int index); void set(int index, bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -807,6 +823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.LeftShift(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LeftShift (count As Integer) As BitArray" />
       <MemberSignature Language="F#" Value="member this.LeftShift : int -&gt; System.Collections.BitArray" Usage="bitArray.LeftShift count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::BitArray ^ LeftShift(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -831,6 +848,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int with get, set" Usage="System.Collections.BitArray.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -876,6 +894,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.Not" />
       <MemberSignature Language="VB.NET" Value="Public Function Not () As BitArray" />
       <MemberSignature Language="F#" Value="member this.Not : unit -&gt; System.Collections.BitArray" Usage="bitArray.Not " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::BitArray ^ Not();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -924,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.Or(System.Collections.BitArray)" />
       <MemberSignature Language="VB.NET" Value="Public Function Or (value As BitArray) As BitArray" />
       <MemberSignature Language="F#" Value="member this.Or : System.Collections.BitArray -&gt; System.Collections.BitArray" Usage="bitArray.Or value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::BitArray ^ Or(System::Collections::BitArray ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -981,6 +1001,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.RightShift(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function RightShift (count As Integer) As BitArray" />
       <MemberSignature Language="F#" Value="member this.RightShift : int -&gt; System.Collections.BitArray" Usage="bitArray.RightShift count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::BitArray ^ RightShift(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1005,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.Set(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (index As Integer, value As Boolean)" />
       <MemberSignature Language="F#" Value="member this.Set : int * bool -&gt; unit" Usage="bitArray.Set (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(int index, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1063,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.SetAll(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAll (value As Boolean)" />
       <MemberSignature Language="F#" Value="member this.SetAll : bool -&gt; unit" Usage="bitArray.SetAll value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAll(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1113,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.BitArray.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1164,6 +1188,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1193,6 +1218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="F#" Usage="System.Collections.BitArray.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1217,6 +1243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Collections.BitArray.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1241,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.BitArray.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Collections.BitArray.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1265,6 +1293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.BitArray.Xor(System.Collections.BitArray)" />
       <MemberSignature Language="VB.NET" Value="Public Function Xor (value As BitArray) As BitArray" />
       <MemberSignature Language="F#" Value="member this.Xor : System.Collections.BitArray -&gt; System.Collections.BitArray" Usage="bitArray.Xor value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::BitArray ^ Xor(System::Collections::BitArray ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ProtectionScenario" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProtectionScenario" />
   <TypeSignature Language="F#" Value="type ProtectionScenario = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProtectionScenario" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected" />
       <MemberSignature Language="VB.NET" Value="TransportSelected" />
       <MemberSignature Language="F#" Value="TransportSelected = 0" Usage="System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected" />
+      <MemberSignature Language="C++ CLI" Value="TransportSelected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TrustedProxy" />
       <MemberSignature Language="VB.NET" Value="TrustedProxy" />
       <MemberSignature Language="F#" Value="TrustedProxy = 1" Usage="System.Security.Authentication.ExtendedProtection.ProtectionScenario.TrustedProxy" />
+      <MemberSignature Language="C++ CLI" Value="TrustedProxy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

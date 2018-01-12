@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplinePointKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class SplinePointKeyFrame&#xA;Inherits PointKeyFrame" />
   <TypeSignature Language="F#" Value="type SplinePointKeyFrame = class&#xA;    inherit PointKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SplinePointKeyFrame : System::Windows::Media::Animation::PointKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplinePointKeyFrame.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplinePointKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Point)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplinePointKeyFrame : System.Windows.Point -&gt; System.Windows.Media.Animation.SplinePointKeyFrame" Usage="new System.Windows.Media.Animation.SplinePointKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplinePointKeyFrame(System::Windows::Point value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplinePointKeyFrame : System.Windows.Point * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SplinePointKeyFrame" Usage="new System.Windows.Media.Animation.SplinePointKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplinePointKeyFrame(System::Windows::Point value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplinePointKeyFrame : System.Windows.Point * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.KeySpline -&gt; System.Windows.Media.Animation.SplinePointKeyFrame" Usage="new System.Windows.Media.Animation.SplinePointKeyFrame (value, keyTime, keySpline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplinePointKeyFrame(System::Windows::Point value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplinePointKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="splinePointKeyFrame.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplinePointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Point, keyFrameProgress As Double) As Point" />
       <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Point * double -&gt; System.Windows.Point" Usage="splinePointKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point InterpolateValueCore(System::Windows::Point baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplinePointKeyFrame.KeySpline" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
       <MemberSignature Language="F#" Value="member this.KeySpline : System.Windows.Media.Animation.KeySpline with get, set" Usage="System.Windows.Media.Animation.SplinePointKeyFrame.KeySpline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -209,6 +217,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplinePointKeyFrame.KeySplineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable KeySplineProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplinePointKeyFrame.KeySplineProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

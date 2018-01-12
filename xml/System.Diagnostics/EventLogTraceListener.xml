@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogTraceListener&#xA;Inherits TraceListener" />
   <TypeSignature Language="F#" Value="type EventLogTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogTraceListener sealed : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.EventLog eventLog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.#ctor(System.Diagnostics.EventLog)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogTraceListener : System.Diagnostics.EventLog -&gt; System.Diagnostics.EventLogTraceListener" Usage="new System.Diagnostics.EventLogTraceListener eventLog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogTraceListener(System::Diagnostics::EventLog ^ eventLog);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogTraceListener : string -&gt; System.Diagnostics.EventLogTraceListener" Usage="new System.Diagnostics.EventLogTraceListener source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogTraceListener(System::String ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="eventLogTraceListener.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eventLogTraceListener.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogTraceListener.EventLog" />
       <MemberSignature Language="VB.NET" Value="Public Property EventLog As EventLog" />
       <MemberSignature Language="F#" Value="member this.EventLog : System.Diagnostics.EventLog with get, set" Usage="System.Diagnostics.EventLogTraceListener.EventLog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLog ^ EventLog { System::Diagnostics::EventLog ^ get(); void set(System::Diagnostics::EventLog ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogTraceListener.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Diagnostics.EventLogTraceListener.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
       <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="eventLogTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
       <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="eventLogTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -424,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
       <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="eventLogTraceListener.TraceEvent (eventCache, source, eventType, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -482,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
       <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="eventLogTraceListener.TraceEvent (eventCache, source, eventType, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -548,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
       <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="eventLogTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -581,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="eventLogTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

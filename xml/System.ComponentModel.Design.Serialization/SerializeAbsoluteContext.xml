@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializeAbsoluteContext" />
   <TypeSignature Language="F#" Value="type SerializeAbsoluteContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializeAbsoluteContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializeAbsoluteContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.#ctor(System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As MemberDescriptor)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.SerializeAbsoluteContext : System.ComponentModel.MemberDescriptor -&gt; System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" Usage="new System.ComponentModel.Design.Serialization.SerializeAbsoluteContext member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializeAbsoluteContext(System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberDescriptor" />
       <MemberSignature Language="F#" Value="member this.Member : System.ComponentModel.MemberDescriptor" Usage="System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.Member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MemberDescriptor ^ Member { System::ComponentModel::MemberDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.ShouldSerialize(System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerialize (member As MemberDescriptor) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerialize : System.ComponentModel.MemberDescriptor -&gt; bool" Usage="serializeAbsoluteContext.ShouldSerialize member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerialize(System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

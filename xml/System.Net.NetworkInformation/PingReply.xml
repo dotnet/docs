@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingReply" />
   <TypeSignature Language="VB.NET" Value="Public Class PingReply" />
   <TypeSignature Language="F#" Value="type PingReply = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PingReply" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Ping</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingReply.Address" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As IPAddress" />
       <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress" Usage="System.Net.NetworkInformation.PingReply.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingReply.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Byte()" />
       <MemberSignature Language="F#" Value="member this.Buffer : byte[]" Usage="System.Net.NetworkInformation.PingReply.Buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Buffer { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingReply.Options" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As PingOptions" />
       <MemberSignature Language="F#" Value="member this.Options : System.Net.NetworkInformation.PingOptions" Usage="System.Net.NetworkInformation.PingReply.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::NetworkInformation::PingOptions ^ Options { System::Net::NetworkInformation::PingOptions ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingReply.RoundtripTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoundtripTime As Long" />
       <MemberSignature Language="F#" Value="member this.RoundtripTime : int64" Usage="System.Net.NetworkInformation.PingReply.RoundtripTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RoundtripTime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -236,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingReply.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As IPStatus" />
       <MemberSignature Language="F#" Value="member this.Status : System.Net.NetworkInformation.IPStatus" Usage="System.Net.NetworkInformation.PingReply.Status" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::NetworkInformation::IPStatus Status { System::Net::NetworkInformation::IPStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.StringBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringBuilder&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type StringBuilder = class&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringBuilder sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -291,6 +292,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -337,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Text.StringBuilder : int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -391,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="F#" Value="new System.Text.StringBuilder : string -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -440,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, maxCapacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Text.StringBuilder : int * int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder (capacity, maxCapacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(int capacity, int maxCapacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -502,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Text.StringBuilder : string * int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder (value, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -558,6 +564,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, startIndex As Integer, length As Integer, capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Text.StringBuilder : string * int * int * int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder (value, startIndex, length, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value, int startIndex, int length, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -640,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Boolean) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : bool -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -694,6 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Byte) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : byte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -750,6 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : char -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -804,6 +814,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : char[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(cli::array &lt;char&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -864,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Decimal) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : decimal -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -920,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Double) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : double -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -976,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Short) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : int16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1032,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1088,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Long) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : int64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1144,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1200,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As SByte) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : sbyte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1261,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Single) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : single -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1317,6 +1336,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As String) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : string -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1378,6 +1398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As UShort) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : uint16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1439,6 +1460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As UInteger) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : uint32 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1500,6 +1522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As ULong) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : uint64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1561,6 +1584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char, repeatCount As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : char * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, repeatCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char value, int repeatCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1622,6 +1646,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char* value, int32 valueCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char*,System.Int32)" />
       <MemberSignature Language="F#" Value="member this.Append : nativeptr&lt;char&gt; * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, valueCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char* value, int valueCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1690,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : char[] * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, startIndex, charCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(cli::array &lt;char&gt; ^ value, int startIndex, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1770,6 +1796,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As String, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Append : string * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::String ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1861,6 +1888,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1947,6 +1975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, ParamArray args As Object()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2041,6 +2070,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2138,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, ParamArray args As Object()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2249,6 +2280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object, arg1 As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2337,6 +2369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2436,6 +2469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, arg0, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2526,6 +2560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, arg0, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2627,6 +2662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As Char, ParamArray values As Object()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendJoin : char * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2659,6 +2695,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As Char, ParamArray values As String()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendJoin : char * string[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, ... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2691,6 +2728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As String, ParamArray values As Object()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendJoin : string * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2723,6 +2761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As String, ParamArray values As String()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendJoin : string * string[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, ... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2755,6 +2794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin``1(System.Char,System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin(Of T) (separator As Char, values As IEnumerable(Of T)) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendJoin : char * seq&lt;'T&gt; -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2785,6 +2825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin``1(System.String,System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin(Of T) (separator As String, values As IEnumerable(Of T)) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendJoin : string * seq&lt;'T&gt; -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2828,6 +2869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendLine" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendLine () As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendLine : unit -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2890,6 +2932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendLine (value As String) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.AppendLine : string -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendLine(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2946,6 +2989,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
       <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Text.StringBuilder.Capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3002,6 +3046,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Chars(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Chars(index As Integer) As Char" />
       <MemberSignature Language="F#" Value="member this.Chars(int) : char with get, set" Usage="System.Text.StringBuilder.Chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); void set(int index, char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3056,6 +3101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; System.Text.StringBuilder" Usage="stringBuilder.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3107,6 +3153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (sourceIndex As Integer, destination As Char(), destinationIndex As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : int * char[] * int * int -&gt; unit" Usage="stringBuilder.CopyTo (sourceIndex, destination, destinationIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int sourceIndex, cli::array &lt;char&gt; ^ destination, int destinationIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3189,6 +3236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.EnsureCapacity(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnsureCapacity (capacity As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.EnsureCapacity : int -&gt; int" Usage="stringBuilder.EnsureCapacity capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnsureCapacity(int capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3248,6 +3296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Equals(System.Text.StringBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (sb As StringBuilder) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Text.StringBuilder -&gt; bool" Usage="stringBuilder.Equals sb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Text::StringBuilder ^ sb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3310,6 +3359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Boolean) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * bool -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3372,6 +3422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Byte) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * byte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3434,6 +3485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * char -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3501,6 +3553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char()) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * char[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, cli::array &lt;char&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3564,6 +3617,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Decimal) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * decimal -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3626,6 +3680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Double) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * double -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3688,6 +3743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Short) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * int16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3750,6 +3806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3812,6 +3869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Long) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * int64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3874,6 +3932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Object) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3938,6 +3997,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As SByte) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * sbyte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4005,6 +4065,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Single) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * single -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4067,6 +4128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As String) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4136,6 +4198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As UShort) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * uint16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4203,6 +4266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As UInteger) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * uint32 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4270,6 +4334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As ULong) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * uint64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4337,6 +4402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As String, count As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * string * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::String ^ value, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4409,6 +4475,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Insert : int * char[] * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value, startIndex, charCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, cli::array &lt;char&gt; ^ value, int startIndex, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4489,6 +4556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int with get, set" Usage="System.Text.StringBuilder.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4545,6 +4613,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.MaxCapacity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxCapacity As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxCapacity : int" Usage="System.Text.StringBuilder.MaxCapacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCapacity { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4587,6 +4656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer, length As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Remove : int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Remove (startIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Remove(int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4660,6 +4730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Replace : char * char -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldChar, newChar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(char oldChar, char newChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4715,6 +4786,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Replace : string * string -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(System::String ^ oldValue, System::String ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4775,6 +4847,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.Char,System.Char,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Replace : char * char * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldChar, newChar, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(char oldChar, char newChar, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4840,6 +4913,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.String,System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="F#" Value="member this.Replace : string * string * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldValue, newValue, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(System::String ^ oldValue, System::String ^ newValue, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4912,6 +4986,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -4979,6 +5054,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stringBuilder.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5034,6 +5110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.ToString(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (startIndex As Integer, length As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : int * int -&gt; string" Usage="stringBuilder.ToString (startIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

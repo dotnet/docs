@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlString" />
   <TypeSignature Language="VB.NET" Value="Public Structure SqlString&#xA;Implements IComparable, INullable, IXmlSerializable" />
   <TypeSignature Language="F#" Value="type SqlString = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public value class SqlString : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : string -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -113,6 +115,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String, lcid As Integer)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : string * int -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (data, lcid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data, int lcid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -148,6 +151,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte())" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -185,6 +189,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.String,System.Int32,System.Data.SqlTypes.SqlCompareOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (data As String, lcid As Integer, compareOptions As SqlCompareOptions)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : string * int * System.Data.SqlTypes.SqlCompareOptions -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (data, lcid, compareOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(System::String ^ data, int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -222,6 +227,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte(), fUnicode As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] * bool -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data, fUnicode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, bool fUnicode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -262,6 +268,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] * int * int -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, int index, int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -303,6 +310,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.#ctor(System.Int32,System.Data.SqlTypes.SqlCompareOptions,System.Byte[],System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (lcid As Integer, compareOptions As SqlCompareOptions, data As Byte(), index As Integer, count As Integer, fUnicode As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlString : int * System.Data.SqlTypes.SqlCompareOptions * byte[] * int * int * bool -&gt; System.Data.SqlTypes.SqlString" Usage="new System.Data.SqlTypes.SqlString (lcid, compareOptions, data, index, count, fUnicode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlString(int lcid, System::Data::SqlTypes::SqlCompareOptions compareOptions, cli::array &lt;System::Byte&gt; ^ data, int index, int count, bool fUnicode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -347,6 +355,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Add(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlString, y As SqlString) As SqlString" />
       <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.Add (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString Add(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -393,6 +402,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.BinarySort" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BinarySort As Integer " />
       <MemberSignature Language="F#" Value=" staticval mutable BinarySort : int" Usage="System.Data.SqlTypes.SqlString.BinarySort" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int BinarySort;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -432,6 +442,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.BinarySort2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BinarySort2 As Integer " />
       <MemberSignature Language="F#" Value=" staticval mutable BinarySort2 : int" Usage="System.Data.SqlTypes.SqlString.BinarySort2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int BinarySort2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -464,6 +475,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As SqlString" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlString.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -498,6 +510,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.CompareInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompareInfo As CompareInfo" />
       <MemberSignature Language="F#" Value="member this.CompareInfo : System.Globalization.CompareInfo" Usage="System.Data.SqlTypes.SqlString.CompareInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CompareInfo ^ CompareInfo { System::Globalization::CompareInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -530,6 +543,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Globalization.CompareOptions CompareOptionsFromSqlCompareOptions(valuetype System.Data.SqlTypes.SqlCompareOptions compareOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.CompareOptionsFromSqlCompareOptions(System.Data.SqlTypes.SqlCompareOptions)" />
       <MemberSignature Language="F#" Value="static member CompareOptionsFromSqlCompareOptions : System.Data.SqlTypes.SqlCompareOptions -&gt; System.Globalization.CompareOptions" Usage="System.Data.SqlTypes.SqlString.CompareOptionsFromSqlCompareOptions compareOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CompareOptions CompareOptionsFromSqlCompareOptions(System::Data::SqlTypes::SqlCompareOptions compareOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -576,6 +590,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.CompareTo(System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlString) As Integer" />
       <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlString -&gt; int" Usage="sqlString.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlString value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -635,6 +650,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlString.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -697,6 +713,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Concat(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (x As SqlString, y As SqlString) As SqlString" />
       <MemberSignature Language="F#" Value="static member Concat : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.Concat (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString Concat(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -736,6 +753,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.CultureInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureInfo As CultureInfo" />
       <MemberSignature Language="F#" Value="member this.CultureInfo : System.Globalization.CultureInfo" Usage="System.Data.SqlTypes.SqlString.CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -778,6 +796,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlString.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -815,6 +834,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.Equals(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -855,6 +875,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlString.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -889,6 +910,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetNonUnicodeBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNonUnicodeBytes () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetNonUnicodeBytes : unit -&gt; byte[]" Usage="sqlString.GetNonUnicodeBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetNonUnicodeBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -923,6 +945,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetUnicodeBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnicodeBytes () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetUnicodeBytes : unit -&gt; byte[]" Usage="sqlString.GetUnicodeBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetUnicodeBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -957,6 +980,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlString.GetXsdType schemaSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -990,6 +1014,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GreaterThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.GreaterThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1029,6 +1054,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.GreaterThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.GreaterThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1068,6 +1094,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreCase As Integer " />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreCase : int" Usage="System.Data.SqlTypes.SqlString.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreCase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1107,6 +1134,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreKanaType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreKanaType As Integer " />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreKanaType : int" Usage="System.Data.SqlTypes.SqlString.IgnoreKanaType" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreKanaType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1148,6 +1176,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreNonSpace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreNonSpace As Integer " />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreNonSpace : int" Usage="System.Data.SqlTypes.SqlString.IgnoreNonSpace" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreNonSpace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1189,6 +1218,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.IgnoreWidth" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IgnoreWidth As Integer " />
       <MemberSignature Language="F#" Value=" staticval mutable IgnoreWidth : int" Usage="System.Data.SqlTypes.SqlString.IgnoreWidth" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int IgnoreWidth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1230,6 +1260,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlString.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -1274,6 +1305,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.LCID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LCID As Integer" />
       <MemberSignature Language="F#" Value="member this.LCID : int" Usage="System.Data.SqlTypes.SqlString.LCID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1307,6 +1339,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.LessThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.LessThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1346,6 +1379,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.LessThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.LessThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1385,6 +1419,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.NotEquals(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.NotEquals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1424,6 +1459,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlString.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlString " />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlString Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1463,6 +1499,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Addition(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlString, y As SqlString) As SqlString" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlString" Usage="x + y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlString operator +(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1504,6 +1541,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Equality(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1554,6 +1592,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBoolean) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBoolean -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlBoolean x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1593,6 +1632,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlByte) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlByte -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlByte x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1632,6 +1672,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlDateTime)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDateTime) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDateTime -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDateTime x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1671,6 +1712,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDecimal) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDecimal x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1710,6 +1752,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDouble) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDouble -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlDouble x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1749,6 +1792,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlGuid)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlGuid) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlGuid -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlGuid x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1788,6 +1832,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt16) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt16 -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt16 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1827,6 +1872,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt32) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt32 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1866,6 +1912,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlInt64)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt64) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1905,6 +1952,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlMoney) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlMoney -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlMoney x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1944,6 +1992,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlSingle) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlSingle -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlString(System::Data::SqlTypes::SqlSingle x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1983,6 +2032,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Explicit(System.Data.SqlTypes.SqlString)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As String" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; string" Usage="System.Data.SqlTypes.SqlString.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(System::Data::SqlTypes::SqlString x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2020,6 +2070,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_GreaterThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2061,6 +2112,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2102,6 +2154,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Implicit(System.String)~System.Data.SqlTypes.SqlString" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As String) As SqlString" />
       <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; System.Data.SqlTypes.SqlString" Usage="System.Data.SqlTypes.SqlString.op_Implicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlString(System::String ^ x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2139,6 +2192,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_Inequality(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlString.op_Inequality (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2180,6 +2234,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_LessThan(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2221,6 +2276,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.op_LessThanOrEqual(System.Data.SqlTypes.SqlString,System.Data.SqlTypes.SqlString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlString, y As SqlString) As SqlBoolean" />
       <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlString * System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlString x, System::Data::SqlTypes::SqlString y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2262,6 +2318,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.SqlCompareOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SqlCompareOptions As SqlCompareOptions" />
       <MemberSignature Language="F#" Value="member this.SqlCompareOptions : System.Data.SqlTypes.SqlCompareOptions" Usage="System.Data.SqlTypes.SqlString.SqlCompareOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::SqlCompareOptions SqlCompareOptions { System::Data::SqlTypes::SqlCompareOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2294,6 +2351,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -2326,6 +2384,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -2362,6 +2421,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
@@ -2399,6 +2459,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlBoolean () As SqlBoolean" />
       <MemberSignature Language="F#" Value="member this.ToSqlBoolean : unit -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlString.ToSqlBoolean " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBoolean ToSqlBoolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2434,6 +2495,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlByte" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlByte () As SqlByte" />
       <MemberSignature Language="F#" Value="member this.ToSqlByte : unit -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlString.ToSqlByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlByte ToSqlByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2468,6 +2530,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDateTime () As SqlDateTime" />
       <MemberSignature Language="F#" Value="member this.ToSqlDateTime : unit -&gt; System.Data.SqlTypes.SqlDateTime" Usage="sqlString.ToSqlDateTime " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDateTime ToSqlDateTime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2502,6 +2565,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlDecimal" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDecimal () As SqlDecimal" />
       <MemberSignature Language="F#" Value="member this.ToSqlDecimal : unit -&gt; System.Data.SqlTypes.SqlDecimal" Usage="sqlString.ToSqlDecimal " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDecimal ToSqlDecimal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2536,6 +2600,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlDouble" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlDouble () As SqlDouble" />
       <MemberSignature Language="F#" Value="member this.ToSqlDouble : unit -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlString.ToSqlDouble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDouble ToSqlDouble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2570,6 +2635,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlGuid" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlGuid () As SqlGuid" />
       <MemberSignature Language="F#" Value="member this.ToSqlGuid : unit -&gt; System.Data.SqlTypes.SqlGuid" Usage="sqlString.ToSqlGuid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlGuid ToSqlGuid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2604,6 +2670,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlInt16" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt16 () As SqlInt16" />
       <MemberSignature Language="F#" Value="member this.ToSqlInt16 : unit -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlString.ToSqlInt16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt16 ToSqlInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2638,6 +2705,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlInt32" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt32 () As SqlInt32" />
       <MemberSignature Language="F#" Value="member this.ToSqlInt32 : unit -&gt; System.Data.SqlTypes.SqlInt32" Usage="sqlString.ToSqlInt32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt32 ToSqlInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2672,6 +2740,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlInt64" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt64 () As SqlInt64" />
       <MemberSignature Language="F#" Value="member this.ToSqlInt64 : unit -&gt; System.Data.SqlTypes.SqlInt64" Usage="sqlString.ToSqlInt64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt64 ToSqlInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2706,6 +2775,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlMoney" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlMoney () As SqlMoney" />
       <MemberSignature Language="F#" Value="member this.ToSqlMoney : unit -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlString.ToSqlMoney " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlMoney ToSqlMoney();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2740,6 +2810,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToSqlSingle" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlSingle () As SqlSingle" />
       <MemberSignature Language="F#" Value="member this.ToSqlSingle : unit -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlString.ToSqlSingle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlSingle ToSqlSingle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2774,6 +2845,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlString.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2808,6 +2880,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlString.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Data.SqlTypes.SqlString.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

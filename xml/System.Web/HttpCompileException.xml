@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCompileException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpCompileException&#xA;Inherits HttpException" />
   <TypeSignature Language="F#" Value="type HttpCompileException = class&#xA;    inherit HttpException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpCompileException sealed : System::Web::HttpException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCompileException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Web.HttpCompileException : string -&gt; System.Web.HttpCompileException" Usage="new System.Web.HttpCompileException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCompileException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor(System.CodeDom.Compiler.CompilerResults,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (results As CompilerResults, sourceCode As String)" />
       <MemberSignature Language="F#" Value="new System.Web.HttpCompileException : System.CodeDom.Compiler.CompilerResults * string -&gt; System.Web.HttpCompileException" Usage="new System.Web.HttpCompileException (results, sourceCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCompileException(System::CodeDom::Compiler::CompilerResults ^ results, System::String ^ sourceCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Web.HttpCompileException : string * Exception -&gt; System.Web.HttpCompileException" Usage="new System.Web.HttpCompileException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpCompileException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpCompileException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="httpCompileException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCompileException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Web.HttpCompileException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCompileException.Results" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Results As CompilerResults" />
       <MemberSignature Language="F#" Value="member this.Results : System.CodeDom.Compiler.CompilerResults" Usage="System.Web.HttpCompileException.Results" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CompilerResults ^ Results { System::CodeDom::Compiler::CompilerResults ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpCompileException.SourceCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceCode As String" />
       <MemberSignature Language="F#" Value="member this.SourceCode : string" Usage="System.Web.HttpCompileException.SourceCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceCode { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Triplet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Triplet" />
   <TypeSignature Language="F#" Value="type Triplet = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Triplet sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Triplet.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Triplet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Triplet.#ctor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Object, y As Object)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.Triplet : obj * obj -&gt; System.Web.UI.Triplet" Usage="new System.Web.UI.Triplet (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Triplet(System::Object ^ x, System::Object ^ y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Triplet.#ctor(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Object, y As Object, z As Object)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.Triplet : obj * obj * obj -&gt; System.Web.UI.Triplet" Usage="new System.Web.UI.Triplet (x, y, z)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Triplet(System::Object ^ x, System::Object ^ y, System::Object ^ z);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Triplet.First" />
       <MemberSignature Language="VB.NET" Value="Public First As Object " />
       <MemberSignature Language="F#" Value="val mutable First : obj" Usage="System.Web.UI.Triplet.First" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ First;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Triplet.Second" />
       <MemberSignature Language="VB.NET" Value="Public Second As Object " />
       <MemberSignature Language="F#" Value="val mutable Second : obj" Usage="System.Web.UI.Triplet.Second" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ Second;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Triplet.Third" />
       <MemberSignature Language="VB.NET" Value="Public Third As Object " />
       <MemberSignature Language="F#" Value="val mutable Third : obj" Usage="System.Web.UI.Triplet.Third" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ Third;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

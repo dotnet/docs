@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StorePermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="F#" Value="type StorePermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StorePermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.StorePermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.StorePermission" Usage="new System.Security.Permissions.StorePermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StorePermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.#ctor(System.Security.Permissions.StorePermissionFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flags As StorePermissionFlags)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.StorePermission : System.Security.Permissions.StorePermissionFlags -&gt; System.Security.Permissions.StorePermission" Usage="new System.Security.Permissions.StorePermission flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StorePermission(System::Security::Permissions::StorePermissionFlags flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="storePermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.StorePermission.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As StorePermissionFlags" />
       <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.StorePermissionFlags with get, set" Usage="System.Security.Permissions.StorePermission.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::StorePermissionFlags Flags { System::Security::Permissions::StorePermissionFlags get(); void set(System::Security::Permissions::StorePermissionFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="storePermission.FromXml e" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (e As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="storePermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="storePermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="storePermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="storePermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -364,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.StorePermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="storePermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.TypeBinarySchemaImporterExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeBinarySchemaImporterExtension&#xA;Inherits SqlTypesSchemaImporterExtensionHelper" />
   <TypeSignature Language="F#" Value="type TypeBinarySchemaImporterExtension = class&#xA;    inherit SqlTypesSchemaImporterExtensionHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeBinarySchemaImporterExtension sealed : System::Data::SqlTypes::SqlTypesSchemaImporterExtensionHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.TypeBinarySchemaImporterExtension.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeBinarySchemaImporterExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

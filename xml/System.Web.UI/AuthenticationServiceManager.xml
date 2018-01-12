@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.AuthenticationServiceManager" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticationServiceManager" />
   <TypeSignature Language="F#" Value="type AuthenticationServiceManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationServiceManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.AuthenticationServiceManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationServiceManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.AuthenticationServiceManager.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.UI.AuthenticationServiceManager.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.GotoExpressionKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum GotoExpressionKind" />
   <TypeSignature Language="F#" Value="type GotoExpressionKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GotoExpressionKind" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.GotoExpressionKind.Break" />
       <MemberSignature Language="VB.NET" Value="Break" />
       <MemberSignature Language="F#" Value="Break = 2" Usage="System.Linq.Expressions.GotoExpressionKind.Break" />
+      <MemberSignature Language="C++ CLI" Value="Break" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.GotoExpressionKind.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="F#" Value="Continue = 3" Usage="System.Linq.Expressions.GotoExpressionKind.Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.GotoExpressionKind.Goto" />
       <MemberSignature Language="VB.NET" Value="Goto" />
       <MemberSignature Language="F#" Value="Goto = 0" Usage="System.Linq.Expressions.GotoExpressionKind.Goto" />
+      <MemberSignature Language="C++ CLI" Value="Goto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.GotoExpressionKind.Return" />
       <MemberSignature Language="VB.NET" Value="Return" />
       <MemberSignature Language="F#" Value="Return = 1" Usage="System.Linq.Expressions.GotoExpressionKind.Return" />
+      <MemberSignature Language="C++ CLI" Value="Return" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

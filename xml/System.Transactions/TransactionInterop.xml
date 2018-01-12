@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionInterop" />
   <TypeSignature Language="VB.NET" Value="Public Class TransactionInterop" />
   <TypeSignature Language="F#" Value="type TransactionInterop = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionInterop abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Transactions.IDtcTransaction GetDtcTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetDtcTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="F#" Value="static member GetDtcTransaction : System.Transactions.Transaction -&gt; System.Transactions.IDtcTransaction" Usage="System.Transactions.TransactionInterop.GetDtcTransaction transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::IDtcTransaction ^ GetDtcTransaction(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] GetExportCookie(class System.Transactions.Transaction transaction, unsigned int8[] exportCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetExportCookie(System.Transactions.Transaction,System.Byte[])" />
       <MemberSignature Language="F#" Value="static member GetExportCookie : System.Transactions.Transaction * byte[] -&gt; byte[]" Usage="System.Transactions.TransactionInterop.GetExportCookie (transaction, exportCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetExportCookie(System::Transactions::Transaction ^ transaction, cli::array &lt;System::Byte&gt; ^ exportCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransactionFromDtcTransaction(System.Transactions.IDtcTransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTransactionFromDtcTransaction (dtc As IDtcTransaction) As Transaction" />
       <MemberSignature Language="F#" Value="static member GetTransactionFromDtcTransaction : System.Transactions.IDtcTransaction -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromDtcTransaction dtc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Transaction ^ GetTransactionFromDtcTransaction(System::Transactions::IDtcTransaction ^ dtc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransactionFromExportCookie(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTransactionFromExportCookie (exportCookie As Byte()) As Transaction" />
       <MemberSignature Language="F#" Value="static member GetTransactionFromExportCookie : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromExportCookie exportCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Transaction ^ GetTransactionFromExportCookie(cli::array &lt;System::Byte&gt; ^ exportCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTransactionFromTransmitterPropagationToken (token As Byte()) As Transaction" />
       <MemberSignature Language="F#" Value="static member GetTransactionFromTransmitterPropagationToken : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Transaction ^ GetTransactionFromTransmitterPropagationToken(cli::array &lt;System::Byte&gt; ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -266,6 +272,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] GetTransmitterPropagationToken(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransmitterPropagationToken(System.Transactions.Transaction)" />
       <MemberSignature Language="F#" Value="static member GetTransmitterPropagationToken : System.Transactions.Transaction -&gt; byte[]" Usage="System.Transactions.TransactionInterop.GetTransmitterPropagationToken transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetTransmitterPropagationToken(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -301,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetWhereabouts" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWhereabouts () As Byte()" />
       <MemberSignature Language="F#" Value="static member GetWhereabouts : unit -&gt; byte[]" Usage="System.Transactions.TransactionInterop.GetWhereabouts " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetWhereabouts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -340,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionInterop.PromoterTypeDtc" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PromoterTypeDtc As Guid " />
       <MemberSignature Language="F#" Value=" staticval mutable PromoterTypeDtc : Guid" Usage="System.Transactions.TransactionInterop.PromoterTypeDtc" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid PromoterTypeDtc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

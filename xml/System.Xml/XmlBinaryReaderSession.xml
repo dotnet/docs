@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlBinaryReaderSession" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlBinaryReaderSession&#xA;Implements IXmlDictionary" />
   <TypeSignature Language="F#" Value="type XmlBinaryReaderSession = class&#xA;    interface IXmlDictionary" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlBinaryReaderSession : System::Xml::IXmlDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlBinaryReaderSession();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.Add(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (id As Integer, value As String) As XmlDictionaryString" />
       <MemberSignature Language="F#" Value="member this.Add : int * string -&gt; System.Xml.XmlDictionaryString" Usage="xmlBinaryReaderSession.Add (id, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryString ^ Add(int id, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="xmlBinaryReaderSession.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLookup (key As Integer, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryLookup : int *  -&gt; bool&#xA;override this.TryLookup : int *  -&gt; bool" Usage="xmlBinaryReaderSession.TryLookup (key, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(int key, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)</InterfaceMember>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLookup (value As String, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryLookup : string *  -&gt; bool&#xA;override this.TryLookup : string *  -&gt; bool" Usage="xmlBinaryReaderSession.TryLookup (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::String ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)</InterfaceMember>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLookup (value As XmlDictionaryString, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool&#xA;override this.TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool" Usage="xmlBinaryReaderSession.TryLookup (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::Xml::XmlDictionaryString ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)</InterfaceMember>

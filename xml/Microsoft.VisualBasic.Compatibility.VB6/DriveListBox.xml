@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox" />
   <TypeSignature Language="VB.NET" Value="Public Class DriveListBox&#xA;Inherits ComboBox" />
   <TypeSignature Language="F#" Value="type DriveListBox = class&#xA;    inherit ComboBox" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DriveListBox : System::Windows::Forms::ComboBox" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveListBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
       <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DisplayMember" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayMember As String" />
       <MemberSignature Language="F#" Value="member this.DisplayMember : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DisplayMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="driveListBox.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DrawMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DrawMode As DrawMode" />
       <MemberSignature Language="F#" Value="member this.DrawMode : System.Windows.Forms.DrawMode" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DrawMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DrawMode DrawMode { System::Windows::Forms::DrawMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Drive" />
       <MemberSignature Language="VB.NET" Value="Public Property Drive As String" />
       <MemberSignature Language="F#" Value="member this.Drive : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Drive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Drive { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DropDownStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DropDownStyle As ComboBoxStyle" />
       <MemberSignature Language="F#" Value="member this.DropDownStyle : System.Windows.Forms.ComboBoxStyle with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DropDownStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ComboBoxStyle DropDownStyle { System::Windows::Forms::ComboBoxStyle get(); void set(System::Windows::Forms::ComboBoxStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -310,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.ItemHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemHeight As Integer" />
       <MemberSignature Language="F#" Value="member this.ItemHeight : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.ItemHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -357,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ComboBox.ObjectCollection" />
       <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ComboBox.ObjectCollection" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ComboBox::ObjectCollection ^ Items { System::Windows::Forms::ComboBox::ObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -398,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items(Index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.Items(int) : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Items[int] { System::String ^ get(int Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -440,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.MaxLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -481,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnBackColorChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="driveListBox.OnBackColorChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -519,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDrawItem (e As DrawItemEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit" Usage="driveListBox.OnDrawItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDrawItem(System::Windows::Forms::DrawItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -557,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="driveListBox.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -595,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="driveListBox.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -633,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="driveListBox.OnSelectedIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -671,6 +688,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
       <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="driveListBox.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -703,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Sorted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sorted As Boolean" />
       <MemberSignature Language="F#" Value="member this.Sorted : bool" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Sorted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -745,6 +764,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -786,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.ValueMember" />
       <MemberSignature Language="VB.NET" Value="Public Property ValueMember As String" />
       <MemberSignature Language="F#" Value="member this.ValueMember : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.ValueMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -827,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="driveListBox.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

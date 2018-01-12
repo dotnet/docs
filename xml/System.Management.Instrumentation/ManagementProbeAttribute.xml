@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementProbeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementProbeAttribute&#xA;Inherits ManagementMemberAttribute" />
   <TypeSignature Language="F#" Value="type ManagementProbeAttribute = class&#xA;    inherit ManagementMemberAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementProbeAttribute sealed : System::Management::Instrumentation::ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@ public int ReadOnlyProperty
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementProbeAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementProbeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -79,6 +81,7 @@ public int ReadOnlyProperty
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementProbeAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As Type" />
       <MemberSignature Language="F#" Value="member this.Schema : Type with get, set" Usage="System.Management.Instrumentation.ManagementProbeAttribute.Schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Schema { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

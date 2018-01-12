@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IgnoreSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IgnoreSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type IgnoreSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IgnoreSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IgnoreSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IgnoreSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IgnoreSection.DeserializeSection(System.Xml.XmlReader)" />
       <MemberSignature Language="F#" Value="override this.DeserializeSection : System.Xml.XmlReader -&gt; unit" Usage="ignoreSection.DeserializeSection reader" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub DeserializeSection (reader As XmlReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void DeserializeSection(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IgnoreSection.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="ignoreSection.IsModified " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.IgnoreSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.IgnoreSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IgnoreSection.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="ignoreSection.Reset parentElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IgnoreSection.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ResetModified ()" />
       <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="ignoreSection.ResetModified " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ResetModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IgnoreSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SerializeSection (parentElement As ConfigurationElement, name As String, saveMode As ConfigurationSaveMode) As String" />
       <MemberSignature Language="F#" Value="override this.SerializeSection : System.Configuration.ConfigurationElement * string * System.Configuration.ConfigurationSaveMode -&gt; string" Usage="ignoreSection.SerializeSection (parentElement, name, saveMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parentElement, System::String ^ name, System::Configuration::ConfigurationSaveMode saveMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

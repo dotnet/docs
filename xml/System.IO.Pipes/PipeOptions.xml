@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum PipeOptions" />
   <TypeSignature Language="F#" Value="type PipeOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PipeOptions" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.Asynchronous" />
       <MemberSignature Language="VB.NET" Value="Asynchronous" />
       <MemberSignature Language="F#" Value="Asynchronous = 1073741824" Usage="System.IO.Pipes.PipeOptions.Asynchronous" />
+      <MemberSignature Language="C++ CLI" Value="Asynchronous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.Pipes.PipeOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.WriteThrough" />
       <MemberSignature Language="VB.NET" Value="WriteThrough" />
       <MemberSignature Language="F#" Value="WriteThrough = -2147483648" Usage="System.IO.Pipes.PipeOptions.WriteThrough" />
+      <MemberSignature Language="C++ CLI" Value="WriteThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>

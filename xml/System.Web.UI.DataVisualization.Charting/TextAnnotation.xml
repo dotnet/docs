@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TextAnnotation" />
   <TypeSignature Language="VB.NET" Value="Public Class TextAnnotation&#xA;Inherits Annotation" />
   <TypeSignature Language="F#" Value="type TextAnnotation = class&#xA;    inherit Annotation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextAnnotation : System::Web::UI::DataVisualization::Charting::Annotation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.TextAnnotation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextAnnotation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.AnnotationType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
       <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.AnnotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnnotationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.BackGradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackGradientStyle As GradientStyle" />
       <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Web.UI.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.BackGradientStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Web::UI::DataVisualization::Charting::GradientStyle get(); void set(System::Web::UI::DataVisualization::Charting::GradientStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.BackHatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackHatchStyle As ChartHatchStyle" />
       <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Web.UI.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.BackHatchStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Web::UI::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartHatchStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.BackSecondaryColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackSecondaryColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.BackSecondaryColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.IsMultiline" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsMultiline As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMultiline : bool with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.IsMultiline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMultiline { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -315,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property LineColor As Color" />
       <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.LineColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -356,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.LineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property LineDashStyle As ChartDashStyle" />
       <MemberSignature Language="F#" Value="member this.LineDashStyle : System.Web.UI.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.LineDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::DataVisualization::Charting::ChartDashStyle LineDashStyle { System::Web::UI::DataVisualization::Charting::ChartDashStyle get(); void set(System::Web::UI::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -391,6 +402,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property LineWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.LineWidth : int with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.LineWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LineWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -426,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TextAnnotation.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.TextAnnotation.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

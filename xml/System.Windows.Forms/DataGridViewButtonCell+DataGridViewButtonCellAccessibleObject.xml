@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridViewButtonCell/DataGridViewButtonCellAccessibleObject extends System.Windows.Forms.DataGridViewCell/DataGridViewCellAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Protected Class DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject&#xA;Inherits DataGridViewCell.DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class DataGridViewButtonCell::DataGridViewButtonCellAccessibleObject : System::Windows::Forms::DataGridViewCell::DataGridViewCellAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridViewCell)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject : System.Windows.Forms.DataGridViewCell -&gt; System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" Usage="new System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewButtonCellAccessibleObject(System::Windows::Forms::DataGridViewCell ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
       <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.DefaultAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.DoDefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
       <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="dataGridViewButtonCellAccessibleObject.DoDefaultAction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="dataGridViewButtonCellAccessibleObject.GetChildCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

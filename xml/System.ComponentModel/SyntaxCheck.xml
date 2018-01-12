@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SyntaxCheck" />
   <TypeSignature Language="VB.NET" Value="Public Class SyntaxCheck" />
   <TypeSignature Language="F#" Value="type SyntaxCheck = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyntaxCheck abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckMachineName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CheckMachineName (value As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member CheckMachineName : string -&gt; bool" Usage="System.ComponentModel.SyntaxCheck.CheckMachineName value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckMachineName(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CheckPath (value As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member CheckPath : string -&gt; bool" Usage="System.ComponentModel.SyntaxCheck.CheckPath value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckPath(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckRootedPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CheckRootedPath (value As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member CheckRootedPath : string -&gt; bool" Usage="System.ComponentModel.SyntaxCheck.CheckRootedPath value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckRootedPath(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

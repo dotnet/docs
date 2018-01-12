@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequenceDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class SequenceDesigner&#xA;Inherits SequentialActivityDesigner" />
   <TypeSignature Language="F#" Value="type SequenceDesigner = class&#xA;    inherit SequentialActivityDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SequenceDesigner : System::Workflow::ComponentModel::Design::SequentialActivityDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequenceDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequenceDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

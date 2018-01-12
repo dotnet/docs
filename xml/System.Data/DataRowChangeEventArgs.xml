@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowChangeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataRowChangeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type DataRowChangeEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataRowChangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowChangeEventArgs.#ctor(System.Data.DataRow,System.Data.DataRowAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (row As DataRow, action As DataRowAction)" />
       <MemberSignature Language="F#" Value="new System.Data.DataRowChangeEventArgs : System.Data.DataRow * System.Data.DataRowAction -&gt; System.Data.DataRowChangeEventArgs" Usage="new System.Data.DataRowChangeEventArgs (row, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataRowChangeEventArgs(System::Data::DataRow ^ row, System::Data::DataRowAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowChangeEventArgs.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As DataRowAction" />
       <MemberSignature Language="F#" Value="member this.Action : System.Data.DataRowAction" Usage="System.Data.DataRowChangeEventArgs.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowAction Action { System::Data::DataRowAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowChangeEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataRow" />
       <MemberSignature Language="F#" Value="member this.Row : System.Data.DataRow" Usage="System.Data.DataRowChangeEventArgs.Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

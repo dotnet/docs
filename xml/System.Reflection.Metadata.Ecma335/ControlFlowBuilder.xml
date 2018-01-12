@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ControlFlowBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ControlFlowBuilder" />
   <TypeSignature Language="F#" Value="type ControlFlowBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlFlowBuilder sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlFlowBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddCatchRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCatchRegion (tryStart As LabelHandle, tryEnd As LabelHandle, handlerStart As LabelHandle, handlerEnd As LabelHandle, catchType As EntityHandle)" />
       <MemberSignature Language="F#" Value="member this.AddCatchRegion : System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.EntityHandle -&gt; unit" Usage="controlFlowBuilder.AddCatchRegion (tryStart, tryEnd, handlerStart, handlerEnd, catchType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCatchRegion(System::Reflection::Metadata::Ecma335::LabelHandle tryStart, System::Reflection::Metadata::Ecma335::LabelHandle tryEnd, System::Reflection::Metadata::Ecma335::LabelHandle handlerStart, System::Reflection::Metadata::Ecma335::LabelHandle handlerEnd, System::Reflection::Metadata::EntityHandle catchType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddFaultRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFaultRegion (tryStart As LabelHandle, tryEnd As LabelHandle, handlerStart As LabelHandle, handlerEnd As LabelHandle)" />
       <MemberSignature Language="F#" Value="member this.AddFaultRegion : System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle -&gt; unit" Usage="controlFlowBuilder.AddFaultRegion (tryStart, tryEnd, handlerStart, handlerEnd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFaultRegion(System::Reflection::Metadata::Ecma335::LabelHandle tryStart, System::Reflection::Metadata::Ecma335::LabelHandle tryEnd, System::Reflection::Metadata::Ecma335::LabelHandle handlerStart, System::Reflection::Metadata::Ecma335::LabelHandle handlerEnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddFilterRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFilterRegion (tryStart As LabelHandle, tryEnd As LabelHandle, handlerStart As LabelHandle, handlerEnd As LabelHandle, filterStart As LabelHandle)" />
       <MemberSignature Language="F#" Value="member this.AddFilterRegion : System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle -&gt; unit" Usage="controlFlowBuilder.AddFilterRegion (tryStart, tryEnd, handlerStart, handlerEnd, filterStart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFilterRegion(System::Reflection::Metadata::Ecma335::LabelHandle tryStart, System::Reflection::Metadata::Ecma335::LabelHandle tryEnd, System::Reflection::Metadata::Ecma335::LabelHandle handlerStart, System::Reflection::Metadata::Ecma335::LabelHandle handlerEnd, System::Reflection::Metadata::Ecma335::LabelHandle filterStart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddFinallyRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFinallyRegion (tryStart As LabelHandle, tryEnd As LabelHandle, handlerStart As LabelHandle, handlerEnd As LabelHandle)" />
       <MemberSignature Language="F#" Value="member this.AddFinallyRegion : System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle * System.Reflection.Metadata.Ecma335.LabelHandle -&gt; unit" Usage="controlFlowBuilder.AddFinallyRegion (tryStart, tryEnd, handlerStart, handlerEnd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFinallyRegion(System::Reflection::Metadata::Ecma335::LabelHandle tryStart, System::Reflection::Metadata::Ecma335::LabelHandle tryEnd, System::Reflection::Metadata::Ecma335::LabelHandle handlerStart, System::Reflection::Metadata::Ecma335::LabelHandle handlerEnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

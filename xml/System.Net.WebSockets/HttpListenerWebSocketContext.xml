@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.HttpListenerWebSocketContext" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpListenerWebSocketContext&#xA;Inherits WebSocketContext" />
   <TypeSignature Language="F#" Value="type HttpListenerWebSocketContext = class&#xA;    inherit WebSocketContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerWebSocketContext : System::Net::WebSockets::WebSocketContext" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.HttpListenerWebSocketContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpListenerWebSocketContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.CookieCollection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CookieCollection As CookieCollection" />
       <MemberSignature Language="F#" Value="member this.CookieCollection : System.Net.CookieCollection" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.CookieCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::CookieCollection ^ CookieCollection { System::Net::CookieCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.IsLocal" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsLocal As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLocal : bool" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.IsLocal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.IsSecureConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecureConnection As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecureConnection : bool" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.IsSecureConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecureConnection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.Origin" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Origin As String" />
       <MemberSignature Language="F#" Value="member this.Origin : string" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Origin { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.RequestUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequestUri As Uri" />
       <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.RequestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -301,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecWebSocketKey As String" />
       <MemberSignature Language="F#" Value="member this.SecWebSocketKey : string" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SecWebSocketKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketProtocols" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecWebSocketProtocols As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="member this.SecWebSocketProtocols : seq&lt;string&gt;" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ SecWebSocketProtocols { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -373,6 +384,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecWebSocketVersion As String" />
       <MemberSignature Language="F#" Value="member this.SecWebSocketVersion : string" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SecWebSocketVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -409,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.User" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property User As IPrincipal" />
       <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -445,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.HttpListenerWebSocketContext.WebSocket" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property WebSocket As WebSocket" />
       <MemberSignature Language="F#" Value="member this.WebSocket : System.Net.WebSockets.WebSocket" Usage="System.Net.WebSockets.HttpListenerWebSocketContext.WebSocket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebSockets::WebSocket ^ WebSocket { System::Net::WebSockets::WebSocket ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

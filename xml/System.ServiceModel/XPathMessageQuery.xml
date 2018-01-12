@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.XPathMessageQuery" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathMessageQuery&#xA;Inherits MessageQuery" />
   <TypeSignature Language="F#" Value="type XPathMessageQuery = class&#xA;    inherit MessageQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageQuery : System::ServiceModel::Dispatcher::MessageQuery" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.XPathMessageQuery : string -&gt; System.ServiceModel.XPathMessageQuery" Usage="new System.ServiceModel.XPathMessageQuery expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageQuery(System::String ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.#ctor(System.String,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As String, namespaces As XmlNamespaceManager)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.XPathMessageQuery : string * System.Xml.XmlNamespaceManager -&gt; System.ServiceModel.XPathMessageQuery" Usage="new System.ServiceModel.XPathMessageQuery (expression, namespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageQuery(System::String ^ expression, System::Xml::XmlNamespaceManager ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.#ctor(System.String,System.Xml.Xsl.XsltContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As String, context As XsltContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.XPathMessageQuery : string * System.Xml.Xsl.XsltContext -&gt; System.ServiceModel.XPathMessageQuery" Usage="new System.ServiceModel.XPathMessageQuery (expression, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageQuery(System::String ^ expression, System::Xml::Xsl::XsltContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.CreateMessageQueryCollection" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateMessageQueryCollection () As MessageQueryCollection" />
       <MemberSignature Language="F#" Value="override this.CreateMessageQueryCollection : unit -&gt; System.ServiceModel.Dispatcher.MessageQueryCollection" Usage="xPathMessageQuery.CreateMessageQueryCollection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Dispatcher::MessageQueryCollection ^ CreateMessageQueryCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Evaluate&lt;TResult&gt;(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.Evaluate``1(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="F#" Value="override this.Evaluate : System.ServiceModel.Channels.Message -&gt; 'Result" Usage="xPathMessageQuery.Evaluate message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override TResult Evaluate(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XPathMessageQuery.Evaluate``1(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Evaluate(Of TResult) (buffer As MessageBuffer) As TResult" />
       <MemberSignature Language="F#" Value="override this.Evaluate : System.ServiceModel.Channels.MessageBuffer -&gt; 'Result" Usage="xPathMessageQuery.Evaluate buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; override TResult Evaluate(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XPathMessageQuery.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
       <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="System.ServiceModel.XPathMessageQuery.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XPathMessageQuery.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespaces As XmlNamespaceManager" />
       <MemberSignature Language="F#" Value="member this.Namespaces : System.Xml.XmlNamespaceManager with get, set" Usage="System.ServiceModel.XPathMessageQuery.Namespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNamespaceManager ^ Namespaces { System::Xml::XmlNamespaceManager ^ get(); void set(System::Xml::XmlNamespaceManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

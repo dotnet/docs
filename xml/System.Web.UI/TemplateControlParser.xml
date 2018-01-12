@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateControlParser" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplateControlParser&#xA;Inherits BaseTemplateParser" />
   <TypeSignature Language="F#" Value="type TemplateControlParser = class&#xA;    inherit BaseTemplateParser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateControlParser abstract : System::Web::UI::BaseTemplateParser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControlParser.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TemplateControlParser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

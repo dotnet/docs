@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingProfile" />
   <TypeSignature Language="VB.NET" Value="Public Class TrackingProfile" />
   <TypeSignature Language="F#" Value="type TrackingProfile = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingProfile" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfile.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingProfile();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityTrackPoints As ActivityTrackPointCollection" />
       <MemberSignature Language="F#" Value="member this.ActivityTrackPoints : System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::ActivityTrackPointCollection ^ ActivityTrackPoints { System::Workflow::Runtime::Tracking::ActivityTrackPointCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.UserTrackPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserTrackPoints As UserTrackPointCollection" />
       <MemberSignature Language="F#" Value="member this.UserTrackPoints : System.Workflow.Runtime.Tracking.UserTrackPointCollection" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.UserTrackPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::UserTrackPointCollection ^ UserTrackPoints { System::Workflow::Runtime::Tracking::UserTrackPointCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowTrackPoints As WorkflowTrackPointCollection" />
       <MemberSignature Language="F#" Value="member this.WorkflowTrackPoints : System.Workflow.Runtime.Tracking.WorkflowTrackPointCollection" Usage="System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::Tracking::WorkflowTrackPointCollection ^ WorkflowTrackPoints { System::Workflow::Runtime::Tracking::WorkflowTrackPointCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngKeyCreationParameters" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngKeyCreationParameters" />
   <TypeSignature Language="F#" Value="type CngKeyCreationParameters = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CngKeyCreationParameters sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKeyCreationParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngKeyCreationParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.ExportPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ExportPolicy As Nullable(Of CngExportPolicies)" />
       <MemberSignature Language="F#" Value="member this.ExportPolicy : Nullable&lt;System.Security.Cryptography.CngExportPolicies&gt; with get, set" Usage="System.Security.Cryptography.CngKeyCreationParameters.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Security::Cryptography::CngExportPolicies&gt; ExportPolicy { Nullable&lt;System::Security::Cryptography::CngExportPolicies&gt; get(); void set(Nullable&lt;System::Security::Cryptography::CngExportPolicies&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.KeyCreationOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyCreationOptions As CngKeyCreationOptions" />
       <MemberSignature Language="F#" Value="member this.KeyCreationOptions : System.Security.Cryptography.CngKeyCreationOptions with get, set" Usage="System.Security.Cryptography.CngKeyCreationParameters.KeyCreationOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngKeyCreationOptions KeyCreationOptions { System::Security::Cryptography::CngKeyCreationOptions get(); void set(System::Security::Cryptography::CngKeyCreationOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.KeyUsage" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyUsage As Nullable(Of CngKeyUsages)" />
       <MemberSignature Language="F#" Value="member this.KeyUsage : Nullable&lt;System.Security.Cryptography.CngKeyUsages&gt; with get, set" Usage="System.Security.Cryptography.CngKeyCreationParameters.KeyUsage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Security::Cryptography::CngKeyUsages&gt; KeyUsage { Nullable&lt;System::Security::Cryptography::CngKeyUsages&gt; get(); void set(Nullable&lt;System::Security::Cryptography::CngKeyUsages&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As CngPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Security.Cryptography.CngPropertyCollection" Usage="System.Security.Cryptography.CngKeyCreationParameters.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngPropertyCollection ^ Parameters { System::Security::Cryptography::CngPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.ParentWindowHandle" />
       <MemberSignature Language="VB.NET" Value="Public Property ParentWindowHandle As IntPtr" />
       <MemberSignature Language="F#" Value="member this.ParentWindowHandle : nativeint with get, set" Usage="System.Security.Cryptography.CngKeyCreationParameters.ParentWindowHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ParentWindowHandle { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Property Provider As CngProvider" />
       <MemberSignature Language="F#" Value="member this.Provider : System.Security.Cryptography.CngProvider with get, set" Usage="System.Security.Cryptography.CngKeyCreationParameters.Provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngProvider ^ Provider { System::Security::Cryptography::CngProvider ^ get(); void set(System::Security::Cryptography::CngProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngKeyCreationParameters.UIPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property UIPolicy As CngUIPolicy" />
       <MemberSignature Language="F#" Value="member this.UIPolicy : System.Security.Cryptography.CngUIPolicy with get, set" Usage="System.Security.Cryptography.CngKeyCreationParameters.UIPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngUIPolicy ^ UIPolicy { System::Security::Cryptography::CngUIPolicy ^ get(); void set(System::Security::Cryptography::CngUIPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

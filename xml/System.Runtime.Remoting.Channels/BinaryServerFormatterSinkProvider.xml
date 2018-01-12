@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryServerFormatterSinkProvider&#xA;Implements IServerFormatterSinkProvider" />
   <TypeSignature Language="F#" Value="type BinaryServerFormatterSinkProvider = class&#xA;    interface IServerFormatterSinkProvider&#xA;    interface IServerChannelSinkProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryServerFormatterSinkProvider : System::Runtime::Remoting::Channels::IServerFormatterSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryServerFormatterSinkProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor(System.Collections.IDictionary,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, providerData As ICollection)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider : System.Collections.IDictionary * System.Collections.ICollection -&gt; System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider" Usage="new System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider (properties, providerData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryServerFormatterSinkProvider(System::Collections::IDictionary ^ properties, System::Collections::ICollection ^ providerData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSink (channel As IChannelReceiver) As IServerChannelSink" />
       <MemberSignature Language="F#" Value="abstract member CreateSink : System.Runtime.Remoting.Channels.IChannelReceiver -&gt; System.Runtime.Remoting.Channels.IServerChannelSink&#xA;override this.CreateSink : System.Runtime.Remoting.Channels.IChannelReceiver -&gt; System.Runtime.Remoting.Channels.IServerChannelSink" Usage="binaryServerFormatterSinkProvider.CreateSink channel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Channels::IServerChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelReceiver ^ channel);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)</InterfaceMember>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetChannelData (channelData As IChannelDataStore)" />
       <MemberSignature Language="F#" Value="abstract member GetChannelData : System.Runtime.Remoting.Channels.IChannelDataStore -&gt; unit&#xA;override this.GetChannelData : System.Runtime.Remoting.Channels.IChannelDataStore -&gt; unit" Usage="binaryServerFormatterSinkProvider.GetChannelData channelData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetChannelData(System::Runtime::Remoting::Channels::IChannelDataStore ^ channelData);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)</InterfaceMember>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As IServerChannelSinkProvider" />
       <MemberSignature Language="F#" Value="member this.Next : System.Runtime.Remoting.Channels.IServerChannelSinkProvider with get, set" Usage="System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.Next" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.Next</InterfaceMember>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.TypeFilterLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeFilterLevel As TypeFilterLevel" />
       <MemberSignature Language="F#" Value="member this.TypeFilterLevel : System.Runtime.Serialization.Formatters.TypeFilterLevel with get, set" Usage="System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.TypeFilterLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::TypeFilterLevel TypeFilterLevel { System::Runtime::Serialization::Formatters::TypeFilterLevel get(); void set(System::Runtime::Serialization::Formatters::TypeFilterLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.InvalidProgramException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvalidProgramException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type InvalidProgramException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidProgramException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.InvalidProgramException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProgramException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.InvalidProgramException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new InvalidProgramException : string -&gt; InvalidProgramException" Usage="new System.InvalidProgramException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProgramException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.InvalidProgramException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new InvalidProgramException : string * Exception -&gt; InvalidProgramException" Usage="new System.InvalidProgramException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidProgramException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

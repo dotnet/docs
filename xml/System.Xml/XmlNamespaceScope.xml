@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNamespaceScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlNamespaceScope" />
   <TypeSignature Language="F#" Value="type XmlNamespaceScope = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlNamespaceScope" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNamespaceScope.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="F#" Value="All = 0" Usage="System.Xml.XmlNamespaceScope.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNamespaceScope.ExcludeXml" />
       <MemberSignature Language="VB.NET" Value="ExcludeXml" />
       <MemberSignature Language="F#" Value="ExcludeXml = 1" Usage="System.Xml.XmlNamespaceScope.ExcludeXml" />
+      <MemberSignature Language="C++ CLI" Value="ExcludeXml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNamespaceScope.Local" />
       <MemberSignature Language="VB.NET" Value="Local" />
       <MemberSignature Language="F#" Value="Local = 2" Usage="System.Xml.XmlNamespaceScope.Local" />
+      <MemberSignature Language="C++ CLI" Value="Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

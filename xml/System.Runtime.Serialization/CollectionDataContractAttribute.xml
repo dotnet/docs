@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.CollectionDataContractAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CollectionDataContractAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type CollectionDataContractAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionDataContractAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.CollectionDataContractAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionDataContractAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsItemNameSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsItemNameSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsItemNameSetExplicitly : bool" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsItemNameSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsItemNameSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsKeyNameSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKeyNameSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsKeyNameSetExplicitly : bool" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsKeyNameSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKeyNameSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsNameSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNameSetExplicitly : bool" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsNameSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsNamespaceSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNamespaceSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNamespaceSetExplicitly : bool" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsNamespaceSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNamespaceSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsReference" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReference As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReference : bool with get, set" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReference { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsReferenceSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReferenceSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReferenceSetExplicitly : bool" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsReferenceSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReferenceSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsValueNameSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueNameSetExplicitly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsValueNameSetExplicitly : bool" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.IsValueNameSetExplicitly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueNameSetExplicitly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemName As String" />
       <MemberSignature Language="F#" Value="member this.ItemName : string with get, set" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.ItemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -339,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyName As String" />
       <MemberSignature Language="F#" Value="member this.KeyName : string with get, set" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.KeyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -369,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -399,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -429,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName" />
       <MemberSignature Language="VB.NET" Value="Public Property ValueName As String" />
       <MemberSignature Language="F#" Value="member this.ValueName : string with get, set" Usage="System.Runtime.Serialization.CollectionDataContractAttribute.ValueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>

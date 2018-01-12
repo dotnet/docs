@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeStatement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeStatement&#xA;Inherits CodeItem" />
   <TypeSignature Language="F#" Value="type CodeStatement = class&#xA;    inherit CodeItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeStatement abstract : Mono::CodeGeneration::CodeItem" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeStatement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeStatement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

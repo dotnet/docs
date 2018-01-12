@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.MulticastOption" />
   <TypeSignature Language="VB.NET" Value="Public Class MulticastOption" />
   <TypeSignature Language="F#" Value="type MulticastOption = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MulticastOption" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.MulticastOption : System.Net.IPAddress -&gt; System.Net.Sockets.MulticastOption" Usage="new System.Net.Sockets.MulticastOption group" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastOption(System::Net::IPAddress ^ group);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress, interfaceIndex As Integer)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.MulticastOption : System.Net.IPAddress * int -&gt; System.Net.Sockets.MulticastOption" Usage="new System.Net.Sockets.MulticastOption (group, interfaceIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastOption(System::Net::IPAddress ^ group, int interfaceIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress,System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress, mcint As IPAddress)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.MulticastOption : System.Net.IPAddress * System.Net.IPAddress -&gt; System.Net.Sockets.MulticastOption" Usage="new System.Net.Sockets.MulticastOption (group, mcint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastOption(System::Net::IPAddress ^ group, System::Net::IPAddress ^ mcint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.MulticastOption.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As IPAddress" />
       <MemberSignature Language="F#" Value="member this.Group : System.Net.IPAddress with get, set" Usage="System.Net.Sockets.MulticastOption.Group" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Group { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.MulticastOption.InterfaceIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property InterfaceIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.InterfaceIndex : int with get, set" Usage="System.Net.Sockets.MulticastOption.InterfaceIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InterfaceIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.MulticastOption.LocalAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalAddress As IPAddress" />
       <MemberSignature Language="F#" Value="member this.LocalAddress : System.Net.IPAddress with get, set" Usage="System.Net.Sockets.MulticastOption.LocalAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ LocalAddress { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

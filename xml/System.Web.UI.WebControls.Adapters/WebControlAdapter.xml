@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class WebControlAdapter&#xA;Inherits ControlAdapter" />
   <TypeSignature Language="F#" Value="type WebControlAdapter = class&#xA;    inherit ControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebControlAdapter : System::Web::UI::Adapters::ControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebControlAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Adapters.WebControlAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As WebControl" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.WebControls.WebControl" Usage="System.Web.UI.WebControls.Adapters.WebControlAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebControl ^ Control { System::Web::UI::WebControls::WebControl ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Adapters.WebControlAdapter.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.Web.UI.WebControls.Adapters.WebControlAdapter.IsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webControlAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBeginTag (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderBeginTag : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderBeginTag : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webControlAdapter.RenderBeginTag writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webControlAdapter.RenderContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderEndTag (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderEndTag : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderEndTag : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webControlAdapter.RenderEndTag writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderEndTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

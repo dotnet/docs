@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.MessageImportance" />
   <TypeSignature Language="VB.NET" Value="Public Enum MessageImportance" />
   <TypeSignature Language="F#" Value="type MessageImportance = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageImportance" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.MessageImportance.High" />
       <MemberSignature Language="VB.NET" Value="High" />
       <MemberSignature Language="F#" Value="High = 0" Usage="Microsoft.Build.Framework.MessageImportance.High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.MessageImportance.Low" />
       <MemberSignature Language="VB.NET" Value="Low" />
       <MemberSignature Language="F#" Value="Low = 2" Usage="Microsoft.Build.Framework.MessageImportance.Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.MessageImportance.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 1" Usage="Microsoft.Build.Framework.MessageImportance.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

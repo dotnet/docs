@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.TcpConnectionInformation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TcpConnectionInformation" />
   <TypeSignature Language="F#" Value="type TcpConnectionInformation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TcpConnectionInformation abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.TcpConnectionInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TcpConnectionInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpConnectionInformation.LocalEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LocalEndPoint As IPEndPoint" />
       <MemberSignature Language="F#" Value="member this.LocalEndPoint : System.Net.IPEndPoint" Usage="System.Net.NetworkInformation.TcpConnectionInformation.LocalEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::IPEndPoint ^ LocalEndPoint { System::Net::IPEndPoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpConnectionInformation.RemoteEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RemoteEndPoint As IPEndPoint" />
       <MemberSignature Language="F#" Value="member this.RemoteEndPoint : System.Net.IPEndPoint" Usage="System.Net.NetworkInformation.TcpConnectionInformation.RemoteEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::IPEndPoint ^ RemoteEndPoint { System::Net::IPEndPoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpConnectionInformation.State" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property State As TcpState" />
       <MemberSignature Language="F#" Value="member this.State : System.Net.NetworkInformation.TcpState" Usage="System.Net.NetworkInformation.TcpConnectionInformation.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::TcpState State { System::Net::NetworkInformation::TcpState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

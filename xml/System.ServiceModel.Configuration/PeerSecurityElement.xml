@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.PeerSecurityElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PeerSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="F#" Value="type PeerSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.PeerSecurityElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerSecurityElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PeerSecurityElement.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As SecurityMode" />
       <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.SecurityMode with get, set" Usage="System.ServiceModel.Configuration.PeerSecurityElement.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SecurityMode Mode { System::ServiceModel::SecurityMode get(); void set(System::ServiceModel::SecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PeerSecurityElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.PeerSecurityElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.PeerSecurityElement.Transport" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As PeerTransportSecurityElement" />
       <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.Configuration.PeerTransportSecurityElement" Usage="System.ServiceModel.Configuration.PeerSecurityElement.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::PeerTransportSecurityElement ^ Transport { System::ServiceModel::Configuration::PeerTransportSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

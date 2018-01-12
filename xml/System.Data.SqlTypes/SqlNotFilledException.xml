@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlNotFilledException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlNotFilledException&#xA;Inherits SqlTypeException" />
   <TypeSignature Language="F#" Value="type SqlNotFilledException = class&#xA;    inherit SqlTypeException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlNotFilledException sealed : System::Data::SqlTypes::SqlTypeException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlNotFilledException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotFilledException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlNotFilledException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlNotFilledException : string -&gt; System.Data.SqlTypes.SqlNotFilledException" Usage="new System.Data.SqlTypes.SqlNotFilledException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotFilledException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlNotFilledException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, e As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlNotFilledException : string * Exception -&gt; System.Data.SqlTypes.SqlNotFilledException" Usage="new System.Data.SqlTypes.SqlNotFilledException (message, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotFilledException(System::String ^ message, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

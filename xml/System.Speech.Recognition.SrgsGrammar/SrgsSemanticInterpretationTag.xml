@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsSemanticInterpretationTag&#xA;Inherits SrgsElement" />
   <TypeSignature Language="F#" Value="type SrgsSemanticInterpretationTag = class&#xA;    inherit SrgsElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SrgsSemanticInterpretationTag : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -172,6 +173,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsSemanticInterpretationTag();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -196,6 +198,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (script As String)" />
       <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag script" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsSemanticInterpretationTag(System::String ^ script);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -225,6 +228,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script" />
       <MemberSignature Language="VB.NET" Value="Public Property Script As String" />
       <MemberSignature Language="F#" Value="member this.Script : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Script { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAnnotated&#xA;Inherits XmlSchemaObject" />
   <TypeSignature Language="F#" Value="type XmlSchemaAnnotated = class&#xA;    inherit XmlSchemaObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaAnnotated : System::Xml::Schema::XmlSchemaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaAnnotated.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaAnnotated();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnnotated.Annotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Annotation As XmlSchemaAnnotation" />
       <MemberSignature Language="F#" Value="member this.Annotation : System.Xml.Schema.XmlSchemaAnnotation with get, set" Usage="System.Xml.Schema.XmlSchemaAnnotated.Annotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnnotation ^ Annotation { System::Xml::Schema::XmlSchemaAnnotation ^ get(); void set(System::Xml::Schema::XmlSchemaAnnotation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnnotated.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Xml.Schema.XmlSchemaAnnotated.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAnnotated.UnhandledAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property UnhandledAttributes As XmlAttribute()" />
       <MemberSignature Language="F#" Value="member this.UnhandledAttributes : System.Xml.XmlAttribute[] with get, set" Usage="System.Xml.Schema.XmlSchemaAnnotated.UnhandledAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ UnhandledAttributes { cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

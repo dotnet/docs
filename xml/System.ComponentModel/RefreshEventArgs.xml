@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RefreshEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RefreshEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type RefreshEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RefreshEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (componentChanged As Object)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.RefreshEventArgs : obj -&gt; System.ComponentModel.RefreshEventArgs" Usage="new System.ComponentModel.RefreshEventArgs componentChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RefreshEventArgs(System::Object ^ componentChanged);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RefreshEventArgs.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeChanged As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.RefreshEventArgs : Type -&gt; System.ComponentModel.RefreshEventArgs" Usage="new System.ComponentModel.RefreshEventArgs typeChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RefreshEventArgs(Type ^ typeChanged);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.RefreshEventArgs.ComponentChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComponentChanged As Object" />
       <MemberSignature Language="F#" Value="member this.ComponentChanged : obj" Usage="System.ComponentModel.RefreshEventArgs.ComponentChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ComponentChanged { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.RefreshEventArgs.TypeChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeChanged As Type" />
       <MemberSignature Language="F#" Value="member this.TypeChanged : Type" Usage="System.ComponentModel.RefreshEventArgs.TypeChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TypeChanged { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

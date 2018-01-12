@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataRowAction" />
   <TypeSignature Language="F#" Value="type DataRowAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataRowAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="F#" Value="Add = 16" Usage="System.Data.DataRowAction.Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Change" />
       <MemberSignature Language="VB.NET" Value="Change" />
       <MemberSignature Language="F#" Value="Change = 2" Usage="System.Data.DataRowAction.Change" />
+      <MemberSignature Language="C++ CLI" Value="Change" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.ChangeCurrentAndOriginal" />
       <MemberSignature Language="VB.NET" Value="ChangeCurrentAndOriginal" />
       <MemberSignature Language="F#" Value="ChangeCurrentAndOriginal = 64" Usage="System.Data.DataRowAction.ChangeCurrentAndOriginal" />
+      <MemberSignature Language="C++ CLI" Value="ChangeCurrentAndOriginal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.ChangeOriginal" />
       <MemberSignature Language="VB.NET" Value="ChangeOriginal" />
       <MemberSignature Language="F#" Value="ChangeOriginal = 32" Usage="System.Data.DataRowAction.ChangeOriginal" />
+      <MemberSignature Language="C++ CLI" Value="ChangeOriginal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Commit" />
       <MemberSignature Language="VB.NET" Value="Commit" />
       <MemberSignature Language="F#" Value="Commit = 8" Usage="System.Data.DataRowAction.Commit" />
+      <MemberSignature Language="C++ CLI" Value="Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="F#" Value="Delete = 1" Usage="System.Data.DataRowAction.Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Nothing" />
       <MemberSignature Language="VB.NET" Value="Nothing" />
       <MemberSignature Language="F#" Value="Nothing = 0" Usage="System.Data.DataRowAction.Nothing" />
+      <MemberSignature Language="C++ CLI" Value="Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Rollback" />
       <MemberSignature Language="VB.NET" Value="Rollback" />
       <MemberSignature Language="F#" Value="Rollback = 4" Usage="System.Data.DataRowAction.Rollback" />
+      <MemberSignature Language="C++ CLI" Value="Rollback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

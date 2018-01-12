@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageHeaderArrayAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageHeaderArrayAttribute&#xA;Inherits MessageHeaderAttribute" />
   <TypeSignature Language="F#" Value="type MessageHeaderArrayAttribute = class&#xA;    inherit MessageHeaderAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageHeaderArrayAttribute sealed : System::ServiceModel::MessageHeaderAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageHeaderArrayAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageHeaderArrayAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

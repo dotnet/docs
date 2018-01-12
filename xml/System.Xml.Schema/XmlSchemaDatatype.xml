@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaDatatype" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaDatatype" />
   <TypeSignature Language="F#" Value="type XmlSchemaDatatype = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaDatatype abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaDatatype.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaDatatype();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaDatatype.ChangeType(System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ChangeType (value As Object, targetType As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member ChangeType : obj * Type -&gt; obj&#xA;override this.ChangeType : obj * Type -&gt; obj" Usage="xmlSchemaDatatype.ChangeType (value, targetType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ChangeType(System::Object ^ value, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaDatatype.ChangeType(System.Object,System.Type,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ChangeType (value As Object, targetType As Type, namespaceResolver As IXmlNamespaceResolver) As Object" />
       <MemberSignature Language="F#" Value="abstract member ChangeType : obj * Type * System.Xml.IXmlNamespaceResolver -&gt; obj&#xA;override this.ChangeType : obj * Type * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="xmlSchemaDatatype.ChangeType (value, targetType, namespaceResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ChangeType(System::Object ^ value, Type ^ targetType, System::Xml::IXmlNamespaceResolver ^ namespaceResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaDatatype.IsDerivedFrom(System.Xml.Schema.XmlSchemaDatatype)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDerivedFrom (datatype As XmlSchemaDatatype) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsDerivedFrom : System.Xml.Schema.XmlSchemaDatatype -&gt; bool&#xA;override this.IsDerivedFrom : System.Xml.Schema.XmlSchemaDatatype -&gt; bool" Usage="xmlSchemaDatatype.IsDerivedFrom datatype" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDerivedFrom(System::Xml::Schema::XmlSchemaDatatype ^ datatype);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaDatatype.ParseValue(System.String,System.Xml.XmlNameTable,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ParseValue (s As String, nameTable As XmlNameTable, nsmgr As IXmlNamespaceResolver) As Object" />
       <MemberSignature Language="F#" Value="abstract member ParseValue : string * System.Xml.XmlNameTable * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="xmlSchemaDatatype.ParseValue (s, nameTable, nsmgr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ParseValue(System::String ^ s, System::Xml::XmlNameTable ^ nameTable, System::Xml::IXmlNamespaceResolver ^ nsmgr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -281,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDatatype.TokenizedType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TokenizedType As XmlTokenizedType" />
       <MemberSignature Language="F#" Value="member this.TokenizedType : System.Xml.XmlTokenizedType" Usage="System.Xml.Schema.XmlSchemaDatatype.TokenizedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XmlTokenizedType TokenizedType { System::Xml::XmlTokenizedType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -335,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDatatype.TypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TypeCode As XmlTypeCode" />
       <MemberSignature Language="F#" Value="member this.TypeCode : System.Xml.Schema.XmlTypeCode" Usage="System.Xml.Schema.XmlSchemaDatatype.TypeCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlTypeCode TypeCode { System::Xml::Schema::XmlTypeCode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -380,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDatatype.ValueType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueType As Type" />
       <MemberSignature Language="F#" Value="member this.ValueType : Type" Usage="System.Xml.Schema.XmlSchemaDatatype.ValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -423,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDatatype.Variety" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Variety As XmlSchemaDatatypeVariety" />
       <MemberSignature Language="F#" Value="member this.Variety : System.Xml.Schema.XmlSchemaDatatypeVariety" Usage="System.Xml.Schema.XmlSchemaDatatype.Variety" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaDatatypeVariety Variety { System::Xml::Schema::XmlSchemaDatatypeVariety get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

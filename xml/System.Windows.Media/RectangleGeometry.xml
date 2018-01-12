@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RectangleGeometry" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RectangleGeometry&#xA;Inherits Geometry" />
   <TypeSignature Language="F#" Value="type RectangleGeometry = class&#xA;    inherit Geometry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RectangleGeometry sealed : System::Windows::Media::Geometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleGeometry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.#ctor(System.Windows.Rect)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.RectangleGeometry : System.Windows.Rect -&gt; System.Windows.Media.RectangleGeometry" Usage="new System.Windows.Media.RectangleGeometry rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleGeometry(System::Windows::Rect rect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Rect rect, float64 radiusX, float64 radiusY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.#ctor(System.Windows.Rect,System.Double,System.Double)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.RectangleGeometry : System.Windows.Rect * double * double -&gt; System.Windows.Media.RectangleGeometry" Usage="new System.Windows.Media.RectangleGeometry (rect, radiusX, radiusY)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleGeometry(System::Windows::Rect rect, double radiusX, double radiusY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Rect rect, float64 radiusX, float64 radiusY, class System.Windows.Media.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.#ctor(System.Windows.Rect,System.Double,System.Double,System.Windows.Media.Transform)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.RectangleGeometry : System.Windows.Rect * double * double * System.Windows.Media.Transform -&gt; System.Windows.Media.RectangleGeometry" Usage="new System.Windows.Media.RectangleGeometry (rect, radiusX, radiusY, transform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleGeometry(System::Windows::Rect rect, double radiusX, double radiusY, System::Windows::Media::Transform ^ transform);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RectangleGeometry.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rect" />
       <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Rect" Usage="System.Windows.Media.RectangleGeometry.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As RectangleGeometry" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.RectangleGeometry" Usage="rectangleGeometry.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::RectangleGeometry ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As RectangleGeometry" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.RectangleGeometry" Usage="rectangleGeometry.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::RectangleGeometry ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="rectangleGeometry.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.GetArea(System.Double,System.Windows.Media.ToleranceType)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetArea (tolerance As Double, type As ToleranceType) As Double" />
       <MemberSignature Language="F#" Value="override this.GetArea : double * System.Windows.Media.ToleranceType -&gt; double" Usage="rectangleGeometry.GetArea (tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetArea(double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEmpty () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsEmpty : unit -&gt; bool" Usage="rectangleGeometry.IsEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -270,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RectangleGeometry.MayHaveCurves" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MayHaveCurves () As Boolean" />
       <MemberSignature Language="F#" Value="override this.MayHaveCurves : unit -&gt; bool" Usage="rectangleGeometry.MayHaveCurves " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MayHaveCurves();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RectangleGeometry.RadiusX" />
       <MemberSignature Language="VB.NET" Value="Public Property RadiusX As Double" />
       <MemberSignature Language="F#" Value="member this.RadiusX : double with get, set" Usage="System.Windows.Media.RectangleGeometry.RadiusX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RadiusX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -327,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RectangleGeometry.RadiusXProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusXProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RadiusXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RectangleGeometry.RadiusXProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusXProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -346,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RectangleGeometry.RadiusY" />
       <MemberSignature Language="VB.NET" Value="Public Property RadiusY As Double" />
       <MemberSignature Language="F#" Value="member this.RadiusY : double with get, set" Usage="System.Windows.Media.RectangleGeometry.RadiusY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RadiusY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -382,6 +397,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RectangleGeometry.RadiusYProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusYProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RadiusYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RectangleGeometry.RadiusYProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusYProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -401,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RectangleGeometry.Rect" />
       <MemberSignature Language="VB.NET" Value="Public Property Rect As Rect" />
       <MemberSignature Language="F#" Value="member this.Rect : System.Windows.Rect with get, set" Usage="System.Windows.Media.RectangleGeometry.Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Rect { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -437,6 +454,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RectangleGeometry.RectProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RectProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RectProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RectangleGeometry.RectProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RectProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

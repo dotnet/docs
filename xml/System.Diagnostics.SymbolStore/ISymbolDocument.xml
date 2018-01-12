@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolDocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolDocument" />
   <TypeSignature Language="F#" Value="type ISymbolDocument = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolDocument" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.CheckSumAlgorithmId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckSumAlgorithmId As Guid" />
       <MemberSignature Language="F#" Value="member this.CheckSumAlgorithmId : Guid" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.CheckSumAlgorithmId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid CheckSumAlgorithmId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.DocumentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentType As Guid" />
       <MemberSignature Language="F#" Value="member this.DocumentType : Guid" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.DocumentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid DocumentType { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocument.FindClosestLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindClosestLine (line As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member FindClosestLine : int -&gt; int" Usage="iSymbolDocument.FindClosestLine line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindClosestLine(int line);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocument.GetCheckSum" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCheckSum () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetCheckSum : unit -&gt; byte[]" Usage="iSymbolDocument.GetCheckSum " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetCheckSum();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocument.GetSourceRange(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSourceRange (startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetSourceRange : int * int * int * int -&gt; byte[]" Usage="iSymbolDocument.GetSourceRange (startLine, startColumn, endLine, endColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetSourceRange(int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.HasEmbeddedSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasEmbeddedSource As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasEmbeddedSource : bool" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.HasEmbeddedSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasEmbeddedSource { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As Guid" />
       <MemberSignature Language="F#" Value="member this.Language : Guid" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Language { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.LanguageVendor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LanguageVendor As Guid" />
       <MemberSignature Language="F#" Value="member this.LanguageVendor : Guid" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.LanguageVendor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid LanguageVendor { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.SourceLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceLength As Integer" />
       <MemberSignature Language="F#" Value="member this.SourceLength : int" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.SourceLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SourceLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -325,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolDocument.URL" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property URL As String" />
       <MemberSignature Language="F#" Value="member this.URL : string" Usage="System.Diagnostics.SymbolStore.ISymbolDocument.URL" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ URL { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

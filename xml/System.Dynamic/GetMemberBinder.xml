@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.GetMemberBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GetMemberBinder&#xA;Inherits DynamicMetaObjectBinder" />
   <TypeSignature Language="F#" Value="type GetMemberBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetMemberBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.GetMemberBinder.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, ignoreCase As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Dynamic.GetMemberBinder : string * bool -&gt; System.Dynamic.GetMemberBinder" Usage="new System.Dynamic.GetMemberBinder (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; GetMemberBinder(System::String ^ name, bool ignoreCase);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.GetMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, ParamArray args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="getMemberBinder.Bind (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, ... cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.GetMemberBinder.FallbackGetMember(System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function FallbackGetMember (target As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="member this.FallbackGetMember : System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="getMemberBinder.FallbackGetMember target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackGetMember(System::Dynamic::DynamicMetaObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.GetMemberBinder.FallbackGetMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackGetMember (target As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="abstract member FallbackGetMember : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="getMemberBinder.FallbackGetMember (target, errorSuggestion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackGetMember(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.GetMemberBinder.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreCase As Boolean" />
       <MemberSignature Language="F#" Value="member this.IgnoreCase : bool" Usage="System.Dynamic.GetMemberBinder.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreCase { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.GetMemberBinder.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Dynamic.GetMemberBinder.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.GetMemberBinder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.GetMemberBinder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

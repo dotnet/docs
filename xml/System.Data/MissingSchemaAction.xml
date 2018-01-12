@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MissingSchemaAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum MissingSchemaAction" />
   <TypeSignature Language="F#" Value="type MissingSchemaAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MissingSchemaAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingSchemaAction.Add" />
       <MemberSignature Language="VB.NET" Value="Add" />
       <MemberSignature Language="F#" Value="Add = 1" Usage="System.Data.MissingSchemaAction.Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingSchemaAction.AddWithKey" />
       <MemberSignature Language="VB.NET" Value="AddWithKey" />
       <MemberSignature Language="F#" Value="AddWithKey = 4" Usage="System.Data.MissingSchemaAction.AddWithKey" />
+      <MemberSignature Language="C++ CLI" Value="AddWithKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingSchemaAction.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="F#" Value="Error = 3" Usage="System.Data.MissingSchemaAction.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.MissingSchemaAction.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
       <MemberSignature Language="F#" Value="Ignore = 2" Usage="System.Data.MissingSchemaAction.Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

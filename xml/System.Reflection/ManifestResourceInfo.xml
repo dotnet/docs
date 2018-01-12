@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ManifestResourceInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ManifestResourceInfo" />
   <TypeSignature Language="F#" Value="type ManifestResourceInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManifestResourceInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly containingAssembly, string containingFileName, valuetype System.Reflection.ResourceLocation resourceLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ManifestResourceInfo.#ctor(System.Reflection.Assembly,System.String,System.Reflection.ResourceLocation)" />
       <MemberSignature Language="F#" Value="new System.Reflection.ManifestResourceInfo : System.Reflection.Assembly * string * System.Reflection.ResourceLocation -&gt; System.Reflection.ManifestResourceInfo" Usage="new System.Reflection.ManifestResourceInfo (containingAssembly, containingFileName, resourceLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManifestResourceInfo(System::Reflection::Assembly ^ containingAssembly, System::String ^ containingFileName, System::Reflection::ResourceLocation resourceLocation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ManifestResourceInfo.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FileName As String" />
       <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Reflection.ManifestResourceInfo.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ManifestResourceInfo.ReferencedAssembly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReferencedAssembly As Assembly" />
       <MemberSignature Language="F#" Value="member this.ReferencedAssembly : System.Reflection.Assembly" Usage="System.Reflection.ManifestResourceInfo.ReferencedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ ReferencedAssembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ManifestResourceInfo.ResourceLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ResourceLocation As ResourceLocation" />
       <MemberSignature Language="F#" Value="member this.ResourceLocation : System.Reflection.ResourceLocation" Usage="System.Reflection.ManifestResourceInfo.ResourceLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ResourceLocation ResourceLocation { System::Reflection::ResourceLocation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

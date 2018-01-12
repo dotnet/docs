@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlTextReader" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlTextReader&#xA;Inherits XmlReader&#xA;Implements IXmlLineInfo, IXmlNamespaceResolver" />
   <TypeSignature Language="F#" Value="type XmlTextReader = class&#xA;    inherit XmlReader&#xA;    interface IXmlLineInfo&#xA;    interface IXmlNamespaceResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlTextReader : System::Xml::XmlReader, System::Xml::IXmlLineInfo, System::Xml::IXmlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -123,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlTextReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -150,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (input As Stream)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : System.IO.Stream -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::IO::Stream ^ input);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -193,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (input As TextReader)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : System.IO.TextReader -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::IO::TextReader ^ input);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -243,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ url);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -324,6 +329,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : System.Xml.XmlNameTable -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader nt" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlTextReader(System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -363,6 +369,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.IO.Stream,System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (input As Stream, nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : System.IO.Stream * System.Xml.XmlNameTable -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (input, nt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::IO::Stream ^ input, System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -409,6 +416,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.IO.TextReader,System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (input As TextReader, nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : System.IO.TextReader * System.Xml.XmlNameTable -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (input, nt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::IO::TextReader ^ input, System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -453,6 +461,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, input As Stream)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string * System.IO.Stream -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (url, input)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ url, System::IO::Stream ^ input);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -496,6 +505,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, input As TextReader)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string * System.IO.TextReader -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (url, input)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ url, System::IO::TextReader ^ input);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -539,6 +549,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String,System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string * System.Xml.XmlNameTable -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (url, nt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ url, System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -592,6 +603,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.IO.Stream,System.Xml.XmlNodeType,System.Xml.XmlParserContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlFragment As Stream, fragType As XmlNodeType, context As XmlParserContext)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : System.IO.Stream * System.Xml.XmlNodeType * System.Xml.XmlParserContext -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (xmlFragment, fragType, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::IO::Stream ^ xmlFragment, System::Xml::XmlNodeType fragType, System::Xml::XmlParserContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -657,6 +669,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.Stream,System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, input As Stream, nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string * System.IO.Stream * System.Xml.XmlNameTable -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (url, input, nt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ url, System::IO::Stream ^ input, System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -701,6 +714,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.TextReader,System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, input As TextReader, nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string * System.IO.TextReader * System.Xml.XmlNameTable -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (url, input, nt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ url, System::IO::TextReader ^ input, System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -747,6 +761,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.#ctor(System.String,System.Xml.XmlNodeType,System.Xml.XmlParserContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlFragment As String, fragType As XmlNodeType, context As XmlParserContext)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlTextReader : string * System.Xml.XmlNodeType * System.Xml.XmlParserContext -&gt; System.Xml.XmlTextReader" Usage="new System.Xml.XmlTextReader (xmlFragment, fragType, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlTextReader(System::String ^ xmlFragment, System::Xml::XmlNodeType fragType, System::Xml::XmlParserContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -814,6 +829,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.AttributeCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AttributeCount As Integer" />
       <MemberSignature Language="F#" Value="member this.AttributeCount : int" Usage="System.Xml.XmlTextReader.AttributeCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int AttributeCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -864,6 +880,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.BaseURI" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BaseURI As String" />
       <MemberSignature Language="F#" Value="member this.BaseURI : string" Usage="System.Xml.XmlTextReader.BaseURI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BaseURI { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -918,6 +935,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.CanReadBinaryContent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanReadBinaryContent As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReadBinaryContent : bool" Usage="System.Xml.XmlTextReader.CanReadBinaryContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReadBinaryContent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -960,6 +978,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.CanReadValueChunk" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanReadValueChunk As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReadValueChunk : bool" Usage="System.Xml.XmlTextReader.CanReadValueChunk" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReadValueChunk { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1002,6 +1021,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.CanResolveEntity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanResolveEntity As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanResolveEntity : bool" Usage="System.Xml.XmlTextReader.CanResolveEntity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanResolveEntity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1044,6 +1064,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="xmlTextReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1087,6 +1108,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
       <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Xml.XmlTextReader.Depth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1135,6 +1157,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.DtdProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Property DtdProcessing As DtdProcessing" />
       <MemberSignature Language="F#" Value="member this.DtdProcessing : System.Xml.DtdProcessing with get, set" Usage="System.Xml.XmlTextReader.DtdProcessing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::DtdProcessing DtdProcessing { System::Xml::DtdProcessing get(); void set(System::Xml::DtdProcessing value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1174,6 +1197,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.Xml.XmlTextReader.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1214,6 +1238,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.EntityHandling" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityHandling As EntityHandling" />
       <MemberSignature Language="F#" Value="member this.EntityHandling : System.Xml.EntityHandling with get, set" Usage="System.Xml.XmlTextReader.EntityHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::EntityHandling EntityHandling { System::Xml::EntityHandling get(); void set(System::Xml::EntityHandling value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1278,6 +1303,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.EOF" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EOF As Boolean" />
       <MemberSignature Language="F#" Value="member this.EOF : bool" Usage="System.Xml.XmlTextReader.EOF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EOF { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1338,6 +1364,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.GetAttribute(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttribute (i As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.GetAttribute : int -&gt; string" Usage="xmlTextReader.GetAttribute i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAttribute(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1384,6 +1411,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.GetAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttribute (name As String) As String" />
       <MemberSignature Language="F#" Value="override this.GetAttribute : string -&gt; string" Usage="xmlTextReader.GetAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1444,6 +1472,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.GetAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttribute (localName As String, namespaceURI As String) As String" />
       <MemberSignature Language="F#" Value="override this.GetAttribute : string * string -&gt; string" Usage="xmlTextReader.GetAttribute (localName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAttribute(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1511,6 +1540,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.GetNamespacesInScope(System.Xml.XmlNamespaceScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespacesInScope (scope As XmlNamespaceScope) As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.GetNamespacesInScope : System.Xml.XmlNamespaceScope -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="xmlTextReader.GetNamespacesInScope scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetNamespacesInScope(System::Xml::XmlNamespaceScope scope);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)</InterfaceMember>
@@ -1567,6 +1597,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.GetRemainder" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRemainder () As TextReader" />
       <MemberSignature Language="F#" Value="member this.GetRemainder : unit -&gt; System.IO.TextReader" Usage="xmlTextReader.GetRemainder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::TextReader ^ GetRemainder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1624,6 +1655,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.HasLineInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function HasLineInfo () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member HasLineInfo : unit -&gt; bool&#xA;override this.HasLineInfo : unit -&gt; bool" Usage="xmlTextReader.HasLineInfo " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasLineInfo();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlLineInfo.HasLineInfo</InterfaceMember>
@@ -1668,6 +1700,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.HasValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasValue As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasValue : bool" Usage="System.Xml.XmlTextReader.HasValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasValue { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1735,6 +1768,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Xml.XmlTextReader.IsDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1776,6 +1810,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.IsEmptyElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsEmptyElement As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEmptyElement : bool" Usage="System.Xml.XmlTextReader.IsEmptyElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmptyElement { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1839,6 +1874,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xml.XmlTextReader.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xml.IXmlLineInfo.LineNumber</InterfaceMember>
@@ -1894,6 +1930,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xml.XmlTextReader.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Xml.IXmlLineInfo.LinePosition</InterfaceMember>
@@ -1959,6 +1996,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
       <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlTextReader.LocalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2013,6 +2051,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function LookupNamespace (prefix As String) As String" />
       <MemberSignature Language="F#" Value="override this.LookupNamespace : string -&gt; string" Usage="xmlTextReader.LookupNamespace prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ LookupNamespace(System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)</InterfaceMember>
@@ -2090,6 +2129,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.MoveToAttribute(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MoveToAttribute (i As Integer)" />
       <MemberSignature Language="F#" Value="override this.MoveToAttribute : int -&gt; unit" Usage="xmlTextReader.MoveToAttribute i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MoveToAttribute(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2142,6 +2182,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.MoveToAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToAttribute (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.MoveToAttribute : string -&gt; bool" Usage="xmlTextReader.MoveToAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2188,6 +2229,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.MoveToAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToAttribute (localName As String, namespaceURI As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.MoveToAttribute : string * string -&gt; bool" Usage="xmlTextReader.MoveToAttribute (localName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToAttribute(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2236,6 +2278,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.MoveToElement" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToElement () As Boolean" />
       <MemberSignature Language="F#" Value="override this.MoveToElement : unit -&gt; bool" Usage="xmlTextReader.MoveToElement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2288,6 +2331,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.MoveToFirstAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToFirstAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.MoveToFirstAttribute : unit -&gt; bool" Usage="xmlTextReader.MoveToFirstAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToFirstAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2342,6 +2386,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.MoveToNextAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MoveToNextAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.MoveToNextAttribute : unit -&gt; bool" Usage="xmlTextReader.MoveToNextAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MoveToNextAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2394,6 +2439,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlTextReader.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2466,6 +2512,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespaces As Boolean" />
       <MemberSignature Language="F#" Value="member this.Namespaces : bool with get, set" Usage="System.Xml.XmlTextReader.Namespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Namespaces { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2511,6 +2558,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.NamespaceURI" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NamespaceURI As String" />
       <MemberSignature Language="F#" Value="member this.NamespaceURI : string" Usage="System.Xml.XmlTextReader.NamespaceURI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NamespaceURI { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2565,6 +2613,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NameTable As XmlNameTable" />
       <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.XmlTextReader.NameTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2607,6 +2656,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlTextReader.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2661,6 +2711,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Normalization" />
       <MemberSignature Language="VB.NET" Value="Public Property Normalization As Boolean" />
       <MemberSignature Language="F#" Value="member this.Normalization : bool with get, set" Usage="System.Xml.XmlTextReader.Normalization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Normalization { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2734,6 +2785,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Prefix As String" />
       <MemberSignature Language="F#" Value="member this.Prefix : string" Usage="System.Xml.XmlTextReader.Prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Prefix { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2786,6 +2838,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.ProhibitDtd" />
       <MemberSignature Language="VB.NET" Value="Public Property ProhibitDtd As Boolean" />
       <MemberSignature Language="F#" Value="member this.ProhibitDtd : bool with get, set" Usage="System.Xml.XmlTextReader.ProhibitDtd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProhibitDtd { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2835,6 +2888,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.QuoteChar" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property QuoteChar As Char" />
       <MemberSignature Language="F#" Value="member this.QuoteChar : char" Usage="System.Xml.XmlTextReader.QuoteChar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property char QuoteChar { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2876,6 +2930,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="xmlTextReader.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2936,6 +2991,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadAttributeValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAttributeValue () As Boolean" />
       <MemberSignature Language="F#" Value="override this.ReadAttributeValue : unit -&gt; bool" Usage="xmlTextReader.ReadAttributeValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ReadAttributeValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2992,6 +3048,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadBase64 (array As Byte(), offset As Integer, len As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.ReadBase64 : byte[] * int * int -&gt; int" Usage="xmlTextReader.ReadBase64 (array, offset, len)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadBase64(cli::array &lt;System::Byte&gt; ^ array, int offset, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3059,6 +3116,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadBinHex (array As Byte(), offset As Integer, len As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.ReadBinHex : byte[] * int * int -&gt; int" Usage="xmlTextReader.ReadBinHex (array, offset, len)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadBinHex(cli::array &lt;System::Byte&gt; ^ array, int offset, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3125,6 +3183,7 @@ abc<tag/>
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadChars(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadChars (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.ReadChars : char[] * int * int -&gt; int" Usage="xmlTextReader.ReadChars (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ReadChars(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3238,6 +3297,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadContentAsBase64 (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.ReadContentAsBase64 : byte[] * int * int -&gt; int" Usage="xmlTextReader.ReadContentAsBase64 (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadContentAsBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3304,6 +3364,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadContentAsBinHex (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.ReadContentAsBinHex : byte[] * int * int -&gt; int" Usage="xmlTextReader.ReadContentAsBinHex (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadContentAsBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3371,6 +3432,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadElementContentAsBase64 (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.ReadElementContentAsBase64 : byte[] * int * int -&gt; int" Usage="xmlTextReader.ReadElementContentAsBase64 (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadElementContentAsBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3440,6 +3502,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadElementContentAsBinHex (buffer As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.ReadElementContentAsBinHex : byte[] * int * int -&gt; int" Usage="xmlTextReader.ReadElementContentAsBinHex (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadElementContentAsBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3509,6 +3572,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.ReadState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReadState As ReadState" />
       <MemberSignature Language="F#" Value="member this.ReadState : System.Xml.ReadState" Usage="System.Xml.XmlTextReader.ReadState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::ReadState ReadState { System::Xml::ReadState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3547,6 +3611,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ReadString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadString () As String" />
       <MemberSignature Language="F#" Value="override this.ReadString : unit -&gt; string" Usage="xmlTextReader.ReadString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3608,6 +3673,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ResetState" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetState ()" />
       <MemberSignature Language="F#" Value="member this.ResetState : unit -&gt; unit" Usage="xmlTextReader.ResetState " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3673,6 +3739,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.ResolveEntity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResolveEntity ()" />
       <MemberSignature Language="F#" Value="override this.ResolveEntity : unit -&gt; unit" Usage="xmlTextReader.ResolveEntity " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResolveEntity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3717,6 +3784,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.Skip" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Skip ()" />
       <MemberSignature Language="F#" Value="override this.Skip : unit -&gt; unit" Usage="xmlTextReader.Skip " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Skip();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3770,6 +3838,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(valuetype System.Xml.XmlNamespaceScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.System#Xml#IXmlNamespaceResolver#GetNamespacesInScope(System.Xml.XmlNamespaceScope)" />
       <MemberSignature Language="VB.NET" Value="Function GetNamespacesInScope (scope As XmlNamespaceScope) As IDictionary(Of String, String) Implements IXmlNamespaceResolver.GetNamespacesInScope" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System::Xml::XmlNamespaceScope scope) = System::Xml::IXmlNamespaceResolver::GetNamespacesInScope;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)</InterfaceMember>
@@ -3813,6 +3882,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Xml.IXmlNamespaceResolver.LookupNamespace(string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.System#Xml#IXmlNamespaceResolver#LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function LookupNamespace (prefix As String) As String Implements IXmlNamespaceResolver.LookupNamespace" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Xml.IXmlNamespaceResolver.LookupNamespace(System::String ^ prefix) = System::Xml::IXmlNamespaceResolver::LookupNamespace;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)</InterfaceMember>
@@ -3856,6 +3926,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Xml.IXmlNamespaceResolver.LookupPrefix(string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlTextReader.System#Xml#IXmlNamespaceResolver#LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function LookupPrefix (namespaceName As String) As String Implements IXmlNamespaceResolver.LookupPrefix" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Xml.IXmlNamespaceResolver.LookupPrefix(System::String ^ namespaceName) = System::Xml::IXmlNamespaceResolver::LookupPrefix;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)</InterfaceMember>
@@ -3893,6 +3964,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XmlTextReader.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3969,6 +4041,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.WhitespaceHandling" />
       <MemberSignature Language="VB.NET" Value="Public Property WhitespaceHandling As WhitespaceHandling" />
       <MemberSignature Language="F#" Value="member this.WhitespaceHandling : System.Xml.WhitespaceHandling with get, set" Usage="System.Xml.XmlTextReader.WhitespaceHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::WhitespaceHandling WhitespaceHandling { System::Xml::WhitespaceHandling get(); void set(System::Xml::WhitespaceHandling value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4023,6 +4096,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlLang As String" />
       <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.Xml.XmlTextReader.XmlLang" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlLang { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4081,6 +4155,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.XmlResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlResolver As XmlResolver" />
       <MemberSignature Language="F#" Value="member this.XmlResolver : System.Xml.XmlResolver" Usage="System.Xml.XmlTextReader.XmlResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlResolver ^ XmlResolver {  void set(System::Xml::XmlResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -4145,6 +4220,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlTextReader.XmlSpace" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlSpace As XmlSpace" />
       <MemberSignature Language="F#" Value="member this.XmlSpace : System.Xml.XmlSpace" Usage="System.Xml.XmlTextReader.XmlSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlSpace XmlSpace { System::Xml::XmlSpace get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

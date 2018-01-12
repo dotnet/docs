@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Aes" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Aes&#xA;Inherits SymmetricAlgorithm" />
   <TypeSignature Language="F#" Value="type Aes = class&#xA;    inherit SymmetricAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Aes abstract : System::Security::Cryptography::SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Aes.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Aes();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Aes.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As Aes" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.Aes" Usage="System.Security.Cryptography.Aes.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Aes ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Aes.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithmName As String) As Aes" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.Aes" Usage="System.Security.Cryptography.Aes.Create algorithmName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Aes ^ Create(System::String ^ algorithmName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Aes.LegalBlockSizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalBlockSizes As KeySizes()" />
       <MemberSignature Language="F#" Value="member this.LegalBlockSizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.Aes.LegalBlockSizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Aes.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.Aes.LegalKeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

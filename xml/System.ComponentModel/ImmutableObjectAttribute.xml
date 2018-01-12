@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ImmutableObjectAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImmutableObjectAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ImmutableObjectAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImmutableObjectAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ImmutableObjectAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (immutable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.ImmutableObjectAttribute : bool -&gt; System.ComponentModel.ImmutableObjectAttribute" Usage="new System.ComponentModel.ImmutableObjectAttribute immutable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImmutableObjectAttribute(bool immutable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ImmutableObjectAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ImmutableObjectAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.ImmutableObjectAttribute" Usage="System.ComponentModel.ImmutableObjectAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ImmutableObjectAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ImmutableObjectAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="immutableObjectAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -157,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ImmutableObjectAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="immutableObjectAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ImmutableObjectAttribute.Immutable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Immutable As Boolean" />
       <MemberSignature Language="F#" Value="member this.Immutable : bool" Usage="System.ComponentModel.ImmutableObjectAttribute.Immutable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Immutable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ImmutableObjectAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="immutableObjectAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ImmutableObjectAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As ImmutableObjectAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.ImmutableObjectAttribute" Usage="System.ComponentModel.ImmutableObjectAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ImmutableObjectAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ImmutableObjectAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As ImmutableObjectAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.ImmutableObjectAttribute" Usage="System.ComponentModel.ImmutableObjectAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ImmutableObjectAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

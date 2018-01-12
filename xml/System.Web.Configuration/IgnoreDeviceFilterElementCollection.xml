@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IgnoreDeviceFilterElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IgnoreDeviceFilterElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type IgnoreDeviceFilterElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IgnoreDeviceFilterElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IgnoreDeviceFilterElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Add(System.Web.Configuration.IgnoreDeviceFilterElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (deviceFilter As IgnoreDeviceFilterElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.IgnoreDeviceFilterElement -&gt; unit" Usage="ignoreDeviceFilterElementCollection.Add deviceFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::IgnoreDeviceFilterElement ^ deviceFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="ignoreDeviceFilterElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.IgnoreDeviceFilterElementCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.Configuration.IgnoreDeviceFilterElementCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="ignoreDeviceFilterElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.IgnoreDeviceFilterElementCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Web.Configuration.IgnoreDeviceFilterElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="ignoreDeviceFilterElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As IgnoreDeviceFilterElement" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.IgnoreDeviceFilterElement with get, set" Usage="System.Web.Configuration.IgnoreDeviceFilterElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::IgnoreDeviceFilterElement ^ default[int] { System::Web::Configuration::IgnoreDeviceFilterElement ^ get(int index); void set(int index, System::Web::Configuration::IgnoreDeviceFilterElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As IgnoreDeviceFilterElement" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.IgnoreDeviceFilterElement" Usage="System.Web.Configuration.IgnoreDeviceFilterElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::IgnoreDeviceFilterElement ^ default[System::String ^] { System::Web::Configuration::IgnoreDeviceFilterElement ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.IgnoreDeviceFilterElementCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="ignoreDeviceFilterElementCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.Remove(System.Web.Configuration.IgnoreDeviceFilterElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (deviceFilter As IgnoreDeviceFilterElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.IgnoreDeviceFilterElement -&gt; unit" Usage="ignoreDeviceFilterElementCollection.Remove deviceFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::IgnoreDeviceFilterElement ^ deviceFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IgnoreDeviceFilterElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="ignoreDeviceFilterElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

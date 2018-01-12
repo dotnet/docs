@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.PolicyEnforcement" />
   <TypeSignature Language="VB.NET" Value="Public Enum PolicyEnforcement" />
   <TypeSignature Language="F#" Value="type PolicyEnforcement = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PolicyEnforcement" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="F#" Value="Always = 2" Usage="System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
       <MemberSignature Language="F#" Value="Never = 0" Usage="System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported" />
       <MemberSignature Language="VB.NET" Value="WhenSupported" />
       <MemberSignature Language="F#" Value="WhenSupported = 1" Usage="System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported" />
+      <MemberSignature Language="C++ CLI" Value="WhenSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

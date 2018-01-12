@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ApplicationScopedSettingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationScopedSettingAttribute&#xA;Inherits SettingAttribute" />
   <TypeSignature Language="F#" Value="type ApplicationScopedSettingAttribute = class&#xA;    inherit SettingAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationScopedSettingAttribute sealed : System::Configuration::SettingAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationScopedSettingAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationScopedSettingAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

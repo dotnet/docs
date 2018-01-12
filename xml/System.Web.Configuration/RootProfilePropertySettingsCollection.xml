@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RootProfilePropertySettingsCollection&#xA;Inherits ProfilePropertySettingsCollection" />
   <TypeSignature Language="F#" Value="type RootProfilePropertySettingsCollection = class&#xA;    inherit ProfilePropertySettingsCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RootProfilePropertySettingsCollection sealed : System::Web::Configuration::ProfilePropertySettingsCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootProfilePropertySettingsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.AllowClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property AllowClear As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowClear : bool" Usage="System.Web.Configuration.RootProfilePropertySettingsCollection.AllowClear" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool AllowClear { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (rootProfilePropertySettingsCollection As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rootProfilePropertySettingsCollection.Equals rootProfilePropertySettingsCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ rootProfilePropertySettingsCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rootProfilePropertySettingsCollection.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupSettings As ProfileGroupSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.GroupSettings : System.Web.Configuration.ProfileGroupSettingsCollection" Usage="System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfileGroupSettingsCollection ^ GroupSettings { System::Web::Configuration::ProfileGroupSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="rootProfilePropertySettingsCollection.IsModified " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="rootProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement (elementName, reader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.RootProfilePropertySettingsCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="rootProfilePropertySettingsCollection.Reset parentElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.ResetModified" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetModified ()" />
       <MemberSignature Language="F#" Value="override this.ResetModified : unit -&gt; unit" Usage="rootProfilePropertySettingsCollection.ResetModified " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeElement (writer As XmlWriter, serializeCollectionKey As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="override this.SerializeElement : System.Xml.XmlWriter * bool -&gt; bool" Usage="rootProfilePropertySettingsCollection.SerializeElement (writer, serializeCollectionKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeElement(System::Xml::XmlWriter ^ writer, bool serializeCollectionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Web.Configuration.RootProfilePropertySettingsCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -360,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" />
       <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="rootProfilePropertySettingsCollection.Unmerge (sourceElement, parentElement, saveMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

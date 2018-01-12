@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitHandleCannotBeOpenedException" />
   <TypeSignature Language="VB.NET" Value="Public Class WaitHandleCannotBeOpenedException&#xA;Inherits ApplicationException" />
   <TypeSignature Language="F#" Value="type WaitHandleCannotBeOpenedException = class&#xA;    inherit ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WaitHandleCannotBeOpenedException : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleCannotBeOpenedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WaitHandleCannotBeOpenedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleCannotBeOpenedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Threading.WaitHandleCannotBeOpenedException : string -&gt; System.Threading.WaitHandleCannotBeOpenedException" Usage="new System.Threading.WaitHandleCannotBeOpenedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WaitHandleCannotBeOpenedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleCannotBeOpenedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Threading.WaitHandleCannotBeOpenedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.WaitHandleCannotBeOpenedException" Usage="new System.Threading.WaitHandleCannotBeOpenedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WaitHandleCannotBeOpenedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandleCannotBeOpenedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Threading.WaitHandleCannotBeOpenedException : string * Exception -&gt; System.Threading.WaitHandleCannotBeOpenedException" Usage="new System.Threading.WaitHandleCannotBeOpenedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WaitHandleCannotBeOpenedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

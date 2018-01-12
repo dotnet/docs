@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Numerics.Vector`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure Vector(Of T)&#xA;Implements IEquatable(Of Vector(Of T)), IFormattable" />
   <TypeSignature Language="F#" Value="type Vector&lt;'T (requires 'T : struct)&gt; = struct&#xA;    interface IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : value classpublic value class Vector : IEquatable&lt;System::Numerics::Vector&lt;T&gt;&gt;, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="F#" Value="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; : 'T -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(T value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (values As T())" />
       <MemberSignature Language="F#" Value="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; : 'T[] -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(cli::array &lt;T&gt; ^ values);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (values As T(), index As Integer)" />
       <MemberSignature Language="F#" Value="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; : 'T[] * int -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; (values, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(cli::array &lt;T&gt; ^ values, int index);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T())" />
       <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="vector.CopyTo destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As T(), startIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] * int -&gt; unit" Usage="vector.CopyTo (destination, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ destination, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -260,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -289,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.Equals(System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Vector(Of T)) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool" Usage="vector.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::Vector&lt;T&gt; other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vector.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -372,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vector.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As T" />
       <MemberSignature Language="F#" Value="member this.Item(int) : 'T" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -439,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector`1.One" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property One As Vector(Of T)" />
       <MemberSignature Language="F#" Value="member this.One : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.One" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector&lt;T&gt; One { System::Numerics::Vector&lt;T&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -467,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left + right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator +(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -508,6 +521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator And (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( &amp;&amp;&amp; ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left &amp;&amp;&amp; right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator &amp;(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -549,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Or (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( ||| ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left ||| right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator |(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -590,6 +605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left / right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator /(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -631,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -673,6 +690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Xor (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( ^^^ ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left ^^^ right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator ^(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -714,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of Byte)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;byte&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;System::Byte&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -753,6 +772,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of Double)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;double&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;double&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -792,6 +812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of Short)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;int16&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;short&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -831,6 +852,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of Integer)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;int&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;int&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -870,6 +892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of Long)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;int64&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;long&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -909,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of SByte)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;sbyte&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;System::SByte&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -953,6 +977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of Single)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;single&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;float&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -992,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of UShort)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;uint16&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;System::UInt16&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1036,6 +1062,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of UInteger)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;uint32&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;System::UInt32&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1080,6 +1107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Vector(Of T)) As Vector(Of ULong)" />
       <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;uint64&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::Vector&lt;System::UInt64&gt;(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1124,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Vector(Of T), right As Vector(Of T)) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; bool" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1159,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator *(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1200,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},`0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (value As Vector(Of T), factor As T) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * 'T -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="value * factor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator *(System::Numerics::Vector&lt;T&gt; value, T factor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1241,6 +1272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Multiply(`0,System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (factor As T, value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( * ) : 'T * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="factor * value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator *(T factor, System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1282,6 +1314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_OnesComplement(System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Not (value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member op_OnesComplement : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.op_OnesComplement value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator ~(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1314,6 +1347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( - ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; * System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="left - right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator -(System::Numerics::Vector&lt;T&gt; left, System::Numerics::Vector&lt;T&gt; right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1355,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_UnaryNegation(System.Numerics.Vector{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value As Vector(Of T)) As Vector(Of T)" />
       <MemberSignature Language="F#" Value="static member ( ~- ) : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="- value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector&lt;T&gt; operator -(System::Numerics::Vector&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1394,6 +1429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1430,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="vector.ToString format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1469,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="vector.ToString (format, formatProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ formatProvider);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -1513,6 +1551,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector`1.Zero" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Zero As Vector(Of T)" />
       <MemberSignature Language="F#" Value="member this.Zero : System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;.Zero" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector&lt;T&gt; Zero { System::Numerics::Vector&lt;T&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>

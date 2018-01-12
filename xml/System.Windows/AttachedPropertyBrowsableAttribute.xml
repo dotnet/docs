@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.AttachedPropertyBrowsableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AttachedPropertyBrowsableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type AttachedPropertyBrowsableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachedPropertyBrowsableAttribute abstract : Attribute" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AttachedPropertyBrowsableAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

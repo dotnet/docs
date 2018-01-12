@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogSession" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogSession&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type EventLogSession = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogSession : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogSession();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogSession : string -&gt; System.Diagnostics.Eventing.Reader.EventLogSession" Usage="new System.Diagnostics.Eventing.Reader.EventLogSession server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogSession(System::String ^ server);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String,System.String,System.String,System.Security.SecureString,System.Diagnostics.Eventing.Reader.SessionAuthentication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String, domain As String, user As String, password As SecureString, logOnType As SessionAuthentication)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogSession : string * string * string * System.Security.SecureString * System.Diagnostics.Eventing.Reader.SessionAuthentication -&gt; System.Diagnostics.Eventing.Reader.EventLogSession" Usage="new System.Diagnostics.Eventing.Reader.EventLogSession (server, domain, user, password, logOnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogSession(System::String ^ server, System::String ^ domain, System::String ^ user, System::Security::SecureString ^ password, System::Diagnostics::Eventing::Reader::SessionAuthentication logOnType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.CancelCurrentOperations" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelCurrentOperations ()" />
       <MemberSignature Language="F#" Value="member this.CancelCurrentOperations : unit -&gt; unit" Usage="eventLogSession.CancelCurrentOperations " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelCurrentOperations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearLog (logName As String)" />
       <MemberSignature Language="F#" Value="member this.ClearLog : string -&gt; unit" Usage="eventLogSession.ClearLog logName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearLog(System::String ^ logName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearLog (logName As String, backupPath As String)" />
       <MemberSignature Language="F#" Value="member this.ClearLog : string * string -&gt; unit" Usage="eventLogSession.ClearLog (logName, backupPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearLog(System::String ^ logName, System::String ^ backupPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventLogSession.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventLogSession.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLog(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)" />
       <MemberSignature Language="F#" Value="member this.ExportLog : string * System.Diagnostics.Eventing.Reader.PathType * string * string -&gt; unit" Usage="eventLogSession.ExportLog (path, pathType, query, targetFilePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLog(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -313,6 +323,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLog(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="F#" Value="member this.ExportLog : string * System.Diagnostics.Eventing.Reader.PathType * string * string * bool -&gt; unit" Usage="eventLogSession.ExportLog (path, pathType, query, targetFilePath, tolerateQueryErrors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLog(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath, bool tolerateQueryErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLogAndMessages(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)" />
       <MemberSignature Language="F#" Value="member this.ExportLogAndMessages : string * System.Diagnostics.Eventing.Reader.PathType * string * string -&gt; unit" Usage="eventLogSession.ExportLogAndMessages (path, pathType, query, targetFilePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLogAndMessages(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -393,6 +405,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLogAndMessages(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors, class System.Globalization.CultureInfo targetCultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="F#" Value="member this.ExportLogAndMessages : string * System.Diagnostics.Eventing.Reader.PathType * string * string * bool * System.Globalization.CultureInfo -&gt; unit" Usage="eventLogSession.ExportLogAndMessages (path, pathType, query, targetFilePath, tolerateQueryErrors, targetCultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLogAndMessages(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath, bool tolerateQueryErrors, System::Globalization::CultureInfo ^ targetCultureInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -433,6 +446,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Eventing.Reader.EventLogInformation GetLogInformation(string logName, valuetype System.Diagnostics.Eventing.Reader.PathType pathType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetLogInformation(System.String,System.Diagnostics.Eventing.Reader.PathType)" />
       <MemberSignature Language="F#" Value="member this.GetLogInformation : string * System.Diagnostics.Eventing.Reader.PathType -&gt; System.Diagnostics.Eventing.Reader.EventLogInformation" Usage="eventLogSession.GetLogInformation (logName, pathType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Eventing::Reader::EventLogInformation ^ GetLogInformation(System::String ^ logName, System::Diagnostics::Eventing::Reader::PathType pathType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -459,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetLogNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLogNames () As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetLogNames : unit -&gt; seq&lt;string&gt;" Usage="eventLogSession.GetLogNames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetLogNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -485,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetProviderNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProviderNames () As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetProviderNames : unit -&gt; seq&lt;string&gt;" Usage="eventLogSession.GetProviderNames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetProviderNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -511,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GlobalSession As EventLogSession" />
       <MemberSignature Language="F#" Value="member this.GlobalSession : System.Diagnostics.Eventing.Reader.EventLogSession" Usage="System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::Eventing::Reader::EventLogSession ^ GlobalSession { System::Diagnostics::Eventing::Reader::EventLogSession ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimValueTypes" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimValueTypes" />
   <TypeSignature Language="F#" Value="type ClaimValueTypes = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClaimValueTypes abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Claims</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Base64Binary" />
       <MemberSignature Language="VB.NET" Value="Public Const Base64Binary As String " />
       <MemberSignature Language="F#" Value="val mutable Base64Binary : string" Usage="System.Security.Claims.ClaimValueTypes.Base64Binary" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Base64Binary;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Base64Octet" />
       <MemberSignature Language="VB.NET" Value="Public Const Base64Octet As String " />
       <MemberSignature Language="F#" Value="val mutable Base64Octet : string" Usage="System.Security.Claims.ClaimValueTypes.Base64Octet" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Base64Octet;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Const Boolean As String " />
       <MemberSignature Language="F#" Value="val mutable Boolean : string" Usage="System.Security.Claims.ClaimValueTypes.Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Boolean;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Date" />
       <MemberSignature Language="VB.NET" Value="Public Const Date As String " />
       <MemberSignature Language="F#" Value="val mutable Date : string" Usage="System.Security.Claims.ClaimValueTypes.Date" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Date;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public Const DateTime As String " />
       <MemberSignature Language="F#" Value="val mutable DateTime : string" Usage="System.Security.Claims.ClaimValueTypes.DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DateTime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DaytimeDuration" />
       <MemberSignature Language="VB.NET" Value="Public Const DaytimeDuration As String " />
       <MemberSignature Language="F#" Value="val mutable DaytimeDuration : string" Usage="System.Security.Claims.ClaimValueTypes.DaytimeDuration" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DaytimeDuration;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DnsName" />
       <MemberSignature Language="VB.NET" Value="Public Const DnsName As String " />
       <MemberSignature Language="F#" Value="val mutable DnsName : string" Usage="System.Security.Claims.ClaimValueTypes.DnsName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DnsName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Double" />
       <MemberSignature Language="VB.NET" Value="Public Const Double As String " />
       <MemberSignature Language="F#" Value="val mutable Double : string" Usage="System.Security.Claims.ClaimValueTypes.Double" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Double;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.DsaKeyValue" />
       <MemberSignature Language="VB.NET" Value="Public Const DsaKeyValue As String " />
       <MemberSignature Language="F#" Value="val mutable DsaKeyValue : string" Usage="System.Security.Claims.ClaimValueTypes.DsaKeyValue" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DsaKeyValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -299,6 +309,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Email" />
       <MemberSignature Language="VB.NET" Value="Public Const Email As String " />
       <MemberSignature Language="F#" Value="val mutable Email : string" Usage="System.Security.Claims.ClaimValueTypes.Email" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Email;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -328,6 +339,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Fqbn" />
       <MemberSignature Language="VB.NET" Value="Public Const Fqbn As String " />
       <MemberSignature Language="F#" Value="val mutable Fqbn : string" Usage="System.Security.Claims.ClaimValueTypes.Fqbn" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Fqbn;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.HexBinary" />
       <MemberSignature Language="VB.NET" Value="Public Const HexBinary As String " />
       <MemberSignature Language="F#" Value="val mutable HexBinary : string" Usage="System.Security.Claims.ClaimValueTypes.HexBinary" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ HexBinary;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Integer" />
       <MemberSignature Language="VB.NET" Value="Public Const Integer As String " />
       <MemberSignature Language="F#" Value="val mutable Integer : string" Usage="System.Security.Claims.ClaimValueTypes.Integer" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Integer;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Integer32" />
       <MemberSignature Language="VB.NET" Value="Public Const Integer32 As String " />
       <MemberSignature Language="F#" Value="val mutable Integer32 : string" Usage="System.Security.Claims.ClaimValueTypes.Integer32" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Integer32;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -444,6 +459,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Integer64" />
       <MemberSignature Language="VB.NET" Value="Public Const Integer64 As String " />
       <MemberSignature Language="F#" Value="val mutable Integer64 : string" Usage="System.Security.Claims.ClaimValueTypes.Integer64" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Integer64;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -473,6 +489,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.KeyInfo" />
       <MemberSignature Language="VB.NET" Value="Public Const KeyInfo As String " />
       <MemberSignature Language="F#" Value="val mutable KeyInfo : string" Usage="System.Security.Claims.ClaimValueTypes.KeyInfo" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ KeyInfo;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -502,6 +519,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Rfc822Name" />
       <MemberSignature Language="VB.NET" Value="Public Const Rfc822Name As String " />
       <MemberSignature Language="F#" Value="val mutable Rfc822Name : string" Usage="System.Security.Claims.ClaimValueTypes.Rfc822Name" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Rfc822Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -531,6 +549,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Rsa" />
       <MemberSignature Language="VB.NET" Value="Public Const Rsa As String " />
       <MemberSignature Language="F#" Value="val mutable Rsa : string" Usage="System.Security.Claims.ClaimValueTypes.Rsa" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Rsa;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -560,6 +579,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.RsaKeyValue" />
       <MemberSignature Language="VB.NET" Value="Public Const RsaKeyValue As String " />
       <MemberSignature Language="F#" Value="val mutable RsaKeyValue : string" Usage="System.Security.Claims.ClaimValueTypes.RsaKeyValue" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ RsaKeyValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -589,6 +609,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Sid" />
       <MemberSignature Language="VB.NET" Value="Public Const Sid As String " />
       <MemberSignature Language="F#" Value="val mutable Sid : string" Usage="System.Security.Claims.ClaimValueTypes.Sid" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Sid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -618,6 +639,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.String" />
       <MemberSignature Language="VB.NET" Value="Public Const String As String " />
       <MemberSignature Language="F#" Value="val mutable String : string" Usage="System.Security.Claims.ClaimValueTypes.String" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ String;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -647,6 +669,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.Time" />
       <MemberSignature Language="VB.NET" Value="Public Const Time As String " />
       <MemberSignature Language="F#" Value="val mutable Time : string" Usage="System.Security.Claims.ClaimValueTypes.Time" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Time;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -676,6 +699,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.UInteger32" />
       <MemberSignature Language="VB.NET" Value="Public Const UInteger32 As String " />
       <MemberSignature Language="F#" Value="val mutable UInteger32 : string" Usage="System.Security.Claims.ClaimValueTypes.UInteger32" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UInteger32;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -705,6 +729,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.UInteger64" />
       <MemberSignature Language="VB.NET" Value="Public Const UInteger64 As String " />
       <MemberSignature Language="F#" Value="val mutable UInteger64 : string" Usage="System.Security.Claims.ClaimValueTypes.UInteger64" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UInteger64;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -734,6 +759,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.UpnName" />
       <MemberSignature Language="VB.NET" Value="Public Const UpnName As String " />
       <MemberSignature Language="F#" Value="val mutable UpnName : string" Usage="System.Security.Claims.ClaimValueTypes.UpnName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UpnName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -763,6 +789,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.X500Name" />
       <MemberSignature Language="VB.NET" Value="Public Const X500Name As String " />
       <MemberSignature Language="F#" Value="val mutable X500Name : string" Usage="System.Security.Claims.ClaimValueTypes.X500Name" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ X500Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
@@ -792,6 +819,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Claims.ClaimValueTypes.YearMonthDuration" />
       <MemberSignature Language="VB.NET" Value="Public Const YearMonthDuration As String " />
       <MemberSignature Language="F#" Value="val mutable YearMonthDuration : string" Usage="System.Security.Claims.ClaimValueTypes.YearMonthDuration" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ YearMonthDuration;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>

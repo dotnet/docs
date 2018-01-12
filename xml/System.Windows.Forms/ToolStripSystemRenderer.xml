@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSystemRenderer" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripSystemRenderer&#xA;Inherits ToolStripRenderer" />
   <TypeSignature Language="F#" Value="type ToolStripSystemRenderer = class&#xA;    inherit ToolStripRenderer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripSystemRenderer : System::Windows::Forms::ToolStripRenderer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripSystemRenderer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderButtonBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderDropDownButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderDropDownButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderDropDownButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderDropDownButtonBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderDropDownButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderGrip(System.Windows.Forms.ToolStripGripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderGrip (e As ToolStripGripRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderGrip : System.Windows.Forms.ToolStripGripRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderGrip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderGrip(System::Windows::Forms::ToolStripGripRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderImageMargin(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderImageMargin (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderImageMargin : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderImageMargin e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderImageMargin(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderItemBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderItemBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderItemBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderLabelBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderLabelBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderLabelBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderMenuItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderMenuItemBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderMenuItemBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderMenuItemBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderMenuItemBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderOverflowButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderOverflowButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderOverflowButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderOverflowButtonBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderOverflowButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderSeparator(System.Windows.Forms.ToolStripSeparatorRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderSeparator (e As ToolStripSeparatorRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderSeparator : System.Windows.Forms.ToolStripSeparatorRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderSeparator e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderSeparator(System::Windows::Forms::ToolStripSeparatorRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderSplitButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderSplitButtonBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderSplitButtonBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderSplitButtonBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderSplitButtonBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderToolStripBackground(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderToolStripBackground (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderToolStripBackground : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderToolStripBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderToolStripBackground(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -312,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderToolStripBorder (e As ToolStripRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderToolStripBorder : System.Windows.Forms.ToolStripRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderToolStripBorder e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderToolStripBorder(System::Windows::Forms::ToolStripRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -336,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderToolStripStatusLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRenderToolStripStatusLabelBackground (e As ToolStripItemRenderEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRenderToolStripStatusLabelBackground : System.Windows.Forms.ToolStripItemRenderEventArgs -&gt; unit" Usage="toolStripSystemRenderer.OnRenderToolStripStatusLabelBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRenderToolStripStatusLabelBackground(System::Windows::Forms::ToolStripItemRenderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

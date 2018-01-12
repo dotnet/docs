@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Sequence" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Sequence&#xA;Inherits NativeActivity" />
   <TypeSignature Language="F#" Value="type Sequence = class&#xA;    inherit NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Sequence sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Sequence.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Sequence();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Sequence.Activities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activities As Collection(Of Activity)" />
       <MemberSignature Language="F#" Value="member this.Activities : System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" Usage="System.Activities.Statements.Sequence.Activities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Activity ^&gt; ^ Activities { System::Collections::ObjectModel::Collection&lt;System::Activities::Activity ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Sequence.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="sequence.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Sequence.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="sequence.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Sequence.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
       <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="sequence.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Sequence.Variables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variables As Collection(Of Variable)" />
       <MemberSignature Language="F#" Value="member this.Variables : System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" Usage="System.Activities.Statements.Sequence.Variables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ Variables { System::Collections::ObjectModel::Collection&lt;System::Activities::Variable ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

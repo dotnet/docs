@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PauseStoryboard" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PauseStoryboard&#xA;Inherits ControllableStoryboardAction" />
   <TypeSignature Language="F#" Value="type PauseStoryboard = class&#xA;    inherit ControllableStoryboardAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PauseStoryboard sealed : System::Windows::Media::Animation::ControllableStoryboardAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PauseStoryboard.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PauseStoryboard();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

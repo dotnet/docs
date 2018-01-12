@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.BinaryWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryWriter&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type BinaryWriter = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryWriter : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BinaryWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (output As Stream)" />
       <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -172,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream * System.Text.Encoding -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter (output, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -219,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output, class System.Text.Encoding encoding, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream * System.Text.Encoding * bool -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter (output, encoding, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -263,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.BinaryWriter.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
       <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.BinaryWriter.BaseStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -314,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="binaryWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -363,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="binaryWriter.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -401,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="binaryWriter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -440,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush ()" />
       <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="binaryWriter.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -486,6 +496,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.BinaryWriter.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As BinaryWriter " />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.BinaryWriter" Usage="System.IO.BinaryWriter.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::BinaryWriter ^ Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -527,6 +538,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.BinaryWriter.OutStream" />
       <MemberSignature Language="VB.NET" Value="Protected OutStream As Stream " />
       <MemberSignature Language="F#" Value="val mutable OutStream : System.IO.Stream" Usage="System.IO.BinaryWriter.OutStream" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::IO::Stream ^ OutStream;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -568,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Seek(System.Int32,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Seek (offset As Integer, origin As SeekOrigin) As Long" />
       <MemberSignature Language="F#" Value="abstract member Seek : int * System.IO.SeekOrigin -&gt; int64&#xA;override this.Seek : int * System.IO.SeekOrigin -&gt; int64" Usage="binaryWriter.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long Seek(int offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -638,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Write : bool -&gt; unit&#xA;override this.Write : bool -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -693,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Byte)" />
       <MemberSignature Language="F#" Value="abstract member Write : byte -&gt; unit&#xA;override this.Write : byte -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -757,6 +772,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As Byte())" />
       <MemberSignature Language="F#" Value="abstract member Write : byte[] -&gt; unit&#xA;override this.Write : byte[] -&gt; unit" Usage="binaryWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -815,6 +831,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (ch As Char)" />
       <MemberSignature Language="F#" Value="abstract member Write : char -&gt; unit&#xA;override this.Write : char -&gt; unit" Usage="binaryWriter.Write ch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -889,6 +906,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As Char())" />
       <MemberSignature Language="F#" Value="abstract member Write : char[] -&gt; unit&#xA;override this.Write : char[] -&gt; unit" Usage="binaryWriter.Write chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -961,6 +979,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Decimal)" />
       <MemberSignature Language="F#" Value="abstract member Write : decimal -&gt; unit&#xA;override this.Write : decimal -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1021,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Double)" />
       <MemberSignature Language="F#" Value="abstract member Write : double -&gt; unit&#xA;override this.Write : double -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1082,6 +1102,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Short)" />
       <MemberSignature Language="F#" Value="abstract member Write : int16 -&gt; unit&#xA;override this.Write : int16 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1144,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Write : int -&gt; unit&#xA;override this.Write : int -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1201,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Long)" />
       <MemberSignature Language="F#" Value="abstract member Write : int64 -&gt; unit&#xA;override this.Write : int64 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1250,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As SByte)" />
       <MemberSignature Language="F#" Value="abstract member Write : sbyte -&gt; unit&#xA;override this.Write : sbyte -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1302,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Single)" />
       <MemberSignature Language="F#" Value="abstract member Write : single -&gt; unit&#xA;override this.Write : single -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1364,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As String)" />
       <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit&#xA;override this.Write : string -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1431,6 +1457,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As UShort)" />
       <MemberSignature Language="F#" Value="abstract member Write : uint16 -&gt; unit&#xA;override this.Write : uint16 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1485,6 +1512,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As UInteger)" />
       <MemberSignature Language="F#" Value="abstract member Write : uint32 -&gt; unit&#xA;override this.Write : uint32 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1539,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As ULong)" />
       <MemberSignature Language="F#" Value="abstract member Write : uint64 -&gt; unit&#xA;override this.Write : uint64 -&gt; unit" Usage="binaryWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1593,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * int -&gt; unit&#xA;override this.Write : byte[] * int * int -&gt; unit" Usage="binaryWriter.Write (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1657,6 +1687,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member Write : char[] * int * int -&gt; unit&#xA;override this.Write : char[] * int * int -&gt; unit" Usage="binaryWriter.Write (chars, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1723,6 +1754,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write7BitEncodedInt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Write7BitEncodedInt (value As Integer)" />
       <MemberSignature Language="F#" Value="member this.Write7BitEncodedInt : int -&gt; unit" Usage="binaryWriter.Write7BitEncodedInt value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Write7BitEncodedInt(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>

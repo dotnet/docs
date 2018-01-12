@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceEventCache" />
   <TypeSignature Language="VB.NET" Value="Public Class TraceEventCache" />
   <TypeSignature Language="F#" Value="type TraceEventCache = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TraceEventCache" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceEventCache.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceEventCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.Callstack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callstack As String" />
       <MemberSignature Language="F#" Value="member this.Callstack : string" Usage="System.Diagnostics.TraceEventCache.Callstack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Callstack { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.DateTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.DateTime : DateTime" Usage="System.Diagnostics.TraceEventCache.DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.LogicalOperationStack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalOperationStack As Stack" />
       <MemberSignature Language="F#" Value="member this.LogicalOperationStack : System.Collections.Stack" Usage="System.Diagnostics.TraceEventCache.LogicalOperationStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Stack ^ LogicalOperationStack { System::Collections::Stack ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.ProcessId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessId As Integer" />
       <MemberSignature Language="F#" Value="member this.ProcessId : int" Usage="System.Diagnostics.TraceEventCache.ProcessId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProcessId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.ThreadId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadId As String" />
       <MemberSignature Language="F#" Value="member this.ThreadId : string" Usage="System.Diagnostics.TraceEventCache.ThreadId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreadId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -255,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceEventCache.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As Long" />
       <MemberSignature Language="F#" Value="member this.Timestamp : int64" Usage="System.Diagnostics.TraceEventCache.Timestamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Timestamp { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>

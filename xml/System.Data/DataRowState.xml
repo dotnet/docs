@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowState" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataRowState" />
   <TypeSignature Language="F#" Value="type DataRowState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataRowState" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowState.Added" />
       <MemberSignature Language="VB.NET" Value="Added" />
       <MemberSignature Language="F#" Value="Added = 4" Usage="System.Data.DataRowState.Added" />
+      <MemberSignature Language="C++ CLI" Value="Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowState.Deleted" />
       <MemberSignature Language="VB.NET" Value="Deleted" />
       <MemberSignature Language="F#" Value="Deleted = 8" Usage="System.Data.DataRowState.Deleted" />
+      <MemberSignature Language="C++ CLI" Value="Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowState.Detached" />
       <MemberSignature Language="VB.NET" Value="Detached" />
       <MemberSignature Language="F#" Value="Detached = 1" Usage="System.Data.DataRowState.Detached" />
+      <MemberSignature Language="C++ CLI" Value="Detached" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowState.Modified" />
       <MemberSignature Language="VB.NET" Value="Modified" />
       <MemberSignature Language="F#" Value="Modified = 16" Usage="System.Data.DataRowState.Modified" />
+      <MemberSignature Language="C++ CLI" Value="Modified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.DataRowState.Unchanged" />
       <MemberSignature Language="VB.NET" Value="Unchanged" />
       <MemberSignature Language="F#" Value="Unchanged = 2" Usage="System.Data.DataRowState.Unchanged" />
+      <MemberSignature Language="C++ CLI" Value="Unchanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

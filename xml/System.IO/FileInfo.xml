@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileInfo&#xA;Inherits FileSystemInfo" />
   <TypeSignature Language="F#" Value="type FileInfo = class&#xA;    inherit FileSystemInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileInfo sealed : System::IO::FileSystemInfo" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -113,6 +114,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="F#" Value="new System.IO.FileInfo : string -&gt; System.IO.FileInfo" Usage="new System.IO.FileInfo fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileInfo(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -179,6 +181,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.AppendText" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendText () As StreamWriter" />
       <MemberSignature Language="F#" Value="member this.AppendText : unit -&gt; System.IO.StreamWriter" Usage="fileInfo.AppendText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::StreamWriter ^ AppendText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -239,6 +242,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.CopyTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (destFileName As String) As FileInfo" />
       <MemberSignature Language="F#" Value="member this.CopyTo : string -&gt; System.IO.FileInfo" Usage="fileInfo.CopyTo destFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileInfo ^ CopyTo(System::String ^ destFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -310,6 +314,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.CopyTo(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyTo (destFileName As String, overwrite As Boolean) As FileInfo" />
       <MemberSignature Language="F#" Value="member this.CopyTo : string * bool -&gt; System.IO.FileInfo" Usage="fileInfo.CopyTo (destFileName, overwrite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileInfo ^ CopyTo(System::String ^ destFileName, bool overwrite);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -384,6 +389,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Create" />
       <MemberSignature Language="VB.NET" Value="Public Function Create () As FileStream" />
       <MemberSignature Language="F#" Value="member this.Create : unit -&gt; System.IO.FileStream" Usage="fileInfo.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileStream ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -440,6 +446,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.CreateText" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateText () As StreamWriter" />
       <MemberSignature Language="F#" Value="member this.CreateText : unit -&gt; System.IO.StreamWriter" Usage="fileInfo.CreateText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::StreamWriter ^ CreateText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -492,6 +499,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Decrypt" />
       <MemberSignature Language="VB.NET" Value="Public Sub Decrypt ()" />
       <MemberSignature Language="F#" Value="member this.Decrypt : unit -&gt; unit" Usage="fileInfo.Decrypt " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decrypt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -565,6 +573,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Delete ()" />
       <MemberSignature Language="F#" Value="override this.Delete : unit -&gt; unit" Usage="fileInfo.Delete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -630,6 +639,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="P:System.IO.FileInfo.Directory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Directory As DirectoryInfo" />
       <MemberSignature Language="F#" Value="member this.Directory : System.IO.DirectoryInfo" Usage="System.IO.FileInfo.Directory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::DirectoryInfo ^ Directory { System::IO::DirectoryInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -679,6 +689,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="P:System.IO.FileInfo.DirectoryName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectoryName As String" />
       <MemberSignature Language="F#" Value="member this.DirectoryName : string" Usage="System.IO.FileInfo.DirectoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -737,6 +748,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Encrypt" />
       <MemberSignature Language="VB.NET" Value="Public Sub Encrypt ()" />
       <MemberSignature Language="F#" Value="member this.Encrypt : unit -&gt; unit" Usage="fileInfo.Encrypt " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Encrypt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -810,6 +822,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="P:System.IO.FileInfo.Exists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Exists As Boolean" />
       <MemberSignature Language="F#" Value="member this.Exists : bool" Usage="System.IO.FileInfo.Exists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Exists { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -882,6 +895,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As FileSecurity" />
       <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.FileSecurity" Usage="fileInfo.GetAccessControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::FileSecurity ^ GetAccessControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -936,6 +950,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.GetAccessControl(System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl (includeSections As AccessControlSections) As FileSecurity" />
       <MemberSignature Language="F#" Value="member this.GetAccessControl : System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.FileSecurity" Usage="fileInfo.GetAccessControl includeSections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::FileSecurity ^ GetAccessControl(System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -984,6 +999,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="P:System.IO.FileInfo.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.IO.FileInfo.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1046,6 +1062,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="P:System.IO.FileInfo.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.FileInfo.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1118,6 +1135,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.MoveTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (destFileName As String)" />
       <MemberSignature Language="F#" Value="member this.MoveTo : string -&gt; unit" Usage="fileInfo.MoveTo destFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::String ^ destFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1185,6 +1203,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="P:System.IO.FileInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.FileInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1243,6 +1262,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Open(System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Open (mode As FileMode) As FileStream" />
       <MemberSignature Language="F#" Value="member this.Open : System.IO.FileMode -&gt; System.IO.FileStream" Usage="fileInfo.Open mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileStream ^ Open(System::IO::FileMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1293,6 +1313,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Open(System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function Open (mode As FileMode, access As FileAccess) As FileStream" />
       <MemberSignature Language="F#" Value="member this.Open : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.FileStream" Usage="fileInfo.Open (mode, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileStream ^ Open(System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1347,6 +1368,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Open(System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
       <MemberSignature Language="VB.NET" Value="Public Function Open (mode As FileMode, access As FileAccess, share As FileShare) As FileStream" />
       <MemberSignature Language="F#" Value="member this.Open : System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare -&gt; System.IO.FileStream" Usage="fileInfo.Open (mode, access, share)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileStream ^ Open(System::IO::FileMode mode, System::IO::FileAccess access, System::IO::FileShare share);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1403,6 +1425,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.OpenRead" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenRead () As FileStream" />
       <MemberSignature Language="F#" Value="member this.OpenRead : unit -&gt; System.IO.FileStream" Usage="fileInfo.OpenRead " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileStream ^ OpenRead();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1455,6 +1478,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.OpenText" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenText () As StreamReader" />
       <MemberSignature Language="F#" Value="member this.OpenText : unit -&gt; System.IO.StreamReader" Usage="fileInfo.OpenText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::StreamReader ^ OpenText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1510,6 +1534,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.OpenWrite" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenWrite () As FileStream" />
       <MemberSignature Language="F#" Value="member this.OpenWrite : unit -&gt; System.IO.FileStream" Usage="fileInfo.OpenWrite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileStream ^ OpenWrite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1578,6 +1603,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Replace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (destinationFileName As String, destinationBackupFileName As String) As FileInfo" />
       <MemberSignature Language="F#" Value="member this.Replace : string * string -&gt; System.IO.FileInfo" Usage="fileInfo.Replace (destinationFileName, destinationBackupFileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileInfo ^ Replace(System::String ^ destinationFileName, System::String ^ destinationBackupFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1656,6 +1682,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.Replace(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (destinationFileName As String, destinationBackupFileName As String, ignoreMetadataErrors As Boolean) As FileInfo" />
       <MemberSignature Language="F#" Value="member this.Replace : string * string * bool -&gt; System.IO.FileInfo" Usage="fileInfo.Replace (destinationFileName, destinationBackupFileName, ignoreMetadataErrors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::FileInfo ^ Replace(System::String ^ destinationFileName, System::String ^ destinationBackupFileName, bool ignoreMetadataErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1736,6 +1763,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.FileSecurity fileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.SetAccessControl(System.Security.AccessControl.FileSecurity)" />
       <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.FileSecurity -&gt; unit" Usage="fileInfo.SetAccessControl fileSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::FileSecurity ^ fileSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1806,6 +1834,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       <MemberSignature Language="DocId" Value="M:System.IO.FileInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>

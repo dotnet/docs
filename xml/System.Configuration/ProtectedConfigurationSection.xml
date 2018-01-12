@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfigurationSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtectedConfigurationSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ProtectedConfigurationSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtectedConfigurationSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProtectedConfigurationSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtectedConfigurationSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfigurationSection.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Configuration.ProtectedConfigurationSection.DefaultProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfigurationSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ProtectedConfigurationSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfigurationSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Configuration.ProtectedConfigurationSection.Providers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ComClassAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComClassAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ComClassAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComClassAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComClassAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_ClassID As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ComClassAttribute : string -&gt; Microsoft.VisualBasic.ComClassAttribute" Usage="new Microsoft.VisualBasic.ComClassAttribute _ClassID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComClassAttribute(System::String ^ _ClassID);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_ClassID As String, _InterfaceID As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ComClassAttribute : string * string -&gt; Microsoft.VisualBasic.ComClassAttribute" Usage="new Microsoft.VisualBasic.ComClassAttribute (_ClassID, _InterfaceID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComClassAttribute(System::String ^ _ClassID, System::String ^ _InterfaceID);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ComClassAttribute.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (_ClassID As String, _InterfaceID As String, _EventId As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ComClassAttribute : string * string * string -&gt; Microsoft.VisualBasic.ComClassAttribute" Usage="new Microsoft.VisualBasic.ComClassAttribute (_ClassID, _InterfaceID, _EventId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComClassAttribute(System::String ^ _ClassID, System::String ^ _InterfaceID, System::String ^ _EventId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.ClassID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassID As String" />
       <MemberSignature Language="F#" Value="member this.ClassID : string" Usage="Microsoft.VisualBasic.ComClassAttribute.ClassID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.EventID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventID As String" />
       <MemberSignature Language="F#" Value="member this.EventID : string" Usage="Microsoft.VisualBasic.ComClassAttribute.EventID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.InterfaceID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InterfaceID As String" />
       <MemberSignature Language="F#" Value="member this.InterfaceID : string" Usage="Microsoft.VisualBasic.ComClassAttribute.InterfaceID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InterfaceID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows" />
       <MemberSignature Language="VB.NET" Value="Public Property InterfaceShadows As Boolean" />
       <MemberSignature Language="F#" Value="member this.InterfaceShadows : bool with get, set" Usage="Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InterfaceShadows { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IDataAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataAdapter" />
   <TypeSignature Language="F#" Value="type IDataAdapter = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.Fill(System.Data.DataSet)" />
       <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataSet -&gt; int" Usage="iDataAdapter.Fill dataSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Fill(System::Data::DataSet ^ dataSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -129,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]" Usage="iDataAdapter.FillSchema (dataSet, schemaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -200,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.GetFillParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFillParameters () As IDataParameter()" />
       <MemberSignature Language="F#" Value="abstract member GetFillParameters : unit -&gt; System.Data.IDataParameter[]" Usage="iDataAdapter.GetFillParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::IDataParameter ^&gt; ^ GetFillParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -255,6 +259,7 @@ private static void GetParameters(String connectiongString) {
       <MemberSignature Language="DocId" Value="P:System.Data.IDataAdapter.MissingMappingAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingMappingAction As MissingMappingAction" />
       <MemberSignature Language="F#" Value="member this.MissingMappingAction : System.Data.MissingMappingAction with get, set" Usage="System.Data.IDataAdapter.MissingMappingAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingMappingAction MissingMappingAction { System::Data::MissingMappingAction get(); void set(System::Data::MissingMappingAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -293,6 +298,7 @@ private static void GetParameters(String connectiongString) {
       <MemberSignature Language="DocId" Value="P:System.Data.IDataAdapter.MissingSchemaAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingSchemaAction As MissingSchemaAction" />
       <MemberSignature Language="F#" Value="member this.MissingSchemaAction : System.Data.MissingSchemaAction with get, set" Usage="System.Data.IDataAdapter.MissingSchemaAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingSchemaAction MissingSchemaAction { System::Data::MissingSchemaAction get(); void set(System::Data::MissingSchemaAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -324,6 +330,7 @@ private static void GetParameters(String connectiongString) {
       <MemberSignature Language="DocId" Value="P:System.Data.IDataAdapter.TableMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableMappings As ITableMappingCollection" />
       <MemberSignature Language="F#" Value="member this.TableMappings : System.Data.ITableMappingCollection" Usage="System.Data.IDataAdapter.TableMappings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ITableMappingCollection ^ TableMappings { System::Data::ITableMappingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -359,6 +366,7 @@ private static void GetParameters(String connectiongString) {
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Update(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.Update(System.Data.DataSet)" />
       <MemberSignature Language="F#" Value="abstract member Update : System.Data.DataSet -&gt; int" Usage="iDataAdapter.Update dataSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Data::DataSet ^ dataSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

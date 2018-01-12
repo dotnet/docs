@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAny" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaAny&#xA;Inherits XmlSchemaParticle" />
   <TypeSignature Language="F#" Value="type XmlSchemaAny = class&#xA;    inherit XmlSchemaParticle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaAny : System::Xml::Schema::XmlSchemaParticle" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaAny.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaAny();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAny.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Schema.XmlSchemaAny.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAny.ProcessContents" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessContents As XmlSchemaContentProcessing" />
       <MemberSignature Language="F#" Value="member this.ProcessContents : System.Xml.Schema.XmlSchemaContentProcessing with get, set" Usage="System.Xml.Schema.XmlSchemaAny.ProcessContents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaContentProcessing ProcessContents { System::Xml::Schema::XmlSchemaContentProcessing get(); void set(System::Xml::Schema::XmlSchemaContentProcessing value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

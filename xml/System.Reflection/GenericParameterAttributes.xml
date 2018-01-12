@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.GenericParameterAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum GenericParameterAttributes" />
   <TypeSignature Language="F#" Value="type GenericParameterAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GenericParameterAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.Contravariant" />
       <MemberSignature Language="VB.NET" Value="Contravariant" />
       <MemberSignature Language="F#" Value="Contravariant = 2" Usage="System.Reflection.GenericParameterAttributes.Contravariant" />
+      <MemberSignature Language="C++ CLI" Value="Contravariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.Covariant" />
       <MemberSignature Language="VB.NET" Value="Covariant" />
       <MemberSignature Language="F#" Value="Covariant = 1" Usage="System.Reflection.GenericParameterAttributes.Covariant" />
+      <MemberSignature Language="C++ CLI" Value="Covariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.DefaultConstructorConstraint" />
       <MemberSignature Language="VB.NET" Value="DefaultConstructorConstraint" />
       <MemberSignature Language="F#" Value="DefaultConstructorConstraint = 16" Usage="System.Reflection.GenericParameterAttributes.DefaultConstructorConstraint" />
+      <MemberSignature Language="C++ CLI" Value="DefaultConstructorConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.GenericParameterAttributes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.NotNullableValueTypeConstraint" />
       <MemberSignature Language="VB.NET" Value="NotNullableValueTypeConstraint" />
       <MemberSignature Language="F#" Value="NotNullableValueTypeConstraint = 8" Usage="System.Reflection.GenericParameterAttributes.NotNullableValueTypeConstraint" />
+      <MemberSignature Language="C++ CLI" Value="NotNullableValueTypeConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.ReferenceTypeConstraint" />
       <MemberSignature Language="VB.NET" Value="ReferenceTypeConstraint" />
       <MemberSignature Language="F#" Value="ReferenceTypeConstraint = 4" Usage="System.Reflection.GenericParameterAttributes.ReferenceTypeConstraint" />
+      <MemberSignature Language="C++ CLI" Value="ReferenceTypeConstraint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -248,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.SpecialConstraintMask" />
       <MemberSignature Language="VB.NET" Value="SpecialConstraintMask" />
       <MemberSignature Language="F#" Value="SpecialConstraintMask = 28" Usage="System.Reflection.GenericParameterAttributes.SpecialConstraintMask" />
+      <MemberSignature Language="C++ CLI" Value="SpecialConstraintMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -280,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.GenericParameterAttributes.VarianceMask" />
       <MemberSignature Language="VB.NET" Value="VarianceMask" />
       <MemberSignature Language="F#" Value="VarianceMask = 3" Usage="System.Reflection.GenericParameterAttributes.VarianceMask" />
+      <MemberSignature Language="C++ CLI" Value="VarianceMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

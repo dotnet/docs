@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DeletedRowInaccessibleException" />
   <TypeSignature Language="VB.NET" Value="Public Class DeletedRowInaccessibleException&#xA;Inherits DataException" />
   <TypeSignature Language="F#" Value="type DeletedRowInaccessibleException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeletedRowInaccessibleException : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DeletedRowInaccessibleException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeletedRowInaccessibleException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DeletedRowInaccessibleException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
       <MemberSignature Language="F#" Value="new System.Data.DeletedRowInaccessibleException : string -&gt; System.Data.DeletedRowInaccessibleException" Usage="new System.Data.DeletedRowInaccessibleException s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeletedRowInaccessibleException(System::String ^ s);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DeletedRowInaccessibleException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Data.DeletedRowInaccessibleException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.DeletedRowInaccessibleException" Usage="new System.Data.DeletedRowInaccessibleException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeletedRowInaccessibleException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DeletedRowInaccessibleException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.DeletedRowInaccessibleException : string * Exception -&gt; System.Data.DeletedRowInaccessibleException" Usage="new System.Data.DeletedRowInaccessibleException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeletedRowInaccessibleException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

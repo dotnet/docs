@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.NameValueSectionHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class NameValueSectionHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="F#" Value="type NameValueSectionHandler = class&#xA;    interface IConfigurationSectionHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameValueSectionHandler : System::Configuration::IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueSectionHandler.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueSectionHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create (parent As Object, context As Object, section As XmlNode) As Object" />
       <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="nameValueSectionHandler.Create (parent, context, section)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ section);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueSectionHandler.KeyAttributeName" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property KeyAttributeName As String" />
       <MemberSignature Language="F#" Value="member this.KeyAttributeName : string" Usage="System.Configuration.NameValueSectionHandler.KeyAttributeName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ KeyAttributeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueSectionHandler.ValueAttributeName" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ValueAttributeName As String" />
       <MemberSignature Language="F#" Value="member this.ValueAttributeName : string" Usage="System.Configuration.NameValueSectionHandler.ValueAttributeName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ValueAttributeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WindowsServiceElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsServiceElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type WindowsServiceElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsServiceElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsServiceElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsServiceElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsServiceElement.AllowAnonymousLogons" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowAnonymousLogons As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowAnonymousLogons : bool with get, set" Usage="System.ServiceModel.Configuration.WindowsServiceElement.AllowAnonymousLogons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowAnonymousLogons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsServiceElement.Copy(System.ServiceModel.Configuration.WindowsServiceElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As WindowsServiceElement)" />
       <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.WindowsServiceElement -&gt; unit" Usage="windowsServiceElement.Copy from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::WindowsServiceElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsServiceElement.IncludeWindowsGroups" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeWindowsGroups As Boolean" />
       <MemberSignature Language="F#" Value="member this.IncludeWindowsGroups : bool with get, set" Usage="System.ServiceModel.Configuration.WindowsServiceElement.IncludeWindowsGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeWindowsGroups { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsServiceElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WindowsServiceElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ImageFileMachine" />
   <TypeSignature Language="VB.NET" Value="Public Enum ImageFileMachine" />
   <TypeSignature Language="F#" Value="type ImageFileMachine = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageFileMachine" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.AMD64" />
       <MemberSignature Language="VB.NET" Value="AMD64" />
       <MemberSignature Language="F#" Value="AMD64 = 34404" Usage="System.Reflection.ImageFileMachine.AMD64" />
+      <MemberSignature Language="C++ CLI" Value="AMD64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.ARM" />
       <MemberSignature Language="VB.NET" Value="ARM" />
       <MemberSignature Language="F#" Value="ARM = 452" Usage="System.Reflection.ImageFileMachine.ARM" />
+      <MemberSignature Language="C++ CLI" Value="ARM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.I386" />
       <MemberSignature Language="VB.NET" Value="I386" />
       <MemberSignature Language="F#" Value="I386 = 332" Usage="System.Reflection.ImageFileMachine.I386" />
+      <MemberSignature Language="C++ CLI" Value="I386" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.IA64" />
       <MemberSignature Language="VB.NET" Value="IA64" />
       <MemberSignature Language="F#" Value="IA64 = 512" Usage="System.Reflection.ImageFileMachine.IA64" />
+      <MemberSignature Language="C++ CLI" Value="IA64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PreviewPrintController" />
   <TypeSignature Language="VB.NET" Value="Public Class PreviewPrintController&#xA;Inherits PrintController" />
   <TypeSignature Language="F#" Value="type PreviewPrintController = class&#xA;    inherit PrintController" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PreviewPrintController : System::Drawing::Printing::PrintController" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PreviewPrintController();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.GetPreviewPageInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviewPageInfo () As PreviewPageInfo()" />
       <MemberSignature Language="F#" Value="member this.GetPreviewPageInfo : unit -&gt; System.Drawing.Printing.PreviewPageInfo[]" Usage="previewPrintController.GetPreviewPageInfo " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Drawing::Printing::PreviewPageInfo ^&gt; ^ GetPreviewPageInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PreviewPrintController.IsPreview" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsPreview As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPreview : bool" Usage="System.Drawing.Printing.PreviewPrintController.IsPreview" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPreview { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPage (document As PrintDocument, e As PrintPageEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnEndPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; unit" Usage="previewPrintController.OnEndPage (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPrint (document As PrintDocument, e As PrintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnEndPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="previewPrintController.OnEndPrint (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function OnStartPage (document As PrintDocument, e As PrintPageEventArgs) As Graphics" />
       <MemberSignature Language="F#" Value="override this.OnStartPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; System.Drawing.Graphics" Usage="previewPrintController.OnStartPage (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Graphics ^ OnStartPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnStartPrint (document As PrintDocument, e As PrintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnStartPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="previewPrintController.OnStartPrint (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnStartPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -272,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PreviewPrintController.UseAntiAlias" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UseAntiAlias As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseAntiAlias : bool with get, set" Usage="System.Drawing.Printing.PreviewPrintController.UseAntiAlias" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseAntiAlias { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

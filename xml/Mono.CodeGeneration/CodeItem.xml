@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeItem" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeItem" />
   <TypeSignature Language="F#" Value="type CodeItem = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeItem abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeItem.Generate(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Generate (gen As ILGenerator)" />
       <MemberSignature Language="F#" Value="abstract member Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeItem.Generate gen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeItem.PrintCode(Mono.CodeGeneration.CodeWriter)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub PrintCode (cp As CodeWriter)" />
       <MemberSignature Language="F#" Value="abstract member PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeItem.PrintCode cp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

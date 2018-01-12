@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.X509CertificateEndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class X509CertificateEndpointIdentity&#xA;Inherits EndpointIdentity" />
   <TypeSignature Language="F#" Value="type X509CertificateEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509CertificateEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.X509CertificateEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate2)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.X509CertificateEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.X509CertificateEndpointIdentity" Usage="new System.ServiceModel.X509CertificateEndpointIdentity cert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ cert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.X509CertificateEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (primaryCertificate As X509Certificate2, supportingCertificates As X509Certificate2Collection)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.X509CertificateEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; System.ServiceModel.X509CertificateEndpointIdentity" Usage="new System.ServiceModel.X509CertificateEndpointIdentity (primaryCertificate, supportingCertificates)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ primaryCertificate, System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ supportingCertificates);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.X509CertificateEndpointIdentity.Certificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
       <MemberSignature Language="F#" Value="member this.Certificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.ServiceModel.X509CertificateEndpointIdentity.Certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Certificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

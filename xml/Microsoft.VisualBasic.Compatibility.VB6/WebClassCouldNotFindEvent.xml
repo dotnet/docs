@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent" />
   <TypeSignature Language="VB.NET" Value="Public Class WebClassCouldNotFindEvent&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type WebClassCouldNotFindEvent = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebClassCouldNotFindEvent : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClassCouldNotFindEvent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventName As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebClassCouldNotFindEvent eventName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClassCouldNotFindEvent(System::String ^ eventName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

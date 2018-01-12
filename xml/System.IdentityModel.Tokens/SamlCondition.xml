@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlCondition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SamlCondition" />
   <TypeSignature Language="F#" Value="type SamlCondition = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlCondition abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlCondition.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SamlCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlCondition.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IdentityModel.Tokens.SamlCondition.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlCondition.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub MakeReadOnly ()" />
       <MemberSignature Language="F#" Value="abstract member MakeReadOnly : unit -&gt; unit" Usage="samlCondition.MakeReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlCondition.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit" Usage="samlCondition.ReadXml (reader, samlSerializer, keyInfoSerializer, outOfBandTokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlCondition.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit" Usage="samlCondition.WriteXml (writer, samlSerializer, keyInfoSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

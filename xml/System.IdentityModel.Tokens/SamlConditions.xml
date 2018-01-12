@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlConditions" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlConditions" />
   <TypeSignature Language="F#" Value="type SamlConditions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlConditions" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlConditions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlConditions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlConditions.#ctor(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (notBefore As DateTime, notOnOrAfter As DateTime)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlConditions : DateTime * DateTime -&gt; System.IdentityModel.Tokens.SamlConditions" Usage="new System.IdentityModel.Tokens.SamlConditions (notBefore, notOnOrAfter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlConditions(DateTime notBefore, DateTime notOnOrAfter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlConditions.#ctor(System.DateTime,System.DateTime,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlCondition})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (notBefore As DateTime, notOnOrAfter As DateTime, conditions As IEnumerable(Of SamlCondition))" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlConditions : DateTime * DateTime * seq&lt;System.IdentityModel.Tokens.SamlCondition&gt; -&gt; System.IdentityModel.Tokens.SamlConditions" Usage="new System.IdentityModel.Tokens.SamlConditions (notBefore, notOnOrAfter, conditions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlConditions(DateTime notBefore, DateTime notOnOrAfter, System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SamlCondition ^&gt; ^ conditions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConditions.Conditions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conditions As IList(Of SamlCondition)" />
       <MemberSignature Language="F#" Value="member this.Conditions : System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlCondition&gt;" Usage="System.IdentityModel.Tokens.SamlConditions.Conditions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::IdentityModel::Tokens::SamlCondition ^&gt; ^ Conditions { System::Collections::Generic::IList&lt;System::IdentityModel::Tokens::SamlCondition ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConditions.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IdentityModel.Tokens.SamlConditions.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlConditions.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
       <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="samlConditions.MakeReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConditions.NotBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property NotBefore As DateTime" />
       <MemberSignature Language="F#" Value="member this.NotBefore : DateTime with get, set" Usage="System.IdentityModel.Tokens.SamlConditions.NotBefore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NotBefore { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlConditions.NotOnOrAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property NotOnOrAfter As DateTime" />
       <MemberSignature Language="F#" Value="member this.NotOnOrAfter : DateTime with get, set" Usage="System.IdentityModel.Tokens.SamlConditions.NotOnOrAfter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime NotOnOrAfter { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -265,6 +274,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlConditions.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlDictionaryReader * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; unit" Usage="samlConditions.ReadXml (reader, samlSerializer, keyInfoTokenSerializer, outOfBandTokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoTokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlConditions.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlDictionaryWriter * System.IdentityModel.Tokens.SamlSerializer * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; unit" Usage="samlConditions.WriteXml (writer, samlSerializer, keyInfoTokenSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoTokenSerializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

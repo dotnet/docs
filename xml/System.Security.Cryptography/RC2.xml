@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RC2" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RC2&#xA;Inherits SymmetricAlgorithm" />
   <TypeSignature Language="F#" Value="type RC2 = class&#xA;    inherit SymmetricAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RC2 abstract : System::Security::Cryptography::SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RC2();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As RC2" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.RC2" Usage="System.Security.Cryptography.RC2.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RC2 ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (AlgName As String) As RC2" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.RC2" Usage="System.Security.Cryptography.RC2.Create AlgName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RC2 ^ Create(System::String ^ AlgName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -207,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2.EffectiveKeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EffectiveKeySize As Integer" />
       <MemberSignature Language="F#" Value="member this.EffectiveKeySize : int with get, set" Usage="System.Security.Cryptography.RC2.EffectiveKeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EffectiveKeySize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.RC2.EffectiveKeySizeValue" />
       <MemberSignature Language="VB.NET" Value="Protected EffectiveKeySizeValue As Integer " />
       <MemberSignature Language="F#" Value="val mutable EffectiveKeySizeValue : int" Usage="System.Security.Cryptography.RC2.EffectiveKeySizeValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: int EffectiveKeySizeValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -272,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property KeySize As Integer" />
       <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.RC2.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.Format" />
   <TypeSignature Language="VB.NET" Value="Public Enum Format" />
   <TypeSignature Language="F#" Value="type Format = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Format" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.Format.Native" />
       <MemberSignature Language="VB.NET" Value="Native" />
       <MemberSignature Language="F#" Value="Native = 1" Usage="Microsoft.SqlServer.Server.Format.Native" />
+      <MemberSignature Language="C++ CLI" Value="Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.Format.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = 0" Usage="Microsoft.SqlServer.Server.Format.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.Format.UserDefined" />
       <MemberSignature Language="VB.NET" Value="UserDefined" />
       <MemberSignature Language="F#" Value="UserDefined = 2" Usage="Microsoft.SqlServer.Server.Format.UserDefined" />
+      <MemberSignature Language="C++ CLI" Value="UserDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

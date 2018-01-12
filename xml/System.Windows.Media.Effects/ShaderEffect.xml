@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.ShaderEffect" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ShaderEffect&#xA;Inherits Effect" />
   <TypeSignature Language="F#" Value="type ShaderEffect = class&#xA;    inherit Effect" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ShaderEffect abstract : System::Windows::Media::Effects::Effect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ShaderEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ShaderEffect" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.ShaderEffect" Usage="shaderEffect.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::ShaderEffect ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="shaderEffect.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ShaderEffect" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.ShaderEffect" Usage="shaderEffect.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::ShaderEffect ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="shaderEffect.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="shaderEffect.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex" />
       <MemberSignature Language="VB.NET" Value="Protected Property DdxUvDdyUvRegisterIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.DdxUvDdyUvRegisterIndex : int with get, set" Usage="System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int DdxUvDdyUvRegisterIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +286,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="shaderEffect.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +311,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="shaderEffect.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,6 +336,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.ShaderEffect.PaddingBottom" />
       <MemberSignature Language="VB.NET" Value="Protected Property PaddingBottom As Double" />
       <MemberSignature Language="F#" Value="member this.PaddingBottom : double with get, set" Usage="System.Windows.Media.Effects.ShaderEffect.PaddingBottom" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double PaddingBottom { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -347,6 +358,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.ShaderEffect.PaddingLeft" />
       <MemberSignature Language="VB.NET" Value="Protected Property PaddingLeft As Double" />
       <MemberSignature Language="F#" Value="member this.PaddingLeft : double with get, set" Usage="System.Windows.Media.Effects.ShaderEffect.PaddingLeft" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double PaddingLeft { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -368,6 +380,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.ShaderEffect.PaddingRight" />
       <MemberSignature Language="VB.NET" Value="Protected Property PaddingRight As Double" />
       <MemberSignature Language="F#" Value="member this.PaddingRight : double with get, set" Usage="System.Windows.Media.Effects.ShaderEffect.PaddingRight" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double PaddingRight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -389,6 +402,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.ShaderEffect.PaddingTop" />
       <MemberSignature Language="VB.NET" Value="Protected Property PaddingTop As Double" />
       <MemberSignature Language="F#" Value="member this.PaddingTop : double with get, set" Usage="System.Windows.Media.Effects.ShaderEffect.PaddingTop" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double PaddingTop { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +424,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.ShaderEffect.PixelShader" />
       <MemberSignature Language="VB.NET" Value="Protected Property PixelShader As PixelShader" />
       <MemberSignature Language="F#" Value="member this.PixelShader : System.Windows.Media.Effects.PixelShader with get, set" Usage="System.Windows.Media.Effects.ShaderEffect.PixelShader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Media::Effects::PixelShader ^ PixelShader { System::Windows::Media::Effects::PixelShader ^ get(); void set(System::Windows::Media::Effects::PixelShader ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -446,6 +461,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function PixelShaderConstantCallback (floatRegisterIndex As Integer) As PropertyChangedCallback" />
       <MemberSignature Language="F#" Value="static member PixelShaderConstantCallback : int -&gt; System.Windows.PropertyChangedCallback" Usage="System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback floatRegisterIndex" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Windows::PropertyChangedCallback ^ PixelShaderConstantCallback(int floatRegisterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -482,6 +498,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly PixelShaderProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PixelShaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyProperty ^ PixelShaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -512,6 +529,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function PixelShaderSamplerCallback (samplerRegisterIndex As Integer) As PropertyChangedCallback" />
       <MemberSignature Language="F#" Value="static member PixelShaderSamplerCallback : int -&gt; System.Windows.PropertyChangedCallback" Usage="System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback samplerRegisterIndex" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Windows::PropertyChangedCallback ^ PixelShaderSamplerCallback(int samplerRegisterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -544,6 +562,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Windows.PropertyChangedCallback PixelShaderSamplerCallback(int32 samplerRegisterIndex, valuetype System.Windows.Media.Effects.SamplingMode samplingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32,System.Windows.Media.Effects.SamplingMode)" />
       <MemberSignature Language="F#" Value="static member PixelShaderSamplerCallback : int * System.Windows.Media.Effects.SamplingMode -&gt; System.Windows.PropertyChangedCallback" Usage="System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback (samplerRegisterIndex, samplingMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Windows::PropertyChangedCallback ^ PixelShaderSamplerCallback(int samplerRegisterIndex, System::Windows::Media::Effects::SamplingMode samplingMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -588,6 +607,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function RegisterPixelShaderSamplerProperty (dpName As String, ownerType As Type, samplerRegisterIndex As Integer) As DependencyProperty" />
       <MemberSignature Language="F#" Value="static member RegisterPixelShaderSamplerProperty : string * Type * int -&gt; System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty (dpName, ownerType, samplerRegisterIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Windows::DependencyProperty ^ RegisterPixelShaderSamplerProperty(System::String ^ dpName, Type ^ ownerType, int samplerRegisterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -617,6 +637,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Windows.DependencyProperty RegisterPixelShaderSamplerProperty(string dpName, class System.Type ownerType, int32 samplerRegisterIndex, valuetype System.Windows.Media.Effects.SamplingMode samplingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32,System.Windows.Media.Effects.SamplingMode)" />
       <MemberSignature Language="F#" Value="static member RegisterPixelShaderSamplerProperty : string * Type * int * System.Windows.Media.Effects.SamplingMode -&gt; System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty (dpName, ownerType, samplerRegisterIndex, samplingMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Windows::DependencyProperty ^ RegisterPixelShaderSamplerProperty(System::String ^ dpName, Type ^ ownerType, int samplerRegisterIndex, System::Windows::Media::Effects::SamplingMode samplingMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -649,6 +670,7 @@ tex2D(sampler, nextPixelUV);
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UpdateShaderValue (dp As DependencyProperty)" />
       <MemberSignature Language="F#" Value="member this.UpdateShaderValue : System.Windows.DependencyProperty -&gt; unit" Usage="shaderEffect.UpdateShaderValue dp" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateShaderValue(System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

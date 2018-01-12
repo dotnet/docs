@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum FormatterAssemblyStyle" />
   <TypeSignature Language="F#" Value="type FormatterAssemblyStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormatterAssemblyStyle" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Full" />
       <MemberSignature Language="VB.NET" Value="Full" />
       <MemberSignature Language="F#" Value="Full = 1" Usage="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Full" />
+      <MemberSignature Language="C++ CLI" Value="Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple" />
       <MemberSignature Language="VB.NET" Value="Simple" />
       <MemberSignature Language="F#" Value="Simple = 0" Usage="System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple" />
+      <MemberSignature Language="C++ CLI" Value="Simple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

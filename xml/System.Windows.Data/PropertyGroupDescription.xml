@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.PropertyGroupDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyGroupDescription&#xA;Inherits GroupDescription" />
   <TypeSignature Language="F#" Value="type PropertyGroupDescription = class&#xA;    inherit GroupDescription" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyGroupDescription : System::ComponentModel::GroupDescription" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGroupDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Data.PropertyGroupDescription : string -&gt; System.Windows.Data.PropertyGroupDescription" Usage="new System.Windows.Data.PropertyGroupDescription propertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGroupDescription(System::String ^ propertyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor(System.String,System.Windows.Data.IValueConverter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, converter As IValueConverter)" />
       <MemberSignature Language="F#" Value="new System.Windows.Data.PropertyGroupDescription : string * System.Windows.Data.IValueConverter -&gt; System.Windows.Data.PropertyGroupDescription" Usage="new System.Windows.Data.PropertyGroupDescription (propertyName, converter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGroupDescription(System::String ^ propertyName, System::Windows::Data::IValueConverter ^ converter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, class System.Windows.Data.IValueConverter converter, valuetype System.StringComparison stringComparison) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor(System.String,System.Windows.Data.IValueConverter,System.StringComparison)" />
       <MemberSignature Language="F#" Value="new System.Windows.Data.PropertyGroupDescription : string * System.Windows.Data.IValueConverter * StringComparison -&gt; System.Windows.Data.PropertyGroupDescription" Usage="new System.Windows.Data.PropertyGroupDescription (propertyName, converter, stringComparison)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGroupDescription(System::String ^ propertyName, System::Windows::Data::IValueConverter ^ converter, StringComparison stringComparison);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.CompareNameAscending" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CompareNameAscending As IComparer" />
       <MemberSignature Language="F#" Value="member this.CompareNameAscending : System.Collections.IComparer" Usage="System.Windows.Data.PropertyGroupDescription.CompareNameAscending" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IComparer ^ CompareNameAscending { System::Collections::IComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.CompareNameDescending" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CompareNameDescending As IComparer" />
       <MemberSignature Language="F#" Value="member this.CompareNameDescending : System.Collections.IComparer" Usage="System.Windows.Data.PropertyGroupDescription.CompareNameDescending" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::IComparer ^ CompareNameDescending { System::Collections::IComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.Converter" />
       <MemberSignature Language="VB.NET" Value="Public Property Converter As IValueConverter" />
       <MemberSignature Language="F#" Value="member this.Converter : System.Windows.Data.IValueConverter with get, set" Usage="System.Windows.Data.PropertyGroupDescription.Converter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::IValueConverter ^ Converter { System::Windows::Data::IValueConverter ^ get(); void set(System::Windows::Data::IValueConverter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.GroupNameFromItem(System.Object,System.Int32,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GroupNameFromItem (item As Object, level As Integer, culture As CultureInfo) As Object" />
       <MemberSignature Language="F#" Value="override this.GroupNameFromItem : obj * int * System.Globalization.CultureInfo -&gt; obj" Usage="propertyGroupDescription.GroupNameFromItem (item, level, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GroupNameFromItem(System::Object ^ item, int level, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.NamesMatch(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NamesMatch (groupName As Object, itemName As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.NamesMatch : obj * obj -&gt; bool" Usage="propertyGroupDescription.NamesMatch (groupName, itemName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NamesMatch(System::Object ^ groupName, System::Object ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Windows.Data.PropertyGroupDescription.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -311,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.StringComparison" />
       <MemberSignature Language="VB.NET" Value="Public Property StringComparison As StringComparison" />
       <MemberSignature Language="F#" Value="member this.StringComparison : StringComparison with get, set" Usage="System.Windows.Data.PropertyGroupDescription.StringComparison" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property StringComparison StringComparison { StringComparison get(); void set(StringComparison value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SecurityBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityBindingElementImporter&#xA;Implements IPolicyImportExtension" />
   <TypeSignature Language="F#" Value="type SecurityBindingElementImporter = class&#xA;    interface IPolicyImportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityBindingElementImporter : System::ServiceModel::Description::IPolicyImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SecurityBindingElementImporter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityBindingElementImporter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SecurityBindingElementImporter.MaxPolicyRedirections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxPolicyRedirections As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxPolicyRedirections : int" Usage="System.ServiceModel.Channels.SecurityBindingElementImporter.MaxPolicyRedirections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPolicyRedirections { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(class System.ServiceModel.Description.MetadataImporter importer, class System.ServiceModel.Description.PolicyConversionContext policyContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SecurityBindingElementImporter.System#ServiceModel#Description#IPolicyImportExtension#ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Sub ImportPolicy (importer As MetadataImporter, policyContext As PolicyConversionContext) Implements IPolicyImportExtension.ImportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ policyContext) = System::ServiceModel::Description::IPolicyImportExtension::ImportPolicy;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>

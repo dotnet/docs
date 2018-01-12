@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type DeviceElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeviceElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.MobileControls.DeviceElement deviceElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.Add(System.Web.UI.MobileControls.DeviceElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.MobileControls.DeviceElement -&gt; unit" Usage="deviceElementCollection.Add deviceElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::MobileControls::DeviceElement ^ deviceElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As Object()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : obj[]" Usage="System.Web.UI.MobileControls.DeviceElementCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ AllKeys { cli::array &lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="deviceElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.UI.MobileControls.DeviceElementCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -136,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="deviceElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Web.UI.MobileControls.DeviceElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -177,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="deviceElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DeviceElement" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.MobileControls.DeviceElement with get, set" Usage="System.Web.UI.MobileControls.DeviceElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceElement ^ default[int] { System::Web::UI::MobileControls::DeviceElement ^ get(int index); void set(int index, System::Web::UI::MobileControls::DeviceElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -234,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As DeviceElement" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.MobileControls.DeviceElement" Usage="System.Web.UI.MobileControls.DeviceElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceElement ^ default[System::String ^] { System::Web::UI::MobileControls::DeviceElement ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -258,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.UI.MobileControls.DeviceElementCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -287,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="deviceElementCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -309,6 +322,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.MobileControls.DeviceElement deviceElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.Remove(System.Web.UI.MobileControls.DeviceElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.MobileControls.DeviceElement -&gt; unit" Usage="deviceElementCollection.Remove deviceElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::MobileControls::DeviceElement ^ deviceElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -332,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="deviceElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -355,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceElementCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Web.UI.MobileControls.DeviceElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

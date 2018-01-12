@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComCompatibleVersionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComCompatibleVersionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ComCompatibleVersionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComCompatibleVersionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComCompatibleVersionAttribute.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (major As Integer, minor As Integer, build As Integer, revision As Integer)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComCompatibleVersionAttribute : int * int * int * int -&gt; System.Runtime.InteropServices.ComCompatibleVersionAttribute" Usage="new System.Runtime.InteropServices.ComCompatibleVersionAttribute (major, minor, build, revision)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComCompatibleVersionAttribute(int major, int minor, int build, int revision);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComCompatibleVersionAttribute.BuildNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildNumber As Integer" />
       <MemberSignature Language="F#" Value="member this.BuildNumber : int" Usage="System.Runtime.InteropServices.ComCompatibleVersionAttribute.BuildNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BuildNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComCompatibleVersionAttribute.MajorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorVersion As Integer" />
       <MemberSignature Language="F#" Value="member this.MajorVersion : int" Usage="System.Runtime.InteropServices.ComCompatibleVersionAttribute.MajorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MajorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComCompatibleVersionAttribute.MinorVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorVersion As Integer" />
       <MemberSignature Language="F#" Value="member this.MinorVersion : int" Usage="System.Runtime.InteropServices.ComCompatibleVersionAttribute.MinorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComCompatibleVersionAttribute.RevisionNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RevisionNumber As Integer" />
       <MemberSignature Language="F#" Value="member this.RevisionNumber : int" Usage="System.Runtime.InteropServices.ComCompatibleVersionAttribute.RevisionNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RevisionNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

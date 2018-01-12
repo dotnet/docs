@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerAutoFormatCollection&#xA;Implements IList" />
   <TypeSignature Language="F#" Value="type DesignerAutoFormatCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerAutoFormatCollection sealed : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAutoFormatCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.Add(System.Web.UI.Design.DesignerAutoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (format As DesignerAutoFormat) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.Design.DesignerAutoFormat -&gt; int" Usage="designerAutoFormatCollection.Add format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::Design::DesignerAutoFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="designerAutoFormatCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.Contains(System.Web.UI.Design.DesignerAutoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (format As DesignerAutoFormat) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.Design.DesignerAutoFormat -&gt; bool" Usage="designerAutoFormatCollection.Contains format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::Design::DesignerAutoFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf(System.Web.UI.Design.DesignerAutoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (format As DesignerAutoFormat) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.Design.DesignerAutoFormat -&gt; int" Usage="designerAutoFormatCollection.IndexOf format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::Design::DesignerAutoFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.Insert(System.Int32,System.Web.UI.Design.DesignerAutoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, format As DesignerAutoFormat)" />
       <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.Design.DesignerAutoFormat -&gt; unit" Usage="designerAutoFormatCollection.Insert (index, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::Design::DesignerAutoFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -318,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DesignerAutoFormat" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.Design.DesignerAutoFormat" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerAutoFormat ^ default[int] { System::Web::UI::Design::DesignerAutoFormat ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -360,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.PreviewSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviewSize As Size" />
       <MemberSignature Language="F#" Value="member this.PreviewSize : System.Drawing.Size" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.PreviewSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size PreviewSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -390,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.Remove(System.Web.UI.Design.DesignerAutoFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (format As DesignerAutoFormat)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.Design.DesignerAutoFormat -&gt; unit" Usage="designerAutoFormatCollection.Remove format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::Design::DesignerAutoFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -432,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="designerAutoFormatCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -474,6 +486,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -508,6 +521,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -545,6 +559,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -577,6 +592,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -608,6 +624,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -640,6 +657,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -675,6 +693,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -711,6 +730,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -746,6 +766,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -783,6 +804,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -814,6 +836,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -848,6 +871,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="F#" Usage="System.Web.UI.Design.DesignerAutoFormatCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -882,6 +906,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -916,6 +941,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerAutoFormatCollection.System#Collections#IList#RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>

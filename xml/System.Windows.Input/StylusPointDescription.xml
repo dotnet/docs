@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class StylusPointDescription" />
   <TypeSignature Language="F#" Value="type StylusPointDescription = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StylusPointDescription" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.StylusPointPropertyInfo})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (stylusPointPropertyInfos As IEnumerable(Of StylusPointPropertyInfo))" />
       <MemberSignature Language="F#" Value="new System.Windows.Input.StylusPointDescription : seq&lt;System.Windows.Input.StylusPointPropertyInfo&gt; -&gt; System.Windows.Input.StylusPointDescription" Usage="new System.Windows.Input.StylusPointDescription stylusPointPropertyInfos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointDescription(System::Collections::Generic::IEnumerable&lt;System::Windows::Input::StylusPointPropertyInfo ^&gt; ^ stylusPointPropertyInfos);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.AreCompatible(System.Windows.Input.StylusPointDescription,System.Windows.Input.StylusPointDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AreCompatible (stylusPointDescription1 As StylusPointDescription, stylusPointDescription2 As StylusPointDescription) As Boolean" />
       <MemberSignature Language="F#" Value="static member AreCompatible : System.Windows.Input.StylusPointDescription * System.Windows.Input.StylusPointDescription -&gt; bool" Usage="System.Windows.Input.StylusPointDescription.AreCompatible (stylusPointDescription1, stylusPointDescription2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool AreCompatible(System::Windows::Input::StylusPointDescription ^ stylusPointDescription1, System::Windows::Input::StylusPointDescription ^ stylusPointDescription2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Input.StylusPointDescription GetCommonDescription(class System.Windows.Input.StylusPointDescription stylusPointDescription, class System.Windows.Input.StylusPointDescription stylusPointDescriptionPreserveInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.GetCommonDescription(System.Windows.Input.StylusPointDescription,System.Windows.Input.StylusPointDescription)" />
       <MemberSignature Language="F#" Value="static member GetCommonDescription : System.Windows.Input.StylusPointDescription * System.Windows.Input.StylusPointDescription -&gt; System.Windows.Input.StylusPointDescription" Usage="System.Windows.Input.StylusPointDescription.GetCommonDescription (stylusPointDescription, stylusPointDescriptionPreserveInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::StylusPointDescription ^ GetCommonDescription(System::Windows::Input::StylusPointDescription ^ stylusPointDescription, System::Windows::Input::StylusPointDescription ^ stylusPointDescriptionPreserveInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointPropertyInfo GetPropertyInfo(class System.Windows.Input.StylusPointProperty stylusPointProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.GetPropertyInfo(System.Windows.Input.StylusPointProperty)" />
       <MemberSignature Language="F#" Value="member this.GetPropertyInfo : System.Windows.Input.StylusPointProperty -&gt; System.Windows.Input.StylusPointPropertyInfo" Usage="stylusPointDescription.GetPropertyInfo stylusPointProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointPropertyInfo ^ GetPropertyInfo(System::Windows::Input::StylusPointProperty ^ stylusPointProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.GetStylusPointProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStylusPointProperties () As ReadOnlyCollection(Of StylusPointPropertyInfo)" />
       <MemberSignature Language="F#" Value="member this.GetStylusPointProperties : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusPointPropertyInfo&gt;" Usage="stylusPointDescription.GetStylusPointProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Input::StylusPointPropertyInfo ^&gt; ^ GetStylusPointProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasProperty(class System.Windows.Input.StylusPointProperty stylusPointProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.HasProperty(System.Windows.Input.StylusPointProperty)" />
       <MemberSignature Language="F#" Value="member this.HasProperty : System.Windows.Input.StylusPointProperty -&gt; bool" Usage="stylusPointDescription.HasProperty stylusPointProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasProperty(System::Windows::Input::StylusPointProperty ^ stylusPointProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -301,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointDescription.IsSubsetOf(System.Windows.Input.StylusPointDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (stylusPointDescriptionSuperset As StylusPointDescription) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSubsetOf : System.Windows.Input.StylusPointDescription -&gt; bool" Usage="stylusPointDescription.IsSubsetOf stylusPointDescriptionSuperset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubsetOf(System::Windows::Input::StylusPointDescription ^ stylusPointDescriptionSuperset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -338,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointDescription.PropertyCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyCount As Integer" />
       <MemberSignature Language="F#" Value="member this.PropertyCount : int" Usage="System.Windows.Input.StylusPointDescription.PropertyCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PropertyCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

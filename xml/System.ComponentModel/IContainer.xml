@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IContainer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContainer&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type IContainer = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IContainer : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (component As IComponent)" />
       <MemberSignature Language="F#" Value="abstract member Add : System.ComponentModel.IComponent -&gt; unit" Usage="iContainer.Add component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (component As IComponent, name As String)" />
       <MemberSignature Language="F#" Value="abstract member Add : System.ComponentModel.IComponent * string -&gt; unit" Usage="iContainer.Add (component, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ComponentModel::IComponent ^ component, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IContainer.Components" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Components As ComponentCollection" />
       <MemberSignature Language="F#" Value="member this.Components : System.ComponentModel.ComponentCollection" Usage="System.ComponentModel.IContainer.Components" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ComponentCollection ^ Components { System::ComponentModel::ComponentCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IContainer.Remove(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (component As IComponent)" />
       <MemberSignature Language="F#" Value="abstract member Remove : System.ComponentModel.IComponent -&gt; unit" Usage="iContainer.Remove component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

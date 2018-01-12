@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpTransportSecurityElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSHttpTransportSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
   <TypeSignature Language="F#" Value="type WSHttpTransportSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSHttpTransportSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpTransportSecurityElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpTransportSecurityElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpTransportSecurityElement.ClientCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As HttpClientCredentialType" />
       <MemberSignature Language="F#" Value="member this.ClientCredentialType : System.ServiceModel.HttpClientCredentialType with get, set" Usage="System.ServiceModel.Configuration.WSHttpTransportSecurityElement.ClientCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpClientCredentialType ClientCredentialType { System::ServiceModel::HttpClientCredentialType get(); void set(System::ServiceModel::HttpClientCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpTransportSecurityElement.ExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedProtectionPolicy As ExtendedProtectionPolicyElement" />
       <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement" Usage="System.ServiceModel.Configuration.WSHttpTransportSecurityElement.ExtendedProtectionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::Configuration::ExtendedProtectionPolicyElement ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::Configuration::ExtendedProtectionPolicyElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpTransportSecurityElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WSHttpTransportSecurityElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpTransportSecurityElement.ProxyCredentialType" />
       <MemberSignature Language="VB.NET" Value="Public Property ProxyCredentialType As HttpProxyCredentialType" />
       <MemberSignature Language="F#" Value="member this.ProxyCredentialType : System.ServiceModel.HttpProxyCredentialType with get, set" Usage="System.ServiceModel.Configuration.WSHttpTransportSecurityElement.ProxyCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpProxyCredentialType ProxyCredentialType { System::ServiceModel::HttpProxyCredentialType get(); void set(System::ServiceModel::HttpProxyCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpTransportSecurityElement.Realm" />
       <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
       <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.ServiceModel.Configuration.WSHttpTransportSecurityElement.Realm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketInformationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketInformationOptions" />
   <TypeSignature Language="F#" Value="type SocketInformationOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketInformationOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.Connected" />
       <MemberSignature Language="VB.NET" Value="Connected" />
       <MemberSignature Language="F#" Value="Connected = 2" Usage="System.Net.Sockets.SocketInformationOptions.Connected" />
+      <MemberSignature Language="C++ CLI" Value="Connected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.Listening" />
       <MemberSignature Language="VB.NET" Value="Listening" />
       <MemberSignature Language="F#" Value="Listening = 4" Usage="System.Net.Sockets.SocketInformationOptions.Listening" />
+      <MemberSignature Language="C++ CLI" Value="Listening" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.NonBlocking" />
       <MemberSignature Language="VB.NET" Value="NonBlocking" />
       <MemberSignature Language="F#" Value="NonBlocking = 1" Usage="System.Net.Sockets.SocketInformationOptions.NonBlocking" />
+      <MemberSignature Language="C++ CLI" Value="NonBlocking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.UseOnlyOverlappedIO" />
       <MemberSignature Language="VB.NET" Value="UseOnlyOverlappedIO" />
       <MemberSignature Language="F#" Value="UseOnlyOverlappedIO = 8" Usage="System.Net.Sockets.SocketInformationOptions.UseOnlyOverlappedIO" />
+      <MemberSignature Language="C++ CLI" Value="UseOnlyOverlappedIO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

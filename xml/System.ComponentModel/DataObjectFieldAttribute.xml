@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectFieldAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectFieldAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type DataObjectFieldAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataObjectFieldAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectFieldAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (primaryKey As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectFieldAttribute : bool -&gt; System.ComponentModel.DataObjectFieldAttribute" Usage="new System.ComponentModel.DataObjectFieldAttribute primaryKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectFieldAttribute(bool primaryKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectFieldAttribute.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (primaryKey As Boolean, isIdentity As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectFieldAttribute : bool * bool -&gt; System.ComponentModel.DataObjectFieldAttribute" Usage="new System.ComponentModel.DataObjectFieldAttribute (primaryKey, isIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectFieldAttribute(bool primaryKey, bool isIdentity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectFieldAttribute.#ctor(System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (primaryKey As Boolean, isIdentity As Boolean, isNullable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectFieldAttribute : bool * bool * bool -&gt; System.ComponentModel.DataObjectFieldAttribute" Usage="new System.ComponentModel.DataObjectFieldAttribute (primaryKey, isIdentity, isNullable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectFieldAttribute(bool primaryKey, bool isIdentity, bool isNullable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectFieldAttribute.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (primaryKey As Boolean, isIdentity As Boolean, isNullable As Boolean, length As Integer)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectFieldAttribute : bool * bool * bool * int -&gt; System.ComponentModel.DataObjectFieldAttribute" Usage="new System.ComponentModel.DataObjectFieldAttribute (primaryKey, isIdentity, isNullable, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectFieldAttribute(bool primaryKey, bool isIdentity, bool isNullable, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -213,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectFieldAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataObjectFieldAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectFieldAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataObjectFieldAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -284,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectFieldAttribute.IsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIdentity As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIdentity : bool" Usage="System.ComponentModel.DataObjectFieldAttribute.IsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIdentity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectFieldAttribute.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNullable : bool" Usage="System.ComponentModel.DataObjectFieldAttribute.IsNullable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -362,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectFieldAttribute.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.ComponentModel.DataObjectFieldAttribute.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -400,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectFieldAttribute.PrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimaryKey As Boolean" />
       <MemberSignature Language="F#" Value="member this.PrimaryKey : bool" Usage="System.ComponentModel.DataObjectFieldAttribute.PrimaryKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrimaryKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

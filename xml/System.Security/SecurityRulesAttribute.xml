@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityRulesAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityRulesAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type SecurityRulesAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityRulesAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityRulesAttribute.#ctor(System.Security.SecurityRuleSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ruleSet As SecurityRuleSet)" />
       <MemberSignature Language="F#" Value="new System.Security.SecurityRulesAttribute : System.Security.SecurityRuleSet -&gt; System.Security.SecurityRulesAttribute" Usage="new System.Security.SecurityRulesAttribute ruleSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityRulesAttribute(System::Security::SecurityRuleSet ruleSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityRulesAttribute.RuleSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuleSet As SecurityRuleSet" />
       <MemberSignature Language="F#" Value="member this.RuleSet : System.Security.SecurityRuleSet" Usage="System.Security.SecurityRulesAttribute.RuleSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::SecurityRuleSet RuleSet { System::Security::SecurityRuleSet get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipVerificationInFullTrust As Boolean" />
       <MemberSignature Language="F#" Value="member this.SkipVerificationInFullTrust : bool with get, set" Usage="System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipVerificationInFullTrust { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

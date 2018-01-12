@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.BackupListCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class BackupListCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type BackupListCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BackupListCollection : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupListCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BackupListCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupListCollection.Add(System.ServiceModel.Routing.Configuration.BackupEndpointCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As BackupEndpointCollection)" />
       <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Routing.Configuration.BackupEndpointCollection -&gt; unit" Usage="backupListCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Routing::Configuration::BackupEndpointCollection ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupListCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="backupListCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupListCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="backupListCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupListCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="backupListCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.BackupListCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As BackupEndpointCollection" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.ServiceModel.Routing.Configuration.BackupEndpointCollection" Usage="System.ServiceModel.Routing.Configuration.BackupListCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Routing::Configuration::BackupEndpointCollection ^ default[System::String ^] { System::ServiceModel::Routing::Configuration::BackupEndpointCollection ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -156,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.BackupListCollection.Remove(System.ServiceModel.Routing.Configuration.BackupEndpointCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As BackupEndpointCollection)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.ServiceModel.Routing.Configuration.BackupEndpointCollection -&gt; unit" Usage="backupListCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ServiceModel::Routing::Configuration::BackupEndpointCollection ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

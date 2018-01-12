@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExternalDataEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ExternalDataEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type ExternalDataEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExternalDataEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -100,6 +102,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataEventArgs.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.ExternalDataEventArgs : Guid -&gt; System.Workflow.Activities.ExternalDataEventArgs" Usage="new System.Workflow.Activities.ExternalDataEventArgs instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataEventArgs(Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -120,6 +123,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataEventArgs.#ctor(System.Guid,System.Workflow.Runtime.IPendingWork,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, workHandler As IPendingWork, workItem As Object)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.ExternalDataEventArgs : Guid * System.Workflow.Runtime.IPendingWork * obj -&gt; System.Workflow.Activities.ExternalDataEventArgs" Usage="new System.Workflow.Activities.ExternalDataEventArgs (instanceId, workHandler, workItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataEventArgs(Guid instanceId, System::Workflow::Runtime::IPendingWork ^ workHandler, System::Object ^ workItem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -144,6 +148,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataEventArgs.#ctor(System.Guid,System.Workflow.Runtime.IPendingWork,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Guid, workHandler As IPendingWork, workItem As Object, waitForIdle As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.ExternalDataEventArgs : Guid * System.Workflow.Runtime.IPendingWork * obj * bool -&gt; System.Workflow.Activities.ExternalDataEventArgs" Usage="new System.Workflow.Activities.ExternalDataEventArgs (instanceId, workHandler, workItem, waitForIdle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataEventArgs(Guid instanceId, System::Workflow::Runtime::IPendingWork ^ workHandler, System::Object ^ workItem, bool waitForIdle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -170,6 +175,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataEventArgs.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Property Identity As String" />
       <MemberSignature Language="F#" Value="member this.Identity : string with get, set" Usage="System.Workflow.Activities.ExternalDataEventArgs.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Identity { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -201,6 +207,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataEventArgs.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public Property InstanceId As Guid" />
       <MemberSignature Language="F#" Value="member this.InstanceId : Guid with get, set" Usage="System.Workflow.Activities.ExternalDataEventArgs.InstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -228,6 +235,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataEventArgs.WaitForIdle" />
       <MemberSignature Language="VB.NET" Value="Public Property WaitForIdle As Boolean" />
       <MemberSignature Language="F#" Value="member this.WaitForIdle : bool with get, set" Usage="System.Workflow.Activities.ExternalDataEventArgs.WaitForIdle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WaitForIdle { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -258,6 +266,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataEventArgs.WorkHandler" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkHandler As IPendingWork" />
       <MemberSignature Language="F#" Value="member this.WorkHandler : System.Workflow.Runtime.IPendingWork with get, set" Usage="System.Workflow.Activities.ExternalDataEventArgs.WorkHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::IPendingWork ^ WorkHandler { System::Workflow::Runtime::IPendingWork ^ get(); void set(System::Workflow::Runtime::IPendingWork ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -279,6 +288,7 @@ public class TaskEventArgs : ExternalDataEventArgs
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ExternalDataEventArgs.WorkItem" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkItem As Object" />
       <MemberSignature Language="F#" Value="member this.WorkItem : obj with get, set" Usage="System.Workflow.Activities.ExternalDataEventArgs.WorkItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WorkItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

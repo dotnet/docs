@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ParseChildrenAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParseChildrenAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ParseChildrenAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParseChildrenAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParseChildrenAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childrenAsProperties As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.ParseChildrenAttribute : bool -&gt; System.Web.UI.ParseChildrenAttribute" Usage="new System.Web.UI.ParseChildrenAttribute childrenAsProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParseChildrenAttribute(bool childrenAsProperties);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childControlType As Type)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.ParseChildrenAttribute : Type -&gt; System.Web.UI.ParseChildrenAttribute" Usage="new System.Web.UI.ParseChildrenAttribute childControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParseChildrenAttribute(Type ^ childControlType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.#ctor(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childrenAsProperties As Boolean, defaultProperty As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.ParseChildrenAttribute : bool * string -&gt; System.Web.UI.ParseChildrenAttribute" Usage="new System.Web.UI.ParseChildrenAttribute (childrenAsProperties, defaultProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParseChildrenAttribute(bool childrenAsProperties, System::String ^ defaultProperty);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ParseChildrenAttribute.ChildControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildControlType As Type" />
       <MemberSignature Language="F#" Value="member this.ChildControlType : Type" Usage="System.Web.UI.ParseChildrenAttribute.ChildControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ChildControlType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
       <MemberSignature Language="VB.NET" Value="Public Property ChildrenAsProperties As Boolean" />
       <MemberSignature Language="F#" Value="member this.ChildrenAsProperties : bool with get, set" Usage="System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ChildrenAsProperties { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ParseChildrenAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ParseChildrenAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.ParseChildrenAttribute" Usage="System.Web.UI.ParseChildrenAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ParseChildrenAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -307,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ParseChildrenAttribute.DefaultProperty" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProperty As String" />
       <MemberSignature Language="F#" Value="member this.DefaultProperty : string with get, set" Usage="System.Web.UI.ParseChildrenAttribute.DefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProperty { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -344,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="parseChildrenAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -369,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="parseChildrenAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -390,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseChildrenAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="parseChildrenAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -428,6 +440,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ParseChildrenAttribute.ParseAsChildren" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParseAsChildren As ParseChildrenAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable ParseAsChildren : System.Web.UI.ParseChildrenAttribute" Usage="System.Web.UI.ParseChildrenAttribute.ParseAsChildren" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ParseChildrenAttribute ^ ParseAsChildren;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -456,6 +469,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ParseChildrenAttribute.ParseAsProperties" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParseAsProperties As ParseChildrenAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable ParseAsProperties : System.Web.UI.ParseChildrenAttribute" Usage="System.Web.UI.ParseChildrenAttribute.ParseAsProperties" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ParseChildrenAttribute ^ ParseAsProperties;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

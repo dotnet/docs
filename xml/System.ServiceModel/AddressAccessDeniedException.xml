@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.AddressAccessDeniedException" />
   <TypeSignature Language="VB.NET" Value="Public Class AddressAccessDeniedException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="F#" Value="type AddressAccessDeniedException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddressAccessDeniedException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.AddressAccessDeniedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddressAccessDeniedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.AddressAccessDeniedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.AddressAccessDeniedException : string -&gt; System.ServiceModel.AddressAccessDeniedException" Usage="new System.ServiceModel.AddressAccessDeniedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddressAccessDeniedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.AddressAccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.AddressAccessDeniedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.AddressAccessDeniedException" Usage="new System.ServiceModel.AddressAccessDeniedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AddressAccessDeniedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.AddressAccessDeniedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.AddressAccessDeniedException : string * Exception -&gt; System.ServiceModel.AddressAccessDeniedException" Usage="new System.ServiceModel.AddressAccessDeniedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddressAccessDeniedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

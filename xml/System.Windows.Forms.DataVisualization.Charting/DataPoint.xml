@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" />
   <TypeSignature Language="VB.NET" Value="Public Class DataPoint&#xA;Inherits DataPointCustomProperties" />
   <TypeSignature Language="F#" Value="type DataPoint = class&#xA;    inherit DataPointCustomProperties" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPoint : System::Windows::Forms::DataVisualization::Charting::DataPointCustomProperties" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPoint();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Windows.Forms.DataVisualization.Charting.Series)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : System.Windows.Forms.DataVisualization.Charting.Series -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint series" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPoint(System::Windows::Forms::DataVisualization::Charting::Series ^ series);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xValue As Double, yValue As Double)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : double * double -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint (xValue, yValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPoint(double xValue, double yValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xValue As Double, yValues As Double())" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : double * double[] -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint (xValue, yValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPoint(double xValue, cli::array &lt;double&gt; ^ yValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xValue As Double, yValues As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.DataPoint : double * string -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="new System.Windows.Forms.DataVisualization.Charting.DataPoint (xValue, yValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPoint(double xValue, System::String ^ yValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DataPoint" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Forms.DataVisualization.Charting.DataPoint" Usage="dataPoint.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataVisualization::Charting::DataPoint ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.GetValueByName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueByName (valueName As String) As Double" />
       <MemberSignature Language="F#" Value="member this.GetValueByName : string -&gt; double" Usage="dataPoint.GetValueByName valueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetValueByName(System::String ^ valueName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEmpty As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -327,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.SetValueXY(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValueXY (xValue As Object, ParamArray yValue As Object())" />
       <MemberSignature Language="F#" Value="member this.SetValueXY : obj * obj[] -&gt; unit" Usage="dataPoint.SetValueXY (xValue, yValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValueXY(System::Object ^ xValue, ... cli::array &lt;System::Object ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.SetValueY(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValueY (ParamArray yValue As Object())" />
       <MemberSignature Language="F#" Value="member this.SetValueY : obj[] -&gt; unit" Usage="dataPoint.SetValueY yValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValueY(... cli::array &lt;System::Object ^&gt; ^ yValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -426,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.XValue" />
       <MemberSignature Language="VB.NET" Value="Public Property XValue As Double" />
       <MemberSignature Language="F#" Value="member this.XValue : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.XValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double XValue { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataPoint.YValues" />
       <MemberSignature Language="VB.NET" Value="Public Property YValues As Double()" />
       <MemberSignature Language="F#" Value="member this.YValues : double[] with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.DataPoint.YValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;double&gt; ^ YValues { cli::array &lt;double&gt; ^ get(); void set(cli::array &lt;double&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaCollectionEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaCollectionEnumerator&#xA;Implements IEnumerator" />
   <TypeSignature Language="F#" Value="type XmlSchemaCollectionEnumerator = class&#xA;    interface IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaCollectionEnumerator sealed : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollectionEnumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As XmlSchema" />
       <MemberSignature Language="F#" Value="member this.Current : System.Xml.Schema.XmlSchema" Usage="System.Xml.Schema.XmlSchemaCollectionEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchema ^ Current { System::Xml::Schema::XmlSchema ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollectionEnumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="F#" Value="member this.MoveNext : unit -&gt; bool" Usage="xmlSchemaCollectionEnumerator.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MoveNext();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollectionEnumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
       <MemberSignature Language="F#" Usage="System.Xml.Schema.XmlSchemaCollectionEnumerator.System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
@@ -159,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IEnumerator.MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollectionEnumerator.System#Collections#IEnumerator#MoveNext" />
       <MemberSignature Language="VB.NET" Value="Function MoveNext () As Boolean Implements IEnumerator.MoveNext" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IEnumerator.MoveNext() = System::Collections::IEnumerator::MoveNext;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -198,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IEnumerator.Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollectionEnumerator.System#Collections#IEnumerator#Reset" />
       <MemberSignature Language="VB.NET" Value="Sub Reset () Implements IEnumerator.Reset" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IEnumerator.Reset() = System::Collections::IEnumerator::Reset;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject" />
   <TypeSignature Language="VB.NET" Value="Public Class SequenceDesignerAccessibleObject&#xA;Inherits CompositeDesignerAccessibleObject" />
   <TypeSignature Language="F#" Value="type SequenceDesignerAccessibleObject = class&#xA;    inherit CompositeDesignerAccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SequenceDesignerAccessibleObject : System::Workflow::ComponentModel::Design::CompositeDesignerAccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.SequentialActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (activityDesigner As SequentialActivityDesigner)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject : System.Workflow.ComponentModel.Design.SequentialActivityDesigner -&gt; System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject" Usage="new System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject activityDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequenceDesignerAccessibleObject(System::Workflow::ComponentModel::Design::SequentialActivityDesigner ^ activityDesigner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.GetChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChild (index As Integer) As AccessibleObject" />
       <MemberSignature Language="F#" Value="override this.GetChild : int -&gt; System.Windows.Forms.AccessibleObject" Usage="sequenceDesignerAccessibleObject.GetChild index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.GetChildCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetChildCount : unit -&gt; int" Usage="sequenceDesignerAccessibleObject.GetChildCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.SequenceDesignerAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Navigate (navdir As AccessibleNavigation) As AccessibleObject" />
       <MemberSignature Language="F#" Value="override this.Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject" Usage="sequenceDesignerAccessibleObject.Navigate navdir" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ Navigate(System::Windows::Forms::AccessibleNavigation navdir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

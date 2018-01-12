@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SequentialWorkflowActivity" />
   <TypeSignature Language="VB.NET" Value="Public Class SequentialWorkflowActivity&#xA;Inherits SequenceActivity" />
   <TypeSignature Language="F#" Value="type SequentialWorkflowActivity = class&#xA;    inherit SequenceActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SequentialWorkflowActivity : System::Workflow::Activities::SequenceActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequentialWorkflowActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequentialWorkflowActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequentialWorkflowActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.SequentialWorkflowActivity : string -&gt; System.Workflow.Activities.SequentialWorkflowActivity" Usage="new System.Workflow.Activities.SequentialWorkflowActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequentialWorkflowActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.SequentialWorkflowActivity.Completed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Completed As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Completed : EventHandler " Usage="member this.Completed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Completed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SequentialWorkflowActivity.CompletedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompletedEvent As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CompletedEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.SequentialWorkflowActivity.CompletedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CompletedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SequentialWorkflowActivity.DynamicUpdateCondition" />
       <MemberSignature Language="VB.NET" Value="Public Property DynamicUpdateCondition As ActivityCondition" />
       <MemberSignature Language="F#" Value="member this.DynamicUpdateCondition : System.Workflow.ComponentModel.ActivityCondition with get, set" Usage="System.Workflow.Activities.SequentialWorkflowActivity.DynamicUpdateCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCondition ^ DynamicUpdateCondition { System::Workflow::ComponentModel::ActivityCondition ^ get(); void set(System::Workflow::ComponentModel::ActivityCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequentialWorkflowActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="sequentialWorkflowActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.SequentialWorkflowActivity.Initialized" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Initialized As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Initialized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SequentialWorkflowActivity.InitializedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InitializedEvent As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable InitializedEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.SequentialWorkflowActivity.InitializedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InitializedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequentialWorkflowActivity.OnSequenceComplete(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub OnSequenceComplete (executionContext As ActivityExecutionContext)" />
       <MemberSignature Language="F#" Value="override this.OnSequenceComplete : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="sequentialWorkflowActivity.OnSequenceComplete executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSequenceComplete(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

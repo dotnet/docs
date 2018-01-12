@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DeriveBytes" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DeriveBytes&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type DeriveBytes = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeriveBytes abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DeriveBytes.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeriveBytes();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DeriveBytes.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="deriveBytes.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="deriveBytes.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBytes (cb As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : int -&gt; byte[]" Usage="deriveBytes.GetBytes cb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ GetBytes(int cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -221,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DeriveBytes.Reset" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Reset ()" />
       <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="deriveBytes.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

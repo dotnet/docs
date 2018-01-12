@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Application.MessageLoopCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Application.MessageLoopCallback() As Boolean " />
   <TypeSignature Language="F#" Value="type Application.MessageLoopCallback = delegate of unit -&gt; bool" />
+  <TypeSignature Language="C++ CLI" Value="public: delegate bool Application::MessageLoopCallback();" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

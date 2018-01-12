@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndHost" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HwndHost&#xA;Inherits FrameworkElement&#xA;Implements IDisposable, IKeyboardInputSink, IWin32Window" />
   <TypeSignature Language="F#" Value="type HwndHost = class&#xA;    inherit FrameworkElement&#xA;    interface IDisposable&#xA;    interface IWin32Window&#xA;    interface IKeyboardInputSink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HwndHost abstract : System::Windows::FrameworkElement, IDisposable, System::Windows::Interop::IKeyboardInputSink, System::Windows::Interop::IWin32Window" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HwndHost();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function BuildWindowCore (hwndParent As HandleRef) As HandleRef" />
       <MemberSignature Language="F#" Value="abstract member BuildWindowCore : System.Runtime.InteropServices.HandleRef -&gt; System.Runtime.InteropServices.HandleRef" Usage="hwndHost.BuildWindowCore hwndParent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Runtime::InteropServices::HandleRef BuildWindowCore(System::Runtime::InteropServices::HandleRef hwndParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DestroyWindowCore (hwnd As HandleRef)" />
       <MemberSignature Language="F#" Value="abstract member DestroyWindowCore : System.Runtime.InteropServices.HandleRef -&gt; unit" Usage="hwndHost.DestroyWindowCore hwnd" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DestroyWindowCore(System::Runtime::InteropServices::HandleRef hwnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="hwndHost.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="hwndHost.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.HwndHost.DpiChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DpiChanged As DpiChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.DpiChanged : System.Windows.DpiChangedEventHandler " Usage="member this.DpiChanged : System.Windows.DpiChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DpiChangedEventHandler ^ DpiChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -268,6 +275,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Interop.HwndHost.DpiChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DpiChangedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable DpiChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Interop.HwndHost.DpiChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ DpiChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="hwndHost.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!HwndHost ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndHost.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Interop.HwndHost.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Interop.IWin32Window.Handle</InterfaceMember>
@@ -343,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.HasFocusWithinCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function HasFocusWithinCore () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member HasFocusWithinCore : unit -&gt; bool&#xA;override this.HasFocusWithinCore : unit -&gt; bool" Usage="hwndHost.HasFocusWithinCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool HasFocusWithinCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="hwndHost.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -421,6 +433,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Interop.HwndHost.MessageHook" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MessageHook As HwndSourceHook " />
       <MemberSignature Language="F#" Value="member this.MessageHook : System.Windows.Interop.HwndSourceHook " Usage="member this.MessageHook : System.Windows.Interop.HwndSourceHook " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Interop::HwndSourceHook ^ MessageHook;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -458,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="hwndHost.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -487,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpi As DpiScale, newDpi As DpiScale)" />
       <MemberSignature Language="F#" Value="override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="hwndHost.OnDpiChanged (oldDpi, newDpi)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpi, System::Windows::DpiScale newDpi);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -512,6 +527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="hwndHost.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -554,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="hwndHost.OnKeyUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -596,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnMnemonicCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMnemonicCore (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member OnMnemonicCore :  * System.Windows.Input.ModifierKeys -&gt; bool&#xA;override this.OnMnemonicCore :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="hwndHost.OnMnemonicCore (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMnemonicCore(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -628,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.OnWindowPositionChanged(System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWindowPositionChanged (rcBoundingBox As Rect)" />
       <MemberSignature Language="F#" Value="abstract member OnWindowPositionChanged : System.Windows.Rect -&gt; unit&#xA;override this.OnWindowPositionChanged : System.Windows.Rect -&gt; unit" Usage="hwndHost.OnWindowPositionChanged rcBoundingBox" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWindowPositionChanged(System::Windows::Rect rcBoundingBox);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -668,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.RegisterKeyboardInputSinkCore(System.Windows.Interop.IKeyboardInputSink)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function RegisterKeyboardInputSinkCore (sink As IKeyboardInputSink) As IKeyboardInputSite" />
       <MemberSignature Language="F#" Value="abstract member RegisterKeyboardInputSinkCore : System.Windows.Interop.IKeyboardInputSink -&gt; System.Windows.Interop.IKeyboardInputSite&#xA;override this.RegisterKeyboardInputSinkCore : System.Windows.Interop.IKeyboardInputSink -&gt; System.Windows.Interop.IKeyboardInputSite" Usage="hwndHost.RegisterKeyboardInputSinkCore sink" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Interop::IKeyboardInputSite ^ RegisterKeyboardInputSinkCore(System::Windows::Interop::IKeyboardInputSink ^ sink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -697,6 +717,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.HasFocusWithin() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#HasFocusWithin" />
       <MemberSignature Language="VB.NET" Value="Function HasFocusWithin () As Boolean Implements IKeyboardInputSink.HasFocusWithin" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.HasFocusWithin() = System::Windows::Interop::IKeyboardInputSink::HasFocusWithin;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin</InterfaceMember>
@@ -729,6 +750,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#KeyboardInputSite" />
       <MemberSignature Language="VB.NET" Value=" Property KeyboardInputSite As IKeyboardInputSite Implements IKeyboardInputSink.KeyboardInputSite" />
       <MemberSignature Language="F#" Usage="System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Interop::IKeyboardInputSite ^ System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite { System::Windows::Interop::IKeyboardInputSite ^ get(); void set(System::Windows::Interop::IKeyboardInputSite ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite</InterfaceMember>
@@ -764,6 +786,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="VB.NET" Value="Function OnMnemonic (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean Implements IKeyboardInputSink.OnMnemonic" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers) = System::Windows::Interop::IKeyboardInputSink::OnMnemonic;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)</InterfaceMember>
@@ -805,6 +828,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Interop.IKeyboardInputSite System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(class System.Windows.Interop.IKeyboardInputSink sink) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)" />
       <MemberSignature Language="VB.NET" Value="Function RegisterKeyboardInputSink (sink As IKeyboardInputSink) As IKeyboardInputSite Implements IKeyboardInputSink.RegisterKeyboardInputSink" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Interop::IKeyboardInputSite ^ System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System::Windows::Interop::IKeyboardInputSink ^ sink) = System::Windows::Interop::IKeyboardInputSink::RegisterKeyboardInputSink;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)</InterfaceMember>
@@ -844,6 +868,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TabInto(class System.Windows.Input.TraversalRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#TabInto(System.Windows.Input.TraversalRequest)" />
       <MemberSignature Language="VB.NET" Value="Function TabInto (request As TraversalRequest) As Boolean Implements IKeyboardInputSink.TabInto" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.TabInto(System::Windows::Input::TraversalRequest ^ request) = System::Windows::Interop::IKeyboardInputSink::TabInto;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)</InterfaceMember>
@@ -879,6 +904,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="VB.NET" Value="Function TranslateAccelerator (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean Implements IKeyboardInputSink.TranslateAccelerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers) = System::Windows::Interop::IKeyboardInputSink::TranslateAccelerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)</InterfaceMember>
@@ -921,6 +947,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.System#Windows#Interop#IKeyboardInputSink#TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="VB.NET" Value="Function TranslateChar (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean Implements IKeyboardInputSink.TranslateChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers) = System::Windows::Interop::IKeyboardInputSink::TranslateChar;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)</InterfaceMember>
@@ -963,6 +990,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.TabIntoCore(System.Windows.Input.TraversalRequest)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function TabIntoCore (request As TraversalRequest) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TabIntoCore : System.Windows.Input.TraversalRequest -&gt; bool&#xA;override this.TabIntoCore : System.Windows.Input.TraversalRequest -&gt; bool" Usage="hwndHost.TabIntoCore request" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool TabIntoCore(System::Windows::Input::TraversalRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -988,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function TranslateAcceleratorCore (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TranslateAcceleratorCore :  * System.Windows.Input.ModifierKeys -&gt; bool&#xA;override this.TranslateAcceleratorCore :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="hwndHost.TranslateAcceleratorCore (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool TranslateAcceleratorCore(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1020,6 +1049,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.TranslateCharCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function TranslateCharCore (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TranslateCharCore :  * System.Windows.Input.ModifierKeys -&gt; bool&#xA;override this.TranslateCharCore :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="hwndHost.TranslateCharCore (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool TranslateCharCore(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1052,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.UpdateWindowPos" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateWindowPos ()" />
       <MemberSignature Language="F#" Value="member this.UpdateWindowPos : unit -&gt; unit" Usage="hwndHost.UpdateWindowPos " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateWindowPos();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1086,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function WndProc (hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr, ByRef handled As Boolean) As IntPtr" />
       <MemberSignature Language="F#" Value="abstract member WndProc : nativeint * int * nativeint * nativeint *  -&gt; nativeint&#xA;override this.WndProc : nativeint * int * nativeint * nativeint *  -&gt; nativeint" Usage="hwndHost.WndProc (hwnd, msg, wParam, lParam, handled)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, bool % handled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MasterPage" />
   <TypeSignature Language="VB.NET" Value="Public Class MasterPage&#xA;Inherits UserControl" />
   <TypeSignature Language="F#" Value="type MasterPage = class&#xA;    inherit UserControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MasterPage : System::Web::UI::UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -263,6 +264,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPage.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MasterPage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPage.AddContentTemplate(System.String,System.Web.UI.ITemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub AddContentTemplate (templateName As String, template As ITemplate)" />
       <MemberSignature Language="F#" Value="member this.AddContentTemplate : string * System.Web.UI.ITemplate -&gt; unit" Usage="masterPage.AddContentTemplate (templateName, template)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void AddContentTemplate(System::String ^ templateName, System::Web::UI::ITemplate ^ template);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.ContentPlaceHolders" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ContentPlaceHolders As IList" />
       <MemberSignature Language="F#" Value="member this.ContentPlaceHolders : System.Collections.IList" Usage="System.Web.UI.MasterPage.ContentPlaceHolders" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::IList ^ ContentPlaceHolders { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.ContentTemplates" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ContentTemplates As IDictionary" />
       <MemberSignature Language="F#" Value="member this.ContentTemplates : System.Collections.IDictionary" Usage="System.Web.UI.MasterPage.ContentTemplates" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::IDictionary ^ ContentTemplates { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(System.Web.UI.Control,System.Web.UI.ITemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstantiateInContentPlaceHolder (contentPlaceHolder As Control, template As ITemplate)" />
       <MemberSignature Language="F#" Value="member this.InstantiateInContentPlaceHolder : System.Web.UI.Control * System.Web.UI.ITemplate -&gt; unit" Usage="masterPage.InstantiateInContentPlaceHolder (contentPlaceHolder, template)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstantiateInContentPlaceHolder(System::Web::UI::Control ^ contentPlaceHolder, System::Web::UI::ITemplate ^ template);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.Master" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Master As MasterPage" />
       <MemberSignature Language="F#" Value="member this.Master : System.Web.UI.MasterPage" Usage="System.Web.UI.MasterPage.Master" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MasterPage ^ Master { System::Web::UI::MasterPage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -542,6 +549,7 @@ This is the content of a Content control.
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MasterPage.MasterPageFile" />
       <MemberSignature Language="VB.NET" Value="Public Property MasterPageFile As String" />
       <MemberSignature Language="F#" Value="member this.MasterPageFile : string with get, set" Usage="System.Web.UI.MasterPage.MasterPageFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MasterPageFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

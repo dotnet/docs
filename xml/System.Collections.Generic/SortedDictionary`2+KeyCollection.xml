@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedDictionary`2.KeyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SortedDictionary(Of TKey, TValue).KeyCollection&#xA;Implements ICollection, ICollection(Of TKey), IEnumerable(Of TKey), IReadOnlyCollection(Of TKey)" />
   <TypeSignature Language="F#" Value="type SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection = class&#xA;    interface ICollection&lt;'Key&gt;&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;'Key&gt;&#xA;    interface seq&lt;'Key&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class SortedDictionary&lt;TKey, TValue&gt;::KeyCollection sealed : System::Collections::Generic::ICollection&lt;TKey&gt;, System::Collections::Generic::IEnumerable&lt;TKey&gt;, System::Collections::Generic::IReadOnlyCollection&lt;TKey&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As SortedDictionary(Of TKey, TValue))" />
       <MemberSignature Language="F#" Value="new System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection : System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt; -&gt; System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection" Usage="new System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection dictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyCollection(System::Collections::Generic::SortedDictionary&lt;TKey, TValue&gt; ^ dictionary);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TKey(), index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : 'Key[] * int -&gt; unit&#xA;override this.CopyTo : 'Key[] * int -&gt; unit" Usage="keyCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;TKey&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -207,6 +211,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As SortedDictionary(Of TKey, TValue).KeyCollection.Enumerator" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection.Enumerator" Usage="keyCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::SortedDictionary&lt;TKey, TValue&gt;::KeyCollection::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -263,6 +268,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;TKey&gt;.Add(!TKey item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (item As TKey) Implements ICollection(Of TKey).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;TKey&gt;.Add(TKey item) = System::Collections::Generic::ICollection&lt;TKey&gt;::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -301,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;TKey&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of TKey).Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;TKey&gt;.Clear() = System::Collections::Generic::ICollection&lt;TKey&gt;::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -343,6 +350,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;TKey&gt;.Contains(!TKey item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (item As TKey) As Boolean Implements ICollection(Of TKey).Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;TKey&gt;.Contains(TKey item) = System::Collections::Generic::ICollection&lt;TKey&gt;::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -391,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TKey).IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection.System.Collections.Generic.ICollection&lt;TKey&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;TKey&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -434,6 +443,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;TKey&gt;.Remove(!TKey item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Function Remove (item As TKey) As Boolean Implements ICollection(Of TKey).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;TKey&gt;.Remove(TKey item) = System::Collections::Generic::ICollection&lt;TKey&gt;::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -481,6 +491,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!TKey&gt; System.Collections.Generic.IEnumerable&lt;TKey&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#Generic#IEnumerable&lt;TKey&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of TKey) Implements IEnumerable(Of TKey).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;TKey&gt; ^ System.Collections.Generic.IEnumerable&lt;TKey&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;TKey&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -538,6 +549,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -608,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -657,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.KeyCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -732,6 +746,7 @@ finally
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.KeyCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

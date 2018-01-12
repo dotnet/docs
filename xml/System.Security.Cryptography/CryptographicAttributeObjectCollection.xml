@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicAttributeObjectCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CryptographicAttributeObjectCollection&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type CryptographicAttributeObjectCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CryptographicAttributeObjectCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicAttributeObjectCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.#ctor(System.Security.Cryptography.CryptographicAttributeObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attribute As CryptographicAttributeObject)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicAttributeObjectCollection : System.Security.Cryptography.CryptographicAttributeObject -&gt; System.Security.Cryptography.CryptographicAttributeObjectCollection" Usage="new System.Security.Cryptography.CryptographicAttributeObjectCollection attribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicAttributeObjectCollection(System::Security::Cryptography::CryptographicAttributeObject ^ attribute);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.Add(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Security.Cryptography.AsnEncodedData -&gt; int" Usage="cryptographicAttributeObjectCollection.Add asnEncodedData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.Add(System.Security.Cryptography.CryptographicAttributeObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (attribute As CryptographicAttributeObject) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : System.Security.Cryptography.CryptographicAttributeObject -&gt; int" Usage="cryptographicAttributeObjectCollection.Add attribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Security::Cryptography::CryptographicAttributeObject ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.CopyTo(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CryptographicAttributeObject(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.Security.Cryptography.CryptographicAttributeObject[] * int -&gt; unit" Usage="cryptographicAttributeObjectCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Security::Cryptography::CryptographicAttributeObject ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.CryptographicAttributeObjectCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As CryptographicAttributeObjectEnumerator" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Security.Cryptography.CryptographicAttributeObjectEnumerator" Usage="cryptographicAttributeObjectCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::CryptographicAttributeObjectEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.Cryptography.CryptographicAttributeObjectCollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -311,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As CryptographicAttributeObject" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.Cryptography.CryptographicAttributeObject" Usage="System.Security.Cryptography.CryptographicAttributeObjectCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObject ^ default[int] { System::Security::Cryptography::CryptographicAttributeObject ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -342,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.Remove(System.Security.Cryptography.CryptographicAttributeObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (attribute As CryptographicAttributeObject)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Security.Cryptography.CryptographicAttributeObject -&gt; unit" Usage="cryptographicAttributeObjectCollection.Remove attribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Security::Cryptography::CryptographicAttributeObject ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -374,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.Cryptography.CryptographicAttributeObjectCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -397,6 +409,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Security.Cryptography.CryptographicAttributeObjectCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -455,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptographicAttributeObjectCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Security.Cryptography.CryptographicAttributeObjectCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -478,6 +493,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicAttributeObjectCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

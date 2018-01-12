@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Exceptions.InternalLoggerException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InternalLoggerException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type InternalLoggerException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InternalLoggerException sealed : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InternalLoggerException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalLoggerException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InternalLoggerException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InternalLoggerException : string -&gt; Microsoft.Build.Exceptions.InternalLoggerException" Usage="new Microsoft.Build.Exceptions.InternalLoggerException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalLoggerException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InternalLoggerException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.InternalLoggerException : string * Exception -&gt; Microsoft.Build.Exceptions.InternalLoggerException" Usage="new Microsoft.Build.Exceptions.InternalLoggerException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalLoggerException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InternalLoggerException.BuildEventArgs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildEventArgs As BuildEventArgs" />
       <MemberSignature Language="F#" Value="member this.BuildEventArgs : Microsoft.Build.Framework.BuildEventArgs" Usage="Microsoft.Build.Exceptions.InternalLoggerException.BuildEventArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::BuildEventArgs ^ BuildEventArgs { Microsoft::Build::Framework::BuildEventArgs ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InternalLoggerException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As String" />
       <MemberSignature Language="F#" Value="member this.ErrorCode : string" Usage="Microsoft.Build.Exceptions.InternalLoggerException.ErrorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorCode { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.InternalLoggerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="internalLoggerException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InternalLoggerException.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpKeyword As String" />
       <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="Microsoft.Build.Exceptions.InternalLoggerException.HelpKeyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.InternalLoggerException.InitializationException" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitializationException As Boolean" />
       <MemberSignature Language="F#" Value="member this.InitializationException : bool" Usage="Microsoft.Build.Exceptions.InternalLoggerException.InitializationException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InitializationException { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

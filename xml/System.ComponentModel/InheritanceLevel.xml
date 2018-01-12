@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InheritanceLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum InheritanceLevel" />
   <TypeSignature Language="F#" Value="type InheritanceLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class InheritanceLevel" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceLevel.Inherited" />
       <MemberSignature Language="VB.NET" Value="Inherited" />
       <MemberSignature Language="F#" Value="Inherited = 1" Usage="System.ComponentModel.InheritanceLevel.Inherited" />
+      <MemberSignature Language="C++ CLI" Value="Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceLevel.InheritedReadOnly" />
       <MemberSignature Language="VB.NET" Value="InheritedReadOnly" />
       <MemberSignature Language="F#" Value="InheritedReadOnly = 2" Usage="System.ComponentModel.InheritanceLevel.InheritedReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="InheritedReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.InheritanceLevel.NotInherited" />
       <MemberSignature Language="VB.NET" Value="NotInherited" />
       <MemberSignature Language="F#" Value="NotInherited = 3" Usage="System.ComponentModel.InheritanceLevel.NotInherited" />
+      <MemberSignature Language="C++ CLI" Value="NotInherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

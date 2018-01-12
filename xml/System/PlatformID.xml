@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.PlatformID" />
   <TypeSignature Language="VB.NET" Value="Public Enum PlatformID" />
   <TypeSignature Language="F#" Value="type PlatformID = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PlatformID" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.MacOSX" />
       <MemberSignature Language="VB.NET" Value="MacOSX" />
       <MemberSignature Language="F#" Value="MacOSX = 6" Usage="System.PlatformID.MacOSX" />
+      <MemberSignature Language="C++ CLI" Value="MacOSX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.Unix" />
       <MemberSignature Language="VB.NET" Value="Unix" />
       <MemberSignature Language="F#" Value="Unix = 4" Usage="System.PlatformID.Unix" />
+      <MemberSignature Language="C++ CLI" Value="Unix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.Win32NT" />
       <MemberSignature Language="VB.NET" Value="Win32NT" />
       <MemberSignature Language="F#" Value="Win32NT = 2" Usage="System.PlatformID.Win32NT" />
+      <MemberSignature Language="C++ CLI" Value="Win32NT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.Win32S" />
       <MemberSignature Language="VB.NET" Value="Win32S" />
       <MemberSignature Language="F#" Value="Win32S = 0" Usage="System.PlatformID.Win32S" />
+      <MemberSignature Language="C++ CLI" Value="Win32S" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.Win32Windows" />
       <MemberSignature Language="VB.NET" Value="Win32Windows" />
       <MemberSignature Language="F#" Value="Win32Windows = 1" Usage="System.PlatformID.Win32Windows" />
+      <MemberSignature Language="C++ CLI" Value="Win32Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.WinCE" />
       <MemberSignature Language="VB.NET" Value="WinCE" />
       <MemberSignature Language="F#" Value="WinCE = 3" Usage="System.PlatformID.WinCE" />
+      <MemberSignature Language="C++ CLI" Value="WinCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.PlatformID.Xbox" />
       <MemberSignature Language="VB.NET" Value="Xbox" />
       <MemberSignature Language="F#" Value="Xbox = 5" Usage="System.PlatformID.Xbox" />
+      <MemberSignature Language="C++ CLI" Value="Xbox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

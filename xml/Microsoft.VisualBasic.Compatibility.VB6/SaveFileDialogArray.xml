@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray" />
   <TypeSignature Language="VB.NET" Value="Public Class SaveFileDialogArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="F#" Value="type SaveFileDialogArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SaveFileDialogArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SaveFileDialogArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SaveFileDialogArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="saveFileDialogArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.FileOk" />
       <MemberSignature Language="VB.NET" Value="Public Event FileOk As CancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.FileOk : System.ComponentModel.CancelEventHandler " Usage="member this.FileOk : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ FileOk;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -182,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="saveFileDialogArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.GetIndex(System.Windows.Forms.SaveFileDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As SaveFileDialog) As Short" />
       <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.SaveFileDialog -&gt; int16" Usage="saveFileDialogArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::SaveFileDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.HelpRequest" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.HelpRequest : EventHandler " Usage="member this.HelpRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -276,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="saveFileDialogArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -309,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As SaveFileDialog" />
       <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.SaveFileDialog" Usage="Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SaveFileDialog ^ default[short] { System::Windows::Forms::SaveFileDialog ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -348,6 +358,7 @@ MsgBox(CStr(SaveFileDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.ResetIndex(System.Windows.Forms.SaveFileDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As SaveFileDialog)" />
       <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.SaveFileDialog -&gt; unit" Usage="saveFileDialogArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::SaveFileDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -386,6 +397,7 @@ MsgBox(CStr(SaveFileDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.SetIndex(System.Windows.Forms.SaveFileDialog,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As SaveFileDialog, Index As Short)" />
       <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.SaveFileDialog * int16 -&gt; unit" Usage="saveFileDialogArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::SaveFileDialog ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -426,6 +438,7 @@ MsgBox(CStr(SaveFileDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.ShouldSerializeIndex(System.Windows.Forms.SaveFileDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As SaveFileDialog) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.SaveFileDialog -&gt; bool" Usage="saveFileDialogArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::SaveFileDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.StoryBreak" />
   <TypeSignature Language="VB.NET" Value="Public Class StoryBreak&#xA;Inherits BlockElement" />
   <TypeSignature Language="F#" Value="type StoryBreak = class&#xA;    inherit BlockElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StoryBreak : System::Windows::Documents::DocumentStructures::BlockElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryBreak.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StoryBreak();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

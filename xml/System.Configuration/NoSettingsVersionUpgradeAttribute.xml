@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.NoSettingsVersionUpgradeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NoSettingsVersionUpgradeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type NoSettingsVersionUpgradeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NoSettingsVersionUpgradeAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.NoSettingsVersionUpgradeAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoSettingsVersionUpgradeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

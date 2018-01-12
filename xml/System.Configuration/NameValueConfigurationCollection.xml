@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.NameValueConfigurationCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NameValueConfigurationCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type NameValueConfigurationCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameValueConfigurationCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueConfigurationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Add(System.Configuration.NameValueConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (nameValue As NameValueConfigurationElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Configuration.NameValueConfigurationElement -&gt; unit" Usage="nameValueConfigurationCollection.Add nameValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Configuration::NameValueConfigurationElement ^ nameValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Configuration.NameValueConfigurationCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="nameValueConfigurationCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="nameValueConfigurationCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="nameValueConfigurationCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As NameValueConfigurationElement" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.NameValueConfigurationElement with get, set" Usage="System.Configuration.NameValueConfigurationCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::NameValueConfigurationElement ^ default[System::String ^] { System::Configuration::NameValueConfigurationElement ^ get(System::String ^ name); void set(System::String ^ name, System::Configuration::NameValueConfigurationElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.NameValueConfigurationCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Remove(System.Configuration.NameValueConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (nameValue As NameValueConfigurationElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Configuration.NameValueConfigurationElement -&gt; unit" Usage="nameValueConfigurationCollection.Remove nameValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Configuration::NameValueConfigurationElement ^ nameValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -354,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="nameValueConfigurationCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

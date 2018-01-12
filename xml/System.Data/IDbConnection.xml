@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IDbConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbConnection&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type IDbConnection = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDbConnection : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As IDbTransaction" />
       <MemberSignature Language="F#" Value="abstract member BeginTransaction : unit -&gt; System.Data.IDbTransaction" Usage="iDbConnection.BeginTransaction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (il As IsolationLevel) As IDbTransaction" />
       <MemberSignature Language="F#" Value="abstract member BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.IDbTransaction" Usage="iDbConnection.BeginTransaction il" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbTransaction ^ BeginTransaction(System::Data::IsolationLevel il);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChangeDatabase (databaseName As String)" />
       <MemberSignature Language="F#" Value="abstract member ChangeDatabase : string -&gt; unit" Usage="iDbConnection.ChangeDatabase databaseName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeDatabase(System::String ^ databaseName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iDbConnection.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -234,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.IDbConnection.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int" Usage="System.Data.IDbConnection.ConnectionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionTimeout { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -316,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As IDbCommand" />
       <MemberSignature Language="F#" Value="abstract member CreateCommand : unit -&gt; System.Data.IDbCommand" Usage="iDbConnection.CreateCommand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -347,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Database As String" />
       <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.IDbConnection.Database" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -387,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="iDbConnection.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -417,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As ConnectionState" />
       <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.IDbConnection.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

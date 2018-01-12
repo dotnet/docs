@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataControlFieldDesigner" />
   <TypeSignature Language="F#" Value="type DataControlFieldDesigner = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataControlFieldDesigner abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataControlFieldDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateField" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateField () As DataControlField" />
       <MemberSignature Language="F#" Value="abstract member CreateField : unit -&gt; System.Web.UI.WebControls.DataControlField" Usage="dataControlFieldDesigner.CreateField " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::WebControls::DataControlField ^ CreateField();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateField (fieldSchema As IDataSourceFieldSchema) As DataControlField" />
       <MemberSignature Language="F#" Value="abstract member CreateField : System.Web.UI.Design.IDataSourceFieldSchema -&gt; System.Web.UI.WebControls.DataControlField" Usage="dataControlFieldDesigner.CreateField fieldSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::WebControls::DataControlField ^ CreateField(System::Web::UI::Design::IDataSourceFieldSchema ^ fieldSchema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.TemplateField CreateTemplateField(class System.Web.UI.WebControls.DataControlField dataControlField, class System.Web.UI.WebControls.DataBoundControl dataBoundControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)" />
       <MemberSignature Language="F#" Value="abstract member CreateTemplateField : System.Web.UI.WebControls.DataControlField * System.Web.UI.WebControls.DataBoundControl -&gt; System.Web.UI.WebControls.TemplateField" Usage="dataControlFieldDesigner.CreateTemplateField (dataControlField, dataBoundControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::WebControls::TemplateField ^ CreateTemplateField(System::Web::UI::WebControls::DataControlField ^ dataControlField, System::Web::UI::WebControls::DataBoundControl ^ dataBoundControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataControlFieldDesigner.DefaultNodeText" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultNodeText As String" />
       <MemberSignature Language="F#" Value="member this.DefaultNodeText : string" Usage="System.Web.UI.Design.WebControls.DataControlFieldDesigner.DefaultNodeText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultNodeText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetNewDataSourceName(System.Type,System.Web.UI.WebControls.DataBoundControlMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetNewDataSourceName (controlType As Type, mode As DataBoundControlMode) As String" />
       <MemberSignature Language="F#" Value="member this.GetNewDataSourceName : Type * System.Web.UI.WebControls.DataBoundControlMode -&gt; string" Usage="dataControlFieldDesigner.GetNewDataSourceName (controlType, mode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetNewDataSourceName(Type ^ controlType, System::Web::UI::WebControls::DataBoundControlMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetNodeText(class System.Web.UI.WebControls.DataControlField dataControlField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)" />
       <MemberSignature Language="F#" Value="abstract member GetNodeText : System.Web.UI.WebControls.DataControlField -&gt; string" Usage="dataControlFieldDesigner.GetNodeText dataControlField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetNodeText(System::Web::UI::WebControls::DataControlField ^ dataControlField);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="dataControlFieldDesigner.GetService serviceType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -225,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetTemplate(System.Web.UI.WebControls.DataBoundControl,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetTemplate (control As DataBoundControl, templateContent As String) As ITemplate" />
       <MemberSignature Language="F#" Value="member this.GetTemplate : System.Web.UI.WebControls.DataBoundControl * string -&gt; System.Web.UI.ITemplate" Usage="dataControlFieldDesigner.GetTemplate (control, templateContent)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::ITemplate ^ GetTemplate(System::Web::UI::WebControls::DataBoundControl ^ control, System::String ^ templateContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -250,6 +260,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.UI.WebControls.TemplateField GetTemplateField(class System.Web.UI.WebControls.DataControlField dataControlField, class System.Web.UI.WebControls.DataBoundControl dataBoundControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)" />
       <MemberSignature Language="F#" Value="member this.GetTemplateField : System.Web.UI.WebControls.DataControlField * System.Web.UI.WebControls.DataBoundControl -&gt; System.Web.UI.WebControls.TemplateField" Usage="dataControlFieldDesigner.GetTemplateField (dataControlField, dataBoundControl)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::WebControls::TemplateField ^ GetTemplateField(System::Web::UI::WebControls::DataControlField ^ dataControlField, System::Web::UI::WebControls::DataBoundControl ^ dataBoundControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -283,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataControlFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsEnabled (parent As DataBoundControl) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsEnabled : System.Web.UI.WebControls.DataBoundControl -&gt; bool" Usage="dataControlFieldDesigner.IsEnabled parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsEnabled(System::Web::UI::WebControls::DataBoundControl ^ parent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -307,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataControlFieldDesigner.ServiceProvider" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ServiceProvider As IServiceProvider" />
       <MemberSignature Language="F#" Value="member this.ServiceProvider : IServiceProvider" Usage="System.Web.UI.Design.WebControls.DataControlFieldDesigner.ServiceProvider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property IServiceProvider ^ ServiceProvider { IServiceProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -327,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataControlFieldDesigner.UsesSchema" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UsesSchema As Boolean" />
       <MemberSignature Language="F#" Value="member this.UsesSchema : bool" Usage="System.Web.UI.Design.WebControls.DataControlFieldDesigner.UsesSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool UsesSchema { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

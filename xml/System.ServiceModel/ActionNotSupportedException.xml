@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ActionNotSupportedException" />
   <TypeSignature Language="VB.NET" Value="Public Class ActionNotSupportedException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="F#" Value="type ActionNotSupportedException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActionNotSupportedException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ActionNotSupportedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionNotSupportedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ActionNotSupportedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ActionNotSupportedException : string -&gt; System.ServiceModel.ActionNotSupportedException" Usage="new System.ServiceModel.ActionNotSupportedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionNotSupportedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ActionNotSupportedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ActionNotSupportedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.ActionNotSupportedException" Usage="new System.ServiceModel.ActionNotSupportedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActionNotSupportedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ActionNotSupportedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ActionNotSupportedException : string * Exception -&gt; System.ServiceModel.ActionNotSupportedException" Usage="new System.ServiceModel.ActionNotSupportedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionNotSupportedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultImportOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultImportOptions" />
   <TypeSignature Language="F#" Value="type FaultImportOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultImportOptions" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultImportOptions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultImportOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultImportOptions.UseMessageFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property UseMessageFormat As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseMessageFormat : bool with get, set" Usage="System.ServiceModel.FaultImportOptions.UseMessageFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseMessageFormat { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

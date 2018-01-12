@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceHostingEnvironmentSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ServiceHostingEnvironmentSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostingEnvironmentSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHostingEnvironmentSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.AspNetCompatibilityEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AspNetCompatibilityEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.AspNetCompatibilityEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.AspNetCompatibilityEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AspNetCompatibilityEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.BaseAddressPrefixFilters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseAddressPrefixFilters As BaseAddressPrefixFilterElementCollection" />
       <MemberSignature Language="F#" Value="member this.BaseAddressPrefixFilters : System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.BaseAddressPrefixFilters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::BaseAddressPrefixFilterElementCollection ^ BaseAddressPrefixFilters { System::ServiceModel::Configuration::BaseAddressPrefixFilterElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.CloseIdleServicesAtLowMemory" />
       <MemberSignature Language="VB.NET" Value="Public Property CloseIdleServicesAtLowMemory As Boolean" />
       <MemberSignature Language="F#" Value="member this.CloseIdleServicesAtLowMemory : bool with get, set" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.CloseIdleServicesAtLowMemory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CloseIdleServicesAtLowMemory { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.MinFreeMemoryPercentageToActivateService" />
       <MemberSignature Language="VB.NET" Value="Public Property MinFreeMemoryPercentageToActivateService As Integer" />
       <MemberSignature Language="F#" Value="member this.MinFreeMemoryPercentageToActivateService : int with get, set" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.MinFreeMemoryPercentageToActivateService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinFreeMemoryPercentageToActivateService { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.MultipleSiteBindingsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property MultipleSiteBindingsEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.MultipleSiteBindingsEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.MultipleSiteBindingsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultipleSiteBindingsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="serviceHostingEnvironmentSection.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceActivations As ServiceActivationElementCollection" />
       <MemberSignature Language="F#" Value="member this.ServiceActivations : System.ServiceModel.Configuration.ServiceActivationElementCollection" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceActivationElementCollection ^ ServiceActivations { System::ServiceModel::Configuration::ServiceActivationElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.TransportConfigurationTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransportConfigurationTypes As TransportConfigurationTypeElementCollection" />
       <MemberSignature Language="F#" Value="member this.TransportConfigurationTypes : System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection" Usage="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.TransportConfigurationTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::TransportConfigurationTypeElementCollection ^ TransportConfigurationTypes { System::ServiceModel::Configuration::TransportConfigurationTypeElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

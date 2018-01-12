@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ISecuritySession" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISecuritySession&#xA;Implements ISession" />
   <TypeSignature Language="F#" Value="type ISecuritySession = interface&#xA;    interface ISession" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISecuritySession : System::ServiceModel::Channels::ISession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ISecuritySession.RemoteIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteIdentity As EndpointIdentity" />
       <MemberSignature Language="F#" Value="member this.RemoteIdentity : System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.Security.ISecuritySession.RemoteIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointIdentity ^ RemoteIdentity { System::ServiceModel::EndpointIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

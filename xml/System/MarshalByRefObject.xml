@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.MarshalByRefObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarshalByRefObject" />
   <TypeSignature Language="F#" Value="type MarshalByRefObject = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MarshalByRefObject abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MarshalByRefObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.CreateObjRef(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateObjRef (requestedType As Type) As ObjRef" />
       <MemberSignature Language="F#" Value="abstract member CreateObjRef : Type -&gt; System.Runtime.Remoting.ObjRef&#xA;override this.CreateObjRef : Type -&gt; System.Runtime.Remoting.ObjRef" Usage="marshalByRefObject.CreateObjRef requestedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::ObjRef ^ CreateObjRef(Type ^ requestedType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.GetLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLifetimeService () As Object" />
       <MemberSignature Language="F#" Value="abstract member GetLifetimeService : unit -&gt; obj&#xA;override this.GetLifetimeService : unit -&gt; obj" Usage="marshalByRefObject.GetLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="F#" Value="abstract member InitializeLifetimeService : unit -&gt; obj&#xA;override this.InitializeLifetimeService : unit -&gt; obj" Usage="marshalByRefObject.InitializeLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -233,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MemberwiseClone (cloneIdentity As Boolean) As MarshalByRefObject" />
       <MemberSignature Language="F#" Value="override this.MemberwiseClone : bool -&gt; MarshalByRefObject" Usage="marshalByRefObject.MemberwiseClone cloneIdentity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MarshalByRefObject ^ MemberwiseClone(bool cloneIdentity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

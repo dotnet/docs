@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WebScriptEnablingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebScriptEnablingBehavior&#xA;Inherits WebHttpBehavior" />
   <TypeSignature Language="F#" Value="type WebScriptEnablingBehavior = class&#xA;    inherit WebHttpBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebScriptEnablingBehavior sealed : System::ServiceModel::Description::WebHttpBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebScriptEnablingBehavior();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddClientErrorInspector(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.AddClientErrorInspector(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="F#" Value="override this.AddClientErrorInspector : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="webScriptEnablingBehavior.AddClientErrorInspector (endpoint, clientRuntime)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddClientErrorInspector(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddServerErrorHandlers(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.AddServerErrorHandlers(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
       <MemberSignature Language="F#" Value="override this.AddServerErrorHandlers : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit" Usage="webScriptEnablingBehavior.AddServerErrorHandlers (endpoint, endpointDispatcher)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddServerErrorHandlers(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::EndpointDispatcher ^ endpointDispatcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
       <MemberSignature Language="F#" Value="override this.ApplyClientBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.ClientRuntime -&gt; unit" Usage="webScriptEnablingBehavior.ApplyClientBehavior (endpoint, clientRuntime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyClientBehavior(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ clientRuntime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.EndpointDispatcher endpointDispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
       <MemberSignature Language="F#" Value="override this.ApplyDispatchBehavior : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Dispatcher.EndpointDispatcher -&gt; unit" Usage="webScriptEnablingBehavior.ApplyDispatchBehavior (endpoint, endpointDispatcher)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::EndpointDispatcher ^ endpointDispatcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebScriptEnablingBehavior.AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutomaticFormatSelectionEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutomaticFormatSelectionEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebScriptEnablingBehavior.AutomaticFormatSelectionEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutomaticFormatSelectionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultBodyStyle As WebMessageBodyStyle" />
       <MemberSignature Language="F#" Value="member this.DefaultBodyStyle : System.ServiceModel.Web.WebMessageBodyStyle with get, set" Usage="System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultBodyStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Web::WebMessageBodyStyle DefaultBodyStyle { System::ServiceModel::Web::WebMessageBodyStyle get(); void set(System::ServiceModel::Web::WebMessageBodyStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultOutgoingRequestFormat As WebMessageFormat" />
       <MemberSignature Language="F#" Value="member this.DefaultOutgoingRequestFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingRequestFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingRequestFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultOutgoingResponseFormat As WebMessageFormat" />
       <MemberSignature Language="F#" Value="member this.DefaultOutgoingResponseFormat : System.ServiceModel.Web.WebMessageFormat with get, set" Usage="System.ServiceModel.Description.WebScriptEnablingBehavior.DefaultOutgoingResponseFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -275,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebScriptEnablingBehavior.FaultExceptionEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property FaultExceptionEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.FaultExceptionEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebScriptEnablingBehavior.FaultExceptionEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool FaultExceptionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Dispatcher.QueryStringConverter GetQueryStringConverter(class System.ServiceModel.Description.OperationDescription operationDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.GetQueryStringConverter(System.ServiceModel.Description.OperationDescription)" />
       <MemberSignature Language="F#" Value="override this.GetQueryStringConverter : System.ServiceModel.Description.OperationDescription -&gt; System.ServiceModel.Dispatcher.QueryStringConverter" Usage="webScriptEnablingBehavior.GetQueryStringConverter operationDescription" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Dispatcher::QueryStringConverter ^ GetQueryStringConverter(System::ServiceModel::Description::OperationDescription ^ operationDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -318,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebScriptEnablingBehavior.HelpEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property HelpEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.HelpEnabled : bool with get, set" Usage="System.ServiceModel.Description.WebScriptEnablingBehavior.HelpEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HelpEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -346,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebScriptEnablingBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="F#" Value="override this.Validate : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="webScriptEnablingBehavior.Validate endpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

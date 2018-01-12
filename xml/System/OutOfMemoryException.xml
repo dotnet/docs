@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.OutOfMemoryException" />
   <TypeSignature Language="VB.NET" Value="Public Class OutOfMemoryException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type OutOfMemoryException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutOfMemoryException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -148,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.OutOfMemoryException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutOfMemoryException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -192,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.OutOfMemoryException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new OutOfMemoryException : string -&gt; OutOfMemoryException" Usage="new System.OutOfMemoryException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutOfMemoryException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -239,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.OutOfMemoryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new OutOfMemoryException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; OutOfMemoryException" Usage="new System.OutOfMemoryException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OutOfMemoryException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.OutOfMemoryException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new OutOfMemoryException : string * Exception -&gt; OutOfMemoryException" Usage="new System.OutOfMemoryException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutOfMemoryException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

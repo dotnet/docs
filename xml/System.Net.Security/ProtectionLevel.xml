@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Security.ProtectionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ProtectionLevel" />
   <TypeSignature Language="F#" Value="type ProtectionLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProtectionLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.ProtectionLevel.EncryptAndSign" />
       <MemberSignature Language="VB.NET" Value="EncryptAndSign" />
       <MemberSignature Language="F#" Value="EncryptAndSign = 2" Usage="System.Net.Security.ProtectionLevel.EncryptAndSign" />
+      <MemberSignature Language="C++ CLI" Value="EncryptAndSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.ProtectionLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Security.ProtectionLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Security.ProtectionLevel.Sign" />
       <MemberSignature Language="VB.NET" Value="Sign" />
       <MemberSignature Language="F#" Value="Sign = 1" Usage="System.Net.Security.ProtectionLevel.Sign" />
+      <MemberSignature Language="C++ CLI" Value="Sign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.StructLayoutAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StructLayoutAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type StructLayoutAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StructLayoutAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (layoutKind As Short)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.StructLayoutAttribute : int16 -&gt; System.Runtime.InteropServices.StructLayoutAttribute" Usage="new System.Runtime.InteropServices.StructLayoutAttribute layoutKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StructLayoutAttribute(short layoutKind);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.InteropServices.LayoutKind layoutKind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.StructLayoutAttribute : System.Runtime.InteropServices.LayoutKind -&gt; System.Runtime.InteropServices.StructLayoutAttribute" Usage="new System.Runtime.InteropServices.StructLayoutAttribute layoutKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StructLayoutAttribute(System::Runtime::InteropServices::LayoutKind layoutKind);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.StructLayoutAttribute.CharSet" />
       <MemberSignature Language="VB.NET" Value="Public CharSet As CharSet " />
       <MemberSignature Language="F#" Value="val mutable CharSet : System.Runtime.InteropServices.CharSet" Usage="System.Runtime.InteropServices.StructLayoutAttribute.CharSet" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::CharSet CharSet;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.StructLayoutAttribute.Pack" />
       <MemberSignature Language="VB.NET" Value="Public Pack As Integer " />
       <MemberSignature Language="F#" Value="val mutable Pack : int" Usage="System.Runtime.InteropServices.StructLayoutAttribute.Pack" />
+      <MemberSignature Language="C++ CLI" Value="public: int Pack;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -277,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.StructLayoutAttribute.Size" />
       <MemberSignature Language="VB.NET" Value="Public Size As Integer " />
       <MemberSignature Language="F#" Value="val mutable Size : int" Usage="System.Runtime.InteropServices.StructLayoutAttribute.Size" />
+      <MemberSignature Language="C++ CLI" Value="public: int Size;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -316,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.StructLayoutAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As LayoutKind" />
       <MemberSignature Language="F#" Value="member this.Value : System.Runtime.InteropServices.LayoutKind" Usage="System.Runtime.InteropServices.StructLayoutAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::LayoutKind Value { System::Runtime::InteropServices::LayoutKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

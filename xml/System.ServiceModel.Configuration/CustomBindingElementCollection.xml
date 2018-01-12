@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CustomBindingElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomBindingElementCollection&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of CustomBindingElement)" />
   <TypeSignature Language="F#" Value="type CustomBindingElementCollection = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;CustomBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomBindingElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;System::ServiceModel::Configuration::CustomBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CustomBindingElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBindingElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CustomBindingElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="customBindingElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

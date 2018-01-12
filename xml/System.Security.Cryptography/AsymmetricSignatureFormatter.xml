@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricSignatureFormatter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricSignatureFormatter" />
   <TypeSignature Language="F#" Value="type AsymmetricSignatureFormatter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsymmetricSignatureFormatter abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsymmetricSignatureFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSignature (rgbHash As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member CreateSignature : byte[] -&gt; byte[]" Usage="asymmetricSignatureFormatter.CreateSignature rgbHash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ CreateSignature(cli::array &lt;System::Byte&gt; ^ rgbHash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.CreateSignature(System.Security.Cryptography.HashAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSignature (hash As HashAlgorithm) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member CreateSignature : System.Security.Cryptography.HashAlgorithm -&gt; byte[]&#xA;override this.CreateSignature : System.Security.Cryptography.HashAlgorithm -&gt; byte[]" Usage="asymmetricSignatureFormatter.CreateSignature hash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ CreateSignature(System::Security::Cryptography::HashAlgorithm ^ hash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.SetHashAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetHashAlgorithm (strName As String)" />
       <MemberSignature Language="F#" Value="abstract member SetHashAlgorithm : string -&gt; unit" Usage="asymmetricSignatureFormatter.SetHashAlgorithm strName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetHashAlgorithm(System::String ^ strName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetKey (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="F#" Value="abstract member SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="asymmetricSignatureFormatter.SetKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

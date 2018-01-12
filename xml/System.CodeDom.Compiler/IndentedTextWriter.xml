@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.IndentedTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class IndentedTextWriter&#xA;Inherits TextWriter" />
   <TypeSignature Language="F#" Value="type IndentedTextWriter = class&#xA;    inherit TextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndentedTextWriter : System::IO::TextWriter" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.IndentedTextWriter : System.IO.TextWriter -&gt; System.CodeDom.Compiler.IndentedTextWriter" Usage="new System.CodeDom.Compiler.IndentedTextWriter writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.IndentedTextWriter : System.IO.TextWriter * string -&gt; System.CodeDom.Compiler.IndentedTextWriter" Usage="new System.CodeDom.Compiler.IndentedTextWriter (writer, tabString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndentedTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="indentedTextWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.IndentedTextWriter.DefaultTabString" />
       <MemberSignature Language="VB.NET" Value="Public Const DefaultTabString As String " />
       <MemberSignature Language="F#" Value="val mutable DefaultTabString : string" Usage="System.CodeDom.Compiler.IndentedTextWriter.DefaultTabString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultTabString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Encoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="System.CodeDom.Compiler.IndentedTextWriter.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="indentedTextWriter.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.Indent" />
       <MemberSignature Language="VB.NET" Value="Public Property Indent As Integer" />
       <MemberSignature Language="F#" Value="member this.Indent : int with get, set" Usage="System.CodeDom.Compiler.IndentedTextWriter.Indent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Indent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.InnerWriter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerWriter As TextWriter" />
       <MemberSignature Language="F#" Value="member this.InnerWriter : System.IO.TextWriter" Usage="System.CodeDom.Compiler.IndentedTextWriter.InnerWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::TextWriter ^ InnerWriter { System::IO::TextWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.IndentedTextWriter.NewLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property NewLine As String" />
       <MemberSignature Language="F#" Value="member this.NewLine : string with get, set" Usage="System.CodeDom.Compiler.IndentedTextWriter.NewLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewLine { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.OutputTabs" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputTabs ()" />
       <MemberSignature Language="F#" Value="abstract member OutputTabs : unit -&gt; unit&#xA;override this.OutputTabs : unit -&gt; unit" Usage="indentedTextWriter.OutputTabs " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTabs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -407,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Write : bool -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -439,6 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Char)" />
       <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -471,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char())" />
       <MemberSignature Language="F#" Value="override this.Write : char[] -&gt; unit" Usage="indentedTextWriter.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -503,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Double)" />
       <MemberSignature Language="F#" Value="override this.Write : double -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Integer)" />
       <MemberSignature Language="F#" Value="override this.Write : int -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -567,6 +583,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Long)" />
       <MemberSignature Language="F#" Value="override this.Write : int64 -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -599,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Object)" />
       <MemberSignature Language="F#" Value="override this.Write : obj -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -631,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As Single)" />
       <MemberSignature Language="F#" Value="override this.Write : single -&gt; unit" Usage="indentedTextWriter.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -663,6 +682,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (s As String)" />
       <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="indentedTextWriter.Write s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -695,6 +715,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="indentedTextWriter.Write (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -729,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj[] -&gt; unit" Usage="indentedTextWriter.Write (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -769,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="override this.Write : char[] * int * int -&gt; unit" Usage="indentedTextWriter.Write (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -805,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.Write(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj * obj -&gt; unit" Usage="indentedTextWriter.Write (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -851,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine ()" />
       <MemberSignature Language="F#" Value="override this.WriteLine : unit -&gt; unit" Usage="indentedTextWriter.WriteLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -880,6 +905,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Boolean)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : bool -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -912,6 +938,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Char)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : char -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -944,6 +971,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char())" />
       <MemberSignature Language="F#" Value="override this.WriteLine : char[] -&gt; unit" Usage="indentedTextWriter.WriteLine buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -976,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Double)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : double -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1008,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Integer)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : int -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1040,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Long)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : int64 -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1072,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Object)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : obj -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1104,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As Single)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : single -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1136,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (s As String)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="indentedTextWriter.WriteLine s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1168,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As UInteger)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : uint32 -&gt; unit" Usage="indentedTextWriter.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1205,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj -&gt; unit" Usage="indentedTextWriter.WriteLine (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1239,6 +1275,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj[] -&gt; unit" Usage="indentedTextWriter.WriteLine (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1279,6 +1316,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : char[] * int * int -&gt; unit" Usage="indentedTextWriter.WriteLine (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1315,6 +1353,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLine(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj -&gt; unit" Usage="indentedTextWriter.WriteLine (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1351,6 +1390,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.IndentedTextWriter.WriteLineNoTabs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteLineNoTabs (s As String)" />
       <MemberSignature Language="F#" Value="member this.WriteLineNoTabs : string -&gt; unit" Usage="indentedTextWriter.WriteLineNoTabs s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteLineNoTabs(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

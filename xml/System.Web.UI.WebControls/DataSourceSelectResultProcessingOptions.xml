@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class DataSourceSelectResultProcessingOptions" />
   <TypeSignature Language="F#" Value="type DataSourceSelectResultProcessingOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSourceSelectResultProcessingOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSourceSelectResultProcessingOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.AutoPage" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoPage As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoPage : bool with get, set" Usage="System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.AutoPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoPage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.AutoSort" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSort As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoSort : bool with get, set" Usage="System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.AutoSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSort { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.ModelType" />
       <MemberSignature Language="VB.NET" Value="Public Property ModelType As Type" />
       <MemberSignature Language="F#" Value="member this.ModelType : Type with get, set" Usage="System.Web.UI.WebControls.DataSourceSelectResultProcessingOptions.ModelType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ModelType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.DictionaryEntry" />
   <TypeSignature Language="VB.NET" Value="Public Structure DictionaryEntry" />
   <TypeSignature Language="F#" Value="type DictionaryEntry = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class DictionaryEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryEntry.#ctor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As Object, value As Object)" />
       <MemberSignature Language="F#" Value="new System.Collections.DictionaryEntry : obj * obj -&gt; System.Collections.DictionaryEntry" Usage="new System.Collections.DictionaryEntry (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DictionaryEntry(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryEntry.Deconstruct(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Deconstruct (ByRef key As Object, ByRef value As Object)" />
       <MemberSignature Language="F#" Value="member this.Deconstruct :  *  -&gt; unit" Usage="dictionaryEntry.Deconstruct (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deconstruct([Runtime::InteropServices::Out] System::Object ^ % key, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryEntry.Key" />
       <MemberSignature Language="VB.NET" Value="Public Property Key As Object" />
       <MemberSignature Language="F#" Value="member this.Key : obj with get, set" Usage="System.Collections.DictionaryEntry.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Key { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -186,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
       <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Collections.DictionaryEntry.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

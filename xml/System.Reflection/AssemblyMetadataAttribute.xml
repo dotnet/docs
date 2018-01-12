@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyMetadataAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyMetadataAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyMetadataAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyMetadataAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyMetadataAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, value As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AssemblyMetadataAttribute : string * string -&gt; System.Reflection.AssemblyMetadataAttribute" Usage="new System.Reflection.AssemblyMetadataAttribute (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyMetadataAttribute(System::String ^ key, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyMetadataAttribute.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As String" />
       <MemberSignature Language="F#" Value="member this.Key : string" Usage="System.Reflection.AssemblyMetadataAttribute.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyMetadataAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Reflection.AssemblyMetadataAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

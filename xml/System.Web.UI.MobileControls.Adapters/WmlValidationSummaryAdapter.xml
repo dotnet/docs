@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class WmlValidationSummaryAdapter&#xA;Inherits WmlControlAdapter" />
   <TypeSignature Language="F#" Value="type WmlValidationSummaryAdapter = class&#xA;    inherit WmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlValidationSummaryAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlValidationSummaryAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As ValidationSummary" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.ValidationSummary" Usage="System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::ValidationSummary ^ Control { System::Web::UI::MobileControls::ValidationSummary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="wmlValidationSummaryAdapter.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlValidationSummaryAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlValidationSummaryAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.CompressionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompressionMode" />
   <TypeSignature Language="F#" Value="type CompressionMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompressionMode" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionMode.Compress" />
       <MemberSignature Language="VB.NET" Value="Compress" />
       <MemberSignature Language="F#" Value="Compress = 1" Usage="System.IO.Compression.CompressionMode.Compress" />
+      <MemberSignature Language="C++ CLI" Value="Compress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionMode.Decompress" />
       <MemberSignature Language="VB.NET" Value="Decompress" />
       <MemberSignature Language="F#" Value="Decompress = 0" Usage="System.IO.Compression.CompressionMode.Decompress" />
+      <MemberSignature Language="C++ CLI" Value="Decompress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>

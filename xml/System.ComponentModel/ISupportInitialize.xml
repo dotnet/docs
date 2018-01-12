@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISupportInitialize" />
   <TypeSignature Language="F#" Value="type ISupportInitialize = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISupportInitialize.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit" Usage="iSupportInitialize.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISupportInitialize.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit" Usage="iSupportInitialize.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

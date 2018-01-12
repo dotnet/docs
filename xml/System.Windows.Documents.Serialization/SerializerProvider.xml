@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.SerializerProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SerializerProvider" />
   <TypeSignature Language="F#" Value="type SerializerProvider = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializerProvider sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializerProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter(class System.Windows.Documents.Serialization.SerializerDescriptor serializerDescriptor, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter(System.Windows.Documents.Serialization.SerializerDescriptor,System.IO.Stream)" />
       <MemberSignature Language="F#" Value="member this.CreateSerializerWriter : System.Windows.Documents.Serialization.SerializerDescriptor * System.IO.Stream -&gt; System.Windows.Documents.Serialization.SerializerWriter" Usage="serializerProvider.CreateSerializerWriter (serializerDescriptor, stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::Serialization::SerializerWriter ^ CreateSerializerWriter(System::Windows::Documents::Serialization::SerializerDescriptor ^ serializerDescriptor, System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.SerializerProvider.InstalledSerializers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstalledSerializers As ReadOnlyCollection(Of SerializerDescriptor)" />
       <MemberSignature Language="F#" Value="member this.InstalledSerializers : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Documents.Serialization.SerializerDescriptor&gt;" Usage="System.Windows.Documents.Serialization.SerializerProvider.InstalledSerializers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Documents::Serialization::SerializerDescriptor ^&gt; ^ InstalledSerializers { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Documents::Serialization::SerializerDescriptor ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterSerializer(class System.Windows.Documents.Serialization.SerializerDescriptor serializerDescriptor, bool overwrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerProvider.RegisterSerializer(System.Windows.Documents.Serialization.SerializerDescriptor,System.Boolean)" />
       <MemberSignature Language="F#" Value="static member RegisterSerializer : System.Windows.Documents.Serialization.SerializerDescriptor * bool -&gt; unit" Usage="System.Windows.Documents.Serialization.SerializerProvider.RegisterSerializer (serializerDescriptor, overwrite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterSerializer(System::Windows::Documents::Serialization::SerializerDescriptor ^ serializerDescriptor, bool overwrite);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UnregisterSerializer(class System.Windows.Documents.Serialization.SerializerDescriptor serializerDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerProvider.UnregisterSerializer(System.Windows.Documents.Serialization.SerializerDescriptor)" />
       <MemberSignature Language="F#" Value="static member UnregisterSerializer : System.Windows.Documents.Serialization.SerializerDescriptor -&gt; unit" Usage="System.Windows.Documents.Serialization.SerializerProvider.UnregisterSerializer serializerDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterSerializer(System::Windows::Documents::Serialization::SerializerDescriptor ^ serializerDescriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

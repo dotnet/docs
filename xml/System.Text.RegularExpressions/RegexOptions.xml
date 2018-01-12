@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum RegexOptions" />
   <TypeSignature Language="F#" Value="type RegexOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegexOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.Compiled" />
       <MemberSignature Language="VB.NET" Value="Compiled" />
       <MemberSignature Language="F#" Value="Compiled = 8" Usage="System.Text.RegularExpressions.RegexOptions.Compiled" />
+      <MemberSignature Language="C++ CLI" Value="Compiled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.CultureInvariant" />
       <MemberSignature Language="VB.NET" Value="CultureInvariant" />
       <MemberSignature Language="F#" Value="CultureInvariant = 512" Usage="System.Text.RegularExpressions.RegexOptions.CultureInvariant" />
+      <MemberSignature Language="C++ CLI" Value="CultureInvariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.ECMAScript" />
       <MemberSignature Language="VB.NET" Value="ECMAScript" />
       <MemberSignature Language="F#" Value="ECMAScript = 256" Usage="System.Text.RegularExpressions.RegexOptions.ECMAScript" />
+      <MemberSignature Language="C++ CLI" Value="ECMAScript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.ExplicitCapture" />
       <MemberSignature Language="VB.NET" Value="ExplicitCapture" />
       <MemberSignature Language="F#" Value="ExplicitCapture = 4" Usage="System.Text.RegularExpressions.RegexOptions.ExplicitCapture" />
+      <MemberSignature Language="C++ CLI" Value="ExplicitCapture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -201,6 +206,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.IgnoreCase" />
       <MemberSignature Language="VB.NET" Value="IgnoreCase" />
       <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Text.RegularExpressions.RegexOptions.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace" />
       <MemberSignature Language="VB.NET" Value="IgnorePatternWhitespace" />
       <MemberSignature Language="F#" Value="IgnorePatternWhitespace = 32" Usage="System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="IgnorePatternWhitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.Multiline" />
       <MemberSignature Language="VB.NET" Value="Multiline" />
       <MemberSignature Language="F#" Value="Multiline = 2" Usage="System.Text.RegularExpressions.RegexOptions.Multiline" />
+      <MemberSignature Language="C++ CLI" Value="Multiline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Text.RegularExpressions.RegexOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="RightToLeft" />
       <MemberSignature Language="F#" Value="RightToLeft = 64" Usage="System.Text.RegularExpressions.RegexOptions.RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -361,6 +371,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.Singleline" />
       <MemberSignature Language="VB.NET" Value="Singleline" />
       <MemberSignature Language="F#" Value="Singleline = 16" Usage="System.Text.RegularExpressions.RegexOptions.Singleline" />
+      <MemberSignature Language="C++ CLI" Value="Singleline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>

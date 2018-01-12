@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlPanelAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class WmlPanelAdapter&#xA;Inherits WmlControlAdapter" />
   <TypeSignature Language="F#" Value="type WmlPanelAdapter = class&#xA;    inherit WmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlPanelAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlPanelAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As Panel" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.Panel" Usage="System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Panel ^ Control { System::Web::UI::MobileControls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPanelAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlPanelAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

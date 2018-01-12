@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRequestBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpRequestBase" />
   <TypeSignature Language="F#" Value="type HttpRequestBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestBase abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpRequestBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Abort ()" />
       <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit&#xA;override this.Abort : unit -&gt; unit" Usage="httpRequestBase.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.AcceptTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AcceptTypes As String()" />
       <MemberSignature Language="F#" Value="member this.AcceptTypes : string[]" Usage="System.Web.HttpRequestBase.AcceptTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AcceptTypes { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.AnonymousID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AnonymousID As String" />
       <MemberSignature Language="F#" Value="member this.AnonymousID : string" Usage="System.Web.HttpRequestBase.AnonymousID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnonymousID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ApplicationPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ApplicationPath As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationPath : string" Usage="System.Web.HttpRequestBase.ApplicationPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.AppRelativeCurrentExecutionFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AppRelativeCurrentExecutionFilePath As String" />
       <MemberSignature Language="F#" Value="member this.AppRelativeCurrentExecutionFilePath : string" Usage="System.Web.HttpRequestBase.AppRelativeCurrentExecutionFilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AppRelativeCurrentExecutionFilePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.BinaryRead(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BinaryRead (count As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member BinaryRead : int -&gt; byte[]&#xA;override this.BinaryRead : int -&gt; byte[]" Usage="httpRequestBase.BinaryRead count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ BinaryRead(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Browser" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Browser As HttpBrowserCapabilitiesBase" />
       <MemberSignature Language="F#" Value="member this.Browser : System.Web.HttpBrowserCapabilitiesBase" Usage="System.Web.HttpRequestBase.Browser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpBrowserCapabilitiesBase ^ Browser { System::Web::HttpBrowserCapabilitiesBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ClientCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ClientCertificate As HttpClientCertificate" />
       <MemberSignature Language="F#" Value="member this.ClientCertificate : System.Web.HttpClientCertificate" Usage="System.Web.HttpRequestBase.ClientCertificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpClientCertificate ^ ClientCertificate { System::Web::HttpClientCertificate ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -231,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentEncoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.ContentEncoding : System.Text.Encoding with get, set" Usage="System.Web.HttpRequestBase.ContentEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ ContentEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContentLength As Integer" />
       <MemberSignature Language="F#" Value="member this.ContentLength : int" Usage="System.Web.HttpRequestBase.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ContentLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ContentType As String" />
       <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Web.HttpRequestBase.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Cookies" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cookies As HttpCookieCollection" />
       <MemberSignature Language="F#" Value="member this.Cookies : System.Web.HttpCookieCollection" Usage="System.Web.HttpRequestBase.Cookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpCookieCollection ^ Cookies { System::Web::HttpCookieCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.CurrentExecutionFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrentExecutionFilePath As String" />
       <MemberSignature Language="F#" Value="member this.CurrentExecutionFilePath : string" Usage="System.Web.HttpRequestBase.CurrentExecutionFilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrentExecutionFilePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -345,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.CurrentExecutionFilePathExtension" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrentExecutionFilePathExtension As String" />
       <MemberSignature Language="F#" Value="member this.CurrentExecutionFilePathExtension : string" Usage="System.Web.HttpRequestBase.CurrentExecutionFilePathExtension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrentExecutionFilePathExtension { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.FilePath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FilePath As String" />
       <MemberSignature Language="F#" Value="member this.FilePath : string" Usage="System.Web.HttpRequestBase.FilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FilePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -386,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Files" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Files As HttpFileCollectionBase" />
       <MemberSignature Language="F#" Value="member this.Files : System.Web.HttpFileCollectionBase" Usage="System.Web.HttpRequestBase.Files" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpFileCollectionBase ^ Files { System::Web::HttpFileCollectionBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Filter As Stream" />
       <MemberSignature Language="F#" Value="member this.Filter : System.IO.Stream with get, set" Usage="System.Web.HttpRequestBase.Filter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ Filter { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -428,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Form" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Form As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.Form : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpRequestBase.Form" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Form { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.GetBufferedInputStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBufferedInputStream () As Stream" />
       <MemberSignature Language="F#" Value="abstract member GetBufferedInputStream : unit -&gt; System.IO.Stream&#xA;override this.GetBufferedInputStream : unit -&gt; System.IO.Stream" Usage="httpRequestBase.GetBufferedInputStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetBufferedInputStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -479,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.GetBufferlessInputStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBufferlessInputStream () As Stream" />
       <MemberSignature Language="F#" Value="abstract member GetBufferlessInputStream : unit -&gt; System.IO.Stream&#xA;override this.GetBufferlessInputStream : unit -&gt; System.IO.Stream" Usage="httpRequestBase.GetBufferlessInputStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetBufferlessInputStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.GetBufferlessInputStream(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBufferlessInputStream (disableMaxRequestLength As Boolean) As Stream" />
       <MemberSignature Language="F#" Value="abstract member GetBufferlessInputStream : bool -&gt; System.IO.Stream&#xA;override this.GetBufferlessInputStream : bool -&gt; System.IO.Stream" Usage="httpRequestBase.GetBufferlessInputStream disableMaxRequestLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetBufferlessInputStream(bool disableMaxRequestLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -527,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Headers As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpRequestBase.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -548,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.HttpChannelBinding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HttpChannelBinding As ChannelBinding" />
       <MemberSignature Language="F#" Value="member this.HttpChannelBinding : System.Security.Authentication.ExtendedProtection.ChannelBinding" Usage="System.Web.HttpRequestBase.HttpChannelBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Authentication::ExtendedProtection::ChannelBinding ^ HttpChannelBinding { System::Security::Authentication::ExtendedProtection::ChannelBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -569,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.HttpMethod" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HttpMethod As String" />
       <MemberSignature Language="F#" Value="member this.HttpMethod : string" Usage="System.Web.HttpRequestBase.HttpMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HttpMethod { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -590,6 +616,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.InputStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InputStream As Stream" />
       <MemberSignature Language="F#" Value="member this.InputStream : System.IO.Stream" Usage="System.Web.HttpRequestBase.InputStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ InputStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -620,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.InsertEntityBody" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertEntityBody ()" />
       <MemberSignature Language="F#" Value="abstract member InsertEntityBody : unit -&gt; unit&#xA;override this.InsertEntityBody : unit -&gt; unit" Usage="httpRequestBase.InsertEntityBody " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertEntityBody();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -640,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.InsertEntityBody(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertEntityBody (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member InsertEntityBody : byte[] * int * int -&gt; unit&#xA;override this.InsertEntityBody : byte[] * int * int -&gt; unit" Usage="httpRequestBase.InsertEntityBody (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertEntityBody(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -667,6 +696,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.IsAuthenticated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAuthenticated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.HttpRequestBase.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -689,6 +719,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.IsLocal" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsLocal As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLocal : bool" Usage="System.Web.HttpRequestBase.IsLocal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -711,6 +742,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.IsSecureConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecureConnection As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecureConnection : bool" Usage="System.Web.HttpRequestBase.IsSecureConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecureConnection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -733,6 +765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As String" />
       <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.HttpRequestBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -758,6 +791,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.LogonUserIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LogonUserIdentity As WindowsIdentity" />
       <MemberSignature Language="F#" Value="member this.LogonUserIdentity : System.Security.Principal.WindowsIdentity" Usage="System.Web.HttpRequestBase.LogonUserIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::WindowsIdentity ^ LogonUserIdentity { System::Security::Principal::WindowsIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -779,6 +813,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapImageCoordinates(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MapImageCoordinates (imageFieldName As String) As Integer()" />
       <MemberSignature Language="F#" Value="abstract member MapImageCoordinates : string -&gt; int[]&#xA;override this.MapImageCoordinates : string -&gt; int[]" Usage="httpRequestBase.MapImageCoordinates imageFieldName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;int&gt; ^ MapImageCoordinates(System::String ^ imageFieldName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -813,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MapPath (virtualPath As String) As String" />
       <MemberSignature Language="F#" Value="abstract member MapPath : string -&gt; string&#xA;override this.MapPath : string -&gt; string" Usage="httpRequestBase.MapPath virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MapPath(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -838,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapPath(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MapPath (virtualPath As String, baseVirtualDir As String, allowCrossAppMapping As Boolean) As String" />
       <MemberSignature Language="F#" Value="abstract member MapPath : string * string * bool -&gt; string&#xA;override this.MapPath : string * string * bool -&gt; string" Usage="httpRequestBase.MapPath (virtualPath, baseVirtualDir, allowCrossAppMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MapPath(System::String ^ virtualPath, System::String ^ baseVirtualDir, bool allowCrossAppMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -868,6 +905,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.MapRawImageCoordinates(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MapRawImageCoordinates (imageFieldName As String) As Double()" />
       <MemberSignature Language="F#" Value="abstract member MapRawImageCoordinates : string -&gt; double[]&#xA;override this.MapRawImageCoordinates : string -&gt; double[]" Usage="httpRequestBase.MapRawImageCoordinates imageFieldName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;double&gt; ^ MapRawImageCoordinates(System::String ^ imageFieldName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -892,6 +930,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Params" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Params As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.Params : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpRequestBase.Params" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ Params { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -913,6 +952,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Path" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Web.HttpRequestBase.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -934,6 +974,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.PathInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PathInfo As String" />
       <MemberSignature Language="F#" Value="member this.PathInfo : string" Usage="System.Web.HttpRequestBase.PathInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PathInfo { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -962,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.PhysicalApplicationPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PhysicalApplicationPath As String" />
       <MemberSignature Language="F#" Value="member this.PhysicalApplicationPath : string" Usage="System.Web.HttpRequestBase.PhysicalApplicationPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PhysicalApplicationPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -983,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.PhysicalPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PhysicalPath As String" />
       <MemberSignature Language="F#" Value="member this.PhysicalPath : string" Usage="System.Web.HttpRequestBase.PhysicalPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PhysicalPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1004,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.QueryString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryString As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.QueryString : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpRequestBase.QueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ QueryString { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1025,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.RawUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RawUrl As String" />
       <MemberSignature Language="F#" Value="member this.RawUrl : string" Usage="System.Web.HttpRequestBase.RawUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RawUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1046,6 +1091,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ReadEntityBodyMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReadEntityBodyMode As ReadEntityBodyMode" />
       <MemberSignature Language="F#" Value="member this.ReadEntityBodyMode : System.Web.ReadEntityBodyMode" Usage="System.Web.HttpRequestBase.ReadEntityBodyMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::ReadEntityBodyMode ReadEntityBodyMode { System::Web::ReadEntityBodyMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1066,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.RequestContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RequestContext As RequestContext" />
       <MemberSignature Language="F#" Value="member this.RequestContext : System.Web.Routing.RequestContext with get, set" Usage="System.Web.HttpRequestBase.RequestContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Routing::RequestContext ^ RequestContext { System::Web::Routing::RequestContext ^ get(); void set(System::Web::Routing::RequestContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1094,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.RequestType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RequestType As String" />
       <MemberSignature Language="F#" Value="member this.RequestType : string with get, set" Usage="System.Web.HttpRequestBase.RequestType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RequestType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1115,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.SaveAs(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveAs (filename As String, includeHeaders As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SaveAs : string * bool -&gt; unit&#xA;override this.SaveAs : string * bool -&gt; unit" Usage="httpRequestBase.SaveAs (filename, includeHeaders)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveAs(System::String ^ filename, bool includeHeaders);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1141,6 +1190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.ServerVariables" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ServerVariables As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.ServerVariables : System.Collections.Specialized.NameValueCollection" Usage="System.Web.HttpRequestBase.ServerVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameValueCollection ^ ServerVariables { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1162,6 +1212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.TimedOutToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TimedOutToken As CancellationToken" />
       <MemberSignature Language="F#" Value="member this.TimedOutToken : System.Threading.CancellationToken" Usage="System.Web.HttpRequestBase.TimedOutToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Threading::CancellationToken TimedOutToken { System::Threading::CancellationToken get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1189,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.TlsTokenBindingInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TlsTokenBindingInfo As ITlsTokenBindingInfo" />
       <MemberSignature Language="F#" Value="member this.TlsTokenBindingInfo : System.Web.ITlsTokenBindingInfo" Usage="System.Web.HttpRequestBase.TlsTokenBindingInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::ITlsTokenBindingInfo ^ TlsTokenBindingInfo { System::Web::ITlsTokenBindingInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1209,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.TotalBytes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TotalBytes As Integer" />
       <MemberSignature Language="F#" Value="member this.TotalBytes : int" Usage="System.Web.HttpRequestBase.TotalBytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TotalBytes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1230,6 +1283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Unvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Unvalidated As UnvalidatedRequestValuesBase" />
       <MemberSignature Language="F#" Value="member this.Unvalidated : System.Web.UnvalidatedRequestValuesBase" Usage="System.Web.HttpRequestBase.Unvalidated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UnvalidatedRequestValuesBase ^ Unvalidated { System::Web::UnvalidatedRequestValuesBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1261,6 +1315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.Url" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Url As Uri" />
       <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Web.HttpRequestBase.Url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ Url { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1282,6 +1337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UrlReferrer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UrlReferrer As Uri" />
       <MemberSignature Language="F#" Value="member this.UrlReferrer : Uri" Usage="System.Web.HttpRequestBase.UrlReferrer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ UrlReferrer { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1303,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserAgent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserAgent As String" />
       <MemberSignature Language="F#" Value="member this.UserAgent : string" Usage="System.Web.HttpRequestBase.UserAgent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserAgent { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1324,6 +1381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserHostAddress" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserHostAddress As String" />
       <MemberSignature Language="F#" Value="member this.UserHostAddress : string" Usage="System.Web.HttpRequestBase.UserHostAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserHostAddress { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1345,6 +1403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserHostName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserHostName As String" />
       <MemberSignature Language="F#" Value="member this.UserHostName : string" Usage="System.Web.HttpRequestBase.UserHostName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserHostName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1366,6 +1425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpRequestBase.UserLanguages" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserLanguages As String()" />
       <MemberSignature Language="F#" Value="member this.UserLanguages : string[]" Usage="System.Web.HttpRequestBase.UserLanguages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ UserLanguages { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1387,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestBase.ValidateInput" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ValidateInput ()" />
       <MemberSignature Language="F#" Value="abstract member ValidateInput : unit -&gt; unit&#xA;override this.ValidateInput : unit -&gt; unit" Usage="httpRequestBase.ValidateInput " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ValidateInput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

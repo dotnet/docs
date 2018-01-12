@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.HttpListener" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpListener&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type HttpListener = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpListener sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="httpListener.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.AuthenticationSchemes" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationSchemes As AuthenticationSchemes" />
       <MemberSignature Language="F#" Value="member this.AuthenticationSchemes : System.Net.AuthenticationSchemes with get, set" Usage="System.Net.HttpListener.AuthenticationSchemes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::AuthenticationSchemes AuthenticationSchemes { System::Net::AuthenticationSchemes get(); void set(System::Net::AuthenticationSchemes value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationSchemeSelectorDelegate As AuthenticationSchemeSelector" />
       <MemberSignature Language="F#" Value="member this.AuthenticationSchemeSelectorDelegate : System.Net.AuthenticationSchemeSelector with get, set" Usage="System.Net.HttpListener.AuthenticationSchemeSelectorDelegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::AuthenticationSchemeSelector ^ AuthenticationSchemeSelectorDelegate { System::Net::AuthenticationSchemeSelector ^ get(); void set(System::Net::AuthenticationSchemeSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -281,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.BeginGetContext(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginGetContext (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginGetContext : AsyncCallback * obj -&gt; IAsyncResult" Usage="httpListener.BeginGetContext (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginGetContext(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -346,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="httpListener.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -394,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.DefaultServiceNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultServiceNames As ServiceNameCollection" />
       <MemberSignature Language="F#" Value="member this.DefaultServiceNames : System.Security.Authentication.ExtendedProtection.ServiceNameCollection" Usage="System.Net.HttpListener.DefaultServiceNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ DefaultServiceNames { System::Security::Authentication::ExtendedProtection::ServiceNameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -461,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.EndGetContext(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndGetContext (asyncResult As IAsyncResult) As HttpListenerContext" />
       <MemberSignature Language="F#" Value="member this.EndGetContext : IAsyncResult -&gt; System.Net.HttpListenerContext" Usage="httpListener.EndGetContext asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::HttpListenerContext ^ EndGetContext(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -521,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.ExtendedProtectionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
       <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy with get, set" Usage="System.Net.HttpListener.ExtendedProtectionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -574,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionSelectorDelegate As HttpListener.ExtendedProtectionSelector" />
       <MemberSignature Language="F#" Value="member this.ExtendedProtectionSelectorDelegate : System.Net.HttpListener.ExtendedProtectionSelector with get, set" Usage="System.Net.HttpListener.ExtendedProtectionSelectorDelegate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpListener::ExtendedProtectionSelector ^ ExtendedProtectionSelectorDelegate { System::Net::HttpListener::ExtendedProtectionSelector ^ get(); void set(System::Net::HttpListener::ExtendedProtectionSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -626,6 +637,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.GetContext" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContext () As HttpListenerContext" />
       <MemberSignature Language="F#" Value="member this.GetContext : unit -&gt; System.Net.HttpListenerContext" Usage="httpListener.GetContext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::HttpListenerContext ^ GetContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -682,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.GetContextAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContextAsync () As Task(Of HttpListenerContext)" />
       <MemberSignature Language="F#" Value="member this.GetContextAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.HttpListenerContext&gt;" Usage="httpListener.GetContextAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::HttpListenerContext ^&gt; ^ GetContextAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -724,6 +737,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.IgnoreWriteExceptions" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreWriteExceptions As Boolean" />
       <MemberSignature Language="F#" Value="member this.IgnoreWriteExceptions : bool with get, set" Usage="System.Net.HttpListener.IgnoreWriteExceptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreWriteExceptions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -769,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.IsListening" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsListening As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsListening : bool" Usage="System.Net.HttpListener.IsListening" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsListening { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -813,6 +828,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.IsSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Net.HttpListener.IsSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -857,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.Prefixes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prefixes As HttpListenerPrefixCollection" />
       <MemberSignature Language="F#" Value="member this.Prefixes : System.Net.HttpListenerPrefixCollection" Usage="System.Net.HttpListener.Prefixes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpListenerPrefixCollection ^ Prefixes { System::Net::HttpListenerPrefixCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -901,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.Realm" />
       <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
       <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.Net.HttpListener.Realm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -947,6 +965,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="httpListener.Start " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1000,6 +1019,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="httpListener.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1048,6 +1068,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.HttpListener.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1087,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.TimeoutManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeoutManager As HttpListenerTimeoutManager" />
       <MemberSignature Language="F#" Value="member this.TimeoutManager : System.Net.HttpListenerTimeoutManager" Usage="System.Net.HttpListener.TimeoutManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpListenerTimeoutManager ^ TimeoutManager { System::Net::HttpListenerTimeoutManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1130,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication" />
       <MemberSignature Language="VB.NET" Value="Public Property UnsafeConnectionNtlmAuthentication As Boolean" />
       <MemberSignature Language="F#" Value="member this.UnsafeConnectionNtlmAuthentication : bool with get, set" Usage="System.Net.HttpListener.UnsafeConnectionNtlmAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnsafeConnectionNtlmAuthentication { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

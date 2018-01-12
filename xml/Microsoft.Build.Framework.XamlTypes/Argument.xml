@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.Argument" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Argument&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type Argument = class&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Argument sealed : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.Argument.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Argument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.Argument.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="argument.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.Argument.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="argument.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.Argument.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property IsRequired As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsRequired : bool with get, set" Usage="Microsoft.Build.Framework.XamlTypes.Argument.IsRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.Argument.Property" />
       <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
       <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.Argument.Property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Property { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.Argument.Separator" />
       <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
       <MemberSignature Language="F#" Value="member this.Separator : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.Argument.Separator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Separator { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

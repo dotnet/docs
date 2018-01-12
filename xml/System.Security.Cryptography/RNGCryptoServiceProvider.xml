@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RNGCryptoServiceProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RNGCryptoServiceProvider&#xA;Inherits RandomNumberGenerator" />
   <TypeSignature Language="F#" Value="type RNGCryptoServiceProvider = class&#xA;    inherit RandomNumberGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RNGCryptoServiceProvider sealed : System::Security::Cryptography::RandomNumberGenerator" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rgb As Byte())" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.RNGCryptoServiceProvider : byte[] -&gt; System.Security.Cryptography.RNGCryptoServiceProvider" Usage="new System.Security.Cryptography.RNGCryptoServiceProvider rgb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider(cli::array &lt;System::Byte&gt; ^ rgb);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cspParams As CspParameters)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.RNGCryptoServiceProvider : System.Security.Cryptography.CspParameters -&gt; System.Security.Cryptography.RNGCryptoServiceProvider" Usage="new System.Security.Cryptography.RNGCryptoServiceProvider cspParams" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider(System::Security::Cryptography::CspParameters ^ cspParams);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (str As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.RNGCryptoServiceProvider : string -&gt; System.Security.Cryptography.RNGCryptoServiceProvider" Usage="new System.Security.Cryptography.RNGCryptoServiceProvider str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RNGCryptoServiceProvider(System::String ^ str);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="rNGCryptoServiceProvider.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="rNGCryptoServiceProvider.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!RNGCryptoServiceProvider ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -256,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBytes (data As Byte())" />
       <MemberSignature Language="F#" Value="override this.GetBytes : byte[] -&gt; unit" Usage="rNGCryptoServiceProvider.GetBytes data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBytes(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetNonZeroBytes (data As Byte())" />
       <MemberSignature Language="F#" Value="override this.GetNonZeroBytes : byte[] -&gt; unit" Usage="rNGCryptoServiceProvider.GetNonZeroBytes data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetNonZeroBytes(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

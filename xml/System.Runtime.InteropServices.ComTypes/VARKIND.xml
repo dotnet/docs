@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARKIND" />
   <TypeSignature Language="VB.NET" Value="Public Enum VARKIND" />
   <TypeSignature Language="F#" Value="type VARKIND = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VARKIND" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST" />
       <MemberSignature Language="VB.NET" Value="VAR_CONST" />
       <MemberSignature Language="F#" Value="VAR_CONST = 2" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST" />
+      <MemberSignature Language="C++ CLI" Value="VAR_CONST" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH" />
       <MemberSignature Language="VB.NET" Value="VAR_DISPATCH" />
       <MemberSignature Language="F#" Value="VAR_DISPATCH = 3" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH" />
+      <MemberSignature Language="C++ CLI" Value="VAR_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE" />
       <MemberSignature Language="VB.NET" Value="VAR_PERINSTANCE" />
       <MemberSignature Language="F#" Value="VAR_PERINSTANCE = 0" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE" />
+      <MemberSignature Language="C++ CLI" Value="VAR_PERINSTANCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC" />
       <MemberSignature Language="VB.NET" Value="VAR_STATIC" />
       <MemberSignature Language="F#" Value="VAR_STATIC = 1" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC" />
+      <MemberSignature Language="C++ CLI" Value="VAR_STATIC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

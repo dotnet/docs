@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.Renewing" />
   <TypeSignature Language="VB.NET" Value="Public Class Renewing" />
   <TypeSignature Language="F#" Value="type Renewing = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Renewing" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Renewing.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Renewing();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Renewing.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (allowRenewal As Boolean, okForRenewalAfterExpiration As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Renewing : bool * bool -&gt; System.IdentityModel.Protocols.WSTrust.Renewing" Usage="new System.IdentityModel.Protocols.WSTrust.Renewing (allowRenewal, okForRenewalAfterExpiration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Renewing(bool allowRenewal, bool okForRenewalAfterExpiration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Renewing.AllowRenewal" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowRenewal As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowRenewal : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Renewing.AllowRenewal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowRenewal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Renewing.OkForRenewalAfterExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Property OkForRenewalAfterExpiration As Boolean" />
       <MemberSignature Language="F#" Value="member this.OkForRenewalAfterExpiration : bool with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Renewing.OkForRenewalAfterExpiration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OkForRenewalAfterExpiration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

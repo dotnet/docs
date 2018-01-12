@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.SectionHeader" />
   <TypeSignature Language="VB.NET" Value="Public Structure SectionHeader" />
   <TypeSignature Language="F#" Value="type SectionHeader = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SectionHeader" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.PortableExecutable.SectionHeader.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.NumberOfLineNumbers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfLineNumbers As UShort" />
       <MemberSignature Language="F#" Value="member this.NumberOfLineNumbers : uint16" Usage="System.Reflection.PortableExecutable.SectionHeader.NumberOfLineNumbers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 NumberOfLineNumbers { System::UInt16 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.NumberOfRelocations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfRelocations As UShort" />
       <MemberSignature Language="F#" Value="member this.NumberOfRelocations : uint16" Usage="System.Reflection.PortableExecutable.SectionHeader.NumberOfRelocations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt16 NumberOfRelocations { System::UInt16 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.PointerToLineNumbers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerToLineNumbers As Integer" />
       <MemberSignature Language="F#" Value="member this.PointerToLineNumbers : int" Usage="System.Reflection.PortableExecutable.SectionHeader.PointerToLineNumbers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointerToLineNumbers { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.PointerToRawData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerToRawData As Integer" />
       <MemberSignature Language="F#" Value="member this.PointerToRawData : int" Usage="System.Reflection.PortableExecutable.SectionHeader.PointerToRawData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointerToRawData { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.PointerToRelocations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerToRelocations As Integer" />
       <MemberSignature Language="F#" Value="member this.PointerToRelocations : int" Usage="System.Reflection.PortableExecutable.SectionHeader.PointerToRelocations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointerToRelocations { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.SectionCharacteristics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionCharacteristics As SectionCharacteristics" />
       <MemberSignature Language="F#" Value="member this.SectionCharacteristics : System.Reflection.PortableExecutable.SectionCharacteristics" Usage="System.Reflection.PortableExecutable.SectionHeader.SectionCharacteristics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PortableExecutable::SectionCharacteristics SectionCharacteristics { System::Reflection::PortableExecutable::SectionCharacteristics get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeOfRawData As Integer" />
       <MemberSignature Language="F#" Value="member this.SizeOfRawData : int" Usage="System.Reflection.PortableExecutable.SectionHeader.SizeOfRawData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SizeOfRawData { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.VirtualAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualAddress As Integer" />
       <MemberSignature Language="F#" Value="member this.VirtualAddress : int" Usage="System.Reflection.PortableExecutable.SectionHeader.VirtualAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VirtualAddress { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.SectionHeader.VirtualSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualSize As Integer" />
       <MemberSignature Language="F#" Value="member this.VirtualSize : int" Usage="System.Reflection.PortableExecutable.SectionHeader.VirtualSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VirtualSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

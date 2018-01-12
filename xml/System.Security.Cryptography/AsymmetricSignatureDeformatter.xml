@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricSignatureDeformatter" />
   <TypeSignature Language="F#" Value="type AsymmetricSignatureDeformatter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsymmetricSignatureDeformatter abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureDeformatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsymmetricSignatureDeformatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetHashAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetHashAlgorithm (strName As String)" />
       <MemberSignature Language="F#" Value="abstract member SetHashAlgorithm : string -&gt; unit" Usage="asymmetricSignatureDeformatter.SetHashAlgorithm strName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetHashAlgorithm(System::String ^ strName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetKey (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="F#" Value="abstract member SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="asymmetricSignatureDeformatter.SetKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function VerifySignature (rgbHash As Byte(), rgbSignature As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member VerifySignature : byte[] * byte[] -&gt; bool" Usage="asymmetricSignatureDeformatter.VerifySignature (rgbHash, rgbSignature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool VerifySignature(cli::array &lt;System::Byte&gt; ^ rgbHash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature(System.Security.Cryptography.HashAlgorithm,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifySignature (hash As HashAlgorithm, rgbSignature As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member VerifySignature : System.Security.Cryptography.HashAlgorithm * byte[] -&gt; bool&#xA;override this.VerifySignature : System.Security.Cryptography.HashAlgorithm * byte[] -&gt; bool" Usage="asymmetricSignatureDeformatter.VerifySignature (hash, rgbSignature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool VerifySignature(System::Security::Cryptography::HashAlgorithm ^ hash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SessionOpenNotification" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SessionOpenNotification" />
   <TypeSignature Language="F#" Value="type SessionOpenNotification = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionOpenNotification abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SessionOpenNotification.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SessionOpenNotification();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SessionOpenNotification.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.ServiceModel.Channels.SessionOpenNotification.IsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SessionOpenNotification.UpdateMessageProperties(System.ServiceModel.Channels.MessageProperties)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub UpdateMessageProperties (inboundMessageProperties As MessageProperties)" />
       <MemberSignature Language="F#" Value="abstract member UpdateMessageProperties : System.ServiceModel.Channels.MessageProperties -&gt; unit" Usage="sessionOpenNotification.UpdateMessageProperties inboundMessageProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void UpdateMessageProperties(System::ServiceModel::Channels::MessageProperties ^ inboundMessageProperties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

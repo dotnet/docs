@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsPath" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GraphicsPath&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable" />
   <TypeSignature Language="F#" Value="type GraphicsPath = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GraphicsPath sealed : MarshalByRefObject, ICloneable, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Drawing2D.FillMode fillMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.#ctor(System.Drawing.Drawing2D.FillMode)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.GraphicsPath : System.Drawing.Drawing2D.FillMode -&gt; System.Drawing.Drawing2D.GraphicsPath" Usage="new System.Drawing.Drawing2D.GraphicsPath fillMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPath(System::Drawing::Drawing2D::FillMode fillMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.#ctor(System.Drawing.Point[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pts As Point(), types As Byte())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.GraphicsPath : System.Drawing.Point[] * byte[] -&gt; System.Drawing.Drawing2D.GraphicsPath" Usage="new System.Drawing.Drawing2D.GraphicsPath (pts, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPath(cli::array &lt;System::Drawing::Point&gt; ^ pts, cli::array &lt;System::Byte&gt; ^ types);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.#ctor(System.Drawing.PointF[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pts As PointF(), types As Byte())" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.GraphicsPath : System.Drawing.PointF[] * byte[] -&gt; System.Drawing.Drawing2D.GraphicsPath" Usage="new System.Drawing.Drawing2D.GraphicsPath (pts, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPath(cli::array &lt;System::Drawing::PointF&gt; ^ pts, cli::array &lt;System::Byte&gt; ^ types);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point[] pts, unsigned int8[] types, valuetype System.Drawing.Drawing2D.FillMode fillMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.#ctor(System.Drawing.Point[],System.Byte[],System.Drawing.Drawing2D.FillMode)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.GraphicsPath : System.Drawing.Point[] * byte[] * System.Drawing.Drawing2D.FillMode -&gt; System.Drawing.Drawing2D.GraphicsPath" Usage="new System.Drawing.Drawing2D.GraphicsPath (pts, types, fillMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPath(cli::array &lt;System::Drawing::Point&gt; ^ pts, cli::array &lt;System::Byte&gt; ^ types, System::Drawing::Drawing2D::FillMode fillMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.PointF[] pts, unsigned int8[] types, valuetype System.Drawing.Drawing2D.FillMode fillMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.#ctor(System.Drawing.PointF[],System.Byte[],System.Drawing.Drawing2D.FillMode)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.GraphicsPath : System.Drawing.PointF[] * byte[] * System.Drawing.Drawing2D.FillMode -&gt; System.Drawing.Drawing2D.GraphicsPath" Usage="new System.Drawing.Drawing2D.GraphicsPath (pts, types, fillMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPath(cli::array &lt;System::Drawing::PointF&gt; ^ pts, cli::array &lt;System::Byte&gt; ^ types, System::Drawing::Drawing2D::FillMode fillMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddArc(System.Drawing.Rectangle,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArc (rect As Rectangle, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddArc : System.Drawing.Rectangle * single * single -&gt; unit" Usage="graphicsPath.AddArc (rect, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArc(System::Drawing::Rectangle rect, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddArc(System.Drawing.RectangleF,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArc (rect As RectangleF, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddArc : System.Drawing.RectangleF * single * single -&gt; unit" Usage="graphicsPath.AddArc (rect, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArc(System::Drawing::RectangleF rect, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddArc(System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArc (x As Integer, y As Integer, width As Integer, height As Integer, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddArc : int * int * int * int * single * single -&gt; unit" Usage="graphicsPath.AddArc (x, y, width, height, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArc(int x, int y, int width, int height, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -333,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddArc(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArc (x As Single, y As Single, width As Single, height As Single, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddArc : single * single * single * single * single * single -&gt; unit" Usage="graphicsPath.AddArc (x, y, width, height, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArc(float x, float y, float width, float height, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -389,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBezier(System.Drawing.Point,System.Drawing.Point,System.Drawing.Point,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBezier (pt1 As Point, pt2 As Point, pt3 As Point, pt4 As Point)" />
       <MemberSignature Language="F#" Value="member this.AddBezier : System.Drawing.Point * System.Drawing.Point * System.Drawing.Point * System.Drawing.Point -&gt; unit" Usage="graphicsPath.AddBezier (pt1, pt2, pt3, pt4)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBezier(System::Drawing::Point pt1, System::Drawing::Point pt2, System::Drawing::Point pt3, System::Drawing::Point pt4);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -432,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBezier(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBezier (pt1 As PointF, pt2 As PointF, pt3 As PointF, pt4 As PointF)" />
       <MemberSignature Language="F#" Value="member this.AddBezier : System.Drawing.PointF * System.Drawing.PointF * System.Drawing.PointF * System.Drawing.PointF -&gt; unit" Usage="graphicsPath.AddBezier (pt1, pt2, pt3, pt4)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBezier(System::Drawing::PointF pt1, System::Drawing::PointF pt2, System::Drawing::PointF pt3, System::Drawing::PointF pt4);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -475,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBezier(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBezier (x1 As Integer, y1 As Integer, x2 As Integer, y2 As Integer, x3 As Integer, y3 As Integer, x4 As Integer, y4 As Integer)" />
       <MemberSignature Language="F#" Value="member this.AddBezier : int * int * int * int * int * int * int * int -&gt; unit" Usage="graphicsPath.AddBezier (x1, y1, x2, y2, x3, y3, x4, y4)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBezier(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -538,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBezier(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBezier (x1 As Single, y1 As Single, x2 As Single, y2 As Single, x3 As Single, y3 As Single, x4 As Single, y4 As Single)" />
       <MemberSignature Language="F#" Value="member this.AddBezier : single * single * single * single * single * single * single * single -&gt; unit" Usage="graphicsPath.AddBezier (x1, y1, x2, y2, x3, y3, x4, y4)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBezier(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -598,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBeziers(System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBeziers (ParamArray points As Point())" />
       <MemberSignature Language="F#" Value="member this.AddBeziers : System.Drawing.Point[] -&gt; unit" Usage="graphicsPath.AddBeziers points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeziers(... cli::array &lt;System::Drawing::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -651,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddBeziers(System.Drawing.PointF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBeziers (points As PointF())" />
       <MemberSignature Language="F#" Value="member this.AddBeziers : System.Drawing.PointF[] -&gt; unit" Usage="graphicsPath.AddBeziers points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeziers(cli::array &lt;System::Drawing::PointF&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -699,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve(System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddClosedCurve (points As Point())" />
       <MemberSignature Language="F#" Value="member this.AddClosedCurve : System.Drawing.Point[] -&gt; unit" Usage="graphicsPath.AddClosedCurve points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddClosedCurve(cli::array &lt;System::Drawing::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -734,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve(System.Drawing.PointF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddClosedCurve (points As PointF())" />
       <MemberSignature Language="F#" Value="member this.AddClosedCurve : System.Drawing.PointF[] -&gt; unit" Usage="graphicsPath.AddClosedCurve points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddClosedCurve(cli::array &lt;System::Drawing::PointF&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -769,6 +788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve(System.Drawing.Point[],System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddClosedCurve (points As Point(), tension As Single)" />
       <MemberSignature Language="F#" Value="member this.AddClosedCurve : System.Drawing.Point[] * single -&gt; unit" Usage="graphicsPath.AddClosedCurve (points, tension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddClosedCurve(cli::array &lt;System::Drawing::Point&gt; ^ points, float tension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -818,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve(System.Drawing.PointF[],System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddClosedCurve (points As PointF(), tension As Single)" />
       <MemberSignature Language="F#" Value="member this.AddClosedCurve : System.Drawing.PointF[] * single -&gt; unit" Usage="graphicsPath.AddClosedCurve (points, tension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddClosedCurve(cli::array &lt;System::Drawing::PointF&gt; ^ points, float tension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -864,6 +885,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddCurve(System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCurve (points As Point())" />
       <MemberSignature Language="F#" Value="member this.AddCurve : System.Drawing.Point[] -&gt; unit" Usage="graphicsPath.AddCurve points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCurve(cli::array &lt;System::Drawing::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -899,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddCurve(System.Drawing.PointF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCurve (points As PointF())" />
       <MemberSignature Language="F#" Value="member this.AddCurve : System.Drawing.PointF[] -&gt; unit" Usage="graphicsPath.AddCurve points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCurve(cli::array &lt;System::Drawing::PointF&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -934,6 +957,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddCurve(System.Drawing.Point[],System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCurve (points As Point(), tension As Single)" />
       <MemberSignature Language="F#" Value="member this.AddCurve : System.Drawing.Point[] * single -&gt; unit" Usage="graphicsPath.AddCurve (points, tension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCurve(cli::array &lt;System::Drawing::Point&gt; ^ points, float tension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -971,6 +995,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddCurve(System.Drawing.PointF[],System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCurve (points As PointF(), tension As Single)" />
       <MemberSignature Language="F#" Value="member this.AddCurve : System.Drawing.PointF[] * single -&gt; unit" Usage="graphicsPath.AddCurve (points, tension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCurve(cli::array &lt;System::Drawing::PointF&gt; ^ points, float tension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1008,6 +1033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddCurve(System.Drawing.Point[],System.Int32,System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCurve (points As Point(), offset As Integer, numberOfSegments As Integer, tension As Single)" />
       <MemberSignature Language="F#" Value="member this.AddCurve : System.Drawing.Point[] * int * int * single -&gt; unit" Usage="graphicsPath.AddCurve (points, offset, numberOfSegments, tension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCurve(cli::array &lt;System::Drawing::Point&gt; ^ points, int offset, int numberOfSegments, float tension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1063,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddCurve(System.Drawing.PointF[],System.Int32,System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCurve (points As PointF(), offset As Integer, numberOfSegments As Integer, tension As Single)" />
       <MemberSignature Language="F#" Value="member this.AddCurve : System.Drawing.PointF[] * int * int * single -&gt; unit" Usage="graphicsPath.AddCurve (points, offset, numberOfSegments, tension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCurve(cli::array &lt;System::Drawing::PointF&gt; ^ points, int offset, int numberOfSegments, float tension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1115,6 +1142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddEllipse(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEllipse (rect As Rectangle)" />
       <MemberSignature Language="F#" Value="member this.AddEllipse : System.Drawing.Rectangle -&gt; unit" Usage="graphicsPath.AddEllipse rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEllipse(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1155,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddEllipse(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEllipse (rect As RectangleF)" />
       <MemberSignature Language="F#" Value="member this.AddEllipse : System.Drawing.RectangleF -&gt; unit" Usage="graphicsPath.AddEllipse rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEllipse(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1185,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddEllipse(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEllipse (x As Integer, y As Integer, width As Integer, height As Integer)" />
       <MemberSignature Language="F#" Value="member this.AddEllipse : int * int * int * int -&gt; unit" Usage="graphicsPath.AddEllipse (x, y, width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEllipse(int x, int y, int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1221,6 +1251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddEllipse(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddEllipse (x As Single, y As Single, width As Single, height As Single)" />
       <MemberSignature Language="F#" Value="member this.AddEllipse : single * single * single * single -&gt; unit" Usage="graphicsPath.AddEllipse (x, y, width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEllipse(float x, float y, float width, float height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1266,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddLine(System.Drawing.Point,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLine (pt1 As Point, pt2 As Point)" />
       <MemberSignature Language="F#" Value="member this.AddLine : System.Drawing.Point * System.Drawing.Point -&gt; unit" Usage="graphicsPath.AddLine (pt1, pt2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLine(System::Drawing::Point pt1, System::Drawing::Point pt2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1303,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddLine(System.Drawing.PointF,System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLine (pt1 As PointF, pt2 As PointF)" />
       <MemberSignature Language="F#" Value="member this.AddLine : System.Drawing.PointF * System.Drawing.PointF -&gt; unit" Usage="graphicsPath.AddLine (pt1, pt2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLine(System::Drawing::PointF pt1, System::Drawing::PointF pt2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1340,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddLine(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLine (x1 As Integer, y1 As Integer, x2 As Integer, y2 As Integer)" />
       <MemberSignature Language="F#" Value="member this.AddLine : int * int * int * int -&gt; unit" Usage="graphicsPath.AddLine (x1, y1, x2, y2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLine(int x1, int y1, int x2, int y2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1385,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddLine(System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLine (x1 As Single, y1 As Single, x2 As Single, y2 As Single)" />
       <MemberSignature Language="F#" Value="member this.AddLine : single * single * single * single -&gt; unit" Usage="graphicsPath.AddLine (x1, y1, x2, y2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLine(float x1, float y1, float x2, float y2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1435,6 +1470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddLines(System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLines (points As Point())" />
       <MemberSignature Language="F#" Value="member this.AddLines : System.Drawing.Point[] -&gt; unit" Usage="graphicsPath.AddLines points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLines(cli::array &lt;System::Drawing::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1482,6 +1518,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddLines(System.Drawing.PointF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddLines (points As PointF())" />
       <MemberSignature Language="F#" Value="member this.AddLines : System.Drawing.PointF[] -&gt; unit" Usage="graphicsPath.AddLines points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLines(cli::array &lt;System::Drawing::PointF&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1517,6 +1554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddPath(System.Drawing.Drawing2D.GraphicsPath,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPath (addingPath As GraphicsPath, connect As Boolean)" />
       <MemberSignature Language="F#" Value="member this.AddPath : System.Drawing.Drawing2D.GraphicsPath * bool -&gt; unit" Usage="graphicsPath.AddPath (addingPath, connect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPath(System::Drawing::Drawing2D::GraphicsPath ^ addingPath, bool connect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1568,6 +1606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddPie(System.Drawing.Rectangle,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPie (rect As Rectangle, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddPie : System.Drawing.Rectangle * single * single -&gt; unit" Usage="graphicsPath.AddPie (rect, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPie(System::Drawing::Rectangle rect, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1607,6 +1646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddPie(System.Int32,System.Int32,System.Int32,System.Int32,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPie (x As Integer, y As Integer, width As Integer, height As Integer, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddPie : int * int * int * int * single * single -&gt; unit" Usage="graphicsPath.AddPie (x, y, width, height, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPie(int x, int y, int width, int height, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1656,6 +1696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddPie(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPie (x As Single, y As Single, width As Single, height As Single, startAngle As Single, sweepAngle As Single)" />
       <MemberSignature Language="F#" Value="member this.AddPie : single * single * single * single * single * single -&gt; unit" Usage="graphicsPath.AddPie (x, y, width, height, startAngle, sweepAngle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPie(float x, float y, float width, float height, float startAngle, float sweepAngle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1710,6 +1751,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddPolygon(System.Drawing.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPolygon (points As Point())" />
       <MemberSignature Language="F#" Value="member this.AddPolygon : System.Drawing.Point[] -&gt; unit" Usage="graphicsPath.AddPolygon points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPolygon(cli::array &lt;System::Drawing::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1755,6 +1797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddPolygon(System.Drawing.PointF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPolygon (points As PointF())" />
       <MemberSignature Language="F#" Value="member this.AddPolygon : System.Drawing.PointF[] -&gt; unit" Usage="graphicsPath.AddPolygon points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPolygon(cli::array &lt;System::Drawing::PointF&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1799,6 +1842,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddRectangle(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRectangle (rect As Rectangle)" />
       <MemberSignature Language="F#" Value="member this.AddRectangle : System.Drawing.Rectangle -&gt; unit" Usage="graphicsPath.AddRectangle rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRectangle(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1839,6 +1883,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddRectangle(System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRectangle (rect As RectangleF)" />
       <MemberSignature Language="F#" Value="member this.AddRectangle : System.Drawing.RectangleF -&gt; unit" Usage="graphicsPath.AddRectangle rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRectangle(System::Drawing::RectangleF rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1878,6 +1923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddRectangles(System.Drawing.Rectangle[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRectangles (rects As Rectangle())" />
       <MemberSignature Language="F#" Value="member this.AddRectangles : System.Drawing.Rectangle[] -&gt; unit" Usage="graphicsPath.AddRectangles rects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRectangles(cli::array &lt;System::Drawing::Rectangle&gt; ^ rects);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1918,6 +1964,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddRectangles(System.Drawing.RectangleF[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRectangles (rects As RectangleF())" />
       <MemberSignature Language="F#" Value="member this.AddRectangles : System.Drawing.RectangleF[] -&gt; unit" Usage="graphicsPath.AddRectangles rects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRectangles(cli::array &lt;System::Drawing::RectangleF&gt; ^ rects);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1957,6 +2004,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddString(System.String,System.Drawing.FontFamily,System.Int32,System.Single,System.Drawing.Point,System.Drawing.StringFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddString (s As String, family As FontFamily, style As Integer, emSize As Single, origin As Point, format As StringFormat)" />
       <MemberSignature Language="F#" Value="member this.AddString : string * System.Drawing.FontFamily * int * single * System.Drawing.Point * System.Drawing.StringFormat -&gt; unit" Usage="graphicsPath.AddString (s, family, style, emSize, origin, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddString(System::String ^ s, System::Drawing::FontFamily ^ family, int style, float emSize, System::Drawing::Point origin, System::Drawing::StringFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2011,6 +2059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddString(System.String,System.Drawing.FontFamily,System.Int32,System.Single,System.Drawing.PointF,System.Drawing.StringFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddString (s As String, family As FontFamily, style As Integer, emSize As Single, origin As PointF, format As StringFormat)" />
       <MemberSignature Language="F#" Value="member this.AddString : string * System.Drawing.FontFamily * int * single * System.Drawing.PointF * System.Drawing.StringFormat -&gt; unit" Usage="graphicsPath.AddString (s, family, style, emSize, origin, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddString(System::String ^ s, System::Drawing::FontFamily ^ family, int style, float emSize, System::Drawing::PointF origin, System::Drawing::StringFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2051,6 +2100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddString(System.String,System.Drawing.FontFamily,System.Int32,System.Single,System.Drawing.Rectangle,System.Drawing.StringFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddString (s As String, family As FontFamily, style As Integer, emSize As Single, layoutRect As Rectangle, format As StringFormat)" />
       <MemberSignature Language="F#" Value="member this.AddString : string * System.Drawing.FontFamily * int * single * System.Drawing.Rectangle * System.Drawing.StringFormat -&gt; unit" Usage="graphicsPath.AddString (s, family, style, emSize, layoutRect, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddString(System::String ^ s, System::Drawing::FontFamily ^ family, int style, float emSize, System::Drawing::Rectangle layoutRect, System::Drawing::StringFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2091,6 +2141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.AddString(System.String,System.Drawing.FontFamily,System.Int32,System.Single,System.Drawing.RectangleF,System.Drawing.StringFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddString (s As String, family As FontFamily, style As Integer, emSize As Single, layoutRect As RectangleF, format As StringFormat)" />
       <MemberSignature Language="F#" Value="member this.AddString : string * System.Drawing.FontFamily * int * single * System.Drawing.RectangleF * System.Drawing.StringFormat -&gt; unit" Usage="graphicsPath.AddString (s, family, style, emSize, layoutRect, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddString(System::String ^ s, System::Drawing::FontFamily ^ family, int style, float emSize, System::Drawing::RectangleF layoutRect, System::Drawing::StringFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2131,6 +2182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.ClearMarkers" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearMarkers ()" />
       <MemberSignature Language="F#" Value="member this.ClearMarkers : unit -&gt; unit" Usage="graphicsPath.ClearMarkers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearMarkers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2179,6 +2231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="graphicsPath.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -2226,6 +2279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.CloseAllFigures" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseAllFigures ()" />
       <MemberSignature Language="F#" Value="member this.CloseAllFigures : unit -&gt; unit" Usage="graphicsPath.CloseAllFigures " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseAllFigures();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2265,6 +2319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.CloseFigure" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseFigure ()" />
       <MemberSignature Language="F#" Value="member this.CloseFigure : unit -&gt; unit" Usage="graphicsPath.CloseFigure " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseFigure();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2296,6 +2351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="graphicsPath.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -2326,6 +2382,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPath.FillMode" />
       <MemberSignature Language="VB.NET" Value="Public Property FillMode As FillMode" />
       <MemberSignature Language="F#" Value="member this.FillMode : System.Drawing.Drawing2D.FillMode with get, set" Usage="System.Drawing.Drawing2D.GraphicsPath.FillMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::FillMode FillMode { System::Drawing::Drawing2D::FillMode get(); void set(System::Drawing::Drawing2D::FillMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2346,6 +2403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="graphicsPath.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!GraphicsPath ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2375,6 +2433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Flatten" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flatten ()" />
       <MemberSignature Language="F#" Value="member this.Flatten : unit -&gt; unit" Usage="graphicsPath.Flatten " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flatten();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2401,6 +2460,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flatten(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Flatten(System.Drawing.Drawing2D.Matrix)" />
       <MemberSignature Language="F#" Value="member this.Flatten : System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="graphicsPath.Flatten matrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flatten(System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2430,6 +2490,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flatten(class System.Drawing.Drawing2D.Matrix matrix, float32 flatness) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Flatten(System.Drawing.Drawing2D.Matrix,System.Single)" />
       <MemberSignature Language="F#" Value="member this.Flatten : System.Drawing.Drawing2D.Matrix * single -&gt; unit" Usage="graphicsPath.Flatten (matrix, flatness)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flatten(System::Drawing::Drawing2D::Matrix ^ matrix, float flatness);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2487,6 +2548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.GetBounds" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBounds () As RectangleF" />
       <MemberSignature Language="F#" Value="member this.GetBounds : unit -&gt; System.Drawing.RectangleF" Usage="graphicsPath.GetBounds " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetBounds();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2543,6 +2605,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetBounds(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.GetBounds(System.Drawing.Drawing2D.Matrix)" />
       <MemberSignature Language="F#" Value="member this.GetBounds : System.Drawing.Drawing2D.Matrix -&gt; System.Drawing.RectangleF" Usage="graphicsPath.GetBounds matrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetBounds(System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2578,6 +2641,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetBounds(class System.Drawing.Drawing2D.Matrix matrix, class System.Drawing.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.GetBounds(System.Drawing.Drawing2D.Matrix,System.Drawing.Pen)" />
       <MemberSignature Language="F#" Value="member this.GetBounds : System.Drawing.Drawing2D.Matrix * System.Drawing.Pen -&gt; System.Drawing.RectangleF" Usage="graphicsPath.GetBounds (matrix, pen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetBounds(System::Drawing::Drawing2D::Matrix ^ matrix, System::Drawing::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2616,6 +2680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.GetLastPoint" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastPoint () As PointF" />
       <MemberSignature Language="F#" Value="member this.GetLastPoint : unit -&gt; System.Drawing.PointF" Usage="graphicsPath.GetLastPoint " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::PointF GetLastPoint();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2656,6 +2721,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(valuetype System.Drawing.Point point, class System.Drawing.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Drawing.Point,System.Drawing.Pen)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : System.Drawing.Point * System.Drawing.Pen -&gt; bool" Usage="graphicsPath.IsOutlineVisible (point, pen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(System::Drawing::Point point, System::Drawing::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2693,6 +2759,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(valuetype System.Drawing.PointF point, class System.Drawing.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Drawing.PointF,System.Drawing.Pen)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : System.Drawing.PointF * System.Drawing.Pen -&gt; bool" Usage="graphicsPath.IsOutlineVisible (point, pen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(System::Drawing::PointF point, System::Drawing::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2730,6 +2797,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(valuetype System.Drawing.Point pt, class System.Drawing.Pen pen, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Drawing.Point,System.Drawing.Pen,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : System.Drawing.Point * System.Drawing.Pen * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsOutlineVisible (pt, pen, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(System::Drawing::Point pt, System::Drawing::Pen ^ pen, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2769,6 +2837,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(valuetype System.Drawing.PointF pt, class System.Drawing.Pen pen, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Drawing.PointF,System.Drawing.Pen,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : System.Drawing.PointF * System.Drawing.Pen * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsOutlineVisible (pt, pen, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(System::Drawing::PointF pt, System::Drawing::Pen ^ pen, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2808,6 +2877,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(int32 x, int32 y, class System.Drawing.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Int32,System.Int32,System.Drawing.Pen)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : int * int * System.Drawing.Pen -&gt; bool" Usage="graphicsPath.IsOutlineVisible (x, y, pen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(int x, int y, System::Drawing::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2847,6 +2917,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(float32 x, float32 y, class System.Drawing.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Single,System.Single,System.Drawing.Pen)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : single * single * System.Drawing.Pen -&gt; bool" Usage="graphicsPath.IsOutlineVisible (x, y, pen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(float x, float y, System::Drawing::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2886,6 +2957,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(int32 x, int32 y, class System.Drawing.Pen pen, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Int32,System.Int32,System.Drawing.Pen,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : int * int * System.Drawing.Pen * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsOutlineVisible (x, y, pen, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(int x, int y, System::Drawing::Pen ^ pen, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2941,6 +3013,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsOutlineVisible(float32 x, float32 y, class System.Drawing.Pen pen, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsOutlineVisible(System.Single,System.Single,System.Drawing.Pen,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsOutlineVisible : single * single * System.Drawing.Pen * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsOutlineVisible (x, y, pen, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsOutlineVisible(float x, float y, System::Drawing::Pen ^ pen, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -2991,6 +3064,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Drawing.Point)" />
       <MemberSignature Language="F#" Value="member this.IsVisible : System.Drawing.Point -&gt; bool" Usage="graphicsPath.IsVisible point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3022,6 +3096,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsVisible (point As PointF) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsVisible : System.Drawing.PointF -&gt; bool" Usage="graphicsPath.IsVisible point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::PointF point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3052,6 +3127,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.Point pt, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Drawing.Point,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsVisible : System.Drawing.Point * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsVisible (pt, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::Point pt, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3089,6 +3165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(valuetype System.Drawing.PointF pt, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Drawing.PointF,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsVisible : System.Drawing.PointF * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsVisible (pt, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(System::Drawing::PointF pt, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3127,6 +3204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Integer, y As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsVisible : int * int -&gt; bool" Usage="graphicsPath.IsVisible (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3160,6 +3238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsVisible (x As Single, y As Single) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsVisible : single * single -&gt; bool" Usage="graphicsPath.IsVisible (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(float x, float y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3192,6 +3271,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(int32 x, int32 y, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Int32,System.Int32,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsVisible : int * int * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsVisible (x, y, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(int x, int y, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3241,6 +3321,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsVisible(float32 x, float32 y, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Single,System.Single,System.Drawing.Graphics)" />
       <MemberSignature Language="F#" Value="member this.IsVisible : single * single * System.Drawing.Graphics -&gt; bool" Usage="graphicsPath.IsVisible (x, y, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsVisible(float x, float y, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3281,6 +3362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPath.PathData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathData As PathData" />
       <MemberSignature Language="F#" Value="member this.PathData : System.Drawing.Drawing2D.PathData" Usage="System.Drawing.Drawing2D.GraphicsPath.PathData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::PathData ^ PathData { System::Drawing::Drawing2D::PathData ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3301,6 +3383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPath.PathPoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathPoints As PointF()" />
       <MemberSignature Language="F#" Value="member this.PathPoints : System.Drawing.PointF[]" Usage="System.Drawing.Drawing2D.GraphicsPath.PathPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::PointF&gt; ^ PathPoints { cli::array &lt;System::Drawing::PointF&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3321,6 +3404,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPath.PathTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathTypes As Byte()" />
       <MemberSignature Language="F#" Value="member this.PathTypes : byte[]" Usage="System.Drawing.Drawing2D.GraphicsPath.PathTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ PathTypes { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3357,6 +3441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPath.PointCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointCount As Integer" />
       <MemberSignature Language="F#" Value="member this.PointCount : int" Usage="System.Drawing.Drawing2D.GraphicsPath.PointCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3377,6 +3462,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="graphicsPath.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3422,6 +3508,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Reverse" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reverse ()" />
       <MemberSignature Language="F#" Value="member this.Reverse : unit -&gt; unit" Usage="graphicsPath.Reverse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reverse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3461,6 +3548,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.SetMarkers" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMarkers ()" />
       <MemberSignature Language="F#" Value="member this.SetMarkers : unit -&gt; unit" Usage="graphicsPath.SetMarkers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMarkers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3499,6 +3587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.StartFigure" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartFigure ()" />
       <MemberSignature Language="F#" Value="member this.StartFigure : unit -&gt; unit" Usage="graphicsPath.StartFigure " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartFigure();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3544,6 +3633,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Transform(System.Drawing.Drawing2D.Matrix)" />
       <MemberSignature Language="F#" Value="member this.Transform : System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="graphicsPath.Transform matrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3602,6 +3692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Warp(System.Drawing.PointF[],System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Warp (destPoints As PointF(), srcRect As RectangleF)" />
       <MemberSignature Language="F#" Value="member this.Warp : System.Drawing.PointF[] * System.Drawing.RectangleF -&gt; unit" Usage="graphicsPath.Warp (destPoints, srcRect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warp(cli::array &lt;System::Drawing::PointF&gt; ^ destPoints, System::Drawing::RectangleF srcRect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3633,6 +3724,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warp(valuetype System.Drawing.PointF[] destPoints, valuetype System.Drawing.RectangleF srcRect, class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Warp(System.Drawing.PointF[],System.Drawing.RectangleF,System.Drawing.Drawing2D.Matrix)" />
       <MemberSignature Language="F#" Value="member this.Warp : System.Drawing.PointF[] * System.Drawing.RectangleF * System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="graphicsPath.Warp (destPoints, srcRect, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warp(cli::array &lt;System::Drawing::PointF&gt; ^ destPoints, System::Drawing::RectangleF srcRect, System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3666,6 +3758,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warp(valuetype System.Drawing.PointF[] destPoints, valuetype System.Drawing.RectangleF srcRect, class System.Drawing.Drawing2D.Matrix matrix, valuetype System.Drawing.Drawing2D.WarpMode warpMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Warp(System.Drawing.PointF[],System.Drawing.RectangleF,System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.WarpMode)" />
       <MemberSignature Language="F#" Value="member this.Warp : System.Drawing.PointF[] * System.Drawing.RectangleF * System.Drawing.Drawing2D.Matrix * System.Drawing.Drawing2D.WarpMode -&gt; unit" Usage="graphicsPath.Warp (destPoints, srcRect, matrix, warpMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warp(cli::array &lt;System::Drawing::PointF&gt; ^ destPoints, System::Drawing::RectangleF srcRect, System::Drawing::Drawing2D::Matrix ^ matrix, System::Drawing::Drawing2D::WarpMode warpMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3701,6 +3794,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warp(valuetype System.Drawing.PointF[] destPoints, valuetype System.Drawing.RectangleF srcRect, class System.Drawing.Drawing2D.Matrix matrix, valuetype System.Drawing.Drawing2D.WarpMode warpMode, float32 flatness) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Warp(System.Drawing.PointF[],System.Drawing.RectangleF,System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.WarpMode,System.Single)" />
       <MemberSignature Language="F#" Value="member this.Warp : System.Drawing.PointF[] * System.Drawing.RectangleF * System.Drawing.Drawing2D.Matrix * System.Drawing.Drawing2D.WarpMode * single -&gt; unit" Usage="graphicsPath.Warp (destPoints, srcRect, matrix, warpMode, flatness)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warp(cli::array &lt;System::Drawing::PointF&gt; ^ destPoints, System::Drawing::RectangleF srcRect, System::Drawing::Drawing2D::Matrix ^ matrix, System::Drawing::Drawing2D::WarpMode warpMode, float flatness);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3759,6 +3853,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Widen(class System.Drawing.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Widen(System.Drawing.Pen)" />
       <MemberSignature Language="F#" Value="member this.Widen : System.Drawing.Pen -&gt; unit" Usage="graphicsPath.Widen pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Widen(System::Drawing::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3793,6 +3888,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Widen(class System.Drawing.Pen pen, class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Widen(System.Drawing.Pen,System.Drawing.Drawing2D.Matrix)" />
       <MemberSignature Language="F#" Value="member this.Widen : System.Drawing.Pen * System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="graphicsPath.Widen (pen, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Widen(System::Drawing::Pen ^ pen, System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -3829,6 +3925,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Widen(class System.Drawing.Pen pen, class System.Drawing.Drawing2D.Matrix matrix, float32 flatness) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPath.Widen(System.Drawing.Pen,System.Drawing.Drawing2D.Matrix,System.Single)" />
       <MemberSignature Language="F#" Value="member this.Widen : System.Drawing.Pen * System.Drawing.Drawing2D.Matrix * single -&gt; unit" Usage="graphicsPath.Widen (pen, matrix, flatness)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Widen(System::Drawing::Pen ^ pen, System::Drawing::Drawing2D::Matrix ^ matrix, float flatness);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

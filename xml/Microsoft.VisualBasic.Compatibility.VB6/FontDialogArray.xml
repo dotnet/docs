@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray" />
   <TypeSignature Language="VB.NET" Value="Public Class FontDialogArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="F#" Value="type FontDialogArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontDialogArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FontDialogArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FontDialogArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.Apply" />
       <MemberSignature Language="VB.NET" Value="Public Event Apply As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Apply : EventHandler " Usage="member this.Apply : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Apply;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="fontDialogArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="fontDialogArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.GetIndex(System.Windows.Forms.FontDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As FontDialog) As Short" />
       <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.FontDialog -&gt; int16" Usage="fontDialogArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::FontDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -249,6 +256,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.HelpRequest" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.HelpRequest : EventHandler " Usage="member this.HelpRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="fontDialogArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As FontDialog" />
       <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.FontDialog" Usage="Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FontDialog ^ default[short] { System::Windows::Forms::FontDialog ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -353,6 +363,7 @@ MsgBox(CStr(FontDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.ResetIndex(System.Windows.Forms.FontDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As FontDialog)" />
       <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.FontDialog -&gt; unit" Usage="fontDialogArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::FontDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -391,6 +402,7 @@ MsgBox(CStr(FontDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.SetIndex(System.Windows.Forms.FontDialog,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As FontDialog, Index As Short)" />
       <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.FontDialog * int16 -&gt; unit" Usage="fontDialogArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::FontDialog ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -431,6 +443,7 @@ MsgBox(CStr(FontDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.ShouldSerializeIndex(System.Windows.Forms.FontDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As FontDialog) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.FontDialog -&gt; bool" Usage="fontDialogArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::FontDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

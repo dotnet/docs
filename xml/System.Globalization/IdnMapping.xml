@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.IdnMapping" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdnMapping" />
   <TypeSignature Language="F#" Value="type IdnMapping = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IdnMapping sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Extensions</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IdnMapping();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.IdnMapping.AllowUnassigned" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowUnassigned As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowUnassigned : bool with get, set" Usage="System.Globalization.IdnMapping.AllowUnassigned" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowUnassigned { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="idnMapping.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -193,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetAscii(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAscii (unicode As String) As String" />
       <MemberSignature Language="F#" Value="member this.GetAscii : string -&gt; string" Usage="idnMapping.GetAscii unicode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAscii(System::String ^ unicode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -272,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetAscii(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAscii (unicode As String, index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetAscii : string * int -&gt; string" Usage="idnMapping.GetAscii (unicode, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAscii(System::String ^ unicode, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -359,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetAscii(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAscii (unicode As String, index As Integer, count As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetAscii : string * int * int -&gt; string" Usage="idnMapping.GetAscii (unicode, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAscii(System::String ^ unicode, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -450,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="idnMapping.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -508,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetUnicode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnicode (ascii As String) As String" />
       <MemberSignature Language="F#" Value="member this.GetUnicode : string -&gt; string" Usage="idnMapping.GetUnicode ascii" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetUnicode(System::String ^ ascii);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -564,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnicode (ascii As String, index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetUnicode : string * int -&gt; string" Usage="idnMapping.GetUnicode (ascii, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetUnicode(System::String ^ ascii, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -620,6 +630,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnicode (ascii As String, index As Integer, count As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetUnicode : string * int * int -&gt; string" Usage="idnMapping.GetUnicode (ascii, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetUnicode(System::String ^ ascii, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>
@@ -682,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.IdnMapping.UseStd3AsciiRules" />
       <MemberSignature Language="VB.NET" Value="Public Property UseStd3AsciiRules As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseStd3AsciiRules : bool with get, set" Usage="System.Globalization.IdnMapping.UseStd3AsciiRules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseStd3AsciiRules { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Extensions</AssemblyName>

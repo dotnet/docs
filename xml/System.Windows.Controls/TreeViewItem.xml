@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TreeViewItem" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeViewItem&#xA;Inherits HeaderedItemsControl&#xA;Implements IHierarchicalVirtualizationAndScrollInfo" />
   <TypeSignature Language="F#" Value="type TreeViewItem = class&#xA;    inherit HeaderedItemsControl&#xA;    interface IHierarchicalVirtualizationAndScrollInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeViewItem : System::Windows::Controls::HeaderedItemsControl, System::Windows::Controls::Primitives::IHierarchicalVirtualizationAndScrollInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeViewItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="treeViewItem.ArrangeOverride arrangeSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.TreeViewItem.Collapsed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Collapsed As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Collapsed : System.Windows.RoutedEventHandler " Usage="member this.Collapsed : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Collapsed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.CollapsedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CollapsedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable CollapsedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.TreeViewItem.CollapsedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CollapsedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.TreeViewItem.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Expanded As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Expanded : System.Windows.RoutedEventHandler " Usage="member this.Expanded : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Expanded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.ExpandedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable ExpandedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.TreeViewItem.ExpandedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ExpandedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -267,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.ExpandSubtree" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandSubtree ()" />
       <MemberSignature Language="F#" Value="member this.ExpandSubtree : unit -&gt; unit" Usage="treeViewItem.ExpandSubtree " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandSubtree();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -304,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="treeViewItem.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -325,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.IsExpanded" />
       <MemberSignature Language="VB.NET" Value="Public Property IsExpanded As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsExpanded : bool with get, set" Usage="System.Windows.Controls.TreeViewItem.IsExpanded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpanded { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -373,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.IsExpandedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpandedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsExpandedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TreeViewItem.IsExpandedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsExpandedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="treeViewItem.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -424,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.IsSelected" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSelected As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSelected : bool with get, set" Usage="System.Windows.Controls.TreeViewItem.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -470,6 +483,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.IsSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TreeViewItem.IsSelectedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -496,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.IsSelectionActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelectionActive As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSelectionActive : bool" Usage="System.Windows.Controls.TreeViewItem.IsSelectionActive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionActive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -551,6 +566,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.IsSelectionActiveProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionActiveProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSelectionActiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TreeViewItem.IsSelectionActiveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectionActiveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -577,6 +593,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnCollapsed(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollapsed (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnCollapsed : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnCollapsed : System.Windows.RoutedEventArgs -&gt; unit" Usage="treeViewItem.OnCollapsed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollapsed(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -600,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="treeViewItem.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -621,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnExpanded(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExpanded (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnExpanded : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnExpanded : System.Windows.RoutedEventArgs -&gt; unit" Usage="treeViewItem.OnExpanded e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnExpanded(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -644,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnGotFocus(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnGotFocus : System.Windows.RoutedEventArgs -&gt; unit" Usage="treeViewItem.OnGotFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -676,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="treeViewItem.OnItemsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -706,6 +727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="treeViewItem.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -748,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="treeViewItem.OnMouseLeftButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -783,6 +806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnSelected(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelected (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnSelected : System.Windows.RoutedEventArgs -&gt; unit" Usage="treeViewItem.OnSelected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -817,6 +841,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnUnselected(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnselected (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUnselected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnUnselected : System.Windows.RoutedEventArgs -&gt; unit" Usage="treeViewItem.OnUnselected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnselected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -850,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TreeViewItem.OnVisualParentChanged(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualParentChanged (oldParent As DependencyObject)" />
       <MemberSignature Language="F#" Value="override this.OnVisualParentChanged : System.Windows.DependencyObject -&gt; unit" Usage="treeViewItem.OnVisualParentChanged oldParent" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -880,6 +906,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.TreeViewItem.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Selected : System.Windows.RoutedEventHandler " Usage="member this.Selected : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Selected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -934,6 +961,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.SelectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.TreeViewItem.SelectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SelectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -960,6 +988,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#Constraints" />
       <MemberSignature Language="VB.NET" Value=" Property Constraints As HierarchicalVirtualizationConstraints Implements IHierarchicalVirtualizationAndScrollInfo.Constraints" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationConstraints System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints { System::Windows::Controls::HierarchicalVirtualizationConstraints get(); void set(System::Windows::Controls::HierarchicalVirtualizationConstraints value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints</InterfaceMember>
@@ -990,6 +1019,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#HeaderDesiredSizes" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property HeaderDesiredSizes As HierarchicalVirtualizationHeaderDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes</InterfaceMember>
@@ -1020,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#InBackgroundLayout" />
       <MemberSignature Language="VB.NET" Value=" Property InBackgroundLayout As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout</InterfaceMember>
@@ -1051,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemDesiredSizes" />
       <MemberSignature Language="VB.NET" Value=" Property ItemDesiredSizes As HierarchicalVirtualizationItemDesiredSizes Implements IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes { System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes get(); void set(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes</InterfaceMember>
@@ -1081,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#ItemsHost" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ItemsHost As Panel Implements IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Controls::Panel ^ System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost { System::Windows::Controls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost</InterfaceMember>
@@ -1111,6 +1144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TreeViewItem.System#Windows#Controls#Primitives#IHierarchicalVirtualizationAndScrollInfo#MustDisableVirtualization" />
       <MemberSignature Language="VB.NET" Value=" Property MustDisableVirtualization As Boolean Implements IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.TreeViewItem.System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization</InterfaceMember>
@@ -1142,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.TreeViewItem.Unselected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unselected As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Unselected : System.Windows.RoutedEventHandler " Usage="member this.Unselected : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Unselected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1195,6 +1230,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TreeViewItem.UnselectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnselectedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable UnselectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.TreeViewItem.UnselectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UnselectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

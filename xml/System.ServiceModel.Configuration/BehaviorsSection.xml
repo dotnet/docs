@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BehaviorsSection" />
   <TypeSignature Language="VB.NET" Value="Public Class BehaviorsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type BehaviorsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BehaviorsSection : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BehaviorsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BehaviorsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BehaviorsSection.EndpointBehaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointBehaviors As EndpointBehaviorElementCollection" />
       <MemberSignature Language="F#" Value="member this.EndpointBehaviors : System.ServiceModel.Configuration.EndpointBehaviorElementCollection" Usage="System.ServiceModel.Configuration.BehaviorsSection.EndpointBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::EndpointBehaviorElementCollection ^ EndpointBehaviors { System::ServiceModel::Configuration::EndpointBehaviorElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BehaviorsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.BehaviorsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BehaviorsSection.ServiceBehaviors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceBehaviors As ServiceBehaviorElementCollection" />
       <MemberSignature Language="F#" Value="member this.ServiceBehaviors : System.ServiceModel.Configuration.ServiceBehaviorElementCollection" Usage="System.ServiceModel.Configuration.BehaviorsSection.ServiceBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceBehaviorElementCollection ^ ServiceBehaviors { System::ServiceModel::Configuration::ServiceBehaviorElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

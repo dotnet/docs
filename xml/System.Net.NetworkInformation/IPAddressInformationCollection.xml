@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPAddressInformationCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class IPAddressInformationCollection&#xA;Implements ICollection(Of IPAddressInformation), IEnumerable(Of IPAddressInformation)" />
   <TypeSignature Language="F#" Value="type IPAddressInformationCollection = class&#xA;    interface ICollection&lt;IPAddressInformation&gt;&#xA;    interface seq&lt;IPAddressInformation&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPAddressInformationCollection : System::Collections::Generic::ICollection&lt;System::Net::NetworkInformation::IPAddressInformation ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Net::NetworkInformation::IPAddressInformation ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.Add(System.Net.NetworkInformation.IPAddressInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (address As IPAddressInformation)" />
       <MemberSignature Language="F#" Value="abstract member Add : System.Net.NetworkInformation.IPAddressInformation -&gt; unit&#xA;override this.Add : System.Net.NetworkInformation.IPAddressInformation -&gt; unit" Usage="iPAddressInformationCollection.Add address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Net::NetworkInformation::IPAddressInformation ^ address);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="iPAddressInformationCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.Contains(System.Net.NetworkInformation.IPAddressInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (address As IPAddressInformation) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Contains : System.Net.NetworkInformation.IPAddressInformation -&gt; bool&#xA;override this.Contains : System.Net.NetworkInformation.IPAddressInformation -&gt; bool" Usage="iPAddressInformationCollection.Contains address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Net::NetworkInformation::IPAddressInformation ^ address);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.CopyTo(System.Net.NetworkInformation.IPAddressInformation[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (array As IPAddressInformation(), offset As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : System.Net.NetworkInformation.IPAddressInformation[] * int -&gt; unit&#xA;override this.CopyTo : System.Net.NetworkInformation.IPAddressInformation[] * int -&gt; unit" Usage="iPAddressInformationCollection.CopyTo (array, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Net::NetworkInformation::IPAddressInformation ^&gt; ^ array, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformationCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Net.NetworkInformation.IPAddressInformationCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator(Of IPAddressInformation)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Net.NetworkInformation.IPAddressInformation&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Net.NetworkInformation.IPAddressInformation&gt;" Usage="iPAddressInformationCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Net::NetworkInformation::IPAddressInformation ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformationCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Net.NetworkInformation.IPAddressInformationCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -319,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPAddressInformationCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As IPAddressInformation" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Net.NetworkInformation.IPAddressInformation" Usage="System.Net.NetworkInformation.IPAddressInformationCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::NetworkInformation::IPAddressInformation ^ default[int] { System::Net::NetworkInformation::IPAddressInformation ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -353,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.Remove(System.Net.NetworkInformation.IPAddressInformation)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Remove (address As IPAddressInformation) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Remove : System.Net.NetworkInformation.IPAddressInformation -&gt; bool&#xA;override this.Remove : System.Net.NetworkInformation.IPAddressInformation -&gt; bool" Usage="iPAddressInformationCollection.Remove address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Net::NetworkInformation::IPAddressInformation ^ address);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -389,6 +399,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPAddressInformationCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

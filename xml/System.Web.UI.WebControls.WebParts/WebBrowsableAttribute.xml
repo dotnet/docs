@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBrowsableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type WebBrowsableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBrowsableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowsableAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (browsable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebBrowsableAttribute : bool -&gt; System.Web.UI.WebControls.WebParts.WebBrowsableAttribute" Usage="new System.Web.UI.WebControls.WebParts.WebBrowsableAttribute browsable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowsableAttribute(bool browsable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Browsable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Browsable As Boolean" />
       <MemberSignature Language="F#" Value="member this.Browsable : bool" Usage="System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Browsable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Browsable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As WebBrowsableAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.WebControls.WebParts.WebBrowsableAttribute" Usage="System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebBrowsableAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="webBrowsableAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="webBrowsableAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="webBrowsableAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As WebBrowsableAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable No : System.Web.UI.WebControls.WebParts.WebBrowsableAttribute" Usage="System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebBrowsableAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As WebBrowsableAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Yes : System.Web.UI.WebControls.WebParts.WebBrowsableAttribute" Usage="System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebBrowsableAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

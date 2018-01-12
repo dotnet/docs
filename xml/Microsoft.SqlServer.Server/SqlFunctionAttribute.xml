@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlFunctionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlFunctionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type SqlFunctionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlFunctionAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlFunctionAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlFunctionAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.DataAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property DataAccess As DataAccessKind" />
       <MemberSignature Language="F#" Value="member this.DataAccess : Microsoft.SqlServer.Server.DataAccessKind with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.DataAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::SqlServer::Server::DataAccessKind DataAccess { Microsoft::SqlServer::Server::DataAccessKind get(); void set(Microsoft::SqlServer::Server::DataAccessKind value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.FillRowMethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property FillRowMethodName As String" />
       <MemberSignature Language="F#" Value="member this.FillRowMethodName : string with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.FillRowMethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FillRowMethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.IsDeterministic" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDeterministic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDeterministic : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.IsDeterministic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeterministic { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.IsPrecise" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPrecise As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPrecise : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.IsPrecise" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrecise { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.SystemDataAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property SystemDataAccess As SystemDataAccessKind" />
       <MemberSignature Language="F#" Value="member this.SystemDataAccess : Microsoft.SqlServer.Server.SystemDataAccessKind with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.SystemDataAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::SqlServer::Server::SystemDataAccessKind SystemDataAccess { Microsoft::SqlServer::Server::SystemDataAccessKind get(); void set(Microsoft::SqlServer::Server::SystemDataAccessKind value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFunctionAttribute.TableDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property TableDefinition As String" />
       <MemberSignature Language="F#" Value="member this.TableDefinition : string with get, set" Usage="Microsoft.SqlServer.Server.SqlFunctionAttribute.TableDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableDefinition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

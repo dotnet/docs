@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataStreamOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum MetadataStreamOptions" />
   <TypeSignature Language="F#" Value="type MetadataStreamOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MetadataStreamOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataStreamOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.Metadata.MetadataStreamOptions.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen" />
       <MemberSignature Language="VB.NET" Value="LeaveOpen" />
       <MemberSignature Language="F#" Value="LeaveOpen = 1" Usage="System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen" />
+      <MemberSignature Language="C++ CLI" Value="LeaveOpen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata" />
       <MemberSignature Language="VB.NET" Value="PrefetchMetadata" />
       <MemberSignature Language="F#" Value="PrefetchMetadata = 2" Usage="System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata" />
+      <MemberSignature Language="C++ CLI" Value="PrefetchMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

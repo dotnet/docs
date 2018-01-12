@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA256Managed" />
   <TypeSignature Language="VB.NET" Value="Public Class SHA256Managed&#xA;Inherits SHA256" />
   <TypeSignature Language="F#" Value="type SHA256Managed = class&#xA;    inherit SHA256" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SHA256Managed : System::Security::Cryptography::SHA256" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SHA256Managed();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sHA256Managed.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="sHA256Managed.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!SHA256Managed ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgb As Byte(), ibStart As Integer, cbSize As Integer)" />
       <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="sHA256Managed.HashCore (rgb, ibStart, cbSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgb, int ibStart, int cbSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="sHA256Managed.HashFinal " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Managed.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="sHA256Managed.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

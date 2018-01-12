@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueStringProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintQueueStringProperty" />
   <TypeSignature Language="F#" Value="type PrintQueueStringProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintQueueStringProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueStringProperty.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueStringProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueStringProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Printing.PrintQueueStringProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueStringProperty.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As PrintQueueStringPropertyType" />
       <MemberSignature Language="F#" Value="member this.Type : System.Printing.PrintQueueStringPropertyType with get, set" Usage="System.Printing.PrintQueueStringProperty.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintQueueStringPropertyType Type { System::Printing::PrintQueueStringPropertyType get(); void set(System::Printing::PrintQueueStringPropertyType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

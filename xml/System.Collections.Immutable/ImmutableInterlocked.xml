@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableInterlocked" />
   <TypeSignature Language="VB.NET" Value="Public Class ImmutableInterlocked" />
   <TypeSignature Language="F#" Value="type ImmutableInterlocked = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImmutableInterlocked abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1},System.Func{``0,``1,``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AddOrUpdate(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, addValueFactory As Func(Of TKey, TValue), updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue" />
       <MemberSignature Language="F#" Value="static member AddOrUpdate :  * 'Key * Func&lt;'Key, 'Value&gt; * Func&lt;'Key, 'Value, 'Value&gt; -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate (location, key, addValueFactory, updateValueFactory)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static TValue AddOrUpdate(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, Func&lt;TKey, TValue&gt; ^ addValueFactory, Func&lt;TKey, TValue, TValue&gt; ^ updateValueFactory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,System.Func{``0,``1,``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AddOrUpdate(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, addValue As TValue, updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue" />
       <MemberSignature Language="F#" Value="static member AddOrUpdate :  * 'Key * 'Value * Func&lt;'Key, 'Value, 'Value&gt; -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate (location, key, addValue, updateValueFactory)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static TValue AddOrUpdate(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, TValue addValue, Func&lt;TKey, TValue, TValue&gt; ^ updateValueFactory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.Enqueue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Enqueue(Of T) (ByRef location As ImmutableQueue(Of T), value As T)" />
       <MemberSignature Language="F#" Value="static member Enqueue :  * 'T -&gt; unit" Usage="System.Collections.Immutable.ImmutableInterlocked.Enqueue (location, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Enqueue(System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ % location, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOrAdd(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, valueFactory As Func(Of TKey, TValue)) As TValue" />
       <MemberSignature Language="F#" Value="static member GetOrAdd :  * 'Key * Func&lt;'Key, 'Value&gt; -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableInterlocked.GetOrAdd (location, key, valueFactory)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static TValue GetOrAdd(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, Func&lt;TKey, TValue&gt; ^ valueFactory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOrAdd(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, value As TValue) As TValue" />
       <MemberSignature Language="F#" Value="static member GetOrAdd :  * 'Key * 'Value -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableInterlocked.GetOrAdd (location, key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static TValue GetOrAdd(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``3(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``2,``1},``2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOrAdd(Of TKey, TValue, TArg) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, valueFactory As Func(Of TKey, TArg, TValue), factoryArgument As TArg) As TValue" />
       <MemberSignature Language="F#" Value="static member GetOrAdd :  * 'Key * Func&lt;'Key, 'Arg, 'Value&gt; * 'Arg -&gt; 'Value" Usage="System.Collections.Immutable.ImmutableInterlocked.GetOrAdd (location, key, valueFactory, factoryArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue, typename TArg&gt;&#xA; static TValue GetOrAdd(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, Func&lt;TKey, TArg, TValue&gt; ^ valueFactory, TArg factoryArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -247,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0},System.Collections.Immutable.ImmutableArray{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InterlockedCompareExchange(Of T) (ByRef location As ImmutableArray(Of T), value As ImmutableArray(Of T), comparand As ImmutableArray(Of T)) As ImmutableArray(Of T)" />
       <MemberSignature Language="F#" Value="static member InterlockedCompareExchange :  * System.Collections.Immutable.ImmutableArray&lt;'T&gt; * System.Collections.Immutable.ImmutableArray&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableArray&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange (location, value, comparand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableArray&lt;T&gt; InterlockedCompareExchange(System::Collections::Immutable::ImmutableArray&lt;T&gt; % location, System::Collections::Immutable::ImmutableArray&lt;T&gt; value, System::Collections::Immutable::ImmutableArray&lt;T&gt; comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InterlockedExchange(Of T) (ByRef location As ImmutableArray(Of T), value As ImmutableArray(Of T)) As ImmutableArray(Of T)" />
       <MemberSignature Language="F#" Value="static member InterlockedExchange :  * System.Collections.Immutable.ImmutableArray&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableArray&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange (location, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableArray&lt;T&gt; InterlockedExchange(System::Collections::Immutable::ImmutableArray&lt;T&gt; % location, System::Collections::Immutable::ImmutableArray&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -317,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InterlockedInitialize(Of T) (ByRef location As ImmutableArray(Of T), value As ImmutableArray(Of T)) As Boolean" />
       <MemberSignature Language="F#" Value="static member InterlockedInitialize :  * System.Collections.Immutable.ImmutableArray&lt;'T&gt; -&gt; bool" Usage="System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize (location, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool InterlockedInitialize(System::Collections::Immutable::ImmutableArray&lt;T&gt; % location, System::Collections::Immutable::ImmutableArray&lt;T&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -352,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.Push``1(System.Collections.Immutable.ImmutableStack{``0}@,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Push(Of T) (ByRef location As ImmutableStack(Of T), value As T)" />
       <MemberSignature Language="F#" Value="static member Push :  * 'T -&gt; unit" Usage="System.Collections.Immutable.ImmutableInterlocked.Push (location, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Push(System::Collections::Immutable::ImmutableStack&lt;T&gt; ^ % location, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -383,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.TryAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryAdd(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, value As TValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryAdd :  * 'Key * 'Value -&gt; bool" Usage="System.Collections.Immutable.ImmutableInterlocked.TryAdd (location, key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static bool TryAdd(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, TValue value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -420,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.TryDequeue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryDequeue(Of T) (ByRef location As ImmutableQueue(Of T), ByRef value As T) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryDequeue :  *  -&gt; bool" Usage="System.Collections.Immutable.ImmutableInterlocked.TryDequeue (location, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryDequeue(System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ % location, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -453,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.TryPop``1(System.Collections.Immutable.ImmutableStack{``0}@,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryPop(Of T) (ByRef location As ImmutableStack(Of T), ByRef value As T) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryPop :  *  -&gt; bool" Usage="System.Collections.Immutable.ImmutableInterlocked.TryPop (location, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TryPop(System::Collections::Immutable::ImmutableStack&lt;T&gt; ^ % location, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -486,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.TryRemove``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryRemove(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryRemove :  * 'Key *  -&gt; bool" Usage="System.Collections.Immutable.ImmutableInterlocked.TryRemove (location, key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static bool TryRemove(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, [Runtime::InteropServices::Out] TValue % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -523,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.TryUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryUpdate(Of TKey, TValue) (ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, newValue As TValue, comparisonValue As TValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryUpdate :  * 'Key * 'Value * 'Value -&gt; bool" Usage="System.Collections.Immutable.ImmutableInterlocked.TryUpdate (location, key, newValue, comparisonValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static bool TryUpdate(System::Collections::Immutable::ImmutableDictionary&lt;TKey, TValue&gt; ^ % location, TKey key, TValue newValue, TValue comparisonValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -562,6 +578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.Update``1(``0@,System.Func{``0,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Update(Of T As Class) (ByRef location As T, transformer As Func(Of T, T)) As Boolean" />
       <MemberSignature Language="F#" Value="static member Update :  * Func&lt;'T, 'T (requires 'T : null and 'T : null)&gt; -&gt; bool (requires 'T : null)" Usage="System.Collections.Immutable.ImmutableInterlocked.Update (location, transformer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static bool Update(T % location, Func&lt;T, T&gt; ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -599,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableInterlocked.Update``2(``0@,System.Func{``0,``1,``0},``1)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Update(Of T As Class, TArg As Class) (ByRef location As T, transformer As Func(Of T, TArg, T), transformerArgument As TArg) As Boolean" />
       <MemberSignature Language="F#" Value="static member Update :  * Func&lt;'T, 'Arg, 'T (requires 'T : null and 'T : null)&gt; * 'Arg -&gt; bool (requires 'T : null)" Usage="System.Collections.Immutable.ImmutableInterlocked.Update (location, transformer, transformerArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TArg&gt;&#xA; where T : class static bool Update(T % location, Func&lt;T, TArg, T&gt; ^ transformer, TArg transformerArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

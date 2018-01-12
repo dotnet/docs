@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.FileVersionInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileVersionInfo" />
   <TypeSignature Language="F#" Value="type FileVersionInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileVersionInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.Comments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comments As String" />
       <MemberSignature Language="F#" Value="member this.Comments : string" Usage="System.Diagnostics.FileVersionInfo.Comments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comments { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.CompanyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompanyName As String" />
       <MemberSignature Language="F#" Value="member this.CompanyName : string" Usage="System.Diagnostics.FileVersionInfo.CompanyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompanyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -156,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileBuildPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileBuildPart As Integer" />
       <MemberSignature Language="F#" Value="member this.FileBuildPart : int" Usage="System.Diagnostics.FileVersionInfo.FileBuildPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileBuildPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -217,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileDescription As String" />
       <MemberSignature Language="F#" Value="member this.FileDescription : string" Usage="System.Diagnostics.FileVersionInfo.FileDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileMajorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileMajorPart As Integer" />
       <MemberSignature Language="F#" Value="member this.FileMajorPart : int" Usage="System.Diagnostics.FileVersionInfo.FileMajorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileMajorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -318,6 +324,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileMinorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileMinorPart As Integer" />
       <MemberSignature Language="F#" Value="member this.FileMinorPart : int" Usage="System.Diagnostics.FileVersionInfo.FileMinorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileMinorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -378,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Diagnostics.FileVersionInfo.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -420,6 +428,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FilePrivatePart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilePrivatePart As Integer" />
       <MemberSignature Language="F#" Value="member this.FilePrivatePart : int" Usage="System.Diagnostics.FileVersionInfo.FilePrivatePart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilePrivatePart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -481,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileVersion As String" />
       <MemberSignature Language="F#" Value="member this.FileVersion : string" Usage="System.Diagnostics.FileVersionInfo.FileVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -540,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.FileVersionInfo.GetVersionInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVersionInfo (fileName As String) As FileVersionInfo" />
       <MemberSignature Language="F#" Value="static member GetVersionInfo : string -&gt; System.Diagnostics.FileVersionInfo" Usage="System.Diagnostics.FileVersionInfo.GetVersionInfo fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::FileVersionInfo ^ GetVersionInfo(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -614,6 +625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.InternalName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalName As String" />
       <MemberSignature Language="F#" Value="member this.InternalName : string" Usage="System.Diagnostics.FileVersionInfo.InternalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InternalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -655,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsDebug" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDebug As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDebug : bool" Usage="System.Diagnostics.FileVersionInfo.IsDebug" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDebug { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -704,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPatched" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPatched As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPatched : bool" Usage="System.Diagnostics.FileVersionInfo.IsPatched" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPatched { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -746,6 +760,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPreRelease" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPreRelease As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPreRelease : bool" Usage="System.Diagnostics.FileVersionInfo.IsPreRelease" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPreRelease { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -788,6 +803,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPrivateBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrivateBuild As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPrivateBuild : bool" Usage="System.Diagnostics.FileVersionInfo.IsPrivateBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivateBuild { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -836,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsSpecialBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialBuild As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSpecialBuild : bool" Usage="System.Diagnostics.FileVersionInfo.IsSpecialBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialBuild { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -884,6 +901,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
       <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Diagnostics.FileVersionInfo.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -914,6 +932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.LegalCopyright" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegalCopyright As String" />
       <MemberSignature Language="F#" Value="member this.LegalCopyright : string" Usage="System.Diagnostics.FileVersionInfo.LegalCopyright" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalCopyright { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -960,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.LegalTrademarks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegalTrademarks As String" />
       <MemberSignature Language="F#" Value="member this.LegalTrademarks : string" Usage="System.Diagnostics.FileVersionInfo.LegalTrademarks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalTrademarks { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1006,6 +1026,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.OriginalFilename" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalFilename As String" />
       <MemberSignature Language="F#" Value="member this.OriginalFilename : string" Usage="System.Diagnostics.FileVersionInfo.OriginalFilename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalFilename { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1052,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.PrivateBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateBuild As String" />
       <MemberSignature Language="F#" Value="member this.PrivateBuild : string" Usage="System.Diagnostics.FileVersionInfo.PrivateBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBuild { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1099,6 +1121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductBuildPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductBuildPart As Integer" />
       <MemberSignature Language="F#" Value="member this.ProductBuildPart : int" Usage="System.Diagnostics.FileVersionInfo.ProductBuildPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductBuildPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1159,6 +1182,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductMajorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductMajorPart As Integer" />
       <MemberSignature Language="F#" Value="member this.ProductMajorPart : int" Usage="System.Diagnostics.FileVersionInfo.ProductMajorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductMajorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1218,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductMinorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductMinorPart As Integer" />
       <MemberSignature Language="F#" Value="member this.ProductMinorPart : int" Usage="System.Diagnostics.FileVersionInfo.ProductMinorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductMinorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1277,6 +1302,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductName As String" />
       <MemberSignature Language="F#" Value="member this.ProductName : string" Usage="System.Diagnostics.FileVersionInfo.ProductName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1318,6 +1344,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductPrivatePart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductPrivatePart As Integer" />
       <MemberSignature Language="F#" Value="member this.ProductPrivatePart : int" Usage="System.Diagnostics.FileVersionInfo.ProductPrivatePart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductPrivatePart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1378,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductVersion As String" />
       <MemberSignature Language="F#" Value="member this.ProductVersion : string" Usage="System.Diagnostics.FileVersionInfo.ProductVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1436,6 +1464,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.SpecialBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecialBuild As String" />
       <MemberSignature Language="F#" Value="member this.SpecialBuild : string" Usage="System.Diagnostics.FileVersionInfo.SpecialBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpecialBuild { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
@@ -1483,6 +1512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.FileVersionInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileVersionInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>

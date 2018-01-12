@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.AttachedPropertiesService" />
   <TypeSignature Language="VB.NET" Value="Public Class AttachedPropertiesService" />
   <TypeSignature Language="F#" Value="type AttachedPropertiesService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachedPropertiesService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedPropertiesService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachedPropertiesService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedPropertiesService.AddProperty(System.Activities.Presentation.Model.AttachedProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddProperty (property As AttachedProperty)" />
       <MemberSignature Language="F#" Value="member this.AddProperty : System.Activities.Presentation.Model.AttachedProperty -&gt; unit" Usage="attachedPropertiesService.AddProperty property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddProperty(System::Activities::Presentation::Model::AttachedProperty ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

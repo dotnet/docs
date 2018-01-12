@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.OpCodes" />
   <TypeSignature Language="VB.NET" Value="Public Class OpCodes" />
   <TypeSignature Language="F#" Value="type OpCodes = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OpCodes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Add" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Add As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Add : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Add" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Add;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -133,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Add_Ovf" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Add_Ovf As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Add_Ovf : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Add_Ovf" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Add_Ovf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -210,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Add_Ovf_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Add_Ovf_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Add_Ovf_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Add_Ovf_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Add_Ovf_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -287,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.And" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly And As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable And : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.And" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode And;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -345,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Arglist" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Arglist As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Arglist : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Arglist" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Arglist;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -393,6 +399,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Beq" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Beq As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Beq : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Beq" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Beq;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -453,6 +460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Beq_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Beq_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Beq_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Beq_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Beq_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -513,6 +521,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bge" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bge As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bge : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bge" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bge;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -569,6 +578,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bge_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bge_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bge_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bge_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bge_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -625,6 +635,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bge_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bge_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bge_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bge_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bge_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -681,6 +692,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bge_Un_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bge_Un_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bge_Un_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bge_Un_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bge_Un_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -737,6 +749,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bgt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bgt As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bgt : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bgt" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bgt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -793,6 +806,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bgt_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bgt_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bgt_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bgt_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bgt_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -849,6 +863,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bgt_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bgt_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bgt_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bgt_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bgt_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -905,6 +920,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bgt_Un_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bgt_Un_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bgt_Un_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bgt_Un_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bgt_Un_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -961,6 +977,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ble" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ble As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ble : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ble" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ble;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1017,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ble_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ble_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ble_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ble_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ble_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1073,6 +1091,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ble_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ble_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ble_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ble_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ble_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1129,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ble_Un_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ble_Un_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ble_Un_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ble_Un_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ble_Un_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1185,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Blt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Blt As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Blt : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Blt" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Blt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1241,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Blt_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Blt_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Blt_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Blt_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Blt_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1297,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Blt_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Blt_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Blt_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Blt_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Blt_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1353,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Blt_Un_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Blt_Un_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Blt_Un_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Blt_Un_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Blt_Un_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1409,6 +1433,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bne_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bne_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bne_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bne_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bne_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1465,6 +1490,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Bne_Un_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bne_Un_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Bne_Un_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Bne_Un_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Bne_Un_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1521,6 +1547,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Box" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Box As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Box : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Box" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Box;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1585,6 +1612,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Br" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Br As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Br : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Br" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Br;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1635,6 +1663,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Br_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Br_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Br_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Br_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Br_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1685,6 +1714,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Break" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Break As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Break : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Break" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Break;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1737,6 +1767,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Brfalse" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Brfalse As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Brfalse : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Brfalse" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Brfalse;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1793,6 +1824,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Brfalse_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Brfalse_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Brfalse_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Brfalse_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Brfalse_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1849,6 +1881,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Brtrue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Brtrue As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Brtrue : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Brtrue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Brtrue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1907,6 +1940,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Brtrue_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Brtrue_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Brtrue_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Brtrue_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Brtrue_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -1965,6 +1999,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Call" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Call As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Call : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Call" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Call;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2037,6 +2072,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Calli" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Calli As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Calli : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Calli" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Calli;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2103,6 +2139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Callvirt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Callvirt As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Callvirt : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Callvirt" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Callvirt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2178,6 +2215,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Castclass" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Castclass As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Castclass : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Castclass" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Castclass;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2241,6 +2279,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ceq" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ceq As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ceq : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ceq" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ceq;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2299,6 +2338,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Cgt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Cgt As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Cgt : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Cgt" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Cgt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2357,6 +2397,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Cgt_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Cgt_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Cgt_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Cgt_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Cgt_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2419,6 +2460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ckfinite" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ckfinite As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ckfinite : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ckfinite" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ckfinite;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2477,6 +2519,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Clt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Clt As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Clt : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Clt" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Clt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2533,6 +2576,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Clt_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Clt_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Clt_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Clt_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Clt_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2597,6 +2641,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Constrained" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Constrained As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Constrained : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Constrained" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Constrained;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2669,6 +2714,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_I" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_I As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_I : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_I" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_I;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2729,6 +2775,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_I1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_I1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_I1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_I1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_I1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2789,6 +2836,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_I2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_I2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_I2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_I2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_I2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2849,6 +2897,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2909,6 +2958,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -2969,6 +3019,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3027,6 +3078,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3085,6 +3137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3143,6 +3196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I1_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I1_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I1_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I1_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I1_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3201,6 +3255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3259,6 +3314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I2_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I2_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I2_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I2_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I2_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3317,6 +3373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3375,6 +3432,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I4_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I4_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I4_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I4_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I4_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3433,6 +3491,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3491,6 +3550,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_I8_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_I8_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_I8_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_I8_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_I8_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3549,6 +3609,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3607,6 +3668,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3665,6 +3727,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3723,6 +3786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U1_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U1_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U1_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U1_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U1_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3781,6 +3845,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3839,6 +3904,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U2_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U2_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U2_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U2_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U2_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3897,6 +3963,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -3955,6 +4022,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U4_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U4_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U4_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U4_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U4_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4013,6 +4081,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4071,6 +4140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_Ovf_U8_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_Ovf_U8_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_Ovf_U8_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_Ovf_U8_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_Ovf_U8_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4129,6 +4199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_R_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_R_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_R_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_R_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_R_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4189,6 +4260,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_R4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_R4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_R4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_R4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_R4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4249,6 +4321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_R8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_R8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_R8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_R8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_R8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4309,6 +4382,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_U" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_U As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_U : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_U" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_U;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4369,6 +4443,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_U1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_U1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_U1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_U1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_U1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4429,6 +4504,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_U2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_U2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_U2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_U2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_U2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4489,6 +4565,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_U4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_U4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_U4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_U4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_U4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4549,6 +4626,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Conv_U8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Conv_U8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Conv_U8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Conv_U8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Conv_U8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4609,6 +4687,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Cpblk" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Cpblk As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Cpblk : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Cpblk" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Cpblk;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4671,6 +4750,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Cpobj" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Cpobj As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Cpobj : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Cpobj" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Cpobj;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4727,6 +4807,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Div" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Div As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Div : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Div" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Div;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4801,6 +4882,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Div_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Div_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Div_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Div_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Div_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4857,6 +4939,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Dup" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Dup As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Dup : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Dup" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Dup;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4913,6 +4996,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Endfilter" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Endfilter As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Endfilter : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Endfilter" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Endfilter;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -4975,6 +5059,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Endfinally" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Endfinally As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Endfinally : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Endfinally" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Endfinally;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5031,6 +5116,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Initblk" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Initblk As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Initblk : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Initblk" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Initblk;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5091,6 +5177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Initobj" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Initobj As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Initobj : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Initobj" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Initobj;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5145,6 +5232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Isinst" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Isinst As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Isinst : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Isinst" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Isinst;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5201,6 +5289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Jmp" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Jmp As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Jmp : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Jmp" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Jmp;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5253,6 +5342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarg" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarg As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarg : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarg" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarg;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5307,6 +5397,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarg_0" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarg_0 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarg_0 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarg_0" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarg_0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5361,6 +5452,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarg_1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarg_1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarg_1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarg_1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarg_1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5415,6 +5507,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarg_2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarg_2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarg_2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarg_2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarg_2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5469,6 +5562,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarg_3" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarg_3 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarg_3 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarg_3" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarg_3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5523,6 +5617,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarg_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarg_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarg_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarg_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarg_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5579,6 +5674,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarga" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarga As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarga : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarga" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarga;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5633,6 +5729,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldarga_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldarga_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldarga_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldarga_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldarga_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5689,6 +5786,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5745,6 +5843,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_0" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_0 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_0 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_0" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5795,6 +5894,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5845,6 +5945,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5895,6 +5996,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_3" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_3 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_3 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_3" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5945,6 +6047,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -5995,6 +6098,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_5" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_5 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_5 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_5" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_5;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6045,6 +6149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_6" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_6 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_6 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_6" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_6;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6095,6 +6200,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_7" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_7 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_7 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_7" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_7;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6145,6 +6251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6195,6 +6302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_M1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_M1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_M1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_M1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_M1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6245,6 +6353,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I4_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I4_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I4_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I4_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I4_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6295,6 +6404,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6345,6 +6455,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_R4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_R4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_R4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_R4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_R4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6395,6 +6506,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldc_R8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldc_R8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldc_R8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldc_R8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldc_R8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6445,6 +6557,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6507,6 +6620,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_I" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_I As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_I : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_I" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_I;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6573,6 +6687,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_I1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_I1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_I1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_I1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_I1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6639,6 +6754,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_I2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_I2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_I2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_I2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_I2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6705,6 +6821,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6771,6 +6888,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6837,6 +6955,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_R4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_R4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_R4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_R4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_R4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6903,6 +7022,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_R8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_R8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_R8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_R8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_R8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -6969,6 +7089,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_Ref" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_Ref As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_Ref : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_Ref" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_Ref;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7033,6 +7154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_U1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_U1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_U1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_U1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_U1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7099,6 +7221,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_U2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_U2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_U2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_U2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_U2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7165,6 +7288,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelem_U4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelem_U4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelem_U4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelem_U4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelem_U4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7231,6 +7355,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldelema" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldelema As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldelema : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldelema" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldelema;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7297,6 +7422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldfld" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldfld As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldfld : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldfld" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldfld;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7357,6 +7483,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldflda" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldflda As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldflda : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldflda" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldflda;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7421,6 +7548,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldftn" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldftn As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldftn : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldftn" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldftn;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7473,6 +7601,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_I" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_I As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_I : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_I" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_I;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7537,6 +7666,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_I1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_I1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_I1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_I1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_I1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7601,6 +7731,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_I2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_I2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_I2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_I2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_I2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7665,6 +7796,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7729,6 +7861,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7793,6 +7926,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_R4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_R4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_R4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_R4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_R4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7857,6 +7991,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_R8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_R8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_R8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_R8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_R8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7921,6 +8056,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_Ref" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_Ref As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_Ref : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_Ref" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_Ref;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -7985,6 +8121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_U1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_U1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_U1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_U1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_U1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8049,6 +8186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_U2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_U2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_U2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_U2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_U2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8113,6 +8251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldind_U4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldind_U4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldind_U4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldind_U4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldind_U4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8177,6 +8316,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldlen" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldlen As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldlen : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldlen" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldlen;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8233,6 +8373,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloc" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloc As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloc : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloc" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8289,6 +8430,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloc_0" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloc_0 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloc_0 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloc_0" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloc_0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8341,6 +8483,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloc_1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloc_1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloc_1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloc_1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloc_1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8393,6 +8536,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloc_2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloc_2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloc_2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloc_2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloc_2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8445,6 +8589,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloc_3" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloc_3 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloc_3 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloc_3" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloc_3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8497,6 +8642,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloc_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloc_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloc_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloc_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloc_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8551,6 +8697,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloca" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloca As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloca : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloca" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloca;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8601,6 +8748,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldloca_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldloca_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldloca_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldloca_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldloca_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8653,6 +8801,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldnull" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldnull As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldnull : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldnull" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldnull;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8705,6 +8854,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldobj" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldobj As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldobj : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldobj" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldobj;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8765,6 +8915,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldsfld" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldsfld As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldsfld : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldsfld" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldsfld;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8817,6 +8968,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldsflda" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldsflda As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldsflda : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldsflda" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldsflda;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8871,6 +9023,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldstr" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldstr As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldstr : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldstr" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldstr;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8923,6 +9076,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldtoken" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldtoken As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldtoken : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldtoken" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldtoken;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -8981,6 +9135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ldvirtftn" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ldvirtftn As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ldvirtftn : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ldvirtftn" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ldvirtftn;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9037,6 +9192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Leave As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Leave : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Leave" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Leave;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9091,6 +9247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Leave_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Leave_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Leave_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Leave_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Leave_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9145,6 +9302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Localloc" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Localloc As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Localloc : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Localloc" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Localloc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9205,6 +9363,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Mkrefany" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Mkrefany As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Mkrefany : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Mkrefany" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Mkrefany;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9263,6 +9422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Mul" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Mul As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Mul : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Mul" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Mul;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9323,6 +9483,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Mul_Ovf" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Mul_Ovf As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Mul_Ovf : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Mul_Ovf" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Mul_Ovf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9381,6 +9542,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Mul_Ovf_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Mul_Ovf_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Mul_Ovf_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Mul_Ovf_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Mul_Ovf_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9439,6 +9601,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Neg" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Neg As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Neg : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Neg" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Neg;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9497,6 +9660,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Newarr" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Newarr As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Newarr : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Newarr" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Newarr;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9561,6 +9725,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Newobj" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Newobj As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Newobj : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Newobj" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Newobj;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9627,6 +9792,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Nop" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Nop As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Nop : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Nop" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Nop;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9675,6 +9841,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Not" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Not As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Not : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Not" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Not;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9729,6 +9896,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Or" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Or As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Or : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Or" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Or;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9787,6 +9955,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Pop" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pop As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Pop : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Pop" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Pop;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9837,6 +10006,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9866,6 +10036,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9895,6 +10066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix3" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix3 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix3 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix3" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9924,6 +10096,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9953,6 +10126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix5" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix5 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix5 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix5" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix5;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -9982,6 +10156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix6" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix6 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix6 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix6" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix6;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10011,6 +10186,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefix7" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefix7 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefix7 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefix7" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefix7;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10040,6 +10216,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Prefixref" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Prefixref As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Prefixref : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Prefixref" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Prefixref;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10069,6 +10246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Readonly" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Readonly As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Readonly : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Readonly" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Readonly;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10149,6 +10327,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Refanytype" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Refanytype As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Refanytype : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Refanytype" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Refanytype;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10205,6 +10384,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Refanyval" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Refanyval As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Refanyval : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Refanyval" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Refanyval;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10265,6 +10445,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Rem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rem As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Rem : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Rem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Rem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10334,6 +10515,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Rem_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rem_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Rem_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Rem_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Rem_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10400,6 +10582,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Ret" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ret As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Ret : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Ret" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Ret;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10456,6 +10639,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Rethrow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rethrow As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Rethrow : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Rethrow" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Rethrow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10504,6 +10688,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Shl" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Shl As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Shl : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Shl" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Shl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10562,6 +10747,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Shr" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Shr As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Shr : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Shr" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Shr;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10620,6 +10806,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Shr_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Shr_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Shr_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Shr_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Shr_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10678,6 +10865,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Sizeof" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Sizeof As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Sizeof : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Sizeof" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Sizeof;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10731,6 +10919,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Starg" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Starg As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Starg : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Starg" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Starg;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10785,6 +10974,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Starg_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Starg_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Starg_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Starg_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Starg_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10841,6 +11031,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10905,6 +11096,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_I" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_I As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_I : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_I" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_I;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -10969,6 +11161,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_I1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_I1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_I1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_I1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_I1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11033,6 +11226,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_I2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_I2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_I2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_I2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_I2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11097,6 +11291,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11161,6 +11356,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11225,6 +11421,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_R4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_R4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_R4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_R4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_R4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11289,6 +11486,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_R8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_R8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_R8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_R8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_R8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11353,6 +11551,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stelem_Ref" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stelem_Ref As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stelem_Ref : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stelem_Ref" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stelem_Ref;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11419,6 +11618,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stfld" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stfld As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stfld : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stfld" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stfld;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11477,6 +11677,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_I" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_I As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_I : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_I" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_I;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11535,6 +11736,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_I1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_I1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_I1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_I1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_I1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11593,6 +11795,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_I2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_I2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_I2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_I2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_I2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11651,6 +11854,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_I4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_I4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_I4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_I4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_I4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11709,6 +11913,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_I8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_I8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_I8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_I8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_I8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11767,6 +11972,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_R4" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_R4 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_R4 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_R4" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_R4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11825,6 +12031,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_R8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_R8 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_R8 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_R8" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_R8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11883,6 +12090,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stind_Ref" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stind_Ref As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stind_Ref : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stind_Ref" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stind_Ref;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11941,6 +12149,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stloc" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stloc As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stloc : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stloc" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stloc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -11997,6 +12206,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stloc_0" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stloc_0 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stloc_0 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stloc_0" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stloc_0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12051,6 +12261,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stloc_1" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stloc_1 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stloc_1 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stloc_1" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stloc_1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12105,6 +12316,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stloc_2" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stloc_2 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stloc_2 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stloc_2" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stloc_2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12159,6 +12371,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stloc_3" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stloc_3 As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stloc_3 : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stloc_3" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stloc_3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12213,6 +12426,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stloc_S" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stloc_S As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stloc_S : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stloc_S" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stloc_S;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12269,6 +12483,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stobj" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stobj As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stobj : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stobj" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stobj;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12327,6 +12542,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Stsfld" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Stsfld As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Stsfld : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Stsfld" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Stsfld;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12383,6 +12599,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Sub" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Sub As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Sub : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Sub" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Sub;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12443,6 +12660,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Sub_Ovf" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Sub_Ovf As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Sub_Ovf : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Sub_Ovf" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Sub_Ovf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12501,6 +12719,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Sub_Ovf_Un" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Sub_Ovf_Un As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Sub_Ovf_Un : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Sub_Ovf_Un" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Sub_Ovf_Un;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12559,6 +12778,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Switch" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Switch As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Switch : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Switch" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Switch;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12626,6 +12846,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Tailcall" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tailcall As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Tailcall : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Tailcall" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Tailcall;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12678,6 +12899,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.OpCodes.TakesSingleByteArgument(System.Reflection.Emit.OpCode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TakesSingleByteArgument (inst As OpCode) As Boolean" />
       <MemberSignature Language="F#" Value="static member TakesSingleByteArgument : System.Reflection.Emit.OpCode -&gt; bool" Usage="System.Reflection.Emit.OpCodes.TakesSingleByteArgument inst" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TakesSingleByteArgument(System::Reflection::Emit::OpCode inst);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12736,6 +12958,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Throw" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Throw As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Throw : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Throw" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Throw;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12790,6 +13013,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Unaligned" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Unaligned As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Unaligned : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Unaligned" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Unaligned;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12848,6 +13072,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Unbox" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Unbox As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Unbox : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Unbox" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Unbox;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12916,6 +13141,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Unbox_Any" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Unbox_Any As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Unbox_Any : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Unbox_Any" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Unbox_Any;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -12978,6 +13204,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Volatile" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Volatile As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Volatile : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Volatile" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Volatile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -13030,6 +13257,7 @@ callvirt m
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodes.Xor" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Xor As OpCode " />
       <MemberSignature Language="F#" Value=" staticval mutable Xor : System.Reflection.Emit.OpCode" Usage="System.Reflection.Emit.OpCodes.Xor" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Emit::OpCode Xor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

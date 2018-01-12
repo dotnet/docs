@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.ContentRangeHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class ContentRangeHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type ContentRangeHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentRangeHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (length As Long)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ContentRangeHeaderValue : int64 -&gt; System.Net.Http.Headers.ContentRangeHeaderValue" Usage="new System.Net.Http.Headers.ContentRangeHeaderValue length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentRangeHeaderValue(long length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As Long, to As Long)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ContentRangeHeaderValue : int64 * int64 -&gt; System.Net.Http.Headers.ContentRangeHeaderValue" Usage="new System.Net.Http.Headers.ContentRangeHeaderValue (from, to)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentRangeHeaderValue(long from, long to);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (from As Long, to As Long, length As Long)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.ContentRangeHeaderValue : int64 * int64 * int64 -&gt; System.Net.Http.Headers.ContentRangeHeaderValue" Usage="new System.Net.Http.Headers.ContentRangeHeaderValue (from, to, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentRangeHeaderValue(long from, long to, long length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="contentRangeHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentRangeHeaderValue.From" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property From As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.From : Nullable&lt;int64&gt;" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.From" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; From { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="contentRangeHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentRangeHeaderValue.HasLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLength As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasLength : bool" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.HasLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLength { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentRangeHeaderValue.HasRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasRange As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasRange : bool" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.HasRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasRange { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -285,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentRangeHeaderValue.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.Length : Nullable&lt;int64&gt;" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; Length { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As ContentRangeHeaderValue" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.ContentRangeHeaderValue" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::ContentRangeHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -346,6 +357,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentRangeHeaderValue.To" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property To As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.To : Nullable&lt;int64&gt;" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.To" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; To { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -402,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="contentRangeHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.ContentRangeHeaderValue.TryParse(System.String,System.Net.Http.Headers.ContentRangeHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As ContentRangeHeaderValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::ContentRangeHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -464,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.ContentRangeHeaderValue.Unit" />
       <MemberSignature Language="VB.NET" Value="Public Property Unit As String" />
       <MemberSignature Language="F#" Value="member this.Unit : string with get, set" Usage="System.Net.Http.Headers.ContentRangeHeaderValue.Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Unit { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

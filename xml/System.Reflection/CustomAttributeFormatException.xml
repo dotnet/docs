@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.CustomAttributeFormatException" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomAttributeFormatException&#xA;Inherits FormatException" />
   <TypeSignature Language="F#" Value="type CustomAttributeFormatException = class&#xA;    inherit FormatException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomAttributeFormatException : FormatException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeFormatException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeFormatException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeFormatException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.CustomAttributeFormatException : string -&gt; System.Reflection.CustomAttributeFormatException" Usage="new System.Reflection.CustomAttributeFormatException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeFormatException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Reflection.CustomAttributeFormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Reflection.CustomAttributeFormatException" Usage="new System.Reflection.CustomAttributeFormatException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CustomAttributeFormatException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeFormatException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Reflection.CustomAttributeFormatException : string * Exception -&gt; System.Reflection.CustomAttributeFormatException" Usage="new System.Reflection.CustomAttributeFormatException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeFormatException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

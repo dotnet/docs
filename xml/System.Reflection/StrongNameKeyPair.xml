@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.StrongNameKeyPair" />
   <TypeSignature Language="VB.NET" Value="Public Class StrongNameKeyPair&#xA;Implements IDeserializationCallback, ISerializable" />
   <TypeSignature Language="F#" Value="type StrongNameKeyPair = class&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StrongNameKeyPair : System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.StrongNameKeyPair.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyPairArray As Byte())" />
       <MemberSignature Language="F#" Value="new System.Reflection.StrongNameKeyPair : byte[] -&gt; System.Reflection.StrongNameKeyPair" Usage="new System.Reflection.StrongNameKeyPair keyPairArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongNameKeyPair(cli::array &lt;System::Byte&gt; ^ keyPairArray);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.StrongNameKeyPair.#ctor(System.IO.FileStream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyPairFile As FileStream)" />
       <MemberSignature Language="F#" Value="new System.Reflection.StrongNameKeyPair : System.IO.FileStream -&gt; System.Reflection.StrongNameKeyPair" Usage="new System.Reflection.StrongNameKeyPair keyPairFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongNameKeyPair(System::IO::FileStream ^ keyPairFile);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.StrongNameKeyPair.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyPairContainer As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.StrongNameKeyPair : string -&gt; System.Reflection.StrongNameKeyPair" Usage="new System.Reflection.StrongNameKeyPair keyPairContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongNameKeyPair(System::String ^ keyPairContainer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.StrongNameKeyPair.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Reflection.StrongNameKeyPair : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Reflection.StrongNameKeyPair" Usage="new System.Reflection.StrongNameKeyPair (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StrongNameKeyPair(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.StrongNameKeyPair.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKey As Byte()" />
       <MemberSignature Language="F#" Value="member this.PublicKey : byte[]" Usage="System.Reflection.StrongNameKeyPair.PublicKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ PublicKey { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.StrongNameKeyPair.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -279,6 +286,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.StrongNameKeyPair.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

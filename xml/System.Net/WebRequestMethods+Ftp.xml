@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebRequestMethods.Ftp" />
   <TypeSignature Language="VB.NET" Value="Public Class WebRequestMethods.Ftp" />
   <TypeSignature Language="F#" Value="type WebRequestMethods.Ftp = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class WebRequestMethods::Ftp abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.AppendFile" />
       <MemberSignature Language="VB.NET" Value="Public Const AppendFile As String " />
       <MemberSignature Language="F#" Value="val mutable AppendFile : string" Usage="System.Net.WebRequestMethods.Ftp.AppendFile" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AppendFile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.DeleteFile" />
       <MemberSignature Language="VB.NET" Value="Public Const DeleteFile As String " />
       <MemberSignature Language="F#" Value="val mutable DeleteFile : string" Usage="System.Net.WebRequestMethods.Ftp.DeleteFile" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DeleteFile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />
       <MemberSignature Language="VB.NET" Value="Public Const DownloadFile As String " />
       <MemberSignature Language="F#" Value="val mutable DownloadFile : string" Usage="System.Net.WebRequestMethods.Ftp.DownloadFile" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DownloadFile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.GetDateTimestamp" />
       <MemberSignature Language="VB.NET" Value="Public Const GetDateTimestamp As String " />
       <MemberSignature Language="F#" Value="val mutable GetDateTimestamp : string" Usage="System.Net.WebRequestMethods.Ftp.GetDateTimestamp" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ GetDateTimestamp;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.GetFileSize" />
       <MemberSignature Language="VB.NET" Value="Public Const GetFileSize As String " />
       <MemberSignature Language="F#" Value="val mutable GetFileSize : string" Usage="System.Net.WebRequestMethods.Ftp.GetFileSize" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ GetFileSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Const ListDirectory As String " />
       <MemberSignature Language="F#" Value="val mutable ListDirectory : string" Usage="System.Net.WebRequestMethods.Ftp.ListDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ListDirectory;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />
       <MemberSignature Language="VB.NET" Value="Public Const ListDirectoryDetails As String " />
       <MemberSignature Language="F#" Value="val mutable ListDirectoryDetails : string" Usage="System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ListDirectoryDetails;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.MakeDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Const MakeDirectory As String " />
       <MemberSignature Language="F#" Value="val mutable MakeDirectory : string" Usage="System.Net.WebRequestMethods.Ftp.MakeDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ MakeDirectory;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.PrintWorkingDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Const PrintWorkingDirectory As String " />
       <MemberSignature Language="F#" Value="val mutable PrintWorkingDirectory : string" Usage="System.Net.WebRequestMethods.Ftp.PrintWorkingDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ PrintWorkingDirectory;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.RemoveDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Const RemoveDirectory As String " />
       <MemberSignature Language="F#" Value="val mutable RemoveDirectory : string" Usage="System.Net.WebRequestMethods.Ftp.RemoveDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ RemoveDirectory;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.Rename" />
       <MemberSignature Language="VB.NET" Value="Public Const Rename As String " />
       <MemberSignature Language="F#" Value="val mutable Rename : string" Usage="System.Net.WebRequestMethods.Ftp.Rename" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Rename;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -347,6 +359,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.UploadFile" />
       <MemberSignature Language="VB.NET" Value="Public Const UploadFile As String " />
       <MemberSignature Language="F#" Value="val mutable UploadFile : string" Usage="System.Net.WebRequestMethods.Ftp.UploadFile" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UploadFile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.Ftp.UploadFileWithUniqueName" />
       <MemberSignature Language="VB.NET" Value="Public Const UploadFileWithUniqueName As String " />
       <MemberSignature Language="F#" Value="val mutable UploadFileWithUniqueName : string" Usage="System.Net.WebRequestMethods.Ftp.UploadFileWithUniqueName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UploadFileWithUniqueName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.HttpWebClientProtocol" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpWebClientProtocol&#xA;Inherits WebClientProtocol" />
   <TypeSignature Language="F#" Value="type HttpWebClientProtocol = class&#xA;    inherit WebClientProtocol" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpWebClientProtocol abstract : System::Web::Services::Protocols::WebClientProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpWebClientProtocol();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowAutoRedirect As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowAutoRedirect : bool with get, set" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowAutoRedirect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CancelAsync (userState As Object)" />
       <MemberSignature Language="F#" Value="member this.CancelAsync : obj -&gt; unit" Usage="httpWebClientProtocol.CancelAsync userState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CancelAsync(System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCertificates As X509CertificateCollection" />
       <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieContainer As CookieContainer" />
       <MemberSignature Language="F#" Value="member this.CookieContainer : System.Net.CookieContainer with get, set" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieContainer ^ CookieContainer { System::Net::CookieContainer ^ get(); void set(System::Net::CookieContainer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDecompression As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableDecompression : bool with get, set" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDecompression { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" />
       <MemberSignature Language="F#" Value="static member GenerateXmlMappings : Type * System.Collections.ArrayList -&gt; bool" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings (type, mapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GenerateXmlMappings(Type ^ type, System::Collections::ArrayList ^ mapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -287,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateXmlMappings (types As Type(), mapping As ArrayList) As Hashtable" />
       <MemberSignature Language="F#" Value="static member GenerateXmlMappings : Type[] * System.Collections.ArrayList -&gt; System.Collections.Hashtable" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings (types, mapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ GenerateXmlMappings(cli::array &lt;Type ^&gt; ^ types, System::Collections::ArrayList ^ mapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -313,6 +322,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebRequest GetWebRequest(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebRequest(System.Uri)" />
       <MemberSignature Language="F#" Value="override this.GetWebRequest : Uri -&gt; System.Net.WebRequest" Usage="httpWebClientProtocol.GetWebRequest uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebRequest ^ GetWebRequest(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -349,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetWebResponse (request As WebRequest) As WebResponse" />
       <MemberSignature Language="F#" Value="override this.GetWebResponse : System.Net.WebRequest -&gt; System.Net.WebResponse" Usage="httpWebClientProtocol.GetWebResponse request" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebResponse ^ GetWebResponse(System::Net::WebRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -374,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetWebResponse (request As WebRequest, result As IAsyncResult) As WebResponse" />
       <MemberSignature Language="F#" Value="override this.GetWebResponse : System.Net.WebRequest * IAsyncResult -&gt; System.Net.WebResponse" Usage="httpWebClientProtocol.GetWebResponse (request, result)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebResponse ^ GetWebResponse(System::Net::WebRequest ^ request, IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -401,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy" />
       <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
       <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.Proxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -450,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing" />
       <MemberSignature Language="VB.NET" Value="Public Property UnsafeAuthenticatedConnectionSharing As Boolean" />
       <MemberSignature Language="F#" Value="member this.UnsafeAuthenticatedConnectionSharing : bool with get, set" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnsafeAuthenticatedConnectionSharing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -489,6 +503,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent" />
       <MemberSignature Language="VB.NET" Value="Public Property UserAgent As String" />
       <MemberSignature Language="F#" Value="member this.UserAgent : string with get, set" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserAgent { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

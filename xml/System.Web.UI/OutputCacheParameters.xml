@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.OutputCacheParameters" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputCacheParameters" />
   <TypeSignature Language="F#" Value="type OutputCacheParameters = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheParameters sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.OutputCacheParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutputCacheParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.CacheProfile" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheProfile As String" />
       <MemberSignature Language="F#" Value="member this.CacheProfile : string with get, set" Usage="System.Web.UI.OutputCacheParameters.CacheProfile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CacheProfile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As Integer" />
       <MemberSignature Language="F#" Value="member this.Duration : int with get, set" Usage="System.Web.UI.OutputCacheParameters.Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Duration { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.OutputCacheParameters.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As OutputCacheLocation" />
       <MemberSignature Language="F#" Value="member this.Location : System.Web.UI.OutputCacheLocation with get, set" Usage="System.Web.UI.OutputCacheParameters.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::OutputCacheLocation Location { System::Web::UI::OutputCacheLocation get(); void set(System::Web::UI::OutputCacheLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.NoStore" />
       <MemberSignature Language="VB.NET" Value="Public Property NoStore As Boolean" />
       <MemberSignature Language="F#" Value="member this.NoStore : bool with get, set" Usage="System.Web.UI.OutputCacheParameters.NoStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoStore { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.SqlDependency" />
       <MemberSignature Language="VB.NET" Value="Public Property SqlDependency As String" />
       <MemberSignature Language="F#" Value="member this.SqlDependency : string with get, set" Usage="System.Web.UI.OutputCacheParameters.SqlDependency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SqlDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.VaryByContentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByContentEncoding As String" />
       <MemberSignature Language="F#" Value="member this.VaryByContentEncoding : string with get, set" Usage="System.Web.UI.OutputCacheParameters.VaryByContentEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByContentEncoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.VaryByControl" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByControl As String" />
       <MemberSignature Language="F#" Value="member this.VaryByControl : string with get, set" Usage="System.Web.UI.OutputCacheParameters.VaryByControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByControl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.VaryByCustom" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByCustom As String" />
       <MemberSignature Language="F#" Value="member this.VaryByCustom : string with get, set" Usage="System.Web.UI.OutputCacheParameters.VaryByCustom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByCustom { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -268,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.VaryByHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByHeader As String" />
       <MemberSignature Language="F#" Value="member this.VaryByHeader : string with get, set" Usage="System.Web.UI.OutputCacheParameters.VaryByHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByHeader { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -295,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.OutputCacheParameters.VaryByParam" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByParam As String" />
       <MemberSignature Language="F#" Value="member this.VaryByParam : string with get, set" Usage="System.Web.UI.OutputCacheParameters.VaryByParam" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VaryByParam { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

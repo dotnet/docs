@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WebHttpSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebHttpSecurity" />
   <TypeSignature Language="F#" Value="type WebHttpSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHttpSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpSecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WebHttpSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As WebHttpSecurityMode" />
       <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.WebHttpSecurityMode with get, set" Usage="System.ServiceModel.WebHttpSecurity.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WebHttpSecurityMode Mode { System::ServiceModel::WebHttpSecurityMode get(); void set(System::ServiceModel::WebHttpSecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpSecurity.ShouldSerializeMode" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMode () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeMode : unit -&gt; bool" Usage="webHttpSecurity.ShouldSerializeMode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpSecurity.ShouldSerializeTransport" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeTransport : unit -&gt; bool" Usage="webHttpSecurity.ShouldSerializeTransport " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WebHttpSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As HttpTransportSecurity" />
       <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.HttpTransportSecurity with get, set" Usage="System.ServiceModel.WebHttpSecurity.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpTransportSecurity ^ Transport { System::ServiceModel::HttpTransportSecurity ^ get(); void set(System::ServiceModel::HttpTransportSecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

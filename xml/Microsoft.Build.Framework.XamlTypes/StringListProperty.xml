@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.StringListProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringListProperty&#xA;Inherits BaseProperty" />
   <TypeSignature Language="F#" Value="type StringListProperty = class&#xA;    inherit BaseProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringListProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.StringListProperty.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringListProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.StringListProperty.CommandLineValueSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandLineValueSeparator As String" />
       <MemberSignature Language="F#" Value="member this.CommandLineValueSeparator : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.StringListProperty.CommandLineValueSeparator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLineValueSeparator { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.StringListProperty.RendererValueSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Property RendererValueSeparator As String" />
       <MemberSignature Language="F#" Value="member this.RendererValueSeparator : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.StringListProperty.RendererValueSeparator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RendererValueSeparator { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.StringListProperty.Subtype" />
       <MemberSignature Language="VB.NET" Value="Public Property Subtype As String" />
       <MemberSignature Language="F#" Value="member this.Subtype : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.StringListProperty.Subtype" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subtype { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

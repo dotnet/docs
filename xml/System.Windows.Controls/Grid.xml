@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Grid" />
   <TypeSignature Language="VB.NET" Value="Public Class Grid&#xA;Inherits Panel&#xA;Implements IAddChild" />
   <TypeSignature Language="F#" Value="type Grid = class&#xA;    inherit Panel&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Grid : System::Windows::Controls::Panel, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Grid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="grid.ArrangeOverride arrangeSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Grid.ColumnDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnDefinitions As ColumnDefinitionCollection" />
       <MemberSignature Language="F#" Value="member this.ColumnDefinitions : System.Windows.Controls.ColumnDefinitionCollection" Usage="System.Windows.Controls.Grid.ColumnDefinitions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ColumnDefinitionCollection ^ ColumnDefinitions { System::Windows::Controls::ColumnDefinitionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Grid.ColumnProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Grid.ColumnProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Grid.ColumnSpanProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnSpanProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnSpanProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Grid.ColumnSpanProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnSpanProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.GetColumn(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetColumn (element As UIElement) As Integer" />
       <MemberSignature Language="F#" Value="static member GetColumn : System.Windows.UIElement -&gt; int" Usage="System.Windows.Controls.Grid.GetColumn element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetColumn(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -253,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.GetColumnSpan(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetColumnSpan (element As UIElement) As Integer" />
       <MemberSignature Language="F#" Value="static member GetColumnSpan : System.Windows.UIElement -&gt; int" Usage="System.Windows.Controls.Grid.GetColumnSpan element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetColumnSpan(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.GetIsSharedSizeScope(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsSharedSizeScope (element As UIElement) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsSharedSizeScope : System.Windows.UIElement -&gt; bool" Usage="System.Windows.Controls.Grid.GetIsSharedSizeScope element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsSharedSizeScope(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -308,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.GetRow(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRow (element As UIElement) As Integer" />
       <MemberSignature Language="F#" Value="static member GetRow : System.Windows.UIElement -&gt; int" Usage="System.Windows.Controls.Grid.GetRow element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetRow(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -337,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.GetRowSpan(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRowSpan (element As UIElement) As Integer" />
       <MemberSignature Language="F#" Value="static member GetRowSpan : System.Windows.UIElement -&gt; int" Usage="System.Windows.Controls.Grid.GetRowSpan element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetRowSpan(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -366,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.GetVisualChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
       <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="grid.GetVisualChild index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -413,6 +425,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Grid.IsSharedSizeScopeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSharedSizeScopeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSharedSizeScopeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Grid.IsSharedSizeScopeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSharedSizeScopeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -433,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Grid.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.Grid.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -453,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="grid.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -479,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualChildrenChanged (visualAdded As DependencyObject, visualRemoved As DependencyObject)" />
       <MemberSignature Language="F#" Value="override this.OnVisualChildrenChanged : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="grid.OnVisualChildrenChanged (visualAdded, visualRemoved)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualChildrenChanged(System::Windows::DependencyObject ^ visualAdded, System::Windows::DependencyObject ^ visualRemoved);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -520,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Grid.RowDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowDefinitions As RowDefinitionCollection" />
       <MemberSignature Language="F#" Value="member this.RowDefinitions : System.Windows.Controls.RowDefinitionCollection" Usage="System.Windows.Controls.Grid.RowDefinitions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::RowDefinitionCollection ^ RowDefinitions { System::Windows::Controls::RowDefinitionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -568,6 +585,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Grid.RowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RowProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Grid.RowProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RowProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -604,6 +622,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Grid.RowSpanProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowSpanProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RowSpanProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Grid.RowSpanProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RowSpanProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -624,6 +643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.SetColumn(System.Windows.UIElement,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetColumn (element As UIElement, value As Integer)" />
       <MemberSignature Language="F#" Value="static member SetColumn : System.Windows.UIElement * int -&gt; unit" Usage="System.Windows.Controls.Grid.SetColumn (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetColumn(System::Windows::UIElement ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.SetColumnSpan(System.Windows.UIElement,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetColumnSpan (element As UIElement, value As Integer)" />
       <MemberSignature Language="F#" Value="static member SetColumnSpan : System.Windows.UIElement * int -&gt; unit" Usage="System.Windows.Controls.Grid.SetColumnSpan (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetColumnSpan(System::Windows::UIElement ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -676,6 +697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.SetIsSharedSizeScope(System.Windows.UIElement,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsSharedSizeScope (element As UIElement, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsSharedSizeScope : System.Windows.UIElement * bool -&gt; unit" Usage="System.Windows.Controls.Grid.SetIsSharedSizeScope (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsSharedSizeScope(System::Windows::UIElement ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -703,6 +725,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.SetRow(System.Windows.UIElement,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRow (element As UIElement, value As Integer)" />
       <MemberSignature Language="F#" Value="static member SetRow : System.Windows.UIElement * int -&gt; unit" Usage="System.Windows.Controls.Grid.SetRow (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRow(System::Windows::UIElement ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -729,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.SetRowSpan(System.Windows.UIElement,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRowSpan (element As UIElement, value As Integer)" />
       <MemberSignature Language="F#" Value="static member SetRowSpan : System.Windows.UIElement * int -&gt; unit" Usage="System.Windows.Controls.Grid.SetRowSpan (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRowSpan(System::Windows::UIElement ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -755,6 +779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.ShouldSerializeColumnDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeColumnDefinitions () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeColumnDefinitions : unit -&gt; bool" Usage="grid.ShouldSerializeColumnDefinitions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeColumnDefinitions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -782,6 +807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.ShouldSerializeRowDefinitions" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeRowDefinitions () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeRowDefinitions : unit -&gt; bool" Usage="grid.ShouldSerializeRowDefinitions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeRowDefinitions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -809,6 +835,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Grid.ShowGridLines" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowGridLines As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowGridLines : bool with get, set" Usage="System.Windows.Controls.Grid.ShowGridLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowGridLines { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -845,6 +872,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Grid.ShowGridLinesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowGridLinesProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ShowGridLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Grid.ShowGridLinesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowGridLinesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -864,6 +892,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -889,6 +918,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Grid.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -915,6 +945,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Grid.VisualChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
       <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.Grid.VisualChildrenCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

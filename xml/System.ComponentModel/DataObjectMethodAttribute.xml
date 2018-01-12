@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectMethodAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectMethodAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type DataObjectMethodAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataObjectMethodAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectMethodAttribute.#ctor(System.ComponentModel.DataObjectMethodType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodType As DataObjectMethodType)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectMethodAttribute : System.ComponentModel.DataObjectMethodType -&gt; System.ComponentModel.DataObjectMethodAttribute" Usage="new System.ComponentModel.DataObjectMethodAttribute methodType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectMethodAttribute(System::ComponentModel::DataObjectMethodType methodType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectMethodAttribute.#ctor(System.ComponentModel.DataObjectMethodType,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodType As DataObjectMethodType, isDefault As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DataObjectMethodAttribute : System.ComponentModel.DataObjectMethodType * bool -&gt; System.ComponentModel.DataObjectMethodAttribute" Usage="new System.ComponentModel.DataObjectMethodAttribute (methodType, isDefault)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectMethodAttribute(System::ComponentModel::DataObjectMethodType methodType, bool isDefault);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectMethodAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataObjectMethodAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectMethodAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataObjectMethodAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectMethodAttribute.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefault As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.ComponentModel.DataObjectMethodAttribute.IsDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -260,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataObjectMethodAttribute.Match(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Match : obj -&gt; bool" Usage="dataObjectMethodAttribute.Match obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -302,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataObjectMethodAttribute.MethodType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodType As DataObjectMethodType" />
       <MemberSignature Language="F#" Value="member this.MethodType : System.ComponentModel.DataObjectMethodType" Usage="System.ComponentModel.DataObjectMethodAttribute.MethodType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DataObjectMethodType MethodType { System::ComponentModel::DataObjectMethodType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

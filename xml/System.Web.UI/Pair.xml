@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Pair" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pair" />
   <TypeSignature Language="F#" Value="type Pair = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pair sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Pair.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pair();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Pair.#ctor(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Object, y As Object)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.Pair : obj * obj -&gt; System.Web.UI.Pair" Usage="new System.Web.UI.Pair (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pair(System::Object ^ x, System::Object ^ y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Pair.First" />
       <MemberSignature Language="VB.NET" Value="Public First As Object " />
       <MemberSignature Language="F#" Value="val mutable First : obj" Usage="System.Web.UI.Pair.First" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ First;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Pair.Second" />
       <MemberSignature Language="VB.NET" Value="Public Second As Object " />
       <MemberSignature Language="F#" Value="val mutable Second : obj" Usage="System.Web.UI.Pair.Second" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ Second;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

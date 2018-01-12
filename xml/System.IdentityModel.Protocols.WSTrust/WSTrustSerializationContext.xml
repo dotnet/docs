@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
   <TypeSignature Language="VB.NET" Value="Public Class WSTrustSerializationContext" />
   <TypeSignature Language="F#" Value="type WSTrustSerializationContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSTrustSerializationContext" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustSerializationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager securityTokenHandlerCollectionManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor(System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext : System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager -&gt; System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" Usage="new System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext securityTokenHandlerCollectionManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustSerializationContext(System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ securityTokenHandlerCollectionManager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager securityTokenHandlerCollectionManager, class System.IdentityModel.Selectors.SecurityTokenResolver securityTokenResolver, class System.IdentityModel.Selectors.SecurityTokenResolver useKeyTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor(System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager,System.IdentityModel.Selectors.SecurityTokenResolver,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext : System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager * System.IdentityModel.Selectors.SecurityTokenResolver * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" Usage="new System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext (securityTokenHandlerCollectionManager, securityTokenResolver, useKeyTokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustSerializationContext(System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ securityTokenHandlerCollectionManager, System::IdentityModel::Selectors::SecurityTokenResolver ^ securityTokenResolver, System::IdentityModel::Selectors::SecurityTokenResolver ^ useKeyTokenResolver);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityTokenHandlerCollectionManager As SecurityTokenHandlerCollectionManager" />
       <MemberSignature Language="F#" Value="member this.SecurityTokenHandlerCollectionManager : System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlerCollectionManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ SecurityTokenHandlerCollectionManager { System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ get(); void set(System::IdentityModel::Tokens::SecurityTokenHandlerCollectionManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenHandlers As SecurityTokenHandlerCollection" />
       <MemberSignature Language="F#" Value="member this.SecurityTokenHandlers : System.IdentityModel.Tokens.SecurityTokenHandlerCollection" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.SecurityTokenHandlers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ SecurityTokenHandlers { System::IdentityModel::Tokens::SecurityTokenHandlerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -149,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.TokenResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenResolver As SecurityTokenResolver" />
       <MemberSignature Language="F#" Value="member this.TokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.TokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ TokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.UseKeyTokenResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property UseKeyTokenResolver As SecurityTokenResolver" />
       <MemberSignature Language="F#" Value="member this.UseKeyTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver with get, set" Usage="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.UseKeyTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ UseKeyTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpApplicationStateBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpApplicationStateBase&#xA;Inherits NameObjectCollectionBase&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type HttpApplicationStateBase = class&#xA;    inherit NameObjectCollectionBase&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpApplicationStateBase abstract : System::Collections::Specialized::NameObjectCollectionBase, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpApplicationStateBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (name As String, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="httpApplicationStateBase.Add (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.HttpApplicationStateBase.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="httpApplicationStateBase.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Contents" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Contents As HttpApplicationStateBase" />
       <MemberSignature Language="F#" Value="member this.Contents : System.Web.HttpApplicationStateBase" Usage="System.Web.HttpApplicationStateBase.Contents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpApplicationStateBase ^ Contents { System::Web::HttpApplicationStateBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="httpApplicationStateBase.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.HttpApplicationStateBase.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (index As Integer) As Object" />
       <MemberSignature Language="F#" Value="abstract member Get : int -&gt; obj&#xA;override this.Get : int -&gt; obj" Usage="httpApplicationStateBase.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String) As Object" />
       <MemberSignature Language="F#" Value="abstract member Get : string -&gt; obj&#xA;override this.Get : string -&gt; obj" Usage="httpApplicationStateBase.Get name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="httpApplicationStateBase.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -289,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetKey : int -&gt; string&#xA;override this.GetKey : int -&gt; string" Usage="httpApplicationStateBase.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.HttpApplicationStateBase.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -348,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Web.HttpApplicationStateBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -373,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(name As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.HttpApplicationStateBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Lock" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Lock ()" />
       <MemberSignature Language="F#" Value="abstract member Lock : unit -&gt; unit&#xA;override this.Lock : unit -&gt; unit" Usage="httpApplicationStateBase.Lock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Lock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -419,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="httpApplicationStateBase.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.RemoveAll" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAll ()" />
       <MemberSignature Language="F#" Value="abstract member RemoveAll : unit -&gt; unit&#xA;override this.RemoveAll : unit -&gt; unit" Usage="httpApplicationStateBase.RemoveAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -464,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="httpApplicationStateBase.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -488,6 +507,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.Set(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Set (name As String, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member Set : string * obj -&gt; unit&#xA;override this.Set : string * obj -&gt; unit" Usage="httpApplicationStateBase.Set (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Set(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -514,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.StaticObjects" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StaticObjects As HttpStaticObjectsCollectionBase" />
       <MemberSignature Language="F#" Value="member this.StaticObjects : System.Web.HttpStaticObjectsCollectionBase" Usage="System.Web.HttpApplicationStateBase.StaticObjects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpStaticObjectsCollectionBase ^ StaticObjects { System::Web::HttpStaticObjectsCollectionBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -544,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpApplicationStateBase.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.HttpApplicationStateBase.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -568,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpApplicationStateBase.UnLock" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UnLock ()" />
       <MemberSignature Language="F#" Value="abstract member UnLock : unit -&gt; unit&#xA;override this.UnLock : unit -&gt; unit" Usage="httpApplicationStateBase.UnLock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnLock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

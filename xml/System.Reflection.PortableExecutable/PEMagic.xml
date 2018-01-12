@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEMagic" />
   <TypeSignature Language="VB.NET" Value="Public Enum PEMagic" />
   <TypeSignature Language="F#" Value="type PEMagic = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PEMagic" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEMagic.PE32" />
       <MemberSignature Language="VB.NET" Value="PE32" />
       <MemberSignature Language="F#" Value="PE32 = 267" Usage="System.Reflection.PortableExecutable.PEMagic.PE32" />
+      <MemberSignature Language="C++ CLI" Value="PE32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEMagic.PE32Plus" />
       <MemberSignature Language="VB.NET" Value="PE32Plus" />
       <MemberSignature Language="F#" Value="PE32Plus = 523" Usage="System.Reflection.PortableExecutable.PEMagic.PE32Plus" />
+      <MemberSignature Language="C++ CLI" Value="PE32Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

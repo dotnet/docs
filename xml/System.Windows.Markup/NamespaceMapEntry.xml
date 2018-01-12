@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.NamespaceMapEntry" />
   <TypeSignature Language="VB.NET" Value="Public Class NamespaceMapEntry" />
   <TypeSignature Language="F#" Value="type NamespaceMapEntry = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamespaceMapEntry" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.NamespaceMapEntry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamespaceMapEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.NamespaceMapEntry.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, assemblyName As String, clrNamespace As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Markup.NamespaceMapEntry : string * string * string -&gt; System.Windows.Markup.NamespaceMapEntry" Usage="new System.Windows.Markup.NamespaceMapEntry (xmlNamespace, assemblyName, clrNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamespaceMapEntry(System::String ^ xmlNamespace, System::String ^ assemblyName, System::String ^ clrNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NamespaceMapEntry.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Windows.Markup.NamespaceMapEntry.AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NamespaceMapEntry.ClrNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property ClrNamespace As String" />
       <MemberSignature Language="F#" Value="member this.ClrNamespace : string with get, set" Usage="System.Windows.Markup.NamespaceMapEntry.ClrNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClrNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NamespaceMapEntry.XmlNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlNamespace As String" />
       <MemberSignature Language="F#" Value="member this.XmlNamespace : string with get, set" Usage="System.Windows.Markup.NamespaceMapEntry.XmlNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

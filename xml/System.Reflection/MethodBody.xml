@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodBody" />
   <TypeSignature Language="VB.NET" Value="Public Class MethodBody" />
   <TypeSignature Language="F#" Value="type MethodBody = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodBody" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBody.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MethodBody();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.ExceptionHandlingClauses" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExceptionHandlingClauses As IList(Of ExceptionHandlingClause)" />
       <MemberSignature Language="F#" Value="member this.ExceptionHandlingClauses : System.Collections.Generic.IList&lt;System.Reflection.ExceptionHandlingClause&gt;" Usage="System.Reflection.MethodBody.ExceptionHandlingClauses" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Reflection::ExceptionHandlingClause ^&gt; ^ ExceptionHandlingClauses { System::Collections::Generic::IList&lt;System::Reflection::ExceptionHandlingClause ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBody.GetILAsByteArray" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetILAsByteArray () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetILAsByteArray : unit -&gt; byte[]&#xA;override this.GetILAsByteArray : unit -&gt; byte[]" Usage="methodBody.GetILAsByteArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetILAsByteArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.InitLocals" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InitLocals As Boolean" />
       <MemberSignature Language="F#" Value="member this.InitLocals : bool" Usage="System.Reflection.MethodBody.InitLocals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool InitLocals { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -256,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.LocalSignatureMetadataToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocalSignatureMetadataToken As Integer" />
       <MemberSignature Language="F#" Value="member this.LocalSignatureMetadataToken : int" Usage="System.Reflection.MethodBody.LocalSignatureMetadataToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LocalSignatureMetadataToken { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.LocalVariables" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocalVariables As IList(Of LocalVariableInfo)" />
       <MemberSignature Language="F#" Value="member this.LocalVariables : System.Collections.Generic.IList&lt;System.Reflection.LocalVariableInfo&gt;" Usage="System.Reflection.MethodBody.LocalVariables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Reflection::LocalVariableInfo ^&gt; ^ LocalVariables { System::Collections::Generic::IList&lt;System::Reflection::LocalVariableInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -352,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.MaxStackSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MaxStackSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxStackSize : int" Usage="System.Reflection.MethodBody.MaxStackSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxStackSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

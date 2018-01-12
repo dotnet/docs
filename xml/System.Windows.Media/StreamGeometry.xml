@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.StreamGeometry" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StreamGeometry&#xA;Inherits Geometry" />
   <TypeSignature Language="F#" Value="type StreamGeometry = class&#xA;    inherit Geometry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamGeometry sealed : System::Windows::Media::Geometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamGeometry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.StreamGeometry.Bounds" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rect" />
       <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Rect" Usage="System.Windows.Media.StreamGeometry.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="streamGeometry.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As StreamGeometry" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.StreamGeometry" Usage="streamGeometry.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::StreamGeometry ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="streamGeometry.CloneCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As StreamGeometry" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.StreamGeometry" Usage="streamGeometry.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::StreamGeometry ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="streamGeometry.CloneCurrentValueCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="streamGeometry.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.StreamGeometry.FillRule" />
       <MemberSignature Language="VB.NET" Value="Public Property FillRule As FillRule" />
       <MemberSignature Language="F#" Value="member this.FillRule : System.Windows.Media.FillRule with get, set" Usage="System.Windows.Media.StreamGeometry.FillRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FillRule FillRule { System::Windows::Media::FillRule get(); void set(System::Windows::Media::FillRule value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +292,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StreamGeometry.FillRuleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillRuleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FillRuleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.StreamGeometry.FillRuleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillRuleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -301,6 +312,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="streamGeometry.GetAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -324,6 +336,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="streamGeometry.GetCurrentValueAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -347,6 +360,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEmpty () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsEmpty : unit -&gt; bool" Usage="streamGeometry.IsEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -373,6 +387,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.MayHaveCurves" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MayHaveCurves () As Boolean" />
       <MemberSignature Language="F#" Value="override this.MayHaveCurves : unit -&gt; bool" Usage="streamGeometry.MayHaveCurves " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MayHaveCurves();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -399,6 +414,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.OnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
       <MemberSignature Language="F#" Value="override this.OnChanged : unit -&gt; unit" Usage="streamGeometry.OnChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -419,6 +435,7 @@ FillRule Example
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.StreamGeometry.Open" />
       <MemberSignature Language="VB.NET" Value="Public Function Open () As StreamGeometryContext" />
       <MemberSignature Language="F#" Value="member this.Open : unit -&gt; System.Windows.Media.StreamGeometryContext" Usage="streamGeometry.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::StreamGeometryContext ^ Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

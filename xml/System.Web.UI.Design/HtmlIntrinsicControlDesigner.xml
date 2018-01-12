@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.HtmlIntrinsicControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlIntrinsicControlDesigner&#xA;Inherits HtmlControlDesigner" />
   <TypeSignature Language="F#" Value="type HtmlIntrinsicControlDesigner = class&#xA;    inherit HtmlControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlIntrinsicControlDesigner : System::Web::UI::Design::HtmlControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlIntrinsicControlDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlIntrinsicControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

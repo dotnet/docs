@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlException" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type XamlException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlException : string -&gt; System.Xaml.XamlException" Usage="new System.Xaml.XamlException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xaml.XamlException" Usage="new System.Xaml.XamlException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlException : string * Exception -&gt; System.Xaml.XamlException" Usage="new System.Xaml.XamlException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlException.#ctor(System.String,System.Exception,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, lineNumber As Integer, linePosition As Integer)" />
       <MemberSignature Language="F#" Value="new System.Xaml.XamlException : string * Exception * int * int -&gt; System.Xaml.XamlException" Usage="new System.Xaml.XamlException (message, innerException, lineNumber, linePosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlException(System::String ^ message, Exception ^ innerException, int lineNumber, int linePosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="xamlException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlException.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property LineNumber As Integer" />
       <MemberSignature Language="F#" Value="member this.LineNumber : int with get, set" Usage="System.Xaml.XamlException.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:  property int LineNumber {  public:&#xA;int get(); protected:&#xA; void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlException.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public Property LinePosition As Integer" />
       <MemberSignature Language="F#" Value="member this.LinePosition : int with get, set" Usage="System.Xaml.XamlException.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:  property int LinePosition {  public:&#xA;int get(); protected:&#xA; void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Xaml.XamlException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

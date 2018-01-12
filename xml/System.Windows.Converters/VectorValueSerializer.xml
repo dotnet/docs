@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Converters.VectorValueSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class VectorValueSerializer&#xA;Inherits ValueSerializer" />
   <TypeSignature Language="F#" Value="type VectorValueSerializer = class&#xA;    inherit ValueSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VectorValueSerializer : System::Windows::Markup::ValueSerializer" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Converters.VectorValueSerializer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorValueSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Converters.VectorValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFromString (value As String, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="vectorValueSerializer.CanConvertFromString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Converters.VectorValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="vectorValueSerializer.CanConvertToString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Converters.VectorValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFromString (value As String, context As IValueSerializerContext) As Object" />
       <MemberSignature Language="F#" Value="override this.ConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; obj" Usage="vectorValueSerializer.ConvertFromString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Converters.VectorValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
       <MemberSignature Language="F#" Value="override this.ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="vectorValueSerializer.ConvertToString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

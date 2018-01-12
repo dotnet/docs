@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.Encoding" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Encoding&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type Encoding = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Encoding abstract : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -274,6 +275,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Encoding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -314,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (codePage As Integer)" />
       <MemberSignature Language="F#" Value="new System.Text.Encoding : int -&gt; System.Text.Encoding" Usage="new System.Text.Encoding codePage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Encoding(int codePage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -363,6 +366,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int32 codePage, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.#ctor(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="F#" Value="new System.Text.Encoding : int * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="new System.Text.Encoding (codePage, encoderFallback, decoderFallback)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Encoding(int codePage, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -413,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.ASCII" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ASCII As Encoding" />
       <MemberSignature Language="F#" Value="member this.ASCII : System.Text.Encoding" Usage="System.Text.Encoding.ASCII" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ ASCII { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -479,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.BigEndianUnicode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BigEndianUnicode As Encoding" />
       <MemberSignature Language="F#" Value="member this.BigEndianUnicode : System.Text.Encoding" Usage="System.Text.Encoding.BigEndianUnicode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ BigEndianUnicode { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -543,6 +549,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.BodyName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BodyName As String" />
       <MemberSignature Language="F#" Value="member this.BodyName : string" Usage="System.Text.Encoding.BodyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BodyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -598,6 +605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="encoding.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -649,6 +657,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.CodePage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CodePage As Integer" />
       <MemberSignature Language="F#" Value="member this.CodePage : int" Usage="System.Text.Encoding.CodePage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CodePage { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -705,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (srcEncoding As Encoding, dstEncoding As Encoding, bytes As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="static member Convert : System.Text.Encoding * System.Text.Encoding * byte[] -&gt; byte[]" Usage="System.Text.Encoding.Convert (srcEncoding, dstEncoding, bytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Convert(System::Text::Encoding ^ srcEncoding, System::Text::Encoding ^ dstEncoding, cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -778,6 +788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.Convert(System.Text.Encoding,System.Text.Encoding,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert (srcEncoding As Encoding, dstEncoding As Encoding, bytes As Byte(), index As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="static member Convert : System.Text.Encoding * System.Text.Encoding * byte[] * int * int -&gt; byte[]" Usage="System.Text.Encoding.Convert (srcEncoding, dstEncoding, bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Convert(System::Text::Encoding ^ srcEncoding, System::Text::Encoding ^ dstEncoding, cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -846,6 +857,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.DecoderFallback" />
       <MemberSignature Language="VB.NET" Value="Public Property DecoderFallback As DecoderFallback" />
       <MemberSignature Language="F#" Value="member this.DecoderFallback : System.Text.DecoderFallback with get, set" Usage="System.Text.Encoding.DecoderFallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::DecoderFallback ^ DecoderFallback { System::Text::DecoderFallback ^ get(); void set(System::Text::DecoderFallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -901,6 +913,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Encoding" />
       <MemberSignature Language="F#" Value="member this.Default : System.Text.Encoding" Usage="System.Text.Encoding.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ Default { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -952,6 +965,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.EncoderFallback" />
       <MemberSignature Language="VB.NET" Value="Public Property EncoderFallback As EncoderFallback" />
       <MemberSignature Language="F#" Value="member this.EncoderFallback : System.Text.EncoderFallback with get, set" Usage="System.Text.Encoding.EncoderFallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::EncoderFallback ^ EncoderFallback { System::Text::EncoderFallback ^ get(); void set(System::Text::EncoderFallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1007,6 +1021,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.EncodingName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EncodingName As String" />
       <MemberSignature Language="F#" Value="member this.EncodingName : string" Usage="System.Text.Encoding.EncodingName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EncodingName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1060,6 +1075,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="encoding.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1127,6 +1143,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetByteCount(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByteCount (chars As Char()) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetByteCount : char[] -&gt; int&#xA;override this.GetByteCount : char[] -&gt; int" Usage="encoding.GetByteCount chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetByteCount(cli::array &lt;char&gt; ^ chars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1205,6 +1222,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetByteCount(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetByteCount (s As String) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetByteCount : string -&gt; int&#xA;override this.GetByteCount : string -&gt; int" Usage="encoding.GetByteCount s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetByteCount(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1282,6 +1300,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetByteCount(char* chars, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetByteCount(System.Char*,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetByteCount : nativeptr&lt;char&gt; * int -&gt; int&#xA;override this.GetByteCount : nativeptr&lt;char&gt; * int -&gt; int" Usage="encoding.GetByteCount (chars, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetByteCount(char* chars, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1366,6 +1385,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetByteCount (chars As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetByteCount : char[] * int * int -&gt; int" Usage="encoding.GetByteCount (chars, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetByteCount(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1454,6 +1474,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetByteCount(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByteCount (s As String, index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.GetByteCount : string * int * int -&gt; int" Usage="encoding.GetByteCount (s, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetByteCount(System::String ^ s, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1492,6 +1513,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (chars As Char()) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : char[] -&gt; byte[]&#xA;override this.GetBytes : char[] -&gt; byte[]" Usage="encoding.GetBytes chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetBytes(cli::array &lt;char&gt; ^ chars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1570,6 +1592,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (s As String) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : string -&gt; byte[]&#xA;override this.GetBytes : string -&gt; byte[]" Usage="encoding.GetBytes s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetBytes(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1648,6 +1671,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (chars As Char(), index As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : char[] * int * int -&gt; byte[]&#xA;override this.GetBytes : char[] * int * int -&gt; byte[]" Usage="encoding.GetBytes (chars, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetBytes(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1736,6 +1760,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBytes (s As String, index As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetBytes : string * int * int -&gt; byte[]" Usage="encoding.GetBytes (s, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetBytes(System::String ^ s, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1763,6 +1788,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetBytes(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int -&gt; int&#xA;override this.GetBytes : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int -&gt; int" Usage="encoding.GetBytes (chars, charCount, bytes, byteCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetBytes(char* chars, int charCount, System::Byte* bytes, int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1859,6 +1885,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBytes (chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : char[] * int * int * byte[] * int -&gt; int" Usage="encoding.GetBytes (chars, charIndex, charCount, bytes, byteIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetBytes(cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -1963,6 +1990,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes (s As String, charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetBytes : string * int * int * byte[] * int -&gt; int&#xA;override this.GetBytes : string * int * int * byte[] * int -&gt; int" Usage="encoding.GetBytes (s, charIndex, charCount, bytes, byteIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetBytes(System::String ^ s, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2077,6 +2105,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCharCount (bytes As Byte()) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetCharCount : byte[] -&gt; int&#xA;override this.GetCharCount : byte[] -&gt; int" Usage="encoding.GetCharCount bytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2154,6 +2183,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCharCount(unsigned int8* bytes, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetCharCount(System.Byte*,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetCharCount : nativeptr&lt;byte&gt; * int -&gt; int&#xA;override this.GetCharCount : nativeptr&lt;byte&gt; * int -&gt; int" Usage="encoding.GetCharCount (bytes, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetCharCount(System::Byte* bytes, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2238,6 +2268,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCharCount (bytes As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetCharCount : byte[] * int * int -&gt; int" Usage="encoding.GetCharCount (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2342,6 +2373,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetChars(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChars (bytes As Byte()) As Char()" />
       <MemberSignature Language="F#" Value="abstract member GetChars : byte[] -&gt; char[]&#xA;override this.GetChars : byte[] -&gt; char[]" Usage="encoding.GetChars bytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;char&gt; ^ GetChars(cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2425,6 +2457,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChars (bytes As Byte(), index As Integer, count As Integer) As Char()" />
       <MemberSignature Language="F#" Value="abstract member GetChars : byte[] * int * int -&gt; char[]&#xA;override this.GetChars : byte[] * int * int -&gt; char[]" Usage="encoding.GetChars (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;char&gt; ^ GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2517,6 +2550,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetChars(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member GetChars : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int -&gt; int&#xA;override this.GetChars : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int -&gt; int" Usage="encoding.GetChars (bytes, byteCount, chars, charCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetChars(System::Byte* bytes, int byteCount, char* chars, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2618,6 +2652,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChars (bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetChars : byte[] * int * int * char[] * int -&gt; int" Usage="encoding.GetChars (bytes, byteIndex, byteCount, chars, charIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2733,6 +2768,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetDecoder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDecoder () As Decoder" />
       <MemberSignature Language="F#" Value="abstract member GetDecoder : unit -&gt; System.Text.Decoder&#xA;override this.GetDecoder : unit -&gt; System.Text.Decoder" Usage="encoding.GetDecoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Decoder ^ GetDecoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2783,6 +2819,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetEncoder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEncoder () As Encoder" />
       <MemberSignature Language="F#" Value="abstract member GetEncoder : unit -&gt; System.Text.Encoder&#xA;override this.GetEncoder : unit -&gt; System.Text.Encoder" Usage="encoding.GetEncoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoder ^ GetEncoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2841,6 +2878,7 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEncoding (codepage As Integer) As Encoding" />
       <MemberSignature Language="F#" Value="static member GetEncoding : int -&gt; System.Text.Encoding" Usage="System.Text.Encoding.GetEncoding codepage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encoding ^ GetEncoding(int codepage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -2933,6 +2971,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetEncoding(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEncoding (name As String) As Encoding" />
       <MemberSignature Language="F#" Value="static member GetEncoding : string -&gt; System.Text.Encoding" Usage="System.Text.Encoding.GetEncoding name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encoding ^ GetEncoding(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3003,6 +3042,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Encoding GetEncoding(int32 codepage, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="F#" Value="static member GetEncoding : int * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="System.Text.Encoding.GetEncoding (codepage, encoderFallback, decoderFallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encoding ^ GetEncoding(int codepage, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3094,6 +3134,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Encoding GetEncoding(string name, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="F#" Value="static member GetEncoding : string * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="System.Text.Encoding.GetEncoding (name, encoderFallback, decoderFallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encoding ^ GetEncoding(System::String ^ name, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3169,6 +3210,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetEncodings" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEncodings () As EncodingInfo()" />
       <MemberSignature Language="F#" Value="static member GetEncodings : unit -&gt; System.Text.EncodingInfo[]" Usage="System.Text.Encoding.GetEncodings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Text::EncodingInfo ^&gt; ^ GetEncodings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3227,6 +3269,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="encoding.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3263,6 +3306,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMaxByteCount (charCount As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetMaxByteCount : int -&gt; int" Usage="encoding.GetMaxByteCount charCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetMaxByteCount(int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3343,6 +3387,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMaxCharCount (byteCount As Integer) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetMaxCharCount : int -&gt; int" Usage="encoding.GetMaxCharCount byteCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetMaxCharCount(int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3424,6 +3469,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetPreamble" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreamble () As Byte()" />
       <MemberSignature Language="F#" Value="abstract member GetPreamble : unit -&gt; byte[]&#xA;override this.GetPreamble : unit -&gt; byte[]" Usage="encoding.GetPreamble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetPreamble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3511,6 +3557,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetString(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (bytes As Byte()) As String" />
       <MemberSignature Language="F#" Value="abstract member GetString : byte[] -&gt; string&#xA;override this.GetString : byte[] -&gt; string" Usage="encoding.GetString bytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3591,6 +3638,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetString(unsigned int8* bytes, int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetString(System.Byte*,System.Int32)" />
       <MemberSignature Language="F#" Value="member this.GetString : nativeptr&lt;byte&gt; * int -&gt; string" Usage="encoding.GetString (bytes, byteCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetString(System::Byte* bytes, int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3667,6 +3715,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (bytes As Byte(), index As Integer, count As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetString : byte[] * int * int -&gt; string&#xA;override this.GetString : byte[] * int * int -&gt; string" Usage="encoding.GetString (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -3757,6 +3806,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.HeaderName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderName As String" />
       <MemberSignature Language="F#" Value="member this.HeaderName : string" Usage="System.Text.Encoding.HeaderName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3824,6 +3874,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.IsAlwaysNormalized" />
       <MemberSignature Language="VB.NET" Value="Public Function IsAlwaysNormalized () As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAlwaysNormalized : unit -&gt; bool" Usage="encoding.IsAlwaysNormalized " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAlwaysNormalized();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3868,6 +3919,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAlwaysNormalized (form As NormalizationForm) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsAlwaysNormalized : System.Text.NormalizationForm -&gt; bool&#xA;override this.IsAlwaysNormalized : System.Text.NormalizationForm -&gt; bool" Usage="encoding.IsAlwaysNormalized form" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAlwaysNormalized(System::Text::NormalizationForm form);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3915,6 +3967,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.IsBrowserDisplay" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsBrowserDisplay As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBrowserDisplay : bool" Usage="System.Text.Encoding.IsBrowserDisplay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsBrowserDisplay { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3957,6 +4010,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.IsBrowserSave" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsBrowserSave As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBrowserSave : bool" Usage="System.Text.Encoding.IsBrowserSave" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsBrowserSave { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3999,6 +4053,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.IsMailNewsDisplay" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMailNewsDisplay As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMailNewsDisplay : bool" Usage="System.Text.Encoding.IsMailNewsDisplay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMailNewsDisplay { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4041,6 +4096,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.IsMailNewsSave" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMailNewsSave As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMailNewsSave : bool" Usage="System.Text.Encoding.IsMailNewsSave" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMailNewsSave { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4083,6 +4139,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Text.Encoding.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4118,6 +4175,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.IsSingleByte" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSingleByte As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSingleByte : bool" Usage="System.Text.Encoding.IsSingleByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSingleByte { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4176,6 +4234,7 @@ The goal is to save this file, then open and decode it as a binary stream.
       <MemberSignature Language="DocId" Value="M:System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterProvider (provider As EncodingProvider)" />
       <MemberSignature Language="F#" Value="static member RegisterProvider : System.Text.EncodingProvider -&gt; unit" Usage="System.Text.Encoding.RegisterProvider provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterProvider(System::Text::EncodingProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4240,6 +4299,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.Unicode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Unicode As Encoding" />
       <MemberSignature Language="F#" Value="member this.Unicode : System.Text.Encoding" Usage="System.Text.Encoding.Unicode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ Unicode { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4298,6 +4358,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.UTF32" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UTF32 As Encoding" />
       <MemberSignature Language="F#" Value="member this.UTF32 : System.Text.Encoding" Usage="System.Text.Encoding.UTF32" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ UTF32 { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4358,6 +4419,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.UTF7" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UTF7 As Encoding" />
       <MemberSignature Language="F#" Value="member this.UTF7 : System.Text.Encoding" Usage="System.Text.Encoding.UTF7" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ UTF7 { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4409,6 +4471,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.UTF8" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UTF8 As Encoding" />
       <MemberSignature Language="F#" Value="member this.UTF8 : System.Text.Encoding" Usage="System.Text.Encoding.UTF8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ UTF8 { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4483,6 +4546,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.WebName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WebName As String" />
       <MemberSignature Language="F#" Value="member this.WebName : string" Usage="System.Text.Encoding.WebName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WebName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -4549,6 +4613,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
       <MemberSignature Language="DocId" Value="P:System.Text.Encoding.WindowsCodePage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WindowsCodePage As Integer" />
       <MemberSignature Language="F#" Value="member this.WindowsCodePage : int" Usage="System.Text.Encoding.WindowsCodePage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int WindowsCodePage { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

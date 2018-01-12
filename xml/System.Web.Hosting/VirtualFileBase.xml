@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.VirtualFileBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualFileBase&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="F#" Value="type VirtualFileBase = class&#xA;    inherit MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualFileBase abstract : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualFileBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualFileBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.VirtualFileBase.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="virtualFileBase.InitializeLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualFileBase.IsDirectory" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsDirectory As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDirectory : bool" Usage="System.Web.Hosting.VirtualFileBase.IsDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsDirectory { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualFileBase.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.Hosting.VirtualFileBase.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.VirtualFileBase.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualPath As String" />
       <MemberSignature Language="F#" Value="member this.VirtualPath : string" Usage="System.Web.Hosting.VirtualFileBase.VirtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDocument&#xA;Inherits XmlNode" />
   <TypeSignature Language="F#" Value="type XmlDocument = class&#xA;    inherit XmlNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDocument : System::Xml::XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -302,6 +303,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDocument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -349,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.#ctor(System.Xml.XmlImplementation)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (imp As XmlImplementation)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlDocument : System.Xml.XmlImplementation -&gt; System.Xml.XmlDocument" Usage="new System.Xml.XmlDocument imp" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; XmlDocument(System::Xml::XmlImplementation ^ imp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -382,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.#ctor(System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (nt As XmlNameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlDocument : System.Xml.XmlNameTable -&gt; System.Xml.XmlDocument" Usage="new System.Xml.XmlDocument nt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDocument(System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -415,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.BaseURI" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BaseURI As String" />
       <MemberSignature Language="F#" Value="member this.BaseURI : string" Usage="System.Xml.XmlDocument.BaseURI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BaseURI { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -459,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CloneNode(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
       <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlDocument.CloneNode deep" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -524,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAttribute (name As String) As XmlAttribute" />
       <MemberSignature Language="F#" Value="member this.CreateAttribute : string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ CreateAttribute(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -577,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateAttribute (qualifiedName As String, namespaceURI As String) As XmlAttribute" />
       <MemberSignature Language="F#" Value="member this.CreateAttribute : string * string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateAttribute (qualifiedName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ CreateAttribute(System::String ^ qualifiedName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -623,6 +631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAttribute (prefix As String, localName As String, namespaceURI As String) As XmlAttribute" />
       <MemberSignature Language="F#" Value="abstract member CreateAttribute : string * string * string -&gt; System.Xml.XmlAttribute&#xA;override this.CreateAttribute : string * string * string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateAttribute (prefix, localName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlAttribute ^ CreateAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -673,6 +682,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateCDataSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCDataSection (data As String) As XmlCDataSection" />
       <MemberSignature Language="F#" Value="abstract member CreateCDataSection : string -&gt; System.Xml.XmlCDataSection&#xA;override this.CreateCDataSection : string -&gt; System.Xml.XmlCDataSection" Usage="xmlDocument.CreateCDataSection data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlCDataSection ^ CreateCDataSection(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -728,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateComment(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateComment (data As String) As XmlComment" />
       <MemberSignature Language="F#" Value="abstract member CreateComment : string -&gt; System.Xml.XmlComment&#xA;override this.CreateComment : string -&gt; System.Xml.XmlComment" Usage="xmlDocument.CreateComment data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlComment ^ CreateComment(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -783,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateDefaultAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateDefaultAttribute (prefix As String, localName As String, namespaceURI As String) As XmlAttribute" />
       <MemberSignature Language="F#" Value="abstract member CreateDefaultAttribute : string * string * string -&gt; System.Xml.XmlAttribute&#xA;override this.CreateDefaultAttribute : string * string * string -&gt; System.Xml.XmlAttribute" Usage="xmlDocument.CreateDefaultAttribute (prefix, localName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Xml::XmlAttribute ^ CreateDefaultAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -827,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateDocumentFragment" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDocumentFragment () As XmlDocumentFragment" />
       <MemberSignature Language="F#" Value="abstract member CreateDocumentFragment : unit -&gt; System.Xml.XmlDocumentFragment&#xA;override this.CreateDocumentFragment : unit -&gt; System.Xml.XmlDocumentFragment" Usage="xmlDocument.CreateDocumentFragment " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDocumentFragment ^ CreateDocumentFragment();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -877,6 +890,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateDocumentType(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDocumentType (name As String, publicId As String, systemId As String, internalSubset As String) As XmlDocumentType" />
       <MemberSignature Language="F#" Value="abstract member CreateDocumentType : string * string * string * string -&gt; System.Xml.XmlDocumentType&#xA;override this.CreateDocumentType : string * string * string * string -&gt; System.Xml.XmlDocumentType" Usage="xmlDocument.CreateDocumentType (name, publicId, systemId, internalSubset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDocumentType ^ CreateDocumentType(System::String ^ name, System::String ^ publicId, System::String ^ systemId, System::String ^ internalSubset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -952,6 +966,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateElement (name As String) As XmlElement" />
       <MemberSignature Language="F#" Value="member this.CreateElement : string -&gt; System.Xml.XmlElement" Usage="xmlDocument.CreateElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ CreateElement(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1009,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateElement(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateElement (qualifiedName As String, namespaceURI As String) As XmlElement" />
       <MemberSignature Language="F#" Value="member this.CreateElement : string * string -&gt; System.Xml.XmlElement" Usage="xmlDocument.CreateElement (qualifiedName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ CreateElement(System::String ^ qualifiedName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1071,6 +1087,7 @@ elem=doc.CreateElement("xy:item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateElement(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateElement (prefix As String, localName As String, namespaceURI As String) As XmlElement" />
       <MemberSignature Language="F#" Value="abstract member CreateElement : string * string * string -&gt; System.Xml.XmlElement&#xA;override this.CreateElement : string * string * string -&gt; System.Xml.XmlElement" Usage="xmlDocument.CreateElement (prefix, localName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlElement ^ CreateElement(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1145,6 +1162,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateEntityReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateEntityReference (name As String) As XmlEntityReference" />
       <MemberSignature Language="F#" Value="abstract member CreateEntityReference : string -&gt; System.Xml.XmlEntityReference&#xA;override this.CreateEntityReference : string -&gt; System.Xml.XmlEntityReference" Usage="xmlDocument.CreateEntityReference name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlEntityReference ^ CreateEntityReference(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1227,6 +1245,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNavigator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateNavigator () As XPathNavigator" />
       <MemberSignature Language="F#" Value="override this.CreateNavigator : unit -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlDocument.CreateNavigator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XPath::XPathNavigator ^ CreateNavigator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1269,6 +1288,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNavigator(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateNavigator (node As XmlNode) As XPathNavigator" />
       <MemberSignature Language="F#" Value="override this.CreateNavigator : System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlDocument.CreateNavigator node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1323,6 +1343,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNode(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNode (nodeTypeString As String, name As String, namespaceURI As String) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member CreateNode : string * string * string -&gt; System.Xml.XmlNode&#xA;override this.CreateNode : string * string * string -&gt; System.Xml.XmlNode" Usage="xmlDocument.CreateNode (nodeTypeString, name, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ CreateNode(System::String ^ nodeTypeString, System::String ^ name, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1422,6 +1443,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNode(System.Xml.XmlNodeType,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNode (type As XmlNodeType, name As String, namespaceURI As String) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member CreateNode : System.Xml.XmlNodeType * string * string -&gt; System.Xml.XmlNode&#xA;override this.CreateNode : System.Xml.XmlNodeType * string * string -&gt; System.Xml.XmlNode" Usage="xmlDocument.CreateNode (type, name, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ CreateNode(System::Xml::XmlNodeType type, System::String ^ name, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1504,6 +1526,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateNode(System.Xml.XmlNodeType,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateNode (type As XmlNodeType, prefix As String, name As String, namespaceURI As String) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member CreateNode : System.Xml.XmlNodeType * string * string * string -&gt; System.Xml.XmlNode&#xA;override this.CreateNode : System.Xml.XmlNodeType * string * string * string -&gt; System.Xml.XmlNode" Usage="xmlDocument.CreateNode (type, prefix, name, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ CreateNode(System::Xml::XmlNodeType type, System::String ^ prefix, System::String ^ name, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1588,6 +1611,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateProcessingInstruction(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateProcessingInstruction (target As String, data As String) As XmlProcessingInstruction" />
       <MemberSignature Language="F#" Value="abstract member CreateProcessingInstruction : string * string -&gt; System.Xml.XmlProcessingInstruction&#xA;override this.CreateProcessingInstruction : string * string -&gt; System.Xml.XmlProcessingInstruction" Usage="xmlDocument.CreateProcessingInstruction (target, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlProcessingInstruction ^ CreateProcessingInstruction(System::String ^ target, System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1645,6 +1669,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateSignificantWhitespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSignificantWhitespace (text As String) As XmlSignificantWhitespace" />
       <MemberSignature Language="F#" Value="abstract member CreateSignificantWhitespace : string -&gt; System.Xml.XmlSignificantWhitespace&#xA;override this.CreateSignificantWhitespace : string -&gt; System.Xml.XmlSignificantWhitespace" Usage="xmlDocument.CreateSignificantWhitespace text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlSignificantWhitespace ^ CreateSignificantWhitespace(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1700,6 +1725,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateTextNode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTextNode (text As String) As XmlText" />
       <MemberSignature Language="F#" Value="abstract member CreateTextNode : string -&gt; System.Xml.XmlText&#xA;override this.CreateTextNode : string -&gt; System.Xml.XmlText" Usage="xmlDocument.CreateTextNode text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlText ^ CreateTextNode(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1755,6 +1781,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateWhitespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateWhitespace (text As String) As XmlWhitespace" />
       <MemberSignature Language="F#" Value="abstract member CreateWhitespace : string -&gt; System.Xml.XmlWhitespace&#xA;override this.CreateWhitespace : string -&gt; System.Xml.XmlWhitespace" Usage="xmlDocument.CreateWhitespace text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlWhitespace ^ CreateWhitespace(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1810,6 +1837,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.CreateXmlDeclaration(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateXmlDeclaration (version As String, encoding As String, standalone As String) As XmlDeclaration" />
       <MemberSignature Language="F#" Value="abstract member CreateXmlDeclaration : string * string * string -&gt; System.Xml.XmlDeclaration&#xA;override this.CreateXmlDeclaration : string * string * string -&gt; System.Xml.XmlDeclaration" Usage="xmlDocument.CreateXmlDeclaration (version, encoding, standalone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDeclaration ^ CreateXmlDeclaration(System::String ^ version, System::String ^ encoding, System::String ^ standalone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1877,6 +1905,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.DocumentElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentElement As XmlElement" />
       <MemberSignature Language="F#" Value="member this.DocumentElement : System.Xml.XmlElement" Usage="System.Xml.XmlDocument.DocumentElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ DocumentElement { System::Xml::XmlElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -1927,6 +1956,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.DocumentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocumentType As XmlDocumentType" />
       <MemberSignature Language="F#" Value="member this.DocumentType : System.Xml.XmlDocumentType" Usage="System.Xml.XmlDocument.DocumentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlDocumentType ^ DocumentType { System::Xml::XmlDocumentType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1976,6 +2006,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.GetElementById(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementById (elementId As String) As XmlElement" />
       <MemberSignature Language="F#" Value="abstract member GetElementById : string -&gt; System.Xml.XmlElement&#xA;override this.GetElementById : string -&gt; System.Xml.XmlElement" Usage="xmlDocument.GetElementById elementId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlElement ^ GetElementById(System::String ^ elementId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2056,6 +2087,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.GetElementsByTagName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementsByTagName (name As String) As XmlNodeList" />
       <MemberSignature Language="F#" Value="abstract member GetElementsByTagName : string -&gt; System.Xml.XmlNodeList&#xA;override this.GetElementsByTagName : string -&gt; System.Xml.XmlNodeList" Usage="xmlDocument.GetElementsByTagName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNodeList ^ GetElementsByTagName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2116,6 +2148,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.GetElementsByTagName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetElementsByTagName (localName As String, namespaceURI As String) As XmlNodeList" />
       <MemberSignature Language="F#" Value="abstract member GetElementsByTagName : string * string -&gt; System.Xml.XmlNodeList&#xA;override this.GetElementsByTagName : string * string -&gt; System.Xml.XmlNodeList" Usage="xmlDocument.GetElementsByTagName (localName, namespaceURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNodeList ^ GetElementsByTagName(System::String ^ localName, System::String ^ namespaceURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2165,6 +2198,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.Implementation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Implementation As XmlImplementation" />
       <MemberSignature Language="F#" Value="member this.Implementation : System.Xml.XmlImplementation" Usage="System.Xml.XmlDocument.Implementation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlImplementation ^ Implementation { System::Xml::XmlImplementation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2216,6 +2250,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportNode (node As XmlNode, deep As Boolean) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member ImportNode : System.Xml.XmlNode * bool -&gt; System.Xml.XmlNode&#xA;override this.ImportNode : System.Xml.XmlNode * bool -&gt; System.Xml.XmlNode" Usage="xmlDocument.ImportNode (node, deep)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ ImportNode(System::Xml::XmlNode ^ node, bool deep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2301,6 +2336,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.InnerText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerText As String" />
       <MemberSignature Language="F#" Value="member this.InnerText : string" Usage="System.Xml.XmlDocument.InnerText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerText {  void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2342,6 +2378,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.InnerXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property InnerXml As String" />
       <MemberSignature Language="F#" Value="member this.InnerXml : string with get, set" Usage="System.Xml.XmlDocument.InnerXml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerXml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2460,6 +2497,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Xml.XmlDocument.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2521,6 +2559,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (inStream As Stream)" />
       <MemberSignature Language="F#" Value="abstract member Load : System.IO.Stream -&gt; unit&#xA;override this.Load : System.IO.Stream -&gt; unit" Usage="xmlDocument.Load inStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load(System::IO::Stream ^ inStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2576,6 +2615,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (txtReader As TextReader)" />
       <MemberSignature Language="F#" Value="abstract member Load : System.IO.TextReader -&gt; unit&#xA;override this.Load : System.IO.TextReader -&gt; unit" Usage="xmlDocument.Load txtReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load(System::IO::TextReader ^ txtReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2639,6 +2679,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (filename As String)" />
       <MemberSignature Language="F#" Value="abstract member Load : string -&gt; unit&#xA;override this.Load : string -&gt; unit" Usage="xmlDocument.Load filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -2713,6 +2754,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="abstract member Load : System.Xml.XmlReader -&gt; unit&#xA;override this.Load : System.Xml.XmlReader -&gt; unit" Usage="xmlDocument.Load reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2799,6 +2841,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.LoadXml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadXml (xml As String)" />
       <MemberSignature Language="F#" Value="abstract member LoadXml : string -&gt; unit&#xA;override this.LoadXml : string -&gt; unit" Usage="xmlDocument.LoadXml xml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadXml(System::String ^ xml);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2859,6 +2902,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.LocalName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LocalName As String" />
       <MemberSignature Language="F#" Value="member this.LocalName : string" Usage="System.Xml.XmlDocument.LocalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LocalName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2899,6 +2943,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xml.XmlDocument.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2939,6 +2984,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameTable As XmlNameTable" />
       <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.XmlDocument.NameTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -2984,6 +3030,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeChanged As XmlNodeChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeChanged : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeChanged : System.Xml.XmlNodeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::XmlNodeChangedEventHandler ^ NodeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3026,6 +3073,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeChanging As XmlNodeChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeChanging : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeChanging : System.Xml.XmlNodeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::XmlNodeChangedEventHandler ^ NodeChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3068,6 +3116,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeInserted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeInserted As XmlNodeChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeInserted : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeInserted : System.Xml.XmlNodeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::XmlNodeChangedEventHandler ^ NodeInserted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3108,6 +3157,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeInserting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeInserting As XmlNodeChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeInserting : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeInserting : System.Xml.XmlNodeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::XmlNodeChangedEventHandler ^ NodeInserting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3150,6 +3200,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeRemoved As XmlNodeChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeRemoved : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeRemoved : System.Xml.XmlNodeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::XmlNodeChangedEventHandler ^ NodeRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3190,6 +3241,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlDocument.NodeRemoving" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NodeRemoving As XmlNodeChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeRemoving : System.Xml.XmlNodeChangedEventHandler " Usage="member this.NodeRemoving : System.Xml.XmlNodeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::XmlNodeChangedEventHandler ^ NodeRemoving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3232,6 +3284,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.XmlDocument.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3266,6 +3319,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.OwnerDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OwnerDocument As XmlDocument" />
       <MemberSignature Language="F#" Value="member this.OwnerDocument : System.Xml.XmlDocument" Usage="System.Xml.XmlDocument.OwnerDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlDocument ^ OwnerDocument { System::Xml::XmlDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3299,6 +3353,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.ParentNode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ParentNode As XmlNode" />
       <MemberSignature Language="F#" Value="member this.ParentNode : System.Xml.XmlNode" Usage="System.Xml.XmlDocument.ParentNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ ParentNode { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3332,6 +3387,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.PreserveWhitespace" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveWhitespace As Boolean" />
       <MemberSignature Language="F#" Value="member this.PreserveWhitespace : bool with get, set" Usage="System.Xml.XmlDocument.PreserveWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveWhitespace { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3392,6 +3448,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.ReadNode(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadNode (reader As XmlReader) As XmlNode" />
       <MemberSignature Language="F#" Value="abstract member ReadNode : System.Xml.XmlReader -&gt; System.Xml.XmlNode&#xA;override this.ReadNode : System.Xml.XmlReader -&gt; System.Xml.XmlNode" Usage="xmlDocument.ReadNode reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlNode ^ ReadNode(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3481,6 +3538,7 @@ while (reader.MoveToNextAttribute())
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (outStream As Stream)" />
       <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream -&gt; unit&#xA;override this.Save : System.IO.Stream -&gt; unit" Usage="xmlDocument.Save outStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::IO::Stream ^ outStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3541,6 +3599,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (writer As TextWriter)" />
       <MemberSignature Language="F#" Value="abstract member Save : System.IO.TextWriter -&gt; unit&#xA;override this.Save : System.IO.TextWriter -&gt; unit" Usage="xmlDocument.Save writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3589,6 +3648,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (filename As String)" />
       <MemberSignature Language="F#" Value="abstract member Save : string -&gt; unit&#xA;override this.Save : string -&gt; unit" Usage="xmlDocument.Save filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3656,6 +3716,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Save(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Save (w As XmlWriter)" />
       <MemberSignature Language="F#" Value="abstract member Save : System.Xml.XmlWriter -&gt; unit&#xA;override this.Save : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocument.Save w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Save(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3731,6 +3792,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.SchemaInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SchemaInfo As IXmlSchemaInfo" />
       <MemberSignature Language="F#" Value="member this.SchemaInfo : System.Xml.Schema.IXmlSchemaInfo" Usage="System.Xml.XmlDocument.SchemaInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::IXmlSchemaInfo ^ SchemaInfo { System::Xml::Schema::IXmlSchemaInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3769,6 +3831,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.Schemas" />
       <MemberSignature Language="VB.NET" Value="Public Property Schemas As XmlSchemaSet" />
       <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Schema.XmlSchemaSet with get, set" Usage="System.Xml.XmlDocument.Schemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSet ^ Schemas { System::Xml::Schema::XmlSchemaSet ^ get(); void set(System::Xml::Schema::XmlSchemaSet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3817,6 +3880,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Validate(System.Xml.Schema.ValidationEventHandler)" />
       <MemberSignature Language="F#" Value="member this.Validate : System.Xml.Schema.ValidationEventHandler -&gt; unit" Usage="xmlDocument.Validate validationEventHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate(System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3881,6 +3945,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Xml.Schema.ValidationEventHandler validationEventHandler, class System.Xml.XmlNode nodeToValidate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.Validate(System.Xml.Schema.ValidationEventHandler,System.Xml.XmlNode)" />
       <MemberSignature Language="F#" Value="member this.Validate : System.Xml.Schema.ValidationEventHandler * System.Xml.XmlNode -&gt; unit" Usage="xmlDocument.Validate (validationEventHandler, nodeToValidate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate(System::Xml::Schema::ValidationEventHandler ^ validationEventHandler, System::Xml::XmlNode ^ nodeToValidate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3940,6 +4005,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.WriteContentTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteContentTo (xw As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteContentTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocument.WriteContentTo xw" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteContentTo(System::Xml::XmlWriter ^ xw);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -3994,6 +4060,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDocument.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (w As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlDocument.WriteTo w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -4048,6 +4115,7 @@ doc.Save(Console.Out);
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDocument.XmlResolver" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property XmlResolver As XmlResolver" />
       <MemberSignature Language="F#" Value="member this.XmlResolver : System.Xml.XmlResolver" Usage="System.Xml.XmlDocument.XmlResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlResolver ^ XmlResolver {  void set(System::Xml::XmlResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

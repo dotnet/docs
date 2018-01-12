@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceMetadataEndpoint" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceMetadataEndpoint&#xA;Inherits ServiceEndpoint" />
   <TypeSignature Language="F#" Value="type ServiceMetadataEndpoint = class&#xA;    inherit ServiceEndpoint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceMetadataEndpoint : System::ServiceModel::Description::ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataEndpoint.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceMetadataEndpoint();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataEndpoint.#ctor(System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceMetadataEndpoint : System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Description.ServiceMetadataEndpoint" Usage="new System.ServiceModel.Description.ServiceMetadataEndpoint address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceMetadataEndpoint(System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataEndpoint.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceMetadataEndpoint : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Description.ServiceMetadataEndpoint" Usage="new System.ServiceModel.Description.ServiceMetadataEndpoint (binding, address)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceMetadataEndpoint(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

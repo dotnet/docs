@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.MappingException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MappingException&#xA;Inherits EntityException" />
   <TypeSignature Language="F#" Value="type MappingException = class&#xA;    inherit EntityException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MappingException sealed : System::Data::EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.MappingException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MappingException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MappingException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Data.MappingException : string -&gt; System.Data.MappingException" Usage="new System.Data.MappingException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MappingException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.MappingException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.MappingException : string * Exception -&gt; System.Data.MappingException" Usage="new System.Data.MappingException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MappingException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

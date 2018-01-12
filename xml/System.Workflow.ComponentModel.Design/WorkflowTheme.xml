@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTheme&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type WorkflowTheme = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTheme sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTheme();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AmbientTheme As AmbientTheme" />
       <MemberSignature Language="F#" Value="member this.AmbientTheme : System.Workflow.ComponentModel.Design.AmbientTheme" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::AmbientTheme ^ AmbientTheme { System::Workflow::ComponentModel::Design::AmbientTheme ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As WorkflowTheme" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="workflowTheme.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Design::WorkflowTheme ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.ContainingFileDirectory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingFileDirectory As String" />
       <MemberSignature Language="F#" Value="member this.ContainingFileDirectory : string" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.ContainingFileDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContainingFileDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.CreateStandardTheme(System.Workflow.ComponentModel.Design.ThemeType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStandardTheme (standardThemeType As ThemeType) As WorkflowTheme" />
       <MemberSignature Language="F#" Value="static member CreateStandardTheme : System.Workflow.ComponentModel.Design.ThemeType -&gt; System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.CreateStandardTheme standardThemeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Design::WorkflowTheme ^ CreateStandardTheme(System::Workflow::ComponentModel::Design::ThemeType standardThemeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property CurrentTheme As WorkflowTheme" />
       <MemberSignature Language="F#" Value="member this.CurrentTheme : System.Workflow.ComponentModel.Design.WorkflowTheme with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Workflow::ComponentModel::Design::WorkflowTheme ^ CurrentTheme { System::Workflow::ComponentModel::Design::WorkflowTheme ^ get(); void set(System::Workflow::ComponentModel::Design::WorkflowTheme ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.DesignerThemes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerThemes As IList" />
       <MemberSignature Language="F#" Value="member this.DesignerThemes : System.Collections.IList" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.DesignerThemes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ DesignerThemes { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.EnableChangeNotification" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property EnableChangeNotification As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableChangeNotification : bool with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.EnableChangeNotification" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableChangeNotification { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath" />
       <MemberSignature Language="VB.NET" Value="Public Property FilePath As String" />
       <MemberSignature Language="F#" Value="member this.FilePath : string with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.FilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -346,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="workflowTheme.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!WorkflowTheme ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -373,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.GenerateThemeFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateThemeFilePath () As String" />
       <MemberSignature Language="F#" Value="static member GenerateThemeFilePath : unit -&gt; string" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.GenerateThemeFilePath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateThemeFilePath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.GetDesignerTheme(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDesignerTheme (designer As ActivityDesigner) As ActivityDesignerTheme" />
       <MemberSignature Language="F#" Value="member this.GetDesignerTheme : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerTheme" Usage="workflowTheme.GetDesignerTheme designer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Design::ActivityDesignerTheme ^ GetDesignerTheme(System::Workflow::ComponentModel::Design::ActivityDesigner ^ designer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -446,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (themeFilePath As String) As WorkflowTheme" />
       <MemberSignature Language="F#" Value="static member Load : string -&gt; System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.Load themeFilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Design::WorkflowTheme ^ Load(System::String ^ themeFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -470,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.Load(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (serializationManager As IDesignerSerializationManager, themeFilePath As String) As WorkflowTheme" />
       <MemberSignature Language="F#" Value="static member Load : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * string -&gt; System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.Load (serializationManager, themeFilePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Design::WorkflowTheme ^ Load(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager, System::String ^ themeFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -503,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.LoadThemeSettingFromRegistry" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LoadThemeSettingFromRegistry () As WorkflowTheme" />
       <MemberSignature Language="F#" Value="static member LoadThemeSettingFromRegistry : unit -&gt; System.Workflow.ComponentModel.Design.WorkflowTheme" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.LoadThemeSettingFromRegistry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Workflow::ComponentModel::Design::WorkflowTheme ^ LoadThemeSettingFromRegistry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -531,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.LookupPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LookupPath As String" />
       <MemberSignature Language="F#" Value="member this.LookupPath : string" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.LookupPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ LookupPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -558,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -586,6 +605,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -622,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.RegistryKeyPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RegistryKeyPath As String" />
       <MemberSignature Language="F#" Value="member this.RegistryKeyPath : string" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.RegistryKeyPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ RegistryKeyPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -649,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (themeFilePath As String)" />
       <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="workflowTheme.Save themeFilePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ themeFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -679,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.SaveThemeSettingToRegistry" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SaveThemeSettingToRegistry ()" />
       <MemberSignature Language="F#" Value="static member SaveThemeSettingToRegistry : unit -&gt; unit" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.SaveThemeSettingToRegistry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SaveThemeSettingToRegistry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -706,6 +729,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.StandardThemes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardThemes As IDictionary(Of ThemeType, String())" />
       <MemberSignature Language="F#" Value="member this.StandardThemes : System.Collections.Generic.IDictionary&lt;System.Workflow.ComponentModel.Design.ThemeType, string[]&gt;" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.StandardThemes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IDictionary&lt;System::Workflow::ComponentModel::Design::ThemeType, cli::array &lt;System::String ^&gt; ^&gt; ^ StandardThemes { System::Collections::Generic::IDictionary&lt;System::Workflow::ComponentModel::Design::ThemeType, cli::array &lt;System::String ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -725,6 +749,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowTheme.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -748,6 +773,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowTheme.ThemeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Shared Event ThemeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ThemeChanged : EventHandler " Usage="member this.ThemeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ ThemeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -774,6 +800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As ThemeType" />
       <MemberSignature Language="F#" Value="member this.Type : System.Workflow.ComponentModel.Design.ThemeType" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::ThemeType Type { System::Workflow::ComponentModel::Design::ThemeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -799,6 +826,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowTheme.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowTheme.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonMenuButtonAutomationPeer&#xA;Inherits ItemsControlAutomationPeer&#xA;Implements IExpandCollapseProvider, ITransformProvider" />
   <TypeSignature Language="F#" Value="type RibbonMenuButtonAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer&#xA;    interface IExpandCollapseProvider&#xA;    interface ITransformProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonMenuButtonAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer, System::Windows::Automation::Provider::IExpandCollapseProvider, System::Windows::Automation::Provider::ITransformProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonMenuButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonMenuButton)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer : System.Windows.Controls.Ribbon.RibbonMenuButton -&gt; System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonMenuButtonAutomationPeer(System::Windows::Controls::Ribbon::RibbonMenuButton ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="ribbonMenuButtonAutomationPeer.CreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetAccessKeyCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="ribbonMenuButtonAutomationPeer.GetAccessKeyCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonMenuButtonAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="ribbonMenuButtonAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonMenuButtonAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="ribbonMenuButtonAutomationPeer.GetHelpTextCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonMenuButtonAutomationPeer.GetNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -199,6 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonMenuButtonAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -222,6 +232,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse" />
       <MemberSignature Language="VB.NET" Value="Sub Collapse () Implements IExpandCollapseProvider.Collapse" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() = System::Windows::Automation::Provider::IExpandCollapseProvider::Collapse;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse</InterfaceMember>
@@ -253,6 +264,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Expand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand" />
       <MemberSignature Language="VB.NET" Value="Sub Expand () Implements IExpandCollapseProvider.Expand" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IExpandCollapseProvider.Expand() = System::Windows::Automation::Provider::IExpandCollapseProvider::Expand;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IExpandCollapseProvider.Expand</InterfaceMember>
@@ -285,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>
@@ -315,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanMove As Boolean Implements ITransformProvider.CanMove" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanMove" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanMove { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanMove</InterfaceMember>
@@ -346,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanResize As Boolean Implements ITransformProvider.CanResize" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanResize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanResize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanResize</InterfaceMember>
@@ -377,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRotate As Boolean Implements ITransformProvider.CanRotate" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanRotate { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanRotate</InterfaceMember>
@@ -407,6 +423,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ITransformProvider.Move(float64 x, float64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Move(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Sub Move (x As Double, y As Double) Implements ITransformProvider.Move" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ITransformProvider.Move(double x, double y) = System::Windows::Automation::Provider::ITransformProvider::Move;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ITransformProvider.Move(System.Double,System.Double)</InterfaceMember>
@@ -435,6 +452,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ITransformProvider.Resize(float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Resize(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Sub Resize (width As Double, height As Double) Implements ITransformProvider.Resize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ITransformProvider.Resize(double width, double height) = System::Windows::Automation::Provider::ITransformProvider::Resize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ITransformProvider.Resize(System.Double,System.Double)</InterfaceMember>
@@ -464,6 +482,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ITransformProvider.Rotate(float64 degrees) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Rotate(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Sub Rotate (degrees As Double) Implements ITransformProvider.Rotate" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ITransformProvider.Rotate(double degrees) = System::Windows::Automation::Provider::ITransformProvider::Rotate;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ITransformProvider.Rotate(System.Double)</InterfaceMember>

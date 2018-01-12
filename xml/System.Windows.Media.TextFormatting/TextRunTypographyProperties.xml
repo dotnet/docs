@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextRunTypographyProperties" />
   <TypeSignature Language="F#" Value="type TextRunTypographyProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextRunTypographyProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunTypographyProperties.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextRunTypographyProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.AnnotationAlternates" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AnnotationAlternates As Integer" />
       <MemberSignature Language="F#" Value="member this.AnnotationAlternates : int" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.AnnotationAlternates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int AnnotationAlternates { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Capitals" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Capitals As FontCapitals" />
       <MemberSignature Language="F#" Value="member this.Capitals : System.Windows.FontCapitals" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.Capitals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontCapitals Capitals { System::Windows::FontCapitals get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +112,7 @@ Example of capitals
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.CapitalSpacing" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CapitalSpacing As Boolean" />
       <MemberSignature Language="F#" Value="member this.CapitalSpacing : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.CapitalSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CapitalSpacing { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -140,6 +145,7 @@ Example of normal and capital spacing
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.CaseSensitiveForms" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CaseSensitiveForms As Boolean" />
       <MemberSignature Language="F#" Value="member this.CaseSensitiveForms : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.CaseSensitiveForms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CaseSensitiveForms { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -161,6 +167,7 @@ Example of normal and capital spacing
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualAlternates" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ContextualAlternates As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContextualAlternates : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualAlternates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ContextualAlternates { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +200,7 @@ Example of random contextual alternates
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ContextualLigatures As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContextualLigatures : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ContextualLigatures { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,6 +234,7 @@ Example of random contextual alternates
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualSwashes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ContextualSwashes As Integer" />
       <MemberSignature Language="F#" Value="member this.ContextualSwashes : int" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualSwashes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int ContextualSwashes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -257,6 +266,7 @@ Example of a contextual swash
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.DiscretionaryLigatures" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DiscretionaryLigatures As Boolean" />
       <MemberSignature Language="F#" Value="member this.DiscretionaryLigatures : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.DiscretionaryLigatures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool DiscretionaryLigatures { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +301,7 @@ Example of discretionary set of ligatures
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianExpertForms" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EastAsianExpertForms As Boolean" />
       <MemberSignature Language="F#" Value="member this.EastAsianExpertForms : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianExpertForms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool EastAsianExpertForms { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -314,6 +325,7 @@ Example of discretionary set of ligatures
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianLanguage" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EastAsianLanguage As FontEastAsianLanguage" />
       <MemberSignature Language="F#" Value="member this.EastAsianLanguage : System.Windows.FontEastAsianLanguage" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontEastAsianLanguage EastAsianLanguage { System::Windows::FontEastAsianLanguage get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -336,6 +348,7 @@ Example of discretionary set of ligatures
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianWidths" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EastAsianWidths As FontEastAsianWidths" />
       <MemberSignature Language="F#" Value="member this.EastAsianWidths : System.Windows.FontEastAsianWidths" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianWidths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontEastAsianWidths EastAsianWidths { System::Windows::FontEastAsianWidths get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -358,6 +371,7 @@ Example of discretionary set of ligatures
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Fraction" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Fraction As FontFraction" />
       <MemberSignature Language="F#" Value="member this.Fraction : System.Windows.FontFraction" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.Fraction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontFraction Fraction { System::Windows::FontFraction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +404,7 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalForms" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HistoricalForms As Boolean" />
       <MemberSignature Language="F#" Value="member this.HistoricalForms : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalForms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HistoricalForms { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -422,6 +437,7 @@ Example of historical forms
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HistoricalLigatures As Boolean" />
       <MemberSignature Language="F#" Value="member this.HistoricalLigatures : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HistoricalLigatures { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -454,6 +470,7 @@ Example of historical forms
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Kerning" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Kerning As Boolean" />
       <MemberSignature Language="F#" Value="member this.Kerning : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.Kerning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool Kerning { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -482,6 +499,7 @@ Example of historical forms
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.MathematicalGreek" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MathematicalGreek As Boolean" />
       <MemberSignature Language="F#" Value="member this.MathematicalGreek : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.MathematicalGreek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool MathematicalGreek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -510,6 +528,7 @@ Example of historical forms
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralAlignment" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NumeralAlignment As FontNumeralAlignment" />
       <MemberSignature Language="F#" Value="member this.NumeralAlignment : System.Windows.FontNumeralAlignment" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontNumeralAlignment NumeralAlignment { System::Windows::FontNumeralAlignment get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -544,6 +563,7 @@ Example of proportional and tabbed figures
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralStyle" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NumeralStyle As FontNumeralStyle" />
       <MemberSignature Language="F#" Value="member this.NumeralStyle : System.Windows.FontNumeralStyle" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontNumeralStyle NumeralStyle { System::Windows::FontNumeralStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -581,6 +601,7 @@ Example of standard and old-style numeral sets
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunTypographyProperties.OnPropertiesChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnPropertiesChanged ()" />
       <MemberSignature Language="F#" Value="member this.OnPropertiesChanged : unit -&gt; unit" Usage="textRunTypographyProperties.OnPropertiesChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnPropertiesChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -608,6 +629,7 @@ Example of standard and old-style numeral sets
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SlashedZero As Boolean" />
       <MemberSignature Language="F#" Value="member this.SlashedZero : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SlashedZero { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -645,6 +667,7 @@ Example of slashed zero numerals
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StandardLigatures As Boolean" />
       <MemberSignature Language="F#" Value="member this.StandardLigatures : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StandardLigatures { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -691,6 +714,7 @@ Example of disabled standard ligatures
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StandardSwashes As Integer" />
       <MemberSignature Language="F#" Value="member this.StandardSwashes : int" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int StandardSwashes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -729,6 +753,7 @@ Example of swashes used for capital letters
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticAlternates" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticAlternates As Integer" />
       <MemberSignature Language="F#" Value="member this.StylisticAlternates : int" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticAlternates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int StylisticAlternates { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -770,6 +795,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet1" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet1 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet1 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet1 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -798,6 +824,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet10" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet10 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet10 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet10" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet10 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -826,6 +853,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet11" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet11 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet11 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet11" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet11 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -854,6 +882,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet12" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet12 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet12 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet12" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet12 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -882,6 +911,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet13" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet13 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet13 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet13" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet13 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -910,6 +940,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet14" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet14 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet14 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet14" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet14 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -938,6 +969,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet15" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet15 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet15 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet15" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet15 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -966,6 +998,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet16" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet16 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet16 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet16" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet16 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -994,6 +1027,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet17" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet17 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet17 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet17" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet17 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1022,6 +1056,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet18" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet18 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet18 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet18" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet18 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1050,6 +1085,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet19" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet19 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet19 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet19" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet19 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1078,6 +1114,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet2" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet2 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet2 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet2 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1106,6 +1143,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet20" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet20 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet20 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet20" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet20 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1134,6 +1172,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet3" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet3 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet3 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet3" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet3 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1162,6 +1201,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet4" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet4 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet4 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet4" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet4 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1190,6 +1230,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet5" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet5 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet5 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet5" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet5 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1218,6 +1259,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet6" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet6 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet6 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet6" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet6 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1246,6 +1288,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet7" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet7 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet7 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet7" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet7 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1274,6 +1317,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet8" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet8 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet8 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet8 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1302,6 +1346,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet9" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StylisticSet9 As Boolean" />
       <MemberSignature Language="F#" Value="member this.StylisticSet9 : bool" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet9" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool StylisticSet9 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1330,6 +1375,7 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Variants" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Variants As FontVariants" />
       <MemberSignature Language="F#" Value="member this.Variants : System.Windows.FontVariants" Usage="System.Windows.Media.TextFormatting.TextRunTypographyProperties.Variants" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FontVariants Variants { System::Windows::FontVariants get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

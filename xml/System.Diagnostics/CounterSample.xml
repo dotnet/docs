@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterSample" />
   <TypeSignature Language="VB.NET" Value="Public Structure CounterSample" />
   <TypeSignature Language="F#" Value="type CounterSample = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class CounterSample" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawValue As Long, baseValue As Long, counterFrequency As Long, systemFrequency As Long, timeStamp As Long, timeStamp100nSec As Long, counterType As PerformanceCounterType)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.CounterSample : int64 * int64 * int64 * int64 * int64 * int64 * System.Diagnostics.PerformanceCounterType -&gt; System.Diagnostics.CounterSample" Usage="new System.Diagnostics.CounterSample (rawValue, baseValue, counterFrequency, systemFrequency, timeStamp, timeStamp100nSec, counterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterSample(long rawValue, long baseValue, long counterFrequency, long systemFrequency, long timeStamp, long timeStamp100nSec, System::Diagnostics::PerformanceCounterType counterType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rawValue As Long, baseValue As Long, counterFrequency As Long, systemFrequency As Long, timeStamp As Long, timeStamp100nSec As Long, counterType As PerformanceCounterType, counterTimeStamp As Long)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.CounterSample : int64 * int64 * int64 * int64 * int64 * int64 * System.Diagnostics.PerformanceCounterType * int64 -&gt; System.Diagnostics.CounterSample" Usage="new System.Diagnostics.CounterSample (rawValue, baseValue, counterFrequency, systemFrequency, timeStamp, timeStamp100nSec, counterType, counterTimeStamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterSample(long rawValue, long baseValue, long counterFrequency, long systemFrequency, long timeStamp, long timeStamp100nSec, System::Diagnostics::PerformanceCounterType counterType, long counterTimeStamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.BaseValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseValue As Long" />
       <MemberSignature Language="F#" Value="member this.BaseValue : int64" Usage="System.Diagnostics.CounterSample.BaseValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long BaseValue { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Calculate(valuetype System.Diagnostics.CounterSample counterSample) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample)" />
       <MemberSignature Language="F#" Value="static member Calculate : System.Diagnostics.CounterSample -&gt; single" Usage="System.Diagnostics.CounterSample.Calculate counterSample" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Calculate(System::Diagnostics::CounterSample counterSample);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Calculate(valuetype System.Diagnostics.CounterSample counterSample, valuetype System.Diagnostics.CounterSample nextCounterSample) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
       <MemberSignature Language="F#" Value="static member Calculate : System.Diagnostics.CounterSample * System.Diagnostics.CounterSample -&gt; single" Usage="System.Diagnostics.CounterSample.Calculate (counterSample, nextCounterSample)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Calculate(System::Diagnostics::CounterSample counterSample, System::Diagnostics::CounterSample nextCounterSample);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.CounterFrequency" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterFrequency As Long" />
       <MemberSignature Language="F#" Value="member this.CounterFrequency : int64" Usage="System.Diagnostics.CounterSample.CounterFrequency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long CounterFrequency { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.CounterTimeStamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterTimeStamp As Long" />
       <MemberSignature Language="F#" Value="member this.CounterTimeStamp : int64" Usage="System.Diagnostics.CounterSample.CounterTimeStamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long CounterTimeStamp { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.CounterType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterType As PerformanceCounterType" />
       <MemberSignature Language="F#" Value="member this.CounterType : System.Diagnostics.PerformanceCounterType" Usage="System.Diagnostics.CounterSample.CounterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterType CounterType { System::Diagnostics::PerformanceCounterType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -341,6 +350,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.CounterSample.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared Empty As CounterSample " />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Diagnostics.CounterSample" Usage="System.Diagnostics.CounterSample.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static System::Diagnostics::CounterSample Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -373,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.Equals(System.Diagnostics.CounterSample)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As CounterSample) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Diagnostics.CounterSample -&gt; bool" Usage="counterSample.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Diagnostics::CounterSample other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -409,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="counterSample.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -445,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="counterSample.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -470,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.op_Equality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (obj1 As CounterSample, obj2 As CounterSample) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Diagnostics.CounterSample * System.Diagnostics.CounterSample -&gt; bool" Usage="obj1 = obj2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Diagnostics::CounterSample obj1, System::Diagnostics::CounterSample obj2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -508,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSample.op_Inequality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (obj1 As CounterSample, obj2 As CounterSample) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Diagnostics.CounterSample * System.Diagnostics.CounterSample -&gt; bool" Usage="System.Diagnostics.CounterSample.op_Inequality (obj1, obj2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Diagnostics::CounterSample obj1, System::Diagnostics::CounterSample obj2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -546,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.RawValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawValue As Long" />
       <MemberSignature Language="F#" Value="member this.RawValue : int64" Usage="System.Diagnostics.CounterSample.RawValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RawValue { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -581,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.SystemFrequency" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemFrequency As Long" />
       <MemberSignature Language="F#" Value="member this.SystemFrequency : int64" Usage="System.Diagnostics.CounterSample.SystemFrequency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long SystemFrequency { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -616,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.TimeStamp" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeStamp As Long" />
       <MemberSignature Language="F#" Value="member this.TimeStamp : int64" Usage="System.Diagnostics.CounterSample.TimeStamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long TimeStamp { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -651,6 +669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CounterSample.TimeStamp100nSec" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeStamp100nSec As Long" />
       <MemberSignature Language="F#" Value="member this.TimeStamp100nSec : int64" Usage="System.Diagnostics.CounterSample.TimeStamp100nSec" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long TimeStamp100nSec { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

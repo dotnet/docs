@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.EventAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventAttributes" />
   <TypeSignature Language="F#" Value="type EventAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.EventAttributes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.ReservedMask" />
       <MemberSignature Language="VB.NET" Value="ReservedMask" />
       <MemberSignature Language="F#" Value="ReservedMask = 1024" Usage="System.Reflection.EventAttributes.ReservedMask" />
+      <MemberSignature Language="C++ CLI" Value="ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.RTSpecialName" />
       <MemberSignature Language="VB.NET" Value="RTSpecialName" />
       <MemberSignature Language="F#" Value="RTSpecialName = 1024" Usage="System.Reflection.EventAttributes.RTSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.EventAttributes.SpecialName" />
       <MemberSignature Language="VB.NET" Value="SpecialName" />
       <MemberSignature Language="F#" Value="SpecialName = 512" Usage="System.Reflection.EventAttributes.SpecialName" />
+      <MemberSignature Language="C++ CLI" Value="SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

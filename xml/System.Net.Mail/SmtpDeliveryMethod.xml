@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpDeliveryMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum SmtpDeliveryMethod" />
   <TypeSignature Language="F#" Value="type SmtpDeliveryMethod = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SmtpDeliveryMethod" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryMethod.Network" />
       <MemberSignature Language="VB.NET" Value="Network" />
       <MemberSignature Language="F#" Value="Network = 0" Usage="System.Net.Mail.SmtpDeliveryMethod.Network" />
+      <MemberSignature Language="C++ CLI" Value="Network" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryMethod.PickupDirectoryFromIis" />
       <MemberSignature Language="VB.NET" Value="PickupDirectoryFromIis" />
       <MemberSignature Language="F#" Value="PickupDirectoryFromIis = 2" Usage="System.Net.Mail.SmtpDeliveryMethod.PickupDirectoryFromIis" />
+      <MemberSignature Language="C++ CLI" Value="PickupDirectoryFromIis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryMethod.SpecifiedPickupDirectory" />
       <MemberSignature Language="VB.NET" Value="SpecifiedPickupDirectory" />
       <MemberSignature Language="F#" Value="SpecifiedPickupDirectory = 1" Usage="System.Net.Mail.SmtpDeliveryMethod.SpecifiedPickupDirectory" />
+      <MemberSignature Language="C++ CLI" Value="SpecifiedPickupDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

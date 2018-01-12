@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.EditingScopeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EditingScopeEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type EditingScopeEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EditingScopeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.EditingScopeEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EditingScopeEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.EditingScopeEventArgs.EditingScope" />
       <MemberSignature Language="VB.NET" Value="Public Property EditingScope As EditingScope" />
       <MemberSignature Language="F#" Value="member this.EditingScope : System.Activities.Presentation.Model.EditingScope with get, set" Usage="System.Activities.Presentation.Model.EditingScopeEventArgs.EditingScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::EditingScope ^ EditingScope { System::Activities::Presentation::Model::EditingScope ^ get(); void set(System::Activities::Presentation::Model::EditingScope ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

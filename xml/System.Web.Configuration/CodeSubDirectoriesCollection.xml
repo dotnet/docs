@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CodeSubDirectoriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeSubDirectoriesCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type CodeSubDirectoriesCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeSubDirectoriesCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeSubDirectoriesCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.CodeSubDirectory codeSubDirectory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.Add(System.Web.Configuration.CodeSubDirectory)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.CodeSubDirectory -&gt; unit" Usage="codeSubDirectoriesCollection.Add codeSubDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::CodeSubDirectory ^ codeSubDirectory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="codeSubDirectoriesCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CodeSubDirectoriesCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.Configuration.CodeSubDirectoriesCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="codeSubDirectoriesCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CodeSubDirectoriesCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Web.Configuration.CodeSubDirectoriesCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="codeSubDirectoriesCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CodeSubDirectoriesCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeSubDirectory" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.CodeSubDirectory with get, set" Usage="System.Web.Configuration.CodeSubDirectoriesCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CodeSubDirectory ^ default[int] { System::Web::Configuration::CodeSubDirectory ^ get(int index); void set(int index, System::Web::Configuration::CodeSubDirectory ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CodeSubDirectoriesCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.CodeSubDirectoriesCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (directoryName As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="codeSubDirectoriesCollection.Remove directoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ directoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectoriesCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="codeSubDirectoriesCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.UnaryExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnaryExpression&#xA;Inherits Expression" />
   <TypeSignature Language="F#" Value="type UnaryExpression = class&#xA;    inherit Expression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnaryExpression sealed : System::Linq::Expressions::Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.UnaryExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="unaryExpression.Accept visitor" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.CanReduce" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanReduce As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReduce : bool" Usage="System.Linq.Expressions.UnaryExpression.CanReduce" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReduce { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.IsLifted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLifted As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLifted : bool" Usage="System.Linq.Expressions.UnaryExpression.IsLifted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLifted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.IsLiftedToNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLiftedToNull As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLiftedToNull : bool" Usage="System.Linq.Expressions.UnaryExpression.IsLiftedToNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiftedToNull { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.Method" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As MethodInfo" />
       <MemberSignature Language="F#" Value="member this.Method : System.Reflection.MethodInfo" Usage="System.Linq.Expressions.UnaryExpression.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodInfo ^ Method { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.UnaryExpression.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -281,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.Operand" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operand As Expression" />
       <MemberSignature Language="F#" Value="member this.Operand : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.UnaryExpression.Operand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Operand { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.UnaryExpression.Reduce" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Reduce () As Expression" />
       <MemberSignature Language="F#" Value="override this.Reduce : unit -&gt; System.Linq.Expressions.Expression" Usage="unaryExpression.Reduce " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::Expressions::Expression ^ Reduce();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -355,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.UnaryExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.UnaryExpression.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -387,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.UnaryExpression.Update(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (operand As Expression) As UnaryExpression" />
       <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.UnaryExpression" Usage="unaryExpression.Update operand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::UnaryExpression ^ Update(System::Linq::Expressions::Expression ^ operand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

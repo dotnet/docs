@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IcmpV6Statistics" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IcmpV6Statistics" />
   <TypeSignature Language="F#" Value="type IcmpV6Statistics = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IcmpV6Statistics abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IcmpV6Statistics.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IcmpV6Statistics();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.DestinationUnreachableMessagesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DestinationUnreachableMessagesReceived As Long" />
       <MemberSignature Language="F#" Value="member this.DestinationUnreachableMessagesReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.DestinationUnreachableMessagesReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DestinationUnreachableMessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.DestinationUnreachableMessagesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DestinationUnreachableMessagesSent As Long" />
       <MemberSignature Language="F#" Value="member this.DestinationUnreachableMessagesSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.DestinationUnreachableMessagesSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DestinationUnreachableMessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -191,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.EchoRepliesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRepliesReceived As Long" />
       <MemberSignature Language="F#" Value="member this.EchoRepliesReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.EchoRepliesReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRepliesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.EchoRepliesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRepliesSent As Long" />
       <MemberSignature Language="F#" Value="member this.EchoRepliesSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.EchoRepliesSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRepliesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.EchoRequestsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRequestsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.EchoRequestsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.EchoRequestsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRequestsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -329,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.EchoRequestsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRequestsSent As Long" />
       <MemberSignature Language="F#" Value="member this.EchoRequestsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.EchoRequestsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRequestsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -375,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.ErrorsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ErrorsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.ErrorsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.ErrorsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ErrorsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -416,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.ErrorsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ErrorsSent As Long" />
       <MemberSignature Language="F#" Value="member this.ErrorsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.ErrorsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ErrorsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -457,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MembershipQueriesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MembershipQueriesReceived As Long" />
       <MemberSignature Language="F#" Value="member this.MembershipQueriesReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MembershipQueriesReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MembershipQueriesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -503,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MembershipQueriesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MembershipQueriesSent As Long" />
       <MemberSignature Language="F#" Value="member this.MembershipQueriesSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MembershipQueriesSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MembershipQueriesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -549,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MembershipReductionsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MembershipReductionsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.MembershipReductionsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MembershipReductionsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MembershipReductionsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -595,6 +608,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MembershipReductionsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MembershipReductionsSent As Long" />
       <MemberSignature Language="F#" Value="member this.MembershipReductionsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MembershipReductionsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MembershipReductionsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -641,6 +655,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MembershipReportsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MembershipReportsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.MembershipReportsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MembershipReportsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MembershipReportsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -687,6 +702,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MembershipReportsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MembershipReportsSent As Long" />
       <MemberSignature Language="F#" Value="member this.MembershipReportsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MembershipReportsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MembershipReportsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -733,6 +749,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MessagesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MessagesReceived As Long" />
       <MemberSignature Language="F#" Value="member this.MessagesReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MessagesReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -779,6 +796,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.MessagesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MessagesSent As Long" />
       <MemberSignature Language="F#" Value="member this.MessagesSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.MessagesSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -825,6 +843,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.NeighborAdvertisementsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NeighborAdvertisementsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.NeighborAdvertisementsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.NeighborAdvertisementsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long NeighborAdvertisementsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -871,6 +890,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.NeighborAdvertisementsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NeighborAdvertisementsSent As Long" />
       <MemberSignature Language="F#" Value="member this.NeighborAdvertisementsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.NeighborAdvertisementsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long NeighborAdvertisementsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -917,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.NeighborSolicitsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NeighborSolicitsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.NeighborSolicitsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.NeighborSolicitsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long NeighborSolicitsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -963,6 +984,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.NeighborSolicitsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NeighborSolicitsSent As Long" />
       <MemberSignature Language="F#" Value="member this.NeighborSolicitsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.NeighborSolicitsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long NeighborSolicitsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1009,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.PacketTooBigMessagesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketTooBigMessagesReceived As Long" />
       <MemberSignature Language="F#" Value="member this.PacketTooBigMessagesReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.PacketTooBigMessagesReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketTooBigMessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1055,6 +1078,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.PacketTooBigMessagesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PacketTooBigMessagesSent As Long" />
       <MemberSignature Language="F#" Value="member this.PacketTooBigMessagesSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.PacketTooBigMessagesSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long PacketTooBigMessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1101,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.ParameterProblemsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ParameterProblemsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.ParameterProblemsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.ParameterProblemsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ParameterProblemsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1147,6 +1172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.ParameterProblemsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ParameterProblemsSent As Long" />
       <MemberSignature Language="F#" Value="member this.ParameterProblemsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.ParameterProblemsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ParameterProblemsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1193,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.RedirectsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RedirectsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.RedirectsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.RedirectsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RedirectsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1239,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.RedirectsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RedirectsSent As Long" />
       <MemberSignature Language="F#" Value="member this.RedirectsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.RedirectsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RedirectsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1285,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.RouterAdvertisementsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RouterAdvertisementsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.RouterAdvertisementsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.RouterAdvertisementsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RouterAdvertisementsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1331,6 +1360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.RouterAdvertisementsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RouterAdvertisementsSent As Long" />
       <MemberSignature Language="F#" Value="member this.RouterAdvertisementsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.RouterAdvertisementsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RouterAdvertisementsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1377,6 +1407,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.RouterSolicitsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RouterSolicitsReceived As Long" />
       <MemberSignature Language="F#" Value="member this.RouterSolicitsReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.RouterSolicitsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RouterSolicitsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1423,6 +1454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.RouterSolicitsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RouterSolicitsSent As Long" />
       <MemberSignature Language="F#" Value="member this.RouterSolicitsSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.RouterSolicitsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RouterSolicitsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1469,6 +1501,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.TimeExceededMessagesReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimeExceededMessagesReceived As Long" />
       <MemberSignature Language="F#" Value="member this.TimeExceededMessagesReceived : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.TimeExceededMessagesReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimeExceededMessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1515,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV6Statistics.TimeExceededMessagesSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimeExceededMessagesSent As Long" />
       <MemberSignature Language="F#" Value="member this.TimeExceededMessagesSent : int64" Usage="System.Net.NetworkInformation.IcmpV6Statistics.TimeExceededMessagesSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimeExceededMessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

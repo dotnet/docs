@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ContextMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextMessageProperty&#xA;Implements IMessageProperty" />
   <TypeSignature Language="F#" Value="type ContextMessageProperty = class&#xA;    interface IMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextMessageProperty : System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextMessageProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As IDictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ContextMessageProperty : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; System.ServiceModel.Channels.ContextMessageProperty" Usage="new System.ServiceModel.Channels.ContextMessageProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContextMessageProperty(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOrReplaceInMessage(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessage(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="F#" Value="member this.AddOrReplaceInMessage : System.ServiceModel.Channels.Message -&gt; unit" Usage="contextMessageProperty.AddOrReplaceInMessage message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOrReplaceInMessage(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.AddOrReplaceInMessageProperties(System.ServiceModel.Channels.MessageProperties)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOrReplaceInMessageProperties (properties As MessageProperties)" />
       <MemberSignature Language="F#" Value="member this.AddOrReplaceInMessageProperties : System.ServiceModel.Channels.MessageProperties -&gt; unit" Usage="contextMessageProperty.AddOrReplaceInMessageProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOrReplaceInMessageProperties(System::ServiceModel::Channels::MessageProperties ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ContextMessageProperty.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.Context : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.ServiceModel.Channels.ContextMessageProperty.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Context { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As IMessageProperty" />
       <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty&#xA;override this.CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty" Usage="contextMessageProperty.CreateCopy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ContextMessageProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.ContextMessageProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.TryCreateFromHttpCookieHeader(System.String,System.ServiceModel.Channels.ContextMessageProperty@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreateFromHttpCookieHeader (httpCookieHeader As String, ByRef context As ContextMessageProperty) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryCreateFromHttpCookieHeader : string *  -&gt; bool" Usage="System.ServiceModel.Channels.ContextMessageProperty.TryCreateFromHttpCookieHeader (httpCookieHeader, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreateFromHttpCookieHeader(System::String ^ httpCookieHeader, [Runtime::InteropServices::Out] System::ServiceModel::Channels::ContextMessageProperty ^ % context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.ContextMessageProperty&amp; contextMessageProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.ContextMessageProperty@)" />
       <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="System.ServiceModel.Channels.ContextMessageProperty.TryGet (message, contextMessageProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Channels::ContextMessageProperty ^ % contextMessageProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -275,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ContextMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.ContextMessageProperty@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef contextMessageProperty As ContextMessageProperty) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.MessageProperties *  -&gt; bool" Usage="System.ServiceModel.Channels.ContextMessageProperty.TryGet (properties, contextMessageProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Channels::ContextMessageProperty ^ % contextMessageProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

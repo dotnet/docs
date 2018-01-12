@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.CardSpaceSelector" />
   <TypeSignature Language="VB.NET" Value="Public Class CardSpaceSelector" />
   <TypeSignature Language="F#" Value="type CardSpaceSelector = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CardSpaceSelector abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.GetToken(System.IdentityModel.Selectors.CardSpacePolicyElement[],System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToken (policyChain As CardSpacePolicyElement(), serializer As SecurityTokenSerializer) As GenericXmlSecurityToken" />
       <MemberSignature Language="F#" Value="static member GetToken : System.IdentityModel.Selectors.CardSpacePolicyElement[] * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; System.IdentityModel.Tokens.GenericXmlSecurityToken" Usage="System.IdentityModel.Selectors.CardSpaceSelector.GetToken (policyChain, serializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Tokens::GenericXmlSecurityToken ^ GetToken(cli::array &lt;System::IdentityModel::Selectors::CardSpacePolicyElement ^&gt; ^ policyChain, System::IdentityModel::Selectors::SecurityTokenSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.GetToken(System.Xml.XmlElement,System.Collections.Generic.IEnumerable{System.Xml.XmlElement},System.Xml.XmlElement,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetToken (endpoint As XmlElement, policy As IEnumerable(Of XmlElement), requiredRemoteTokenIssuer As XmlElement, serializer As SecurityTokenSerializer) As GenericXmlSecurityToken" />
       <MemberSignature Language="F#" Value="static member GetToken : System.Xml.XmlElement * seq&lt;System.Xml.XmlElement&gt; * System.Xml.XmlElement * System.IdentityModel.Selectors.SecurityTokenSerializer -&gt; System.IdentityModel.Tokens.GenericXmlSecurityToken" Usage="System.IdentityModel.Selectors.CardSpaceSelector.GetToken (endpoint, policy, requiredRemoteTokenIssuer, serializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Tokens::GenericXmlSecurityToken ^ GetToken(System::Xml::XmlElement ^ endpoint, System::Collections::Generic::IEnumerable&lt;System::Xml::XmlElement ^&gt; ^ policy, System::Xml::XmlElement ^ requiredRemoteTokenIssuer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.Import(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Import (fileName As String)" />
       <MemberSignature Language="F#" Value="static member Import : string -&gt; unit" Usage="System.IdentityModel.Selectors.CardSpaceSelector.Import fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Import(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.Manage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Manage ()" />
       <MemberSignature Language="F#" Value="static member Manage : unit -&gt; unit" Usage="System.IdentityModel.Selectors.CardSpaceSelector.Manage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Manage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Selectors</AssemblyName>

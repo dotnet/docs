@@ -38,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListenerList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList`1.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Windows.WeakEventManager.ListenerList&lt;'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt; : int -&gt; System.Windows.WeakEventManager.ListenerList&lt;'EventArgs (requires 'EventArgs :&gt; EventArgs)&gt;" Usage="new System.Windows.WeakEventManager.ListenerList&lt;'EventArgs (requires 'EventArgs :&gt; System.EventArgs)&gt; capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListenerList(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList`1.DeliverEvent(System.Object,System.EventArgs,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeliverEvent (sender As Object, e As EventArgs, managerType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="override this.DeliverEvent : obj * EventArgs * Type -&gt; bool" Usage="listenerList.DeliverEvent (sender, e, managerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeliverEvent(System::Object ^ sender, EventArgs ^ e, Type ^ managerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

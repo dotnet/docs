@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Handle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Handle" />
   <TypeSignature Language="F#" Value="type Handle = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Handle abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Handle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Handle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Handle.ExecutionPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionPropertyName As String" />
       <MemberSignature Language="F#" Value="member this.ExecutionPropertyName : string" Usage="System.Activities.Handle.ExecutionPropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExecutionPropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Handle.OnInitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="F#" Value="abstract member OnInitialize : System.Activities.HandleInitializationContext -&gt; unit&#xA;override this.OnInitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="handle.OnInitialize context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInitialize(System::Activities::HandleInitializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Handle.OnUninitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUninitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="F#" Value="abstract member OnUninitialize : System.Activities.HandleInitializationContext -&gt; unit&#xA;override this.OnUninitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="handle.OnUninitialize context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUninitialize(System::Activities::HandleInitializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Handle.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As ActivityInstance" />
       <MemberSignature Language="F#" Value="member this.Owner : System.Activities.ActivityInstance" Usage="System.Activities.Handle.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityInstance ^ Owner { System::Activities::ActivityInstance ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Handle.ThrowIfUninitialized" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfUninitialized ()" />
       <MemberSignature Language="F#" Value="member this.ThrowIfUninitialized : unit -&gt; unit" Usage="handle.ThrowIfUninitialized " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfUninitialized();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

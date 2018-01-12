@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.MemberRelationship" />
   <TypeSignature Language="VB.NET" Value="Public Structure MemberRelationship" />
   <TypeSignature Language="F#" Value="type MemberRelationship = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class MemberRelationship" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.#ctor(System.Object,System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Object, member As MemberDescriptor)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.MemberRelationship : obj * System.ComponentModel.MemberDescriptor -&gt; System.ComponentModel.Design.Serialization.MemberRelationship" Usage="new System.ComponentModel.Design.Serialization.MemberRelationship (owner, member)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MemberRelationship(System::Object ^ owner, System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.MemberRelationship.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As MemberRelationship " />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.ComponentModel.Design.Serialization.MemberRelationship" Usage="System.ComponentModel.Design.Serialization.MemberRelationship.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::Serialization::MemberRelationship Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="memberRelationship.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="memberRelationship.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationship.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.ComponentModel.Design.Serialization.MemberRelationship.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationship.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberDescriptor" />
       <MemberSignature Language="F#" Value="member this.Member : System.ComponentModel.MemberDescriptor" Usage="System.ComponentModel.Design.Serialization.MemberRelationship.Member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::MemberDescriptor ^ Member { System::ComponentModel::MemberDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.op_Equality(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As MemberRelationship, right As MemberRelationship) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.ComponentModel.Design.Serialization.MemberRelationship * System.ComponentModel.Design.Serialization.MemberRelationship -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::ComponentModel::Design::Serialization::MemberRelationship left, System::ComponentModel::Design::Serialization::MemberRelationship right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.MemberRelationship.op_Inequality(System.ComponentModel.Design.Serialization.MemberRelationship,System.ComponentModel.Design.Serialization.MemberRelationship)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As MemberRelationship, right As MemberRelationship) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.ComponentModel.Design.Serialization.MemberRelationship * System.ComponentModel.Design.Serialization.MemberRelationship -&gt; bool" Usage="System.ComponentModel.Design.Serialization.MemberRelationship.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::ComponentModel::Design::Serialization::MemberRelationship left, System::ComponentModel::Design::Serialization::MemberRelationship right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -316,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.MemberRelationship.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As Object" />
       <MemberSignature Language="F#" Value="member this.Owner : obj" Usage="System.ComponentModel.Design.Serialization.MemberRelationship.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Owner { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

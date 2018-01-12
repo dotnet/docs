@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptionMethod" />
   <TypeSignature Language="VB.NET" Value="Public Class EncryptionMethod" />
   <TypeSignature Language="F#" Value="type EncryptionMethod = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptionMethod" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptionMethod();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (strAlgorithm As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.EncryptionMethod : string -&gt; System.Security.Cryptography.Xml.EncryptionMethod" Usage="new System.Security.Cryptography.Xml.EncryptionMethod strAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptionMethod(System::String ^ strAlgorithm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
       <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptionMethod.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionMethod.KeyAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyAlgorithm As String" />
       <MemberSignature Language="F#" Value="member this.KeyAlgorithm : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptionMethod.KeyAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptionMethod.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySize As Integer" />
       <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.Xml.EncryptionMethod.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeySize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -234,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptionMethod.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
       <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptionMethod.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.PutOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PutOptions&#xA;Inherits ManagementOptions" />
   <TypeSignature Language="F#" Value="type PutOptions = class&#xA;    inherit ManagementOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PutOptions : System::Management::ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection)" />
       <MemberSignature Language="F#" Value="new System.Management.PutOptions : System.Management.ManagementNamedValueCollection -&gt; System.Management.PutOptions" Usage="new System.Management.PutOptions context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout, bool useAmendedQualifiers, valuetype System.Management.PutType putType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Boolean,System.Management.PutType)" />
       <MemberSignature Language="F#" Value="new System.Management.PutOptions : System.Management.ManagementNamedValueCollection * TimeSpan * bool * System.Management.PutType -&gt; System.Management.PutOptions" Usage="new System.Management.PutOptions (context, timeout, useAmendedQualifiers, putType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, bool useAmendedQualifiers, System::Management::PutType putType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="putOptions.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.PutOptions.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As PutType" />
       <MemberSignature Language="F#" Value="member this.Type : System.Management.PutType with get, set" Usage="System.Management.PutOptions.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::PutType Type { System::Management::PutType get(); void set(System::Management::PutType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.PutOptions.UseAmendedQualifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAmendedQualifiers As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseAmendedQualifiers : bool with get, set" Usage="System.Management.PutOptions.UseAmendedQualifiers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

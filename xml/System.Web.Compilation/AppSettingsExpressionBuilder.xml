@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class AppSettingsExpressionBuilder&#xA;Inherits ExpressionBuilder" />
   <TypeSignature Language="F#" Value="type AppSettingsExpressionBuilder = class&#xA;    inherit ExpressionBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppSettingsExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AppSettingsExpressionBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (target As Object, entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As Object" />
       <MemberSignature Language="F#" Value="override this.EvaluateExpression : obj * System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="appSettingsExpressionBuilder.EvaluateExpression (target, entry, parsedData, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAppSetting (key As String) As Object" />
       <MemberSignature Language="F#" Value="static member GetAppSetting : string -&gt; obj" Usage="System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetAppSetting(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting(System.String,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAppSetting (key As String, targetType As Type, propertyName As String) As Object" />
       <MemberSignature Language="F#" Value="static member GetAppSetting : string * Type * string -&gt; obj" Usage="System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting (key, targetType, propertyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetAppSetting(System::String ^ key, Type ^ targetType, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCodeExpression (entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As CodeExpression" />
       <MemberSignature Language="F#" Value="override this.GetCodeExpression : System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; System.CodeDom.CodeExpression" Usage="appSettingsExpressionBuilder.GetCodeExpression (entry, parsedData, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.AppSettingsExpressionBuilder.SupportsEvaluate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsEvaluate As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsEvaluate : bool" Usage="System.Web.Compilation.AppSettingsExpressionBuilder.SupportsEvaluate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

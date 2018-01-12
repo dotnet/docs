@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ControlTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlTemplate&#xA;Inherits FrameworkTemplate" />
   <TypeSignature Language="F#" Value="type ControlTemplate = class&#xA;    inherit FrameworkTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlTemplate : System::Windows::FrameworkTemplate" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ControlTemplate.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlTemplate();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ControlTemplate.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As Type)" />
       <MemberSignature Language="F#" Value="new System.Windows.Controls.ControlTemplate : Type -&gt; System.Windows.Controls.ControlTemplate" Usage="new System.Windows.Controls.ControlTemplate targetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlTemplate(Type ^ targetType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ControlTemplate.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
       <MemberSignature Language="F#" Value="member this.TargetType : Type with get, set" Usage="System.Windows.Controls.ControlTemplate.TargetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ControlTemplate.Triggers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Triggers As TriggerCollection" />
       <MemberSignature Language="F#" Value="member this.Triggers : System.Windows.TriggerCollection" Usage="System.Windows.Controls.ControlTemplate.Triggers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerCollection ^ Triggers { System::Windows::TriggerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -264,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ControlTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateTemplatedParent (templatedParent As FrameworkElement)" />
       <MemberSignature Language="F#" Value="override this.ValidateTemplatedParent : System.Windows.FrameworkElement -&gt; unit" Usage="controlTemplate.ValidateTemplatedParent templatedParent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateTemplatedParent(System::Windows::FrameworkElement ^ templatedParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

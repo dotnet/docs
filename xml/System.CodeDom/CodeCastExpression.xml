@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCastExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeCastExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="F#" Value="type CodeCastExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeCastExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCastExpression.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCastExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCastExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As CodeTypeReference, expression As CodeExpression)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeCastExpression : System.CodeDom.CodeTypeReference * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeCastExpression" Usage="new System.CodeDom.CodeCastExpression (targetType, expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCastExpression(System::CodeDom::CodeTypeReference ^ targetType, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCastExpression.#ctor(System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As String, expression As CodeExpression)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeCastExpression : string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeCastExpression" Usage="new System.CodeDom.CodeCastExpression (targetType, expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCastExpression(System::String ^ targetType, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCastExpression.#ctor(System.Type,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As Type, expression As CodeExpression)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeCastExpression : Type * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeCastExpression" Usage="new System.CodeDom.CodeCastExpression (targetType, expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCastExpression(Type ^ targetType, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCastExpression.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.Expression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeCastExpression.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCastExpression.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetType As CodeTypeReference" />
       <MemberSignature Language="F#" Value="member this.TargetType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeCastExpression.TargetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ TargetType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapFaultSubCode" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapFaultSubCode" />
   <TypeSignature Language="F#" Value="type SoapFaultSubCode = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapFaultSubCode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapFaultSubCode.#ctor(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (code As XmlQualifiedName)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapFaultSubCode : System.Xml.XmlQualifiedName -&gt; System.Web.Services.Protocols.SoapFaultSubCode" Usage="new System.Web.Services.Protocols.SoapFaultSubCode code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapFaultSubCode(System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapFaultSubCode.#ctor(System.Xml.XmlQualifiedName,System.Web.Services.Protocols.SoapFaultSubCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (code As XmlQualifiedName, subcode As SoapFaultSubCode)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapFaultSubCode : System.Xml.XmlQualifiedName * System.Web.Services.Protocols.SoapFaultSubCode -&gt; System.Web.Services.Protocols.SoapFaultSubCode" Usage="new System.Web.Services.Protocols.SoapFaultSubCode (code, subcode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapFaultSubCode(System::Xml::XmlQualifiedName ^ code, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapFaultSubCode.Code" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Code As XmlQualifiedName" />
       <MemberSignature Language="F#" Value="member this.Code : System.Xml.XmlQualifiedName" Usage="System.Web.Services.Protocols.SoapFaultSubCode.Code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Code { System::Xml::XmlQualifiedName ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapFaultSubCode.SubCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubCode As SoapFaultSubCode" />
       <MemberSignature Language="F#" Value="member this.SubCode : System.Web.Services.Protocols.SoapFaultSubCode" Usage="System.Web.Services.Protocols.SoapFaultSubCode.SubCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapFaultSubCode ^ SubCode { System::Web::Services::Protocols::SoapFaultSubCode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

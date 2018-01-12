@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ICancelAddNew" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICancelAddNew" />
   <TypeSignature Language="F#" Value="type ICancelAddNew = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICancelAddNew" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICancelAddNew.CancelNew(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelNew (itemIndex As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CancelNew : int -&gt; unit" Usage="iCancelAddNew.CancelNew itemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelNew(int itemIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ICancelAddNew.EndNew(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndNew (itemIndex As Integer)" />
       <MemberSignature Language="F#" Value="abstract member EndNew : int -&gt; unit" Usage="iCancelAddNew.EndNew itemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndNew(int itemIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

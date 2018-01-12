@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.StackBehaviour" />
   <TypeSignature Language="VB.NET" Value="Public Enum StackBehaviour" />
   <TypeSignature Language="F#" Value="type StackBehaviour = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StackBehaviour" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pop0" />
       <MemberSignature Language="VB.NET" Value="Pop0" />
       <MemberSignature Language="F#" Value="Pop0 = 0" Usage="System.Reflection.Emit.StackBehaviour.Pop0" />
+      <MemberSignature Language="C++ CLI" Value="Pop0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pop1" />
       <MemberSignature Language="VB.NET" Value="Pop1" />
       <MemberSignature Language="F#" Value="Pop1 = 1" Usage="System.Reflection.Emit.StackBehaviour.Pop1" />
+      <MemberSignature Language="C++ CLI" Value="Pop1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pop1_pop1" />
       <MemberSignature Language="VB.NET" Value="Pop1_pop1" />
       <MemberSignature Language="F#" Value="Pop1_pop1 = 2" Usage="System.Reflection.Emit.StackBehaviour.Pop1_pop1" />
+      <MemberSignature Language="C++ CLI" Value="Pop1_pop1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi" />
       <MemberSignature Language="VB.NET" Value="Popi" />
       <MemberSignature Language="F#" Value="Popi = 3" Usage="System.Reflection.Emit.StackBehaviour.Popi" />
+      <MemberSignature Language="C++ CLI" Value="Popi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi_pop1" />
       <MemberSignature Language="VB.NET" Value="Popi_pop1" />
       <MemberSignature Language="F#" Value="Popi_pop1 = 4" Usage="System.Reflection.Emit.StackBehaviour.Popi_pop1" />
+      <MemberSignature Language="C++ CLI" Value="Popi_pop1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi_popi" />
       <MemberSignature Language="VB.NET" Value="Popi_popi" />
       <MemberSignature Language="F#" Value="Popi_popi = 5" Usage="System.Reflection.Emit.StackBehaviour.Popi_popi" />
+      <MemberSignature Language="C++ CLI" Value="Popi_popi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi_popi_popi" />
       <MemberSignature Language="VB.NET" Value="Popi_popi_popi" />
       <MemberSignature Language="F#" Value="Popi_popi_popi = 7" Usage="System.Reflection.Emit.StackBehaviour.Popi_popi_popi" />
+      <MemberSignature Language="C++ CLI" Value="Popi_popi_popi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi_popi8" />
       <MemberSignature Language="VB.NET" Value="Popi_popi8" />
       <MemberSignature Language="F#" Value="Popi_popi8 = 6" Usage="System.Reflection.Emit.StackBehaviour.Popi_popi8" />
+      <MemberSignature Language="C++ CLI" Value="Popi_popi8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi_popr4" />
       <MemberSignature Language="VB.NET" Value="Popi_popr4" />
       <MemberSignature Language="F#" Value="Popi_popr4 = 8" Usage="System.Reflection.Emit.StackBehaviour.Popi_popr4" />
+      <MemberSignature Language="C++ CLI" Value="Popi_popr4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popi_popr8" />
       <MemberSignature Language="VB.NET" Value="Popi_popr8" />
       <MemberSignature Language="F#" Value="Popi_popr8 = 9" Usage="System.Reflection.Emit.StackBehaviour.Popi_popr8" />
+      <MemberSignature Language="C++ CLI" Value="Popi_popr8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -327,6 +338,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref" />
       <MemberSignature Language="VB.NET" Value="Popref" />
       <MemberSignature Language="F#" Value="Popref = 10" Usage="System.Reflection.Emit.StackBehaviour.Popref" />
+      <MemberSignature Language="C++ CLI" Value="Popref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -356,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_pop1" />
       <MemberSignature Language="VB.NET" Value="Popref_pop1" />
       <MemberSignature Language="F#" Value="Popref_pop1 = 11" Usage="System.Reflection.Emit.StackBehaviour.Popref_pop1" />
+      <MemberSignature Language="C++ CLI" Value="Popref_pop1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -385,6 +398,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi" />
       <MemberSignature Language="VB.NET" Value="Popref_popi" />
       <MemberSignature Language="F#" Value="Popref_popi = 12" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -414,6 +428,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi_pop1" />
       <MemberSignature Language="VB.NET" Value="Popref_popi_pop1" />
       <MemberSignature Language="F#" Value="Popref_popi_pop1 = 28" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi_pop1" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi_pop1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -443,6 +458,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi_popi" />
       <MemberSignature Language="VB.NET" Value="Popref_popi_popi" />
       <MemberSignature Language="F#" Value="Popref_popi_popi = 13" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi_popi" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi_popi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -472,6 +488,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi_popi8" />
       <MemberSignature Language="VB.NET" Value="Popref_popi_popi8" />
       <MemberSignature Language="F#" Value="Popref_popi_popi8 = 14" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi_popi8" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi_popi8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -501,6 +518,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi_popr4" />
       <MemberSignature Language="VB.NET" Value="Popref_popi_popr4" />
       <MemberSignature Language="F#" Value="Popref_popi_popr4 = 15" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi_popr4" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi_popr4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -530,6 +548,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi_popr8" />
       <MemberSignature Language="VB.NET" Value="Popref_popi_popr8" />
       <MemberSignature Language="F#" Value="Popref_popi_popr8 = 16" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi_popr8" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi_popr8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -559,6 +578,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Popref_popi_popref" />
       <MemberSignature Language="VB.NET" Value="Popref_popi_popref" />
       <MemberSignature Language="F#" Value="Popref_popi_popref = 17" Usage="System.Reflection.Emit.StackBehaviour.Popref_popi_popref" />
+      <MemberSignature Language="C++ CLI" Value="Popref_popi_popref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -588,6 +608,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Push0" />
       <MemberSignature Language="VB.NET" Value="Push0" />
       <MemberSignature Language="F#" Value="Push0 = 18" Usage="System.Reflection.Emit.StackBehaviour.Push0" />
+      <MemberSignature Language="C++ CLI" Value="Push0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -617,6 +638,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Push1" />
       <MemberSignature Language="VB.NET" Value="Push1" />
       <MemberSignature Language="F#" Value="Push1 = 19" Usage="System.Reflection.Emit.StackBehaviour.Push1" />
+      <MemberSignature Language="C++ CLI" Value="Push1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -646,6 +668,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Push1_push1" />
       <MemberSignature Language="VB.NET" Value="Push1_push1" />
       <MemberSignature Language="F#" Value="Push1_push1 = 20" Usage="System.Reflection.Emit.StackBehaviour.Push1_push1" />
+      <MemberSignature Language="C++ CLI" Value="Push1_push1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -675,6 +698,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pushi" />
       <MemberSignature Language="VB.NET" Value="Pushi" />
       <MemberSignature Language="F#" Value="Pushi = 21" Usage="System.Reflection.Emit.StackBehaviour.Pushi" />
+      <MemberSignature Language="C++ CLI" Value="Pushi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -704,6 +728,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pushi8" />
       <MemberSignature Language="VB.NET" Value="Pushi8" />
       <MemberSignature Language="F#" Value="Pushi8 = 22" Usage="System.Reflection.Emit.StackBehaviour.Pushi8" />
+      <MemberSignature Language="C++ CLI" Value="Pushi8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -733,6 +758,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pushr4" />
       <MemberSignature Language="VB.NET" Value="Pushr4" />
       <MemberSignature Language="F#" Value="Pushr4 = 23" Usage="System.Reflection.Emit.StackBehaviour.Pushr4" />
+      <MemberSignature Language="C++ CLI" Value="Pushr4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -762,6 +788,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pushr8" />
       <MemberSignature Language="VB.NET" Value="Pushr8" />
       <MemberSignature Language="F#" Value="Pushr8 = 24" Usage="System.Reflection.Emit.StackBehaviour.Pushr8" />
+      <MemberSignature Language="C++ CLI" Value="Pushr8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -791,6 +818,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Pushref" />
       <MemberSignature Language="VB.NET" Value="Pushref" />
       <MemberSignature Language="F#" Value="Pushref = 25" Usage="System.Reflection.Emit.StackBehaviour.Pushref" />
+      <MemberSignature Language="C++ CLI" Value="Pushref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -820,6 +848,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Varpop" />
       <MemberSignature Language="VB.NET" Value="Varpop" />
       <MemberSignature Language="F#" Value="Varpop = 26" Usage="System.Reflection.Emit.StackBehaviour.Varpop" />
+      <MemberSignature Language="C++ CLI" Value="Varpop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -849,6 +878,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.StackBehaviour.Varpush" />
       <MemberSignature Language="VB.NET" Value="Varpush" />
       <MemberSignature Language="F#" Value="Varpush = 27" Usage="System.Reflection.Emit.StackBehaviour.Varpush" />
+      <MemberSignature Language="C++ CLI" Value="Varpush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

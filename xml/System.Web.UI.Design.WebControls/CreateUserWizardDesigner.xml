@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CreateUserWizardDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class CreateUserWizardDesigner&#xA;Inherits WizardDesigner" />
   <TypeSignature Language="F#" Value="type CreateUserWizardDesigner = class&#xA;    inherit WizardDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateUserWizardDesigner : System::Web::UI::Design::WebControls::WizardDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateUserWizardDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AddDesignerRegions(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddDesignerRegions (regions As DesignerRegionCollection)" />
       <MemberSignature Language="F#" Value="override this.AddDesignerRegions : System.Web.UI.Design.DesignerRegionCollection -&gt; unit" Usage="createUserWizardDesigner.AddDesignerRegions regions" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddDesignerRegions(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AutoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
       <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AutoFormats" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ConvertToCustomNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ConvertToCustomNavigationTemplate ()" />
       <MemberSignature Language="F#" Value="override this.ConvertToCustomNavigationTemplate : unit -&gt; unit" Usage="createUserWizardDesigner.ConvertToCustomNavigationTemplate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ConvertToCustomNavigationTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
       <MemberSignature Language="F#" Value="override this.GetErrorDesignTimeHtml : Exception -&gt; string" Usage="createUserWizardDesigner.GetErrorDesignTimeHtml e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -178,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="createUserWizardDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="createUserWizardDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

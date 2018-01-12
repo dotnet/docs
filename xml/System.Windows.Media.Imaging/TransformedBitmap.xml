@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.TransformedBitmap" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransformedBitmap&#xA;Inherits BitmapSource&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type TransformedBitmap = class&#xA;    inherit BitmapSource&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransformedBitmap sealed : System::Windows::Media::Imaging::BitmapSource, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformedBitmap();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.#ctor(System.Windows.Media.Imaging.BitmapSource,System.Windows.Media.Transform)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As BitmapSource, newTransform As Transform)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.TransformedBitmap : System.Windows.Media.Imaging.BitmapSource * System.Windows.Media.Transform -&gt; System.Windows.Media.Imaging.TransformedBitmap" Usage="new System.Windows.Media.Imaging.TransformedBitmap (source, newTransform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformedBitmap(System::Windows::Media::Imaging::BitmapSource ^ source, System::Windows::Media::Transform ^ newTransform);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="transformedBitmap.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TransformedBitmap" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Imaging.TransformedBitmap" Usage="transformedBitmap.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::TransformedBitmap ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -183,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="transformedBitmap.CloneCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TransformedBitmap" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Imaging.TransformedBitmap" Usage="transformedBitmap.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::TransformedBitmap ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="transformedBitmap.CloneCurrentValueCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="transformedBitmap.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="transformedBitmap.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -334,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="transformedBitmap.GetAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.TransformedBitmap.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="transformedBitmap.GetCurrentValueAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -380,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.TransformedBitmap.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As BitmapSource" />
       <MemberSignature Language="F#" Value="member this.Source : System.Windows.Media.Imaging.BitmapSource with get, set" Usage="System.Windows.Media.Imaging.TransformedBitmap.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapSource ^ Source { System::Windows::Media::Imaging::BitmapSource ^ get(); void set(System::Windows::Media::Imaging::BitmapSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -415,6 +428,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TransformedBitmap.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Imaging.TransformedBitmap.SourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -434,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.TransformedBitmap.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform" />
       <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Transform with get, set" Usage="System.Windows.Media.Imaging.TransformedBitmap.Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ Transform { System::Windows::Media::Transform ^ get(); void set(System::Windows::Media::Transform ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -479,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.TransformedBitmap.TransformProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TransformProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Imaging.TransformedBitmap.TransformProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

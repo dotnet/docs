@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBinaryOperatorExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeBinaryOperatorExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="F#" Value="type CodeBinaryOperatorExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeBinaryOperatorExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeBinaryOperatorExpression.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBinaryOperatorExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeBinaryOperatorExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeBinaryOperatorType,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (left As CodeExpression, op As CodeBinaryOperatorType, right As CodeExpression)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeBinaryOperatorExpression : System.CodeDom.CodeExpression * System.CodeDom.CodeBinaryOperatorType * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeBinaryOperatorExpression" Usage="new System.CodeDom.CodeBinaryOperatorExpression (left, op, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBinaryOperatorExpression(System::CodeDom::CodeExpression ^ left, System::CodeDom::CodeBinaryOperatorType op, System::CodeDom::CodeExpression ^ right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeBinaryOperatorExpression.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.Left : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeBinaryOperatorExpression.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Left { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeBinaryOperatorExpression.Operator" />
       <MemberSignature Language="VB.NET" Value="Public Property Operator As CodeBinaryOperatorType" />
       <MemberSignature Language="F#" Value="member this.Operator : System.CodeDom.CodeBinaryOperatorType with get, set" Usage="System.CodeDom.CodeBinaryOperatorExpression.Operator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeBinaryOperatorType Operator { System::CodeDom::CodeBinaryOperatorType get(); void set(System::CodeDom::CodeBinaryOperatorType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeBinaryOperatorExpression.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.Right : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeBinaryOperatorExpression.Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Right { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

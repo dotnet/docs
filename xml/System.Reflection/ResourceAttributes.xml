@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ResourceAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum ResourceAttributes" />
   <TypeSignature Language="F#" Value="type ResourceAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ResourceAttributes" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceAttributes.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
       <MemberSignature Language="F#" Value="Private = 2" Usage="System.Reflection.ResourceAttributes.Private" />
+      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ResourceAttributes.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
       <MemberSignature Language="F#" Value="Public = 1" Usage="System.Reflection.ResourceAttributes.Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

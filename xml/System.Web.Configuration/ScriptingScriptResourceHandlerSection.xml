@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingScriptResourceHandlerSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptingScriptResourceHandlerSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ScriptingScriptResourceHandlerSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptingScriptResourceHandlerSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ScriptingScriptResourceHandlerSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptingScriptResourceHandlerSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCaching As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableCaching : bool with get, set" Usage="System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCaching { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCompression As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableCompression : bool with get, set" Usage="System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCompression { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingScriptResourceHandlerSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ScriptingScriptResourceHandlerSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

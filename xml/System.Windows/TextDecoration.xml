@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecoration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TextDecoration&#xA;Inherits Animatable" />
   <TypeSignature Language="F#" Value="type TextDecoration = class&#xA;    inherit Animatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextDecoration sealed : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextDecoration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +88,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.TextDecorationLocation location, class System.Windows.Media.Pen pen, float64 penOffset, valuetype System.Windows.TextDecorationUnit penOffsetUnit, valuetype System.Windows.TextDecorationUnit penThicknessUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.#ctor(System.Windows.TextDecorationLocation,System.Windows.Media.Pen,System.Double,System.Windows.TextDecorationUnit,System.Windows.TextDecorationUnit)" />
       <MemberSignature Language="F#" Value="new System.Windows.TextDecoration : System.Windows.TextDecorationLocation * System.Windows.Media.Pen * double * System.Windows.TextDecorationUnit * System.Windows.TextDecorationUnit -&gt; System.Windows.TextDecoration" Usage="new System.Windows.TextDecoration (location, pen, penOffset, penOffsetUnit, penThicknessUnit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextDecoration(System::Windows::TextDecorationLocation location, System::Windows::Media::Pen ^ pen, double penOffset, System::Windows::TextDecorationUnit penOffsetUnit, System::Windows::TextDecorationUnit penThicknessUnit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +128,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As TextDecoration" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.TextDecoration" Usage="textDecoration.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::TextDecoration ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +161,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TextDecoration" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.TextDecoration" Usage="textDecoration.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::TextDecoration ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -189,6 +194,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="M:System.Windows.TextDecoration.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="textDecoration.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -210,6 +216,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As TextDecorationLocation" />
       <MemberSignature Language="F#" Value="member this.Location : System.Windows.TextDecorationLocation with get, set" Usage="System.Windows.TextDecoration.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationLocation Location { System::Windows::TextDecorationLocation get(); void set(System::Windows::TextDecorationLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +266,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.LocationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LocationProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LocationProperty : System.Windows.DependencyProperty" Usage="System.Windows.TextDecoration.LocationProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LocationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -278,6 +286,7 @@ Example of text decoration types
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.Pen" />
       <MemberSignature Language="VB.NET" Value="Public Property Pen As Pen" />
       <MemberSignature Language="F#" Value="member this.Pen : System.Windows.Media.Pen with get, set" Usage="System.Windows.TextDecoration.Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Pen ^ Pen { System::Windows::Media::Pen ^ get(); void set(System::Windows::Media::Pen ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,6 +335,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.PenOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property PenOffset As Double" />
       <MemberSignature Language="F#" Value="member this.PenOffset : double with get, set" Usage="System.Windows.TextDecoration.PenOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PenOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -371,6 +381,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PenOffsetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PenOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.TextDecoration.PenOffsetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PenOffsetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +401,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.PenOffsetUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property PenOffsetUnit As TextDecorationUnit" />
       <MemberSignature Language="F#" Value="member this.PenOffsetUnit : System.Windows.TextDecorationUnit with get, set" Usage="System.Windows.TextDecoration.PenOffsetUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationUnit PenOffsetUnit { System::Windows::TextDecorationUnit get(); void set(System::Windows::TextDecorationUnit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -433,6 +445,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenOffsetUnitProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PenOffsetUnitProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PenOffsetUnitProperty : System.Windows.DependencyProperty" Usage="System.Windows.TextDecoration.PenOffsetUnitProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PenOffsetUnitProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -452,6 +465,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PenProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PenProperty : System.Windows.DependencyProperty" Usage="System.Windows.TextDecoration.PenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -471,6 +485,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecoration.PenThicknessUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property PenThicknessUnit As TextDecorationUnit" />
       <MemberSignature Language="F#" Value="member this.PenThicknessUnit : System.Windows.TextDecorationUnit with get, set" Usage="System.Windows.TextDecoration.PenThicknessUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationUnit PenThicknessUnit { System::Windows::TextDecorationUnit get(); void set(System::Windows::TextDecorationUnit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -514,6 +529,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecoration.PenThicknessUnitProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PenThicknessUnitProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PenThicknessUnitProperty : System.Windows.DependencyProperty" Usage="System.Windows.TextDecoration.PenThicknessUnitProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PenThicknessUnitProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

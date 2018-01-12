@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class WmlObjectListAdapter&#xA;Inherits WmlControlAdapter" />
   <TypeSignature Language="F#" Value="type WmlObjectListAdapter = class&#xA;    inherit WmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlObjectListAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlObjectListAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As ObjectList" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.ObjectList" Usage="System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::ObjectList ^ Control { System::Web::UI::MobileControls::ObjectList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.CreateTemplatedUI(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateTemplatedUI (doDataBind As Boolean)" />
       <MemberSignature Language="F#" Value="override this.CreateTemplatedUI : bool -&gt; unit" Usage="wmlObjectListAdapter.CreateTemplatedUI doDataBind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateTemplatedUI(bool doDataBind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.HandlePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HandlePostBackEvent (eventArgument As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.HandlePostBackEvent : string -&gt; bool" Usage="wmlObjectListAdapter.HandlePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HandlePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.HasCommands" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasCommands () As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasCommands : unit -&gt; bool" Usage="wmlObjectListAdapter.HasCommands " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasCommands();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.HasDefaultCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasDefaultCommand () As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasDefaultCommand : unit -&gt; bool" Usage="wmlObjectListAdapter.HasDefaultCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasDefaultCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.HasItemDetails" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasItemDetails () As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasItemDetails : unit -&gt; bool" Usage="wmlObjectListAdapter.HasItemDetails " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasItemDetails();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.OnlyHasDefaultCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Function OnlyHasDefaultCommand () As Boolean" />
       <MemberSignature Language="F#" Value="member this.OnlyHasDefaultCommand : unit -&gt; bool" Usage="wmlObjectListAdapter.OnlyHasDefaultCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool OnlyHasDefaultCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -219,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="wmlObjectListAdapter.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -242,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlObjectListAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -266,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.RenderItemDetails(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.Web.UI.MobileControls.ObjectListItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemDetails (writer As WmlMobileTextWriter, item As ObjectListItem)" />
       <MemberSignature Language="F#" Value="abstract member RenderItemDetails : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit&#xA;override this.RenderItemDetails : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit" Usage="wmlObjectListAdapter.RenderItemDetails (writer, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemDetails(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::ObjectListItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -291,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.RenderItemMenu(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.Web.UI.MobileControls.ObjectListItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemMenu (writer As WmlMobileTextWriter, item As ObjectListItem)" />
       <MemberSignature Language="F#" Value="abstract member RenderItemMenu : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit&#xA;override this.RenderItemMenu : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit" Usage="wmlObjectListAdapter.RenderItemMenu (writer, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemMenu(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::ObjectListItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -316,6 +329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.RenderItemsList(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemsList (writer As WmlMobileTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderItemsList : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit&#xA;override this.RenderItemsList : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlObjectListAdapter.RenderItemsList writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemsList(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -339,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlObjectListAdapter.ShouldRenderAsTable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldRenderAsTable () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShouldRenderAsTable : unit -&gt; bool&#xA;override this.ShouldRenderAsTable : unit -&gt; bool" Usage="wmlObjectListAdapter.ShouldRenderAsTable " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldRenderAsTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

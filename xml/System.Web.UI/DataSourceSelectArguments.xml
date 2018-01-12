@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceSelectArguments" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataSourceSelectArguments" />
   <TypeSignature Language="F#" Value="type DataSourceSelectArguments = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSourceSelectArguments sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSourceSelectArguments();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sortExpression As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataSourceSelectArguments : string -&gt; System.Web.UI.DataSourceSelectArguments" Usage="new System.Web.UI.DataSourceSelectArguments sortExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSourceSelectArguments(System::String ^ sortExpression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startRowIndex As Integer, maximumRows As Integer)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataSourceSelectArguments : int * int -&gt; System.Web.UI.DataSourceSelectArguments" Usage="new System.Web.UI.DataSourceSelectArguments (startRowIndex, maximumRows)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSourceSelectArguments(int startRowIndex, int maximumRows);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.#ctor(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sortExpression As String, startRowIndex As Integer, maximumRows As Integer)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataSourceSelectArguments : string * int * int -&gt; System.Web.UI.DataSourceSelectArguments" Usage="new System.Web.UI.DataSourceSelectArguments (sortExpression, startRowIndex, maximumRows)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSourceSelectArguments(System::String ^ sortExpression, int startRowIndex, int maximumRows);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities(System.Web.UI.DataSourceCapabilities)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSupportedCapabilities (capabilities As DataSourceCapabilities)" />
       <MemberSignature Language="F#" Value="member this.AddSupportedCapabilities : System.Web.UI.DataSourceCapabilities -&gt; unit" Usage="dataSourceSelectArguments.AddSupportedCapabilities capabilities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSupportedCapabilities(System::Web::UI::DataSourceCapabilities capabilities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceSelectArguments.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As DataSourceSelectArguments" />
       <MemberSignature Language="F#" Value="member this.Empty : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.DataSourceSelectArguments.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::DataSourceSelectArguments ^ Empty { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataSourceSelectArguments.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataSourceSelectArguments.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceSelectArguments.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumRows As Integer" />
       <MemberSignature Language="F#" Value="member this.MaximumRows : int with get, set" Usage="System.Web.UI.DataSourceSelectArguments.MaximumRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError(System.Web.UI.DataSourceView)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RaiseUnsupportedCapabilitiesError (view As DataSourceView)" />
       <MemberSignature Language="F#" Value="member this.RaiseUnsupportedCapabilitiesError : System.Web.UI.DataSourceView -&gt; unit" Usage="dataSourceSelectArguments.RaiseUnsupportedCapabilitiesError view" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseUnsupportedCapabilitiesError(System::Web::UI::DataSourceView ^ view);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Property RetrieveTotalRowCount As Boolean" />
       <MemberSignature Language="F#" Value="member this.RetrieveTotalRowCount : bool with get, set" Usage="System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RetrieveTotalRowCount { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceSelectArguments.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property SortExpression As String" />
       <MemberSignature Language="F#" Value="member this.SortExpression : string with get, set" Usage="System.Web.UI.DataSourceSelectArguments.SortExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortExpression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceSelectArguments.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property StartRowIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.StartRowIndex : int with get, set" Usage="System.Web.UI.DataSourceSelectArguments.StartRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Property TotalRowCount As Integer" />
       <MemberSignature Language="F#" Value="member this.TotalRowCount : int with get, set" Usage="System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

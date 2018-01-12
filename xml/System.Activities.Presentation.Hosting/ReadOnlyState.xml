@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.ReadOnlyState" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReadOnlyState&#xA;Inherits ContextItem" />
   <TypeSignature Language="F#" Value="type ReadOnlyState = class&#xA;    inherit ContextItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyState sealed : System::Activities::Presentation::ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.ReadOnlyState.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyState();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.ReadOnlyState.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Activities.Presentation.Hosting.ReadOnlyState.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.ReadOnlyState.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
       <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.ReadOnlyState.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ItemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

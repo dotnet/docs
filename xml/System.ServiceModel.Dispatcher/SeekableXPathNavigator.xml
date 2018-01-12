@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SeekableXPathNavigator&#xA;Inherits XPathNavigator" />
   <TypeSignature Language="F#" Value="type SeekableXPathNavigator = class&#xA;    inherit XPathNavigator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SeekableXPathNavigator abstract : System::Xml::XPath::XPathNavigator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SeekableXPathNavigator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.ComparePosition(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ComparePosition (first As Long, second As Long) As XmlNodeOrder" />
       <MemberSignature Language="F#" Value="override this.ComparePosition : int64 * int64 -&gt; System.Xml.XmlNodeOrder" Usage="seekableXPathNavigator.ComparePosition (first, second)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlNodeOrder ComparePosition(long first, long second);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property CurrentPosition As Long" />
       <MemberSignature Language="F#" Value="member this.CurrentPosition : int64 with get, set" Usage="System.ServiceModel.Dispatcher.SeekableXPathNavigator.CurrentPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long CurrentPosition { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetLocalName(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocalName (node_position As Long) As String" />
       <MemberSignature Language="F#" Value="abstract member GetLocalName : int64 -&gt; string" Usage="seekableXPathNavigator.GetLocalName node_position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetLocalName(long node_position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetName(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetName (node_position As Long) As String" />
       <MemberSignature Language="F#" Value="abstract member GetName : int64 -&gt; string" Usage="seekableXPathNavigator.GetName node_position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetName(long node_position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNamespace(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNamespace (node_position As Long) As String" />
       <MemberSignature Language="F#" Value="override this.GetNamespace : int64 -&gt; string" Usage="seekableXPathNavigator.GetNamespace node_position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetNamespace(long node_position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNodeType(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNodeType (node_position As Long) As XPathNodeType" />
       <MemberSignature Language="F#" Value="abstract member GetNodeType : int64 -&gt; System.Xml.XPath.XPathNodeType" Usage="seekableXPathNavigator.GetNodeType node_position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XPath::XPathNodeType GetNodeType(long node_position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetValue(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (node_position As Long) As String" />
       <MemberSignature Language="F#" Value="abstract member GetValue : int64 -&gt; string" Usage="seekableXPathNavigator.GetValue node_position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetValue(long node_position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

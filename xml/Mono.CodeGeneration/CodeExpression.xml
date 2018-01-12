@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeExpression" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeExpression&#xA;Inherits CodeItem" />
   <TypeSignature Language="F#" Value="type CodeExpression = class&#xA;    inherit CodeItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeExpression abstract : Mono::CodeGeneration::CodeItem" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Add(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member Add : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.Add (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ Add(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.And(Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Function And (other As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.And : Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="codeExpression.And other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeExpression ^ And(Mono::CodeGeneration::CodeExpression ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.AreEqual(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AreEqual (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member AreEqual : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.AreEqual (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ AreEqual(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.AreNotEqual(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AreNotEqual (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member AreNotEqual : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.AreNotEqual (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ AreNotEqual(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.ArrayLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArrayLength As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.ArrayLength : Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.ArrayLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeExpression ^ ArrayLength { Mono::CodeGeneration::CodeExpression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Call(System.Reflection.MethodInfo,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Call (method As MethodInfo, ParamArray parameters As CodeExpression()) As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.Call : System.Reflection.MethodInfo * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeExpression" Usage="codeExpression.Call (method, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeExpression ^ Call(System::Reflection::MethodInfo ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Call(System.String,Mono.CodeGeneration.CodeExpression[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Call (name As String, ParamArray parameters As CodeExpression()) As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.Call : string * Mono.CodeGeneration.CodeExpression[] -&gt; Mono.CodeGeneration.CodeExpression" Usage="codeExpression.Call (name, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeExpression ^ Call(System::String ^ name, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.CallToString" />
       <MemberSignature Language="VB.NET" Value="Public Function CallToString () As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.CallToString : unit -&gt; Mono.CodeGeneration.CodeExpression" Usage="codeExpression.CallToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeExpression ^ CallToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -255,6 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression CastTo(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.CastTo(System.Type)" />
       <MemberSignature Language="F#" Value="member this.CastTo : Type -&gt; Mono.CodeGeneration.CodeExpression" Usage="codeExpression.CastTo type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeExpression ^ CastTo(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Divide(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member Divide : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.Divide (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ Divide(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.GenerateAsStatement(System.Reflection.Emit.ILGenerator)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GenerateAsStatement (gen As ILGenerator)" />
       <MemberSignature Language="F#" Value="abstract member GenerateAsStatement : System.Reflection.Emit.ILGenerator -&gt; unit&#xA;override this.GenerateAsStatement : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeExpression.GenerateAsStatement gen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GenerateAsStatement(System::Reflection::Emit::ILGenerator ^ gen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -331,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.GetResultType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetResultType () As Type" />
       <MemberSignature Language="F#" Value="abstract member GetResultType : unit -&gt; Type" Usage="codeExpression.GetResultType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetResultType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,6 +366,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeExpression Is(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Is(System.Type)" />
       <MemberSignature Language="F#" Value="member this.Is : Type -&gt; Mono.CodeGeneration.CodeExpression" Usage="codeExpression.Is type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeExpression ^ Is(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -377,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.IsGreaterEqualThan(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsGreaterEqualThan (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member IsGreaterEqualThan : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.IsGreaterEqualThan (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ IsGreaterEqualThan(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -404,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.IsGreaterThan(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsGreaterThan (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member IsGreaterThan : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.IsGreaterThan (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ IsGreaterThan(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -431,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.IsNull : Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeExpression ^ IsNull { Mono::CodeGeneration::CodeExpression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -452,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.IsNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNumber As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNumber : bool" Usage="Mono.CodeGeneration.CodeExpression.IsNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNumber { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -473,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.IsSmallerEqualThan(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSmallerEqualThan (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member IsSmallerEqualThan : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.IsSmallerEqualThan (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ IsSmallerEqualThan(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -500,6 +520,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.IsSmallerThan(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSmallerThan (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member IsSmallerThan : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.IsSmallerThan (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ IsSmallerThan(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -527,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.Item(Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As CodeExpression) As CodeValueReference" />
       <MemberSignature Language="F#" Value="member this.Item(Mono.CodeGeneration.CodeExpression) : Mono.CodeGeneration.CodeValueReference" Usage="Mono.CodeGeneration.CodeExpression.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeValueReference ^ default[Mono::CodeGeneration::CodeExpression ^] { Mono::CodeGeneration::CodeValueReference ^ get(Mono::CodeGeneration::CodeExpression ^ index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -552,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.Item(System.Reflection.FieldInfo)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(field As FieldInfo) As CodeValueReference" />
       <MemberSignature Language="F#" Value="member this.Item(System.Reflection.FieldInfo) : Mono.CodeGeneration.CodeValueReference" Usage="Mono.CodeGeneration.CodeExpression.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeValueReference ^ default[System::Reflection::FieldInfo ^] { Mono::CodeGeneration::CodeValueReference ^ get(System::Reflection::FieldInfo ^ field); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -577,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.Item(System.Reflection.PropertyInfo)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(prop As PropertyInfo) As CodeValueReference" />
       <MemberSignature Language="F#" Value="member this.Item(System.Reflection.PropertyInfo) : Mono.CodeGeneration.CodeValueReference" Usage="Mono.CodeGeneration.CodeExpression.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeValueReference ^ default[System::Reflection::PropertyInfo ^] { Mono::CodeGeneration::CodeValueReference ^ get(System::Reflection::PropertyInfo ^ prop); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -602,6 +626,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeExpression.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As CodeValueReference" />
       <MemberSignature Language="F#" Value="member this.Item(string) : Mono.CodeGeneration.CodeValueReference" Usage="Mono.CodeGeneration.CodeExpression.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Mono::CodeGeneration::CodeValueReference ^ default[System::String ^] { Mono::CodeGeneration::CodeValueReference ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -627,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.MemGet(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function MemGet (member As MemberInfo) As CodeValueReference" />
       <MemberSignature Language="F#" Value="member this.MemGet : System.Reflection.MemberInfo -&gt; Mono.CodeGeneration.CodeValueReference" Usage="codeExpression.MemGet member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeValueReference ^ MemGet(System::Reflection::MemberInfo ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -652,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.MemGet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MemGet (name As String) As CodeValueReference" />
       <MemberSignature Language="F#" Value="member this.MemGet : string -&gt; Mono.CodeGeneration.CodeValueReference" Usage="codeExpression.MemGet name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeValueReference ^ MemGet(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -677,6 +704,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Multiply(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member Multiply : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.Multiply (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ Multiply(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -704,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Not(Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Not (e As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member Not : Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.Not e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ Not(Mono::CodeGeneration::CodeExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -728,6 +757,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.CodeGeneration.CodeExpression NullValue(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.NullValue(System.Type)" />
       <MemberSignature Language="F#" Value="static member NullValue : Type -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.NullValue type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ NullValue(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -753,6 +783,7 @@
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeExpression.Subtract(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (e1 As CodeExpression, e2 As CodeExpression) As CodeExpression" />
       <MemberSignature Language="F#" Value="static member Subtract : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeExpression -&gt; Mono.CodeGeneration.CodeExpression" Usage="Mono.CodeGeneration.CodeExpression.Subtract (e1, e2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Mono::CodeGeneration::CodeExpression ^ Subtract(Mono::CodeGeneration::CodeExpression ^ e1, Mono::CodeGeneration::CodeExpression ^ e2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

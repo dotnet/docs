@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BlurBitmapEffect" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BlurBitmapEffect&#xA;Inherits BitmapEffect" />
   <TypeSignature Language="F#" Value="type BlurBitmapEffect = class&#xA;    inherit BitmapEffect" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BlurBitmapEffect sealed : System::Windows::Media::Effects::BitmapEffect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurBitmapEffect.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlurBitmapEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurBitmapEffect.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BlurBitmapEffect" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BlurBitmapEffect" Usage="blurBitmapEffect.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BlurBitmapEffect ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurBitmapEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BlurBitmapEffect" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BlurBitmapEffect" Usage="blurBitmapEffect.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BlurBitmapEffect ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurBitmapEffect.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="blurBitmapEffect.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurBitmapEffect.CreateUnmanagedEffect" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateUnmanagedEffect () As SafeHandle" />
       <MemberSignature Language="F#" Value="override this.CreateUnmanagedEffect : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="blurBitmapEffect.CreateUnmanagedEffect " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurBitmapEffect.KernelType" />
       <MemberSignature Language="VB.NET" Value="Public Property KernelType As KernelType" />
       <MemberSignature Language="F#" Value="member this.KernelType : System.Windows.Media.Effects.KernelType with get, set" Usage="System.Windows.Media.Effects.BlurBitmapEffect.KernelType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::KernelType KernelType { System::Windows::Media::Effects::KernelType get(); void set(System::Windows::Media::Effects::KernelType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurBitmapEffect.KernelTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KernelTypeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable KernelTypeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurBitmapEffect.KernelTypeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KernelTypeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BlurBitmapEffect.Radius" />
       <MemberSignature Language="VB.NET" Value="Public Property Radius As Double" />
       <MemberSignature Language="F#" Value="member this.Radius : double with get, set" Usage="System.Windows.Media.Effects.BlurBitmapEffect.Radius" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Radius { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BlurBitmapEffect.RadiusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RadiusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BlurBitmapEffect.RadiusProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BlurBitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
       <MemberSignature Language="F#" Value="override this.UpdateUnmanagedPropertyState : System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="blurBitmapEffect.UpdateUnmanagedPropertyState unmanagedEffect" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

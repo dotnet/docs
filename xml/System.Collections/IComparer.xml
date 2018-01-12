@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.IComparer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComparer" />
   <TypeSignature Language="F#" Value="type IComparer = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Compare (x As Object, y As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int" Usage="iComparer.Compare (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Compare(System::Object ^ x, System::Object ^ y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class ExtendedPropertyValueEditor&#xA;Inherits PropertyValueEditor" />
   <TypeSignature Language="F#" Value="type ExtendedPropertyValueEditor = class&#xA;    inherit PropertyValueEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtendedPropertyValueEditor : System::Activities::Presentation::PropertyEditing::PropertyValueEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedPropertyValueEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.#ctor(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (extendedEditorTemplate As DataTemplate, inlineEditorTemplate As DataTemplate)" />
       <MemberSignature Language="F#" Value="new System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor" Usage="new System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor (extendedEditorTemplate, inlineEditorTemplate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedPropertyValueEditor(System::Windows::DataTemplate ^ extendedEditorTemplate, System::Windows::DataTemplate ^ inlineEditorTemplate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.ExtendedEditorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtendedEditorTemplate As DataTemplate" />
       <MemberSignature Language="F#" Value="member this.ExtendedEditorTemplate : System.Windows.DataTemplate with get, set" Usage="System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.ExtendedEditorTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ExtendedEditorTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

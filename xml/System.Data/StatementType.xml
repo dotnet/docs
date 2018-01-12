@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.StatementType" />
   <TypeSignature Language="VB.NET" Value="Public Enum StatementType" />
   <TypeSignature Language="F#" Value="type StatementType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StatementType" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.StatementType.Batch" />
       <MemberSignature Language="VB.NET" Value="Batch" />
       <MemberSignature Language="F#" Value="Batch = 4" Usage="System.Data.StatementType.Batch" />
+      <MemberSignature Language="C++ CLI" Value="Batch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.StatementType.Delete" />
       <MemberSignature Language="VB.NET" Value="Delete" />
       <MemberSignature Language="F#" Value="Delete = 3" Usage="System.Data.StatementType.Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.StatementType.Insert" />
       <MemberSignature Language="VB.NET" Value="Insert" />
       <MemberSignature Language="F#" Value="Insert = 1" Usage="System.Data.StatementType.Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.StatementType.Select" />
       <MemberSignature Language="VB.NET" Value="Select" />
       <MemberSignature Language="F#" Value="Select = 0" Usage="System.Data.StatementType.Select" />
+      <MemberSignature Language="C++ CLI" Value="Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.StatementType.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="F#" Value="Update = 2" Usage="System.Data.StatementType.Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

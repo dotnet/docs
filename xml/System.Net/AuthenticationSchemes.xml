@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationSchemes" />
   <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationSchemes" />
   <TypeSignature Language="F#" Value="type AuthenticationSchemes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationSchemes" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Anonymous" />
       <MemberSignature Language="VB.NET" Value="Anonymous" />
       <MemberSignature Language="F#" Value="Anonymous = 32768" Usage="System.Net.AuthenticationSchemes.Anonymous" />
+      <MemberSignature Language="C++ CLI" Value="Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Basic" />
       <MemberSignature Language="VB.NET" Value="Basic" />
       <MemberSignature Language="F#" Value="Basic = 8" Usage="System.Net.AuthenticationSchemes.Basic" />
+      <MemberSignature Language="C++ CLI" Value="Basic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Digest" />
       <MemberSignature Language="VB.NET" Value="Digest" />
       <MemberSignature Language="F#" Value="Digest = 1" Usage="System.Net.AuthenticationSchemes.Digest" />
+      <MemberSignature Language="C++ CLI" Value="Digest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.IntegratedWindowsAuthentication" />
       <MemberSignature Language="VB.NET" Value="IntegratedWindowsAuthentication" />
       <MemberSignature Language="F#" Value="IntegratedWindowsAuthentication = 6" Usage="System.Net.AuthenticationSchemes.IntegratedWindowsAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="IntegratedWindowsAuthentication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Negotiate" />
       <MemberSignature Language="VB.NET" Value="Negotiate" />
       <MemberSignature Language="F#" Value="Negotiate = 2" Usage="System.Net.AuthenticationSchemes.Negotiate" />
+      <MemberSignature Language="C++ CLI" Value="Negotiate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -221,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.AuthenticationSchemes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -251,6 +258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Ntlm" />
       <MemberSignature Language="VB.NET" Value="Ntlm" />
       <MemberSignature Language="F#" Value="Ntlm = 4" Usage="System.Net.AuthenticationSchemes.Ntlm" />
+      <MemberSignature Language="C++ CLI" Value="Ntlm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

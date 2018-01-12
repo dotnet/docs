@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaException" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type XmlSchemaException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaException : string -&gt; System.Xml.Schema.XmlSchemaException" Usage="new System.Xml.Schema.XmlSchemaException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xml.Schema.XmlSchemaException" Usage="new System.Xml.Schema.XmlSchemaException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaException : string * Exception -&gt; System.Xml.Schema.XmlSchemaException" Usage="new System.Xml.Schema.XmlSchemaException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaException.#ctor(System.String,System.Exception,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, lineNumber As Integer, linePosition As Integer)" />
       <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaException : string * Exception * int * int -&gt; System.Xml.Schema.XmlSchemaException" Usage="new System.Xml.Schema.XmlSchemaException (message, innerException, lineNumber, linePosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaException(System::String ^ message, Exception ^ innerException, int lineNumber, int linePosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="xmlSchemaException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaException.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
       <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xml.Schema.XmlSchemaException.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaException.LinePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
       <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xml.Schema.XmlSchemaException.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Xml.Schema.XmlSchemaException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -332,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaException.SourceSchemaObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceSchemaObject As XmlSchemaObject" />
       <MemberSignature Language="F#" Value="member this.SourceSchemaObject : System.Xml.Schema.XmlSchemaObject" Usage="System.Xml.Schema.XmlSchemaException.SourceSchemaObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObject ^ SourceSchemaObject { System::Xml::Schema::XmlSchemaObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -368,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaException.SourceUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As String" />
       <MemberSignature Language="F#" Value="member this.SourceUri : string" Usage="System.Xml.Schema.XmlSchemaException.SourceUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceUri { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

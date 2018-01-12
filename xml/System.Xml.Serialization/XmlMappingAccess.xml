@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMappingAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlMappingAccess" />
   <TypeSignature Language="F#" Value="type XmlMappingAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlMappingAccess" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.XmlMappingAccess.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Serialization.XmlMappingAccess.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.XmlMappingAccess.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="F#" Value="Read = 1" Usage="System.Xml.Serialization.XmlMappingAccess.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.XmlMappingAccess.Write" />
       <MemberSignature Language="VB.NET" Value="Write" />
       <MemberSignature Language="F#" Value="Write = 2" Usage="System.Xml.Serialization.XmlMappingAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

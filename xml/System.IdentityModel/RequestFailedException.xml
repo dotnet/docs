@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.RequestFailedException" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestFailedException&#xA;Inherits RequestException" />
   <TypeSignature Language="F#" Value="type RequestFailedException = class&#xA;    inherit RequestException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequestFailedException : System::IdentityModel::RequestException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RequestFailedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestFailedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RequestFailedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.RequestFailedException : string -&gt; System.IdentityModel.RequestFailedException" Usage="new System.IdentityModel.RequestFailedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestFailedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RequestFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.RequestFailedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.RequestFailedException" Usage="new System.IdentityModel.RequestFailedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RequestFailedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.RequestFailedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.RequestFailedException : string * Exception -&gt; System.IdentityModel.RequestFailedException" Usage="new System.IdentityModel.RequestFailedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestFailedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

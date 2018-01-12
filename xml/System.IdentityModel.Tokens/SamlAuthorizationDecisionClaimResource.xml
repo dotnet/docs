@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource" />
   <TypeSignature Language="VB.NET" Value="Public Class SamlAuthorizationDecisionClaimResource" />
   <TypeSignature Language="F#" Value="type SamlAuthorizationDecisionClaimResource = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlAuthorizationDecisionClaimResource" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.#ctor(System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resource As String, decision As SamlAccessDecision, actionName As String, actionNamespace As String)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource : string * System.IdentityModel.Tokens.SamlAccessDecision * string * string -&gt; System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource" Usage="new System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource (resource, decision, actionName, actionNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlAuthorizationDecisionClaimResource(System::String ^ resource, System::IdentityModel::Tokens::SamlAccessDecision decision, System::String ^ actionName, System::String ^ actionNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessDecision As SamlAccessDecision" />
       <MemberSignature Language="F#" Value="member this.AccessDecision : System.IdentityModel.Tokens.SamlAccessDecision" Usage="System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.AccessDecision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SamlAccessDecision AccessDecision { System::IdentityModel::Tokens::SamlAccessDecision get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionName As String" />
       <MemberSignature Language="F#" Value="member this.ActionName : string" Usage="System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionNamespace As String" />
       <MemberSignature Language="F#" Value="member this.ActionNamespace : string" Usage="System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.ActionNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActionNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="samlAuthorizationDecisionClaimResource.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="samlAuthorizationDecisionClaimResource.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.Resource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resource As String" />
       <MemberSignature Language="F#" Value="member this.Resource : string" Usage="System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource.Resource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Resource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

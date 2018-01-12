@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlContext" />
   <TypeSignature Language="F#" Value="type SqlContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.IsAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsAvailable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAvailable : bool" Usage="Microsoft.SqlServer.Server.SqlContext.IsAvailable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsAvailable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.Pipe" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pipe As SqlPipe" />
       <MemberSignature Language="F#" Value="member this.Pipe : Microsoft.SqlServer.Server.SqlPipe" Usage="Microsoft.SqlServer.Server.SqlContext.Pipe" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::SqlServer::Server::SqlPipe ^ Pipe { Microsoft::SqlServer::Server::SqlPipe ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.TriggerContext" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TriggerContext As SqlTriggerContext" />
       <MemberSignature Language="F#" Value="member this.TriggerContext : Microsoft.SqlServer.Server.SqlTriggerContext" Usage="Microsoft.SqlServer.Server.SqlContext.TriggerContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::SqlServer::Server::SqlTriggerContext ^ TriggerContext { Microsoft::SqlServer::Server::SqlTriggerContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlContext.WindowsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WindowsIdentity As WindowsIdentity" />
       <MemberSignature Language="F#" Value="member this.WindowsIdentity : System.Security.Principal.WindowsIdentity" Usage="Microsoft.SqlServer.Server.SqlContext.WindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Principal::WindowsIdentity ^ WindowsIdentity { System::Security::Principal::WindowsIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

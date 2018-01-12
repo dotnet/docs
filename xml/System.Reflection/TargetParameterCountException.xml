@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.TargetParameterCountException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TargetParameterCountException&#xA;Inherits ApplicationException" />
   <TypeSignature Language="F#" Value="type TargetParameterCountException = class&#xA;    inherit ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TargetParameterCountException sealed : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetParameterCountException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetParameterCountException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetParameterCountException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.TargetParameterCountException : string -&gt; System.Reflection.TargetParameterCountException" Usage="new System.Reflection.TargetParameterCountException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetParameterCountException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetParameterCountException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Reflection.TargetParameterCountException : string * Exception -&gt; System.Reflection.TargetParameterCountException" Usage="new System.Reflection.TargetParameterCountException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetParameterCountException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

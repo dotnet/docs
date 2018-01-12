@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableQueue" />
   <TypeSignature Language="VB.NET" Value="Public Module ImmutableQueue" />
   <TypeSignature Language="F#" Value="type ImmutableQueue = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImmutableQueue abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Create``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) () As ImmutableQueue(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Collections.Immutable.ImmutableQueue&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableQueue.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Create``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (item As T) As ImmutableQueue(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : 'T -&gt; System.Collections.Immutable.ImmutableQueue&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableQueue.Create item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Create(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Create``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Create(Of T) (ParamArray items As T()) As ImmutableQueue(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : 'T[] -&gt; System.Collections.Immutable.ImmutableQueue&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableQueue.Create items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Create(... cli::array &lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.CreateRange``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateRange(Of T) (items As IEnumerable(Of T)) As ImmutableQueue(Of T)" />
       <MemberSignature Language="F#" Value="static member CreateRange : seq&lt;'T&gt; -&gt; System.Collections.Immutable.ImmutableQueue&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableQueue.CreateRange items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ CreateRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue.Dequeue``1(System.Collections.Immutable.IImmutableQueue{``0},``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Dequeue(Of T) (queue As IImmutableQueue(Of T), ByRef value As T) As IImmutableQueue(Of T)" />
       <MemberSignature Language="F#" Value="static member Dequeue : System.Collections.Immutable.IImmutableQueue&lt;'T&gt; *  -&gt; System.Collections.Immutable.IImmutableQueue&lt;'T&gt;" Usage="System.Collections.Immutable.ImmutableQueue.Dequeue (queue, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ Dequeue(System::Collections::Immutable::IImmutableQueue&lt;T&gt; ^ queue, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.Compensator" />
   <TypeSignature Language="VB.NET" Value="Public Class Compensator&#xA;Inherits ServicedComponent" />
   <TypeSignature Language="F#" Value="type Compensator = class&#xA;    inherit ServicedComponent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Compensator : System::EnterpriseServices::ServicedComponent" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Compensator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.AbortRecord(System.EnterpriseServices.CompensatingResourceManager.LogRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AbortRecord (rec As LogRecord) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member AbortRecord : System.EnterpriseServices.CompensatingResourceManager.LogRecord -&gt; bool&#xA;override this.AbortRecord : System.EnterpriseServices.CompensatingResourceManager.LogRecord -&gt; bool" Usage="compensator.AbortRecord rec" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AbortRecord(System::EnterpriseServices::CompensatingResourceManager::LogRecord ^ rec);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.BeginAbort(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginAbort (fRecovery As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member BeginAbort : bool -&gt; unit&#xA;override this.BeginAbort : bool -&gt; unit" Usage="compensator.BeginAbort fRecovery" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginAbort(bool fRecovery);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.BeginCommit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginCommit (fRecovery As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member BeginCommit : bool -&gt; unit&#xA;override this.BeginCommit : bool -&gt; unit" Usage="compensator.BeginCommit fRecovery" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginCommit(bool fRecovery);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -177,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.BeginPrepare" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginPrepare ()" />
       <MemberSignature Language="F#" Value="abstract member BeginPrepare : unit -&gt; unit&#xA;override this.BeginPrepare : unit -&gt; unit" Usage="compensator.BeginPrepare " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginPrepare();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -208,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.Compensator.Clerk" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clerk As Clerk" />
       <MemberSignature Language="F#" Value="member this.Clerk : System.EnterpriseServices.CompensatingResourceManager.Clerk" Usage="System.EnterpriseServices.CompensatingResourceManager.Compensator.Clerk" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::CompensatingResourceManager::Clerk ^ Clerk { System::EnterpriseServices::CompensatingResourceManager::Clerk ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.CommitRecord(System.EnterpriseServices.CompensatingResourceManager.LogRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CommitRecord (rec As LogRecord) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CommitRecord : System.EnterpriseServices.CompensatingResourceManager.LogRecord -&gt; bool&#xA;override this.CommitRecord : System.EnterpriseServices.CompensatingResourceManager.LogRecord -&gt; bool" Usage="compensator.CommitRecord rec" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CommitRecord(System::EnterpriseServices::CompensatingResourceManager::LogRecord ^ rec);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.EndAbort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndAbort ()" />
       <MemberSignature Language="F#" Value="abstract member EndAbort : unit -&gt; unit&#xA;override this.EndAbort : unit -&gt; unit" Usage="compensator.EndAbort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndAbort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.EndCommit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndCommit ()" />
       <MemberSignature Language="F#" Value="abstract member EndCommit : unit -&gt; unit&#xA;override this.EndCommit : unit -&gt; unit" Usage="compensator.EndCommit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndCommit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -326,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.EndPrepare" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EndPrepare () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member EndPrepare : unit -&gt; bool&#xA;override this.EndPrepare : unit -&gt; bool" Usage="compensator.EndPrepare " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EndPrepare();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -359,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Compensator.PrepareRecord(System.EnterpriseServices.CompensatingResourceManager.LogRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function PrepareRecord (rec As LogRecord) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member PrepareRecord : System.EnterpriseServices.CompensatingResourceManager.LogRecord -&gt; bool&#xA;override this.PrepareRecord : System.EnterpriseServices.CompensatingResourceManager.LogRecord -&gt; bool" Usage="compensator.PrepareRecord rec" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool PrepareRecord(System::EnterpriseServices::CompensatingResourceManager::LogRecord ^ rec);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

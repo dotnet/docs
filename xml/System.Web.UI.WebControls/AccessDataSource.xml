@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AccessDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessDataSource&#xA;Inherits SqlDataSource" />
   <TypeSignature Language="F#" Value="type AccessDataSource = class&#xA;    inherit SqlDataSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AccessDataSource : System::Web::UI::WebControls::SqlDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -529,6 +530,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataFile As String, selectCommand As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.AccessDataSource : string * string -&gt; System.Web.UI.WebControls.AccessDataSource" Usage="new System.Web.UI.WebControls.AccessDataSource (dataFile, selectCommand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessDataSource(System::String ^ dataFile, System::String ^ selectCommand);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -593,6 +596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -638,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.CreateDataSourceView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDataSourceView (viewName As String) As SqlDataSourceView" />
       <MemberSignature Language="F#" Value="override this.CreateDataSourceView : string -&gt; System.Web.UI.WebControls.SqlDataSourceView" Usage="accessDataSource.CreateDataSourceView viewName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::SqlDataSourceView ^ CreateDataSourceView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -671,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
       <MemberSignature Language="VB.NET" Value="Public Property DataFile As String" />
       <MemberSignature Language="F#" Value="member this.DataFile : string with get, set" Usage="System.Web.UI.WebControls.AccessDataSource.DataFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -743,6 +749,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSource.GetDbProviderFactory" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbProviderFactory () As DbProviderFactory" />
       <MemberSignature Language="F#" Value="override this.GetDbProviderFactory : unit -&gt; System.Data.Common.DbProviderFactory" Usage="accessDataSource.GetDbProviderFactory " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbProviderFactory ^ GetDbProviderFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -765,6 +772,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ProviderName As String" />
       <MemberSignature Language="F#" Value="member this.ProviderName : string with get, set" Usage="System.Web.UI.WebControls.AccessDataSource.ProviderName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -811,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SqlCacheDependency As String" />
       <MemberSignature Language="F#" Value="member this.SqlCacheDependency : string with get, set" Usage="System.Web.UI.WebControls.AccessDataSource.SqlCacheDependency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SqlCacheDependency { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

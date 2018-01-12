@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeParser" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeParser&#xA;Implements ICodeParser" />
   <TypeSignature Language="F#" Value="type CodeParser = class&#xA;    interface ICodeParser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeParser abstract : System::CodeDom::Compiler::ICodeParser" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeParser.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeParser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeParser.Parse(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Parse (codeStream As TextReader) As CodeCompileUnit" />
       <MemberSignature Language="F#" Value="abstract member Parse : System.IO.TextReader -&gt; System.CodeDom.CodeCompileUnit" Usage="codeParser.Parse codeStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::CodeDom::CodeCompileUnit ^ Parse(System::IO::TextReader ^ codeStream);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeParser.Parse(System.IO.TextReader)</InterfaceMember>

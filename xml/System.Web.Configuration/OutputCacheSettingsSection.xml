@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheSettingsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputCacheSettingsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type OutputCacheSettingsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheSettingsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheSettingsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutputCacheSettingsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSettingsSection.OutputCacheProfiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputCacheProfiles As OutputCacheProfileCollection" />
       <MemberSignature Language="F#" Value="member this.OutputCacheProfiles : System.Web.Configuration.OutputCacheProfileCollection" Usage="System.Web.Configuration.OutputCacheSettingsSection.OutputCacheProfiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::OutputCacheProfileCollection ^ OutputCacheProfiles { System::Web::Configuration::OutputCacheProfileCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSettingsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.OutputCacheSettingsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

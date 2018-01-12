@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class NameObjectCollectionBase&#xA;Implements ICollection, IDeserializationCallback, ISerializable" />
   <TypeSignature Language="F#" Value="type NameObjectCollectionBase = class&#xA;    interface ICollection&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameObjectCollectionBase abstract : System::Collections::ICollection, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameObjectCollectionBase : System.Collections.IEqualityComparer -&gt; System.Collections.Specialized.NameObjectCollectionBase" Usage="new System.Collections.Specialized.NameObjectCollectionBase equalityComparer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase(System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameObjectCollectionBase : int -&gt; System.Collections.Specialized.NameObjectCollectionBase" Usage="new System.Collections.Specialized.NameObjectCollectionBase capacity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (hashProvider As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameObjectCollectionBase : System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Specialized.NameObjectCollectionBase" Usage="new System.Collections.Specialized.NameObjectCollectionBase (hashProvider, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase(System::Collections::IHashCodeProvider ^ hashProvider, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -283,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Int32,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (capacity As Integer, equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameObjectCollectionBase : int * System.Collections.IEqualityComparer -&gt; System.Collections.Specialized.NameObjectCollectionBase" Usage="new System.Collections.Specialized.NameObjectCollectionBase (capacity, equalityComparer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase(int capacity, System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -331,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameObjectCollectionBase : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Collections.Specialized.NameObjectCollectionBase" Usage="new System.Collections.Specialized.NameObjectCollectionBase (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -372,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (capacity As Integer, hashProvider As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Specialized.NameObjectCollectionBase : int * System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Specialized.NameObjectCollectionBase" Usage="new System.Collections.Specialized.NameObjectCollectionBase (capacity, hashProvider, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NameObjectCollectionBase(int capacity, System::Collections::IHashCodeProvider ^ hashProvider, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -431,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseAdd(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseAdd (name As String, value As Object)" />
       <MemberSignature Language="F#" Value="member this.BaseAdd : string * obj -&gt; unit" Usage="nameObjectCollectionBase.BaseAdd (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseAdd(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -485,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseClear" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseClear ()" />
       <MemberSignature Language="F#" Value="member this.BaseClear : unit -&gt; unit" Usage="nameObjectCollectionBase.BaseClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -544,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseGet(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGet (index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.BaseGet : int -&gt; obj" Usage="nameObjectCollectionBase.BaseGet index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ BaseGet(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -596,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseGet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGet (name As String) As Object" />
       <MemberSignature Language="F#" Value="member this.BaseGet : string -&gt; obj" Usage="nameObjectCollectionBase.BaseGet name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ BaseGet(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -652,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllKeys" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGetAllKeys () As String()" />
       <MemberSignature Language="F#" Value="member this.BaseGetAllKeys : unit -&gt; string[]" Usage="nameObjectCollectionBase.BaseGetAllKeys " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::String ^&gt; ^ BaseGetAllKeys();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -709,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGetAllValues () As Object()" />
       <MemberSignature Language="F#" Value="member this.BaseGetAllValues : unit -&gt; obj[]" Usage="nameObjectCollectionBase.BaseGetAllValues " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ BaseGetAllValues();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -755,6 +769,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] BaseGetAllValues(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues(System.Type)" />
       <MemberSignature Language="F#" Value="member this.BaseGetAllValues : Type -&gt; obj[]" Usage="nameObjectCollectionBase.BaseGetAllValues type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ BaseGetAllValues(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -801,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseGetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.BaseGetKey : int -&gt; string" Usage="nameObjectCollectionBase.BaseGetKey index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ BaseGetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -853,6 +869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys" />
       <MemberSignature Language="VB.NET" Value="Protected Function BaseHasKeys () As Boolean" />
       <MemberSignature Language="F#" Value="member this.BaseHasKeys : unit -&gt; bool" Usage="nameObjectCollectionBase.BaseHasKeys " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool BaseHasKeys();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -901,6 +918,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseRemove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseRemove (name As String)" />
       <MemberSignature Language="F#" Value="member this.BaseRemove : string -&gt; unit" Usage="nameObjectCollectionBase.BaseRemove name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseRemove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -955,6 +973,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseRemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseRemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.BaseRemoveAt : int -&gt; unit" Usage="nameObjectCollectionBase.BaseRemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseRemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1019,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseSet(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseSet (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="member this.BaseSet : int * obj -&gt; unit" Usage="nameObjectCollectionBase.BaseSet (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseSet(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1073,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.BaseSet(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub BaseSet (name As String, value As Object)" />
       <MemberSignature Language="F#" Value="member this.BaseSet : string * obj -&gt; unit" Usage="nameObjectCollectionBase.BaseSet (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseSet(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1128,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Specialized.NameObjectCollectionBase.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1172,6 +1194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="nameObjectCollectionBase.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1229,6 +1252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="nameObjectCollectionBase.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -1279,6 +1303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Protected Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1330,6 +1355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" Usage="System.Collections.Specialized.NameObjectCollectionBase.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -1367,6 +1393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="nameObjectCollectionBase.OnDeserialization sender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -1412,6 +1439,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1474,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Collections.Specialized.NameObjectCollectionBase.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1526,6 +1555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Collections.Specialized.NameObjectCollectionBase.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

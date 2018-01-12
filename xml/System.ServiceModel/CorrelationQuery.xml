@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.CorrelationQuery" />
   <TypeSignature Language="VB.NET" Value="Public Class CorrelationQuery" />
   <TypeSignature Language="F#" Value="type CorrelationQuery = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CorrelationQuery" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationQuery.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CorrelationQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationQuery.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="correlationQuery.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationQuery.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="correlationQuery.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CorrelationQuery.Select" />
       <MemberSignature Language="VB.NET" Value="Public Property Select As MessageQuerySet" />
       <MemberSignature Language="F#" Value="member this.Select : System.ServiceModel.MessageQuerySet with get, set" Usage="System.ServiceModel.CorrelationQuery.Select" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageQuerySet ^ Select { System::ServiceModel::MessageQuerySet ^ get(); void set(System::ServiceModel::MessageQuerySet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CorrelationQuery.SelectAdditional" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectAdditional As Collection(Of MessageQuerySet)" />
       <MemberSignature Language="F#" Value="member this.SelectAdditional : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.MessageQuerySet&gt;" Usage="System.ServiceModel.CorrelationQuery.SelectAdditional" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::MessageQuerySet ^&gt; ^ SelectAdditional { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::MessageQuerySet ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.CorrelationQuery.Where" />
       <MemberSignature Language="VB.NET" Value="Public Property Where As MessageFilter" />
       <MemberSignature Language="F#" Value="member this.Where : System.ServiceModel.Dispatcher.MessageFilter with get, set" Usage="System.ServiceModel.CorrelationQuery.Where" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::MessageFilter ^ Where { System::ServiceModel::Dispatcher::MessageFilter ^ get(); void set(System::ServiceModel::Dispatcher::MessageFilter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

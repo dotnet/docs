@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.CancellationTokenRegistration" />
   <TypeSignature Language="VB.NET" Value="Public Structure CancellationTokenRegistration&#xA;Implements IDisposable, IEquatable(Of CancellationTokenRegistration)" />
   <TypeSignature Language="F#" Value="type CancellationTokenRegistration = struct&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public value class CancellationTokenRegistration : IDisposable, IEquatable&lt;System::Threading::CancellationTokenRegistration&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cancellationTokenRegistration.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cancellationTokenRegistration.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.Equals(System.Threading.CancellationTokenRegistration)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As CancellationTokenRegistration) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Threading.CancellationTokenRegistration -&gt; bool" Usage="cancellationTokenRegistration.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Threading::CancellationTokenRegistration other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -194,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cancellationTokenRegistration.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -229,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.op_Equality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CancellationTokenRegistration, right As CancellationTokenRegistration) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Threading.CancellationTokenRegistration * System.Threading.CancellationTokenRegistration -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Threading::CancellationTokenRegistration left, System::Threading::CancellationTokenRegistration right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -269,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.op_Inequality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CancellationTokenRegistration, right As CancellationTokenRegistration) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Threading.CancellationTokenRegistration * System.Threading.CancellationTokenRegistration -&gt; bool" Usage="System.Threading.CancellationTokenRegistration.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Threading::CancellationTokenRegistration left, System::Threading::CancellationTokenRegistration right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

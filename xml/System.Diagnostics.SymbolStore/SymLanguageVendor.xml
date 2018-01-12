@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymLanguageVendor" />
   <TypeSignature Language="VB.NET" Value="Public Class SymLanguageVendor" />
   <TypeSignature Language="F#" Value="type SymLanguageVendor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymLanguageVendor" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymLanguageVendor.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SymLanguageVendor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymLanguageVendor.Microsoft" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Microsoft As Guid " />
       <MemberSignature Language="F#" Value=" staticval mutable Microsoft : Guid" Usage="System.Diagnostics.SymbolStore.SymLanguageVendor.Microsoft" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Guid Microsoft;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

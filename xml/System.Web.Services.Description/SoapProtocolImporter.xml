@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapProtocolImporter" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapProtocolImporter&#xA;Inherits ProtocolImporter" />
   <TypeSignature Language="F#" Value="type SoapProtocolImporter = class&#xA;    inherit ProtocolImporter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapProtocolImporter : System::Web::Services::Description::ProtocolImporter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapProtocolImporter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.BeginClass" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function BeginClass () As CodeTypeDeclaration" />
       <MemberSignature Language="F#" Value="override this.BeginClass : unit -&gt; System.CodeDom.CodeTypeDeclaration" Usage="soapProtocolImporter.BeginClass " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::CodeDom::CodeTypeDeclaration ^ BeginClass();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.BeginNamespace" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BeginNamespace ()" />
       <MemberSignature Language="F#" Value="override this.BeginNamespace : unit -&gt; unit" Usage="soapProtocolImporter.BeginNamespace " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BeginNamespace();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.EndClass" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EndClass ()" />
       <MemberSignature Language="F#" Value="override this.EndClass : unit -&gt; unit" Usage="soapProtocolImporter.EndClass " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EndClass();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.EndNamespace" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EndNamespace ()" />
       <MemberSignature Language="F#" Value="override this.EndNamespace : unit -&gt; unit" Usage="soapProtocolImporter.EndNamespace " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EndNamespace();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -157,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.GenerateMethod" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateMethod () As CodeMemberMethod" />
       <MemberSignature Language="F#" Value="override this.GenerateMethod : unit -&gt; System.CodeDom.CodeMemberMethod" Usage="soapProtocolImporter.GenerateMethod " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::CodeDom::CodeMemberMethod ^ GenerateMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.IsBindingSupported" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsBindingSupported () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsBindingSupported : unit -&gt; bool" Usage="soapProtocolImporter.IsBindingSupported " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsBindingSupported();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.IsOperationFlowSupported(System.Web.Services.Description.OperationFlow)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOperationFlowSupported (flow As OperationFlow) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsOperationFlowSupported : System.Web.Services.Description.OperationFlow -&gt; bool" Usage="soapProtocolImporter.IsOperationFlowSupported flow" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOperationFlowSupported(System::Web::Services::Description::OperationFlow flow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapProtocolImporter.IsSoapEncodingPresent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsSoapEncodingPresent (uriList As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsSoapEncodingPresent : string -&gt; bool&#xA;override this.IsSoapEncodingPresent : string -&gt; bool" Usage="soapProtocolImporter.IsSoapEncodingPresent uriList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsSoapEncodingPresent(System::String ^ uriList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -273,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapProtocolImporter.ProtocolName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ProtocolName As String" />
       <MemberSignature Language="F#" Value="member this.ProtocolName : string" Usage="System.Web.Services.Description.SoapProtocolImporter.ProtocolName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProtocolName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -293,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapProtocolImporter.SoapBinding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapBinding As SoapBinding" />
       <MemberSignature Language="F#" Value="member this.SoapBinding : System.Web.Services.Description.SoapBinding" Usage="System.Web.Services.Description.SoapProtocolImporter.SoapBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapBinding ^ SoapBinding { System::Web::Services::Description::SoapBinding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -313,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapProtocolImporter.SoapExporter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapExporter As SoapCodeExporter" />
       <MemberSignature Language="F#" Value="member this.SoapExporter : System.Xml.Serialization.SoapCodeExporter" Usage="System.Web.Services.Description.SoapProtocolImporter.SoapExporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapCodeExporter ^ SoapExporter { System::Xml::Serialization::SoapCodeExporter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -340,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapProtocolImporter.SoapImporter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapImporter As SoapSchemaImporter" />
       <MemberSignature Language="F#" Value="member this.SoapImporter : System.Xml.Serialization.SoapSchemaImporter" Usage="System.Web.Services.Description.SoapProtocolImporter.SoapImporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapSchemaImporter ^ SoapImporter { System::Xml::Serialization::SoapSchemaImporter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -367,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapProtocolImporter.XmlExporter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlExporter As XmlCodeExporter" />
       <MemberSignature Language="F#" Value="member this.XmlExporter : System.Xml.Serialization.XmlCodeExporter" Usage="System.Web.Services.Description.SoapProtocolImporter.XmlExporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlCodeExporter ^ XmlExporter { System::Xml::Serialization::XmlCodeExporter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -394,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapProtocolImporter.XmlImporter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlImporter As XmlSchemaImporter" />
       <MemberSignature Language="F#" Value="member this.XmlImporter : System.Xml.Serialization.XmlSchemaImporter" Usage="System.Web.Services.Description.SoapProtocolImporter.XmlImporter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlSchemaImporter ^ XmlImporter { System::Xml::Serialization::XmlSchemaImporter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

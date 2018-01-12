@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketType" />
   <TypeSignature Language="F#" Value="type SocketType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketType" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Dgram" />
       <MemberSignature Language="VB.NET" Value="Dgram" />
       <MemberSignature Language="F#" Value="Dgram = 2" Usage="System.Net.Sockets.SocketType.Dgram" />
+      <MemberSignature Language="C++ CLI" Value="Dgram" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Raw" />
       <MemberSignature Language="VB.NET" Value="Raw" />
       <MemberSignature Language="F#" Value="Raw = 3" Usage="System.Net.Sockets.SocketType.Raw" />
+      <MemberSignature Language="C++ CLI" Value="Raw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Rdm" />
       <MemberSignature Language="VB.NET" Value="Rdm" />
       <MemberSignature Language="F#" Value="Rdm = 4" Usage="System.Net.Sockets.SocketType.Rdm" />
+      <MemberSignature Language="C++ CLI" Value="Rdm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Seqpacket" />
       <MemberSignature Language="VB.NET" Value="Seqpacket" />
       <MemberSignature Language="F#" Value="Seqpacket = 5" Usage="System.Net.Sockets.SocketType.Seqpacket" />
+      <MemberSignature Language="C++ CLI" Value="Seqpacket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Stream" />
       <MemberSignature Language="VB.NET" Value="Stream" />
       <MemberSignature Language="F#" Value="Stream = 1" Usage="System.Net.Sockets.SocketType.Stream" />
+      <MemberSignature Language="C++ CLI" Value="Stream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.Sockets.SocketType.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

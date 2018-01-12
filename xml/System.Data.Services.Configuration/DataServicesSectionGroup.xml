@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Configuration.DataServicesSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServicesSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="F#" Value="type DataServicesSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServicesSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Configuration.DataServicesSectionGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServicesSectionGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Configuration.DataServicesSectionGroup.Features" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Features As DataServicesFeaturesSection" />
       <MemberSignature Language="F#" Value="member this.Features : System.Data.Services.Configuration.DataServicesFeaturesSection" Usage="System.Data.Services.Configuration.DataServicesSectionGroup.Features" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Configuration::DataServicesFeaturesSection ^ Features { System::Data::Services::Configuration::DataServicesFeaturesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

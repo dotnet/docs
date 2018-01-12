@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
   <TypeSignature Language="VB.NET" Value="Public Class X509Certificate2Collection&#xA;Inherits X509CertificateCollection" />
   <TypeSignature Language="F#" Value="type X509Certificate2Collection = class&#xA;    inherit X509CertificateCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509Certificate2Collection : System::Security::Cryptography::X509Certificates::X509CertificateCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2Collection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2Collection : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2Collection(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificates As X509Certificate2())" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2Collection : System.Security.Cryptography.X509Certificates.X509Certificate2[] -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2Collection(cli::array &lt;System::Security::Cryptography::X509Certificates::X509Certificate2 ^&gt; ^ certificates);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -177,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificates As X509Certificate2Collection)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Certificate2Collection : System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="new System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Certificate2Collection(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Add(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (certificate As X509Certificate2) As Integer" />
       <MemberSignature Language="F#" Value="override this.Add : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; int" Usage="x509Certificate2Collection.Add certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.AddRange(System.Security.Cryptography.X509Certificates.X509Certificate2[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (certificates As X509Certificate2())" />
       <MemberSignature Language="F#" Value="override this.AddRange : System.Security.Cryptography.X509Certificates.X509Certificate2[] -&gt; unit" Usage="x509Certificate2Collection.AddRange certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Security::Cryptography::X509Certificates::X509Certificate2 ^&gt; ^ certificates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -331,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.AddRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (certificates As X509Certificate2Collection)" />
       <MemberSignature Language="F#" Value="override this.AddRange : System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; unit" Usage="x509Certificate2Collection.AddRange certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -379,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Contains(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (certificate As X509Certificate2) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Contains : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509Certificate2Collection.Contains certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -437,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Export(System.Security.Cryptography.X509Certificates.X509ContentType)" />
       <MemberSignature Language="VB.NET" Value="Public Function Export (contentType As X509ContentType) As Byte()" />
       <MemberSignature Language="F#" Value="member this.Export : System.Security.Cryptography.X509Certificates.X509ContentType -&gt; byte[]" Usage="x509Certificate2Collection.Export contentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Export(System::Security::Cryptography::X509Certificates::X509ContentType contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -484,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Export (contentType As X509ContentType, password As String) As Byte()" />
       <MemberSignature Language="F#" Value="member this.Export : System.Security.Cryptography.X509Certificates.X509ContentType * string -&gt; byte[]" Usage="x509Certificate2Collection.Export (contentType, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Export(System::Security::Cryptography::X509Certificates::X509ContentType contentType, System::String ^ password);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -544,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (findType As X509FindType, findValue As Object, validOnly As Boolean) As X509Certificate2Collection" />
       <MemberSignature Language="F#" Value="member this.Find : System.Security.Cryptography.X509Certificates.X509FindType * obj * bool -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="x509Certificate2Collection.Find (findType, findValue, validOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Find(System::Security::Cryptography::X509Certificates::X509FindType findType, System::Object ^ findValue, bool validOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -609,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As X509Certificate2Enumerator" />
       <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator" Usage="x509Certificate2Collection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2Enumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -659,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (rawData As Byte())" />
       <MemberSignature Language="F#" Value="member this.Import : byte[] -&gt; unit" Usage="x509Certificate2Collection.Import rawData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(cli::array &lt;System::Byte&gt; ^ rawData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -717,6 +731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (fileName As String)" />
       <MemberSignature Language="F#" Value="member this.Import : string -&gt; unit" Usage="x509Certificate2Collection.Import fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -775,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (rawData As Byte(), password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="F#" Value="member this.Import : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2Collection.Import (rawData, password, keyStorageFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(cli::array &lt;System::Byte&gt; ^ rawData, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -837,6 +853,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (fileName As String, password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="F#" Value="member this.Import : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2Collection.Import (fileName, password, keyStorageFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(System::String ^ fileName, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -903,6 +920,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Insert(System.Int32,System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, certificate As X509Certificate2)" />
       <MemberSignature Language="F#" Value="override this.Insert : int * System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="x509Certificate2Collection.Insert (index, certificate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -961,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As X509Certificate2" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.Cryptography.X509Certificates.X509Certificate2 with get, set" Usage="System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2 ^ default[int] { System::Security::Cryptography::X509Certificates::X509Certificate2 ^ get(int index); void set(int index, System::Security::Cryptography::X509Certificates::X509Certificate2 ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1020,6 +1039,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Remove(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (certificate As X509Certificate2)" />
       <MemberSignature Language="F#" Value="override this.Remove : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; unit" Usage="x509Certificate2Collection.Remove certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1074,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.RemoveRange(System.Security.Cryptography.X509Certificates.X509Certificate2[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveRange (certificates As X509Certificate2())" />
       <MemberSignature Language="F#" Value="member this.RemoveRange : System.Security.Cryptography.X509Certificates.X509Certificate2[] -&gt; unit" Usage="x509Certificate2Collection.RemoveRange certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveRange(cli::array &lt;System::Security::Cryptography::X509Certificates::X509Certificate2 ^&gt; ^ certificates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -1122,6 +1143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.RemoveRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveRange (certificates As X509Certificate2Collection)" />
       <MemberSignature Language="F#" Value="member this.RemoveRange : System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; unit" Usage="x509Certificate2Collection.RemoveRange certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveRange(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ certificates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

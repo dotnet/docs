@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProviderSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProviderSettings&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type ProviderSettings = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProviderSettings sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -115,6 +117,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettings.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As String)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ProviderSettings : string * string -&gt; System.Configuration.ProviderSettings" Usage="new System.Configuration.ProviderSettings (name, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderSettings(System::String ^ name, System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -148,6 +151,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettings.IsModified" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="providerSettings.IsModified " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -173,6 +177,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettings.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Configuration.ProviderSettings.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -217,6 +222,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettings.OnDeserializeUnrecognizedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedAttribute (name As String, value As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedAttribute : string * string -&gt; bool" Usage="providerSettings.OnDeserializeUnrecognizedAttribute (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedAttribute(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -247,6 +253,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettings.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As NameValueCollection" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Specialized.NameValueCollection" Usage="System.Configuration.ProviderSettings.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ Parameters { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -286,6 +293,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettings.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ProviderSettings.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -310,6 +318,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettings.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="providerSettings.Reset parentElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -337,6 +346,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProviderSettings.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Configuration.ProviderSettings.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -381,6 +391,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ProviderSettings.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Unmerge (source As ConfigurationElement, parent As ConfigurationElement, updateMode As ConfigurationSaveMode)" />
       <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="providerSettings.Unmerge (source, parent, updateMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ source, System::Configuration::ConfigurationElement ^ parent, System::Configuration::ConfigurationSaveMode updateMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

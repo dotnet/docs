@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowMessageStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataflowMessageStatus" />
   <TypeSignature Language="F#" Value="type DataflowMessageStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataflowMessageStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted" />
       <MemberSignature Language="VB.NET" Value="Accepted" />
       <MemberSignature Language="F#" Value="Accepted = 0" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted" />
+      <MemberSignature Language="C++ CLI" Value="Accepted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined" />
       <MemberSignature Language="VB.NET" Value="Declined" />
       <MemberSignature Language="F#" Value="Declined = 1" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined" />
+      <MemberSignature Language="C++ CLI" Value="Declined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently" />
       <MemberSignature Language="VB.NET" Value="DecliningPermanently" />
       <MemberSignature Language="F#" Value="DecliningPermanently = 4" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently" />
+      <MemberSignature Language="C++ CLI" Value="DecliningPermanently" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable" />
       <MemberSignature Language="VB.NET" Value="NotAvailable" />
       <MemberSignature Language="F#" Value="NotAvailable = 3" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="NotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed" />
       <MemberSignature Language="VB.NET" Value="Postponed" />
       <MemberSignature Language="F#" Value="Postponed = 2" Usage="System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed" />
+      <MemberSignature Language="C++ CLI" Value="Postponed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

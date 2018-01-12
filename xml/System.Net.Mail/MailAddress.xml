@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.MailAddress" />
   <TypeSignature Language="VB.NET" Value="Public Class MailAddress" />
   <TypeSignature Language="F#" Value="type MailAddress = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MailAddress" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -111,6 +112,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddress.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.MailAddress : string -&gt; System.Net.Mail.MailAddress" Usage="new System.Net.Mail.MailAddress address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAddress(System::String ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +176,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddress.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As String, displayName As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.MailAddress : string * string -&gt; System.Net.Mail.MailAddress" Usage="new System.Net.Mail.MailAddress (address, displayName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAddress(System::String ^ address, System::String ^ displayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +237,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddress.#ctor(System.String,System.String,System.Text.Encoding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As String, displayName As String, displayNameEncoding As Encoding)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.MailAddress : string * string * System.Text.Encoding -&gt; System.Net.Mail.MailAddress" Usage="new System.Net.Mail.MailAddress (address, displayName, displayNameEncoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAddress(System::String ^ address, System::String ^ displayName, System::Text::Encoding ^ displayNameEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,6 +316,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailAddress.Address" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As String" />
       <MemberSignature Language="F#" Value="member this.Address : string" Usage="System.Net.Mail.MailAddress.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,6 +361,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailAddress.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Net.Mail.MailAddress.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,6 +408,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddress.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="mailAddress.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -436,6 +443,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddress.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="mailAddress.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -473,6 +481,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailAddress.Host" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As String" />
       <MemberSignature Language="F#" Value="member this.Host : string" Usage="System.Net.Mail.MailAddress.Host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -517,6 +526,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailAddress.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="mailAddress.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -566,6 +576,7 @@ The following code example demonstrates sending an e-mail message by using the <
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailAddress.User" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As String" />
       <MemberSignature Language="F#" Value="member this.User : string" Usage="System.Net.Mail.MailAddress.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ User { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

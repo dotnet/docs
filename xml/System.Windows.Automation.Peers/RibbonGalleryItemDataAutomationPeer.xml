@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGalleryItemDataAutomationPeer&#xA;Inherits ItemAutomationPeer&#xA;Implements IScrollItemProvider, ISelectionItemProvider" />
   <TypeSignature Language="F#" Value="type RibbonGalleryItemDataAutomationPeer = class&#xA;    inherit ItemAutomationPeer&#xA;    interface IScrollItemProvider&#xA;    interface ISelectionItemProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonGalleryItemDataAutomationPeer : System::Windows::Automation::Peers::ItemAutomationPeer, System::Windows::Automation::Provider::IScrollItemProvider, System::Windows::Automation::Provider::ISelectionItemProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object owner, class System.Windows.Automation.Peers.ItemsControlAutomationPeer itemsControlAutomationPeer, class System.Windows.Automation.Peers.RibbonGalleryCategoryDataAutomationPeer parentCategoryDataAutomationPeer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.ItemsControlAutomationPeer,System.Windows.Automation.Peers.RibbonGalleryCategoryDataAutomationPeer)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer : obj * System.Windows.Automation.Peers.ItemsControlAutomationPeer * System.Windows.Automation.Peers.RibbonGalleryCategoryDataAutomationPeer -&gt; System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer (owner, itemsControlAutomationPeer, parentCategoryDataAutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonGalleryItemDataAutomationPeer(System::Object ^ owner, System::Windows::Automation::Peers::ItemsControlAutomationPeer ^ itemsControlAutomationPeer, System::Windows::Automation::Peers::RibbonGalleryCategoryDataAutomationPeer ^ parentCategoryDataAutomationPeer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonGalleryItemDataAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonGalleryItemDataAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="ribbonGalleryItemDataAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.ParentCategoryDataAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentCategoryDataAutomationPeer As RibbonGalleryCategoryDataAutomationPeer" />
       <MemberSignature Language="F#" Value="member this.ParentCategoryDataAutomationPeer : System.Windows.Automation.Peers.RibbonGalleryCategoryDataAutomationPeer" Usage="System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.ParentCategoryDataAutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Peers::RibbonGalleryCategoryDataAutomationPeer ^ ParentCategoryDataAutomationPeer { System::Windows::Automation::Peers::RibbonGalleryCategoryDataAutomationPeer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -137,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
       <MemberSignature Language="VB.NET" Value="Sub ScrollIntoView () Implements IScrollItemProvider.ScrollIntoView" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView() = System::Windows::Automation::Provider::IScrollItemProvider::ScrollIntoView;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView</InterfaceMember>
@@ -166,6 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection" />
       <MemberSignature Language="VB.NET" Value="Sub AddToSelection () Implements ISelectionItemProvider.AddToSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::AddToSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection</InterfaceMember>
@@ -197,6 +205,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelected As Boolean Implements ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected</InterfaceMember>
@@ -227,6 +236,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveFromSelection () Implements ISelectionItemProvider.RemoveFromSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::RemoveFromSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection</InterfaceMember>
@@ -256,6 +266,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select" />
       <MemberSignature Language="VB.NET" Value="Sub Select () Implements ISelectionItemProvider.Select" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.Select() = System::Windows::Automation::Provider::ISelectionItemProvider::Select;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.Select</InterfaceMember>
@@ -286,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectionContainer As IRawElementProviderSimple Implements ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.RibbonGalleryItemDataAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer</InterfaceMember>

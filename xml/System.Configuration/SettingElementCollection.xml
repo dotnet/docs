@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type SettingElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.Add(System.Configuration.SettingElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As SettingElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Configuration.SettingElement -&gt; unit" Usage="settingElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Configuration::SettingElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="settingElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingElementCollection.CollectionType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
       <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Configuration.SettingElementCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="settingElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingElementCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Configuration.SettingElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (elementKey As String) As SettingElement" />
       <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Configuration.SettingElement" Usage="settingElementCollection.Get elementKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::SettingElement ^ Get(System::String ^ elementKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="settingElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElementCollection.Remove(System.Configuration.SettingElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As SettingElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Configuration.SettingElement -&gt; unit" Usage="settingElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Configuration::SettingElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

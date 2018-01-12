@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IsolationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum IsolationLevel" />
   <TypeSignature Language="F#" Value="type IsolationLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -141,6 +142,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Chaos" />
       <MemberSignature Language="VB.NET" Value="Chaos" />
       <MemberSignature Language="F#" Value="Chaos = 16" Usage="System.Data.IsolationLevel.Chaos" />
+      <MemberSignature Language="C++ CLI" Value="Chaos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -170,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.ReadCommitted" />
       <MemberSignature Language="VB.NET" Value="ReadCommitted" />
       <MemberSignature Language="F#" Value="ReadCommitted = 4096" Usage="System.Data.IsolationLevel.ReadCommitted" />
+      <MemberSignature Language="C++ CLI" Value="ReadCommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -199,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.ReadUncommitted" />
       <MemberSignature Language="VB.NET" Value="ReadUncommitted" />
       <MemberSignature Language="F#" Value="ReadUncommitted = 256" Usage="System.Data.IsolationLevel.ReadUncommitted" />
+      <MemberSignature Language="C++ CLI" Value="ReadUncommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.RepeatableRead" />
       <MemberSignature Language="VB.NET" Value="RepeatableRead" />
       <MemberSignature Language="F#" Value="RepeatableRead = 65536" Usage="System.Data.IsolationLevel.RepeatableRead" />
+      <MemberSignature Language="C++ CLI" Value="RepeatableRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -257,6 +262,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Serializable" />
       <MemberSignature Language="VB.NET" Value="Serializable" />
       <MemberSignature Language="F#" Value="Serializable = 1048576" Usage="System.Data.IsolationLevel.Serializable" />
+      <MemberSignature Language="C++ CLI" Value="Serializable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Snapshot" />
       <MemberSignature Language="VB.NET" Value="Snapshot" />
       <MemberSignature Language="F#" Value="Snapshot = 16777216" Usage="System.Data.IsolationLevel.Snapshot" />
+      <MemberSignature Language="C++ CLI" Value="Snapshot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -315,6 +322,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="F#" Value="Unspecified = -1" Usage="System.Data.IsolationLevel.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

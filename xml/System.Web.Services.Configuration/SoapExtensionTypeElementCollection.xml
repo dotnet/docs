@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.SoapExtensionTypeElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapExtensionTypeElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type SoapExtensionTypeElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapExtensionTypeElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapExtensionTypeElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Add(System.Web.Services.Configuration.SoapExtensionTypeElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As SoapExtensionTypeElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Configuration.SoapExtensionTypeElement -&gt; unit" Usage="soapExtensionTypeElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Services::Configuration::SoapExtensionTypeElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="soapExtensionTypeElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.ContainsKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As Object) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContainsKey : obj -&gt; bool" Usage="soapExtensionTypeElementCollection.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.CopyTo(System.Web.Services.Configuration.SoapExtensionTypeElement[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As SoapExtensionTypeElement(), index As Integer)" />
       <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.Services.Configuration.SoapExtensionTypeElement[] * int -&gt; unit" Usage="soapExtensionTypeElementCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Configuration::SoapExtensionTypeElement ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="soapExtensionTypeElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="soapExtensionTypeElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.IndexOf(System.Web.Services.Configuration.SoapExtensionTypeElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As SoapExtensionTypeElement) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Configuration.SoapExtensionTypeElement -&gt; int" Usage="soapExtensionTypeElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Configuration::SoapExtensionTypeElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -222,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SoapExtensionTypeElement" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Configuration.SoapExtensionTypeElement with get, set" Usage="System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::SoapExtensionTypeElement ^ default[int] { System::Web::Services::Configuration::SoapExtensionTypeElement ^ get(int index); void set(int index, System::Web::Services::Configuration::SoapExtensionTypeElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As SoapExtensionTypeElement" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : System.Web.Services.Configuration.SoapExtensionTypeElement with get, set" Usage="System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::SoapExtensionTypeElement ^ default[System::Object ^] { System::Web::Services::Configuration::SoapExtensionTypeElement ^ get(System::Object ^ key); void set(System::Object ^ key, System::Web::Services::Configuration::SoapExtensionTypeElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -271,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Remove(System.Web.Services.Configuration.SoapExtensionTypeElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As SoapExtensionTypeElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Configuration.SoapExtensionTypeElement -&gt; unit" Usage="soapExtensionTypeElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Configuration::SoapExtensionTypeElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="soapExtensionTypeElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -326,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.RemoveAt(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (key As Object)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : obj -&gt; unit" Usage="soapExtensionTypeElementCollection.RemoveAt key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

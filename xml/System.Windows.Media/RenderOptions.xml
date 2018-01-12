@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class RenderOptions" />
   <TypeSignature Language="F#" Value="type RenderOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RenderOptions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RenderOptions.BitmapScalingModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BitmapScalingModeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BitmapScalingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RenderOptions.BitmapScalingModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BitmapScalingModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximumProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CacheInvalidationThresholdMaximumProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CacheInvalidationThresholdMaximumProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CacheInvalidationThresholdMaximumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimumProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CacheInvalidationThresholdMinimumProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CacheInvalidationThresholdMinimumProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CacheInvalidationThresholdMinimumProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RenderOptions.CachingHintProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CachingHintProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CachingHintProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RenderOptions.CachingHintProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CachingHintProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RenderOptions.ClearTypeHintProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClearTypeHintProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ClearTypeHintProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RenderOptions.ClearTypeHintProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ClearTypeHintProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.RenderOptions.EdgeModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EdgeModeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable EdgeModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.RenderOptions.EdgeModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EdgeModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.GetBitmapScalingMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBitmapScalingMode (target As DependencyObject) As BitmapScalingMode" />
       <MemberSignature Language="F#" Value="static member GetBitmapScalingMode : System.Windows.DependencyObject -&gt; System.Windows.Media.BitmapScalingMode" Usage="System.Windows.Media.RenderOptions.GetBitmapScalingMode target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::BitmapScalingMode GetBitmapScalingMode(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCacheInvalidationThresholdMaximum (target As DependencyObject) As Double" />
       <MemberSignature Language="F#" Value="static member GetCacheInvalidationThresholdMaximum : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMaximum target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetCacheInvalidationThresholdMaximum(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -324,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCacheInvalidationThresholdMinimum (target As DependencyObject) As Double" />
       <MemberSignature Language="F#" Value="static member GetCacheInvalidationThresholdMinimum : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Media.RenderOptions.GetCacheInvalidationThresholdMinimum target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetCacheInvalidationThresholdMinimum(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -366,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.GetCachingHint(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCachingHint (target As DependencyObject) As CachingHint" />
       <MemberSignature Language="F#" Value="static member GetCachingHint : System.Windows.DependencyObject -&gt; System.Windows.Media.CachingHint" Usage="System.Windows.Media.RenderOptions.GetCachingHint target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::CachingHint GetCachingHint(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -408,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.GetClearTypeHint(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetClearTypeHint (target As DependencyObject) As ClearTypeHint" />
       <MemberSignature Language="F#" Value="static member GetClearTypeHint : System.Windows.DependencyObject -&gt; System.Windows.Media.ClearTypeHint" Usage="System.Windows.Media.RenderOptions.GetClearTypeHint target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::ClearTypeHint GetClearTypeHint(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -437,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.GetEdgeMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEdgeMode (target As DependencyObject) As EdgeMode" />
       <MemberSignature Language="F#" Value="static member GetEdgeMode : System.Windows.DependencyObject -&gt; System.Windows.Media.EdgeMode" Usage="System.Windows.Media.RenderOptions.GetEdgeMode target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::EdgeMode GetEdgeMode(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -474,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.RenderOptions.ProcessRenderMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ProcessRenderMode As RenderMode" />
       <MemberSignature Language="F#" Value="member this.ProcessRenderMode : System.Windows.Interop.RenderMode with get, set" Usage="System.Windows.Media.RenderOptions.ProcessRenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Interop::RenderMode ProcessRenderMode { System::Windows::Interop::RenderMode get(); void set(System::Windows::Interop::RenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -522,6 +536,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBitmapScalingMode(class System.Windows.DependencyObject target, valuetype System.Windows.Media.BitmapScalingMode bitmapScalingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.SetBitmapScalingMode(System.Windows.DependencyObject,System.Windows.Media.BitmapScalingMode)" />
       <MemberSignature Language="F#" Value="static member SetBitmapScalingMode : System.Windows.DependencyObject * System.Windows.Media.BitmapScalingMode -&gt; unit" Usage="System.Windows.Media.RenderOptions.SetBitmapScalingMode (target, bitmapScalingMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBitmapScalingMode(System::Windows::DependencyObject ^ target, System::Windows::Media::BitmapScalingMode bitmapScalingMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -566,6 +581,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMaximum(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCacheInvalidationThresholdMaximum (target As DependencyObject, cacheInvalidationThresholdMaximum As Double)" />
       <MemberSignature Language="F#" Value="static member SetCacheInvalidationThresholdMaximum : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMaximum (target, cacheInvalidationThresholdMaximum)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCacheInvalidationThresholdMaximum(System::Windows::DependencyObject ^ target, double cacheInvalidationThresholdMaximum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -609,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMinimum(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCacheInvalidationThresholdMinimum (target As DependencyObject, cacheInvalidationThresholdMinimum As Double)" />
       <MemberSignature Language="F#" Value="static member SetCacheInvalidationThresholdMinimum : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Media.RenderOptions.SetCacheInvalidationThresholdMinimum (target, cacheInvalidationThresholdMinimum)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCacheInvalidationThresholdMinimum(System::Windows::DependencyObject ^ target, double cacheInvalidationThresholdMinimum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -651,6 +668,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCachingHint(class System.Windows.DependencyObject target, valuetype System.Windows.Media.CachingHint cachingHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.SetCachingHint(System.Windows.DependencyObject,System.Windows.Media.CachingHint)" />
       <MemberSignature Language="F#" Value="static member SetCachingHint : System.Windows.DependencyObject * System.Windows.Media.CachingHint -&gt; unit" Usage="System.Windows.Media.RenderOptions.SetCachingHint (target, cachingHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCachingHint(System::Windows::DependencyObject ^ target, System::Windows::Media::CachingHint cachingHint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -699,6 +717,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetClearTypeHint(class System.Windows.DependencyObject target, valuetype System.Windows.Media.ClearTypeHint clearTypeHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.SetClearTypeHint(System.Windows.DependencyObject,System.Windows.Media.ClearTypeHint)" />
       <MemberSignature Language="F#" Value="static member SetClearTypeHint : System.Windows.DependencyObject * System.Windows.Media.ClearTypeHint -&gt; unit" Usage="System.Windows.Media.RenderOptions.SetClearTypeHint (target, clearTypeHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetClearTypeHint(System::Windows::DependencyObject ^ target, System::Windows::Media::ClearTypeHint clearTypeHint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -724,6 +743,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEdgeMode(class System.Windows.DependencyObject target, valuetype System.Windows.Media.EdgeMode edgeMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.RenderOptions.SetEdgeMode(System.Windows.DependencyObject,System.Windows.Media.EdgeMode)" />
       <MemberSignature Language="F#" Value="static member SetEdgeMode : System.Windows.DependencyObject * System.Windows.Media.EdgeMode -&gt; unit" Usage="System.Windows.Media.RenderOptions.SetEdgeMode (target, edgeMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEdgeMode(System::Windows::DependencyObject ^ target, System::Windows::Media::EdgeMode edgeMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

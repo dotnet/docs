@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.IsVolatileModifier" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsVolatileModifier" />
   <TypeSignature Language="F#" Value="type IsVolatileModifier = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IsVolatileModifier sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.IsVolatileModifier.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IsVolatileModifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>

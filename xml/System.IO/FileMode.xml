@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileMode" />
   <TypeSignature Language="F#" Value="type FileMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileMode" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Append" />
       <MemberSignature Language="VB.NET" Value="Append" />
       <MemberSignature Language="F#" Value="Append = 6" Usage="System.IO.FileMode.Append" />
+      <MemberSignature Language="C++ CLI" Value="Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Create" />
       <MemberSignature Language="VB.NET" Value="Create" />
       <MemberSignature Language="F#" Value="Create = 2" Usage="System.IO.FileMode.Create" />
+      <MemberSignature Language="C++ CLI" Value="Create" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.CreateNew" />
       <MemberSignature Language="VB.NET" Value="CreateNew" />
       <MemberSignature Language="F#" Value="CreateNew = 1" Usage="System.IO.FileMode.CreateNew" />
+      <MemberSignature Language="C++ CLI" Value="CreateNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Open" />
       <MemberSignature Language="VB.NET" Value="Open" />
       <MemberSignature Language="F#" Value="Open = 3" Usage="System.IO.FileMode.Open" />
+      <MemberSignature Language="C++ CLI" Value="Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.OpenOrCreate" />
       <MemberSignature Language="VB.NET" Value="OpenOrCreate" />
       <MemberSignature Language="F#" Value="OpenOrCreate = 4" Usage="System.IO.FileMode.OpenOrCreate" />
+      <MemberSignature Language="C++ CLI" Value="OpenOrCreate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -224,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Truncate" />
       <MemberSignature Language="VB.NET" Value="Truncate" />
       <MemberSignature Language="F#" Value="Truncate = 5" Usage="System.IO.FileMode.Truncate" />
+      <MemberSignature Language="C++ CLI" Value="Truncate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>

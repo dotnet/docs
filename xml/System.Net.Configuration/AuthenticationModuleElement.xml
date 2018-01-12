@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.AuthenticationModuleElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthenticationModuleElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type AuthenticationModuleElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationModuleElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationModuleElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Configuration.AuthenticationModuleElement : string -&gt; System.Net.Configuration.AuthenticationModuleElement" Usage="new System.Net.Configuration.AuthenticationModuleElement typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationModuleElement(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModuleElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.AuthenticationModuleElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModuleElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Net.Configuration.AuthenticationModuleElement.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

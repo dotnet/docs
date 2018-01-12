@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.ResourceSectionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResourceSectionBuilder" />
   <TypeSignature Language="F#" Value="type ResourceSectionBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceSectionBuilder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ResourceSectionBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourceSectionBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ResourceSectionBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Reflection.PortableExecutable.SectionLocation)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Serialize (builder As BlobBuilder, location As SectionLocation)" />
       <MemberSignature Language="F#" Value="abstract member Serialize : System.Reflection.Metadata.BlobBuilder * System.Reflection.PortableExecutable.SectionLocation -&gt; unit" Usage="resourceSectionBuilder.Serialize (builder, location)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Serialize(System::Reflection::Metadata::BlobBuilder ^ builder, System::Reflection::PortableExecutable::SectionLocation location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

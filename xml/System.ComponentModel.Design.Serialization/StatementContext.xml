@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.StatementContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatementContext" />
   <TypeSignature Language="F#" Value="type StatementContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatementContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.StatementContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatementContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.StatementContext.StatementCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatementCollection As ObjectStatementCollection" />
       <MemberSignature Language="F#" Value="member this.StatementCollection : System.ComponentModel.Design.Serialization.ObjectStatementCollection" Usage="System.ComponentModel.Design.Serialization.StatementContext.StatementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ObjectStatementCollection ^ StatementCollection { System::ComponentModel::Design::Serialization::ObjectStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLevel" />
   <TypeSignature Language="F#" Value="type EventLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Critical" />
       <MemberSignature Language="VB.NET" Value="Critical" />
       <MemberSignature Language="F#" Value="Critical = 1" Usage="System.Diagnostics.Tracing.EventLevel.Critical" />
+      <MemberSignature Language="C++ CLI" Value="Critical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
       <MemberSignature Language="F#" Value="Error = 2" Usage="System.Diagnostics.Tracing.EventLevel.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Informational" />
       <MemberSignature Language="VB.NET" Value="Informational" />
       <MemberSignature Language="F#" Value="Informational = 4" Usage="System.Diagnostics.Tracing.EventLevel.Informational" />
+      <MemberSignature Language="C++ CLI" Value="Informational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.LogAlways" />
       <MemberSignature Language="VB.NET" Value="LogAlways" />
       <MemberSignature Language="F#" Value="LogAlways = 0" Usage="System.Diagnostics.Tracing.EventLevel.LogAlways" />
+      <MemberSignature Language="C++ CLI" Value="LogAlways" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Verbose" />
       <MemberSignature Language="VB.NET" Value="Verbose" />
       <MemberSignature Language="F#" Value="Verbose = 5" Usage="System.Diagnostics.Tracing.EventLevel.Verbose" />
+      <MemberSignature Language="C++ CLI" Value="Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventLevel.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
       <MemberSignature Language="F#" Value="Warning = 3" Usage="System.Diagnostics.Tracing.EventLevel.Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Handle" />
   <TypeSignature Language="VB.NET" Value="Public Structure Handle&#xA;Implements IEquatable(Of Handle)" />
   <TypeSignature Language="F#" Value="type Handle = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Handle : IEquatable&lt;System::Reflection::Metadata::Handle&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Handle.AssemblyDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AssemblyDefinition As AssemblyDefinitionHandle " />
       <MemberSignature Language="F#" Value=" staticval mutable AssemblyDefinition : System.Reflection.Metadata.AssemblyDefinitionHandle" Usage="System.Reflection.Metadata.Handle.AssemblyDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Metadata::AssemblyDefinitionHandle AssemblyDefinition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="handle.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.Equals(System.Reflection.Metadata.Handle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Handle) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.Handle -&gt; bool" Usage="handle.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::Handle other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="handle.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Handle.IsNil" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNil As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNil : bool" Usage="System.Reflection.Metadata.Handle.IsNil" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNil { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Handle.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As HandleKind" />
       <MemberSignature Language="F#" Value="member this.Kind : System.Reflection.Metadata.HandleKind" Usage="System.Reflection.Metadata.Handle.Kind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::HandleKind Kind { System::Reflection::Metadata::HandleKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Handle.ModuleDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModuleDefinition As ModuleDefinitionHandle " />
       <MemberSignature Language="F#" Value=" staticval mutable ModuleDefinition : System.Reflection.Metadata.ModuleDefinitionHandle" Usage="System.Reflection.Metadata.Handle.ModuleDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Metadata::ModuleDefinitionHandle ModuleDefinition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.op_Equality(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Handle, right As Handle) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.Handle * System.Reflection.Metadata.Handle -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Metadata::Handle left, System::Reflection::Metadata::Handle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -221,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.op_Inequality(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Handle, right As Handle) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.Handle * System.Reflection.Metadata.Handle -&gt; bool" Usage="System.Reflection.Metadata.Handle.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Metadata::Handle left, System::Reflection::Metadata::Handle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

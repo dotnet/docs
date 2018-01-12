@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.UnobservedTaskExceptionEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class UnobservedTaskExceptionEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type UnobservedTaskExceptionEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnobservedTaskExceptionEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.#ctor(System.AggregateException)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (exception As AggregateException)" />
       <MemberSignature Language="F#" Value="new System.Threading.Tasks.UnobservedTaskExceptionEventArgs : AggregateException -&gt; System.Threading.Tasks.UnobservedTaskExceptionEventArgs" Usage="new System.Threading.Tasks.UnobservedTaskExceptionEventArgs exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnobservedTaskExceptionEventArgs(AggregateException ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As AggregateException" />
       <MemberSignature Language="F#" Value="member this.Exception : AggregateException" Usage="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property AggregateException ^ Exception { AggregateException ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Observed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Observed As Boolean" />
       <MemberSignature Language="F#" Value="member this.Observed : bool" Usage="System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Observed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Observed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetObserved ()" />
       <MemberSignature Language="F#" Value="member this.SetObserved : unit -&gt; unit" Usage="unobservedTaskExceptionEventArgs.SetObserved " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetObserved();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

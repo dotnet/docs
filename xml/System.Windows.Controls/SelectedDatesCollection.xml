@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectedDatesCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SelectedDatesCollection&#xA;Inherits ObservableCollection(Of DateTime)" />
   <TypeSignature Language="F#" Value="type SelectedDatesCollection = class&#xA;    inherit ObservableCollection&lt;DateTime&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SelectedDatesCollection sealed : System::Collections::ObjectModel::ObservableCollection&lt;DateTime&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.#ctor(System.Windows.Controls.Calendar)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Calendar)" />
       <MemberSignature Language="F#" Value="new System.Windows.Controls.SelectedDatesCollection : System.Windows.Controls.Calendar -&gt; System.Windows.Controls.SelectedDatesCollection" Usage="new System.Windows.Controls.SelectedDatesCollection owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectedDatesCollection(System::Windows::Controls::Calendar ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.AddRange(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (start As DateTime, end As DateTime)" />
       <MemberSignature Language="F#" Value="member this.AddRange : DateTime * DateTime -&gt; unit" Usage="selectedDatesCollection.AddRange (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(DateTime start, DateTime end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="selectedDatesCollection.ClearItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.InsertItem(System.Int32,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As DateTime)" />
       <MemberSignature Language="F#" Value="override this.InsertItem : int * DateTime -&gt; unit" Usage="selectedDatesCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, DateTime item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="selectedDatesCollection.RemoveItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedDatesCollection.SetItem(System.Int32,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As DateTime)" />
       <MemberSignature Language="F#" Value="override this.SetItem : int * DateTime -&gt; unit" Usage="selectedDatesCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, DateTime item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

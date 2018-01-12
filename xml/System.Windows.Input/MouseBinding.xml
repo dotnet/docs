@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class MouseBinding&#xA;Inherits InputBinding" />
   <TypeSignature Language="F#" Value="type MouseBinding = class&#xA;    inherit InputBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MouseBinding : System::Windows::Input::InputBinding" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.MouseGesture)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (command As ICommand, gesture As MouseGesture)" />
       <MemberSignature Language="F#" Value="new System.Windows.Input.MouseBinding : System.Windows.Input.ICommand * System.Windows.Input.MouseGesture -&gt; System.Windows.Input.MouseBinding" Usage="new System.Windows.Input.MouseBinding (command, gesture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseBinding(System::Windows::Input::ICommand ^ command, System::Windows::Input::MouseGesture ^ gesture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="mouseBinding.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="mouseBinding.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="mouseBinding.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseBinding.Gesture" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Gesture As InputGesture" />
       <MemberSignature Language="F#" Value="member this.Gesture : System.Windows.Input.InputGesture with get, set" Usage="System.Windows.Input.MouseBinding.Gesture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Input::InputGesture ^ Gesture { System::Windows::Input::InputGesture ^ get(); void set(System::Windows::Input::InputGesture ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mouseBinding.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseBinding.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mouseBinding.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseBinding.MouseAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseAction As MouseAction" />
       <MemberSignature Language="F#" Value="member this.MouseAction : System.Windows.Input.MouseAction with get, set" Usage="System.Windows.Input.MouseBinding.MouseAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseAction MouseAction { System::Windows::Input::MouseAction get(); void set(System::Windows::Input::MouseAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -315,6 +325,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.MouseBinding.MouseActionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseActionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MouseActionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.MouseBinding.MouseActionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseActionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

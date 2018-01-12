@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ICloneable" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICloneable" />
   <TypeSignature Language="F#" Value="type ICloneable = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICloneable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ICloneable.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj" Usage="iCloneable.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

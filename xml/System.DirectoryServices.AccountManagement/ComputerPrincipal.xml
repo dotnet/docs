@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class ComputerPrincipal&#xA;Inherits AuthenticablePrincipal" />
   <TypeSignature Language="F#" Value="type ComputerPrincipal = class&#xA;    inherit AuthenticablePrincipal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComputerPrincipal : System::DirectoryServices::AccountManagement::AuthenticablePrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As PrincipalContext)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.ComputerPrincipal : System.DirectoryServices.AccountManagement.PrincipalContext -&gt; System.DirectoryServices.AccountManagement.ComputerPrincipal" Usage="new System.DirectoryServices.AccountManagement.ComputerPrincipal context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComputerPrincipal(System::DirectoryServices::AccountManagement::PrincipalContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As PrincipalContext, samAccountName As String, password As String, enabled As Boolean)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.ComputerPrincipal : System.DirectoryServices.AccountManagement.PrincipalContext * string * string * bool -&gt; System.DirectoryServices.AccountManagement.ComputerPrincipal" Usage="new System.DirectoryServices.AccountManagement.ComputerPrincipal (context, samAccountName, password, enabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComputerPrincipal(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::String ^ samAccountName, System::String ^ password, bool enabled);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByBadPasswordAttempt(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByBadPasswordAttempt (context As PrincipalContext, time As DateTime, type As MatchType) As PrincipalSearchResult(Of ComputerPrincipal)" />
       <MemberSignature Language="F#" Value="static member FindByBadPasswordAttempt : System.DirectoryServices.AccountManagement.PrincipalContext * DateTime * System.DirectoryServices.AccountManagement.MatchType -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByBadPasswordAttempt (context, time, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::ComputerPrincipal ^&gt; ^ FindByBadPasswordAttempt(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, DateTime time, System::DirectoryServices::AccountManagement::MatchType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByExpirationTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByExpirationTime (context As PrincipalContext, time As DateTime, type As MatchType) As PrincipalSearchResult(Of ComputerPrincipal)" />
       <MemberSignature Language="F#" Value="static member FindByExpirationTime : System.DirectoryServices.AccountManagement.PrincipalContext * DateTime * System.DirectoryServices.AccountManagement.MatchType -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByExpirationTime (context, time, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::ComputerPrincipal ^&gt; ^ FindByExpirationTime(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, DateTime time, System::DirectoryServices::AccountManagement::MatchType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByIdentity (context As PrincipalContext, identityValue As String) As ComputerPrincipal" />
       <MemberSignature Language="F#" Value="static member FindByIdentity : System.DirectoryServices.AccountManagement.PrincipalContext * string -&gt; System.DirectoryServices.AccountManagement.ComputerPrincipal" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity (context, identityValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::ComputerPrincipal ^ FindByIdentity(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::String ^ identityValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.ComputerPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
       <MemberSignature Language="F#" Value="static member FindByIdentity : System.DirectoryServices.AccountManagement.PrincipalContext * System.DirectoryServices.AccountManagement.IdentityType * string -&gt; System.DirectoryServices.AccountManagement.ComputerPrincipal" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity (context, identityType, identityValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::ComputerPrincipal ^ FindByIdentity(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByLockoutTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByLockoutTime (context As PrincipalContext, time As DateTime, type As MatchType) As PrincipalSearchResult(Of ComputerPrincipal)" />
       <MemberSignature Language="F#" Value="static member FindByLockoutTime : System.DirectoryServices.AccountManagement.PrincipalContext * DateTime * System.DirectoryServices.AccountManagement.MatchType -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByLockoutTime (context, time, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::ComputerPrincipal ^&gt; ^ FindByLockoutTime(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, DateTime time, System::DirectoryServices::AccountManagement::MatchType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByLogonTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByLogonTime (context As PrincipalContext, time As DateTime, type As MatchType) As PrincipalSearchResult(Of ComputerPrincipal)" />
       <MemberSignature Language="F#" Value="static member FindByLogonTime : System.DirectoryServices.AccountManagement.PrincipalContext * DateTime * System.DirectoryServices.AccountManagement.MatchType -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByLogonTime (context, time, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::ComputerPrincipal ^&gt; ^ FindByLogonTime(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, DateTime time, System::DirectoryServices::AccountManagement::MatchType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByPasswordSetTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByPasswordSetTime (context As PrincipalContext, time As DateTime, type As MatchType) As PrincipalSearchResult(Of ComputerPrincipal)" />
       <MemberSignature Language="F#" Value="static member FindByPasswordSetTime : System.DirectoryServices.AccountManagement.PrincipalContext * DateTime * System.DirectoryServices.AccountManagement.MatchType -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByPasswordSetTime (context, time, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::ComputerPrincipal ^&gt; ^ FindByPasswordSetTime(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, DateTime time, System::DirectoryServices::AccountManagement::MatchType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.ComputerPrincipal.ServicePrincipalNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePrincipalNames As PrincipalValueCollection(Of String)" />
       <MemberSignature Language="F#" Value="member this.ServicePrincipalNames : System.DirectoryServices.AccountManagement.PrincipalValueCollection&lt;string&gt;" Usage="System.DirectoryServices.AccountManagement.ComputerPrincipal.ServicePrincipalNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalValueCollection&lt;System::String ^&gt; ^ ServicePrincipalNames { System::DirectoryServices::AccountManagement::PrincipalValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

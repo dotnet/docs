@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AsymmetricKeyExchangeDeformatter" />
   <TypeSignature Language="F#" Value="type AsymmetricKeyExchangeDeformatter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsymmetricKeyExchangeDeformatter abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeDeformatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsymmetricKeyExchangeDeformatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeDeformatter.DecryptKeyExchange(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DecryptKeyExchange (rgb As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member DecryptKeyExchange : byte[] -&gt; byte[]" Usage="asymmetricKeyExchangeDeformatter.DecryptKeyExchange rgb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ DecryptKeyExchange(cli::array &lt;System::Byte&gt; ^ rgb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricKeyExchangeDeformatter.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Parameters As String" />
       <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="System.Security.Cryptography.AsymmetricKeyExchangeDeformatter.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricKeyExchangeDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetKey (key As AsymmetricAlgorithm)" />
       <MemberSignature Language="F#" Value="abstract member SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="asymmetricKeyExchangeDeformatter.SetKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

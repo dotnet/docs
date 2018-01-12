@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingParameterCollection&#xA;Inherits KeyedByTypeCollection(Of Object)" />
   <TypeSignature Language="F#" Value="type BindingParameterCollection = class&#xA;    inherit KeyedByTypeCollection&lt;obj&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingParameterCollection : System::Collections::Generic::KeyedByTypeCollection&lt;System::Object ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingParameterCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingParameterCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingParameterCollection.GetKeyForItem(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As Object) As Type" />
       <MemberSignature Language="F#" Value="override this.GetKeyForItem : obj -&gt; Type" Usage="bindingParameterCollection.GetKeyForItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetKeyForItem(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingParameterCollection.InsertItem(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Object)" />
       <MemberSignature Language="F#" Value="override this.InsertItem : int * obj -&gt; unit" Usage="bindingParameterCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingParameterCollection.SetItem(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Object)" />
       <MemberSignature Language="F#" Value="override this.SetItem : int * obj -&gt; unit" Usage="bindingParameterCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

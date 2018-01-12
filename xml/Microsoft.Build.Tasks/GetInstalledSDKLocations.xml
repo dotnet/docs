@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetInstalledSDKLocations" />
   <TypeSignature Language="VB.NET" Value="Public Class GetInstalledSDKLocations&#xA;Inherits TaskExtension" />
   <TypeSignature Language="F#" Value="type GetInstalledSDKLocations = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetInstalledSDKLocations : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetInstalledSDKLocations.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetInstalledSDKLocations();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetInstalledSDKLocations.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="getInstalledSDKLocations.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.InstalledSDKs" />
       <MemberSignature Language="VB.NET" Value="Public Property InstalledSDKs As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.InstalledSDKs : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.InstalledSDKs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ InstalledSDKs { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKDirectoryRoots" />
       <MemberSignature Language="VB.NET" Value="Public Property SDKDirectoryRoots As String()" />
       <MemberSignature Language="F#" Value="member this.SDKDirectoryRoots : string[] with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKDirectoryRoots" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ SDKDirectoryRoots { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKRegistryRoot" />
       <MemberSignature Language="VB.NET" Value="Public Property SDKRegistryRoot As String" />
       <MemberSignature Language="F#" Value="member this.SDKRegistryRoot : string with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKRegistryRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SDKRegistryRoot { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformIdentifier" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetPlatformIdentifier As String" />
       <MemberSignature Language="F#" Value="member this.TargetPlatformIdentifier : string with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPlatformIdentifier { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetPlatformVersion As String" />
       <MemberSignature Language="F#" Value="member this.TargetPlatformVersion : string with get, set" Usage="Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPlatformVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

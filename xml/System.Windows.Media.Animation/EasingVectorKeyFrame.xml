@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingVectorKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class EasingVectorKeyFrame&#xA;Inherits VectorKeyFrame" />
   <TypeSignature Language="F#" Value="type EasingVectorKeyFrame = class&#xA;    inherit VectorKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EasingVectorKeyFrame : System::Windows::Media::Animation::VectorKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingVectorKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Vector)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingVectorKeyFrame : System.Windows.Vector -&gt; System.Windows.Media.Animation.EasingVectorKeyFrame" Usage="new System.Windows.Media.Animation.EasingVectorKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingVectorKeyFrame(System::Windows::Vector value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingVectorKeyFrame : System.Windows.Vector * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.EasingVectorKeyFrame" Usage="new System.Windows.Media.Animation.EasingVectorKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingVectorKeyFrame(System::Windows::Vector value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.IEasingFunction easingFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingVectorKeyFrame : System.Windows.Vector * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.IEasingFunction -&gt; System.Windows.Media.Animation.EasingVectorKeyFrame" Usage="new System.Windows.Media.Animation.EasingVectorKeyFrame (value, keyTime, easingFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingVectorKeyFrame(System::Windows::Vector value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::IEasingFunction ^ easingFunction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingVectorKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="easingVectorKeyFrame.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.EasingVectorKeyFrame.EasingFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
       <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.EasingVectorKeyFrame.EasingFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingVectorKeyFrame.EasingFunctionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.EasingVectorKeyFrame.EasingFunctionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingVectorKeyFrame.InterpolateValueCore(System.Windows.Vector,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Vector, keyFrameProgress As Double) As Vector" />
       <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Vector * double -&gt; System.Windows.Vector" Usage="easingVectorKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Vector InterpolateValueCore(System::Windows::Vector baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

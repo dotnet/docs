@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyTitleAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyTitleAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyTitleAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyTitleAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyTitleAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (title As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AssemblyTitleAttribute : string -&gt; System.Reflection.AssemblyTitleAttribute" Usage="new System.Reflection.AssemblyTitleAttribute title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyTitleAttribute(System::String ^ title);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyTitleAttribute.Title" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Title As String" />
       <MemberSignature Language="F#" Value="member this.Title : string" Usage="System.Reflection.AssemblyTitleAttribute.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

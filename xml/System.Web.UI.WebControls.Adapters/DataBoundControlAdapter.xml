@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class DataBoundControlAdapter&#xA;Inherits WebControlAdapter" />
   <TypeSignature Language="F#" Value="type DataBoundControlAdapter = class&#xA;    inherit WebControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataBoundControlAdapter : System::Web::UI::WebControls::Adapters::WebControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBoundControlAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.Control" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As DataBoundControl" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.WebControls.DataBoundControl" Usage="System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::DataBoundControl ^ Control { System::Web::UI::WebControls::DataBoundControl ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub PerformDataBinding (data As IEnumerable)" />
       <MemberSignature Language="F#" Value="abstract member PerformDataBinding : System.Collections.IEnumerable -&gt; unit&#xA;override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="dataBoundControlAdapter.PerformDataBinding data" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

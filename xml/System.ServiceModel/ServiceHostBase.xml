@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceHostBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceHostBase&#xA;Inherits CommunicationObject&#xA;Implements IDisposable, IExtensibleObject(Of ServiceHostBase)" />
   <TypeSignature Language="F#" Value="type ServiceHostBase = class&#xA;    inherit CommunicationObject&#xA;    interface IExtensibleObject&lt;ServiceHostBase&gt;&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostBase abstract : System::ServiceModel::Channels::CommunicationObject, IDisposable, System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::ServiceHostBase ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceHostBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddBaseAddress(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddBaseAddress (baseAddress As Uri)" />
       <MemberSignature Language="F#" Value="member this.AddBaseAddress : Uri -&gt; unit" Usage="serviceHostBase.AddBaseAddress baseAddress" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddBaseAddress(Uri ^ baseAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AddDefaultEndpoints () As ReadOnlyCollection(Of ServiceEndpoint)" />
       <MemberSignature Language="F#" Value="abstract member AddDefaultEndpoints : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&#xA;override this.AddDefaultEndpoints : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" Usage="serviceHostBase.AddDefaultEndpoints " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ AddDefaultEndpoints();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddServiceEndpoint (endpoint As ServiceEndpoint)" />
       <MemberSignature Language="F#" Value="abstract member AddServiceEndpoint : System.ServiceModel.Description.ServiceEndpoint -&gt; unit&#xA;override this.AddServiceEndpoint : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="serviceHostBase.AddServiceEndpoint endpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddServiceEndpoint(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, string address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.String)" />
       <MemberSignature Language="F#" Value="member this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHostBase.AddServiceEndpoint (implementedContract, binding, address)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,6 +219,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.Uri)" />
       <MemberSignature Language="F#" Value="member this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHostBase.AddServiceEndpoint (implementedContract, binding, address)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,6 +250,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.String,System.Uri)" />
       <MemberSignature Language="F#" Value="member this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * string * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHostBase.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address, Uri ^ listenUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -282,6 +290,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.Uri,System.Uri)" />
       <MemberSignature Language="F#" Value="member this.AddServiceEndpoint : string * System.ServiceModel.Channels.Binding * Uri * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHostBase.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(System::String ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address, Uri ^ listenUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -315,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.ApplyConfiguration" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ApplyConfiguration ()" />
       <MemberSignature Language="F#" Value="abstract member ApplyConfiguration : unit -&gt; unit&#xA;override this.ApplyConfiguration : unit -&gt; unit" Usage="serviceHostBase.ApplyConfiguration " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ApplyConfiguration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -336,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.Authentication" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authentication As ServiceAuthenticationBehavior" />
       <MemberSignature Language="F#" Value="member this.Authentication : System.ServiceModel.Description.ServiceAuthenticationBehavior" Usage="System.ServiceModel.ServiceHostBase.Authentication" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceAuthenticationBehavior ^ Authentication { System::ServiceModel::Description::ServiceAuthenticationBehavior ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -356,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.Authorization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authorization As ServiceAuthorizationBehavior" />
       <MemberSignature Language="F#" Value="member this.Authorization : System.ServiceModel.Description.ServiceAuthorizationBehavior" Usage="System.ServiceModel.ServiceHostBase.Authorization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceAuthorizationBehavior ^ Authorization { System::ServiceModel::Description::ServiceAuthorizationBehavior ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.BaseAddresses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseAddresses As ReadOnlyCollection(Of Uri)" />
       <MemberSignature Language="F#" Value="member this.BaseAddresses : System.Collections.ObjectModel.ReadOnlyCollection&lt;Uri&gt;" Usage="System.ServiceModel.ServiceHostBase.BaseAddresses" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Uri ^&gt; ^ BaseAddresses { System::Collections::ObjectModel::ReadOnlyCollection&lt;Uri ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -403,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.ChannelDispatchers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelDispatchers As ChannelDispatcherCollection" />
       <MemberSignature Language="F#" Value="member this.ChannelDispatchers : System.ServiceModel.Dispatcher.ChannelDispatcherCollection" Usage="System.ServiceModel.ServiceHostBase.ChannelDispatchers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::ChannelDispatcherCollection ^ ChannelDispatchers { System::ServiceModel::Dispatcher::ChannelDispatcherCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -423,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.CloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CloseTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.CloseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.ServiceHostBase.CloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -454,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDescription (ByRef implementedContracts As IDictionary(Of String, ContractDescription)) As ServiceDescription" />
       <MemberSignature Language="F#" Value="abstract member CreateDescription :  -&gt; System.ServiceModel.Description.ServiceDescription" Usage="serviceHostBase.CreateDescription implementedContracts" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Description::ServiceDescription ^ CreateDescription([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ % implementedContracts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -485,6 +501,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ServiceCredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : System.ServiceModel.Description.ServiceCredentials" Usage="System.ServiceModel.ServiceHostBase.Credentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceCredentials ^ Credentials { System::ServiceModel::Description::ServiceCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -512,6 +529,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.DefaultCloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.ServiceHostBase.DefaultCloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -532,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.DefaultOpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.ServiceHostBase.DefaultOpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -559,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As ServiceDescription" />
       <MemberSignature Language="F#" Value="member this.Description : System.ServiceModel.Description.ServiceDescription" Usage="System.ServiceModel.ServiceHostBase.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceDescription ^ Description { System::ServiceModel::Description::ServiceDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -586,6 +606,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As IExtensionCollection(Of ServiceHostBase)" />
       <MemberSignature Language="F#" Value="member this.Extensions : System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.ServiceHostBase&gt;" Usage="System.ServiceModel.ServiceHostBase.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::ServiceHostBase ^&gt; ^ Extensions { System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::ServiceHostBase ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IExtensibleObject`1.Extensions</InterfaceMember>
@@ -609,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.ImplementedContracts" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ImplementedContracts As IDictionary(Of String, ContractDescription)" />
       <MemberSignature Language="F#" Value="member this.ImplementedContracts : System.Collections.Generic.IDictionary&lt;string, System.ServiceModel.Description.ContractDescription&gt;" Usage="System.ServiceModel.ServiceHostBase.ImplementedContracts" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ ImplementedContracts { System::Collections::Generic::IDictionary&lt;System::String ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -629,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.IncrementManualFlowControlLimit(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IncrementManualFlowControlLimit (incrementBy As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.IncrementManualFlowControlLimit : int -&gt; int" Usage="serviceHostBase.IncrementManualFlowControlLimit incrementBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IncrementManualFlowControlLimit(int incrementBy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -666,6 +689,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.InitializeDescription(System.ServiceModel.UriSchemeKeyedCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeDescription (baseAddresses As UriSchemeKeyedCollection)" />
       <MemberSignature Language="F#" Value="member this.InitializeDescription : System.ServiceModel.UriSchemeKeyedCollection -&gt; unit" Usage="serviceHostBase.InitializeDescription baseAddresses" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeDescription(System::ServiceModel::UriSchemeKeyedCollection ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -689,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.InitializeRuntime" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeRuntime ()" />
       <MemberSignature Language="F#" Value="abstract member InitializeRuntime : unit -&gt; unit&#xA;override this.InitializeRuntime : unit -&gt; unit" Usage="serviceHostBase.InitializeRuntime " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeRuntime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -710,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.LoadConfigurationSection(System.ServiceModel.Configuration.ServiceElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub LoadConfigurationSection (serviceSection As ServiceElement)" />
       <MemberSignature Language="F#" Value="member this.LoadConfigurationSection : System.ServiceModel.Configuration.ServiceElement -&gt; unit" Usage="serviceHostBase.LoadConfigurationSection serviceSection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadConfigurationSection(System::ServiceModel::Configuration::ServiceElement ^ serviceSection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -736,6 +762,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.ManualFlowControlLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property ManualFlowControlLimit As Integer" />
       <MemberSignature Language="F#" Value="member this.ManualFlowControlLimit : int with get, set" Usage="System.ServiceModel.ServiceHostBase.ManualFlowControlLimit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ManualFlowControlLimit { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -769,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnAbort" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
       <MemberSignature Language="F#" Value="override this.OnAbort : unit -&gt; unit" Usage="serviceHostBase.OnAbort " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -789,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="override this.OnBeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="serviceHostBase.OnBeginClose (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -817,6 +846,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="override this.OnBeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="serviceHostBase.OnBeginOpen (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -845,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnClose(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="override this.OnClose : TimeSpan -&gt; unit" Usage="serviceHostBase.OnClose timeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -883,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnClosed" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed ()" />
       <MemberSignature Language="F#" Value="override this.OnClosed : unit -&gt; unit" Usage="serviceHostBase.OnClosed " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -903,6 +935,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnEndClose(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
       <MemberSignature Language="F#" Value="override this.OnEndClose : IAsyncResult -&gt; unit" Usage="serviceHostBase.OnEndClose result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -926,6 +959,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnEndOpen(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndOpen (result As IAsyncResult)" />
       <MemberSignature Language="F#" Value="override this.OnEndOpen : IAsyncResult -&gt; unit" Usage="serviceHostBase.OnEndOpen result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndOpen(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -949,6 +983,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnOpen(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpen (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="override this.OnOpen : TimeSpan -&gt; unit" Usage="serviceHostBase.OnOpen timeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpen(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -972,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.OnOpened" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpened ()" />
       <MemberSignature Language="F#" Value="override this.OnOpened : unit -&gt; unit" Usage="serviceHostBase.OnOpened " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpened();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -999,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHostBase.OpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property OpenTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.OpenTimeout : TimeSpan with get, set" Usage="System.ServiceModel.ServiceHostBase.OpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1023,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.ReleasePerformanceCounters" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ReleasePerformanceCounters ()" />
       <MemberSignature Language="F#" Value="member this.ReleasePerformanceCounters : unit -&gt; unit" Usage="serviceHostBase.ReleasePerformanceCounters " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReleasePerformanceCounters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1052,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.SetEndpointAddress(System.ServiceModel.Description.ServiceEndpoint,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEndpointAddress (endpoint As ServiceEndpoint, relativeAddress As String)" />
       <MemberSignature Language="F#" Value="member this.SetEndpointAddress : System.ServiceModel.Description.ServiceEndpoint * string -&gt; unit" Usage="serviceHostBase.SetEndpointAddress (endpoint, relativeAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEndpointAddress(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::String ^ relativeAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1076,6 +1115,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHostBase.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1099,6 +1139,7 @@
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.ServiceHostBase.UnknownMessageReceived" />
       <MemberSignature Language="VB.NET" Value="Public Event UnknownMessageReceived As EventHandler(Of UnknownMessageReceivedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.UnknownMessageReceived : EventHandler&lt;System.ServiceModel.UnknownMessageReceivedEventArgs&gt; " Usage="member this.UnknownMessageReceived : System.EventHandler&lt;System.ServiceModel.UnknownMessageReceivedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ServiceModel::UnknownMessageReceivedEventArgs ^&gt; ^ UnknownMessageReceived;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

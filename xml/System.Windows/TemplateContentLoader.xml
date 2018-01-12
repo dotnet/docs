@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateContentLoader" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplateContentLoader&#xA;Inherits XamlDeferringLoader" />
   <TypeSignature Language="F#" Value="type TemplateContentLoader = class&#xA;    inherit XamlDeferringLoader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateContentLoader : System::Xaml::XamlDeferringLoader" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateContentLoader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateContentLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -38,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Load(class System.Xaml.XamlReader xamlReader, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateContentLoader.Load(System.Xaml.XamlReader,System.IServiceProvider)" />
       <MemberSignature Language="F#" Value="override this.Load : System.Xaml.XamlReader * IServiceProvider -&gt; obj" Usage="templateContentLoader.Load (xamlReader, serviceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Load(System::Xaml::XamlReader ^ xamlReader, IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateContentLoader.Save(System.Object,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Save (value As Object, serviceProvider As IServiceProvider) As XamlReader" />
       <MemberSignature Language="F#" Value="override this.Save : obj * IServiceProvider -&gt; System.Xaml.XamlReader" Usage="templateContentLoader.Save (value, serviceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xaml::XamlReader ^ Save(System::Object ^ value, IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

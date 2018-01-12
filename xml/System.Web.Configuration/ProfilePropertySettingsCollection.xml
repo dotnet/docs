@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ProfilePropertySettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type ProfilePropertySettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfilePropertySettingsCollection : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfilePropertySettingsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.Add(System.Web.Configuration.ProfilePropertySettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (propertySettings As ProfilePropertySettings)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.ProfilePropertySettings -&gt; unit" Usage="profilePropertySettingsCollection.Add propertySettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::ProfilePropertySettings ^ propertySettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettingsCollection.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.Configuration.ProfilePropertySettingsCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettingsCollection.AllowClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property AllowClear As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowClear : bool" Usage="System.Web.Configuration.ProfilePropertySettingsCollection.AllowClear" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool AllowClear { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="profilePropertySettingsCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="profilePropertySettingsCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As ProfilePropertySettings" />
       <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.ProfilePropertySettings" Usage="profilePropertySettingsCollection.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::ProfilePropertySettings ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As ProfilePropertySettings" />
       <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.Configuration.ProfilePropertySettings" Usage="profilePropertySettingsCollection.Get name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::ProfilePropertySettings ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="profilePropertySettingsCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="profilePropertySettingsCollection.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.IndexOf(System.Web.Configuration.ProfilePropertySettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (propertySettings As ProfilePropertySettings) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Configuration.ProfilePropertySettings -&gt; int" Usage="profilePropertySettingsCollection.IndexOf propertySettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Configuration::ProfilePropertySettings ^ propertySettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -364,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ProfilePropertySettings" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.ProfilePropertySettings with get, set" Usage="System.Web.Configuration.ProfilePropertySettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfilePropertySettings ^ default[int] { System::Web::Configuration::ProfilePropertySettings ^ get(int index); void set(int index, System::Web::Configuration::ProfilePropertySettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettingsCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ProfilePropertySettings" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.ProfilePropertySettings" Usage="System.Web.Configuration.ProfilePropertySettingsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfilePropertySettings ^ default[System::String ^] { System::Web::Configuration::ProfilePropertySettings ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -416,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="profilePropertySettingsCollection.OnDeserializeUnrecognizedElement (elementName, reader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProfilePropertySettingsCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -476,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="profilePropertySettingsCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -525,6 +542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="profilePropertySettingsCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -574,6 +592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettingsCollection.Set(System.Web.Configuration.ProfilePropertySettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set (propertySettings As ProfilePropertySettings)" />
       <MemberSignature Language="F#" Value="member this.Set : System.Web.Configuration.ProfilePropertySettings -&gt; unit" Usage="profilePropertySettingsCollection.Set propertySettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Web::Configuration::ProfilePropertySettings ^ propertySettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -607,6 +626,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettingsCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Web.Configuration.ProfilePropertySettingsCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

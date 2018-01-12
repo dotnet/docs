@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageHeaderInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageHeaderInfo" />
   <TypeSignature Language="F#" Value="type MessageHeaderInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageHeaderInfo abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageHeaderInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageHeaderInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaderInfo.Actor" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Actor As String" />
       <MemberSignature Language="F#" Value="member this.Actor : string" Usage="System.ServiceModel.Channels.MessageHeaderInfo.Actor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Actor { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaderInfo.IsReferenceParameter" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReferenceParameter As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReferenceParameter : bool" Usage="System.ServiceModel.Channels.MessageHeaderInfo.IsReferenceParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReferenceParameter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaderInfo.MustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MustUnderstand As Boolean" />
       <MemberSignature Language="F#" Value="member this.MustUnderstand : bool" Usage="System.ServiceModel.Channels.MessageHeaderInfo.MustUnderstand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool MustUnderstand { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaderInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.MessageHeaderInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaderInfo.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.ServiceModel.Channels.MessageHeaderInfo.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageHeaderInfo.Relay" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Relay As Boolean" />
       <MemberSignature Language="F#" Value="member this.Relay : bool" Usage="System.ServiceModel.Channels.MessageHeaderInfo.Relay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool Relay { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

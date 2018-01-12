@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UpDownBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UpDownBase&#xA;Inherits ContainerControl" />
   <TypeSignature Language="F#" Value="type UpDownBase = class&#xA;    inherit ContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpDownBase abstract : System::Windows::Forms::ContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpDownBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.UpDownBase.AutoScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.AutoScrollMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.UpDownBase.AutoScrollMargin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.AutoScrollMinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.UpDownBase.AutoScrollMinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.UpDownBase.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.AutoSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.UpDownBase.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -300,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.UpDownBase.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -338,6 +347,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -365,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.UpDownBase.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -403,6 +414,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
       <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.UpDownBase.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.ChangingText" />
       <MemberSignature Language="VB.NET" Value="Protected Property ChangingText As Boolean" />
       <MemberSignature Language="F#" Value="member this.ChangingText : bool with get, set" Usage="System.Windows.Forms.UpDownBase.ChangingText" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool ChangingText { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -508,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.ContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenu As ContextMenu" />
       <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Forms.ContextMenu with get, set" Usage="System.Windows.Forms.UpDownBase.ContextMenu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenu ^ ContextMenu { System::Windows::Forms::ContextMenu ^ get(); void set(System::Windows::Forms::ContextMenu ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.ContextMenuStrip" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenuStrip As ContextMenuStrip" />
       <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.UpDownBase.ContextMenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -562,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.UpDownBase.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -583,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.UpDownBase.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -604,6 +622,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.DockPadding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DockPadding As ScrollableControl.DockPaddingEdges" />
       <MemberSignature Language="F#" Value="member this.DockPadding : System.Windows.Forms.ScrollableControl.DockPaddingEdges" Usage="System.Windows.Forms.UpDownBase.DockPadding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ScrollableControl::DockPaddingEdges ^ DockPadding { System::Windows::Forms::ScrollableControl::DockPaddingEdges ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -642,6 +661,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.DownButton" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DownButton ()" />
       <MemberSignature Language="F#" Value="abstract member DownButton : unit -&gt; unit" Usage="upDownBase.DownButton " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DownButton();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -666,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.Focused" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Focused As Boolean" />
       <MemberSignature Language="F#" Value="member this.Focused : bool" Usage="System.Windows.Forms.UpDownBase.Focused" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Focused { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -696,6 +717,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.UpDownBase.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -723,6 +745,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.InterceptArrowKeys" />
       <MemberSignature Language="VB.NET" Value="Public Property InterceptArrowKeys As Boolean" />
       <MemberSignature Language="F#" Value="member this.InterceptArrowKeys : bool with get, set" Usage="System.Windows.Forms.UpDownBase.InterceptArrowKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InterceptArrowKeys { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -767,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.MaximumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MaximumSize As Size" />
       <MemberSignature Language="F#" Value="member this.MaximumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.UpDownBase.MaximumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MaximumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -794,6 +818,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.MinimumSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property MinimumSize As Size" />
       <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.UpDownBase.MinimumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -814,6 +839,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseEnter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -841,6 +867,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.MouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseHover As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -868,6 +895,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -895,6 +923,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UpDownBase.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -922,6 +951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged (source As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnChanged : obj * EventArgs -&gt; unit&#xA;override this.OnChanged : obj * EventArgs -&gt; unit" Usage="upDownBase.OnChanged (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -947,6 +977,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="upDownBase.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -982,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="upDownBase.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1017,6 +1049,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnHandleDestroyed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="upDownBase.OnHandleDestroyed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1052,6 +1085,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="upDownBase.OnLayout e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1089,6 +1123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="upDownBase.OnMouseDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1124,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (mevent As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="upDownBase.OnMouseUp mevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ mevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1161,6 +1197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="upDownBase.OnMouseWheel e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1200,6 +1237,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="upDownBase.OnPaint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1235,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnTextBoxKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextBoxKeyDown (source As Object, e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTextBoxKeyDown : obj * System.Windows.Forms.KeyEventArgs -&gt; unit&#xA;override this.OnTextBoxKeyDown : obj * System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="upDownBase.OnTextBoxKeyDown (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextBoxKeyDown(System::Object ^ source, System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1278,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnTextBoxKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextBoxKeyPress (source As Object, e As KeyPressEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTextBoxKeyPress : obj * System.Windows.Forms.KeyPressEventArgs -&gt; unit&#xA;override this.OnTextBoxKeyPress : obj * System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="upDownBase.OnTextBoxKeyPress (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextBoxKeyPress(System::Object ^ source, System::Windows::Forms::KeyPressEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1316,6 +1356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnTextBoxLostFocus(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextBoxLostFocus (source As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTextBoxLostFocus : obj * EventArgs -&gt; unit&#xA;override this.OnTextBoxLostFocus : obj * EventArgs -&gt; unit" Usage="upDownBase.OnTextBoxLostFocus (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextBoxLostFocus(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1356,6 +1397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnTextBoxResize(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextBoxResize (source As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTextBoxResize : obj * EventArgs -&gt; unit&#xA;override this.OnTextBoxResize : obj * EventArgs -&gt; unit" Usage="upDownBase.OnTextBoxResize (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextBoxResize(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1396,6 +1438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.OnTextBoxTextChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextBoxTextChanged (source As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTextBoxTextChanged : obj * EventArgs -&gt; unit&#xA;override this.OnTextBoxTextChanged : obj * EventArgs -&gt; unit" Usage="upDownBase.OnTextBoxTextChanged (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextBoxTextChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1434,6 +1477,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.PreferredHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredHeight As Integer" />
       <MemberSignature Language="F#" Value="member this.PreferredHeight : int" Usage="System.Windows.Forms.UpDownBase.PreferredHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PreferredHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1482,6 +1526,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.UpDownBase.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1528,6 +1573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.RescaleConstantsForDpi(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RescaleConstantsForDpi (deviceDpiOld As Integer, deviceDpiNew As Integer)" />
       <MemberSignature Language="F#" Value="override this.RescaleConstantsForDpi : int * int -&gt; unit" Usage="upDownBase.RescaleConstantsForDpi (deviceDpiOld, deviceDpiNew)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1553,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.Select(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select (start As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="override this.Select : int * int -&gt; unit" Usage="upDownBase.Select (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(int start, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1595,6 +1642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.UpDownBase.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1639,6 +1687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.TextAlign" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlign As HorizontalAlignment" />
       <MemberSignature Language="F#" Value="member this.TextAlign : System.Windows.Forms.HorizontalAlignment with get, set" Usage="System.Windows.Forms.UpDownBase.TextAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HorizontalAlignment TextAlign { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1682,6 +1731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.UpButton" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub UpButton ()" />
       <MemberSignature Language="F#" Value="abstract member UpButton : unit -&gt; unit" Usage="upDownBase.UpButton " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void UpButton();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1706,6 +1756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.UpdateEditText" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub UpdateEditText ()" />
       <MemberSignature Language="F#" Value="abstract member UpdateEditText : unit -&gt; unit" Usage="upDownBase.UpdateEditText " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void UpdateEditText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1731,6 +1782,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.UpDownAlign" />
       <MemberSignature Language="VB.NET" Value="Public Property UpDownAlign As LeftRightAlignment" />
       <MemberSignature Language="F#" Value="member this.UpDownAlign : System.Windows.Forms.LeftRightAlignment with get, set" Usage="System.Windows.Forms.UpDownBase.UpDownAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LeftRightAlignment UpDownAlign { System::Windows::Forms::LeftRightAlignment get(); void set(System::Windows::Forms::LeftRightAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1774,6 +1826,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UpDownBase.UserEdit" />
       <MemberSignature Language="VB.NET" Value="Protected Property UserEdit As Boolean" />
       <MemberSignature Language="F#" Value="member this.UserEdit : bool with get, set" Usage="System.Windows.Forms.UpDownBase.UserEdit" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool UserEdit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1805,6 +1858,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.ValidateEditText" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateEditText ()" />
       <MemberSignature Language="F#" Value="abstract member ValidateEditText : unit -&gt; unit&#xA;override this.ValidateEditText : unit -&gt; unit" Usage="upDownBase.ValidateEditText " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateEditText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1837,6 +1891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UpDownBase.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="upDownBase.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

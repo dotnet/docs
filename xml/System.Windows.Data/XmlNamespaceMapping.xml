@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.XmlNamespaceMapping" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlNamespaceMapping&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type XmlNamespaceMapping = class&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlNamespaceMapping : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNamespaceMapping();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prefix, class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.#ctor(System.String,System.Uri)" />
       <MemberSignature Language="F#" Value="new System.Windows.Data.XmlNamespaceMapping : string * Uri -&gt; System.Windows.Data.XmlNamespaceMapping" Usage="new System.Windows.Data.XmlNamespaceMapping (prefix, uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlNamespaceMapping(System::String ^ prefix, Uri ^ uri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xmlNamespaceMapping.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xmlNamespaceMapping.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.op_Equality(System.Windows.Data.XmlNamespaceMapping,System.Windows.Data.XmlNamespaceMapping)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (mappingA As XmlNamespaceMapping, mappingB As XmlNamespaceMapping) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Data.XmlNamespaceMapping * System.Windows.Data.XmlNamespaceMapping -&gt; bool" Usage="mappingA = mappingB" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Data::XmlNamespaceMapping ^ mappingA, System::Windows::Data::XmlNamespaceMapping ^ mappingB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.op_Inequality(System.Windows.Data.XmlNamespaceMapping,System.Windows.Data.XmlNamespaceMapping)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (mappingA As XmlNamespaceMapping, mappingB As XmlNamespaceMapping) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Data.XmlNamespaceMapping * System.Windows.Data.XmlNamespaceMapping -&gt; bool" Usage="System.Windows.Data.XmlNamespaceMapping.op_Inequality (mappingA, mappingB)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Data::XmlNamespaceMapping ^ mappingA, System::Windows::Data::XmlNamespaceMapping ^ mappingB);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlNamespaceMapping.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
       <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Windows.Data.XmlNamespaceMapping.Prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +215,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.System#ComponentModel#ISupportInitialize#BeginInit" />
       <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -229,6 +238,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.System#ComponentModel#ISupportInitialize#EndInit" />
       <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -252,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlNamespaceMapping.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
       <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="System.Windows.Data.XmlNamespaceMapping.Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

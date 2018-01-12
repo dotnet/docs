@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.AspEncodedExprRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class AspEncodedExprRegex&#xA;Inherits Regex" />
   <TypeSignature Language="F#" Value="type AspEncodedExprRegex = class&#xA;    inherit Regex" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspEncodedExprRegex : System::Text::RegularExpressions::Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.AspEncodedExprRegex.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspEncodedExprRegex();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.AspEncodedExprRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.AspEncodedExprRegex : TimeSpan -&gt; System.Web.RegularExpressions.AspEncodedExprRegex" Usage="new System.Web.RegularExpressions.AspEncodedExprRegex A_1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspEncodedExprRegex(TimeSpan A_1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

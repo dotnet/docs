@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SchemeSettingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SchemeSettingElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type SchemeSettingElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemeSettingElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SchemeSettingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemeSettingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SchemeSettingElement.GenericUriParserOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericUriParserOptions As GenericUriParserOptions" />
       <MemberSignature Language="F#" Value="member this.GenericUriParserOptions : GenericUriParserOptions" Usage="System.Configuration.SchemeSettingElement.GenericUriParserOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property GenericUriParserOptions GenericUriParserOptions { GenericUriParserOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SchemeSettingElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.SchemeSettingElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SchemeSettingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.SchemeSettingElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

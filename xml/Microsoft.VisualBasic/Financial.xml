@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Financial" />
   <TypeSignature Language="VB.NET" Value="Public Module Financial" />
   <TypeSignature Language="F#" Value="type Financial = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Financial sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -252,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function MIRR (ByRef ValueArray As Double(), FinanceRate As Double, ReinvestRate As Double) As Double" />
       <MemberSignature Language="F#" Value="static member MIRR :  * double * double -&gt; double" Usage="Microsoft.VisualBasic.Financial.MIRR (ValueArray, FinanceRate, ReinvestRate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double MIRR(cli::array &lt;double&gt; ^ % ValueArray, double FinanceRate, double ReinvestRate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -355,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Function NPV (Rate As Double, ByRef ValueArray As Double()) As Double" />
       <MemberSignature Language="F#" Value="static member NPV : double *  -&gt; double" Usage="Microsoft.VisualBasic.Financial.NPV (Rate, ValueArray)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double NPV(double Rate, cli::array &lt;double&gt; ^ % ValueArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -621,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.SLN(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function SLN (Cost As Double, Salvage As Double, Life As Double) As Double" />
       <MemberSignature Language="F#" Value="static member SLN : double * double * double -&gt; double" Usage="Microsoft.VisualBasic.Financial.SLN (Cost, Salvage, Life)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double SLN(double Cost, double Salvage, double Life);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -668,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.SYD(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function SYD (Cost As Double, Salvage As Double, Life As Double, Period As Double) As Double" />
       <MemberSignature Language="F#" Value="static member SYD : double * double * double * double -&gt; double" Usage="Microsoft.VisualBasic.Financial.SYD (Cost, Salvage, Life, Period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double SYD(double Cost, double Salvage, double Life, double Period);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

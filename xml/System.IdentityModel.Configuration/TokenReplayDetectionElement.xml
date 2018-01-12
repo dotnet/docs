@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.TokenReplayDetectionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TokenReplayDetectionElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type TokenReplayDetectionElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TokenReplayDetectionElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.TokenReplayDetectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TokenReplayDetectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.TokenReplayDetectionElement.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.IdentityModel.Configuration.TokenReplayDetectionElement.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.TokenReplayDetectionElement.ExpirationPeriod" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpirationPeriod As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.ExpirationPeriod : TimeSpan with get, set" Usage="System.IdentityModel.Configuration.TokenReplayDetectionElement.ExpirationPeriod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ExpirationPeriod { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.TokenReplayDetectionElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.IdentityModel.Configuration.TokenReplayDetectionElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

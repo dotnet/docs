@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CatalogZoneBase&#xA;Inherits ToolZone&#xA;Implements IPostBackDataHandler" />
   <TypeSignature Language="F#" Value="type CatalogZoneBase = class&#xA;    inherit ToolZone&#xA;    interface IPostBackDataHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CatalogZoneBase abstract : System::Web::UI::WebControls::WebParts::ToolZone, System::Web::UI::IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CatalogZoneBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AddVerb As WebPartVerb" />
       <MemberSignature Language="F#" Value="member this.AddVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ AddVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogPartChrome" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CatalogPartChrome As CatalogPartChrome" />
       <MemberSignature Language="F#" Value="member this.CatalogPartChrome : System.Web.UI.WebControls.WebParts.CatalogPartChrome" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogPartChrome" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::CatalogPartChrome ^ CatalogPartChrome { System::Web::UI::WebControls::WebParts::CatalogPartChrome ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CatalogParts As CatalogPartCollection" />
       <MemberSignature Language="F#" Value="member this.CatalogParts : System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ CatalogParts { System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.Close" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="catalogZoneBase.Close " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -304,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CloseVerb As WebPartVerb" />
       <MemberSignature Language="F#" Value="member this.CloseVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ CloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogPartChrome" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateCatalogPartChrome () As CatalogPartChrome" />
       <MemberSignature Language="F#" Value="abstract member CreateCatalogPartChrome : unit -&gt; System.Web.UI.WebControls.WebParts.CatalogPartChrome&#xA;override this.CreateCatalogPartChrome : unit -&gt; System.Web.UI.WebControls.WebParts.CatalogPartChrome" Usage="catalogZoneBase.CreateCatalogPartChrome " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::CatalogPartChrome ^ CreateCatalogPartChrome();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -396,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateCatalogParts () As CatalogPartCollection" />
       <MemberSignature Language="F#" Value="abstract member CreateCatalogParts : unit -&gt; System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="catalogZoneBase.CreateCatalogParts " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ CreateCatalogParts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,6 +442,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="catalogZoneBase.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EmptyZoneText As String" />
       <MemberSignature Language="F#" Value="member this.EmptyZoneText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyZoneText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -493,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property HeaderText As String" />
       <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -538,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property InstructionText As String" />
       <MemberSignature Language="F#" Value="member this.InstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InstructionText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -585,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InvalidateCatalogParts" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InvalidateCatalogParts ()" />
       <MemberSignature Language="F#" Value="member this.InvalidateCatalogParts : unit -&gt; unit" Usage="catalogZoneBase.InvalidateCatalogParts " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvalidateCatalogParts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -613,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="catalogZoneBase.LoadControlState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -639,6 +654,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="catalogZoneBase.LoadPostData (postDataKey, postCollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
@@ -678,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="catalogZoneBase.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="catalogZoneBase.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -735,6 +753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="catalogZoneBase.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -758,6 +777,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartLinkStyle As Style" />
       <MemberSignature Language="F#" Value="member this.PartLinkStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ PartLinkStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -819,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="F#" Value="override this.RaisePostBackEvent : string -&gt; unit" Usage="catalogZoneBase.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -853,6 +874,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="catalogZoneBase.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -884,6 +906,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderBody (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.RenderBody : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="catalogZoneBase.RenderBody writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderBody(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -920,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderCatalogPartLinks(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderCatalogPartLinks (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="abstract member RenderCatalogPartLinks : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderCatalogPartLinks : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="catalogZoneBase.RenderCatalogPartLinks writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderCatalogPartLinks(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -957,6 +981,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderFooter(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderFooter (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.RenderFooter : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="catalogZoneBase.RenderFooter writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderFooter(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -991,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderVerbs (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.RenderVerbs : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="catalogZoneBase.RenderVerbs writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderVerbs(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1026,6 +1052,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="catalogZoneBase.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1060,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="catalogZoneBase.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1089,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedCatalogPartID As String" />
       <MemberSignature Language="F#" Value="member this.SelectedCatalogPartID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedCatalogPartID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1143,6 +1172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedPartLinkStyle As Style" />
       <MemberSignature Language="F#" Value="member this.SelectedPartLinkStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ SelectedPartLinkStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1204,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectTargetZoneText As String" />
       <MemberSignature Language="F#" Value="member this.SelectTargetZoneText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectTargetZoneText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1255,6 +1286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.ShowCatalogIcons" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowCatalogIcons As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowCatalogIcons : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.CatalogZoneBase.ShowCatalogIcons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowCatalogIcons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1290,6 +1322,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean Implements IPostBackDataHandler.LoadPostData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IPostBackDataHandler.LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection) = System::Web::UI::IPostBackDataHandler::LoadPostData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
@@ -1327,6 +1360,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostDataChangedEvent () Implements IPostBackDataHandler.RaisePostDataChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() = System::Web::UI::IPostBackDataHandler::RaisePostDataChangedEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
@@ -1357,6 +1391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="catalogZoneBase.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

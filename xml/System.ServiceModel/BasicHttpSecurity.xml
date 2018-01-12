@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BasicHttpSecurity" />
   <TypeSignature Language="F#" Value="type BasicHttpSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As BasicHttpMessageSecurity" />
       <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.BasicHttpMessageSecurity with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::BasicHttpMessageSecurity ^ Message { System::ServiceModel::BasicHttpMessageSecurity ^ get(); void set(System::ServiceModel::BasicHttpMessageSecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As BasicHttpSecurityMode" />
       <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.BasicHttpSecurityMode with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::BasicHttpSecurityMode Mode { System::ServiceModel::BasicHttpSecurityMode get(); void set(System::ServiceModel::BasicHttpSecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.ShouldSerializeMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeMessage : unit -&gt; bool" Usage="basicHttpSecurity.ShouldSerializeMessage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.ShouldSerializeTransport" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeTransport : unit -&gt; bool" Usage="basicHttpSecurity.ShouldSerializeTransport " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As HttpTransportSecurity" />
       <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.HttpTransportSecurity with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpTransportSecurity ^ Transport { System::ServiceModel::HttpTransportSecurity ^ get(); void set(System::ServiceModel::HttpTransportSecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

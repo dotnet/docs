@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CookieParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class CookieParameter&#xA;Inherits Parameter" />
   <TypeSignature Language="F#" Value="type CookieParameter = class&#xA;    inherit Parameter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CookieParameter : System::Web::UI::WebControls::Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CookieParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.#ctor(System.Web.UI.WebControls.CookieParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As CookieParameter)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.CookieParameter : System.Web.UI.WebControls.CookieParameter -&gt; System.Web.UI.WebControls.CookieParameter" Usage="new System.Web.UI.WebControls.CookieParameter original" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CookieParameter(System::Web::UI::WebControls::CookieParameter ^ original);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, cookieName As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.CookieParameter : string * string -&gt; System.Web.UI.WebControls.CookieParameter" Usage="new System.Web.UI.WebControls.CookieParameter (name, cookieName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CookieParameter(System::String ^ name, System::String ^ cookieName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string cookieName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.#ctor(System.String,System.Data.DbType,System.String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.CookieParameter : string * System.Data.DbType * string -&gt; System.Web.UI.WebControls.CookieParameter" Usage="new System.Web.UI.WebControls.CookieParameter (name, dbType, cookieName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CookieParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ cookieName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.#ctor(System.String,System.TypeCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, cookieName As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.CookieParameter : string * TypeCode * string -&gt; System.Web.UI.WebControls.CookieParameter" Usage="new System.Web.UI.WebControls.CookieParameter (name, type, cookieName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CookieParameter(System::String ^ name, TypeCode type, System::String ^ cookieName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="cookieParameter.Clone " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CookieParameter.CookieName" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieName As String" />
       <MemberSignature Language="F#" Value="member this.CookieName : string with get, set" Usage="System.Web.UI.WebControls.CookieParameter.CookieName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CookieName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CookieParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="cookieParameter.Evaluate (context, control)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CookieParameter.ValidateInput" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateInput As Boolean" />
       <MemberSignature Language="F#" Value="member this.ValidateInput : bool with get, set" Usage="System.Web.UI.WebControls.CookieParameter.ValidateInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateInput { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

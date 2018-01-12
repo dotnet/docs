@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XsltContext&#xA;Inherits XmlNamespaceManager" />
   <TypeSignature Language="F#" Value="type XsltContext = class&#xA;    inherit XmlNamespaceManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XsltContext abstract : System::Xml::XmlNamespaceManager" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XsltContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltContext.#ctor(System.Xml.NameTable)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (table As NameTable)" />
       <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltContext : System.Xml.NameTable -&gt; System.Xml.Xsl.XsltContext" Usage="new System.Xml.Xsl.XsltContext table" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XsltContext(System::Xml::NameTable ^ table);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltContext.CompareDocument(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CompareDocument (baseUri As String, nextbaseUri As String) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareDocument : string * string -&gt; int" Usage="xsltContext.CompareDocument (baseUri, nextbaseUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int CompareDocument(System::String ^ baseUri, System::String ^ nextbaseUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function PreserveWhitespace (node As XPathNavigator) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member PreserveWhitespace : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xsltContext.PreserveWhitespace node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool PreserveWhitespace(System::Xml::XPath::XPathNavigator ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveFunction (prefix As String, name As String, ArgTypes As XPathResultType()) As IXsltContextFunction" />
       <MemberSignature Language="F#" Value="abstract member ResolveFunction : string * string * System.Xml.XPath.XPathResultType[] -&gt; System.Xml.Xsl.IXsltContextFunction" Usage="xsltContext.ResolveFunction (prefix, name, ArgTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::Xsl::IXsltContextFunction ^ ResolveFunction(System::String ^ prefix, System::String ^ name, cli::array &lt;System::Xml::XPath::XPathResultType&gt; ^ ArgTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltContext.ResolveVariable(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveVariable (prefix As String, name As String) As IXsltContextVariable" />
       <MemberSignature Language="F#" Value="abstract member ResolveVariable : string * string -&gt; System.Xml.Xsl.IXsltContextVariable" Usage="xsltContext.ResolveVariable (prefix, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::Xsl::IXsltContextVariable ^ ResolveVariable(System::String ^ prefix, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltContext.Whitespace" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Whitespace As Boolean" />
       <MemberSignature Language="F#" Value="member this.Whitespace : bool" Usage="System.Xml.Xsl.XsltContext.Whitespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool Whitespace { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

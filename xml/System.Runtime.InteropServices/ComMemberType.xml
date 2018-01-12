@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComMemberType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComMemberType" />
   <TypeSignature Language="F#" Value="type ComMemberType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComMemberType" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComMemberType.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="F#" Value="Method = 0" Usage="System.Runtime.InteropServices.ComMemberType.Method" />
+      <MemberSignature Language="C++ CLI" Value="Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComMemberType.PropGet" />
       <MemberSignature Language="VB.NET" Value="PropGet" />
       <MemberSignature Language="F#" Value="PropGet = 1" Usage="System.Runtime.InteropServices.ComMemberType.PropGet" />
+      <MemberSignature Language="C++ CLI" Value="PropGet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComMemberType.PropSet" />
       <MemberSignature Language="VB.NET" Value="PropSet" />
       <MemberSignature Language="F#" Value="PropSet = 2" Usage="System.Runtime.InteropServices.ComMemberType.PropSet" />
+      <MemberSignature Language="C++ CLI" Value="PropSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

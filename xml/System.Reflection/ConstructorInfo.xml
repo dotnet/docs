@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.ConstructorInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConstructorInfo&#xA;Inherits MethodBase&#xA;Implements _ConstructorInfo" />
   <TypeSignature Language="F#" Value="type ConstructorInfo = class&#xA;    inherit MethodBase&#xA;    interface _ConstructorInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConstructorInfo abstract : System::Reflection::MethodBase, System::Runtime::InteropServices::_ConstructorInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConstructorInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ConstructorInfo.ConstructorName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConstructorName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ConstructorName : string" Usage="System.Reflection.ConstructorInfo.ConstructorName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ConstructorName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="constructorInfo.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Equals(System.Object)</InterfaceMember>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="constructorInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.GetHashCode</InterfaceMember>
@@ -235,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.Invoke(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (parameters As Object()) As Object" />
       <MemberSignature Language="F#" Value="override this.Invoke : obj[] -&gt; obj" Usage="constructorInfo.Invoke parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -317,6 +323,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.Invoke(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="F#" Value="override this.Invoke : System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="constructorInfo.Invoke (invokeAttr, binder, parameters, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Invoke(System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -389,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.ConstructorInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Reflection.ConstructorInfo.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._ConstructorInfo.MemberType</InterfaceMember>
@@ -447,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.op_Equality(System.Reflection.ConstructorInfo,System.Reflection.ConstructorInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ConstructorInfo, right As ConstructorInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.ConstructorInfo * System.Reflection.ConstructorInfo -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::ConstructorInfo ^ left, System::Reflection::ConstructorInfo ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -483,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.op_Inequality(System.Reflection.ConstructorInfo,System.Reflection.ConstructorInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ConstructorInfo, right As ConstructorInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.ConstructorInfo * System.Reflection.ConstructorInfo -&gt; bool" Usage="System.Reflection.ConstructorInfo.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::ConstructorInfo ^ left, System::Reflection::ConstructorInfo ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -518,6 +528,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _ConstructorInfo.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorInfo.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_ConstructorInfo::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -559,6 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type System.Runtime.InteropServices._ConstructorInfo.GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#GetType" />
       <MemberSignature Language="VB.NET" Value="Function GetType () As Type Implements _ConstructorInfo.GetType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Type ^ System.Runtime.InteropServices._ConstructorInfo.GetType() = System::Runtime::InteropServices::_ConstructorInfo::GetType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.GetType</InterfaceMember>
@@ -582,6 +594,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorInfo.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _ConstructorInfo.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorInfo.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_ConstructorInfo::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -619,6 +632,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _ConstructorInfo.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorInfo.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_ConstructorInfo::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -652,6 +666,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _ConstructorInfo.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorInfo.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_ConstructorInfo::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
@@ -698,6 +713,7 @@
       <MemberSignature Language="C#" Value="object _ConstructorInfo.Invoke_2 (object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.InteropServices._ConstructorInfo.Invoke_2(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#Invoke_2(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Runtime.InteropServices._ConstructorInfo.Invoke_2(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture) = System::Runtime::InteropServices::_ConstructorInfo::Invoke_2;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Invoke_2(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)</InterfaceMember>
@@ -739,6 +755,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.InteropServices._ConstructorInfo.Invoke_3(object obj, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#Invoke_3(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Function Invoke_3 (obj As Object, parameters As Object()) As Object Implements _ConstructorInfo.Invoke_3" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Runtime.InteropServices._ConstructorInfo.Invoke_3(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ parameters) = System::Runtime::InteropServices::_ConstructorInfo::Invoke_3;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Invoke_3(System.Object,System.Object[])</InterfaceMember>
@@ -773,6 +790,7 @@
       <MemberSignature Language="C#" Value="object _ConstructorInfo.Invoke_4 (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.InteropServices._ConstructorInfo.Invoke_4(valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#Invoke_4(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Runtime.InteropServices._ConstructorInfo.Invoke_4(System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture) = System::Runtime::InteropServices::_ConstructorInfo::Invoke_4;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Invoke_4(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)</InterfaceMember>
@@ -812,6 +830,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.InteropServices._ConstructorInfo.Invoke_5(object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ConstructorInfo.System#Runtime#InteropServices#_ConstructorInfo#Invoke_5(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Function Invoke_5 (parameters As Object()) As Object Implements _ConstructorInfo.Invoke_5" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Runtime.InteropServices._ConstructorInfo.Invoke_5(cli::array &lt;System::Object ^&gt; ^ parameters) = System::Runtime::InteropServices::_ConstructorInfo::Invoke_5;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorInfo.Invoke_5(System.Object[])</InterfaceMember>
@@ -846,6 +865,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.ConstructorInfo.TypeConstructorName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeConstructorName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable TypeConstructorName : string" Usage="System.Reflection.ConstructorInfo.TypeConstructorName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ TypeConstructorName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

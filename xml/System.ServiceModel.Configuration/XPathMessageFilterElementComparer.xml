@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.XPathMessageFilterElementComparer" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathMessageFilterElementComparer&#xA;Implements IComparer" />
   <TypeSignature Language="F#" Value="type XPathMessageFilterElementComparer = class&#xA;    interface IComparer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageFilterElementComparer : System::Collections::IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElementComparer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilterElementComparer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IComparer.Compare(object x, object y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XPathMessageFilterElementComparer.System#Collections#IComparer#Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Compare (x As Object, y As Object) As Integer Implements IComparer.Compare" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IComparer.Compare(System::Object ^ x, System::Object ^ y) = System::Collections::IComparer::Compare;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonApplicationSplitMenuItem&#xA;Inherits RibbonSplitMenuItem" />
   <TypeSignature Language="F#" Value="type RibbonApplicationSplitMenuItem = class&#xA;    inherit RibbonSplitMenuItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonApplicationSplitMenuItem : System::Windows::Controls::Ribbon::RibbonSplitMenuItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonApplicationSplitMenuItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonApplicationSplitMenuItem.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonApplicationSplitMenuItem.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As RibbonApplicationMenuItemLevel" />
       <MemberSignature Language="F#" Value="member this.Level : System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel" Usage="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel Level { System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LevelProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LevelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LevelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnActivatingKeyTip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonApplicationSplitMenuItem.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="ribbonApplicationSplitMenuItem.ShouldApplyItemContainerStyle (container, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

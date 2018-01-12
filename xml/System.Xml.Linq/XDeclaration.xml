@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDeclaration" />
   <TypeSignature Language="VB.NET" Value="Public Class XDeclaration" />
   <TypeSignature Language="F#" Value="type XDeclaration = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XDeclaration" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.#ctor(System.Xml.Linq.XDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XDeclaration)" />
       <MemberSignature Language="F#" Value="new System.Xml.Linq.XDeclaration : System.Xml.Linq.XDeclaration -&gt; System.Xml.Linq.XDeclaration" Usage="new System.Xml.Linq.XDeclaration other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDeclaration(System::Xml::Linq::XDeclaration ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As String, encoding As String, standalone As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.Linq.XDeclaration : string * string * string -&gt; System.Xml.Linq.XDeclaration" Usage="new System.Xml.Linq.XDeclaration (version, encoding, standalone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDeclaration(System::String ^ version, System::String ^ encoding, System::String ^ standalone);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -168,6 +171,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
       <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Xml.Linq.XDeclaration.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -303,6 +307,7 @@ Encoding of loaded document is:utf-16
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Standalone" />
       <MemberSignature Language="VB.NET" Value="Public Property Standalone As String" />
       <MemberSignature Language="F#" Value="member this.Standalone : string with get, set" Usage="System.Xml.Linq.XDeclaration.Standalone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Standalone { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -369,6 +374,7 @@ yes
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xDeclaration.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -401,6 +407,7 @@ yes
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Xml.Linq.XDeclaration.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

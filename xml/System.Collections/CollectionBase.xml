@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.CollectionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CollectionBase&#xA;Implements IList" />
   <TypeSignature Language="F#" Value="type CollectionBase = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionBase abstract : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CollectionBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -120,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.CollectionBase : int -&gt; System.Collections.CollectionBase" Usage="new System.Collections.CollectionBase capacity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CollectionBase(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -162,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
       <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Collections.CollectionBase.Capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -214,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="collectionBase.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -258,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.CollectionBase.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -304,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="collectionBase.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -373,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.InnerList" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InnerList As ArrayList" />
       <MemberSignature Language="F#" Value="member this.InnerList : System.Collections.ArrayList" Usage="System.Collections.CollectionBase.InnerList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ArrayList ^ InnerList { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -412,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.List" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property List As IList" />
       <MemberSignature Language="F#" Value="member this.List : System.Collections.IList" Usage="System.Collections.CollectionBase.List" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IList ^ List { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -460,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClear ()" />
       <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="collectionBase.OnClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -512,6 +522,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClearComplete ()" />
       <MemberSignature Language="F#" Value="abstract member OnClearComplete : unit -&gt; unit&#xA;override this.OnClearComplete : unit -&gt; unit" Usage="collectionBase.OnClearComplete " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClearComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -560,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="collectionBase.OnInsert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -629,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInsertComplete (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="collectionBase.OnInsertComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInsertComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -688,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="collectionBase.OnRemove (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemove(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -756,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRemoveComplete (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnRemoveComplete : int * obj -&gt; unit&#xA;override this.OnRemoveComplete : int * obj -&gt; unit" Usage="collectionBase.OnRemoveComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -815,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="collectionBase.OnSet (index, oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -886,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnSetComplete : int * obj * obj -&gt; unit&#xA;override this.OnSetComplete : int * obj * obj -&gt; unit" Usage="collectionBase.OnSetComplete (index, oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -947,6 +964,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValidate (value As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="collectionBase.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1011,6 +1029,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="collectionBase.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1063,6 +1082,7 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1123,6 +1143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Collections.CollectionBase.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1175,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Collections.CollectionBase.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1225,6 +1247,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -1290,6 +1313,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -1348,6 +1372,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -1405,6 +1430,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -1481,6 +1507,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.Collections.CollectionBase.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1526,6 +1553,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.Collections.CollectionBase.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1571,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="F#" Usage="System.Collections.CollectionBase.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1635,6 +1664,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>

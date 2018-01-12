@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SchemaImporterExtensionElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type SchemaImporterExtensionElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporterExtensionElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemaImporterExtensionElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Add(System.Xml.Serialization.Configuration.SchemaImporterExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As SchemaImporterExtensionElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Xml.Serialization.Configuration.SchemaImporterExtensionElement -&gt; unit" Usage="schemaImporterExtensionElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="schemaImporterExtensionElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="schemaImporterExtensionElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="schemaImporterExtensionElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.IndexOf(System.Xml.Serialization.Configuration.SchemaImporterExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As SchemaImporterExtensionElement) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Xml.Serialization.Configuration.SchemaImporterExtensionElement -&gt; int" Usage="schemaImporterExtensionElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As SchemaImporterExtensionElement" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Xml.Serialization.Configuration.SchemaImporterExtensionElement with get, set" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ default[int] { System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ get(int index); void set(int index, System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As SchemaImporterExtensionElement" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Xml.Serialization.Configuration.SchemaImporterExtensionElement with get, set" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ default[System::String ^] { System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ get(System::String ^ name); void set(System::String ^ name, System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="schemaImporterExtensionElementCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -266,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.Remove(System.Xml.Serialization.Configuration.SchemaImporterExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As SchemaImporterExtensionElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Xml.Serialization.Configuration.SchemaImporterExtensionElement -&gt; unit" Usage="schemaImporterExtensionElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Xml::Serialization::Configuration::SchemaImporterExtensionElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -290,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="schemaImporterExtensionElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

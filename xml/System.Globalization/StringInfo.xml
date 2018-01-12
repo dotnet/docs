@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.StringInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class StringInfo" />
   <TypeSignature Language="F#" Value="type StringInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -134,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="F#" Value="new System.Globalization.StringInfo : string -&gt; System.Globalization.StringInfo" Usage="new System.Globalization.StringInfo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringInfo(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="stringInfo.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -222,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="stringInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetNextTextElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNextTextElement (str As String) As String" />
       <MemberSignature Language="F#" Value="static member GetNextTextElement : string -&gt; string" Usage="System.Globalization.StringInfo.GetNextTextElement str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetNextTextElement(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -331,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNextTextElement (str As String, index As Integer) As String" />
       <MemberSignature Language="F#" Value="static member GetNextTextElement : string * int -&gt; string" Usage="System.Globalization.StringInfo.GetNextTextElement (str, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetNextTextElement(System::String ^ str, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -396,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextElementEnumerator (str As String) As TextElementEnumerator" />
       <MemberSignature Language="F#" Value="static member GetTextElementEnumerator : string -&gt; System.Globalization.TextElementEnumerator" Usage="System.Globalization.StringInfo.GetTextElementEnumerator str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::TextElementEnumerator ^ GetTextElementEnumerator(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -463,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTextElementEnumerator (str As String, index As Integer) As TextElementEnumerator" />
       <MemberSignature Language="F#" Value="static member GetTextElementEnumerator : string * int -&gt; System.Globalization.TextElementEnumerator" Usage="System.Globalization.StringInfo.GetTextElementEnumerator (str, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::TextElementEnumerator ^ GetTextElementEnumerator(System::String ^ str, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -525,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.StringInfo.LengthInTextElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LengthInTextElements As Integer" />
       <MemberSignature Language="F#" Value="member this.LengthInTextElements : int" Usage="System.Globalization.StringInfo.LengthInTextElements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LengthInTextElements { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -559,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ParseCombiningCharacters (str As String) As Integer()" />
       <MemberSignature Language="F#" Value="static member ParseCombiningCharacters : string -&gt; int[]" Usage="System.Globalization.StringInfo.ParseCombiningCharacters str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;int&gt; ^ ParseCombiningCharacters(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -630,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.StringInfo.String" />
       <MemberSignature Language="VB.NET" Value="Public Property String As String" />
       <MemberSignature Language="F#" Value="member this.String : string with get, set" Usage="System.Globalization.StringInfo.String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ String { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -686,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.SubstringByTextElements(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SubstringByTextElements (startingTextElement As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.SubstringByTextElements : int -&gt; string" Usage="stringInfo.SubstringByTextElements startingTextElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SubstringByTextElements(int startingTextElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -732,6 +745,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.SubstringByTextElements(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SubstringByTextElements (startingTextElement As Integer, lengthInTextElements As Integer) As String" />
       <MemberSignature Language="F#" Value="member this.SubstringByTextElements : int * int -&gt; string" Usage="stringInfo.SubstringByTextElements (startingTextElement, lengthInTextElements)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SubstringByTextElements(int startingTextElement, int lengthInTextElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

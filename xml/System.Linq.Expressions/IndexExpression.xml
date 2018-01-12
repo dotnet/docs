@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.IndexExpression" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IndexExpression&#xA;Inherits Expression&#xA;Implements IArgumentProvider" />
   <TypeSignature Language="F#" Value="type IndexExpression = class&#xA;    inherit Expression&#xA;    interface IArgumentProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndexExpression sealed : System::Linq::Expressions::Expression, System::Linq::Expressions::IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IndexExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="indexExpression.Accept visitor" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IndexExpression.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As ReadOnlyCollection(Of Expression)" />
       <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.IndexExpression.Arguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Arguments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IndexExpression.Indexer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indexer As PropertyInfo" />
       <MemberSignature Language="F#" Value="member this.Indexer : System.Reflection.PropertyInfo" Usage="System.Linq.Expressions.IndexExpression.Indexer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::PropertyInfo ^ Indexer { System::Reflection::PropertyInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IndexExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.IndexExpression.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IndexExpression.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Expression" />
       <MemberSignature Language="F#" Value="member this.Object : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.IndexExpression.Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Object { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IndexExpression.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ArgumentCount As Integer Implements IArgumentProvider.ArgumentCount" />
       <MemberSignature Language="F#" Usage="System.Linq.Expressions.IndexExpression.System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Linq.Expressions.IArgumentProvider.ArgumentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IArgumentProvider.ArgumentCount</InterfaceMember>
@@ -251,6 +258,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.Expressions.Expression System.Linq.Expressions.IArgumentProvider.GetArgument(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IndexExpression.System#Linq#Expressions#IArgumentProvider#GetArgument(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Function GetArgument (index As Integer) As Expression Implements IArgumentProvider.GetArgument" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Linq::Expressions::Expression ^ System.Linq.Expressions.IArgumentProvider.GetArgument(int index) = System::Linq::Expressions::IArgumentProvider::GetArgument;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Linq.Expressions.IArgumentProvider.GetArgument(System.Int32)</InterfaceMember>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IndexExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.IndexExpression.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IndexExpression.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (object As Expression, arguments As IEnumerable(Of Expression)) As IndexExpression" />
       <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression * seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.IndexExpression" Usage="indexExpression.Update (object, arguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::IndexExpression ^ Update(System::Linq::Expressions::Expression ^ object, System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

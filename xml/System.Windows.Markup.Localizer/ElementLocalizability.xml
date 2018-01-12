@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Localizer.ElementLocalizability" />
   <TypeSignature Language="VB.NET" Value="Public Class ElementLocalizability" />
   <TypeSignature Language="F#" Value="type ElementLocalizability = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ElementLocalizability" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.ElementLocalizability.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ElementLocalizability();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Localizer.ElementLocalizability.#ctor(System.String,System.Windows.LocalizabilityAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (formattingTag As String, attribute As LocalizabilityAttribute)" />
       <MemberSignature Language="F#" Value="new System.Windows.Markup.Localizer.ElementLocalizability : string * System.Windows.LocalizabilityAttribute -&gt; System.Windows.Markup.Localizer.ElementLocalizability" Usage="new System.Windows.Markup.Localizer.ElementLocalizability (formattingTag, attribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ElementLocalizability(System::String ^ formattingTag, System::Windows::LocalizabilityAttribute ^ attribute);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.ElementLocalizability.Attribute" />
       <MemberSignature Language="VB.NET" Value="Public Property Attribute As LocalizabilityAttribute" />
       <MemberSignature Language="F#" Value="member this.Attribute : System.Windows.LocalizabilityAttribute with get, set" Usage="System.Windows.Markup.Localizer.ElementLocalizability.Attribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LocalizabilityAttribute ^ Attribute { System::Windows::LocalizabilityAttribute ^ get(); void set(System::Windows::LocalizabilityAttribute ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag" />
       <MemberSignature Language="VB.NET" Value="Public Property FormattingTag As String" />
       <MemberSignature Language="F#" Value="member this.FormattingTag : string with get, set" Usage="System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormattingTag { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

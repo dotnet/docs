@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlSpace" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSpace" />
   <TypeSignature Language="F#" Value="type XmlSpace = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlSpace" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlSpace.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 1" Usage="System.Xml.XmlSpace.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlSpace.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.XmlSpace.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlSpace.Preserve" />
       <MemberSignature Language="VB.NET" Value="Preserve" />
       <MemberSignature Language="F#" Value="Preserve = 2" Usage="System.Xml.XmlSpace.Preserve" />
+      <MemberSignature Language="C++ CLI" Value="Preserve" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

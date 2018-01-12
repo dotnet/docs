@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.IssuerNameRegistryElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IssuerNameRegistryElement&#xA;Inherits ConfigurationElementInterceptor" />
   <TypeSignature Language="F#" Value="type IssuerNameRegistryElement = class&#xA;    inherit ConfigurationElementInterceptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IssuerNameRegistryElement sealed : System::IdentityModel::Configuration::ConfigurationElementInterceptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IssuerNameRegistryElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuerNameRegistryElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IssuerNameRegistryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.IdentityModel.Configuration.IssuerNameRegistryElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IssuerNameRegistryElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.IdentityModel.Configuration.IssuerNameRegistryElement.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

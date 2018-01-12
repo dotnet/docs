@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Page" />
   <TypeSignature Language="VB.NET" Value="Public Class Page&#xA;Inherits FrameworkElement&#xA;Implements IAddChild" />
   <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit FrameworkElement&#xA;    interface IWindowService&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Page : System::Windows::FrameworkElement, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Page();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeBounds As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="page.ArrangeOverride arrangeBounds" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
       <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Page.Background" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -187,6 +191,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.BackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.BackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As Object" />
       <MemberSignature Language="F#" Value="member this.Content : obj with get, set" Usage="System.Windows.Controls.Page.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.ContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.ContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.FontFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
       <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily with get, set" Usage="System.Windows.Controls.Page.FontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); void set(System::Windows::Media::FontFamily ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +313,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.FontFamilyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.FontFamilyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontFamilyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -336,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.FontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
       <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="System.Windows.Controls.Page.FontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FontSize { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -385,6 +395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.FontSizeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable FontSizeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.FontSizeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FontSizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -416,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Foreground" />
       <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
       <MemberSignature Language="F#" Value="member this.Foreground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Page.Foreground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Foreground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -458,6 +470,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.ForegroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ForegroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.ForegroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -489,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.KeepAlive" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepAlive As Boolean" />
       <MemberSignature Language="F#" Value="member this.KeepAlive : bool with get, set" Usage="System.Windows.Controls.Page.KeepAlive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepAlive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -557,6 +571,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.KeepAliveProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeepAliveProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable KeepAliveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.KeepAliveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepAliveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -588,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.Page.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -608,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="page.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -632,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.NavigationService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationService As NavigationService" />
       <MemberSignature Language="F#" Value="member this.NavigationService : System.Windows.Navigation.NavigationService" Usage="System.Windows.Controls.Page.NavigationService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::NavigationService ^ NavigationService { System::Windows::Navigation::NavigationService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -676,6 +694,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTemplateChanged (oldTemplate As ControlTemplate, newTemplate As ControlTemplate)" />
       <MemberSignature Language="F#" Value="abstract member OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit&#xA;override this.OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="page.OnTemplateChanged (oldTemplate, newTemplate)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTemplateChanged(System::Windows::Controls::ControlTemplate ^ oldTemplate, System::Windows::Controls::ControlTemplate ^ newTemplate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -709,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.OnVisualParentChanged(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Sub OnVisualParentChanged (oldParent As DependencyObject)" />
       <MemberSignature Language="F#" Value="override this.OnVisualParentChanged : System.Windows.DependencyObject -&gt; unit" Usage="page.OnVisualParentChanged oldParent" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -740,6 +760,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeShowsNavigationUI" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeShowsNavigationUI () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeShowsNavigationUI : unit -&gt; bool" Usage="page.ShouldSerializeShowsNavigationUI " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeShowsNavigationUI();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -767,6 +788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeTitle" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTitle () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeTitle : unit -&gt; bool" Usage="page.ShouldSerializeTitle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTitle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -794,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeWindowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeWindowHeight () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeWindowHeight : unit -&gt; bool" Usage="page.ShouldSerializeWindowHeight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeWindowHeight();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -821,6 +844,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeWindowTitle" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeWindowTitle () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeWindowTitle : unit -&gt; bool" Usage="page.ShouldSerializeWindowTitle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeWindowTitle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -848,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeWindowWidth" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeWindowWidth () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeWindowWidth : unit -&gt; bool" Usage="page.ShouldSerializeWindowWidth " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeWindowWidth();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -875,6 +900,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.ShowsNavigationUI" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowsNavigationUI As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowsNavigationUI : bool with get, set" Usage="System.Windows.Controls.Page.ShowsNavigationUI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowsNavigationUI { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -920,6 +946,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (obj As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ obj) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -952,6 +979,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (str As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ str) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -985,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Template" />
       <MemberSignature Language="VB.NET" Value="Public Property Template As ControlTemplate" />
       <MemberSignature Language="F#" Value="member this.Template : System.Windows.Controls.ControlTemplate with get, set" Usage="System.Windows.Controls.Page.Template" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ControlTemplate ^ Template { System::Windows::Controls::ControlTemplate ^ get(); void set(System::Windows::Controls::ControlTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1037,6 +1066,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.TemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TemplateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.TemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1056,6 +1086,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Controls.Page.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.IWindowService.Title</InterfaceMember>
@@ -1106,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.TitleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Page.TitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1137,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.WindowHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowHeight As Double" />
       <MemberSignature Language="F#" Value="member this.WindowHeight : double with get, set" Usage="System.Windows.Controls.Page.WindowHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double WindowHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1183,6 +1216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.WindowTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowTitle As String" />
       <MemberSignature Language="F#" Value="member this.WindowTitle : string with get, set" Usage="System.Windows.Controls.Page.WindowTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WindowTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1241,6 +1275,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.WindowWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowWidth As Double" />
       <MemberSignature Language="F#" Value="member this.WindowWidth : double with get, set" Usage="System.Windows.Controls.Page.WindowWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double WindowWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

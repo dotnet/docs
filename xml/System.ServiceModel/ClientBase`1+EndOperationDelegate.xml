@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed ClientBase`1/EndOperationDelegate&lt;class TChannel&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1.EndOperationDelegate" />
   <TypeSignature Language="VB.NET" Value="Protected Delegate Function ClientBase(Of TChannel).EndOperationDelegate(result As IAsyncResult) As Object() " />
+  <TypeSignature Language="C++ CLI" Value="protected:  where TChannel : classdelegate cli::array &lt;System::Object ^&gt; ^ ClientBase&lt;TChannel&gt;::EndOperationDelegate(IAsyncResult ^ result);" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

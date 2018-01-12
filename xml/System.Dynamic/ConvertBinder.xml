@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Dynamic.ConvertBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConvertBinder&#xA;Inherits DynamicMetaObjectBinder" />
   <TypeSignature Language="F#" Value="type ConvertBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConvertBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type type, bool explicit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ConvertBinder.#ctor(System.Type,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.Dynamic.ConvertBinder : Type * bool -&gt; System.Dynamic.ConvertBinder" Usage="new System.Dynamic.ConvertBinder (type, explicit)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConvertBinder(Type ^ type, bool explicit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ConvertBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="convertBinder.Bind (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ConvertBinder.Explicit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Explicit As Boolean" />
       <MemberSignature Language="F#" Value="member this.Explicit : bool" Usage="System.Dynamic.ConvertBinder.Explicit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Explicit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ConvertBinder.FallbackConvert(System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public Function FallbackConvert (target As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="member this.FallbackConvert : System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="convertBinder.FallbackConvert target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackConvert(System::Dynamic::DynamicMetaObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ConvertBinder.FallbackConvert(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackConvert (target As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
       <MemberSignature Language="F#" Value="abstract member FallbackConvert : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="convertBinder.FallbackConvert (target, errorSuggestion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackConvert(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ConvertBinder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.ConvertBinder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -261,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ConvertBinder.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Dynamic.ConvertBinder.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>

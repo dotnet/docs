@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEMemoryBlock" />
   <TypeSignature Language="VB.NET" Value="Public Structure PEMemoryBlock" />
   <TypeSignature Language="F#" Value="type PEMemoryBlock = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class PEMemoryBlock" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEMemoryBlock.GetContent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContent () As ImmutableArray(Of Byte)" />
       <MemberSignature Language="F#" Value="member this.GetContent : unit -&gt; System.Collections.Immutable.ImmutableArray&lt;byte&gt;" Usage="pEMemoryBlock.GetContent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; GetContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEMemoryBlock.GetContent(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContent (start As Integer, length As Integer) As ImmutableArray(Of Byte)" />
       <MemberSignature Language="F#" Value="member this.GetContent : int * int -&gt; System.Collections.Immutable.ImmutableArray&lt;byte&gt;" Usage="pEMemoryBlock.GetContent (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; GetContent(int start, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEMemoryBlock.GetReader" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReader () As BlobReader" />
       <MemberSignature Language="F#" Value="member this.GetReader : unit -&gt; System.Reflection.Metadata.BlobReader" Usage="pEMemoryBlock.GetReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobReader GetReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEMemoryBlock.GetReader(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReader (start As Integer, length As Integer) As BlobReader" />
       <MemberSignature Language="F#" Value="member this.GetReader : int * int -&gt; System.Reflection.Metadata.BlobReader" Usage="pEMemoryBlock.GetReader (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobReader GetReader(int start, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEMemoryBlock.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Reflection.PortableExecutable.PEMemoryBlock.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8* Pointer" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEMemoryBlock.Pointer" />
       <MemberSignature Language="F#" Value="member this.Pointer : nativeptr&lt;byte&gt;" Usage="System.Reflection.PortableExecutable.PEMemoryBlock.Pointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte* Pointer { System::Byte* get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

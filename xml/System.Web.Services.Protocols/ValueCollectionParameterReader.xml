@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.ValueCollectionParameterReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValueCollectionParameterReader&#xA;Inherits MimeParameterReader" />
   <TypeSignature Language="F#" Value="type ValueCollectionParameterReader = class&#xA;    inherit MimeParameterReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValueCollectionParameterReader abstract : System::Web::Services::Protocols::MimeParameterReader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValueCollectionParameterReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
       <MemberSignature Language="F#" Value="override this.GetInitializer : System.Web.Services.Protocols.LogicalMethodInfo -&gt; obj" Usage="valueCollectionParameterReader.GetInitializer methodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.Initialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (o As Object)" />
       <MemberSignature Language="F#" Value="override this.Initialize : obj -&gt; unit" Usage="valueCollectionParameterReader.Initialize o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.IsSupported(System.Reflection.ParameterInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSupported (paramInfo As ParameterInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSupported : System.Reflection.ParameterInfo -&gt; bool" Usage="System.Web.Services.Protocols.ValueCollectionParameterReader.IsSupported paramInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSupported(System::Reflection::ParameterInfo ^ paramInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.IsSupported(System.Web.Services.Protocols.LogicalMethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSupported (methodInfo As LogicalMethodInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSupported : System.Web.Services.Protocols.LogicalMethodInfo -&gt; bool" Usage="System.Web.Services.Protocols.ValueCollectionParameterReader.IsSupported methodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSupported(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.Read(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Function Read (collection As NameValueCollection) As Object()" />
       <MemberSignature Language="F#" Value="override this.Read : System.Collections.Specialized.NameValueCollection -&gt; obj[]" Usage="valueCollectionParameterReader.Read collection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ Read(System::Collections::Specialized::NameValueCollection ^ collection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

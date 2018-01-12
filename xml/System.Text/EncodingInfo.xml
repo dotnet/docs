@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.EncodingInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncodingInfo" />
   <TypeSignature Language="F#" Value="type EncodingInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncodingInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncodingInfo.CodePage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodePage As Integer" />
       <MemberSignature Language="F#" Value="member this.CodePage : int" Usage="System.Text.EncodingInfo.CodePage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CodePage { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncodingInfo.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Text.EncodingInfo.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -143,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="encodingInfo.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingInfo.GetEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEncoding () As Encoding" />
       <MemberSignature Language="F#" Value="member this.GetEncoding : unit -&gt; System.Text.Encoding" Usage="encodingInfo.GetEncoding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Encoding ^ GetEncoding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="encodingInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.EncodingInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Text.EncodingInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

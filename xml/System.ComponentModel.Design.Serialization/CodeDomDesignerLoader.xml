@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeDomDesignerLoader&#xA;Inherits BasicDesignerLoader&#xA;Implements IDesignerSerializationService, INameCreationService" />
   <TypeSignature Language="F#" Value="type CodeDomDesignerLoader = class&#xA;    inherit BasicDesignerLoader&#xA;    interface INameCreationService&#xA;    interface IDesignerSerializationService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDomDesignerLoader abstract : System::ComponentModel::Design::Serialization::BasicDesignerLoader, System::ComponentModel::Design::Serialization::IDesignerSerializationService, System::ComponentModel::Design::Serialization::INameCreationService" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeDomDesignerLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.CodeDomProvider" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property CodeDomProvider As CodeDomProvider" />
       <MemberSignature Language="F#" Value="member this.CodeDomProvider : System.CodeDom.Compiler.CodeDomProvider" Usage="System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.CodeDomProvider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::CodeDom::Compiler::CodeDomProvider ^ CodeDomProvider { System::CodeDom::Compiler::CodeDomProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="codeDomDesignerLoader.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Initialize ()" />
       <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="codeDomDesignerLoader.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.IsReloadNeeded" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsReloadNeeded () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsReloadNeeded : unit -&gt; bool" Usage="codeDomDesignerLoader.IsReloadNeeded " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsReloadNeeded();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.OnBeginLoad" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBeginLoad ()" />
       <MemberSignature Language="F#" Value="override this.OnBeginLoad : unit -&gt; unit" Usage="codeDomDesignerLoader.OnBeginLoad " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBeginLoad();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.OnBeginUnload" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBeginUnload ()" />
       <MemberSignature Language="F#" Value="override this.OnBeginUnload : unit -&gt; unit" Usage="codeDomDesignerLoader.OnBeginUnload " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBeginUnload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.OnComponentRename(System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnComponentRename (component As Object, oldName As String, newName As String)" />
       <MemberSignature Language="F#" Value="abstract member OnComponentRename : obj * string * string -&gt; unit&#xA;override this.OnComponentRename : obj * string * string -&gt; unit" Usage="codeDomDesignerLoader.OnComponentRename (component, oldName, newName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnComponentRename(System::Object ^ component, System::String ^ oldName, System::String ^ newName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.OnEndLoad(System.Boolean,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndLoad (successful As Boolean, errors As ICollection)" />
       <MemberSignature Language="F#" Value="override this.OnEndLoad : bool * System.Collections.ICollection -&gt; unit" Usage="codeDomDesignerLoader.OnEndLoad (successful, errors)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndLoad(bool successful, System::Collections::ICollection ^ errors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Parse" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function Parse () As CodeCompileUnit" />
       <MemberSignature Language="F#" Value="abstract member Parse : unit -&gt; System.CodeDom.CodeCompileUnit" Usage="codeDomDesignerLoader.Parse " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::CodeDom::CodeCompileUnit ^ Parse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformFlush (manager As IDesignerSerializationManager)" />
       <MemberSignature Language="F#" Value="override this.PerformFlush : System.ComponentModel.Design.Serialization.IDesignerSerializationManager -&gt; unit" Usage="codeDomDesignerLoader.PerformFlush manager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformFlush(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformLoad (manager As IDesignerSerializationManager)" />
       <MemberSignature Language="F#" Value="override this.PerformLoad : System.ComponentModel.Design.Serialization.IDesignerSerializationManager -&gt; unit" Usage="codeDomDesignerLoader.PerformLoad manager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformLoad(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -410,6 +423,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ICollection System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize(object serializationData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.System#ComponentModel#Design#Serialization#IDesignerSerializationService#Deserialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Deserialize (serializationData As Object) As ICollection Implements IDesignerSerializationService.Deserialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize(System::Object ^ serializationData) = System::ComponentModel::Design::Serialization::IDesignerSerializationService::Deserialize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize(System.Object)</InterfaceMember>
@@ -438,6 +452,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize(class System.Collections.ICollection objects) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.System#ComponentModel#Design#Serialization#IDesignerSerializationService#Serialize(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Function Serialize (objects As ICollection) As Object Implements IDesignerSerializationService.Serialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize(System::Collections::ICollection ^ objects) = System::ComponentModel::Design::Serialization::IDesignerSerializationService::Serialize;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize(System.Collections.ICollection)</InterfaceMember>
@@ -465,6 +480,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.Design.Serialization.INameCreationService.CreateName(class System.ComponentModel.IContainer container, class System.Type dataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.System#ComponentModel#Design#Serialization#INameCreationService#CreateName(System.ComponentModel.IContainer,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Function CreateName (container As IContainer, dataType As Type) As String Implements INameCreationService.CreateName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System::ComponentModel::IContainer ^ container, Type ^ dataType) = System::ComponentModel::Design::Serialization::INameCreationService::CreateName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System.ComponentModel.IContainer,System.Type)</InterfaceMember>
@@ -495,6 +511,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.System#ComponentModel#Design#Serialization#INameCreationService#IsValidName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function IsValidName (name As String) As Boolean Implements INameCreationService.IsValidName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System::String ^ name) = System::ComponentModel::Design::Serialization::INameCreationService::IsValidName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System.String)</InterfaceMember>
@@ -524,6 +541,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.System#ComponentModel#Design#Serialization#INameCreationService#ValidateName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub ValidateName (name As String) Implements INameCreationService.ValidateName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System::String ^ name) = System::ComponentModel::Design::Serialization::INameCreationService::ValidateName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System.String)</InterfaceMember>
@@ -554,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.TypeResolutionService" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property TypeResolutionService As ITypeResolutionService" />
       <MemberSignature Language="F#" Value="member this.TypeResolutionService : System.ComponentModel.Design.ITypeResolutionService" Usage="System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.TypeResolutionService" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::ComponentModel::Design::ITypeResolutionService ^ TypeResolutionService { System::ComponentModel::Design::ITypeResolutionService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -582,6 +601,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.Write(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Write (unit As CodeCompileUnit)" />
       <MemberSignature Language="F#" Value="abstract member Write : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="codeDomDesignerLoader.Write unit" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Write(System::CodeDom::CodeCompileUnit ^ unit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

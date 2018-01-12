@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.ProtocolElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type ProtocolElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.Add(System.Web.Services.Configuration.ProtocolElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As ProtocolElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Configuration.ProtocolElement -&gt; unit" Usage="protocolElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Services::Configuration::ProtocolElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="protocolElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.ContainsKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As Object) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContainsKey : obj -&gt; bool" Usage="protocolElementCollection.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.CopyTo(System.Web.Services.Configuration.ProtocolElement[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ProtocolElement(), index As Integer)" />
       <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.Services.Configuration.ProtocolElement[] * int -&gt; unit" Usage="protocolElementCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Configuration::ProtocolElement ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="protocolElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="protocolElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -189,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.IndexOf(System.Web.Services.Configuration.ProtocolElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As ProtocolElement) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Configuration.ProtocolElement -&gt; int" Usage="protocolElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Configuration::ProtocolElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -222,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.ProtocolElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ProtocolElement" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Configuration.ProtocolElement with get, set" Usage="System.Web.Services.Configuration.ProtocolElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::ProtocolElement ^ default[int] { System::Web::Services::Configuration::ProtocolElement ^ get(int index); void set(int index, System::Web::Services::Configuration::ProtocolElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.ProtocolElementCollection.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As ProtocolElement" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : System.Web.Services.Configuration.ProtocolElement with get, set" Usage="System.Web.Services.Configuration.ProtocolElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::ProtocolElement ^ default[System::Object ^] { System::Web::Services::Configuration::ProtocolElement ^ get(System::Object ^ key); void set(System::Object ^ key, System::Web::Services::Configuration::ProtocolElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -271,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.Remove(System.Web.Services.Configuration.ProtocolElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As ProtocolElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Configuration.ProtocolElement -&gt; unit" Usage="protocolElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Configuration::ProtocolElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -303,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="protocolElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -326,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElementCollection.RemoveAt(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (key As Object)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : obj -&gt; unit" Usage="protocolElementCollection.RemoveAt key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

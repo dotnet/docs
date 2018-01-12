@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedFileOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum MemoryMappedFileOptions" />
   <TypeSignature Language="F#" Value="type MemoryMappedFileOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemoryMappedFileOptions" />
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages" />
       <MemberSignature Language="VB.NET" Value="DelayAllocatePages" />
       <MemberSignature Language="F#" Value="DelayAllocatePages = 67108864" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages" />
+      <MemberSignature Language="C++ CLI" Value="DelayAllocatePages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.MemoryMappedFiles.MemoryMappedFileOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpListenerTimeoutsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpListenerTimeoutsElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type HttpListenerTimeoutsElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpListenerTimeoutsElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpListenerTimeoutsElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpListenerTimeoutsElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.DrainEntityBody" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DrainEntityBody As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DrainEntityBody : TimeSpan" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.DrainEntityBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DrainEntityBody { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.EntityBody" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityBody As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.EntityBody : TimeSpan" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.EntityBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan EntityBody { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.HeaderWait" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderWait As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.HeaderWait : TimeSpan" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.HeaderWait" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan HeaderWait { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.IdleConnection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdleConnection As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.IdleConnection : TimeSpan" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.IdleConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleConnection { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.MinSendBytesPerSecond" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinSendBytesPerSecond As Long" />
       <MemberSignature Language="F#" Value="member this.MinSendBytesPerSecond : int64" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.MinSendBytesPerSecond" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MinSendBytesPerSecond { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -236,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.RequestQueue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestQueue As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.RequestQueue : TimeSpan" Usage="System.Net.Configuration.HttpListenerTimeoutsElement.RequestQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RequestQueue { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

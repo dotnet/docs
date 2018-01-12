@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IAsyncStateMachine" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAsyncStateMachine" />
   <TypeSignature Language="F#" Value="type IAsyncStateMachine = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAsyncStateMachine" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveNext ()" />
       <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; unit" Usage="iAsyncStateMachine.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetStateMachine (stateMachine As IAsyncStateMachine)" />
       <MemberSignature Language="F#" Value="abstract member SetStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine -&gt; unit" Usage="iAsyncStateMachine.SetStateMachine stateMachine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStateMachine(System::Runtime::CompilerServices::IAsyncStateMachine ^ stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

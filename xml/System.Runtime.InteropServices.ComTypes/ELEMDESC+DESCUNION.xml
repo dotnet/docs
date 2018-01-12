@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION" />
   <TypeSignature Language="VB.NET" Value="Public Structure ELEMDESC.DESCUNION" />
   <TypeSignature Language="F#" Value="type ELEMDESC.DESCUNION = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class ELEMDESC::DESCUNION" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc" />
       <MemberSignature Language="VB.NET" Value="Public idldesc As IDLDESC " />
       <MemberSignature Language="F#" Value="val mutable idldesc : System.Runtime.InteropServices.ComTypes.IDLDESC" Usage="System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::IDLDESC idldesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc" />
       <MemberSignature Language="VB.NET" Value="Public paramdesc As PARAMDESC " />
       <MemberSignature Language="F#" Value="val mutable paramdesc : System.Runtime.InteropServices.ComTypes.PARAMDESC" Usage="System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::PARAMDESC paramdesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

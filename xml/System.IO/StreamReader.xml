@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.StreamReader" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamReader&#xA;Inherits TextReader" />
   <TypeSignature Language="F#" Value="type StreamReader = class&#xA;    inherit TextReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamReader : System::IO::TextReader" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -157,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : string -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,6 +222,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, bool detectEncodingFromByteOrderMarks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, detectEncodingFromByteOrderMarks)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, bool detectEncodingFromByteOrderMarks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -281,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -346,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, detectEncodingFromByteOrderMarks As Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, detectEncodingFromByteOrderMarks)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, bool detectEncodingFromByteOrderMarks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -408,6 +414,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * System.Text.Encoding -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,6 +479,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding, detectEncodingFromByteOrderMarks)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -540,6 +548,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * System.Text.Encoding * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, encoding, detectEncodingFromByteOrderMarks)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -608,6 +617,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding * bool * int -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding, detectEncodingFromByteOrderMarks, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -682,6 +692,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * System.Text.Encoding * bool * int -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, encoding, detectEncodingFromByteOrderMarks, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -761,6 +772,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks, int32 bufferSize, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding * bool * int * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding, detectEncodingFromByteOrderMarks, bufferSize, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -823,6 +835,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StreamReader.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
       <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.StreamReader.BaseStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -867,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="streamReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -909,6 +923,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StreamReader.CurrentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrentEncoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.CurrentEncoding : System.Text.Encoding" Usage="System.IO.StreamReader.CurrentEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ CurrentEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -960,6 +975,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.DiscardBufferedData" />
       <MemberSignature Language="VB.NET" Value="Public Sub DiscardBufferedData ()" />
       <MemberSignature Language="F#" Value="member this.DiscardBufferedData : unit -&gt; unit" Usage="streamReader.DiscardBufferedData " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardBufferedData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1012,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="streamReader.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1067,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StreamReader.EndOfStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndOfStream As Boolean" />
       <MemberSignature Language="F#" Value="member this.EndOfStream : bool" Usage="System.IO.StreamReader.EndOfStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EndOfStream { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1104,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.StreamReader.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As StreamReader " />
       <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.StreamReader" Usage="System.IO.StreamReader.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::StreamReader ^ Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1147,6 +1166,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Peek () As Integer" />
       <MemberSignature Language="F#" Value="override this.Peek : unit -&gt; int" Usage="streamReader.Peek " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Peek();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1215,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Integer" />
       <MemberSignature Language="F#" Value="override this.Read : unit -&gt; int" Usage="streamReader.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1278,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.Read : char[] * int * int -&gt; int" Usage="streamReader.Read (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1351,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="override this.ReadAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="streamReader.ReadAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1421,6 +1444,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlock (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.ReadBlock : char[] * int * int -&gt; int" Usage="streamReader.ReadBlock (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadBlock(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1480,6 +1504,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlockAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="override this.ReadBlockAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="streamReader.ReadBlockAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadBlockAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1542,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadLine () As String" />
       <MemberSignature Language="F#" Value="override this.ReadLine : unit -&gt; string" Usage="streamReader.ReadLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1602,6 +1628,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadLineAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadLineAsync () As Task(Of String)" />
       <MemberSignature Language="F#" Value="override this.ReadLineAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="streamReader.ReadLineAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadLineAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1656,6 +1683,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToEnd () As String" />
       <MemberSignature Language="F#" Value="override this.ReadToEnd : unit -&gt; string" Usage="streamReader.ReadToEnd " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadToEnd();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1720,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadToEndAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToEndAsync () As Task(Of String)" />
       <MemberSignature Language="F#" Value="override this.ReadToEndAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="streamReader.ReadToEndAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadToEndAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>

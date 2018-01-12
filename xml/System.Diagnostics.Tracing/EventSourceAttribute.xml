@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSourceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventSourceAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type EventSourceAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventSourceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSourceAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSourceAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceAttribute.Guid" />
       <MemberSignature Language="VB.NET" Value="Public Property Guid As String" />
       <MemberSignature Language="F#" Value="member this.Guid : string with get, set" Usage="System.Diagnostics.Tracing.EventSourceAttribute.Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Guid { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -119,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceAttribute.LocalizationResources" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalizationResources As String" />
       <MemberSignature Language="F#" Value="member this.LocalizationResources : string with get, set" Usage="System.Diagnostics.Tracing.EventSourceAttribute.LocalizationResources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalizationResources { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Diagnostics.Tracing.EventSourceAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

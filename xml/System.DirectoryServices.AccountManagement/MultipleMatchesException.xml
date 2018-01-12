@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.MultipleMatchesException" />
   <TypeSignature Language="VB.NET" Value="Public Class MultipleMatchesException&#xA;Inherits PrincipalException" />
   <TypeSignature Language="F#" Value="type MultipleMatchesException = class&#xA;    inherit PrincipalException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultipleMatchesException : System::DirectoryServices::AccountManagement::PrincipalException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.MultipleMatchesException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleMatchesException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.MultipleMatchesException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.MultipleMatchesException : string -&gt; System.DirectoryServices.AccountManagement.MultipleMatchesException" Usage="new System.DirectoryServices.AccountManagement.MultipleMatchesException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleMatchesException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.MultipleMatchesException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.MultipleMatchesException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.AccountManagement.MultipleMatchesException" Usage="new System.DirectoryServices.AccountManagement.MultipleMatchesException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MultipleMatchesException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.MultipleMatchesException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.MultipleMatchesException : string * Exception -&gt; System.DirectoryServices.AccountManagement.MultipleMatchesException" Usage="new System.DirectoryServices.AccountManagement.MultipleMatchesException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipleMatchesException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>

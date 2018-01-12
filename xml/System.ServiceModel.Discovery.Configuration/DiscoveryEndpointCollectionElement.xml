@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscoveryEndpointCollectionElement&#xA;Inherits StandardEndpointCollectionElement(Of DiscoveryEndpoint, DiscoveryEndpointElement)" />
   <TypeSignature Language="F#" Value="type DiscoveryEndpointCollectionElement = class&#xA;    inherit StandardEndpointCollectionElement&lt;DiscoveryEndpoint, DiscoveryEndpointElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryEndpointCollectionElement : System::ServiceModel::Configuration::StandardEndpointCollectionElement&lt;System::ServiceModel::Discovery::DiscoveryEndpoint ^, System::ServiceModel::Discovery::Configuration::DiscoveryEndpointElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryEndpointCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

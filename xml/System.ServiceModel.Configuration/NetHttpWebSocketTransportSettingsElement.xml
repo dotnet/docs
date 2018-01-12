@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetHttpWebSocketTransportSettingsElement&#xA;Inherits WebSocketTransportSettingsElement" />
   <TypeSignature Language="F#" Value="type NetHttpWebSocketTransportSettingsElement = class&#xA;    inherit WebSocketTransportSettingsElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetHttpWebSocketTransportSettingsElement sealed : System::ServiceModel::Configuration::WebSocketTransportSettingsElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetHttpWebSocketTransportSettingsElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.SubProtocol" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SubProtocol As String" />
       <MemberSignature Language="F#" Value="member this.SubProtocol : string with get, set" Usage="System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.SubProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SubProtocol { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.TransportUsage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property TransportUsage As WebSocketTransportUsage" />
       <MemberSignature Language="F#" Value="member this.TransportUsage : System.ServiceModel.Channels.WebSocketTransportUsage with get, set" Usage="System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement.TransportUsage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Channels::WebSocketTransportUsage TransportUsage { System::ServiceModel::Channels::WebSocketTransportUsage get(); void set(System::ServiceModel::Channels::WebSocketTransportUsage value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

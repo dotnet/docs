@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.FieldAccessException" />
   <TypeSignature Language="VB.NET" Value="Public Class FieldAccessException&#xA;Inherits MemberAccessException" />
   <TypeSignature Language="F#" Value="type FieldAccessException = class&#xA;    inherit MemberAccessException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FieldAccessException : MemberAccessException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FieldAccessException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldAccessException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.FieldAccessException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new FieldAccessException : string -&gt; FieldAccessException" Usage="new System.FieldAccessException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldAccessException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.FieldAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new FieldAccessException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; FieldAccessException" Usage="new System.FieldAccessException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FieldAccessException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.FieldAccessException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new FieldAccessException : string * Exception -&gt; FieldAccessException" Usage="new System.FieldAccessException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldAccessException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

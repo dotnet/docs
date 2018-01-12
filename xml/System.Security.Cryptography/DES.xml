@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DES" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DES&#xA;Inherits SymmetricAlgorithm" />
   <TypeSignature Language="F#" Value="type DES = class&#xA;    inherit SymmetricAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DES abstract : System::Security::Cryptography::SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DES();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As DES" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.DES" Usage="System.Security.Cryptography.DES.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DES ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As DES" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.DES" Usage="System.Security.Cryptography.DES.Create algName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DES ^ Create(System::String ^ algName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -209,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.IsSemiWeakKey(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSemiWeakKey (rgbKey As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSemiWeakKey : byte[] -&gt; bool" Usage="System.Security.Cryptography.DES.IsSemiWeakKey rgbKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSemiWeakKey(cli::array &lt;System::Byte&gt; ^ rgbKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DES.IsWeakKey(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsWeakKey (rgbKey As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsWeakKey : byte[] -&gt; bool" Usage="System.Security.Cryptography.DES.IsWeakKey rgbKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWeakKey(cli::array &lt;System::Byte&gt; ^ rgbKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DES.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
       <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.DES.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

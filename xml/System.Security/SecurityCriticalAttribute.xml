@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityCriticalAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityCriticalAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type SecurityCriticalAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityCriticalAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityCriticalAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityCriticalAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityCriticalAttribute.#ctor(System.Security.SecurityCriticalScope)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As SecurityCriticalScope)" />
       <MemberSignature Language="F#" Value="new System.Security.SecurityCriticalAttribute : System.Security.SecurityCriticalScope -&gt; System.Security.SecurityCriticalAttribute" Usage="new System.Security.SecurityCriticalAttribute scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityCriticalAttribute(System::Security::SecurityCriticalScope scope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.SecurityCriticalAttribute.Scope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As SecurityCriticalScope" />
       <MemberSignature Language="F#" Value="member this.Scope : System.Security.SecurityCriticalScope" Usage="System.Security.SecurityCriticalAttribute.Scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::SecurityCriticalScope Scope { System::Security::SecurityCriticalScope get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

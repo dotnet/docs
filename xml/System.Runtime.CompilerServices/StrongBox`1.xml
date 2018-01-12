@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.StrongBox`1" />
   <TypeSignature Language="VB.NET" Value="Public Class StrongBox(Of T)&#xA;Implements IStrongBox" />
   <TypeSignature Language="F#" Value="type StrongBox&lt;'T&gt; = class&#xA;    interface IStrongBox" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class StrongBox : System::Runtime::CompilerServices::IStrongBox" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.StrongBox`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.StrongBox`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.StrongBox&lt;'T&gt; : 'T -&gt; System.Runtime.CompilerServices.StrongBox&lt;'T&gt;" Usage="new System.Runtime.CompilerServices.StrongBox&lt;'T&gt; value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrongBox(T value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.StrongBox`1.System#Runtime#CompilerServices#IStrongBox#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IStrongBox.Value" />
       <MemberSignature Language="F#" Usage="System.Runtime.CompilerServices.StrongBox&lt;'T&gt;.System.Runtime.CompilerServices.IStrongBox.Value" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.IStrongBox.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.CompilerServices.IStrongBox.Value</InterfaceMember>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.StrongBox`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Value As T " />
       <MemberSignature Language="F#" Value="val mutable Value : 'T" Usage="System.Runtime.CompilerServices.StrongBox&lt;'T&gt;.Value" />
+      <MemberSignature Language="C++ CLI" Value="public: T Value;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

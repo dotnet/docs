@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemException" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintSystemException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type PrintSystemException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintSystemException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : string -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String)" />
       <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : int * string -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (errorCode, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(int errorCode, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintSystemException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : string * Exception -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Int32,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : int * string * Exception -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (errorCode, message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(int errorCode, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -169,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Int32,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printerMessage As String)" />
       <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : int * string * string -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (errorCode, message, printerMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(int errorCode, System::String ^ message, System::String ^ printerMessage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -193,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="printSystemException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

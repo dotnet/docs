@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InstallerTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class InstallerTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type InstallerTypeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstallerTypeAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InstallerTypeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.InstallerTypeAttribute : string -&gt; System.ComponentModel.InstallerTypeAttribute" Usage="new System.ComponentModel.InstallerTypeAttribute typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstallerTypeAttribute(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InstallerTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (installerType As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.InstallerTypeAttribute : Type -&gt; System.ComponentModel.InstallerTypeAttribute" Usage="new System.ComponentModel.InstallerTypeAttribute installerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstallerTypeAttribute(Type ^ installerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InstallerTypeAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="installerTypeAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InstallerTypeAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="installerTypeAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.InstallerTypeAttribute.InstallerType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InstallerType As Type" />
       <MemberSignature Language="F#" Value="member this.InstallerType : Type" Usage="System.ComponentModel.InstallerTypeAttribute.InstallerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ InstallerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

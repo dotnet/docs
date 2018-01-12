@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.DesignerMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerMetadata&#xA;Implements IRegisterMetadata" />
   <TypeSignature Language="F#" Value="type DesignerMetadata = class&#xA;    interface IRegisterMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerMetadata : System::Activities::Presentation::Metadata::IRegisterMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.DesignerMetadata.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerMetadata();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.DesignerMetadata.Register" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register ()" />
       <MemberSignature Language="F#" Value="abstract member Register : unit -&gt; unit&#xA;override this.Register : unit -&gt; unit" Usage="designerMetadata.Register " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Register();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.Metadata.IRegisterMetadata.Register</InterfaceMember>

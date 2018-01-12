@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivityContext" />
   <TypeSignature Language="VB.NET" Value="Public Class NativeActivityContext&#xA;Inherits ActivityContext" />
   <TypeSignature Language="F#" Value="type NativeActivityContext = class&#xA;    inherit ActivityContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityContext : System::Activities::ActivityContext" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.Abort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
       <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="nativeActivityContext.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.Abort(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abort (reason As Exception)" />
       <MemberSignature Language="F#" Value="member this.Abort : Exception -&gt; unit" Usage="nativeActivityContext.Abort reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(Exception ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.AbortChildInstance(System.Activities.ActivityInstance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AbortChildInstance (activity As ActivityInstance)" />
       <MemberSignature Language="F#" Value="member this.AbortChildInstance : System.Activities.ActivityInstance -&gt; unit" Usage="nativeActivityContext.AbortChildInstance activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AbortChildInstance(System::Activities::ActivityInstance ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.AbortChildInstance(System.Activities.ActivityInstance,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AbortChildInstance (activity As ActivityInstance, reason As Exception)" />
       <MemberSignature Language="F#" Value="member this.AbortChildInstance : System.Activities.ActivityInstance * Exception -&gt; unit" Usage="nativeActivityContext.AbortChildInstance (activity, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AbortChildInstance(System::Activities::ActivityInstance ^ activity, Exception ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -138,6 +143,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelChild(class System.Activities.ActivityInstance activityInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CancelChild(System.Activities.ActivityInstance)" />
       <MemberSignature Language="F#" Value="member this.CancelChild : System.Activities.ActivityInstance -&gt; unit" Usage="nativeActivityContext.CancelChild activityInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelChild(System::Activities::ActivityInstance ^ activityInstance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CancelChildren" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelChildren ()" />
       <MemberSignature Language="F#" Value="member this.CancelChildren : unit -&gt; unit" Usage="nativeActivityContext.CancelChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark () As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : unit -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.Activities.BookmarkCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (callback As BookmarkCallback) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : System.Activities.BookmarkCallback -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::Activities::BookmarkCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -259,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.Activities.BookmarkCallback,System.Activities.BookmarkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (callback As BookmarkCallback, options As BookmarkOptions) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : System.Activities.BookmarkCallback * System.Activities.BookmarkOptions -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark (callback, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -294,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.String,System.Activities.BookmarkCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark (name, callback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -320,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, options As BookmarkOptions) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback * System.Activities.BookmarkOptions -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark (name, callback, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -355,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, scope As BookmarkScope) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback * System.Activities.BookmarkScope -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark (name, callback, scope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkScope ^ scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -390,6 +404,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.CreateBookmark(System.String,System.Activities.BookmarkCallback,System.Activities.BookmarkScope,System.Activities.BookmarkOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBookmark (name As String, callback As BookmarkCallback, scope As BookmarkScope, options As BookmarkOptions) As Bookmark" />
       <MemberSignature Language="F#" Value="member this.CreateBookmark : string * System.Activities.BookmarkCallback * System.Activities.BookmarkScope * System.Activities.BookmarkOptions -&gt; System.Activities.Bookmark" Usage="nativeActivityContext.CreateBookmark (name, callback, scope, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Bookmark ^ CreateBookmark(System::String ^ name, System::Activities::BookmarkCallback ^ callback, System::Activities::BookmarkScope ^ scope, System::Activities::BookmarkOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -427,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivityContext.DefaultBookmarkScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultBookmarkScope As BookmarkScope" />
       <MemberSignature Language="F#" Value="member this.DefaultBookmarkScope : System.Activities.BookmarkScope" Usage="System.Activities.NativeActivityContext.DefaultBookmarkScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::BookmarkScope ^ DefaultBookmarkScope { System::Activities::BookmarkScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -447,6 +463,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.GetChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As ReadOnlyCollection(Of ActivityInstance)" />
       <MemberSignature Language="F#" Value="member this.GetChildren : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.ActivityInstance&gt;" Usage="nativeActivityContext.GetChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::ActivityInstance ^&gt; ^ GetChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -467,6 +484,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.GetValue(System.Activities.Variable)" />
       <MemberSignature Language="F#" Value="override this.GetValue : System.Activities.Variable -&gt; obj" Usage="nativeActivityContext.GetValue variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -491,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.GetValue``1(System.Activities.Variable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue(Of T) (variable As Variable(Of T)) As T" />
       <MemberSignature Language="F#" Value="override this.GetValue : System.Activities.Variable&lt;'T&gt; -&gt; 'T" Usage="nativeActivityContext.GetValue variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetValue(System::Activities::Variable&lt;T&gt; ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -519,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivityContext.IsCancellationRequested" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellationRequested As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCancellationRequested : bool" Usage="System.Activities.NativeActivityContext.IsCancellationRequested" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancellationRequested { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -540,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.MarkCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Sub MarkCanceled ()" />
       <MemberSignature Language="F#" Value="member this.MarkCanceled : unit -&gt; unit" Usage="nativeActivityContext.MarkCanceled " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MarkCanceled();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -560,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivityContext.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As ExecutionProperties" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Activities.ExecutionProperties" Usage="System.Activities.NativeActivityContext.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ExecutionProperties ^ Properties { System::Activities::ExecutionProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -580,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.RemoveAllBookmarks" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllBookmarks ()" />
       <MemberSignature Language="F#" Value="member this.RemoveAllBookmarks : unit -&gt; unit" Usage="nativeActivityContext.RemoveAllBookmarks " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllBookmarks();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -608,6 +631,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveBookmark(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.RemoveBookmark(System.Activities.Bookmark)" />
       <MemberSignature Language="F#" Value="member this.RemoveBookmark : System.Activities.Bookmark -&gt; bool" Usage="nativeActivityContext.RemoveBookmark bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::Activities::Bookmark ^ bookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -633,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.RemoveBookmark(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveBookmark (name As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.RemoveBookmark : string -&gt; bool" Usage="nativeActivityContext.RemoveBookmark name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -658,6 +683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.RemoveBookmark(System.String,System.Activities.BookmarkScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveBookmark (name As String, scope As BookmarkScope) As Boolean" />
       <MemberSignature Language="F#" Value="member this.RemoveBookmark : string * System.Activities.BookmarkScope -&gt; bool" Usage="nativeActivityContext.RemoveBookmark (name, scope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveBookmark(System::String ^ name, System::Activities::BookmarkScope ^ scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -684,6 +710,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ResumeBookmark(class System.Activities.Bookmark bookmark, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.ResumeBookmark(System.Activities.Bookmark,System.Object)" />
       <MemberSignature Language="F#" Value="member this.ResumeBookmark : System.Activities.Bookmark * obj -&gt; System.Activities.BookmarkResumptionResult" Usage="nativeActivityContext.ResumeBookmark (bookmark, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1769,6 +1796,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.ActivityInstance ScheduleActivity(class System.Activities.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.ScheduleActivity(System.Activities.Activity)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity -&gt; System.Activities.ActivityInstance" Usage="nativeActivityContext.ScheduleActivity activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstance ^ ScheduleActivity(System::Activities::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1792,6 +1820,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.ActivityInstance ScheduleActivity(class System.Activities.Activity activity, class System.Activities.CompletionCallback onCompleted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.ScheduleActivity(System.Activities.Activity,System.Activities.CompletionCallback)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity * System.Activities.CompletionCallback -&gt; System.Activities.ActivityInstance" Usage="nativeActivityContext.ScheduleActivity (activity, onCompleted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstance ^ ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::CompletionCallback ^ onCompleted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1817,6 +1846,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.ActivityInstance ScheduleActivity(class System.Activities.Activity activity, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.ScheduleActivity(System.Activities.Activity,System.Activities.FaultCallback)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity * System.Activities.FaultCallback -&gt; System.Activities.ActivityInstance" Usage="nativeActivityContext.ScheduleActivity (activity, onFaulted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstance ^ ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::FaultCallback ^ onFaulted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1842,6 +1872,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.ActivityInstance ScheduleActivity(class System.Activities.Activity activity, class System.Activities.CompletionCallback onCompleted, class System.Activities.FaultCallback onFaulted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.ScheduleActivity(System.Activities.Activity,System.Activities.CompletionCallback,System.Activities.FaultCallback)" />
       <MemberSignature Language="F#" Value="member this.ScheduleActivity : System.Activities.Activity * System.Activities.CompletionCallback * System.Activities.FaultCallback -&gt; System.Activities.ActivityInstance" Usage="nativeActivityContext.ScheduleActivity (activity, onCompleted, onFaulted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::ActivityInstance ^ ScheduleActivity(System::Activities::Activity ^ activity, System::Activities::CompletionCallback ^ onCompleted, System::Activities::FaultCallback ^ onFaulted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3018,6 +3049,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Activities.Variable variable, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.SetValue(System.Activities.Variable,System.Object)" />
       <MemberSignature Language="F#" Value="override this.SetValue : System.Activities.Variable * obj -&gt; unit" Usage="nativeActivityContext.SetValue (variable, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Activities::Variable ^ variable, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3043,6 +3075,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.SetValue``1(System.Activities.Variable{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue(Of T) (variable As Variable(Of T), value As T)" />
       <MemberSignature Language="F#" Value="override this.SetValue : System.Activities.Variable&lt;'T&gt; * 'T -&gt; unit" Usage="nativeActivityContext.SetValue (variable, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void SetValue(System::Activities::Variable&lt;T&gt; ^ variable, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3072,6 +3105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityContext.Track(System.Activities.Tracking.CustomTrackingRecord)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Track (record As CustomTrackingRecord)" />
       <MemberSignature Language="F#" Value="member this.Track : System.Activities.Tracking.CustomTrackingRecord -&gt; unit" Usage="nativeActivityContext.Track record" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Track(System::Activities::Tracking::CustomTrackingRecord ^ record);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

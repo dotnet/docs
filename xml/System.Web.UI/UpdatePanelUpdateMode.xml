@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelUpdateMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdatePanelUpdateMode" />
   <TypeSignature Language="F#" Value="type UpdatePanelUpdateMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpdatePanelUpdateMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UpdatePanelUpdateMode.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="F#" Value="Always = 0" Usage="System.Web.UI.UpdatePanelUpdateMode.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UpdatePanelUpdateMode.Conditional" />
       <MemberSignature Language="VB.NET" Value="Conditional" />
       <MemberSignature Language="F#" Value="Conditional = 1" Usage="System.Web.UI.UpdatePanelUpdateMode.Conditional" />
+      <MemberSignature Language="C++ CLI" Value="Conditional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

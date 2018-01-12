@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectResult" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectResult&#xA;Implements IDisposable, IEnumerable, IListSource" />
   <TypeSignature Language="F#" Value="type ObjectResult = class&#xA;    interface IEnumerable&#xA;    interface IDisposable&#xA;    interface IListSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectResult abstract : IDisposable, System::Collections::IEnumerable, System::ComponentModel::IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectResult.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="objectResult.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectResult.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ElementType As Type" />
       <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Data.Objects.ObjectResult.ElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectResult.GetNextResult``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextResult(Of TElement) () As ObjectResult(Of TElement)" />
       <MemberSignature Language="F#" Value="member this.GetNextResult : unit -&gt; System.Data.Objects.ObjectResult&lt;'Element&gt;" Usage="objectResult.GetNextResult " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TElement&gt;&#xA; System::Data::Objects::ObjectResult&lt;TElement&gt; ^ GetNextResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectResult.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectResult.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
       <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectResult.System.ComponentModel.IListSource.ContainsListCollection" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
@@ -154,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectResult.System#ComponentModel#IListSource#GetList" />
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>

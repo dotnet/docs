@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.CallingConventions" />
   <TypeSignature Language="VB.NET" Value="Public Enum CallingConventions" />
   <TypeSignature Language="F#" Value="type CallingConventions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CallingConventions" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.Any" />
       <MemberSignature Language="VB.NET" Value="Any" />
       <MemberSignature Language="F#" Value="Any = 3" Usage="System.Reflection.CallingConventions.Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.ExplicitThis" />
       <MemberSignature Language="VB.NET" Value="ExplicitThis" />
       <MemberSignature Language="F#" Value="ExplicitThis = 64" Usage="System.Reflection.CallingConventions.ExplicitThis" />
+      <MemberSignature Language="C++ CLI" Value="ExplicitThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.HasThis" />
       <MemberSignature Language="VB.NET" Value="HasThis" />
       <MemberSignature Language="F#" Value="HasThis = 32" Usage="System.Reflection.CallingConventions.HasThis" />
+      <MemberSignature Language="C++ CLI" Value="HasThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.Standard" />
       <MemberSignature Language="VB.NET" Value="Standard" />
       <MemberSignature Language="F#" Value="Standard = 1" Usage="System.Reflection.CallingConventions.Standard" />
+      <MemberSignature Language="C++ CLI" Value="Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.VarArgs" />
       <MemberSignature Language="VB.NET" Value="VarArgs" />
       <MemberSignature Language="F#" Value="VarArgs = 2" Usage="System.Reflection.CallingConventions.VarArgs" />
+      <MemberSignature Language="C++ CLI" Value="VarArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>

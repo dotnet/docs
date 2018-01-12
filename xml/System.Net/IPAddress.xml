@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.IPAddress" />
   <TypeSignature Language="VB.NET" Value="Public Class IPAddress" />
   <TypeSignature Language="F#" Value="type IPAddress = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPAddress" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As Byte())" />
       <MemberSignature Language="F#" Value="new System.Net.IPAddress : byte[] -&gt; System.Net.IPAddress" Usage="new System.Net.IPAddress address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPAddress(cli::array &lt;System::Byte&gt; ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newAddress As Long)" />
       <MemberSignature Language="F#" Value="new System.Net.IPAddress : int64 -&gt; System.Net.IPAddress" Usage="new System.Net.IPAddress newAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPAddress(long newAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -147,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.#ctor(System.Byte[],System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As Byte(), scopeid As Long)" />
       <MemberSignature Language="F#" Value="new System.Net.IPAddress : byte[] * int64 -&gt; System.Net.IPAddress" Usage="new System.Net.IPAddress (address, scopeid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPAddress(cli::array &lt;System::Byte&gt; ^ address, long scopeid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As Long" />
       <MemberSignature Language="F#" Value="member this.Address : int64 with get, set" Usage="System.Net.IPAddress.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Address { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.AddressFamily" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressFamily As AddressFamily" />
       <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.IPAddress.AddressFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::AddressFamily AddressFamily { System::Net::Sockets::AddressFamily get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -290,6 +296,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.Any" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Any As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable Any : System.Net.IPAddress" Usage="System.Net.IPAddress.Any" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ Any;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -328,6 +335,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.Broadcast" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Broadcast As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable Broadcast : System.Net.IPAddress" Usage="System.Net.IPAddress.Broadcast" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ Broadcast;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -373,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="iPAddress.Equals comparand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -415,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.GetAddressBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAddressBytes () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetAddressBytes : unit -&gt; byte[]" Usage="iPAddress.GetAddressBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetAddressBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -457,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="iPAddress.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -505,6 +516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.HostToNetworkOrder(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HostToNetworkOrder (host As Short) As Short" />
       <MemberSignature Language="F#" Value="static member HostToNetworkOrder : int16 -&gt; int16" Usage="System.Net.IPAddress.HostToNetworkOrder host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short HostToNetworkOrder(short host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -549,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.HostToNetworkOrder(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HostToNetworkOrder (host As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member HostToNetworkOrder : int -&gt; int" Usage="System.Net.IPAddress.HostToNetworkOrder host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int HostToNetworkOrder(int host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -593,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.HostToNetworkOrder(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HostToNetworkOrder (host As Long) As Long" />
       <MemberSignature Language="F#" Value="static member HostToNetworkOrder : int64 -&gt; int64" Usage="System.Net.IPAddress.HostToNetworkOrder host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long HostToNetworkOrder(long host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -637,6 +651,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.IPv6Any" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IPv6Any As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable IPv6Any : System.Net.IPAddress" Usage="System.Net.IPAddress.IPv6Any" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ IPv6Any;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -682,6 +697,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.IPv6Loopback" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IPv6Loopback As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable IPv6Loopback : System.Net.IPAddress" Usage="System.Net.IPAddress.IPv6Loopback" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ IPv6Loopback;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -727,6 +743,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.IPv6None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IPv6None As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable IPv6None : System.Net.IPAddress" Usage="System.Net.IPAddress.IPv6None" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ IPv6None;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -772,6 +789,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.IsIPv4MappedToIPv6" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIPv4MappedToIPv6 As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIPv4MappedToIPv6 : bool" Usage="System.Net.IPAddress.IsIPv4MappedToIPv6" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIPv4MappedToIPv6 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -811,6 +829,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.IsIPv6LinkLocal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIPv6LinkLocal As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIPv6LinkLocal : bool" Usage="System.Net.IPAddress.IsIPv6LinkLocal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIPv6LinkLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -842,6 +861,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.IsIPv6Multicast" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIPv6Multicast As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIPv6Multicast : bool" Usage="System.Net.IPAddress.IsIPv6Multicast" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIPv6Multicast { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -873,6 +893,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.IsIPv6SiteLocal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIPv6SiteLocal As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIPv6SiteLocal : bool" Usage="System.Net.IPAddress.IsIPv6SiteLocal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIPv6SiteLocal { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -904,6 +925,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.IsIPv6Teredo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIPv6Teredo As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIPv6Teredo : bool" Usage="System.Net.IPAddress.IsIPv6Teredo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIPv6Teredo { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -949,6 +971,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.IsLoopback(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLoopback (address As IPAddress) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLoopback : System.Net.IPAddress -&gt; bool" Usage="System.Net.IPAddress.IsLoopback address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLoopback(System::Net::IPAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1002,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.Loopback" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Loopback As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable Loopback : System.Net.IPAddress" Usage="System.Net.IPAddress.Loopback" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ Loopback;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1047,6 +1071,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.MapToIPv4" />
       <MemberSignature Language="VB.NET" Value="Public Function MapToIPv4 () As IPAddress" />
       <MemberSignature Language="F#" Value="member this.MapToIPv4 : unit -&gt; System.Net.IPAddress" Usage="iPAddress.MapToIPv4 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::IPAddress ^ MapToIPv4();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1089,6 +1114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.MapToIPv6" />
       <MemberSignature Language="VB.NET" Value="Public Function MapToIPv6 () As IPAddress" />
       <MemberSignature Language="F#" Value="member this.MapToIPv6 : unit -&gt; System.Net.IPAddress" Usage="iPAddress.MapToIPv6 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::IPAddress ^ MapToIPv6();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1139,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.NetworkToHostOrder(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NetworkToHostOrder (network As Short) As Short" />
       <MemberSignature Language="F#" Value="static member NetworkToHostOrder : int16 -&gt; int16" Usage="System.Net.IPAddress.NetworkToHostOrder network" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short NetworkToHostOrder(short network);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1192,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.NetworkToHostOrder(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NetworkToHostOrder (network As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member NetworkToHostOrder : int -&gt; int" Usage="System.Net.IPAddress.NetworkToHostOrder network" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int NetworkToHostOrder(int network);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1245,6 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.NetworkToHostOrder(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NetworkToHostOrder (network As Long) As Long" />
       <MemberSignature Language="F#" Value="static member NetworkToHostOrder : int64 -&gt; int64" Usage="System.Net.IPAddress.NetworkToHostOrder network" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long NetworkToHostOrder(long network);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1298,6 +1327,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.IPAddress.None" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly None As IPAddress " />
       <MemberSignature Language="F#" Value=" staticval mutable None : System.Net.IPAddress" Usage="System.Net.IPAddress.None" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Net::IPAddress ^ None;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1343,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (ipString As String) As IPAddress" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.IPAddress" Usage="System.Net.IPAddress.Parse ipString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPAddress ^ Parse(System::String ^ ipString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1406,6 +1437,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.IPAddress.ScopeId" />
       <MemberSignature Language="VB.NET" Value="Public Property ScopeId As Long" />
       <MemberSignature Language="F#" Value="member this.ScopeId : int64 with get, set" Usage="System.Net.IPAddress.ScopeId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ScopeId { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1470,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="iPAddress.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1509,6 +1542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.IPAddress.TryParse(System.String,System.Net.IPAddress@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (ipString As String, ByRef address As IPAddress) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.IPAddress.TryParse (ipString, address)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ ipString, [Runtime::InteropServices::Out] System::Net::IPAddress ^ % address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

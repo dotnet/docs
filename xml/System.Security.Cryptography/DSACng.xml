@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DSACng" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DSACng&#xA;Inherits DSA" />
   <TypeSignature Language="F#" Value="type DSACng = class&#xA;    inherit DSA" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DSACng sealed : System::Security::Cryptography::DSA" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSACng();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySize As Integer)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSACng : int -&gt; System.Security.Cryptography.DSACng" Usage="new System.Security.Cryptography.DSACng keySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSACng(int keySize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.#ctor(System.Security.Cryptography.CngKey)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As CngKey)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSACng : System.Security.Cryptography.CngKey -&gt; System.Security.Cryptography.DSACng" Usage="new System.Security.Cryptography.DSACng key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSACng(System::Security::Cryptography::CngKey ^ key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.CreateSignature(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSignature (rgbHash As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.CreateSignature : byte[] -&gt; byte[]" Usage="dSACng.CreateSignature rgbHash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateSignature(cli::array &lt;System::Byte&gt; ^ rgbHash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dSACng.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As DSAParameters" />
       <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.DSAParameters" Usage="dSACng.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::DSAParameters ExportParameters(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="F#" Value="override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSACng.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="F#" Value="override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSACng.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.ImportParameters(System.Security.Cryptography.DSAParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As DSAParameters)" />
       <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.DSAParameters -&gt; unit" Usage="dSACng.ImportParameters parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::DSAParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DSACng.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As CngKey" />
       <MemberSignature Language="F#" Value="member this.Key : System.Security.Cryptography.CngKey" Usage="System.Security.Cryptography.DSACng.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngKey ^ Key { System::Security::Cryptography::CngKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DSACng.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyExchangeAlgorithm As String" />
       <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : string" Usage="System.Security.Cryptography.DSACng.KeyExchangeAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyExchangeAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DSACng.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.DSACng.LegalKeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -395,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DSACng.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SignatureAlgorithm As String" />
       <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string" Usage="System.Security.Cryptography.DSACng.SignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -419,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.VerifySignature(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifySignature (rgbHash As Byte(), rgbSignature As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="override this.VerifySignature : byte[] * byte[] -&gt; bool" Usage="dSACng.VerifySignature (rgbHash, rgbSignature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifySignature(cli::array &lt;System::Byte&gt; ^ rgbHash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

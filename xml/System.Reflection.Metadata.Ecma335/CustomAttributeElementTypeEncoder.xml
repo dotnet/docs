@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeElementTypeEncoder" />
   <TypeSignature Language="F#" Value="type CustomAttributeElementTypeEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class CustomAttributeElementTypeEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" Usage="new System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeElementTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Sub Boolean ()" />
       <MemberSignature Language="F#" Value="member this.Boolean : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Boolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Byte" />
       <MemberSignature Language="VB.NET" Value="Public Sub Byte ()" />
       <MemberSignature Language="F#" Value="member this.Byte : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Byte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Byte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Char" />
       <MemberSignature Language="VB.NET" Value="Public Sub Char ()" />
       <MemberSignature Language="F#" Value="member this.Char : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Char " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Char();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -129,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Double" />
       <MemberSignature Language="VB.NET" Value="Public Sub Double ()" />
       <MemberSignature Language="F#" Value="member this.Double : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Double " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Double();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -150,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Enum(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enum (enumTypeName As String)" />
       <MemberSignature Language="F#" Value="member this.Enum : string -&gt; unit" Usage="customAttributeElementTypeEncoder.Enum enumTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enum(System::String ^ enumTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -174,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Int16" />
       <MemberSignature Language="VB.NET" Value="Public Sub Int16 ()" />
       <MemberSignature Language="F#" Value="member this.Int16 : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Int16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -195,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Sub Int32 ()" />
       <MemberSignature Language="F#" Value="member this.Int32 : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Int32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -216,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Sub Int64 ()" />
       <MemberSignature Language="F#" Value="member this.Int64 : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Int64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -237,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.PrimitiveType(System.Reflection.Metadata.PrimitiveSerializationTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrimitiveType (type As PrimitiveSerializationTypeCode)" />
       <MemberSignature Language="F#" Value="member this.PrimitiveType : System.Reflection.Metadata.PrimitiveSerializationTypeCode -&gt; unit" Usage="customAttributeElementTypeEncoder.PrimitiveType type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrimitiveType(System::Reflection::Metadata::PrimitiveSerializationTypeCode type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -261,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.SByte" />
       <MemberSignature Language="VB.NET" Value="Public Sub SByte ()" />
       <MemberSignature Language="F#" Value="member this.SByte : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.SByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -282,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.Single" />
       <MemberSignature Language="VB.NET" Value="Public Sub Single ()" />
       <MemberSignature Language="F#" Value="member this.Single : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.Single " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Single();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -303,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.String" />
       <MemberSignature Language="VB.NET" Value="Public Sub String ()" />
       <MemberSignature Language="F#" Value="member this.String : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.String " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void String();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -324,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.SystemType" />
       <MemberSignature Language="VB.NET" Value="Public Sub SystemType ()" />
       <MemberSignature Language="F#" Value="member this.SystemType : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.SystemType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SystemType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -345,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.UInt16" />
       <MemberSignature Language="VB.NET" Value="Public Sub UInt16 ()" />
       <MemberSignature Language="F#" Value="member this.UInt16 : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.UInt16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -366,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Sub UInt32 ()" />
       <MemberSignature Language="F#" Value="member this.UInt32 : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.UInt32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -387,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Sub UInt64 ()" />
       <MemberSignature Language="F#" Value="member this.UInt64 : unit -&gt; unit" Usage="customAttributeElementTypeEncoder.UInt64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

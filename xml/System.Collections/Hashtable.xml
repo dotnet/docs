@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Hashtable" />
   <TypeSignature Language="VB.NET" Value="Public Class Hashtable&#xA;Implements ICloneable, IDeserializationCallback, IDictionary, ISerializable" />
   <TypeSignature Language="F#" Value="type Hashtable = class&#xA;    interface IDictionary&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Hashtable : ICloneable, System::Collections::IDictionary, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -130,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -188,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IDictionary -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable d" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IDictionary ^ d);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -254,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IEqualityComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable equalityComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -322,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : int -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -385,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary, equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IDictionary * System.Collections.IEqualityComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (d, equalityComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IDictionary ^ d, System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -460,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary, loadFactor As Single)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IDictionary * single -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (d, loadFactor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IDictionary ^ d, float loadFactor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -534,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hcp As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (hcp, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IHashCodeProvider ^ hcp, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -610,6 +618,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : int * System.Collections.IEqualityComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (capacity, equalityComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(int capacity, System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -682,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, loadFactor As Single)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : int * single -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (capacity, loadFactor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(int capacity, float loadFactor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -757,6 +767,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Hashtable(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -815,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary, hcp As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IDictionary * System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (d, hcp, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IDictionary ^ d, System::Collections::IHashCodeProvider ^ hcp, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -898,6 +910,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary, loadFactor As Single, equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IDictionary * single * System.Collections.IEqualityComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (d, loadFactor, equalityComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IDictionary ^ d, float loadFactor, System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -980,6 +993,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, hcp As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : int * System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (capacity, hcp, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(int capacity, System::Collections::IHashCodeProvider ^ hcp, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1060,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, loadFactor As Single, equalityComparer As IEqualityComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : int * single * System.Collections.IEqualityComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (capacity, loadFactor, equalityComparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(int capacity, float loadFactor, System::Collections::IEqualityComparer ^ equalityComparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1142,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (d As IDictionary, loadFactor As Single, hcp As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : System.Collections.IDictionary * single * System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (d, loadFactor, hcp, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(System::Collections::IDictionary ^ d, float loadFactor, System::Collections::IHashCodeProvider ^ hcp, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1228,6 +1244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IHashCodeProvider,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, loadFactor As Single, hcp As IHashCodeProvider, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="new System.Collections.Hashtable : int * single * System.Collections.IHashCodeProvider * System.Collections.IComparer -&gt; System.Collections.Hashtable" Usage="new System.Collections.Hashtable (capacity, loadFactor, hcp, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Hashtable(int capacity, float loadFactor, System::Collections::IHashCodeProvider ^ hcp, System::Collections::IComparer ^ comparer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1318,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (key As Object, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member Add : obj * obj -&gt; unit&#xA;override this.Add : obj * obj -&gt; unit" Usage="hashtable.Add (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
@@ -1392,6 +1410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="hashtable.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -1453,6 +1472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="hashtable.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -1504,6 +1524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.comparer" />
       <MemberSignature Language="VB.NET" Value="Protected Property comparer As IComparer" />
       <MemberSignature Language="F#" Value="member this.comparer : System.Collections.IComparer with get, set" Usage="System.Collections.Hashtable.comparer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IComparer ^ comparer { System::Collections::IComparer ^ get(); void set(System::Collections::IComparer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1547,6 +1568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (key As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="hashtable.Contains key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
@@ -1612,6 +1634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.ContainsKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsKey : obj -&gt; bool&#xA;override this.ContainsKey : obj -&gt; bool" Usage="hashtable.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1674,6 +1697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.ContainsValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsValue (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsValue : obj -&gt; bool&#xA;override this.ContainsValue : obj -&gt; bool" Usage="hashtable.ContainsValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1733,6 +1757,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="hashtable.CopyTo (array, arrayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1810,6 +1835,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Hashtable.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1853,6 +1879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.EqualityComparer" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property EqualityComparer As IEqualityComparer" />
       <MemberSignature Language="F#" Value="member this.EqualityComparer : System.Collections.IEqualityComparer" Usage="System.Collections.Hashtable.EqualityComparer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IEqualityComparer ^ EqualityComparer { System::Collections::IEqualityComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1898,6 +1925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="hashtable.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
@@ -1971,6 +1999,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.GetHash(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetHash (key As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member GetHash : obj -&gt; int&#xA;override this.GetHash : obj -&gt; int" Usage="hashtable.GetHash key" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int GetHash(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2022,6 +2051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="hashtable.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -2079,6 +2109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.hcp" />
       <MemberSignature Language="VB.NET" Value="Protected Property hcp As IHashCodeProvider" />
       <MemberSignature Language="F#" Value="member this.hcp : System.Collections.IHashCodeProvider with get, set" Usage="System.Collections.Hashtable.hcp" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IHashCodeProvider ^ hcp { System::Collections::IHashCodeProvider ^ get(); void set(System::Collections::IHashCodeProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2122,6 +2153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Collections.Hashtable.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -2170,6 +2202,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Collections.Hashtable.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -2218,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.Hashtable.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -2281,6 +2315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(key As Object) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Collections.Hashtable.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -2344,6 +2379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.KeyEquals(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function KeyEquals (item As Object, key As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyEquals : obj * obj -&gt; bool&#xA;override this.KeyEquals : obj * obj -&gt; bool" Usage="hashtable.KeyEquals (item, key)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool KeyEquals(System::Object ^ item, System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2402,6 +2438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Collections.Hashtable.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -2451,6 +2488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="hashtable.OnDeserialization sender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -2498,6 +2536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (key As Object)" />
       <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="hashtable.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
@@ -2569,6 +2608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (table As Hashtable) As Hashtable" />
       <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.Hashtable -&gt; System.Collections.Hashtable" Usage="System.Collections.Hashtable.Synchronized table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ Synchronized(System::Collections::Hashtable ^ table);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2636,6 +2676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.Hashtable.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -2688,6 +2729,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Hashtable.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -2749,6 +2791,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Hashtable.Values" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Values As ICollection" />
       <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Collections.Hashtable.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerTransaction" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerTransaction&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type DesignerTransaction = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerTransaction abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -100,6 +101,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerTransaction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +129,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (description As String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerTransaction : string -&gt; System.ComponentModel.Design.DesignerTransaction" Usage="new System.ComponentModel.Design.DesignerTransaction description" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerTransaction(System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -164,6 +167,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="designerTransaction.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +199,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransaction.Canceled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Canceled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Canceled : bool" Usage="System.ComponentModel.Design.DesignerTransaction.Canceled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Canceled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +238,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="designerTransaction.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -273,6 +279,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransaction.Committed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Committed As Boolean" />
       <MemberSignature Language="F#" Value="member this.Committed : bool" Usage="System.ComponentModel.Design.DesignerTransaction.Committed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Committed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +318,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerTransaction.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ComponentModel.Design.DesignerTransaction.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -348,6 +356,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="designerTransaction.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -397,6 +406,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="designerTransaction.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!DesignerTransaction ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +448,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.OnCancel" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnCancel ()" />
       <MemberSignature Language="F#" Value="abstract member OnCancel : unit -&gt; unit" Usage="designerTransaction.OnCancel " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnCancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -479,6 +490,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.OnCommit" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnCommit ()" />
       <MemberSignature Language="F#" Value="abstract member OnCommit : unit -&gt; unit" Usage="designerTransaction.OnCommit " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnCommit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -519,6 +531,7 @@ using (host.CreateTransaction() {
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerTransaction.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

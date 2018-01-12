@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum IsolatedStorageScope" />
   <TypeSignature Language="F#" Value="type IsolatedStorageScope = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolatedStorageScope" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Application" />
       <MemberSignature Language="VB.NET" Value="Application" />
       <MemberSignature Language="F#" Value="Application = 32" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.Application" />
+      <MemberSignature Language="C++ CLI" Value="Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
       <MemberSignature Language="F#" Value="Assembly = 4" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Domain" />
       <MemberSignature Language="VB.NET" Value="Domain" />
       <MemberSignature Language="F#" Value="Domain = 2" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.Domain" />
+      <MemberSignature Language="C++ CLI" Value="Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Machine" />
       <MemberSignature Language="VB.NET" Value="Machine" />
       <MemberSignature Language="F#" Value="Machine = 16" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.Machine" />
+      <MemberSignature Language="C++ CLI" Value="Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.Roaming" />
       <MemberSignature Language="VB.NET" Value="Roaming" />
       <MemberSignature Language="F#" Value="Roaming = 8" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.Roaming" />
+      <MemberSignature Language="C++ CLI" Value="Roaming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.IsolatedStorage.IsolatedStorageScope.User" />
       <MemberSignature Language="VB.NET" Value="User" />
       <MemberSignature Language="F#" Value="User = 1" Usage="System.IO.IsolatedStorage.IsolatedStorageScope.User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

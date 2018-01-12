@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure MethodBodyStreamEncoder" />
   <TypeSignature Language="F#" Value="type MethodBodyStreamEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class MethodBodyStreamEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder" Usage="new System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MethodBodyStreamEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

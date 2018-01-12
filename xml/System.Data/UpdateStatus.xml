@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.UpdateStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdateStatus" />
   <TypeSignature Language="F#" Value="type UpdateStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpdateStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
       <MemberSignature Language="F#" Value="Continue = 0" Usage="System.Data.UpdateStatus.Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.ErrorsOccurred" />
       <MemberSignature Language="VB.NET" Value="ErrorsOccurred" />
       <MemberSignature Language="F#" Value="ErrorsOccurred = 1" Usage="System.Data.UpdateStatus.ErrorsOccurred" />
+      <MemberSignature Language="C++ CLI" Value="ErrorsOccurred" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.SkipAllRemainingRows" />
       <MemberSignature Language="VB.NET" Value="SkipAllRemainingRows" />
       <MemberSignature Language="F#" Value="SkipAllRemainingRows = 3" Usage="System.Data.UpdateStatus.SkipAllRemainingRows" />
+      <MemberSignature Language="C++ CLI" Value="SkipAllRemainingRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.SkipCurrentRow" />
       <MemberSignature Language="VB.NET" Value="SkipCurrentRow" />
       <MemberSignature Language="F#" Value="SkipCurrentRow = 2" Usage="System.Data.UpdateStatus.SkipCurrentRow" />
+      <MemberSignature Language="C++ CLI" Value="SkipCurrentRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

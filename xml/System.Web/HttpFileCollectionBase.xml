@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpFileCollectionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpFileCollectionBase&#xA;Inherits NameObjectCollectionBase&#xA;Implements ICollection" />
   <TypeSignature Language="F#" Value="type HttpFileCollectionBase = class&#xA;    inherit NameObjectCollectionBase&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpFileCollectionBase abstract : System::Collections::Specialized::NameObjectCollectionBase, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpFileCollectionBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollectionBase.AllKeys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllKeys As String()" />
       <MemberSignature Language="F#" Value="member this.AllKeys : string[]" Usage="System.Web.HttpFileCollectionBase.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ AllKeys { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (dest As Array, index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="httpFileCollectionBase.CopyTo (dest, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ dest, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollectionBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.HttpFileCollectionBase.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.Get(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (index As Integer) As HttpPostedFileBase" />
       <MemberSignature Language="F#" Value="abstract member Get : int -&gt; System.Web.HttpPostedFileBase&#xA;override this.Get : int -&gt; System.Web.HttpPostedFileBase" Usage="httpFileCollectionBase.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::HttpPostedFileBase ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Get (name As String) As HttpPostedFileBase" />
       <MemberSignature Language="F#" Value="abstract member Get : string -&gt; System.Web.HttpPostedFileBase&#xA;override this.Get : string -&gt; System.Web.HttpPostedFileBase" Usage="httpFileCollectionBase.Get name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::HttpPostedFileBase ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="httpFileCollectionBase.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.GetKey(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetKey (index As Integer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetKey : int -&gt; string&#xA;override this.GetKey : int -&gt; string" Usage="httpFileCollectionBase.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -240,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionBase.GetMultiple(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMultiple (name As String) As IList(Of HttpPostedFileBase)" />
       <MemberSignature Language="F#" Value="abstract member GetMultiple : string -&gt; System.Collections.Generic.IList&lt;System.Web.HttpPostedFileBase&gt;&#xA;override this.GetMultiple : string -&gt; System.Collections.Generic.IList&lt;System.Web.HttpPostedFileBase&gt;" Usage="httpFileCollectionBase.GetMultiple name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::Web::HttpPostedFileBase ^&gt; ^ GetMultiple(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollectionBase.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.HttpFileCollectionBase.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -298,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollectionBase.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As HttpPostedFileBase" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.HttpPostedFileBase" Usage="System.Web.HttpFileCollectionBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpPostedFileBase ^ default[int] { System::Web::HttpPostedFileBase ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -323,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollectionBase.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As HttpPostedFileBase" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.HttpPostedFileBase" Usage="System.Web.HttpFileCollectionBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpPostedFileBase ^ default[System::String ^] { System::Web::HttpPostedFileBase ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.HttpFileCollectionBase.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.HttpFileCollectionBase.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListViewGroup&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type ListViewGroup = class&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewGroup sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroup.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (header As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ListViewGroup : string -&gt; System.Windows.Forms.ListViewGroup" Usage="new System.Windows.Forms.ListViewGroup header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewGroup(System::String ^ header);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroup.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As String, headerText As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ListViewGroup : string * string -&gt; System.Windows.Forms.ListViewGroup" Usage="new System.Windows.Forms.ListViewGroup (key, headerText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewGroup(System::String ^ key, System::String ^ headerText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroup.#ctor(System.String,System.Windows.Forms.HorizontalAlignment)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (header As String, headerAlignment As HorizontalAlignment)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ListViewGroup : string * System.Windows.Forms.HorizontalAlignment -&gt; System.Windows.Forms.ListViewGroup" Usage="new System.Windows.Forms.ListViewGroup (header, headerAlignment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewGroup(System::String ^ header, System::Windows::Forms::HorizontalAlignment headerAlignment);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroup.Header" />
       <MemberSignature Language="VB.NET" Value="Public Property Header As String" />
       <MemberSignature Language="F#" Value="member this.Header : string with get, set" Usage="System.Windows.Forms.ListViewGroup.Header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Header { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroup.HeaderAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderAlignment As HorizontalAlignment" />
       <MemberSignature Language="F#" Value="member this.HeaderAlignment : System.Windows.Forms.HorizontalAlignment with get, set" Usage="System.Windows.Forms.ListViewGroup.HeaderAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HorizontalAlignment HeaderAlignment { System::Windows::Forms::HorizontalAlignment get(); void set(System::Windows::Forms::HorizontalAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroup.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ListView.ListViewItemCollection" />
       <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ListView.ListViewItemCollection" Usage="System.Windows.Forms.ListViewGroup.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::ListViewItemCollection ^ Items { System::Windows::Forms::ListView::ListViewItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -278,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroup.ListView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListView As ListView" />
       <MemberSignature Language="F#" Value="member this.ListView : System.Windows.Forms.ListView" Usage="System.Windows.Forms.ListViewGroup.ListView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView ^ ListView { System::Windows::Forms::ListView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -306,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroup.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.ListViewGroup.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +343,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroup.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewGroup.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.ListViewGroup.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewGroup.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="listViewGroup.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

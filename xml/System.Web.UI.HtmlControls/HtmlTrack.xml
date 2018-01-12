@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTrack" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlTrack&#xA;Inherits HtmlControl" />
   <TypeSignature Language="F#" Value="type HtmlTrack = class&#xA;    inherit HtmlControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlTrack : System::Web::UI::HtmlControls::HtmlControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTrack.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlTrack();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTrack.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlTrack.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTrack.Src" />
       <MemberSignature Language="VB.NET" Value="Public Property Src As String" />
       <MemberSignature Language="F#" Value="member this.Src : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlTrack.Src" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Src { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

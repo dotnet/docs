@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.Themes.DesignerStylesDictionary" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerStylesDictionary&#xA;Inherits ResourceDictionary&#xA;Implements IComponentConnector" />
   <TypeSignature Language="F#" Value="type DesignerStylesDictionary = class&#xA;    inherit ResourceDictionary&#xA;    interface IComponentConnector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerStylesDictionary sealed : System::Windows::ResourceDictionary, System::Windows::Markup::IComponentConnector" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.Themes.DesignerStylesDictionary.InitializeComponent" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitializeComponent ()" />
       <MemberSignature Language="F#" Value="abstract member InitializeComponent : unit -&gt; unit&#xA;override this.InitializeComponent : unit -&gt; unit" Usage="designerStylesDictionary.InitializeComponent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeComponent();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IComponentConnector.InitializeComponent</InterfaceMember>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Core.Presentation.Themes.DesignerStylesDictionary.SequenceStyle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SequenceStyle As Style" />
       <MemberSignature Language="F#" Value="member this.SequenceStyle : System.Windows.Style" Usage="System.Activities.Core.Presentation.Themes.DesignerStylesDictionary.SequenceStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Style ^ SequenceStyle { System::Windows::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IComponentConnector.Connect(int32 connectionId, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.Themes.DesignerStylesDictionary.System#Windows#Markup#IComponentConnector#Connect(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Connect (connectionId As Integer, target As Object) Implements IComponentConnector.Connect" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IComponentConnector.Connect(int connectionId, System::Object ^ target) = System::Windows::Markup::IComponentConnector::Connect;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)</InterfaceMember>

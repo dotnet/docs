@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileIOPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileIOPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
   <TypeSignature Language="F#" Value="type FileIOPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IBuiltInPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileIOPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -93,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.FileIOPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.FileIOPermission" Usage="new System.Security.Permissions.FileIOPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileIOPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As FileIOPermissionAccess, path As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.FileIOPermission : System.Security.Permissions.FileIOPermissionAccess * string -&gt; System.Security.Permissions.FileIOPermission" Usage="new System.Security.Permissions.FileIOPermission (access, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileIOPermission(System::Security::Permissions::FileIOPermissionAccess access, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As FileIOPermissionAccess, pathList As String())" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.FileIOPermission : System.Security.Permissions.FileIOPermissionAccess * string[] -&gt; System.Security.Permissions.FileIOPermission" Usage="new System.Security.Permissions.FileIOPermission (access, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileIOPermission(System::Security::Permissions::FileIOPermissionAccess access, cli::array &lt;System::String ^&gt; ^ pathList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -226,6 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As FileIOPermissionAccess, control As AccessControlActions, path As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.FileIOPermission : System.Security.Permissions.FileIOPermissionAccess * System.Security.AccessControl.AccessControlActions * string -&gt; System.Security.Permissions.FileIOPermission" Usage="new System.Security.Permissions.FileIOPermission (access, control, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileIOPermission(System::Security::Permissions::FileIOPermissionAccess access, System::Security::AccessControl::AccessControlActions control, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.Security.AccessControl.AccessControlActions,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As FileIOPermissionAccess, control As AccessControlActions, pathList As String())" />
       <MemberSignature Language="F#" Value="new System.Security.Permissions.FileIOPermission : System.Security.Permissions.FileIOPermissionAccess * System.Security.AccessControl.AccessControlActions * string[] -&gt; System.Security.Permissions.FileIOPermission" Usage="new System.Security.Permissions.FileIOPermission (access, control, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileIOPermission(System::Security::Permissions::FileIOPermissionAccess access, System::Security::AccessControl::AccessControlActions control, cli::array &lt;System::String ^&gt; ^ pathList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -332,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (access As FileIOPermissionAccess, path As String)" />
       <MemberSignature Language="F#" Value="member this.AddPathList : System.Security.Permissions.FileIOPermissionAccess * string -&gt; unit" Usage="fileIOPermission.AddPathList (access, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::FileIOPermissionAccess access, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -389,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPathList (access As FileIOPermissionAccess, pathList As String())" />
       <MemberSignature Language="F#" Value="member this.AddPathList : System.Security.Permissions.FileIOPermissionAccess * string[] -&gt; unit" Usage="fileIOPermission.AddPathList (access, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPathList(System::Security::Permissions::FileIOPermissionAccess access, cli::array &lt;System::String ^&gt; ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -433,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.FileIOPermission.AllFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property AllFiles As FileIOPermissionAccess" />
       <MemberSignature Language="F#" Value="member this.AllFiles : System.Security.Permissions.FileIOPermissionAccess with get, set" Usage="System.Security.Permissions.FileIOPermission.AllFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::FileIOPermissionAccess AllFiles { System::Security::Permissions::FileIOPermissionAccess get(); void set(System::Security::Permissions::FileIOPermissionAccess value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -476,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.FileIOPermission.AllLocalFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property AllLocalFiles As FileIOPermissionAccess" />
       <MemberSignature Language="F#" Value="member this.AllLocalFiles : System.Security.Permissions.FileIOPermissionAccess with get, set" Usage="System.Security.Permissions.FileIOPermission.AllLocalFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::FileIOPermissionAccess AllLocalFiles { System::Security::Permissions::FileIOPermissionAccess get(); void set(System::Security::Permissions::FileIOPermissionAccess value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -519,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="fileIOPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -552,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fileIOPermission.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -594,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" />
       <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="fileIOPermission.FromXml esd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fileIOPermission.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -666,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPathList (access As FileIOPermissionAccess) As String()" />
       <MemberSignature Language="F#" Value="member this.GetPathList : System.Security.Permissions.FileIOPermissionAccess -&gt; string[]" Usage="fileIOPermission.GetPathList access" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetPathList(System::Security::Permissions::FileIOPermissionAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -720,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="fileIOPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -757,6 +773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="fileIOPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -795,6 +812,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="fileIOPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
@@ -842,6 +860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPathList (access As FileIOPermissionAccess, path As String)" />
       <MemberSignature Language="F#" Value="member this.SetPathList : System.Security.Permissions.FileIOPermissionAccess * string -&gt; unit" Usage="fileIOPermission.SetPathList (access, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPathList(System::Security::Permissions::FileIOPermissionAccess access, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -907,6 +926,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPathList (access As FileIOPermissionAccess, pathList As String())" />
       <MemberSignature Language="F#" Value="member this.SetPathList : System.Security.Permissions.FileIOPermissionAccess * string[] -&gt; unit" Usage="fileIOPermission.SetPathList (access, pathList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPathList(System::Security::Permissions::FileIOPermissionAccess access, cli::array &lt;System::String ^&gt; ^ pathList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -955,6 +975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="fileIOPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -981,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.FileIOPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" />
       <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="fileIOPermission.Union other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

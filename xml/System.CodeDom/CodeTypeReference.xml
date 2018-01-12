@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeReference" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTypeReference&#xA;Inherits CodeObject" />
   <TypeSignature Language="F#" Value="type CodeTypeReference = class&#xA;    inherit CodeObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeReference : System::CodeDom::CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.CodeDom.CodeTypeParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeParameter As CodeTypeParameter)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : System.CodeDom.CodeTypeParameter -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference typeParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(System::CodeDom::CodeTypeParameter ^ typeParameter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : string -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : Type -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.CodeDom.CodeTypeReference,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (arrayType As CodeTypeReference, rank As Integer)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : System.CodeDom.CodeTypeReference * int -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference (arrayType, rank)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(System::CodeDom::CodeTypeReference ^ arrayType, int rank);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.String,System.CodeDom.CodeTypeReference[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, ParamArray typeArguments As CodeTypeReference())" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : string * System.CodeDom.CodeTypeReference[] -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference (typeName, typeArguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(System::String ^ typeName, ... cli::array &lt;System::CodeDom::CodeTypeReference ^&gt; ^ typeArguments);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.String,System.CodeDom.CodeTypeReferenceOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, codeTypeReferenceOption As CodeTypeReferenceOptions)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : string * System.CodeDom.CodeTypeReferenceOptions -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference (typeName, codeTypeReferenceOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(System::String ^ typeName, System::CodeDom::CodeTypeReferenceOptions codeTypeReferenceOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseType As String, rank As Integer)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : string * int -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference (baseType, rank)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(System::String ^ baseType, int rank);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +301,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, valuetype System.CodeDom.CodeTypeReferenceOptions codeTypeReferenceOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.Type,System.CodeDom.CodeTypeReferenceOptions)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeReference : Type * System.CodeDom.CodeTypeReferenceOptions -&gt; System.CodeDom.CodeTypeReference" Usage="new System.CodeDom.CodeTypeReference (type, codeTypeReferenceOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeReference(Type ^ type, System::CodeDom::CodeTypeReferenceOptions codeTypeReferenceOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeReference.ArrayElementType" />
       <MemberSignature Language="VB.NET" Value="Public Property ArrayElementType As CodeTypeReference" />
       <MemberSignature Language="F#" Value="member this.ArrayElementType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeTypeReference.ArrayElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ ArrayElementType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeReference.ArrayRank" />
       <MemberSignature Language="VB.NET" Value="Public Property ArrayRank As Integer" />
       <MemberSignature Language="F#" Value="member this.ArrayRank : int with get, set" Usage="System.CodeDom.CodeTypeReference.ArrayRank" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ArrayRank { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -373,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeReference.BaseType" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseType As String" />
       <MemberSignature Language="F#" Value="member this.BaseType : string with get, set" Usage="System.CodeDom.CodeTypeReference.BaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -447,6 +460,7 @@ System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Gen
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeReference.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As CodeTypeReferenceOptions" />
       <MemberSignature Language="F#" Value="member this.Options : System.CodeDom.CodeTypeReferenceOptions with get, set" Usage="System.CodeDom.CodeTypeReference.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceOptions Options { System::CodeDom::CodeTypeReferenceOptions get(); void set(System::CodeDom::CodeTypeReferenceOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -476,6 +490,7 @@ System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Gen
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeReference.TypeArguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeArguments As CodeTypeReferenceCollection" />
       <MemberSignature Language="F#" Value="member this.TypeArguments : System.CodeDom.CodeTypeReferenceCollection" Usage="System.CodeDom.CodeTypeReference.TypeArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReferenceCollection ^ TypeArguments { System::CodeDom::CodeTypeReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

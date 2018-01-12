@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UnderstoodHeaders" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnderstoodHeaders&#xA;Implements IEnumerable(Of MessageHeaderInfo)" />
   <TypeSignature Language="F#" Value="type UnderstoodHeaders = class&#xA;    interface seq&lt;MessageHeaderInfo&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnderstoodHeaders sealed : System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::MessageHeaderInfo ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.Add(System.ServiceModel.Channels.MessageHeaderInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (header As MessageHeaderInfo)" />
       <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Channels.MessageHeaderInfo -&gt; unit" Usage="understoodHeaders.Add header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Channels::MessageHeaderInfo ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.Contains(System.ServiceModel.Channels.MessageHeaderInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (header As MessageHeaderInfo) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : System.ServiceModel.Channels.MessageHeaderInfo -&gt; bool" Usage="understoodHeaders.Contains header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ServiceModel::Channels::MessageHeaderInfo ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of MessageHeaderInfo)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.ServiceModel.Channels.MessageHeaderInfo&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.ServiceModel.Channels.MessageHeaderInfo&gt;" Usage="understoodHeaders.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::ServiceModel::Channels::MessageHeaderInfo ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.Remove(System.ServiceModel.Channels.MessageHeaderInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (header As MessageHeaderInfo)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.ServiceModel.Channels.MessageHeaderInfo -&gt; unit" Usage="understoodHeaders.Remove header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ServiceModel::Channels::MessageHeaderInfo ^ header);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UnderstoodHeaders.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

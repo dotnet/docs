@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Array" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Array&#xA;Implements ICloneable, IList, IStructuralComparable, IStructuralEquatable" />
   <TypeSignature Language="F#" Value="type Array = class&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IEnumerable&#xA;    interface IStructuralComparable&#xA;    interface IStructuralEquatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Array abstract : ICloneable, System::Collections::IList, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.AsReadOnly``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsReadOnly(Of T) (array As T()) As ReadOnlyCollection(Of T)" />
       <MemberSignature Language="F#" Value="static member AsReadOnly : 'T[] -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T&gt;" Usage="System.Array.AsReadOnly array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ AsReadOnly(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -180,6 +182,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 BinarySearch(class System.Array array, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch(System.Array,System.Object)" />
       <MemberSignature Language="F#" Value="static member BinarySearch : Array * obj -&gt; int" Usage="System.Array.BinarySearch (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int BinarySearch(Array ^ array, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -268,6 +271,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 BinarySearch(class System.Array array, object value, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch(System.Array,System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="F#" Value="static member BinarySearch : Array * obj * System.Collections.IComparer -&gt; int" Usage="System.Array.BinarySearch (array, value, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int BinarySearch(Array ^ array, System::Object ^ value, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -355,6 +359,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 BinarySearch(class System.Array array, int32 index, int32 length, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch(System.Array,System.Int32,System.Int32,System.Object)" />
       <MemberSignature Language="F#" Value="static member BinarySearch : Array * int * int * obj -&gt; int" Usage="System.Array.BinarySearch (array, index, length, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int BinarySearch(Array ^ array, int index, int length, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -445,6 +450,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 BinarySearch(class System.Array array, int32 index, int32 length, object value, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch(System.Array,System.Int32,System.Int32,System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="F#" Value="static member BinarySearch : Array * int * int * obj * System.Collections.IComparer -&gt; int" Usage="System.Array.BinarySearch (array, index, length, value, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int BinarySearch(Array ^ array, int index, int length, System::Object ^ value, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -547,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch``1(``0[],``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BinarySearch(Of T) (array As T(), value As T) As Integer" />
       <MemberSignature Language="F#" Value="static member BinarySearch : 'T[] * 'T -&gt; int" Usage="System.Array.BinarySearch (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int BinarySearch(cli::array &lt;T&gt; ^ array, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -637,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch``1(``0[],``0,System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BinarySearch(Of T) (array As T(), value As T, comparer As IComparer(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member BinarySearch : 'T[] * 'T * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; int" Usage="System.Array.BinarySearch (array, value, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int BinarySearch(cli::array &lt;T&gt; ^ array, T value, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -745,6 +753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch``1(``0[],System.Int32,System.Int32,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BinarySearch(Of T) (array As T(), index As Integer, length As Integer, value As T) As Integer" />
       <MemberSignature Language="F#" Value="static member BinarySearch : 'T[] * int * int * 'T -&gt; int" Usage="System.Array.BinarySearch (array, index, length, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int BinarySearch(cli::array &lt;T&gt; ^ array, int index, int length, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -835,6 +844,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.BinarySearch``1(``0[],System.Int32,System.Int32,``0,System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BinarySearch(Of T) (array As T(), index As Integer, length As Integer, value As T, comparer As IComparer(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member BinarySearch : 'T[] * int * int * 'T * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; int" Usage="System.Array.BinarySearch (array, index, length, value, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int BinarySearch(cli::array &lt;T&gt; ^ array, int index, int length, T value, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -935,6 +945,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Clear(class System.Array array, int32 index, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Clear(System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="static member Clear : Array * int * int -&gt; unit" Usage="System.Array.Clear (array, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Clear(Array ^ array, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1025,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="array.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -1086,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.ConstrainedCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConstrainedCopy (sourceArray As Array, sourceIndex As Integer, destinationArray As Array, destinationIndex As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="static member ConstrainedCopy : Array * int * Array * int * int -&gt; unit" Usage="System.Array.ConstrainedCopy (sourceArray, sourceIndex, destinationArray, destinationIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConstrainedCopy(Array ^ sourceArray, int sourceIndex, Array ^ destinationArray, int destinationIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1186,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.ConvertAll``2(``0[],System.Converter{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertAll(Of TInput, TOutput) (array As TInput(), converter As Converter(Of TInput, TOutput)) As TOutput()" />
       <MemberSignature Language="F#" Value="static member ConvertAll : 'Input[] * Converter&lt;'Input, 'Output&gt; -&gt; 'Output[]" Usage="System.Array.ConvertAll (array, converter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TInput, typename TOutput&gt;&#xA; static cli::array &lt;TOutput&gt; ^ ConvertAll(cli::array &lt;TInput&gt; ^ array, Converter&lt;TInput, TOutput&gt; ^ converter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1267,6 +1281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Copy(System.Array,System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (sourceArray As Array, destinationArray As Array, length As Integer)" />
       <MemberSignature Language="F#" Value="static member Copy : Array * Array * int -&gt; unit" Usage="System.Array.Copy (sourceArray, destinationArray, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(Array ^ sourceArray, Array ^ destinationArray, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1374,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Copy(System.Array,System.Array,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (sourceArray As Array, destinationArray As Array, length As Long)" />
       <MemberSignature Language="F#" Value="static member Copy : Array * Array * int64 -&gt; unit" Usage="System.Array.Copy (sourceArray, destinationArray, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(Array ^ sourceArray, Array ^ destinationArray, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1477,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Copy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (sourceArray As Array, sourceIndex As Integer, destinationArray As Array, destinationIndex As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="static member Copy : Array * int * Array * int * int -&gt; unit" Usage="System.Array.Copy (sourceArray, sourceIndex, destinationArray, destinationIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(Array ^ sourceArray, int sourceIndex, Array ^ destinationArray, int destinationIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1605,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Copy(System.Array,System.Int64,System.Array,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Copy (sourceArray As Array, sourceIndex As Long, destinationArray As Array, destinationIndex As Long, length As Long)" />
       <MemberSignature Language="F#" Value="static member Copy : Array * int64 * Array * int64 * int64 -&gt; unit" Usage="System.Array.Copy (sourceArray, sourceIndex, destinationArray, destinationIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Copy(Array ^ sourceArray, long sourceIndex, Array ^ destinationArray, long destinationIndex, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1741,6 +1759,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="array.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1824,6 +1843,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Array array, int64 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.CopyTo(System.Array,System.Int64)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : Array * int64 -&gt; unit" Usage="array.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ array, long index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1917,6 +1937,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (elementType As Type, length As Integer) As Array" />
       <MemberSignature Language="F#" Value="static member CreateInstance : Type * int -&gt; Array" Usage="System.Array.CreateInstance (elementType, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CreateInstance(Type ^ elementType, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1986,6 +2007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (elementType As Type, ParamArray lengths As Integer()) As Array" />
       <MemberSignature Language="F#" Value="static member CreateInstance : Type * int[] -&gt; Array" Usage="System.Array.CreateInstance (elementType, lengths)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CreateInstance(Type ^ elementType, ... cli::array &lt;int&gt; ^ lengths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2072,6 +2094,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int64[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (elementType As Type, ParamArray lengths As Long()) As Array" />
       <MemberSignature Language="F#" Value="static member CreateInstance : Type * int64[] -&gt; Array" Usage="System.Array.CreateInstance (elementType, lengths)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CreateInstance(Type ^ elementType, ... cli::array &lt;long&gt; ^ lengths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2154,6 +2177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (elementType As Type, length1 As Integer, length2 As Integer) As Array" />
       <MemberSignature Language="F#" Value="static member CreateInstance : Type * int * int -&gt; Array" Usage="System.Array.CreateInstance (elementType, length1, length2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CreateInstance(Type ^ elementType, int length1, int length2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2227,6 +2251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (elementType As Type, lengths As Integer(), lowerBounds As Integer()) As Array" />
       <MemberSignature Language="F#" Value="static member CreateInstance : Type * int[] * int[] -&gt; Array" Usage="System.Array.CreateInstance (elementType, lengths, lowerBounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CreateInstance(Type ^ elementType, cli::array &lt;int&gt; ^ lengths, cli::array &lt;int&gt; ^ lowerBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2325,6 +2350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance (elementType As Type, length1 As Integer, length2 As Integer, length3 As Integer) As Array" />
       <MemberSignature Language="F#" Value="static member CreateInstance : Type * int * int * int -&gt; Array" Usage="System.Array.CreateInstance (elementType, length1, length2, length3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ CreateInstance(Type ^ elementType, int length1, int length2, int length3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2404,6 +2430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Empty``1" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Empty(Of T) () As T()" />
       <MemberSignature Language="F#" Value="static member Empty : unit -&gt; 'T[]" Usage="System.Array.Empty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static cli::array &lt;T&gt; ^ Empty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2445,6 +2472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists(Of T) (array As T(), match As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="F#" Value="static member Exists : 'T[] * Predicate&lt;'T&gt; -&gt; bool" Usage="System.Array.Exists (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool Exists(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2533,6 +2561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Fill``1(``0[],``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Fill(Of T) (array As T(), value As T)" />
       <MemberSignature Language="F#" Value="static member Fill : 'T[] * 'T -&gt; unit" Usage="System.Array.Fill (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Fill(cli::array &lt;T&gt; ^ array, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2562,6 +2591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Fill``1(``0[],``0,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Fill(Of T) (array As T(), value As T, startIndex As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="static member Fill : 'T[] * 'T * int * int -&gt; unit" Usage="System.Array.Fill (array, value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Fill(cli::array &lt;T&gt; ^ array, T value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2595,6 +2625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Find(Of T) (array As T(), match As Predicate(Of T)) As T" />
       <MemberSignature Language="F#" Value="static member Find : 'T[] * Predicate&lt;'T&gt; -&gt; 'T" Usage="System.Array.Find (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T Find(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2676,6 +2707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAll(Of T) (array As T(), match As Predicate(Of T)) As T()" />
       <MemberSignature Language="F#" Value="static member FindAll : 'T[] * Predicate&lt;'T&gt; -&gt; 'T[]" Usage="System.Array.FindAll (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static cli::array &lt;T&gt; ^ FindAll(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2777,6 +2809,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindIndex``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindIndex(Of T) (array As T(), match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member FindIndex : 'T[] * Predicate&lt;'T&gt; -&gt; int" Usage="System.Array.FindIndex (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int FindIndex(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2861,6 +2894,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindIndex``1(``0[],System.Int32,System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindIndex(Of T) (array As T(), startIndex As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member FindIndex : 'T[] * int * Predicate&lt;'T&gt; -&gt; int" Usage="System.Array.FindIndex (array, startIndex, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int FindIndex(cli::array &lt;T&gt; ^ array, int startIndex, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2949,6 +2983,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindIndex``1(``0[],System.Int32,System.Int32,System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindIndex(Of T) (array As T(), startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member FindIndex : 'T[] * int * int * Predicate&lt;'T&gt; -&gt; int" Usage="System.Array.FindIndex (array, startIndex, count, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int FindIndex(cli::array &lt;T&gt; ^ array, int startIndex, int count, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3047,6 +3082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindLast(Of T) (array As T(), match As Predicate(Of T)) As T" />
       <MemberSignature Language="F#" Value="static member FindLast : 'T[] * Predicate&lt;'T&gt; -&gt; 'T" Usage="System.Array.FindLast (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T FindLast(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3143,6 +3179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindLastIndex``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindLastIndex(Of T) (array As T(), match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member FindLastIndex : 'T[] * Predicate&lt;'T&gt; -&gt; int" Usage="System.Array.FindLastIndex (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int FindLastIndex(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3227,6 +3264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindLastIndex``1(``0[],System.Int32,System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindLastIndex(Of T) (array As T(), startIndex As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member FindLastIndex : 'T[] * int * Predicate&lt;'T&gt; -&gt; int" Usage="System.Array.FindLastIndex (array, startIndex, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int FindLastIndex(cli::array &lt;T&gt; ^ array, int startIndex, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3315,6 +3353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.FindLastIndex``1(``0[],System.Int32,System.Int32,System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindLastIndex(Of T) (array As T(), startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="F#" Value="static member FindLastIndex : 'T[] * int * int * Predicate&lt;'T&gt; -&gt; int" Usage="System.Array.FindLastIndex (array, startIndex, count, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int FindLastIndex(cli::array &lt;T&gt; ^ array, int startIndex, int count, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3413,6 +3452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.ForEach``1(``0[],System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ForEach(Of T) (array As T(), action As Action(Of T))" />
       <MemberSignature Language="F#" Value="static member ForEach : 'T[] * Action&lt;'T&gt; -&gt; unit" Usage="System.Array.ForEach (array, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void ForEach(cli::array &lt;T&gt; ^ array, Action&lt;T&gt; ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3476,6 +3516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="array.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -3545,6 +3586,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLength (dimension As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.GetLength : int -&gt; int" Usage="array.GetLength dimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetLength(int dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3610,6 +3652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetLongLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLongLength (dimension As Integer) As Long" />
       <MemberSignature Language="F#" Value="member this.GetLongLength : int -&gt; int64" Usage="array.GetLongLength dimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long GetLongLength(int dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3667,6 +3710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetLowerBound(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLowerBound (dimension As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.GetLowerBound : int -&gt; int" Usage="array.GetLowerBound dimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetLowerBound(int dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3739,6 +3783,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetUpperBound(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpperBound (dimension As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.GetUpperBound : int -&gt; int" Usage="array.GetUpperBound dimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetUpperBound(int dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3818,6 +3863,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int -&gt; obj" Usage="array.GetValue index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3877,6 +3923,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (ParamArray indices As Integer()) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int[] -&gt; obj" Usage="array.GetValue indices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(... cli::array &lt;int&gt; ^ indices);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3947,6 +3994,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (index As Long) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int64 -&gt; obj" Usage="array.GetValue index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(long index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4009,6 +4057,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int64[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (ParamArray indices As Long()) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int64[] -&gt; obj" Usage="array.GetValue indices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(... cli::array &lt;long&gt; ^ indices);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4080,6 +4129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (index1 As Integer, index2 As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int * int -&gt; obj" Usage="array.GetValue (index1, index2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(int index1, int index2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4138,6 +4188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (index1 As Long, index2 As Long) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int64 * int64 -&gt; obj" Usage="array.GetValue (index1, index2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(long index1, long index2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4201,6 +4252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (index1 As Integer, index2 As Integer, index3 As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int * int * int -&gt; obj" Usage="array.GetValue (index1, index2, index3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(int index1, int index2, int index3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4262,6 +4314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int64,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (index1 As Long, index2 As Long, index3 As Long) As Object" />
       <MemberSignature Language="F#" Value="member this.GetValue : int64 * int64 * int64 -&gt; obj" Usage="array.GetValue (index1, index2, index3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(long index1, long index2, long index3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4340,6 +4393,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 IndexOf(class System.Array array, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.IndexOf(System.Array,System.Object)" />
       <MemberSignature Language="F#" Value="static member IndexOf : Array * obj -&gt; int" Usage="System.Array.IndexOf (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int IndexOf(Array ^ array, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4414,6 +4468,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 IndexOf(class System.Array array, object value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.IndexOf(System.Array,System.Object,System.Int32)" />
       <MemberSignature Language="F#" Value="static member IndexOf : Array * obj * int -&gt; int" Usage="System.Array.IndexOf (array, value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int IndexOf(Array ^ array, System::Object ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4494,6 +4549,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 IndexOf(class System.Array array, object value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.IndexOf(System.Array,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="static member IndexOf : Array * obj * int * int -&gt; int" Usage="System.Array.IndexOf (array, value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int IndexOf(Array ^ array, System::Object ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4585,6 +4641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.IndexOf``1(``0[],``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IndexOf(Of T) (array As T(), value As T) As Integer" />
       <MemberSignature Language="F#" Value="static member IndexOf : 'T[] * 'T -&gt; int" Usage="System.Array.IndexOf (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int IndexOf(cli::array &lt;T&gt; ^ array, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4649,6 +4706,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.IndexOf``1(``0[],``0,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IndexOf(Of T) (array As T(), value As T, startIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member IndexOf : 'T[] * 'T * int -&gt; int" Usage="System.Array.IndexOf (array, value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int IndexOf(cli::array &lt;T&gt; ^ array, T value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4719,6 +4777,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.IndexOf``1(``0[],``0,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IndexOf(Of T) (array As T(), value As T, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member IndexOf : 'T[] * 'T * int * int -&gt; int" Usage="System.Array.IndexOf (array, value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int IndexOf(cli::array &lt;T&gt; ^ array, T value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4799,6 +4858,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
       <MemberSignature Language="F#" Value="member this.Initialize : unit -&gt; unit" Usage="array.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4848,6 +4908,7 @@
       <MemberSignature Language="DocId" Value="P:System.Array.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Array.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -4893,6 +4954,7 @@
       <MemberSignature Language="DocId" Value="P:System.Array.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Array.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -4942,6 +5004,7 @@
       <MemberSignature Language="DocId" Value="P:System.Array.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Array.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -5012,6 +5075,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 LastIndexOf(class System.Array array, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.LastIndexOf(System.Array,System.Object)" />
       <MemberSignature Language="F#" Value="static member LastIndexOf : Array * obj -&gt; int" Usage="System.Array.LastIndexOf (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int LastIndexOf(Array ^ array, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5086,6 +5150,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 LastIndexOf(class System.Array array, object value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.LastIndexOf(System.Array,System.Object,System.Int32)" />
       <MemberSignature Language="F#" Value="static member LastIndexOf : Array * obj * int -&gt; int" Usage="System.Array.LastIndexOf (array, value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int LastIndexOf(Array ^ array, System::Object ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5162,6 +5227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 LastIndexOf(class System.Array array, object value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.LastIndexOf(System.Array,System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="static member LastIndexOf : Array * obj * int * int -&gt; int" Usage="System.Array.LastIndexOf (array, value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int LastIndexOf(Array ^ array, System::Object ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5249,6 +5315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.LastIndexOf``1(``0[],``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LastIndexOf(Of T) (array As T(), value As T) As Integer" />
       <MemberSignature Language="F#" Value="static member LastIndexOf : 'T[] * 'T -&gt; int" Usage="System.Array.LastIndexOf (array, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int LastIndexOf(cli::array &lt;T&gt; ^ array, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5315,6 +5382,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.LastIndexOf``1(``0[],``0,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LastIndexOf(Of T) (array As T(), value As T, startIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member LastIndexOf : 'T[] * 'T * int -&gt; int" Usage="System.Array.LastIndexOf (array, value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int LastIndexOf(cli::array &lt;T&gt; ^ array, T value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5385,6 +5453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Array.LastIndexOf``1(``0[],``0,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LastIndexOf(Of T) (array As T(), value As T, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member LastIndexOf : 'T[] * 'T * int * int -&gt; int" Usage="System.Array.LastIndexOf (array, value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int LastIndexOf(cli::array &lt;T&gt; ^ array, T value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5465,6 +5534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Array.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Array.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5525,6 +5595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Array.LongLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LongLength As Long" />
       <MemberSignature Language="F#" Value="member this.LongLength : int64" Usage="System.Array.LongLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long LongLength { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5573,6 +5644,7 @@
       <MemberSignature Language="DocId" Value="P:System.Array.Rank" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rank As Integer" />
       <MemberSignature Language="F#" Value="member this.Rank : int" Usage="System.Array.Rank" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rank { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5646,6 +5718,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Resize``1(``0[]@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Resize(Of T) (ByRef array As T(), newSize As Integer)" />
       <MemberSignature Language="F#" Value="static member Resize :  * int -&gt; unit" Usage="System.Array.Resize (array, newSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Resize(cli::array &lt;T&gt; ^ % array, int newSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5734,6 +5807,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Reverse(class System.Array array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Reverse(System.Array)" />
       <MemberSignature Language="F#" Value="static member Reverse : Array -&gt; unit" Usage="System.Array.Reverse array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Reverse(Array ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5801,6 +5875,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Reverse(class System.Array array, int32 index, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Reverse(System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="static member Reverse : Array * int * int -&gt; unit" Usage="System.Array.Reverse (array, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Reverse(Array ^ array, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5878,6 +5953,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Reverse``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Reverse(Of T) (array As T())" />
       <MemberSignature Language="F#" Value="static member Reverse : 'T[] -&gt; unit" Usage="System.Array.Reverse array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Reverse(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5905,6 +5981,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Reverse``1(``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Reverse(Of T) (array As T(), index As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="static member Reverse : 'T[] * int * int -&gt; unit" Usage="System.Array.Reverse (array, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Reverse(cli::array &lt;T&gt; ^ array, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5947,6 +6024,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, index As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int -&gt; unit" Usage="array.SetValue (value, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6014,6 +6092,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, ParamArray indices As Integer())" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int[] -&gt; unit" Usage="array.SetValue (value, indices)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, ... cli::array &lt;int&gt; ^ indices);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6092,6 +6171,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, index As Long)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int64 -&gt; unit" Usage="array.SetValue (value, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, long index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6162,6 +6242,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int64[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, ParamArray indices As Long())" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int64[] -&gt; unit" Usage="array.SetValue (value, indices)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, ... cli::array &lt;long&gt; ^ indices);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6241,6 +6322,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, index1 As Integer, index2 As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int * int -&gt; unit" Usage="array.SetValue (value, index1, index2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, int index1, int index2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6307,6 +6389,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, index1 As Long, index2 As Long)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int64 * int64 -&gt; unit" Usage="array.SetValue (value, index1, index2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, long index1, long index2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6378,6 +6461,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, index1 As Integer, index2 As Integer, index3 As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int * int * int -&gt; unit" Usage="array.SetValue (value, index1, index2, index3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, int index1, int index2, int index3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6447,6 +6531,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int64,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (value As Object, index1 As Long, index2 As Long, index3 As Long)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * int64 * int64 * int64 -&gt; unit" Usage="array.SetValue (value, index1, index2, index3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ value, long index1, long index2, long index3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6533,6 +6618,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Sort(class System.Array array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array)" />
       <MemberSignature Language="F#" Value="static member Sort : Array -&gt; unit" Usage="System.Array.Sort array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6611,6 +6697,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort (keys As Array, items As Array)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * Array -&gt; unit" Usage="System.Array.Sort (keys, items)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ keys, Array ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6702,6 +6789,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Sort(class System.Array array, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Collections.IComparer)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * System.Collections.IComparer -&gt; unit" Usage="System.Array.Sort (array, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ array, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6803,6 +6891,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Array,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort (keys As Array, items As Array, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * Array * System.Collections.IComparer -&gt; unit" Usage="System.Array.Sort (keys, items, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ keys, Array ^ items, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -6919,6 +7008,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Sort(class System.Array array, int32 index, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * int * int -&gt; unit" Usage="System.Array.Sort (array, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ array, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7009,6 +7099,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort (keys As Array, items As Array, index As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * Array * int * int -&gt; unit" Usage="System.Array.Sort (keys, items, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ keys, Array ^ items, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7117,6 +7208,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Sort(class System.Array array, int32 index, int32 length, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Int32,System.Int32,System.Collections.IComparer)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * int * int * System.Collections.IComparer -&gt; unit" Usage="System.Array.Sort (array, index, length, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ array, int index, int length, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7233,6 +7325,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort(System.Array,System.Array,System.Int32,System.Int32,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort (keys As Array, items As Array, index As Integer, length As Integer, comparer As IComparer)" />
       <MemberSignature Language="F#" Value="static member Sort : Array * Array * int * int * System.Collections.IComparer -&gt; unit" Usage="System.Array.Sort (keys, items, index, length, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Sort(Array ^ keys, Array ^ items, int index, int length, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7372,6 +7465,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of T) (array As T())" />
       <MemberSignature Language="F#" Value="static member Sort : 'T[] -&gt; unit" Usage="System.Array.Sort array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Sort(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7459,6 +7553,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``1(``0[],System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of T) (array As T(), comparer As IComparer(Of T))" />
       <MemberSignature Language="F#" Value="static member Sort : 'T[] * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; unit" Usage="System.Array.Sort (array, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Sort(cli::array &lt;T&gt; ^ array, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7556,6 +7651,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``1(``0[],System.Comparison{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of T) (array As T(), comparison As Comparison(Of T))" />
       <MemberSignature Language="F#" Value="static member Sort : 'T[] * Comparison&lt;'T&gt; -&gt; unit" Usage="System.Array.Sort (array, comparison)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Sort(cli::array &lt;T&gt; ^ array, Comparison&lt;T&gt; ^ comparison);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7642,6 +7738,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``1(``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of T) (array As T(), index As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="static member Sort : 'T[] * int * int -&gt; unit" Usage="System.Array.Sort (array, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Sort(cli::array &lt;T&gt; ^ array, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7741,6 +7838,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``1(``0[],System.Int32,System.Int32,System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of T) (array As T(), index As Integer, length As Integer, comparer As IComparer(Of T))" />
       <MemberSignature Language="F#" Value="static member Sort : 'T[] * int * int * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; unit" Usage="System.Array.Sort (array, index, length, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Sort(cli::array &lt;T&gt; ^ array, int index, int length, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7851,6 +7949,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``2(``0[],``1[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of TKey, TValue) (keys As TKey(), items As TValue())" />
       <MemberSignature Language="F#" Value="static member Sort : 'Key[] * 'Value[] -&gt; unit" Usage="System.Array.Sort (keys, items)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static void Sort(cli::array &lt;TKey&gt; ^ keys, cli::array &lt;TValue&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -7959,6 +8058,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``2(``0[],``1[],System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of TKey, TValue) (keys As TKey(), items As TValue(), comparer As IComparer(Of TKey))" />
       <MemberSignature Language="F#" Value="static member Sort : 'Key[] * 'Value[] * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; unit" Usage="System.Array.Sort (keys, items, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static void Sort(cli::array &lt;TKey&gt; ^ keys, cli::array &lt;TValue&gt; ^ items, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8077,6 +8177,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``2(``0[],``1[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of TKey, TValue) (keys As TKey(), items As TValue(), index As Integer, length As Integer)" />
       <MemberSignature Language="F#" Value="static member Sort : 'Key[] * 'Value[] * int * int -&gt; unit" Usage="System.Array.Sort (keys, items, index, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static void Sort(cli::array &lt;TKey&gt; ^ keys, cli::array &lt;TValue&gt; ^ items, int index, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8202,6 +8303,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.Sort``2(``0[],``1[],System.Int32,System.Int32,System.Collections.Generic.IComparer{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Sort(Of TKey, TValue) (keys As TKey(), items As TValue(), index As Integer, length As Integer, comparer As IComparer(Of TKey))" />
       <MemberSignature Language="F#" Value="static member Sort : 'Key[] * 'Value[] * int * int * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; unit" Usage="System.Array.Sort (keys, items, index, length, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TKey, typename TValue&gt;&#xA; static void Sort(cli::array &lt;TKey&gt; ^ keys, cli::array &lt;TValue&gt; ^ items, int index, int length, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -8338,6 +8440,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Array.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -8395,6 +8498,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="F#" Usage="System.Array.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -8438,6 +8542,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Array.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -8464,6 +8569,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Array.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -8489,6 +8595,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -8538,6 +8645,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -8581,6 +8689,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -8628,6 +8737,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -8679,6 +8789,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -8736,6 +8847,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.Array.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -8762,6 +8874,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.Array.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -8788,6 +8901,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="P:System.Array.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="F#" Usage="System.Array.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -8841,6 +8955,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -8891,6 +9006,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IList#RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -8942,6 +9058,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralComparable.CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Function CompareTo (other As Object, comparer As IComparer) As Integer Implements IStructuralComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralComparable.CompareTo(System::Object ^ other, System::Collections::IComparer ^ comparer) = System::Collections::IStructuralComparable::CompareTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)</InterfaceMember>
@@ -9008,6 +9125,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IStructuralEquatable.Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Function Equals (other As Object, comparer As IEqualityComparer) As Boolean Implements IStructuralEquatable.Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IStructuralEquatable.Equals(System::Object ^ other, System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::Equals;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
@@ -9057,6 +9175,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralEquatable.GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
       <MemberSignature Language="VB.NET" Value="Function GetHashCode (comparer As IEqualityComparer) As Integer Implements IStructuralEquatable.GetHashCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralEquatable.GetHashCode(System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::GetHashCode;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
@@ -9104,6 +9223,7 @@ int[,,] TDArray = new int[1,1,1];
       <MemberSignature Language="DocId" Value="M:System.Array.TrueForAll``1(``0[],System.Predicate{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TrueForAll(Of T) (array As T(), match As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="F#" Value="static member TrueForAll : 'T[] * Predicate&lt;'T&gt; -&gt; bool" Usage="System.Array.TrueForAll (array, match)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool TrueForAll(cli::array &lt;T&gt; ^ array, Predicate&lt;T&gt; ^ match);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

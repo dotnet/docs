@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.PropertyData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyData" />
   <TypeSignature Language="F#" Value="type PropertyData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyData sealed" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.PropertyData.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PropertyData.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As IList(Of AttributeData)" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Generic.IList&lt;Microsoft.Build.Tasks.Xaml.AttributeData&gt;" Usage="Microsoft.Build.Tasks.Xaml.PropertyData.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Build::Tasks::Xaml::AttributeData ^&gt; ^ Attributes { System::Collections::Generic::IList&lt;Microsoft::Build::Tasks::Xaml::AttributeData ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PropertyData.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.PropertyData.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PropertyData.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As XamlType" />
       <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType with get, set" Usage="Microsoft.Build.Tasks.Xaml.PropertyData.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); void set(System::Xaml::XamlType ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.PropertyData.Visibility" />
       <MemberSignature Language="VB.NET" Value="Public Property Visibility As MemberVisibility" />
       <MemberSignature Language="F#" Value="member this.Visibility : Microsoft.Build.Tasks.Xaml.MemberVisibility with get, set" Usage="Microsoft.Build.Tasks.Xaml.PropertyData.Visibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Xaml::MemberVisibility Visibility { Microsoft::Build::Tasks::Xaml::MemberVisibility get(); void set(Microsoft::Build::Tasks::Xaml::MemberVisibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

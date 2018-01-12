@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.ProtectedDataCookieTransform" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtectedDataCookieTransform&#xA;Inherits CookieTransform" />
   <TypeSignature Language="F#" Value="type ProtectedDataCookieTransform = class&#xA;    inherit CookieTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtectedDataCookieTransform sealed : System::IdentityModel::CookieTransform" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.ProtectedDataCookieTransform.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtectedDataCookieTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.ProtectedDataCookieTransform.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decode (encoded As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; byte[]" Usage="protectedDataCookieTransform.Decode encoded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decode(cli::array &lt;System::Byte&gt; ^ encoded);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.ProtectedDataCookieTransform.Encode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encode (value As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.Encode : byte[] -&gt; byte[]" Usage="protectedDataCookieTransform.Encode value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encode(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

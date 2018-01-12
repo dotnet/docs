@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AttributeTargets" />
   <TypeSignature Language="VB.NET" Value="Public Enum AttributeTargets" />
   <TypeSignature Language="F#" Value="type AttributeTargets = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AttributeTargets" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="F#" Value="All = 32767" Usage="System.AttributeTargets.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
       <MemberSignature Language="F#" Value="Assembly = 1" Usage="System.AttributeTargets.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Class" />
       <MemberSignature Language="VB.NET" Value="Class" />
       <MemberSignature Language="F#" Value="Class = 4" Usage="System.AttributeTargets.Class" />
+      <MemberSignature Language="C++ CLI" Value="Class" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Constructor" />
       <MemberSignature Language="VB.NET" Value="Constructor" />
       <MemberSignature Language="F#" Value="Constructor = 32" Usage="System.AttributeTargets.Constructor" />
+      <MemberSignature Language="C++ CLI" Value="Constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Delegate" />
       <MemberSignature Language="VB.NET" Value="Delegate" />
       <MemberSignature Language="F#" Value="Delegate = 4096" Usage="System.AttributeTargets.Delegate" />
+      <MemberSignature Language="C++ CLI" Value="Delegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -225,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Enum" />
       <MemberSignature Language="VB.NET" Value="Enum" />
       <MemberSignature Language="F#" Value="Enum = 16" Usage="System.AttributeTargets.Enum" />
+      <MemberSignature Language="C++ CLI" Value="Enum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Event" />
       <MemberSignature Language="VB.NET" Value="Event" />
       <MemberSignature Language="F#" Value="Event = 512" Usage="System.AttributeTargets.Event" />
+      <MemberSignature Language="C++ CLI" Value="Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Field" />
       <MemberSignature Language="VB.NET" Value="Field" />
       <MemberSignature Language="F#" Value="Field = 256" Usage="System.AttributeTargets.Field" />
+      <MemberSignature Language="C++ CLI" Value="Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.GenericParameter" />
       <MemberSignature Language="VB.NET" Value="GenericParameter" />
       <MemberSignature Language="F#" Value="GenericParameter = 16384" Usage="System.AttributeTargets.GenericParameter" />
+      <MemberSignature Language="C++ CLI" Value="GenericParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -363,6 +373,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Interface" />
       <MemberSignature Language="VB.NET" Value="Interface" />
       <MemberSignature Language="F#" Value="Interface = 1024" Usage="System.AttributeTargets.Interface" />
+      <MemberSignature Language="C++ CLI" Value="Interface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -395,6 +406,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Method" />
       <MemberSignature Language="VB.NET" Value="Method" />
       <MemberSignature Language="F#" Value="Method = 64" Usage="System.AttributeTargets.Method" />
+      <MemberSignature Language="C++ CLI" Value="Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -427,6 +439,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Module" />
       <MemberSignature Language="VB.NET" Value="Module" />
       <MemberSignature Language="F#" Value="Module = 2" Usage="System.AttributeTargets.Module" />
+      <MemberSignature Language="C++ CLI" Value="Module" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Parameter" />
       <MemberSignature Language="VB.NET" Value="Parameter" />
       <MemberSignature Language="F#" Value="Parameter = 2048" Usage="System.AttributeTargets.Parameter" />
+      <MemberSignature Language="C++ CLI" Value="Parameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -501,6 +515,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Property" />
       <MemberSignature Language="VB.NET" Value="Property" />
       <MemberSignature Language="F#" Value="Property = 128" Usage="System.AttributeTargets.Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -533,6 +548,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="ReturnValue" />
       <MemberSignature Language="F#" Value="ReturnValue = 8192" Usage="System.AttributeTargets.ReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="ReturnValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -565,6 +581,7 @@
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Struct" />
       <MemberSignature Language="VB.NET" Value="Struct" />
       <MemberSignature Language="F#" Value="Struct = 8" Usage="System.AttributeTargets.Struct" />
+      <MemberSignature Language="C++ CLI" Value="Struct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

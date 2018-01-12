@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlLinkedNode" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlLinkedNode&#xA;Inherits XmlNode" />
   <TypeSignature Language="F#" Value="type XmlLinkedNode = class&#xA;    inherit XmlNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlLinkedNode abstract : System::Xml::XmlNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlLinkedNode.NextSibling" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NextSibling As XmlNode" />
       <MemberSignature Language="F#" Value="member this.NextSibling : System.Xml.XmlNode" Usage="System.Xml.XmlLinkedNode.NextSibling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ NextSibling { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlLinkedNode.PreviousSibling" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PreviousSibling As XmlNode" />
       <MemberSignature Language="F#" Value="member this.PreviousSibling : System.Xml.XmlNode" Usage="System.Xml.XmlLinkedNode.PreviousSibling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNode ^ PreviousSibling { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyProductAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyProductAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyProductAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyProductAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyProductAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (product As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AssemblyProductAttribute : string -&gt; System.Reflection.AssemblyProductAttribute" Usage="new System.Reflection.AssemblyProductAttribute product" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyProductAttribute(System::String ^ product);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyProductAttribute.Product" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Product As String" />
       <MemberSignature Language="F#" Value="member this.Product : string" Usage="System.Reflection.AssemblyProductAttribute.Product" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Product { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

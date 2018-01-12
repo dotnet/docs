@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteObjectKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class DiscreteObjectKeyFrame&#xA;Inherits ObjectKeyFrame" />
   <TypeSignature Language="F#" Value="type DiscreteObjectKeyFrame = class&#xA;    inherit ObjectKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscreteObjectKeyFrame : System::Windows::Media::Animation::ObjectKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteObjectKeyFrame.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteObjectKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteObjectKeyFrame.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteObjectKeyFrame : obj -&gt; System.Windows.Media.Animation.DiscreteObjectKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteObjectKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteObjectKeyFrame(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteObjectKeyFrame.#ctor(System.Object,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteObjectKeyFrame : obj * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.DiscreteObjectKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteObjectKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteObjectKeyFrame(System::Object ^ value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteObjectKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="discreteObjectKeyFrame.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteObjectKeyFrame.InterpolateValueCore(System.Object,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Object, keyFrameProgress As Double) As Object" />
       <MemberSignature Language="F#" Value="override this.InterpolateValueCore : obj * double -&gt; obj" Usage="discreteObjectKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InterpolateValueCore(System::Object ^ baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

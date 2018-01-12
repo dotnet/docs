@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.GetWinFXPath" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GetWinFXPath&#xA;Inherits Task" />
   <TypeSignature Language="F#" Value="type GetWinFXPath = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetWinFXPath sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.GetWinFXPath.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetWinFXPath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.GetWinFXPath.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="getWinFXPath.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GetWinFXPath.WinFXNativePath" />
       <MemberSignature Language="VB.NET" Value="Public Property WinFXNativePath As String" />
       <MemberSignature Language="F#" Value="member this.WinFXNativePath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GetWinFXPath.WinFXNativePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WinFXNativePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GetWinFXPath.WinFXPath" />
       <MemberSignature Language="VB.NET" Value="Public Property WinFXPath As String" />
       <MemberSignature Language="F#" Value="member this.WinFXPath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GetWinFXPath.WinFXPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WinFXPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.GetWinFXPath.WinFXWowPath" />
       <MemberSignature Language="VB.NET" Value="Public Property WinFXWowPath As String" />
       <MemberSignature Language="F#" Value="member this.WinFXWowPath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.GetWinFXPath.WinFXWowPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WinFXWowPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

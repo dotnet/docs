@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyDescriptorCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyDescriptorCollection&#xA;Implements IDictionary, IList" />
   <TypeSignature Language="F#" Value="type PropertyDescriptorCollection = class&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IDictionary&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyDescriptorCollection : System::Collections::IDictionary, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -80,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.#ctor(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As PropertyDescriptor())" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyDescriptorCollection : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="new System.ComponentModel.PropertyDescriptorCollection properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyDescriptorCollection(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ properties);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.#ctor(System.ComponentModel.PropertyDescriptor[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As PropertyDescriptor(), readOnly As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyDescriptorCollection : System.ComponentModel.PropertyDescriptor[] * bool -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="new System.ComponentModel.PropertyDescriptorCollection (properties, readOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyDescriptorCollection(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ properties, bool readOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Add(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As PropertyDescriptor) As Integer" />
       <MemberSignature Language="F#" Value="member this.Add : System.ComponentModel.PropertyDescriptor -&gt; int" Usage="propertyDescriptorCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ComponentModel::PropertyDescriptor ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="propertyDescriptorCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -216,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Contains(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As PropertyDescriptor) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : System.ComponentModel.PropertyDescriptor -&gt; bool" Usage="propertyDescriptorCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::PropertyDescriptor ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="propertyDescriptorCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ComponentModel.PropertyDescriptorCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -339,6 +347,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyDescriptorCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As PropertyDescriptorCollection " />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.ComponentModel.PropertyDescriptorCollection" Usage="System.ComponentModel.PropertyDescriptorCollection.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::PropertyDescriptorCollection ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -368,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Find(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Find (name As String, ignoreCase As Boolean) As PropertyDescriptor" />
       <MemberSignature Language="F#" Value="abstract member Find : string * bool -&gt; System.ComponentModel.PropertyDescriptor&#xA;override this.Find : string * bool -&gt; System.ComponentModel.PropertyDescriptor" Usage="propertyDescriptorCollection.Find (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptor ^ Find(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -418,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="propertyDescriptorCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -466,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.IndexOf(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As PropertyDescriptor) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.ComponentModel.PropertyDescriptor -&gt; int" Usage="propertyDescriptorCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ComponentModel::PropertyDescriptor ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -500,6 +512,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Insert(System.Int32,System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As PropertyDescriptor)" />
       <MemberSignature Language="F#" Value="member this.Insert : int * System.ComponentModel.PropertyDescriptor -&gt; unit" Usage="propertyDescriptorCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ComponentModel::PropertyDescriptor ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -546,6 +559,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.InternalSort(System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InternalSort (sorter As IComparer)" />
       <MemberSignature Language="F#" Value="member this.InternalSort : System.Collections.IComparer -&gt; unit" Usage="propertyDescriptorCollection.InternalSort sorter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InternalSort(System::Collections::IComparer ^ sorter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -580,6 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.InternalSort(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InternalSort (names As String())" />
       <MemberSignature Language="F#" Value="member this.InternalSort : string[] -&gt; unit" Usage="propertyDescriptorCollection.InternalSort names" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InternalSort(cli::array &lt;System::String ^&gt; ^ names);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -635,6 +650,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As PropertyDescriptor" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.ComponentModel.PropertyDescriptor" Usage="System.ComponentModel.PropertyDescriptorCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ default[int] { System::ComponentModel::PropertyDescriptor ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -688,6 +704,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As PropertyDescriptor" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.ComponentModel.PropertyDescriptor" Usage="System.ComponentModel.PropertyDescriptorCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ default[System::String ^] { System::ComponentModel::PropertyDescriptor ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -740,6 +757,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Remove(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As PropertyDescriptor)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.ComponentModel.PropertyDescriptor -&gt; unit" Usage="propertyDescriptorCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::PropertyDescriptor ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -774,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="propertyDescriptorCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -821,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort () As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member Sort : unit -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.Sort : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptorCollection.Sort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ Sort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -852,6 +872,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Sort(System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort (comparer As IComparer) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member Sort : System.Collections.IComparer -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.Sort : System.Collections.IComparer -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptorCollection.Sort comparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ Sort(System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -887,6 +908,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Sort(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort (names As String()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member Sort : string[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.Sort : string[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptorCollection.Sort names" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ Sort(cli::array &lt;System::String ^&gt; ^ names);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -933,6 +955,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.Sort(System.String[],System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort (names As String(), comparer As IComparer) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member Sort : string[] * System.Collections.IComparer -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.Sort : string[] * System.Collections.IComparer -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptorCollection.Sort (names, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ Sort(cli::array &lt;System::String ^&gt; ^ names, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -981,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1013,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1047,6 +1072,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1079,6 +1105,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (key As Object, value As Object) Implements IDictionary.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Add(System::Object ^ key, System::Object ^ value) = System::Collections::IDictionary::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
@@ -1119,6 +1146,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IDictionary.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Clear() = System::Collections::IDictionary::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -1150,6 +1178,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (key As Object) As Boolean Implements IDictionary.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IDictionary.Contains(System::Object ^ key) = System::Collections::IDictionary::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
@@ -1187,6 +1216,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IDictionaryEnumerator Implements IDictionary.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IDictionaryEnumerator ^ System.Collections.IDictionary.GetEnumerator() = System::Collections::IDictionary::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
@@ -1235,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -1269,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -1303,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1340,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1372,6 +1406,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (key As Object) Implements IDictionary.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Remove(System::Object ^ key) = System::Collections::IDictionary::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
@@ -1408,6 +1443,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -1440,6 +1476,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1472,6 +1509,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -1508,6 +1546,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#Clear" />
       <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -1540,6 +1579,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -1577,6 +1617,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -1613,6 +1654,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -1652,6 +1694,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1686,6 +1729,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1720,6 +1764,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.PropertyDescriptorCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1765,6 +1810,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -1801,6 +1847,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptorCollection.System#Collections#IList#RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridViewAdvancedBorderStyle&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type DataGridViewAdvancedBorderStyle = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewAdvancedBorderStyle sealed : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewAdvancedBorderStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.All" />
       <MemberSignature Language="VB.NET" Value="Public Property All As DataGridViewAdvancedCellBorderStyle" />
       <MemberSignature Language="F#" Value="member this.All : System.Windows.Forms.DataGridViewAdvancedCellBorderStyle with get, set" Usage="System.Windows.Forms.DataGridViewAdvancedBorderStyle.All" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAdvancedCellBorderStyle All { System::Windows::Forms::DataGridViewAdvancedCellBorderStyle get(); void set(System::Windows::Forms::DataGridViewAdvancedCellBorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom" />
       <MemberSignature Language="VB.NET" Value="Public Property Bottom As DataGridViewAdvancedCellBorderStyle" />
       <MemberSignature Language="F#" Value="member this.Bottom : System.Windows.Forms.DataGridViewAdvancedCellBorderStyle with get, set" Usage="System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAdvancedCellBorderStyle Bottom { System::Windows::Forms::DataGridViewAdvancedCellBorderStyle get(); void set(System::Windows::Forms::DataGridViewAdvancedCellBorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridViewAdvancedBorderStyle.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridViewAdvancedBorderStyle.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As DataGridViewAdvancedCellBorderStyle" />
       <MemberSignature Language="F#" Value="member this.Left : System.Windows.Forms.DataGridViewAdvancedCellBorderStyle with get, set" Usage="System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAdvancedCellBorderStyle Left { System::Windows::Forms::DataGridViewAdvancedCellBorderStyle get(); void set(System::Windows::Forms::DataGridViewAdvancedCellBorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right" />
       <MemberSignature Language="VB.NET" Value="Public Property Right As DataGridViewAdvancedCellBorderStyle" />
       <MemberSignature Language="F#" Value="member this.Right : System.Windows.Forms.DataGridViewAdvancedCellBorderStyle with get, set" Usage="System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAdvancedCellBorderStyle Right { System::Windows::Forms::DataGridViewAdvancedCellBorderStyle get(); void set(System::Windows::Forms::DataGridViewAdvancedCellBorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As DataGridViewAdvancedCellBorderStyle" />
       <MemberSignature Language="F#" Value="member this.Top : System.Windows.Forms.DataGridViewAdvancedCellBorderStyle with get, set" Usage="System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAdvancedCellBorderStyle Top { System::Windows::Forms::DataGridViewAdvancedCellBorderStyle get(); void set(System::Windows::Forms::DataGridViewAdvancedCellBorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -322,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewAdvancedBorderStyle.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

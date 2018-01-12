@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class IndexedProtocolEndpointDictionary&#xA;Inherits SortedList(Of Integer, IndexedProtocolEndpoint)" />
   <TypeSignature Language="F#" Value="type IndexedProtocolEndpointDictionary = class&#xA;    inherit SortedList&lt;int, IndexedProtocolEndpoint&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndexedProtocolEndpointDictionary : System::Collections::Generic::SortedList&lt;int, System::IdentityModel::Metadata::IndexedProtocolEndpoint ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexedProtocolEndpointDictionary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -43,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Default As IndexedProtocolEndpoint" />
       <MemberSignature Language="F#" Value="member this.Default : System.IdentityModel.Metadata.IndexedProtocolEndpoint" Usage="System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ Default { System::IdentityModel::Metadata::IndexedProtocolEndpoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

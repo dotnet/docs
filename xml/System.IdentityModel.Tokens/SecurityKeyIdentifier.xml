@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityKeyIdentifier&#xA;Implements IEnumerable(Of SecurityKeyIdentifierClause)" />
   <TypeSignature Language="F#" Value="type SecurityKeyIdentifier = class&#xA;    interface seq&lt;SecurityKeyIdentifierClause&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityKeyIdentifier : System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityKeyIdentifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray identifiers As SecurityKeyIdentifierClause())" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.SecurityKeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="new System.IdentityModel.Tokens.SecurityKeyIdentifier identifiers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityKeyIdentifier(... cli::array &lt;System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^&gt; ^ identifiers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.Add(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As SecurityKeyIdentifierClause)" />
       <MemberSignature Language="F#" Value="member this.Add : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="securityKeyIdentifier.Add item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.CanCreateKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanCreateKey As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanCreateKey : bool" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifier.CanCreateKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifier.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.CreateKey" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateKey () As SecurityKey" />
       <MemberSignature Language="F#" Value="member this.CreateKey : unit -&gt; System.IdentityModel.Tokens.SecurityKey" Usage="securityKeyIdentifier.CreateKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityKey ^ CreateKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.Find``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Find(Of TClause As SecurityKeyIdentifierClause) () As TClause" />
       <MemberSignature Language="F#" Value="member this.Find : unit -&gt; 'Clause (requires 'Clause :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="securityKeyIdentifier.Find " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TClause&gt;&#xA; where TClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause TClause Find();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of SecurityKeyIdentifierClause)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.IdentityModel.Tokens.SecurityKeyIdentifierClause&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.IdentityModel.Tokens.SecurityKeyIdentifierClause&gt;" Usage="securityKeyIdentifier.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifier.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -267,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKeyIdentifier.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(i As Integer) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="System.IdentityModel.Tokens.SecurityKeyIdentifier.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ default[int] { System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ get(int i); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -297,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.MakeReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
       <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="securityKeyIdentifier.MakeReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -323,6 +335,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -347,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="securityKeyIdentifier.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -375,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.TryFind``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFind(Of TClause As SecurityKeyIdentifierClause) (ByRef result As TClause) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryFind :  -&gt; bool (requires 'Clause :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="securityKeyIdentifier.TryFind result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TClause&gt;&#xA; where TClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause bool TryFind([Runtime::InteropServices::Out] TClause % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

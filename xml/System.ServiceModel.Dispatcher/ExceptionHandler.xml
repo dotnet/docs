@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ExceptionHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExceptionHandler" />
   <TypeSignature Language="F#" Value="type ExceptionHandler = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExceptionHandler abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ExceptionHandler.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExceptionHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlwaysHandle As ExceptionHandler" />
       <MemberSignature Language="F#" Value="member this.AlwaysHandle : System.ServiceModel.Dispatcher.ExceptionHandler" Usage="System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Dispatcher::ExceptionHandler ^ AlwaysHandle { System::ServiceModel::Dispatcher::ExceptionHandler ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AsynchronousThreadExceptionHandler As ExceptionHandler" />
       <MemberSignature Language="F#" Value="member this.AsynchronousThreadExceptionHandler : System.ServiceModel.Dispatcher.ExceptionHandler with get, set" Usage="System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Dispatcher::ExceptionHandler ^ AsynchronousThreadExceptionHandler { System::ServiceModel::Dispatcher::ExceptionHandler ^ get(); void set(System::ServiceModel::Dispatcher::ExceptionHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandleException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException(System.Exception)" />
       <MemberSignature Language="F#" Value="abstract member HandleException : Exception -&gt; bool" Usage="exceptionHandler.HandleException exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool HandleException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property TransportExceptionHandler As ExceptionHandler" />
       <MemberSignature Language="F#" Value="member this.TransportExceptionHandler : System.ServiceModel.Dispatcher.ExceptionHandler with get, set" Usage="System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Dispatcher::ExceptionHandler ^ TransportExceptionHandler { System::ServiceModel::Dispatcher::ExceptionHandler ^ get(); void set(System::ServiceModel::Dispatcher::ExceptionHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

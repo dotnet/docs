@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.UriSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UriSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type UriSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UriSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.UriSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.UriSection.Idn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Idn As IdnElement" />
       <MemberSignature Language="F#" Value="member this.Idn : System.Configuration.IdnElement" Usage="System.Configuration.UriSection.Idn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::IdnElement ^ Idn { System::Configuration::IdnElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.UriSection.IriParsing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IriParsing As IriParsingElement" />
       <MemberSignature Language="F#" Value="member this.IriParsing : System.Configuration.IriParsingElement" Usage="System.Configuration.UriSection.IriParsing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::IriParsingElement ^ IriParsing { System::Configuration::IriParsingElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.UriSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.UriSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.UriSection.SchemeSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemeSettings As SchemeSettingElementCollection" />
       <MemberSignature Language="F#" Value="member this.SchemeSettings : System.Configuration.SchemeSettingElementCollection" Usage="System.Configuration.UriSection.SchemeSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SchemeSettingElementCollection ^ SchemeSettings { System::Configuration::SchemeSettingElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

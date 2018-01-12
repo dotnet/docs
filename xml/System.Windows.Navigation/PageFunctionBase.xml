@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.PageFunctionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageFunctionBase&#xA;Inherits Page" />
   <TypeSignature Language="F#" Value="type PageFunctionBase = class&#xA;    inherit Page" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageFunctionBase abstract : System::Windows::Controls::Page" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.PageFunctionBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PageFunctionBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.PageFunctionBase.RemoveFromJournal" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoveFromJournal As Boolean" />
       <MemberSignature Language="F#" Value="member this.RemoveFromJournal : bool with get, set" Usage="System.Windows.Navigation.PageFunctionBase.RemoveFromJournal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RemoveFromJournal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.PageFunctionBase.Start" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Start ()" />
       <MemberSignature Language="F#" Value="abstract member Start : unit -&gt; unit&#xA;override this.Start : unit -&gt; unit" Usage="pageFunctionBase.Start " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

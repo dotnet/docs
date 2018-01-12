@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowValidationFailedException&#xA;Inherits Exception" />
   <TypeSignature Language="F#" Value="type WorkflowValidationFailedException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowValidationFailedException sealed : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowValidationFailedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException : string -&gt; System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException" Usage="new System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowValidationFailedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException : string * Exception -&gt; System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException" Usage="new System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowValidationFailedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.#ctor(System.String,System.Workflow.ComponentModel.Compiler.ValidationErrorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errors As ValidationErrorCollection)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException : string * System.Workflow.ComponentModel.Compiler.ValidationErrorCollection -&gt; System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException" Usage="new System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException (message, errors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowValidationFailedException(System::String ^ message, System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ errors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ValidationErrorCollection" />
       <MemberSignature Language="F#" Value="member this.Errors : System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Errors { System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -148,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="workflowValidationFailedException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

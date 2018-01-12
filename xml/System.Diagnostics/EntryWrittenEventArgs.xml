@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EntryWrittenEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EntryWrittenEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type EntryWrittenEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntryWrittenEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EntryWrittenEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntryWrittenEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EntryWrittenEventArgs.#ctor(System.Diagnostics.EventLogEntry)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (entry As EventLogEntry)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.EntryWrittenEventArgs : System.Diagnostics.EventLogEntry -&gt; System.Diagnostics.EntryWrittenEventArgs" Usage="new System.Diagnostics.EntryWrittenEventArgs entry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntryWrittenEventArgs(System::Diagnostics::EventLogEntry ^ entry);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EntryWrittenEventArgs.Entry" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entry As EventLogEntry" />
       <MemberSignature Language="F#" Value="member this.Entry : System.Diagnostics.EventLogEntry" Usage="System.Diagnostics.EntryWrittenEventArgs.Entry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogEntry ^ Entry { System::Diagnostics::EventLogEntry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

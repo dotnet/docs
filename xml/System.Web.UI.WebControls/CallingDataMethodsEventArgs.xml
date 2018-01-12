@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CallingDataMethodsEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CallingDataMethodsEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type CallingDataMethodsEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallingDataMethodsEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CallingDataMethodsEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CallingDataMethodsEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMethodsObject As Object" />
       <MemberSignature Language="F#" Value="member this.DataMethodsObject : obj with get, set" Usage="System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataMethodsObject { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMethodsType As Type" />
       <MemberSignature Language="F#" Value="member this.DataMethodsType : Type with get, set" Usage="System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DataMethodsType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListCommand" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectListCommand" />
   <TypeSignature Language="F#" Value="type ObjectListCommand = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectListCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommand.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectListCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommand.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, text As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.ObjectListCommand : string * string -&gt; System.Web.UI.MobileControls.ObjectListCommand" Usage="new System.Web.UI.MobileControls.ObjectListCommand (name, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectListCommand(System::String ^ name, System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListCommand.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.MobileControls.ObjectListCommand.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListCommand.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.MobileControls.ObjectListCommand.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonTabHeaderItemsControl&#xA;Inherits ItemsControl" />
   <TypeSignature Language="F#" Value="type RibbonTabHeaderItemsControl = class&#xA;    inherit ItemsControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonTabHeaderItemsControl : System::Windows::Controls::ItemsControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTabHeaderItemsControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonTabHeaderItemsControl.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.HandlesScrolling" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
       <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.HandlesScrolling" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonTabHeaderItemsControl.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonTabHeaderItemsControl.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonTabHeaderItemsControl.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -154,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonTabHeaderItemsControl.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

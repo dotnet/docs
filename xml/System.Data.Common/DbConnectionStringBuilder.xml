@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class DbConnectionStringBuilder&#xA;Implements ICustomTypeDescriptor, IDictionary" />
   <TypeSignature Language="F#" Value="type DbConnectionStringBuilder = class&#xA;    interface IDictionary&#xA;    interface ICustomTypeDescriptor&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbConnectionStringBuilder : System::Collections::IDictionary, System::ComponentModel::ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -98,6 +99,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DbConnectionStringBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -125,6 +127,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useOdbcRules As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Data.Common.DbConnectionStringBuilder : bool -&gt; System.Data.Common.DbConnectionStringBuilder" Usage="new System.Data.Common.DbConnectionStringBuilder useOdbcRules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DbConnectionStringBuilder(bool useOdbcRules);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -162,6 +165,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (keyword As String, value As Object)" />
       <MemberSignature Language="F#" Value="member this.Add : string * obj -&gt; unit" Usage="dbConnectionStringBuilder.Add (keyword, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ keyword, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -234,6 +238,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AppendKeyValuePair (builder As StringBuilder, keyword As String, value As String)" />
       <MemberSignature Language="F#" Value="static member AppendKeyValuePair : System.Text.StringBuilder * string * string -&gt; unit" Usage="System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair (builder, keyword, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppendKeyValuePair(System::Text::StringBuilder ^ builder, System::String ^ keyword, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -286,6 +291,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AppendKeyValuePair (builder As StringBuilder, keyword As String, value As String, useOdbcRules As Boolean)" />
       <MemberSignature Language="F#" Value="static member AppendKeyValuePair : System.Text.StringBuilder * string * string * bool -&gt; unit" Usage="System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair (builder, keyword, value, useOdbcRules)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AppendKeyValuePair(System::Text::StringBuilder ^ builder, System::String ^ keyword, System::String ^ value, bool useOdbcRules);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -342,6 +348,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.BrowsableConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowsableConnectionString As Boolean" />
       <MemberSignature Language="F#" Value="member this.BrowsableConnectionString : bool with get, set" Usage="System.Data.Common.DbConnectionStringBuilder.BrowsableConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowsableConnectionString { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -393,6 +400,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="dbConnectionStringBuilder.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -434,6 +442,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.ClearPropertyDescriptors" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub ClearPropertyDescriptors ()" />
       <MemberSignature Language="F#" Value="member this.ClearPropertyDescriptors : unit -&gt; unit" Usage="dbConnectionStringBuilder.ClearPropertyDescriptors " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void ClearPropertyDescriptors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -470,6 +479,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.Common.DbConnectionStringBuilder.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -540,6 +550,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (keyword As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="dbConnectionStringBuilder.ContainsKey keyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -595,6 +606,7 @@ The collection contains the key "Data Source".
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.Common.DbConnectionStringBuilder.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -643,6 +655,7 @@ The collection contains the key "Data Source".
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EquivalentTo (connectionStringBuilder As DbConnectionStringBuilder) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member EquivalentTo : System.Data.Common.DbConnectionStringBuilder -&gt; bool&#xA;override this.EquivalentTo : System.Data.Common.DbConnectionStringBuilder -&gt; bool" Usage="dbConnectionStringBuilder.EquivalentTo connectionStringBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EquivalentTo(System::Data::Common::DbConnectionStringBuilder ^ connectionStringBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -703,6 +716,7 @@ builder2.EquivalentTo(builder3) = False
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.GetProperties(System.Collections.Hashtable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GetProperties (propertyDescriptors As Hashtable)" />
       <MemberSignature Language="F#" Value="abstract member GetProperties : System.Collections.Hashtable -&gt; unit&#xA;override this.GetProperties : System.Collections.Hashtable -&gt; unit" Usage="dbConnectionStringBuilder.GetProperties propertyDescriptors" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GetProperties(System::Collections::Hashtable ^ propertyDescriptors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -735,6 +749,7 @@ builder2.EquivalentTo(builder3) = False
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Data.Common.DbConnectionStringBuilder.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -782,6 +797,7 @@ builder2.EquivalentTo(builder3) = False
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Common.DbConnectionStringBuilder.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -829,6 +845,7 @@ builder2.EquivalentTo(builder3) = False
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(keyword As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.Common.DbConnectionStringBuilder.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ keyword); void set(System::String ^ keyword, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -892,6 +909,7 @@ builder2.EquivalentTo(builder3) = False
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Data.Common.DbConnectionStringBuilder.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -947,6 +965,7 @@ builder2.EquivalentTo(builder3) = False
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Remove (keyword As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; bool&#xA;override this.Remove : string -&gt; bool" Usage="dbConnectionStringBuilder.Remove keyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1009,6 +1028,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.ShouldSerialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerialize (keyword As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShouldSerialize : string -&gt; bool&#xA;override this.ShouldSerialize : string -&gt; bool" Usage="dbConnectionStringBuilder.ShouldSerialize keyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerialize(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1049,6 +1069,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1096,6 +1117,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
       <MemberSignature Language="F#" Usage="System.Data.Common.DbConnectionStringBuilder.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1139,6 +1161,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
       <MemberSignature Language="F#" Usage="System.Data.Common.DbConnectionStringBuilder.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1180,6 +1203,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object keyword, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Add (keyword As Object, value As Object) Implements IDictionary.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Add(System::Object ^ keyword, System::Object ^ value) = System::Collections::IDictionary::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
@@ -1226,6 +1250,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (keyword As Object) As Boolean Implements IDictionary.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IDictionary.Contains(System::Object ^ keyword) = System::Collections::IDictionary::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
@@ -1272,6 +1297,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IDictionaryEnumerator Implements IDictionary.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IDictionaryEnumerator ^ System.Collections.IDictionary.GetEnumerator() = System::Collections::IDictionary::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
@@ -1315,6 +1341,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
       <MemberSignature Language="F#" Usage="System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -1338,6 +1365,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
       <MemberSignature Language="F#" Usage="System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -1361,6 +1389,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(keyword As Object) As Object Implements IDictionary.Item" />
       <MemberSignature Language="F#" Usage="System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ keyword); void set(System::Object ^ keyword, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1406,6 +1435,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (keyword As Object) Implements IDictionary.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Remove(System::Object ^ keyword) = System::Collections::IDictionary::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
@@ -1450,6 +1480,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1492,6 +1523,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetAttributes" />
       <MemberSignature Language="VB.NET" Value="Function GetAttributes () As AttributeCollection Implements ICustomTypeDescriptor.GetAttributes" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::AttributeCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetAttributes() = System::ComponentModel::ICustomTypeDescriptor::GetAttributes;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes</InterfaceMember>
@@ -1533,6 +1565,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetClassName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetClassName" />
       <MemberSignature Language="VB.NET" Value="Function GetClassName () As String Implements ICustomTypeDescriptor.GetClassName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetClassName() = System::ComponentModel::ICustomTypeDescriptor::GetClassName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetClassName</InterfaceMember>
@@ -1574,6 +1607,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetComponentName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetComponentName" />
       <MemberSignature Language="VB.NET" Value="Function GetComponentName () As String Implements ICustomTypeDescriptor.GetComponentName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetComponentName() = System::ComponentModel::ICustomTypeDescriptor::GetComponentName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName</InterfaceMember>
@@ -1615,6 +1649,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetConverter" />
       <MemberSignature Language="VB.NET" Value="Function GetConverter () As TypeConverter Implements ICustomTypeDescriptor.GetConverter" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::TypeConverter ^ System.ComponentModel.ICustomTypeDescriptor.GetConverter() = System::ComponentModel::ICustomTypeDescriptor::GetConverter;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetConverter</InterfaceMember>
@@ -1656,6 +1691,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent" />
       <MemberSignature Language="VB.NET" Value="Function GetDefaultEvent () As EventDescriptor Implements ICustomTypeDescriptor.GetDefaultEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent</InterfaceMember>
@@ -1697,6 +1733,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="Function GetDefaultProperty () As PropertyDescriptor Implements ICustomTypeDescriptor.GetDefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultProperty;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty</InterfaceMember>
@@ -1738,6 +1775,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Function GetEditor (editorBaseType As Type) As Object Implements ICustomTypeDescriptor.GetEditor" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type ^ editorBaseType) = System::ComponentModel::ICustomTypeDescriptor::GetEditor;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)</InterfaceMember>
@@ -1792,6 +1830,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents" />
       <MemberSignature Language="VB.NET" Value="Function GetEvents () As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents() = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents</InterfaceMember>
@@ -1833,6 +1872,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Function GetEvents (attributes As Attribute()) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])</InterfaceMember>
@@ -1887,6 +1927,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetProperties" />
       <MemberSignature Language="VB.NET" Value="Function GetProperties () As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties() = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties</InterfaceMember>
@@ -1928,6 +1969,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])</InterfaceMember>
@@ -1972,6 +2014,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(class System.ComponentModel.PropertyDescriptor pd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function GetPropertyOwner (pd As PropertyDescriptor) As Object Implements ICustomTypeDescriptor.GetPropertyOwner" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd) = System::ComponentModel::ICustomTypeDescriptor::GetPropertyOwner;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
@@ -2017,6 +2060,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dbConnectionStringBuilder.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -2048,6 +2092,7 @@ jet oledb:system database=system.mdw
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool&#xA;override this.TryGetValue : string *  -&gt; bool" Usage="dbConnectionStringBuilder.TryGetValue (keyword, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ keyword, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -2111,6 +2156,7 @@ Unable to retrieve value for null key.
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnectionStringBuilder.Values" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Values As ICollection" />
       <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Data.Common.DbConnectionStringBuilder.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>

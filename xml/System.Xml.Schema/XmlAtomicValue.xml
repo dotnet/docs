@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlAtomicValue" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlAtomicValue&#xA;Inherits XPathItem&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type XmlAtomicValue = class&#xA;    inherit XPathItem&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlAtomicValue sealed : System::Xml::XPath::XPathItem, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlAtomicValue.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As XmlAtomicValue" />
       <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Xml.Schema.XmlAtomicValue" Usage="xmlAtomicValue.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlAtomicValue ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.IsNode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsNode As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNode : bool" Usage="System.Xml.Schema.XmlAtomicValue.IsNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsNode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlAtomicValue.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlAtomicValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xmlAtomicValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -172,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.TypedValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypedValue As Object" />
       <MemberSignature Language="F#" Value="member this.TypedValue : obj" Usage="System.Xml.Schema.XmlAtomicValue.TypedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypedValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.Schema.XmlAtomicValue.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ValueAs(class System.Type type, class System.Xml.IXmlNamespaceResolver nsResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlAtomicValue.ValueAs(System.Type,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="F#" Value="override this.ValueAs : Type * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="xmlAtomicValue.ValueAs (type, nsResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ValueAs(Type ^ type, System::Xml::IXmlNamespaceResolver ^ nsResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -288,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.ValueAsBoolean" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueAsBoolean As Boolean" />
       <MemberSignature Language="F#" Value="member this.ValueAsBoolean : bool" Usage="System.Xml.Schema.XmlAtomicValue.ValueAsBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ValueAsBoolean { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -328,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.ValueAsDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueAsDateTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.ValueAsDateTime : DateTime" Usage="System.Xml.Schema.XmlAtomicValue.ValueAsDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValueAsDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.ValueAsDouble" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueAsDouble As Double" />
       <MemberSignature Language="F#" Value="member this.ValueAsDouble : double" Usage="System.Xml.Schema.XmlAtomicValue.ValueAsDouble" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double ValueAsDouble { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -409,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.ValueAsInt" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueAsInt As Integer" />
       <MemberSignature Language="F#" Value="member this.ValueAsInt : int" Usage="System.Xml.Schema.XmlAtomicValue.ValueAsInt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ValueAsInt { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -450,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.ValueAsLong" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueAsLong As Long" />
       <MemberSignature Language="F#" Value="member this.ValueAsLong : int64" Usage="System.Xml.Schema.XmlAtomicValue.ValueAsLong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ValueAsLong { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -491,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.ValueType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueType As Type" />
       <MemberSignature Language="F#" Value="member this.ValueType : Type" Usage="System.Xml.Schema.XmlAtomicValue.ValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -531,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlAtomicValue.XmlType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property XmlType As XmlSchemaType" />
       <MemberSignature Language="F#" Value="member this.XmlType : System.Xml.Schema.XmlSchemaType" Usage="System.Xml.Schema.XmlAtomicValue.XmlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Schema::XmlSchemaType ^ XmlType { System::Xml::Schema::XmlSchemaType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

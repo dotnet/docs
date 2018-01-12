@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.ColorBlend" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorBlend" />
   <TypeSignature Language="F#" Value="type ColorBlend = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColorBlend sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.ColorBlend.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorBlend();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.ColorBlend.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (count As Integer)" />
       <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.ColorBlend : int -&gt; System.Drawing.Drawing2D.ColorBlend" Usage="new System.Drawing.Drawing2D.ColorBlend count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorBlend(int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.ColorBlend.Colors" />
       <MemberSignature Language="VB.NET" Value="Public Property Colors As Color()" />
       <MemberSignature Language="F#" Value="member this.Colors : System.Drawing.Color[] with get, set" Usage="System.Drawing.Drawing2D.ColorBlend.Colors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Color&gt; ^ Colors { cli::array &lt;System::Drawing::Color&gt; ^ get(); void set(cli::array &lt;System::Drawing::Color&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.ColorBlend.Positions" />
       <MemberSignature Language="VB.NET" Value="Public Property Positions As Single()" />
       <MemberSignature Language="F#" Value="member this.Positions : single[] with get, set" Usage="System.Drawing.Drawing2D.ColorBlend.Positions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ Positions { cli::array &lt;float&gt; ^ get(); void set(cli::array &lt;float&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

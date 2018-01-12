@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.WaitForChangedResult" />
   <TypeSignature Language="VB.NET" Value="Public Structure WaitForChangedResult" />
   <TypeSignature Language="F#" Value="type WaitForChangedResult = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class WaitForChangedResult" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.WaitForChangedResult.ChangeType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChangeType As WatcherChangeTypes" />
       <MemberSignature Language="F#" Value="member this.ChangeType : System.IO.WatcherChangeTypes with get, set" Usage="System.IO.WaitForChangedResult.ChangeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::WatcherChangeTypes ChangeType { System::IO::WatcherChangeTypes get(); void set(System::IO::WatcherChangeTypes value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.WaitForChangedResult.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.IO.WaitForChangedResult.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.WaitForChangedResult.OldName" />
       <MemberSignature Language="VB.NET" Value="Public Property OldName As String" />
       <MemberSignature Language="F#" Value="member this.OldName : string with get, set" Usage="System.IO.WaitForChangedResult.OldName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.WaitForChangedResult.TimedOut" />
       <MemberSignature Language="VB.NET" Value="Public Property TimedOut As Boolean" />
       <MemberSignature Language="F#" Value="member this.TimedOut : bool with get, set" Usage="System.IO.WaitForChangedResult.TimedOut" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TimedOut { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>

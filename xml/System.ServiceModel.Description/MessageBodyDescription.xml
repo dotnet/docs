@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessageBodyDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageBodyDescription" />
   <TypeSignature Language="F#" Value="type MessageBodyDescription = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageBodyDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessageBodyDescription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageBodyDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageBodyDescription.Parts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parts As MessagePartDescriptionCollection" />
       <MemberSignature Language="F#" Value="member this.Parts : System.ServiceModel.Description.MessagePartDescriptionCollection" Usage="System.ServiceModel.Description.MessageBodyDescription.Parts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MessagePartDescriptionCollection ^ Parts { System::ServiceModel::Description::MessagePartDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageBodyDescription.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnValue As MessagePartDescription" />
       <MemberSignature Language="F#" Value="member this.ReturnValue : System.ServiceModel.Description.MessagePartDescription with get, set" Usage="System.ServiceModel.Description.MessageBodyDescription.ReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::MessagePartDescription ^ ReturnValue { System::ServiceModel::Description::MessagePartDescription ^ get(); void set(System::ServiceModel::Description::MessagePartDescription ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageBodyDescription.WrapperName" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapperName As String" />
       <MemberSignature Language="F#" Value="member this.WrapperName : string with get, set" Usage="System.ServiceModel.Description.MessageBodyDescription.WrapperName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MessageBodyDescription.WrapperNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapperNamespace As String" />
       <MemberSignature Language="F#" Value="member this.WrapperNamespace : string with get, set" Usage="System.ServiceModel.Description.MessageBodyDescription.WrapperNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

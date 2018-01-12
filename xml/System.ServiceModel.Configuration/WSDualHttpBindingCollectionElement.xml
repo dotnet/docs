@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSDualHttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WSDualHttpBinding, WSDualHttpBindingElement)" />
   <TypeSignature Language="F#" Value="type WSDualHttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WSDualHttpBinding, WSDualHttpBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSDualHttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WSDualHttpBinding ^, System::ServiceModel::Configuration::WSDualHttpBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSDualHttpBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

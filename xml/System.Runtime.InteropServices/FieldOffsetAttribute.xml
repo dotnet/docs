@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.FieldOffsetAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FieldOffsetAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type FieldOffsetAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FieldOffsetAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.FieldOffsetAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (offset As Integer)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.FieldOffsetAttribute : int -&gt; System.Runtime.InteropServices.FieldOffsetAttribute" Usage="new System.Runtime.InteropServices.FieldOffsetAttribute offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldOffsetAttribute(int offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.FieldOffsetAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
       <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Runtime.InteropServices.FieldOffsetAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

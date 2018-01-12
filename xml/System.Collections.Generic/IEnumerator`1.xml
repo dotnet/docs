@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IEnumerator`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumerator(Of Out T)&#xA;Implements IDisposable, IEnumerator" />
   <TypeSignature Language="F#" Value="type IEnumerator&lt;'T&gt; = interface&#xA;    interface IDisposable&#xA;    interface IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IEnumerator : IDisposable, System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

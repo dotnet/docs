@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FindCriteriaElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type FindCriteriaElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindCriteriaElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindCriteriaElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ContractTypeNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractTypeNames As ContractTypeNameElementCollection" />
       <MemberSignature Language="F#" Value="member this.ContractTypeNames : System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ContractTypeNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::Configuration::ContractTypeNameElementCollection ^ ContractTypeNames { System::ServiceModel::Discovery::Configuration::ContractTypeNameElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.Duration : TimeSpan with get, set" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As XmlElementElementCollection" />
       <MemberSignature Language="F#" Value="member this.Extensions : System.ServiceModel.Configuration.XmlElementElementCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlElementElementCollection ^ Extensions { System::ServiceModel::Configuration::XmlElementElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.MaxResults" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResults As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxResults : int with get, set" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.MaxResults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResults { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -155,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ScopeMatchBy" />
       <MemberSignature Language="VB.NET" Value="Public Property ScopeMatchBy As Uri" />
       <MemberSignature Language="F#" Value="member this.ScopeMatchBy : Uri with get, set" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ScopeMatchBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ScopeMatchBy { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Scopes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scopes As ScopeElementCollection" />
       <MemberSignature Language="F#" Value="member this.Scopes : System.ServiceModel.Discovery.Configuration.ScopeElementCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Scopes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::Configuration::ScopeElementCollection ^ Scopes { System::ServiceModel::Discovery::Configuration::ScopeElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

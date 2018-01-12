@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ShowPropertyInOutlineViewAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type ShowPropertyInOutlineViewAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ShowPropertyInOutlineViewAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ShowPropertyInOutlineViewAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.ChildNodePrefix" />
       <MemberSignature Language="VB.NET" Value="Public Property ChildNodePrefix As String" />
       <MemberSignature Language="F#" Value="member this.ChildNodePrefix : string with get, set" Usage="System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.ChildNodePrefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChildNodePrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.CurrentPropertyVisible" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentPropertyVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.CurrentPropertyVisible : bool with get, set" Usage="System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.CurrentPropertyVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CurrentPropertyVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -85,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.DuplicatedChildNodesVisible" />
       <MemberSignature Language="VB.NET" Value="Public Property DuplicatedChildNodesVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.DuplicatedChildNodesVisible : bool with get, set" Usage="System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAttribute.DuplicatedChildNodesVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DuplicatedChildNodesVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

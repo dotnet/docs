@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleConnection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleConnection&#xA;Inherits DbConnection&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type OracleConnection = class&#xA;    inherit DbConnection&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OracleConnection sealed : System::Data::Common::DbConnection, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleConnection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleConnection : string -&gt; System.Data.OracleClient.OracleConnection" Usage="new System.Data.OracleClient.OracleConnection connectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleConnection(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="F#" Value="override this.BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="oracleConnection.BeginDbTransaction isolationLevel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As OracleTransaction" />
       <MemberSignature Language="F#" Value="override this.BeginTransaction : unit -&gt; System.Data.OracleClient.OracleTransaction" Usage="oracleConnection.BeginTransaction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (il As IsolationLevel) As OracleTransaction" />
       <MemberSignature Language="F#" Value="override this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.OracleClient.OracleTransaction" Usage="oracleConnection.BeginTransaction il" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleTransaction ^ BeginTransaction(System::Data::IsolationLevel il);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -249,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ChangeDatabase (value As String)" />
       <MemberSignature Language="F#" Value="override this.ChangeDatabase : string -&gt; unit" Usage="oracleConnection.ChangeDatabase value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ChangeDatabase(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -285,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.ClearAllPools" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearAllPools ()" />
       <MemberSignature Language="F#" Value="static member ClearAllPools : unit -&gt; unit" Usage="System.Data.OracleClient.OracleConnection.ClearAllPools " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearAllPools();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -312,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.ClearPool(System.Data.OracleClient.OracleConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearPool (connection As OracleConnection)" />
       <MemberSignature Language="F#" Value="static member ClearPool : System.Data.OracleClient.OracleConnection -&gt; unit" Usage="System.Data.OracleClient.OracleConnection.ClearPool connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearPool(System::Data::OracleClient::OracleConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -342,6 +351,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="oracleConnection.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -377,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.OracleClient.OracleConnection.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -480,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConnectionTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int" Usage="System.Data.OracleClient.OracleConnection.ConnectionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ConnectionTimeout { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -519,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As OracleCommand" />
       <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.OracleClient.OracleCommand" Usage="oracleConnection.CreateCommand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -540,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.CreateDbCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommand () As DbCommand" />
       <MemberSignature Language="F#" Value="override this.CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="oracleConnection.CreateDbCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommand ^ CreateDbCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -561,6 +575,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Database As String" />
       <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.OracleClient.OracleConnection.Database" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -600,6 +615,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataSource As String" />
       <MemberSignature Language="F#" Value="member this.DataSource : string" Usage="System.Data.OracleClient.OracleConnection.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -639,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="oracleConnection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnlistDistributedTransaction (distributedTransaction As ITransaction)" />
       <MemberSignature Language="F#" Value="member this.EnlistDistributedTransaction : System.EnterpriseServices.ITransaction -&gt; unit" Usage="oracleConnection.EnlistDistributedTransaction distributedTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnlistDistributedTransaction(System::EnterpriseServices::ITransaction ^ distributedTransaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -697,6 +715,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.EnlistTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="F#" Value="override this.EnlistTransaction : System.Transactions.Transaction -&gt; unit" Usage="oracleConnection.EnlistTransaction transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -738,6 +757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema () As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchema : unit -&gt; System.Data.DataTable" Usage="oracleConnection.GetSchema " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -759,6 +779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.GetSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String) As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchema : string -&gt; System.Data.DataTable" Usage="oracleConnection.GetSchema collectionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -802,6 +823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.GetSchema(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchema : string * string[] -&gt; System.Data.DataTable" Usage="oracleConnection.GetSchema (collectionName, restrictionValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -851,6 +873,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.OracleClient.OracleConnection.InfoMessage" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event InfoMessage As OracleInfoMessageEventHandler " />
       <MemberSignature Language="F#" Value="member this.InfoMessage : System.Data.OracleClient.OracleInfoMessageEventHandler " Usage="member this.InfoMessage : System.Data.OracleClient.OracleInfoMessageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::OracleClient::OracleInfoMessageEventHandler ^ InfoMessage;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -879,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Open ()" />
       <MemberSignature Language="F#" Value="override this.Open : unit -&gt; unit" Usage="oracleConnection.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -911,6 +935,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.ServerVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ServerVersion As String" />
       <MemberSignature Language="F#" Value="member this.ServerVersion : string" Usage="System.Data.OracleClient.OracleConnection.ServerVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ServerVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -955,6 +980,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As ConnectionState" />
       <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.OracleClient.OracleConnection.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1001,6 +1027,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>

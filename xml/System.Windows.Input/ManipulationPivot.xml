@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationPivot" />
   <TypeSignature Language="VB.NET" Value="Public Class ManipulationPivot" />
   <TypeSignature Language="F#" Value="type ManipulationPivot = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManipulationPivot" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationPivot.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManipulationPivot();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationPivot.#ctor(System.Windows.Point,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (center As Point, radius As Double)" />
       <MemberSignature Language="F#" Value="new System.Windows.Input.ManipulationPivot : System.Windows.Point * double -&gt; System.Windows.Input.ManipulationPivot" Usage="new System.Windows.Input.ManipulationPivot (center, radius)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManipulationPivot(System::Windows::Point center, double radius);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationPivot.Center" />
       <MemberSignature Language="VB.NET" Value="Public Property Center As Point" />
       <MemberSignature Language="F#" Value="member this.Center : System.Windows.Point with get, set" Usage="System.Windows.Input.ManipulationPivot.Center" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Center { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationPivot.Radius" />
       <MemberSignature Language="VB.NET" Value="Public Property Radius As Double" />
       <MemberSignature Language="F#" Value="member this.Radius : double with get, set" Usage="System.Windows.Input.ManipulationPivot.Radius" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Radius { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

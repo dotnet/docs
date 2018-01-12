@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.IGrouping`2" />
   <TypeSignature Language="VB.NET" Value="Public Interface IGrouping(Of Out TKey, Out TElement)&#xA;Implements IEnumerable(Of Out TElement)" />
   <TypeSignature Language="F#" Value="type IGrouping&lt;'Key, 'Element&gt; = interface&#xA;    interface seq&lt;'Element&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TElement&gt;&#xA;public interface class IGrouping : System::Collections::Generic::IEnumerable&lt;TElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriComponents" />
   <TypeSignature Language="VB.NET" Value="Public Enum UriComponents" />
   <TypeSignature Language="F#" Value="type UriComponents = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UriComponents" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.AbsoluteUri" />
       <MemberSignature Language="VB.NET" Value="AbsoluteUri" />
       <MemberSignature Language="F#" Value="AbsoluteUri = 127" Usage="System.UriComponents.AbsoluteUri" />
+      <MemberSignature Language="C++ CLI" Value="AbsoluteUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.Fragment" />
       <MemberSignature Language="VB.NET" Value="Fragment" />
       <MemberSignature Language="F#" Value="Fragment = 64" Usage="System.UriComponents.Fragment" />
+      <MemberSignature Language="C++ CLI" Value="Fragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.Host" />
       <MemberSignature Language="VB.NET" Value="Host" />
       <MemberSignature Language="F#" Value="Host = 4" Usage="System.UriComponents.Host" />
+      <MemberSignature Language="C++ CLI" Value="Host" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.HostAndPort" />
       <MemberSignature Language="VB.NET" Value="HostAndPort" />
       <MemberSignature Language="F#" Value="HostAndPort = 132" Usage="System.UriComponents.HostAndPort" />
+      <MemberSignature Language="C++ CLI" Value="HostAndPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.HttpRequestUrl" />
       <MemberSignature Language="VB.NET" Value="HttpRequestUrl" />
       <MemberSignature Language="F#" Value="HttpRequestUrl = 61" Usage="System.UriComponents.HttpRequestUrl" />
+      <MemberSignature Language="C++ CLI" Value="HttpRequestUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.KeepDelimiter" />
       <MemberSignature Language="VB.NET" Value="KeepDelimiter" />
       <MemberSignature Language="F#" Value="KeepDelimiter = 1073741824" Usage="System.UriComponents.KeepDelimiter" />
+      <MemberSignature Language="C++ CLI" Value="KeepDelimiter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.NormalizedHost" />
       <MemberSignature Language="VB.NET" Value="NormalizedHost" />
       <MemberSignature Language="F#" Value="NormalizedHost = 256" Usage="System.UriComponents.NormalizedHost" />
+      <MemberSignature Language="C++ CLI" Value="NormalizedHost" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -271,6 +279,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.Path" />
       <MemberSignature Language="VB.NET" Value="Path" />
       <MemberSignature Language="F#" Value="Path = 16" Usage="System.UriComponents.Path" />
+      <MemberSignature Language="C++ CLI" Value="Path" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -303,6 +312,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.PathAndQuery" />
       <MemberSignature Language="VB.NET" Value="PathAndQuery" />
       <MemberSignature Language="F#" Value="PathAndQuery = 48" Usage="System.UriComponents.PathAndQuery" />
+      <MemberSignature Language="C++ CLI" Value="PathAndQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -335,6 +345,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.Port" />
       <MemberSignature Language="VB.NET" Value="Port" />
       <MemberSignature Language="F#" Value="Port = 8" Usage="System.UriComponents.Port" />
+      <MemberSignature Language="C++ CLI" Value="Port" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -367,6 +378,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.Query" />
       <MemberSignature Language="VB.NET" Value="Query" />
       <MemberSignature Language="F#" Value="Query = 32" Usage="System.UriComponents.Query" />
+      <MemberSignature Language="C++ CLI" Value="Query" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -399,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.Scheme" />
       <MemberSignature Language="VB.NET" Value="Scheme" />
       <MemberSignature Language="F#" Value="Scheme = 1" Usage="System.UriComponents.Scheme" />
+      <MemberSignature Language="C++ CLI" Value="Scheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.SchemeAndServer" />
       <MemberSignature Language="VB.NET" Value="SchemeAndServer" />
       <MemberSignature Language="F#" Value="SchemeAndServer = 13" Usage="System.UriComponents.SchemeAndServer" />
+      <MemberSignature Language="C++ CLI" Value="SchemeAndServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -463,6 +477,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.SerializationInfoString" />
       <MemberSignature Language="VB.NET" Value="SerializationInfoString" />
       <MemberSignature Language="F#" Value="SerializationInfoString = -2147483648" Usage="System.UriComponents.SerializationInfoString" />
+      <MemberSignature Language="C++ CLI" Value="SerializationInfoString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -495,6 +510,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.StrongAuthority" />
       <MemberSignature Language="VB.NET" Value="StrongAuthority" />
       <MemberSignature Language="F#" Value="StrongAuthority = 134" Usage="System.UriComponents.StrongAuthority" />
+      <MemberSignature Language="C++ CLI" Value="StrongAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -527,6 +543,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.StrongPort" />
       <MemberSignature Language="VB.NET" Value="StrongPort" />
       <MemberSignature Language="F#" Value="StrongPort = 128" Usage="System.UriComponents.StrongPort" />
+      <MemberSignature Language="C++ CLI" Value="StrongPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -559,6 +576,7 @@
       <MemberSignature Language="DocId" Value="F:System.UriComponents.UserInfo" />
       <MemberSignature Language="VB.NET" Value="UserInfo" />
       <MemberSignature Language="F#" Value="UserInfo = 2" Usage="System.UriComponents.UserInfo" />
+      <MemberSignature Language="C++ CLI" Value="UserInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

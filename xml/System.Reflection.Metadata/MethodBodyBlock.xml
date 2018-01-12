@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodBodyBlock" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MethodBodyBlock" />
   <TypeSignature Language="F#" Value="type MethodBodyBlock = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodBodyBlock sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodBodyBlock.Create(System.Reflection.Metadata.BlobReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (reader As BlobReader) As MethodBodyBlock" />
       <MemberSignature Language="F#" Value="static member Create : System.Reflection.Metadata.BlobReader -&gt; System.Reflection.Metadata.MethodBodyBlock" Usage="System.Reflection.Metadata.MethodBodyBlock.Create reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::MethodBodyBlock ^ Create(System::Reflection::Metadata::BlobReader reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodBodyBlock.ExceptionRegions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExceptionRegions As ImmutableArray(Of ExceptionRegion)" />
       <MemberSignature Language="F#" Value="member this.ExceptionRegions : System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.ExceptionRegion&gt;" Usage="System.Reflection.Metadata.MethodBodyBlock.ExceptionRegions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::ExceptionRegion&gt; ExceptionRegions { System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::ExceptionRegion&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodBodyBlock.GetILBytes" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILBytes () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetILBytes : unit -&gt; byte[]" Usage="methodBodyBlock.GetILBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetILBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodBodyBlock.GetILContent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILContent () As ImmutableArray(Of Byte)" />
       <MemberSignature Language="F#" Value="member this.GetILContent : unit -&gt; System.Collections.Immutable.ImmutableArray&lt;byte&gt;" Usage="methodBodyBlock.GetILContent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; GetILContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodBodyBlock.GetILReader" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILReader () As BlobReader" />
       <MemberSignature Language="F#" Value="member this.GetILReader : unit -&gt; System.Reflection.Metadata.BlobReader" Usage="methodBodyBlock.GetILReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobReader GetILReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodBodyBlock.LocalSignature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalSignature As StandaloneSignatureHandle" />
       <MemberSignature Language="F#" Value="member this.LocalSignature : System.Reflection.Metadata.StandaloneSignatureHandle" Usage="System.Reflection.Metadata.MethodBodyBlock.LocalSignature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StandaloneSignatureHandle LocalSignature { System::Reflection::Metadata::StandaloneSignatureHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodBodyBlock.LocalVariablesInitialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalVariablesInitialized As Boolean" />
       <MemberSignature Language="F#" Value="member this.LocalVariablesInitialized : bool" Usage="System.Reflection.Metadata.MethodBodyBlock.LocalVariablesInitialized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LocalVariablesInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -186,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodBodyBlock.MaxStack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxStack As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxStack : int" Usage="System.Reflection.Metadata.MethodBodyBlock.MaxStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxStack { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -208,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodBodyBlock.Size" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
       <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Reflection.Metadata.MethodBodyBlock.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AmbiguousMatchException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AmbiguousMatchException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type AmbiguousMatchException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AmbiguousMatchException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AmbiguousMatchException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousMatchException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AmbiguousMatchException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AmbiguousMatchException : string -&gt; System.Reflection.AmbiguousMatchException" Usage="new System.Reflection.AmbiguousMatchException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousMatchException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -158,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AmbiguousMatchException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AmbiguousMatchException : string * Exception -&gt; System.Reflection.AmbiguousMatchException" Usage="new System.Reflection.AmbiguousMatchException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousMatchException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenSerializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenSerializer" />
   <TypeSignature Language="F#" Value="type SecurityTokenSerializer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenSerializer abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityTokenSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifier(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadKeyIdentifier (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReadKeyIdentifier : System.Xml.XmlReader -&gt; bool" Usage="securityTokenSerializer.CanReadKeyIdentifier reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadKeyIdentifier(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadKeyIdentifierClause (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReadKeyIdentifierClause : System.Xml.XmlReader -&gt; bool" Usage="securityTokenSerializer.CanReadKeyIdentifierClause reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierClauseCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanReadKeyIdentifierClauseCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; bool" Usage="securityTokenSerializer.CanReadKeyIdentifierClauseCore reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanReadKeyIdentifierClauseCore(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadKeyIdentifierCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanReadKeyIdentifierCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanReadKeyIdentifierCore : System.Xml.XmlReader -&gt; bool" Usage="securityTokenSerializer.CanReadKeyIdentifierCore reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanReadKeyIdentifierCore(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadToken (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReadToken : System.Xml.XmlReader -&gt; bool" Usage="securityTokenSerializer.CanReadToken reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanReadTokenCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanReadTokenCore (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanReadTokenCore : System.Xml.XmlReader -&gt; bool" Usage="securityTokenSerializer.CanReadTokenCore reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanReadTokenCore(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifier(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanWriteKeyIdentifier (keyIdentifier As SecurityKeyIdentifier) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanWriteKeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; bool" Usage="securityTokenSerializer.CanWriteKeyIdentifier keyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanWriteKeyIdentifier(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanWriteKeyIdentifierClause (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanWriteKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityTokenSerializer.CanWriteKeyIdentifierClause keyIdentifierClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanWriteKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierClauseCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanWriteKeyIdentifierClauseCore (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanWriteKeyIdentifierClauseCore : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityTokenSerializer.CanWriteKeyIdentifierClauseCore keyIdentifierClause" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanWriteKeyIdentifierClauseCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -352,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteKeyIdentifierCore(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanWriteKeyIdentifierCore (keyIdentifier As SecurityKeyIdentifier) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanWriteKeyIdentifierCore : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; bool" Usage="securityTokenSerializer.CanWriteKeyIdentifierCore keyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanWriteKeyIdentifierCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanWriteToken (token As SecurityToken) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanWriteToken : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="securityTokenSerializer.CanWriteToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanWriteToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -420,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.CanWriteTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanWriteTokenCore (token As SecurityToken) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanWriteTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="securityTokenSerializer.CanWriteTokenCore token" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanWriteTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -454,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifier(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadKeyIdentifier (reader As XmlReader) As SecurityKeyIdentifier" />
       <MemberSignature Language="F#" Value="member this.ReadKeyIdentifier : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="securityTokenSerializer.ReadKeyIdentifier reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ReadKeyIdentifier(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -487,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadKeyIdentifierClause (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="F#" Value="member this.ReadKeyIdentifierClause : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="securityTokenSerializer.ReadKeyIdentifierClause reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -520,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierClauseCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReadKeyIdentifierClauseCore (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="F#" Value="abstract member ReadKeyIdentifierClauseCore : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="securityTokenSerializer.ReadKeyIdentifierClauseCore reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClauseCore(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -553,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadKeyIdentifierCore(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReadKeyIdentifierCore (reader As XmlReader) As SecurityKeyIdentifier" />
       <MemberSignature Language="F#" Value="abstract member ReadKeyIdentifierCore : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="securityTokenSerializer.ReadKeyIdentifierCore reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IdentityModel::Tokens::SecurityKeyIdentifier ^ ReadKeyIdentifierCore(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -586,6 +604,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadToken(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadToken (reader As XmlReader, tokenResolver As SecurityTokenResolver) As SecurityToken" />
       <MemberSignature Language="F#" Value="member this.ReadToken : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenSerializer.ReadToken (reader, tokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -625,6 +644,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.ReadTokenCore(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReadTokenCore (reader As XmlReader, tokenResolver As SecurityTokenResolver) As SecurityToken" />
       <MemberSignature Language="F#" Value="abstract member ReadTokenCore : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="securityTokenSerializer.ReadTokenCore (reader, tokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IdentityModel::Tokens::SecurityToken ^ ReadTokenCore(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -664,6 +684,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifier(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteKeyIdentifier (writer As XmlWriter, keyIdentifier As SecurityKeyIdentifier)" />
       <MemberSignature Language="F#" Value="member this.WriteKeyIdentifier : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; unit" Usage="securityTokenSerializer.WriteKeyIdentifier (writer, keyIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteKeyIdentifier(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -702,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClause(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteKeyIdentifierClause (writer As XmlWriter, keyIdentifierClause As SecurityKeyIdentifierClause)" />
       <MemberSignature Language="F#" Value="member this.WriteKeyIdentifierClause : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="securityTokenSerializer.WriteKeyIdentifierClause (writer, keyIdentifierClause)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteKeyIdentifierClause(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -740,6 +762,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierClauseCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteKeyIdentifierClauseCore (writer As XmlWriter, keyIdentifierClause As SecurityKeyIdentifierClause)" />
       <MemberSignature Language="F#" Value="abstract member WriteKeyIdentifierClauseCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="securityTokenSerializer.WriteKeyIdentifierClauseCore (writer, keyIdentifierClause)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteKeyIdentifierClauseCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -778,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteKeyIdentifierCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteKeyIdentifierCore (writer As XmlWriter, keyIdentifier As SecurityKeyIdentifier)" />
       <MemberSignature Language="F#" Value="abstract member WriteKeyIdentifierCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; unit" Usage="securityTokenSerializer.WriteKeyIdentifierCore (writer, keyIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteKeyIdentifierCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -816,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
       <MemberSignature Language="F#" Value="member this.WriteToken : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="securityTokenSerializer.WriteToken (writer, token)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -854,6 +879,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenSerializer.WriteTokenCore(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteTokenCore (writer As XmlWriter, token As SecurityToken)" />
       <MemberSignature Language="F#" Value="abstract member WriteTokenCore : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="securityTokenSerializer.WriteTokenCore (writer, token)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteTokenCore(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

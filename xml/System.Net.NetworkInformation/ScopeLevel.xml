@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.ScopeLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ScopeLevel" />
   <TypeSignature Language="F#" Value="type ScopeLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScopeLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Admin" />
       <MemberSignature Language="VB.NET" Value="Admin" />
       <MemberSignature Language="F#" Value="Admin = 4" Usage="System.Net.NetworkInformation.ScopeLevel.Admin" />
+      <MemberSignature Language="C++ CLI" Value="Admin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Global" />
       <MemberSignature Language="VB.NET" Value="Global" />
       <MemberSignature Language="F#" Value="Global = 14" Usage="System.Net.NetworkInformation.ScopeLevel.Global" />
+      <MemberSignature Language="C++ CLI" Value="Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Interface" />
       <MemberSignature Language="VB.NET" Value="Interface" />
       <MemberSignature Language="F#" Value="Interface = 1" Usage="System.Net.NetworkInformation.ScopeLevel.Interface" />
+      <MemberSignature Language="C++ CLI" Value="Interface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Link" />
       <MemberSignature Language="VB.NET" Value="Link" />
       <MemberSignature Language="F#" Value="Link = 2" Usage="System.Net.NetworkInformation.ScopeLevel.Link" />
+      <MemberSignature Language="C++ CLI" Value="Link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.NetworkInformation.ScopeLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Organization" />
       <MemberSignature Language="VB.NET" Value="Organization" />
       <MemberSignature Language="F#" Value="Organization = 8" Usage="System.Net.NetworkInformation.ScopeLevel.Organization" />
+      <MemberSignature Language="C++ CLI" Value="Organization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Site" />
       <MemberSignature Language="VB.NET" Value="Site" />
       <MemberSignature Language="F#" Value="Site = 5" Usage="System.Net.NetworkInformation.ScopeLevel.Site" />
+      <MemberSignature Language="C++ CLI" Value="Site" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.ScopeLevel.Subnet" />
       <MemberSignature Language="VB.NET" Value="Subnet" />
       <MemberSignature Language="F#" Value="Subnet = 3" Usage="System.Net.NetworkInformation.ScopeLevel.Subnet" />
+      <MemberSignature Language="C++ CLI" Value="Subnet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

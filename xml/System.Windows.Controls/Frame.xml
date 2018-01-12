@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Frame" />
   <TypeSignature Language="VB.NET" Value="Public Class Frame&#xA;Inherits ContentControl&#xA;Implements IAddChild, IUriContext" />
   <TypeSignature Language="F#" Value="type Frame = class&#xA;    inherit ContentControl&#xA;    interface INavigator&#xA;    interface INavigatorBase&#xA;    interface INavigatorImpl&#xA;    interface IJournalNavigationScopeHost&#xA;    interface IDownloader&#xA;    interface IJournalState&#xA;    interface IAddChild&#xA;    interface IUriContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Frame : System::Windows::Controls::ContentControl, System::Windows::Markup::IAddChild, System::Windows::Markup::IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Frame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBackEntry (state As CustomContentState)" />
       <MemberSignature Language="F#" Value="abstract member AddBackEntry : System.Windows.Navigation.CustomContentState -&gt; unit&#xA;override this.AddBackEntry : System.Windows.Navigation.CustomContentState -&gt; unit" Usage="frame.AddBackEntry state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBackEntry(System::Windows::Navigation::CustomContentState ^ state);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigator.AddBackEntry(System.Windows.Navigation.CustomContentState)</InterfaceMember>
@@ -176,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddChild (value As Object)" />
       <MemberSignature Language="F#" Value="override this.AddChild : obj -&gt; unit" Usage="frame.AddChild value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddChild(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -209,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddText (text As String)" />
       <MemberSignature Language="F#" Value="override this.AddText : string -&gt; unit" Usage="frame.AddText text" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.BackStack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackStack As IEnumerable" />
       <MemberSignature Language="F#" Value="member this.BackStack : System.Collections.IEnumerable" Usage="System.Windows.Controls.Frame.BackStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ BackStack { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.INavigator.BackStack</InterfaceMember>
@@ -283,6 +289,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.BackStackProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackStackProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BackStackProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.BackStackProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackStackProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -309,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Controls.Frame.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.CanGoBack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoBack As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanGoBack : bool" Usage="System.Windows.Controls.Frame.CanGoBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.INavigator.CanGoBack</InterfaceMember>
@@ -386,6 +395,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.CanGoBackProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanGoBackProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CanGoBackProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.CanGoBackProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanGoBackProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -412,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.CanGoForward" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoForward As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanGoForward : bool" Usage="System.Windows.Controls.Frame.CanGoForward" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoForward { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.INavigator.CanGoForward</InterfaceMember>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.CanGoForwardProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanGoForwardProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CanGoForwardProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.CanGoForwardProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanGoForwardProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -480,6 +492,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.ContentRendered" />
       <MemberSignature Language="VB.NET" Value="Public Event ContentRendered As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ContentRendered : EventHandler " Usage="member this.ContentRendered : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ ContentRendered;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.IDownloader.ContentRendered</InterfaceMember>
@@ -511,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.CurrentSource" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentSource As Uri" />
       <MemberSignature Language="F#" Value="member this.CurrentSource : Uri" Usage="System.Windows.Controls.Frame.CurrentSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ CurrentSource { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.INavigatorBase.CurrentSource</InterfaceMember>
@@ -541,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.ForwardStack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForwardStack As IEnumerable" />
       <MemberSignature Language="F#" Value="member this.ForwardStack : System.Collections.IEnumerable" Usage="System.Windows.Controls.Frame.ForwardStack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ ForwardStack { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.INavigator.ForwardStack</InterfaceMember>
@@ -579,6 +594,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.ForwardStackProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForwardStackProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ForwardStackProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.ForwardStackProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForwardStackProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -605,6 +621,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.FragmentNavigation" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FragmentNavigation As FragmentNavigationEventHandler " />
       <MemberSignature Language="F#" Value="member this.FragmentNavigation : System.Windows.Navigation.FragmentNavigationEventHandler " Usage="member this.FragmentNavigation : System.Windows.Navigation.FragmentNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::FragmentNavigationEventHandler ^ FragmentNavigation;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.FragmentNavigation</InterfaceMember>
@@ -640,6 +657,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.GoBack" />
       <MemberSignature Language="VB.NET" Value="Public Sub GoBack ()" />
       <MemberSignature Language="F#" Value="abstract member GoBack : unit -&gt; unit&#xA;override this.GoBack : unit -&gt; unit" Usage="frame.GoBack " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GoBack();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigator.GoBack</InterfaceMember>
@@ -681,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.GoForward" />
       <MemberSignature Language="VB.NET" Value="Public Sub GoForward ()" />
       <MemberSignature Language="F#" Value="abstract member GoForward : unit -&gt; unit&#xA;override this.GoForward : unit -&gt; unit" Usage="frame.GoForward " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GoForward();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigator.GoForward</InterfaceMember>
@@ -722,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.JournalOwnership" />
       <MemberSignature Language="VB.NET" Value="Public Property JournalOwnership As JournalOwnership" />
       <MemberSignature Language="F#" Value="member this.JournalOwnership : System.Windows.Navigation.JournalOwnership with get, set" Usage="System.Windows.Controls.Frame.JournalOwnership" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::JournalOwnership JournalOwnership { System::Windows::Navigation::JournalOwnership get(); void set(System::Windows::Navigation::JournalOwnership value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -764,6 +784,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.JournalOwnershipProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly JournalOwnershipProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable JournalOwnershipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.JournalOwnershipProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ JournalOwnershipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -790,6 +811,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.LoadCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LoadCompleted As LoadCompletedEventHandler " />
       <MemberSignature Language="F#" Value="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " Usage="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::LoadCompletedEventHandler ^ LoadCompleted;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.LoadCompleted</InterfaceMember>
@@ -834,6 +856,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.Navigate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Navigate (content As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Navigate : obj -&gt; bool&#xA;override this.Navigate : obj -&gt; bool" Usage="frame.Navigate content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Navigate(System::Object ^ content);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigatorBase.Navigate(System.Object)</InterfaceMember>
@@ -877,6 +900,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.Navigate(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function Navigate (source As Uri) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Navigate : Uri -&gt; bool&#xA;override this.Navigate : Uri -&gt; bool" Usage="frame.Navigate source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Navigate(Uri ^ source);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigatorBase.Navigate(System.Uri)</InterfaceMember>
@@ -923,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.Navigate(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Navigate (content As Object, extraData As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Navigate : obj * obj -&gt; bool&#xA;override this.Navigate : obj * obj -&gt; bool" Usage="frame.Navigate (content, extraData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Navigate(System::Object ^ content, System::Object ^ extraData);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigatorBase.Navigate(System.Object,System.Object)</InterfaceMember>
@@ -960,6 +985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.Navigate(System.Uri,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Navigate (source As Uri, extraData As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Navigate : Uri * obj -&gt; bool&#xA;override this.Navigate : Uri * obj -&gt; bool" Usage="frame.Navigate (source, extraData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Navigate(Uri ^ source, System::Object ^ extraData);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigatorBase.Navigate(System.Uri,System.Object)</InterfaceMember>
@@ -997,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.Navigated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Navigated As NavigatedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " Usage="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::NavigatedEventHandler ^ Navigated;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.Navigated</InterfaceMember>
@@ -1032,6 +1059,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.Navigating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Navigating As NavigatingCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " Usage="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::NavigatingCancelEventHandler ^ Navigating;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.Navigating</InterfaceMember>
@@ -1067,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.NavigationFailed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NavigationFailed As NavigationFailedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NavigationFailed : System.Windows.Navigation.NavigationFailedEventHandler " Usage="member this.NavigationFailed : System.Windows.Navigation.NavigationFailedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::NavigationFailedEventHandler ^ NavigationFailed;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.NavigationFailed</InterfaceMember>
@@ -1102,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.NavigationProgress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NavigationProgress As NavigationProgressEventHandler " />
       <MemberSignature Language="F#" Value="member this.NavigationProgress : System.Windows.Navigation.NavigationProgressEventHandler " Usage="member this.NavigationProgress : System.Windows.Navigation.NavigationProgressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::NavigationProgressEventHandler ^ NavigationProgress;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.NavigationProgress</InterfaceMember>
@@ -1137,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.NavigationService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationService As NavigationService" />
       <MemberSignature Language="F#" Value="member this.NavigationService : System.Windows.Navigation.NavigationService" Usage="System.Windows.Controls.Frame.NavigationService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::NavigationService ^ NavigationService { System::Windows::Navigation::NavigationService ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.IJournalNavigationScopeHost.NavigationService</InterfaceMember>
@@ -1175,6 +1206,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Frame.NavigationStopped" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NavigationStopped As NavigationStoppedEventHandler " />
       <MemberSignature Language="F#" Value="member this.NavigationStopped : System.Windows.Navigation.NavigationStoppedEventHandler " Usage="member this.NavigationStopped : System.Windows.Navigation.NavigationStoppedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Windows::Navigation::NavigationStoppedEventHandler ^ NavigationStopped;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:MS.Internal.AppModel.INavigatorBase.NavigationStopped</InterfaceMember>
@@ -1210,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.NavigationUIVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigationUIVisibility As NavigationUIVisibility" />
       <MemberSignature Language="F#" Value="member this.NavigationUIVisibility : System.Windows.Navigation.NavigationUIVisibility with get, set" Usage="System.Windows.Controls.Frame.NavigationUIVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Navigation::NavigationUIVisibility NavigationUIVisibility { System::Windows::Navigation::NavigationUIVisibility get(); void set(System::Windows::Navigation::NavigationUIVisibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1262,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.NavigationUIVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NavigationUIVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable NavigationUIVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.NavigationUIVisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NavigationUIVisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1288,6 +1322,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="frame.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1308,6 +1343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.OnContentRendered(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentRendered (args As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnContentRendered : EventArgs -&gt; unit&#xA;override this.OnContentRendered : EventArgs -&gt; unit" Usage="frame.OnContentRendered args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentRendered(EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1340,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="frame.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1368,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit&#xA;override this.Refresh : unit -&gt; unit" Usage="frame.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Refresh();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigatorBase.Refresh</InterfaceMember>
@@ -1398,6 +1436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.RemoveBackEntry" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveBackEntry () As JournalEntry" />
       <MemberSignature Language="F#" Value="abstract member RemoveBackEntry : unit -&gt; System.Windows.Navigation.JournalEntry&#xA;override this.RemoveBackEntry : unit -&gt; System.Windows.Navigation.JournalEntry" Usage="frame.RemoveBackEntry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Navigation::JournalEntry ^ RemoveBackEntry();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigator.RemoveBackEntry</InterfaceMember>
@@ -1430,6 +1469,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.SandboxExternalContent" />
       <MemberSignature Language="VB.NET" Value="Public Property SandboxExternalContent As Boolean" />
       <MemberSignature Language="F#" Value="member this.SandboxExternalContent : bool with get, set" Usage="System.Windows.Controls.Frame.SandboxExternalContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SandboxExternalContent { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1473,6 +1513,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.SandboxExternalContentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SandboxExternalContentProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SandboxExternalContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.SandboxExternalContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SandboxExternalContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1499,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.ShouldSerializeContent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerializeContent () As Boolean" />
       <MemberSignature Language="F#" Value="override this.ShouldSerializeContent : unit -&gt; bool" Usage="frame.ShouldSerializeContent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerializeContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1526,6 +1568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Controls.Frame.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:MS.Internal.AppModel.INavigatorBase.Source</InterfaceMember>
@@ -1580,6 +1623,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Frame.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Frame.SourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1599,6 +1643,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Frame.StopLoading" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopLoading ()" />
       <MemberSignature Language="F#" Value="abstract member StopLoading : unit -&gt; unit&#xA;override this.StopLoading : unit -&gt; unit" Usage="frame.StopLoading " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopLoading();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:MS.Internal.AppModel.INavigatorBase.StopLoading</InterfaceMember>
@@ -1630,6 +1675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Frame.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="F#" Usage="System.Windows.Controls.Frame.System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>

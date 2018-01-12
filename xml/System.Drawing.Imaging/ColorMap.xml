@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMap" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorMap" />
   <TypeSignature Language="F#" Value="type ColorMap = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColorMap sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ColorMap.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorMap();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMap.NewColor" />
       <MemberSignature Language="VB.NET" Value="Public Property NewColor As Color" />
       <MemberSignature Language="F#" Value="member this.NewColor : System.Drawing.Color with get, set" Usage="System.Drawing.Imaging.ColorMap.NewColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color NewColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMap.OldColor" />
       <MemberSignature Language="VB.NET" Value="Public Property OldColor As Color" />
       <MemberSignature Language="F#" Value="member this.OldColor : System.Drawing.Color with get, set" Usage="System.Drawing.Imaging.ColorMap.OldColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color OldColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

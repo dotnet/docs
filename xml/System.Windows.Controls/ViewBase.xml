@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ViewBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewBase&#xA;Inherits DependencyObject" />
   <TypeSignature Language="F#" Value="type ViewBase = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewBase abstract : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ViewBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.ClearItem(System.Windows.Controls.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ClearItem (item As ListViewItem)" />
       <MemberSignature Language="F#" Value="abstract member ClearItem : System.Windows.Controls.ListViewItem -&gt; unit&#xA;override this.ClearItem : System.Windows.Controls.ListViewItem -&gt; unit" Usage="viewBase.ClearItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ClearItem(System::Windows::Controls::ListViewItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ViewBase.DefaultStyleKey" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property DefaultStyleKey As Object" />
       <MemberSignature Language="F#" Value="member this.DefaultStyleKey : obj" Usage="System.Windows.Controls.ViewBase.DefaultStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Object ^ DefaultStyleKey { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.GetAutomationPeer(System.Windows.Controls.ListView)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetAutomationPeer (parent As ListView) As IViewAutomationPeer" />
       <MemberSignature Language="F#" Value="abstract member GetAutomationPeer : System.Windows.Controls.ListView -&gt; System.Windows.Automation.Peers.IViewAutomationPeer&#xA;override this.GetAutomationPeer : System.Windows.Controls.ListView -&gt; System.Windows.Automation.Peers.IViewAutomationPeer" Usage="viewBase.GetAutomationPeer parent" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Automation::Peers::IViewAutomationPeer ^ GetAutomationPeer(System::Windows::Controls::ListView ^ parent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ViewBase.ItemContainerDefaultStyleKey" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property ItemContainerDefaultStyleKey As Object" />
       <MemberSignature Language="F#" Value="member this.ItemContainerDefaultStyleKey : obj" Usage="System.Windows.Controls.ViewBase.ItemContainerDefaultStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Object ^ ItemContainerDefaultStyleKey { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.PrepareItem(System.Windows.Controls.ListViewItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub PrepareItem (item As ListViewItem)" />
       <MemberSignature Language="F#" Value="abstract member PrepareItem : System.Windows.Controls.ListViewItem -&gt; unit&#xA;override this.PrepareItem : System.Windows.Controls.ListViewItem -&gt; unit" Usage="viewBase.PrepareItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PrepareItem(System::Windows::Controls::ListViewItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

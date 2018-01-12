@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.ZipPackagePart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ZipPackagePart&#xA;Inherits PackagePart" />
   <TypeSignature Language="F#" Value="type ZipPackagePart = class&#xA;    inherit PackagePart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ZipPackagePart sealed : System::IO::Packaging::PackagePart" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.ZipPackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetStreamCore (mode As FileMode, access As FileAccess) As Stream" />
       <MemberSignature Language="F#" Value="override this.GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="zipPackagePart.GetStreamCore (mode, access)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IO::Stream ^ GetStreamCore(System::IO::FileMode mode, System::IO::FileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>

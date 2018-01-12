@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Comparer`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Comparer(Of T)&#xA;Implements IComparer, IComparer(Of T)" />
   <TypeSignature Language="F#" Value="type Comparer&lt;'T&gt; = class&#xA;    interface IComparer&#xA;    interface IComparer&lt;'T&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Comparer abstract : System::Collections::Generic::IComparer&lt;T&gt;, System::Collections::IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Comparer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Compare (x As T, y As T) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Compare : 'T * 'T -&gt; int" Usage="comparer.Compare (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int Compare(T x, T y);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
@@ -191,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Create(System.Comparison{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (comparison As Comparison(Of T)) As Comparer(Of T)" />
       <MemberSignature Language="F#" Value="static member Create : Comparison&lt;'T&gt; -&gt; System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Create comparison" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::Comparer&lt;T&gt; ^ Create(Comparison&lt;T&gt; ^ comparison);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -226,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Comparer`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Comparer(Of T)" />
       <MemberSignature Language="F#" Value="member this.Default : System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::Comparer&lt;T&gt; ^ Default { System::Collections::Generic::Comparer&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -280,6 +285,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IComparer.Compare(object x, object y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.System#Collections#IComparer#Compare(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Compare (x As Object, y As Object) As Integer Implements IComparer.Compare" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IComparer.Compare(System::Object ^ x, System::Object ^ y) = System::Collections::IComparer::Compare;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>

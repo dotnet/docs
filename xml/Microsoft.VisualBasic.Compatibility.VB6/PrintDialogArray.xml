@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintDialogArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="F#" Value="type PrintDialogArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintDialogArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintDialogArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintDialogArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="printDialogArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="printDialogArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.GetIndex(System.Windows.Forms.PrintDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As PrintDialog) As Short" />
       <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.PrintDialog -&gt; int16" Usage="printDialogArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::PrintDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -218,6 +224,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.HelpRequest" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequest As EventHandler " />
       <MemberSignature Language="F#" Value="member this.HelpRequest : EventHandler " Usage="member this.HelpRequest : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HelpRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="printDialogArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As PrintDialog" />
       <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.PrintDialog" Usage="Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::PrintDialog ^ default[short] { System::Windows::Forms::PrintDialog ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -322,6 +331,7 @@ MsgBox(CStr(PrintDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.ResetIndex(System.Windows.Forms.PrintDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As PrintDialog)" />
       <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.PrintDialog -&gt; unit" Usage="printDialogArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::PrintDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -360,6 +370,7 @@ MsgBox(CStr(PrintDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.SetIndex(System.Windows.Forms.PrintDialog,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As PrintDialog, Index As Short)" />
       <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.PrintDialog * int16 -&gt; unit" Usage="printDialogArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::PrintDialog ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -400,6 +411,7 @@ MsgBox(CStr(PrintDialogArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.ShouldSerializeIndex(System.Windows.Forms.PrintDialog)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As PrintDialog) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.PrintDialog -&gt; bool" Usage="printDialogArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::PrintDialog ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

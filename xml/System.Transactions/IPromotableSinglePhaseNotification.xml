@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.IPromotableSinglePhaseNotification" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPromotableSinglePhaseNotification&#xA;Implements ITransactionPromoter" />
   <TypeSignature Language="F#" Value="type IPromotableSinglePhaseNotification = interface&#xA;    interface ITransactionPromoter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPromotableSinglePhaseNotification : System::Transactions::ITransactionPromoter" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.IPromotableSinglePhaseNotification.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
       <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit" Usage="iPromotableSinglePhaseNotification.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.IPromotableSinglePhaseNotification.Rollback(System.Transactions.SinglePhaseEnlistment)" />
       <MemberSignature Language="F#" Value="abstract member Rollback : System.Transactions.SinglePhaseEnlistment -&gt; unit" Usage="iPromotableSinglePhaseNotification.Rollback enlistment" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rollback (enlistment As SinglePhaseEnlistment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rollback(System::Transactions::SinglePhaseEnlistment ^ enlistment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.IPromotableSinglePhaseNotification.SinglePhaseCommit(System.Transactions.SinglePhaseEnlistment)" />
       <MemberSignature Language="F#" Value="abstract member SinglePhaseCommit : System.Transactions.SinglePhaseEnlistment -&gt; unit" Usage="iPromotableSinglePhaseNotification.SinglePhaseCommit enlistment" />
       <MemberSignature Language="VB.NET" Value="Public Sub SinglePhaseCommit (enlistment As SinglePhaseEnlistment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SinglePhaseCommit(System::Transactions::SinglePhaseEnlistment ^ enlistment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.JapaneseLunisolarCalendar" />
   <TypeSignature Language="VB.NET" Value="Public Class JapaneseLunisolarCalendar&#xA;Inherits EastAsianLunisolarCalendar" />
   <TypeSignature Language="F#" Value="type JapaneseLunisolarCalendar = class&#xA;    inherit EastAsianLunisolarCalendar" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JapaneseLunisolarCalendar : System::Globalization::EastAsianLunisolarCalendar" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Calendars</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.JapaneseLunisolarCalendar.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JapaneseLunisolarCalendar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.JapaneseLunisolarCalendar.DaysInYearBeforeMinSupportedYear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DaysInYearBeforeMinSupportedYear As Integer" />
       <MemberSignature Language="F#" Value="member this.DaysInYearBeforeMinSupportedYear : int" Usage="System.Globalization.JapaneseLunisolarCalendar.DaysInYearBeforeMinSupportedYear" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int DaysInYearBeforeMinSupportedYear { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.JapaneseLunisolarCalendar.Eras" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Eras As Integer()" />
       <MemberSignature Language="F#" Value="member this.Eras : int[]" Usage="System.Globalization.JapaneseLunisolarCalendar.Eras" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.JapaneseLunisolarCalendar.GetEra(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEra (time As DateTime) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetEra : DateTime -&gt; int" Usage="japaneseLunisolarCalendar.GetEra time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetEra(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -197,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:System.Globalization.JapaneseLunisolarCalendar.JapaneseEra" />
       <MemberSignature Language="VB.NET" Value="Public Const JapaneseEra As Integer  = 1" />
       <MemberSignature Language="F#" Value="val mutable JapaneseEra : int" Usage="System.Globalization.JapaneseLunisolarCalendar.JapaneseEra" />
+      <MemberSignature Language="C++ CLI" Value="public: int JapaneseEra = 1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -233,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.JapaneseLunisolarCalendar.MaxSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxSupportedDateTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.MaxSupportedDateTime : DateTime" Usage="System.Globalization.JapaneseLunisolarCalendar.MaxSupportedDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -266,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.JapaneseLunisolarCalendar.MinSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinSupportedDateTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.MinSupportedDateTime : DateTime" Usage="System.Globalization.JapaneseLunisolarCalendar.MinSupportedDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>

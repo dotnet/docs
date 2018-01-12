@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class WebDisplayNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type WebDisplayNameAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebDisplayNameAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebDisplayNameAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute : string -&gt; System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" Usage="new System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute displayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebDisplayNameAttribute(System::String ^ displayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As WebDisplayNameAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute" Usage="System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebDisplayNameAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayNameValue" />
       <MemberSignature Language="VB.NET" Value="Protected Property DisplayNameValue As String" />
       <MemberSignature Language="F#" Value="member this.DisplayNameValue : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.DisplayNameValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DisplayNameValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="webDisplayNameAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="webDisplayNameAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDisplayNameAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="webDisplayNameAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

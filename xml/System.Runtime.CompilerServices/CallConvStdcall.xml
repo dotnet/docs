@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CallConvStdcall" />
   <TypeSignature Language="VB.NET" Value="Public Class CallConvStdcall" />
   <TypeSignature Language="F#" Value="type CallConvStdcall = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallConvStdcall" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CallConvStdcall.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CallConvStdcall();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

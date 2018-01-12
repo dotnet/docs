@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Char" />
   <TypeSignature Language="VB.NET" Value="Public Structure Char&#xA;Implements IComparable, IComparable(Of Char), IConvertible, IEquatable(Of Char)" />
   <TypeSignature Language="F#" Value="type char = struct&#xA;    interface IConvertible" />
+  <TypeSignature Language="C++ CLI" Value="public value class Char : IComparable, IComparable&lt;char&gt;, IConvertible, IEquatable&lt;char&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -163,6 +164,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.CompareTo(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Char) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : char -&gt; int&#xA;override this.CompareTo : char -&gt; int" Usage="char.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(char value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -247,6 +249,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="char.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -329,6 +332,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ConvertFromUtf32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertFromUtf32 (utf32 As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ConvertFromUtf32 : int -&gt; string" Usage="System.char.ConvertFromUtf32 utf32" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ConvertFromUtf32(int utf32);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -401,6 +405,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ConvertToUtf32(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToUtf32 (highSurrogate As Char, lowSurrogate As Char) As Integer" />
       <MemberSignature Language="F#" Value="static member ConvertToUtf32 : char * char -&gt; int" Usage="System.char.ConvertToUtf32 (highSurrogate, lowSurrogate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ConvertToUtf32(char highSurrogate, char lowSurrogate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -462,6 +467,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ConvertToUtf32(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToUtf32 (s As String, index As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member ConvertToUtf32 : string * int -&gt; int" Usage="System.char.ConvertToUtf32 (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ConvertToUtf32(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -537,6 +543,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.Equals(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Char) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : char -&gt; bool" Usage="char.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(char obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -586,6 +593,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="char.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -641,6 +649,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="char.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -688,6 +697,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.GetNumericValue(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (c As Char) As Double" />
       <MemberSignature Language="F#" Value="static member GetNumericValue : char -&gt; double" Usage="System.char.GetNumericValue c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -748,6 +758,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.GetNumericValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumericValue (s As String, index As Integer) As Double" />
       <MemberSignature Language="F#" Value="static member GetNumericValue : string * int -&gt; double" Usage="System.char.GetNumericValue (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetNumericValue(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -816,6 +827,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="char.GetTypeCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
@@ -860,6 +872,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.GetUnicodeCategory(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (c As Char) As UnicodeCategory" />
       <MemberSignature Language="F#" Value="static member GetUnicodeCategory : char -&gt; System.Globalization.UnicodeCategory" Usage="System.char.GetUnicodeCategory c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -912,6 +925,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.GetUnicodeCategory(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnicodeCategory (s As String, index As Integer) As UnicodeCategory" />
       <MemberSignature Language="F#" Value="static member GetUnicodeCategory : string * int -&gt; System.Globalization.UnicodeCategory" Usage="System.char.GetUnicodeCategory (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::UnicodeCategory GetUnicodeCategory(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -992,6 +1006,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsControl(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsControl (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsControl : char -&gt; bool" Usage="System.char.IsControl c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsControl(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1046,6 +1061,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsControl(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsControl (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsControl : string * int -&gt; bool" Usage="System.char.IsControl (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsControl(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1128,6 +1144,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsDigit(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDigit (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDigit : char -&gt; bool" Usage="System.char.IsDigit c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDigit(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1186,6 +1203,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsDigit(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDigit (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsDigit : string * int -&gt; bool" Usage="System.char.IsDigit (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDigit(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1265,6 +1283,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsHighSurrogate(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsHighSurrogate (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsHighSurrogate : char -&gt; bool" Usage="System.char.IsHighSurrogate c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsHighSurrogate(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1319,6 +1338,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsHighSurrogate(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsHighSurrogate (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsHighSurrogate : string * int -&gt; bool" Usage="System.char.IsHighSurrogate (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsHighSurrogate(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1411,6 +1431,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLetter(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLetter (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLetter : char -&gt; bool" Usage="System.char.IsLetter c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLetter(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1476,6 +1497,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLetter(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLetter (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLetter : string * int -&gt; bool" Usage="System.char.IsLetter (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLetter(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1569,6 +1591,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLetterOrDigit(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLetterOrDigit (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLetterOrDigit : char -&gt; bool" Usage="System.char.IsLetterOrDigit c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLetterOrDigit(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1624,6 +1647,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLetterOrDigit(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLetterOrDigit (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLetterOrDigit : string * int -&gt; bool" Usage="System.char.IsLetterOrDigit (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLetterOrDigit(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1700,6 +1724,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLower(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLower (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLower : char -&gt; bool" Usage="System.char.IsLower c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLower(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1756,6 +1781,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLower(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLower (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLower : string * int -&gt; bool" Usage="System.char.IsLower (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLower(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1834,6 +1860,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLowSurrogate(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLowSurrogate (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLowSurrogate : char -&gt; bool" Usage="System.char.IsLowSurrogate c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLowSurrogate(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1888,6 +1915,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsLowSurrogate(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsLowSurrogate (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsLowSurrogate : string * int -&gt; bool" Usage="System.char.IsLowSurrogate (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsLowSurrogate(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1963,6 +1991,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsNumber(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNumber (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsNumber : char -&gt; bool" Usage="System.char.IsNumber c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNumber(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2029,6 +2058,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsNumber(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNumber (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsNumber : string * int -&gt; bool" Usage="System.char.IsNumber (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNumber(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2151,6 +2181,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsPunctuation(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPunctuation (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsPunctuation : char -&gt; bool" Usage="System.char.IsPunctuation c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPunctuation(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2233,6 +2264,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsPunctuation(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPunctuation (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsPunctuation : string * int -&gt; bool" Usage="System.char.IsPunctuation (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPunctuation(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2353,6 +2385,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSeparator(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSeparator (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSeparator : char -&gt; bool" Usage="System.char.IsSeparator c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSeparator(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2417,6 +2450,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSeparator(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSeparator (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSeparator : string * int -&gt; bool" Usage="System.char.IsSeparator (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSeparator(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2503,6 +2537,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSurrogate(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSurrogate (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSurrogate : char -&gt; bool" Usage="System.char.IsSurrogate c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSurrogate(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2560,6 +2595,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSurrogate(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSurrogate (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSurrogate : string * int -&gt; bool" Usage="System.char.IsSurrogate (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSurrogate(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2638,6 +2674,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSurrogatePair(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSurrogatePair (highSurrogate As Char, lowSurrogate As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSurrogatePair : char * char -&gt; bool" Usage="System.char.IsSurrogatePair (highSurrogate, lowSurrogate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSurrogatePair(char highSurrogate, char lowSurrogate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2696,6 +2733,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSurrogatePair(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSurrogatePair (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSurrogatePair : string * int -&gt; bool" Usage="System.char.IsSurrogatePair (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSurrogatePair(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2796,6 +2834,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSymbol(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSymbol (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSymbol : char -&gt; bool" Usage="System.char.IsSymbol c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSymbol(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2869,6 +2908,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsSymbol(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSymbol (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsSymbol : string * int -&gt; bool" Usage="System.char.IsSymbol (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSymbol(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2964,6 +3004,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsUpper(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsUpper (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsUpper : char -&gt; bool" Usage="System.char.IsUpper c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUpper(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3011,6 +3052,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsUpper(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsUpper (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsUpper : string * int -&gt; bool" Usage="System.char.IsUpper (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsUpper(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3094,6 +3136,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsWhiteSpace(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsWhiteSpace (c As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsWhiteSpace : char -&gt; bool" Usage="System.char.IsWhiteSpace c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWhiteSpace(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3158,6 +3201,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.IsWhiteSpace(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsWhiteSpace (s As String, index As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsWhiteSpace : string * int -&gt; bool" Usage="System.char.IsWhiteSpace (s, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWhiteSpace(System::String ^ s, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3231,6 +3275,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="F:System.Char.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxValue As Char " />
       <MemberSignature Language="F#" Value="val mutable MaxValue : char" Usage="System.char.MaxValue" />
+      <MemberSignature Language="C++ CLI" Value="public: char MaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3271,6 +3316,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="F:System.Char.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MinValue As Char " />
       <MemberSignature Language="F#" Value="val mutable MinValue : char" Usage="System.char.MinValue" />
+      <MemberSignature Language="C++ CLI" Value="public: char MinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3311,6 +3357,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As Char" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; char" Usage="System.char.Parse s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3360,6 +3407,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IComparable#CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function CompareTo (value As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ value) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -3389,6 +3437,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Function GetTypeCode () As TypeCode Implements IConvertible.GetTypeCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual TypeCode System.IConvertible.GetTypeCode() = IConvertible::GetTypeCode;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
@@ -3413,6 +3462,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToBoolean(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToBoolean (provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IConvertible.ToBoolean(IFormatProvider ^ provider) = IConvertible::ToBoolean;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToBoolean(System.IFormatProvider)</InterfaceMember>
@@ -3451,6 +3501,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToByte(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToByte (provider As IFormatProvider) As Byte Implements IConvertible.ToByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Byte System.IConvertible.ToByte(IFormatProvider ^ provider) = IConvertible::ToByte;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToByte(System.IFormatProvider)</InterfaceMember>
@@ -3495,6 +3546,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToChar(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToChar (provider As IFormatProvider) As Char Implements IConvertible.ToChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual char System.IConvertible.ToChar(IFormatProvider ^ provider) = IConvertible::ToChar;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToChar(System.IFormatProvider)</InterfaceMember>
@@ -3539,6 +3591,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToDateTime(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToDateTime (provider As IFormatProvider) As DateTime Implements IConvertible.ToDateTime" />
+      <MemberSignature Language="C++ CLI" Value=" virtual DateTime System.IConvertible.ToDateTime(IFormatProvider ^ provider) = IConvertible::ToDateTime;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToDateTime(System.IFormatProvider)</InterfaceMember>
@@ -3577,6 +3630,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToDecimal(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToDecimal (provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Decimal System.IConvertible.ToDecimal(IFormatProvider ^ provider) = IConvertible::ToDecimal;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToDecimal(System.IFormatProvider)</InterfaceMember>
@@ -3615,6 +3669,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToDouble(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToDouble (provider As IFormatProvider) As Double Implements IConvertible.ToDouble" />
+      <MemberSignature Language="C++ CLI" Value=" virtual double System.IConvertible.ToDouble(IFormatProvider ^ provider) = IConvertible::ToDouble;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToDouble(System.IFormatProvider)</InterfaceMember>
@@ -3653,6 +3708,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToInt16(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToInt16 (provider As IFormatProvider) As Short Implements IConvertible.ToInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual short System.IConvertible.ToInt16(IFormatProvider ^ provider) = IConvertible::ToInt16;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToInt16(System.IFormatProvider)</InterfaceMember>
@@ -3697,6 +3753,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToInt32(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToInt32 (provider As IFormatProvider) As Integer Implements IConvertible.ToInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IConvertible.ToInt32(IFormatProvider ^ provider) = IConvertible::ToInt32;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToInt32(System.IFormatProvider)</InterfaceMember>
@@ -3741,6 +3798,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToInt64(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToInt64 (provider As IFormatProvider) As Long Implements IConvertible.ToInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual long System.IConvertible.ToInt64(IFormatProvider ^ provider) = IConvertible::ToInt64;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToInt64(System.IFormatProvider)</InterfaceMember>
@@ -3785,6 +3843,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToSByte(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToSByte (provider As IFormatProvider) As SByte Implements IConvertible.ToSByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::SByte System.IConvertible.ToSByte(IFormatProvider ^ provider) = IConvertible::ToSByte;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToSByte(System.IFormatProvider)</InterfaceMember>
@@ -3829,6 +3888,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToSingle(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToSingle (provider As IFormatProvider) As Single Implements IConvertible.ToSingle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual float System.IConvertible.ToSingle(IFormatProvider ^ provider) = IConvertible::ToSingle;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToSingle(System.IFormatProvider)</InterfaceMember>
@@ -3867,6 +3927,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IConvertible.ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToString (provider As IFormatProvider) As String Implements IConvertible.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IConvertible.ToString(IFormatProvider ^ provider) = IConvertible::ToString;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -3893,6 +3954,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IConvertible.ToType(Type ^ type, IFormatProvider ^ provider) = IConvertible::ToType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToType(System.Type,System.IFormatProvider)</InterfaceMember>
@@ -3942,6 +4004,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToUInt16(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToUInt16 (provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt16 System.IConvertible.ToUInt16(IFormatProvider ^ provider) = IConvertible::ToUInt16;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToUInt16(System.IFormatProvider)</InterfaceMember>
@@ -3986,6 +4049,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToUInt32(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToUInt32 (provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt32 System.IConvertible.ToUInt32(IFormatProvider ^ provider) = IConvertible::ToUInt32;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToUInt32(System.IFormatProvider)</InterfaceMember>
@@ -4030,6 +4094,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.System#IConvertible#ToUInt64(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Function ToUInt64 (provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt64 System.IConvertible.ToUInt64(IFormatProvider ^ provider) = IConvertible::ToUInt64;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToUInt64(System.IFormatProvider)</InterfaceMember>
@@ -4088,6 +4153,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToLower(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLower (c As Char) As Char" />
       <MemberSignature Language="F#" Value="static member ToLower : char -&gt; char" Usage="System.char.ToLower c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToLower(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4148,6 +4214,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLower (c As Char, culture As CultureInfo) As Char" />
       <MemberSignature Language="F#" Value="static member ToLower : char * System.Globalization.CultureInfo -&gt; char" Usage="System.char.ToLower (c, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToLower(char c, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4204,6 +4271,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToLowerInvariant(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToLowerInvariant (c As Char) As Char" />
       <MemberSignature Language="F#" Value="static member ToLowerInvariant : char -&gt; char" Usage="System.char.ToLowerInvariant c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToLowerInvariant(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4266,6 +4334,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="char.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4313,6 +4382,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToString(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (c As Char) As String" />
       <MemberSignature Language="F#" Value="static member ToString : char -&gt; string" Usage="System.char.ToString c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4363,6 +4433,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="char.ToString provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -4430,6 +4501,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToUpper(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUpper (c As Char) As Char" />
       <MemberSignature Language="F#" Value="static member ToUpper : char -&gt; char" Usage="System.char.ToUpper c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToUpper(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4489,6 +4561,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUpper (c As Char, culture As CultureInfo) As Char" />
       <MemberSignature Language="F#" Value="static member ToUpper : char * System.Globalization.CultureInfo -&gt; char" Usage="System.char.ToUpper (c, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToUpper(char c, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4544,6 +4617,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.ToUpperInvariant(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUpperInvariant (c As Char) As Char" />
       <MemberSignature Language="F#" Value="static member ToUpperInvariant : char -&gt; char" Usage="System.char.ToUpperInvariant c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToUpperInvariant(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4593,6 +4667,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       <MemberSignature Language="DocId" Value="M:System.Char.TryParse(System.String,System.Char@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As Char) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.char.TryParse (s, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] char % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridItemAutomationPeer&#xA;Inherits ItemAutomationPeer&#xA;Implements IInvokeProvider, IItemContainerProvider, IScrollItemProvider, ISelectionItemProvider, ISelectionProvider" />
   <TypeSignature Language="F#" Value="type DataGridItemAutomationPeer = class&#xA;    inherit ItemAutomationPeer&#xA;    interface IInvokeProvider&#xA;    interface IScrollItemProvider&#xA;    interface ISelectionItemProvider&#xA;    interface ISelectionProvider&#xA;    interface IItemContainerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridItemAutomationPeer sealed : System::Windows::Automation::Peers::ItemAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider, System::Windows::Automation::Provider::IItemContainerProvider, System::Windows::Automation::Provider::IScrollItemProvider, System::Windows::Automation::Provider::ISelectionItemProvider, System::Windows::Automation::Provider::ISelectionProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.DataGridAutomationPeer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, dataGridPeer As DataGridAutomationPeer)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DataGridItemAutomationPeer : obj * System.Windows.Automation.Peers.DataGridAutomationPeer -&gt; System.Windows.Automation.Peers.DataGridItemAutomationPeer" Usage="new System.Windows.Automation.Peers.DataGridItemAutomationPeer (item, dataGridPeer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridItemAutomationPeer(System::Object ^ item, System::Windows::Automation::Peers::DataGridAutomationPeer ^ dataGridPeer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="dataGridItemAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="dataGridItemAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="dataGridItemAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="dataGridItemAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer GetPeerFromPointCore(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetPeerFromPointCore(System.Windows.Point)" />
       <MemberSignature Language="F#" Value="override this.GetPeerFromPointCore : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridItemAutomationPeer.GetPeerFromPointCore point" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ GetPeerFromPointCore(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -184,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IInvokeProvider.Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke () Implements IInvokeProvider.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IInvokeProvider.Invoke() = System::Windows::Automation::Provider::IInvokeProvider::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IInvokeProvider.Invoke</InterfaceMember>
@@ -213,6 +221,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(class System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int32 propertyId, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#IItemContainerProvider#FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function FindItemByProperty (startAfter As IRawElementProviderSimple, propertyId As Integer, value As Object) As IRawElementProviderSimple Implements IItemContainerProvider.FindItemByProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System::Windows::Automation::Provider::IRawElementProviderSimple ^ startAfter, int propertyId, System::Object ^ value) = System::Windows::Automation::Provider::IItemContainerProvider::FindItemByProperty;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)</InterfaceMember>
@@ -250,6 +259,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
       <MemberSignature Language="VB.NET" Value="Sub ScrollIntoView () Implements IScrollItemProvider.ScrollIntoView" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView() = System::Windows::Automation::Provider::IScrollItemProvider::ScrollIntoView;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView</InterfaceMember>
@@ -279,6 +289,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection" />
       <MemberSignature Language="VB.NET" Value="Sub AddToSelection () Implements ISelectionItemProvider.AddToSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::AddToSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection</InterfaceMember>
@@ -309,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelected As Boolean Implements ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridItemAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected</InterfaceMember>
@@ -339,6 +351,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveFromSelection () Implements ISelectionItemProvider.RemoveFromSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection() = System::Windows::Automation::Provider::ISelectionItemProvider::RemoveFromSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection</InterfaceMember>
@@ -368,6 +381,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.ISelectionItemProvider.Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select" />
       <MemberSignature Language="VB.NET" Value="Sub Select () Implements ISelectionItemProvider.Select" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.ISelectionItemProvider.Select() = System::Windows::Automation::Provider::ISelectionItemProvider::Select;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionItemProvider.Select</InterfaceMember>
@@ -398,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectionContainer As IRawElementProviderSimple Implements ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridItemAutomationPeer.System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer</InterfaceMember>
@@ -428,6 +443,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSelectMultiple As Boolean Implements ISelectionProvider.CanSelectMultiple" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridItemAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple</InterfaceMember>
@@ -458,6 +474,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] System.Windows.Automation.Provider.ISelectionProvider.GetSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#GetSelection" />
       <MemberSignature Language="VB.NET" Value="Function GetSelection () As IRawElementProviderSimple() Implements ISelectionProvider.GetSelection" />
+      <MemberSignature Language="C++ CLI" Value=" virtual cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ System.Windows.Automation.Provider.ISelectionProvider.GetSelection() = System::Windows::Automation::Provider::ISelectionProvider::GetSelection;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.ISelectionProvider.GetSelection</InterfaceMember>
@@ -489,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.DataGridItemAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelectionRequired As Boolean Implements ISelectionProvider.IsSelectionRequired" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.DataGridItemAutomationPeer.System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired</InterfaceMember>

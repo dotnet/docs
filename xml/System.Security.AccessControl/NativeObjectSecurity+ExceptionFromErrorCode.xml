@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed NativeObjectSecurity/ExceptionFromErrorCode extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode" />
   <TypeSignature Language="VB.NET" Value="Protected Friend Delegate Function NativeObjectSecurity.ExceptionFromErrorCode(errorCode As Integer, name As String, handle As SafeHandle, context As Object) As Exception " />
+  <TypeSignature Language="C++ CLI" Value="public protected delegate Exception ^ NativeObjectSecurity::ExceptionFromErrorCode(int errorCode, System::String ^ name, SafeHandle ^ handle, System::Object ^ context);" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.IdentityModelCachesElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdentityModelCachesElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type IdentityModelCachesElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IdentityModelCachesElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IdentityModelCachesElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IdentityModelCachesElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityModelCachesElement.IsConfigured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConfigured As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsConfigured : bool" Usage="System.IdentityModel.Configuration.IdentityModelCachesElement.IsConfigured" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConfigured { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityModelCachesElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.IdentityModel.Configuration.IdentityModelCachesElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityModelCachesElement.SessionSecurityTokenCache" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionSecurityTokenCache As CustomTypeElement" />
       <MemberSignature Language="F#" Value="member this.SessionSecurityTokenCache : System.IdentityModel.Configuration.CustomTypeElement with get, set" Usage="System.IdentityModel.Configuration.IdentityModelCachesElement.SessionSecurityTokenCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::CustomTypeElement ^ SessionSecurityTokenCache { System::IdentityModel::Configuration::CustomTypeElement ^ get(); void set(System::IdentityModel::Configuration::CustomTypeElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IdentityModelCachesElement.TokenReplayCache" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenReplayCache As CustomTypeElement" />
       <MemberSignature Language="F#" Value="member this.TokenReplayCache : System.IdentityModel.Configuration.CustomTypeElement with get, set" Usage="System.IdentityModel.Configuration.IdentityModelCachesElement.TokenReplayCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::CustomTypeElement ^ TokenReplayCache { System::IdentityModel::Configuration::CustomTypeElement ^ get(); void set(System::IdentityModel::Configuration::CustomTypeElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

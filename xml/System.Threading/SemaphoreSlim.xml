@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.SemaphoreSlim" />
   <TypeSignature Language="VB.NET" Value="Public Class SemaphoreSlim&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type SemaphoreSlim = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SemaphoreSlim : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer)" />
       <MemberSignature Language="F#" Value="new System.Threading.SemaphoreSlim : int -&gt; System.Threading.SemaphoreSlim" Usage="new System.Threading.SemaphoreSlim initialCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemaphoreSlim(int initialCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -135,6 +137,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maxCount As Integer)" />
       <MemberSignature Language="F#" Value="new System.Threading.SemaphoreSlim : int * int -&gt; System.Threading.SemaphoreSlim" Usage="new System.Threading.SemaphoreSlim (initialCount, maxCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemaphoreSlim(int initialCount, int maxCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -170,6 +173,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="P:System.Threading.SemaphoreSlim.AvailableWaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableWaitHandle As WaitHandle" />
       <MemberSignature Language="F#" Value="member this.AvailableWaitHandle : System.Threading.WaitHandle" Usage="System.Threading.SemaphoreSlim.AvailableWaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ AvailableWaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -209,6 +213,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="P:System.Threading.SemaphoreSlim.CurrentCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentCount As Integer" />
       <MemberSignature Language="F#" Value="member this.CurrentCount : int" Usage="System.Threading.SemaphoreSlim.CurrentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -258,6 +263,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="semaphoreSlim.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -304,6 +310,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="semaphoreSlim.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -357,6 +364,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Release" />
       <MemberSignature Language="VB.NET" Value="Public Function Release () As Integer" />
       <MemberSignature Language="F#" Value="member this.Release : unit -&gt; int" Usage="semaphoreSlim.Release " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Release();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -398,6 +406,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Release(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Release (releaseCount As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.Release : int -&gt; int" Usage="semaphoreSlim.Release releaseCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Release(int releaseCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -455,6 +464,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Wait" />
       <MemberSignature Language="VB.NET" Value="Public Sub Wait ()" />
       <MemberSignature Language="F#" Value="member this.Wait : unit -&gt; unit" Usage="semaphoreSlim.Wait " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -494,6 +504,7 @@ SemaphoreSlim.Release()
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Wait(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : int -&gt; bool" Usage="semaphoreSlim.Wait millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -547,6 +558,7 @@ If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Wait(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : System.Threading.CancellationToken -&gt; unit" Usage="semaphoreSlim.Wait cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -597,6 +609,7 @@ If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Wait(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan -&gt; bool" Usage="semaphoreSlim.Wait timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -651,6 +664,7 @@ If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Wait(System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : int * System.Threading.CancellationToken -&gt; bool" Usage="semaphoreSlim.Wait (millisecondsTimeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -711,6 +725,7 @@ If `cancellationToken` is cancelled, the method throws an   <xref:System.Operati
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.Wait(System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan * System.Threading.CancellationToken -&gt; bool" Usage="semaphoreSlim.Wait (timeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -785,6 +800,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.WaitAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.WaitAsync : unit -&gt; System.Threading.Tasks.Task" Usage="semaphoreSlim.WaitAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WaitAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -817,6 +833,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.WaitAsync(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitAsync (millisecondsTimeout As Integer) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.WaitAsync : int -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="semaphoreSlim.WaitAsync millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ WaitAsync(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -863,6 +880,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WaitAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.WaitAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.WaitAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="semaphoreSlim.WaitAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WaitAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -901,6 +919,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitAsync (timeout As TimeSpan) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.WaitAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="semaphoreSlim.WaitAsync timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ WaitAsync(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -947,6 +966,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; WaitAsync(int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.WaitAsync(System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.WaitAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="semaphoreSlim.WaitAsync (millisecondsTimeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ WaitAsync(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -997,6 +1017,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; WaitAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.WaitAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="semaphoreSlim.WaitAsync (timeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ WaitAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

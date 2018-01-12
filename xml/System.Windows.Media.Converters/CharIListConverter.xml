@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Converters.CharIListConverter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CharIListConverter&#xA;Inherits BaseIListConverter" />
   <TypeSignature Language="F#" Value="type CharIListConverter = class&#xA;    inherit BaseIListConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CharIListConverter sealed : System::Windows::Media::Converters::BaseIListConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.CharIListConverter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CharIListConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

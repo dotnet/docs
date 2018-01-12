@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItemsRemovedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JumpItemsRemovedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type JumpItemsRemovedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JumpItemsRemovedEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpItemsRemovedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor(System.Collections.Generic.IList{System.Windows.Shell.JumpItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (removedItems As IList(Of JumpItem))" />
       <MemberSignature Language="F#" Value="new System.Windows.Shell.JumpItemsRemovedEventArgs : System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt; -&gt; System.Windows.Shell.JumpItemsRemovedEventArgs" Usage="new System.Windows.Shell.JumpItemsRemovedEventArgs removedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpItemsRemovedEventArgs(System::Collections::Generic::IList&lt;System::Windows::Shell::JumpItem ^&gt; ^ removedItems);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItemsRemovedEventArgs.RemovedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedItems As IList(Of JumpItem)" />
       <MemberSignature Language="F#" Value="member this.RemovedItems : System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;" Usage="System.Windows.Shell.JumpItemsRemovedEventArgs.RemovedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Shell::JumpItem ^&gt; ^ RemovedItems { System::Collections::Generic::IList&lt;System::Windows::Shell::JumpItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

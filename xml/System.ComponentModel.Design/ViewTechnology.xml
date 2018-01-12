@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ViewTechnology" />
   <TypeSignature Language="VB.NET" Value="Public Enum ViewTechnology" />
   <TypeSignature Language="F#" Value="type ViewTechnology = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ViewTechnology" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 2" Usage="System.ComponentModel.Design.ViewTechnology.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.Passthrough" />
       <MemberSignature Language="VB.NET" Value="Passthrough" />
       <MemberSignature Language="F#" Value="Passthrough = 0" Usage="System.ComponentModel.Design.ViewTechnology.Passthrough" />
+      <MemberSignature Language="C++ CLI" Value="Passthrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.WindowsForms" />
       <MemberSignature Language="VB.NET" Value="WindowsForms" />
       <MemberSignature Language="F#" Value="WindowsForms = 1" Usage="System.ComponentModel.Design.ViewTechnology.WindowsForms" />
+      <MemberSignature Language="C++ CLI" Value="WindowsForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

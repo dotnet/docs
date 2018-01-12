@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.SpotLocation" />
   <TypeSignature Language="VB.NET" Value="Public Class SpotLocation" />
   <TypeSignature Language="F#" Value="type SpotLocation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpotLocation" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.SpotLocation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpotLocation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.SpotLocation.PageUri" />
       <MemberSignature Language="VB.NET" Value="Public Property PageUri As Uri" />
       <MemberSignature Language="F#" Value="member this.PageUri : Uri with get, set" Usage="System.Windows.Xps.Packaging.SpotLocation.PageUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ PageUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.SpotLocation.StartX" />
       <MemberSignature Language="VB.NET" Value="Public Property StartX As Double" />
       <MemberSignature Language="F#" Value="member this.StartX : double with get, set" Usage="System.Windows.Xps.Packaging.SpotLocation.StartX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StartX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.SpotLocation.StartY" />
       <MemberSignature Language="VB.NET" Value="Public Property StartY As Double" />
       <MemberSignature Language="F#" Value="member this.StartY : double with get, set" Usage="System.Windows.Xps.Packaging.SpotLocation.StartY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StartY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

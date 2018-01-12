@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingGroup&#xA;Inherits DependencyObject" />
   <TypeSignature Language="F#" Value="type BindingGroup = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingGroup : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.BeginEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
       <MemberSignature Language="F#" Value="member this.BeginEdit : unit -&gt; unit" Usage="bindingGroup.BeginEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.BindingExpressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingExpressions As Collection(Of BindingExpressionBase)" />
       <MemberSignature Language="F#" Value="member this.BindingExpressions : System.Collections.ObjectModel.Collection&lt;System.Windows.Data.BindingExpressionBase&gt;" Usage="System.Windows.Data.BindingGroup.BindingExpressions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingExpressionBase ^&gt; ^ BindingExpressions { System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingExpressionBase ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
       <MemberSignature Language="F#" Value="member this.CancelEdit : unit -&gt; unit" Usage="bindingGroup.CancelEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.CanRestoreValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRestoreValues As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanRestoreValues : bool" Usage="System.Windows.Data.BindingGroup.CanRestoreValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRestoreValues { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -220,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.CommitEdit" />
       <MemberSignature Language="VB.NET" Value="Public Function CommitEdit () As Boolean" />
       <MemberSignature Language="F#" Value="member this.CommitEdit : unit -&gt; bool" Usage="bindingGroup.CommitEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CommitEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.GetValue(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (item As Object, propertyName As String) As Object" />
       <MemberSignature Language="F#" Value="override this.GetValue : obj * string -&gt; obj" Usage="bindingGroup.GetValue (item, propertyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Object ^ item, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -302,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.HasValidationError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasValidationError As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasValidationError : bool" Usage="System.Windows.Data.BindingGroup.HasValidationError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasValidationError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -323,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="System.Windows.Data.BindingGroup.IsDirty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IList" />
       <MemberSignature Language="F#" Value="member this.Items : System.Collections.IList" Usage="System.Windows.Data.BindingGroup.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Items { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -386,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Data.BindingGroup.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -430,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.NotifyOnValidationError" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnValidationError As Boolean" />
       <MemberSignature Language="F#" Value="member this.NotifyOnValidationError : bool with get, set" Usage="System.Windows.Data.BindingGroup.NotifyOnValidationError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnValidationError { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -470,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As DependencyObject" />
       <MemberSignature Language="F#" Value="member this.Owner : System.Windows.DependencyObject" Usage="System.Windows.Data.BindingGroup.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Owner { System::Windows::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -490,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.SharesProposedValues" />
       <MemberSignature Language="VB.NET" Value="Public Property SharesProposedValues As Boolean" />
       <MemberSignature Language="F#" Value="member this.SharesProposedValues : bool with get, set" Usage="System.Windows.Data.BindingGroup.SharesProposedValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SharesProposedValues { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -520,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.TryGetValue(System.Object,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (item As Object, propertyName As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryGetValue : obj * string *  -&gt; bool" Usage="bindingGroup.TryGetValue (item, propertyName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(System::Object ^ item, System::String ^ propertyName, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -566,6 +582,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.UpdateSources" />
       <MemberSignature Language="VB.NET" Value="Public Function UpdateSources () As Boolean" />
       <MemberSignature Language="F#" Value="member this.UpdateSources : unit -&gt; bool" Usage="bindingGroup.UpdateSources " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool UpdateSources();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -603,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.ValidatesOnNotifyDataError" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnNotifyDataError As Boolean" />
       <MemberSignature Language="F#" Value="member this.ValidatesOnNotifyDataError : bool with get, set" Usage="System.Windows.Data.BindingGroup.ValidatesOnNotifyDataError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnNotifyDataError { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -631,6 +649,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.ValidateWithoutUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateWithoutUpdate () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ValidateWithoutUpdate : unit -&gt; bool" Usage="bindingGroup.ValidateWithoutUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateWithoutUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -660,6 +679,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.ValidationErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationErrors As ReadOnlyCollection(Of ValidationError)" />
       <MemberSignature Language="F#" Value="member this.ValidationErrors : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.ValidationError&gt;" Usage="System.Windows.Data.BindingGroup.ValidationErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::ValidationError ^&gt; ^ ValidationErrors { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::ValidationError ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -680,6 +700,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingGroup.ValidationRules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationRules As Collection(Of ValidationRule)" />
       <MemberSignature Language="F#" Value="member this.ValidationRules : System.Collections.ObjectModel.Collection&lt;System.Windows.Controls.ValidationRule&gt;" Usage="System.Windows.Data.BindingGroup.ValidationRules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ ValidationRules { System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

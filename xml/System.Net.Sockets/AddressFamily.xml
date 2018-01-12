@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.AddressFamily" />
   <TypeSignature Language="VB.NET" Value="Public Enum AddressFamily" />
   <TypeSignature Language="F#" Value="type AddressFamily = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AddressFamily" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.AppleTalk" />
       <MemberSignature Language="VB.NET" Value="AppleTalk" />
       <MemberSignature Language="F#" Value="AppleTalk = 16" Usage="System.Net.Sockets.AddressFamily.AppleTalk" />
+      <MemberSignature Language="C++ CLI" Value="AppleTalk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Atm" />
       <MemberSignature Language="VB.NET" Value="Atm" />
       <MemberSignature Language="F#" Value="Atm = 22" Usage="System.Net.Sockets.AddressFamily.Atm" />
+      <MemberSignature Language="C++ CLI" Value="Atm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Banyan" />
       <MemberSignature Language="VB.NET" Value="Banyan" />
       <MemberSignature Language="F#" Value="Banyan = 21" Usage="System.Net.Sockets.AddressFamily.Banyan" />
+      <MemberSignature Language="C++ CLI" Value="Banyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Ccitt" />
       <MemberSignature Language="VB.NET" Value="Ccitt" />
       <MemberSignature Language="F#" Value="Ccitt = 10" Usage="System.Net.Sockets.AddressFamily.Ccitt" />
+      <MemberSignature Language="C++ CLI" Value="Ccitt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Chaos" />
       <MemberSignature Language="VB.NET" Value="Chaos" />
       <MemberSignature Language="F#" Value="Chaos = 5" Usage="System.Net.Sockets.AddressFamily.Chaos" />
+      <MemberSignature Language="C++ CLI" Value="Chaos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Cluster" />
       <MemberSignature Language="VB.NET" Value="Cluster" />
       <MemberSignature Language="F#" Value="Cluster = 24" Usage="System.Net.Sockets.AddressFamily.Cluster" />
+      <MemberSignature Language="C++ CLI" Value="Cluster" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.DataKit" />
       <MemberSignature Language="VB.NET" Value="DataKit" />
       <MemberSignature Language="F#" Value="DataKit = 9" Usage="System.Net.Sockets.AddressFamily.DataKit" />
+      <MemberSignature Language="C++ CLI" Value="DataKit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.DataLink" />
       <MemberSignature Language="VB.NET" Value="DataLink" />
       <MemberSignature Language="F#" Value="DataLink = 13" Usage="System.Net.Sockets.AddressFamily.DataLink" />
+      <MemberSignature Language="C++ CLI" Value="DataLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.DecNet" />
       <MemberSignature Language="VB.NET" Value="DecNet" />
       <MemberSignature Language="F#" Value="DecNet = 12" Usage="System.Net.Sockets.AddressFamily.DecNet" />
+      <MemberSignature Language="C++ CLI" Value="DecNet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Ecma" />
       <MemberSignature Language="VB.NET" Value="Ecma" />
       <MemberSignature Language="F#" Value="Ecma = 8" Usage="System.Net.Sockets.AddressFamily.Ecma" />
+      <MemberSignature Language="C++ CLI" Value="Ecma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.FireFox" />
       <MemberSignature Language="VB.NET" Value="FireFox" />
       <MemberSignature Language="F#" Value="FireFox = 19" Usage="System.Net.Sockets.AddressFamily.FireFox" />
+      <MemberSignature Language="C++ CLI" Value="FireFox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -369,6 +381,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.HyperChannel" />
       <MemberSignature Language="VB.NET" Value="HyperChannel" />
       <MemberSignature Language="F#" Value="HyperChannel = 15" Usage="System.Net.Sockets.AddressFamily.HyperChannel" />
+      <MemberSignature Language="C++ CLI" Value="HyperChannel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -398,6 +411,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Ieee12844" />
       <MemberSignature Language="VB.NET" Value="Ieee12844" />
       <MemberSignature Language="F#" Value="Ieee12844 = 25" Usage="System.Net.Sockets.AddressFamily.Ieee12844" />
+      <MemberSignature Language="C++ CLI" Value="Ieee12844" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.ImpLink" />
       <MemberSignature Language="VB.NET" Value="ImpLink" />
       <MemberSignature Language="F#" Value="ImpLink = 3" Usage="System.Net.Sockets.AddressFamily.ImpLink" />
+      <MemberSignature Language="C++ CLI" Value="ImpLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.InterNetwork" />
       <MemberSignature Language="VB.NET" Value="InterNetwork" />
       <MemberSignature Language="F#" Value="InterNetwork = 2" Usage="System.Net.Sockets.AddressFamily.InterNetwork" />
+      <MemberSignature Language="C++ CLI" Value="InterNetwork" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -485,6 +501,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.InterNetworkV6" />
       <MemberSignature Language="VB.NET" Value="InterNetworkV6" />
       <MemberSignature Language="F#" Value="InterNetworkV6 = 23" Usage="System.Net.Sockets.AddressFamily.InterNetworkV6" />
+      <MemberSignature Language="C++ CLI" Value="InterNetworkV6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -514,6 +531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Ipx" />
       <MemberSignature Language="VB.NET" Value="Ipx" />
       <MemberSignature Language="F#" Value="Ipx = 6" Usage="System.Net.Sockets.AddressFamily.Ipx" />
+      <MemberSignature Language="C++ CLI" Value="Ipx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -543,6 +561,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Irda" />
       <MemberSignature Language="VB.NET" Value="Irda" />
       <MemberSignature Language="F#" Value="Irda = 26" Usage="System.Net.Sockets.AddressFamily.Irda" />
+      <MemberSignature Language="C++ CLI" Value="Irda" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -572,6 +591,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Iso" />
       <MemberSignature Language="VB.NET" Value="Iso" />
       <MemberSignature Language="F#" Value="Iso = 7" Usage="System.Net.Sockets.AddressFamily.Iso" />
+      <MemberSignature Language="C++ CLI" Value="Iso" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -601,6 +621,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Lat" />
       <MemberSignature Language="VB.NET" Value="Lat" />
       <MemberSignature Language="F#" Value="Lat = 14" Usage="System.Net.Sockets.AddressFamily.Lat" />
+      <MemberSignature Language="C++ CLI" Value="Lat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -630,6 +651,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Max" />
       <MemberSignature Language="VB.NET" Value="Max" />
       <MemberSignature Language="F#" Value="Max = 29" Usage="System.Net.Sockets.AddressFamily.Max" />
+      <MemberSignature Language="C++ CLI" Value="Max" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -658,6 +680,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.NetBios" />
       <MemberSignature Language="VB.NET" Value="NetBios" />
       <MemberSignature Language="F#" Value="NetBios = 17" Usage="System.Net.Sockets.AddressFamily.NetBios" />
+      <MemberSignature Language="C++ CLI" Value="NetBios" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -687,6 +710,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.NetworkDesigners" />
       <MemberSignature Language="VB.NET" Value="NetworkDesigners" />
       <MemberSignature Language="F#" Value="NetworkDesigners = 28" Usage="System.Net.Sockets.AddressFamily.NetworkDesigners" />
+      <MemberSignature Language="C++ CLI" Value="NetworkDesigners" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -716,6 +740,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.NS" />
       <MemberSignature Language="VB.NET" Value="NS" />
       <MemberSignature Language="F#" Value="NS = 6" Usage="System.Net.Sockets.AddressFamily.NS" />
+      <MemberSignature Language="C++ CLI" Value="NS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -745,6 +770,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Osi" />
       <MemberSignature Language="VB.NET" Value="Osi" />
       <MemberSignature Language="F#" Value="Osi = 7" Usage="System.Net.Sockets.AddressFamily.Osi" />
+      <MemberSignature Language="C++ CLI" Value="Osi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -774,6 +800,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Pup" />
       <MemberSignature Language="VB.NET" Value="Pup" />
       <MemberSignature Language="F#" Value="Pup = 4" Usage="System.Net.Sockets.AddressFamily.Pup" />
+      <MemberSignature Language="C++ CLI" Value="Pup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -803,6 +830,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Sna" />
       <MemberSignature Language="VB.NET" Value="Sna" />
       <MemberSignature Language="F#" Value="Sna = 11" Usage="System.Net.Sockets.AddressFamily.Sna" />
+      <MemberSignature Language="C++ CLI" Value="Sna" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -832,6 +860,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Unix" />
       <MemberSignature Language="VB.NET" Value="Unix" />
       <MemberSignature Language="F#" Value="Unix = 1" Usage="System.Net.Sockets.AddressFamily.Unix" />
+      <MemberSignature Language="C++ CLI" Value="Unix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -861,6 +890,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.Sockets.AddressFamily.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -890,6 +920,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Net.Sockets.AddressFamily.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -919,6 +950,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.AddressFamily.VoiceView" />
       <MemberSignature Language="VB.NET" Value="VoiceView" />
       <MemberSignature Language="F#" Value="VoiceView = 18" Usage="System.Net.Sockets.AddressFamily.VoiceView" />
+      <MemberSignature Language="C++ CLI" Value="VoiceView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

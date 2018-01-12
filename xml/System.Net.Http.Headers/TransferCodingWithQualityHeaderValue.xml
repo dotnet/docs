@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransferCodingWithQualityHeaderValue&#xA;Inherits TransferCodingHeaderValue" />
   <TypeSignature Language="F#" Value="type TransferCodingWithQualityHeaderValue = class&#xA;    inherit TransferCodingHeaderValue" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransferCodingWithQualityHeaderValue sealed : System::Net::Http::Headers::TransferCodingHeaderValue" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.TransferCodingWithQualityHeaderValue : string -&gt; System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" Usage="new System.Net.Http.Headers.TransferCodingWithQualityHeaderValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransferCodingWithQualityHeaderValue(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, quality As Double)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.TransferCodingWithQualityHeaderValue : string * double -&gt; System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" Usage="new System.Net.Http.Headers.TransferCodingWithQualityHeaderValue (value, quality)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransferCodingWithQualityHeaderValue(System::String ^ value, double quality);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As TransferCodingWithQualityHeaderValue" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" Usage="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::TransferCodingWithQualityHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -144,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality" />
       <MemberSignature Language="VB.NET" Value="Public Property Quality As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.Quality : Nullable&lt;double&gt; with get, set" Usage="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Quality { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingWithQualityHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As TransferCodingWithQualityHeaderValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::TransferCodingWithQualityHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

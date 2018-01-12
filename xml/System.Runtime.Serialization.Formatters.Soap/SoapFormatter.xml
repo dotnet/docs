@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapFormatter&#xA;Implements IRemotingFormatter" />
   <TypeSignature Language="F#" Value="type SoapFormatter = class&#xA;    interface IRemotingFormatter&#xA;    interface IFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapFormatter sealed : System::Runtime::Remoting::Messaging::IRemotingFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
@@ -109,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor(System.Runtime.Serialization.ISurrogateSelector,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (selector As ISurrogateSelector, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Formatters.Soap.SoapFormatter : System.Runtime.Serialization.ISurrogateSelector * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Serialization.Formatters.Soap.SoapFormatter" Usage="new System.Runtime.Serialization.Formatters.Soap.SoapFormatter (selector, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapFormatter(System::Runtime::Serialization::ISurrogateSelector ^ selector, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
@@ -141,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.AssemblyFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyFormat As FormatterAssemblyStyle" />
       <MemberSignature Language="F#" Value="member this.AssemblyFormat : System.Runtime.Serialization.Formatters.FormatterAssemblyStyle with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.AssemblyFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::FormatterAssemblyStyle AssemblyFormat { System::Runtime::Serialization::Formatters::FormatterAssemblyStyle get(); void set(System::Runtime::Serialization::Formatters::FormatterAssemblyStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Binder" />
       <MemberSignature Language="VB.NET" Value="Public Property Binder As SerializationBinder" />
       <MemberSignature Language="F#" Value="member this.Binder : System.Runtime.Serialization.SerializationBinder with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Binder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::SerializationBinder ^ Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Binder</InterfaceMember>
@@ -186,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As StreamingContext" />
       <MemberSignature Language="F#" Value="member this.Context : System.Runtime.Serialization.StreamingContext with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::StreamingContext Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Context</InterfaceMember>
@@ -236,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationStream As Stream) As Object" />
       <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream -&gt; obj&#xA;override this.Deserialize : System.IO.Stream -&gt; obj" Usage="soapFormatter.Deserialize serializationStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::IO::Stream ^ serializationStream);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Deserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationStream As Stream, handler As HeaderHandler) As Object" />
       <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler -&gt; obj&#xA;override this.Deserialize : System.IO.Stream * System.Runtime.Remoting.Messaging.HeaderHandler -&gt; obj" Usage="soapFormatter.Deserialize (serializationStream, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::IO::Stream ^ serializationStream, System::Runtime::Remoting::Messaging::HeaderHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IRemotingFormatter.Deserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)</InterfaceMember>
@@ -330,6 +338,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.FilterLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property FilterLevel As TypeFilterLevel" />
       <MemberSignature Language="F#" Value="member this.FilterLevel : System.Runtime.Serialization.Formatters.TypeFilterLevel with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.FilterLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::TypeFilterLevel FilterLevel { System::Runtime::Serialization::Formatters::TypeFilterLevel get(); void set(System::Runtime::Serialization::Formatters::TypeFilterLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
@@ -366,6 +375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (serializationStream As Stream, graph As Object)" />
       <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj -&gt; unit&#xA;override this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="soapFormatter.Serialize (serializationStream, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Serialize(System::IO::Stream ^ serializationStream, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
@@ -410,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (serializationStream As Stream, graph As Object, headers As Header())" />
       <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj * System.Runtime.Remoting.Messaging.Header[] -&gt; unit&#xA;override this.Serialize : System.IO.Stream * obj * System.Runtime.Remoting.Messaging.Header[] -&gt; unit" Usage="soapFormatter.Serialize (serializationStream, graph, headers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Serialize(System::IO::Stream ^ serializationStream, System::Object ^ graph, cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ headers);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Messaging.IRemotingFormatter.Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])</InterfaceMember>
@@ -451,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.SurrogateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property SurrogateSelector As ISurrogateSelector" />
       <MemberSignature Language="F#" Value="member this.SurrogateSelector : System.Runtime.Serialization.ISurrogateSelector with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.SurrogateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ISurrogateSelector ^ SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Serialization.IFormatter.SurrogateSelector</InterfaceMember>
@@ -481,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TopObject As ISoapMessage" />
       <MemberSignature Language="F#" Value="member this.TopObject : System.Runtime.Serialization.Formatters.ISoapMessage with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::ISoapMessage ^ TopObject { System::Runtime::Serialization::Formatters::ISoapMessage ^ get(); void set(System::Runtime::Serialization::Formatters::ISoapMessage ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>
@@ -508,6 +521,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TypeFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeFormat As FormatterTypeStyle" />
       <MemberSignature Language="F#" Value="member this.TypeFormat : System.Runtime.Serialization.Formatters.FormatterTypeStyle with get, set" Usage="System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TypeFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Formatters::FormatterTypeStyle TypeFormat { System::Runtime::Serialization::Formatters::FormatterTypeStyle get(); void set(System::Runtime::Serialization::Formatters::FormatterTypeStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters.Soap</AssemblyName>

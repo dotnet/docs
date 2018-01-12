@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGalleryCategory" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonGalleryCategory&#xA;Inherits HeaderedItemsControl&#xA;Implements IWeakEventListener" />
   <TypeSignature Language="F#" Value="type RibbonGalleryCategory = class&#xA;    inherit HeaderedItemsControl&#xA;    interface IWeakEventListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonGalleryCategory : System::Windows::Controls::HeaderedItemsControl, System::Windows::IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonGalleryCategory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonGalleryCategory.ClearContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.ColumnsStretchToFill" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnsStretchToFill As Boolean" />
       <MemberSignature Language="F#" Value="member this.ColumnsStretchToFill : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.ColumnsStretchToFill" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ColumnsStretchToFill { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGalleryCategory.ColumnsStretchToFillProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnsStretchToFillProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnsStretchToFillProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.ColumnsStretchToFillProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnsStretchToFillProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonGalleryCategory.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.HeaderVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderVisibility As Visibility" />
       <MemberSignature Language="F#" Value="member this.HeaderVisibility : System.Windows.Visibility with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.HeaderVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility HeaderVisibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGalleryCategory.HeaderVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.HeaderVisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderVisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -217,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonGalleryCategory.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.IsSharedColumnSizeScope" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSharedColumnSizeScope As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSharedColumnSizeScope : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.IsSharedColumnSizeScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSharedColumnSizeScope { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -277,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGalleryCategory.IsSharedColumnSizeScopeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSharedColumnSizeScopeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSharedColumnSizeScopeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.IsSharedColumnSizeScopeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSharedColumnSizeScopeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -296,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.MaxColumnCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxColumnCount As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxColumnCount : int with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.MaxColumnCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxColumnCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -330,6 +342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGalleryCategory.MaxColumnCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxColumnCountProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MaxColumnCountProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.MaxColumnCountProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxColumnCountProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -349,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.MinColumnCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MinColumnCount As Integer" />
       <MemberSignature Language="F#" Value="member this.MinColumnCount : int with get, set" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.MinColumnCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinColumnCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -383,6 +397,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonGalleryCategory.MinColumnCountProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinColumnCountProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable MinColumnCountProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonGalleryCategory.MinColumnCountProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinColumnCountProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -402,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonGalleryCategory.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -429,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonGalleryCategory.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -450,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="ribbonGalleryCategory.OnInitialized e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -481,6 +499,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="ribbonGalleryCategory.OnItemsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -504,6 +523,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsSourceChanged (oldValue As IEnumerable, newValue As IEnumerable)" />
       <MemberSignature Language="F#" Value="override this.OnItemsSourceChanged : System.Collections.IEnumerable * System.Collections.IEnumerable -&gt; unit" Usage="ribbonGalleryCategory.OnItemsSourceChanged (oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsSourceChanged(System::Collections::IEnumerable ^ oldValue, System::Collections::IEnumerable ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -529,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonGalleryCategory.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -553,6 +574,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.IWeakEventListener.ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGalleryCategory.System#Windows#IWeakEventListener#ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean Implements IWeakEventListener.ReceiveWeakEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.IWeakEventListener.ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e) = System::Windows::IWeakEventListener::ReceiveWeakEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)</InterfaceMember>

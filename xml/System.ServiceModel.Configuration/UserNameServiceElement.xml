@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UserNameServiceElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserNameServiceElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type UserNameServiceElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserNameServiceElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UserNameServiceElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserNameServiceElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.CachedLogonTokenLifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property CachedLogonTokenLifetime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.CachedLogonTokenLifetime : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.CachedLogonTokenLifetime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CachedLogonTokenLifetime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.CacheLogonTokens" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheLogonTokens As Boolean" />
       <MemberSignature Language="F#" Value="member this.CacheLogonTokens : bool with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.CacheLogonTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CacheLogonTokens { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UserNameServiceElement.Copy(System.ServiceModel.Configuration.UserNameServiceElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As UserNameServiceElement)" />
       <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.UserNameServiceElement -&gt; unit" Usage="userNameServiceElement.Copy from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::UserNameServiceElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.CustomUserNamePasswordValidatorType" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomUserNamePasswordValidatorType As String" />
       <MemberSignature Language="F#" Value="member this.CustomUserNamePasswordValidatorType : string with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.CustomUserNamePasswordValidatorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomUserNamePasswordValidatorType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.IncludeWindowsGroups" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeWindowsGroups As Boolean" />
       <MemberSignature Language="F#" Value="member this.IncludeWindowsGroups : bool with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.IncludeWindowsGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeWindowsGroups { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.MaxCachedLogonTokens" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxCachedLogonTokens As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxCachedLogonTokens : int with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.MaxCachedLogonTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCachedLogonTokens { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.MembershipProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Property MembershipProviderName As String" />
       <MemberSignature Language="F#" Value="member this.MembershipProviderName : string with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.MembershipProviderName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MembershipProviderName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.UserNameServiceElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -263,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UserNameServiceElement.UserNamePasswordValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property UserNamePasswordValidationMode As UserNamePasswordValidationMode" />
       <MemberSignature Language="F#" Value="member this.UserNamePasswordValidationMode : System.ServiceModel.Security.UserNamePasswordValidationMode with get, set" Usage="System.ServiceModel.Configuration.UserNameServiceElement.UserNamePasswordValidationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::UserNamePasswordValidationMode UserNamePasswordValidationMode { System::ServiceModel::Security::UserNamePasswordValidationMode get(); void set(System::ServiceModel::Security::UserNamePasswordValidationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

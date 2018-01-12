@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ILOpCodeExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module ILOpCodeExtensions" />
   <TypeSignature Language="F#" Value="type ILOpCodeExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ILOpCodeExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.GetBranchOperandSize(System.Reflection.Metadata.ILOpCode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBranchOperandSize (opCode As ILOpCode) As Integer" />
       <MemberSignature Language="F#" Value="static member GetBranchOperandSize : System.Reflection.Metadata.ILOpCode -&gt; int" Usage="System.Reflection.Metadata.ILOpCodeExtensions.GetBranchOperandSize opCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetBranchOperandSize(System::Reflection::Metadata::ILOpCode opCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.GetLongBranch(System.Reflection.Metadata.ILOpCode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLongBranch (opCode As ILOpCode) As ILOpCode" />
       <MemberSignature Language="F#" Value="static member GetLongBranch : System.Reflection.Metadata.ILOpCode -&gt; System.Reflection.Metadata.ILOpCode" Usage="System.Reflection.Metadata.ILOpCodeExtensions.GetLongBranch opCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::Metadata::ILOpCode GetLongBranch(System::Reflection::Metadata::ILOpCode opCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.GetShortBranch(System.Reflection.Metadata.ILOpCode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetShortBranch (opCode As ILOpCode) As ILOpCode" />
       <MemberSignature Language="F#" Value="static member GetShortBranch : System.Reflection.Metadata.ILOpCode -&gt; System.Reflection.Metadata.ILOpCode" Usage="System.Reflection.Metadata.ILOpCodeExtensions.GetShortBranch opCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::Metadata::ILOpCode GetShortBranch(System::Reflection::Metadata::ILOpCode opCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.IsBranch(System.Reflection.Metadata.ILOpCode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsBranch (opCode As ILOpCode) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsBranch : System.Reflection.Metadata.ILOpCode -&gt; bool" Usage="System.Reflection.Metadata.ILOpCodeExtensions.IsBranch opCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsBranch(System::Reflection::Metadata::ILOpCode opCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

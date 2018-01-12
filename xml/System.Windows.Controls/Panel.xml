@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Panel" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Panel&#xA;Inherits FrameworkElement&#xA;Implements IAddChild" />
   <TypeSignature Language="F#" Value="type Panel = class&#xA;    inherit FrameworkElement&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Panel abstract : System::Windows::FrameworkElement, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Panel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
       <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Panel.Background" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Panel.BackgroundProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Panel.BackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As UIElementCollection" />
       <MemberSignature Language="F#" Value="member this.Children : System.Windows.Controls.UIElementCollection" Usage="System.Windows.Controls.Panel.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::UIElementCollection ^ Children { System::Windows::Controls::UIElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.CreateUIElementCollection(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateUIElementCollection (logicalParent As FrameworkElement) As UIElementCollection" />
       <MemberSignature Language="F#" Value="abstract member CreateUIElementCollection : System.Windows.FrameworkElement -&gt; System.Windows.Controls.UIElementCollection&#xA;override this.CreateUIElementCollection : System.Windows.FrameworkElement -&gt; System.Windows.Controls.UIElementCollection" Usage="panel.CreateUIElementCollection logicalParent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Controls::UIElementCollection ^ CreateUIElementCollection(System::Windows::FrameworkElement ^ logicalParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.GetVisualChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
       <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="panel.GetVisualChild index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.GetZIndex(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetZIndex (element As UIElement) As Integer" />
       <MemberSignature Language="F#" Value="static member GetZIndex : System.Windows.UIElement -&gt; int" Usage="System.Windows.Controls.Panel.GetZIndex element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetZIndex(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.HasLogicalOrientation" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property HasLogicalOrientation As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasLogicalOrientation : bool" Usage="System.Windows.Controls.Panel.HasLogicalOrientation" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HasLogicalOrientation { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -292,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.HasLogicalOrientationPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasLogicalOrientationPublic As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasLogicalOrientationPublic : bool" Usage="System.Windows.Controls.Panel.HasLogicalOrientationPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLogicalOrientationPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -320,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.InternalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property InternalChildren As UIElementCollection" />
       <MemberSignature Language="F#" Value="member this.InternalChildren : System.Windows.Controls.UIElementCollection" Usage="System.Windows.Controls.Panel.InternalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Controls::UIElementCollection ^ InternalChildren { System::Windows::Controls::UIElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.IsItemsHost" />
       <MemberSignature Language="VB.NET" Value="Public Property IsItemsHost As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsItemsHost : bool with get, set" Usage="System.Windows.Controls.Panel.IsItemsHost" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsItemsHost { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -405,6 +417,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Panel.IsItemsHostProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsItemsHostProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsItemsHostProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Panel.IsItemsHostProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsItemsHostProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -425,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.Panel.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -446,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.LogicalOrientation" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property LogicalOrientation As Orientation" />
       <MemberSignature Language="F#" Value="member this.LogicalOrientation : System.Windows.Controls.Orientation" Usage="System.Windows.Controls.Panel.LogicalOrientation" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Controls::Orientation LogicalOrientation { System::Windows::Controls::Orientation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -474,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.LogicalOrientationPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalOrientationPublic As Orientation" />
       <MemberSignature Language="F#" Value="member this.LogicalOrientationPublic : System.Windows.Controls.Orientation" Usage="System.Windows.Controls.Panel.LogicalOrientationPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Orientation LogicalOrientationPublic { System::Windows::Controls::Orientation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -501,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.OnIsItemsHostChanged(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIsItemsHostChanged (oldIsItemsHost As Boolean, newIsItemsHost As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member OnIsItemsHostChanged : bool * bool -&gt; unit&#xA;override this.OnIsItemsHostChanged : bool * bool -&gt; unit" Usage="panel.OnIsItemsHostChanged (oldIsItemsHost, newIsItemsHost)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIsItemsHostChanged(bool oldIsItemsHost, bool newIsItemsHost);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -527,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.OnRender(System.Windows.Media.DrawingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRender (dc As DrawingContext)" />
       <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="panel.OnRender dc" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ dc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -550,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualChildrenChanged (visualAdded As DependencyObject, visualRemoved As DependencyObject)" />
       <MemberSignature Language="F#" Value="override this.OnVisualChildrenChanged : System.Windows.DependencyObject * System.Windows.DependencyObject -&gt; unit" Usage="panel.OnVisualChildrenChanged (visualAdded, visualRemoved)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualChildrenChanged(System::Windows::DependencyObject ^ visualAdded, System::Windows::DependencyObject ^ visualRemoved);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -584,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.SetZIndex(System.Windows.UIElement,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetZIndex (element As UIElement, value As Integer)" />
       <MemberSignature Language="F#" Value="static member SetZIndex : System.Windows.UIElement * int -&gt; unit" Usage="System.Windows.Controls.Panel.SetZIndex (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetZIndex(System::Windows::UIElement ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -628,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.ShouldSerializeChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeChildren () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeChildren : unit -&gt; bool" Usage="panel.ShouldSerializeChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -654,6 +675,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -679,6 +701,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Panel.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
@@ -705,6 +728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Panel.VisualChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
       <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.Panel.VisualChildrenCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -741,6 +765,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Panel.ZIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ZIndexProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ZIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Panel.ZIndexProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ZIndexProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.HostingEnvironment" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostingEnvironment&#xA;Inherits MarshalByRefObject" />
   <TypeSignature Language="F#" Value="type HostingEnvironment = class&#xA;    inherit MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostingEnvironment sealed : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostingEnvironment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.ApplicationHost" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationHost As IApplicationHost" />
       <MemberSignature Language="F#" Value="member this.ApplicationHost : System.Web.Hosting.IApplicationHost" Usage="System.Web.Hosting.HostingEnvironment.ApplicationHost" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Hosting::IApplicationHost ^ ApplicationHost { System::Web::Hosting::IApplicationHost ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.ApplicationID" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationID As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationID : string" Usage="System.Web.Hosting.HostingEnvironment.ApplicationID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ApplicationID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.ApplicationMonitors" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationMonitors As ApplicationMonitors" />
       <MemberSignature Language="F#" Value="member this.ApplicationMonitors : System.Web.Hosting.ApplicationMonitors" Usage="System.Web.Hosting.HostingEnvironment.ApplicationMonitors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Hosting::ApplicationMonitors ^ ApplicationMonitors { System::Web::Hosting::ApplicationMonitors ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationPhysicalPath As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationPhysicalPath : string" Usage="System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ApplicationPhysicalPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationVirtualPath As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationVirtualPath : string" Usage="System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ApplicationVirtualPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.Cache" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cache As Cache" />
       <MemberSignature Language="F#" Value="member this.Cache : System.Web.Caching.Cache" Usage="System.Web.Hosting.HostingEnvironment.Cache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Caching::Cache ^ Cache { System::Web::Caching::Cache ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.DecrementBusyCount" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DecrementBusyCount ()" />
       <MemberSignature Language="F#" Value="static member DecrementBusyCount : unit -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.DecrementBusyCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DecrementBusyCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.Impersonate" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Impersonate () As IDisposable" />
       <MemberSignature Language="F#" Value="static member Impersonate : unit -&gt; IDisposable" Usage="System.Web.Hosting.HostingEnvironment.Impersonate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IDisposable ^ Impersonate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -268,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.Impersonate(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Impersonate (token As IntPtr) As IDisposable" />
       <MemberSignature Language="F#" Value="static member Impersonate : nativeint -&gt; IDisposable" Usage="System.Web.Hosting.HostingEnvironment.Impersonate token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IDisposable ^ Impersonate(IntPtr token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.Impersonate(System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Impersonate (userToken As IntPtr, virtualPath As String) As IDisposable" />
       <MemberSignature Language="F#" Value="static member Impersonate : nativeint * string -&gt; IDisposable" Usage="System.Web.Hosting.HostingEnvironment.Impersonate (userToken, virtualPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IDisposable ^ Impersonate(IntPtr userToken, System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -327,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.InClientBuildManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InClientBuildManager As Boolean" />
       <MemberSignature Language="F#" Value="member this.InClientBuildManager : bool" Usage="System.Web.Hosting.HostingEnvironment.InClientBuildManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool InClientBuildManager { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.IncrementBusyCount" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IncrementBusyCount ()" />
       <MemberSignature Language="F#" Value="static member IncrementBusyCount : unit -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.IncrementBusyCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void IncrementBusyCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.InitializationException" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InitializationException As Exception" />
       <MemberSignature Language="F#" Value="member this.InitializationException : Exception" Usage="System.Web.Hosting.HostingEnvironment.InitializationException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Exception ^ InitializationException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -399,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="hostingEnvironment.InitializeLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -427,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.InitiateShutdown" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InitiateShutdown ()" />
       <MemberSignature Language="F#" Value="static member InitiateShutdown : unit -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.InitiateShutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitiateShutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +475,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.IsDevelopmentEnvironment" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsDevelopmentEnvironment As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDevelopmentEnvironment : bool" Usage="System.Web.Hosting.HostingEnvironment.IsDevelopmentEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsDevelopmentEnvironment { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -479,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.IsHosted" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsHosted As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsHosted : bool" Usage="System.Web.Hosting.HostingEnvironment.IsHosted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsHosted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -500,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.MapPath(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MapPath (virtualPath As String) As String" />
       <MemberSignature Language="F#" Value="static member MapPath : string -&gt; string" Usage="System.Web.Hosting.HostingEnvironment.MapPath virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MapPath(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -525,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.MaxConcurrentRequestsPerCPU" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property MaxConcurrentRequestsPerCPU As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxConcurrentRequestsPerCPU : int with get, set" Usage="System.Web.Hosting.HostingEnvironment.MaxConcurrentRequestsPerCPU" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MaxConcurrentRequestsPerCPU { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -545,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.MaxConcurrentThreadsPerCPU" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property MaxConcurrentThreadsPerCPU As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxConcurrentThreadsPerCPU : int with get, set" Usage="System.Web.Hosting.HostingEnvironment.MaxConcurrentThreadsPerCPU" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int MaxConcurrentThreadsPerCPU { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -565,6 +587,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.MessageReceived" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MessageReceived ()" />
       <MemberSignature Language="F#" Value="static member MessageReceived : unit -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.MessageReceived " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MessageReceived();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -598,6 +621,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Action{System.Threading.CancellationToken})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub QueueBackgroundWorkItem (workItem As Action(Of CancellationToken))" />
       <MemberSignature Language="F#" Value="static member QueueBackgroundWorkItem : Action&lt;System.Threading.CancellationToken&gt; -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem workItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void QueueBackgroundWorkItem(Action&lt;System::Threading::CancellationToken&gt; ^ workItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -632,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub QueueBackgroundWorkItem (workItem As Func(Of CancellationToken, Task))" />
       <MemberSignature Language="F#" Value="static member QueueBackgroundWorkItem : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt; -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem workItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void QueueBackgroundWorkItem(Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task ^&gt; ^ workItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -666,6 +691,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.RegisterObject(System.Web.Hosting.IRegisteredObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterObject (obj As IRegisteredObject)" />
       <MemberSignature Language="F#" Value="static member RegisterObject : System.Web.Hosting.IRegisteredObject -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.RegisterObject obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterObject(System::Web::Hosting::IRegisteredObject ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -718,6 +744,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterVirtualPathProvider(class System.Web.Hosting.VirtualPathProvider virtualPathProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider(System.Web.Hosting.VirtualPathProvider)" />
       <MemberSignature Language="F#" Value="static member RegisterVirtualPathProvider : System.Web.Hosting.VirtualPathProvider -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.RegisterVirtualPathProvider virtualPathProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterVirtualPathProvider(System::Web::Hosting::VirtualPathProvider ^ virtualPathProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -767,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.SetCultures" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetCultures () As IDisposable" />
       <MemberSignature Language="F#" Value="static member SetCultures : unit -&gt; IDisposable" Usage="System.Web.Hosting.HostingEnvironment.SetCultures " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IDisposable ^ SetCultures();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -795,6 +823,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.SetCultures(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetCultures (virtualPath As String) As IDisposable" />
       <MemberSignature Language="F#" Value="static member SetCultures : string -&gt; IDisposable" Usage="System.Web.Hosting.HostingEnvironment.SetCultures virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IDisposable ^ SetCultures(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -826,6 +855,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.ShutdownReason" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShutdownReason As ApplicationShutdownReason" />
       <MemberSignature Language="F#" Value="member this.ShutdownReason : System.Web.ApplicationShutdownReason" Usage="System.Web.Hosting.HostingEnvironment.ShutdownReason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::ApplicationShutdownReason ShutdownReason { System::Web::ApplicationShutdownReason get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -846,6 +876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.SiteName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SiteName As String" />
       <MemberSignature Language="F#" Value="member this.SiteName : string" Usage="System.Web.Hosting.HostingEnvironment.SiteName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SiteName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -866,6 +897,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Hosting.HostingEnvironment.StopListening" />
       <MemberSignature Language="VB.NET" Value="Public Shared Event StopListening As EventHandler " />
       <MemberSignature Language="F#" Value="member this.StopListening : EventHandler " Usage="member this.StopListening : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ StopListening;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -904,6 +936,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostingEnvironment.UnregisterObject(System.Web.Hosting.IRegisteredObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub UnregisterObject (obj As IRegisteredObject)" />
       <MemberSignature Language="F#" Value="static member UnregisterObject : System.Web.Hosting.IRegisteredObject -&gt; unit" Usage="System.Web.Hosting.HostingEnvironment.UnregisterObject obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterObject(System::Web::Hosting::IRegisteredObject ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -945,6 +978,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.HostingEnvironment.VirtualPathProvider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property VirtualPathProvider As VirtualPathProvider" />
       <MemberSignature Language="F#" Value="member this.VirtualPathProvider : System.Web.Hosting.VirtualPathProvider" Usage="System.Web.Hosting.HostingEnvironment.VirtualPathProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Hosting::VirtualPathProvider ^ VirtualPathProvider { System::Web::Hosting::VirtualPathProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

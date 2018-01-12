@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerTypeProxyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerTypeProxyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type DebuggerTypeProxyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggerTypeProxyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Debug</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerTypeProxyAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerTypeProxyAttribute : string -&gt; System.Diagnostics.DebuggerTypeProxyAttribute" Usage="new System.Diagnostics.DebuggerTypeProxyAttribute typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerTypeProxyAttribute(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerTypeProxyAttribute.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerTypeProxyAttribute : Type -&gt; System.Diagnostics.DebuggerTypeProxyAttribute" Usage="new System.Diagnostics.DebuggerTypeProxyAttribute type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerTypeProxyAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerTypeProxyAttribute.ProxyTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProxyTypeName As String" />
       <MemberSignature Language="F#" Value="member this.ProxyTypeName : string" Usage="System.Diagnostics.DebuggerTypeProxyAttribute.ProxyTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProxyTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -192,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerTypeProxyAttribute.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As Type" />
       <MemberSignature Language="F#" Value="member this.Target : Type with get, set" Usage="System.Diagnostics.DebuggerTypeProxyAttribute.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Target { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -232,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerTypeProxyAttribute.TargetTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetTypeName As String" />
       <MemberSignature Language="F#" Value="member this.TargetTypeName : string with get, set" Usage="System.Diagnostics.DebuggerTypeProxyAttribute.TargetTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>

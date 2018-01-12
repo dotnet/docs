@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Debugging.DebuggerManager.IslandThread" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerManager.IslandThread&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type DebuggerManager.IslandThread = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class DebuggerManager::IslandThread sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Debugging.DebuggerManager.IslandThread.IslandWorker(Microsoft.Build.Debugging.DebuggerManager.IslandThread)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IslandWorker (controller As DebuggerManager.IslandThread)" />
       <MemberSignature Language="F#" Value="static member IslandWorker : Microsoft.Build.Debugging.DebuggerManager.IslandThread -&gt; unit" Usage="Microsoft.Build.Debugging.DebuggerManager.IslandThread.IslandWorker controller" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void IslandWorker(Microsoft::Build::Debugging::DebuggerManager::IslandThread ^ controller);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Debugging.DebuggerManager.IslandThread.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

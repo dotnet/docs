@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSFederationHttpBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSFederationHttpBindingElement&#xA;Inherits WSHttpBindingBaseElement" />
   <TypeSignature Language="F#" Value="type WSFederationHttpBindingElement = class&#xA;    inherit WSHttpBindingBaseElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSFederationHttpBindingElement : System::ServiceModel::Configuration::WSHttpBindingBaseElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSFederationHttpBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationHttpBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSFederationHttpBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WSFederationHttpBindingElement : string -&gt; System.ServiceModel.Configuration.WSFederationHttpBindingElement" Usage="new System.ServiceModel.Configuration.WSFederationHttpBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationHttpBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSFederationHttpBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.WSFederationHttpBindingElement.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSFederationHttpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="wSFederationHttpBindingElement.InitializeFrom binding" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSFederationHttpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="wSFederationHttpBindingElement.OnApplyConfiguration binding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSFederationHttpBindingElement.PrivacyNoticeAt" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivacyNoticeAt As Uri" />
       <MemberSignature Language="F#" Value="member this.PrivacyNoticeAt : Uri with get, set" Usage="System.ServiceModel.Configuration.WSFederationHttpBindingElement.PrivacyNoticeAt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ PrivacyNoticeAt { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSFederationHttpBindingElement.PrivacyNoticeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivacyNoticeVersion As Integer" />
       <MemberSignature Language="F#" Value="member this.PrivacyNoticeVersion : int with get, set" Usage="System.ServiceModel.Configuration.WSFederationHttpBindingElement.PrivacyNoticeVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PrivacyNoticeVersion { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WSFederationHttpBindingElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -206,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As WSFederationHttpSecurityElement" />
       <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.Configuration.WSFederationHttpSecurityElement" Usage="System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::WSFederationHttpSecurityElement ^ Security { System::ServiceModel::Configuration::WSFederationHttpSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

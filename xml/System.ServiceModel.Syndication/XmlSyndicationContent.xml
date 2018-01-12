@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.XmlSyndicationContent" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSyndicationContent&#xA;Inherits SyndicationContent" />
   <TypeSignature Language="F#" Value="type XmlSyndicationContent = class&#xA;    inherit SyndicationContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSyndicationContent : System::ServiceModel::Syndication::SyndicationContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.ServiceModel.Syndication.XmlSyndicationContent)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As XmlSyndicationContent)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.XmlSyndicationContent : System.ServiceModel.Syndication.XmlSyndicationContent -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="new System.ServiceModel.Syndication.XmlSyndicationContent source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSyndicationContent(System::ServiceModel::Syndication::XmlSyndicationContent ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.XmlSyndicationContent : System.Xml.XmlReader -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="new System.ServiceModel.Syndication.XmlSyndicationContent reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyndicationContent(System::Xml::XmlReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.ServiceModel.Syndication.SyndicationElementExtension)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, extension As SyndicationElementExtension)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.XmlSyndicationContent : string * System.ServiceModel.Syndication.SyndicationElementExtension -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="new System.ServiceModel.Syndication.XmlSyndicationContent (type, extension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyndicationContent(System::String ^ type, System::ServiceModel::Syndication::SyndicationElementExtension ^ extension);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, dataContractExtension As Object, dataContractSerializer As XmlObjectSerializer)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.XmlSyndicationContent : string * obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="new System.ServiceModel.Syndication.XmlSyndicationContent (type, dataContractExtension, dataContractSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyndicationContent(System::String ^ type, System::Object ^ dataContractExtension, System::Runtime::Serialization::XmlObjectSerializer ^ dataContractSerializer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.#ctor(System.String,System.Object,System.Xml.Serialization.XmlSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, xmlSerializerExtension As Object, serializer As XmlSerializer)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.XmlSyndicationContent : string * obj * System.Xml.Serialization.XmlSerializer -&gt; System.ServiceModel.Syndication.XmlSyndicationContent" Usage="new System.ServiceModel.Syndication.XmlSyndicationContent (type, xmlSerializerExtension, serializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSyndicationContent(System::String ^ type, System::Object ^ xmlSerializerExtension, System::Xml::Serialization::XmlSerializer ^ serializer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As SyndicationContent" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationContent" Usage="xmlSyndicationContent.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Syndication::SyndicationContent ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlSyndicationContent.Extension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extension As SyndicationElementExtension" />
       <MemberSignature Language="F#" Value="member this.Extension : System.ServiceModel.Syndication.SyndicationElementExtension" Usage="System.ServiceModel.Syndication.XmlSyndicationContent.Extension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtension ^ Extension { System::ServiceModel::Syndication::SyndicationElementExtension ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.GetReaderAtContent" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtContent () As XmlDictionaryReader" />
       <MemberSignature Language="F#" Value="member this.GetReaderAtContent : unit -&gt; System.Xml.XmlDictionaryReader" Usage="xmlSyndicationContent.GetReaderAtContent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) () As TContent" />
       <MemberSignature Language="F#" Value="member this.ReadContent : unit -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) (serializer As XmlObjectSerializer) As TContent" />
       <MemberSignature Language="F#" Value="member this.ReadContent : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent serializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Xml.Serialization.XmlSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) (serializer As XmlSerializer) As TContent" />
       <MemberSignature Language="F#" Value="member this.ReadContent : System.Xml.Serialization.XmlSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent serializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Xml::Serialization::XmlSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -389,6 +401,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.XmlSyndicationContent.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.ServiceModel.Syndication.XmlSyndicationContent.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Type { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -413,6 +426,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.WriteContentsTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteContentsTo (writer As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteContentsTo : System.Xml.XmlWriter -&gt; unit" Usage="xmlSyndicationContent.WriteContentsTo writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteContentsTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

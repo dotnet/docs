@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleUpdateAction" />
   <TypeSignature Language="VB.NET" Value="Public Class RuleUpdateAction&#xA;Inherits RuleAction" />
   <TypeSignature Language="F#" Value="type RuleUpdateAction = class&#xA;    inherit RuleAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleUpdateAction : System::Workflow::Activities::Rules::RuleAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleUpdateAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleUpdateAction : string -&gt; System.Workflow.Activities.Rules.RuleUpdateAction" Usage="new System.Workflow.Activities.Rules.RuleUpdateAction path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleUpdateAction(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As RuleAction" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Workflow.Activities.Rules.RuleAction" Usage="ruleUpdateAction.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::Activities::Rules::RuleAction ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="ruleUpdateAction.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.Execute(System.Workflow.Activities.Rules.RuleExecution)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Execute (context As RuleExecution)" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.Activities.Rules.RuleExecution -&gt; unit" Usage="ruleUpdateAction.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Execute(System::Workflow::Activities::Rules::RuleExecution ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="ruleUpdateAction.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -179,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.GetSideEffects(System.Workflow.Activities.Rules.RuleValidation)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSideEffects (validation As RuleValidation) As ICollection(Of String)" />
       <MemberSignature Language="F#" Value="override this.GetSideEffects : System.Workflow.Activities.Rules.RuleValidation -&gt; System.Collections.Generic.ICollection&lt;string&gt;" Usage="ruleUpdateAction.GetSideEffects validation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ GetSideEffects(System::Workflow::Activities::Rules::RuleValidation ^ validation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -203,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleUpdateAction.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Workflow.Activities.Rules.RuleUpdateAction.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -235,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="ruleUpdateAction.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleUpdateAction.Validate(System.Workflow.Activities.Rules.RuleValidation)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (validator As RuleValidation) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Validate : System.Workflow.Activities.Rules.RuleValidation -&gt; bool" Usage="ruleUpdateAction.Validate validator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Validate(System::Workflow::Activities::Rules::RuleValidation ^ validator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

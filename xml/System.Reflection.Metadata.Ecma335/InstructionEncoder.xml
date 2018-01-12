@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.InstructionEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure InstructionEncoder" />
   <TypeSignature Language="F#" Value="type InstructionEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class InstructionEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Branch(System.Reflection.Metadata.ILOpCode,System.Reflection.Metadata.Ecma335.LabelHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Branch (code As ILOpCode, label As LabelHandle)" />
       <MemberSignature Language="F#" Value="member this.Branch : System.Reflection.Metadata.ILOpCode * System.Reflection.Metadata.Ecma335.LabelHandle -&gt; unit" Usage="instructionEncoder.Branch (code, label)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Branch(System::Reflection::Metadata::ILOpCode code, System::Reflection::Metadata::Ecma335::LabelHandle label);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Call(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Call (methodHandle As EntityHandle)" />
       <MemberSignature Language="F#" Value="member this.Call : System.Reflection.Metadata.EntityHandle -&gt; unit" Usage="instructionEncoder.Call methodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Call(System::Reflection::Metadata::EntityHandle methodHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Call(System.Reflection.Metadata.MemberReferenceHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Call (methodHandle As MemberReferenceHandle)" />
       <MemberSignature Language="F#" Value="member this.Call : System.Reflection.Metadata.MemberReferenceHandle -&gt; unit" Usage="instructionEncoder.Call methodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Call(System::Reflection::Metadata::MemberReferenceHandle methodHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Call(System.Reflection.Metadata.MethodDefinitionHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Call (methodHandle As MethodDefinitionHandle)" />
       <MemberSignature Language="F#" Value="member this.Call : System.Reflection.Metadata.MethodDefinitionHandle -&gt; unit" Usage="instructionEncoder.Call methodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Call(System::Reflection::Metadata::MethodDefinitionHandle methodHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Call(System.Reflection.Metadata.MethodSpecificationHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Call (methodHandle As MethodSpecificationHandle)" />
       <MemberSignature Language="F#" Value="member this.Call : System.Reflection.Metadata.MethodSpecificationHandle -&gt; unit" Usage="instructionEncoder.Call methodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Call(System::Reflection::Metadata::MethodSpecificationHandle methodHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.CallIndirect(System.Reflection.Metadata.StandaloneSignatureHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CallIndirect (signature As StandaloneSignatureHandle)" />
       <MemberSignature Language="F#" Value="member this.CallIndirect : System.Reflection.Metadata.StandaloneSignatureHandle -&gt; unit" Usage="instructionEncoder.CallIndirect signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CallIndirect(System::Reflection::Metadata::StandaloneSignatureHandle signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.InstructionEncoder.CodeBuilder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CodeBuilder As BlobBuilder" />
       <MemberSignature Language="F#" Value="member this.CodeBuilder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.InstructionEncoder.CodeBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ CodeBuilder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.InstructionEncoder.ControlFlowBuilder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlFlowBuilder As ControlFlowBuilder" />
       <MemberSignature Language="F#" Value="member this.ControlFlowBuilder : System.Reflection.Metadata.Ecma335.ControlFlowBuilder" Usage="System.Reflection.Metadata.Ecma335.InstructionEncoder.ControlFlowBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::Ecma335::ControlFlowBuilder ^ ControlFlowBuilder { System::Reflection::Metadata::Ecma335::ControlFlowBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.DefineLabel" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineLabel () As LabelHandle" />
       <MemberSignature Language="F#" Value="member this.DefineLabel : unit -&gt; System.Reflection.Metadata.Ecma335.LabelHandle" Usage="instructionEncoder.DefineLabel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::LabelHandle DefineLabel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadArgument(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadArgument (argumentIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.LoadArgument : int -&gt; unit" Usage="instructionEncoder.LoadArgument argumentIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadArgument(int argumentIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -280,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadArgumentAddress(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadArgumentAddress (argumentIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.LoadArgumentAddress : int -&gt; unit" Usage="instructionEncoder.LoadArgumentAddress argumentIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadArgumentAddress(int argumentIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -304,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadConstantI4(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadConstantI4 (value As Integer)" />
       <MemberSignature Language="F#" Value="member this.LoadConstantI4 : int -&gt; unit" Usage="instructionEncoder.LoadConstantI4 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadConstantI4(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -328,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadConstantI8(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadConstantI8 (value As Long)" />
       <MemberSignature Language="F#" Value="member this.LoadConstantI8 : int64 -&gt; unit" Usage="instructionEncoder.LoadConstantI8 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadConstantI8(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -352,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadConstantR4(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadConstantR4 (value As Single)" />
       <MemberSignature Language="F#" Value="member this.LoadConstantR4 : single -&gt; unit" Usage="instructionEncoder.LoadConstantR4 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadConstantR4(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -376,6 +391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadConstantR8(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadConstantR8 (value As Double)" />
       <MemberSignature Language="F#" Value="member this.LoadConstantR8 : double -&gt; unit" Usage="instructionEncoder.LoadConstantR8 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadConstantR8(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -400,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadLocal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadLocal (slotIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.LoadLocal : int -&gt; unit" Usage="instructionEncoder.LoadLocal slotIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadLocal(int slotIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -424,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadLocalAddress(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadLocalAddress (slotIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.LoadLocalAddress : int -&gt; unit" Usage="instructionEncoder.LoadLocalAddress slotIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadLocalAddress(int slotIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -448,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.LoadString(System.Reflection.Metadata.UserStringHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadString (handle As UserStringHandle)" />
       <MemberSignature Language="F#" Value="member this.LoadString : System.Reflection.Metadata.UserStringHandle -&gt; unit" Usage="instructionEncoder.LoadString handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadString(System::Reflection::Metadata::UserStringHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -472,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.MarkLabel(System.Reflection.Metadata.Ecma335.LabelHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MarkLabel (label As LabelHandle)" />
       <MemberSignature Language="F#" Value="member this.MarkLabel : System.Reflection.Metadata.Ecma335.LabelHandle -&gt; unit" Usage="instructionEncoder.MarkLabel label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MarkLabel(System::Reflection::Metadata::Ecma335::LabelHandle label);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -496,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.InstructionEncoder.Offset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Integer" />
       <MemberSignature Language="F#" Value="member this.Offset : int" Usage="System.Reflection.Metadata.Ecma335.InstructionEncoder.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -517,6 +538,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.OpCode(System.Reflection.Metadata.ILOpCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpCode (code As ILOpCode)" />
       <MemberSignature Language="F#" Value="member this.OpCode : System.Reflection.Metadata.ILOpCode -&gt; unit" Usage="instructionEncoder.OpCode code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpCode(System::Reflection::Metadata::ILOpCode code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -541,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.StoreArgument(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StoreArgument (argumentIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.StoreArgument : int -&gt; unit" Usage="instructionEncoder.StoreArgument argumentIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StoreArgument(int argumentIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -565,6 +588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.StoreLocal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StoreLocal (slotIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.StoreLocal : int -&gt; unit" Usage="instructionEncoder.StoreLocal slotIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StoreLocal(int slotIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -589,6 +613,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Token(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Token (token As Integer)" />
       <MemberSignature Language="F#" Value="member this.Token : int -&gt; unit" Usage="instructionEncoder.Token token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Token(int token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -613,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.InstructionEncoder.Token(System.Reflection.Metadata.EntityHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Token (handle As EntityHandle)" />
       <MemberSignature Language="F#" Value="member this.Token : System.Reflection.Metadata.EntityHandle -&gt; unit" Usage="instructionEncoder.Token handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Token(System::Reflection::Metadata::EntityHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

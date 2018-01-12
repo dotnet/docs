@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.AjaxFrameworkMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum AjaxFrameworkMode" />
   <TypeSignature Language="F#" Value="type AjaxFrameworkMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AjaxFrameworkMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.AjaxFrameworkMode.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="F#" Value="Disabled = 1" Usage="System.Web.UI.AjaxFrameworkMode.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.AjaxFrameworkMode.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="F#" Value="Enabled = 0" Usage="System.Web.UI.AjaxFrameworkMode.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.AjaxFrameworkMode.Explicit" />
       <MemberSignature Language="VB.NET" Value="Explicit" />
       <MemberSignature Language="F#" Value="Explicit = 2" Usage="System.Web.UI.AjaxFrameworkMode.Explicit" />
+      <MemberSignature Language="C++ CLI" Value="Explicit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

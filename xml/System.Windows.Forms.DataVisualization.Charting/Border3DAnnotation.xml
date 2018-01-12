@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Border3DAnnotation" />
   <TypeSignature Language="VB.NET" Value="Public Class Border3DAnnotation&#xA;Inherits RectangleAnnotation" />
   <TypeSignature Language="F#" Value="type Border3DAnnotation = class&#xA;    inherit RectangleAnnotation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Border3DAnnotation : System::Windows::Forms::DataVisualization::Charting::RectangleAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Border3DAnnotation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Border3DAnnotation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Border3DAnnotation.AnnotationType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
       <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Windows.Forms.DataVisualization.Charting.Border3DAnnotation.AnnotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnnotationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Border3DAnnotation.BorderSkin" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderSkin As BorderSkin" />
       <MemberSignature Language="F#" Value="member this.BorderSkin : System.Windows.Forms.DataVisualization.Charting.BorderSkin with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Border3DAnnotation.BorderSkin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::BorderSkin ^ BorderSkin { System::Windows::Forms::DataVisualization::Charting::BorderSkin ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::BorderSkin ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

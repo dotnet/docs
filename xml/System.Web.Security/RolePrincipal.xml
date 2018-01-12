@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RolePrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class RolePrincipal&#xA;Inherits ClaimsPrincipal&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type RolePrincipal = class&#xA;    inherit ClaimsPrincipal&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RolePrincipal : System::Security::Claims::ClaimsPrincipal, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.#ctor(System.Security.Principal.IIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity)" />
       <MemberSignature Language="F#" Value="new System.Web.Security.RolePrincipal : System.Security.Principal.IIdentity -&gt; System.Web.Security.RolePrincipal" Usage="new System.Web.Security.RolePrincipal identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RolePrincipal(System::Security::Principal::IIdentity ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Web.Security.RolePrincipal : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Web.Security.RolePrincipal" Usage="new System.Web.Security.RolePrincipal (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RolePrincipal(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.#ctor(System.Security.Principal.IIdentity,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IIdentity, encryptedTicket As String)" />
       <MemberSignature Language="F#" Value="new System.Web.Security.RolePrincipal : System.Security.Principal.IIdentity * string -&gt; System.Web.Security.RolePrincipal" Usage="new System.Web.Security.RolePrincipal (identity, encryptedTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RolePrincipal(System::Security::Principal::IIdentity ^ identity, System::String ^ encryptedTicket);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.#ctor(System.String,System.Security.Principal.IIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String, identity As IIdentity)" />
       <MemberSignature Language="F#" Value="new System.Web.Security.RolePrincipal : string * System.Security.Principal.IIdentity -&gt; System.Web.Security.RolePrincipal" Usage="new System.Web.Security.RolePrincipal (providerName, identity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RolePrincipal(System::String ^ providerName, System::Security::Principal::IIdentity ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.#ctor(System.String,System.Security.Principal.IIdentity,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String, identity As IIdentity, encryptedTicket As String)" />
       <MemberSignature Language="F#" Value="new System.Web.Security.RolePrincipal : string * System.Security.Principal.IIdentity * string -&gt; System.Web.Security.RolePrincipal" Usage="new System.Web.Security.RolePrincipal (providerName, identity, encryptedTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RolePrincipal(System::String ^ providerName, System::Security::Principal::IIdentity ^ identity, System::String ^ encryptedTicket);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.CachedListChanged" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CachedListChanged As Boolean" />
       <MemberSignature Language="F#" Value="member this.CachedListChanged : bool" Usage="System.Web.Security.RolePrincipal.CachedListChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CachedListChanged { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.CookiePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CookiePath As String" />
       <MemberSignature Language="F#" Value="member this.CookiePath : string" Usage="System.Web.Security.RolePrincipal.CookiePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CookiePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.Expired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expired As Boolean" />
       <MemberSignature Language="F#" Value="member this.Expired : bool" Usage="System.Web.Security.RolePrincipal.Expired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Expired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.ExpireDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpireDate As DateTime" />
       <MemberSignature Language="F#" Value="member this.ExpireDate : DateTime" Usage="System.Web.Security.RolePrincipal.ExpireDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ExpireDate { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="rolePrincipal.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.GetRoles" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRoles () As String()" />
       <MemberSignature Language="F#" Value="member this.GetRoles : unit -&gt; string[]" Usage="rolePrincipal.GetRoles " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetRoles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Identity As IIdentity" />
       <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Web.Security.RolePrincipal.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsInRole : string -&gt; bool" Usage="rolePrincipal.IsInRole role" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsInRole(System::String ^ role);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -528,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.IsRoleListCached" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRoleListCached As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsRoleListCached : bool" Usage="System.Web.Security.RolePrincipal.IsRoleListCached" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRoleListCached { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -564,6 +579,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.IssueDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssueDate As DateTime" />
       <MemberSignature Language="F#" Value="member this.IssueDate : DateTime" Usage="System.Web.Security.RolePrincipal.IssueDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime IssueDate { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -594,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderName As String" />
       <MemberSignature Language="F#" Value="member this.ProviderName : string" Usage="System.Web.Security.RolePrincipal.ProviderName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -623,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.SetDirty" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDirty ()" />
       <MemberSignature Language="F#" Value="member this.SetDirty : unit -&gt; unit" Usage="rolePrincipal.SetDirty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -649,6 +667,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -684,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.ToEncryptedTicket" />
       <MemberSignature Language="VB.NET" Value="Public Function ToEncryptedTicket () As String" />
       <MemberSignature Language="F#" Value="member this.ToEncryptedTicket : unit -&gt; string" Usage="rolePrincipal.ToEncryptedTicket " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToEncryptedTicket();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -720,6 +740,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RolePrincipal.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
       <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Web.Security.RolePrincipal.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmComplexTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmComplexTypeAttribute&#xA;Inherits EdmTypeAttribute" />
   <TypeSignature Language="F#" Value="type EdmComplexTypeAttribute = class&#xA;    inherit EdmTypeAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EdmComplexTypeAttribute sealed : System::Data::Objects::DataClasses::EdmTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmComplexTypeAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmComplexTypeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

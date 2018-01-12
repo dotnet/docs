@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.MultipartContent" />
   <TypeSignature Language="VB.NET" Value="Public Class MultipartContent&#xA;Inherits HttpContent&#xA;Implements IEnumerable(Of HttpContent)" />
   <TypeSignature Language="F#" Value="type MultipartContent = class&#xA;    inherit HttpContent&#xA;    interface seq&lt;HttpContent&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultipartContent : System::Net::Http::HttpContent, System::Collections::Generic::IEnumerable&lt;System::Net::Http::HttpContent ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipartContent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subtype As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.MultipartContent : string -&gt; System.Net.Http.MultipartContent" Usage="new System.Net.Http.MultipartContent subtype" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipartContent(System::String ^ subtype);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (subtype As String, boundary As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.MultipartContent : string * string -&gt; System.Net.Http.MultipartContent" Usage="new System.Net.Http.MultipartContent (subtype, boundary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultipartContent(System::String ^ subtype, System::String ^ boundary);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.Add(System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (content As HttpContent)" />
       <MemberSignature Language="F#" Value="abstract member Add : System.Net.Http.HttpContent -&gt; unit&#xA;override this.Add : System.Net.Http.HttpContent -&gt; unit" Usage="multipartContent.Add content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Net::Http::HttpContent ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="multipartContent.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of HttpContent)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Net.Http.HttpContent&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Net.Http.HttpContent&gt;" Usage="multipartContent.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Net::Http::HttpContent ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -244,6 +251,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
       <MemberSignature Language="F#" Value="override this.SerializeToStreamAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="multipartContent.SerializeToStreamAsync (stream, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.MultipartContent.TryComputeLength(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryComputeLength (ByRef length As Long) As Boolean" />
       <MemberSignature Language="F#" Value="override this.TryComputeLength :  -&gt; bool" Usage="multipartContent.TryComputeLength length" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

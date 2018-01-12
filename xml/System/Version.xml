@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Version" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Version&#xA;Implements ICloneable, IComparable, IComparable(Of Version), IEquatable(Of Version)" />
   <TypeSignature Language="F#" Value="type Version = class&#xA;    interface ICloneable&#xA;    interface IComparable&#xA;    interface IComparable&lt;Version&gt;&#xA;    interface IEquatable&lt;Version&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Version sealed : ICloneable, IComparable, IComparable&lt;Version ^&gt;, IEquatable&lt;Version ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,6 +148,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Version();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As String)" />
       <MemberSignature Language="F#" Value="new Version : string -&gt; Version" Usage="new System.Version version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Version(System::String ^ version);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -240,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (major As Integer, minor As Integer)" />
       <MemberSignature Language="F#" Value="new Version : int * int -&gt; Version" Usage="new System.Version (major, minor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Version(int major, int minor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -291,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.#ctor(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (major As Integer, minor As Integer, build As Integer)" />
       <MemberSignature Language="F#" Value="new Version : int * int * int -&gt; Version" Usage="new System.Version (major, minor, build)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Version(int major, int minor, int build);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -344,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (major As Integer, minor As Integer, build As Integer, revision As Integer)" />
       <MemberSignature Language="F#" Value="new Version : int * int * int * int -&gt; Version" Usage="new System.Version (major, minor, build, revision)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Version(int major, int minor, int build, int revision);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -408,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:System.Version.Build" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Build As Integer" />
       <MemberSignature Language="F#" Value="member this.Build : int" Usage="System.Version.Build" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Build { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -457,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="version.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -507,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (version As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="version.CompareTo version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ version);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -588,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.CompareTo(System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Version) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : Version -&gt; int&#xA;override this.CompareTo : Version -&gt; int" Usage="version.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(Version ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -691,6 +701,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="version.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -730,6 +741,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.Equals(System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Version) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : Version -&gt; bool" Usage="version.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Version ^ obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -780,6 +792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="version.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -825,6 +838,7 @@
       <MemberSignature Language="DocId" Value="P:System.Version.Major" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Major As Integer" />
       <MemberSignature Language="F#" Value="member this.Major : int" Usage="System.Version.Major" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Major { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -865,6 +879,7 @@
       <MemberSignature Language="DocId" Value="P:System.Version.MajorRevision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorRevision As Short" />
       <MemberSignature Language="F#" Value="member this.MajorRevision : int16" Usage="System.Version.MajorRevision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short MajorRevision { short get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -917,6 +932,7 @@
       <MemberSignature Language="DocId" Value="P:System.Version.Minor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minor As Integer" />
       <MemberSignature Language="F#" Value="member this.Minor : int" Usage="System.Version.Minor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minor { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -966,6 +982,7 @@
       <MemberSignature Language="DocId" Value="P:System.Version.MinorRevision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorRevision As Short" />
       <MemberSignature Language="F#" Value="member this.MinorRevision : int16" Usage="System.Version.MinorRevision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short MinorRevision { short get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1016,6 +1033,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.op_Equality(System.Version,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (v1 As Version, v2 As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : Version * Version -&gt; bool" Usage="v1 = v2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Version ^ v1, Version ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1060,6 +1078,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.op_GreaterThan(System.Version,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (v1 As Version, v2 As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( &gt; ) : Version * Version -&gt; bool" Usage="v1 &gt; v2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(Version ^ v1, Version ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1104,6 +1123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.op_GreaterThanOrEqual(System.Version,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (v1 As Version, v2 As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( &gt;= ) : Version * Version -&gt; bool" Usage="v1 &gt;= v2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(Version ^ v1, Version ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1148,6 +1168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.op_Inequality(System.Version,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (v1 As Version, v2 As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : Version * Version -&gt; bool" Usage="System.Version.op_Inequality (v1, v2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Version ^ v1, Version ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1192,6 +1213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.op_LessThan(System.Version,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (v1 As Version, v2 As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( &lt; ) : Version * Version -&gt; bool" Usage="v1 &lt; v2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(Version ^ v1, Version ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1238,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.op_LessThanOrEqual(System.Version,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (v1 As Version, v2 As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( &lt;= ) : Version * Version -&gt; bool" Usage="v1 &lt;= v2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(Version ^ v1, Version ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1284,6 +1307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Version.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As Version" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; Version" Usage="System.Version.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Version ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1357,6 +1381,7 @@ major.minor[.build[.revision]]
       <MemberSignature Language="DocId" Value="P:System.Version.Revision" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Revision As Integer" />
       <MemberSignature Language="F#" Value="member this.Revision : int" Usage="System.Version.Revision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Revision { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1405,6 +1430,7 @@ major.minor[.build[.revision]]
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.System#IComparable#CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function CompareTo (version As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ version) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -1448,6 +1474,7 @@ major.minor[.build[.revision]]
       <MemberSignature Language="DocId" Value="M:System.Version.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="version.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1486,6 +1513,7 @@ major.minor[.build[.revision]]
       <MemberSignature Language="DocId" Value="M:System.Version.ToString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (fieldCount As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : int -&gt; string" Usage="version.ToString fieldCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(int fieldCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1557,6 +1585,7 @@ major.minor[.build[.revision]]
       <MemberSignature Language="DocId" Value="M:System.Version.TryParse(System.String,System.Version@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef result As Version) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Version.TryParse (input, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] Version ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

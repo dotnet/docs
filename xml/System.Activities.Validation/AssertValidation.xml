@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.AssertValidation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssertValidation&#xA;Inherits NativeActivity" />
   <TypeSignature Language="F#" Value="type AssertValidation = class&#xA;    inherit NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssertValidation sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AssertValidation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssertValidation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.Assertion" />
       <MemberSignature Language="VB.NET" Value="Public Property Assertion As InArgument(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.Assertion : System.Activities.InArgument&lt;bool&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.Assertion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;bool&gt; ^ Assertion { System::Activities::InArgument&lt;bool&gt; ^ get(); void set(System::Activities::InArgument&lt;bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AssertValidation.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="assertValidation.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AssertValidation.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="assertValidation.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property IsWarning As InArgument(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsWarning : System.Activities.InArgument&lt;bool&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.IsWarning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;bool&gt; ^ IsWarning { System::Activities::InArgument&lt;bool&gt; ^ get(); void set(System::Activities::InArgument&lt;bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As InArgument(Of String)" />
       <MemberSignature Language="F#" Value="member this.Message : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ Message { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -153,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As InArgument(Of String)" />
       <MemberSignature Language="F#" Value="member this.PropertyName : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ PropertyName { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

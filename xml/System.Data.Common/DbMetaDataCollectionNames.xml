@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbMetaDataCollectionNames" />
   <TypeSignature Language="VB.NET" Value="Public Class DbMetaDataCollectionNames" />
   <TypeSignature Language="F#" Value="type DbMetaDataCollectionNames = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbMetaDataCollectionNames abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataSourceInformation As String " />
       <MemberSignature Language="F#" Value=" staticval mutable DataSourceInformation : string" Usage="System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DataSourceInformation;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.DataTypes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataTypes As String " />
       <MemberSignature Language="F#" Value=" staticval mutable DataTypes : string" Usage="System.Data.Common.DbMetaDataCollectionNames.DataTypes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DataTypes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.MetaDataCollections" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MetaDataCollections As String " />
       <MemberSignature Language="F#" Value=" staticval mutable MetaDataCollections : string" Usage="System.Data.Common.DbMetaDataCollectionNames.MetaDataCollections" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MetaDataCollections;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.ReservedWords" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ReservedWords As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ReservedWords : string" Usage="System.Data.Common.DbMetaDataCollectionNames.ReservedWords" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ReservedWords;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataCollectionNames.Restrictions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Restrictions As String " />
       <MemberSignature Language="F#" Value=" staticval mutable Restrictions : string" Usage="System.Data.Common.DbMetaDataCollectionNames.Restrictions" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Restrictions;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

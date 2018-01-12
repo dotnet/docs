@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaComplexContentRestriction" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaComplexContentRestriction&#xA;Inherits XmlSchemaContent" />
   <TypeSignature Language="F#" Value="type XmlSchemaComplexContentRestriction = class&#xA;    inherit XmlSchemaContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaComplexContentRestriction : System::Xml::Schema::XmlSchemaContent" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaComplexContentRestriction.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaComplexContentRestriction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexContentRestriction.AnyAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Property AnyAttribute As XmlSchemaAnyAttribute" />
       <MemberSignature Language="F#" Value="member this.AnyAttribute : System.Xml.Schema.XmlSchemaAnyAttribute with get, set" Usage="System.Xml.Schema.XmlSchemaComplexContentRestriction.AnyAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnyAttribute ^ AnyAttribute { System::Xml::Schema::XmlSchemaAnyAttribute ^ get(); void set(System::Xml::Schema::XmlSchemaAnyAttribute ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexContentRestriction.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XmlSchemaObjectCollection" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaComplexContentRestriction.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Attributes { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexContentRestriction.BaseTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseTypeName As XmlQualifiedName" />
       <MemberSignature Language="F#" Value="member this.BaseTypeName : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Schema.XmlSchemaComplexContentRestriction.BaseTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ BaseTypeName { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexContentRestriction.Particle" />
       <MemberSignature Language="VB.NET" Value="Public Property Particle As XmlSchemaParticle" />
       <MemberSignature Language="F#" Value="member this.Particle : System.Xml.Schema.XmlSchemaParticle with get, set" Usage="System.Xml.Schema.XmlSchemaComplexContentRestriction.Particle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaParticle ^ Particle { System::Xml::Schema::XmlSchemaParticle ^ get(); void set(System::Xml::Schema::XmlSchemaParticle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

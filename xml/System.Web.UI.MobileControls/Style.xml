@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Style" />
   <TypeSignature Language="VB.NET" Value="Public Class Style&#xA;Implements ICloneable, IParserAccessor, IStateManager, ITemplateable" />
   <TypeSignature Language="F#" Value="type Style = class&#xA;    interface IParserAccessor&#xA;    interface ITemplateable&#xA;    interface IStateManager&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Style : ICloneable, System::Web::UI::IParserAccessor, System::Web::UI::IStateManager, System::Web::UI::MobileControls::ITemplateable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Style();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub AddParsedSubObject (o As Object)" />
       <MemberSignature Language="F#" Value="member this.AddParsedSubObject : obj -&gt; unit" Usage="style.AddParsedSubObject o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddParsedSubObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As Alignment" />
       <MemberSignature Language="F#" Value="member this.Alignment : System.Web.UI.MobileControls.Alignment with get, set" Usage="System.Web.UI.MobileControls.Style.Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Alignment Alignment { System::Web::UI::MobileControls::Alignment get(); void set(System::Web::UI::MobileControls::Alignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -162,6 +166,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.AlignmentKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignmentKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable AlignmentKey : obj" Usage="System.Web.UI.MobileControls.Style.AlignmentKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ AlignmentKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.ApplyTo(System.Web.UI.WebControls.WebControl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyTo (control As WebControl)" />
       <MemberSignature Language="F#" Value="member this.ApplyTo : System.Web.UI.WebControls.WebControl -&gt; unit" Usage="style.ApplyTo control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyTo(System::Web::UI::WebControls::WebControl ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -219,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.MobileControls.Style.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.BackColorKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackColorKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable BackColorKey : obj" Usage="System.Web.UI.MobileControls.Style.BackColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ BackColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -279,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.BoldKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BoldKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable BoldKey : obj" Usage="System.Web.UI.MobileControls.Style.BoldKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ BoldKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -298,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="style.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -322,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Control" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As MobileControl" />
       <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.MobileControl" Usage="System.Web.UI.MobileControls.Style.Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileControl ^ Control { System::Web::UI::MobileControls::MobileControl ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.DeviceSpecific" />
       <MemberSignature Language="VB.NET" Value="Public Property DeviceSpecific As DeviceSpecific" />
       <MemberSignature Language="F#" Value="member this.DeviceSpecific : System.Web.UI.MobileControls.DeviceSpecific with get, set" Usage="System.Web.UI.MobileControls.Style.DeviceSpecific" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceSpecific ^ DeviceSpecific { System::Web::UI::MobileControls::DeviceSpecific ^ get(); void set(System::Web::UI::MobileControls::DeviceSpecific ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -386,6 +398,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As FontInfo" />
       <MemberSignature Language="F#" Value="member this.Font : System.Web.UI.MobileControls.FontInfo" Usage="System.Web.UI.MobileControls.Style.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::FontInfo ^ Font { System::Web::UI::MobileControls::FontInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -432,6 +445,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.FontNameKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontNameKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable FontNameKey : obj" Usage="System.Web.UI.MobileControls.Style.FontNameKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ FontNameKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -452,6 +466,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.FontSizeKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable FontSizeKey : obj" Usage="System.Web.UI.MobileControls.Style.FontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ FontSizeKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -472,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.MobileControls.Style.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -515,6 +531,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.ForeColorKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForeColorKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable ForeColorKey : obj" Usage="System.Web.UI.MobileControls.Style.ForeColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ ForeColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -534,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.GetTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTemplate (templateName As String) As ITemplate" />
       <MemberSignature Language="F#" Value="member this.GetTemplate : string -&gt; System.Web.UI.ITemplate" Usage="style.GetTemplate templateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ITemplate ^ GetTemplate(System::String ^ templateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -565,6 +583,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.IsTemplated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTemplated As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsTemplated : bool" Usage="System.Web.UI.MobileControls.Style.IsTemplated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTemplated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -602,6 +621,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.MobileControls.Style.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -626,6 +646,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.ItalicKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItalicKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable ItalicKey : obj" Usage="System.Web.UI.MobileControls.Style.ItalicKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ ItalicKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -655,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Web.UI.MobileControls.Style.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -679,6 +701,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Item(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As Object, inherit As Boolean) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj * bool) : obj" Usage="System.Web.UI.MobileControls.Style.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^, bool] { System::Object ^ get(System::Object ^ key, bool inherit); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -706,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub LoadViewState (state As Object)" />
       <MemberSignature Language="F#" Value="member this.LoadViewState : obj -&gt; unit" Usage="style.LoadViewState state" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -739,6 +763,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.MobileControls.Style.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -769,6 +794,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object RegisterStyle(string name, class System.Type type, object defaultValue, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.RegisterStyle(System.String,System.Type,System.Object,System.Boolean)" />
       <MemberSignature Language="F#" Value="static member RegisterStyle : string * Type * obj * bool -&gt; obj" Usage="System.Web.UI.MobileControls.Style.RegisterStyle (name, type, defaultValue, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ RegisterStyle(System::String ^ name, Type ^ type, System::Object ^ defaultValue, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -814,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="member this.SaveViewState : unit -&gt; obj" Usage="style.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -838,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.State" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property State As StateBag" />
       <MemberSignature Language="F#" Value="member this.State : System.Web.UI.StateBag" Usage="System.Web.UI.MobileControls.Style.State" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::UI::StateBag ^ State { System::Web::UI::StateBag ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -858,6 +886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.StyleReference" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StyleReference As String" />
       <MemberSignature Language="F#" Value="member this.StyleReference : string with get, set" Usage="System.Web.UI.MobileControls.Style.StyleReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleReference { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -898,6 +927,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IParserAccessor.AddParsedSubObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.System#Web#UI#IParserAccessor#AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddParsedSubObject (o As Object) Implements IParserAccessor.AddParsedSubObject" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IParserAccessor.AddParsedSubObject(System::Object ^ o) = System::Web::UI::IParserAccessor::AddParsedSubObject;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
@@ -931,6 +961,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="F#" Usage="System.Web.UI.MobileControls.Style.System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -960,6 +991,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -992,6 +1024,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.System#Web#UI#IStateManager#SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -1022,6 +1055,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.System#Web#UI#IStateManager#TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -1052,6 +1086,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Style.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TrackViewState ()" />
       <MemberSignature Language="F#" Value="member this.TrackViewState : unit -&gt; unit" Usage="style.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackViewState();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -1082,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Style.Wrapping" />
       <MemberSignature Language="VB.NET" Value="Public Property Wrapping As Wrapping" />
       <MemberSignature Language="F#" Value="member this.Wrapping : System.Web.UI.MobileControls.Wrapping with get, set" Usage="System.Web.UI.MobileControls.Style.Wrapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Wrapping Wrapping { System::Web::UI::MobileControls::Wrapping get(); void set(System::Web::UI::MobileControls::Wrapping value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1126,6 +1162,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Style.WrappingKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WrappingKey As Object " />
       <MemberSignature Language="F#" Value=" staticval mutable WrappingKey : obj" Usage="System.Web.UI.MobileControls.Style.WrappingKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ WrappingKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

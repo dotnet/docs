@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Capture" />
   <TypeSignature Language="VB.NET" Value="Public Class Capture" />
   <TypeSignature Language="F#" Value="type Capture = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Capture" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Capture.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Text.RegularExpressions.Capture.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Capture.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Text.RegularExpressions.Capture.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.Capture.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="capture.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -172,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Capture.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Text.RegularExpressions.Capture.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>

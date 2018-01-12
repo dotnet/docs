@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceMapping" />
   <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceMapping" />
   <TypeSignature Language="F#" Value="type ScriptResourceMapping = class&#xA;    interface IScriptResourceMapping" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptResourceMapping();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.AddDefinition(System.String,System.Web.UI.ScriptResourceDefinition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDefinition (name As String, definition As ScriptResourceDefinition)" />
       <MemberSignature Language="F#" Value="member this.AddDefinition : string * System.Web.UI.ScriptResourceDefinition -&gt; unit" Usage="scriptResourceMapping.AddDefinition (name, definition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDefinition(System::String ^ name, System::Web::UI::ScriptResourceDefinition ^ definition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDefinition(string name, class System.Reflection.Assembly assembly, class System.Web.UI.ScriptResourceDefinition definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.AddDefinition(System.String,System.Reflection.Assembly,System.Web.UI.ScriptResourceDefinition)" />
       <MemberSignature Language="F#" Value="member this.AddDefinition : string * System.Reflection.Assembly * System.Web.UI.ScriptResourceDefinition -&gt; unit" Usage="scriptResourceMapping.AddDefinition (name, assembly, definition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDefinition(System::String ^ name, System::Reflection::Assembly ^ assembly, System::Web::UI::ScriptResourceDefinition ^ definition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="scriptResourceMapping.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.GetDefinition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDefinition (name As String) As ScriptResourceDefinition" />
       <MemberSignature Language="F#" Value="member this.GetDefinition : string -&gt; System.Web.UI.ScriptResourceDefinition" Usage="scriptResourceMapping.GetDefinition name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ScriptResourceDefinition ^ GetDefinition(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.ScriptResourceDefinition GetDefinition(class System.Web.UI.ScriptReference scriptReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.GetDefinition(System.Web.UI.ScriptReference)" />
       <MemberSignature Language="F#" Value="member this.GetDefinition : System.Web.UI.ScriptReference -&gt; System.Web.UI.ScriptResourceDefinition" Usage="scriptResourceMapping.GetDefinition scriptReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ScriptResourceDefinition ^ GetDefinition(System::Web::UI::ScriptReference ^ scriptReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.ScriptResourceDefinition GetDefinition(string name, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.GetDefinition(System.String,System.Reflection.Assembly)" />
       <MemberSignature Language="F#" Value="member this.GetDefinition : string * System.Reflection.Assembly -&gt; System.Web.UI.ScriptResourceDefinition" Usage="scriptResourceMapping.GetDefinition (name, assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ScriptResourceDefinition ^ GetDefinition(System::String ^ name, System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -216,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.RemoveDefinition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveDefinition (name As String) As ScriptResourceDefinition" />
       <MemberSignature Language="F#" Value="member this.RemoveDefinition : string -&gt; System.Web.UI.ScriptResourceDefinition" Usage="scriptResourceMapping.RemoveDefinition name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ScriptResourceDefinition ^ RemoveDefinition(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.ScriptResourceDefinition RemoveDefinition(string name, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.RemoveDefinition(System.String,System.Reflection.Assembly)" />
       <MemberSignature Language="F#" Value="member this.RemoveDefinition : string * System.Reflection.Assembly -&gt; System.Web.UI.ScriptResourceDefinition" Usage="scriptResourceMapping.RemoveDefinition (name, assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ScriptResourceDefinition ^ RemoveDefinition(System::String ^ name, System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

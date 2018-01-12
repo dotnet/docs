@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Timer" />
   <TypeSignature Language="VB.NET" Value="Public Class Timer&#xA;Inherits Control&#xA;Implements IPostBackEventHandler, IScriptControl" />
   <TypeSignature Language="F#" Value="type Timer = class&#xA;    inherit Control&#xA;    interface IPostBackEventHandler&#xA;    interface IScriptControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Timer : System::Web::UI::Control, System::Web::UI::IPostBackEventHandler, System::Web::UI::IScriptControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -131,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Timer.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.Timer.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.GetScriptDescriptors" />
       <MemberSignature Language="VB.NET" Value="Protected Iterator Overridable Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor)" />
       <MemberSignature Language="F#" Value="abstract member GetScriptDescriptors : unit -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;&#xA;override this.GetScriptDescriptors : unit -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;" Usage="timer.GetScriptDescriptors " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptDescriptors</InterfaceMember>
@@ -213,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Protected Iterator Overridable Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
       <MemberSignature Language="F#" Value="abstract member GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;&#xA;override this.GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;" Usage="timer.GetScriptReferences " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptReferences</InterfaceMember>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Timer.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Integer" />
       <MemberSignature Language="F#" Value="member this.Interval : int with get, set" Usage="System.Web.UI.Timer.Interval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Interval { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="timer.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -314,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.OnTick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTick (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnTick : EventArgs -&gt; unit&#xA;override this.OnTick : EventArgs -&gt; unit" Usage="timer.OnTick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -352,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="timer.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -378,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="timer.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -400,6 +410,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -432,6 +443,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptDescriptor&gt; System.Web.UI.IScriptControl.GetScriptDescriptors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.System#Web#UI#IScriptControl#GetScriptDescriptors" />
       <MemberSignature Language="VB.NET" Value="Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor) Implements IScriptControl.GetScriptDescriptors" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ System.Web.UI.IScriptControl.GetScriptDescriptors() = System::Web::UI::IScriptControl::GetScriptDescriptors;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptDescriptors</InterfaceMember>
@@ -464,6 +476,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptReference&gt; System.Web.UI.IScriptControl.GetScriptReferences() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Timer.System#Web#UI#IScriptControl#GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Function GetScriptReferences () As IEnumerable(Of ScriptReference) Implements IScriptControl.GetScriptReferences" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ System.Web.UI.IScriptControl.GetScriptReferences() = System::Web::UI::IScriptControl::GetScriptReferences;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptReferences</InterfaceMember>
@@ -495,6 +508,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Timer.Tick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Tick As EventHandler(Of EventArgs) " />
       <MemberSignature Language="F#" Value="member this.Tick : EventHandler&lt;EventArgs&gt; " Usage="member this.Tick : System.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;EventArgs ^&gt; ^ Tick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -534,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Timer.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.Timer.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.NameValueHeaderValue" />
   <TypeSignature Language="VB.NET" Value="Public Class NameValueHeaderValue&#xA;Implements ICloneable" />
   <TypeSignature Language="F#" Value="type NameValueHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameValueHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.#ctor(System.Net.Http.Headers.NameValueHeaderValue)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (source As NameValueHeaderValue)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.NameValueHeaderValue : System.Net.Http.Headers.NameValueHeaderValue -&gt; System.Net.Http.Headers.NameValueHeaderValue" Usage="new System.Net.Http.Headers.NameValueHeaderValue source" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; NameValueHeaderValue(System::Net::Http::Headers::NameValueHeaderValue ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.NameValueHeaderValue : string -&gt; System.Net.Http.Headers.NameValueHeaderValue" Usage="new System.Net.Http.Headers.NameValueHeaderValue name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueHeaderValue(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Http.Headers.NameValueHeaderValue : string * string -&gt; System.Net.Http.Headers.NameValueHeaderValue" Usage="new System.Net.Http.Headers.NameValueHeaderValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameValueHeaderValue(System::String ^ name, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="nameValueHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -168,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="nameValueHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -205,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.NameValueHeaderValue.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Net.Http.Headers.NameValueHeaderValue.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -232,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As NameValueHeaderValue" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.NameValueHeaderValue" Usage="System.Net.Http.Headers.NameValueHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::NameValueHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -266,6 +274,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.System#ICloneable#Clone" />
       <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -295,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="nameValueHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -323,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.NameValueHeaderValue.TryParse(System.String,System.Net.Http.Headers.NameValueHeaderValue@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As NameValueHeaderValue) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.NameValueHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::NameValueHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.NameValueHeaderValue.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Net.Http.Headers.NameValueHeaderValue.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

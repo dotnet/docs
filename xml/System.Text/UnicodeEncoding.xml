@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.UnicodeEncoding" />
   <TypeSignature Language="VB.NET" Value="Public Class UnicodeEncoding&#xA;Inherits Encoding" />
   <TypeSignature Language="F#" Value="type UnicodeEncoding = class&#xA;    inherit Encoding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnicodeEncoding : System::Text::Encoding" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnicodeEncoding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -166,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bigEndian As Boolean, byteOrderMark As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Text.UnicodeEncoding : bool * bool -&gt; System.Text.UnicodeEncoding" Usage="new System.Text.UnicodeEncoding (bigEndian, byteOrderMark)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnicodeEncoding(bool bigEndian, bool byteOrderMark);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -223,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.#ctor(System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bigEndian As Boolean, byteOrderMark As Boolean, throwOnInvalidBytes As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Text.UnicodeEncoding : bool * bool * bool -&gt; System.Text.UnicodeEncoding" Usage="new System.Text.UnicodeEncoding (bigEndian, byteOrderMark, throwOnInvalidBytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnicodeEncoding(bool bigEndian, bool byteOrderMark, bool throwOnInvalidBytes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -283,6 +287,7 @@
       <MemberSignature Language="DocId" Value="F:System.Text.UnicodeEncoding.CharSize" />
       <MemberSignature Language="VB.NET" Value="Public Const CharSize As Integer  = 2" />
       <MemberSignature Language="F#" Value="val mutable CharSize : int" Usage="System.Text.UnicodeEncoding.CharSize" />
+      <MemberSignature Language="C++ CLI" Value="public: int CharSize = 2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="unicodeEncoding.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -401,6 +407,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetByteCount(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByteCount (s As String) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetByteCount : string -&gt; int" Usage="unicodeEncoding.GetByteCount s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -472,6 +479,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(char* chars, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetByteCount(System.Char*,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.GetByteCount : nativeptr&lt;char&gt; * int -&gt; int" Usage="unicodeEncoding.GetByteCount (chars, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(char* chars, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,6 +556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByteCount (chars As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetByteCount : char[] * int * int -&gt; int" Usage="unicodeEncoding.GetByteCount (chars, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -641,6 +650,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.GetBytes : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int -&gt; int" Usage="unicodeEncoding.GetBytes (chars, charCount, bytes, byteCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(char* chars, int charCount, System::Byte* bytes, int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -727,6 +737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetBytes : char[] * int * int * byte[] * int -&gt; int" Usage="unicodeEncoding.GetBytes (chars, charIndex, charCount, bytes, byteIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -827,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (s As String, charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetBytes : string * int * int * byte[] * int -&gt; int" Usage="unicodeEncoding.GetBytes (s, charIndex, charCount, bytes, byteIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(System::String ^ s, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -936,6 +948,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharCount(unsigned int8* bytes, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte*,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.GetCharCount : nativeptr&lt;byte&gt; * int -&gt; int" Usage="unicodeEncoding.GetCharCount (bytes, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(System::Byte* bytes, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1009,6 +1022,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCharCount (bytes As Byte(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetCharCount : byte[] * int * int -&gt; int" Usage="unicodeEncoding.GetCharCount (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1101,6 +1115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChars(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.GetChars : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int -&gt; int" Usage="unicodeEncoding.GetChars (bytes, byteCount, chars, charCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(System::Byte* bytes, int byteCount, char* chars, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1187,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetChars : byte[] * int * int * char[] * int -&gt; int" Usage="unicodeEncoding.GetChars (bytes, byteIndex, byteCount, chars, charIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1287,6 +1303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetDecoder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecoder () As Decoder" />
       <MemberSignature Language="F#" Value="override this.GetDecoder : unit -&gt; System.Text.Decoder" Usage="unicodeEncoding.GetDecoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Decoder ^ GetDecoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1342,6 +1359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetEncoder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEncoder () As Encoder" />
       <MemberSignature Language="F#" Value="override this.GetEncoder : unit -&gt; System.Text.Encoder" Usage="unicodeEncoding.GetEncoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Encoder ^ GetEncoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1401,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="unicodeEncoding.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1434,6 +1453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetMaxByteCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMaxByteCount (charCount As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetMaxByteCount : int -&gt; int" Usage="unicodeEncoding.GetMaxByteCount charCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMaxByteCount(int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1508,6 +1528,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetMaxCharCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMaxCharCount (byteCount As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetMaxCharCount : int -&gt; int" Usage="unicodeEncoding.GetMaxCharCount byteCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMaxCharCount(int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1583,6 +1604,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetPreamble" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreamble () As Byte()" />
       <MemberSignature Language="F#" Value="override this.GetPreamble : unit -&gt; byte[]" Usage="unicodeEncoding.GetPreamble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetPreamble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1659,6 +1681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.UnicodeEncoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (bytes As Byte(), index As Integer, count As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.GetString : byte[] * int * int -&gt; string" Usage="unicodeEncoding.GetString (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>

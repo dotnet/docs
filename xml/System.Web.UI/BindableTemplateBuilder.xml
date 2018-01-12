@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BindableTemplateBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindableTemplateBuilder&#xA;Inherits TemplateBuilder&#xA;Implements IBindableTemplate" />
   <TypeSignature Language="F#" Value="type BindableTemplateBuilder = class&#xA;    inherit TemplateBuilder&#xA;    interface IBindableTemplate&#xA;    interface ITemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindableTemplateBuilder sealed : System::Web::UI::TemplateBuilder, System::Web::UI::IBindableTemplate" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BindableTemplateBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindableTemplateBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BindableTemplateBuilder.ExtractValues(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExtractValues (container As Control) As IOrderedDictionary" />
       <MemberSignature Language="F#" Value="abstract member ExtractValues : System.Web.UI.Control -&gt; System.Collections.Specialized.IOrderedDictionary&#xA;override this.ExtractValues : System.Web.UI.Control -&gt; System.Collections.Specialized.IOrderedDictionary" Usage="bindableTemplateBuilder.ExtractValues container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::IOrderedDictionary ^ ExtractValues(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)</InterfaceMember>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.BindableTemplateBuilder.OnAppendToParentBuilder(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnAppendToParentBuilder (parentBuilder As ControlBuilder)" />
       <MemberSignature Language="F#" Value="override this.OnAppendToParentBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="bindableTemplateBuilder.OnAppendToParentBuilder parentBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAppendToParentBuilder(System::Web::UI::ControlBuilder ^ parentBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

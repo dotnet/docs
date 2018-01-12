@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.PolicyActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolicyActivity&#xA;Inherits Activity" />
   <TypeSignature Language="F#" Value="type PolicyActivity = class&#xA;    inherit Activity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PolicyActivity sealed : System::Workflow::ComponentModel::Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.PolicyActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.PolicyActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.PolicyActivity : string -&gt; System.Workflow.Activities.PolicyActivity" Usage="new System.Workflow.Activities.PolicyActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.PolicyActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="policyActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.PolicyActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="policyActivity.Initialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.PolicyActivity.RuleSetReference" />
       <MemberSignature Language="VB.NET" Value="Public Property RuleSetReference As RuleSetReference" />
       <MemberSignature Language="F#" Value="member this.RuleSetReference : System.Workflow.Activities.Rules.RuleSetReference with get, set" Usage="System.Workflow.Activities.PolicyActivity.RuleSetReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSetReference ^ RuleSetReference { System::Workflow::Activities::Rules::RuleSetReference ^ get(); void set(System::Workflow::Activities::Rules::RuleSetReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.PolicyActivity.RuleSetReferenceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RuleSetReferenceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RuleSetReferenceProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.PolicyActivity.RuleSetReferenceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ RuleSetReferenceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

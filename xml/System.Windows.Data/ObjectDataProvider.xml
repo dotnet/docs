@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.ObjectDataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class ObjectDataProvider&#xA;Inherits DataSourceProvider" />
   <TypeSignature Language="F#" Value="type ObjectDataProvider = class&#xA;    inherit DataSourceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectDataProvider : System::Windows::Data::DataSourceProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ObjectDataProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectDataProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ObjectDataProvider.BeginQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BeginQuery ()" />
       <MemberSignature Language="F#" Value="override this.BeginQuery : unit -&gt; unit" Usage="objectDataProvider.BeginQuery " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BeginQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ObjectDataProvider.ConstructorParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConstructorParameters As IList" />
       <MemberSignature Language="F#" Value="member this.ConstructorParameters : System.Collections.IList" Usage="System.Windows.Data.ObjectDataProvider.ConstructorParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ ConstructorParameters { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ObjectDataProvider.IsAsynchronous" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAsynchronous As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAsynchronous : bool with get, set" Usage="System.Windows.Data.ObjectDataProvider.IsAsynchronous" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsynchronous { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ObjectDataProvider.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
       <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Windows.Data.ObjectDataProvider.MethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ObjectDataProvider.MethodParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodParameters As IList" />
       <MemberSignature Language="F#" Value="member this.MethodParameters : System.Collections.IList" Usage="System.Windows.Data.ObjectDataProvider.MethodParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ MethodParameters { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ObjectDataProvider.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectInstance As Object" />
       <MemberSignature Language="F#" Value="member this.ObjectInstance : obj with get, set" Usage="System.Windows.Data.ObjectDataProvider.ObjectInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.ObjectDataProvider.ObjectType" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectType As Type" />
       <MemberSignature Language="F#" Value="member this.ObjectType : Type with get, set" Usage="System.Windows.Data.ObjectDataProvider.ObjectType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -322,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ObjectDataProvider.ShouldSerializeConstructorParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeConstructorParameters () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeConstructorParameters : unit -&gt; bool" Usage="objectDataProvider.ShouldSerializeConstructorParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeConstructorParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -356,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ObjectDataProvider.ShouldSerializeMethodParameters" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMethodParameters () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeMethodParameters : unit -&gt; bool" Usage="objectDataProvider.ShouldSerializeMethodParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMethodParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -390,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ObjectDataProvider.ShouldSerializeObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeObjectInstance () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeObjectInstance : unit -&gt; bool" Usage="objectDataProvider.ShouldSerializeObjectInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeObjectInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -424,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.ObjectDataProvider.ShouldSerializeObjectType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeObjectType () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeObjectType : unit -&gt; bool" Usage="objectDataProvider.ShouldSerializeObjectType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeObjectType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

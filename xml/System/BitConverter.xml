@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.BitConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class BitConverter" />
   <TypeSignature Language="F#" Value="type BitConverter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitConverter abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.DoubleToInt64Bits(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DoubleToInt64Bits (value As Double) As Long" />
       <MemberSignature Language="F#" Value="static member DoubleToInt64Bits : double -&gt; int64" Usage="System.BitConverter.DoubleToInt64Bits value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long DoubleToInt64Bits(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -158,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Boolean) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : bool -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -211,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Char) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : char -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -264,6 +268,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Double) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : double -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -322,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Short) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : int16 -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -380,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Integer) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : int -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -438,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Long) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : int64 -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -496,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As Single) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : single -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -554,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As UShort) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : uint16 -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -612,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As UInteger) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : uint32 -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -670,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.GetBytes(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBytes (value As ULong) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetBytes : uint64 -&gt; byte[]" Usage="System.BitConverter.GetBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetBytes(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -728,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.Int32BitsToSingle(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Int32BitsToSingle (value As Integer) As Single" />
       <MemberSignature Language="F#" Value="static member Int32BitsToSingle : int -&gt; single" Usage="System.BitConverter.Int32BitsToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Int32BitsToSingle(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -752,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.Int64BitsToDouble(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Int64BitsToDouble (value As Long) As Double" />
       <MemberSignature Language="F#" Value="static member Int64BitsToDouble : int64 -&gt; double" Usage="System.BitConverter.Int64BitsToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Int64BitsToDouble(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -810,6 +824,7 @@
       <MemberSignature Language="DocId" Value="F:System.BitConverter.IsLittleEndian" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLittleEndian As Boolean " />
       <MemberSignature Language="F#" Value=" staticval mutable IsLittleEndian : bool" Usage="System.BitConverter.IsLittleEndian" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly bool IsLittleEndian;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -860,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.SingleToInt32Bits(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SingleToInt32Bits (value As Single) As Integer" />
       <MemberSignature Language="F#" Value="static member SingleToInt32Bits : single -&gt; int" Usage="System.BitConverter.SingleToInt32Bits value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int SingleToInt32Bits(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -884,6 +900,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToBoolean(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToBoolean (value As Byte(), startIndex As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member ToBoolean : byte[] * int -&gt; bool" Usage="System.BitConverter.ToBoolean (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ToBoolean(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -944,6 +961,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToChar(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar (value As Byte(), startIndex As Integer) As Char" />
       <MemberSignature Language="F#" Value="static member ToChar : byte[] * int -&gt; char" Usage="System.BitConverter.ToChar (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ToChar(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1005,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToDouble(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble (value As Byte(), startIndex As Integer) As Double" />
       <MemberSignature Language="F#" Value="static member ToDouble : byte[] * int -&gt; double" Usage="System.BitConverter.ToDouble (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double ToDouble(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1071,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToInt16(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16 (value As Byte(), startIndex As Integer) As Short" />
       <MemberSignature Language="F#" Value="static member ToInt16 : byte[] * int -&gt; int16" Usage="System.BitConverter.ToInt16 (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ToInt16(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1137,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToInt32(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32 (value As Byte(), startIndex As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member ToInt32 : byte[] * int -&gt; int" Usage="System.BitConverter.ToInt32 (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToInt32(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1202,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToInt64(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64 (value As Byte(), startIndex As Integer) As Long" />
       <MemberSignature Language="F#" Value="static member ToInt64 : byte[] * int -&gt; int64" Usage="System.BitConverter.ToInt64 (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ToInt64(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1268,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToSingle(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle (value As Byte(), startIndex As Integer) As Single" />
       <MemberSignature Language="F#" Value="static member ToSingle : byte[] * int -&gt; single" Usage="System.BitConverter.ToSingle (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float ToSingle(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1346,6 +1369,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToString(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte()) As String" />
       <MemberSignature Language="F#" Value="static member ToString : byte[] -&gt; string" Usage="System.BitConverter.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1400,6 +1424,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToString(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte(), startIndex As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : byte[] * int -&gt; string" Usage="System.BitConverter.ToString (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1458,6 +1483,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToString(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As Byte(), startIndex As Integer, length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member ToString : byte[] * int * int -&gt; string" Usage="System.BitConverter.ToString (value, startIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(cli::array &lt;System::Byte&gt; ^ value, int startIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1525,6 +1551,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToUInt16(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16 (value As Byte(), startIndex As Integer) As UShort" />
       <MemberSignature Language="F#" Value="static member ToUInt16 : byte[] * int -&gt; uint16" Usage="System.BitConverter.ToUInt16 (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ToUInt16(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1591,6 +1618,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToUInt32(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32 (value As Byte(), startIndex As Integer) As UInteger" />
       <MemberSignature Language="F#" Value="static member ToUInt32 : byte[] * int -&gt; uint32" Usage="System.BitConverter.ToUInt32 (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ToUInt32(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1657,6 +1685,7 @@
       <MemberSignature Language="DocId" Value="M:System.BitConverter.ToUInt64(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64 (value As Byte(), startIndex As Integer) As ULong" />
       <MemberSignature Language="F#" Value="static member ToUInt64 : byte[] * int -&gt; uint64" Usage="System.BitConverter.ToUInt64 (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ToUInt64(cli::array &lt;System::Byte&gt; ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.FieldInfo" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FieldInfo&#xA;Inherits MemberInfo&#xA;Implements _FieldInfo" />
   <TypeSignature Language="F#" Value="type FieldInfo = class&#xA;    inherit MemberInfo&#xA;    interface _FieldInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FieldInfo abstract : System::Reflection::MemberInfo, System::Runtime::InteropServices::_FieldInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FieldInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As FieldAttributes" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.FieldAttributes" Usage="System.Reflection.FieldInfo.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::FieldAttributes Attributes { System::Reflection::FieldAttributes get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.Attributes</InterfaceMember>
@@ -161,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fieldInfo.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.Equals(System.Object)</InterfaceMember>
@@ -204,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.FieldHandle" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FieldHandle As RuntimeFieldHandle" />
       <MemberSignature Language="F#" Value="member this.FieldHandle : RuntimeFieldHandle" Usage="System.Reflection.FieldInfo.FieldHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property RuntimeFieldHandle FieldHandle { RuntimeFieldHandle get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.FieldHandle</InterfaceMember>
@@ -252,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.FieldType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FieldType As Type" />
       <MemberSignature Language="F#" Value="member this.FieldType : Type" Usage="System.Reflection.FieldInfo.FieldType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ FieldType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.FieldType</InterfaceMember>
@@ -321,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetFieldFromHandle(System.RuntimeFieldHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFieldFromHandle (handle As RuntimeFieldHandle) As FieldInfo" />
       <MemberSignature Language="F#" Value="static member GetFieldFromHandle : RuntimeFieldHandle -&gt; System.Reflection.FieldInfo" Usage="System.Reflection.FieldInfo.GetFieldFromHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::FieldInfo ^ GetFieldFromHandle(RuntimeFieldHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -379,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetFieldFromHandle(System.RuntimeFieldHandle,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFieldFromHandle (handle As RuntimeFieldHandle, declaringType As RuntimeTypeHandle) As FieldInfo" />
       <MemberSignature Language="F#" Value="static member GetFieldFromHandle : RuntimeFieldHandle * RuntimeTypeHandle -&gt; System.Reflection.FieldInfo" Usage="System.Reflection.FieldInfo.GetFieldFromHandle (handle, declaringType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::FieldInfo ^ GetFieldFromHandle(RuntimeFieldHandle handle, RuntimeTypeHandle declaringType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -461,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fieldInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetHashCode</InterfaceMember>
@@ -500,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetOptionalCustomModifiers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOptionalCustomModifiers () As Type()" />
       <MemberSignature Language="F#" Value="abstract member GetOptionalCustomModifiers : unit -&gt; Type[]&#xA;override this.GetOptionalCustomModifiers : unit -&gt; Type[]" Usage="fieldInfo.GetOptionalCustomModifiers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetOptionalCustomModifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -541,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetRawConstantValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRawConstantValue () As Object" />
       <MemberSignature Language="F#" Value="abstract member GetRawConstantValue : unit -&gt; obj&#xA;override this.GetRawConstantValue : unit -&gt; obj" Usage="fieldInfo.GetRawConstantValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetRawConstantValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -592,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetRequiredCustomModifiers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequiredCustomModifiers () As Type()" />
       <MemberSignature Language="F#" Value="abstract member GetRequiredCustomModifiers : unit -&gt; Type[]&#xA;override this.GetRequiredCustomModifiers : unit -&gt; Type[]" Usage="fieldInfo.GetRequiredCustomModifiers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetRequiredCustomModifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -633,6 +645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (obj As Object) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj" Usage="fieldInfo.GetValue obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetValue(System.Object)</InterfaceMember>
@@ -727,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.GetValueDirect(System.TypedReference)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValueDirect (obj As TypedReference) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetValueDirect : TypedReference -&gt; obj&#xA;override this.GetValueDirect : TypedReference -&gt; obj" Usage="fieldInfo.GetValueDirect obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetValueDirect(TypedReference obj);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetValueDirect(System.TypedReference)</InterfaceMember>
@@ -771,6 +785,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssembly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAssembly : bool" Usage="System.Reflection.FieldInfo.IsAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsAssembly</InterfaceMember>
@@ -835,6 +850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsFamily" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamily As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFamily : bool" Usage="System.Reflection.FieldInfo.IsFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamily { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsFamily</InterfaceMember>
@@ -898,6 +914,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsFamilyAndAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyAndAssembly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFamilyAndAssembly : bool" Usage="System.Reflection.FieldInfo.IsFamilyAndAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyAndAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsFamilyAndAssembly</InterfaceMember>
@@ -962,6 +979,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFamilyOrAssembly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFamilyOrAssembly : bool" Usage="System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFamilyOrAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsFamilyOrAssembly</InterfaceMember>
@@ -1027,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsInitOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInitOnly : bool" Usage="System.Reflection.FieldInfo.IsInitOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsInitOnly</InterfaceMember>
@@ -1097,6 +1116,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsLiteral" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLiteral As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLiteral : bool" Usage="System.Reflection.FieldInfo.IsLiteral" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLiteral { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsLiteral</InterfaceMember>
@@ -1144,6 +1164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsNotSerialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNotSerialized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNotSerialized : bool" Usage="System.Reflection.FieldInfo.IsNotSerialized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNotSerialized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsNotSerialized</InterfaceMember>
@@ -1194,6 +1215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsPinvokeImpl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPinvokeImpl As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPinvokeImpl : bool" Usage="System.Reflection.FieldInfo.IsPinvokeImpl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPinvokeImpl { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsPinvokeImpl</InterfaceMember>
@@ -1239,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsPrivate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrivate As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPrivate : bool" Usage="System.Reflection.FieldInfo.IsPrivate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivate { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsPrivate</InterfaceMember>
@@ -1300,6 +1323,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Reflection.FieldInfo.IsPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsPublic</InterfaceMember>
@@ -1361,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsSecurityCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecurityCritical As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecurityCritical : bool" Usage="System.Reflection.FieldInfo.IsSecurityCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityCritical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1413,6 +1438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsSecuritySafeCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecuritySafeCritical As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecuritySafeCritical : bool" Usage="System.Reflection.FieldInfo.IsSecuritySafeCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecuritySafeCritical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1465,6 +1491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsSecurityTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSecurityTransparent As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecurityTransparent : bool" Usage="System.Reflection.FieldInfo.IsSecurityTransparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityTransparent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1517,6 +1544,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsSpecialName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Reflection.FieldInfo.IsSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsSpecialName</InterfaceMember>
@@ -1573,6 +1601,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.IsStatic" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStatic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsStatic : bool" Usage="System.Reflection.FieldInfo.IsStatic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStatic { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.IsStatic</InterfaceMember>
@@ -1643,6 +1672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.FieldInfo.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
       <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Reflection.FieldInfo.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._FieldInfo.MemberType</InterfaceMember>
@@ -1703,6 +1733,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.op_Equality(System.Reflection.FieldInfo,System.Reflection.FieldInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As FieldInfo, right As FieldInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.FieldInfo * System.Reflection.FieldInfo -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::FieldInfo ^ left, System::Reflection::FieldInfo ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1739,6 +1770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.op_Inequality(System.Reflection.FieldInfo,System.Reflection.FieldInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As FieldInfo, right As FieldInfo) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.FieldInfo * System.Reflection.FieldInfo -&gt; bool" Usage="System.Reflection.FieldInfo.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::FieldInfo ^ left, System::Reflection::FieldInfo ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1786,6 +1818,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (obj As Object, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit&#xA;override this.SetValue : obj * obj -&gt; unit" Usage="fieldInfo.SetValue (obj, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetValue(System::Object ^ obj, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.SetValue(System.Object,System.Object)</InterfaceMember>
@@ -1882,6 +1915,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(object obj, object value, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />
       <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj * System.Reflection.BindingFlags * System.Reflection.Binder * System.Globalization.CultureInfo -&gt; unit" Usage="fieldInfo.SetValue (obj, value, invokeAttr, binder, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(System::Object ^ obj, System::Object ^ value, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)</InterfaceMember>
@@ -1949,6 +1983,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.SetValueDirect(System.TypedReference,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetValueDirect (obj As TypedReference, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetValueDirect : TypedReference * obj -&gt; unit&#xA;override this.SetValueDirect : TypedReference * obj -&gt; unit" Usage="fieldInfo.SetValueDirect (obj, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetValueDirect(TypedReference obj, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.SetValueDirect(System.TypedReference,System.Object)</InterfaceMember>
@@ -2004,6 +2039,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _FieldInfo.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._FieldInfo.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_FieldInfo::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -2045,6 +2081,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type System.Runtime.InteropServices._FieldInfo.GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#GetType" />
       <MemberSignature Language="VB.NET" Value="Function GetType () As Type Implements _FieldInfo.GetType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Type ^ System.Runtime.InteropServices._FieldInfo.GetType() = System::Runtime::InteropServices::_FieldInfo::GetType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetType</InterfaceMember>
@@ -2068,6 +2105,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _FieldInfo.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._FieldInfo.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_FieldInfo::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -2105,6 +2143,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _FieldInfo.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._FieldInfo.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_FieldInfo::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -2138,6 +2177,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _FieldInfo.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._FieldInfo.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_FieldInfo::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._FieldInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataPagerDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class DataPagerDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="F#" Value="type DataPagerDesigner = class&#xA;    inherit ControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPagerDesigner : System::Web::UI::Design::ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataPagerDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPagerDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataPagerDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.DataPagerDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataPagerDesigner.GetDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
       <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="dataPagerDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataPagerDesigner.GetEmptyDesignTimeHtml" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
       <MemberSignature Language="F#" Value="override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="dataPagerDesigner.GetEmptyDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataPagerDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="dataPagerDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataPagerDesigner.PagedControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property PagedControlID As String" />
       <MemberSignature Language="F#" Value="member this.PagedControlID : string with get, set" Usage="System.Web.UI.Design.WebControls.DataPagerDesigner.PagedControlID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PagedControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="dataPagerDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataPagerDesigner.TemplateGroups" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
       <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.WebControls.DataPagerDesigner.TemplateGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataPagerDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.DataPagerDesigner.UsePreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

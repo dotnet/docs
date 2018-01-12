@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Strings" />
   <TypeSignature Language="VB.NET" Value="Public Module Strings" />
   <TypeSignature Language="F#" Value="type Strings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Strings sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Asc(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Asc (String As Char) As Integer" />
       <MemberSignature Language="F#" Value="static member Asc : char -&gt; int" Usage="Microsoft.VisualBasic.Strings.Asc String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Asc(char String);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static int32 Asc(string String) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Asc(System.String)" />
       <MemberSignature Language="F#" Value="static member Asc : string -&gt; int" Usage="Microsoft.VisualBasic.Strings.Asc String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Asc(System::String ^ String);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.AscW(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function AscW (String As Char) As Integer" />
       <MemberSignature Language="F#" Value="static member AscW : char -&gt; int" Usage="Microsoft.VisualBasic.Strings.AscW String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int AscW(char String);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static int32 AscW(string String) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.AscW(System.String)" />
       <MemberSignature Language="F#" Value="static member AscW : string -&gt; int" Usage="Microsoft.VisualBasic.Strings.AscW String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int AscW(System::String ^ String);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -254,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Chr (CharCode As Integer) As Char" />
       <MemberSignature Language="F#" Value="static member Chr : int -&gt; char" Usage="Microsoft.VisualBasic.Strings.Chr CharCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char Chr(int CharCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -311,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ChrW (CharCode As Integer) As Char" />
       <MemberSignature Language="F#" Value="static member ChrW : int -&gt; char" Usage="Microsoft.VisualBasic.Strings.ChrW CharCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char ChrW(int CharCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -959,6 +966,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.GetChar(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChar (str As String, Index As Integer) As Char" />
       <MemberSignature Language="F#" Value="static member GetChar : string * int -&gt; char" Usage="Microsoft.VisualBasic.Strings.GetChar (str, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char GetChar(System::String ^ str, int Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1450,6 +1458,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LCase(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function LCase (Value As Char) As Char" />
       <MemberSignature Language="F#" Value="static member LCase : char -&gt; char" Usage="Microsoft.VisualBasic.Strings.LCase Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char LCase(char Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1494,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LCase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LCase (Value As String) As String" />
       <MemberSignature Language="F#" Value="static member LCase : string -&gt; string" Usage="Microsoft.VisualBasic.Strings.LCase Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LCase(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1538,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Left (str As String, Length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Left : string * int -&gt; string" Usage="Microsoft.VisualBasic.Strings.Left (str, Length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Left(System::String ^ str, int Length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1596,6 +1607,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : bool -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(bool Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1648,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Byte) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : byte -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::Byte Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1700,6 +1713,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Char) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : char -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(char Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1752,6 +1766,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As DateTime) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : DateTime -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(DateTime Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1804,6 +1819,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Decimal) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : decimal -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::Decimal Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1856,6 +1872,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Double) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : double -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(double Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1908,6 +1925,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Short) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : int16 -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(short Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1960,6 +1978,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : int -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(int Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2012,6 +2031,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Long) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : int64 -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(long Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2064,6 +2084,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Object) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : obj -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2121,6 +2142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As SByte) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : sbyte -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::SByte Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2179,6 +2201,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As Single) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : single -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(float Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2231,6 +2254,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As String) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : string -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::String ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2283,6 +2307,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As UShort) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : uint16 -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::UInt16 Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2341,6 +2366,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As UInteger) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : uint32 -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::UInt32 Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2399,6 +2425,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Len (Expression As ULong) As Integer" />
       <MemberSignature Language="F#" Value="static member Len : uint64 -&gt; int" Usage="Microsoft.VisualBasic.Strings.Len Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Len(System::UInt64 Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2457,6 +2484,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LSet(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LSet (Source As String, Length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member LSet : string * int -&gt; string" Usage="Microsoft.VisualBasic.Strings.LSet (Source, Length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LSet(System::String ^ Source, int Length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2498,6 +2526,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LTrim(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LTrim (str As String) As String" />
       <MemberSignature Language="F#" Value="static member LTrim : string -&gt; string" Usage="Microsoft.VisualBasic.Strings.LTrim str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LTrim(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2550,6 +2579,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Mid(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Mid (str As String, Start As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Mid : string * int -&gt; string" Usage="Microsoft.VisualBasic.Strings.Mid (str, Start)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Mid(System::String ^ str, int Start);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2604,6 +2634,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Mid(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Mid (str As String, Start As Integer, Length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Mid : string * int * int -&gt; string" Usage="Microsoft.VisualBasic.Strings.Mid (str, Start, Length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Mid(System::String ^ str, int Start, int Length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2740,6 +2771,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Right (str As String, Length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Right : string * int -&gt; string" Usage="Microsoft.VisualBasic.Strings.Right (str, Length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Right(System::String ^ str, int Length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2789,6 +2821,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.RSet(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function RSet (Source As String, Length As Integer) As String" />
       <MemberSignature Language="F#" Value="static member RSet : string * int -&gt; string" Usage="Microsoft.VisualBasic.Strings.RSet (Source, Length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ RSet(System::String ^ Source, int Length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2830,6 +2863,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RTrim (str As String) As String" />
       <MemberSignature Language="F#" Value="static member RTrim : string -&gt; string" Usage="Microsoft.VisualBasic.Strings.RTrim str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ RTrim(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2873,6 +2907,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Space (Number As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Space : int -&gt; string" Usage="Microsoft.VisualBasic.Strings.Space Number" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Space(int Number);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3151,6 +3186,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrDup(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function StrDup (Number As Integer, Character As Char) As String" />
       <MemberSignature Language="F#" Value="static member StrDup : int * char -&gt; string" Usage="Microsoft.VisualBasic.Strings.StrDup (Number, Character)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StrDup(int Number, char Character);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3198,6 +3234,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrDup(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function StrDup (Number As Integer, Character As Object) As Object" />
       <MemberSignature Language="F#" Value="static member StrDup : int * obj -&gt; obj" Usage="Microsoft.VisualBasic.Strings.StrDup (Number, Character)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ StrDup(int Number, System::Object ^ Character);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3245,6 +3282,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrDup(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function StrDup (Number As Integer, Character As String) As String" />
       <MemberSignature Language="F#" Value="static member StrDup : int * string -&gt; string" Usage="Microsoft.VisualBasic.Strings.StrDup (Number, Character)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StrDup(int Number, System::String ^ Character);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3292,6 +3330,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrReverse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function StrReverse (Expression As String) As String" />
       <MemberSignature Language="F#" Value="static member StrReverse : string -&gt; string" Usage="Microsoft.VisualBasic.Strings.StrReverse Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ StrReverse(System::String ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3329,6 +3368,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Trim(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Trim (str As String) As String" />
       <MemberSignature Language="F#" Value="static member Trim : string -&gt; string" Usage="Microsoft.VisualBasic.Strings.Trim str" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Trim(System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3381,6 +3421,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.UCase(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function UCase (Value As Char) As Char" />
       <MemberSignature Language="F#" Value="static member UCase : char -&gt; char" Usage="Microsoft.VisualBasic.Strings.UCase Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static char UCase(char Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3425,6 +3466,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.UCase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UCase (Value As String) As String" />
       <MemberSignature Language="F#" Value="static member UCase : string -&gt; string" Usage="Microsoft.VisualBasic.Strings.UCase Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UCase(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.NestedContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class NestedContainer&#xA;Inherits Container&#xA;Implements IDisposable, INestedContainer" />
   <TypeSignature Language="F#" Value="type NestedContainer = class&#xA;    inherit Container&#xA;    interface INestedContainer&#xA;    interface IContainer&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NestedContainer : System::ComponentModel::Container, IDisposable, System::ComponentModel::INestedContainer" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.#ctor(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As IComponent)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.NestedContainer : System.ComponentModel.IComponent -&gt; System.ComponentModel.NestedContainer" Usage="new System.ComponentModel.NestedContainer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NestedContainer(System::ComponentModel::IComponent ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.CreateSite(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateSite (component As IComponent, name As String) As ISite" />
       <MemberSignature Language="F#" Value="override this.CreateSite : System.ComponentModel.IComponent * string -&gt; System.ComponentModel.ISite" Usage="nestedContainer.CreateSite (component, name)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::ISite ^ CreateSite(System::ComponentModel::IComponent ^ component, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="nestedContainer.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetService (service As Type) As Object" />
       <MemberSignature Language="F#" Value="override this.GetService : Type -&gt; obj" Usage="nestedContainer.GetService service" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetService(Type ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.NestedContainer.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As IComponent" />
       <MemberSignature Language="F#" Value="member this.Owner : System.ComponentModel.IComponent" Usage="System.ComponentModel.NestedContainer.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ Owner { System::ComponentModel::IComponent ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.INestedContainer.Owner</InterfaceMember>
@@ -279,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.NestedContainer.OwnerName" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property OwnerName As String" />
       <MemberSignature Language="F#" Value="member this.OwnerName : string" Usage="System.ComponentModel.NestedContainer.OwnerName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ OwnerName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

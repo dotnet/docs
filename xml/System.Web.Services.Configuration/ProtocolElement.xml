@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.ProtocolElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type ProtocolElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.ProtocolElement.#ctor(System.Web.Services.Configuration.WebServiceProtocols)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As WebServiceProtocols)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.ProtocolElement : System.Web.Services.Configuration.WebServiceProtocols -&gt; System.Web.Services.Configuration.ProtocolElement" Usage="new System.Web.Services.Configuration.ProtocolElement protocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolElement(System::Web::Services::Configuration::WebServiceProtocols protocol);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.ProtocolElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As WebServiceProtocols" />
       <MemberSignature Language="F#" Value="member this.Name : System.Web.Services.Configuration.WebServiceProtocols with get, set" Usage="System.Web.Services.Configuration.ProtocolElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::WebServiceProtocols Name { System::Web::Services::Configuration::WebServiceProtocols get(); void set(System::Web::Services::Configuration::WebServiceProtocols value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.ProtocolElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Services.Configuration.ProtocolElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

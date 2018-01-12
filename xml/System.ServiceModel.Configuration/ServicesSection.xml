@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServicesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServicesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ServicesSection = class&#xA;    inherit ConfigurationSection&#xA;    interface IConfigurationContextProviderInternal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServicesSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServicesSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServicesSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServicesSection.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="servicesSection.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServicesSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServicesSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServicesSection.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="servicesSection.Reset parentElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServicesSection.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceElementCollection" />
       <MemberSignature Language="F#" Value="member this.Services : System.ServiceModel.Configuration.ServiceElementCollection" Usage="System.ServiceModel.Configuration.ServicesSection.Services" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceElementCollection ^ Services { System::ServiceModel::Configuration::ServiceElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

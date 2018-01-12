@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.ComplexObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComplexObject&#xA;Inherits StructuralObject" />
   <TypeSignature Language="F#" Value="type ComplexObject = class&#xA;    inherit StructuralObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComplexObject abstract : System::Data::Objects::DataClasses::StructuralObject" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ComplexObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.ReportPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanged (property As String)" />
       <MemberSignature Language="F#" Value="override this.ReportPropertyChanged : string -&gt; unit" Usage="complexObject.ReportPropertyChanged property" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanged(System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.ReportPropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanging (property As String)" />
       <MemberSignature Language="F#" Value="override this.ReportPropertyChanging : string -&gt; unit" Usage="complexObject.ReportPropertyChanging property" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanging(System::String ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

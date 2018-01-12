@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommand" />
   <TypeSignature Language="VB.NET" Value="Public Class MenuCommand" />
   <TypeSignature Language="F#" Value="type MenuCommand = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuCommand" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommand.#ctor(System.EventHandler,System.ComponentModel.Design.CommandID)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handler As EventHandler, command As CommandID)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.MenuCommand : EventHandler * System.ComponentModel.Design.CommandID -&gt; System.ComponentModel.Design.MenuCommand" Usage="new System.ComponentModel.Design.MenuCommand (handler, command)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuCommand(EventHandler ^ handler, System::ComponentModel::Design::CommandID ^ command);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Checked As Boolean" />
       <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.ComponentModel.Design.MenuCommand.Checked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Checked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.MenuCommand.CommandChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CommandChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CommandChanged : EventHandler " Usage="member this.CommandChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CommandChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.CommandID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CommandID As CommandID" />
       <MemberSignature Language="F#" Value="member this.CommandID : System.ComponentModel.Design.CommandID" Usage="System.ComponentModel.Design.MenuCommand.CommandID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::CommandID ^ CommandID { System::ComponentModel::Design::CommandID ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ComponentModel.Design.MenuCommand.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommand.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Invoke ()" />
       <MemberSignature Language="F#" Value="abstract member Invoke : unit -&gt; unit&#xA;override this.Invoke : unit -&gt; unit" Usage="menuCommand.Invoke " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Invoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -294,6 +301,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommand.Invoke(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Invoke (arg As Object)" />
       <MemberSignature Language="F#" Value="abstract member Invoke : obj -&gt; unit&#xA;override this.Invoke : obj -&gt; unit" Usage="menuCommand.Invoke arg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Invoke(System::Object ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -329,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.OleStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OleStatus As Integer" />
       <MemberSignature Language="F#" Value="member this.OleStatus : int" Usage="System.ComponentModel.Design.MenuCommand.OleStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OleStatus { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -358,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommand.OnCommandChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCommandChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnCommandChanged : EventArgs -&gt; unit&#xA;override this.OnCommandChanged : EventArgs -&gt; unit" Usage="menuCommand.OnCommandChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCommandChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.ComponentModel.Design.MenuCommand.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.Supported" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Supported As Boolean" />
       <MemberSignature Language="F#" Value="member this.Supported : bool with get, set" Usage="System.ComponentModel.Design.MenuCommand.Supported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Supported { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -479,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MenuCommand.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="menuCommand.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -509,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.MenuCommand.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.ComponentModel.Design.MenuCommand.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

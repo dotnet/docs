@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowRole" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowRole" />
   <TypeSignature Language="F#" Value="type WorkflowRole = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRole abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRole.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowRole();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRole.GetIdentities" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetIdentities () As IList(Of String)" />
       <MemberSignature Language="F#" Value="abstract member GetIdentities : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="workflowRole.GetIdentities " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetIdentities();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowRole.IncludesIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IncludesIdentity (identity As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IncludesIdentity : string -&gt; bool" Usage="workflowRole.IncludesIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IncludesIdentity(System::String ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowRole.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.WorkflowRole.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

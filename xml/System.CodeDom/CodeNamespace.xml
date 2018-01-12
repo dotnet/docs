@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeNamespace" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeNamespace&#xA;Inherits CodeObject" />
   <TypeSignature Language="F#" Value="type CodeNamespace = class&#xA;    inherit CodeObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeNamespace : System::CodeDom::CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespace.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespace();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespace.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeNamespace : string -&gt; System.CodeDom.CodeNamespace" Usage="new System.CodeDom.CodeNamespace name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespace(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespace.Comments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comments As CodeCommentStatementCollection" />
       <MemberSignature Language="F#" Value="member this.Comments : System.CodeDom.CodeCommentStatementCollection" Usage="System.CodeDom.CodeNamespace.Comments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeCommentStatementCollection ^ Comments { System::CodeDom::CodeCommentStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespace.Imports" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Imports As CodeNamespaceImportCollection" />
       <MemberSignature Language="F#" Value="member this.Imports : System.CodeDom.CodeNamespaceImportCollection" Usage="System.CodeDom.CodeNamespace.Imports" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeNamespaceImportCollection ^ Imports { System::CodeDom::CodeNamespaceImportCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -161,6 +166,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespace.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeNamespace.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeNamespace.PopulateComments" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PopulateComments As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PopulateComments : EventHandler " Usage="member this.PopulateComments : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PopulateComments;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeNamespace.PopulateImports" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PopulateImports As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PopulateImports : EventHandler " Usage="member this.PopulateImports : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PopulateImports;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="E:System.CodeDom.CodeNamespace.PopulateTypes" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PopulateTypes As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PopulateTypes : EventHandler " Usage="member this.PopulateTypes : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PopulateTypes;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespace.Types" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Types As CodeTypeDeclarationCollection" />
       <MemberSignature Language="F#" Value="member this.Types : System.CodeDom.CodeTypeDeclarationCollection" Usage="System.CodeDom.CodeNamespace.Types" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeDeclarationCollection ^ Types { System::CodeDom::CodeTypeDeclarationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

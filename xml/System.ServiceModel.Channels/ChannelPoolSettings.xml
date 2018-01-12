@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelPoolSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ChannelPoolSettings" />
   <TypeSignature Language="F#" Value="type ChannelPoolSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelPoolSettings" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelPoolSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelPoolSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelPoolSettings.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ChannelPoolSettings.IdleTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelPoolSettings.LeaseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LeaseTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.LeaseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ChannelPoolSettings.LeaseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LeaseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelPoolSettings.MaxOutboundChannelsPerEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOutboundChannelsPerEndpoint As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxOutboundChannelsPerEndpoint : int with get, set" Usage="System.ServiceModel.Channels.ChannelPoolSettings.MaxOutboundChannelsPerEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxOutboundChannelsPerEndpoint { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

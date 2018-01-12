@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.SerializationStore" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SerializationStore&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type SerializationStore = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializationStore abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SerializationStore();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.Close" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="serializationStore.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="serializationStore.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.SerializationStore.Errors" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Errors As ICollection" />
       <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ICollection" Usage="System.ComponentModel.Design.Serialization.SerializationStore.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ICollection ^ Errors { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.Save(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="abstract member Save : System.IO.Stream -&gt; unit" Usage="serializationStore.Save stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Save(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.SerializationStore.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

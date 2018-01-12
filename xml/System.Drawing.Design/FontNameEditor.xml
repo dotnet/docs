@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.FontNameEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class FontNameEditor&#xA;Inherits UITypeEditor" />
   <TypeSignature Language="F#" Value="type FontNameEditor = class&#xA;    inherit UITypeEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontNameEditor : System::Drawing::Design::UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.FontNameEditor.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FontNameEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.FontNameEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontNameEditor.GetPaintValueSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.FontNameEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaintValue (e As PaintValueEventArgs)" />
       <MemberSignature Language="F#" Value="override this.PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit" Usage="fontNameEditor.PaintValue e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

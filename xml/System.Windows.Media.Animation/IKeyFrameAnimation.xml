@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.IKeyFrameAnimation" />
   <TypeSignature Language="VB.NET" Value="Public Interface IKeyFrameAnimation" />
   <TypeSignature Language="F#" Value="type IKeyFrameAnimation = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IKeyFrameAnimation" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFrames As IList" />
       <MemberSignature Language="F#" Value="member this.KeyFrames : System.Collections.IList with get, set" Usage="System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ KeyFrames { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

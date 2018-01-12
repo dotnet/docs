@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.Pkcs9DocumentName" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Pkcs9DocumentName&#xA;Inherits Pkcs9AttributeObject" />
   <TypeSignature Language="F#" Value="type Pkcs9DocumentName = class&#xA;    inherit Pkcs9AttributeObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Pkcs9DocumentName sealed : System::Security::Cryptography::Pkcs::Pkcs9AttributeObject" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentName.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pkcs9DocumentName();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentName.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedDocumentName As Byte())" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.Pkcs9DocumentName : byte[] -&gt; System.Security.Cryptography.Pkcs.Pkcs9DocumentName" Usage="new System.Security.Cryptography.Pkcs.Pkcs9DocumentName encodedDocumentName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pkcs9DocumentName(cli::array &lt;System::Byte&gt; ^ encodedDocumentName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentName.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (documentName As String)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.Pkcs9DocumentName : string -&gt; System.Security.Cryptography.Pkcs.Pkcs9DocumentName" Usage="new System.Security.Cryptography.Pkcs.Pkcs9DocumentName documentName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pkcs9DocumentName(System::String ^ documentName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs9DocumentName.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="F#" Value="override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="pkcs9DocumentName.CopyFrom asnEncodedData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.Pkcs9DocumentName.DocumentName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentName As String" />
       <MemberSignature Language="F#" Value="member this.DocumentName : string" Usage="System.Security.Cryptography.Pkcs.Pkcs9DocumentName.DocumentName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

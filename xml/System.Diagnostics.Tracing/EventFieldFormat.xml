@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventFieldFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventFieldFormat" />
   <TypeSignature Language="F#" Value="type EventFieldFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventFieldFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
       <MemberSignature Language="F#" Value="Boolean = 3" Usage="System.Diagnostics.Tracing.EventFieldFormat.Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.Diagnostics.Tracing.EventFieldFormat.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Hexadecimal" />
       <MemberSignature Language="VB.NET" Value="Hexadecimal" />
       <MemberSignature Language="F#" Value="Hexadecimal = 4" Usage="System.Diagnostics.Tracing.EventFieldFormat.Hexadecimal" />
+      <MemberSignature Language="C++ CLI" Value="Hexadecimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.HResult" />
       <MemberSignature Language="VB.NET" Value="HResult" />
       <MemberSignature Language="F#" Value="HResult = 15" Usage="System.Diagnostics.Tracing.EventFieldFormat.HResult" />
+      <MemberSignature Language="C++ CLI" Value="HResult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Json" />
       <MemberSignature Language="VB.NET" Value="Json" />
       <MemberSignature Language="F#" Value="Json = 12" Usage="System.Diagnostics.Tracing.EventFieldFormat.Json" />
+      <MemberSignature Language="C++ CLI" Value="Json" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.String" />
       <MemberSignature Language="VB.NET" Value="String" />
       <MemberSignature Language="F#" Value="String = 2" Usage="System.Diagnostics.Tracing.EventFieldFormat.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
       <MemberSignature Language="F#" Value="Xml = 11" Usage="System.Diagnostics.Tracing.EventFieldFormat.Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

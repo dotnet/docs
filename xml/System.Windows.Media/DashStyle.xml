@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.DashStyle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DashStyle&#xA;Inherits Animatable" />
   <TypeSignature Language="F#" Value="type DashStyle = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DashStyle sealed : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DashStyle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DashStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DashStyle.#ctor(System.Collections.Generic.IEnumerable{System.Double},System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dashes As IEnumerable(Of Double), offset As Double)" />
       <MemberSignature Language="F#" Value="new System.Windows.Media.DashStyle : seq&lt;double&gt; * double -&gt; System.Windows.Media.DashStyle" Usage="new System.Windows.Media.DashStyle (dashes, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DashStyle(System::Collections::Generic::IEnumerable&lt;double&gt; ^ dashes, double offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DashStyle.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DashStyle" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.DashStyle" Usage="dashStyle.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::DashStyle ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DashStyle.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DashStyle" />
       <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.DashStyle" Usage="dashStyle.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::DashStyle ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DashStyle.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="dashStyle.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.DashStyle.Dashes" />
       <MemberSignature Language="VB.NET" Value="Public Property Dashes As DoubleCollection" />
       <MemberSignature Language="F#" Value="member this.Dashes : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Media.DashStyle.Dashes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ Dashes { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.DashStyle.DashesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DashesProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DashesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.DashStyle.DashesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DashesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.DashStyle.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Double" />
       <MemberSignature Language="F#" Value="member this.Offset : double with get, set" Usage="System.Windows.Media.DashStyle.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Offset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,6 +302,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.DashStyle.OffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OffsetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable OffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.DashStyle.OffsetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OffsetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

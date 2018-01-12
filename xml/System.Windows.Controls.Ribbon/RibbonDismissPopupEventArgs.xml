@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonDismissPopupEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="F#" Value="type RibbonDismissPopupEventArgs = class&#xA;    inherit RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonDismissPopupEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonDismissPopupEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.#ctor(System.Windows.Controls.Ribbon.RibbonDismissPopupMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dismissMode As RibbonDismissPopupMode)" />
       <MemberSignature Language="F#" Value="new System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs : System.Windows.Controls.Ribbon.RibbonDismissPopupMode -&gt; System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs" Usage="new System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs dismissMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonDismissPopupEventArgs(System::Windows::Controls::Ribbon::RibbonDismissPopupMode dismissMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.DismissMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DismissMode As RibbonDismissPopupMode" />
       <MemberSignature Language="F#" Value="member this.DismissMode : System.Windows.Controls.Ribbon.RibbonDismissPopupMode" Usage="System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.DismissMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonDismissPopupMode DismissMode { System::Windows::Controls::Ribbon::RibbonDismissPopupMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="ribbonDismissPopupEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

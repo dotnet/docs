@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceNameElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type ServiceNameElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceNameElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceNameElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Add(System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As ServiceNameElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement -&gt; unit" Usage="serviceNameElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="serviceNameElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="serviceNameElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="serviceNameElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.IndexOf(System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As ServiceNameElement) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement -&gt; int" Usage="serviceNameElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ServiceNameElement" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement" Usage="System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ default[int] { System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ServiceNameElement" />
       <MemberSignature Language="F#" Value="member this.Item(string) : System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement" Usage="System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ default[System::String ^] { System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Remove(System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As ServiceNameElement)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElement -&gt; unit" Usage="serviceNameElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="serviceNameElementCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="serviceNameElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

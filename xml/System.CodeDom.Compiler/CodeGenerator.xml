@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeGenerator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeGenerator&#xA;Implements ICodeGenerator" />
   <TypeSignature Language="F#" Value="type CodeGenerator = class&#xA;    interface ICodeGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeGenerator abstract : System::CodeDom::Compiler::ICodeGenerator" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CodeGenerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.ContinueOnNewLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ContinueOnNewLine (st As String)" />
       <MemberSignature Language="F#" Value="abstract member ContinueOnNewLine : string -&gt; unit&#xA;override this.ContinueOnNewLine : string -&gt; unit" Usage="codeGenerator.ContinueOnNewLine st" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ContinueOnNewLine(System::String ^ st);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.CreateEscapedIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateEscapedIdentifier (value As String) As String" />
       <MemberSignature Language="F#" Value="abstract member CreateEscapedIdentifier : string -&gt; string" Usage="codeGenerator.CreateEscapedIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ CreateEscapedIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System.String)</InterfaceMember>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.CreateValidIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateValidIdentifier (value As String) As String" />
       <MemberSignature Language="F#" Value="abstract member CreateValidIdentifier : string -&gt; string" Usage="codeGenerator.CreateValidIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ CreateValidIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System.String)</InterfaceMember>
@@ -180,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.CurrentClass" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentClass As CodeTypeDeclaration" />
       <MemberSignature Language="F#" Value="member this.CurrentClass : System.CodeDom.CodeTypeDeclaration" Usage="System.CodeDom.Compiler.CodeGenerator.CurrentClass" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::CodeDom::CodeTypeDeclaration ^ CurrentClass { System::CodeDom::CodeTypeDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.CurrentMember" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentMember As CodeTypeMember" />
       <MemberSignature Language="F#" Value="member this.CurrentMember : System.CodeDom.CodeTypeMember" Usage="System.CodeDom.Compiler.CodeGenerator.CurrentMember" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::CodeDom::CodeTypeMember ^ CurrentMember { System::CodeDom::CodeTypeMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.CurrentMemberName" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentMemberName As String" />
       <MemberSignature Language="F#" Value="member this.CurrentMemberName : string" Usage="System.CodeDom.Compiler.CodeGenerator.CurrentMemberName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ CurrentMemberName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.CurrentTypeName" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentTypeName As String" />
       <MemberSignature Language="F#" Value="member this.CurrentTypeName : string" Usage="System.CodeDom.Compiler.CodeGenerator.CurrentTypeName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ CurrentTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateArgumentReferenceExpression(System.CodeDom.CodeArgumentReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateArgumentReferenceExpression (e As CodeArgumentReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateArgumentReferenceExpression : System.CodeDom.CodeArgumentReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateArgumentReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateArgumentReferenceExpression(System::CodeDom::CodeArgumentReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateArrayCreateExpression(System.CodeDom.CodeArrayCreateExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateArrayCreateExpression (e As CodeArrayCreateExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateArrayCreateExpression : System.CodeDom.CodeArrayCreateExpression -&gt; unit" Usage="codeGenerator.GenerateArrayCreateExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateArrayCreateExpression(System::CodeDom::CodeArrayCreateExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateArrayIndexerExpression(System.CodeDom.CodeArrayIndexerExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateArrayIndexerExpression (e As CodeArrayIndexerExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateArrayIndexerExpression : System.CodeDom.CodeArrayIndexerExpression -&gt; unit" Usage="codeGenerator.GenerateArrayIndexerExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateArrayIndexerExpression(System::CodeDom::CodeArrayIndexerExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateAssignStatement(System.CodeDom.CodeAssignStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateAssignStatement (e As CodeAssignStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateAssignStatement : System.CodeDom.CodeAssignStatement -&gt; unit" Usage="codeGenerator.GenerateAssignStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateAssignStatement(System::CodeDom::CodeAssignStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateAttachEventStatement(System.CodeDom.CodeAttachEventStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateAttachEventStatement (e As CodeAttachEventStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateAttachEventStatement : System.CodeDom.CodeAttachEventStatement -&gt; unit" Usage="codeGenerator.GenerateAttachEventStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateAttachEventStatement(System::CodeDom::CodeAttachEventStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -418,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateAttributeDeclarationsEnd(System.CodeDom.CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateAttributeDeclarationsEnd (attributes As CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="F#" Value="abstract member GenerateAttributeDeclarationsEnd : System.CodeDom.CodeAttributeDeclarationCollection -&gt; unit" Usage="codeGenerator.GenerateAttributeDeclarationsEnd attributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateAttributeDeclarationsEnd(System::CodeDom::CodeAttributeDeclarationCollection ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateAttributeDeclarationsStart(System.CodeDom.CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateAttributeDeclarationsStart (attributes As CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="F#" Value="abstract member GenerateAttributeDeclarationsStart : System.CodeDom.CodeAttributeDeclarationCollection -&gt; unit" Usage="codeGenerator.GenerateAttributeDeclarationsStart attributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateAttributeDeclarationsStart(System::CodeDom::CodeAttributeDeclarationCollection ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -474,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateBaseReferenceExpression(System.CodeDom.CodeBaseReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateBaseReferenceExpression (e As CodeBaseReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateBaseReferenceExpression : System.CodeDom.CodeBaseReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateBaseReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateBaseReferenceExpression(System::CodeDom::CodeBaseReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -502,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateBinaryOperatorExpression(System.CodeDom.CodeBinaryOperatorExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateBinaryOperatorExpression (e As CodeBinaryOperatorExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateBinaryOperatorExpression : System.CodeDom.CodeBinaryOperatorExpression -&gt; unit&#xA;override this.GenerateBinaryOperatorExpression : System.CodeDom.CodeBinaryOperatorExpression -&gt; unit" Usage="codeGenerator.GenerateBinaryOperatorExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateBinaryOperatorExpression(System::CodeDom::CodeBinaryOperatorExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -532,6 +550,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCastExpression(System.CodeDom.CodeCastExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateCastExpression (e As CodeCastExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCastExpression : System.CodeDom.CodeCastExpression -&gt; unit" Usage="codeGenerator.GenerateCastExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateCastExpression(System::CodeDom::CodeCastExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -560,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GenerateCodeFromMember (member As CodeTypeMember, writer As TextWriter, options As CodeGeneratorOptions)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCodeFromMember : System.CodeDom.CodeTypeMember * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit&#xA;override this.GenerateCodeFromMember : System.CodeDom.CodeTypeMember * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="codeGenerator.GenerateCodeFromMember (member, writer, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GenerateCodeFromMember(System::CodeDom::CodeTypeMember ^ member, System::IO::TextWriter ^ writer, System::CodeDom::Compiler::CodeGeneratorOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -602,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateComment(System.CodeDom.CodeComment)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateComment (e As CodeComment)" />
       <MemberSignature Language="F#" Value="abstract member GenerateComment : System.CodeDom.CodeComment -&gt; unit" Usage="codeGenerator.GenerateComment e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateComment(System::CodeDom::CodeComment ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -630,6 +651,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCommentStatement(System.CodeDom.CodeCommentStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateCommentStatement (e As CodeCommentStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCommentStatement : System.CodeDom.CodeCommentStatement -&gt; unit&#xA;override this.GenerateCommentStatement : System.CodeDom.CodeCommentStatement -&gt; unit" Usage="codeGenerator.GenerateCommentStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateCommentStatement(System::CodeDom::CodeCommentStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -659,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCommentStatements(System.CodeDom.CodeCommentStatementCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateCommentStatements (e As CodeCommentStatementCollection)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCommentStatements : System.CodeDom.CodeCommentStatementCollection -&gt; unit&#xA;override this.GenerateCommentStatements : System.CodeDom.CodeCommentStatementCollection -&gt; unit" Usage="codeGenerator.GenerateCommentStatements e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateCommentStatements(System::CodeDom::CodeCommentStatementCollection ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -687,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnit(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateCompileUnit (e As CodeCompileUnit)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCompileUnit : System.CodeDom.CodeCompileUnit -&gt; unit&#xA;override this.GenerateCompileUnit : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="codeGenerator.GenerateCompileUnit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateCompileUnit(System::CodeDom::CodeCompileUnit ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -715,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnitEnd(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateCompileUnitEnd (e As CodeCompileUnit)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCompileUnitEnd : System.CodeDom.CodeCompileUnit -&gt; unit&#xA;override this.GenerateCompileUnitEnd : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="codeGenerator.GenerateCompileUnitEnd e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateCompileUnitEnd(System::CodeDom::CodeCompileUnit ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -743,6 +768,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnitStart(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateCompileUnitStart (e As CodeCompileUnit)" />
       <MemberSignature Language="F#" Value="abstract member GenerateCompileUnitStart : System.CodeDom.CodeCompileUnit -&gt; unit&#xA;override this.GenerateCompileUnitStart : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="codeGenerator.GenerateCompileUnitStart e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateCompileUnitStart(System::CodeDom::CodeCompileUnit ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -771,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateConditionStatement(System.CodeDom.CodeConditionStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateConditionStatement (e As CodeConditionStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateConditionStatement : System.CodeDom.CodeConditionStatement -&gt; unit" Usage="codeGenerator.GenerateConditionStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateConditionStatement(System::CodeDom::CodeConditionStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -806,6 +833,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateConstructor(System.CodeDom.CodeConstructor,System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateConstructor (e As CodeConstructor, c As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateConstructor : System.CodeDom.CodeConstructor * System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateConstructor (e, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateConstructor(System::CodeDom::CodeConstructor ^ e, System::CodeDom::CodeTypeDeclaration ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -837,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDecimalValue(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateDecimalValue (d As Decimal)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDecimalValue : decimal -&gt; unit&#xA;override this.GenerateDecimalValue : decimal -&gt; unit" Usage="codeGenerator.GenerateDecimalValue d" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateDecimalValue(System::Decimal d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -864,6 +893,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDefaultValueExpression(System.CodeDom.CodeDefaultValueExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateDefaultValueExpression (e As CodeDefaultValueExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDefaultValueExpression : System.CodeDom.CodeDefaultValueExpression -&gt; unit&#xA;override this.GenerateDefaultValueExpression : System.CodeDom.CodeDefaultValueExpression -&gt; unit" Usage="codeGenerator.GenerateDefaultValueExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateDefaultValueExpression(System::CodeDom::CodeDefaultValueExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -891,6 +921,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDelegateCreateExpression(System.CodeDom.CodeDelegateCreateExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateDelegateCreateExpression (e As CodeDelegateCreateExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDelegateCreateExpression : System.CodeDom.CodeDelegateCreateExpression -&gt; unit" Usage="codeGenerator.GenerateDelegateCreateExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateDelegateCreateExpression(System::CodeDom::CodeDelegateCreateExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -919,6 +950,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDelegateInvokeExpression(System.CodeDom.CodeDelegateInvokeExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateDelegateInvokeExpression (e As CodeDelegateInvokeExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDelegateInvokeExpression : System.CodeDom.CodeDelegateInvokeExpression -&gt; unit" Usage="codeGenerator.GenerateDelegateInvokeExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateDelegateInvokeExpression(System::CodeDom::CodeDelegateInvokeExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -947,6 +979,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDirectionExpression(System.CodeDom.CodeDirectionExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateDirectionExpression (e As CodeDirectionExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDirectionExpression : System.CodeDom.CodeDirectionExpression -&gt; unit&#xA;override this.GenerateDirectionExpression : System.CodeDom.CodeDirectionExpression -&gt; unit" Usage="codeGenerator.GenerateDirectionExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateDirectionExpression(System::CodeDom::CodeDirectionExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -975,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDirectives(System.CodeDom.CodeDirectiveCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateDirectives (directives As CodeDirectiveCollection)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDirectives : System.CodeDom.CodeDirectiveCollection -&gt; unit&#xA;override this.GenerateDirectives : System.CodeDom.CodeDirectiveCollection -&gt; unit" Usage="codeGenerator.GenerateDirectives directives" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateDirectives(System::CodeDom::CodeDirectiveCollection ^ directives);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1002,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateDoubleValue(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateDoubleValue (d As Double)" />
       <MemberSignature Language="F#" Value="abstract member GenerateDoubleValue : double -&gt; unit&#xA;override this.GenerateDoubleValue : double -&gt; unit" Usage="codeGenerator.GenerateDoubleValue d" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateDoubleValue(double d);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1029,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateEntryPointMethod(System.CodeDom.CodeEntryPointMethod,System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateEntryPointMethod (e As CodeEntryPointMethod, c As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateEntryPointMethod : System.CodeDom.CodeEntryPointMethod * System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateEntryPointMethod (e, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateEntryPointMethod(System::CodeDom::CodeEntryPointMethod ^ e, System::CodeDom::CodeTypeDeclaration ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1060,6 +1096,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateEvent(System.CodeDom.CodeMemberEvent,System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateEvent (e As CodeMemberEvent, c As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateEvent : System.CodeDom.CodeMemberEvent * System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateEvent (e, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateEvent(System::CodeDom::CodeMemberEvent ^ e, System::CodeDom::CodeTypeDeclaration ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1091,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateEventReferenceExpression(System.CodeDom.CodeEventReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateEventReferenceExpression (e As CodeEventReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateEventReferenceExpression : System.CodeDom.CodeEventReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateEventReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateEventReferenceExpression(System::CodeDom::CodeEventReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1119,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateExpression(System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub GenerateExpression (e As CodeExpression)" />
       <MemberSignature Language="F#" Value="member this.GenerateExpression : System.CodeDom.CodeExpression -&gt; unit" Usage="codeGenerator.GenerateExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void GenerateExpression(System::CodeDom::CodeExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1151,6 +1190,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateExpressionStatement(System.CodeDom.CodeExpressionStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateExpressionStatement (e As CodeExpressionStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateExpressionStatement : System.CodeDom.CodeExpressionStatement -&gt; unit" Usage="codeGenerator.GenerateExpressionStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateExpressionStatement(System::CodeDom::CodeExpressionStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1179,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateField(System.CodeDom.CodeMemberField)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateField (e As CodeMemberField)" />
       <MemberSignature Language="F#" Value="abstract member GenerateField : System.CodeDom.CodeMemberField -&gt; unit" Usage="codeGenerator.GenerateField e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateField(System::CodeDom::CodeMemberField ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1207,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateFieldReferenceExpression(System.CodeDom.CodeFieldReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateFieldReferenceExpression (e As CodeFieldReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateFieldReferenceExpression : System.CodeDom.CodeFieldReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateFieldReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateFieldReferenceExpression(System::CodeDom::CodeFieldReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1235,6 +1277,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateGotoStatement(System.CodeDom.CodeGotoStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateGotoStatement (e As CodeGotoStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateGotoStatement : System.CodeDom.CodeGotoStatement -&gt; unit" Usage="codeGenerator.GenerateGotoStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateGotoStatement(System::CodeDom::CodeGotoStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1263,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateIndexerExpression(System.CodeDom.CodeIndexerExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateIndexerExpression (e As CodeIndexerExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateIndexerExpression : System.CodeDom.CodeIndexerExpression -&gt; unit" Usage="codeGenerator.GenerateIndexerExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateIndexerExpression(System::CodeDom::CodeIndexerExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1291,6 +1335,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateIterationStatement(System.CodeDom.CodeIterationStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateIterationStatement (e As CodeIterationStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateIterationStatement : System.CodeDom.CodeIterationStatement -&gt; unit" Usage="codeGenerator.GenerateIterationStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateIterationStatement(System::CodeDom::CodeIterationStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1326,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateLabeledStatement(System.CodeDom.CodeLabeledStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateLabeledStatement (e As CodeLabeledStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateLabeledStatement : System.CodeDom.CodeLabeledStatement -&gt; unit" Usage="codeGenerator.GenerateLabeledStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateLabeledStatement(System::CodeDom::CodeLabeledStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1354,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateLinePragmaEnd(System.CodeDom.CodeLinePragma)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateLinePragmaEnd (e As CodeLinePragma)" />
       <MemberSignature Language="F#" Value="abstract member GenerateLinePragmaEnd : System.CodeDom.CodeLinePragma -&gt; unit" Usage="codeGenerator.GenerateLinePragmaEnd e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateLinePragmaEnd(System::CodeDom::CodeLinePragma ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1382,6 +1429,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateLinePragmaStart(System.CodeDom.CodeLinePragma)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateLinePragmaStart (e As CodeLinePragma)" />
       <MemberSignature Language="F#" Value="abstract member GenerateLinePragmaStart : System.CodeDom.CodeLinePragma -&gt; unit" Usage="codeGenerator.GenerateLinePragmaStart e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateLinePragmaStart(System::CodeDom::CodeLinePragma ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1410,6 +1458,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateMethod(System.CodeDom.CodeMemberMethod,System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateMethod (e As CodeMemberMethod, c As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateMethod : System.CodeDom.CodeMemberMethod * System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateMethod (e, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateMethod(System::CodeDom::CodeMemberMethod ^ e, System::CodeDom::CodeTypeDeclaration ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1441,6 +1490,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateMethodInvokeExpression(System.CodeDom.CodeMethodInvokeExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateMethodInvokeExpression (e As CodeMethodInvokeExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateMethodInvokeExpression : System.CodeDom.CodeMethodInvokeExpression -&gt; unit" Usage="codeGenerator.GenerateMethodInvokeExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateMethodInvokeExpression(System::CodeDom::CodeMethodInvokeExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1469,6 +1519,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateMethodReferenceExpression(System.CodeDom.CodeMethodReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateMethodReferenceExpression (e As CodeMethodReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateMethodReferenceExpression : System.CodeDom.CodeMethodReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateMethodReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateMethodReferenceExpression(System::CodeDom::CodeMethodReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1497,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateMethodReturnStatement(System.CodeDom.CodeMethodReturnStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateMethodReturnStatement (e As CodeMethodReturnStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateMethodReturnStatement : System.CodeDom.CodeMethodReturnStatement -&gt; unit" Usage="codeGenerator.GenerateMethodReturnStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateMethodReturnStatement(System::CodeDom::CodeMethodReturnStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1525,6 +1577,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateNamespace(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateNamespace (e As CodeNamespace)" />
       <MemberSignature Language="F#" Value="abstract member GenerateNamespace : System.CodeDom.CodeNamespace -&gt; unit&#xA;override this.GenerateNamespace : System.CodeDom.CodeNamespace -&gt; unit" Usage="codeGenerator.GenerateNamespace e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateNamespace(System::CodeDom::CodeNamespace ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1553,6 +1606,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceEnd(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateNamespaceEnd (e As CodeNamespace)" />
       <MemberSignature Language="F#" Value="abstract member GenerateNamespaceEnd : System.CodeDom.CodeNamespace -&gt; unit" Usage="codeGenerator.GenerateNamespaceEnd e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateNamespaceEnd(System::CodeDom::CodeNamespace ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1581,6 +1635,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceImport(System.CodeDom.CodeNamespaceImport)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateNamespaceImport (e As CodeNamespaceImport)" />
       <MemberSignature Language="F#" Value="abstract member GenerateNamespaceImport : System.CodeDom.CodeNamespaceImport -&gt; unit" Usage="codeGenerator.GenerateNamespaceImport e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateNamespaceImport(System::CodeDom::CodeNamespaceImport ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1609,6 +1664,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceImports(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub GenerateNamespaceImports (e As CodeNamespace)" />
       <MemberSignature Language="F#" Value="member this.GenerateNamespaceImports : System.CodeDom.CodeNamespace -&gt; unit" Usage="codeGenerator.GenerateNamespaceImports e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void GenerateNamespaceImports(System::CodeDom::CodeNamespace ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1637,6 +1693,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateNamespaces(System.CodeDom.CodeCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub GenerateNamespaces (e As CodeCompileUnit)" />
       <MemberSignature Language="F#" Value="member this.GenerateNamespaces : System.CodeDom.CodeCompileUnit -&gt; unit" Usage="codeGenerator.GenerateNamespaces e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void GenerateNamespaces(System::CodeDom::CodeCompileUnit ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1665,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceStart(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateNamespaceStart (e As CodeNamespace)" />
       <MemberSignature Language="F#" Value="abstract member GenerateNamespaceStart : System.CodeDom.CodeNamespace -&gt; unit" Usage="codeGenerator.GenerateNamespaceStart e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateNamespaceStart(System::CodeDom::CodeNamespace ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1693,6 +1751,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateObjectCreateExpression(System.CodeDom.CodeObjectCreateExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateObjectCreateExpression (e As CodeObjectCreateExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateObjectCreateExpression : System.CodeDom.CodeObjectCreateExpression -&gt; unit" Usage="codeGenerator.GenerateObjectCreateExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateObjectCreateExpression(System::CodeDom::CodeObjectCreateExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1721,6 +1780,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateParameterDeclarationExpression(System.CodeDom.CodeParameterDeclarationExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateParameterDeclarationExpression (e As CodeParameterDeclarationExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateParameterDeclarationExpression : System.CodeDom.CodeParameterDeclarationExpression -&gt; unit&#xA;override this.GenerateParameterDeclarationExpression : System.CodeDom.CodeParameterDeclarationExpression -&gt; unit" Usage="codeGenerator.GenerateParameterDeclarationExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateParameterDeclarationExpression(System::CodeDom::CodeParameterDeclarationExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1749,6 +1809,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GeneratePrimitiveExpression(System.CodeDom.CodePrimitiveExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GeneratePrimitiveExpression (e As CodePrimitiveExpression)" />
       <MemberSignature Language="F#" Value="abstract member GeneratePrimitiveExpression : System.CodeDom.CodePrimitiveExpression -&gt; unit&#xA;override this.GeneratePrimitiveExpression : System.CodeDom.CodePrimitiveExpression -&gt; unit" Usage="codeGenerator.GeneratePrimitiveExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GeneratePrimitiveExpression(System::CodeDom::CodePrimitiveExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1797,6 +1858,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateProperty(System.CodeDom.CodeMemberProperty,System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateProperty (e As CodeMemberProperty, c As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateProperty : System.CodeDom.CodeMemberProperty * System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateProperty (e, c)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateProperty(System::CodeDom::CodeMemberProperty ^ e, System::CodeDom::CodeTypeDeclaration ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1828,6 +1890,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GeneratePropertyReferenceExpression(System.CodeDom.CodePropertyReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GeneratePropertyReferenceExpression (e As CodePropertyReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GeneratePropertyReferenceExpression : System.CodeDom.CodePropertyReferenceExpression -&gt; unit" Usage="codeGenerator.GeneratePropertyReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GeneratePropertyReferenceExpression(System::CodeDom::CodePropertyReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1856,6 +1919,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GeneratePropertySetValueReferenceExpression(System.CodeDom.CodePropertySetValueReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GeneratePropertySetValueReferenceExpression (e As CodePropertySetValueReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GeneratePropertySetValueReferenceExpression : System.CodeDom.CodePropertySetValueReferenceExpression -&gt; unit" Usage="codeGenerator.GeneratePropertySetValueReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GeneratePropertySetValueReferenceExpression(System::CodeDom::CodePropertySetValueReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1884,6 +1948,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateRemoveEventStatement(System.CodeDom.CodeRemoveEventStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateRemoveEventStatement (e As CodeRemoveEventStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateRemoveEventStatement : System.CodeDom.CodeRemoveEventStatement -&gt; unit" Usage="codeGenerator.GenerateRemoveEventStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateRemoveEventStatement(System::CodeDom::CodeRemoveEventStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1912,6 +1977,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateSingleFloatValue(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateSingleFloatValue (s As Single)" />
       <MemberSignature Language="F#" Value="abstract member GenerateSingleFloatValue : single -&gt; unit&#xA;override this.GenerateSingleFloatValue : single -&gt; unit" Usage="codeGenerator.GenerateSingleFloatValue s" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateSingleFloatValue(float s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1939,6 +2005,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateSnippetCompileUnit(System.CodeDom.CodeSnippetCompileUnit)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateSnippetCompileUnit (e As CodeSnippetCompileUnit)" />
       <MemberSignature Language="F#" Value="abstract member GenerateSnippetCompileUnit : System.CodeDom.CodeSnippetCompileUnit -&gt; unit&#xA;override this.GenerateSnippetCompileUnit : System.CodeDom.CodeSnippetCompileUnit -&gt; unit" Usage="codeGenerator.GenerateSnippetCompileUnit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateSnippetCompileUnit(System::CodeDom::CodeSnippetCompileUnit ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1967,6 +2034,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateSnippetExpression(System.CodeDom.CodeSnippetExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateSnippetExpression (e As CodeSnippetExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateSnippetExpression : System.CodeDom.CodeSnippetExpression -&gt; unit" Usage="codeGenerator.GenerateSnippetExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateSnippetExpression(System::CodeDom::CodeSnippetExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1995,6 +2063,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateSnippetMember(System.CodeDom.CodeSnippetTypeMember)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateSnippetMember (e As CodeSnippetTypeMember)" />
       <MemberSignature Language="F#" Value="abstract member GenerateSnippetMember : System.CodeDom.CodeSnippetTypeMember -&gt; unit" Usage="codeGenerator.GenerateSnippetMember e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateSnippetMember(System::CodeDom::CodeSnippetTypeMember ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2023,6 +2092,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateSnippetStatement(System.CodeDom.CodeSnippetStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateSnippetStatement (e As CodeSnippetStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateSnippetStatement : System.CodeDom.CodeSnippetStatement -&gt; unit&#xA;override this.GenerateSnippetStatement : System.CodeDom.CodeSnippetStatement -&gt; unit" Usage="codeGenerator.GenerateSnippetStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateSnippetStatement(System::CodeDom::CodeSnippetStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2051,6 +2121,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateStatement(System.CodeDom.CodeStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub GenerateStatement (e As CodeStatement)" />
       <MemberSignature Language="F#" Value="member this.GenerateStatement : System.CodeDom.CodeStatement -&gt; unit" Usage="codeGenerator.GenerateStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void GenerateStatement(System::CodeDom::CodeStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2081,6 +2152,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateStatements(System.CodeDom.CodeStatementCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub GenerateStatements (stms As CodeStatementCollection)" />
       <MemberSignature Language="F#" Value="member this.GenerateStatements : System.CodeDom.CodeStatementCollection -&gt; unit" Usage="codeGenerator.GenerateStatements stms" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void GenerateStatements(System::CodeDom::CodeStatementCollection ^ stms);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2109,6 +2181,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateThisReferenceExpression(System.CodeDom.CodeThisReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateThisReferenceExpression (e As CodeThisReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateThisReferenceExpression : System.CodeDom.CodeThisReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateThisReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateThisReferenceExpression(System::CodeDom::CodeThisReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2137,6 +2210,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateThrowExceptionStatement(System.CodeDom.CodeThrowExceptionStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateThrowExceptionStatement (e As CodeThrowExceptionStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateThrowExceptionStatement : System.CodeDom.CodeThrowExceptionStatement -&gt; unit" Usage="codeGenerator.GenerateThrowExceptionStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateThrowExceptionStatement(System::CodeDom::CodeThrowExceptionStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2165,6 +2239,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTryCatchFinallyStatement(System.CodeDom.CodeTryCatchFinallyStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateTryCatchFinallyStatement (e As CodeTryCatchFinallyStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateTryCatchFinallyStatement : System.CodeDom.CodeTryCatchFinallyStatement -&gt; unit" Usage="codeGenerator.GenerateTryCatchFinallyStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateTryCatchFinallyStatement(System::CodeDom::CodeTryCatchFinallyStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2193,6 +2268,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTypeConstructor(System.CodeDom.CodeTypeConstructor)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateTypeConstructor (e As CodeTypeConstructor)" />
       <MemberSignature Language="F#" Value="abstract member GenerateTypeConstructor : System.CodeDom.CodeTypeConstructor -&gt; unit" Usage="codeGenerator.GenerateTypeConstructor e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateTypeConstructor(System::CodeDom::CodeTypeConstructor ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2221,6 +2297,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTypeEnd(System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateTypeEnd (e As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateTypeEnd : System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateTypeEnd e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateTypeEnd(System::CodeDom::CodeTypeDeclaration ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2249,6 +2326,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTypeOfExpression(System.CodeDom.CodeTypeOfExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateTypeOfExpression (e As CodeTypeOfExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateTypeOfExpression : System.CodeDom.CodeTypeOfExpression -&gt; unit&#xA;override this.GenerateTypeOfExpression : System.CodeDom.CodeTypeOfExpression -&gt; unit" Usage="codeGenerator.GenerateTypeOfExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateTypeOfExpression(System::CodeDom::CodeTypeOfExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2277,6 +2355,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTypeReferenceExpression(System.CodeDom.CodeTypeReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub GenerateTypeReferenceExpression (e As CodeTypeReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateTypeReferenceExpression : System.CodeDom.CodeTypeReferenceExpression -&gt; unit&#xA;override this.GenerateTypeReferenceExpression : System.CodeDom.CodeTypeReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateTypeReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void GenerateTypeReferenceExpression(System::CodeDom::CodeTypeReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2305,6 +2384,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTypes(System.CodeDom.CodeNamespace)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub GenerateTypes (e As CodeNamespace)" />
       <MemberSignature Language="F#" Value="member this.GenerateTypes : System.CodeDom.CodeNamespace -&gt; unit" Usage="codeGenerator.GenerateTypes e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void GenerateTypes(System::CodeDom::CodeNamespace ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2333,6 +2413,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateTypeStart(System.CodeDom.CodeTypeDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateTypeStart (e As CodeTypeDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member GenerateTypeStart : System.CodeDom.CodeTypeDeclaration -&gt; unit" Usage="codeGenerator.GenerateTypeStart e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateTypeStart(System::CodeDom::CodeTypeDeclaration ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2361,6 +2442,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateVariableDeclarationStatement(System.CodeDom.CodeVariableDeclarationStatement)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateVariableDeclarationStatement (e As CodeVariableDeclarationStatement)" />
       <MemberSignature Language="F#" Value="abstract member GenerateVariableDeclarationStatement : System.CodeDom.CodeVariableDeclarationStatement -&gt; unit" Usage="codeGenerator.GenerateVariableDeclarationStatement e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateVariableDeclarationStatement(System::CodeDom::CodeVariableDeclarationStatement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2389,6 +2471,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GenerateVariableReferenceExpression(System.CodeDom.CodeVariableReferenceExpression)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GenerateVariableReferenceExpression (e As CodeVariableReferenceExpression)" />
       <MemberSignature Language="F#" Value="abstract member GenerateVariableReferenceExpression : System.CodeDom.CodeVariableReferenceExpression -&gt; unit" Usage="codeGenerator.GenerateVariableReferenceExpression e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GenerateVariableReferenceExpression(System::CodeDom::CodeVariableReferenceExpression ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2417,6 +2500,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetTypeOutput (value As CodeTypeReference) As String" />
       <MemberSignature Language="F#" Value="abstract member GetTypeOutput : System.CodeDom.CodeTypeReference -&gt; string" Usage="codeGenerator.GetTypeOutput value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetTypeOutput(System::CodeDom::CodeTypeReference ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)</InterfaceMember>
@@ -2449,6 +2533,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.Indent" />
       <MemberSignature Language="VB.NET" Value="Protected Property Indent As Integer" />
       <MemberSignature Language="F#" Value="member this.Indent : int with get, set" Usage="System.CodeDom.Compiler.CodeGenerator.Indent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Indent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2480,6 +2565,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.IsCurrentClass" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsCurrentClass As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCurrentClass : bool" Usage="System.CodeDom.Compiler.CodeGenerator.IsCurrentClass" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsCurrentClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2505,6 +2591,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.IsCurrentDelegate" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsCurrentDelegate As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCurrentDelegate : bool" Usage="System.CodeDom.Compiler.CodeGenerator.IsCurrentDelegate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsCurrentDelegate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2530,6 +2617,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.IsCurrentEnum" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsCurrentEnum As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCurrentEnum : bool" Usage="System.CodeDom.Compiler.CodeGenerator.IsCurrentEnum" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsCurrentEnum { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2555,6 +2643,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.IsCurrentInterface" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsCurrentInterface As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCurrentInterface : bool" Usage="System.CodeDom.Compiler.CodeGenerator.IsCurrentInterface" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsCurrentInterface { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2580,6 +2669,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.IsCurrentStruct" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsCurrentStruct As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCurrentStruct : bool" Usage="System.CodeDom.Compiler.CodeGenerator.IsCurrentStruct" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsCurrentStruct { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2605,6 +2695,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.IsValidIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function IsValidIdentifier (value As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsValidIdentifier : string -&gt; bool" Usage="codeGenerator.IsValidIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool IsValidIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System.String)</InterfaceMember>
@@ -2637,6 +2728,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidLanguageIndependentIdentifier (value As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member IsValidLanguageIndependentIdentifier : string -&gt; bool" Usage="System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidLanguageIndependentIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2675,6 +2767,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.NullToken" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property NullToken As String" />
       <MemberSignature Language="F#" Value="member this.NullToken : string" Usage="System.CodeDom.Compiler.CodeGenerator.NullToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ NullToken { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2699,6 +2792,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.Options" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Options As CodeGeneratorOptions" />
       <MemberSignature Language="F#" Value="member this.Options : System.CodeDom.Compiler.CodeGeneratorOptions" Usage="System.CodeDom.Compiler.CodeGenerator.Options" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::CodeDom::Compiler::CodeGeneratorOptions ^ Options { System::CodeDom::Compiler::CodeGeneratorOptions ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2723,6 +2817,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGenerator.Output" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Output As TextWriter" />
       <MemberSignature Language="F#" Value="member this.Output : System.IO.TextWriter" Usage="System.CodeDom.Compiler.CodeGenerator.Output" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::IO::TextWriter ^ Output { System::IO::TextWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2748,6 +2843,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputAttributeArgument(System.CodeDom.CodeAttributeArgument)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputAttributeArgument (arg As CodeAttributeArgument)" />
       <MemberSignature Language="F#" Value="abstract member OutputAttributeArgument : System.CodeDom.CodeAttributeArgument -&gt; unit&#xA;override this.OutputAttributeArgument : System.CodeDom.CodeAttributeArgument -&gt; unit" Usage="codeGenerator.OutputAttributeArgument arg" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputAttributeArgument(System::CodeDom::CodeAttributeArgument ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2776,6 +2872,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputAttributeDeclarations(System.CodeDom.CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputAttributeDeclarations (attributes As CodeAttributeDeclarationCollection)" />
       <MemberSignature Language="F#" Value="abstract member OutputAttributeDeclarations : System.CodeDom.CodeAttributeDeclarationCollection -&gt; unit&#xA;override this.OutputAttributeDeclarations : System.CodeDom.CodeAttributeDeclarationCollection -&gt; unit" Usage="codeGenerator.OutputAttributeDeclarations attributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputAttributeDeclarations(System::CodeDom::CodeAttributeDeclarationCollection ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2804,6 +2901,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputDirection(System.CodeDom.FieldDirection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputDirection (dir As FieldDirection)" />
       <MemberSignature Language="F#" Value="abstract member OutputDirection : System.CodeDom.FieldDirection -&gt; unit&#xA;override this.OutputDirection : System.CodeDom.FieldDirection -&gt; unit" Usage="codeGenerator.OutputDirection dir" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputDirection(System::CodeDom::FieldDirection dir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2841,6 +2939,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputExpressionList(System.CodeDom.CodeExpressionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputExpressionList (expressions As CodeExpressionCollection)" />
       <MemberSignature Language="F#" Value="abstract member OutputExpressionList : System.CodeDom.CodeExpressionCollection -&gt; unit&#xA;override this.OutputExpressionList : System.CodeDom.CodeExpressionCollection -&gt; unit" Usage="codeGenerator.OutputExpressionList expressions" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputExpressionList(System::CodeDom::CodeExpressionCollection ^ expressions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2869,6 +2968,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputExpressionList(System.CodeDom.CodeExpressionCollection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputExpressionList (expressions As CodeExpressionCollection, newlineBetweenItems As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member OutputExpressionList : System.CodeDom.CodeExpressionCollection * bool -&gt; unit&#xA;override this.OutputExpressionList : System.CodeDom.CodeExpressionCollection * bool -&gt; unit" Usage="codeGenerator.OutputExpressionList (expressions, newlineBetweenItems)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputExpressionList(System::CodeDom::CodeExpressionCollection ^ expressions, bool newlineBetweenItems);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2900,6 +3000,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputFieldScopeModifier(System.CodeDom.MemberAttributes)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputFieldScopeModifier (attributes As MemberAttributes)" />
       <MemberSignature Language="F#" Value="abstract member OutputFieldScopeModifier : System.CodeDom.MemberAttributes -&gt; unit&#xA;override this.OutputFieldScopeModifier : System.CodeDom.MemberAttributes -&gt; unit" Usage="codeGenerator.OutputFieldScopeModifier attributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputFieldScopeModifier(System::CodeDom::MemberAttributes attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2928,6 +3029,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputIdentifier (ident As String)" />
       <MemberSignature Language="F#" Value="abstract member OutputIdentifier : string -&gt; unit&#xA;override this.OutputIdentifier : string -&gt; unit" Usage="codeGenerator.OutputIdentifier ident" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputIdentifier(System::String ^ ident);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2955,6 +3057,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputMemberAccessModifier(System.CodeDom.MemberAttributes)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputMemberAccessModifier (attributes As MemberAttributes)" />
       <MemberSignature Language="F#" Value="abstract member OutputMemberAccessModifier : System.CodeDom.MemberAttributes -&gt; unit&#xA;override this.OutputMemberAccessModifier : System.CodeDom.MemberAttributes -&gt; unit" Usage="codeGenerator.OutputMemberAccessModifier attributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputMemberAccessModifier(System::CodeDom::MemberAttributes attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2983,6 +3086,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputMemberScopeModifier(System.CodeDom.MemberAttributes)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputMemberScopeModifier (attributes As MemberAttributes)" />
       <MemberSignature Language="F#" Value="abstract member OutputMemberScopeModifier : System.CodeDom.MemberAttributes -&gt; unit&#xA;override this.OutputMemberScopeModifier : System.CodeDom.MemberAttributes -&gt; unit" Usage="codeGenerator.OutputMemberScopeModifier attributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputMemberScopeModifier(System::CodeDom::MemberAttributes attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3011,6 +3115,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputOperator(System.CodeDom.CodeBinaryOperatorType)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputOperator (op As CodeBinaryOperatorType)" />
       <MemberSignature Language="F#" Value="abstract member OutputOperator : System.CodeDom.CodeBinaryOperatorType -&gt; unit&#xA;override this.OutputOperator : System.CodeDom.CodeBinaryOperatorType -&gt; unit" Usage="codeGenerator.OutputOperator op" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputOperator(System::CodeDom::CodeBinaryOperatorType op);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3039,6 +3144,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputParameters(System.CodeDom.CodeParameterDeclarationExpressionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputParameters (parameters As CodeParameterDeclarationExpressionCollection)" />
       <MemberSignature Language="F#" Value="abstract member OutputParameters : System.CodeDom.CodeParameterDeclarationExpressionCollection -&gt; unit&#xA;override this.OutputParameters : System.CodeDom.CodeParameterDeclarationExpressionCollection -&gt; unit" Usage="codeGenerator.OutputParameters parameters" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputParameters(System::CodeDom::CodeParameterDeclarationExpressionCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3067,6 +3173,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputType(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OutputType (typeRef As CodeTypeReference)" />
       <MemberSignature Language="F#" Value="abstract member OutputType : System.CodeDom.CodeTypeReference -&gt; unit" Usage="codeGenerator.OutputType typeRef" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OutputType(System::CodeDom::CodeTypeReference ^ typeRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3094,6 +3201,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputTypeAttributes(System.Reflection.TypeAttributes,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputTypeAttributes (attributes As TypeAttributes, isStruct As Boolean, isEnum As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member OutputTypeAttributes : System.Reflection.TypeAttributes * bool * bool -&gt; unit&#xA;override this.OutputTypeAttributes : System.Reflection.TypeAttributes * bool * bool -&gt; unit" Usage="codeGenerator.OutputTypeAttributes (attributes, isStruct, isEnum)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTypeAttributes(System::Reflection::TypeAttributes attributes, bool isStruct, bool isEnum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3128,6 +3236,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.OutputTypeNamePair(System.CodeDom.CodeTypeReference,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OutputTypeNamePair (typeRef As CodeTypeReference, name As String)" />
       <MemberSignature Language="F#" Value="abstract member OutputTypeNamePair : System.CodeDom.CodeTypeReference * string -&gt; unit&#xA;override this.OutputTypeNamePair : System.CodeDom.CodeTypeReference * string -&gt; unit" Usage="codeGenerator.OutputTypeNamePair (typeRef, name)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OutputTypeNamePair(System::CodeDom::CodeTypeReference ^ typeRef, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3157,6 +3266,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.QuoteSnippetString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function QuoteSnippetString (value As String) As String" />
       <MemberSignature Language="F#" Value="abstract member QuoteSnippetString : string -&gt; string" Usage="codeGenerator.QuoteSnippetString value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ QuoteSnippetString(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3192,6 +3302,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function Supports (support As GeneratorSupport) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Supports : System.CodeDom.Compiler.GeneratorSupport -&gt; bool" Usage="codeGenerator.Supports support" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool Supports(System::CodeDom::Compiler::GeneratorSupport support);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)</InterfaceMember>
@@ -3224,6 +3335,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#CreateEscapedIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function CreateEscapedIdentifier (value As String) As String Implements ICodeGenerator.CreateEscapedIdentifier" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System::String ^ value) = System::CodeDom::Compiler::ICodeGenerator::CreateEscapedIdentifier;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System.String)</InterfaceMember>
@@ -3254,6 +3366,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#CreateValidIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function CreateValidIdentifier (value As String) As String Implements ICodeGenerator.CreateValidIdentifier" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System::String ^ value) = System::CodeDom::Compiler::ICodeGenerator::CreateValidIdentifier;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System.String)</InterfaceMember>
@@ -3284,6 +3397,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(class System.CodeDom.CodeCompileUnit e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Sub GenerateCodeFromCompileUnit (e As CodeCompileUnit, w As TextWriter, o As CodeGeneratorOptions) Implements ICodeGenerator.GenerateCodeFromCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System::CodeDom::CodeCompileUnit ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o) = System::CodeDom::Compiler::ICodeGenerator::GenerateCodeFromCompileUnit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)</InterfaceMember>
@@ -3319,6 +3433,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(class System.CodeDom.CodeExpression e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Sub GenerateCodeFromExpression (e As CodeExpression, w As TextWriter, o As CodeGeneratorOptions) Implements ICodeGenerator.GenerateCodeFromExpression" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System::CodeDom::CodeExpression ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o) = System::CodeDom::Compiler::ICodeGenerator::GenerateCodeFromExpression;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)</InterfaceMember>
@@ -3354,6 +3469,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(class System.CodeDom.CodeNamespace e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Sub GenerateCodeFromNamespace (e As CodeNamespace, w As TextWriter, o As CodeGeneratorOptions) Implements ICodeGenerator.GenerateCodeFromNamespace" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System::CodeDom::CodeNamespace ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o) = System::CodeDom::Compiler::ICodeGenerator::GenerateCodeFromNamespace;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)</InterfaceMember>
@@ -3389,6 +3505,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(class System.CodeDom.CodeStatement e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Sub GenerateCodeFromStatement (e As CodeStatement, w As TextWriter, o As CodeGeneratorOptions) Implements ICodeGenerator.GenerateCodeFromStatement" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System::CodeDom::CodeStatement ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o) = System::CodeDom::Compiler::ICodeGenerator::GenerateCodeFromStatement;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)</InterfaceMember>
@@ -3424,6 +3541,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(class System.CodeDom.CodeTypeDeclaration e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
       <MemberSignature Language="VB.NET" Value="Sub GenerateCodeFromType (e As CodeTypeDeclaration, w As TextWriter, o As CodeGeneratorOptions) Implements ICodeGenerator.GenerateCodeFromType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System::CodeDom::CodeTypeDeclaration ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o) = System::CodeDom::Compiler::ICodeGenerator::GenerateCodeFromType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)</InterfaceMember>
@@ -3459,6 +3577,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(class System.CodeDom.CodeTypeReference type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#GetTypeOutput(System.CodeDom.CodeTypeReference)" />
       <MemberSignature Language="VB.NET" Value="Function GetTypeOutput (type As CodeTypeReference) As String Implements ICodeGenerator.GetTypeOutput" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System::CodeDom::CodeTypeReference ^ type) = System::CodeDom::Compiler::ICodeGenerator::GetTypeOutput;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)</InterfaceMember>
@@ -3489,6 +3608,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#IsValidIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function IsValidIdentifier (value As String) As Boolean Implements ICodeGenerator.IsValidIdentifier" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System::String ^ value) = System::CodeDom::Compiler::ICodeGenerator::IsValidIdentifier;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System.String)</InterfaceMember>
@@ -3520,6 +3640,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.CodeDom.Compiler.ICodeGenerator.Supports(valuetype System.CodeDom.Compiler.GeneratorSupport support) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#Supports(System.CodeDom.Compiler.GeneratorSupport)" />
       <MemberSignature Language="VB.NET" Value="Function Supports (support As GeneratorSupport) As Boolean Implements ICodeGenerator.Supports" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.CodeDom.Compiler.ICodeGenerator.Supports(System::CodeDom::Compiler::GeneratorSupport support) = System::CodeDom::Compiler::ICodeGenerator::Supports;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)</InterfaceMember>
@@ -3551,6 +3672,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.System#CodeDom#Compiler#ICodeGenerator#ValidateIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub ValidateIdentifier (value As String) Implements ICodeGenerator.ValidateIdentifier" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System::String ^ value) = System::CodeDom::Compiler::ICodeGenerator::ValidateIdentifier;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System.String)</InterfaceMember>
@@ -3581,6 +3703,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.ValidateIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateIdentifier (value As String)" />
       <MemberSignature Language="F#" Value="abstract member ValidateIdentifier : string -&gt; unit&#xA;override this.ValidateIdentifier : string -&gt; unit" Usage="codeGenerator.ValidateIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System.String)</InterfaceMember>
@@ -3612,6 +3735,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers(System.CodeDom.CodeObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ValidateIdentifiers (e As CodeObject)" />
       <MemberSignature Language="F#" Value="static member ValidateIdentifiers : System.CodeDom.CodeObject -&gt; unit" Usage="System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ValidateIdentifiers(System::CodeDom::CodeObject ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

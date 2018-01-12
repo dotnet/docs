@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.CategoriesDocumentFormatter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CategoriesDocumentFormatter" />
   <TypeSignature Language="F#" Value="type CategoriesDocumentFormatter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CategoriesDocumentFormatter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CategoriesDocumentFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.#ctor(System.ServiceModel.Syndication.CategoriesDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (documentToWrite As CategoriesDocument)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.CategoriesDocumentFormatter : System.ServiceModel.Syndication.CategoriesDocument -&gt; System.ServiceModel.Syndication.CategoriesDocumentFormatter" Usage="new System.ServiceModel.Syndication.CategoriesDocumentFormatter documentToWrite" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CategoriesDocumentFormatter(System::ServiceModel::Syndication::CategoriesDocument ^ documentToWrite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanRead : System.Xml.XmlReader -&gt; bool" Usage="categoriesDocumentFormatter.CanRead reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CanRead(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.CreateInlineCategoriesDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateInlineCategoriesDocument () As InlineCategoriesDocument" />
       <MemberSignature Language="F#" Value="abstract member CreateInlineCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument&#xA;override this.CreateInlineCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.InlineCategoriesDocument" Usage="categoriesDocumentFormatter.CreateInlineCategoriesDocument " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Syndication::InlineCategoriesDocument ^ CreateInlineCategoriesDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.CreateReferencedCategoriesDocument" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateReferencedCategoriesDocument () As ReferencedCategoriesDocument" />
       <MemberSignature Language="F#" Value="abstract member CreateReferencedCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.ReferencedCategoriesDocument&#xA;override this.CreateReferencedCategoriesDocument : unit -&gt; System.ServiceModel.Syndication.ReferencedCategoriesDocument" Usage="categoriesDocumentFormatter.CreateReferencedCategoriesDocument " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Syndication::ReferencedCategoriesDocument ^ CreateReferencedCategoriesDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.CategoriesDocumentFormatter.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As CategoriesDocument" />
       <MemberSignature Language="F#" Value="member this.Document : System.ServiceModel.Syndication.CategoriesDocument" Usage="System.ServiceModel.Syndication.CategoriesDocumentFormatter.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::CategoriesDocument ^ Document { System::ServiceModel::Syndication::CategoriesDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ReadFrom (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="abstract member ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="categoriesDocumentFormatter.ReadFrom reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ReadFrom(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.SetDocument(System.ServiceModel.Syndication.CategoriesDocument)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetDocument (document As CategoriesDocument)" />
       <MemberSignature Language="F#" Value="abstract member SetDocument : System.ServiceModel.Syndication.CategoriesDocument -&gt; unit&#xA;override this.SetDocument : System.ServiceModel.Syndication.CategoriesDocument -&gt; unit" Usage="categoriesDocumentFormatter.SetDocument document" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetDocument(System::ServiceModel::Syndication::CategoriesDocument ^ document);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.CategoriesDocumentFormatter.Version" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.CategoriesDocumentFormatter.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Version { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.CategoriesDocumentFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="F#" Value="abstract member WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="categoriesDocumentFormatter.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

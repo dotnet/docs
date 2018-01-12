@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptTypeResolver" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class JavaScriptTypeResolver" />
   <TypeSignature Language="F#" Value="type JavaScriptTypeResolver = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JavaScriptTypeResolver abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptTypeResolver.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; JavaScriptTypeResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResolveType (id As String) As Type" />
       <MemberSignature Language="F#" Value="abstract member ResolveType : string -&gt; Type" Usage="javaScriptTypeResolver.ResolveType id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ ResolveType(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveTypeId(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptTypeResolver.ResolveTypeId(System.Type)" />
       <MemberSignature Language="F#" Value="abstract member ResolveTypeId : Type -&gt; string" Usage="javaScriptTypeResolver.ResolveTypeId type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ResolveTypeId(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

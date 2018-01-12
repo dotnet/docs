@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.ValueEditor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValueEditor&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type ValueEditor = class&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValueEditor sealed : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ValueEditor.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ValueEditor.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="valueEditor.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ValueEditor.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ValueEditor.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ValueEditor.EditorType" />
       <MemberSignature Language="VB.NET" Value="Public Property EditorType As String" />
       <MemberSignature Language="F#" Value="member this.EditorType : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ValueEditor.EditorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EditorType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ValueEditor.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="valueEditor.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ValueEditor.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As List(Of NameValuePair)" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ValueEditor.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ Metadata { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

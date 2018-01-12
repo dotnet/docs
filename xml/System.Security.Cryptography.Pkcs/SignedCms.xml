@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.SignedCms" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SignedCms" />
   <TypeSignature Language="F#" Value="type SignedCms = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignedCms sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms content" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms signerIdentifierType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -137,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (content, detached)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (content As ContentInfo, detached As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ content, bool detached);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.SignedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo * bool -&gt; System.Security.Cryptography.Pkcs.SignedCms" Usage="new System.Security.Cryptography.Pkcs.SignedCms (signerIdentifierType, content, detached)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (signerIdentifierType As SubjectIdentifierType, content As ContentInfo, detached As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType signerIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ content, bool detached);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
       <MemberSignature Language="F#" Value="member this.Certificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Certificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.CheckHash" />
       <MemberSignature Language="VB.NET" Value="Public Sub CheckHash ()" />
       <MemberSignature Language="F#" Value="member this.CheckHash : unit -&gt; unit" Usage="signedCms.CheckHash " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckHash();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CheckSignature (verifySignatureOnly As Boolean)" />
       <MemberSignature Language="F#" Value="member this.CheckSignature : bool -&gt; unit" Usage="signedCms.CheckSignature verifySignatureOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckSignature(bool verifySignatureOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -347,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CheckSignature (extraStore As X509Certificate2Collection, verifySignatureOnly As Boolean)" />
       <MemberSignature Language="F#" Value="member this.CheckSignature : System.Security.Cryptography.X509Certificates.X509Certificate2Collection * bool -&gt; unit" Usage="signedCms.CheckSignature (extraStore, verifySignatureOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckSignature(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ extraStore, bool verifySignatureOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -408,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature" />
       <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature ()" />
       <MemberSignature Language="F#" Value="member this.ComputeSignature : unit -&gt; unit" Usage="signedCms.ComputeSignature " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeSignature();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -471,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature (signer As CmsSigner)" />
       <MemberSignature Language="F#" Value="member this.ComputeSignature : System.Security.Cryptography.Pkcs.CmsSigner -&gt; unit" Usage="signedCms.ComputeSignature signer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeSignature(System::Security::Cryptography::Pkcs::CmsSigner ^ signer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -522,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ComputeSignature (signer As CmsSigner, silent As Boolean)" />
       <MemberSignature Language="F#" Value="member this.ComputeSignature : System.Security.Cryptography.Pkcs.CmsSigner * bool -&gt; unit" Usage="signedCms.ComputeSignature (signer, silent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComputeSignature(System::Security::Cryptography::Pkcs::CmsSigner ^ signer, bool silent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -568,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentInfo As ContentInfo" />
       <MemberSignature Language="F#" Value="member this.ContentInfo : System.Security.Cryptography.Pkcs.ContentInfo" Usage="System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::ContentInfo ^ ContentInfo { System::Security::Cryptography::Pkcs::ContentInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -592,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Decode (encodedMessage As Byte())" />
       <MemberSignature Language="F#" Value="member this.Decode : byte[] -&gt; unit" Usage="signedCms.Decode encodedMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decode(cli::array &lt;System::Byte&gt; ^ encodedMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -638,6 +654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Detached As Boolean" />
       <MemberSignature Language="F#" Value="member this.Detached : bool" Usage="System.Security.Cryptography.Pkcs.SignedCms.Detached" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Detached { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.Encode" />
       <MemberSignature Language="VB.NET" Value="Public Function Encode () As Byte()" />
       <MemberSignature Language="F#" Value="member this.Encode : unit -&gt; byte[]" Usage="signedCms.Encode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Encode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -695,6 +713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.RemoveSignature(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveSignature (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveSignature : int -&gt; unit" Usage="signedCms.RemoveSignature index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSignature(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -729,6 +748,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveSignature(class System.Security.Cryptography.Pkcs.SignerInfo signerInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.SignedCms.RemoveSignature(System.Security.Cryptography.Pkcs.SignerInfo)" />
       <MemberSignature Language="F#" Value="member this.RemoveSignature : System.Security.Cryptography.Pkcs.SignerInfo -&gt; unit" Usage="signedCms.RemoveSignature signerInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSignature(System::Security::Cryptography::Pkcs::SignerInfo ^ signerInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -755,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignerInfos As SignerInfoCollection" />
       <MemberSignature Language="F#" Value="member this.SignerInfos : System.Security.Cryptography.Pkcs.SignerInfoCollection" Usage="System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::SignerInfoCollection ^ SignerInfos { System::Security::Cryptography::Pkcs::SignerInfoCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -779,6 +800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.SignedCms.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
       <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.Pkcs.SignedCms.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

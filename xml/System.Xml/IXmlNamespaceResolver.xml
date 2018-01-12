@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlNamespaceResolver" />
   <TypeSignature Language="F#" Value="type IXmlNamespaceResolver = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespacesInScope (scope As XmlNamespaceScope) As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="abstract member GetNamespacesInScope : System.Xml.XmlNamespaceScope -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="iXmlNamespaceResolver.GetNamespacesInScope scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetNamespacesInScope(System::Xml::XmlNamespaceScope scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupNamespace (prefix As String) As String" />
       <MemberSignature Language="F#" Value="abstract member LookupNamespace : string -&gt; string" Usage="iXmlNamespaceResolver.LookupNamespace prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupNamespace(System::String ^ prefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupPrefix (namespaceName As String) As String" />
       <MemberSignature Language="F#" Value="abstract member LookupPrefix : string -&gt; string" Usage="iXmlNamespaceResolver.LookupPrefix namespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupPrefix(System::String ^ namespaceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

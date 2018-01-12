@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ConstructorBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConstructorBuilder&#xA;Inherits ConstructorInfo&#xA;Implements _ConstructorBuilder" />
   <TypeSignature Language="F#" Value="type ConstructorBuilder = class&#xA;    inherit ConstructorInfo&#xA;    interface _ConstructorBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConstructorBuilder sealed : System::Reflection::ConstructorInfo, System::Runtime::InteropServices::_ConstructorBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConstructorBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.AddDeclarativeSecurity(System.Security.Permissions.SecurityAction,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddDeclarativeSecurity (action As SecurityAction, pset As PermissionSet)" />
       <MemberSignature Language="F#" Value="member this.AddDeclarativeSecurity : System.Security.Permissions.SecurityAction * System.Security.PermissionSet -&gt; unit" Usage="constructorBuilder.AddDeclarativeSecurity (action, pset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDeclarativeSecurity(System::Security::Permissions::SecurityAction action, System::Security::PermissionSet ^ pset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As MethodAttributes" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Reflection.Emit.ConstructorBuilder.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -175,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.CallingConvention" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CallingConvention As CallingConventions" />
       <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.CallingConventions" Usage="System.Reflection.Emit.ConstructorBuilder.CallingConvention" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Reflection.Emit.ConstructorBuilder.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineParameter (iSequence As Integer, attributes As ParameterAttributes, strParamName As String) As ParameterBuilder" />
       <MemberSignature Language="F#" Value="member this.DefineParameter : int * System.Reflection.ParameterAttributes * string -&gt; System.Reflection.Emit.ParameterBuilder" Usage="constructorBuilder.DefineParameter (iSequence, attributes, strParamName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ParameterBuilder ^ DefineParameter(int iSequence, System::Reflection::ParameterAttributes attributes, System::String ^ strParamName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="constructorBuilder.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="constructorBuilder.GetCustomAttributes (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetILGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILGenerator () As ILGenerator" />
       <MemberSignature Language="F#" Value="member this.GetILGenerator : unit -&gt; System.Reflection.Emit.ILGenerator" Usage="constructorBuilder.GetILGenerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ILGenerator ^ GetILGenerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -433,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetILGenerator(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILGenerator (streamSize As Integer) As ILGenerator" />
       <MemberSignature Language="F#" Value="member this.GetILGenerator : int -&gt; System.Reflection.Emit.ILGenerator" Usage="constructorBuilder.GetILGenerator streamSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ILGenerator ^ GetILGenerator(int streamSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -475,6 +486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetMethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMethodImplementationFlags () As MethodImplAttributes" />
       <MemberSignature Language="F#" Value="override this.GetMethodImplementationFlags : unit -&gt; System.Reflection.MethodImplAttributes" Usage="constructorBuilder.GetMethodImplementationFlags " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -512,6 +524,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetModule" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModule () As Module" />
       <MemberSignature Language="F#" Value="member this.GetModule : unit -&gt; System.Reflection.Module" Usage="constructorBuilder.GetModule " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Module ^ GetModule();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -545,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetParameters () As ParameterInfo()" />
       <MemberSignature Language="F#" Value="override this.GetParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="constructorBuilder.GetParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -592,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.GetToken" />
       <MemberSignature Language="VB.NET" Value="Public Function GetToken () As MethodToken" />
       <MemberSignature Language="F#" Value="member this.GetToken : unit -&gt; System.Reflection.Emit.MethodToken" Usage="constructorBuilder.GetToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::MethodToken GetToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -625,6 +640,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.InitLocals" />
       <MemberSignature Language="VB.NET" Value="Public Property InitLocals As Boolean" />
       <MemberSignature Language="F#" Value="member this.InitLocals : bool with get, set" Usage="System.Reflection.Emit.ConstructorBuilder.InitLocals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InitLocals { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -660,6 +676,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Invoke(valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.Invoke(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="F#" Value="override this.Invoke : System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="constructorBuilder.Invoke (invokeAttr, binder, parameters, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Invoke(System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -709,6 +726,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="F#" Value="override this.Invoke : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="constructorBuilder.Invoke (obj, invokeAttr, binder, parameters, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -760,6 +778,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="constructorBuilder.IsDefined (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -800,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.MethodHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodHandle As RuntimeMethodHandle" />
       <MemberSignature Language="F#" Value="member this.MethodHandle : RuntimeMethodHandle" Usage="System.Reflection.Emit.ConstructorBuilder.MethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -826,6 +846,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.MethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodImplementationFlags As MethodImplAttributes" />
       <MemberSignature Language="F#" Value="member this.MethodImplementationFlags : System.Reflection.MethodImplAttributes" Usage="System.Reflection.Emit.ConstructorBuilder.MethodImplementationFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -846,6 +867,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.Module" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
       <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Reflection.Emit.ConstructorBuilder.Module" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -879,6 +901,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.ConstructorBuilder.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -916,6 +939,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.ReflectedType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
       <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Reflection.Emit.ConstructorBuilder.ReflectedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -949,6 +973,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Reflection.Emit.ConstructorBuilder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -992,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (customBuilder As CustomAttributeBuilder)" />
       <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.Emit.CustomAttributeBuilder -&gt; unit" Usage="constructorBuilder.SetCustomAttribute customBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::Emit::CustomAttributeBuilder ^ customBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1034,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (con As ConstructorInfo, binaryAttribute As Byte())" />
       <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.ConstructorInfo * byte[] -&gt; unit" Usage="constructorBuilder.SetCustomAttribute (con, binaryAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Byte&gt; ^ binaryAttribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1088,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.SetImplementationFlags(System.Reflection.MethodImplAttributes)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImplementationFlags (attributes As MethodImplAttributes)" />
       <MemberSignature Language="F#" Value="member this.SetImplementationFlags : System.Reflection.MethodImplAttributes -&gt; unit" Usage="constructorBuilder.SetImplementationFlags attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImplementationFlags(System::Reflection::MethodImplAttributes attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1129,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.SetMethodBody(System.Byte[],System.Int32,System.Byte[],System.Collections.Generic.IEnumerable{System.Reflection.Emit.ExceptionHandler},System.Collections.Generic.IEnumerable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMethodBody (il As Byte(), maxStack As Integer, localSignature As Byte(), exceptionHandlers As IEnumerable(Of ExceptionHandler), tokenFixups As IEnumerable(Of Integer))" />
       <MemberSignature Language="F#" Value="member this.SetMethodBody : byte[] * int * byte[] * seq&lt;System.Reflection.Emit.ExceptionHandler&gt; * seq&lt;int&gt; -&gt; unit" Usage="constructorBuilder.SetMethodBody (il, maxStack, localSignature, exceptionHandlers, tokenFixups)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMethodBody(cli::array &lt;System::Byte&gt; ^ il, int maxStack, cli::array &lt;System::Byte&gt; ^ localSignature, System::Collections::Generic::IEnumerable&lt;System::Reflection::Emit::ExceptionHandler&gt; ^ exceptionHandlers, System::Collections::Generic::IEnumerable&lt;int&gt; ^ tokenFixups);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1178,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.SetSymCustomAttribute(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSymCustomAttribute (name As String, data As Byte())" />
       <MemberSignature Language="F#" Value="member this.SetSymCustomAttribute : string * byte[] -&gt; unit" Usage="constructorBuilder.SetSymCustomAttribute (name, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSymCustomAttribute(System::String ^ name, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1220,6 +1250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ConstructorBuilder.Signature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As String" />
       <MemberSignature Language="F#" Value="member this.Signature : string" Usage="System.Reflection.Emit.ConstructorBuilder.Signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Signature { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1240,6 +1271,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _ConstructorBuilder.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorBuilder.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_ConstructorBuilder::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorBuilder.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -1282,6 +1314,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _ConstructorBuilder.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_ConstructorBuilder::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -1320,6 +1353,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _ConstructorBuilder.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_ConstructorBuilder::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -1354,6 +1388,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _ConstructorBuilder.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ConstructorBuilder.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_ConstructorBuilder::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._ConstructorBuilder.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
@@ -1403,6 +1438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="constructorBuilder.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>

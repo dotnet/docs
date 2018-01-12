@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.RuntimeTypeHandle" />
   <TypeSignature Language="VB.NET" Value="Public Structure RuntimeTypeHandle&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type RuntimeTypeHandle = struct&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public value class RuntimeTypeHandle : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="runtimeTypeHandle.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.Equals(System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (handle As RuntimeTypeHandle) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : RuntimeTypeHandle -&gt; bool" Usage="runtimeTypeHandle.Equals handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(RuntimeTypeHandle handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -155,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="runtimeTypeHandle.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -189,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.GetModuleHandle" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModuleHandle () As ModuleHandle" />
       <MemberSignature Language="F#" Value="member this.GetModuleHandle : unit -&gt; ModuleHandle" Usage="runtimeTypeHandle.GetModuleHandle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModuleHandle GetModuleHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="runtimeTypeHandle.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -291,6 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Equality(System.Object,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Object, right As RuntimeTypeHandle) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : obj * RuntimeTypeHandle -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Object ^ left, RuntimeTypeHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -338,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Equality(System.RuntimeTypeHandle,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As RuntimeTypeHandle, right As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : RuntimeTypeHandle * obj -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(RuntimeTypeHandle left, System::Object ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -398,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Inequality(System.Object,System.RuntimeTypeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Object, right As RuntimeTypeHandle) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : obj * RuntimeTypeHandle -&gt; bool" Usage="System.RuntimeTypeHandle.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Object ^ left, RuntimeTypeHandle right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -445,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Inequality(System.RuntimeTypeHandle,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As RuntimeTypeHandle, right As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : RuntimeTypeHandle * obj -&gt; bool" Usage="System.RuntimeTypeHandle.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(RuntimeTypeHandle left, System::Object ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -492,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:System.RuntimeTypeHandle.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As IntPtr" />
       <MemberSignature Language="F#" Value="member this.Value : nativeint" Usage="System.RuntimeTypeHandle.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Value { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

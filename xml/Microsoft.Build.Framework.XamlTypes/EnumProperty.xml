@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.EnumProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumProperty&#xA;Inherits BaseProperty" />
   <TypeSignature Language="F#" Value="type EnumProperty = class&#xA;    inherit BaseProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.EnumProperty.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumProperty.AdmissibleValues" />
       <MemberSignature Language="VB.NET" Value="Public Property AdmissibleValues As List(Of EnumValue)" />
       <MemberSignature Language="F#" Value="member this.AdmissibleValues : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.EnumValue&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.EnumProperty.AdmissibleValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::EnumValue ^&gt; ^ AdmissibleValues { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::EnumValue ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::EnumValue ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.EnumProperty.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndInit ()" />
       <MemberSignature Language="F#" Value="override this.EndInit : unit -&gt; unit" Usage="enumProperty.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

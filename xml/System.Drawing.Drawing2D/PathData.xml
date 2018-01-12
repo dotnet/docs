@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PathData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PathData" />
   <TypeSignature Language="F#" Value="type PathData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.PathData.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathData.Points" />
       <MemberSignature Language="VB.NET" Value="Public Property Points As PointF()" />
       <MemberSignature Language="F#" Value="member this.Points : System.Drawing.PointF[] with get, set" Usage="System.Drawing.Drawing2D.PathData.Points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::PointF&gt; ^ Points { cli::array &lt;System::Drawing::PointF&gt; ^ get(); void set(cli::array &lt;System::Drawing::PointF&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.PathData.Types" />
       <MemberSignature Language="VB.NET" Value="Public Property Types As Byte()" />
       <MemberSignature Language="F#" Value="member this.Types : byte[] with get, set" Usage="System.Drawing.Drawing2D.PathData.Types" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Types { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

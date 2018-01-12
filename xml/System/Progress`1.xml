@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Progress`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Progress(Of T)&#xA;Implements IProgress(Of T)" />
   <TypeSignature Language="F#" Value="type Progress&lt;'T&gt; = class&#xA;    interface IProgress&lt;'T&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Progress : IProgress&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Progress`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Progress();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Progress`1.#ctor(System.Action{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handler As Action(Of T))" />
       <MemberSignature Language="F#" Value="new Progress&lt;'T&gt; : Action&lt;'T&gt; -&gt; Progress&lt;'T&gt;" Usage="new System.Progress&lt;'T&gt; handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Progress(Action&lt;T&gt; ^ handler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Progress`1.OnReport(`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReport (value As T)" />
       <MemberSignature Language="F#" Value="abstract member OnReport : 'T -&gt; unit&#xA;override this.OnReport : 'T -&gt; unit" Usage="progress.OnReport value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReport(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -159,6 +163,7 @@
       <MemberSignature Language="DocId" Value="E:System.Progress`1.ProgressChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProgressChanged As EventHandler(Of T) " />
       <MemberSignature Language="F#" Value="member this.ProgressChanged : EventHandler&lt;'T&gt; " Usage="member this.ProgressChanged : System.EventHandler&lt;'T&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;T&gt; ^ ProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IProgress&lt;T&gt;.Report(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Progress`1.System#IProgress&lt;T&gt;#Report(`0)" />
       <MemberSignature Language="VB.NET" Value="Sub Report (value As T) Implements IProgress(Of T).Report" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IProgress&lt;T&gt;.Report(T value) = IProgress&lt;T&gt;::Report;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IProgress`1.Report(`0)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Link" />
   <TypeSignature Language="VB.NET" Value="Public Class Link&#xA;Inherits TextControl&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="F#" Value="type Link = class&#xA;    inherit TextControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Link : System::Web::UI::MobileControls::TextControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Link.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Link();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Link.AddLinkedForms(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddLinkedForms (linkedForms As IList)" />
       <MemberSignature Language="F#" Value="override this.AddLinkedForms : System.Collections.IList -&gt; unit" Usage="link.AddLinkedForms linkedForms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddLinkedForms(System::Collections::IList ^ linkedForms);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Link.NavigateUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
       <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.MobileControls.Link.NavigateUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Link.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (argument As String)" />
       <MemberSignature Language="F#" Value="member this.RaisePostBackEvent : string -&gt; unit" Usage="link.RaisePostBackEvent argument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Link.SoftkeyLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property SoftkeyLabel As String" />
       <MemberSignature Language="F#" Value="member this.SoftkeyLabel : string with get, set" Usage="System.Web.UI.MobileControls.Link.SoftkeyLabel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoftkeyLabel { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -217,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Link.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>

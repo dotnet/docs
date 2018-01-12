@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.InvokeWorkflowActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeWorkflowActivity&#xA;Inherits Activity&#xA;Implements ITypeFilterProvider" />
   <TypeSignature Language="F#" Value="type InvokeWorkflowActivity = class&#xA;    inherit Activity&#xA;    interface ITypeFilterProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvokeWorkflowActivity sealed : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::Design::ITypeFilterProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWorkflowActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvokeWorkflowActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWorkflowActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.InvokeWorkflowActivity : string -&gt; System.Workflow.Activities.InvokeWorkflowActivity" Usage="new System.Workflow.Activities.InvokeWorkflowActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvokeWorkflowActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWorkflowActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="invokeWorkflowActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWorkflowActivity.InstanceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
       <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Workflow.Activities.InvokeWorkflowActivity.InstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWorkflowActivity.InstanceIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InstanceIdProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable InstanceIdProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWorkflowActivity.InstanceIdProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InstanceIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.InvokeWorkflowActivity.Invoking" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Invoking As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Invoking : EventHandler " Usage="member this.Invoking : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Invoking;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -220,6 +227,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWorkflowActivity.InvokingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokingEvent As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable InvokingEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWorkflowActivity.InvokingEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InvokingEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterBindings As WorkflowParameterBindingCollection" />
       <MemberSignature Language="F#" Value="member this.ParameterBindings : System.Workflow.ComponentModel.WorkflowParameterBindingCollection" Usage="System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ ParameterBindings { System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindingsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterBindingsProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ParameterBindingsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindingsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterBindingsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -307,6 +317,7 @@
       <MemberSignature Language="C#" Value="bool ITypeFilterProvider.CanFilterType (Type type, bool throwOnError);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Workflow.ComponentModel.Design.ITypeFilterProvider.CanFilterType(class System.Type type, bool throwOnError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.InvokeWorkflowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#CanFilterType(System.Type,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Workflow.ComponentModel.Design.ITypeFilterProvider.CanFilterType(Type ^ type, bool throwOnError) = System::Workflow::ComponentModel::Design::ITypeFilterProvider::CanFilterType;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.Design.ITypeFilterProvider.CanFilterType(System.Type,System.Boolean)</InterfaceMember>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWorkflowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#FilterDescription" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FilterDescription As String Implements ITypeFilterProvider.FilterDescription" />
       <MemberSignature Language="F#" Usage="System.Workflow.Activities.InvokeWorkflowActivity.System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.ComponentModel.Design.ITypeFilterProvider.FilterDescription</InterfaceMember>
@@ -367,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflow" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetWorkflow As Type" />
       <MemberSignature Language="F#" Value="member this.TargetWorkflow : Type with get, set" Usage="System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetWorkflow { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -395,6 +408,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetWorkflowProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TargetWorkflowProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflowProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ TargetWorkflowProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintPreviewControl" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintPreviewControl&#xA;Inherits Control" />
   <TypeSignature Language="F#" Value="type PrintPreviewControl = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintPreviewControl : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintPreviewControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.AutoZoom" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoZoom As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoZoom : bool with get, set" Usage="System.Windows.Forms.PrintPreviewControl.AutoZoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoZoom { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Property Columns As Integer" />
       <MemberSignature Language="F#" Value="member this.Columns : int with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Columns { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.PrintPreviewControl.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Document" />
       <MemberSignature Language="VB.NET" Value="Public Property Document As PrintDocument" />
       <MemberSignature Language="F#" Value="member this.Document : System.Drawing.Printing.PrintDocument with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ Document { System::Drawing::Printing::PrintDocument ^ get(); void set(System::Drawing::Printing::PrintDocument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.InvalidatePreview" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvalidatePreview ()" />
       <MemberSignature Language="F#" Value="member this.InvalidatePreview : unit -&gt; unit" Usage="printPreviewControl.InvalidatePreview " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidatePreview();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (pevent As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="printPreviewControl.OnPaint pevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ pevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -256,6 +264,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs eventargs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.OnResize(System.EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="printPreviewControl.OnResize eventargs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ eventargs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStartPageChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnStartPageChanged : EventArgs -&gt; unit&#xA;override this.OnStartPageChanged : EventArgs -&gt; unit" Usage="printPreviewControl.OnStartPageChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStartPageChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -321,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.ResetBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetBackColor ()" />
       <MemberSignature Language="F#" Value="override this.ResetBackColor : unit -&gt; unit" Usage="printPreviewControl.ResetBackColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.ResetForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetForeColor ()" />
       <MemberSignature Language="F#" Value="override this.ResetForeColor : unit -&gt; unit" Usage="printPreviewControl.ResetForeColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -385,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeft As RightToLeft" />
       <MemberSignature Language="F#" Value="member this.RightToLeft : System.Windows.Forms.RightToLeft with get, set" Usage="System.Windows.Forms.PrintPreviewControl.RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -414,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Rows" />
       <MemberSignature Language="VB.NET" Value="Public Property Rows As Integer" />
       <MemberSignature Language="F#" Value="member this.Rows : int with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Rows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.StartPage" />
       <MemberSignature Language="VB.NET" Value="Public Property StartPage As Integer" />
       <MemberSignature Language="F#" Value="member this.StartPage : int with get, set" Usage="System.Windows.Forms.PrintPreviewControl.StartPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -466,6 +481,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewControl.StartPageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event StartPageChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.StartPageChanged : EventHandler " Usage="member this.StartPageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StartPageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -502,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -537,6 +554,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PrintPreviewControl.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -564,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.UseAntiAlias" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAntiAlias As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseAntiAlias : bool with get, set" Usage="System.Windows.Forms.PrintPreviewControl.UseAntiAlias" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAntiAlias { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -606,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintPreviewControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="printPreviewControl.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -629,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintPreviewControl.Zoom" />
       <MemberSignature Language="VB.NET" Value="Public Property Zoom As Double" />
       <MemberSignature Language="F#" Value="member this.Zoom : double with get, set" Usage="System.Windows.Forms.PrintPreviewControl.Zoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Zoom { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

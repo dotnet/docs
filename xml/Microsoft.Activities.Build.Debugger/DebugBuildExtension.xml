@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.Debugger.DebugBuildExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class DebugBuildExtension&#xA;Implements IXamlBuildTypeGenerationExtension" />
   <TypeSignature Language="F#" Value="type DebugBuildExtension = class&#xA;    interface IXamlBuildTypeGenerationExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebugBuildExtension : Microsoft::Build::Tasks::Xaml::IXamlBuildTypeGenerationExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Activities.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Debugger.DebugBuildExtension.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebugBuildExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -42,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute(class Microsoft.Build.Tasks.Xaml.ClassData classData, class Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext buildContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Debugger.DebugBuildExtension.Execute(Microsoft.Build.Tasks.Xaml.ClassData,Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext)" />
       <MemberSignature Language="F#" Value="abstract member Execute : Microsoft.Build.Tasks.Xaml.ClassData * Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext -&gt; bool&#xA;override this.Execute : Microsoft.Build.Tasks.Xaml.ClassData * Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext -&gt; bool" Usage="debugBuildExtension.Execute (classData, buildContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Execute(Microsoft::Build::Tasks::Xaml::ClassData ^ classData, Microsoft::Build::Tasks::Xaml::XamlBuildTypeGenerationExtensionContext ^ buildContext);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension.Execute(Microsoft.Build.Tasks.Xaml.ClassData,Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext)</InterfaceMember>

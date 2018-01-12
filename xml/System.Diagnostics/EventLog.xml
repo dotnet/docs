@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLog" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLog&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="F#" Value="type EventLog = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLog : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,6 +122,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.EventLog : string -&gt; System.Diagnostics.EventLog" Usage="new System.Diagnostics.EventLog logName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLog(System::String ^ logName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -232,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String, machineName As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.EventLog : string * string -&gt; System.Diagnostics.EventLog" Usage="new System.Diagnostics.EventLog (logName, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLog(System::String ^ logName, System::String ^ machineName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -295,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (logName As String, machineName As String, source As String)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.EventLog : string * string * string -&gt; System.Diagnostics.EventLog" Usage="new System.Diagnostics.EventLog (logName, machineName, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLog(System::String ^ logName, System::String ^ machineName, System::String ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.BeginInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="eventLog.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -391,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="eventLog.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -442,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="eventLog.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -482,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.CreateEventSource(System.Diagnostics.EventSourceCreationData)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateEventSource (sourceData As EventSourceCreationData)" />
       <MemberSignature Language="F#" Value="static member CreateEventSource : System.Diagnostics.EventSourceCreationData -&gt; unit" Usage="System.Diagnostics.EventLog.CreateEventSource sourceData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateEventSource(System::Diagnostics::EventSourceCreationData ^ sourceData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -709,6 +718,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.CreateEventSource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateEventSource (source As String, logName As String)" />
       <MemberSignature Language="F#" Value="static member CreateEventSource : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.CreateEventSource (source, logName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateEventSource(System::String ^ source, System::String ^ logName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -818,6 +828,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.CreateEventSource(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateEventSource (source As String, logName As String, machineName As String)" />
       <MemberSignature Language="F#" Value="static member CreateEventSource : string * string * string -&gt; unit" Usage="System.Diagnostics.EventLog.CreateEventSource (source, logName, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateEventSource(System::String ^ source, System::String ^ logName, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -944,6 +955,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Delete(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (logName As String)" />
       <MemberSignature Language="F#" Value="static member Delete : string -&gt; unit" Usage="System.Diagnostics.EventLog.Delete logName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ logName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1012,6 +1024,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Delete(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Delete (logName As String, machineName As String)" />
       <MemberSignature Language="F#" Value="static member Delete : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.Delete (logName, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Delete(System::String ^ logName, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1101,6 +1114,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.DeleteEventSource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteEventSource (source As String)" />
       <MemberSignature Language="F#" Value="static member DeleteEventSource : string -&gt; unit" Usage="System.Diagnostics.EventLog.DeleteEventSource source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteEventSource(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1163,6 +1177,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.DeleteEventSource(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DeleteEventSource (source As String, machineName As String)" />
       <MemberSignature Language="F#" Value="static member DeleteEventSource : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.DeleteEventSource (source, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteEventSource(System::String ^ source, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1239,6 +1254,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eventLog.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1278,6 +1294,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.EnableRaisingEvents" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableRaisingEvents As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableRaisingEvents : bool with get, set" Usage="System.Diagnostics.EventLog.EnableRaisingEvents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRaisingEvents { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1332,6 +1349,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.EndInit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="eventLog.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -1364,6 +1382,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.Entries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entries As EventLogEntryCollection" />
       <MemberSignature Language="F#" Value="member this.Entries : System.Diagnostics.EventLogEntryCollection" Usage="System.Diagnostics.EventLog.Entries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogEntryCollection ^ Entries { System::Diagnostics::EventLogEntryCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1427,6 +1446,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.EventLog.EntryWritten" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EntryWritten As EntryWrittenEventHandler " />
       <MemberSignature Language="F#" Value="member this.EntryWritten : System.Diagnostics.EntryWrittenEventHandler " Usage="member this.EntryWritten : System.Diagnostics.EntryWrittenEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Diagnostics::EntryWrittenEventHandler ^ EntryWritten;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1482,6 +1502,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (logName As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member Exists : string -&gt; bool" Usage="System.Diagnostics.EventLog.Exists logName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ logName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1533,6 +1554,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.Exists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (logName As String, machineName As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member Exists : string * string -&gt; bool" Usage="System.Diagnostics.EventLog.Exists (logName, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Exists(System::String ^ logName, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1598,6 +1620,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.GetEventLogs" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEventLogs () As EventLog()" />
       <MemberSignature Language="F#" Value="static member GetEventLogs : unit -&gt; System.Diagnostics.EventLog[]" Usage="System.Diagnostics.EventLog.GetEventLogs " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::EventLog ^&gt; ^ GetEventLogs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1645,6 +1668,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.GetEventLogs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetEventLogs (machineName As String) As EventLog()" />
       <MemberSignature Language="F#" Value="static member GetEventLogs : string -&gt; System.Diagnostics.EventLog[]" Usage="System.Diagnostics.EventLog.GetEventLogs machineName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::EventLog ^&gt; ^ GetEventLogs(System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1704,6 +1728,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.Log" />
       <MemberSignature Language="VB.NET" Value="Public Property Log As String" />
       <MemberSignature Language="F#" Value="member this.Log : string with get, set" Usage="System.Diagnostics.EventLog.Log" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Log { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1786,6 +1811,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.LogDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogDisplayName As String" />
       <MemberSignature Language="F#" Value="member this.LogDisplayName : string" Usage="System.Diagnostics.EventLog.LogDisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogDisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1836,6 +1862,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.LogNameFromSourceName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LogNameFromSourceName (source As String, machineName As String) As String" />
       <MemberSignature Language="F#" Value="static member LogNameFromSourceName : string * string -&gt; string" Usage="System.Diagnostics.EventLog.LogNameFromSourceName (source, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LogNameFromSourceName(System::String ^ source, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1893,6 +1920,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.EventLog.MachineName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1960,6 +1988,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.MaximumKilobytes" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumKilobytes As Long" />
       <MemberSignature Language="F#" Value="member this.MaximumKilobytes : int64 with get, set" Usage="System.Diagnostics.EventLog.MaximumKilobytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumKilobytes { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2022,6 +2051,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.MinimumRetentionDays" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumRetentionDays As Integer" />
       <MemberSignature Language="F#" Value="member this.MinimumRetentionDays : int" Usage="System.Diagnostics.EventLog.MinimumRetentionDays" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumRetentionDays { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2077,6 +2107,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.ModifyOverflowPolicy(System.Diagnostics.OverflowAction,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ModifyOverflowPolicy (action As OverflowAction, retentionDays As Integer)" />
       <MemberSignature Language="F#" Value="member this.ModifyOverflowPolicy : System.Diagnostics.OverflowAction * int -&gt; unit" Usage="eventLog.ModifyOverflowPolicy (action, retentionDays)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyOverflowPolicy(System::Diagnostics::OverflowAction action, int retentionDays);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2157,6 +2188,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.OverflowAction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OverflowAction As OverflowAction" />
       <MemberSignature Language="F#" Value="member this.OverflowAction : System.Diagnostics.OverflowAction" Usage="System.Diagnostics.EventLog.OverflowAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::OverflowAction OverflowAction { System::Diagnostics::OverflowAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2214,6 +2246,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.RegisterDisplayName(System.String,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterDisplayName (resourceFile As String, resourceId As Long)" />
       <MemberSignature Language="F#" Value="member this.RegisterDisplayName : string * int64 -&gt; unit" Usage="eventLog.RegisterDisplayName (resourceFile, resourceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDisplayName(System::String ^ resourceFile, long resourceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2392,6 +2425,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
       <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Diagnostics.EventLog.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2483,6 +2517,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.SourceExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SourceExists (source As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member SourceExists : string -&gt; bool" Usage="System.Diagnostics.EventLog.SourceExists source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SourceExists(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2545,6 +2580,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.SourceExists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SourceExists (source As String, machineName As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member SourceExists : string * string -&gt; bool" Usage="System.Diagnostics.EventLog.SourceExists (source, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SourceExists(System::String ^ source, System::String ^ machineName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2619,6 +2655,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLog.SynchronizingObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
       <MemberSignature Language="F#" Value="member this.SynchronizingObject : System.ComponentModel.ISynchronizeInvoke with get, set" Usage="System.Diagnostics.EventLog.SynchronizingObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2673,6 +2710,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String)" />
       <MemberSignature Language="F#" Value="member this.WriteEntry : string -&gt; unit" Usage="eventLog.WriteEntry message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2764,6 +2802,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType)" />
       <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType -&gt; unit" Usage="eventLog.WriteEntry (message, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message, System::Diagnostics::EventLogEntryType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2860,6 +2899,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String)" />
       <MemberSignature Language="F#" Value="static member WriteEntry : string * string -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEntry(System::String ^ source, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2933,6 +2973,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType, eventID As Integer)" />
       <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType * int -&gt; unit" Usage="eventLog.WriteEntry (message, type, eventID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message, System::Diagnostics::EventLogEntryType type, int eventID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3035,6 +3076,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType)" />
       <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEntry(System::String ^ source, System::String ^ message, System::Diagnostics::EventLogEntryType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3114,6 +3156,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType, eventID As Integer, category As Short)" />
       <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType * int * int16 -&gt; unit" Usage="eventLog.WriteEntry (message, type, eventID, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message, System::Diagnostics::EventLogEntryType type, int eventID, short category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3225,6 +3268,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType, eventID As Integer)" />
       <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType * int -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type, eventID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEntry(System::String ^ source, System::String ^ message, System::Diagnostics::EventLogEntryType type, int eventID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3310,6 +3354,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEntry (message As String, type As EventLogEntryType, eventID As Integer, category As Short, rawData As Byte())" />
       <MemberSignature Language="F#" Value="member this.WriteEntry : string * System.Diagnostics.EventLogEntryType * int * int16 * byte[] -&gt; unit" Usage="eventLog.WriteEntry (message, type, eventID, category, rawData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEntry(System::String ^ message, System::Diagnostics::EventLogEntryType type, int eventID, short category, cli::array &lt;System::Byte&gt; ^ rawData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3425,6 +3470,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType, eventID As Integer, category As Short)" />
       <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType * int * int16 -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type, eventID, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEntry(System::String ^ source, System::String ^ message, System::Diagnostics::EventLogEntryType type, int eventID, short category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3518,6 +3564,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEntry (source As String, message As String, type As EventLogEntryType, eventID As Integer, category As Short, rawData As Byte())" />
       <MemberSignature Language="F#" Value="static member WriteEntry : string * string * System.Diagnostics.EventLogEntryType * int * int16 * byte[] -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEntry (source, message, type, eventID, category, rawData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEntry(System::String ^ source, System::String ^ message, System::Diagnostics::EventLogEntryType type, int eventID, short category, cli::array &lt;System::Byte&gt; ^ rawData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3624,6 +3671,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.Diagnostics.EventInstance,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEvent (instance As EventInstance, ParamArray values As Object())" />
       <MemberSignature Language="F#" Value="member this.WriteEvent : System.Diagnostics.EventInstance * obj[] -&gt; unit" Usage="eventLog.WriteEvent (instance, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEvent(System::Diagnostics::EventInstance ^ instance, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3836,6 +3884,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.Diagnostics.EventInstance,System.Byte[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteEvent (instance As EventInstance, data As Byte(), ParamArray values As Object())" />
       <MemberSignature Language="F#" Value="member this.WriteEvent : System.Diagnostics.EventInstance * byte[] * obj[] -&gt; unit" Usage="eventLog.WriteEvent (instance, data, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteEvent(System::Diagnostics::EventInstance ^ instance, cli::array &lt;System::Byte&gt; ^ data, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4055,6 +4104,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.String,System.Diagnostics.EventInstance,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEvent (source As String, instance As EventInstance, ParamArray values As Object())" />
       <MemberSignature Language="F#" Value="static member WriteEvent : string * System.Diagnostics.EventInstance * obj[] -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEvent (source, instance, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEvent(System::String ^ source, System::Diagnostics::EventInstance ^ instance, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4257,6 +4307,7 @@ SVC_UPDATE.EXE
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLog.WriteEvent(System.String,System.Diagnostics.EventInstance,System.Byte[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteEvent (source As String, instance As EventInstance, data As Byte(), ParamArray values As Object())" />
       <MemberSignature Language="F#" Value="static member WriteEvent : string * System.Diagnostics.EventInstance * byte[] * obj[] -&gt; unit" Usage="System.Diagnostics.EventLog.WriteEvent (source, instance, data, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteEvent(System::String ^ source, System::Diagnostics::EventInstance ^ instance, cli::array &lt;System::Byte&gt; ^ data, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

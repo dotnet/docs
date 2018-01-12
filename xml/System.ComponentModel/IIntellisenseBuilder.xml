@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IIntellisenseBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface IIntellisenseBuilder" />
   <TypeSignature Language="F#" Value="type IIntellisenseBuilder = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IIntellisenseBuilder" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IIntellisenseBuilder.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.IIntellisenseBuilder.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IIntellisenseBuilder.Show(System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Show (language As String, value As String, ByRef newValue As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Show : string * string *  -&gt; bool" Usage="iIntellisenseBuilder.Show (language, value, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Show(System::String ^ language, System::String ^ value, System::String ^ % newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

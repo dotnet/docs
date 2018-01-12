@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataRootBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataRootBuilder" />
   <TypeSignature Language="F#" Value="type MetadataRootBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataRootBuilder sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.MetadataVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataVersion As String" />
       <MemberSignature Language="F#" Value="member this.MetadataVersion : string" Usage="System.Reflection.Metadata.Ecma335.MetadataRootBuilder.MetadataVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MetadataVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (builder As BlobBuilder, methodBodyStreamRva As Integer, mappedFieldDataStreamRva As Integer)" />
       <MemberSignature Language="F#" Value="member this.Serialize : System.Reflection.Metadata.BlobBuilder * int * int -&gt; unit" Usage="metadataRootBuilder.Serialize (builder, methodBodyStreamRva, mappedFieldDataStreamRva)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::Reflection::Metadata::BlobBuilder ^ builder, int methodBodyStreamRva, int mappedFieldDataStreamRva);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Sizes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sizes As MetadataSizes" />
       <MemberSignature Language="F#" Value="member this.Sizes : System.Reflection.Metadata.Ecma335.MetadataSizes" Usage="System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Sizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::Ecma335::MetadataSizes ^ Sizes { System::Reflection::Metadata::Ecma335::MetadataSizes ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.SuppressValidation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SuppressValidation As Boolean" />
       <MemberSignature Language="F#" Value="member this.SuppressValidation : bool" Usage="System.Reflection.Metadata.Ecma335.MetadataRootBuilder.SuppressValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressValidation { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

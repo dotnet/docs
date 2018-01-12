@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventChannel" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventChannel" />
   <TypeSignature Language="F#" Value="type EventChannel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventChannel.Admin" />
       <MemberSignature Language="VB.NET" Value="Admin" />
       <MemberSignature Language="F#" Value="Admin = 16" Usage="System.Diagnostics.Tracing.EventChannel.Admin" />
+      <MemberSignature Language="C++ CLI" Value="Admin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventChannel.Analytic" />
       <MemberSignature Language="VB.NET" Value="Analytic" />
       <MemberSignature Language="F#" Value="Analytic = 18" Usage="System.Diagnostics.Tracing.EventChannel.Analytic" />
+      <MemberSignature Language="C++ CLI" Value="Analytic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventChannel.Debug" />
       <MemberSignature Language="VB.NET" Value="Debug" />
       <MemberSignature Language="F#" Value="Debug = 19" Usage="System.Diagnostics.Tracing.EventChannel.Debug" />
+      <MemberSignature Language="C++ CLI" Value="Debug" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventChannel.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.Tracing.EventChannel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventChannel.Operational" />
       <MemberSignature Language="VB.NET" Value="Operational" />
       <MemberSignature Language="F#" Value="Operational = 17" Usage="System.Diagnostics.Tracing.EventChannel.Operational" />
+      <MemberSignature Language="C++ CLI" Value="Operational" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

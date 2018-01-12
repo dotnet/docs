@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolNamespace" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISymbolNamespace" />
   <TypeSignature Language="F#" Value="type ISymbolNamespace = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolNamespace" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolNamespace.GetNamespaces" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespaces () As ISymbolNamespace()" />
       <MemberSignature Language="F#" Value="abstract member GetNamespaces : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace[]" Usage="iSymbolNamespace.GetNamespaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolNamespace ^&gt; ^ GetNamespaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolNamespace.GetVariables" />
       <MemberSignature Language="VB.NET" Value="Public Function GetVariables () As ISymbolVariable()" />
       <MemberSignature Language="F#" Value="abstract member GetVariables : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="iSymbolNamespace.GetVariables " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetVariables();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolNamespace.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.SymbolStore.ISymbolNamespace.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

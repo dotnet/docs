@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509CertificateTrustedIssuerElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of X509CertificateTrustedIssuerElement)" />
   <TypeSignature Language="F#" Value="type X509CertificateTrustedIssuerElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;X509CertificateTrustedIssuerElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509CertificateTrustedIssuerElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::X509CertificateTrustedIssuerElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateTrustedIssuerElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="x509CertificateTrustedIssuerElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

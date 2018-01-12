@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Numerics.Vector3" />
   <TypeSignature Language="VB.NET" Value="Public Structure Vector3&#xA;Implements IEquatable(Of Vector3), IFormattable" />
   <TypeSignature Language="F#" Value="type Vector3 = struct&#xA;    interface IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Vector3 : IEquatable&lt;System::Numerics::Vector3&gt;, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
       <MemberSignature Language="F#" Value="new System.Numerics.Vector3 : single -&gt; System.Numerics.Vector3" Usage="new System.Numerics.Vector3 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3(float value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.#ctor(System.Numerics.Vector2,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Vector2, z As Single)" />
       <MemberSignature Language="F#" Value="new System.Numerics.Vector3 : System.Numerics.Vector2 * single -&gt; System.Numerics.Vector3" Usage="new System.Numerics.Vector3 (value, z)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3(System::Numerics::Vector2 value, float z);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.#ctor(System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single, z As Single)" />
       <MemberSignature Language="F#" Value="new System.Numerics.Vector3 : single * single * single -&gt; System.Numerics.Vector3" Usage="new System.Numerics.Vector3 (x, y, z)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3(float x, float y, float z);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Abs(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Abs : System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Abs value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Abs(System::Numerics::Vector3 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -193,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Add(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Add : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Add (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Add(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -230,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Clamp(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value1 As Vector3, min As Vector3, max As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Clamp : System.Numerics.Vector3 * System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Clamp (value1, min, max)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Clamp(System::Numerics::Vector3 value1, System::Numerics::Vector3 min, System::Numerics::Vector3 max);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -280,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.CopyTo(System.Single[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Single())" />
       <MemberSignature Language="F#" Value="member this.CopyTo : single[] -&gt; unit" Usage="vector3.CopyTo array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;float&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -326,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.CopyTo(System.Single[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Single(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : single[] * int -&gt; unit" Usage="vector3.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;float&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -380,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Cross(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Cross (vector1 As Vector3, vector2 As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Cross : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Cross (vector1, vector2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Cross(System::Numerics::Vector3 vector1, System::Numerics::Vector3 vector2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -417,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Distance(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Distance (value1 As Vector3, value2 As Vector3) As Single" />
       <MemberSignature Language="F#" Value="static member Distance : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; single" Usage="System.Numerics.Vector3.Distance (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Distance(System::Numerics::Vector3 value1, System::Numerics::Vector3 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -454,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.DistanceSquared(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DistanceSquared (value1 As Vector3, value2 As Vector3) As Single" />
       <MemberSignature Language="F#" Value="static member DistanceSquared : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; single" Usage="System.Numerics.Vector3.DistanceSquared (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float DistanceSquared(System::Numerics::Vector3 value1, System::Numerics::Vector3 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -502,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Divide(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Divide : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Divide (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Divide(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -539,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Divide(System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (left As Vector3, divisor As Single) As Vector3" />
       <MemberSignature Language="F#" Value="static member Divide : System.Numerics.Vector3 * single -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Divide (left, divisor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Divide(System::Numerics::Vector3 left, float divisor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -576,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Dot(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Dot (vector1 As Vector3, vector2 As Vector3) As Single" />
       <MemberSignature Language="F#" Value="static member Dot : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; single" Usage="System.Numerics.Vector3.Dot (vector1, vector2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Dot(System::Numerics::Vector3 vector1, System::Numerics::Vector3 vector2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -624,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Equals(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Vector3) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Numerics.Vector3 -&gt; bool" Usage="vector3.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::Vector3 other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -670,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vector3.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -713,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vector3.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -745,6 +763,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Length" />
       <MemberSignature Language="VB.NET" Value="Public Function Length () As Single" />
       <MemberSignature Language="F#" Value="member this.Length : unit -&gt; single" Usage="vector3.Length " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float Length();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -778,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.LengthSquared" />
       <MemberSignature Language="VB.NET" Value="Public Function LengthSquared () As Single" />
       <MemberSignature Language="F#" Value="member this.LengthSquared : unit -&gt; single" Usage="vector3.LengthSquared " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float LengthSquared();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -818,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Lerp(System.Numerics.Vector3,System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Lerp (value1 As Vector3, value2 As Vector3, amount As Single) As Vector3" />
       <MemberSignature Language="F#" Value="static member Lerp : System.Numerics.Vector3 * System.Numerics.Vector3 * single -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Lerp (value1, value2, amount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Lerp(System::Numerics::Vector3 value1, System::Numerics::Vector3 value2, float amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -857,6 +878,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Max(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (value1 As Vector3, value2 As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Max : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Max (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Max(System::Numerics::Vector3 value1, System::Numerics::Vector3 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -894,6 +916,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Min(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (value1 As Vector3, value2 As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Min : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Min (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Min(System::Numerics::Vector3 value1, System::Numerics::Vector3 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -942,6 +965,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Multiply(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Multiply (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Multiply(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -979,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Multiply(System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Vector3, right As Single) As Vector3" />
       <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Vector3 * single -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Multiply (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Multiply(System::Numerics::Vector3 left, float right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1016,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Multiply(System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Single, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Multiply : single * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Multiply (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Multiply(float left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1053,6 +1079,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Negate(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (value As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Negate : System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Negate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Negate(System::Numerics::Vector3 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1088,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Normalize(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Normalize (value As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Normalize : System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Normalize value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Normalize(System::Numerics::Vector3 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1123,6 +1151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector3.One" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property One As Vector3" />
       <MemberSignature Language="F#" Value="member this.One : System.Numerics.Vector3" Usage="System.Numerics.Vector3.One" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector3 One { System::Numerics::Vector3 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1154,6 +1183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Addition(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="left + right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator +(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1209,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Division(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="left / right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator /(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1253,6 +1284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Division(System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (value1 As Vector3, value2 As Single) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.Vector3 * single -&gt; System.Numerics.Vector3" Usage="value1 / value2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator /(System::Numerics::Vector3 value1, float value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1297,6 +1329,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Equality(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Vector3, right As Vector3) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1342,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Inequality(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Vector3, right As Vector3) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; bool" Usage="System.Numerics.Vector3.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1391,6 +1425,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Multiply(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator *(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1435,6 +1470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Multiply(System.Numerics.Vector3,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Vector3, right As Single) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Vector3 * single -&gt; System.Numerics.Vector3" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator *(System::Numerics::Vector3 left, float right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1479,6 +1515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Multiply(System.Single,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Single, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( * ) : single * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator *(float left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1523,6 +1560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Subtraction(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( - ) : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="left - right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator -(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1567,6 +1605,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_UnaryNegation(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member ( ~- ) : System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="- value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 operator -(System::Numerics::Vector3 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1609,6 +1648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Reflect(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Reflect (vector As Vector3, normal As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Reflect : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Reflect (vector, normal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Reflect(System::Numerics::Vector3 vector, System::Numerics::Vector3 normal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1646,6 +1686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.SquareRoot(System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SquareRoot (value As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member SquareRoot : System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.SquareRoot value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 SquareRoot(System::Numerics::Vector3 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1681,6 +1722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Subtract(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (left As Vector3, right As Vector3) As Vector3" />
       <MemberSignature Language="F#" Value="static member Subtract : System.Numerics.Vector3 * System.Numerics.Vector3 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Subtract (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Subtract(System::Numerics::Vector3 left, System::Numerics::Vector3 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1729,6 +1771,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector3.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1768,6 +1811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="vector3.ToString format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1810,6 +1854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="vector3.ToString (format, formatProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ formatProvider);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -1868,6 +1913,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Transform(System.Numerics.Vector3,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Transform (position As Vector3, matrix As Matrix4x4) As Vector3" />
       <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Vector3 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Transform (position, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Transform(System::Numerics::Vector3 position, System::Numerics::Matrix4x4 matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1905,6 +1951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.Transform(System.Numerics.Vector3,System.Numerics.Quaternion)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Transform (value As Vector3, rotation As Quaternion) As Vector3" />
       <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Vector3 * System.Numerics.Quaternion -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.Transform (value, rotation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 Transform(System::Numerics::Vector3 value, System::Numerics::Quaternion rotation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1942,6 +1989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.TransformNormal(System.Numerics.Vector3,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TransformNormal (normal As Vector3, matrix As Matrix4x4) As Vector3" />
       <MemberSignature Language="F#" Value="static member TransformNormal : System.Numerics.Vector3 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Vector3" Usage="System.Numerics.Vector3.TransformNormal (normal, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector3 TransformNormal(System::Numerics::Vector3 normal, System::Numerics::Matrix4x4 matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1979,6 +2027,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector3.UnitX" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnitX As Vector3" />
       <MemberSignature Language="F#" Value="member this.UnitX : System.Numerics.Vector3" Usage="System.Numerics.Vector3.UnitX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector3 UnitX { System::Numerics::Vector3 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2010,6 +2059,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector3.UnitY" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnitY As Vector3" />
       <MemberSignature Language="F#" Value="member this.UnitY : System.Numerics.Vector3" Usage="System.Numerics.Vector3.UnitY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector3 UnitY { System::Numerics::Vector3 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2041,6 +2091,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector3.UnitZ" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnitZ As Vector3" />
       <MemberSignature Language="F#" Value="member this.UnitZ : System.Numerics.Vector3" Usage="System.Numerics.Vector3.UnitZ" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector3 UnitZ { System::Numerics::Vector3 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2072,6 +2123,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Vector3.X" />
       <MemberSignature Language="VB.NET" Value="Public X As Single " />
       <MemberSignature Language="F#" Value="val mutable X : single" Usage="System.Numerics.Vector3.X" />
+      <MemberSignature Language="C++ CLI" Value="public: float X;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2102,6 +2154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Vector3.Y" />
       <MemberSignature Language="VB.NET" Value="Public Y As Single " />
       <MemberSignature Language="F#" Value="val mutable Y : single" Usage="System.Numerics.Vector3.Y" />
+      <MemberSignature Language="C++ CLI" Value="public: float Y;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2132,6 +2185,7 @@
       <MemberSignature Language="DocId" Value="F:System.Numerics.Vector3.Z" />
       <MemberSignature Language="VB.NET" Value="Public Z As Single " />
       <MemberSignature Language="F#" Value="val mutable Z : single" Usage="System.Numerics.Vector3.Z" />
+      <MemberSignature Language="C++ CLI" Value="public: float Z;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -2162,6 +2216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector3.Zero" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Zero As Vector3" />
       <MemberSignature Language="F#" Value="member this.Zero : System.Numerics.Vector3" Usage="System.Numerics.Vector3.Zero" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector3 Zero { System::Numerics::Vector3 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>

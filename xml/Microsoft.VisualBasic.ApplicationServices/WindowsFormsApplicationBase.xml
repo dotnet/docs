@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsFormsApplicationBase&#xA;Inherits ConsoleApplicationBase" />
   <TypeSignature Language="F#" Value="type WindowsFormsApplicationBase = class&#xA;    inherit ConsoleApplicationBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsApplicationBase : Microsoft::VisualBasic::ApplicationServices::ConsoleApplicationBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsFormsApplicationBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype Microsoft.VisualBasic.ApplicationServices.AuthenticationMode authenticationMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase : Microsoft.VisualBasic.ApplicationServices.AuthenticationMode -&gt; Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" Usage="new Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase authenticationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsFormsApplicationBase(Microsoft::VisualBasic::ApplicationServices::AuthenticationMode authenticationMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ApplicationContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationContext As ApplicationContext" />
       <MemberSignature Language="F#" Value="member this.ApplicationContext : System.Windows.Forms.ApplicationContext" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ApplicationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ApplicationContext ^ ApplicationContext { System::Windows::Forms::ApplicationContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoEvents ()" />
       <MemberSignature Language="F#" Value="member this.DoEvents : unit -&gt; unit" Usage="windowsFormsApplicationBase.DoEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoEvents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -222,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles" />
       <MemberSignature Language="VB.NET" Value="Protected Property EnableVisualStyles As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableVisualStyles : bool with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool EnableVisualStyles { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen" />
       <MemberSignature Language="VB.NET" Value="Protected Sub HideSplashScreen ()" />
       <MemberSignature Language="F#" Value="member this.HideSplashScreen : unit -&gt; unit" Usage="windowsFormsApplicationBase.HideSplashScreen " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void HideSplashScreen();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -291,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Property IsSingleInstance As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSingleInstance : bool with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsSingleInstance { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -324,6 +332,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm" />
       <MemberSignature Language="VB.NET" Value="Protected Property MainForm As Form" />
       <MemberSignature Language="F#" Value="member this.MainForm : System.Windows.Forms.Form with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::Form ^ MainForm { System::Windows::Forms::Form ^ get(); void set(System::Windows::Forms::Form ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -356,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumSplashScreenDisplayTime As Integer" />
       <MemberSignature Language="F#" Value="member this.MinimumSplashScreenDisplayTime : int with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumSplashScreenDisplayTime { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -422,6 +432,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NetworkAvailabilityChanged As NetworkAvailableEventHandler " />
       <MemberSignature Language="F#" Value="member this.NetworkAvailabilityChanged : Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler " Usage="member this.NetworkAvailabilityChanged : Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::Devices::NetworkAvailableEventHandler ^ NetworkAvailabilityChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -493,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateMainForm ()" />
       <MemberSignature Language="F#" Value="abstract member OnCreateMainForm : unit -&gt; unit&#xA;override this.OnCreateMainForm : unit -&gt; unit" Usage="windowsFormsApplicationBase.OnCreateMainForm " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateMainForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -527,6 +539,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateSplashScreen ()" />
       <MemberSignature Language="F#" Value="abstract member OnCreateSplashScreen : unit -&gt; unit&#xA;override this.OnCreateSplashScreen : unit -&gt; unit" Usage="windowsFormsApplicationBase.OnCreateSplashScreen " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateSplashScreen();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -561,6 +574,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnInitialize (commandLineArgs As ReadOnlyCollection(Of String)) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member OnInitialize : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; -&gt; bool&#xA;override this.OnInitialize : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; -&gt; bool" Usage="windowsFormsApplicationBase.OnInitialize commandLineArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnInitialize(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ commandLineArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -610,6 +624,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRun ()" />
       <MemberSignature Language="F#" Value="abstract member OnRun : unit -&gt; unit&#xA;override this.OnRun : unit -&gt; unit" Usage="windowsFormsApplicationBase.OnRun " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRun();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -653,6 +668,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnShutdown ()" />
       <MemberSignature Language="F#" Value="abstract member OnShutdown : unit -&gt; unit&#xA;override this.OnShutdown : unit -&gt; unit" Usage="windowsFormsApplicationBase.OnShutdown " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnShutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -687,6 +703,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup(Microsoft.VisualBasic.ApplicationServices.StartupEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnStartup (eventArgs As StartupEventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member OnStartup : Microsoft.VisualBasic.ApplicationServices.StartupEventArgs -&gt; bool&#xA;override this.OnStartup : Microsoft.VisualBasic.ApplicationServices.StartupEventArgs -&gt; bool" Usage="windowsFormsApplicationBase.OnStartup eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnStartup(Microsoft::VisualBasic::ApplicationServices::StartupEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -725,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStartupNextInstance (eventArgs As StartupNextInstanceEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnStartupNextInstance : Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs -&gt; unit&#xA;override this.OnStartupNextInstance : Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs -&gt; unit" Usage="windowsFormsApplicationBase.OnStartupNextInstance eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStartupNextInstance(Microsoft::VisualBasic::ApplicationServices::StartupNextInstanceEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -767,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException(Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUnhandledException (e As UnhandledExceptionEventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member OnUnhandledException : Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs -&gt; bool&#xA;override this.OnUnhandledException : Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs -&gt; bool" Usage="windowsFormsApplicationBase.OnUnhandledException e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnUnhandledException(Microsoft::VisualBasic::ApplicationServices::UnhandledExceptionEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -806,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpenForms As FormCollection" />
       <MemberSignature Language="F#" Value="member this.OpenForms : System.Windows.Forms.FormCollection" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FormCollection ^ OpenForms { System::Windows::Forms::FormCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -862,6 +882,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Run (commandLine As String())" />
       <MemberSignature Language="F#" Value="member this.Run : string[] -&gt; unit" Usage="windowsFormsApplicationBase.Run commandLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run(cli::array &lt;System::String ^&gt; ^ commandLine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -916,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit" />
       <MemberSignature Language="VB.NET" Value="Public Property SaveMySettingsOnExit As Boolean" />
       <MemberSignature Language="F#" Value="member this.SaveMySettingsOnExit : bool with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveMySettingsOnExit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -977,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ShowSplashScreen ()" />
       <MemberSignature Language="F#" Value="member this.ShowSplashScreen : unit -&gt; unit" Usage="windowsFormsApplicationBase.ShowSplashScreen " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ShowSplashScreen();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1014,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Event Shutdown As ShutdownEventHandler " />
       <MemberSignature Language="F#" Value="member this.Shutdown : Microsoft.VisualBasic.ApplicationServices.ShutdownEventHandler " Usage="member this.Shutdown : Microsoft.VisualBasic.ApplicationServices.ShutdownEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::ApplicationServices::ShutdownEventHandler ^ Shutdown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1069,6 +1093,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property ShutdownStyle As ShutdownMode" />
       <MemberSignature Language="F#" Value="member this.ShutdownStyle : Microsoft.VisualBasic.ApplicationServices.ShutdownMode with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property Microsoft::VisualBasic::ApplicationServices::ShutdownMode ShutdownStyle { Microsoft::VisualBasic::ApplicationServices::ShutdownMode get(); void set(Microsoft::VisualBasic::ApplicationServices::ShutdownMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1097,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen" />
       <MemberSignature Language="VB.NET" Value="Public Property SplashScreen As Form" />
       <MemberSignature Language="F#" Value="member this.SplashScreen : System.Windows.Forms.Form with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Form ^ SplashScreen { System::Windows::Forms::Form ^ get(); void set(System::Windows::Forms::Form ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1154,6 +1180,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup" />
       <MemberSignature Language="VB.NET" Value="Public Event Startup As StartupEventHandler " />
       <MemberSignature Language="F#" Value="member this.Startup : Microsoft.VisualBasic.ApplicationServices.StartupEventHandler " Usage="member this.Startup : Microsoft.VisualBasic.ApplicationServices.StartupEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::ApplicationServices::StartupEventHandler ^ Startup;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1219,6 +1246,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
       <MemberSignature Language="VB.NET" Value="Public Event StartupNextInstance As StartupNextInstanceEventHandler " />
       <MemberSignature Language="F#" Value="member this.StartupNextInstance : Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler " Usage="member this.StartupNextInstance : Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::ApplicationServices::StartupNextInstanceEventHandler ^ StartupNextInstance;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1297,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event UnhandledException As UnhandledExceptionEventHandler " />
       <MemberSignature Language="F#" Value="member this.UnhandledException : Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler " Usage="member this.UnhandledException : Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::VisualBasic::ApplicationServices::UnhandledExceptionEventHandler ^ UnhandledException;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1374,6 +1403,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly Property UseCompatibleTextRendering As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseCompatibleTextRendering : bool" Usage="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static property bool UseCompatibleTextRendering { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

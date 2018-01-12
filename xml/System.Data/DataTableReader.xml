@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableReader" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataTableReader&#xA;Inherits DbDataReader" />
   <TypeSignature Language="F#" Value="type DataTableReader = class&#xA;    inherit DbDataReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataTableReader sealed : System::Data::Common::DbDataReader" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataTable dataTable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.#ctor(System.Data.DataTable)" />
       <MemberSignature Language="F#" Value="new System.Data.DataTableReader : System.Data.DataTable -&gt; System.Data.DataTableReader" Usage="new System.Data.DataTableReader dataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableReader(System::Data::DataTable ^ dataTable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.#ctor(System.Data.DataTable[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataTables As DataTable())" />
       <MemberSignature Language="F#" Value="new System.Data.DataTableReader : System.Data.DataTable[] -&gt; System.Data.DataTableReader" Usage="new System.Data.DataTableReader dataTables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataTableReader(cli::array &lt;System::Data::DataTable ^&gt; ^ dataTables);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="dataTableReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
       <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.DataTableReader.Depth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -212,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.DataTableReader.FieldCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -242,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (ordinal As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="dataTableReader.GetBoolean ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (ordinal As Integer) As Byte" />
       <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="dataTableReader.GetByte ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -350,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (ordinal As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="dataTableReader.GetBytes (ordinal, dataIndex, buffer, bufferIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int ordinal, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -415,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (ordinal As Integer) As Char" />
       <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="dataTableReader.GetChar ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (ordinal As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="dataTableReader.GetChars (ordinal, dataIndex, buffer, bufferIndex, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int ordinal, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -535,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (ordinal As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="dataTableReader.GetDataTypeName ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -592,6 +604,7 @@ Name: String
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (ordinal As Integer) As DateTime" />
       <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="dataTableReader.GetDateTime ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -646,6 +659,7 @@ Name: String
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (ordinal As Integer) As Decimal" />
       <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="dataTableReader.GetDecimal ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -700,6 +714,7 @@ Name: String
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (ordinal As Integer) As Double" />
       <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="dataTableReader.GetDouble ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -754,6 +769,7 @@ Name: String
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dataTableReader.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -816,6 +832,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (ordinal As Integer) As Type" />
       <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="dataTableReader.GetFieldType ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -861,6 +878,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (ordinal As Integer) As Single" />
       <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="dataTableReader.GetFloat ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -915,6 +933,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (ordinal As Integer) As Guid" />
       <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="dataTableReader.GetGuid ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -969,6 +988,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (ordinal As Integer) As Short" />
       <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="dataTableReader.GetInt16 ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1023,6 +1043,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (ordinal As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="dataTableReader.GetInt32 ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1077,6 +1098,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (ordinal As Integer) As Long" />
       <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="dataTableReader.GetInt64 ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1131,6 +1153,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (ordinal As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="dataTableReader.GetName ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1181,6 +1204,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="dataTableReader.GetOrdinal name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1237,6 +1261,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetProviderSpecificFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificFieldType (ordinal As Integer) As Type" />
       <MemberSignature Language="F#" Value="override this.GetProviderSpecificFieldType : int -&gt; Type" Usage="dataTableReader.GetProviderSpecificFieldType ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetProviderSpecificFieldType(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1280,6 +1305,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetProviderSpecificValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValue (ordinal As Integer) As Object" />
       <MemberSignature Language="F#" Value="override this.GetProviderSpecificValue : int -&gt; obj" Usage="dataTableReader.GetProviderSpecificValue ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetProviderSpecificValue(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1324,6 +1350,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetProviderSpecificValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValues (values As Object()) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetProviderSpecificValues : obj[] -&gt; int" Usage="dataTableReader.GetProviderSpecificValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetProviderSpecificValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1367,6 +1394,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetSchemaTable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchemaTable () As DataTable" />
       <MemberSignature Language="F#" Value="override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="dataTableReader.GetSchemaTable " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1441,6 +1469,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (ordinal As Integer) As String" />
       <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="dataTableReader.GetString ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1493,6 +1522,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (ordinal As Integer) As Object" />
       <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="dataTableReader.GetValue ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1544,6 +1574,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="dataTableReader.GetValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1599,6 +1630,7 @@ Russ
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.HasRows" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasRows As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasRows : bool" Usage="System.Data.DataTableReader.HasRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRows { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1649,6 +1681,7 @@ Russ
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClosed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.DataTableReader.IsClosed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1685,6 +1718,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (ordinal As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="dataTableReader.IsDBNull ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1747,6 +1781,7 @@ Russ
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(ordinal As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.DataTableReader.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int ordinal); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1797,6 +1832,7 @@ Russ
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.DataTableReader.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1852,6 +1888,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.NextResult" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NextResult () As Boolean" />
       <MemberSignature Language="F#" Value="override this.NextResult : unit -&gt; bool" Usage="dataTableReader.NextResult " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1914,6 +1951,7 @@ Russ
       <MemberSignature Language="DocId" Value="M:System.Data.DataTableReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="dataTableReader.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1961,6 +1999,7 @@ Russ
       <MemberSignature Language="DocId" Value="P:System.Data.DataTableReader.RecordsAffected" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordsAffected As Integer" />
       <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.DataTableReader.RecordsAffected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

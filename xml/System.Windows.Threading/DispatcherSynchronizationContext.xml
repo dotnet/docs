@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherSynchronizationContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatcherSynchronizationContext&#xA;Inherits SynchronizationContext" />
   <TypeSignature Language="F#" Value="type DispatcherSynchronizationContext = class&#xA;    inherit SynchronizationContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherSynchronizationContext sealed : System::Threading::SynchronizationContext" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherSynchronizationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.#ctor(System.Windows.Threading.Dispatcher)" />
       <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherSynchronizationContext : System.Windows.Threading.Dispatcher -&gt; System.Windows.Threading.DispatcherSynchronizationContext" Usage="new System.Windows.Threading.DispatcherSynchronizationContext dispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherSynchronizationContext(System::Windows::Threading::Dispatcher ^ dispatcher);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Threading.Dispatcher dispatcher, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.#ctor(System.Windows.Threading.Dispatcher,System.Windows.Threading.DispatcherPriority)" />
       <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherSynchronizationContext : System.Windows.Threading.Dispatcher * System.Windows.Threading.DispatcherPriority -&gt; System.Windows.Threading.DispatcherSynchronizationContext" Usage="new System.Windows.Threading.DispatcherSynchronizationContext (dispatcher, priority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherSynchronizationContext(System::Windows::Threading::Dispatcher ^ dispatcher, System::Windows::Threading::DispatcherPriority priority);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCopy () As SynchronizationContext" />
       <MemberSignature Language="F#" Value="override this.CreateCopy : unit -&gt; System.Threading.SynchronizationContext" Usage="dispatcherSynchronizationContext.CreateCopy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::SynchronizationContext ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Post (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="F#" Value="override this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="dispatcherSynchronizationContext.Post (d, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Send (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="F#" Value="override this.Send : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="dispatcherSynchronizationContext.Send (d, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Send(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Wait (waitHandles As IntPtr(), waitAll As Boolean, millisecondsTimeout As Integer) As Integer" />
       <MemberSignature Language="F#" Value="override this.Wait : nativeint[] * bool * int -&gt; int" Usage="dispatcherSynchronizationContext.Wait (waitHandles, waitAll, millisecondsTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Wait(cli::array &lt;IntPtr&gt; ^ waitHandles, bool waitAll, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartManager&#xA;Inherits Control&#xA;Implements INamingContainer, IPersonalizable" />
   <TypeSignature Language="F#" Value="type WebPartManager = class&#xA;    inherit Control&#xA;    interface INamingContainer&#xA;    interface IPersonalizable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartManager : System::Web::UI::Control, System::Web::UI::INamingContainer, System::Web::UI::WebControls::WebParts::IPersonalizable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.ActivateConnections" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ActivateConnections ()" />
       <MemberSignature Language="F#" Value="abstract member ActivateConnections : unit -&gt; unit&#xA;override this.ActivateConnections : unit -&gt; unit" Usage="webPartManager.ActivateConnections " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ActivateConnections();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +219,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.WebParts.WebPart AddWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Web.UI.WebControls.WebParts.WebPartZoneBase zone, int32 zoneIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       <MemberSignature Language="F#" Value="member this.AddWebPart : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.WebPartZoneBase * int -&gt; System.Web.UI.WebControls.WebParts.WebPart" Usage="webPartManager.AddWebPart (webPart, zone, zoneIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WebParts::WebPart ^ AddWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ zone, int zoneIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,6 +280,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AuthorizeWebPart As WebPartAuthorizationEventHandler " />
       <MemberSignature Language="F#" Value="member this.AuthorizeWebPart : System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventHandler " Usage="member this.AuthorizeWebPart : System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartAuthorizationEventHandler ^ AuthorizeWebPart;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.AvailableTransformers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableTransformers As TransformerTypeCollection" />
       <MemberSignature Language="F#" Value="member this.AvailableTransformers : System.Web.UI.WebControls.WebParts.TransformerTypeCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.AvailableTransformers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::TransformerTypeCollection ^ AvailableTransformers { System::Web::UI::WebControls::WebParts::TransformerTypeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +356,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginWebPartConnecting(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartConnecting(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member BeginWebPartConnecting : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.BeginWebPartConnecting : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartManager.BeginWebPartConnecting webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginWebPartConnecting(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -396,6 +403,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginWebPartEditing(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member BeginWebPartEditing : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.BeginWebPartEditing : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartManager.BeginWebPartEditing webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginWebPartEditing(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -440,6 +448,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartManager.BrowseDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BrowseDisplayMode As WebPartDisplayMode " />
       <MemberSignature Language="F#" Value=" staticval mutable BrowseDisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.BrowseDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ BrowseDisplayMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -519,6 +528,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanConnectWebParts(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
       <MemberSignature Language="F#" Value="member this.CanConnectWebParts : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint -&gt; bool" Usage="webPartManager.CanConnectWebParts (provider, providerConnectionPoint, consumer, consumerConnectionPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanConnectWebParts(System::Web::UI::WebControls::WebParts::WebPart ^ provider, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPart ^ consumer, System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ consumerConnectionPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -586,6 +596,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanConnectWebParts(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint,System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
       <MemberSignature Language="F#" Value="abstract member CanConnectWebParts : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint * System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; bool&#xA;override this.CanConnectWebParts : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint * System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; bool" Usage="webPartManager.CanConnectWebParts (provider, providerConnectionPoint, consumer, consumerConnectionPoint, transformer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConnectWebParts(System::Web::UI::WebControls::WebParts::WebPart ^ provider, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPart ^ consumer, System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ consumerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -627,6 +638,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CatalogDisplayMode As WebPartDisplayMode " />
       <MemberSignature Language="F#" Value=" staticval mutable CatalogDisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ CatalogDisplayMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -669,6 +681,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CheckRenderClientScript" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CheckRenderClientScript () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CheckRenderClientScript : unit -&gt; bool&#xA;override this.CheckRenderClientScript : unit -&gt; bool" Usage="webPartManager.CheckRenderClientScript " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CheckRenderClientScript();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -691,6 +704,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.CloseProviderWarning" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CloseProviderWarning As String" />
       <MemberSignature Language="F#" Value="member this.CloseProviderWarning : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.CloseProviderWarning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CloseProviderWarning { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -745,6 +759,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CloseWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="member this.CloseWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartManager.CloseWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -823,6 +838,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConnectDisplayMode As WebPartDisplayMode " />
       <MemberSignature Language="F#" Value=" staticval mutable ConnectDisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.ConnectDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ ConnectDisplayMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -882,6 +898,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.Connections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connections As WebPartConnectionCollection" />
       <MemberSignature Language="F#" Value="member this.Connections : System.Web.UI.WebControls.WebParts.WebPartConnectionCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.Connections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartConnectionCollection ^ Connections { System::Web::UI::WebControls::WebParts::WebPartConnectionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -942,6 +959,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ConnectionsActivated As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ConnectionsActivated : EventHandler " Usage="member this.ConnectionsActivated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ConnectionsActivated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -975,6 +993,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ConnectionsActivating As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ConnectionsActivating : EventHandler " Usage="member this.ConnectionsActivating : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ConnectionsActivating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1041,6 +1060,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.WebParts.WebPartConnection ConnectWebParts(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
       <MemberSignature Language="F#" Value="member this.ConnectWebParts : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint -&gt; System.Web.UI.WebControls.WebParts.WebPartConnection" Usage="webPartManager.ConnectWebParts (provider, providerConnectionPoint, consumer, consumerConnectionPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WebParts::WebPartConnection ^ ConnectWebParts(System::Web::UI::WebControls::WebParts::WebPart ^ provider, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPart ^ consumer, System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ consumerConnectionPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1095,6 +1115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartConnection ConnectWebParts(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint,System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
       <MemberSignature Language="F#" Value="abstract member ConnectWebParts : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint * System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; System.Web.UI.WebControls.WebParts.WebPartConnection&#xA;override this.ConnectWebParts : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ProviderConnectionPoint * System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint * System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; System.Web.UI.WebControls.WebParts.WebPartConnection" Usage="webPartManager.ConnectWebParts (provider, providerConnectionPoint, consumer, consumerConnectionPoint, transformer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartConnection ^ ConnectWebParts(System::Web::UI::WebControls::WebParts::WebPart ^ provider, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPart ^ consumer, System::Web::UI::WebControls::WebParts::ConsumerConnectionPoint ^ consumerConnectionPoint, System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1139,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1173,6 +1195,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPart CopyWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CopyWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member CopyWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.WebPart&#xA;override this.CopyWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.WebPart" Usage="webPartManager.CopyWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPart ^ CopyWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1218,6 +1241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateAvailableTransformers" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateAvailableTransformers () As TransformerTypeCollection" />
       <MemberSignature Language="F#" Value="abstract member CreateAvailableTransformers : unit -&gt; System.Web.UI.WebControls.WebParts.TransformerTypeCollection&#xA;override this.CreateAvailableTransformers : unit -&gt; System.Web.UI.WebControls.WebParts.TransformerTypeCollection" Usage="webPartManager.CreateAvailableTransformers " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::TransformerTypeCollection ^ CreateAvailableTransformers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1243,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="webPartManager.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1267,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDisplayModes () As WebPartDisplayModeCollection" />
       <MemberSignature Language="F#" Value="abstract member CreateDisplayModes : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection&#xA;override this.CreateDisplayModes : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" Usage="webPartManager.CreateDisplayModes " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ CreateDisplayModes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1351,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicConnectionID" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDynamicConnectionID () As String" />
       <MemberSignature Language="F#" Value="abstract member CreateDynamicConnectionID : unit -&gt; string&#xA;override this.CreateDynamicConnectionID : unit -&gt; string" Usage="webPartManager.CreateDynamicConnectionID " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CreateDynamicConnectionID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1384,6 +1411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicWebPartID(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDynamicWebPartID (webPartType As Type) As String" />
       <MemberSignature Language="F#" Value="abstract member CreateDynamicWebPartID : Type -&gt; string&#xA;override this.CreateDynamicWebPartID : Type -&gt; string" Usage="webPartManager.CreateDynamicWebPartID webPartType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CreateDynamicWebPartID(Type ^ webPartType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1419,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateErrorWebPart(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateErrorWebPart (originalID As String, originalTypeName As String, originalPath As String, genericWebPartID As String, errorMessage As String) As ErrorWebPart" />
       <MemberSignature Language="F#" Value="abstract member CreateErrorWebPart : string * string * string * string * string -&gt; System.Web.UI.WebControls.WebParts.ErrorWebPart&#xA;override this.CreateErrorWebPart : string * string * string * string * string -&gt; System.Web.UI.WebControls.WebParts.ErrorWebPart" Usage="webPartManager.CreateErrorWebPart (originalID, originalTypeName, originalPath, genericWebPartID, errorMessage)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::ErrorWebPart ^ CreateErrorWebPart(System::String ^ originalID, System::String ^ originalTypeName, System::String ^ originalPath, System::String ^ genericWebPartID, System::String ^ errorMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1468,6 +1497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreatePersonalization" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreatePersonalization () As WebPartPersonalization" />
       <MemberSignature Language="F#" Value="abstract member CreatePersonalization : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartPersonalization&#xA;override this.CreatePersonalization : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartPersonalization" Usage="webPartManager.CreatePersonalization " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartPersonalization ^ CreatePersonalization();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1495,6 +1525,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.GenericWebPart CreateWebPart(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateWebPart(System.Web.UI.Control)" />
       <MemberSignature Language="F#" Value="abstract member CreateWebPart : System.Web.UI.Control -&gt; System.Web.UI.WebControls.WebParts.GenericWebPart&#xA;override this.CreateWebPart : System.Web.UI.Control -&gt; System.Web.UI.WebControls.WebParts.GenericWebPart" Usage="webPartManager.CreateWebPart control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::GenericWebPart ^ CreateWebPart(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1542,6 +1573,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWarning" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteWarning As String" />
       <MemberSignature Language="F#" Value="member this.DeleteWarning : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWarning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeleteWarning { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1605,6 +1637,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="member this.DeleteWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartManager.DeleteWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1650,6 +1683,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartManager.DesignDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DesignDisplayMode As WebPartDisplayMode " />
       <MemberSignature Language="F#" Value=" staticval mutable DesignDisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.DesignDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ DesignDisplayMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1689,6 +1723,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DisconnectWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member DisconnectWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.DisconnectWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartManager.DisconnectWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DisconnectWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1755,6 +1790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DisconnectWebParts (connection As WebPartConnection)" />
       <MemberSignature Language="F#" Value="abstract member DisconnectWebParts : System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; unit&#xA;override this.DisconnectWebParts : System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; unit" Usage="webPartManager.DisconnectWebParts connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DisconnectWebParts(System::Web::UI::WebControls::WebParts::WebPartConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1840,6 +1876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayMode As WebPartDisplayMode" />
       <MemberSignature Language="F#" Value="member this.DisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ DisplayMode { System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ get(); void set(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1900,6 +1937,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DisplayModeChanged As WebPartDisplayModeEventHandler " />
       <MemberSignature Language="F#" Value="member this.DisplayModeChanged : System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventHandler " Usage="member this.DisplayModeChanged : System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartDisplayModeEventHandler ^ DisplayModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1930,6 +1968,7 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DisplayModeChanging As WebPartDisplayModeCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.DisplayModeChanging : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventHandler " Usage="member this.DisplayModeChanging : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartDisplayModeCancelEventHandler ^ DisplayModeChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1960,6 +1999,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayModes As WebPartDisplayModeCollection" />
       <MemberSignature Language="F#" Value="member this.DisplayModes : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ DisplayModes { System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2012,6 +2052,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.DynamicConnections" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DynamicConnections As WebPartConnectionCollection" />
       <MemberSignature Language="F#" Value="member this.DynamicConnections : System.Web.UI.WebControls.WebParts.WebPartConnectionCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.DynamicConnections" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartConnectionCollection ^ DynamicConnections { System::Web::UI::WebControls::WebParts::WebPartConnectionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2045,6 +2086,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartManager.EditDisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditDisplayMode As WebPartDisplayMode " />
       <MemberSignature Language="F#" Value=" staticval mutable EditDisplayMode : System.Web.UI.WebControls.WebParts.WebPartDisplayMode" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.EditDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ EditDisplayMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2087,6 +2129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.EnableClientScript" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableClientScript As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableClientScript : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.EnableClientScript" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableClientScript { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2129,6 +2172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.EnableTheming" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2170,6 +2214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartConnecting" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndWebPartConnecting ()" />
       <MemberSignature Language="F#" Value="abstract member EndWebPartConnecting : unit -&gt; unit&#xA;override this.EndWebPartConnecting : unit -&gt; unit" Usage="webPartManager.EndWebPartConnecting " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndWebPartConnecting();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2204,6 +2249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndWebPartEditing ()" />
       <MemberSignature Language="F#" Value="abstract member EndWebPartEditing : unit -&gt; unit&#xA;override this.EndWebPartEditing : unit -&gt; unit" Usage="webPartManager.EndWebPartEditing " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndWebPartEditing();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2238,6 +2284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.ExportSensitiveDataWarning" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ExportSensitiveDataWarning As String" />
       <MemberSignature Language="F#" Value="member this.ExportSensitiveDataWarning : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.ExportSensitiveDataWarning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ExportSensitiveDataWarning { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2291,6 +2338,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExportWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
       <MemberSignature Language="F#" Value="abstract member ExportWebPart : System.Web.UI.WebControls.WebParts.WebPart * System.Xml.XmlWriter -&gt; unit&#xA;override this.ExportWebPart : System.Web.UI.WebControls.WebParts.WebPart * System.Xml.XmlWriter -&gt; unit" Usage="webPartManager.ExportWebPart (webPart, writer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExportWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2344,6 +2392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.Focus" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Focus ()" />
       <MemberSignature Language="F#" Value="override this.Focus : unit -&gt; unit" Usage="webPartManager.Focus " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Focus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2376,6 +2425,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection GetConsumerConnectionPoints(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member GetConsumerConnectionPoints : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection&#xA;override this.GetConsumerConnectionPoints : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection" Usage="webPartManager.GetConsumerConnectionPoints webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::ConsumerConnectionPointCollection ^ GetConsumerConnectionPoints(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2438,6 +2488,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.WebParts.WebPartManager GetCurrentWebPartManager(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetCurrentWebPartManager(System.Web.UI.Page)" />
       <MemberSignature Language="F#" Value="static member GetCurrentWebPartManager : System.Web.UI.Page -&gt; System.Web.UI.WebControls.WebParts.WebPartManager" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.GetCurrentWebPartManager page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::WebPartManager ^ GetCurrentWebPartManager(System::Web::UI::Page ^ page);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2494,6 +2545,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetDisplayTitle(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetDisplayTitle(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member GetDisplayTitle : System.Web.UI.WebControls.WebParts.WebPart -&gt; string&#xA;override this.GetDisplayTitle : System.Web.UI.WebControls.WebParts.WebPart -&gt; string" Usage="webPartManager.GetDisplayTitle webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetDisplayTitle(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2532,6 +2584,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetExportUrl(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetExportUrl(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="member this.GetExportUrl : System.Web.UI.WebControls.WebParts.WebPart -&gt; string" Usage="webPartManager.GetExportUrl webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetExportUrl(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2566,6 +2619,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.WebParts.GenericWebPart GetGenericWebPart(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetGenericWebPart(System.Web.UI.Control)" />
       <MemberSignature Language="F#" Value="member this.GetGenericWebPart : System.Web.UI.Control -&gt; System.Web.UI.WebControls.WebParts.GenericWebPart" Usage="webPartManager.GetGenericWebPart control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WebParts::GenericWebPart ^ GetGenericWebPart(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2609,6 +2663,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection GetProviderConnectionPoints(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="abstract member GetProviderConnectionPoints : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection&#xA;override this.GetProviderConnectionPoints : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection" Usage="webPartManager.GetProviderConnectionPoints webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::ProviderConnectionPointCollection ^ GetProviderConnectionPoints(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2672,6 +2727,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart(System.Xml.XmlReader,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ImportWebPart (reader As XmlReader, ByRef errorMessage As String) As WebPart" />
       <MemberSignature Language="F#" Value="abstract member ImportWebPart : System.Xml.XmlReader *  -&gt; System.Web.UI.WebControls.WebParts.WebPart&#xA;override this.ImportWebPart : System.Xml.XmlReader *  -&gt; System.Web.UI.WebControls.WebParts.WebPart" Usage="webPartManager.ImportWebPart (reader, errorMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPart ^ ImportWebPart(System::Xml::XmlReader ^ reader, [Runtime::InteropServices::Out] System::String ^ % errorMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2726,6 +2782,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.Internals" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Internals As WebPartManagerInternals" />
       <MemberSignature Language="F#" Value="member this.Internals : System.Web.UI.WebControls.WebParts.WebPartManagerInternals" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.Internals" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManagerInternals ^ Internals { System::Web::UI::WebControls::WebParts::WebPartManagerInternals ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2805,6 +2862,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAuthorized(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="member this.IsAuthorized : System.Web.UI.WebControls.WebParts.WebPart -&gt; bool" Usage="webPartManager.IsAuthorized webPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAuthorized(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2880,6 +2938,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAuthorized(class System.Type type, string path, string authorizationFilter, bool isShared) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="F#" Value="abstract member IsAuthorized : Type * string * string * bool -&gt; bool&#xA;override this.IsAuthorized : Type * string * string * bool -&gt; bool" Usage="webPartManager.IsAuthorized (type, path, authorizationFilter, isShared)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAuthorized(Type ^ type, System::String ^ path, System::String ^ authorizationFilter, bool isShared);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2967,6 +3026,7 @@ else
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.IsCustomPersonalizationStateDirty" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsCustomPersonalizationStateDirty As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCustomPersonalizationStateDirty : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.IsCustomPersonalizationStateDirty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsCustomPersonalizationStateDirty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3002,6 +3062,7 @@ else
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="webPartManager.LoadControlState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3035,6 +3096,7 @@ else
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadCustomPersonalizationState (state As PersonalizationDictionary)" />
       <MemberSignature Language="F#" Value="abstract member LoadCustomPersonalizationState : System.Web.UI.WebControls.WebParts.PersonalizationDictionary -&gt; unit&#xA;override this.LoadCustomPersonalizationState : System.Web.UI.WebControls.WebParts.PersonalizationDictionary -&gt; unit" Usage="webPartManager.LoadCustomPersonalizationState state" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadCustomPersonalizationState(System::Web::UI::WebControls::WebParts::PersonalizationDictionary ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3074,6 +3136,7 @@ else
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.MediumPermissionSet" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property MediumPermissionSet As PermissionSet" />
       <MemberSignature Language="F#" Value="member this.MediumPermissionSet : System.Security.PermissionSet" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.MediumPermissionSet" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Security::PermissionSet ^ MediumPermissionSet { System::Security::PermissionSet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3101,6 +3164,7 @@ else
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.MinimalPermissionSet" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property MinimalPermissionSet As PermissionSet" />
       <MemberSignature Language="F#" Value="member this.MinimalPermissionSet : System.Security.PermissionSet" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.MinimalPermissionSet" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Security::PermissionSet ^ MinimalPermissionSet { System::Security::PermissionSet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3127,6 +3191,7 @@ else
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Web.UI.WebControls.WebParts.WebPartZoneBase zone, int32 zoneIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.MoveWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member MoveWebPart : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.WebPartZoneBase * int -&gt; unit&#xA;override this.MoveWebPart : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.WebPartZoneBase * int -&gt; unit" Usage="webPartManager.MoveWebPart (webPart, zone, zoneIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MoveWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ zone, int zoneIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3211,6 +3276,7 @@ else
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAuthorizeWebPart (e As WebPartAuthorizationEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnAuthorizeWebPart : System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs -&gt; unit&#xA;override this.OnAuthorizeWebPart : System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs -&gt; unit" Usage="webPartManager.OnAuthorizeWebPart e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthorizeWebPart(System::Web::UI::WebControls::WebParts::WebPartAuthorizationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3306,6 +3372,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnConnectionsActivated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnConnectionsActivated : EventArgs -&gt; unit&#xA;override this.OnConnectionsActivated : EventArgs -&gt; unit" Usage="webPartManager.OnConnectionsActivated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnConnectionsActivated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3342,6 +3409,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivating(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnConnectionsActivating (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnConnectionsActivating : EventArgs -&gt; unit&#xA;override this.OnConnectionsActivating : EventArgs -&gt; unit" Usage="webPartManager.OnConnectionsActivating e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnConnectionsActivating(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3378,6 +3446,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanged(System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayModeChanged (e As WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDisplayModeChanged : System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit&#xA;override this.OnDisplayModeChanged : System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit" Usage="webPartManager.OnDisplayModeChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayModeChanged(System::Web::UI::WebControls::WebParts::WebPartDisplayModeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3413,6 +3482,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanging(System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayModeChanging (e As WebPartDisplayModeCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDisplayModeChanging : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs -&gt; unit&#xA;override this.OnDisplayModeChanging : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs -&gt; unit" Usage="webPartManager.OnDisplayModeChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayModeChanging(System::Web::UI::WebControls::WebParts::WebPartDisplayModeCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3448,6 +3518,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="webPartManager.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3480,6 +3551,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="webPartManager.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3511,6 +3583,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedWebPartChanged (e As WebPartEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedWebPartChanged : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnSelectedWebPartChanged : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="webPartManager.OnSelectedWebPartChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedWebPartChanged(System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3547,6 +3620,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedWebPartChanging (e As WebPartCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedWebPartChanging : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs -&gt; unit&#xA;override this.OnSelectedWebPartChanging : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs -&gt; unit" Usage="webPartManager.OnSelectedWebPartChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedWebPartChanging(System::Web::UI::WebControls::WebParts::WebPartCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3585,6 +3659,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnUnload(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnUnload (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnUnload : EventArgs -&gt; unit" Usage="webPartManager.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3608,6 +3683,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdded(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartAdded (e As WebPartEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartAdded : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnWebPartAdded : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="webPartManager.OnWebPartAdded e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartAdded(System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3641,6 +3717,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdding(System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartAdding (e As WebPartAddingEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartAdding : System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs -&gt; unit&#xA;override this.OnWebPartAdding : System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs -&gt; unit" Usage="webPartManager.OnWebPartAdding e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartAdding(System::Web::UI::WebControls::WebParts::WebPartAddingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3679,6 +3756,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosed(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartClosed (e As WebPartEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartClosed : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnWebPartClosed : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="webPartManager.OnWebPartClosed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartClosed(System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3715,6 +3793,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosing(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartClosing (e As WebPartCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartClosing : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs -&gt; unit&#xA;override this.OnWebPartClosing : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs -&gt; unit" Usage="webPartManager.OnWebPartClosing e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartClosing(System::Web::UI::WebControls::WebParts::WebPartCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3753,6 +3832,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleted(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartDeleted (e As WebPartEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartDeleted : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnWebPartDeleted : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="webPartManager.OnWebPartDeleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartDeleted(System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3786,6 +3866,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleting(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartDeleting (e As WebPartCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartDeleting : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs -&gt; unit&#xA;override this.OnWebPartDeleting : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs -&gt; unit" Usage="webPartManager.OnWebPartDeleting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartDeleting(System::Web::UI::WebControls::WebParts::WebPartCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3826,6 +3907,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoved(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartMoved (e As WebPartEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartMoved : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnWebPartMoved : System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="webPartManager.OnWebPartMoved e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartMoved(System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3861,6 +3943,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving(System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartMoving (e As WebPartMovingEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartMoving : System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs -&gt; unit&#xA;override this.OnWebPartMoving : System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs -&gt; unit" Usage="webPartManager.OnWebPartMoving e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartMoving(System::Web::UI::WebControls::WebParts::WebPartMovingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3899,6 +3982,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartsConnected (e As WebPartConnectionsEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartsConnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs -&gt; unit&#xA;override this.OnWebPartsConnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs -&gt; unit" Usage="webPartManager.OnWebPartsConnected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartsConnected(System::Web::UI::WebControls::WebParts::WebPartConnectionsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3934,6 +4018,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartsConnecting (e As WebPartConnectionsCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartsConnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs -&gt; unit&#xA;override this.OnWebPartsConnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs -&gt; unit" Usage="webPartManager.OnWebPartsConnecting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartsConnecting(System::Web::UI::WebControls::WebParts::WebPartConnectionsCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3972,6 +4057,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartsDisconnected (e As WebPartConnectionsEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartsDisconnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs -&gt; unit&#xA;override this.OnWebPartsDisconnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs -&gt; unit" Usage="webPartManager.OnWebPartsDisconnected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartsDisconnected(System::Web::UI::WebControls::WebParts::WebPartConnectionsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4007,6 +4093,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWebPartsDisconnecting (e As WebPartConnectionsCancelEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnWebPartsDisconnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs -&gt; unit&#xA;override this.OnWebPartsDisconnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs -&gt; unit" Usage="webPartManager.OnWebPartsDisconnecting e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWebPartsDisconnecting(System::Web::UI::WebControls::WebParts::WebPartConnectionsCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4045,6 +4132,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.Personalization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Personalization As WebPartPersonalization" />
       <MemberSignature Language="F#" Value="member this.Personalization : System.Web.UI.WebControls.WebParts.WebPartPersonalization" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.Personalization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartPersonalization ^ Personalization { System::Web::UI::WebControls::WebParts::WebPartPersonalization ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4119,6 +4207,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.RegisterClientScript" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RegisterClientScript ()" />
       <MemberSignature Language="F#" Value="abstract member RegisterClientScript : unit -&gt; unit&#xA;override this.RegisterClientScript : unit -&gt; unit" Usage="webPartManager.RegisterClientScript " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RegisterClientScript();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4140,6 +4229,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartManager.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4163,6 +4253,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="webPartManager.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4191,6 +4282,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.SaveCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SaveCustomPersonalizationState (state As PersonalizationDictionary)" />
       <MemberSignature Language="F#" Value="abstract member SaveCustomPersonalizationState : System.Web.UI.WebControls.WebParts.PersonalizationDictionary -&gt; unit&#xA;override this.SaveCustomPersonalizationState : System.Web.UI.WebControls.WebParts.PersonalizationDictionary -&gt; unit" Usage="webPartManager.SaveCustomPersonalizationState state" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SaveCustomPersonalizationState(System::Web::UI::WebControls::WebParts::PersonalizationDictionary ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4227,6 +4319,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedWebPart As WebPart" />
       <MemberSignature Language="F#" Value="member this.SelectedWebPart : System.Web.UI.WebControls.WebParts.WebPart" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ SelectedWebPart { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4271,6 +4364,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedWebPartChanged As WebPartEventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedWebPartChanged : System.Web.UI.WebControls.WebParts.WebPartEventHandler " Usage="member this.SelectedWebPartChanged : System.Web.UI.WebControls.WebParts.WebPartEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ SelectedWebPartChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4301,6 +4395,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanging" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedWebPartChanging As WebPartCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedWebPartChanging : System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler " Usage="member this.SelectedWebPartChanging : System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartCancelEventHandler ^ SelectedWebPartChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4332,6 +4427,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.SetPersonalizationDirty" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetPersonalizationDirty ()" />
       <MemberSignature Language="F#" Value="member this.SetPersonalizationDirty : unit -&gt; unit" Usage="webPartManager.SetPersonalizationDirty " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetPersonalizationDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4364,6 +4460,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetSelectedWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.SetSelectedWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="F#" Value="member this.SetSelectedWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartManager.SetSelectedWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetSelectedWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4401,6 +4498,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.SkinID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SkinID As String" />
       <MemberSignature Language="F#" Value="member this.SkinID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.SkinID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4441,6 +4539,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticConnections As WebPartConnectionCollection" />
       <MemberSignature Language="F#" Value="member this.StaticConnections : System.Web.UI.WebControls.WebParts.WebPartConnectionCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartConnectionCollection ^ StaticConnections { System::Web::UI::WebControls::WebParts::WebPartConnectionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4509,6 +4608,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedDisplayModes As WebPartDisplayModeCollection" />
       <MemberSignature Language="F#" Value="member this.SupportedDisplayModes : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ SupportedDisplayModes { System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4565,6 +4665,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsDirty As Boolean Implements IPersonalizable.IsDirty" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty</InterfaceMember>
@@ -4657,6 +4758,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.IPersonalizable.Load(class System.Web.UI.WebControls.WebParts.PersonalizationDictionary state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       <MemberSignature Language="VB.NET" Value="Sub Load (state As PersonalizationDictionary) Implements IPersonalizable.Load" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.IPersonalizable.Load(System::Web::UI::WebControls::WebParts::PersonalizationDictionary ^ state) = System::Web::UI::WebControls::WebParts::IPersonalizable::Load;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.WebParts.IPersonalizable.Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)</InterfaceMember>
@@ -4696,6 +4798,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.IPersonalizable.Save(class System.Web.UI.WebControls.WebParts.PersonalizationDictionary state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
       <MemberSignature Language="VB.NET" Value="Sub Save (state As PersonalizationDictionary) Implements IPersonalizable.Save" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.IPersonalizable.Save(System::Web::UI::WebControls::WebParts::PersonalizationDictionary ^ state) = System::Web::UI::WebControls::WebParts::IPersonalizable::Save;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.WebControls.WebParts.IPersonalizable.Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)</InterfaceMember>
@@ -4737,6 +4840,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartManager.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="webPartManager.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4764,6 +4868,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4810,6 +4915,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartAdded As WebPartEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartAdded : System.Web.UI.WebControls.WebParts.WebPartEventHandler " Usage="member this.WebPartAdded : System.Web.UI.WebControls.WebParts.WebPartEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ WebPartAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4838,6 +4944,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartAdding As WebPartAddingEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartAdding : System.Web.UI.WebControls.WebParts.WebPartAddingEventHandler " Usage="member this.WebPartAdding : System.Web.UI.WebControls.WebParts.WebPartAddingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartAddingEventHandler ^ WebPartAdding;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4869,6 +4976,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartClosed As WebPartEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartClosed : System.Web.UI.WebControls.WebParts.WebPartEventHandler " Usage="member this.WebPartClosed : System.Web.UI.WebControls.WebParts.WebPartEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ WebPartClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4901,6 +5009,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartClosing As WebPartCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartClosing : System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler " Usage="member this.WebPartClosing : System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartCancelEventHandler ^ WebPartClosing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4934,6 +5043,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartDeleted As WebPartEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartDeleted : System.Web.UI.WebControls.WebParts.WebPartEventHandler " Usage="member this.WebPartDeleted : System.Web.UI.WebControls.WebParts.WebPartEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ WebPartDeleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4961,6 +5071,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartDeleting As WebPartCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartDeleting : System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler " Usage="member this.WebPartDeleting : System.Web.UI.WebControls.WebParts.WebPartCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartCancelEventHandler ^ WebPartDeleting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4992,6 +5103,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartMoved As WebPartEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartMoved : System.Web.UI.WebControls.WebParts.WebPartEventHandler " Usage="member this.WebPartMoved : System.Web.UI.WebControls.WebParts.WebPartEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartEventHandler ^ WebPartMoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5019,6 +5131,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartMoving As WebPartMovingEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartMoving : System.Web.UI.WebControls.WebParts.WebPartMovingEventHandler " Usage="member this.WebPartMoving : System.Web.UI.WebControls.WebParts.WebPartMovingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartMovingEventHandler ^ WebPartMoving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5052,6 +5165,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebParts As WebPartCollection" />
       <MemberSignature Language="F#" Value="member this.WebParts : System.Web.UI.WebControls.WebParts.WebPartCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartCollection ^ WebParts { System::Web::UI::WebControls::WebParts::WebPartCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5110,6 +5224,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartsConnected As WebPartConnectionsEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartsConnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler " Usage="member this.WebPartsConnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartConnectionsEventHandler ^ WebPartsConnected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5139,6 +5254,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartsConnecting As WebPartConnectionsCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartsConnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler " Usage="member this.WebPartsConnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartConnectionsCancelEventHandler ^ WebPartsConnecting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5170,6 +5286,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartsDisconnected As WebPartConnectionsEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartsDisconnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler " Usage="member this.WebPartsDisconnected : System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartConnectionsEventHandler ^ WebPartsDisconnected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5199,6 +5316,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event WebPartsDisconnecting As WebPartConnectionsCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.WebPartsDisconnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler " Usage="member this.WebPartsDisconnecting : System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartConnectionsCancelEventHandler ^ WebPartsDisconnecting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5236,6 +5354,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartManager.Zones" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Zones As WebPartZoneCollection" />
       <MemberSignature Language="F#" Value="member this.Zones : System.Web.UI.WebControls.WebParts.WebPartZoneCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartManager.Zones" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartZoneCollection ^ Zones { System::Web::UI::WebControls::WebParts::WebPartZoneCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

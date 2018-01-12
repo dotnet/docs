@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowView" />
   <TypeSignature Language="VB.NET" Value="Public Class DataRowView&#xA;Implements ICustomTypeDescriptor, IDataErrorInfo, IEditableObject, INotifyPropertyChanged" />
   <TypeSignature Language="F#" Value="type DataRowView = class&#xA;    interface ICustomTypeDescriptor&#xA;    interface IEditableObject&#xA;    interface IDataErrorInfo&#xA;    interface INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataRowView : System::ComponentModel::ICustomTypeDescriptor, System::ComponentModel::IDataErrorInfo, System::ComponentModel::IEditableObject, System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.BeginEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
       <MemberSignature Language="F#" Value="abstract member BeginEdit : unit -&gt; unit&#xA;override this.BeginEdit : unit -&gt; unit" Usage="dataRowView.BeginEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginEdit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IEditableObject.BeginEdit</InterfaceMember>
@@ -122,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
       <MemberSignature Language="F#" Value="abstract member CancelEdit : unit -&gt; unit&#xA;override this.CancelEdit : unit -&gt; unit" Usage="dataRowView.CancelEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CancelEdit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IEditableObject.CancelEdit</InterfaceMember>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.CreateChildView(System.Data.DataRelation)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChildView (relation As DataRelation) As DataView" />
       <MemberSignature Language="F#" Value="member this.CreateChildView : System.Data.DataRelation -&gt; System.Data.DataView" Usage="dataRowView.CreateChildView relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataView ^ CreateChildView(System::Data::DataRelation ^ relation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -220,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.CreateChildView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChildView (relationName As String) As DataView" />
       <MemberSignature Language="F#" Value="member this.CreateChildView : string -&gt; System.Data.DataView" Usage="dataRowView.CreateChildView relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataView ^ CreateChildView(System::String ^ relationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -253,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.CreateChildView(System.Data.DataRelation,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChildView (relation As DataRelation, followParent As Boolean) As DataView" />
       <MemberSignature Language="F#" Value="member this.CreateChildView : System.Data.DataRelation * bool -&gt; System.Data.DataView" Usage="dataRowView.CreateChildView (relation, followParent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataView ^ CreateChildView(System::Data::DataRelation ^ relation, bool followParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -288,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.CreateChildView(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateChildView (relationName As String, followParent As Boolean) As DataView" />
       <MemberSignature Language="F#" Value="member this.CreateChildView : string * bool -&gt; System.Data.DataView" Usage="dataRowView.CreateChildView (relationName, followParent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataView ^ CreateChildView(System::String ^ relationName, bool followParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -323,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.DataView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataView As DataView" />
       <MemberSignature Language="F#" Value="member this.DataView : System.Data.DataView" Usage="System.Data.DataRowView.DataView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataView ^ DataView { System::Data::DataView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="dataRowView.Delete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -410,6 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.EndEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndEdit ()" />
       <MemberSignature Language="F#" Value="abstract member EndEdit : unit -&gt; unit&#xA;override this.EndEdit : unit -&gt; unit" Usage="dataRowView.EndEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndEdit();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IEditableObject.EndEdit</InterfaceMember>
@@ -458,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataRowView.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -492,6 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataRowView.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -522,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.IsEdit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEdit As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEdit : bool" Usage="System.Data.DataRowView.IsEdit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEdit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -553,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.IsNew" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNew As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNew : bool" Usage="System.Data.DataRowView.IsNew" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNew { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -600,6 +614,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(ndx As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Data.DataRowView.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int ndx); void set(int ndx, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -643,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(property As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.DataRowView.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ property); void set(System::String ^ property, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -686,6 +702,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.DataRowView.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
@@ -724,6 +741,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataRow" />
       <MemberSignature Language="F#" Value="member this.Row : System.Data.DataRow" Usage="System.Data.DataRowView.Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -765,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.RowVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowVersion As DataRowVersion" />
       <MemberSignature Language="F#" Value="member this.RowVersion : System.Data.DataRowVersion" Usage="System.Data.DataRowView.RowVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowVersion RowVersion { System::Data::DataRowVersion get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -812,6 +831,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetAttributes" />
       <MemberSignature Language="VB.NET" Value="Function GetAttributes () As AttributeCollection Implements ICustomTypeDescriptor.GetAttributes" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::AttributeCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetAttributes() = System::ComponentModel::ICustomTypeDescriptor::GetAttributes;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes</InterfaceMember>
@@ -851,6 +871,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetClassName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetClassName" />
       <MemberSignature Language="VB.NET" Value="Function GetClassName () As String Implements ICustomTypeDescriptor.GetClassName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetClassName() = System::ComponentModel::ICustomTypeDescriptor::GetClassName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetClassName</InterfaceMember>
@@ -890,6 +911,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetComponentName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetComponentName" />
       <MemberSignature Language="VB.NET" Value="Function GetComponentName () As String Implements ICustomTypeDescriptor.GetComponentName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetComponentName() = System::ComponentModel::ICustomTypeDescriptor::GetComponentName;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName</InterfaceMember>
@@ -929,6 +951,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetConverter" />
       <MemberSignature Language="VB.NET" Value="Function GetConverter () As TypeConverter Implements ICustomTypeDescriptor.GetConverter" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::TypeConverter ^ System.ComponentModel.ICustomTypeDescriptor.GetConverter() = System::ComponentModel::ICustomTypeDescriptor::GetConverter;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetConverter</InterfaceMember>
@@ -968,6 +991,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent" />
       <MemberSignature Language="VB.NET" Value="Function GetDefaultEvent () As EventDescriptor Implements ICustomTypeDescriptor.GetDefaultEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent</InterfaceMember>
@@ -1007,6 +1031,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty" />
       <MemberSignature Language="VB.NET" Value="Function GetDefaultProperty () As PropertyDescriptor Implements ICustomTypeDescriptor.GetDefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultProperty;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty</InterfaceMember>
@@ -1046,6 +1071,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Function GetEditor (editorBaseType As Type) As Object Implements ICustomTypeDescriptor.GetEditor" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type ^ editorBaseType) = System::ComponentModel::ICustomTypeDescriptor::GetEditor;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)</InterfaceMember>
@@ -1106,6 +1132,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEvents" />
       <MemberSignature Language="VB.NET" Value="Function GetEvents () As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents() = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents</InterfaceMember>
@@ -1145,6 +1172,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Function GetEvents (attributes As Attribute()) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])</InterfaceMember>
@@ -1205,6 +1233,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetProperties" />
       <MemberSignature Language="VB.NET" Value="Function GetProperties () As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties() = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties</InterfaceMember>
@@ -1244,6 +1273,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])</InterfaceMember>
@@ -1286,6 +1316,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(class System.ComponentModel.PropertyDescriptor pd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Function GetPropertyOwner (pd As PropertyDescriptor) As Object Implements ICustomTypeDescriptor.GetPropertyOwner" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd) = System::ComponentModel::ICustomTypeDescriptor::GetPropertyOwner;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
@@ -1329,6 +1360,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.System#ComponentModel#IDataErrorInfo#Error" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Error As String Implements IDataErrorInfo.Error" />
       <MemberSignature Language="F#" Usage="System.Data.DataRowView.System.ComponentModel.IDataErrorInfo.Error" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.IDataErrorInfo.Error { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IDataErrorInfo.Error</InterfaceMember>
@@ -1368,6 +1400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowView.System#ComponentModel#IDataErrorInfo#Item(System.String)" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(colName As String) As String Implements IDataErrorInfo.Item" />
       <MemberSignature Language="F#" Usage="System.Data.DataRowView.System.ComponentModel.IDataErrorInfo.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.IDataErrorInfo.Item[System::String ^] { System::String ^ get(System::String ^ colName); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IDataErrorInfo.Item(System.String)</InterfaceMember>

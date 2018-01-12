@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementObjectSearcher" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementObjectSearcher&#xA;Inherits Component" />
   <TypeSignature Language="F#" Value="type ManagementObjectSearcher = class&#xA;    inherit Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementObjectSearcher : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ObjectQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As ObjectQuery)" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : System.Management.ObjectQuery -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::Management::ObjectQuery ^ query);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queryString As String)" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : string -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher queryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::String ^ queryString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As ObjectQuery)" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : System.Management.ManagementScope * System.Management.ObjectQuery -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, query)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::Management::ManagementScope ^ scope, System::Management::ObjectQuery ^ query);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -176,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, queryString As String)" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : string * string -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, queryString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::String ^ scope, System::String ^ queryString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As ObjectQuery, options As EnumerationOptions)" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : System.Management.ManagementScope * System.Management.ObjectQuery * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, query, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::Management::ManagementScope ^ scope, System::Management::ObjectQuery ^ query, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, queryString As String, options As EnumerationOptions)" />
       <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : string * string * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, queryString, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::String ^ scope, System::String ^ queryString, System::Management::EnumerationOptions ^ options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -307,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.Get" />
       <MemberSignature Language="VB.NET" Value="Public Function Get () As ManagementObjectCollection" />
       <MemberSignature Language="F#" Value="member this.Get : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementObjectSearcher.Get " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ Get();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -345,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Get (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="F#" Value="member this.Get : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObjectSearcher.Get watcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Get(System::Management::ManagementOperationObserver ^ watcher);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -377,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As EnumerationOptions" />
       <MemberSignature Language="F#" Value="member this.Options : System.Management.EnumerationOptions with get, set" Usage="System.Management.ManagementObjectSearcher.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::EnumerationOptions ^ Options { System::Management::EnumerationOptions ^ get(); void set(System::Management::EnumerationOptions ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -409,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As ObjectQuery" />
       <MemberSignature Language="F#" Value="member this.Query : System.Management.ObjectQuery with get, set" Usage="System.Management.ManagementObjectSearcher.Query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ObjectQuery ^ Query { System::Management::ObjectQuery ^ get(); void set(System::Management::ObjectQuery ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -442,6 +454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As ManagementScope" />
       <MemberSignature Language="F#" Value="member this.Scope : System.Management.ManagementScope with get, set" Usage="System.Management.ManagementObjectSearcher.Scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementScope ^ Scope { System::Management::ManagementScope ^ get(); void set(System::Management::ManagementScope ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

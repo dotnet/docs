@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerSerializationVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum DesignerSerializationVisibility" />
   <TypeSignature Language="F#" Value="type DesignerSerializationVisibility = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerSerializationVisibility" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibility.Content" />
       <MemberSignature Language="VB.NET" Value="Content" />
       <MemberSignature Language="F#" Value="Content = 2" Usage="System.ComponentModel.DesignerSerializationVisibility.Content" />
+      <MemberSignature Language="C++ CLI" Value="Content" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibility.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="F#" Value="Hidden = 0" Usage="System.ComponentModel.DesignerSerializationVisibility.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibility.Visible" />
       <MemberSignature Language="VB.NET" Value="Visible" />
       <MemberSignature Language="F#" Value="Visible = 1" Usage="System.ComponentModel.DesignerSerializationVisibility.Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

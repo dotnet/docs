@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildStartedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildStartedEventArgs&#xA;Inherits BuildStatusEventArgs" />
   <TypeSignature Language="F#" Value="type BuildStartedEventArgs = class&#xA;    inherit BuildStatusEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildStartedEventArgs : Microsoft::Build::Framework::BuildStatusEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStartedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStartedEventArgs : string * string -&gt; Microsoft.Build.Framework.BuildStartedEventArgs" Usage="new Microsoft.Build.Framework.BuildStartedEventArgs (message, helpKeyword)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, environmentOfBuild As IDictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStartedEventArgs : string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Build.Framework.BuildStartedEventArgs" Usage="new Microsoft.Build.Framework.BuildStartedEventArgs (message, helpKeyword, environmentOfBuild)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ environmentOfBuild);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, eventTimestamp As DateTime)" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStartedEventArgs : string * string * DateTime -&gt; Microsoft.Build.Framework.BuildStartedEventArgs" Usage="new Microsoft.Build.Framework.BuildStartedEventArgs (message, helpKeyword, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStartedEventArgs.#ctor(System.String,System.String,System.DateTime,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
       <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStartedEventArgs : string * string * DateTime * obj[] -&gt; Microsoft.Build.Framework.BuildStartedEventArgs" Usage="new Microsoft.Build.Framework.BuildStartedEventArgs (message, helpKeyword, eventTimestamp, messageArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildStartedEventArgs(System::String ^ message, System::String ^ helpKeyword, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildStartedEventArgs.BuildEnvironment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildEnvironment As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.BuildEnvironment : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Build.Framework.BuildStartedEventArgs.BuildEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ BuildEnvironment { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

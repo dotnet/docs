@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SchemaImporterExtensionsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type SchemaImporterExtensionsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemaImporterExtensionsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemaImporterExtensionsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.InitializeDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDefault ()" />
       <MemberSignature Language="F#" Value="override this.InitializeDefault : unit -&gt; unit" Usage="schemaImporterExtensionsSection.InitializeDefault " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.SchemaImporterExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaImporterExtensions As SchemaImporterExtensionElementCollection" />
       <MemberSignature Language="F#" Value="member this.SchemaImporterExtensions : System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection" Usage="System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.SchemaImporterExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::SchemaImporterExtensionElementCollection ^ SchemaImporterExtensions { System::Xml::Serialization::Configuration::SchemaImporterExtensionElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

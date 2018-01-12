@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.RoutedCommand" />
   <TypeSignature Language="VB.NET" Value="Public Class RoutedCommand&#xA;Implements ICommand" />
   <TypeSignature Language="F#" Value="type RoutedCommand = class&#xA;    interface ICommand" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoutedCommand : System::Windows::Input::ICommand" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ownerType As Type)" />
       <MemberSignature Language="F#" Value="new System.Windows.Input.RoutedCommand : string * Type -&gt; System.Windows.Input.RoutedCommand" Usage="new System.Windows.Input.RoutedCommand (name, ownerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedCommand(System::String ^ name, Type ^ ownerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.#ctor(System.String,System.Type,System.Windows.Input.InputGestureCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ownerType As Type, inputGestures As InputGestureCollection)" />
       <MemberSignature Language="F#" Value="new System.Windows.Input.RoutedCommand : string * Type * System.Windows.Input.InputGestureCollection -&gt; System.Windows.Input.RoutedCommand" Usage="new System.Windows.Input.RoutedCommand (name, ownerType, inputGestures)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedCommand(System::String ^ name, Type ^ ownerType, System::Windows::Input::InputGestureCollection ^ inputGestures);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.CanExecute(System.Object,System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As Object, target As IInputElement) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanExecute : obj * System.Windows.IInputElement -&gt; bool" Usage="routedCommand.CanExecute (parameter, target)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExecute(System::Object ^ parameter, System::Windows::IInputElement ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +229,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.RoutedCommand.CanExecuteChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CanExecuteChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ CanExecuteChanged;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Windows.Input.ICommand.CanExecuteChanged</InterfaceMember>
@@ -267,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.Execute(System.Object,System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As Object, target As IInputElement)" />
       <MemberSignature Language="F#" Value="member this.Execute : obj * System.Windows.IInputElement -&gt; unit" Usage="routedCommand.Execute (parameter, target)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute(System::Object ^ parameter, System::Windows::IInputElement ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -318,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedCommand.InputGestures" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputGestures As InputGestureCollection" />
       <MemberSignature Language="F#" Value="member this.InputGestures : System.Windows.Input.InputGestureCollection" Usage="System.Windows.Input.RoutedCommand.InputGestures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputGestureCollection ^ InputGestures { System::Windows::Input::InputGestureCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -354,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedCommand.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Input.RoutedCommand.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -381,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedCommand.OwnerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerType As Type" />
       <MemberSignature Language="F#" Value="member this.OwnerType : Type" Usage="System.Windows.Input.RoutedCommand.OwnerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ OwnerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -400,6 +410,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Input.ICommand.CanExecute(object parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.System#Windows#Input#ICommand#CanExecute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function CanExecute (parameter As Object) As Boolean Implements ICommand.CanExecute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Input.ICommand.CanExecute(System::Object ^ parameter) = System::Windows::Input::ICommand::CanExecute;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Input.ICommand.CanExecute(System.Object)</InterfaceMember>
@@ -440,6 +451,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Input.ICommand.Execute(object parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.System#Windows#Input#ICommand#Execute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Execute (parameter As Object) Implements ICommand.Execute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Input.ICommand.Execute(System::Object ^ parameter) = System::Windows::Input::ICommand::Execute;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Input.ICommand.Execute(System.Object)</InterfaceMember>

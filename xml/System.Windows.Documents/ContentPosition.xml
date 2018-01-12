@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ContentPosition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentPosition" />
   <TypeSignature Language="F#" Value="type ContentPosition = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentPosition abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.ContentPosition.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ContentPosition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.ContentPosition.Missing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Missing As ContentPosition " />
       <MemberSignature Language="F#" Value=" staticval mutable Missing : System.Windows.Documents.ContentPosition" Usage="System.Windows.Documents.ContentPosition.Missing" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Documents::ContentPosition ^ Missing;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

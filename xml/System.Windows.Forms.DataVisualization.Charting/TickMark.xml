@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.TickMark" />
   <TypeSignature Language="VB.NET" Value="Public Class TickMark&#xA;Inherits Grid" />
   <TypeSignature Language="F#" Value="type TickMark = class&#xA;    inherit Grid" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TickMark : System::Windows::Forms::DataVisualization::Charting::Grid" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.TickMark.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TickMark();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TickMark.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
       <MemberSignature Language="F#" Value="member this.Size : single with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.TickMark.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TickMark.TickMarkStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property TickMarkStyle As TickMarkStyle" />
       <MemberSignature Language="F#" Value="member this.TickMarkStyle : System.Windows.Forms.DataVisualization.Charting.TickMarkStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.TickMark.TickMarkStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::TickMarkStyle TickMarkStyle { System::Windows::Forms::DataVisualization::Charting::TickMarkStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::TickMarkStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

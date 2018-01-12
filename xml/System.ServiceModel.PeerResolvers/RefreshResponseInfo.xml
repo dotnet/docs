@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerResolvers.RefreshResponseInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RefreshResponseInfo" />
   <TypeSignature Language="F#" Value="type RefreshResponseInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RefreshResponseInfo" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RefreshResponseInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RefreshResponseInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RefreshResponseInfo.#ctor(System.TimeSpan,System.ServiceModel.PeerResolvers.RefreshResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (registrationLifetime As TimeSpan, result As RefreshResult)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.PeerResolvers.RefreshResponseInfo : TimeSpan * System.ServiceModel.PeerResolvers.RefreshResult -&gt; System.ServiceModel.PeerResolvers.RefreshResponseInfo" Usage="new System.ServiceModel.PeerResolvers.RefreshResponseInfo (registrationLifetime, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RefreshResponseInfo(TimeSpan registrationLifetime, System::ServiceModel::PeerResolvers::RefreshResult result);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerResolvers.RefreshResponseInfo.HasBody" />
       <MemberSignature Language="VB.NET" Value="Public Function HasBody () As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasBody : unit -&gt; bool" Usage="refreshResponseInfo.HasBody " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasBody();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RefreshResponseInfo.RegistrationLifetime" />
       <MemberSignature Language="VB.NET" Value="Public Property RegistrationLifetime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.RegistrationLifetime : TimeSpan with get, set" Usage="System.ServiceModel.PeerResolvers.RefreshResponseInfo.RegistrationLifetime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RegistrationLifetime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.PeerResolvers.RefreshResponseInfo.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As RefreshResult" />
       <MemberSignature Language="F#" Value="member this.Result : System.ServiceModel.PeerResolvers.RefreshResult with get, set" Usage="System.ServiceModel.PeerResolvers.RefreshResponseInfo.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::PeerResolvers::RefreshResult Result { System::ServiceModel::PeerResolvers::RefreshResult get(); void set(System::ServiceModel::PeerResolvers::RefreshResult value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.CompressionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum CompressionLevel" />
   <TypeSignature Language="F#" Value="type CompressionLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompressionLevel" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionLevel.Fastest" />
       <MemberSignature Language="VB.NET" Value="Fastest" />
       <MemberSignature Language="F#" Value="Fastest = 1" Usage="System.IO.Compression.CompressionLevel.Fastest" />
+      <MemberSignature Language="C++ CLI" Value="Fastest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionLevel.NoCompression" />
       <MemberSignature Language="VB.NET" Value="NoCompression" />
       <MemberSignature Language="F#" Value="NoCompression = 2" Usage="System.IO.Compression.CompressionLevel.NoCompression" />
+      <MemberSignature Language="C++ CLI" Value="NoCompression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionLevel.Optimal" />
       <MemberSignature Language="VB.NET" Value="Optimal" />
       <MemberSignature Language="F#" Value="Optimal = 0" Usage="System.IO.Compression.CompressionLevel.Optimal" />
+      <MemberSignature Language="C++ CLI" Value="Optimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>

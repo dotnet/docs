@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataBindingHandlerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataBindingHandlerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type DataBindingHandlerAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataBindingHandlerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBindingHandlerAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBindingHandlerAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBindingHandlerAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataBindingHandlerAttribute : string -&gt; System.Web.UI.DataBindingHandlerAttribute" Usage="new System.Web.UI.DataBindingHandlerAttribute typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBindingHandlerAttribute(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBindingHandlerAttribute.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataBindingHandlerAttribute : Type -&gt; System.Web.UI.DataBindingHandlerAttribute" Usage="new System.Web.UI.DataBindingHandlerAttribute type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBindingHandlerAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataBindingHandlerAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DataBindingHandlerAttribute " />
       <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.DataBindingHandlerAttribute" Usage="System.Web.UI.DataBindingHandlerAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::DataBindingHandlerAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBindingHandlerAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataBindingHandlerAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBindingHandlerAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataBindingHandlerAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBindingHandlerAttribute.HandlerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HandlerTypeName As String" />
       <MemberSignature Language="F#" Value="member this.HandlerTypeName : string" Usage="System.Web.UI.DataBindingHandlerAttribute.HandlerTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HandlerTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

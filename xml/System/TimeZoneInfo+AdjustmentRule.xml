@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo.AdjustmentRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimeZoneInfo.AdjustmentRule&#xA;Implements IDeserializationCallback, IEquatable(Of TimeZoneInfo.AdjustmentRule), ISerializable" />
   <TypeSignature Language="F#" Value="type TimeZoneInfo.AdjustmentRule = class&#xA;    interface IEquatable&lt;TimeZoneInfo.AdjustmentRule&gt;&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class TimeZoneInfo::AdjustmentRule sealed : IEquatable&lt;TimeZoneInfo::AdjustmentRule ^&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -127,6 +128,7 @@ W. Central Africa Standard Time has no adjustment rules
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(System.DateTime,System.DateTime,System.TimeSpan,System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAdjustmentRule (dateStart As DateTime, dateEnd As DateTime, daylightDelta As TimeSpan, daylightTransitionStart As TimeZoneInfo.TransitionTime, daylightTransitionEnd As TimeZoneInfo.TransitionTime) As TimeZoneInfo.AdjustmentRule" />
       <MemberSignature Language="F#" Value="static member CreateAdjustmentRule : DateTime * DateTime * TimeSpan * TimeZoneInfo.TransitionTime * TimeZoneInfo.TransitionTime -&gt; TimeZoneInfo.AdjustmentRule" Usage="System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule (dateStart, dateEnd, daylightDelta, daylightTransitionStart, daylightTransitionEnd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo::AdjustmentRule ^ CreateAdjustmentRule(DateTime dateStart, DateTime dateEnd, TimeSpan daylightDelta, TimeZoneInfo::TransitionTime daylightTransitionStart, TimeZoneInfo::TransitionTime daylightTransitionEnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +227,7 @@ dateVariable.Date
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.AdjustmentRule.DateEnd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateEnd As DateTime" />
       <MemberSignature Language="F#" Value="member this.DateEnd : DateTime" Usage="System.TimeZoneInfo.AdjustmentRule.DateEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateEnd { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,6 +285,7 @@ dateVariable.Date
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.AdjustmentRule.DateStart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateStart As DateTime" />
       <MemberSignature Language="F#" Value="member this.DateStart : DateTime" Usage="System.TimeZoneInfo.AdjustmentRule.DateStart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateStart { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -339,6 +343,7 @@ dateVariable.Date
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.AdjustmentRule.DaylightDelta" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightDelta As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.DaylightDelta : TimeSpan" Usage="System.TimeZoneInfo.AdjustmentRule.DaylightDelta" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DaylightDelta { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -386,6 +391,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightTransitionEnd As TimeZoneInfo.TransitionTime" />
       <MemberSignature Language="F#" Value="member this.DaylightTransitionEnd : TimeZoneInfo.TransitionTime" Usage="System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeZoneInfo::TransitionTime DaylightTransitionEnd { TimeZoneInfo::TransitionTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -422,6 +428,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightTransitionStart As TimeZoneInfo.TransitionTime" />
       <MemberSignature Language="F#" Value="member this.DaylightTransitionStart : TimeZoneInfo.TransitionTime" Usage="System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeZoneInfo::TransitionTime DaylightTransitionStart { TimeZoneInfo::TransitionTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -458,6 +465,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.AdjustmentRule.Equals(System.TimeZoneInfo.AdjustmentRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As TimeZoneInfo.AdjustmentRule) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : TimeZoneInfo.AdjustmentRule -&gt; bool" Usage="adjustmentRule.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(TimeZoneInfo::AdjustmentRule ^ other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -518,6 +526,7 @@ Comparing Central Standard Time rule for 1/1/0001 to 12/31/9999 with:
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.AdjustmentRule.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="adjustmentRule.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -547,6 +556,7 @@ Comparing Central Standard Time rule for 1/1/0001 to 12/31/9999 with:
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.AdjustmentRule.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
@@ -581,6 +591,7 @@ Comparing Central Standard Time rule for 1/1/0001 to 12/31/9999 with:
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.AdjustmentRule.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

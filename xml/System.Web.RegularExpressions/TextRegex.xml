@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.TextRegex" />
   <TypeSignature Language="VB.NET" Value="Public Class TextRegex&#xA;Inherits Regex" />
   <TypeSignature Language="F#" Value="type TextRegex = class&#xA;    inherit Regex" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextRegex : System::Text::RegularExpressions::Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.TextRegex.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextRegex();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.TextRegex.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.TextRegex : TimeSpan -&gt; System.Web.RegularExpressions.TextRegex" Usage="new System.Web.RegularExpressions.TextRegex A_1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextRegex(TimeSpan A_1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>

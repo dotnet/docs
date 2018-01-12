@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexNamedPipeBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class MexNamedPipeBindingElement&#xA;Inherits MexBindingElement(Of CustomBinding)" />
   <TypeSignature Language="F#" Value="type MexNamedPipeBindingElement = class&#xA;    inherit MexBindingElement&lt;CustomBinding&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MexNamedPipeBindingElement : System::ServiceModel::Configuration::MexBindingElement&lt;System::ServiceModel::Channels::CustomBinding ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexNamedPipeBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MexNamedPipeBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexNamedPipeBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.MexNamedPipeBindingElement : string -&gt; System.ServiceModel.Configuration.MexNamedPipeBindingElement" Usage="new System.ServiceModel.Configuration.MexNamedPipeBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MexNamedPipeBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

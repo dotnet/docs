@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SafeArrayTypeMismatchException" />
   <TypeSignature Language="VB.NET" Value="Public Class SafeArrayTypeMismatchException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type SafeArrayTypeMismatchException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeArrayTypeMismatchException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeArrayTypeMismatchException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeArrayTypeMismatchException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeArrayTypeMismatchException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SafeArrayTypeMismatchException : string -&gt; System.Runtime.InteropServices.SafeArrayTypeMismatchException" Usage="new System.Runtime.InteropServices.SafeArrayTypeMismatchException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeArrayTypeMismatchException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeArrayTypeMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SafeArrayTypeMismatchException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.InteropServices.SafeArrayTypeMismatchException" Usage="new System.Runtime.InteropServices.SafeArrayTypeMismatchException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SafeArrayTypeMismatchException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeArrayTypeMismatchException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SafeArrayTypeMismatchException : string * Exception -&gt; System.Runtime.InteropServices.SafeArrayTypeMismatchException" Usage="new System.Runtime.InteropServices.SafeArrayTypeMismatchException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeArrayTypeMismatchException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

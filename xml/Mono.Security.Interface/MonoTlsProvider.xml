@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MonoTlsProvider" />
   <TypeSignature Language="F#" Value="type MonoTlsProvider = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MonoTlsProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProvider.ID" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ID As Guid" />
       <MemberSignature Language="F#" Value="member this.ID : Guid" Usage="Mono.Security.Interface.MonoTlsProvider.ID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Guid ID { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProvider.Name" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="Mono.Security.Interface.MonoTlsProvider.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProvider.SupportedProtocols" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportedProtocols As SslProtocols" />
       <MemberSignature Language="F#" Value="member this.SupportedProtocols : System.Security.Authentication.SslProtocols" Usage="Mono.Security.Interface.MonoTlsProvider.SupportedProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Security::Authentication::SslProtocols SupportedProtocols { System::Security::Authentication::SslProtocols get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProvider.SupportsConnectionInfo" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportsConnectionInfo As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsConnectionInfo : bool" Usage="Mono.Security.Interface.MonoTlsProvider.SupportsConnectionInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SupportsConnectionInfo { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProvider.SupportsMonoExtensions" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportsMonoExtensions As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsMonoExtensions : bool" Usage="Mono.Security.Interface.MonoTlsProvider.SupportsMonoExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SupportsMonoExtensions { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProvider.SupportsSslStream" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportsSslStream As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsSslStream : bool" Usage="Mono.Security.Interface.MonoTlsProvider.SupportsSslStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool SupportsSslStream { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

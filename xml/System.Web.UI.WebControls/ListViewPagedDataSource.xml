@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewPagedDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewPagedDataSource&#xA;Implements ICollection, ITypedList" />
   <TypeSignature Language="F#" Value="type ListViewPagedDataSource = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ITypedList" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewPagedDataSource : System::Collections::ICollection, System::ComponentModel::ITypedList" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewPagedDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowServerPaging As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowServerPaging : bool with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowServerPaging { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="listViewPagedDataSource.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -139,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -181,6 +186,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As IEnumerable" />
       <MemberSignature Language="F#" Value="member this.DataSource : System.Collections.IEnumerable with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ DataSource { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -210,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceCount As Integer" />
       <MemberSignature Language="F#" Value="member this.DataSourceCount : int" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataSourceCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listViewPagedDataSource.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -283,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItemProperties (listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="listViewPagedDataSource.GetItemProperties listAccessors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
@@ -321,6 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.GetListName(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetListName (listAccessors As PropertyDescriptor()) As String" />
       <MemberSignature Language="F#" Value="abstract member GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string&#xA;override this.GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string" Usage="listViewPagedDataSource.GetListName listAccessors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
@@ -358,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -379,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.IsServerPagingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsServerPagingEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsServerPagingEnabled : bool" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.IsServerPagingEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsServerPagingEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -401,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -436,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumRows As Integer" />
       <MemberSignature Language="F#" Value="member this.MaximumRows : int with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.MaximumRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -456,6 +470,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property StartRowIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.StartRowIndex : int with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.StartRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -476,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -511,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.TotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Property TotalRowCount As Integer" />
       <MemberSignature Language="F#" Value="member this.TotalRowCount : int with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.TotalRowCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

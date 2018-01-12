@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.CommittableTransaction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommittableTransaction&#xA;Inherits Transaction&#xA;Implements IAsyncResult, IDisposable, ISerializable" />
   <TypeSignature Language="F#" Value="type CommittableTransaction = class&#xA;    inherit Transaction&#xA;    interface ISerializable&#xA;    interface IDisposable&#xA;    interface IAsyncResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommittableTransaction sealed : System::Transactions::Transaction, IAsyncResult, IDisposable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommittableTransaction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -112,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.#ctor(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Transactions.CommittableTransaction : TimeSpan -&gt; System.Transactions.CommittableTransaction" Usage="new System.Transactions.CommittableTransaction timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommittableTransaction(TimeSpan timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.#ctor(System.Transactions.TransactionOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (options As TransactionOptions)" />
       <MemberSignature Language="F#" Value="new System.Transactions.CommittableTransaction : System.Transactions.TransactionOptions -&gt; System.Transactions.CommittableTransaction" Usage="new System.Transactions.CommittableTransaction options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommittableTransaction(System::Transactions::TransactionOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="F#" Value="member this.BeginCommit : AsyncCallback * obj -&gt; IAsyncResult" Usage="committableTransaction.BeginCommit (callback, user_defined_state)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginCommit (callback As AsyncCallback, user_defined_state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCommit(AsyncCallback ^ callback, System::Object ^ user_defined_state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -229,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.Commit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
       <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="committableTransaction.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndCommit (ar As IAsyncResult)" />
       <MemberSignature Language="F#" Value="member this.EndCommit : IAsyncResult -&gt; unit" Usage="committableTransaction.EndCommit ar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCommit(IAsyncResult ^ ar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property AsyncState As Object Implements IAsyncResult.AsyncState" />
       <MemberSignature Language="F#" Usage="System.Transactions.CommittableTransaction.System.IAsyncResult.AsyncState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.IAsyncResult.AsyncState { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.IAsyncResult.AsyncState</InterfaceMember>
@@ -351,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncWaitHandle" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property AsyncWaitHandle As WaitHandle Implements IAsyncResult.AsyncWaitHandle" />
       <MemberSignature Language="F#" Usage="System.Transactions.CommittableTransaction.System.IAsyncResult.AsyncWaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="property System::Threading::WaitHandle ^ System.IAsyncResult.AsyncWaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.IAsyncResult.AsyncWaitHandle</InterfaceMember>
@@ -383,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.CommittableTransaction.System#IAsyncResult#CompletedSynchronously" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CompletedSynchronously As Boolean Implements IAsyncResult.CompletedSynchronously" />
       <MemberSignature Language="F#" Usage="System.Transactions.CommittableTransaction.System.IAsyncResult.CompletedSynchronously" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.IAsyncResult.CompletedSynchronously { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.IAsyncResult.CompletedSynchronously</InterfaceMember>
@@ -416,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.CommittableTransaction.System#IAsyncResult#IsCompleted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAsyncResult.IsCompleted" />
       <MemberSignature Language="F#" Usage="System.Transactions.CommittableTransaction.System.IAsyncResult.IsCompleted" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.IAsyncResult.IsCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.IAsyncResult.IsCompleted</InterfaceMember>
@@ -448,6 +459,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.CommittableTransaction.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

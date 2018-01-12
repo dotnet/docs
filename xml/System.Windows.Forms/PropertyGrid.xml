@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGrid" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyGrid&#xA;Inherits ContainerControl&#xA;Implements IComPropertyBrowser" />
   <TypeSignature Language="F#" Value="type PropertyGrid = class&#xA;    inherit ContainerControl&#xA;    interface IComPropertyBrowser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyGrid : System::Windows::Forms::ContainerControl, System::Windows::Forms::ComponentModel::Com2Interop::IComPropertyBrowser" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyGrid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.AutoScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -153,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.PropertyGrid.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.PropertyGrid.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +264,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.BrowsableAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowsableAttributes As AttributeCollection" />
       <MemberSignature Language="F#" Value="member this.BrowsableAttributes : System.ComponentModel.AttributeCollection with get, set" Usage="System.Windows.Forms.PropertyGrid.BrowsableAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::AttributeCollection ^ BrowsableAttributes { System::ComponentModel::AttributeCollection ^ get(); void set(System::ComponentModel::AttributeCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CanShowCommands" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanShowCommands As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanShowCommands : bool" Usage="System.Windows.Forms.PropertyGrid.CanShowCommands" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanShowCommands { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -369,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CanShowVisualStyleGlyphs" />
       <MemberSignature Language="VB.NET" Value="Public Property CanShowVisualStyleGlyphs As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanShowVisualStyleGlyphs : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.CanShowVisualStyleGlyphs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanShowVisualStyleGlyphs { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -395,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CategoryForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.CategoryForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CategoryForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CategoryForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -427,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CategorySplitterColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CategorySplitterColor As Color" />
       <MemberSignature Language="F#" Value="member this.CategorySplitterColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CategorySplitterColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CategorySplitterColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -452,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.CollapseAllGridItems" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollapseAllGridItems ()" />
       <MemberSignature Language="F#" Value="member this.CollapseAllGridItems : unit -&gt; unit" Usage="propertyGrid.CollapseAllGridItems " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollapseAllGridItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -479,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsActiveLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandsActiveLinkColor As Color" />
       <MemberSignature Language="F#" Value="member this.CommandsActiveLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsActiveLinkColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CommandsActiveLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -499,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandsBackColor As Color" />
       <MemberSignature Language="F#" Value="member this.CommandsBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsBackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CommandsBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -519,6 +535,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandsBorderColor As Color" />
       <MemberSignature Language="F#" Value="member this.CommandsBorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CommandsBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -544,6 +561,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsDisabledLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandsDisabledLinkColor As Color" />
       <MemberSignature Language="F#" Value="member this.CommandsDisabledLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsDisabledLinkColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CommandsDisabledLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -564,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandsForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.CommandsForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CommandsForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -584,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsLinkColor" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandsLinkColor As Color" />
       <MemberSignature Language="F#" Value="member this.CommandsLinkColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsLinkColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color CommandsLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -604,6 +624,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsVisible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CommandsVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.CommandsVisible : bool" Usage="System.Windows.Forms.PropertyGrid.CommandsVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CommandsVisible { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -640,6 +661,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CommandsVisibleIfAvailable As Boolean" />
       <MemberSignature Language="F#" Value="member this.CommandsVisibleIfAvailable : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CommandsVisibleIfAvailable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -666,6 +688,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ContextMenuDefaultLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextMenuDefaultLocation As Point" />
       <MemberSignature Language="F#" Value="member this.ContextMenuDefaultLocation : System.Drawing.Point" Usage="System.Windows.Forms.PropertyGrid.ContextMenuDefaultLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point ContextMenuDefaultLocation { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -704,6 +727,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Controls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As Control.ControlCollection" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Windows.Forms.Control.ControlCollection" Usage="System.Windows.Forms.PropertyGrid.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control::ControlCollection ^ Controls { System::Windows::Forms::Control::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -742,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.CreatePropertyTab(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreatePropertyTab (tabType As Type) As PropertyTab" />
       <MemberSignature Language="F#" Value="abstract member CreatePropertyTab : Type -&gt; System.Windows.Forms.Design.PropertyTab&#xA;override this.CreatePropertyTab : Type -&gt; System.Windows.Forms.Design.PropertyTab" Usage="propertyGrid.CreatePropertyTab tabType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::Design::PropertyTab ^ CreatePropertyTab(Type ^ tabType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -774,6 +799,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.PropertyGrid.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -795,6 +821,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DefaultTabType" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultTabType As Type" />
       <MemberSignature Language="F#" Value="member this.DefaultTabType : Type" Usage="System.Windows.Forms.PropertyGrid.DefaultTabType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ DefaultTabType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -833,6 +860,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DisabledItemForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property DisabledItemForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.DisabledItemForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.DisabledItemForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color DisabledItemForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -858,6 +886,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="propertyGrid.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -892,6 +921,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.DrawFlatToolbar" />
       <MemberSignature Language="VB.NET" Value="Protected Property DrawFlatToolbar As Boolean" />
       <MemberSignature Language="F#" Value="member this.DrawFlatToolbar : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.DrawFlatToolbar" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool DrawFlatToolbar { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -913,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ExpandAllGridItems" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandAllGridItems ()" />
       <MemberSignature Language="F#" Value="member this.ExpandAllGridItems : unit -&gt; unit" Usage="propertyGrid.ExpandAllGridItems " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandAllGridItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -933,6 +964,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -968,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1002,6 +1035,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpBackColor As Color" />
       <MemberSignature Language="F#" Value="member this.HelpBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.HelpBackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color HelpBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1027,6 +1061,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpBorderColor As Color" />
       <MemberSignature Language="F#" Value="member this.HelpBorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.HelpBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color HelpBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1052,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.HelpForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.HelpForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color HelpForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1077,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.HelpVisible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.HelpVisible : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.HelpVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HelpVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1113,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1157,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1201,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1245,6 +1285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.LargeButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property LargeButtons As Boolean" />
       <MemberSignature Language="F#" Value="member this.LargeButtons : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.LargeButtons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LargeButtons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1285,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LineColor As Color" />
       <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.LineColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1310,6 +1352,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1344,6 +1387,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseEnter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1378,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1412,6 +1457,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1446,6 +1492,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1480,6 +1527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged(System.ComponentModel.Design.ComponentRenameEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnComComponentNameChanged (e As ComponentRenameEventArgs)" />
       <MemberSignature Language="F#" Value="member this.OnComComponentNameChanged : System.ComponentModel.Design.ComponentRenameEventArgs -&gt; unit" Usage="propertyGrid.OnComComponentNameChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnComComponentNameChanged(System::ComponentModel::Design::ComponentRenameEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1515,6 +1563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnabledChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnEnabledChanged : EventArgs -&gt; unit" Usage="propertyGrid.OnEnabledChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnabledChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1550,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="propertyGrid.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1574,6 +1624,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnGotFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnGotFocus : EventArgs -&gt; unit" Usage="propertyGrid.OnGotFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1609,6 +1660,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="propertyGrid.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1644,6 +1696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnHandleDestroyed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="propertyGrid.OnHandleDestroyed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1668,6 +1721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (me As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="propertyGrid.OnMouseDown me" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ me);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1703,6 +1757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (me As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="propertyGrid.OnMouseMove me" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ me);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1738,6 +1793,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (me As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="propertyGrid.OnMouseUp me" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ me);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1773,6 +1829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnNotifyPropertyValueUIItemsChanged (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="member this.OnNotifyPropertyValueUIItemsChanged : obj * EventArgs -&gt; unit" Usage="propertyGrid.OnNotifyPropertyValueUIItemsChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnNotifyPropertyValueUIItemsChanged(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1810,6 +1867,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (pevent As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="propertyGrid.OnPaint pevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ pevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1845,6 +1903,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertySortChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertySortChanged : EventArgs -&gt; unit&#xA;override this.OnPropertySortChanged : EventArgs -&gt; unit" Usage="propertyGrid.OnPropertySortChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertySortChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1880,6 +1939,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged(System.Windows.Forms.PropertyTabChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyTabChanged (e As PropertyTabChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyTabChanged : System.Windows.Forms.PropertyTabChangedEventArgs -&gt; unit&#xA;override this.OnPropertyTabChanged : System.Windows.Forms.PropertyTabChangedEventArgs -&gt; unit" Usage="propertyGrid.OnPropertyTabChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyTabChanged(System::Windows::Forms::PropertyTabChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1915,6 +1975,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged(System.Windows.Forms.PropertyValueChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyValueChanged (e As PropertyValueChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyValueChanged : System.Windows.Forms.PropertyValueChangedEventArgs -&gt; unit&#xA;override this.OnPropertyValueChanged : System.Windows.Forms.PropertyValueChangedEventArgs -&gt; unit" Usage="propertyGrid.OnPropertyValueChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyValueChanged(System::Windows::Forms::PropertyValueChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1950,6 +2011,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnResize(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="propertyGrid.OnResize e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1985,6 +2047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedGridItemChanged (e As SelectedGridItemChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedGridItemChanged : System.Windows.Forms.SelectedGridItemChangedEventArgs -&gt; unit&#xA;override this.OnSelectedGridItemChanged : System.Windows.Forms.SelectedGridItemChangedEventArgs -&gt; unit" Usage="propertyGrid.OnSelectedGridItemChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedGridItemChanged(System::Windows::Forms::SelectedGridItemChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2020,6 +2083,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedObjectsChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelectedObjectsChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedObjectsChanged : EventArgs -&gt; unit" Usage="propertyGrid.OnSelectedObjectsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedObjectsChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2055,6 +2119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSystemColorsChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnSystemColorsChanged : EventArgs -&gt; unit" Usage="propertyGrid.OnSystemColorsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSystemColorsChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2090,6 +2155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.OnVisibleChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnVisibleChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnVisibleChanged : EventArgs -&gt; unit" Usage="propertyGrid.OnVisibleChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnVisibleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2125,6 +2191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.PropertyGrid.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2163,6 +2230,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2197,6 +2265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ProcessDialogKey(System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessDialogKey (keyData As Keys) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ProcessDialogKey : System.Windows.Forms.Keys -&gt; bool" Usage="propertyGrid.ProcessDialogKey keyData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessDialogKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2222,6 +2291,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.PropertySort" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertySort As PropertySort" />
       <MemberSignature Language="F#" Value="member this.PropertySort : System.Windows.Forms.PropertySort with get, set" Usage="System.Windows.Forms.PropertyGrid.PropertySort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::PropertySort PropertySort { System::Windows::Forms::PropertySort get(); void set(System::Windows::Forms::PropertySort value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2269,6 +2339,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PropertySortChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PropertySortChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PropertySortChanged : EventHandler " Usage="member this.PropertySortChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PropertySortChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2305,6 +2376,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PropertyTabChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyTabChanged As PropertyTabChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.PropertyTabChanged : System.Windows.Forms.PropertyTabChangedEventHandler " Usage="member this.PropertyTabChanged : System.Windows.Forms.PropertyTabChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PropertyTabChangedEventHandler ^ PropertyTabChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2341,6 +2413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.PropertyTabs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyTabs As PropertyGrid.PropertyTabCollection" />
       <MemberSignature Language="F#" Value="member this.PropertyTabs : System.Windows.Forms.PropertyGrid.PropertyTabCollection" Usage="System.Windows.Forms.PropertyGrid.PropertyTabs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::PropertyGrid::PropertyTabCollection ^ PropertyTabs { System::Windows::Forms::PropertyGrid::PropertyTabCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2379,6 +2452,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.PropertyValueChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyValueChanged As PropertyValueChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.PropertyValueChanged : System.Windows.Forms.PropertyValueChangedEventHandler " Usage="member this.PropertyValueChanged : System.Windows.Forms.PropertyValueChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PropertyValueChangedEventHandler ^ PropertyValueChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2415,6 +2489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
       <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="propertyGrid.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2436,6 +2511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.RefreshTabs(System.ComponentModel.PropertyTabScope)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshTabs (tabScope As PropertyTabScope)" />
       <MemberSignature Language="F#" Value="member this.RefreshTabs : System.ComponentModel.PropertyTabScope -&gt; unit" Usage="propertyGrid.RefreshTabs tabScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshTabs(System::ComponentModel::PropertyTabScope tabScope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2467,6 +2543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ResetSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetSelectedProperty ()" />
       <MemberSignature Language="F#" Value="member this.ResetSelectedProperty : unit -&gt; unit" Usage="propertyGrid.ResetSelectedProperty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSelectedProperty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2494,6 +2571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ScaleCore(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleCore (dx As Single, dy As Single)" />
       <MemberSignature Language="F#" Value="override this.ScaleCore : single * single -&gt; unit" Usage="propertyGrid.ScaleCore (dx, dy)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleCore(float dx, float dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2531,6 +2609,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedGridItem" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedGridItem As GridItem" />
       <MemberSignature Language="F#" Value="member this.SelectedGridItem : System.Windows.Forms.GridItem with get, set" Usage="System.Windows.Forms.PropertyGrid.SelectedGridItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridItem ^ SelectedGridItem { System::Windows::Forms::GridItem ^ get(); void set(System::Windows::Forms::GridItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2571,6 +2650,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedGridItemChanged As SelectedGridItemChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedGridItemChanged : System.Windows.Forms.SelectedGridItemChangedEventHandler " Usage="member this.SelectedGridItemChanged : System.Windows.Forms.SelectedGridItemChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SelectedGridItemChangedEventHandler ^ SelectedGridItemChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2607,6 +2687,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedItemWithFocusBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedItemWithFocusBackColor As Color" />
       <MemberSignature Language="F#" Value="member this.SelectedItemWithFocusBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.SelectedItemWithFocusBackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectedItemWithFocusBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2632,6 +2713,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedItemWithFocusForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedItemWithFocusForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.SelectedItemWithFocusForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.SelectedItemWithFocusForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectedItemWithFocusForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2657,6 +2739,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedObject" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedObject As Object" />
       <MemberSignature Language="F#" Value="member this.SelectedObject : obj with get, set" Usage="System.Windows.Forms.PropertyGrid.SelectedObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedObject { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2692,6 +2775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedObjects" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectedObjects As Object()" />
       <MemberSignature Language="F#" Value="member this.SelectedObjects : obj[] with get, set" Usage="System.Windows.Forms.PropertyGrid.SelectedObjects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ SelectedObjects { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2728,6 +2812,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedObjectsChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectedObjectsChanged : EventHandler " Usage="member this.SelectedObjectsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedObjectsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2764,6 +2849,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SelectedTab" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedTab As PropertyTab" />
       <MemberSignature Language="F#" Value="member this.SelectedTab : System.Windows.Forms.Design.PropertyTab" Usage="System.Windows.Forms.PropertyGrid.SelectedTab" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::PropertyTab ^ SelectedTab { System::Windows::Forms::Design::PropertyTab ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2802,6 +2888,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.ShowEventsButton(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ShowEventsButton (value As Boolean)" />
       <MemberSignature Language="F#" Value="member this.ShowEventsButton : bool -&gt; unit" Usage="propertyGrid.ShowEventsButton value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ShowEventsButton(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2826,6 +2913,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ShowFocusCues" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property ShowFocusCues As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShowFocusCues : bool" Usage="System.Windows.Forms.PropertyGrid.ShowFocusCues" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool ShowFocusCues { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2848,6 +2936,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ShowPropertyPageImage" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ShowPropertyPageImage As Bitmap" />
       <MemberSignature Language="F#" Value="member this.ShowPropertyPageImage : System.Drawing.Bitmap" Usage="System.Windows.Forms.PropertyGrid.ShowPropertyPageImage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Bitmap ^ ShowPropertyPageImage { System::Drawing::Bitmap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2879,6 +2968,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
       <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Windows.Forms.PropertyGrid.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2900,6 +2990,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SortByCategoryImage" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SortByCategoryImage As Bitmap" />
       <MemberSignature Language="F#" Value="member this.SortByCategoryImage : System.Drawing.Bitmap" Usage="System.Windows.Forms.PropertyGrid.SortByCategoryImage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Bitmap ^ SortByCategoryImage { System::Drawing::Bitmap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2931,6 +3022,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.SortByPropertyImage" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SortByPropertyImage As Bitmap" />
       <MemberSignature Language="F#" Value="member this.SortByPropertyImage : System.Drawing.Bitmap" Usage="System.Windows.Forms.PropertyGrid.SortByPropertyImage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Bitmap ^ SortByPropertyImage { System::Drawing::Bitmap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2982,6 +3074,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#DropDownDone" />
       <MemberSignature Language="VB.NET" Value="Sub DropDownDone () Implements IComPropertyBrowser.DropDownDone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone() = System::Windows::Forms::ComponentModel::Com2Interop::IComPropertyBrowser::DropDownDone;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone</InterfaceMember>
@@ -3011,6 +3104,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#EnsurePendingChangesCommitted" />
       <MemberSignature Language="VB.NET" Value="Function EnsurePendingChangesCommitted () As Boolean Implements IComPropertyBrowser.EnsurePendingChangesCommitted" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted() = System::Windows::Forms::ComponentModel::Com2Interop::IComPropertyBrowser::EnsurePendingChangesCommitted;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted</InterfaceMember>
@@ -3042,6 +3136,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#HandleF4" />
       <MemberSignature Language="VB.NET" Value="Sub HandleF4 () Implements IComPropertyBrowser.HandleF4" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4() = System::Windows::Forms::ComponentModel::Com2Interop::IComPropertyBrowser::HandleF4;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4</InterfaceMember>
@@ -3072,6 +3167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#InPropertySet" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property InPropertySet As Boolean Implements IComPropertyBrowser.InPropertySet" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.PropertyGrid.System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet</InterfaceMember>
@@ -3102,6 +3198,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(class Microsoft.Win32.RegistryKey optRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#LoadState(Microsoft.Win32.RegistryKey)" />
       <MemberSignature Language="VB.NET" Value="Sub LoadState (optRoot As RegistryKey) Implements IComPropertyBrowser.LoadState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(Microsoft::Win32::RegistryKey ^ optRoot) = System::Windows::Forms::ComponentModel::Com2Interop::IComPropertyBrowser::LoadState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(Microsoft.Win32.RegistryKey)</InterfaceMember>
@@ -3136,6 +3233,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(class Microsoft.Win32.RegistryKey optRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.System#Windows#Forms#ComponentModel#Com2Interop#IComPropertyBrowser#SaveState(Microsoft.Win32.RegistryKey)" />
       <MemberSignature Language="VB.NET" Value="Sub SaveState (optRoot As RegistryKey) Implements IComPropertyBrowser.SaveState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(Microsoft::Win32::RegistryKey ^ optRoot) = System::Windows::Forms::ComponentModel::Com2Interop::IComPropertyBrowser::SaveState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(Microsoft.Win32.RegistryKey)</InterfaceMember>
@@ -3171,6 +3269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.PropertyGrid.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3200,6 +3299,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.PropertyGrid.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3241,6 +3341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ToolbarVisible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ToolbarVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.ToolbarVisible : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.ToolbarVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ToolbarVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3278,6 +3379,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ToolStripRenderer" />
       <MemberSignature Language="VB.NET" Value="Protected Property ToolStripRenderer As ToolStripRenderer" />
       <MemberSignature Language="F#" Value="member this.ToolStripRenderer : System.Windows.Forms.ToolStripRenderer with get, set" Usage="System.Windows.Forms.PropertyGrid.ToolStripRenderer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::ToolStripRenderer ^ ToolStripRenderer { System::Windows::Forms::ToolStripRenderer ^ get(); void set(System::Windows::Forms::ToolStripRenderer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3298,6 +3400,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.UseCompatibleTextRendering" />
       <MemberSignature Language="VB.NET" Value="Public Property UseCompatibleTextRendering As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseCompatibleTextRendering : bool with get, set" Usage="System.Windows.Forms.PropertyGrid.UseCompatibleTextRendering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCompatibleTextRendering { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3335,6 +3438,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ViewBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewBackColor As Color" />
       <MemberSignature Language="F#" Value="member this.ViewBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.ViewBackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ViewBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3360,6 +3464,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ViewBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewBorderColor As Color" />
       <MemberSignature Language="F#" Value="member this.ViewBorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.ViewBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ViewBorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3385,6 +3490,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGrid.ViewForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ViewForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ViewForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.PropertyGrid.ViewForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ViewForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3410,6 +3516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGrid.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="propertyGrid.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

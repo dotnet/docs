@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public Structure ActivityHandlerDescriptor" />
   <TypeSignature Language="F#" Value="type ActivityHandlerDescriptor = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ActivityHandlerDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor.Name" />
       <MemberSignature Language="VB.NET" Value="Public Name As String " />
       <MemberSignature Language="F#" Value="val mutable Name : string" Usage="System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor.Name" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor.Token" />
       <MemberSignature Language="VB.NET" Value="Public Token As Integer " />
       <MemberSignature Language="F#" Value="val mutable Token : int" Usage="System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor.Token" />
+      <MemberSignature Language="C++ CLI" Value="public: int Token;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

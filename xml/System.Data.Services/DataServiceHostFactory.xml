@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceHostFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceHostFactory&#xA;Inherits ServiceHostFactory" />
   <TypeSignature Language="F#" Value="type DataServiceHostFactory = class&#xA;    inherit ServiceHostFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceHostFactory : System::ServiceModel::Activation::ServiceHostFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceHostFactory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceHostFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
       <MemberSignature Language="F#" Value="override this.CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="dataServiceHostFactory.CreateServiceHost (serviceType, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

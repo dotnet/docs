@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CorrelationHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class CorrelationHandle&#xA;Inherits Handle" />
   <TypeSignature Language="F#" Value="type CorrelationHandle = class&#xA;    inherit Handle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CorrelationHandle : System::Activities::Handle" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CorrelationHandle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.OnInitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="F#" Value="override this.OnInitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="correlationHandle.OnInitialize context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialize(System::Activities::HandleInitializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.OnUninitialize(System.Activities.HandleInitializationContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUninitialize (context As HandleInitializationContext)" />
       <MemberSignature Language="F#" Value="override this.OnUninitialize : System.Activities.HandleInitializationContext -&gt; unit" Usage="correlationHandle.OnUninitialize context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUninitialize(System::Activities::HandleInitializationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

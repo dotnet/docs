@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.FixedBufferAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FixedBufferAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type FixedBufferAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FixedBufferAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.FixedBufferAttribute.#ctor(System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementType As Type, length As Integer)" />
       <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.FixedBufferAttribute : Type * int -&gt; System.Runtime.CompilerServices.FixedBufferAttribute" Usage="new System.Runtime.CompilerServices.FixedBufferAttribute (elementType, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FixedBufferAttribute(Type ^ elementType, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.FixedBufferAttribute.ElementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As Type" />
       <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Runtime.CompilerServices.FixedBufferAttribute.ElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.FixedBufferAttribute.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Runtime.CompilerServices.FixedBufferAttribute.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeX509ChainHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeX509ChainHandle&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="F#" Value="type SafeX509ChainHandle = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeX509ChainHandle sealed : Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeX509ChainHandle.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="safeX509ChainHandle.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeX509ChainHandle.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeX509ChainHandle.IsInvalid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeX509ChainHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
       <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeX509ChainHandle.ReleaseHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

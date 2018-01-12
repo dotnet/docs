@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollableControl&#xA;Inherits Control&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type ScrollableControl = class&#xA;    inherit Control&#xA;    interface IArrangedElement&#xA;    interface IComponent&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScrollableControl : System::Windows::Forms::Control, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollableControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.AdjustFormScrollbars(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AdjustFormScrollbars (displayScrollbars As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member AdjustFormScrollbars : bool -&gt; unit&#xA;override this.AdjustFormScrollbars : bool -&gt; unit" Usage="scrollableControl.AdjustFormScrollbars displayScrollbars" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AdjustFormScrollbars(bool displayScrollbars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScroll" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoScroll As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.ScrollableControl.AutoScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ScrollableControl.AutoScrollMargin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -266,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
       <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ScrollableControl.AutoScrollMinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -304,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScrollPosition As Point" />
       <MemberSignature Language="F#" Value="member this.AutoScrollPosition : System.Drawing.Point with get, set" Usage="System.Windows.Forms.ScrollableControl.AutoScrollPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point AutoScrollPosition { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -360,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.ScrollableControl.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -381,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DisplayRectangle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DisplayRectangle As Rectangle" />
       <MemberSignature Language="F#" Value="member this.DisplayRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.ScrollableControl.DisplayRectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle DisplayRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.Layout.IArrangedElement.DisplayRectangle</InterfaceMember>
@@ -416,6 +425,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.DockPadding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DockPadding As ScrollableControl.DockPaddingEdges" />
       <MemberSignature Language="F#" Value="member this.DockPadding : System.Windows.Forms.ScrollableControl.DockPaddingEdges" Usage="System.Windows.Forms.ScrollableControl.DockPadding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ScrollableControl::DockPaddingEdges ^ DockPadding { System::Windows::Forms::ScrollableControl::DockPaddingEdges ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -467,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.GetScrollState(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetScrollState (bit As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="member this.GetScrollState : int -&gt; bool" Usage="scrollableControl.GetScrollState bit" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool GetScrollState(int bit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -516,6 +527,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.HorizontalScroll" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalScroll As HScrollProperties" />
       <MemberSignature Language="F#" Value="member this.HorizontalScroll : System.Windows.Forms.HScrollProperties" Usage="System.Windows.Forms.ScrollableControl.HorizontalScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HScrollProperties ^ HorizontalScroll { System::Windows::Forms::HScrollProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -556,6 +568,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.HScroll" />
       <MemberSignature Language="VB.NET" Value="Protected Property HScroll As Boolean" />
       <MemberSignature Language="F#" Value="member this.HScroll : bool with get, set" Usage="System.Windows.Forms.ScrollableControl.HScroll" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool HScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -589,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="scrollableControl.OnLayout levent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -618,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="scrollableControl.OnMouseWheel e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -663,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnPaddingChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaddingChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaddingChanged : EventArgs -&gt; unit" Usage="scrollableControl.OnPaddingChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaddingChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -698,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="scrollableControl.OnPaintBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -733,6 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnRightToLeftChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnRightToLeftChanged : EventArgs -&gt; unit" Usage="scrollableControl.OnRightToLeftChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -762,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnScroll(System.Windows.Forms.ScrollEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnScroll (se As ScrollEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnScroll : System.Windows.Forms.ScrollEventArgs -&gt; unit&#xA;override this.OnScroll : System.Windows.Forms.ScrollEventArgs -&gt; unit" Usage="scrollableControl.OnScroll se" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnScroll(System::Windows::Forms::ScrollEventArgs ^ se);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -799,6 +818,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.OnVisibleChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnVisibleChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnVisibleChanged : EventArgs -&gt; unit" Usage="scrollableControl.OnVisibleChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnVisibleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -828,6 +848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleControl (factor As SizeF, specified As BoundsSpecified)" />
       <MemberSignature Language="F#" Value="override this.ScaleControl : System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="scrollableControl.ScaleControl (factor, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -854,6 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScaleCore(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleCore (dx As Single, dy As Single)" />
       <MemberSignature Language="F#" Value="override this.ScaleCore : single * single -&gt; unit" Usage="scrollableControl.ScaleCore (dx, dy)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleCore(float dx, float dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -885,6 +907,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ScrollableControl.Scroll" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Scroll As ScrollEventHandler " />
       <MemberSignature Language="F#" Value="member this.Scroll : System.Windows.Forms.ScrollEventHandler " Usage="member this.Scroll : System.Windows.Forms.ScrollEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ScrollEventHandler ^ Scroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -928,6 +951,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScrollControlIntoView(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollControlIntoView (activeControl As Control)" />
       <MemberSignature Language="F#" Value="member this.ScrollControlIntoView : System.Windows.Forms.Control -&gt; unit" Usage="scrollableControl.ScrollControlIntoView activeControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollControlIntoView(System::Windows::Forms::Control ^ activeControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -976,6 +1000,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateAutoScrolling" />
       <MemberSignature Language="VB.NET" Value="Protected Const ScrollStateAutoScrolling As Integer  = 1" />
       <MemberSignature Language="F#" Value="val mutable ScrollStateAutoScrolling : int" Usage="System.Windows.Forms.ScrollableControl.ScrollStateAutoScrolling" />
+      <MemberSignature Language="C++ CLI" Value="protected: int ScrollStateAutoScrolling = 1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1006,6 +1031,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateFullDrag" />
       <MemberSignature Language="VB.NET" Value="Protected Const ScrollStateFullDrag As Integer  = 16" />
       <MemberSignature Language="F#" Value="val mutable ScrollStateFullDrag : int" Usage="System.Windows.Forms.ScrollableControl.ScrollStateFullDrag" />
+      <MemberSignature Language="C++ CLI" Value="protected: int ScrollStateFullDrag = 16;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1037,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateHScrollVisible" />
       <MemberSignature Language="VB.NET" Value="Protected Const ScrollStateHScrollVisible As Integer  = 2" />
       <MemberSignature Language="F#" Value="val mutable ScrollStateHScrollVisible : int" Usage="System.Windows.Forms.ScrollableControl.ScrollStateHScrollVisible" />
+      <MemberSignature Language="C++ CLI" Value="protected: int ScrollStateHScrollVisible = 2;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1067,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateUserHasScrolled" />
       <MemberSignature Language="VB.NET" Value="Protected Const ScrollStateUserHasScrolled As Integer  = 8" />
       <MemberSignature Language="F#" Value="val mutable ScrollStateUserHasScrolled : int" Usage="System.Windows.Forms.ScrollableControl.ScrollStateUserHasScrolled" />
+      <MemberSignature Language="C++ CLI" Value="protected: int ScrollStateUserHasScrolled = 8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1098,6 +1126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollableControl.ScrollStateVScrollVisible" />
       <MemberSignature Language="VB.NET" Value="Protected Const ScrollStateVScrollVisible As Integer  = 4" />
       <MemberSignature Language="F#" Value="val mutable ScrollStateVScrollVisible : int" Usage="System.Windows.Forms.ScrollableControl.ScrollStateVScrollVisible" />
+      <MemberSignature Language="C++ CLI" Value="protected: int ScrollStateVScrollVisible = 4;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1128,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.ScrollToControl(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ScrollToControl (activeControl As Control) As Point" />
       <MemberSignature Language="F#" Value="abstract member ScrollToControl : System.Windows.Forms.Control -&gt; System.Drawing.Point&#xA;override this.ScrollToControl : System.Windows.Forms.Control -&gt; System.Drawing.Point" Usage="scrollableControl.ScrollToControl activeControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Drawing::Point ScrollToControl(System::Windows::Forms::Control ^ activeControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1165,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.SetAutoScrollMargin(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAutoScrollMargin (x As Integer, y As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetAutoScrollMargin : int * int -&gt; unit" Usage="scrollableControl.SetAutoScrollMargin (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAutoScrollMargin(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1212,6 +1243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.SetDisplayRectLocation(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetDisplayRectLocation (x As Integer, y As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetDisplayRectLocation : int * int -&gt; unit" Usage="scrollableControl.SetDisplayRectLocation (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetDisplayRectLocation(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1251,6 +1283,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.SetScrollState(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetScrollState (bit As Integer, value As Boolean)" />
       <MemberSignature Language="F#" Value="member this.SetScrollState : int * bool -&gt; unit" Usage="scrollableControl.SetScrollState (bit, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetScrollState(int bit, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1284,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.VerticalScroll" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalScroll As VScrollProperties" />
       <MemberSignature Language="F#" Value="member this.VerticalScroll : System.Windows.Forms.VScrollProperties" Usage="System.Windows.Forms.ScrollableControl.VerticalScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::VScrollProperties ^ VerticalScroll { System::Windows::Forms::VScrollProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1324,6 +1358,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollableControl.VScroll" />
       <MemberSignature Language="VB.NET" Value="Protected Property VScroll As Boolean" />
       <MemberSignature Language="F#" Value="member this.VScroll : bool with get, set" Usage="System.Windows.Forms.ScrollableControl.VScroll" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool VScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1357,6 +1392,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="scrollableControl.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

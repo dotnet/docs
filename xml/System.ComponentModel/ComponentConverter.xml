@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComponentConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentConverter&#xA;Inherits ReferenceConverter" />
   <TypeSignature Language="F#" Value="type ComponentConverter = class&#xA;    inherit ReferenceConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentConverter : System::ComponentModel::ReferenceConverter" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentConverter.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.ComponentConverter : Type -&gt; System.ComponentModel.ComponentConverter" Usage="new System.ComponentModel.ComponentConverter type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComponentConverter(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="componentConverter.GetProperties (context, value, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComponentConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="componentConverter.GetPropertiesSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

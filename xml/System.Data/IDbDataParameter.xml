@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.IDbDataParameter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbDataParameter&#xA;Implements IDataParameter" />
   <TypeSignature Language="F#" Value="type IDbDataParameter = interface&#xA;    interface IDataParameter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDbDataParameter : System::Data::IDataParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataParameter.Precision" />
       <MemberSignature Language="VB.NET" Value="Public Property Precision As Byte" />
       <MemberSignature Language="F#" Value="member this.Precision : byte with get, set" Usage="System.Data.IDbDataParameter.Precision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Precision { System::Byte get(); void set(System::Byte value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataParameter.Scale" />
       <MemberSignature Language="VB.NET" Value="Public Property Scale As Byte" />
       <MemberSignature Language="F#" Value="member this.Scale : byte with get, set" Usage="System.Data.IDbDataParameter.Scale" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Scale { System::Byte get(); void set(System::Byte value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.IDbDataParameter.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
       <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Data.IDbDataParameter.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

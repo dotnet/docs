@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityKey" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityKey" />
   <TypeSignature Language="F#" Value="type SecurityKey = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityKey abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.DecryptKey(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DecryptKey (algorithm As String, keyData As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member DecryptKey : string * byte[] -&gt; byte[]" Usage="securityKey.DecryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ DecryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.EncryptKey(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function EncryptKey (algorithm As String, keyData As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member EncryptKey : string * byte[] -&gt; byte[]" Usage="securityKey.EncryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ EncryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.IsAsymmetricAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsAsymmetricAlgorithm (algorithm As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsAsymmetricAlgorithm : string -&gt; bool" Usage="securityKey.IsAsymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsAsymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.IsSupportedAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSupportedAlgorithm (algorithm As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsSupportedAlgorithm : string -&gt; bool" Usage="securityKey.IsSupportedAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSupportedAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKey.IsSymmetricAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSymmetricAlgorithm (algorithm As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsSymmetricAlgorithm : string -&gt; bool" Usage="securityKey.IsSymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityKey.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property KeySize As Integer" />
       <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.IdentityModel.Tokens.SecurityKey.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

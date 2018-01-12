@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.SchemaTableOptionalColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class SchemaTableOptionalColumn" />
   <TypeSignature Language="F#" Value="type SchemaTableOptionalColumn = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemaTableOptionalColumn abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.AutoIncrementSeed" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoIncrementSeed As String " />
       <MemberSignature Language="F#" Value=" staticval mutable AutoIncrementSeed : string" Usage="System.Data.Common.SchemaTableOptionalColumn.AutoIncrementSeed" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AutoIncrementSeed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.AutoIncrementStep" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoIncrementStep As String " />
       <MemberSignature Language="F#" Value=" staticval mutable AutoIncrementStep : string" Usage="System.Data.Common.SchemaTableOptionalColumn.AutoIncrementStep" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AutoIncrementStep;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.BaseCatalogName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseCatalogName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseCatalogName : string" Usage="System.Data.Common.SchemaTableOptionalColumn.BaseCatalogName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseCatalogName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.BaseColumnNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseColumnNamespace As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseColumnNamespace : string" Usage="System.Data.Common.SchemaTableOptionalColumn.BaseColumnNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseColumnNamespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.BaseServerName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseServerName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseServerName : string" Usage="System.Data.Common.SchemaTableOptionalColumn.BaseServerName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseServerName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.BaseTableNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseTableNamespace As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseTableNamespace : string" Usage="System.Data.Common.SchemaTableOptionalColumn.BaseTableNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseTableNamespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.ColumnMapping" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnMapping As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnMapping : string" Usage="System.Data.Common.SchemaTableOptionalColumn.ColumnMapping" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ColumnMapping;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultValue As String " />
       <MemberSignature Language="F#" Value=" staticval mutable DefaultValue : string" Usage="System.Data.Common.SchemaTableOptionalColumn.DefaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DefaultValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Expression As String " />
       <MemberSignature Language="F#" Value=" staticval mutable Expression : string" Usage="System.Data.Common.SchemaTableOptionalColumn.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Expression;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.IsAutoIncrement" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsAutoIncrement As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsAutoIncrement : string" Usage="System.Data.Common.SchemaTableOptionalColumn.IsAutoIncrement" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsAutoIncrement;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.IsHidden" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHidden As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsHidden : string" Usage="System.Data.Common.SchemaTableOptionalColumn.IsHidden" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsHidden;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnly As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsReadOnly : string" Usage="System.Data.Common.SchemaTableOptionalColumn.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsReadOnly;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -389,6 +402,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.IsRowVersion" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRowVersion As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsRowVersion : string" Usage="System.Data.Common.SchemaTableOptionalColumn.IsRowVersion" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsRowVersion;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -424,6 +438,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableOptionalColumn.ProviderSpecificDataType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProviderSpecificDataType As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ProviderSpecificDataType : string" Usage="System.Data.Common.SchemaTableOptionalColumn.ProviderSpecificDataType" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ProviderSpecificDataType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

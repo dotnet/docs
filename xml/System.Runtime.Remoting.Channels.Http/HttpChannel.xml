@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpChannel&#xA;Inherits BaseChannelWithProperties&#xA;Implements IChannelReceiver, IChannelReceiverHook, IChannelSender, ISecurableChannel" />
   <TypeSignature Language="F#" Value="type HttpChannel = class&#xA;    inherit BaseChannelWithProperties&#xA;    interface IChannelReceiver&#xA;    interface IChannel&#xA;    interface IChannelSender&#xA;    interface IChannelReceiverHook&#xA;    interface ISecurableChannel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpChannel : System::Runtime::Remoting::Channels::BaseChannelWithProperties, System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::IChannelReceiverHook, System::Runtime::Remoting::Channels::IChannelSender, System::Runtime::Remoting::Channels::ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +82,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpChannel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Http.HttpChannel : int -&gt; System.Runtime.Remoting.Channels.Http.HttpChannel" Usage="new System.Runtime.Remoting.Channels.Http.HttpChannel port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpChannel(int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -132,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IClientChannelSinkProvider,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, clientSinkProvider As IClientChannelSinkProvider, serverSinkProvider As IServerChannelSinkProvider)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Http.HttpChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IClientChannelSinkProvider * System.Runtime.Remoting.Channels.IServerChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Http.HttpChannel" Usage="new System.Runtime.Remoting.Channels.Http.HttpChannel (properties, clientSinkProvider, serverSinkProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ clientSinkProvider, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ serverSinkProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.AddHookChannelUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHookChannelUri (channelUri As String)" />
       <MemberSignature Language="F#" Value="abstract member AddHookChannelUri : string -&gt; unit&#xA;override this.AddHookChannelUri : string -&gt; unit" Usage="httpChannel.AddHookChannelUri channelUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddHookChannelUri(System::String ^ channelUri);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiverHook.AddHookChannelUri(System.String)</InterfaceMember>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
       <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData</InterfaceMember>
@@ -235,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelName As String" />
       <MemberSignature Language="F#" Value="member this.ChannelName : string" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannel.ChannelName</InterfaceMember>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelPriority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelPriority As Integer" />
       <MemberSignature Language="F#" Value="member this.ChannelPriority : int" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelPriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannel.ChannelPriority</InterfaceMember>
@@ -295,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelScheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelScheme As String" />
       <MemberSignature Language="F#" Value="member this.ChannelScheme : string" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelScheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelScheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannelReceiverHook.ChannelScheme</InterfaceMember>
@@ -327,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelSinkChain" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelSinkChain As IServerChannelSink" />
       <MemberSignature Language="F#" Value="member this.ChannelSinkChain : System.Runtime.Remoting.Channels.IServerChannelSink" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelSinkChain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSink ^ ChannelSinkChain { System::Runtime::Remoting::Channels::IServerChannelSink ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannelReceiverHook.ChannelSinkChain</InterfaceMember>
@@ -359,6 +369,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.CreateMessageSink(System.String,System.Object,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMessageSink (url As String, remoteChannelData As Object, ByRef objectURI As String) As IMessageSink" />
       <MemberSignature Language="F#" Value="abstract member CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="httpChannel.CreateMessageSink (url, remoteChannelData, objectURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ CreateMessageSink(System::String ^ url, System::Object ^ remoteChannelData, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink(System.String,System.Object,System.String@)</InterfaceMember>
@@ -405,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.GetUrlsForUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUrlsForUri (objectURI As String) As String()" />
       <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]&#xA;override this.GetUrlsForUri : string -&gt; string[]" Usage="httpChannel.GetUrlsForUri objectURI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectURI);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)</InterfaceMember>
@@ -441,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.IsSecured" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSecured As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecured : bool with get, set" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.IsSecured" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.ISecurableChannel.IsSecured</InterfaceMember>
@@ -471,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(key As Object) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -505,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -540,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.Parse(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Parse (url As String, ByRef objectURI As String) As String" />
       <MemberSignature Language="F#" Value="abstract member Parse : string *  -&gt; string&#xA;override this.Parse : string *  -&gt; string" Usage="httpChannel.Parse (url, objectURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannel.Parse(System.String,System.String@)</InterfaceMember>
@@ -580,6 +596,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -609,6 +626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
       <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="httpChannel.StartListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)</InterfaceMember>
@@ -644,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
       <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="httpChannel.StopListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)</InterfaceMember>
@@ -672,6 +691,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.WantsToListen" />
       <MemberSignature Language="VB.NET" Value="Public Property WantsToListen As Boolean" />
       <MemberSignature Language="F#" Value="member this.WantsToListen : bool with get, set" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.WantsToListen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WantsToListen { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

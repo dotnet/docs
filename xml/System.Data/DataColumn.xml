@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class DataColumn&#xA;Inherits MarshalByValueComponent" />
   <TypeSignature Language="F#" Value="type DataColumn = class&#xA;    inherit MarshalByValueComponent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataColumn : System::ComponentModel::MarshalByValueComponent" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -92,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnName As String)" />
       <MemberSignature Language="F#" Value="new System.Data.DataColumn : string -&gt; System.Data.DataColumn" Usage="new System.Data.DataColumn columnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumn(System::String ^ columnName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -187,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnName As String, dataType As Type)" />
       <MemberSignature Language="F#" Value="new System.Data.DataColumn : string * Type -&gt; System.Data.DataColumn" Usage="new System.Data.DataColumn (columnName, dataType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumn(System::String ^ columnName, Type ^ dataType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (columnName As String, dataType As Type, expr As String)" />
       <MemberSignature Language="F#" Value="new System.Data.DataColumn : string * Type * string -&gt; System.Data.DataColumn" Usage="new System.Data.DataColumn (columnName, dataType, expr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumn(System::String ^ columnName, Type ^ dataType, System::String ^ expr);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -283,6 +288,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string columnName, class System.Type dataType, string expr, valuetype System.Data.MappingType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String,System.Type,System.String,System.Data.MappingType)" />
       <MemberSignature Language="F#" Value="new System.Data.DataColumn : string * Type * string * System.Data.MappingType -&gt; System.Data.DataColumn" Usage="new System.Data.DataColumn (columnName, dataType, expr, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumn(System::String ^ columnName, Type ^ dataType, System::String ^ expr, System::Data::MappingType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -344,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AllowDBNull" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowDBNull As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowDBNull : bool with get, set" Usage="System.Data.DataColumn.AllowDBNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowDBNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -390,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AutoIncrement" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoIncrement As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoIncrement : bool with get, set" Usage="System.Data.DataColumn.AutoIncrement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoIncrement { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -457,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AutoIncrementSeed" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoIncrementSeed As Long" />
       <MemberSignature Language="F#" Value="member this.AutoIncrementSeed : int64 with get, set" Usage="System.Data.DataColumn.AutoIncrementSeed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long AutoIncrementSeed { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -505,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AutoIncrementStep" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoIncrementStep As Long" />
       <MemberSignature Language="F#" Value="member this.AutoIncrementStep : int64 with get, set" Usage="System.Data.DataColumn.AutoIncrementStep" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long AutoIncrementStep { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -554,6 +564,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
       <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="System.Data.DataColumn.Caption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -599,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.CheckNotAllowNull" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub CheckNotAllowNull ()" />
       <MemberSignature Language="F#" Value="member this.CheckNotAllowNull : unit -&gt; unit" Usage="dataColumn.CheckNotAllowNull " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CheckNotAllowNull();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -628,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.CheckUnique" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckUnique ()" />
       <MemberSignature Language="F#" Value="member this.CheckUnique : unit -&gt; unit" Usage="dataColumn.CheckUnique " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckUnique();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -657,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ColumnMapping" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ColumnMapping As MappingType" />
       <MemberSignature Language="F#" Value="member this.ColumnMapping : System.Data.MappingType with get, set" Usage="System.Data.DataColumn.ColumnMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::MappingType ColumnMapping { System::Data::MappingType get(); void set(System::Data::MappingType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -734,6 +748,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnName As String" />
       <MemberSignature Language="F#" Value="member this.ColumnName : string with get, set" Usage="System.Data.DataColumn.ColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ColumnName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -791,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As Type" />
       <MemberSignature Language="F#" Value="member this.DataType : Type with get, set" Usage="System.Data.DataColumn.DataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DataType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -916,6 +932,7 @@ myDataTable.Rows[0][0] = newValue;
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.DateTimeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property DateTimeMode As DataSetDateTime" />
       <MemberSignature Language="F#" Value="member this.DateTimeMode : System.Data.DataSetDateTime with get, set" Usage="System.Data.DataColumn.DateTimeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataSetDateTime DateTimeMode { System::Data::DataSetDateTime get(); void set(System::Data::DataSetDateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -960,6 +977,7 @@ myDataTable.Rows[0][0] = newValue;
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As Object" />
       <MemberSignature Language="F#" Value="member this.DefaultValue : obj with get, set" Usage="System.Data.DataColumn.DefaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1017,6 +1035,7 @@ myDataTable.Rows[0][0] = newValue;
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
       <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="System.Data.DataColumn.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1334,6 +1353,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ExtendedProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedProperties As PropertyCollection" />
       <MemberSignature Language="F#" Value="member this.ExtendedProperties : System.Data.PropertyCollection" Usage="System.Data.DataColumn.ExtendedProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::PropertyCollection ^ ExtendedProperties { System::Data::PropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1386,6 +1406,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="System.Data.DataColumn.MaxLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1427,6 +1448,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Data.DataColumn.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1466,6 +1488,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanging (pcevent As PropertyChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanging : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanging : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="dataColumn.OnPropertyChanging pcevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanging(System::ComponentModel::PropertyChangedEventArgs ^ pcevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1498,6 +1521,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Ordinal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ordinal As Integer" />
       <MemberSignature Language="F#" Value="member this.Ordinal : int" Usage="System.Data.DataColumn.Ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Ordinal { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1545,6 +1569,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Prefix" />
       <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
       <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Data.DataColumn.Prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1586,6 +1611,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.RaisePropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub RaisePropertyChanging (name As String)" />
       <MemberSignature Language="F#" Value="member this.RaisePropertyChanging : string -&gt; unit" Usage="dataColumn.RaisePropertyChanging name" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RaisePropertyChanging(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1618,6 +1644,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Data.DataColumn.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1666,6 +1693,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.SetOrdinal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetOrdinal (ordinal As Integer)" />
       <MemberSignature Language="F#" Value="member this.SetOrdinal : int -&gt; unit" Usage="dataColumn.SetOrdinal ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOrdinal(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1707,6 +1735,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As DataTable" />
       <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.DataColumn.Table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1755,6 +1784,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataColumn.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1797,6 +1827,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Unique" />
       <MemberSignature Language="VB.NET" Value="Public Property Unique As Boolean" />
       <MemberSignature Language="F#" Value="member this.Unique : bool with get, set" Usage="System.Data.DataColumn.Unique" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unique { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

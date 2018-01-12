@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputDevice" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputDevice&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="F#" Value="type InputDevice = class&#xA;    inherit DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputDevice abstract : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputDevice.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InputDevice();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +43,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputDevice.ActiveSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ActiveSource As PresentationSource" />
       <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.InputDevice.ActiveSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::PresentationSource ^ ActiveSource { System::Windows::PresentationSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputDevice.Target" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Target As IInputElement" />
       <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.InputDevice.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::IInputElement ^ Target { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

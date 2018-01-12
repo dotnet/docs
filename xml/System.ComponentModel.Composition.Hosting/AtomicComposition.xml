@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.AtomicComposition" />
   <TypeSignature Language="VB.NET" Value="Public Class AtomicComposition&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type AtomicComposition = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AtomicComposition : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomicComposition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor(System.ComponentModel.Composition.Hosting.AtomicComposition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (outerAtomicComposition As AtomicComposition)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.AtomicComposition : System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; System.ComponentModel.Composition.Hosting.AtomicComposition" Usage="new System.ComponentModel.Composition.Hosting.AtomicComposition outerAtomicComposition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomicComposition(System::ComponentModel::Composition::Hosting::AtomicComposition ^ outerAtomicComposition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.AddCompleteAction(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCompleteAction (completeAction As Action)" />
       <MemberSignature Language="F#" Value="member this.AddCompleteAction : Action -&gt; unit" Usage="atomicComposition.AddCompleteAction completeAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCompleteAction(Action ^ completeAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.AddRevertAction(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRevertAction (revertAction As Action)" />
       <MemberSignature Language="F#" Value="member this.AddRevertAction : Action -&gt; unit" Usage="atomicComposition.AddRevertAction revertAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRevertAction(Action ^ revertAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="F#" Value="member this.Complete : unit -&gt; unit" Usage="atomicComposition.Complete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="atomicComposition.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="atomicComposition.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (key As Object, value As Object)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj * obj -&gt; unit" Usage="atomicComposition.SetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.TryGetValue``1(System.Object,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T) (key As Object, ByRef value As T) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryGetValue : obj *  -&gt; bool" Usage="atomicComposition.TryGetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; bool TryGetValue(System::Object ^ key, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.TryGetValue``1(System.Object,System.Boolean,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T) (key As Object, localAtomicCompositionOnly As Boolean, ByRef value As T) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryGetValue : obj * bool *  -&gt; bool" Usage="atomicComposition.TryGetValue (key, localAtomicCompositionOnly, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; bool TryGetValue(System::Object ^ key, bool localAtomicCompositionOnly, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

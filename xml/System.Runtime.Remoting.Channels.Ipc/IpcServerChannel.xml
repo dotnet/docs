@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" />
   <TypeSignature Language="VB.NET" Value="Public Class IpcServerChannel&#xA;Implements IChannelReceiver, ISecurableChannel" />
   <TypeSignature Language="F#" Value="type IpcServerChannel = class&#xA;    interface IChannelReceiver&#xA;    interface IChannel&#xA;    interface ISecurableChannel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IpcServerChannel : System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (portName As String)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel : string -&gt; System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel portName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcServerChannel(System::String ^ portName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, sinkProvider As IServerChannelSinkProvider)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IServerChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel (properties, sinkProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcServerChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ sinkProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, portName As String)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel : string * string -&gt; System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel (name, portName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcServerChannel(System::String ^ name, System::String ^ portName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -181,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IServerChannelSinkProvider,System.Security.AccessControl.CommonSecurityDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, sinkProvider As IServerChannelSinkProvider, securityDescriptor As CommonSecurityDescriptor)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IServerChannelSinkProvider * System.Security.AccessControl.CommonSecurityDescriptor -&gt; System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel (properties, sinkProvider, securityDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcServerChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ sinkProvider, System::Security::AccessControl::CommonSecurityDescriptor ^ securityDescriptor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.#ctor(System.String,System.String,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, portName As String, sinkProvider As IServerChannelSinkProvider)" />
       <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel : string * string * System.Runtime.Remoting.Channels.IServerChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcServerChannel (name, portName, sinkProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcServerChannel(System::String ^ name, System::String ^ portName, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ sinkProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -258,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.ChannelData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
       <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.ChannelData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData</InterfaceMember>
@@ -296,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.ChannelName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelName As String" />
       <MemberSignature Language="F#" Value="member this.ChannelName : string" Usage="System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.ChannelName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannel.ChannelName</InterfaceMember>
@@ -334,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.ChannelPriority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelPriority As Integer" />
       <MemberSignature Language="F#" Value="member this.ChannelPriority : int" Usage="System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.ChannelPriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannel.ChannelPriority</InterfaceMember>
@@ -372,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.GetChannelUri" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChannelUri () As String" />
       <MemberSignature Language="F#" Value="member this.GetChannelUri : unit -&gt; string" Usage="ipcServerChannel.GetChannelUri " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetChannelUri();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -408,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.GetUrlsForUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUrlsForUri (objectUri As String) As String()" />
       <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]&#xA;override this.GetUrlsForUri : string -&gt; string[]" Usage="ipcServerChannel.GetUrlsForUri objectUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectUri);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)</InterfaceMember>
@@ -450,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.IsSecured" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSecured As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSecured : bool with get, set" Usage="System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.IsSecured" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.Remoting.Channels.ISecurableChannel.IsSecured</InterfaceMember>
@@ -473,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.Parse(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Parse (url As String, ByRef objectURI As String) As String" />
       <MemberSignature Language="F#" Value="abstract member Parse : string *  -&gt; string&#xA;override this.Parse : string *  -&gt; string" Usage="ipcServerChannel.Parse (url, objectURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannel.Parse(System.String,System.String@)</InterfaceMember>
@@ -517,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
       <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="ipcServerChannel.StartListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)</InterfaceMember>
@@ -555,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
       <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="ipcServerChannel.StopListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)</InterfaceMember>

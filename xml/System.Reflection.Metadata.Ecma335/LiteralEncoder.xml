@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.LiteralEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure LiteralEncoder" />
   <TypeSignature Language="F#" Value="type LiteralEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class LiteralEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.LiteralEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.LiteralEncoder" Usage="new System.Reflection.Metadata.Ecma335.LiteralEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LiteralEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.LiteralEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.LiteralEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.Scalar" />
       <MemberSignature Language="VB.NET" Value="Public Function Scalar () As ScalarEncoder" />
       <MemberSignature Language="F#" Value="member this.Scalar : unit -&gt; System.Reflection.Metadata.Ecma335.ScalarEncoder" Usage="literalEncoder.Scalar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::ScalarEncoder Scalar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.TaggedScalar(System.Action{System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder},System.Action{System.Reflection.Metadata.Ecma335.ScalarEncoder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub TaggedScalar (type As Action(Of CustomAttributeElementTypeEncoder), scalar As Action(Of ScalarEncoder))" />
       <MemberSignature Language="F#" Value="member this.TaggedScalar : Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder&gt; * Action&lt;System.Reflection.Metadata.Ecma335.ScalarEncoder&gt; -&gt; unit" Usage="literalEncoder.TaggedScalar (type, scalar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaggedScalar(Action&lt;System::Reflection::Metadata::Ecma335::CustomAttributeElementTypeEncoder&gt; ^ type, Action&lt;System::Reflection::Metadata::Ecma335::ScalarEncoder&gt; ^ scalar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.TaggedScalar(System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder@,System.Reflection.Metadata.Ecma335.ScalarEncoder@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TaggedScalar (ByRef type As CustomAttributeElementTypeEncoder, ByRef scalar As ScalarEncoder)" />
       <MemberSignature Language="F#" Value="member this.TaggedScalar :  *  -&gt; unit" Usage="literalEncoder.TaggedScalar (type, scalar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaggedScalar([Runtime::InteropServices::Out] System::Reflection::Metadata::Ecma335::CustomAttributeElementTypeEncoder % type, [Runtime::InteropServices::Out] System::Reflection::Metadata::Ecma335::ScalarEncoder % scalar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.TaggedVector(System.Action{System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder},System.Action{System.Reflection.Metadata.Ecma335.VectorEncoder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub TaggedVector (arrayType As Action(Of CustomAttributeArrayTypeEncoder), vector As Action(Of VectorEncoder))" />
       <MemberSignature Language="F#" Value="member this.TaggedVector : Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder&gt; * Action&lt;System.Reflection.Metadata.Ecma335.VectorEncoder&gt; -&gt; unit" Usage="literalEncoder.TaggedVector (arrayType, vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaggedVector(Action&lt;System::Reflection::Metadata::Ecma335::CustomAttributeArrayTypeEncoder&gt; ^ arrayType, Action&lt;System::Reflection::Metadata::Ecma335::VectorEncoder&gt; ^ vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -166,6 +173,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.TaggedVector(System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder@,System.Reflection.Metadata.Ecma335.VectorEncoder@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TaggedVector (ByRef arrayType As CustomAttributeArrayTypeEncoder, ByRef vector As VectorEncoder)" />
       <MemberSignature Language="F#" Value="member this.TaggedVector :  *  -&gt; unit" Usage="literalEncoder.TaggedVector (arrayType, vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TaggedVector([Runtime::InteropServices::Out] System::Reflection::Metadata::Ecma335::CustomAttributeArrayTypeEncoder % arrayType, [Runtime::InteropServices::Out] System::Reflection::Metadata::Ecma335::VectorEncoder % vector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.Vector" />
       <MemberSignature Language="VB.NET" Value="Public Function Vector () As VectorEncoder" />
       <MemberSignature Language="F#" Value="member this.Vector : unit -&gt; System.Reflection.Metadata.Ecma335.VectorEncoder" Usage="literalEncoder.Vector " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::VectorEncoder Vector();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

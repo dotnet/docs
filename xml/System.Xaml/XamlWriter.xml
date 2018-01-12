@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlWriter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlWriter&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type XamlWriter = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlWriter abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="xamlWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="xamlWriter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlWriter.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.Xaml.XamlWriter.IsDisposed" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlWriter.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.XamlWriter.SchemaContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -177,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteEndMember" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndMember ()" />
       <MemberSignature Language="F#" Value="abstract member WriteEndMember : unit -&gt; unit" Usage="xamlWriter.WriteEndMember " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEndMember();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -197,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteEndObject" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndObject ()" />
       <MemberSignature Language="F#" Value="abstract member WriteEndObject : unit -&gt; unit" Usage="xamlWriter.WriteEndObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEndObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -217,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteGetObject" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteGetObject ()" />
       <MemberSignature Language="F#" Value="abstract member WriteGetObject : unit -&gt; unit" Usage="xamlWriter.WriteGetObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteGetObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -236,6 +246,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteNamespace(class System.Xaml.NamespaceDeclaration namespaceDeclaration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteNamespace(System.Xaml.NamespaceDeclaration)" />
       <MemberSignature Language="F#" Value="abstract member WriteNamespace : System.Xaml.NamespaceDeclaration -&gt; unit" Usage="xamlWriter.WriteNamespace namespaceDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteNamespace(System::Xaml::NamespaceDeclaration ^ namespaceDeclaration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -259,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteNode(System.Xaml.XamlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteNode (reader As XamlReader)" />
       <MemberSignature Language="F#" Value="member this.WriteNode : System.Xaml.XamlReader -&gt; unit" Usage="xamlWriter.WriteNode reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNode(System::Xaml::XamlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -295,6 +307,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartMember(class System.Xaml.XamlMember xamlMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteStartMember(System.Xaml.XamlMember)" />
       <MemberSignature Language="F#" Value="abstract member WriteStartMember : System.Xaml.XamlMember -&gt; unit" Usage="xamlWriter.WriteStartMember xamlMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartMember(System::Xaml::XamlMember ^ xamlMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -318,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteStartObject(System.Xaml.XamlType)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartObject (type As XamlType)" />
       <MemberSignature Language="F#" Value="abstract member WriteStartObject : System.Xaml.XamlType -&gt; unit" Usage="xamlWriter.WriteStartObject type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartObject(System::Xaml::XamlType ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -341,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriter.WriteValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteValue (value As Object)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : obj -&gt; unit" Usage="xamlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

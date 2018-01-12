@@ -3,6 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi abstract beforefieldinit TypeConverter/SimplePropertyDescriptor extends System.ComponentModel.PropertyDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeConverter.SimplePropertyDescriptor" />
   <TypeSignature Language="VB.NET" Value="Protected MustInherit Class TypeConverter.SimplePropertyDescriptor&#xA;Inherits PropertyDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class TypeConverter::SimplePropertyDescriptor abstract : System::ComponentModel::PropertyDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (componentType As Type, name As String, propertyType As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor : Type * string * Type -&gt; System.ComponentModel.TypeConverter.SimplePropertyDescriptor" Usage="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor (componentType, name, propertyType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -91,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (componentType As Type, name As String, propertyType As Type, attributes As Attribute())" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor : Type * string * Type * Attribute[] -&gt; System.ComponentModel.TypeConverter.SimplePropertyDescriptor" Usage="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor (componentType, name, propertyType, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.CanResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanResetValue (component As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanResetValue : obj -&gt; bool" Usage="simplePropertyDescriptor.CanResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -176,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ComponentType As Type" />
       <MemberSignature Language="F#" Value="member this.ComponentType : Type" Usage="System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ComponentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -244,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -277,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetValue (component As Object)" />
       <MemberSignature Language="F#" Value="override this.ResetValue : obj -&gt; unit" Usage="simplePropertyDescriptor.ResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -320,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ShouldSerializeValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerializeValue (component As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ShouldSerializeValue : obj -&gt; bool" Usage="simplePropertyDescriptor.ShouldSerializeValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerializeValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

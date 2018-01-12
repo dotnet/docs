@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsStreamSecurityBindingElement&#xA;Inherits BindingElement&#xA;Implements IPolicyExportExtension, ISecurityCapabilities, ITransportTokenAssertionProvider" />
   <TypeSignature Language="F#" Value="type WindowsStreamSecurityBindingElement = class&#xA;    inherit BindingElement&#xA;    interface ISecurityCapabilities&#xA;    interface IPolicyExportExtension&#xA;    interface ITransportTokenAssertionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsStreamSecurityBindingElement : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Channels::ISecurityCapabilities, System::ServiceModel::Channels::ITransportTokenAssertionProvider, System::ServiceModel::Description::IPolicyExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsStreamSecurityBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.#ctor(System.ServiceModel.Channels.WindowsStreamSecurityBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As WindowsStreamSecurityBindingElement)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.WindowsStreamSecurityBindingElement : System.ServiceModel.Channels.WindowsStreamSecurityBindingElement -&gt; System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" Usage="new System.ServiceModel.Channels.WindowsStreamSecurityBindingElement other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsStreamSecurityBindingElement(System::ServiceModel::Channels::WindowsStreamSecurityBindingElement ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="windowsStreamSecurityBindingElement.BuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="windowsStreamSecurityBindingElement.BuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.BuildClientStreamUpgradeProvider(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildClientStreamUpgradeProvider (context As BindingContext) As StreamUpgradeProvider" />
       <MemberSignature Language="F#" Value="override this.BuildClientStreamUpgradeProvider : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.StreamUpgradeProvider" Usage="windowsStreamSecurityBindingElement.BuildClientStreamUpgradeProvider context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::StreamUpgradeProvider ^ BuildClientStreamUpgradeProvider(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.BuildServerStreamUpgradeProvider(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildServerStreamUpgradeProvider (context As BindingContext) As StreamUpgradeProvider" />
       <MemberSignature Language="F#" Value="override this.BuildServerStreamUpgradeProvider : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.StreamUpgradeProvider" Usage="windowsStreamSecurityBindingElement.BuildServerStreamUpgradeProvider context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::StreamUpgradeProvider ^ BuildServerStreamUpgradeProvider(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="windowsStreamSecurityBindingElement.CanBuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -315,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="windowsStreamSecurityBindingElement.CanBuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -358,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="windowsStreamSecurityBindingElement.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -387,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="windowsStreamSecurityBindingElement.GetProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -441,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.GetTransportTokenAssertion" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTransportTokenAssertion () As XmlElement" />
       <MemberSignature Language="F#" Value="abstract member GetTransportTokenAssertion : unit -&gt; System.Xml.XmlElement&#xA;override this.GetTransportTokenAssertion : unit -&gt; System.Xml.XmlElement" Usage="windowsStreamSecurityBindingElement.GetTransportTokenAssertion " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlElement ^ GetTransportTokenAssertion();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.ITransportTokenAssertionProvider.GetTransportTokenAssertion</InterfaceMember>
@@ -472,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -493,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportedRequestProtectionLevel" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedRequestProtectionLevel As ProtectionLevel Implements ISecurityCapabilities.SupportedRequestProtectionLevel" />
       <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="property System::Net::Security::ProtectionLevel System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel</InterfaceMember>
@@ -517,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportedResponseProtectionLevel" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportedResponseProtectionLevel As ProtectionLevel Implements ISecurityCapabilities.SupportedResponseProtectionLevel" />
       <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="property System::Net::Security::ProtectionLevel System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel</InterfaceMember>
@@ -541,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportsClientAuthentication" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsClientAuthentication As Boolean Implements ISecurityCapabilities.SupportsClientAuthentication" />
       <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication</InterfaceMember>
@@ -565,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportsClientWindowsIdentity" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsClientWindowsIdentity As Boolean Implements ISecurityCapabilities.SupportsClientWindowsIdentity" />
       <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity</InterfaceMember>
@@ -589,6 +606,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Channels#ISecurityCapabilities#SupportsServerAuthentication" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsServerAuthentication As Boolean Implements ISecurityCapabilities.SupportsServerAuthentication" />
       <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication</InterfaceMember>
@@ -612,6 +630,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>

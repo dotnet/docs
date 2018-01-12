@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapOperationBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapOperationBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
   <TypeSignature Language="F#" Value="type SoapOperationBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapOperationBinding : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapOperationBinding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapOperationBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapOperationBinding.SoapAction" />
       <MemberSignature Language="VB.NET" Value="Public Property SoapAction As String" />
       <MemberSignature Language="F#" Value="member this.SoapAction : string with get, set" Usage="System.Web.Services.Description.SoapOperationBinding.SoapAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoapAction { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapOperationBinding.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As SoapBindingStyle" />
       <MemberSignature Language="F#" Value="member this.Style : System.Web.Services.Description.SoapBindingStyle with get, set" Usage="System.Web.Services.Description.SoapOperationBinding.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapBindingStyle Style { System::Web::Services::Description::SoapBindingStyle get(); void set(System::Web::Services::Description::SoapBindingStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

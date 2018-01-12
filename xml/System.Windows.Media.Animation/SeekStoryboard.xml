@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SeekStoryboard" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SeekStoryboard&#xA;Inherits ControllableStoryboardAction" />
   <TypeSignature Language="F#" Value="type SeekStoryboard = class&#xA;    inherit ControllableStoryboardAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SeekStoryboard sealed : System::Windows::Media::Animation::ControllableStoryboardAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SeekStoryboard.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SeekStoryboard();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SeekStoryboard.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.Offset : TimeSpan with get, set" Usage="System.Windows.Media.Animation.SeekStoryboard.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Offset { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SeekStoryboard.Origin" />
       <MemberSignature Language="VB.NET" Value="Public Property Origin As TimeSeekOrigin" />
       <MemberSignature Language="F#" Value="member this.Origin : System.Windows.Media.Animation.TimeSeekOrigin with get, set" Usage="System.Windows.Media.Animation.SeekStoryboard.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::TimeSeekOrigin Origin { System::Windows::Media::Animation::TimeSeekOrigin get(); void set(System::Windows::Media::Animation::TimeSeekOrigin value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SeekStoryboard.ShouldSerializeOffset" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeOffset () As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeOffset : unit -&gt; bool" Usage="seekStoryboard.ShouldSerializeOffset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeOffset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

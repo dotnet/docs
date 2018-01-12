@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Copy" />
   <TypeSignature Language="VB.NET" Value="Public Class Copy&#xA;Inherits TaskExtension&#xA;Implements ICancelableTask" />
   <TypeSignature Language="F#" Value="type Copy = class&#xA;    inherit TaskExtension&#xA;    interface ICancelableTask&#xA;    interface ITask" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Copy : Microsoft::Build::Tasks::TaskExtension, Microsoft::Build::Framework::ICancelableTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Copy.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Copy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Copy.Cancel" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
       <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit&#xA;override this.Cancel : unit -&gt; unit" Usage="copy.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Cancel();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ICancelableTask.Cancel</InterfaceMember>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.CopiedFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CopiedFiles As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.CopiedFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.Copy.CopiedFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CopiedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.DestinationFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property DestinationFiles As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.DestinationFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Copy.DestinationFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ DestinationFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.DestinationFolder" />
       <MemberSignature Language="VB.NET" Value="Public Property DestinationFolder As ITaskItem" />
       <MemberSignature Language="F#" Value="member this.DestinationFolder : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.Copy.DestinationFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ DestinationFolder { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -156,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Copy.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="copy.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Framework.ITask.Execute</InterfaceMember>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.OverwriteReadOnlyFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property OverwriteReadOnlyFiles As Boolean" />
       <MemberSignature Language="F#" Value="member this.OverwriteReadOnlyFiles : bool with get, set" Usage="Microsoft.Build.Tasks.Copy.OverwriteReadOnlyFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverwriteReadOnlyFiles { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -204,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.Retries" />
       <MemberSignature Language="VB.NET" Value="Public Property Retries As Integer" />
       <MemberSignature Language="F#" Value="member this.Retries : int with get, set" Usage="Microsoft.Build.Tasks.Copy.Retries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Retries { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -225,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.RetryDelayMilliseconds" />
       <MemberSignature Language="VB.NET" Value="Public Property RetryDelayMilliseconds As Integer" />
       <MemberSignature Language="F#" Value="member this.RetryDelayMilliseconds : int with get, set" Usage="Microsoft.Build.Tasks.Copy.RetryDelayMilliseconds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RetryDelayMilliseconds { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.SkipUnchangedFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipUnchangedFiles As Boolean" />
       <MemberSignature Language="F#" Value="member this.SkipUnchangedFiles : bool with get, set" Usage="Microsoft.Build.Tasks.Copy.SkipUnchangedFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipUnchangedFiles { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -275,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.SourceFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceFiles As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.SourceFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Copy.SourceFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SourceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -301,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Copy.UseHardlinksIfPossible" />
       <MemberSignature Language="VB.NET" Value="Public Property UseHardlinksIfPossible As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseHardlinksIfPossible : bool with get, set" Usage="Microsoft.Build.Tasks.Copy.UseHardlinksIfPossible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseHardlinksIfPossible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

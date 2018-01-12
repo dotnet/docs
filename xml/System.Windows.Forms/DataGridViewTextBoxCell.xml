@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTextBoxCell" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewTextBoxCell&#xA;Inherits DataGridViewCell" />
   <TypeSignature Language="F#" Value="type DataGridViewTextBoxCell = class&#xA;    inherit DataGridViewCell" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewTextBoxCell : System::Windows::Forms::DataGridViewCell" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewTextBoxCell();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="dataGridViewTextBoxCell.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.DetachEditingControl" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DetachEditingControl ()" />
       <MemberSignature Language="F#" Value="override this.DetachEditingControl : unit -&gt; unit" Usage="dataGridViewTextBoxCell.DetachEditingControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DetachEditingControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxCell.FormattedValueType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FormattedValueType As Type" />
       <MemberSignature Language="F#" Value="member this.FormattedValueType : Type" Usage="System.Windows.Forms.DataGridViewTextBoxCell.FormattedValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ FormattedValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetContentBounds(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.GetContentBounds : System.Drawing.Graphics * System.Windows.Forms.DataGridViewCellStyle * int -&gt; System.Drawing.Rectangle" Usage="dataGridViewTextBoxCell.GetContentBounds (graphics, cellStyle, rowIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetContentBounds(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetErrorIconBounds(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       <MemberSignature Language="F#" Value="override this.GetErrorIconBounds : System.Drawing.Graphics * System.Windows.Forms.DataGridViewCellStyle * int -&gt; System.Drawing.Rectangle" Usage="dataGridViewTextBoxCell.GetErrorIconBounds (graphics, cellStyle, rowIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetErrorIconBounds(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(class System.Drawing.Graphics graphics, class System.Windows.Forms.DataGridViewCellStyle cellStyle, int32 rowIndex, valuetype System.Drawing.Size constraintSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Graphics * System.Windows.Forms.DataGridViewCellStyle * int * System.Drawing.Size -&gt; System.Drawing.Size" Usage="dataGridViewTextBoxCell.GetPreferredSize (graphics, cellStyle, rowIndex, constraintSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Graphics ^ graphics, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, int rowIndex, System::Drawing::Size constraintSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeEditingControl(int32 rowIndex, object initialFormattedValue, class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl(System.Int32,System.Object,System.Windows.Forms.DataGridViewCellStyle)" />
       <MemberSignature Language="F#" Value="override this.InitializeEditingControl : int * obj * System.Windows.Forms.DataGridViewCellStyle -&gt; unit" Usage="dataGridViewTextBoxCell.InitializeEditingControl (rowIndex, initialFormattedValue, dataGridViewCellStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeEditingControl(int rowIndex, System::Object ^ initialFormattedValue, System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.KeyEntersEditMode(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function KeyEntersEditMode (e As KeyEventArgs) As Boolean" />
       <MemberSignature Language="F#" Value="override this.KeyEntersEditMode : System.Windows.Forms.KeyEventArgs -&gt; bool" Usage="dataGridViewTextBoxCell.KeyEntersEditMode e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool KeyEntersEditMode(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -347,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxCell.MaxInputLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MaxInputLength As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxInputLength : int with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxCell.MaxInputLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxInputLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.OnEnter(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnter (rowIndex As Integer, throughMouseClick As Boolean)" />
       <MemberSignature Language="F#" Value="override this.OnEnter : int * bool -&gt; unit" Usage="dataGridViewTextBoxCell.OnEnter (rowIndex, throughMouseClick)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnter(int rowIndex, bool throughMouseClick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -423,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.OnLeave(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLeave (rowIndex As Integer, throughMouseClick As Boolean)" />
       <MemberSignature Language="F#" Value="override this.OnLeave : int * bool -&gt; unit" Usage="dataGridViewTextBoxCell.OnLeave (rowIndex, throughMouseClick)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLeave(int rowIndex, bool throughMouseClick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -464,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseClick (e As DataGridViewCellMouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseClick : System.Windows.Forms.DataGridViewCellMouseEventArgs -&gt; unit" Usage="dataGridViewTextBoxCell.OnMouseClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseClick(System::Windows::Forms::DataGridViewCellMouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -502,6 +516,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Paint(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle cellBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates cellState, object value, object formattedValue, string errorText, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.Windows.Forms.DataGridViewAdvancedBorderStyle advancedBorderStyle, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)" />
       <MemberSignature Language="F#" Value="override this.Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * obj * obj * string * System.Windows.Forms.DataGridViewCellStyle * System.Windows.Forms.DataGridViewAdvancedBorderStyle * System.Windows.Forms.DataGridViewPaintParts -&gt; unit" Usage="dataGridViewTextBoxCell.Paint (graphics, clipBounds, cellBounds, rowIndex, cellState, value, formattedValue, errorText, cellStyle, advancedBorderStyle, paintParts)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Paint(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle cellBounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates cellState, System::Object ^ value, System::Object ^ formattedValue, System::String ^ errorText, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ advancedBorderStyle, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -546,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.PositionEditingControl(System.Boolean,System.Boolean,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Windows.Forms.DataGridViewCellStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PositionEditingControl (setLocation As Boolean, setSize As Boolean, cellBounds As Rectangle, cellClip As Rectangle, cellStyle As DataGridViewCellStyle, singleVerticalBorderAdded As Boolean, singleHorizontalBorderAdded As Boolean, isFirstDisplayedColumn As Boolean, isFirstDisplayedRow As Boolean)" />
       <MemberSignature Language="F#" Value="override this.PositionEditingControl : bool * bool * System.Drawing.Rectangle * System.Drawing.Rectangle * System.Windows.Forms.DataGridViewCellStyle * bool * bool * bool * bool -&gt; unit" Usage="dataGridViewTextBoxCell.PositionEditingControl (setLocation, setSize, cellBounds, cellClip, cellStyle, singleVerticalBorderAdded, singleHorizontalBorderAdded, isFirstDisplayedColumn, isFirstDisplayedRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PositionEditingControl(bool setLocation, bool setSize, System::Drawing::Rectangle cellBounds, System::Drawing::Rectangle cellClip, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, bool singleVerticalBorderAdded, bool singleHorizontalBorderAdded, bool isFirstDisplayedColumn, bool isFirstDisplayedRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -591,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxCell.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewTextBoxCell.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -613,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxCell.ValueType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValueType As Type" />
       <MemberSignature Language="F#" Value="member this.ValueType : Type" Usage="System.Windows.Forms.DataGridViewTextBoxCell.ValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

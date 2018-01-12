@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.SignatureHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SignatureHelper&#xA;Implements _SignatureHelper" />
   <TypeSignature Language="F#" Value="type SignatureHelper = class&#xA;    interface _SignatureHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignatureHelper sealed : System::Runtime::InteropServices::_SignatureHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArgument(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (clsArgument As Type)" />
       <MemberSignature Language="F#" Value="member this.AddArgument : Type -&gt; unit" Usage="signatureHelper.AddArgument clsArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(Type ^ clsArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArgument(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (argument As Type, pinned As Boolean)" />
       <MemberSignature Language="F#" Value="member this.AddArgument : Type * bool -&gt; unit" Usage="signatureHelper.AddArgument (argument, pinned)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(Type ^ argument, bool pinned);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -144,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArgument(System.Type,System.Type[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (argument As Type, requiredCustomModifiers As Type(), optionalCustomModifiers As Type())" />
       <MemberSignature Language="F#" Value="member this.AddArgument : Type * Type[] * Type[] -&gt; unit" Usage="signatureHelper.AddArgument (argument, requiredCustomModifiers, optionalCustomModifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(Type ^ argument, cli::array &lt;Type ^&gt; ^ requiredCustomModifiers, cli::array &lt;Type ^&gt; ^ optionalCustomModifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -199,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArguments(System.Type[],System.Type[][],System.Type[][])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArguments (arguments As Type(), requiredCustomModifiers As Type()(), optionalCustomModifiers As Type()())" />
       <MemberSignature Language="F#" Value="member this.AddArguments : Type[] * Type[][] * Type[][] -&gt; unit" Usage="signatureHelper.AddArguments (arguments, requiredCustomModifiers, optionalCustomModifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArguments(cli::array &lt;Type ^&gt; ^ arguments, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ requiredCustomModifiers, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ optionalCustomModifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -259,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddSentinel" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSentinel ()" />
       <MemberSignature Language="F#" Value="member this.AddSentinel : unit -&gt; unit" Usage="signatureHelper.AddSentinel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSentinel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="signatureHelper.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -316,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetFieldSigHelper(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFieldSigHelper (mod As Module) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetFieldSigHelper : System.Reflection.Module -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetFieldSigHelper mod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetFieldSigHelper(System::Reflection::Module ^ mod);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -346,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="signatureHelper.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -390,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocalVarSigHelper () As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetLocalVarSigHelper : unit -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetLocalVarSigHelper();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -417,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocalVarSigHelper (mod As Module) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetLocalVarSigHelper : System.Reflection.Module -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper mod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetLocalVarSigHelper(System::Reflection::Module ^ mod);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -457,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.CallingConventions,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (callingConvention As CallingConventions, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.CallingConventions * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (callingConvention, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::CallingConventions callingConvention, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -489,6 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Runtime.InteropServices.CallingConvention,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (unmanagedCallingConvention As CallingConvention, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Runtime.InteropServices.CallingConvention * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (unmanagedCallingConvention, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Runtime::InteropServices::CallingConvention unmanagedCallingConvention, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -518,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.Module,System.Reflection.CallingConventions,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (mod As Module, callingConvention As CallingConventions, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.Module * System.Reflection.CallingConventions * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (mod, callingConvention, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::Module ^ mod, System::Reflection::CallingConventions callingConvention, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -556,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.Module,System.Runtime.InteropServices.CallingConvention,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (mod As Module, unmanagedCallConv As CallingConvention, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.Module * System.Runtime.InteropServices.CallingConvention * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (mod, unmanagedCallConv, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::Module ^ mod, System::Runtime::InteropServices::CallingConvention unmanagedCallConv, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -593,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.Module,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (mod As Module, returnType As Type, parameterTypes As Type()) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.Module * Type * Type[] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (mod, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::Module ^ mod, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -654,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper(System.Reflection.Module,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertySigHelper (mod As Module, returnType As Type, parameterTypes As Type()) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetPropertySigHelper : System.Reflection.Module * Type * Type[] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetPropertySigHelper (mod, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetPropertySigHelper(System::Reflection::Module ^ mod, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -703,6 +720,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper(System.Reflection.Module,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertySigHelper (mod As Module, returnType As Type, requiredReturnTypeCustomModifiers As Type(), optionalReturnTypeCustomModifiers As Type(), parameterTypes As Type(), requiredParameterTypeCustomModifiers As Type()(), optionalParameterTypeCustomModifiers As Type()()) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetPropertySigHelper : System.Reflection.Module * Type * Type[] * Type[] * Type[] * Type[][] * Type[][] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetPropertySigHelper (mod, returnType, requiredReturnTypeCustomModifiers, optionalReturnTypeCustomModifiers, parameterTypes, requiredParameterTypeCustomModifiers, optionalParameterTypeCustomModifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetPropertySigHelper(System::Reflection::Module ^ mod, Type ^ returnType, cli::array &lt;Type ^&gt; ^ requiredReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ optionalReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ parameterTypes, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ requiredParameterTypeCustomModifiers, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ optionalParameterTypeCustomModifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -781,6 +799,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper(System.Reflection.Module,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertySigHelper (mod As Module, callingConvention As CallingConventions, returnType As Type, requiredReturnTypeCustomModifiers As Type(), optionalReturnTypeCustomModifiers As Type(), parameterTypes As Type(), requiredParameterTypeCustomModifiers As Type()(), optionalParameterTypeCustomModifiers As Type()()) As SignatureHelper" />
       <MemberSignature Language="F#" Value="static member GetPropertySigHelper : System.Reflection.Module * System.Reflection.CallingConventions * Type * Type[] * Type[] * Type[] * Type[][] * Type[][] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetPropertySigHelper (mod, callingConvention, returnType, requiredReturnTypeCustomModifiers, optionalReturnTypeCustomModifiers, parameterTypes, requiredParameterTypeCustomModifiers, optionalParameterTypeCustomModifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetPropertySigHelper(System::Reflection::Module ^ mod, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ requiredReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ optionalReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ parameterTypes, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ requiredParameterTypeCustomModifiers, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ optionalParameterTypeCustomModifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -864,6 +883,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetSignature" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSignature () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetSignature : unit -&gt; byte[]" Usage="signatureHelper.GetSignature " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetSignature();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -890,6 +910,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._SignatureHelper.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.System#Runtime#InteropServices#_SignatureHelper#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _SignatureHelper.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_SignatureHelper::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -932,6 +953,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._SignatureHelper.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.System#Runtime#InteropServices#_SignatureHelper#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _SignatureHelper.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_SignatureHelper::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -970,6 +992,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._SignatureHelper.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.System#Runtime#InteropServices#_SignatureHelper#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _SignatureHelper.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_SignatureHelper::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -1004,6 +1027,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._SignatureHelper.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.System#Runtime#InteropServices#_SignatureHelper#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _SignatureHelper.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_SignatureHelper::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
@@ -1053,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="signatureHelper.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.DataProtectionSecurityStateEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Class DataProtectionSecurityStateEncoder&#xA;Inherits SecurityStateEncoder" />
   <TypeSignature Language="F#" Value="type DataProtectionSecurityStateEncoder = class&#xA;    inherit SecurityStateEncoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataProtectionSecurityStateEncoder : System::ServiceModel::Security::SecurityStateEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataProtectionSecurityStateEncoder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useCurrentUserProtectionScope As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.DataProtectionSecurityStateEncoder : bool -&gt; System.ServiceModel.Security.DataProtectionSecurityStateEncoder" Usage="new System.ServiceModel.Security.DataProtectionSecurityStateEncoder useCurrentUserProtectionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataProtectionSecurityStateEncoder(bool useCurrentUserProtectionScope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor(System.Boolean,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (useCurrentUserProtectionScope As Boolean, entropy As Byte())" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.DataProtectionSecurityStateEncoder : bool * byte[] -&gt; System.ServiceModel.Security.DataProtectionSecurityStateEncoder" Usage="new System.ServiceModel.Security.DataProtectionSecurityStateEncoder (useCurrentUserProtectionScope, entropy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataProtectionSecurityStateEncoder(bool useCurrentUserProtectionScope, cli::array &lt;System::Byte&gt; ^ entropy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.DecodeSecurityState(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function DecodeSecurityState (data As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.DecodeSecurityState : byte[] -&gt; byte[]" Usage="dataProtectionSecurityStateEncoder.DecodeSecurityState data" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecodeSecurityState(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.EncodeSecurityState(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function EncodeSecurityState (data As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.EncodeSecurityState : byte[] -&gt; byte[]" Usage="dataProtectionSecurityStateEncoder.EncodeSecurityState data" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncodeSecurityState(cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.GetEntropy" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEntropy () As Byte()" />
       <MemberSignature Language="F#" Value="member this.GetEntropy : unit -&gt; byte[]" Usage="dataProtectionSecurityStateEncoder.GetEntropy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetEntropy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -172,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataProtectionSecurityStateEncoder.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DataProtectionSecurityStateEncoder.UseCurrentUserProtectionScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseCurrentUserProtectionScope As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseCurrentUserProtectionScope : bool" Usage="System.ServiceModel.Security.DataProtectionSecurityStateEncoder.UseCurrentUserProtectionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCurrentUserProtectionScope { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

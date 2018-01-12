@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.GacMembershipCondition" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GacMembershipCondition&#xA;Implements IMembershipCondition" />
   <TypeSignature Language="F#" Value="type GacMembershipCondition = class&#xA;    interface IMembershipCondition&#xA;    interface IConstantMembershipCondition&#xA;    interface ISecurityEncodable&#xA;    interface ISecurityPolicyEncodable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GacMembershipCondition sealed : System::Security::Policy::IMembershipCondition" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GacMembershipCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +91,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.Check(System.Security.Policy.Evidence)" />
       <MemberSignature Language="F#" Value="abstract member Check : System.Security.Policy.Evidence -&gt; bool&#xA;override this.Check : System.Security.Policy.Evidence -&gt; bool" Usage="gacMembershipCondition.Check evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Check(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Check(System.Security.Policy.Evidence)</InterfaceMember>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As IMembershipCondition" />
       <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.Policy.IMembershipCondition&#xA;override this.Copy : unit -&gt; System.Security.Policy.IMembershipCondition" Usage="gacMembershipCondition.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::IMembershipCondition ^ Copy();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Copy</InterfaceMember>
@@ -183,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="gacMembershipCondition.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Equals(System.Object)</InterfaceMember>
@@ -242,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
       <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="gacMembershipCondition.FromXml e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
@@ -293,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement, level As PolicyLevel)" />
       <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="gacMembershipCondition.FromXml (e, level)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)</InterfaceMember>
@@ -346,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="gacMembershipCondition.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -388,6 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="gacMembershipCondition.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.ToString</InterfaceMember>
@@ -443,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
       <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="gacMembershipCondition.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
@@ -488,6 +498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
       <MemberSignature Language="F#" Value="abstract member ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement&#xA;override this.ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement" Usage="gacMembershipCondition.ToXml level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.ToXml(System.Security.Policy.PolicyLevel)</InterfaceMember>

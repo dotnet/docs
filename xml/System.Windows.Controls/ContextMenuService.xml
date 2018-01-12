@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContextMenuService" />
   <TypeSignature Language="VB.NET" Value="Public Class ContextMenuService" />
   <TypeSignature Language="F#" Value="type ContextMenuService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContextMenuService abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.AddContextMenuClosingHandler(System.Windows.DependencyObject,System.Windows.Controls.ContextMenuEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddContextMenuClosingHandler (element As DependencyObject, handler As ContextMenuEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddContextMenuClosingHandler : System.Windows.DependencyObject * System.Windows.Controls.ContextMenuEventHandler -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.AddContextMenuClosingHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddContextMenuClosingHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ContextMenuEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.AddContextMenuOpeningHandler(System.Windows.DependencyObject,System.Windows.Controls.ContextMenuEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddContextMenuOpeningHandler (element As DependencyObject, handler As ContextMenuEventHandler)" />
       <MemberSignature Language="F#" Value="static member AddContextMenuOpeningHandler : System.Windows.DependencyObject * System.Windows.Controls.ContextMenuEventHandler -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.AddContextMenuOpeningHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddContextMenuOpeningHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ContextMenuEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -138,6 +141,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.ContextMenuClosingEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextMenuClosingEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable ContextMenuClosingEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ContextMenuService.ContextMenuClosingEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ContextMenuClosingEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.ContextMenuOpeningEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextMenuOpeningEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable ContextMenuOpeningEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ContextMenuService.ContextMenuOpeningEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ContextMenuOpeningEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +197,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.ContextMenuProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextMenuProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ContextMenuProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.ContextMenuProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextMenuProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -211,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetContextMenu(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetContextMenu (element As DependencyObject) As ContextMenu" />
       <MemberSignature Language="F#" Value="static member GetContextMenu : System.Windows.DependencyObject -&gt; System.Windows.Controls.ContextMenu" Usage="System.Windows.Controls.ContextMenuService.GetContextMenu element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ContextMenu ^ GetContextMenu(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -240,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetHasDropShadow(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHasDropShadow (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetHasDropShadow : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ContextMenuService.GetHasDropShadow element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetHasDropShadow(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetHorizontalOffset(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHorizontalOffset (element As DependencyObject) As Double" />
       <MemberSignature Language="F#" Value="static member GetHorizontalOffset : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Controls.ContextMenuService.GetHorizontalOffset element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetHorizontalOffset(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -301,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetIsEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ContextMenuService.GetIsEnabled element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsEnabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetPlacement(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacement (element As DependencyObject) As PlacementMode" />
       <MemberSignature Language="F#" Value="static member GetPlacement : System.Windows.DependencyObject -&gt; System.Windows.Controls.Primitives.PlacementMode" Usage="System.Windows.Controls.ContextMenuService.GetPlacement element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::Primitives::PlacementMode GetPlacement(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -359,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetPlacementRectangle(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacementRectangle (element As DependencyObject) As Rect" />
       <MemberSignature Language="F#" Value="static member GetPlacementRectangle : System.Windows.DependencyObject -&gt; System.Windows.Rect" Usage="System.Windows.Controls.ContextMenuService.GetPlacementRectangle element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Rect GetPlacementRectangle(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -388,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetPlacementTarget(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlacementTarget (element As DependencyObject) As UIElement" />
       <MemberSignature Language="F#" Value="static member GetPlacementTarget : System.Windows.DependencyObject -&gt; System.Windows.UIElement" Usage="System.Windows.Controls.ContextMenuService.GetPlacementTarget element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::UIElement ^ GetPlacementTarget(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -417,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetShowOnDisabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetShowOnDisabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetShowOnDisabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ContextMenuService.GetShowOnDisabled element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetShowOnDisabled(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -446,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.GetVerticalOffset(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVerticalOffset (element As DependencyObject) As Double" />
       <MemberSignature Language="F#" Value="static member GetVerticalOffset : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Controls.ContextMenuService.GetVerticalOffset element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetVerticalOffset(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -494,6 +509,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.HasDropShadowProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasDropShadowProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HasDropShadowProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.HasDropShadowProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasDropShadowProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -529,6 +545,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.HorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.HorizontalOffsetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalOffsetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -564,6 +581,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.IsEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEnabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.IsEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -599,6 +617,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.PlacementProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.PlacementProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -634,6 +653,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.PlacementRectangleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementRectangleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PlacementRectangleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.PlacementRectangleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementRectangleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -669,6 +689,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.PlacementTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlacementTargetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable PlacementTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.PlacementTargetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PlacementTargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -688,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.RemoveContextMenuClosingHandler(System.Windows.DependencyObject,System.Windows.Controls.ContextMenuEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveContextMenuClosingHandler (element As DependencyObject, handler As ContextMenuEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveContextMenuClosingHandler : System.Windows.DependencyObject * System.Windows.Controls.ContextMenuEventHandler -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.RemoveContextMenuClosingHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveContextMenuClosingHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ContextMenuEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -713,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.RemoveContextMenuOpeningHandler(System.Windows.DependencyObject,System.Windows.Controls.ContextMenuEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveContextMenuOpeningHandler (element As DependencyObject, handler As ContextMenuEventHandler)" />
       <MemberSignature Language="F#" Value="static member RemoveContextMenuOpeningHandler : System.Windows.DependencyObject * System.Windows.Controls.ContextMenuEventHandler -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.RemoveContextMenuOpeningHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveContextMenuOpeningHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::ContextMenuEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -738,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetContextMenu(System.Windows.DependencyObject,System.Windows.Controls.ContextMenu)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetContextMenu (element As DependencyObject, value As ContextMenu)" />
       <MemberSignature Language="F#" Value="static member SetContextMenu : System.Windows.DependencyObject * System.Windows.Controls.ContextMenu -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetContextMenu (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContextMenu(System::Windows::DependencyObject ^ element, System::Windows::Controls::ContextMenu ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -763,6 +787,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetHasDropShadow(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHasDropShadow (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetHasDropShadow : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetHasDropShadow (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHasDropShadow(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -788,6 +813,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetHorizontalOffset(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHorizontalOffset (element As DependencyObject, value As Double)" />
       <MemberSignature Language="F#" Value="static member SetHorizontalOffset : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetHorizontalOffset (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHorizontalOffset(System::Windows::DependencyObject ^ element, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -813,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsEnabled (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetIsEnabled (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsEnabled(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -838,6 +865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetPlacement(System.Windows.DependencyObject,System.Windows.Controls.Primitives.PlacementMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlacement (element As DependencyObject, value As PlacementMode)" />
       <MemberSignature Language="F#" Value="static member SetPlacement : System.Windows.DependencyObject * System.Windows.Controls.Primitives.PlacementMode -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetPlacement (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPlacement(System::Windows::DependencyObject ^ element, System::Windows::Controls::Primitives::PlacementMode value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -863,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetPlacementRectangle(System.Windows.DependencyObject,System.Windows.Rect)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlacementRectangle (element As DependencyObject, value As Rect)" />
       <MemberSignature Language="F#" Value="static member SetPlacementRectangle : System.Windows.DependencyObject * System.Windows.Rect -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetPlacementRectangle (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPlacementRectangle(System::Windows::DependencyObject ^ element, System::Windows::Rect value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -888,6 +917,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetPlacementTarget(System.Windows.DependencyObject,System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlacementTarget (element As DependencyObject, value As UIElement)" />
       <MemberSignature Language="F#" Value="static member SetPlacementTarget : System.Windows.DependencyObject * System.Windows.UIElement -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetPlacementTarget (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPlacementTarget(System::Windows::DependencyObject ^ element, System::Windows::UIElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -913,6 +943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetShowOnDisabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetShowOnDisabled (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetShowOnDisabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetShowOnDisabled (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetShowOnDisabled(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -938,6 +969,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContextMenuService.SetVerticalOffset(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetVerticalOffset (element As DependencyObject, value As Double)" />
       <MemberSignature Language="F#" Value="static member SetVerticalOffset : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Controls.ContextMenuService.SetVerticalOffset (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetVerticalOffset(System::Windows::DependencyObject ^ element, double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -979,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.ShowOnDisabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowOnDisabledProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ShowOnDisabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.ShowOnDisabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowOnDisabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1014,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContextMenuService.VerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable VerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContextMenuService.VerticalOffsetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalOffsetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

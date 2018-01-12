@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DefaultValueAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DefaultValueAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type DefaultValueAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultValueAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : bool -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(bool value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -118,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : byte -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::Byte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -151,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Char)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : char -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(char value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : double -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(double value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -217,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Short)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : int16 -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(short value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -250,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : int -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(int value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : int64 -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -316,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : obj -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -349,6 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SByte)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : sbyte -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::SByte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -374,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : single -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(float value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -407,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : string -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -440,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UShort)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : uint16 -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::UInt16 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -465,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : uint32 -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::UInt32 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -490,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : uint64 -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(System::UInt64 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -514,6 +529,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.#ctor(System.Type,System.String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.DefaultValueAttribute : Type * string -&gt; System.ComponentModel.DefaultValueAttribute" Usage="new System.ComponentModel.DefaultValueAttribute (type, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultValueAttribute(Type ^ type, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -549,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="defaultValueAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -587,6 +604,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="defaultValueAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -622,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DefaultValueAttribute.SetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetValue (value As Object)" />
       <MemberSignature Language="F#" Value="member this.SetValue : obj -&gt; unit" Usage="defaultValueAttribute.SetValue value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -654,6 +673,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DefaultValueAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Value As Object" />
       <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.ComponentModel.DefaultValueAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.WaitHandle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WaitHandle&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type WaitHandle = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WaitHandle abstract : MarshalByRefObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WaitHandle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="waitHandle.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="waitHandle.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -224,6 +228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (explicitDisposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="waitHandle.Dispose explicitDisposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool explicitDisposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -278,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.WaitHandle.Handle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Handle As IntPtr" />
       <MemberSignature Language="F#" Value="member this.Handle : nativeint with get, set" Usage="System.Threading.WaitHandle.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property IntPtr Handle { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -329,6 +335,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.WaitHandle.InvalidHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly InvalidHandle As IntPtr " />
       <MemberSignature Language="F#" Value=" staticval mutable InvalidHandle : nativeint" Usage="System.Threading.WaitHandle.InvalidHandle" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly IntPtr InvalidHandle;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -371,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.WaitHandle.SafeWaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public Property SafeWaitHandle As SafeWaitHandle" />
       <MemberSignature Language="F#" Value="member this.SafeWaitHandle : Microsoft.Win32.SafeHandles.SafeWaitHandle with get, set" Usage="System.Threading.WaitHandle.SafeWaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeWaitHandle ^ SafeWaitHandle { Microsoft::Win32::SafeHandles::SafeWaitHandle ^ get(); void set(Microsoft::Win32::SafeHandles::SafeWaitHandle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -435,6 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SignalAndWait (toSignal As WaitHandle, toWaitOn As WaitHandle) As Boolean" />
       <MemberSignature Language="F#" Value="static member SignalAndWait : System.Threading.WaitHandle * System.Threading.WaitHandle -&gt; bool" Usage="System.Threading.WaitHandle.SignalAndWait (toSignal, toWaitOn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SignalAndWait(System::Threading::WaitHandle ^ toSignal, System::Threading::WaitHandle ^ toWaitOn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -500,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SignalAndWait (toSignal As WaitHandle, toWaitOn As WaitHandle, millisecondsTimeout As Integer, exitContext As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member SignalAndWait : System.Threading.WaitHandle * System.Threading.WaitHandle * int * bool -&gt; bool" Usage="System.Threading.WaitHandle.SignalAndWait (toSignal, toWaitOn, millisecondsTimeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SignalAndWait(System::Threading::WaitHandle ^ toSignal, System::Threading::WaitHandle ^ toWaitOn, int millisecondsTimeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -574,6 +584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SignalAndWait (toSignal As WaitHandle, toWaitOn As WaitHandle, timeout As TimeSpan, exitContext As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member SignalAndWait : System.Threading.WaitHandle * System.Threading.WaitHandle * TimeSpan * bool -&gt; bool" Usage="System.Threading.WaitHandle.SignalAndWait (toSignal, toWaitOn, timeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SignalAndWait(System::Threading::WaitHandle ^ toSignal, System::Threading::WaitHandle ^ toWaitOn, TimeSpan timeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -663,6 +674,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAll (waitHandles As WaitHandle()) As Boolean" />
       <MemberSignature Language="F#" Value="static member WaitAll : System.Threading.WaitHandle[] -&gt; bool" Usage="System.Threading.WaitHandle.WaitAll waitHandles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool WaitAll(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -749,6 +761,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAll (waitHandles As WaitHandle(), millisecondsTimeout As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="static member WaitAll : System.Threading.WaitHandle[] * int -&gt; bool" Usage="System.Threading.WaitHandle.WaitAll (waitHandles, millisecondsTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool WaitAll(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -830,6 +843,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAll (waitHandles As WaitHandle(), timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="F#" Value="static member WaitAll : System.Threading.WaitHandle[] * TimeSpan -&gt; bool" Usage="System.Threading.WaitHandle.WaitAll (waitHandles, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool WaitAll(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -917,6 +931,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAll (waitHandles As WaitHandle(), millisecondsTimeout As Integer, exitContext As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member WaitAll : System.Threading.WaitHandle[] * int * bool -&gt; bool" Usage="System.Threading.WaitHandle.WaitAll (waitHandles, millisecondsTimeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool WaitAll(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, int millisecondsTimeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1012,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAll (waitHandles As WaitHandle(), timeout As TimeSpan, exitContext As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="static member WaitAll : System.Threading.WaitHandle[] * TimeSpan * bool -&gt; bool" Usage="System.Threading.WaitHandle.WaitAll (waitHandles, timeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool WaitAll(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, TimeSpan timeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1121,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAny (waitHandles As WaitHandle()) As Integer" />
       <MemberSignature Language="F#" Value="static member WaitAny : System.Threading.WaitHandle[] -&gt; int" Usage="System.Threading.WaitHandle.WaitAny waitHandles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int WaitAny(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1200,6 +1217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAny (waitHandles As WaitHandle(), millisecondsTimeout As Integer) As Integer" />
       <MemberSignature Language="F#" Value="static member WaitAny : System.Threading.WaitHandle[] * int -&gt; int" Usage="System.Threading.WaitHandle.WaitAny (waitHandles, millisecondsTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int WaitAny(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1269,6 +1287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAny (waitHandles As WaitHandle(), timeout As TimeSpan) As Integer" />
       <MemberSignature Language="F#" Value="static member WaitAny : System.Threading.WaitHandle[] * TimeSpan -&gt; int" Usage="System.Threading.WaitHandle.WaitAny (waitHandles, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int WaitAny(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1344,6 +1363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAny (waitHandles As WaitHandle(), millisecondsTimeout As Integer, exitContext As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="static member WaitAny : System.Threading.WaitHandle[] * int * bool -&gt; int" Usage="System.Threading.WaitHandle.WaitAny (waitHandles, millisecondsTimeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int WaitAny(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, int millisecondsTimeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1436,6 +1456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function WaitAny (waitHandles As WaitHandle(), timeout As TimeSpan, exitContext As Boolean) As Integer" />
       <MemberSignature Language="F#" Value="static member WaitAny : System.Threading.WaitHandle[] * TimeSpan * bool -&gt; int" Usage="System.Threading.WaitHandle.WaitAny (waitHandles, timeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int WaitAny(cli::array &lt;System::Threading::WaitHandle ^&gt; ^ waitHandles, TimeSpan timeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1544,6 +1565,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitOne" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WaitOne () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member WaitOne : unit -&gt; bool&#xA;override this.WaitOne : unit -&gt; bool" Usage="waitHandle.WaitOne " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool WaitOne();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1604,6 +1626,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitOne(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WaitOne (millisecondsTimeout As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member WaitOne : int -&gt; bool&#xA;override this.WaitOne : int -&gt; bool" Usage="waitHandle.WaitOne millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool WaitOne(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1669,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitOne(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WaitOne (timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member WaitOne : TimeSpan -&gt; bool&#xA;override this.WaitOne : TimeSpan -&gt; bool" Usage="waitHandle.WaitOne timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool WaitOne(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1731,6 +1755,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WaitOne (millisecondsTimeout As Integer, exitContext As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member WaitOne : int * bool -&gt; bool&#xA;override this.WaitOne : int * bool -&gt; bool" Usage="waitHandle.WaitOne (millisecondsTimeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool WaitOne(int millisecondsTimeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1802,6 +1827,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WaitOne (timeout As TimeSpan, exitContext As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member WaitOne : TimeSpan * bool -&gt; bool&#xA;override this.WaitOne : TimeSpan * bool -&gt; bool" Usage="waitHandle.WaitOne (timeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool WaitOne(TimeSpan timeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1879,6 +1905,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.WaitHandle.WaitTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Const WaitTimeout As Integer  = 258" />
       <MemberSignature Language="F#" Value="val mutable WaitTimeout : int" Usage="System.Threading.WaitHandle.WaitTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public: int WaitTimeout = 258;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

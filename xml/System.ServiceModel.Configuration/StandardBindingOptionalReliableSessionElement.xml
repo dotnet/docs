@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StandardBindingOptionalReliableSessionElement&#xA;Inherits StandardBindingReliableSessionElement" />
   <TypeSignature Language="F#" Value="type StandardBindingOptionalReliableSessionElement = class&#xA;    inherit StandardBindingReliableSessionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StandardBindingOptionalReliableSessionElement sealed : System::ServiceModel::Configuration::StandardBindingReliableSessionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StandardBindingOptionalReliableSessionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyConfiguration(class System.ServiceModel.OptionalReliableSession optionalReliableSession) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.ApplyConfiguration(System.ServiceModel.OptionalReliableSession)" />
       <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.OptionalReliableSession -&gt; unit" Usage="standardBindingOptionalReliableSessionElement.ApplyConfiguration optionalReliableSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyConfiguration(System::ServiceModel::OptionalReliableSession ^ optionalReliableSession);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +93,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InitializeFrom(class System.ServiceModel.OptionalReliableSession optionalReliableSession) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.InitializeFrom(System.ServiceModel.OptionalReliableSession)" />
       <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.OptionalReliableSession -&gt; unit" Usage="standardBindingOptionalReliableSessionElement.InitializeFrom optionalReliableSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeFrom(System::ServiceModel::OptionalReliableSession ^ optionalReliableSession);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

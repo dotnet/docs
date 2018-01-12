@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlElementAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlElementAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type XmlElementAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlElementAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -111,6 +112,7 @@ public class Things{
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlElementAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlElementAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -152,6 +154,7 @@ public class Things{
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlElementAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlElementAttribute : string -&gt; System.Xml.Serialization.XmlElementAttribute" Usage="new System.Xml.Serialization.XmlElementAttribute elementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlElementAttribute(System::String ^ elementName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -200,6 +203,7 @@ public class Things{
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlElementAttribute.#ctor(System.Type)" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlElementAttribute : Type -&gt; System.Xml.Serialization.XmlElementAttribute" Usage="new System.Xml.Serialization.XmlElementAttribute type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlElementAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -248,6 +252,7 @@ public class Things{
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlElementAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlElementAttribute : string * Type -&gt; System.Xml.Serialization.XmlElementAttribute" Usage="new System.Xml.Serialization.XmlElementAttribute (elementName, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlElementAttribute(System::String ^ elementName, Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -301,6 +306,7 @@ public class Things{
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
       <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.DataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -410,6 +416,7 @@ public class Things{
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.ElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
       <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -462,6 +469,7 @@ public class Things{
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.Form" />
       <MemberSignature Language="VB.NET" Value="Public Property Form As XmlSchemaForm" />
       <MemberSignature Language="F#" Value="member this.Form : System.Xml.Schema.XmlSchemaForm with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.Form" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaForm Form { System::Xml::Schema::XmlSchemaForm get(); void set(System::Xml::Schema::XmlSchemaForm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -523,6 +531,7 @@ attributeFormDefault="unqualified"... >
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.IsNullable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -584,6 +593,7 @@ attributeFormDefault="unqualified"... >
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -626,6 +636,7 @@ attributeFormDefault="unqualified"... >
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.Order" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -669,6 +680,7 @@ attributeFormDefault="unqualified"... >
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlElementAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Xml.Serialization.XmlElementAttribute.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

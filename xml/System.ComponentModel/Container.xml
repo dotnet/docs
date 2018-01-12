@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Container" />
   <TypeSignature Language="VB.NET" Value="Public Class Container&#xA;Implements IContainer, IDisposable" />
   <TypeSignature Language="F#" Value="type Container = class&#xA;    interface IContainer&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Container : IDisposable, System::ComponentModel::IContainer" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Container();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.Add(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (component As IComponent)" />
       <MemberSignature Language="F#" Value="abstract member Add : System.ComponentModel.IComponent -&gt; unit&#xA;override this.Add : System.ComponentModel.IComponent -&gt; unit" Usage="container.Add component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent)</InterfaceMember>
@@ -135,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.Add(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Add (component As IComponent, name As String)" />
       <MemberSignature Language="F#" Value="abstract member Add : System.ComponentModel.IComponent * string -&gt; unit&#xA;override this.Add : System.ComponentModel.IComponent * string -&gt; unit" Usage="container.Add (component, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::ComponentModel::IComponent ^ component, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent,System.String)</InterfaceMember>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Container.Components" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Components As ComponentCollection" />
       <MemberSignature Language="F#" Value="member this.Components : System.ComponentModel.ComponentCollection" Usage="System.ComponentModel.Container.Components" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ComponentCollection ^ Components { System::ComponentModel::ComponentCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IContainer.Components</InterfaceMember>
@@ -231,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.CreateSite(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateSite (component As IComponent, name As String) As ISite" />
       <MemberSignature Language="F#" Value="abstract member CreateSite : System.ComponentModel.IComponent * string -&gt; System.ComponentModel.ISite&#xA;override this.CreateSite : System.ComponentModel.IComponent * string -&gt; System.ComponentModel.ISite" Usage="container.CreateSite (component, name)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::ISite ^ CreateSite(System::ComponentModel::IComponent ^ component, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +291,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="container.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -327,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="container.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,6 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="container.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!Container ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -413,6 +422,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetService (service As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="container.GetService service" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetService(Type ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -454,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.Remove(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (component As IComponent)" />
       <MemberSignature Language="F#" Value="abstract member Remove : System.ComponentModel.IComponent -&gt; unit&#xA;override this.Remove : System.ComponentModel.IComponent -&gt; unit" Usage="container.Remove component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IContainer.Remove(System.ComponentModel.IComponent)</InterfaceMember>
@@ -497,6 +508,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.RemoveWithoutUnsiting(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RemoveWithoutUnsiting (component As IComponent)" />
       <MemberSignature Language="F#" Value="member this.RemoveWithoutUnsiting : System.ComponentModel.IComponent -&gt; unit" Usage="container.RemoveWithoutUnsiting component" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveWithoutUnsiting(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -537,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Container.ValidateName(System.ComponentModel.IComponent,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ValidateName (component As IComponent, name As String)" />
       <MemberSignature Language="F#" Value="abstract member ValidateName : System.ComponentModel.IComponent * string -&gt; unit&#xA;override this.ValidateName : System.ComponentModel.IComponent * string -&gt; unit" Usage="container.ValidateName (component, name)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateName(System::ComponentModel::IComponent ^ component, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

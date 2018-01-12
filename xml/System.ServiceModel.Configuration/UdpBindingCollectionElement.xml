@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UdpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of UdpBinding, UdpBindingElement)" />
   <TypeSignature Language="F#" Value="type UdpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;UdpBinding, UdpBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::UdpBinding ^, System::ServiceModel::Configuration::UdpBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +27,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

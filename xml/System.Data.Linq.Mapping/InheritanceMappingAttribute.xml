@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.InheritanceMappingAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InheritanceMappingAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type InheritanceMappingAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InheritanceMappingAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.InheritanceMappingAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritanceMappingAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code" />
       <MemberSignature Language="VB.NET" Value="Public Property Code As Object" />
       <MemberSignature Language="F#" Value="member this.Code : obj with get, set" Usage="System.Data.Linq.Mapping.InheritanceMappingAttribute.Code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Code { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDefault As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDefault : bool with get, set" Usage="System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.InheritanceMappingAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Data.Linq.Mapping.InheritanceMappingAttribute.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

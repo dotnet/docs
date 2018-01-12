@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Button" />
   <TypeSignature Language="VB.NET" Value="Public Class Button&#xA;Inherits ButtonBase&#xA;Implements IButtonControl" />
   <TypeSignature Language="F#" Value="type Button = class&#xA;    inherit ButtonBase&#xA;    interface IButtonControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Button : System::Windows::Forms::ButtonBase, System::Windows::Forms::IButtonControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Button();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Button.AutoSizeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSizeMode As AutoSizeMode" />
       <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.AutoSizeMode with get, set" Usage="System.Windows.Forms.Button.AutoSizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoSizeMode AutoSizeMode { System::Windows::Forms::AutoSizeMode get(); void set(System::Windows::Forms::AutoSizeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Button.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.Button.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Button.DialogResult" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DialogResult As DialogResult" />
       <MemberSignature Language="F#" Value="member this.DialogResult : System.Windows.Forms.DialogResult with get, set" Usage="System.Windows.Forms.Button.DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DialogResult DialogResult { System::Windows::Forms::DialogResult get(); void set(System::Windows::Forms::DialogResult value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.IButtonControl.DialogResult</InterfaceMember>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Button.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Button.MouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.NotifyDefault(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub NotifyDefault (value As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member NotifyDefault : bool -&gt; unit&#xA;override this.NotifyDefault : bool -&gt; unit" Usage="button.NotifyDefault value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NotifyDefault(bool value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IButtonControl.NotifyDefault(System.Boolean)</InterfaceMember>
@@ -337,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.OnClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnClick : EventArgs -&gt; unit" Usage="button.OnClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -361,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.OnFontChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="button.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -396,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.OnMouseEnter(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseEnter (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseEnter : EventArgs -&gt; unit" Usage="button.OnMouseEnter e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseEnter(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.OnMouseLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="button.OnMouseLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -444,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (mevent As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="button.OnMouseUp mevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ mevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -480,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.OnTextChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnTextChanged : EventArgs -&gt; unit" Usage="button.OnTextChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -515,6 +529,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.PerformClick" />
       <MemberSignature Language="VB.NET" Value="Public Sub PerformClick ()" />
       <MemberSignature Language="F#" Value="abstract member PerformClick : unit -&gt; unit&#xA;override this.PerformClick : unit -&gt; unit" Usage="button.PerformClick " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PerformClick();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.IButtonControl.PerformClick</InterfaceMember>
@@ -555,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.ProcessMnemonic(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="button.ProcessMnemonic charCode" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -587,6 +603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="button.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -608,6 +625,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Button.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="button.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

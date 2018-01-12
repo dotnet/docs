@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.ValidationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationType" />
   <TypeSignature Language="F#" Value="type ValidationType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.Auto" />
       <MemberSignature Language="VB.NET" Value="Auto" />
       <MemberSignature Language="F#" Value="Auto = 1" Usage="System.Xml.ValidationType.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.DTD" />
       <MemberSignature Language="VB.NET" Value="DTD" />
       <MemberSignature Language="F#" Value="DTD = 2" Usage="System.Xml.ValidationType.DTD" />
+      <MemberSignature Language="C++ CLI" Value="DTD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.ValidationType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.Schema" />
       <MemberSignature Language="VB.NET" Value="Schema" />
       <MemberSignature Language="F#" Value="Schema = 4" Usage="System.Xml.ValidationType.Schema" />
+      <MemberSignature Language="C++ CLI" Value="Schema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -178,6 +183,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.ValidationType.XDR" />
       <MemberSignature Language="VB.NET" Value="XDR" />
       <MemberSignature Language="F#" Value="XDR = 3" Usage="System.Xml.ValidationType.XDR" />
+      <MemberSignature Language="C++ CLI" Value="XDR" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

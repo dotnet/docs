@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RootDesignerSerializerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type RootDesignerSerializerAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RootDesignerSerializerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.#ctor(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serializerTypeName As String, baseSerializerTypeName As String, reloadable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute : string * string * bool -&gt; System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" Usage="new System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute (serializerTypeName, baseSerializerTypeName, reloadable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootDesignerSerializerAttribute(System::String ^ serializerTypeName, System::String ^ baseSerializerTypeName, bool reloadable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.#ctor(System.String,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serializerTypeName As String, baseSerializerType As Type, reloadable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute : string * Type * bool -&gt; System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" Usage="new System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute (serializerTypeName, baseSerializerType, reloadable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootDesignerSerializerAttribute(System::String ^ serializerTypeName, Type ^ baseSerializerType, bool reloadable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.#ctor(System.Type,System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serializerType As Type, baseSerializerType As Type, reloadable As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute : Type * Type * bool -&gt; System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" Usage="new System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute (serializerType, baseSerializerType, reloadable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootDesignerSerializerAttribute(Type ^ serializerType, Type ^ baseSerializerType, bool reloadable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.Reloadable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reloadable As Boolean" />
       <MemberSignature Language="F#" Value="member this.Reloadable : bool" Usage="System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.Reloadable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Reloadable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerBaseTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializerBaseTypeName As String" />
       <MemberSignature Language="F#" Value="member this.SerializerBaseTypeName : string" Usage="System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerBaseTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerializerBaseTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializerTypeName As String" />
       <MemberSignature Language="F#" Value="member this.SerializerTypeName : string" Usage="System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerializerTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.TypeId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

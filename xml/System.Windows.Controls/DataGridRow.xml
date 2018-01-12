@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridRow" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridRow&#xA;Inherits Control" />
   <TypeSignature Language="F#" Value="type DataGridRow = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridRow : System::Windows::Controls::Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridRow();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.AlternationIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlternationIndex As Integer" />
       <MemberSignature Language="F#" Value="member this.AlternationIndex : int" Usage="System.Windows.Controls.DataGridRow.AlternationIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlternationIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.AlternationIndexProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlternationIndexProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable AlternationIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.AlternationIndexProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AlternationIndexProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeBounds As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="dataGridRow.ArrangeOverride arrangeBounds" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.DetailsTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property DetailsTemplate As DataTemplate" />
       <MemberSignature Language="F#" Value="member this.DetailsTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.DataGridRow.DetailsTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ DetailsTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.DetailsTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsTemplateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DetailsTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.DetailsTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DetailsTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.DetailsTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property DetailsTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="F#" Value="member this.DetailsTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.DataGridRow.DetailsTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ DetailsTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.DetailsTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DetailsTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.DetailsTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DetailsTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.DetailsVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property DetailsVisibility As Visibility" />
       <MemberSignature Language="F#" Value="member this.DetailsVisibility : System.Windows.Visibility with get, set" Usage="System.Windows.Controls.DataGridRow.DetailsVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility DetailsVisibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -238,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.DetailsVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DetailsVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.DetailsVisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DetailsVisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -258,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.GetIndex" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex () As Integer" />
       <MemberSignature Language="F#" Value="member this.GetIndex : unit -&gt; int" Usage="dataGridRow.GetIndex " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetIndex();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -281,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.GetRowContainingElement(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRowContainingElement (element As FrameworkElement) As DataGridRow" />
       <MemberSignature Language="F#" Value="static member GetRowContainingElement : System.Windows.FrameworkElement -&gt; System.Windows.Controls.DataGridRow" Usage="System.Windows.Controls.DataGridRow.GetRowContainingElement element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::DataGridRow ^ GetRowContainingElement(System::Windows::FrameworkElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -306,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.Header" />
       <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
       <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="System.Windows.Controls.DataGridRow.Header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Header { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -327,6 +341,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.HeaderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.HeaderProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -347,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
       <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.DataGridRow.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ HeaderStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -378,6 +394,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.HeaderStyleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStyleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.HeaderStyleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -398,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
       <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.DataGridRow.HeaderTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ HeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -420,6 +438,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.HeaderTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.HeaderTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -440,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.HeaderTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplateSelector As DataTemplateSelector" />
       <MemberSignature Language="F#" Value="member this.HeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.DataGridRow.HeaderTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ HeaderTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -461,6 +481,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.HeaderTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.HeaderTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -481,6 +502,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.IsEditing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEditing As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEditing : bool" Usage="System.Windows.Controls.DataGridRow.IsEditing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEditing { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -503,6 +525,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.IsEditingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsEditingProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsEditingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.IsEditingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsEditingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -523,6 +546,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.IsNewItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNewItem As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsNewItem : bool" Usage="System.Windows.Controls.DataGridRow.IsNewItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNewItem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -560,6 +584,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.IsNewItemProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsNewItemProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsNewItemProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.IsNewItemProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsNewItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -579,6 +604,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.IsSelected" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSelected As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSelected : bool with get, set" Usage="System.Windows.Controls.DataGridRow.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -609,6 +635,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.IsSelectedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.IsSelectedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -629,6 +656,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.Item" />
       <MemberSignature Language="VB.NET" Value="Public Property Item As Object" />
       <MemberSignature Language="F#" Value="member this.Item : obj with get, set" Usage="System.Windows.Controls.DataGridRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -650,6 +678,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.ItemProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ItemProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.ItemProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -670,6 +699,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.ItemsPanel" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemsPanel As ItemsPanelTemplate" />
       <MemberSignature Language="F#" Value="member this.ItemsPanel : System.Windows.Controls.ItemsPanelTemplate with get, set" Usage="System.Windows.Controls.DataGridRow.ItemsPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemsPanelTemplate ^ ItemsPanel { System::Windows::Controls::ItemsPanelTemplate ^ get(); void set(System::Windows::Controls::ItemsPanelTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -691,6 +721,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.ItemsPanelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsPanelProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ItemsPanelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.ItemsPanelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemsPanelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -711,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnColumnsChanged(System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.DataGridColumn},System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnColumnsChanged (columns As ObservableCollection(Of DataGridColumn), e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnColumnsChanged : System.Collections.ObjectModel.ObservableCollection&lt;System.Windows.Controls.DataGridColumn&gt; * System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnColumnsChanged : System.Collections.ObjectModel.ObservableCollection&lt;System.Windows.Controls.DataGridColumn&gt; * System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="dataGridRow.OnColumnsChanged (columns, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnColumnsChanged(System::Collections::ObjectModel::ObservableCollection&lt;System::Windows::Controls::DataGridColumn ^&gt; ^ columns, System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -738,6 +770,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridRow.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -761,6 +794,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnHeaderChanged(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHeaderChanged (oldHeader As Object, newHeader As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnHeaderChanged : obj * obj -&gt; unit&#xA;override this.OnHeaderChanged : obj * obj -&gt; unit" Usage="dataGridRow.OnHeaderChanged (oldHeader, newHeader)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHeaderChanged(System::Object ^ oldHeader, System::Object ^ newHeader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -788,6 +822,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnItemChanged(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemChanged (oldItem As Object, newItem As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnItemChanged : obj * obj -&gt; unit&#xA;override this.OnItemChanged : obj * obj -&gt; unit" Usage="dataGridRow.OnItemChanged (oldItem, newItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemChanged(System::Object ^ oldItem, System::Object ^ newItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -815,6 +850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="dataGridRow.OnPropertyChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -853,6 +889,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelected (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSelected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnSelected : System.Windows.RoutedEventArgs -&gt; unit" Usage="dataGridRow.OnSelected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -891,6 +928,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateChanged (oldTemplate As ControlTemplate, newTemplate As ControlTemplate)" />
       <MemberSignature Language="F#" Value="override this.OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="dataGridRow.OnTemplateChanged (oldTemplate, newTemplate)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateChanged(System::Windows::Controls::ControlTemplate ^ oldTemplate, System::Windows::Controls::ControlTemplate ^ newTemplate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -918,6 +956,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnselected (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUnselected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnUnselected : System.Windows.RoutedEventArgs -&gt; unit" Usage="dataGridRow.OnUnselected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnselected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -956,6 +995,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DataGridRow.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Selected : System.Windows.RoutedEventHandler " Usage="member this.Selected : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Selected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -984,6 +1024,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.SelectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable SelectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.DataGridRow.SelectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SelectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1004,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DataGridRow.Unselected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unselected As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Unselected : System.Windows.RoutedEventHandler " Usage="member this.Unselected : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Unselected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1032,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.UnselectedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnselectedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable UnselectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.DataGridRow.UnselectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UnselectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1052,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRow.ValidationErrorTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidationErrorTemplate As ControlTemplate" />
       <MemberSignature Language="F#" Value="member this.ValidationErrorTemplate : System.Windows.Controls.ControlTemplate with get, set" Usage="System.Windows.Controls.DataGridRow.ValidationErrorTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ControlTemplate ^ ValidationErrorTemplate { System::Windows::Controls::ControlTemplate ^ get(); void set(System::Windows::Controls::ControlTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1074,6 +1118,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRow.ValidationErrorTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValidationErrorTemplateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ValidationErrorTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.DataGridRow.ValidationErrorTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValidationErrorTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

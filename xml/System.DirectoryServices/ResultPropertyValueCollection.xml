@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ResultPropertyValueCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class ResultPropertyValueCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="F#" Value="type ResultPropertyValueCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResultPropertyValueCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyValueCollection.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Contains : obj -&gt; bool" Usage="resultPropertyValueCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyValueCollection.CopyTo(System.Object[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (values As Object(), index As Integer)" />
       <MemberSignature Language="F#" Value="member this.CopyTo : obj[] * int -&gt; unit" Usage="resultPropertyValueCollection.CopyTo (values, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Object ^&gt; ^ values, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyValueCollection.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="member this.IndexOf : obj -&gt; int" Usage="resultPropertyValueCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -108,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ResultPropertyValueCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.DirectoryServices.ResultPropertyValueCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

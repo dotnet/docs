@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProtocolElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type ProtocolElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Web.Configuration.ProtocolElement : string -&gt; System.Web.Configuration.ProtocolElement" Usage="new System.Web.Configuration.ProtocolElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolElement.AppDomainHandlerType" />
       <MemberSignature Language="VB.NET" Value="Public Property AppDomainHandlerType As String" />
       <MemberSignature Language="F#" Value="member this.AppDomainHandlerType : string with get, set" Usage="System.Web.Configuration.ProtocolElement.AppDomainHandlerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppDomainHandlerType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.ProtocolElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="protocolElement.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolElement.ProcessHandlerType" />
       <MemberSignature Language="VB.NET" Value="Public Property ProcessHandlerType As String" />
       <MemberSignature Language="F#" Value="member this.ProcessHandlerType : string with get, set" Usage="System.Web.Configuration.ProtocolElement.ProcessHandlerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProcessHandlerType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProtocolElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolElement.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Property Validate As Boolean" />
       <MemberSignature Language="F#" Value="member this.Validate : bool with get, set" Usage="System.Web.Configuration.ProtocolElement.Validate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Validate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

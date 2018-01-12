@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IMenuCommandService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMenuCommandService" />
   <TypeSignature Language="F#" Value="type IMenuCommandService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMenuCommandService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -79,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.AddCommand(System.ComponentModel.Design.MenuCommand)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCommand (command As MenuCommand)" />
       <MemberSignature Language="F#" Value="abstract member AddCommand : System.ComponentModel.Design.MenuCommand -&gt; unit" Usage="iMenuCommandService.AddCommand command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCommand(System::ComponentModel::Design::MenuCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.AddVerb(System.ComponentModel.Design.DesignerVerb)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddVerb (verb As DesignerVerb)" />
       <MemberSignature Language="F#" Value="abstract member AddVerb : System.ComponentModel.Design.DesignerVerb -&gt; unit" Usage="iMenuCommandService.AddVerb verb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddVerb(System::ComponentModel::Design::DesignerVerb ^ verb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +178,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.MenuCommand FindCommand(class System.ComponentModel.Design.CommandID commandID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.FindCommand(System.ComponentModel.Design.CommandID)" />
       <MemberSignature Language="F#" Value="abstract member FindCommand : System.ComponentModel.Design.CommandID -&gt; System.ComponentModel.Design.MenuCommand" Usage="iMenuCommandService.FindCommand commandID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::MenuCommand ^ FindCommand(System::ComponentModel::Design::CommandID ^ commandID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GlobalInvoke(class System.ComponentModel.Design.CommandID commandID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.GlobalInvoke(System.ComponentModel.Design.CommandID)" />
       <MemberSignature Language="F#" Value="abstract member GlobalInvoke : System.ComponentModel.Design.CommandID -&gt; bool" Usage="iMenuCommandService.GlobalInvoke commandID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GlobalInvoke(System::ComponentModel::Design::CommandID ^ commandID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.RemoveCommand(System.ComponentModel.Design.MenuCommand)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveCommand (command As MenuCommand)" />
       <MemberSignature Language="F#" Value="abstract member RemoveCommand : System.ComponentModel.Design.MenuCommand -&gt; unit" Usage="iMenuCommandService.RemoveCommand command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCommand(System::ComponentModel::Design::MenuCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -290,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.RemoveVerb(System.ComponentModel.Design.DesignerVerb)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveVerb (verb As DesignerVerb)" />
       <MemberSignature Language="F#" Value="abstract member RemoveVerb : System.ComponentModel.Design.DesignerVerb -&gt; unit" Usage="iMenuCommandService.RemoveVerb verb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveVerb(System::ComponentModel::Design::DesignerVerb ^ verb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -330,6 +337,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IMenuCommandService.ShowContextMenu(System.ComponentModel.Design.CommandID,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowContextMenu (menuID As CommandID, x As Integer, y As Integer)" />
       <MemberSignature Language="F#" Value="abstract member ShowContextMenu : System.ComponentModel.Design.CommandID * int * int -&gt; unit" Usage="iMenuCommandService.ShowContextMenu (menuID, x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowContextMenu(System::ComponentModel::Design::CommandID ^ menuID, int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -383,6 +391,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IMenuCommandService.Verbs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbs As DesignerVerbCollection" />
       <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.ComponentModel.Design.IMenuCommandService.Verbs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

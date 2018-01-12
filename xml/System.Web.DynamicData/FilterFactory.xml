@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FilterFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class FilterFactory" />
   <TypeSignature Language="F#" Value="type FilterFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FilterFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +43,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterFactory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterFactory.CreateFilterControl(System.Web.DynamicData.MetaColumn,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateFilterControl (column As MetaColumn, filterUIHint As String) As QueryableFilterUserControl" />
       <MemberSignature Language="F#" Value="abstract member CreateFilterControl : System.Web.DynamicData.MetaColumn * string -&gt; System.Web.DynamicData.QueryableFilterUserControl&#xA;override this.CreateFilterControl : System.Web.DynamicData.MetaColumn * string -&gt; System.Web.DynamicData.QueryableFilterUserControl" Usage="filterFactory.CreateFilterControl (column, filterUIHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::DynamicData::QueryableFilterUserControl ^ CreateFilterControl(System::Web::DynamicData::MetaColumn ^ column, System::String ^ filterUIHint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterFactory.GetFilterVirtualPath(System.Web.DynamicData.MetaColumn,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilterVirtualPath (column As MetaColumn, filterUIHint As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetFilterVirtualPath : System.Web.DynamicData.MetaColumn * string -&gt; string&#xA;override this.GetFilterVirtualPath : System.Web.DynamicData.MetaColumn * string -&gt; string" Usage="filterFactory.GetFilterVirtualPath (column, filterUIHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFilterVirtualPath(System::Web::DynamicData::MetaColumn ^ column, System::String ^ filterUIHint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

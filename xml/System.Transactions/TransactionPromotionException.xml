@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionPromotionException" />
   <TypeSignature Language="VB.NET" Value="Public Class TransactionPromotionException&#xA;Inherits TransactionException" />
   <TypeSignature Language="F#" Value="type TransactionPromotionException = class&#xA;    inherit TransactionException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionPromotionException : System::Transactions::TransactionException" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionPromotionException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionPromotionException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionPromotionException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionPromotionException : string -&gt; System.Transactions.TransactionPromotionException" Usage="new System.Transactions.TransactionPromotionException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionPromotionException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionPromotionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionPromotionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Transactions.TransactionPromotionException" Usage="new System.Transactions.TransactionPromotionException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TransactionPromotionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionPromotionException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionPromotionException : string * Exception -&gt; System.Transactions.TransactionPromotionException" Usage="new System.Transactions.TransactionPromotionException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionPromotionException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

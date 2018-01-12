@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.LiteralsEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure LiteralsEncoder" />
   <TypeSignature Language="F#" Value="type LiteralsEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class LiteralsEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralsEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.LiteralsEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.LiteralsEncoder" Usage="new System.Reflection.Metadata.Ecma335.LiteralsEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LiteralsEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralsEncoder.AddLiteral" />
       <MemberSignature Language="VB.NET" Value="Public Function AddLiteral () As LiteralEncoder" />
       <MemberSignature Language="F#" Value="member this.AddLiteral : unit -&gt; System.Reflection.Metadata.Ecma335.LiteralEncoder" Usage="literalsEncoder.AddLiteral " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::LiteralEncoder AddLiteral();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.LiteralsEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
       <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.LiteralsEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

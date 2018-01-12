@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12AddressBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Soap12AddressBinding&#xA;Inherits SoapAddressBinding" />
   <TypeSignature Language="F#" Value="type Soap12AddressBinding = class&#xA;    inherit SoapAddressBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Soap12AddressBinding sealed : System::Web::Services::Description::SoapAddressBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Soap12AddressBinding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Soap12AddressBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

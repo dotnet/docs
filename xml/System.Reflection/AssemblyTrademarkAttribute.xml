@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyTrademarkAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyTrademarkAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyTrademarkAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyTrademarkAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyTrademarkAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (trademark As String)" />
       <MemberSignature Language="F#" Value="new System.Reflection.AssemblyTrademarkAttribute : string -&gt; System.Reflection.AssemblyTrademarkAttribute" Usage="new System.Reflection.AssemblyTrademarkAttribute trademark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyTrademarkAttribute(System::String ^ trademark);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyTrademarkAttribute.Trademark" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trademark As String" />
       <MemberSignature Language="F#" Value="member this.Trademark : string" Usage="System.Reflection.AssemblyTrademarkAttribute.Trademark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Trademark { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

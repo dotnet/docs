@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsUserNameSecurityTokenHandler&#xA;Inherits UserNameSecurityTokenHandler" />
   <TypeSignature Language="F#" Value="type WindowsUserNameSecurityTokenHandler = class&#xA;    inherit UserNameSecurityTokenHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsUserNameSecurityTokenHandler : System::IdentityModel::Tokens::UserNameSecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsUserNameSecurityTokenHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler.CanValidateToken" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanValidateToken : bool" Usage="System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler.CanValidateToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
       <MemberSignature Language="F#" Value="override this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="windowsUserNameSecurityTokenHandler.ValidateToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

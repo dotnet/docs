@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.HasActivatableWorkflowEvent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HasActivatableWorkflowEvent&#xA;Inherits InstancePersistenceEvent(Of HasActivatableWorkflowEvent)" />
   <TypeSignature Language="F#" Value="type HasActivatableWorkflowEvent = class&#xA;    inherit InstancePersistenceEvent&lt;HasActivatableWorkflowEvent&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HasActivatableWorkflowEvent sealed : System::Runtime::DurableInstancing::InstancePersistenceEvent&lt;System::Activities::DurableInstancing::HasActivatableWorkflowEvent ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.HasActivatableWorkflowEvent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HasActivatableWorkflowEvent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IBindingList" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindingList&#xA;Implements IList" />
   <TypeSignature Language="F#" Value="type IBindingList = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBindingList : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddIndex (property As PropertyDescriptor)" />
       <MemberSignature Language="F#" Value="abstract member AddIndex : System.ComponentModel.PropertyDescriptor -&gt; unit" Usage="iBindingList.AddIndex property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIndex(System::ComponentModel::PropertyDescriptor ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingList.AddNew" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNew () As Object" />
       <MemberSignature Language="F#" Value="abstract member AddNew : unit -&gt; obj" Usage="iBindingList.AddNew " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.AllowEdit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowEdit As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowEdit : bool" Usage="System.ComponentModel.IBindingList.AllowEdit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowEdit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.AllowNew" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowNew As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowNew : bool" Usage="System.ComponentModel.IBindingList.AllowNew" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowNew { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.AllowRemove" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowRemove As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowRemove : bool" Usage="System.ComponentModel.IBindingList.AllowRemove" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowRemove { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplySort (property As PropertyDescriptor, direction As ListSortDirection)" />
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit" Usage="iBindingList.ApplySort (property, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -295,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (property As PropertyDescriptor, key As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int" Usage="iBindingList.Find (property, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(System::ComponentModel::PropertyDescriptor ^ property, System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -349,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.IsSorted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSorted As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSorted : bool" Usage="System.ComponentModel.IBindingList.IsSorted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSorted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -390,6 +399,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.IBindingList.ListChanged" />
       <MemberSignature Language="VB.NET" Value="Event ListChanged As ListChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -425,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveIndex (property As PropertyDescriptor)" />
       <MemberSignature Language="F#" Value="abstract member RemoveIndex : System.ComponentModel.PropertyDescriptor -&gt; unit" Usage="iBindingList.RemoveIndex property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveIndex(System::ComponentModel::PropertyDescriptor ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -464,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IBindingList.RemoveSort" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveSort ()" />
       <MemberSignature Language="F#" Value="abstract member RemoveSort : unit -&gt; unit" Usage="iBindingList.RemoveSort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -504,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDirection As ListSortDirection" />
       <MemberSignature Language="F#" Value="member this.SortDirection : System.ComponentModel.ListSortDirection" Usage="System.ComponentModel.IBindingList.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ListSortDirection SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -542,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.SortProperty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortProperty As PropertyDescriptor" />
       <MemberSignature Language="F#" Value="member this.SortProperty : System.ComponentModel.PropertyDescriptor" Usage="System.ComponentModel.IBindingList.SortProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyDescriptor ^ SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -580,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.SupportsChangeNotification" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsChangeNotification As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsChangeNotification : bool" Usage="System.ComponentModel.IBindingList.SupportsChangeNotification" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsChangeNotification { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -617,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.SupportsSearching" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsSearching As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsSearching : bool" Usage="System.ComponentModel.IBindingList.SupportsSearching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsSearching { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -657,6 +673,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IBindingList.SupportsSorting" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsSorting As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsSorting : bool" Usage="System.ComponentModel.IBindingList.SupportsSorting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsSorting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

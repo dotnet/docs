@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpContextBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WSHttpContextBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WSHttpContextBinding, WSHttpContextBindingElement)" />
   <TypeSignature Language="F#" Value="type WSHttpContextBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WSHttpContextBinding, WSHttpContextBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSHttpContextBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WSHttpContextBinding ^, System::ServiceModel::Configuration::WSHttpContextBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpContextBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpContextBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

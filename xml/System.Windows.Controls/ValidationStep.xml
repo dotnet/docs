@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationStep" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationStep" />
   <TypeSignature Language="F#" Value="type ValidationStep = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationStep" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.CommittedValue" />
       <MemberSignature Language="VB.NET" Value="CommittedValue" />
       <MemberSignature Language="F#" Value="CommittedValue = 3" Usage="System.Windows.Controls.ValidationStep.CommittedValue" />
+      <MemberSignature Language="C++ CLI" Value="CommittedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.ConvertedProposedValue" />
       <MemberSignature Language="VB.NET" Value="ConvertedProposedValue" />
       <MemberSignature Language="F#" Value="ConvertedProposedValue = 1" Usage="System.Windows.Controls.ValidationStep.ConvertedProposedValue" />
+      <MemberSignature Language="C++ CLI" Value="ConvertedProposedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.RawProposedValue" />
       <MemberSignature Language="VB.NET" Value="RawProposedValue" />
       <MemberSignature Language="F#" Value="RawProposedValue = 0" Usage="System.Windows.Controls.ValidationStep.RawProposedValue" />
+      <MemberSignature Language="C++ CLI" Value="RawProposedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.UpdatedValue" />
       <MemberSignature Language="VB.NET" Value="UpdatedValue" />
       <MemberSignature Language="F#" Value="UpdatedValue = 2" Usage="System.Windows.Controls.ValidationStep.UpdatedValue" />
+      <MemberSignature Language="C++ CLI" Value="UpdatedValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

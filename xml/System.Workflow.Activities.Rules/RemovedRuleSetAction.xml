@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RemovedRuleSetAction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RemovedRuleSetAction&#xA;Inherits RuleSetChangeAction" />
   <TypeSignature Language="F#" Value="type RemovedRuleSetAction = class&#xA;    inherit RuleSetChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RemovedRuleSetAction sealed : System::Workflow::Activities::Rules::RuleSetChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedRuleSetAction.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemovedRuleSetAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (removedRuleSetDefinition As RuleSet)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RemovedRuleSetAction : System.Workflow.Activities.Rules.RuleSet -&gt; System.Workflow.Activities.Rules.RemovedRuleSetAction" Usage="new System.Workflow.Activities.Rules.RemovedRuleSetAction removedRuleSetDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemovedRuleSetAction(System::Workflow::Activities::Rules::RuleSet ^ removedRuleSetDefinition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RemovedRuleSetAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="removedRuleSetAction.ApplyTo rootActivity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -102,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RemovedRuleSetAction.RuleSetDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property RuleSetDefinition As RuleSet" />
       <MemberSignature Language="F#" Value="member this.RuleSetDefinition : System.Workflow.Activities.Rules.RuleSet with get, set" Usage="System.Workflow.Activities.Rules.RemovedRuleSetAction.RuleSetDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSet ^ RuleSetDefinition { System::Workflow::Activities::Rules::RuleSet ^ get(); void set(System::Workflow::Activities::Rules::RuleSet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RemovedRuleSetAction.RuleSetName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleSetName As String" />
       <MemberSignature Language="F#" Value="member this.RuleSetName : string" Usage="System.Workflow.Activities.Rules.RemovedRuleSetAction.RuleSetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RuleSetName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetMsmqBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetMsmqBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetMsmqBinding, NetMsmqBindingElement)" />
   <TypeSignature Language="F#" Value="type NetMsmqBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetMsmqBinding, NetMsmqBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetMsmqBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetMsmqBinding ^, System::ServiceModel::Configuration::NetMsmqBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetMsmqBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetMsmqBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

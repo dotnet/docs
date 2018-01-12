@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OutputBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputBinding&#xA;Inherits MessageBinding" />
   <TypeSignature Language="F#" Value="type OutputBinding = class&#xA;    inherit MessageBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputBinding sealed : System::Web::Services::Description::MessageBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OutputBinding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutputBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OutputBinding.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Extensions As ServiceDescriptionFormatExtensionCollection" />
       <MemberSignature Language="F#" Value="member this.Extensions : System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" Usage="System.Web.Services.Description.OutputBinding.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ Extensions { System::Web::Services::Description::ServiceDescriptionFormatExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

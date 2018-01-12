@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipArchive" />
   <TypeSignature Language="VB.NET" Value="Public Class ZipArchive&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type ZipArchive = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ZipArchive : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.ZipArchiveMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode)" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream * System.IO.Compression.ZipArchiveMode -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive (stream, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream, System::IO::Compression::ZipArchiveMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -164,6 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.ZipArchiveMode mode, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream * System.IO.Compression.ZipArchiveMode * bool -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive (stream, mode, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream, System::IO::Compression::ZipArchiveMode mode, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -216,6 +220,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.ZipArchiveMode mode, bool leaveOpen, class System.Text.Encoding entryNameEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream * System.IO.Compression.ZipArchiveMode * bool * System.Text.Encoding -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive (stream, mode, leaveOpen, entryNameEncoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream, System::IO::Compression::ZipArchiveMode mode, bool leaveOpen, System::Text::Encoding ^ entryNameEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -303,6 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.CreateEntry(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateEntry (entryName As String) As ZipArchiveEntry" />
       <MemberSignature Language="F#" Value="member this.CreateEntry : string -&gt; System.IO.Compression.ZipArchiveEntry" Usage="zipArchive.CreateEntry entryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Compression::ZipArchiveEntry ^ CreateEntry(System::String ^ entryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -356,6 +362,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Compression.ZipArchiveEntry CreateEntry(string entryName, valuetype System.IO.Compression.CompressionLevel compressionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.CreateEntry(System.String,System.IO.Compression.CompressionLevel)" />
       <MemberSignature Language="F#" Value="member this.CreateEntry : string * System.IO.Compression.CompressionLevel -&gt; System.IO.Compression.ZipArchiveEntry" Usage="zipArchive.CreateEntry (entryName, compressionLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Compression::ZipArchiveEntry ^ CreateEntry(System::String ^ entryName, System::IO::Compression::CompressionLevel compressionLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -424,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="zipArchive.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -465,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="zipArchive.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -513,6 +522,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchive.Entries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entries As ReadOnlyCollection(Of ZipArchiveEntry)" />
       <MemberSignature Language="F#" Value="member this.Entries : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IO.Compression.ZipArchiveEntry&gt;" Usage="System.IO.Compression.ZipArchive.Entries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IO::Compression::ZipArchiveEntry ^&gt; ^ Entries { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IO::Compression::ZipArchiveEntry ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -558,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.GetEntry(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEntry (entryName As String) As ZipArchiveEntry" />
       <MemberSignature Language="F#" Value="member this.GetEntry : string -&gt; System.IO.Compression.ZipArchiveEntry" Usage="zipArchive.GetEntry entryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Compression::ZipArchiveEntry ^ GetEntry(System::String ^ entryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -611,6 +622,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Compression.ZipArchive.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As ZipArchiveMode" />
       <MemberSignature Language="F#" Value="member this.Mode : System.IO.Compression.ZipArchiveMode" Usage="System.IO.Compression.ZipArchive.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Compression::ZipArchiveMode Mode { System::IO::Compression::ZipArchiveMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>

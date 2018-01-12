@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerEventService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerEventService" />
   <TypeSignature Language="F#" Value="type IDesignerEventService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerEventService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerEventService.ActiveDesigner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveDesigner As IDesignerHost" />
       <MemberSignature Language="F#" Value="member this.ActiveDesigner : System.ComponentModel.Design.IDesignerHost" Usage="System.ComponentModel.Design.IDesignerEventService.ActiveDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::IDesignerHost ^ ActiveDesigner { System::ComponentModel::Design::IDesignerHost ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerEventService.ActiveDesignerChanged" />
       <MemberSignature Language="VB.NET" Value="Event ActiveDesignerChanged As ActiveDesignerEventHandler " />
       <MemberSignature Language="F#" Value="member this.ActiveDesignerChanged : System.ComponentModel.Design.ActiveDesignerEventHandler " Usage="member this.ActiveDesignerChanged : System.ComponentModel.Design.ActiveDesignerEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ActiveDesignerEventHandler ^ ActiveDesignerChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerEventService.DesignerCreated" />
       <MemberSignature Language="VB.NET" Value="Event DesignerCreated As DesignerEventHandler " />
       <MemberSignature Language="F#" Value="member this.DesignerCreated : System.ComponentModel.Design.DesignerEventHandler " Usage="member this.DesignerCreated : System.ComponentModel.Design.DesignerEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::DesignerEventHandler ^ DesignerCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +152,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerEventService.DesignerDisposed" />
       <MemberSignature Language="VB.NET" Value="Event DesignerDisposed As DesignerEventHandler " />
       <MemberSignature Language="F#" Value="member this.DesignerDisposed : System.ComponentModel.Design.DesignerEventHandler " Usage="member this.DesignerDisposed : System.ComponentModel.Design.DesignerEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::DesignerEventHandler ^ DesignerDisposed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerEventService.Designers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Designers As DesignerCollection" />
       <MemberSignature Language="F#" Value="member this.Designers : System.ComponentModel.Design.DesignerCollection" Usage="System.ComponentModel.Design.IDesignerEventService.Designers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerCollection ^ Designers { System::ComponentModel::Design::DesignerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +220,7 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerEventService.SelectionChanged" />
       <MemberSignature Language="VB.NET" Value="Event SelectionChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

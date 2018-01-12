@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class EncryptedSecurityTokenHandler&#xA;Inherits SecurityTokenHandler" />
   <TypeSignature Language="F#" Value="type EncryptedSecurityTokenHandler = class&#xA;    inherit SecurityTokenHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedSecurityTokenHandler : System::IdentityModel::Tokens::SecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedSecurityTokenHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.CanReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadKeyIdentifierClause (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanReadKeyIdentifierClause : System.Xml.XmlReader -&gt; bool" Usage="encryptedSecurityTokenHandler.CanReadKeyIdentifierClause reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.CanReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadToken (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanReadToken : System.Xml.XmlReader -&gt; bool" Usage="encryptedSecurityTokenHandler.CanReadToken reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.CanWriteToken" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWriteToken As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanWriteToken : bool" Usage="System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.CanWriteToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWriteToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.GetTokenTypeIdentifiers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenTypeIdentifiers () As String()" />
       <MemberSignature Language="F#" Value="override this.GetTokenTypeIdentifiers : unit -&gt; string[]" Usage="encryptedSecurityTokenHandler.GetTokenTypeIdentifiers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetTokenTypeIdentifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -147,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.KeyInfoSerializer" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyInfoSerializer As SecurityTokenSerializer" />
       <MemberSignature Language="F#" Value="member this.KeyInfoSerializer : System.IdentityModel.Selectors.SecurityTokenSerializer with get, set" Usage="System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.KeyInfoSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenSerializer ^ KeyInfoSerializer { System::IdentityModel::Selectors::SecurityTokenSerializer ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenSerializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -168,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.ReadKeyIdentifierClause(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadKeyIdentifierClause (reader As XmlReader) As SecurityKeyIdentifierClause" />
       <MemberSignature Language="F#" Value="override this.ReadKeyIdentifierClause : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="encryptedSecurityTokenHandler.ReadKeyIdentifierClause reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -196,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.ReadToken(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToken (reader As XmlReader) As SecurityToken" />
       <MemberSignature Language="F#" Value="override this.ReadToken : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="encryptedSecurityTokenHandler.ReadToken reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.TokenType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenType As Type" />
       <MemberSignature Language="F#" Value="member this.TokenType : Type" Usage="System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.TokenType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ TokenType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteToken (writer As XmlWriter, token As SecurityToken)" />
       <MemberSignature Language="F#" Value="override this.WriteToken : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityToken -&gt; unit" Usage="encryptedSecurityTokenHandler.WriteToken (writer, token)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteToken(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

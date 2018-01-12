@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.SynchronizationLockException" />
   <TypeSignature Language="VB.NET" Value="Public Class SynchronizationLockException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type SynchronizationLockException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SynchronizationLockException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SynchronizationLockException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationLockException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -103,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SynchronizationLockException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Threading.SynchronizationLockException : string -&gt; System.Threading.SynchronizationLockException" Usage="new System.Threading.SynchronizationLockException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationLockException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -146,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SynchronizationLockException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Threading.SynchronizationLockException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.SynchronizationLockException" Usage="new System.Threading.SynchronizationLockException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SynchronizationLockException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SynchronizationLockException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Threading.SynchronizationLockException : string * Exception -&gt; System.Threading.SynchronizationLockException" Usage="new System.Threading.SynchronizationLockException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizationLockException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

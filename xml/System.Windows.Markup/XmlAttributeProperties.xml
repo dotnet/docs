@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlAttributeProperties" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlAttributeProperties" />
   <TypeSignature Language="F#" Value="type XmlAttributeProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlAttributeProperties sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlNamespaceMaps(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlNamespaceMaps(System.Windows.DependencyObject)" />
       <MemberSignature Language="F#" Value="static member GetXmlNamespaceMaps : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Markup.XmlAttributeProperties.GetXmlNamespaceMaps dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetXmlNamespaceMaps(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlnsDefinition(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlnsDefinition(System.Windows.DependencyObject)" />
       <MemberSignature Language="F#" Value="static member GetXmlnsDefinition : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Markup.XmlAttributeProperties.GetXmlnsDefinition dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetXmlnsDefinition(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.XmlnsDictionary GetXmlnsDictionary(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlnsDictionary(System.Windows.DependencyObject)" />
       <MemberSignature Language="F#" Value="static member GetXmlnsDictionary : System.Windows.DependencyObject -&gt; System.Windows.Markup.XmlnsDictionary" Usage="System.Windows.Markup.XmlAttributeProperties.GetXmlnsDictionary dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::XmlnsDictionary ^ GetXmlnsDictionary(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSpace(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlSpace(System.Windows.DependencyObject)" />
       <MemberSignature Language="F#" Value="static member GetXmlSpace : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Markup.XmlAttributeProperties.GetXmlSpace dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetXmlSpace(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlNamespaceMaps(class System.Windows.DependencyObject dependencyObject, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="F#" Value="static member SetXmlNamespaceMaps : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps (dependencyObject, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetXmlNamespaceMaps(System::Windows::DependencyObject ^ dependencyObject, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +198,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlnsDefinition(class System.Windows.DependencyObject dependencyObject, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlnsDefinition(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="F#" Value="static member SetXmlnsDefinition : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Markup.XmlAttributeProperties.SetXmlnsDefinition (dependencyObject, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetXmlnsDefinition(System::Windows::DependencyObject ^ dependencyObject, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlnsDictionary(class System.Windows.DependencyObject dependencyObject, class System.Windows.Markup.XmlnsDictionary value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlnsDictionary(System.Windows.DependencyObject,System.Windows.Markup.XmlnsDictionary)" />
       <MemberSignature Language="F#" Value="static member SetXmlnsDictionary : System.Windows.DependencyObject * System.Windows.Markup.XmlnsDictionary -&gt; unit" Usage="System.Windows.Markup.XmlAttributeProperties.SetXmlnsDictionary (dependencyObject, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetXmlnsDictionary(System::Windows::DependencyObject ^ dependencyObject, System::Windows::Markup::XmlnsDictionary ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlSpace(class System.Windows.DependencyObject dependencyObject, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlSpace(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="F#" Value="static member SetXmlSpace : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Markup.XmlAttributeProperties.SetXmlSpace (dependencyObject, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetXmlSpace(System::Windows::DependencyObject ^ dependencyObject, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +296,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMapsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XmlNamespaceMapsProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable XmlNamespaceMapsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMapsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XmlNamespaceMapsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -327,6 +337,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinitionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XmlnsDefinitionProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable XmlnsDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Markup.XmlAttributeProperties.XmlnsDefinitionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XmlnsDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -367,6 +378,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionaryProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XmlnsDictionaryProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable XmlnsDictionaryProperty : System.Windows.DependencyProperty" Usage="System.Windows.Markup.XmlAttributeProperties.XmlnsDictionaryProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XmlnsDictionaryProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -407,6 +419,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlSpaceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XmlSpaceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable XmlSpaceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Markup.XmlAttributeProperties.XmlSpaceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XmlSpaceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

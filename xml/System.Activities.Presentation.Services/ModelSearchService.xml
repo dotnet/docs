@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelSearchService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelSearchService" />
   <TypeSignature Language="F#" Value="type ModelSearchService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelSearchService abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelSearchService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ModelSearchService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelSearchService.GenerateTextImage" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GenerateTextImage () As TextImage" />
       <MemberSignature Language="F#" Value="abstract member GenerateTextImage : unit -&gt; System.Activities.Presentation.Model.TextImage" Usage="modelSearchService.GenerateTextImage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::TextImage ^ GenerateTextImage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelSearchService.NavigateTo(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function NavigateTo (location As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member NavigateTo : int -&gt; bool" Usage="modelSearchService.NavigateTo location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool NavigateTo(int location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelSearchService.NavigateTo(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function NavigateTo (startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member NavigateTo : int * int * int * int -&gt; bool" Usage="modelSearchService.NavigateTo (startLine, startColumn, endLine, endColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool NavigateTo(int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

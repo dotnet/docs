@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Missing" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Missing&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type Missing = class&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Missing sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Missing.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Missing.Value" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As Missing " />
       <MemberSignature Language="F#" Value=" staticval mutable Value : System.Reflection.Missing" Usage="System.Reflection.Missing.Value" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::Missing ^ Value;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

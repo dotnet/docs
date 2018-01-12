@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketFlags" />
   <TypeSignature Language="F#" Value="type SocketFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Broadcast" />
       <MemberSignature Language="VB.NET" Value="Broadcast" />
       <MemberSignature Language="F#" Value="Broadcast = 1024" Usage="System.Net.Sockets.SocketFlags.Broadcast" />
+      <MemberSignature Language="C++ CLI" Value="Broadcast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -77,6 +79,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.ControlDataTruncated" />
       <MemberSignature Language="VB.NET" Value="ControlDataTruncated" />
       <MemberSignature Language="F#" Value="ControlDataTruncated = 512" Usage="System.Net.Sockets.SocketFlags.ControlDataTruncated" />
+      <MemberSignature Language="C++ CLI" Value="ControlDataTruncated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.DontRoute" />
       <MemberSignature Language="VB.NET" Value="DontRoute" />
       <MemberSignature Language="F#" Value="DontRoute = 4" Usage="System.Net.Sockets.SocketFlags.DontRoute" />
+      <MemberSignature Language="C++ CLI" Value="DontRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.MaxIOVectorLength" />
       <MemberSignature Language="VB.NET" Value="MaxIOVectorLength" />
       <MemberSignature Language="F#" Value="MaxIOVectorLength = 16" Usage="System.Net.Sockets.SocketFlags.MaxIOVectorLength" />
+      <MemberSignature Language="C++ CLI" Value="MaxIOVectorLength" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Multicast" />
       <MemberSignature Language="VB.NET" Value="Multicast" />
       <MemberSignature Language="F#" Value="Multicast = 2048" Usage="System.Net.Sockets.SocketFlags.Multicast" />
+      <MemberSignature Language="C++ CLI" Value="Multicast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.Sockets.SocketFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.OutOfBand" />
       <MemberSignature Language="VB.NET" Value="OutOfBand" />
       <MemberSignature Language="F#" Value="OutOfBand = 1" Usage="System.Net.Sockets.SocketFlags.OutOfBand" />
+      <MemberSignature Language="C++ CLI" Value="OutOfBand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Partial" />
       <MemberSignature Language="VB.NET" Value="Partial" />
       <MemberSignature Language="F#" Value="Partial = 32768" Usage="System.Net.Sockets.SocketFlags.Partial" />
+      <MemberSignature Language="C++ CLI" Value="Partial" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Peek" />
       <MemberSignature Language="VB.NET" Value="Peek" />
       <MemberSignature Language="F#" Value="Peek = 2" Usage="System.Net.Sockets.SocketFlags.Peek" />
+      <MemberSignature Language="C++ CLI" Value="Peek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketFlags.Truncated" />
       <MemberSignature Language="VB.NET" Value="Truncated" />
       <MemberSignature Language="F#" Value="Truncated = 256" Usage="System.Net.Sockets.SocketFlags.Truncated" />
+      <MemberSignature Language="C++ CLI" Value="Truncated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

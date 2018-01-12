@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ConnectionManagementSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionManagementSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type ConnectionManagementSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionManagementSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionManagementSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementSection.ConnectionManagement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionManagement As ConnectionManagementElementCollection" />
       <MemberSignature Language="F#" Value="member this.ConnectionManagement : System.Net.Configuration.ConnectionManagementElementCollection" Usage="System.Net.Configuration.ConnectionManagementSection.ConnectionManagement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ConnectionManagementElementCollection ^ ConnectionManagement { System::Net::Configuration::ConnectionManagementElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.ConnectionManagementSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

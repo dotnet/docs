@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class ToggleButtonAutomationPeer&#xA;Inherits ButtonBaseAutomationPeer&#xA;Implements IToggleProvider" />
   <TypeSignature Language="F#" Value="type ToggleButtonAutomationPeer = class&#xA;    inherit ButtonBaseAutomationPeer&#xA;    interface IToggleProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToggleButtonAutomationPeer : System::Windows::Automation::Peers::ButtonBaseAutomationPeer, System::Windows::Automation::Provider::IToggleProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.#ctor(System.Windows.Controls.Primitives.ToggleButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ToggleButton)" />
       <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ToggleButtonAutomationPeer : System.Windows.Controls.Primitives.ToggleButton -&gt; System.Windows.Automation.Peers.ToggleButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.ToggleButtonAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToggleButtonAutomationPeer(System::Windows::Controls::Primitives::ToggleButton ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="toggleButtonAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="toggleButtonAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="toggleButtonAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IToggleProvider.Toggle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#Toggle" />
       <MemberSignature Language="VB.NET" Value="Sub Toggle () Implements IToggleProvider.Toggle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IToggleProvider.Toggle() = System::Windows::Automation::Provider::IToggleProvider::Toggle;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Automation.Provider.IToggleProvider.Toggle</InterfaceMember>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ToggleButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#ToggleState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ToggleState As ToggleState Implements IToggleProvider.ToggleState" />
       <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ToggleButtonAutomationPeer.System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState { System::Windows::Automation::ToggleState get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IToggleProvider.ToggleState</InterfaceMember>

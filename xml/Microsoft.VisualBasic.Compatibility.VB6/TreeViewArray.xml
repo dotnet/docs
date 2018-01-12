@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeViewArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
   <TypeSignature Language="F#" Value="type TreeViewArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeViewArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -53,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeViewArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeViewArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.AfterCheck" />
       <MemberSignature Language="VB.NET" Value="Public Event AfterCheck As TreeViewEventHandler " />
       <MemberSignature Language="F#" Value="member this.AfterCheck : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterCheck : System.Windows.Forms.TreeViewEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterCheck;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.AfterCollapse" />
       <MemberSignature Language="VB.NET" Value="Public Event AfterCollapse As TreeViewEventHandler " />
       <MemberSignature Language="F#" Value="member this.AfterCollapse : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterCollapse : System.Windows.Forms.TreeViewEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterCollapse;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.AfterExpand" />
       <MemberSignature Language="VB.NET" Value="Public Event AfterExpand As TreeViewEventHandler " />
       <MemberSignature Language="F#" Value="member this.AfterExpand : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterExpand : System.Windows.Forms.TreeViewEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterExpand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -199,6 +205,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.AfterLabelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Event AfterLabelEdit As NodeLabelEditEventHandler " />
       <MemberSignature Language="F#" Value="member this.AfterLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " Usage="member this.AfterLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::NodeLabelEditEventHandler ^ AfterLabelEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.AfterSelect" />
       <MemberSignature Language="VB.NET" Value="Public Event AfterSelect As TreeViewEventHandler " />
       <MemberSignature Language="F#" Value="member this.AfterSelect : System.Windows.Forms.TreeViewEventHandler " Usage="member this.AfterSelect : System.Windows.Forms.TreeViewEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewEventHandler ^ AfterSelect;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BackColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -292,6 +301,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeCheck" />
       <MemberSignature Language="VB.NET" Value="Public Event BeforeCheck As TreeViewCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.BeforeCheck : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeCheck : System.Windows.Forms.TreeViewCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeCheck;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -321,6 +331,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeCollapse" />
       <MemberSignature Language="VB.NET" Value="Public Event BeforeCollapse As TreeViewCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.BeforeCollapse : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeCollapse : System.Windows.Forms.TreeViewCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeCollapse;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -350,6 +361,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeExpand" />
       <MemberSignature Language="VB.NET" Value="Public Event BeforeExpand As TreeViewCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.BeforeExpand : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeExpand : System.Windows.Forms.TreeViewCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeExpand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -379,6 +391,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeLabelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Event BeforeLabelEdit As NodeLabelEditEventHandler " />
       <MemberSignature Language="F#" Value="member this.BeforeLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " Usage="member this.BeforeLabelEdit : System.Windows.Forms.NodeLabelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::NodeLabelEditEventHandler ^ BeforeLabelEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -408,6 +421,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BeforeSelect" />
       <MemberSignature Language="VB.NET" Value="Public Event BeforeSelect As TreeViewCancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.BeforeSelect : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.BeforeSelect : System.Windows.Forms.TreeViewCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ BeforeSelect;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.BindingContextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -468,6 +483,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="treeViewArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -511,6 +527,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.CausesValidationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -542,6 +559,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ChangeUICues" />
       <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
       <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -571,6 +589,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Click" />
       <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -604,6 +623,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ClientSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ClientSizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ClientSizeChanged : EventHandler " Usage="member this.ClientSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -635,6 +655,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ContextMenuChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -671,6 +692,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ContextMenuStripChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ContextMenuStripChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -702,6 +724,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ControlAdded" />
       <MemberSignature Language="VB.NET" Value="Public Event ControlAdded As ControlEventHandler " />
       <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -731,6 +754,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ControlRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Event ControlRemoved As ControlEventHandler " />
       <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -760,6 +784,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.CursorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -791,6 +816,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DockChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -822,6 +848,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -851,6 +878,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DragDrop" />
       <MemberSignature Language="VB.NET" Value="Public Event DragDrop As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -881,6 +909,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DragEnter" />
       <MemberSignature Language="VB.NET" Value="Public Event DragEnter As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -913,6 +942,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DragLeave" />
       <MemberSignature Language="VB.NET" Value="Public Event DragLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -945,6 +975,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DragOver" />
       <MemberSignature Language="VB.NET" Value="Public Event DragOver As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -977,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.DrawNode" />
       <MemberSignature Language="VB.NET" Value="Public Event DrawNode As DrawTreeNodeEventHandler " />
       <MemberSignature Language="F#" Value="member this.DrawNode : System.Windows.Forms.DrawTreeNodeEventHandler " Usage="member this.DrawNode : System.Windows.Forms.DrawTreeNodeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawTreeNodeEventHandler ^ DrawNode;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1009,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.EnabledChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1040,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Enter" />
       <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1069,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1100,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1131,6 +1167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.GetControlInstanceType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="treeViewArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1162,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.GetIndex(System.Windows.Forms.TreeView)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As TreeView) As Short" />
       <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.TreeView -&gt; int16" Usage="treeViewArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::TreeView ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1196,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.GiveFeedback" />
       <MemberSignature Language="VB.NET" Value="Public Event GiveFeedback As GiveFeedbackEventHandler " />
       <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1227,6 +1266,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.HelpRequested" />
       <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
       <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1259,6 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.HookUpControlEvents(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
       <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="treeViewArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1292,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1323,6 +1365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Item(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As TreeView" />
       <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.TreeView" Usage="Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeView ^ default[short] { System::Windows::Forms::TreeView ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1362,6 +1405,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ItemDrag" />
       <MemberSignature Language="VB.NET" Value="Public Event ItemDrag As ItemDragEventHandler " />
       <MemberSignature Language="F#" Value="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " Usage="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemDragEventHandler ^ ItemDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1391,6 +1435,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1431,6 +1476,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1475,6 +1521,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1515,6 +1562,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
       <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1547,6 +1595,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1597,6 +1646,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.LocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1628,6 +1678,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MarginChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event MarginChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1659,6 +1710,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseCaptureChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseCaptureChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseCaptureChanged : EventHandler " Usage="member this.MouseCaptureChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1703,6 +1755,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseClick As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1748,6 +1801,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseDoubleClick As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1793,6 +1847,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1835,6 +1890,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1877,6 +1933,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1923,6 +1980,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1965,6 +2023,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2007,6 +2066,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2049,6 +2109,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Move" />
       <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2079,6 +2140,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.NodeMouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Event NodeMouseClick As TreeNodeMouseClickEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " Usage="member this.NodeMouseClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeNodeMouseClickEventHandler ^ NodeMouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2110,6 +2172,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.NodeMouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Event NodeMouseDoubleClick As TreeNodeMouseClickEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeMouseDoubleClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " Usage="member this.NodeMouseDoubleClick : System.Windows.Forms.TreeNodeMouseClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeNodeMouseClickEventHandler ^ NodeMouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2141,6 +2204,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.NodeMouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Event NodeMouseHover As TreeNodeMouseHoverEventHandler " />
       <MemberSignature Language="F#" Value="member this.NodeMouseHover : System.Windows.Forms.TreeNodeMouseHoverEventHandler " Usage="member this.NodeMouseHover : System.Windows.Forms.TreeNodeMouseHoverEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::TreeNodeMouseHoverEventHandler ^ NodeMouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2172,6 +2236,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PaddingChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2203,6 +2268,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ParentChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2234,6 +2300,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.QueryAccessibilityHelp" />
       <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
       <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2266,6 +2333,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.QueryContinueDrag" />
       <MemberSignature Language="VB.NET" Value="Public Event QueryContinueDrag As QueryContinueDragEventHandler " />
       <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2296,6 +2364,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.RegionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event RegionChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RegionChanged : EventHandler " Usage="member this.RegionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RegionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2327,6 +2396,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ResetIndex(System.Windows.Forms.TreeView)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As TreeView)" />
       <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.TreeView -&gt; unit" Usage="treeViewArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::TreeView ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2365,6 +2435,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Resize" />
       <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2399,6 +2470,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.RightToLeftChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2430,6 +2502,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.RightToLeftLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event RightToLeftLayoutChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2461,6 +2534,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.SetIndex(System.Windows.Forms.TreeView,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As TreeView, Index As Short)" />
       <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.TreeView * int16 -&gt; unit" Usage="treeViewArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::TreeView ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2501,6 +2575,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.ShouldSerializeIndex(System.Windows.Forms.TreeView)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As TreeView) As Boolean" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.TreeView -&gt; bool" Usage="treeViewArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::TreeView ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2541,6 +2616,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.SizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2572,6 +2648,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.StyleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2605,6 +2682,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.SystemColorsChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2637,6 +2715,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.TabIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2668,6 +2747,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2699,6 +2779,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Validated" />
       <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2761,6 +2842,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.Validating" />
       <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
       <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2823,6 +2905,7 @@ MsgBox(CStr(TreeViewArray(1).Text))
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.TreeViewArray.VisibleChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

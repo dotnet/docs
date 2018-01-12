@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipArchiveMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ZipArchiveMode" />
   <TypeSignature Language="F#" Value="type ZipArchiveMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ZipArchiveMode" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.ZipArchiveMode.Create" />
       <MemberSignature Language="VB.NET" Value="Create" />
       <MemberSignature Language="F#" Value="Create = 1" Usage="System.IO.Compression.ZipArchiveMode.Create" />
+      <MemberSignature Language="C++ CLI" Value="Create" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.ZipArchiveMode.Read" />
       <MemberSignature Language="VB.NET" Value="Read" />
       <MemberSignature Language="F#" Value="Read = 0" Usage="System.IO.Compression.ZipArchiveMode.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.ZipArchiveMode.Update" />
       <MemberSignature Language="VB.NET" Value="Update" />
       <MemberSignature Language="F#" Value="Update = 2" Usage="System.IO.Compression.ZipArchiveMode.Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>

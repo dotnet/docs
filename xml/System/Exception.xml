@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Exception" />
   <TypeSignature Language="VB.NET" Value="Public Class Exception&#xA;Implements _Exception, ISerializable" />
   <TypeSignature Language="F#" Value="type Exception = class&#xA;    interface ISerializable&#xA;    interface _Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Exception : System::Runtime::InteropServices::_Exception, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -293,6 +294,7 @@ Stack Trace:
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -346,6 +348,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new Exception : string -&gt; Exception" Usage="new System.Exception message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -402,6 +405,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new Exception : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Exception" Usage="new System.Exception (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Exception(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -458,6 +462,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new Exception : string * Exception -&gt; Exception" Usage="new System.Exception (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -516,6 +521,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.Data" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Data As IDictionary" />
       <MemberSignature Language="F#" Value="member this.Data : System.Collections.IDictionary" Usage="System.Exception.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Data { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -589,6 +595,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.GetBaseException" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBaseException () As Exception" />
       <MemberSignature Language="F#" Value="abstract member GetBaseException : unit -&gt; Exception&#xA;override this.GetBaseException : unit -&gt; Exception" Usage="exception.GetBaseException " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Exception ^ GetBaseException();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Exception.GetBaseException</InterfaceMember>
@@ -649,6 +656,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="exception.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -712,6 +720,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.GetType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
       <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="exception.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Exception.GetType</InterfaceMember>
@@ -754,6 +763,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.HelpLink" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HelpLink As String" />
       <MemberSignature Language="F#" Value="member this.HelpLink : string with get, set" Usage="System.Exception.HelpLink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpLink { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._Exception.HelpLink</InterfaceMember>
@@ -808,6 +818,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.HResult" />
       <MemberSignature Language="VB.NET" Value="Public Property HResult As Integer" />
       <MemberSignature Language="F#" Value="member this.HResult : int with get, set" Usage="System.Exception.HResult" />
+      <MemberSignature Language="C++ CLI" Value="public:  property int HResult {  public:&#xA;int get(); protected:&#xA; void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -859,6 +870,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.InnerException" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerException As Exception" />
       <MemberSignature Language="F#" Value="member this.InnerException : Exception" Usage="System.Exception.InnerException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ InnerException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._Exception.InnerException</InterfaceMember>
@@ -919,6 +931,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Exception.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._Exception.Message</InterfaceMember>
@@ -987,6 +1000,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="E:System.Exception.SerializeObjectState" />
       <MemberSignature Language="VB.NET" Value="Protected Custom Event SerializeObjectState As EventHandler(Of SafeSerializationEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SerializeObjectState : EventHandler&lt;System.Runtime.Serialization.SafeSerializationEventArgs&gt; " Usage="member this.SerializeObjectState : System.EventHandler&lt;System.Runtime.Serialization.SafeSerializationEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; event EventHandler&lt;System::Runtime::Serialization::SafeSerializationEventArgs ^&gt; ^ SerializeObjectState;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1043,6 +1057,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.Source" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Source As String" />
       <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Exception.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._Exception.Source</InterfaceMember>
@@ -1096,6 +1111,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.StackTrace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StackTrace As String" />
       <MemberSignature Language="F#" Value="member this.StackTrace : string" Usage="System.Exception.StackTrace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StackTrace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._Exception.StackTrace</InterfaceMember>
@@ -1160,6 +1176,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="P:System.Exception.TargetSite" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetSite As MethodBase" />
       <MemberSignature Language="F#" Value="member this.TargetSite : System.Reflection.MethodBase" Usage="System.Exception.TargetSite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodBase ^ TargetSite { System::Reflection::MethodBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Runtime.InteropServices._Exception.TargetSite</InterfaceMember>
@@ -1216,6 +1233,7 @@ Stack Trace:
       <MemberSignature Language="DocId" Value="M:System.Exception.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="exception.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._Exception.ToString</InterfaceMember>

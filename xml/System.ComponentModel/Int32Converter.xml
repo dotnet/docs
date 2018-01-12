@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Int32Converter" />
   <TypeSignature Language="VB.NET" Value="Public Class Int32Converter&#xA;Inherits BaseNumberConverter" />
   <TypeSignature Language="F#" Value="type Int32Converter = class&#xA;    inherit BaseNumberConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Int32Converter : System::ComponentModel::BaseNumberConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -57,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Int32Converter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Int32Converter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

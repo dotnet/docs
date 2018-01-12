@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.FaultDescriptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultDescriptionCollection&#xA;Inherits Collection(Of FaultDescription)" />
   <TypeSignature Language="F#" Value="type FaultDescriptionCollection = class&#xA;    inherit Collection&lt;FaultDescription&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultDescriptionCollection : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::FaultDescription ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.FaultDescriptionCollection.Find(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As FaultDescription" />
       <MemberSignature Language="F#" Value="member this.Find : string -&gt; System.ServiceModel.Description.FaultDescription" Usage="faultDescriptionCollection.Find name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::FaultDescription ^ Find(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.FaultDescriptionCollection.FindAll(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (name As String) As Collection(Of FaultDescription)" />
       <MemberSignature Language="F#" Value="member this.FindAll : string -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.FaultDescription&gt;" Usage="faultDescriptionCollection.FindAll name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::FaultDescription ^&gt; ^ FindAll(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

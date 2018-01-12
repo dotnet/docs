@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedEntry" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LocalizedEntry" />
   <TypeSignature Language="F#" Value="type LocalizedEntry = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalizedEntry abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedEntry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LocalizedEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedEntry.#ctor(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (language As CultureInfo)" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.LocalizedEntry : System.Globalization.CultureInfo -&gt; System.IdentityModel.Metadata.LocalizedEntry" Usage="new System.IdentityModel.Metadata.LocalizedEntry language" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LocalizedEntry(System::Globalization::CultureInfo ^ language);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.LocalizedEntry.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As CultureInfo" />
       <MemberSignature Language="F#" Value="member this.Language : System.Globalization.CultureInfo with get, set" Usage="System.IdentityModel.Metadata.LocalizedEntry.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Language { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

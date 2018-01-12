@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityPermissionFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityPermissionFlag" />
   <TypeSignature Language="F#" Value="type SecurityPermissionFlag = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityPermissionFlag" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.AllFlags" />
       <MemberSignature Language="VB.NET" Value="AllFlags" />
       <MemberSignature Language="F#" Value="AllFlags = 16383" Usage="System.Security.Permissions.SecurityPermissionFlag.AllFlags" />
+      <MemberSignature Language="C++ CLI" Value="AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Assertion" />
       <MemberSignature Language="VB.NET" Value="Assertion" />
       <MemberSignature Language="F#" Value="Assertion = 1" Usage="System.Security.Permissions.SecurityPermissionFlag.Assertion" />
+      <MemberSignature Language="C++ CLI" Value="Assertion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +121,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.BindingRedirects" />
       <MemberSignature Language="VB.NET" Value="BindingRedirects" />
       <MemberSignature Language="F#" Value="BindingRedirects = 8192" Usage="System.Security.Permissions.SecurityPermissionFlag.BindingRedirects" />
+      <MemberSignature Language="C++ CLI" Value="BindingRedirects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />
       <MemberSignature Language="VB.NET" Value="ControlAppDomain" />
       <MemberSignature Language="F#" Value="ControlAppDomain = 1024" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />
+      <MemberSignature Language="C++ CLI" Value="ControlAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +179,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlDomainPolicy" />
       <MemberSignature Language="VB.NET" Value="ControlDomainPolicy" />
       <MemberSignature Language="F#" Value="ControlDomainPolicy = 256" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlDomainPolicy" />
+      <MemberSignature Language="C++ CLI" Value="ControlDomainPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />
       <MemberSignature Language="VB.NET" Value="ControlEvidence" />
       <MemberSignature Language="F#" Value="ControlEvidence = 32" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />
+      <MemberSignature Language="C++ CLI" Value="ControlEvidence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,6 +245,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />
       <MemberSignature Language="VB.NET" Value="ControlPolicy" />
       <MemberSignature Language="F#" Value="ControlPolicy = 64" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />
+      <MemberSignature Language="C++ CLI" Value="ControlPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />
       <MemberSignature Language="VB.NET" Value="ControlPrincipal" />
       <MemberSignature Language="F#" Value="ControlPrincipal = 512" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="ControlPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />
       <MemberSignature Language="VB.NET" Value="ControlThread" />
       <MemberSignature Language="F#" Value="ControlThread = 16" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlThread" />
+      <MemberSignature Language="C++ CLI" Value="ControlThread" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Execution" />
       <MemberSignature Language="VB.NET" Value="Execution" />
       <MemberSignature Language="F#" Value="Execution = 8" Usage="System.Security.Permissions.SecurityPermissionFlag.Execution" />
+      <MemberSignature Language="C++ CLI" Value="Execution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -366,6 +377,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />
       <MemberSignature Language="VB.NET" Value="Infrastructure" />
       <MemberSignature Language="F#" Value="Infrastructure = 4096" Usage="System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />
+      <MemberSignature Language="C++ CLI" Value="Infrastructure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -394,6 +406,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.NoFlags" />
       <MemberSignature Language="VB.NET" Value="NoFlags" />
       <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.SecurityPermissionFlag.NoFlags" />
+      <MemberSignature Language="C++ CLI" Value="NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -422,6 +435,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" />
       <MemberSignature Language="VB.NET" Value="RemotingConfiguration" />
       <MemberSignature Language="F#" Value="RemotingConfiguration = 2048" Usage="System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="RemotingConfiguration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -450,6 +464,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />
       <MemberSignature Language="VB.NET" Value="SerializationFormatter" />
       <MemberSignature Language="F#" Value="SerializationFormatter = 128" Usage="System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />
+      <MemberSignature Language="C++ CLI" Value="SerializationFormatter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -478,6 +493,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.SkipVerification" />
       <MemberSignature Language="VB.NET" Value="SkipVerification" />
       <MemberSignature Language="F#" Value="SkipVerification = 4" Usage="System.Security.Permissions.SecurityPermissionFlag.SkipVerification" />
+      <MemberSignature Language="C++ CLI" Value="SkipVerification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -516,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />
       <MemberSignature Language="VB.NET" Value="UnmanagedCode" />
       <MemberSignature Language="F#" Value="UnmanagedCode = 2" Usage="System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />
+      <MemberSignature Language="C++ CLI" Value="UnmanagedCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

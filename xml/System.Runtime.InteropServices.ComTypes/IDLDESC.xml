@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IDLDESC" />
   <TypeSignature Language="VB.NET" Value="Public Structure IDLDESC" />
   <TypeSignature Language="F#" Value="type IDLDESC = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class IDLDESC" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLDESC.dwReserved" />
       <MemberSignature Language="VB.NET" Value="Public dwReserved As IntPtr " />
       <MemberSignature Language="F#" Value="val mutable dwReserved : nativeint" Usage="System.Runtime.InteropServices.ComTypes.IDLDESC.dwReserved" />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr dwReserved;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -86,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.IDLDESC.wIDLFlags" />
       <MemberSignature Language="VB.NET" Value="Public wIDLFlags As IDLFLAG " />
       <MemberSignature Language="F#" Value="val mutable wIDLFlags : System.Runtime.InteropServices.ComTypes.IDLFLAG" Usage="System.Runtime.InteropServices.ComTypes.IDLDESC.wIDLFlags" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::IDLFLAG wIDLFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

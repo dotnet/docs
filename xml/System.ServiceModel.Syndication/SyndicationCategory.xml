@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationCategory" />
   <TypeSignature Language="VB.NET" Value="Public Class SyndicationCategory" />
   <TypeSignature Language="F#" Value="type SyndicationCategory = class&#xA;    interface ISyndicationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyndicationCategory" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationCategory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor(System.ServiceModel.Syndication.SyndicationCategory)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As SyndicationCategory)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationCategory : System.ServiceModel.Syndication.SyndicationCategory -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="new System.ServiceModel.Syndication.SyndicationCategory source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SyndicationCategory(System::ServiceModel::Syndication::SyndicationCategory ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationCategory : string -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="new System.ServiceModel.Syndication.SyndicationCategory name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationCategory(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, scheme As String, label As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationCategory : string * string * string -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="new System.ServiceModel.Syndication.SyndicationCategory (name, scheme, label)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationCategory(System::String ^ name, System::String ^ scheme, System::String ^ label);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.AttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeExtensions As Dictionary(Of XmlQualifiedName, String)" />
       <MemberSignature Language="F#" Value="member this.AttributeExtensions : System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName, string&gt;" Usage="System.ServiceModel.Syndication.SyndicationCategory.AttributeExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ AttributeExtensions { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Syndication.ISyndicationElement.AttributeExtensions</InterfaceMember>
@@ -201,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As SyndicationCategory" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory&#xA;override this.Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="syndicationCategory.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Syndication::SyndicationCategory ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.ElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementExtensions As SyndicationElementExtensionCollection" />
       <MemberSignature Language="F#" Value="member this.ElementExtensions : System.ServiceModel.Syndication.SyndicationElementExtensionCollection" Usage="System.ServiceModel.Syndication.SyndicationCategory.ElementExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ ElementExtensions { System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.Syndication.ISyndicationElement.ElementExtensions</InterfaceMember>
@@ -274,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.Label" />
       <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
       <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.ServiceModel.Syndication.SyndicationCategory.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +323,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Syndication.SyndicationCategory.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationCategory.Scheme" />
       <MemberSignature Language="VB.NET" Value="Public Property Scheme As String" />
       <MemberSignature Language="F#" Value="member this.Scheme : string with get, set" Usage="System.ServiceModel.Syndication.SyndicationCategory.Scheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scheme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseAttribute (name As String, ns As String, value As String, version As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryParseAttribute : string * string * string * string -&gt; bool&#xA;override this.TryParseAttribute : string * string * string * string -&gt; bool" Usage="syndicationCategory.TryParseAttribute (name, ns, value, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseAttribute(System::String ^ name, System::String ^ ns, System::String ^ value, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -444,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseElement (reader As XmlReader, version As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryParseElement : System.Xml.XmlReader * string -&gt; bool&#xA;override this.TryParseElement : System.Xml.XmlReader * string -&gt; bool" Usage="syndicationCategory.TryParseElement (reader, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseElement(System::Xml::XmlReader ^ reader, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -482,6 +495,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteAttributeExtensions (writer As XmlWriter, version As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="syndicationCategory.WriteAttributeExtensions (writer, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteAttributeExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -518,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationCategory.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteElementExtensions (writer As XmlWriter, version As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="syndicationCategory.WriteElementExtensions (writer, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteElementExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

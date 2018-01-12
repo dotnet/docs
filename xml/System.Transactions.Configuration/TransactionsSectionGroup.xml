@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.Configuration.TransactionsSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class TransactionsSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
   <TypeSignature Language="F#" Value="type TransactionsSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionsSectionGroup : System::Configuration::ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.Configuration.TransactionsSectionGroup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionsSectionGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.Configuration.TransactionsSectionGroup.DefaultSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultSettings As DefaultSettingsSection" />
       <MemberSignature Language="F#" Value="member this.DefaultSettings : System.Transactions.Configuration.DefaultSettingsSection" Usage="System.Transactions.Configuration.TransactionsSectionGroup.DefaultSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::Configuration::DefaultSettingsSection ^ DefaultSettings { System::Transactions::Configuration::DefaultSettingsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.Configuration.TransactionsSectionGroup.GetSectionGroup(System.Configuration.Configuration)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSectionGroup (config As Configuration) As TransactionsSectionGroup" />
       <MemberSignature Language="F#" Value="static member GetSectionGroup : System.Configuration.Configuration -&gt; System.Transactions.Configuration.TransactionsSectionGroup" Usage="System.Transactions.Configuration.TransactionsSectionGroup.GetSectionGroup config" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Configuration::TransactionsSectionGroup ^ GetSectionGroup(System::Configuration::Configuration ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -88,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:System.Transactions.Configuration.TransactionsSectionGroup.MachineSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineSettings As MachineSettingsSection" />
       <MemberSignature Language="F#" Value="member this.MachineSettings : System.Transactions.Configuration.MachineSettingsSection" Usage="System.Transactions.Configuration.TransactionsSectionGroup.MachineSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::Configuration::MachineSettingsSection ^ MachineSettings { System::Transactions::Configuration::MachineSettingsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UdpClient" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpClient&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type UdpClient = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpClient : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -75,6 +76,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : int -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -177,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localEP As IPEndPoint)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : System.Net.IPEndPoint -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient localEP" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(System::Net::IPEndPoint ^ localEP);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -232,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Net.Sockets.AddressFamily)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (family As AddressFamily)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : System.Net.Sockets.AddressFamily -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient family" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(System::Net::Sockets::AddressFamily family);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -279,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Int32,System.Net.Sockets.AddressFamily)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer, family As AddressFamily)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : int * System.Net.Sockets.AddressFamily -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient (port, family)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(int port, System::Net::Sockets::AddressFamily family);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -339,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostname As String, port As Integer)" />
       <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : string * int -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient (hostname, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(System::String ^ hostname, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -396,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Active" />
       <MemberSignature Language="VB.NET" Value="Protected Property Active As Boolean" />
       <MemberSignature Language="F#" Value="member this.Active : bool with get, set" Usage="System.Net.Sockets.UdpClient.Active" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool Active { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -437,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AllowNatTraversal (allowed As Boolean)" />
       <MemberSignature Language="F#" Value="member this.AllowNatTraversal : bool -&gt; unit" Usage="udpClient.AllowNatTraversal allowed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllowNatTraversal(bool allowed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -487,6 +496,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Available" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As Integer" />
       <MemberSignature Language="F#" Value="member this.Available : int" Usage="System.Net.Sockets.UdpClient.Available" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Available { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -539,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginReceive(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginReceive : AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginReceive (requestCallback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(AsyncCallback ^ requestCallback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -603,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginSend(System.Byte[],System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (datagram As Byte(), bytes As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginSend (datagram, bytes, requestCallback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, AsyncCallback ^ requestCallback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -664,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginSend(System.Byte[],System.Int32,System.Net.IPEndPoint,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (datagram As Byte(), bytes As Integer, endPoint As IPEndPoint, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * System.Net.IPEndPoint * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginSend (datagram, bytes, endPoint, requestCallback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::Net::IPEndPoint ^ endPoint, AsyncCallback ^ requestCallback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -727,6 +740,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginSend(System.Byte[],System.Int32,System.String,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (datagram As Byte(), bytes As Integer, hostname As String, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * string * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginSend (datagram, bytes, hostname, port, requestCallback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::String ^ hostname, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -792,6 +806,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Client" />
       <MemberSignature Language="VB.NET" Value="Public Property Client As Socket" />
       <MemberSignature Language="F#" Value="member this.Client : System.Net.Sockets.Socket with get, set" Usage="System.Net.Sockets.UdpClient.Client" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::Socket ^ Client { System::Net::Sockets::Socket ^ get(); void set(System::Net::Sockets::Socket ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -839,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="udpClient.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -899,6 +915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Connect(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (endPoint As IPEndPoint)" />
       <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPEndPoint -&gt; unit" Usage="udpClient.Connect endPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::Net::IPEndPoint ^ endPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -963,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Connect(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (addr As IPAddress, port As Integer)" />
       <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress * int -&gt; unit" Usage="udpClient.Connect (addr, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::Net::IPAddress ^ addr, int port);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1032,6 +1050,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (hostname As String, port As Integer)" />
       <MemberSignature Language="F#" Value="member this.Connect : string * int -&gt; unit" Usage="udpClient.Connect (hostname, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::String ^ hostname, int port);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1100,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="udpClient.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1133,6 +1153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="udpClient.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1182,6 +1203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.DontFragment" />
       <MemberSignature Language="VB.NET" Value="Public Property DontFragment As Boolean" />
       <MemberSignature Language="F#" Value="member this.DontFragment : bool with get, set" Usage="System.Net.Sockets.UdpClient.DontFragment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DontFragment { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1239,6 +1261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DropMulticastGroup (multicastAddr As IPAddress)" />
       <MemberSignature Language="F#" Value="member this.DropMulticastGroup : System.Net.IPAddress -&gt; unit" Usage="udpClient.DropMulticastGroup multicastAddr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DropMulticastGroup(System::Net::IPAddress ^ multicastAddr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1297,6 +1320,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DropMulticastGroup (multicastAddr As IPAddress, ifindex As Integer)" />
       <MemberSignature Language="F#" Value="member this.DropMulticastGroup : System.Net.IPAddress * int -&gt; unit" Usage="udpClient.DropMulticastGroup (multicastAddr, ifindex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DropMulticastGroup(System::Net::IPAddress ^ multicastAddr, int ifindex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1357,6 +1381,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.EnableBroadcast" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableBroadcast As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableBroadcast : bool with get, set" Usage="System.Net.Sockets.UdpClient.EnableBroadcast" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableBroadcast { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1403,6 +1428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.EndReceive(System.IAsyncResult,System.Net.IPEndPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult, ByRef remoteEP As IPEndPoint) As Byte()" />
       <MemberSignature Language="F#" Value="member this.EndReceive : IAsyncResult *  -&gt; byte[]" Usage="udpClient.EndReceive (asyncResult, remoteEP)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ EndReceive(IAsyncResult ^ asyncResult, System::Net::IPEndPoint ^ % remoteEP);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1463,6 +1489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.EndSend(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndSend (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="F#" Value="member this.EndSend : IAsyncResult -&gt; int" Usage="udpClient.EndSend asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSend(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1521,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.ExclusiveAddressUse" />
       <MemberSignature Language="VB.NET" Value="Public Property ExclusiveAddressUse As Boolean" />
       <MemberSignature Language="F#" Value="member this.ExclusiveAddressUse : bool with get, set" Usage="System.Net.Sockets.UdpClient.ExclusiveAddressUse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExclusiveAddressUse { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1571,6 +1599,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="udpClient.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!UdpClient ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1602,6 +1631,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (multicastAddr As IPAddress)" />
       <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : System.Net.IPAddress -&gt; unit" Usage="udpClient.JoinMulticastGroup multicastAddr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(System::Net::IPAddress ^ multicastAddr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1668,6 +1698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Int32,System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (ifindex As Integer, multicastAddr As IPAddress)" />
       <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : int * System.Net.IPAddress -&gt; unit" Usage="udpClient.JoinMulticastGroup (ifindex, multicastAddr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(int ifindex, System::Net::IPAddress ^ multicastAddr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1727,6 +1758,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (multicastAddr As IPAddress, timeToLive As Integer)" />
       <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : System.Net.IPAddress * int -&gt; unit" Usage="udpClient.JoinMulticastGroup (multicastAddr, timeToLive)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(System::Net::IPAddress ^ multicastAddr, int timeToLive);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1795,6 +1827,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress,System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (multicastAddr As IPAddress, localAddress As IPAddress)" />
       <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : System.Net.IPAddress * System.Net.IPAddress -&gt; unit" Usage="udpClient.JoinMulticastGroup (multicastAddr, localAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(System::Net::IPAddress ^ multicastAddr, System::Net::IPAddress ^ localAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1853,6 +1886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.MulticastLoopback" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastLoopback As Boolean" />
       <MemberSignature Language="F#" Value="member this.MulticastLoopback : bool with get, set" Usage="System.Net.Sockets.UdpClient.MulticastLoopback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MulticastLoopback { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1899,6 +1933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (ByRef remoteEP As IPEndPoint) As Byte()" />
       <MemberSignature Language="F#" Value="member this.Receive :  -&gt; byte[]" Usage="udpClient.Receive remoteEP" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Receive(System::Net::IPEndPoint ^ % remoteEP);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1961,6 +1996,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.ReceiveAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveAsync () As Task(Of UdpReceiveResult)" />
       <MemberSignature Language="F#" Value="member this.ReceiveAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.Sockets.UdpReceiveResult&gt;" Usage="udpClient.ReceiveAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::Sockets::UdpReceiveResult&gt; ^ ReceiveAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2020,6 +2056,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Send (dgram As Byte(), bytes As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.Send : byte[] * int -&gt; int" Usage="udpClient.Send (dgram, bytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Send(cli::array &lt;System::Byte&gt; ^ dgram, int bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2079,6 +2116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function Send (dgram As Byte(), bytes As Integer, endPoint As IPEndPoint) As Integer" />
       <MemberSignature Language="F#" Value="member this.Send : byte[] * int * System.Net.IPEndPoint -&gt; int" Usage="udpClient.Send (dgram, bytes, endPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Send(cli::array &lt;System::Byte&gt; ^ dgram, int bytes, System::Net::IPEndPoint ^ endPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2148,6 +2186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Send (dgram As Byte(), bytes As Integer, hostname As String, port As Integer) As Integer" />
       <MemberSignature Language="F#" Value="member this.Send : byte[] * int * string * int -&gt; int" Usage="udpClient.Send (dgram, bytes, hostname, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Send(cli::array &lt;System::Byte&gt; ^ dgram, int bytes, System::String ^ hostname, int port);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2226,6 +2265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.SendAsync(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (datagram As Byte(), bytes As Integer) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.SendAsync : byte[] * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="udpClient.SendAsync (datagram, bytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ SendAsync(cli::array &lt;System::Byte&gt; ^ datagram, int bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2275,6 +2315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.SendAsync(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (datagram As Byte(), bytes As Integer, endPoint As IPEndPoint) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.SendAsync : byte[] * int * System.Net.IPEndPoint -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="udpClient.SendAsync (datagram, bytes, endPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ SendAsync(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::Net::IPEndPoint ^ endPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2332,6 +2373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.SendAsync(System.Byte[],System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (datagram As Byte(), bytes As Integer, hostname As String, port As Integer) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.SendAsync : byte[] * int * string * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="udpClient.SendAsync (datagram, bytes, hostname, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ SendAsync(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::String ^ hostname, int port);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2388,6 +2430,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -2411,6 +2454,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Ttl" />
       <MemberSignature Language="VB.NET" Value="Public Property Ttl As Short" />
       <MemberSignature Language="F#" Value="member this.Ttl : int16 with get, set" Usage="System.Net.Sockets.UdpClient.Ttl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Ttl { short get(); void set(short value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

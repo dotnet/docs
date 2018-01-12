@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentReference" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DocumentReference&#xA;Inherits FrameworkElement&#xA;Implements IUriContext" />
   <TypeSignature Language="F#" Value="type DocumentReference = class&#xA;    inherit FrameworkElement&#xA;    interface IUriContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocumentReference sealed : System::Windows::FrameworkElement, System::Windows::Markup::IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DocumentReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReference.GetDocument(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDocument (forceReload As Boolean) As FixedDocument" />
       <MemberSignature Language="F#" Value="member this.GetDocument : bool -&gt; System.Windows.Documents.FixedDocument" Usage="documentReference.GetDocument forceReload" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::FixedDocument ^ GetDocument(bool forceReload);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReference.SetDocument(System.Windows.Documents.FixedDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDocument (doc As FixedDocument)" />
       <MemberSignature Language="F#" Value="member this.SetDocument : System.Windows.Documents.FixedDocument -&gt; unit" Usage="documentReference.SetDocument doc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDocument(System::Windows::Documents::FixedDocument ^ doc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentReference.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Documents.DocumentReference.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.DocumentReference.SourceProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.DocumentReference.SourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentReference.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
       <MemberSignature Language="F#" Usage="System.Windows.Documents.DocumentReference.System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>

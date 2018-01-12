@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryRequestHandler" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryRequestHandler&#xA;Implements IHttpHandler" />
   <TypeSignature Language="F#" Value="type DiscoveryRequestHandler = class&#xA;    interface IHttpHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryRequestHandler sealed : System::Web::IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryRequestHandler.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryRequestHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryRequestHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.Services.Discovery.DiscoveryRequestHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (context As HttpContext)" />
       <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="discoveryRequestHandler.ProcessRequest context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.QuarticEase" />
   <TypeSignature Language="VB.NET" Value="Public Class QuarticEase&#xA;Inherits EasingFunctionBase" />
   <TypeSignature Language="F#" Value="type QuarticEase = class&#xA;    inherit EasingFunctionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QuarticEase : System::Windows::Media::Animation::EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuarticEase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QuarticEase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuarticEase.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="quarticEase.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -121,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuarticEase.EaseInCore(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
       <MemberSignature Language="F#" Value="override this.EaseInCore : double -&gt; double" Usage="quarticEase.EaseInCore normalizedTime" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

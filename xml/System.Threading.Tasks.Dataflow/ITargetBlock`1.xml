@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITargetBlock(Of In TInput)&#xA;Implements IDataflowBlock" />
   <TypeSignature Language="F#" Value="type ITargetBlock&lt;'Input&gt; = interface&#xA;    interface IDataflowBlock" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TInput&gt;&#xA;public interface class ITargetBlock : System::Threading::Tasks::Dataflow::IDataflowBlock" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>

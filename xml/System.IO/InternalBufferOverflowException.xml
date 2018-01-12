@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.InternalBufferOverflowException" />
   <TypeSignature Language="VB.NET" Value="Public Class InternalBufferOverflowException&#xA;Inherits SystemException" />
   <TypeSignature Language="F#" Value="type InternalBufferOverflowException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InternalBufferOverflowException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalBufferOverflowException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.IO.InternalBufferOverflowException : string -&gt; System.IO.InternalBufferOverflowException" Usage="new System.IO.InternalBufferOverflowException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalBufferOverflowException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -142,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.IO.InternalBufferOverflowException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.InternalBufferOverflowException" Usage="new System.IO.InternalBufferOverflowException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InternalBufferOverflowException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="F#" Value="new System.IO.InternalBufferOverflowException : string * Exception -&gt; System.IO.InternalBufferOverflowException" Usage="new System.IO.InternalBufferOverflowException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InternalBufferOverflowException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

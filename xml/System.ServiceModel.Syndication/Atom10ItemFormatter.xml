@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10ItemFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class Atom10ItemFormatter&#xA;Inherits SyndicationItemFormatter&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="F#" Value="type Atom10ItemFormatter = class&#xA;    inherit SyndicationItemFormatter&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Atom10ItemFormatter : System::ServiceModel::Syndication::SyndicationItemFormatter, System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (feedToWrite As SyndicationItem)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10ItemFormatter : System.ServiceModel.Syndication.SyndicationItem -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter" Usage="new System.ServiceModel.Syndication.Atom10ItemFormatter feedToWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter(System::ServiceModel::Syndication::SyndicationItem ^ feedToWrite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemTypeToCreate As Type)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10ItemFormatter : Type -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter" Usage="new System.ServiceModel.Syndication.Atom10ItemFormatter itemTypeToCreate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter(Type ^ itemTypeToCreate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="atom10ItemFormatter.CanRead reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.CreateItemInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
       <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="atom10ItemFormatter.CreateItemInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -226,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.ItemType" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ItemType As Type" />
       <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.ServiceModel.Syndication.Atom10ItemFormatter.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ ItemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveAttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveAttributeExtensions As Boolean" />
       <MemberSignature Language="F#" Value="member this.PreserveAttributeExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveAttributeExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveAttributeExtensions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveElementExtensions As Boolean" />
       <MemberSignature Language="F#" Value="member this.PreserveElementExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveElementExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveElementExtensions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -312,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadFrom (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="override this.ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="atom10ItemFormatter.ReadFrom reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadFrom(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -348,6 +358,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -383,6 +394,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -412,6 +424,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
@@ -442,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Atom10ItemFormatter.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.Atom10ItemFormatter.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -473,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="atom10ItemFormatter.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

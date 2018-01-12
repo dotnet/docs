@@ -51,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListenerList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="F#" Value="new System.Windows.WeakEventManager.ListenerList : int -&gt; System.Windows.WeakEventManager.ListenerList" Usage="new System.Windows.WeakEventManager.ListenerList capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListenerList(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.Add(System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (listener As IWeakEventListener)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Windows.IWeakEventListener -&gt; unit" Usage="listenerList.Add listener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::IWeakEventListener ^ listener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.AddHandler(System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHandler (handler As Delegate)" />
       <MemberSignature Language="F#" Value="member this.AddHandler : Delegate -&gt; unit" Usage="listenerList.AddHandler handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddHandler(Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.BeginUse" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginUse () As Boolean" />
       <MemberSignature Language="F#" Value="member this.BeginUse : unit -&gt; bool" Usage="listenerList.BeginUse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BeginUse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.ListenerList.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.WeakEventManager.ListenerList.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -239,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.DeliverEvent(System.Object,System.EventArgs,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeliverEvent (sender As Object, args As EventArgs, managerType As Type) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member DeliverEvent : obj * EventArgs * Type -&gt; bool&#xA;override this.DeliverEvent : obj * EventArgs * Type -&gt; bool" Usage="listenerList.DeliverEvent (sender, args, managerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool DeliverEvent(System::Object ^ sender, EventArgs ^ args, Type ^ managerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -288,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.EndUse" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndUse ()" />
       <MemberSignature Language="F#" Value="member this.EndUse : unit -&gt; unit" Usage="listenerList.EndUse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.ListenerList.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.WeakEventManager.ListenerList.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.ListenerList.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As IWeakEventListener" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.IWeakEventListener" Usage="System.Windows.WeakEventManager.ListenerList.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IWeakEventListener ^ default[int] { System::Windows::IWeakEventListener ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -361,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PrepareForWriting (ByRef list As WeakEventManager.ListenerList) As Boolean" />
       <MemberSignature Language="F#" Value="static member PrepareForWriting :  -&gt; bool" Usage="System.Windows.WeakEventManager.ListenerList.PrepareForWriting list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool PrepareForWriting(System::Windows::WeakEventManager::ListenerList ^ % list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.Purge" />
       <MemberSignature Language="VB.NET" Value="Public Function Purge () As Boolean" />
       <MemberSignature Language="F#" Value="member this.Purge : unit -&gt; bool" Usage="listenerList.Purge " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Purge();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -420,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.Remove(System.Windows.IWeakEventListener)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (listener As IWeakEventListener)" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Windows.IWeakEventListener -&gt; unit" Usage="listenerList.Remove listener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::IWeakEventListener ^ listener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -452,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ListenerList.RemoveHandler(System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveHandler (handler As Delegate)" />
       <MemberSignature Language="F#" Value="member this.RemoveHandler : Delegate -&gt; unit" Usage="listenerList.RemoveHandler handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveHandler(Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

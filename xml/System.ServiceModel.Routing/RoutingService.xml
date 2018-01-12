@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoutingService&#xA;Implements IDisposable, IDuplexSessionRouter, IRequestReplyRouter, ISimplexDatagramRouter, ISimplexSessionRouter" />
   <TypeSignature Language="F#" Value="type RoutingService = class&#xA;    interface ISimplexDatagramRouter&#xA;    interface ISimplexSessionRouter&#xA;    interface IRequestReplyRouter&#xA;    interface IDuplexSessionRouter&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RoutingService sealed : IDisposable, System::ServiceModel::Routing::IDuplexSessionRouter, System::ServiceModel::Routing::IRequestReplyRouter, System::ServiceModel::Routing::ISimplexDatagramRouter, System::ServiceModel::Routing::ISimplexSessionRouter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="C#" Value="IAsyncResult IDuplexSessionRouter.BeginProcessMessage (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.Routing.IDuplexSessionRouter.BeginProcessMessage(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#IDuplexSessionRouter#BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.Routing.IDuplexSessionRouter.BeginProcessMessage(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::Routing::IDuplexSessionRouter::BeginProcessMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.IDuplexSessionRouter.BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -109,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Routing.IDuplexSessionRouter.EndProcessMessage(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#IDuplexSessionRouter#EndProcessMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Sub EndProcessMessage (result As IAsyncResult) Implements IDuplexSessionRouter.EndProcessMessage" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Routing.IDuplexSessionRouter.EndProcessMessage(IAsyncResult ^ result) = System::ServiceModel::Routing::IDuplexSessionRouter::EndProcessMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.IDuplexSessionRouter.EndProcessMessage(System.IAsyncResult)</InterfaceMember>
@@ -140,6 +144,7 @@
       <MemberSignature Language="C#" Value="IAsyncResult IRequestReplyRouter.BeginProcessRequest (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.Routing.IRequestReplyRouter.BeginProcessRequest(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#IRequestReplyRouter#BeginProcessRequest(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.Routing.IRequestReplyRouter.BeginProcessRequest(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::Routing::IRequestReplyRouter::BeginProcessRequest;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.IRequestReplyRouter.BeginProcessRequest(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -182,6 +187,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ServiceModel.Channels.Message System.ServiceModel.Routing.IRequestReplyRouter.EndProcessRequest(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#IRequestReplyRouter#EndProcessRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Function EndProcessRequest (result As IAsyncResult) As Message Implements IRequestReplyRouter.EndProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ServiceModel::Channels::Message ^ System.ServiceModel.Routing.IRequestReplyRouter.EndProcessRequest(IAsyncResult ^ result) = System::ServiceModel::Routing::IRequestReplyRouter::EndProcessRequest;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.IRequestReplyRouter.EndProcessRequest(System.IAsyncResult)</InterfaceMember>
@@ -214,6 +220,7 @@
       <MemberSignature Language="C#" Value="IAsyncResult ISimplexDatagramRouter.BeginProcessMessage (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#ISimplexDatagramRouter#BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::Routing::ISimplexDatagramRouter::BeginProcessMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.ISimplexDatagramRouter.BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -256,6 +263,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#ISimplexDatagramRouter#EndProcessMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Sub EndProcessMessage (result As IAsyncResult) Implements ISimplexDatagramRouter.EndProcessMessage" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage(IAsyncResult ^ result) = System::ServiceModel::Routing::ISimplexDatagramRouter::EndProcessMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.ISimplexDatagramRouter.EndProcessMessage(System.IAsyncResult)</InterfaceMember>
@@ -287,6 +295,7 @@
       <MemberSignature Language="C#" Value="IAsyncResult ISimplexSessionRouter.BeginProcessMessage (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.Routing.ISimplexSessionRouter.BeginProcessMessage(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#ISimplexSessionRouter#BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.Routing.ISimplexSessionRouter.BeginProcessMessage(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::Routing::ISimplexSessionRouter::BeginProcessMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.ISimplexSessionRouter.BeginProcessMessage(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)</InterfaceMember>
@@ -329,6 +338,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Routing.ISimplexSessionRouter.EndProcessMessage(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingService.System#ServiceModel#Routing#ISimplexSessionRouter#EndProcessMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Sub EndProcessMessage (result As IAsyncResult) Implements ISimplexSessionRouter.EndProcessMessage" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Routing.ISimplexSessionRouter.EndProcessMessage(IAsyncResult ^ result) = System::ServiceModel::Routing::ISimplexSessionRouter::EndProcessMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Routing.ISimplexSessionRouter.EndProcessMessage(System.IAsyncResult)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IListSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface IListSource" />
   <TypeSignature Language="F#" Value="type IListSource = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainsListCollection As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContainsListCollection : bool" Usage="System.ComponentModel.IListSource.ContainsListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IListSource.GetList" />
       <MemberSignature Language="VB.NET" Value="Public Function GetList () As IList" />
       <MemberSignature Language="F#" Value="abstract member GetList : unit -&gt; System.Collections.IList" Usage="iListSource.GetList " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IList ^ GetList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

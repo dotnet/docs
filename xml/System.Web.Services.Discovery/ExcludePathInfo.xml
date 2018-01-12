@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.ExcludePathInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExcludePathInfo" />
   <TypeSignature Language="F#" Value="type ExcludePathInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExcludePathInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ExcludePathInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExcludePathInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ExcludePathInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Discovery.ExcludePathInfo : string -&gt; System.Web.Services.Discovery.ExcludePathInfo" Usage="new System.Web.Services.Discovery.ExcludePathInfo path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExcludePathInfo(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ExcludePathInfo.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.Services.Discovery.ExcludePathInfo.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IConvertible" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConvertible" />
   <TypeSignature Language="F#" Value="type IConvertible = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConvertible" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -66,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode" Usage="iConvertible.GetTypeCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -98,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToBoolean(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToBoolean (provider As IFormatProvider) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ToBoolean : IFormatProvider -&gt; bool" Usage="iConvertible.ToBoolean provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ToBoolean(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToByte(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByte (provider As IFormatProvider) As Byte" />
       <MemberSignature Language="F#" Value="abstract member ToByte : IFormatProvider -&gt; byte" Usage="iConvertible.ToByte provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte ToByte(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToChar(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToChar (provider As IFormatProvider) As Char" />
       <MemberSignature Language="F#" Value="abstract member ToChar : IFormatProvider -&gt; char" Usage="iConvertible.ToChar provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; char ToChar(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToDateTime(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDateTime (provider As IFormatProvider) As DateTime" />
       <MemberSignature Language="F#" Value="abstract member ToDateTime : IFormatProvider -&gt; DateTime" Usage="iConvertible.ToDateTime provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime ToDateTime(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -238,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToDecimal(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDecimal (provider As IFormatProvider) As Decimal" />
       <MemberSignature Language="F#" Value="abstract member ToDecimal : IFormatProvider -&gt; decimal" Usage="iConvertible.ToDecimal provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal ToDecimal(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -273,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToDouble(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDouble (provider As IFormatProvider) As Double" />
       <MemberSignature Language="F#" Value="abstract member ToDouble : IFormatProvider -&gt; double" Usage="iConvertible.ToDouble provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double ToDouble(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -308,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToInt16(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToInt16 (provider As IFormatProvider) As Short" />
       <MemberSignature Language="F#" Value="abstract member ToInt16 : IFormatProvider -&gt; int16" Usage="iConvertible.ToInt16 provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short ToInt16(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -343,6 +352,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToInt32(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToInt32 (provider As IFormatProvider) As Integer" />
       <MemberSignature Language="F#" Value="abstract member ToInt32 : IFormatProvider -&gt; int" Usage="iConvertible.ToInt32 provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToInt32(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -378,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToInt64(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToInt64 (provider As IFormatProvider) As Long" />
       <MemberSignature Language="F#" Value="abstract member ToInt64 : IFormatProvider -&gt; int64" Usage="iConvertible.ToInt64 provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToInt64(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -413,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToSByte(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSByte (provider As IFormatProvider) As SByte" />
       <MemberSignature Language="F#" Value="abstract member ToSByte : IFormatProvider -&gt; sbyte" Usage="iConvertible.ToSByte provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::SByte ToSByte(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -448,6 +460,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToSingle(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSingle (provider As IFormatProvider) As Single" />
       <MemberSignature Language="F#" Value="abstract member ToSingle : IFormatProvider -&gt; single" Usage="iConvertible.ToSingle provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float ToSingle(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -483,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="F#" Value="abstract member ToString : IFormatProvider -&gt; string" Usage="iConvertible.ToString provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -518,6 +532,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToType(System.Type,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToType (conversionType As Type, provider As IFormatProvider) As Object" />
       <MemberSignature Language="F#" Value="abstract member ToType : Type * IFormatProvider -&gt; obj" Usage="iConvertible.ToType (conversionType, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ToType(Type ^ conversionType, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -555,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToUInt16(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt16 (provider As IFormatProvider) As UShort" />
       <MemberSignature Language="F#" Value="abstract member ToUInt16 : IFormatProvider -&gt; uint16" Usage="iConvertible.ToUInt16 provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt16 ToUInt16(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -590,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToUInt32(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt32 (provider As IFormatProvider) As UInteger" />
       <MemberSignature Language="F#" Value="abstract member ToUInt32 : IFormatProvider -&gt; uint32" Usage="iConvertible.ToUInt32 provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 ToUInt32(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -625,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.IConvertible.ToUInt64(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToUInt64 (provider As IFormatProvider) As ULong" />
       <MemberSignature Language="F#" Value="abstract member ToUInt64 : IFormatProvider -&gt; uint64" Usage="iConvertible.ToUInt64 provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 ToUInt64(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

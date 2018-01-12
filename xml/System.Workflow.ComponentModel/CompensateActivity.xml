@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.CompensateActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompensateActivity&#xA;Inherits Activity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs)" />
   <TypeSignature Language="F#" Value="type CompensateActivity = class&#xA;    inherit Activity&#xA;    interface IPropertyValueProvider&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompensateActivity sealed : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +64,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensateActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -90,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.CompensateActivity : string -&gt; System.Workflow.ComponentModel.CompensateActivity" Usage="new System.Workflow.ComponentModel.CompensateActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensateActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="compensateActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="compensateActivity.Initialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -156,6 +161,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent(object sender, class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.System#Workflow#ComponentModel#IActivityEventListener&lt;System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs&gt;#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Sub OnEvent (sender As Object, e As ActivityExecutionStatusChangedEventArgs) Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs).OnEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent(System::Object ^ sender, System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^ e) = System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;::OnEvent;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.IActivityEventListener`1.OnEvent(System.Object,`0)</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.CompensateActivity.TargetActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetActivityName As String" />
       <MemberSignature Language="F#" Value="member this.TargetActivityName : string with get, set" Usage="System.Workflow.ComponentModel.CompensateActivity.TargetActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.CompensateActivity.TargetActivityNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetActivityNameProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TargetActivityNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.CompensateActivity.TargetActivityNameProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ TargetActivityNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

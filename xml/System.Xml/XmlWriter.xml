@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlWriter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlWriter&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type XmlWriter = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlWriter abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -211,6 +212,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -240,6 +242,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="xmlWriter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -337,6 +340,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As Stream) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.IO.Stream -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::IO::Stream ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -409,6 +413,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As TextWriter) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.IO.TextWriter -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -479,6 +484,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (outputFileName As String) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create outputFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::String ^ outputFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -546,6 +552,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Text.StringBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As StringBuilder) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.Text.StringBuilder -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::Text::StringBuilder ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -608,6 +615,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As XmlWriter) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.Xml.XmlWriter -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::Xml::XmlWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -672,6 +680,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.Stream,System.Xml.XmlWriterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As Stream, settings As XmlWriterSettings) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::IO::Stream ^ output, System::Xml::XmlWriterSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -728,6 +737,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.IO.TextWriter,System.Xml.XmlWriterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As TextWriter, settings As XmlWriterSettings) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.IO.TextWriter * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::IO::TextWriter ^ output, System::Xml::XmlWriterSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -779,6 +789,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.String,System.Xml.XmlWriterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (outputFileName As String, settings As XmlWriterSettings) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : string * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (outputFileName, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::String ^ outputFileName, System::Xml::XmlWriterSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -827,6 +838,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Text.StringBuilder,System.Xml.XmlWriterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As StringBuilder, settings As XmlWriterSettings) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.Text.StringBuilder * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::Text::StringBuilder ^ output, System::Xml::XmlWriterSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -868,6 +880,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Create(System.Xml.XmlWriter,System.Xml.XmlWriterSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (output As XmlWriter, settings As XmlWriterSettings) As XmlWriter" />
       <MemberSignature Language="F#" Value="static member Create : System.Xml.XmlWriter * System.Xml.XmlWriterSettings -&gt; System.Xml.XmlWriter" Usage="System.Xml.XmlWriter.Create (output, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlWriter ^ Create(System::Xml::XmlWriter ^ output, System::Xml::XmlWriterSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -929,6 +942,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="xmlWriter.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -965,6 +979,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="xmlWriter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1002,6 +1017,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
       <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="xmlWriter.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1053,6 +1069,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.FlushAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FlushAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member FlushAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.FlushAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ FlushAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1094,6 +1111,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function LookupPrefix (ns As String) As String" />
       <MemberSignature Language="F#" Value="abstract member LookupPrefix : string -&gt; string" Usage="xmlWriter.LookupPrefix ns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ LookupPrefix(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1144,6 +1162,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.Settings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Settings As XmlWriterSettings" />
       <MemberSignature Language="F#" Value="member this.Settings : System.Xml.XmlWriterSettings" Usage="System.Xml.XmlWriter.Settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlWriterSettings ^ Settings { System::Xml::XmlWriterSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1184,6 +1203,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributes(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteAttributes (reader As XmlReader, defattr As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member WriteAttributes : System.Xml.XmlReader * bool -&gt; unit&#xA;override this.WriteAttributes : System.Xml.XmlReader * bool -&gt; unit" Usage="xmlWriter.WriteAttributes (reader, defattr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteAttributes(System::Xml::XmlReader ^ reader, bool defattr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1250,6 +1270,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributesAsync(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteAttributesAsync (reader As XmlReader, defattr As Boolean) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteAttributesAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAttributesAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteAttributesAsync (reader, defattr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteAttributesAsync(System::Xml::XmlReader ^ reader, bool defattr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1325,6 +1346,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteAttributeString (localName As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteAttributeString : string * string -&gt; unit" Usage="xmlWriter.WriteAttributeString (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAttributeString(System::String ^ localName, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1388,6 +1410,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteAttributeString (localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteAttributeString : string * string * string -&gt; unit" Usage="xmlWriter.WriteAttributeString (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAttributeString(System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1455,6 +1478,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeString(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteAttributeString (prefix As String, localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteAttributeString : string * string * string * string -&gt; unit" Usage="xmlWriter.WriteAttributeString (prefix, localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAttributeString(System::String ^ prefix, System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1525,6 +1549,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteAttributeStringAsync(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteAttributeStringAsync (prefix As String, localName As String, ns As String, value As String) As Task" />
       <MemberSignature Language="F#" Value="member this.WriteAttributeStringAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteAttributeStringAsync (prefix, localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteAttributeStringAsync(System::String ^ prefix, System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1575,6 +1600,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteBase64 (buffer As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member WriteBase64 : byte[] * int * int -&gt; unit" Usage="xmlWriter.WriteBase64 (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteBase64(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1640,6 +1666,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBase64Async(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteBase64Async (buffer As Byte(), index As Integer, count As Integer) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteBase64Async : byte[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteBase64Async (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteBase64Async(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1688,6 +1715,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBinHex(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteBinHex (buffer As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member WriteBinHex : byte[] * int * int -&gt; unit&#xA;override this.WriteBinHex : byte[] * int * int -&gt; unit" Usage="xmlWriter.WriteBinHex (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteBinHex(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1751,6 +1779,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteBinHexAsync(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteBinHexAsync (buffer As Byte(), index As Integer, count As Integer) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteBinHexAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteBinHexAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteBinHexAsync(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1799,6 +1828,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteCData (text As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteCData : string -&gt; unit" Usage="xmlWriter.WriteCData text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteCData(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1853,6 +1883,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCDataAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCDataAsync (text As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteCDataAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCDataAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCDataAsync text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteCDataAsync(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1897,6 +1928,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCharEntity(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteCharEntity (ch As Char)" />
       <MemberSignature Language="F#" Value="abstract member WriteCharEntity : char -&gt; unit" Usage="xmlWriter.WriteCharEntity ch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteCharEntity(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1948,6 +1980,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCharEntityAsync(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCharEntityAsync (ch As Char) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteCharEntityAsync : char -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCharEntityAsync : char -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCharEntityAsync ch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteCharEntityAsync(char ch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1992,6 +2025,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteChars(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteChars (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member WriteChars : char[] * int * int -&gt; unit" Usage="xmlWriter.WriteChars (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteChars(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2057,6 +2091,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCharsAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCharsAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteCharsAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCharsAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCharsAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteCharsAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2105,6 +2140,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteComment(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteComment (text As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteComment : string -&gt; unit" Usage="xmlWriter.WriteComment text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteComment(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2161,6 +2197,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteCommentAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteCommentAsync (text As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteCommentAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteCommentAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteCommentAsync text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteCommentAsync(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2205,6 +2242,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteDocType(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteDocType (name As String, pubid As String, sysid As String, subset As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteDocType : string * string * string * string -&gt; unit" Usage="xmlWriter.WriteDocType (name, pubid, sysid, subset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteDocType(System::String ^ name, System::String ^ pubid, System::String ^ sysid, System::String ^ subset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2268,6 +2306,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteDocTypeAsync(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteDocTypeAsync (name As String, pubid As String, sysid As String, subset As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteDocTypeAsync : string * string * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteDocTypeAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteDocTypeAsync (name, pubid, sysid, subset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteDocTypeAsync(System::String ^ name, System::String ^ pubid, System::String ^ sysid, System::String ^ subset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2338,6 +2377,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteElementString (localName As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string -&gt; unit" Usage="xmlWriter.WriteElementString (localName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteElementString(System::String ^ localName, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2398,6 +2438,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementString(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteElementString (localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * string -&gt; unit" Usage="xmlWriter.WriteElementString (localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteElementString(System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2460,6 +2501,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementString(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteElementString (prefix As String, localName As String, ns As String, value As String)" />
       <MemberSignature Language="F#" Value="member this.WriteElementString : string * string * string * string -&gt; unit" Usage="xmlWriter.WriteElementString (prefix, localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteElementString(System::String ^ prefix, System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2515,6 +2557,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteElementStringAsync(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WriteElementStringAsync (prefix As String, localName As String, ns As String, value As String) As Task" />
       <MemberSignature Language="F#" Value="member this.WriteElementStringAsync : string * string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteElementStringAsync (prefix, localName, ns, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteElementStringAsync(System::String ^ prefix, System::String ^ localName, System::String ^ ns, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2573,6 +2616,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndAttribute" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndAttribute ()" />
       <MemberSignature Language="F#" Value="abstract member WriteEndAttribute : unit -&gt; unit" Usage="xmlWriter.WriteEndAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEndAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2620,6 +2664,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndAttributeAsync" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function WriteEndAttributeAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteEndAttributeAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEndAttributeAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEndAttributeAsync " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Threading::Tasks::Task ^ WriteEndAttributeAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2661,6 +2706,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndDocument" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndDocument ()" />
       <MemberSignature Language="F#" Value="abstract member WriteEndDocument : unit -&gt; unit" Usage="xmlWriter.WriteEndDocument " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEndDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2714,6 +2760,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndDocumentAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteEndDocumentAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteEndDocumentAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEndDocumentAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEndDocumentAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteEndDocumentAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2755,6 +2802,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndElement" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndElement ()" />
       <MemberSignature Language="F#" Value="abstract member WriteEndElement : unit -&gt; unit" Usage="xmlWriter.WriteEndElement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEndElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2808,6 +2856,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEndElementAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteEndElementAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteEndElementAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEndElementAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEndElementAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteEndElementAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2849,6 +2898,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEntityRef(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEntityRef (name As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteEntityRef : string -&gt; unit" Usage="xmlWriter.WriteEntityRef name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEntityRef(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2902,6 +2952,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteEntityRefAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteEntityRefAsync (name As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteEntityRefAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteEntityRefAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteEntityRefAsync name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteEntityRefAsync(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2946,6 +2997,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteFullEndElement" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteFullEndElement ()" />
       <MemberSignature Language="F#" Value="abstract member WriteFullEndElement : unit -&gt; unit" Usage="xmlWriter.WriteFullEndElement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteFullEndElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -2996,6 +3048,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteFullEndElementAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteFullEndElementAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteFullEndElementAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteFullEndElementAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteFullEndElementAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteFullEndElementAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3037,6 +3090,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteName (name As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteName : string -&gt; unit&#xA;override this.WriteName : string -&gt; unit" Usage="xmlWriter.WriteName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3084,6 +3138,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNameAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNameAsync (name As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteNameAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNameAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNameAsync name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteNameAsync(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3128,6 +3183,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNmToken(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteNmToken (name As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteNmToken : string -&gt; unit&#xA;override this.WriteNmToken : string -&gt; unit" Usage="xmlWriter.WriteNmToken name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteNmToken(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3173,6 +3229,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNmTokenAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNmTokenAsync (name As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteNmTokenAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNmTokenAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNmTokenAsync name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteNmTokenAsync(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3237,6 +3294,7 @@ async Task TestWriter(Stream stream)
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNode(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteNode (reader As XmlReader, defattr As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member WriteNode : System.Xml.XmlReader * bool -&gt; unit&#xA;override this.WriteNode : System.Xml.XmlReader * bool -&gt; unit" Usage="xmlWriter.WriteNode (reader, defattr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteNode(System::Xml::XmlReader ^ reader, bool defattr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3344,6 +3402,7 @@ while (!reader.EOF){
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNode(System.Xml.XPath.XPathNavigator,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteNode (navigator As XPathNavigator, defattr As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member WriteNode : System.Xml.XPath.XPathNavigator * bool -&gt; unit&#xA;override this.WriteNode : System.Xml.XPath.XPathNavigator * bool -&gt; unit" Usage="xmlWriter.WriteNode (navigator, defattr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteNode(System::Xml::XPath::XPathNavigator ^ navigator, bool defattr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3435,6 +3494,7 @@ while (!reader.EOF){
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNodeAsync(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNodeAsync (reader As XmlReader, defattr As Boolean) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteNodeAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNodeAsync : System.Xml.XmlReader * bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNodeAsync (reader, defattr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteNodeAsync(System::Xml::XmlReader ^ reader, bool defattr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3482,6 +3542,7 @@ while (!reader.EOF){
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteNodeAsync(System.Xml.XPath.XPathNavigator,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteNodeAsync (navigator As XPathNavigator, defattr As Boolean) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteNodeAsync : System.Xml.XPath.XPathNavigator * bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteNodeAsync : System.Xml.XPath.XPathNavigator * bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteNodeAsync (navigator, defattr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteNodeAsync(System::Xml::XPath::XPathNavigator ^ navigator, bool defattr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -3534,6 +3595,7 @@ while (!reader.EOF){
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteProcessingInstruction(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteProcessingInstruction (name As String, text As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteProcessingInstruction : string * string -&gt; unit" Usage="xmlWriter.WriteProcessingInstruction (name, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteProcessingInstruction(System::String ^ name, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3605,6 +3667,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteProcessingInstructionAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteProcessingInstructionAsync (name As String, text As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteProcessingInstructionAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteProcessingInstructionAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteProcessingInstructionAsync (name, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteProcessingInstructionAsync(System::String ^ name, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3651,6 +3714,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteQualifiedName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteQualifiedName (localName As String, ns As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteQualifiedName : string * string -&gt; unit&#xA;override this.WriteQualifiedName : string * string -&gt; unit" Usage="xmlWriter.WriteQualifiedName (localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteQualifiedName(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3721,6 +3785,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteQualifiedNameAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteQualifiedNameAsync (localName As String, ns As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteQualifiedNameAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteQualifiedNameAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteQualifiedNameAsync (localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteQualifiedNameAsync(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3795,6 +3860,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRaw(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteRaw (data As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteRaw : string -&gt; unit" Usage="xmlWriter.WriteRaw data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteRaw(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3850,6 +3916,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRaw(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteRaw (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="F#" Value="abstract member WriteRaw : char[] * int * int -&gt; unit" Usage="xmlWriter.WriteRaw (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteRaw(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3930,6 +3997,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRawAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteRawAsync (data As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteRawAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteRawAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteRawAsync data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteRawAsync(System::String ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -3974,6 +4042,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteRawAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteRawAsync (buffer As Char(), index As Integer, count As Integer) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteRawAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&#xA;override this.WriteRawAsync : char[] * int * int -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteRawAsync (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteRawAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4042,6 +4111,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttribute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttribute (localName As String)" />
       <MemberSignature Language="F#" Value="member this.WriteStartAttribute : string -&gt; unit" Usage="xmlWriter.WriteStartAttribute localName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttribute(System::String ^ localName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4088,6 +4158,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartAttribute (localName As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteStartAttribute : string * string -&gt; unit" Usage="xmlWriter.WriteStartAttribute (localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartAttribute(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4142,6 +4213,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartAttribute (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteStartAttribute : string * string * string -&gt; unit" Usage="xmlWriter.WriteStartAttribute (prefix, localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartAttribute(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4192,6 +4264,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartAttributeAsync(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function WriteStartAttributeAsync (prefix As String, localName As String, ns As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteStartAttributeAsync : string * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartAttributeAsync : string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartAttributeAsync (prefix, localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Threading::Tasks::Task ^ WriteStartAttributeAsync(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4260,6 +4333,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocument" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartDocument ()" />
       <MemberSignature Language="F#" Value="abstract member WriteStartDocument : unit -&gt; unit" Usage="xmlWriter.WriteStartDocument " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4306,6 +4380,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocument(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartDocument (standalone As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member WriteStartDocument : bool -&gt; unit" Usage="xmlWriter.WriteStartDocument standalone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartDocument(bool standalone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4375,6 +4450,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocumentAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStartDocumentAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteStartDocumentAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartDocumentAsync : unit -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartDocumentAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteStartDocumentAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4416,6 +4492,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartDocumentAsync(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStartDocumentAsync (standalone As Boolean) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteStartDocumentAsync : bool -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartDocumentAsync : bool -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartDocumentAsync standalone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteStartDocumentAsync(bool standalone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4480,6 +4557,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElement(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElement (localName As String)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string -&gt; unit" Usage="xmlWriter.WriteStartElement localName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElement(System::String ^ localName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4533,6 +4611,7 @@ writer.Close();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElement(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartElement (localName As String, ns As String)" />
       <MemberSignature Language="F#" Value="member this.WriteStartElement : string * string -&gt; unit" Usage="xmlWriter.WriteStartElement (localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartElement(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4593,6 +4672,7 @@ writer.WriteEndElement();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElement(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartElement (prefix As String, localName As String, ns As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteStartElement : string * string * string -&gt; unit" Usage="xmlWriter.WriteStartElement (prefix, localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartElement(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4650,6 +4730,7 @@ writer.WriteEndElement();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStartElementAsync(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStartElementAsync (prefix As String, localName As String, ns As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteStartElementAsync : string * string * string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStartElementAsync : string * string * string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStartElementAsync (prefix, localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteStartElementAsync(System::String ^ prefix, System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4698,6 +4779,7 @@ writer.WriteEndElement();
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.WriteState" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property WriteState As WriteState" />
       <MemberSignature Language="F#" Value="member this.WriteState : System.Xml.WriteState" Usage="System.Xml.XmlWriter.WriteState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::WriteState WriteState { System::Xml::WriteState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4731,6 +4813,7 @@ writer.WriteEndElement();
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteString (text As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteString : string -&gt; unit" Usage="xmlWriter.WriteString text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteString(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4802,6 +4885,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteStringAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteStringAsync (text As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteStringAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteStringAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteStringAsync text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteStringAsync(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4846,6 +4930,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteSurrogateCharEntity(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteSurrogateCharEntity (lowChar As Char, highChar As Char)" />
       <MemberSignature Language="F#" Value="abstract member WriteSurrogateCharEntity : char * char -&gt; unit" Usage="xmlWriter.WriteSurrogateCharEntity (lowChar, highChar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteSurrogateCharEntity(char lowChar, char highChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4900,6 +4985,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteSurrogateCharEntityAsync(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteSurrogateCharEntityAsync (lowChar As Char, highChar As Char) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteSurrogateCharEntityAsync : char * char -&gt; System.Threading.Tasks.Task&#xA;override this.WriteSurrogateCharEntityAsync : char * char -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteSurrogateCharEntityAsync (lowChar, highChar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteSurrogateCharEntityAsync(char lowChar, char highChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -4993,6 +5079,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : bool -&gt; unit&#xA;override this.WriteValue : bool -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5045,6 +5132,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As DateTime)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : DateTime -&gt; unit&#xA;override this.WriteValue : DateTime -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5103,6 +5191,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As DateTimeOffset)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : DateTimeOffset -&gt; unit&#xA;override this.WriteValue : DateTimeOffset -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(DateTimeOffset value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5146,6 +5235,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Decimal)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : decimal -&gt; unit&#xA;override this.WriteValue : decimal -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5198,6 +5288,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Double)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : double -&gt; unit&#xA;override this.WriteValue : double -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5258,6 +5349,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Integer)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : int -&gt; unit&#xA;override this.WriteValue : int -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5310,6 +5402,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Long)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : int64 -&gt; unit&#xA;override this.WriteValue : int64 -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5362,6 +5455,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Object)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : obj -&gt; unit&#xA;override this.WriteValue : obj -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5415,6 +5509,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As Single)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : single -&gt; unit&#xA;override this.WriteValue : single -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5467,6 +5562,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteValue (value As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteValue : string -&gt; unit&#xA;override this.WriteValue : string -&gt; unit" Usage="xmlWriter.WriteValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteValue(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5517,6 +5613,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteWhitespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteWhitespace (ws As String)" />
       <MemberSignature Language="F#" Value="abstract member WriteWhitespace : string -&gt; unit" Usage="xmlWriter.WriteWhitespace ws" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteWhitespace(System::String ^ ws);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5563,6 +5660,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriter.WriteWhitespaceAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteWhitespaceAsync (ws As String) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteWhitespaceAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.WriteWhitespaceAsync : string -&gt; System.Threading.Tasks.Task" Usage="xmlWriter.WriteWhitespaceAsync ws" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteWhitespaceAsync(System::String ^ ws);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5607,6 +5705,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.XmlLang" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlLang As String" />
       <MemberSignature Language="F#" Value="member this.XmlLang : string" Usage="System.Xml.XmlWriter.XmlLang" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlLang { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -5647,6 +5746,7 @@ test&lt;item&gt;test
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriter.XmlSpace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlSpace As XmlSpace" />
       <MemberSignature Language="F#" Value="member this.XmlSpace : System.Xml.XmlSpace" Usage="System.Xml.XmlWriter.XmlSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlSpace XmlSpace { System::Xml::XmlSpace get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

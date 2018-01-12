@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathMessageFilter&#xA;Inherits MessageFilter&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="F#" Value="type XPathMessageFilter = class&#xA;    inherit MessageFilter&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageFilter : System::ServiceModel::Dispatcher::MessageFilter, System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xpath As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : string -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter xpath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter(System::String ^ xpath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : System.Xml.XmlReader -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter(System::Xml::XmlReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.String,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xpath As String, namespaces As XmlNamespaceManager)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : string * System.Xml.XmlNamespaceManager -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (xpath, namespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter(System::String ^ xpath, System::Xml::XmlNamespaceManager ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.String,System.Xml.Xsl.XsltContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xpath As String, namespaces As XsltContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : string * System.Xml.Xsl.XsltContext -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (xpath, namespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter(System::String ^ xpath, System::Xml::Xsl::XsltContext ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.Xml.XmlReader,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader, namespaces As XmlNamespaceManager)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : System.Xml.XmlReader * System.Xml.XmlNamespaceManager -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (reader, namespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter(System::Xml::XmlReader ^ reader, System::Xml::XmlNamespaceManager ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor(System.Xml.XmlReader,System.Xml.Xsl.XsltContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader, namespaces As XsltContext)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageFilter : System.Xml.XmlReader * System.Xml.Xsl.XsltContext -&gt; System.ServiceModel.Dispatcher.XPathMessageFilter" Usage="new System.ServiceModel.Dispatcher.XPathMessageFilter (reader, namespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageFilter(System::Xml::XmlReader ^ reader, System::Xml::Xsl::XsltContext ^ namespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -264,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.CreateFilterTable``1" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateFilterTable(Of FilterData) () As IMessageFilterTable(Of FilterData)" />
       <MemberSignature Language="F#" Value="override this.CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;" Usage="xPathMessageFilter.CreateFilterTable " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename FilterData&gt;&#xA; override System::ServiceModel::Dispatcher::IMessageFilterTable&lt;FilterData&gt; ^ CreateFilterTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +327,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="xPathMessageFilter.Match message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -353,6 +363,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="xPathMessageFilter.Match messageBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -388,6 +399,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Dispatcher.SeekableXPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (navigator As SeekableXPathNavigator) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Dispatcher.SeekableXPathNavigator -&gt; bool" Usage="xPathMessageFilter.Match navigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Match(System::ServiceModel::Dispatcher::SeekableXPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -423,6 +435,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.Xml.XPath.XPathNavigator)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (navigator As XPathNavigator) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Match : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xPathMessageFilter.Match navigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Match(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -451,6 +464,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As XmlNamespaceManager" />
       <MemberSignature Language="F#" Value="member this.Namespaces : System.Xml.XmlNamespaceManager" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNamespaceManager ^ Namespaces { System::Xml::XmlNamespaceManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -480,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilter.NodeQuota" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeQuota As Integer" />
       <MemberSignature Language="F#" Value="member this.NodeQuota : int with get, set" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.NodeQuota" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeQuota { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -510,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.OnGetSchema" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetSchema () As XmlSchema" />
       <MemberSignature Language="F#" Value="abstract member OnGetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.OnGetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="xPathMessageFilter.OnGetSchema " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::Schema::XmlSchema ^ OnGetSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -531,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.OnReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnReadXml (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="abstract member OnReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.OnReadXml : System.Xml.XmlReader -&gt; unit" Usage="xPathMessageFilter.OnReadXml reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnReadXml(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -559,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.OnWriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteXml (writer As XmlWriter)" />
       <MemberSignature Language="F#" Value="abstract member OnWriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.OnWriteXml : System.Xml.XmlWriter -&gt; unit" Usage="xPathMessageFilter.OnWriteXml writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteXml(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -584,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.ReadXPath(System.Xml.XmlReader,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ReadXPath (reader As XmlReader, namespaces As XmlNamespaceManager)" />
       <MemberSignature Language="F#" Value="member this.ReadXPath : System.Xml.XmlReader * System.Xml.XmlNamespaceManager -&gt; unit" Usage="xPathMessageFilter.ReadXPath (reader, namespaces)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReadXPath(System::Xml::XmlReader ^ reader, System::Xml::XmlNamespaceManager ^ namespaces);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -616,6 +635,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.StaticGetSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StaticGetSchema (schemas As XmlSchemaSet) As XmlSchemaType" />
       <MemberSignature Language="F#" Value="static member StaticGetSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.Schema.XmlSchemaType" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.StaticGetSchema schemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchemaType ^ StaticGetSchema(System::Xml::Schema::XmlSchemaSet ^ schemas);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -641,6 +661,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.System#Xml#Serialization#IXmlSerializable#GetSchema" />
       <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -664,6 +685,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -689,6 +711,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
@@ -715,6 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.TrimToSize" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimToSize ()" />
       <MemberSignature Language="F#" Value="member this.TrimToSize : unit -&gt; unit" Usage="xPathMessageFilter.TrimToSize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimToSize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -743,6 +767,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPath(System.Xml.XmlWriter,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteXPath (writer As XmlWriter, resolver As IXmlNamespaceResolver)" />
       <MemberSignature Language="F#" Value="member this.WriteXPath : System.Xml.XmlWriter * System.Xml.IXmlNamespaceResolver -&gt; unit" Usage="xPathMessageFilter.WriteXPath (writer, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteXPath(System::Xml::XmlWriter ^ writer, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -775,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPathTo(System.Xml.XmlWriter,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXPathTo (writer As XmlWriter, prefix As String, localName As String, ns As String, writeNamespaces As Boolean)" />
       <MemberSignature Language="F#" Value="member this.WriteXPathTo : System.Xml.XmlWriter * string * string * string * bool -&gt; unit" Usage="xPathMessageFilter.WriteXPathTo (writer, prefix, localName, ns, writeNamespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteXPathTo(System::Xml::XmlWriter ^ writer, System::String ^ prefix, System::String ^ localName, System::String ^ ns, bool writeNamespaces);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -818,6 +844,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageFilter.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="F#" Value="member this.XPath : string" Usage="System.ServiceModel.Dispatcher.XPathMessageFilter.XPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

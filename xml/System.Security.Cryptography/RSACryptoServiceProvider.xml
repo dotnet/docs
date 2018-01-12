@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSACryptoServiceProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RSACryptoServiceProvider&#xA;Inherits RSA&#xA;Implements ICspAsymmetricAlgorithm" />
   <TypeSignature Language="F#" Value="type RSACryptoServiceProvider = class&#xA;    inherit RSA&#xA;    interface ICspAsymmetricAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RSACryptoServiceProvider sealed : System::Security::Cryptography::RSA, System::Security::Cryptography::ICspAsymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSACryptoServiceProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -130,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dwKeySize As Integer)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSACryptoServiceProvider : int -&gt; System.Security.Cryptography.RSACryptoServiceProvider" Usage="new System.Security.Cryptography.RSACryptoServiceProvider dwKeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSACryptoServiceProvider(int dwKeySize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As CspParameters)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSACryptoServiceProvider : System.Security.Cryptography.CspParameters -&gt; System.Security.Cryptography.RSACryptoServiceProvider" Usage="new System.Security.Cryptography.RSACryptoServiceProvider parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSACryptoServiceProvider(System::Security::Cryptography::CspParameters ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32,System.Security.Cryptography.CspParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dwKeySize As Integer, parameters As CspParameters)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSACryptoServiceProvider : int * System.Security.Cryptography.CspParameters -&gt; System.Security.Cryptography.RSACryptoServiceProvider" Usage="new System.Security.Cryptography.RSACryptoServiceProvider (dwKeySize, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSACryptoServiceProvider(int dwKeySize, System::Security::Cryptography::CspParameters ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -295,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CspKeyContainerInfo As CspKeyContainerInfo" />
       <MemberSignature Language="F#" Value="member this.CspKeyContainerInfo : System.Security.Cryptography.CspKeyContainerInfo" Usage="System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CspKeyContainerInfo ^ CspKeyContainerInfo { System::Security::Cryptography::CspKeyContainerInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo</InterfaceMember>
@@ -361,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Decrypt (rgb As Byte(), fOAEP As Boolean) As Byte()" />
       <MemberSignature Language="F#" Value="override this.Decrypt : byte[] * bool -&gt; byte[]" Usage="rSACryptoServiceProvider.Decrypt (rgb, fOAEP)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Decrypt(cli::array &lt;System::Byte&gt; ^ rgb, bool fOAEP);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -432,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decrypt (data As Byte(), padding As RSAEncryptionPadding) As Byte()" />
       <MemberSignature Language="F#" Value="override this.Decrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACryptoServiceProvider.Decrypt (data, padding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decrypt(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::RSAEncryptionPadding ^ padding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -482,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptValue (rgb As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.DecryptValue : byte[] -&gt; byte[]" Usage="rSACryptoServiceProvider.DecryptValue rgb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptValue(cli::array &lt;System::Byte&gt; ^ rgb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -516,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="rSACryptoServiceProvider.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -559,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Encrypt (rgb As Byte(), fOAEP As Boolean) As Byte()" />
       <MemberSignature Language="F#" Value="override this.Encrypt : byte[] * bool -&gt; byte[]" Usage="rSACryptoServiceProvider.Encrypt (rgb, fOAEP)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Encrypt(cli::array &lt;System::Byte&gt; ^ rgb, bool fOAEP);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -631,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encrypt (data As Byte(), padding As RSAEncryptionPadding) As Byte()" />
       <MemberSignature Language="F#" Value="override this.Encrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACryptoServiceProvider.Encrypt (data, padding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encrypt(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::RSAEncryptionPadding ^ padding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -681,6 +693,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptValue (rgb As Byte()) As Byte()" />
       <MemberSignature Language="F#" Value="override this.EncryptValue : byte[] -&gt; byte[]" Usage="rSACryptoServiceProvider.EncryptValue rgb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptValue(cli::array &lt;System::Byte&gt; ^ rgb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -715,6 +728,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportCspBlob (includePrivateParameters As Boolean) As Byte()" />
       <MemberSignature Language="F#" Value="abstract member ExportCspBlob : bool -&gt; byte[]&#xA;override this.ExportCspBlob : bool -&gt; byte[]" Usage="rSACryptoServiceProvider.ExportCspBlob includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ ExportCspBlob(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)</InterfaceMember>
@@ -766,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As RSAParameters" />
       <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.RSAParameters" Usage="rSACryptoServiceProvider.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::RSAParameters ExportParameters(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -814,6 +829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="rSACryptoServiceProvider.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!RSACryptoServiceProvider ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -835,6 +851,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="F#" Value="override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACryptoServiceProvider.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -876,6 +893,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="F#" Value="override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACryptoServiceProvider.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -921,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportCspBlob (keyBlob As Byte())" />
       <MemberSignature Language="F#" Value="abstract member ImportCspBlob : byte[] -&gt; unit&#xA;override this.ImportCspBlob : byte[] -&gt; unit" Usage="rSACryptoServiceProvider.ImportCspBlob keyBlob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportCspBlob(cli::array &lt;System::Byte&gt; ^ keyBlob);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])</InterfaceMember>
@@ -970,6 +989,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As RSAParameters)" />
       <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.RSAParameters -&gt; unit" Usage="rSACryptoServiceProvider.ImportParameters parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::RSAParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1020,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyExchangeAlgorithm As String" />
       <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : string" Usage="System.Security.Cryptography.RSACryptoServiceProvider.KeyExchangeAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyExchangeAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1056,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeySize As Integer" />
       <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.Security.Cryptography.RSACryptoServiceProvider.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1097,6 +1119,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1118,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistKeyInCsp As Boolean" />
       <MemberSignature Language="F#" Value="member this.PersistKeyInCsp : bool with get, set" Usage="System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistKeyInCsp { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1174,6 +1198,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.PublicOnly : bool" Usage="System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PublicOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1217,6 +1242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SignatureAlgorithm As String" />
       <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string" Usage="System.Security.Cryptography.RSACryptoServiceProvider.SignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1263,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function SignData (buffer As Byte(), halg As Object) As Byte()" />
       <MemberSignature Language="F#" Value="override this.SignData : byte[] * obj -&gt; byte[]" Usage="rSACryptoServiceProvider.SignData (buffer, halg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ buffer, System::Object ^ halg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1319,6 +1346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function SignData (inputStream As Stream, halg As Object) As Byte()" />
       <MemberSignature Language="F#" Value="override this.SignData : System.IO.Stream * obj -&gt; byte[]" Usage="rSACryptoServiceProvider.SignData (inputStream, halg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ SignData(System::IO::Stream ^ inputStream, System::Object ^ halg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1373,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Int32,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function SignData (buffer As Byte(), offset As Integer, count As Integer, halg As Object) As Byte()" />
       <MemberSignature Language="F#" Value="override this.SignData : byte[] * int * int * obj -&gt; byte[]" Usage="rSACryptoServiceProvider.SignData (buffer, offset, count, halg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Object ^ halg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1449,6 +1478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SignHash (rgbHash As Byte(), str As String) As Byte()" />
       <MemberSignature Language="F#" Value="override this.SignHash : byte[] * string -&gt; byte[]" Usage="rSACryptoServiceProvider.SignHash (rgbHash, str)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ SignHash(cli::array &lt;System::Byte&gt; ^ rgbHash, System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1510,6 +1540,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SignHash (hash As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Byte()" />
       <MemberSignature Language="F#" Value="override this.SignHash : byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; byte[]" Usage="rSACryptoServiceProvider.SignHash (hash, hashAlgorithm, padding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ SignHash(cli::array &lt;System::Byte&gt; ^ hash, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1558,6 +1589,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property UseMachineKeyStore As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseMachineKeyStore : bool with get, set" Usage="System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UseMachineKeyStore { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1615,6 +1647,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte[],System.Object,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyData (buffer As Byte(), halg As Object, signature As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="override this.VerifyData : byte[] * obj * byte[] -&gt; bool" Usage="rSACryptoServiceProvider.VerifyData (buffer, halg, signature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyData(cli::array &lt;System::Byte&gt; ^ buffer, System::Object ^ halg, cli::array &lt;System::Byte&gt; ^ signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1684,6 +1717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyHash (rgbHash As Byte(), str As String, rgbSignature As Byte()) As Boolean" />
       <MemberSignature Language="F#" Value="override this.VerifyHash : byte[] * string * byte[] -&gt; bool" Usage="rSACryptoServiceProvider.VerifyHash (rgbHash, str, rgbSignature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyHash(cli::array &lt;System::Byte&gt; ^ rgbHash, System::String ^ str, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
@@ -1751,6 +1785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyHash (hash As Byte(), signature As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Boolean" />
       <MemberSignature Language="F#" Value="override this.VerifyHash : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool" Usage="rSACryptoServiceProvider.VerifyHash (hash, signature, hashAlgorithm, padding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyHash(cli::array &lt;System::Byte&gt; ^ hash, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>

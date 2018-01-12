@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeOrder" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlNodeOrder" />
   <TypeSignature Language="F#" Value="type XmlNodeOrder = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlNodeOrder" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.After" />
       <MemberSignature Language="VB.NET" Value="After" />
       <MemberSignature Language="F#" Value="After = 1" Usage="System.Xml.XmlNodeOrder.After" />
+      <MemberSignature Language="C++ CLI" Value="After" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.Before" />
       <MemberSignature Language="VB.NET" Value="Before" />
       <MemberSignature Language="F#" Value="Before = 0" Usage="System.Xml.XmlNodeOrder.Before" />
+      <MemberSignature Language="C++ CLI" Value="Before" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.Same" />
       <MemberSignature Language="VB.NET" Value="Same" />
       <MemberSignature Language="F#" Value="Same = 2" Usage="System.Xml.XmlNodeOrder.Same" />
+      <MemberSignature Language="C++ CLI" Value="Same" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = 3" Usage="System.Xml.XmlNodeOrder.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

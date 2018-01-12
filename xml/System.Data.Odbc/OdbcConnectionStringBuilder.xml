@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcConnectionStringBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcConnectionStringBuilder&#xA;Inherits DbConnectionStringBuilder" />
   <TypeSignature Language="F#" Value="type OdbcConnectionStringBuilder = class&#xA;    inherit DbConnectionStringBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcConnectionStringBuilder sealed : System::Data::Common::DbConnectionStringBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +97,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcConnectionStringBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -117,6 +119,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcConnectionStringBuilder : string -&gt; System.Data.Odbc.OdbcConnectionStringBuilder" Usage="new System.Data.Odbc.OdbcConnectionStringBuilder connectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcConnectionStringBuilder(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -160,6 +163,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
       <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="odbcConnectionStringBuilder.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -197,6 +201,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (keyword As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ContainsKey : string -&gt; bool" Usage="odbcConnectionStringBuilder.ContainsKey keyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ContainsKey(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -238,6 +243,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnectionStringBuilder.Driver" />
       <MemberSignature Language="VB.NET" Value="Public Property Driver As String" />
       <MemberSignature Language="F#" Value="member this.Driver : string with get, set" Usage="System.Data.Odbc.OdbcConnectionStringBuilder.Driver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Driver { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -277,6 +283,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnectionStringBuilder.Dsn" />
       <MemberSignature Language="VB.NET" Value="Public Property Dsn As String" />
       <MemberSignature Language="F#" Value="member this.Dsn : string with get, set" Usage="System.Data.Odbc.OdbcConnectionStringBuilder.Dsn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dsn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -316,6 +323,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnectionStringBuilder.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(keyword As String) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.Odbc.OdbcConnectionStringBuilder.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ keyword); void set(System::String ^ keyword, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -362,6 +370,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcConnectionStringBuilder.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Data.Odbc.OdbcConnectionStringBuilder.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -404,6 +413,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (keyword As String) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Remove : string -&gt; bool" Usage="odbcConnectionStringBuilder.Remove keyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Remove(System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -450,6 +460,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.TryGetValue : string *  -&gt; bool" Usage="odbcConnectionStringBuilder.TryGetValue (keyword, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetValue(System::String ^ keyword, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataGridColumn&#xA;Implements IStateManager" />
   <TypeSignature Language="F#" Value="type DataGridColumn = class&#xA;    interface IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumn abstract : System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataGridColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.DesignMode" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DesignMode As Boolean" />
       <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="System.Web.UI.WebControls.DataGridColumn.DesignMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.FooterStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FooterStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.FooterStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGridColumn.FooterStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ FooterStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.FooterText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterText As String" />
       <MemberSignature Language="F#" Value="member this.FooterText : string with get, set" Usage="System.Web.UI.WebControls.DataGridColumn.FooterText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FooterText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderImageUrl As String" />
       <MemberSignature Language="F#" Value="member this.HeaderImageUrl : string with get, set" Usage="System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGridColumn.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderText As String" />
       <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.WebControls.DataGridColumn.HeaderText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize ()" />
       <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="dataGridColumn.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitializeCell (cell As TableCell, columnIndex As Integer, itemType As ListItemType)" />
       <MemberSignature Language="F#" Value="abstract member InitializeCell : System.Web.UI.WebControls.TableCell * int * System.Web.UI.WebControls.ListItemType -&gt; unit&#xA;override this.InitializeCell : System.Web.UI.WebControls.TableCell * int * System.Web.UI.WebControls.ListItemType -&gt; unit" Usage="dataGridColumn.InitializeCell (cell, columnIndex, itemType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeCell(System::Web::UI::WebControls::TableCell ^ cell, int columnIndex, System::Web::UI::WebControls::ListItemType itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -412,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.WebControls.DataGridColumn.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -436,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.ItemStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemStyle As TableItemStyle" />
       <MemberSignature Language="F#" Value="member this.ItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataGridColumn.ItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ ItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -485,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="dataGridColumn.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -521,6 +534,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.OnColumnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnColumnChanged ()" />
       <MemberSignature Language="F#" Value="abstract member OnColumnChanged : unit -&gt; unit&#xA;override this.OnColumnChanged : unit -&gt; unit" Usage="dataGridColumn.OnColumnChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnColumnChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -549,6 +563,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.Owner" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Owner As DataGrid" />
       <MemberSignature Language="F#" Value="member this.Owner : System.Web.UI.WebControls.DataGrid" Usage="System.Web.UI.WebControls.DataGridColumn.Owner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::DataGrid ^ Owner { System::Web::UI::WebControls::DataGrid ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -577,6 +592,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
       <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="dataGridColumn.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -609,6 +625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SortExpression As String" />
       <MemberSignature Language="F#" Value="member this.SortExpression : string with get, set" Usage="System.Web.UI.WebControls.DataGridColumn.SortExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SortExpression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -662,6 +679,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataGridColumn.System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
@@ -692,6 +710,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
@@ -717,6 +736,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.System#Web#UI#IStateManager#SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
@@ -740,6 +760,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.System#Web#UI#IStateManager#TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -763,6 +784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridColumn.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -794,6 +816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumn.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
       <MemberSignature Language="F#" Value="abstract member TrackViewState : unit -&gt; unit&#xA;override this.TrackViewState : unit -&gt; unit" Usage="dataGridColumn.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
@@ -825,6 +848,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.ViewState" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewState As StateBag" />
       <MemberSignature Language="F#" Value="member this.ViewState : System.Web.UI.StateBag" Usage="System.Web.UI.WebControls.DataGridColumn.ViewState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -853,6 +877,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumn.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.DataGridColumn.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

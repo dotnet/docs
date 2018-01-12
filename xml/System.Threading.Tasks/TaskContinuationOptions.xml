@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskContinuationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum TaskContinuationOptions" />
   <TypeSignature Language="F#" Value="type TaskContinuationOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TaskContinuationOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent" />
       <MemberSignature Language="VB.NET" Value="AttachedToParent" />
       <MemberSignature Language="F#" Value="AttachedToParent = 4" Usage="System.Threading.Tasks.TaskContinuationOptions.AttachedToParent" />
+      <MemberSignature Language="C++ CLI" Value="AttachedToParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.DenyChildAttach" />
       <MemberSignature Language="VB.NET" Value="DenyChildAttach" />
       <MemberSignature Language="F#" Value="DenyChildAttach = 8" Usage="System.Threading.Tasks.TaskContinuationOptions.DenyChildAttach" />
+      <MemberSignature Language="C++ CLI" Value="DenyChildAttach" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -111,6 +114,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />
       <MemberSignature Language="VB.NET" Value="ExecuteSynchronously" />
       <MemberSignature Language="F#" Value="ExecuteSynchronously = 524288" Usage="System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />
+      <MemberSignature Language="C++ CLI" Value="ExecuteSynchronously" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -146,6 +150,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.HideScheduler" />
       <MemberSignature Language="VB.NET" Value="HideScheduler" />
       <MemberSignature Language="F#" Value="HideScheduler = 16" Usage="System.Threading.Tasks.TaskContinuationOptions.HideScheduler" />
+      <MemberSignature Language="C++ CLI" Value="HideScheduler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.LazyCancellation" />
       <MemberSignature Language="VB.NET" Value="LazyCancellation" />
       <MemberSignature Language="F#" Value="LazyCancellation = 32" Usage="System.Threading.Tasks.TaskContinuationOptions.LazyCancellation" />
+      <MemberSignature Language="C++ CLI" Value="LazyCancellation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -212,6 +218,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.LongRunning" />
       <MemberSignature Language="VB.NET" Value="LongRunning" />
       <MemberSignature Language="F#" Value="LongRunning = 2" Usage="System.Threading.Tasks.TaskContinuationOptions.LongRunning" />
+      <MemberSignature Language="C++ CLI" Value="LongRunning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -245,6 +252,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Threading.Tasks.TaskContinuationOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -278,6 +286,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.NotOnCanceled" />
       <MemberSignature Language="VB.NET" Value="NotOnCanceled" />
       <MemberSignature Language="F#" Value="NotOnCanceled = 262144" Usage="System.Threading.Tasks.TaskContinuationOptions.NotOnCanceled" />
+      <MemberSignature Language="C++ CLI" Value="NotOnCanceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -311,6 +320,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.NotOnFaulted" />
       <MemberSignature Language="VB.NET" Value="NotOnFaulted" />
       <MemberSignature Language="F#" Value="NotOnFaulted = 131072" Usage="System.Threading.Tasks.TaskContinuationOptions.NotOnFaulted" />
+      <MemberSignature Language="C++ CLI" Value="NotOnFaulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -344,6 +354,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.NotOnRanToCompletion" />
       <MemberSignature Language="VB.NET" Value="NotOnRanToCompletion" />
       <MemberSignature Language="F#" Value="NotOnRanToCompletion = 65536" Usage="System.Threading.Tasks.TaskContinuationOptions.NotOnRanToCompletion" />
+      <MemberSignature Language="C++ CLI" Value="NotOnRanToCompletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -377,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />
       <MemberSignature Language="VB.NET" Value="OnlyOnCanceled" />
       <MemberSignature Language="F#" Value="OnlyOnCanceled = 196608" Usage="System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />
+      <MemberSignature Language="C++ CLI" Value="OnlyOnCanceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -410,6 +422,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted" />
       <MemberSignature Language="VB.NET" Value="OnlyOnFaulted" />
       <MemberSignature Language="F#" Value="OnlyOnFaulted = 327680" Usage="System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted" />
+      <MemberSignature Language="C++ CLI" Value="OnlyOnFaulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -447,6 +460,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnRanToCompletion" />
       <MemberSignature Language="VB.NET" Value="OnlyOnRanToCompletion" />
       <MemberSignature Language="F#" Value="OnlyOnRanToCompletion = 393216" Usage="System.Threading.Tasks.TaskContinuationOptions.OnlyOnRanToCompletion" />
+      <MemberSignature Language="C++ CLI" Value="OnlyOnRanToCompletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -480,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.PreferFairness" />
       <MemberSignature Language="VB.NET" Value="PreferFairness" />
       <MemberSignature Language="F#" Value="PreferFairness = 1" Usage="System.Threading.Tasks.TaskContinuationOptions.PreferFairness" />
+      <MemberSignature Language="C++ CLI" Value="PreferFairness" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -513,6 +528,7 @@
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskContinuationOptions.RunContinuationsAsynchronously" />
       <MemberSignature Language="VB.NET" Value="RunContinuationsAsynchronously" />
       <MemberSignature Language="F#" Value="RunContinuationsAsynchronously = 64" Usage="System.Threading.Tasks.TaskContinuationOptions.RunContinuationsAsynchronously" />
+      <MemberSignature Language="C++ CLI" Value="RunContinuationsAsynchronously" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

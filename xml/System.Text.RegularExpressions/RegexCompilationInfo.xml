@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexCompilationInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RegexCompilationInfo" />
   <TypeSignature Language="F#" Value="type RegexCompilationInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegexCompilationInfo" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexCompilationInfo.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pattern As String, options As RegexOptions, name As String, fullnamespace As String, ispublic As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Text.RegularExpressions.RegexCompilationInfo : string * System.Text.RegularExpressions.RegexOptions * string * string * bool -&gt; System.Text.RegularExpressions.RegexCompilationInfo" Usage="new System.Text.RegularExpressions.RegexCompilationInfo (pattern, options, name, fullnamespace, ispublic)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexCompilationInfo(System::String ^ pattern, System::Text::RegularExpressions::RegexOptions options, System::String ^ name, System::String ^ fullnamespace, bool ispublic);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexCompilationInfo.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.String,System.String,System.Boolean,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pattern As String, options As RegexOptions, name As String, fullnamespace As String, ispublic As Boolean, matchTimeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Text.RegularExpressions.RegexCompilationInfo : string * System.Text.RegularExpressions.RegexOptions * string * string * bool * TimeSpan -&gt; System.Text.RegularExpressions.RegexCompilationInfo" Usage="new System.Text.RegularExpressions.RegexCompilationInfo (pattern, options, name, fullnamespace, ispublic, matchTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexCompilationInfo(System::String ^ pattern, System::Text::RegularExpressions::RegexOptions options, System::String ^ name, System::String ^ fullnamespace, bool ispublic, TimeSpan matchTimeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexCompilationInfo.IsPublic" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPublic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPublic : bool with get, set" Usage="System.Text.RegularExpressions.RegexCompilationInfo.IsPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -227,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexCompilationInfo.MatchTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property MatchTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.MatchTimeout : TimeSpan with get, set" Usage="System.Text.RegularExpressions.RegexCompilationInfo.MatchTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MatchTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,6 +298,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexCompilationInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Text.RegularExpressions.RegexCompilationInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexCompilationInfo.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Text.RegularExpressions.RegexCompilationInfo.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -352,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexCompilationInfo.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As RegexOptions" />
       <MemberSignature Language="F#" Value="member this.Options : System.Text.RegularExpressions.RegexOptions with get, set" Usage="System.Text.RegularExpressions.RegexCompilationInfo.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::RegularExpressions::RegexOptions Options { System::Text::RegularExpressions::RegexOptions get(); void set(System::Text::RegularExpressions::RegexOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -380,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.RegexCompilationInfo.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Property Pattern As String" />
       <MemberSignature Language="F#" Value="member this.Pattern : string with get, set" Usage="System.Text.RegularExpressions.RegexCompilationInfo.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pattern { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

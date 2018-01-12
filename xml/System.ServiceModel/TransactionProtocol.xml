@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransactionProtocol" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TransactionProtocol" />
   <TypeSignature Language="F#" Value="type TransactionProtocol = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionProtocol abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.TransactionProtocol.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TransactionProtocol();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As TransactionProtocol" />
       <MemberSignature Language="F#" Value="member this.Default : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::TransactionProtocol ^ Default { System::ServiceModel::TransactionProtocol ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.OleTransactions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OleTransactions As TransactionProtocol" />
       <MemberSignature Language="F#" Value="member this.OleTransactions : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.OleTransactions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::TransactionProtocol ^ OleTransactions { System::ServiceModel::TransactionProtocol ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.WSAtomicTransaction11" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSAtomicTransaction11 As TransactionProtocol" />
       <MemberSignature Language="F#" Value="member this.WSAtomicTransaction11 : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.WSAtomicTransaction11" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::TransactionProtocol ^ WSAtomicTransaction11 { System::ServiceModel::TransactionProtocol ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.TransactionProtocol.WSAtomicTransactionOctober2004" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSAtomicTransactionOctober2004 As TransactionProtocol" />
       <MemberSignature Language="F#" Value="member this.WSAtomicTransactionOctober2004 : System.ServiceModel.TransactionProtocol" Usage="System.ServiceModel.TransactionProtocol.WSAtomicTransactionOctober2004" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::TransactionProtocol ^ WSAtomicTransactionOctober2004 { System::ServiceModel::TransactionProtocol ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

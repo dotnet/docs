@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackagePartCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PackagePartCollection&#xA;Implements IEnumerable(Of PackagePart)" />
   <TypeSignature Language="F#" Value="type PackagePartCollection = class&#xA;    interface seq&lt;PackagePart&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PackagePartCollection : System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackagePart ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePartCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of PackagePart)" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.IO.Packaging.PackagePart&gt;" Usage="packagePartCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerator&lt;System::IO::Packaging::PackagePart ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -75,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.IO.Packaging.PackagePart&gt; System.Collections.Generic.IEnumerable&lt;System.IO.Packaging.PackagePart&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePartCollection.System#Collections#Generic#IEnumerable&lt;System#IO#Packaging#PackagePart&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of PackagePart) Implements IEnumerable(Of PackagePart).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::IO::Packaging::PackagePart ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.IO.Packaging.PackagePart&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackagePart ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -110,6 +113,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePartCollection.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

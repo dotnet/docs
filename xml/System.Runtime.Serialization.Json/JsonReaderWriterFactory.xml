@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Json.JsonReaderWriterFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class JsonReaderWriterFactory" />
   <TypeSignature Language="F#" Value="type JsonReaderWriterFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonReaderWriterFactory abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateJsonReader (buffer As Byte(), quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader" />
       <MemberSignature Language="F#" Value="static member CreateJsonReader : byte[] * System.Xml.XmlDictionaryReaderQuotas -&gt; System.Xml.XmlDictionaryReader" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader (buffer, quotas)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryReader ^ CreateJsonReader(cli::array &lt;System::Byte&gt; ^ buffer, System::Xml::XmlDictionaryReaderQuotas ^ quotas);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -105,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryReader CreateJsonReader(class System.IO.Stream stream, class System.Xml.XmlDictionaryReaderQuotas quotas) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)" />
       <MemberSignature Language="F#" Value="static member CreateJsonReader : System.IO.Stream * System.Xml.XmlDictionaryReaderQuotas -&gt; System.Xml.XmlDictionaryReader" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader (stream, quotas)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryReader ^ CreateJsonReader(System::IO::Stream ^ stream, System::Xml::XmlDictionaryReaderQuotas ^ quotas);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -149,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateJsonReader (buffer As Byte(), offset As Integer, count As Integer, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader" />
       <MemberSignature Language="F#" Value="static member CreateJsonReader : byte[] * int * int * System.Xml.XmlDictionaryReaderQuotas -&gt; System.Xml.XmlDictionaryReader" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader (buffer, offset, count, quotas)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryReader ^ CreateJsonReader(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Xml::XmlDictionaryReaderQuotas ^ quotas);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -196,6 +200,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryReader CreateJsonReader(class System.IO.Stream stream, class System.Text.Encoding encoding, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader(System.IO.Stream,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="F#" Value="static member CreateJsonReader : System.IO.Stream * System.Text.Encoding * System.Xml.XmlDictionaryReaderQuotas * System.Xml.OnXmlDictionaryReaderClose -&gt; System.Xml.XmlDictionaryReader" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader (stream, encoding, quotas, onClose)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryReader ^ CreateJsonReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -241,6 +246,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryReader CreateJsonReader(unsigned int8[] buffer, int32 offset, int32 count, class System.Text.Encoding encoding, class System.Xml.XmlDictionaryReaderQuotas quotas, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader(System.Byte[],System.Int32,System.Int32,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)" />
       <MemberSignature Language="F#" Value="static member CreateJsonReader : byte[] * int * int * System.Text.Encoding * System.Xml.XmlDictionaryReaderQuotas * System.Xml.OnXmlDictionaryReaderClose -&gt; System.Xml.XmlDictionaryReader" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonReader (buffer, offset, count, encoding, quotas, onClose)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryReader ^ CreateJsonReader(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Text::Encoding ^ encoding, System::Xml::XmlDictionaryReaderQuotas ^ quotas, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -308,6 +314,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateJsonWriter(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="static member CreateJsonWriter : System.IO.Stream -&gt; System.Xml.XmlDictionaryWriter" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryWriter ^ CreateJsonWriter(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -347,6 +354,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateJsonWriter(class System.IO.Stream stream, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter(System.IO.Stream,System.Text.Encoding)" />
       <MemberSignature Language="F#" Value="static member CreateJsonWriter : System.IO.Stream * System.Text.Encoding -&gt; System.Xml.XmlDictionaryWriter" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter (stream, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryWriter ^ CreateJsonWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -388,6 +396,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateJsonWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, bool ownsStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="F#" Value="static member CreateJsonWriter : System.IO.Stream * System.Text.Encoding * bool -&gt; System.Xml.XmlDictionaryWriter" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter (stream, encoding, ownsStream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryWriter ^ CreateJsonWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool ownsStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -424,6 +433,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateJsonWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, bool ownsStream, bool indent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Boolean)" />
       <MemberSignature Language="F#" Value="static member CreateJsonWriter : System.IO.Stream * System.Text.Encoding * bool * bool -&gt; System.Xml.XmlDictionaryWriter" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter (stream, encoding, ownsStream, indent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryWriter ^ CreateJsonWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool ownsStream, bool indent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -462,6 +472,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlDictionaryWriter CreateJsonWriter(class System.IO.Stream stream, class System.Text.Encoding encoding, bool ownsStream, bool indent, string indentChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Boolean,System.String)" />
       <MemberSignature Language="F#" Value="static member CreateJsonWriter : System.IO.Stream * System.Text.Encoding * bool * bool * string -&gt; System.Xml.XmlDictionaryWriter" Usage="System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter (stream, encoding, ownsStream, indent, indentChars)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlDictionaryWriter ^ CreateJsonWriter(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool ownsStream, bool indent, System::String ^ indentChars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

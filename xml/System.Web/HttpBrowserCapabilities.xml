@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpBrowserCapabilities" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpBrowserCapabilities&#xA;Inherits HttpCapabilitiesBase" />
   <TypeSignature Language="F#" Value="type HttpBrowserCapabilities = class&#xA;    inherit HttpCapabilitiesBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpBrowserCapabilities : System::Web::Configuration::HttpCapabilitiesBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilities.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpBrowserCapabilities();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

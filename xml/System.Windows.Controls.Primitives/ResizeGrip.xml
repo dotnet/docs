@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ResizeGrip" />
   <TypeSignature Language="VB.NET" Value="Public Class ResizeGrip&#xA;Inherits Control" />
   <TypeSignature Language="F#" Value="type ResizeGrip = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResizeGrip : System::Windows::Controls::Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ResizeGrip.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResizeGrip();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

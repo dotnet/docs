@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqTransportSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqTransportSecurity" />
   <TypeSignature Language="F#" Value="type MsmqTransportSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MsmqTransportSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqTransportSecurity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqTransportSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqTransportSecurity.#ctor(System.ServiceModel.MsmqTransportSecurity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As MsmqTransportSecurity)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqTransportSecurity : System.ServiceModel.MsmqTransportSecurity -&gt; System.ServiceModel.MsmqTransportSecurity" Usage="new System.ServiceModel.MsmqTransportSecurity other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqTransportSecurity(System::ServiceModel::MsmqTransportSecurity ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property MsmqAuthenticationMode As MsmqAuthenticationMode" />
       <MemberSignature Language="F#" Value="member this.MsmqAuthenticationMode : System.ServiceModel.MsmqAuthenticationMode with get, set" Usage="System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqAuthenticationMode MsmqAuthenticationMode { System::ServiceModel::MsmqAuthenticationMode get(); void set(System::ServiceModel::MsmqAuthenticationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqEncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property MsmqEncryptionAlgorithm As MsmqEncryptionAlgorithm" />
       <MemberSignature Language="F#" Value="member this.MsmqEncryptionAlgorithm : System.ServiceModel.MsmqEncryptionAlgorithm with get, set" Usage="System.ServiceModel.MsmqTransportSecurity.MsmqEncryptionAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqEncryptionAlgorithm MsmqEncryptionAlgorithm { System::ServiceModel::MsmqEncryptionAlgorithm get(); void set(System::ServiceModel::MsmqEncryptionAlgorithm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MsmqProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="F#" Value="member this.MsmqProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel MsmqProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqTransportSecurity.MsmqSecureHashAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property MsmqSecureHashAlgorithm As MsmqSecureHashAlgorithm" />
       <MemberSignature Language="F#" Value="member this.MsmqSecureHashAlgorithm : System.ServiceModel.MsmqSecureHashAlgorithm with get, set" Usage="System.ServiceModel.MsmqTransportSecurity.MsmqSecureHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqSecureHashAlgorithm MsmqSecureHashAlgorithm { System::ServiceModel::MsmqSecureHashAlgorithm get(); void set(System::ServiceModel::MsmqSecureHashAlgorithm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

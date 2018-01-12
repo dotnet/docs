@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MenuItem" />
   <TypeSignature Language="VB.NET" Value="Public Class MenuItem&#xA;Inherits HeaderedItemsControl&#xA;Implements ICommandSource" />
   <TypeSignature Language="F#" Value="type MenuItem = class&#xA;    inherit HeaderedItemsControl&#xA;    interface ICommandSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuItem : System::Windows::Controls::HeaderedItemsControl, System::Windows::Input::ICommandSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MenuItem.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Checked As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Checked : System.Windows.RoutedEventHandler " Usage="member this.Checked : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Checked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +153,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.CheckedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable CheckedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MenuItem.CheckedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CheckedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +173,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MenuItem.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Click : System.Windows.RoutedEventHandler " Usage="member this.Click : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.ClickEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClickEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable ClickEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MenuItem.ClickEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ClickEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -245,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
       <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="System.Windows.Controls.MenuItem.Command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -312,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.CommandParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
       <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="System.Windows.Controls.MenuItem.CommandParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +365,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.CommandParameterProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.CommandParameterProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandParameterProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -376,6 +385,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.CommandProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.CommandProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -395,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.CommandTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandTarget As IInputElement" />
       <MemberSignature Language="F#" Value="member this.CommandTarget : System.Windows.IInputElement with get, set" Usage="System.Windows.Controls.MenuItem.CommandTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ CommandTarget { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -438,6 +449,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.CommandTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandTargetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CommandTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.CommandTargetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandTargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -457,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
       <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="menuItem.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -478,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.HandlesScrolling" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
       <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.MenuItem.HandlesScrolling" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -506,6 +520,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As Object" />
       <MemberSignature Language="F#" Value="member this.Icon : obj with get, set" Usage="System.Windows.Controls.MenuItem.Icon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Icon { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -553,6 +568,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IconProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IconProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IconProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IconProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -572,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.InputGestureText" />
       <MemberSignature Language="VB.NET" Value="Public Property InputGestureText As String" />
       <MemberSignature Language="F#" Value="member this.InputGestureText : string with get, set" Usage="System.Windows.Controls.MenuItem.InputGestureText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputGestureText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -621,6 +638,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.InputGestureTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputGestureTextProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable InputGestureTextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.InputGestureTextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InputGestureTextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -640,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsCheckable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCheckable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsCheckable : bool with get, set" Usage="System.Windows.Controls.MenuItem.IsCheckable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCheckable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -690,6 +709,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IsCheckableProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCheckableProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsCheckableProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IsCheckableProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCheckableProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -709,6 +729,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsChecked" />
       <MemberSignature Language="VB.NET" Value="Public Property IsChecked As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsChecked : bool with get, set" Usage="System.Windows.Controls.MenuItem.IsChecked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsChecked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -759,6 +780,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IsCheckedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCheckedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsCheckedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IsCheckedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCheckedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -778,6 +800,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsEnabledCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsEnabledCore As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEnabledCore : bool" Usage="System.Windows.Controls.MenuItem.IsEnabledCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsEnabledCore { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -799,6 +822,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsHighlighted" />
       <MemberSignature Language="VB.NET" Value="Public Property IsHighlighted As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsHighlighted : bool with get, set" Usage="System.Windows.Controls.MenuItem.IsHighlighted" />
+      <MemberSignature Language="C++ CLI" Value="public:  property bool IsHighlighted {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -851,6 +875,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IsHighlightedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHighlightedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsHighlightedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IsHighlightedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsHighlightedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -870,6 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="menuItem.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -895,6 +921,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsPressed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPressed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPressed : bool with get, set" Usage="System.Windows.Controls.MenuItem.IsPressed" />
+      <MemberSignature Language="C++ CLI" Value="public:  property bool IsPressed {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -946,6 +973,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IsPressedProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsPressedProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsPressedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IsPressedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsPressedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -965,6 +993,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsSubmenuOpen" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSubmenuOpen As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSubmenuOpen : bool with get, set" Usage="System.Windows.Controls.MenuItem.IsSubmenuOpen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSubmenuOpen { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1025,6 +1054,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IsSubmenuOpenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSubmenuOpenProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSubmenuOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IsSubmenuOpenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSubmenuOpenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1044,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.IsSuspendingPopupAnimation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSuspendingPopupAnimation As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSuspendingPopupAnimation : bool" Usage="System.Windows.Controls.MenuItem.IsSuspendingPopupAnimation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSuspendingPopupAnimation { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1084,6 +1115,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.IsSuspendingPopupAnimationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSuspendingPopupAnimationProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsSuspendingPopupAnimationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.IsSuspendingPopupAnimationProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSuspendingPopupAnimationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1103,6 +1135,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.ItemContainerTemplateSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemContainerTemplateSelector As ItemContainerTemplateSelector" />
       <MemberSignature Language="F#" Value="member this.ItemContainerTemplateSelector : System.Windows.Controls.ItemContainerTemplateSelector with get, set" Usage="System.Windows.Controls.MenuItem.ItemContainerTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemContainerTemplateSelector ^ ItemContainerTemplateSelector { System::Windows::Controls::ItemContainerTemplateSelector ^ get(); void set(System::Windows::Controls::ItemContainerTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1138,6 +1171,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.ItemContainerTemplateSelectorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemContainerTemplateSelectorProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ItemContainerTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.ItemContainerTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemContainerTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1157,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAccessKey (e As AccessKeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnAccessKey : System.Windows.Input.AccessKeyEventArgs -&gt; unit" Usage="menuItem.OnAccessKey e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAccessKey(System::Windows::Input::AccessKeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1185,6 +1220,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="menuItem.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1205,6 +1241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnChecked(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChecked (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnChecked : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnChecked : System.Windows.RoutedEventArgs -&gt; unit" Usage="menuItem.OnChecked e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChecked(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1238,6 +1275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnClick" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick ()" />
       <MemberSignature Language="F#" Value="abstract member OnClick : unit -&gt; unit&#xA;override this.OnClick : unit -&gt; unit" Usage="menuItem.OnClick " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1281,6 +1319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="menuItem.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1302,6 +1341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="menuItem.OnGotKeyboardFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1325,6 +1365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnInitialized(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="menuItem.OnInitialized e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1348,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="menuItem.OnIsKeyboardFocusWithinChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1371,6 +1413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="menuItem.OnItemsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1394,6 +1437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="menuItem.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1422,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseEnter(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseEnter (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseEnter : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="menuItem.OnMouseEnter e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseEnter(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1445,6 +1490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeave : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="menuItem.OnMouseLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1468,6 +1514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="menuItem.OnMouseLeftButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1499,6 +1546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="menuItem.OnMouseLeftButtonUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1530,6 +1578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="menuItem.OnMouseMove e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1553,6 +1602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseRightButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseRightButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="menuItem.OnMouseRightButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseRightButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1584,6 +1634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseRightButtonUp (e As MouseButtonEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseRightButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="menuItem.OnMouseRightButtonUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseRightButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1615,6 +1666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnSubmenuClosed(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSubmenuClosed (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSubmenuClosed : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnSubmenuClosed : System.Windows.RoutedEventArgs -&gt; unit" Usage="menuItem.OnSubmenuClosed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSubmenuClosed(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1648,6 +1700,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnSubmenuOpened(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSubmenuOpened (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSubmenuOpened : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnSubmenuOpened : System.Windows.RoutedEventArgs -&gt; unit" Usage="menuItem.OnSubmenuOpened e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSubmenuOpened(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1681,6 +1734,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnUnchecked(System.Windows.RoutedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnchecked (e As RoutedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnUnchecked : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnUnchecked : System.Windows.RoutedEventArgs -&gt; unit" Usage="menuItem.OnUnchecked e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnchecked(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1714,6 +1768,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.OnVisualParentChanged(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnVisualParentChanged (oldParent As DependencyObject)" />
       <MemberSignature Language="F#" Value="override this.OnVisualParentChanged : System.Windows.DependencyObject -&gt; unit" Usage="menuItem.OnVisualParentChanged oldParent" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1737,6 +1792,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
       <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="menuItem.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1769,6 +1825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.Role" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As MenuItemRole" />
       <MemberSignature Language="F#" Value="member this.Role : System.Windows.Controls.MenuItemRole" Usage="System.Windows.Controls.MenuItem.Role" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::MenuItemRole Role { System::Windows::Controls::MenuItemRole get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1809,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.RoleProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RoleProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable RoleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.RoleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RoleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1828,6 +1886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.SeparatorStyleKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeparatorStyleKey As ResourceKey" />
       <MemberSignature Language="F#" Value="member this.SeparatorStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.MenuItem.SeparatorStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SeparatorStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1866,6 +1925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuItem.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="menuItem.ShouldApplyItemContainerStyle (container, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1893,6 +1953,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.StaysOpenOnClick" />
       <MemberSignature Language="VB.NET" Value="Public Property StaysOpenOnClick As Boolean" />
       <MemberSignature Language="F#" Value="member this.StaysOpenOnClick : bool with get, set" Usage="System.Windows.Controls.MenuItem.StaysOpenOnClick" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StaysOpenOnClick { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1943,6 +2004,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.StaysOpenOnClickProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StaysOpenOnClickProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable StaysOpenOnClickProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.StaysOpenOnClickProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StaysOpenOnClickProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1962,6 +2024,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MenuItem.SubmenuClosed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SubmenuClosed As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.SubmenuClosed : System.Windows.RoutedEventHandler " Usage="member this.SubmenuClosed : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ SubmenuClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2011,6 +2074,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.SubmenuClosedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SubmenuClosedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable SubmenuClosedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MenuItem.SubmenuClosedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SubmenuClosedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2030,6 +2094,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.SubmenuHeaderTemplateKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SubmenuHeaderTemplateKey As ResourceKey" />
       <MemberSignature Language="F#" Value="member this.SubmenuHeaderTemplateKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.MenuItem.SubmenuHeaderTemplateKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SubmenuHeaderTemplateKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2061,6 +2126,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.SubmenuItemTemplateKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SubmenuItemTemplateKey As ResourceKey" />
       <MemberSignature Language="F#" Value="member this.SubmenuItemTemplateKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.MenuItem.SubmenuItemTemplateKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SubmenuItemTemplateKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2092,6 +2158,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MenuItem.SubmenuOpened" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SubmenuOpened As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.SubmenuOpened : System.Windows.RoutedEventHandler " Usage="member this.SubmenuOpened : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ SubmenuOpened;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2141,6 +2208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.SubmenuOpenedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SubmenuOpenedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable SubmenuOpenedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MenuItem.SubmenuOpenedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SubmenuOpenedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2160,6 +2228,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.TopLevelHeaderTemplateKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TopLevelHeaderTemplateKey As ResourceKey" />
       <MemberSignature Language="F#" Value="member this.TopLevelHeaderTemplateKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.MenuItem.TopLevelHeaderTemplateKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ TopLevelHeaderTemplateKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2191,6 +2260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.TopLevelItemTemplateKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TopLevelItemTemplateKey As ResourceKey" />
       <MemberSignature Language="F#" Value="member this.TopLevelItemTemplateKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.MenuItem.TopLevelItemTemplateKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ TopLevelItemTemplateKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2222,6 +2292,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.MenuItem.Unchecked" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unchecked As RoutedEventHandler " />
       <MemberSignature Language="F#" Value="member this.Unchecked : System.Windows.RoutedEventHandler " Usage="member this.Unchecked : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Unchecked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2271,6 +2342,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.UncheckedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UncheckedEvent As RoutedEvent " />
       <MemberSignature Language="F#" Value=" staticval mutable UncheckedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.MenuItem.UncheckedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UncheckedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2290,6 +2362,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.MenuItem.UsesItemContainerTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property UsesItemContainerTemplate As Boolean" />
       <MemberSignature Language="F#" Value="member this.UsesItemContainerTemplate : bool with get, set" Usage="System.Windows.Controls.MenuItem.UsesItemContainerTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsesItemContainerTemplate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2328,6 +2401,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItem.UsesItemContainerTemplateProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UsesItemContainerTemplateProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable UsesItemContainerTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.MenuItem.UsesItemContainerTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UsesItemContainerTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

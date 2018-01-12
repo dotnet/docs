@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaDerivationMethod" />
   <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaDerivationMethod" />
   <TypeSignature Language="F#" Value="type XmlSchemaDerivationMethod = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaDerivationMethod" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="F#" Value="All = 255" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
       <MemberSignature Language="F#" Value="Empty = 0" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.Empty" />
+      <MemberSignature Language="C++ CLI" Value="Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.Extension" />
       <MemberSignature Language="VB.NET" Value="Extension" />
       <MemberSignature Language="F#" Value="Extension = 2" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.Extension" />
+      <MemberSignature Language="C++ CLI" Value="Extension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.List" />
       <MemberSignature Language="VB.NET" Value="List" />
       <MemberSignature Language="F#" Value="List = 8" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.List" />
+      <MemberSignature Language="C++ CLI" Value="List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 256" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction" />
       <MemberSignature Language="VB.NET" Value="Restriction" />
       <MemberSignature Language="F#" Value="Restriction = 4" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.Restriction" />
+      <MemberSignature Language="C++ CLI" Value="Restriction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -235,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution" />
       <MemberSignature Language="VB.NET" Value="Substitution" />
       <MemberSignature Language="F#" Value="Substitution = 1" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.Substitution" />
+      <MemberSignature Language="C++ CLI" Value="Substitution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -268,6 +276,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaDerivationMethod.Union" />
       <MemberSignature Language="VB.NET" Value="Union" />
       <MemberSignature Language="F#" Value="Union = 16" Usage="System.Xml.Schema.XmlSchemaDerivationMethod.Union" />
+      <MemberSignature Language="C++ CLI" Value="Union" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

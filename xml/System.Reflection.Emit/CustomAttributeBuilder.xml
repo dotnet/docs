@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.CustomAttributeBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomAttributeBuilder&#xA;Implements _CustomAttributeBuilder" />
   <TypeSignature Language="F#" Value="type CustomAttributeBuilder = class&#xA;    interface _CustomAttributeBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomAttributeBuilder : System::Runtime::InteropServices::_CustomAttributeBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object())" />
       <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -121,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[],System.Reflection.FieldInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object(), namedFields As FieldInfo(), fieldValues As Object())" />
       <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] * System.Reflection.FieldInfo[] * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs, namedFields, fieldValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ namedFields, cli::array &lt;System::Object ^&gt; ^ fieldValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -189,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[],System.Reflection.PropertyInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object(), namedProperties As PropertyInfo(), propertyValues As Object())" />
       <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] * System.Reflection.PropertyInfo[] * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs, namedProperties, propertyValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs, cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ namedProperties, cli::array &lt;System::Object ^&gt; ^ propertyValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -261,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.#ctor(System.Reflection.ConstructorInfo,System.Object[],System.Reflection.PropertyInfo[],System.Object[],System.Reflection.FieldInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (con As ConstructorInfo, constructorArgs As Object(), namedProperties As PropertyInfo(), propertyValues As Object(), namedFields As FieldInfo(), fieldValues As Object())" />
       <MemberSignature Language="F#" Value="new System.Reflection.Emit.CustomAttributeBuilder : System.Reflection.ConstructorInfo * obj[] * System.Reflection.PropertyInfo[] * obj[] * System.Reflection.FieldInfo[] * obj[] -&gt; System.Reflection.Emit.CustomAttributeBuilder" Usage="new System.Reflection.Emit.CustomAttributeBuilder (con, constructorArgs, namedProperties, propertyValues, namedFields, fieldValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeBuilder(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Object ^&gt; ^ constructorArgs, cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ namedProperties, cli::array &lt;System::Object ^&gt; ^ propertyValues, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ namedFields, cli::array &lt;System::Object ^&gt; ^ fieldValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -344,6 +349,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._CustomAttributeBuilder.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.System#Runtime#InteropServices#_CustomAttributeBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _CustomAttributeBuilder.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._CustomAttributeBuilder.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_CustomAttributeBuilder::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._CustomAttributeBuilder.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -386,6 +392,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._CustomAttributeBuilder.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.System#Runtime#InteropServices#_CustomAttributeBuilder#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _CustomAttributeBuilder.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._CustomAttributeBuilder.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_CustomAttributeBuilder::GetTypeInfo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._CustomAttributeBuilder.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
@@ -424,6 +431,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._CustomAttributeBuilder.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.System#Runtime#InteropServices#_CustomAttributeBuilder#GetTypeInfoCount(System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _CustomAttributeBuilder.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._CustomAttributeBuilder.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_CustomAttributeBuilder::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._CustomAttributeBuilder.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
@@ -458,6 +466,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._CustomAttributeBuilder.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.CustomAttributeBuilder.System#Runtime#InteropServices#_CustomAttributeBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _CustomAttributeBuilder.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._CustomAttributeBuilder.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_CustomAttributeBuilder::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices._CustomAttributeBuilder.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>

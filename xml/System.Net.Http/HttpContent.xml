@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpContent" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpContent&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type HttpContent = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpContent abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpContent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -75,6 +77,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="member this.CopyToAsync : System.IO.Stream -&gt; System.Threading.Tasks.Task" Usage="httpContent.CopyToAsync stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)" />
       <MemberSignature Language="F#" Value="member this.CopyToAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="httpContent.CopyToAsync (stream, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -152,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.CreateContentReadStreamAsync" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateContentReadStreamAsync () As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="abstract member CreateContentReadStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;&#xA;override this.CreateContentReadStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="httpContent.CreateContentReadStreamAsync " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ CreateContentReadStreamAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -211,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpContent.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="httpContent.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -279,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpContent.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As HttpContentHeaders" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Net.Http.Headers.HttpContentHeaders" Usage="System.Net.Http.HttpContent.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpContentHeaders ^ Headers { System::Net::Http::Headers::HttpContentHeaders ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -325,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.LoadIntoBufferAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadIntoBufferAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.LoadIntoBufferAsync : unit -&gt; System.Threading.Tasks.Task" Usage="httpContent.LoadIntoBufferAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ LoadIntoBufferAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -362,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadIntoBufferAsync (maxBufferSize As Long) As Task" />
       <MemberSignature Language="F#" Value="member this.LoadIntoBufferAsync : int64 -&gt; System.Threading.Tasks.Task" Usage="httpContent.LoadIntoBufferAsync maxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ LoadIntoBufferAsync(long maxBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -412,6 +422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.ReadAsByteArrayAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadAsByteArrayAsync () As Task(Of Byte())" />
       <MemberSignature Language="F#" Value="member this.ReadAsByteArrayAsync : unit -&gt; System.Threading.Tasks.Task&lt;byte[]&gt;" Usage="httpContent.ReadAsByteArrayAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;cli::array &lt;System::Byte&gt; ^&gt; ^ ReadAsByteArrayAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -457,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.ReadAsStreamAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadAsStreamAsync () As Task(Of Stream)" />
       <MemberSignature Language="F#" Value="member this.ReadAsStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="httpContent.ReadAsStreamAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ ReadAsStreamAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -502,6 +514,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.ReadAsStringAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadAsStringAsync () As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.ReadAsStringAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="httpContent.ReadAsStringAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadAsStringAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -546,6 +559,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
       <MemberSignature Language="F#" Value="abstract member SerializeToStreamAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="httpContent.SerializeToStreamAsync (stream, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -586,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpContent.TryComputeLength(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryComputeLength (ByRef length As Long) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryComputeLength :  -&gt; bool" Usage="httpContent.TryComputeLength length" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

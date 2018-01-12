@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleColor" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConsoleColor" />
   <TypeSignature Language="F#" Value="type ConsoleColor = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConsoleColor" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Black" />
       <MemberSignature Language="VB.NET" Value="Black" />
       <MemberSignature Language="F#" Value="Black = 0" Usage="System.ConsoleColor.Black" />
+      <MemberSignature Language="C++ CLI" Value="Black" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Blue" />
       <MemberSignature Language="VB.NET" Value="Blue" />
       <MemberSignature Language="F#" Value="Blue = 9" Usage="System.ConsoleColor.Blue" />
+      <MemberSignature Language="C++ CLI" Value="Blue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Cyan" />
       <MemberSignature Language="VB.NET" Value="Cyan" />
       <MemberSignature Language="F#" Value="Cyan = 11" Usage="System.ConsoleColor.Cyan" />
+      <MemberSignature Language="C++ CLI" Value="Cyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkBlue" />
       <MemberSignature Language="VB.NET" Value="DarkBlue" />
       <MemberSignature Language="F#" Value="DarkBlue = 1" Usage="System.ConsoleColor.DarkBlue" />
+      <MemberSignature Language="C++ CLI" Value="DarkBlue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkCyan" />
       <MemberSignature Language="VB.NET" Value="DarkCyan" />
       <MemberSignature Language="F#" Value="DarkCyan = 3" Usage="System.ConsoleColor.DarkCyan" />
+      <MemberSignature Language="C++ CLI" Value="DarkCyan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -188,6 +194,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkGray" />
       <MemberSignature Language="VB.NET" Value="DarkGray" />
       <MemberSignature Language="F#" Value="DarkGray = 8" Usage="System.ConsoleColor.DarkGray" />
+      <MemberSignature Language="C++ CLI" Value="DarkGray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkGreen" />
       <MemberSignature Language="VB.NET" Value="DarkGreen" />
       <MemberSignature Language="F#" Value="DarkGreen = 2" Usage="System.ConsoleColor.DarkGreen" />
+      <MemberSignature Language="C++ CLI" Value="DarkGreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkMagenta" />
       <MemberSignature Language="VB.NET" Value="DarkMagenta" />
       <MemberSignature Language="F#" Value="DarkMagenta = 5" Usage="System.ConsoleColor.DarkMagenta" />
+      <MemberSignature Language="C++ CLI" Value="DarkMagenta" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -275,6 +284,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkRed" />
       <MemberSignature Language="VB.NET" Value="DarkRed" />
       <MemberSignature Language="F#" Value="DarkRed = 4" Usage="System.ConsoleColor.DarkRed" />
+      <MemberSignature Language="C++ CLI" Value="DarkRed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -304,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.DarkYellow" />
       <MemberSignature Language="VB.NET" Value="DarkYellow" />
       <MemberSignature Language="F#" Value="DarkYellow = 6" Usage="System.ConsoleColor.DarkYellow" />
+      <MemberSignature Language="C++ CLI" Value="DarkYellow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -333,6 +344,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Gray" />
       <MemberSignature Language="VB.NET" Value="Gray" />
       <MemberSignature Language="F#" Value="Gray = 7" Usage="System.ConsoleColor.Gray" />
+      <MemberSignature Language="C++ CLI" Value="Gray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Green" />
       <MemberSignature Language="VB.NET" Value="Green" />
       <MemberSignature Language="F#" Value="Green = 10" Usage="System.ConsoleColor.Green" />
+      <MemberSignature Language="C++ CLI" Value="Green" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -391,6 +404,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Magenta" />
       <MemberSignature Language="VB.NET" Value="Magenta" />
       <MemberSignature Language="F#" Value="Magenta = 13" Usage="System.ConsoleColor.Magenta" />
+      <MemberSignature Language="C++ CLI" Value="Magenta" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -420,6 +434,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Red" />
       <MemberSignature Language="VB.NET" Value="Red" />
       <MemberSignature Language="F#" Value="Red = 12" Usage="System.ConsoleColor.Red" />
+      <MemberSignature Language="C++ CLI" Value="Red" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -449,6 +464,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.White" />
       <MemberSignature Language="VB.NET" Value="White" />
       <MemberSignature Language="F#" Value="White = 15" Usage="System.ConsoleColor.White" />
+      <MemberSignature Language="C++ CLI" Value="White" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -478,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleColor.Yellow" />
       <MemberSignature Language="VB.NET" Value="Yellow" />
       <MemberSignature Language="F#" Value="Yellow = 14" Usage="System.ConsoleColor.Yellow" />
+      <MemberSignature Language="C++ CLI" Value="Yellow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>

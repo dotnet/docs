@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Design.TypedDataSetGeneratorException" />
   <TypeSignature Language="VB.NET" Value="Public Class TypedDataSetGeneratorException&#xA;Inherits DataException" />
   <TypeSignature Language="F#" Value="type TypedDataSetGeneratorException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypedDataSetGeneratorException : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetGeneratorException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedDataSetGeneratorException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetGeneratorException.#ctor(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (list As IList)" />
       <MemberSignature Language="F#" Value="new System.Data.Design.TypedDataSetGeneratorException : System.Collections.IList -&gt; System.Data.Design.TypedDataSetGeneratorException" Usage="new System.Data.Design.TypedDataSetGeneratorException list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedDataSetGeneratorException(System::Collections::IList ^ list);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetGeneratorException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Data.Design.TypedDataSetGeneratorException : string -&gt; System.Data.Design.TypedDataSetGeneratorException" Usage="new System.Data.Design.TypedDataSetGeneratorException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedDataSetGeneratorException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetGeneratorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new System.Data.Design.TypedDataSetGeneratorException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.Design.TypedDataSetGeneratorException" Usage="new System.Data.Design.TypedDataSetGeneratorException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypedDataSetGeneratorException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetGeneratorException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.Design.TypedDataSetGeneratorException : string * Exception -&gt; System.Data.Design.TypedDataSetGeneratorException" Usage="new System.Data.Design.TypedDataSetGeneratorException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypedDataSetGeneratorException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Design.TypedDataSetGeneratorException.ErrorList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorList As IList" />
       <MemberSignature Language="F#" Value="member this.ErrorList : System.Collections.IList" Usage="System.Data.Design.TypedDataSetGeneratorException.ErrorList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ ErrorList { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -234,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetGeneratorException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="typedDataSetGeneratorException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

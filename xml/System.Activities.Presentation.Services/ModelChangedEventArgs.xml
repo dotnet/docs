@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="F#" Value="type ModelChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelChangedEventArgs abstract : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ModelChangedEventArgs.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ModelChangedEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -47,6 +49,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsAdded" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemsAdded As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="F#" Value="member this.ItemsAdded : seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsAdded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ ItemsAdded { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsRemoved" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemsRemoved As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="F#" Value="member this.ItemsRemoved : seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsRemoved" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ ItemsRemoved { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ModelChangeInfo As ModelChangeInfo" />
       <MemberSignature Language="F#" Value="member this.ModelChangeInfo : System.Activities.Presentation.Services.ModelChangeInfo" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Activities::Presentation::Services::ModelChangeInfo ^ ModelChangeInfo { System::Activities::Presentation::Services::ModelChangeInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.PropertiesChanged" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertiesChanged As IEnumerable(Of ModelProperty)" />
       <MemberSignature Language="F#" Value="member this.PropertiesChanged : seq&lt;System.Activities.Presentation.Model.ModelProperty&gt;" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.PropertiesChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelProperty ^&gt; ^ PropertiesChanged { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelProperty ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

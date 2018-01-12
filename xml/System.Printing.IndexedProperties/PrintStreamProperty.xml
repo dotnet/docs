@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintStreamProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintStreamProperty&#xA;Inherits PrintProperty" />
   <TypeSignature Language="F#" Value="type PrintStreamProperty = class&#xA;    inherit PrintProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintStreamProperty sealed : System::Printing::IndexedProperties::PrintProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
       <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintStreamProperty : string -&gt; System.Printing.IndexedProperties.PrintStreamProperty" Usage="new System.Printing.IndexedProperties.PrintStreamProperty attributeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintStreamProperty(System::String ^ attributeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.#ctor(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, attributeValue As Object)" />
       <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintStreamProperty : string * obj -&gt; System.Printing.IndexedProperties.PrintStreamProperty" Usage="new System.Printing.IndexedProperties.PrintStreamProperty (attributeName, attributeValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintStreamProperty(System::String ^ attributeName, System::Object ^ attributeValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.InternalDispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printStreamProperty.InternalDispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit(System.Printing.IndexedProperties.PrintStreamProperty)~System.IO.Stream" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attributeRef As PrintStreamProperty) As Stream" />
       <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintStreamProperty -&gt; System.IO.Stream" Usage="System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit attributeRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::IO::Stream ^(System::Printing::IndexedProperties::PrintStreamProperty ^ attributeRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit(System.Printing.IndexedProperties.PrintStreamProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.IO.Stream" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attributeRef As PrintStreamProperty) As Stream" />
       <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintStreamProperty -&gt; System.IO.Stream" Usage="System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit attributeRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::IO::Stream ^(System::Printing::IndexedProperties::PrintStreamProperty ^ attributeRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintStreamProperty.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintStreamProperty.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

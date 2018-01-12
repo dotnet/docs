@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetPeerTcpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetPeerTcpBinding, NetPeerTcpBindingElement)" />
   <TypeSignature Language="F#" Value="type NetPeerTcpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetPeerTcpBinding, NetPeerTcpBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetPeerTcpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetPeerTcpBinding ^, System::ServiceModel::Configuration::NetPeerTcpBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetPeerTcpBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

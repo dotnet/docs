@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateMachineWorkflowActivity" />
   <TypeSignature Language="VB.NET" Value="Public Class StateMachineWorkflowActivity&#xA;Inherits StateActivity" />
   <TypeSignature Language="F#" Value="type StateMachineWorkflowActivity = class&#xA;    inherit StateActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateMachineWorkflowActivity : System::Workflow::Activities::StateActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +84,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateMachineWorkflowActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.Activities.StateMachineWorkflowActivity : string -&gt; System.Workflow.Activities.StateMachineWorkflowActivity" Usage="new System.Workflow.Activities.StateMachineWorkflowActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateMachineWorkflowActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName" />
       <MemberSignature Language="VB.NET" Value="Public Property CompletedStateName As String" />
       <MemberSignature Language="F#" Value="member this.CompletedStateName : string with get, set" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompletedStateName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -165,6 +169,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompletedStateNameProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable CompletedStateNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CompletedStateNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -191,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.CurrentStateName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentStateName As String" />
       <MemberSignature Language="F#" Value="member this.CurrentStateName : string" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.CurrentStateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentStateName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -228,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.DynamicUpdateCondition" />
       <MemberSignature Language="VB.NET" Value="Public Property DynamicUpdateCondition As ActivityCondition" />
       <MemberSignature Language="F#" Value="member this.DynamicUpdateCondition : System.Workflow.ComponentModel.ActivityCondition with get, set" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.DynamicUpdateCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCondition ^ DynamicUpdateCondition { System::Workflow::ComponentModel::ActivityCondition ^ get(); void set(System::Workflow::ComponentModel::ActivityCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -258,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialStateName As String" />
       <MemberSignature Language="F#" Value="member this.InitialStateName : string with get, set" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialStateName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -306,6 +314,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InitialStateNameProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable InitialStateNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InitialStateNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.PreviousStateName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousStateName As String" />
       <MemberSignature Language="F#" Value="member this.PreviousStateName : string" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.PreviousStateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousStateName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -370,6 +380,7 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.StateMachineWorkflowActivity.SetStateQueueName" />
       <MemberSignature Language="VB.NET" Value="Public Const SetStateQueueName As String " />
       <MemberSignature Language="F#" Value="val mutable SetStateQueueName : string" Usage="System.Workflow.Activities.StateMachineWorkflowActivity.SetStateQueueName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SetStateQueueName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

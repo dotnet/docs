@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.StoryFragment" />
   <TypeSignature Language="VB.NET" Value="Public Class StoryFragment&#xA;Implements IAddChild, IEnumerable(Of BlockElement)" />
   <TypeSignature Language="F#" Value="type StoryFragment = class&#xA;    interface IAddChild&#xA;    interface seq&lt;BlockElement&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StoryFragment : System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::BlockElement ^&gt;, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -164,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragment.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StoryFragment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragment.Add(System.Windows.Documents.DocumentStructures.BlockElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As BlockElement)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.BlockElement -&gt; unit" Usage="storyFragment.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::BlockElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentStructures.StoryFragment.FragmentName" />
       <MemberSignature Language="VB.NET" Value="Public Property FragmentName As String" />
       <MemberSignature Language="F#" Value="member this.FragmentName : string with get, set" Usage="System.Windows.Documents.DocumentStructures.StoryFragment.FragmentName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FragmentName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentStructures.StoryFragment.FragmentType" />
       <MemberSignature Language="VB.NET" Value="Public Property FragmentType As String" />
       <MemberSignature Language="F#" Value="member this.FragmentType : string with get, set" Usage="System.Windows.Documents.DocumentStructures.StoryFragment.FragmentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FragmentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentStructures.StoryFragment.StoryName" />
       <MemberSignature Language="VB.NET" Value="Public Property StoryName As String" />
       <MemberSignature Language="F#" Value="member this.StoryName : string with get, set" Usage="System.Windows.Documents.DocumentStructures.StoryFragment.StoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoryName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +313,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Documents.DocumentStructures.BlockElement&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.BlockElement&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragment.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#BlockElement&gt;#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of BlockElement) Implements IEnumerable(Of BlockElement).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Documents::DocumentStructures::BlockElement ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.BlockElement&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::BlockElement ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -330,6 +337,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragment.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -353,6 +361,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragment.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
@@ -391,6 +400,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragment.System#Windows#Markup#IAddChild#AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ValueProviderSourceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValueProviderSourceAttribute&#xA;Inherits Attribute&#xA;Implements IModelNameProvider, IValueProviderSource" />
   <TypeSignature Language="F#" Value="type ValueProviderSourceAttribute = class&#xA;    inherit Attribute&#xA;    interface IValueProviderSource&#xA;    interface IModelNameProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValueProviderSourceAttribute abstract : Attribute, System::Web::ModelBinding::IModelNameProvider, System::Web::ModelBinding::IValueProviderSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderSourceAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValueProviderSourceAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderSourceAttribute.GetModelName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetModelName () As String" />
       <MemberSignature Language="F#" Value="abstract member GetModelName : unit -&gt; string&#xA;override this.GetModelName : unit -&gt; string" Usage="valueProviderSourceAttribute.GetModelName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetModelName();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IModelNameProvider.GetModelName</InterfaceMember>
@@ -69,6 +72,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.IValueProvider GetValueProvider(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ValueProviderSourceAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)" />
       <MemberSignature Language="F#" Value="abstract member GetValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.IValueProvider" Usage="valueProviderSourceAttribute.GetValueProvider modelBindingExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::ModelBinding::IValueProvider ^ GetValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.ModelBinding.IValueProviderSource.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)</InterfaceMember>

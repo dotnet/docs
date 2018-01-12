@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerImplementation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSerializerImplementation" />
   <TypeSignature Language="F#" Value="type XmlSerializerImplementation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerImplementation abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerImplementation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSerializerImplementation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanSerialize(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerImplementation.CanSerialize(System.Type)" />
       <MemberSignature Language="F#" Value="abstract member CanSerialize : Type -&gt; bool&#xA;override this.CanSerialize : Type -&gt; bool" Usage="xmlSerializerImplementation.CanSerialize type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanSerialize(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.Serialization.XmlSerializer GetSerializer(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerImplementation.GetSerializer(System.Type)" />
       <MemberSignature Language="F#" Value="abstract member GetSerializer : Type -&gt; System.Xml.Serialization.XmlSerializer&#xA;override this.GetSerializer : Type -&gt; System.Xml.Serialization.XmlSerializer" Usage="xmlSerializerImplementation.GetSerializer type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Serialization::XmlSerializer ^ GetSerializer(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.Reader" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Reader As XmlSerializationReader" />
       <MemberSignature Language="F#" Value="member this.Reader : System.Xml.Serialization.XmlSerializationReader" Usage="System.Xml.Serialization.XmlSerializerImplementation.Reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Serialization::XmlSerializationReader ^ Reader { System::Xml::Serialization::XmlSerializationReader ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.ReadMethods" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReadMethods As Hashtable" />
       <MemberSignature Language="F#" Value="member this.ReadMethods : System.Collections.Hashtable" Usage="System.Xml.Serialization.XmlSerializerImplementation.ReadMethods" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Hashtable ^ ReadMethods { System::Collections::Hashtable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.TypedSerializers" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TypedSerializers As Hashtable" />
       <MemberSignature Language="F#" Value="member this.TypedSerializers : System.Collections.Hashtable" Usage="System.Xml.Serialization.XmlSerializerImplementation.TypedSerializers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Hashtable ^ TypedSerializers { System::Collections::Hashtable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.WriteMethods" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WriteMethods As Hashtable" />
       <MemberSignature Language="F#" Value="member this.WriteMethods : System.Collections.Hashtable" Usage="System.Xml.Serialization.XmlSerializerImplementation.WriteMethods" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Hashtable ^ WriteMethods { System::Collections::Hashtable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -253,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.Writer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Writer As XmlSerializationWriter" />
       <MemberSignature Language="F#" Value="member this.Writer : System.Xml.Serialization.XmlSerializationWriter" Usage="System.Xml.Serialization.XmlSerializerImplementation.Writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::Serialization::XmlSerializationWriter ^ Writer { System::Xml::Serialization::XmlSerializationWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

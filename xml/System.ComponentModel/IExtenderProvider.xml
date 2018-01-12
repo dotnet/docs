@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtenderProvider" />
   <TypeSignature Language="F#" Value="type IExtenderProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExtend (extendee As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool" Usage="iExtenderProvider.CanExtend extendee" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExtend(System::Object ^ extendee);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ViewState.ViewStateManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ViewStateManager" />
   <TypeSignature Language="F#" Value="type ViewStateManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewStateManager sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.ViewStateManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewStateManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +46,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ViewState.ViewStateManager.ViewStateData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewStateData As Collection(Of ViewStateData)" />
       <MemberSignature Language="F#" Value="member this.ViewStateData : System.Collections.ObjectModel.Collection&lt;System.Activities.Presentation.ViewState.ViewStateData&gt;" Usage="System.Activities.Presentation.ViewState.ViewStateManager.ViewStateData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Presentation::ViewState::ViewStateData ^&gt; ^ ViewStateData { System::Collections::ObjectModel::Collection&lt;System::Activities::Presentation::ViewState::ViewStateData ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

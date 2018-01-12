@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.ElementHost" />
   <TypeSignature Language="VB.NET" Value="Public Class ElementHost&#xA;Inherits Control" />
   <TypeSignature Language="F#" Value="type ElementHost = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ElementHost : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ElementHost();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -84,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.Integration.ElementHost.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.BackColorTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColorTransparent As Boolean" />
       <MemberSignature Language="F#" Value="member this.BackColorTransparent : bool with get, set" Usage="System.Windows.Forms.Integration.ElementHost.BackColorTransparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BackColorTransparent { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -150,6 +154,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.BindingContextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BindingContextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -185,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.CanEnableIme" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanEnableIme As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanEnableIme : bool" Usage="System.Windows.Forms.Integration.ElementHost.CanEnableIme" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanEnableIme { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -206,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.Child" />
       <MemberSignature Language="VB.NET" Value="Public Property Child As UIElement" />
       <MemberSignature Language="F#" Value="member this.Child : System.Windows.UIElement with get, set" Usage="System.Windows.Forms.Integration.ElementHost.Child" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -250,6 +257,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.ChildChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ChildChanged As EventHandler(Of ChildChangedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ChildChanged : EventHandler&lt;System.Windows.Forms.Integration.ChildChangedEventArgs&gt; " Usage="member this.ChildChanged : System.EventHandler&lt;System.Windows.Forms.Integration.ChildChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Forms::Integration::ChildChangedEventArgs ^&gt; ^ ChildChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -305,6 +314,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.ClientSizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ClientSizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ClientSizeChanged : EventHandler " Usage="member this.ClientSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.ControlAdded" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ControlAdded As ControlEventHandler " />
       <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.ControlRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ControlRemoved As ControlEventHandler " />
       <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -410,6 +422,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.CursorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -445,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.Integration.ElementHost.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -473,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="elementHost.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -513,6 +528,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.DoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -548,6 +564,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.DragDrop" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragDrop As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -583,6 +600,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.DragEnter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragEnter As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -618,6 +636,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.DragLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -653,6 +672,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.DragOver" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DragOver As DragEventHandler " />
       <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -687,6 +707,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableModelessKeyboardInterop(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop(System.Windows.Window)" />
       <MemberSignature Language="F#" Value="static member EnableModelessKeyboardInterop : System.Windows.Window -&gt; unit" Usage="System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableModelessKeyboardInterop(System::Windows::Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -720,6 +741,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Enter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Enter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -755,6 +777,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.Focused" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Focused As Boolean" />
       <MemberSignature Language="F#" Value="member this.Focused : bool" Usage="System.Windows.Forms.Integration.ElementHost.Focused" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Focused { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -776,6 +799,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -811,6 +835,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -846,6 +871,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.GetPreferredSize(System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (proposedSize As Size) As Size" />
       <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="elementHost.GetPreferredSize proposedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Size proposedSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -871,6 +897,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.GiveFeedback" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event GiveFeedback As GiveFeedbackEventHandler " />
       <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -906,6 +933,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.GotFocus" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event GotFocus As EventHandler " />
       <MemberSignature Language="F#" Value="member this.GotFocus : EventHandler " Usage="member this.GotFocus : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ GotFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -941,6 +969,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.HostContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostContainer As Panel" />
       <MemberSignature Language="F#" Value="member this.HostContainer : System.Windows.Controls.Panel" Usage="System.Windows.Forms.Integration.ElementHost.HostContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Panel ^ HostContainer { System::Windows::Controls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -977,6 +1006,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.ImeModeBase" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property ImeModeBase As ImeMode" />
       <MemberSignature Language="F#" Value="member this.ImeModeBase : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.Integration.ElementHost.ImeModeBase" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::ImeMode ImeModeBase { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -997,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Invalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Invalidated As InvalidateEventHandler " />
       <MemberSignature Language="F#" Value="member this.Invalidated : System.Windows.Forms.InvalidateEventHandler " Usage="member this.Invalidated : System.Windows.Forms.InvalidateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::InvalidateEventHandler ^ Invalidated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1032,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.IsInputChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputChar (charCode As Char) As Boolean" />
       <MemberSignature Language="F#" Value="override this.IsInputChar : char -&gt; bool" Usage="elementHost.IsInputChar charCode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputChar(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1065,6 +1097,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1100,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1135,6 +1169,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1170,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Layout As LayoutEventHandler " />
       <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1205,6 +1241,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Leave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1240,6 +1277,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.LostFocus" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LostFocus As EventHandler " />
       <MemberSignature Language="F#" Value="member this.LostFocus : EventHandler " Usage="member this.LostFocus : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LostFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1275,6 +1313,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseCaptureChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseCaptureChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseCaptureChanged : EventHandler " Usage="member this.MouseCaptureChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1310,6 +1349,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1345,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseDoubleClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDoubleClick As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1380,6 +1421,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1415,6 +1457,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseEnter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseEnter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1450,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseHover" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseHover As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1485,6 +1529,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseLeave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1520,6 +1565,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseMove" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1555,6 +1601,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1590,6 +1637,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.MouseWheel" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MouseWheel As MouseEventHandler " />
       <MemberSignature Language="F#" Value="member this.MouseWheel : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseWheel : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseWheel;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1625,6 +1673,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnEnabledChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnabledChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnEnabledChanged : EventArgs -&gt; unit" Usage="elementHost.OnEnabledChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnabledChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1660,6 +1709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnGotFocus(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnGotFocus : EventArgs -&gt; unit" Usage="elementHost.OnGotFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1691,6 +1741,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnHandleCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="elementHost.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1722,6 +1773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLeave (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnLeave : EventArgs -&gt; unit" Usage="elementHost.OnLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1753,6 +1805,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="elementHost.OnPaint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1795,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (pevent As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="elementHost.OnPaintBackground pevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ pevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1836,6 +1890,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnPrint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPrint (e As PaintEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnPrint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="elementHost.OnPrint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPrint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1860,6 +1915,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnPropertyChanged(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnPropertyChanged (propertyName As String, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string * obj -&gt; unit&#xA;override this.OnPropertyChanged : string * obj -&gt; unit" Usage="elementHost.OnPropertyChanged (propertyName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnPropertyChanged(System::String ^ propertyName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1887,6 +1943,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.OnVisibleChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnVisibleChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnVisibleChanged : EventArgs -&gt; unit" Usage="elementHost.OnVisibleChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnVisibleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1918,6 +1975,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.PaddingChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1953,6 +2011,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Paint" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
       <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1989,6 +2048,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.PreviewKeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreviewKeyDown As PreviewKeyDownEventHandler " />
       <MemberSignature Language="F#" Value="member this.PreviewKeyDown : System.Windows.Forms.PreviewKeyDownEventHandler " Usage="member this.PreviewKeyDown : System.Windows.Forms.PreviewKeyDownEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PreviewKeyDownEventHandler ^ PreviewKeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2024,6 +2084,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="elementHost.ProcessCmdKey (msg, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2060,6 +2121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.ProcessMnemonic(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
       <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="elementHost.ProcessMnemonic charCode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2094,6 +2156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.ElementHost.PropertyMap" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyMap As PropertyMap" />
       <MemberSignature Language="F#" Value="member this.PropertyMap : System.Windows.Forms.Integration.PropertyMap" Usage="System.Windows.Forms.Integration.ElementHost.PropertyMap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Integration::PropertyMap ^ PropertyMap { System::Windows::Forms::Integration::PropertyMap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2135,6 +2198,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.QueryContinueDrag" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event QueryContinueDrag As QueryContinueDragEventHandler " />
       <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2170,6 +2234,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.Resize" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Resize As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2205,6 +2270,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.RightToLeftChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2240,6 +2306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.ScaleCore(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleCore (dx As Single, dy As Single)" />
       <MemberSignature Language="F#" Value="override this.ScaleCore : single * single -&gt; unit" Usage="elementHost.ScaleCore (dx, dy)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleCore(float dx, float dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2266,6 +2333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.Select(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Select (directed As Boolean, forward As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Select : bool * bool -&gt; unit" Usage="elementHost.Select (directed, forward)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Select(bool directed, bool forward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2306,6 +2374,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.SizeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SizeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2341,6 +2410,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.ElementHost.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -2376,6 +2446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.ElementHost.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="elementHost.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>

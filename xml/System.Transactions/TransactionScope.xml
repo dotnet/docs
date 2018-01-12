@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionScope" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactionScope&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type TransactionScope = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionScope sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -107,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.Transaction -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -136,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (asyncFlow As TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeAsyncFlowOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope asyncFlow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeAsyncFlowOption asyncFlow);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope option" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -196,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction, scopeTimeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.Transaction * TimeSpan -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (transaction, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transaction, TimeSpan timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -227,6 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction, asyncFlowOption As TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.Transaction * System.Transactions.TransactionScopeAsyncFlowOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (transactionToUse, asyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transactionToUse, System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -260,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption * TimeSpan -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (option, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, TimeSpan timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -291,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption * System.Transactions.TransactionOptions -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (scopeOption, options)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scopeOption As TransactionScopeOption, options As TransactionOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -329,6 +338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, asyncFlow As TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption * System.Transactions.TransactionScopeAsyncFlowOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (option, asyncFlow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, System::Transactions::TransactionScopeAsyncFlowOption asyncFlow);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -362,6 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Transactions.EnterpriseServicesInteropOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction, scopeTimeout As TimeSpan, interopOption As EnterpriseServicesInteropOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.Transaction * TimeSpan * System.Transactions.EnterpriseServicesInteropOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (transaction, timeout, opt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transaction, TimeSpan timeout, System::Transactions::EnterpriseServicesInteropOption opt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -402,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.Transaction,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (transactionToUse As Transaction, scopeTimeout As TimeSpan, asyncFlowOption As TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.Transaction * TimeSpan * System.Transactions.TransactionScopeAsyncFlowOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (transactionToUse, scopeTimeout, asyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::Transaction ^ transactionToUse, TimeSpan scopeTimeout, System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -437,6 +449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (option As TransactionScopeOption, timeout As TimeSpan, asyncFlow As TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption * TimeSpan * System.Transactions.TransactionScopeAsyncFlowOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (option, timeout, asyncFlow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption option, TimeSpan timeout, System::Transactions::TransactionScopeAsyncFlowOption asyncFlow);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -472,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.EnterpriseServicesInteropOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption * System.Transactions.TransactionOptions * System.Transactions.EnterpriseServicesInteropOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (scopeOption, options, opt)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scopeOption As TransactionScopeOption, options As TransactionOptions, opt As EnterpriseServicesInteropOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions options, System::Transactions::EnterpriseServicesInteropOption opt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -513,6 +527,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.TransactionScopeOption scopeOption, valuetype System.Transactions.TransactionOptions transactionOptions, valuetype System.Transactions.TransactionScopeAsyncFlowOption asyncFlowOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <MemberSignature Language="F#" Value="new System.Transactions.TransactionScope : System.Transactions.TransactionScopeOption * System.Transactions.TransactionOptions * System.Transactions.TransactionScopeAsyncFlowOption -&gt; System.Transactions.TransactionScope" Usage="new System.Transactions.TransactionScope (scopeOption, transactionOptions, asyncFlowOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransactionScope(System::Transactions::TransactionScopeOption scopeOption, System::Transactions::TransactionOptions transactionOptions, System::Transactions::TransactionScopeAsyncFlowOption asyncFlowOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -548,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.Complete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
       <MemberSignature Language="F#" Value="member this.Complete : unit -&gt; unit" Usage="transactionScope.Complete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -599,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionScope.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="transactionScope.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>

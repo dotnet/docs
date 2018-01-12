@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationContractAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationContractAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type OperationContractAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationContractAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -117,6 +118,7 @@ public class OneAndTwoWay
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContractAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContractAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +143,7 @@ public class OneAndTwoWay
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.OperationContractAttribute.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +200,7 @@ public class OneAndTwoWay
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.AsyncPattern" />
       <MemberSignature Language="VB.NET" Value="Public Property AsyncPattern As Boolean" />
       <MemberSignature Language="F#" Value="member this.AsyncPattern : bool with get, set" Usage="System.ServiceModel.OperationContractAttribute.AsyncPattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AsyncPattern { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -264,6 +268,7 @@ public interface IAddTwoNumbers
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.HasProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.OperationContractAttribute.HasProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -293,6 +298,7 @@ public interface IAddTwoNumbers
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.IsInitiating" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInitiating As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInitiating : bool with get, set" Usage="System.ServiceModel.OperationContractAttribute.IsInitiating" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitiating { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -381,6 +387,7 @@ public class InitializeAndTerminateService
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.IsOneWay" />
       <MemberSignature Language="VB.NET" Value="Public Property IsOneWay As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsOneWay : bool with get, set" Usage="System.ServiceModel.OperationContractAttribute.IsOneWay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOneWay { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -459,6 +466,7 @@ public class OneAndTwoWay
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.IsTerminating" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTerminating As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsTerminating : bool with get, set" Usage="System.ServiceModel.OperationContractAttribute.IsTerminating" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTerminating { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -542,6 +550,7 @@ public class InitializeAndTerminateService
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.OperationContractAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -587,6 +596,7 @@ public class InitializeAndTerminateService
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.OperationContractAttribute.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -638,6 +648,7 @@ public class InitializeAndTerminateService
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.ReplyAction" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplyAction As String" />
       <MemberSignature Language="F#" Value="member this.ReplyAction : string with get, set" Usage="System.ServiceModel.OperationContractAttribute.ReplyAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReplyAction { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

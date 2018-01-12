@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.AlternateView" />
   <TypeSignature Language="VB.NET" Value="Public Class AlternateView&#xA;Inherits AttachmentBase" />
   <TypeSignature Language="F#" Value="type AlternateView = class&#xA;    inherit AttachmentBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AlternateView : System::Net::Mail::AttachmentBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contentStream As Stream)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.AlternateView : System.IO.Stream -&gt; System.Net.Mail.AlternateView" Usage="new System.Net.Mail.AlternateView contentStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlternateView(System::IO::Stream ^ contentStream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.AlternateView : string -&gt; System.Net.Mail.AlternateView" Usage="new System.Net.Mail.AlternateView fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlternateView(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.#ctor(System.IO.Stream,System.Net.Mime.ContentType)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.AlternateView : System.IO.Stream * System.Net.Mime.ContentType -&gt; System.Net.Mail.AlternateView" Usage="new System.Net.Mail.AlternateView (contentStream, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlternateView(System::IO::Stream ^ contentStream, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.#ctor(System.IO.Stream,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contentStream As Stream, mediaType As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.AlternateView : System.IO.Stream * string -&gt; System.Net.Mail.AlternateView" Usage="new System.Net.Mail.AlternateView (contentStream, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlternateView(System::IO::Stream ^ contentStream, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -220,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.#ctor(System.String,System.Net.Mime.ContentType)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.AlternateView : string * System.Net.Mime.ContentType -&gt; System.Net.Mail.AlternateView" Usage="new System.Net.Mail.AlternateView (fileName, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlternateView(System::String ^ fileName, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, mediaType As String)" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.AlternateView : string * string -&gt; System.Net.Mail.AlternateView" Usage="new System.Net.Mail.AlternateView (fileName, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlternateView(System::String ^ fileName, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.AlternateView.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Net.Mail.AlternateView.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -351,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.CreateAlternateViewFromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAlternateViewFromString (content As String) As AlternateView" />
       <MemberSignature Language="F#" Value="static member CreateAlternateViewFromString : string -&gt; System.Net.Mail.AlternateView" Usage="System.Net.Mail.AlternateView.CreateAlternateViewFromString content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::AlternateView ^ CreateAlternateViewFromString(System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -392,6 +401,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.AlternateView CreateAlternateViewFromString(string content, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.CreateAlternateViewFromString(System.String,System.Net.Mime.ContentType)" />
       <MemberSignature Language="F#" Value="static member CreateAlternateViewFromString : string * System.Net.Mime.ContentType -&gt; System.Net.Mail.AlternateView" Usage="System.Net.Mail.AlternateView.CreateAlternateViewFromString (content, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::AlternateView ^ CreateAlternateViewFromString(System::String ^ content, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -429,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.CreateAlternateViewFromString(System.String,System.Text.Encoding,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAlternateViewFromString (content As String, contentEncoding As Encoding, mediaType As String) As AlternateView" />
       <MemberSignature Language="F#" Value="static member CreateAlternateViewFromString : string * System.Text.Encoding * string -&gt; System.Net.Mail.AlternateView" Usage="System.Net.Mail.AlternateView.CreateAlternateViewFromString (content, encoding, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::AlternateView ^ CreateAlternateViewFromString(System::String ^ content, System::Text::Encoding ^ encoding, System::String ^ mediaType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -468,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.AlternateView.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="alternateView.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -516,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.AlternateView.LinkedResources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkedResources As LinkedResourceCollection" />
       <MemberSignature Language="F#" Value="member this.LinkedResources : System.Net.Mail.LinkedResourceCollection" Usage="System.Net.Mail.AlternateView.LinkedResources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::LinkedResourceCollection ^ LinkedResources { System::Net::Mail::LinkedResourceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

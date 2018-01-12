@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class PreviewControlDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="F#" Value="type PreviewControlDesigner = class&#xA;    inherit ControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PreviewControlDesigner : System::Web::UI::Design::ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.PreviewControlDesigner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PreviewControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -49,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.PreviewControlDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.PreviewControlDesigner.UsePreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

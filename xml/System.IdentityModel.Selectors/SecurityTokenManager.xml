@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenManager" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenManager" />
   <TypeSignature Language="F#" Value="type SecurityTokenManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenManager abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityTokenManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator(System.IdentityModel.Selectors.SecurityTokenRequirement,System.IdentityModel.Selectors.SecurityTokenResolver@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenAuthenticator (requirement As SecurityTokenRequirement, ByRef resolver As SecurityTokenResolver) As SecurityTokenAuthenticator" />
       <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenAuthenticator : System.IdentityModel.Selectors.SecurityTokenRequirement *  -&gt; System.IdentityModel.Selectors.SecurityTokenAuthenticator" Usage="securityTokenManager.CreateSecurityTokenAuthenticator (requirement, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenAuthenticator ^ CreateSecurityTokenAuthenticator(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement, [Runtime::InteropServices::Out] System::IdentityModel::Selectors::SecurityTokenResolver ^ % resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenProvider (requirement As SecurityTokenRequirement) As SecurityTokenProvider" />
       <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; System.IdentityModel.Selectors.SecurityTokenProvider" Usage="securityTokenManager.CreateSecurityTokenProvider requirement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenProvider ^ CreateSecurityTokenProvider(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer(System.IdentityModel.Selectors.SecurityTokenVersion)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenSerializer (version As SecurityTokenVersion) As SecurityTokenSerializer" />
       <MemberSignature Language="F#" Value="abstract member CreateSecurityTokenSerializer : System.IdentityModel.Selectors.SecurityTokenVersion -&gt; System.IdentityModel.Selectors.SecurityTokenSerializer" Usage="securityTokenManager.CreateSecurityTokenSerializer version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenSerializer ^ CreateSecurityTokenSerializer(System::IdentityModel::Selectors::SecurityTokenVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

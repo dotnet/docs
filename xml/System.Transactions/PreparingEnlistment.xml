@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.PreparingEnlistment" />
   <TypeSignature Language="VB.NET" Value="Public Class PreparingEnlistment&#xA;Inherits Enlistment" />
   <TypeSignature Language="F#" Value="type PreparingEnlistment = class&#xA;    inherit Enlistment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PreparingEnlistment : System::Transactions::Enlistment" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -60,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.ForceRollback" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceRollback ()" />
       <MemberSignature Language="F#" Value="member this.ForceRollback : unit -&gt; unit" Usage="preparingEnlistment.ForceRollback " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceRollback();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -102,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.ForceRollback(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceRollback (ex As Exception)" />
       <MemberSignature Language="F#" Value="member this.ForceRollback : Exception -&gt; unit" Usage="preparingEnlistment.ForceRollback ex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceRollback(Exception ^ ex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -134,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.Prepared" />
       <MemberSignature Language="VB.NET" Value="Public Sub Prepared ()" />
       <MemberSignature Language="F#" Value="member this.Prepared : unit -&gt; unit" Usage="preparingEnlistment.Prepared " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Prepared();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -180,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.RecoveryInformation" />
       <MemberSignature Language="VB.NET" Value="Public Function RecoveryInformation () As Byte()" />
       <MemberSignature Language="F#" Value="member this.RecoveryInformation : unit -&gt; byte[]" Usage="preparingEnlistment.RecoveryInformation " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ RecoveryInformation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

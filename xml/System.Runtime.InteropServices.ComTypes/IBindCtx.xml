@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IBindCtx" />
   <TypeSignature Language="VB.NET" Value="Public Interface IBindCtx" />
   <TypeSignature Language="F#" Value="type IBindCtx = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBindCtx" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.EnumObjectParam(System.Runtime.InteropServices.ComTypes.IEnumString@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumObjectParam (ByRef ppenum As IEnumString)" />
       <MemberSignature Language="F#" Value="abstract member EnumObjectParam :  -&gt; unit" Usage="iBindCtx.EnumObjectParam ppenum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumObjectParam([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumString ^ % ppenum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.GetBindOptions(System.Runtime.InteropServices.ComTypes.BIND_OPTS@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetBindOptions (ByRef pbindopts As BIND_OPTS)" />
       <MemberSignature Language="F#" Value="abstract member GetBindOptions :  -&gt; unit" Usage="iBindCtx.GetBindOptions pbindopts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBindOptions(System::Runtime::InteropServices::ComTypes::BIND_OPTS % pbindopts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.GetObjectParam(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectParam (pszKey As String, ByRef ppunk As Object)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectParam : string *  -&gt; unit" Usage="iBindCtx.GetObjectParam (pszKey, ppunk)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetObjectParam(System::String ^ pszKey, [Runtime::InteropServices::Out] System::Object ^ % ppunk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -185,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.GetRunningObjectTable(System.Runtime.InteropServices.ComTypes.IRunningObjectTable@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRunningObjectTable (ByRef pprot As IRunningObjectTable)" />
       <MemberSignature Language="F#" Value="abstract member GetRunningObjectTable :  -&gt; unit" Usage="iBindCtx.GetRunningObjectTable pprot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRunningObjectTable([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IRunningObjectTable ^ % pprot);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -229,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.RegisterObjectBound(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObjectBound (punk As Object)" />
       <MemberSignature Language="F#" Value="abstract member RegisterObjectBound : obj -&gt; unit" Usage="iBindCtx.RegisterObjectBound punk" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObjectBound(System::Object ^ punk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -273,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.RegisterObjectParam(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterObjectParam (pszKey As String, punk As Object)" />
       <MemberSignature Language="F#" Value="abstract member RegisterObjectParam : string * obj -&gt; unit" Usage="iBindCtx.RegisterObjectParam (pszKey, punk)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterObjectParam(System::String ^ pszKey, System::Object ^ punk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -319,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.ReleaseBoundObjects" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseBoundObjects ()" />
       <MemberSignature Language="F#" Value="abstract member ReleaseBoundObjects : unit -&gt; unit" Usage="iBindCtx.ReleaseBoundObjects " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseBoundObjects();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -360,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.RevokeObjectBound(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RevokeObjectBound (punk As Object)" />
       <MemberSignature Language="F#" Value="abstract member RevokeObjectBound : obj -&gt; unit" Usage="iBindCtx.RevokeObjectBound punk" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RevokeObjectBound(System::Object ^ punk);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -404,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.RevokeObjectParam(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RevokeObjectParam (pszKey As String) As Integer" />
       <MemberSignature Language="F#" Value="abstract member RevokeObjectParam : string -&gt; int" Usage="iBindCtx.RevokeObjectParam pszKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int RevokeObjectParam(System::String ^ pszKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -449,6 +459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IBindCtx.SetBindOptions(System.Runtime.InteropServices.ComTypes.BIND_OPTS@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBindOptions (ByRef pbindopts As BIND_OPTS)" />
       <MemberSignature Language="F#" Value="abstract member SetBindOptions :  -&gt; unit" Usage="iBindCtx.SetBindOptions pbindopts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBindOptions(System::Runtime::InteropServices::ComTypes::BIND_OPTS % pbindopts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

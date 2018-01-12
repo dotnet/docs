@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Globalization.RegionInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class RegionInfo" />
   <TypeSignature Language="F#" Value="type RegionInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegionInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As Integer)" />
       <MemberSignature Language="F#" Value="new System.Globalization.RegionInfo : int -&gt; System.Globalization.RegionInfo" Usage="new System.Globalization.RegionInfo culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegionInfo(int culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Globalization.RegionInfo : string -&gt; System.Globalization.RegionInfo" Usage="new System.Globalization.RegionInfo name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegionInfo(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -218,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrencyEnglishName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencyEnglishName As String" />
       <MemberSignature Language="F#" Value="member this.CurrencyEnglishName : string" Usage="System.Globalization.RegionInfo.CurrencyEnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencyEnglishName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -263,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrencyNativeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencyNativeName As String" />
       <MemberSignature Language="F#" Value="member this.CurrencyNativeName : string" Usage="System.Globalization.RegionInfo.CurrencyNativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencyNativeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -315,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrencySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencySymbol As String" />
       <MemberSignature Language="F#" Value="member this.CurrencySymbol : string" Usage="System.Globalization.RegionInfo.CurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CurrencySymbol { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -368,6 +374,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.CurrentRegion" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentRegion As RegionInfo" />
       <MemberSignature Language="F#" Value="member this.CurrentRegion : System.Globalization.RegionInfo" Usage="System.Globalization.RegionInfo.CurrentRegion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Globalization::RegionInfo ^ CurrentRegion { System::Globalization::RegionInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -409,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Globalization.RegionInfo.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -466,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.EnglishName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EnglishName As String" />
       <MemberSignature Language="F#" Value="member this.EnglishName : string" Usage="System.Globalization.RegionInfo.EnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EnglishName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -521,6 +530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="regionInfo.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -577,6 +587,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.GeoId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GeoId As Integer" />
       <MemberSignature Language="F#" Value="member this.GeoId : int" Usage="System.Globalization.RegionInfo.GeoId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int GeoId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -629,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="regionInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -676,6 +688,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.IsMetric" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMetric As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMetric : bool" Usage="System.Globalization.RegionInfo.IsMetric" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMetric { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -722,6 +735,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.ISOCurrencySymbol" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ISOCurrencySymbol As String" />
       <MemberSignature Language="F#" Value="member this.ISOCurrencySymbol : string" Usage="System.Globalization.RegionInfo.ISOCurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ISOCurrencySymbol { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -887,6 +901,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Globalization.RegionInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -948,6 +963,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.NativeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NativeName As String" />
       <MemberSignature Language="F#" Value="member this.NativeName : string" Usage="System.Globalization.RegionInfo.NativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NativeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1007,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.ThreeLetterISORegionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ThreeLetterISORegionName As String" />
       <MemberSignature Language="F#" Value="member this.ThreeLetterISORegionName : string" Usage="System.Globalization.RegionInfo.ThreeLetterISORegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterISORegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1059,6 +1076,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ThreeLetterWindowsRegionName As String" />
       <MemberSignature Language="F#" Value="member this.ThreeLetterWindowsRegionName : string" Usage="System.Globalization.RegionInfo.ThreeLetterWindowsRegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ThreeLetterWindowsRegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1109,6 +1127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Globalization.RegionInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="regionInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -1159,6 +1178,7 @@
       <MemberSignature Language="DocId" Value="P:System.Globalization.RegionInfo.TwoLetterISORegionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TwoLetterISORegionName As String" />
       <MemberSignature Language="F#" Value="member this.TwoLetterISORegionName : string" Usage="System.Globalization.RegionInfo.TwoLetterISORegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TwoLetterISORegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

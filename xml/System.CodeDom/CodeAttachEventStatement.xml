@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttachEventStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeAttachEventStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="F#" Value="type CodeAttachEventStatement = class&#xA;    inherit CodeStatement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeAttachEventStatement : System::CodeDom::CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttachEventStatement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttachEventStatement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttachEventStatement.#ctor(System.CodeDom.CodeEventReferenceExpression,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventRef As CodeEventReferenceExpression, listener As CodeExpression)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttachEventStatement : System.CodeDom.CodeEventReferenceExpression * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttachEventStatement" Usage="new System.CodeDom.CodeAttachEventStatement (eventRef, listener)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttachEventStatement(System::CodeDom::CodeEventReferenceExpression ^ eventRef, System::CodeDom::CodeExpression ^ listener);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttachEventStatement.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, eventName As String, listener As CodeExpression)" />
       <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttachEventStatement : System.CodeDom.CodeExpression * string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttachEventStatement" Usage="new System.CodeDom.CodeAttachEventStatement (targetObject, eventName, listener)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttachEventStatement(System::CodeDom::CodeExpression ^ targetObject, System::String ^ eventName, System::CodeDom::CodeExpression ^ listener);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttachEventStatement.Event" />
       <MemberSignature Language="VB.NET" Value="Public Property Event As CodeEventReferenceExpression" />
       <MemberSignature Language="F#" Value="member this.Event : System.CodeDom.CodeEventReferenceExpression with get, set" Usage="System.CodeDom.CodeAttachEventStatement.Event" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeEventReferenceExpression ^ Event { System::CodeDom::CodeEventReferenceExpression ^ get(); void set(System::CodeDom::CodeEventReferenceExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttachEventStatement.Listener" />
       <MemberSignature Language="VB.NET" Value="Public Property Listener As CodeExpression" />
       <MemberSignature Language="F#" Value="member this.Listener : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeAttachEventStatement.Listener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Listener { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

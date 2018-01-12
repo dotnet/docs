@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbConnection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbConnection&#xA;Inherits Component&#xA;Implements IDbConnection, IDisposable" />
   <TypeSignature Language="F#" Value="type DbConnection = class&#xA;    inherit Component&#xA;    interface IDbConnection&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbConnection abstract : System::ComponentModel::Component, IDisposable, System::Data::IDbConnection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -43,6 +44,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbConnection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="F#" Value="abstract member BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="dbConnection.BeginDbTransaction isolationLevel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As DbTransaction" />
       <MemberSignature Language="F#" Value="member this.BeginTransaction : unit -&gt; System.Data.Common.DbTransaction" Usage="dbConnection.BeginTransaction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbTransaction BeginTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="F#" Value="member this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="dbConnection.BeginTransaction isolationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbTransaction ^ BeginTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -198,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ChangeDatabase (databaseName As String)" />
       <MemberSignature Language="F#" Value="abstract member ChangeDatabase : string -&gt; unit" Usage="dbConnection.ChangeDatabase databaseName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ChangeDatabase(System::String ^ databaseName);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.ChangeDatabase(System.String)</InterfaceMember>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="dbConnection.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.Close</InterfaceMember>
@@ -290,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.Common.DbConnection.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.ConnectionString</InterfaceMember>
@@ -344,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectionTimeout As Integer" />
       <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int" Usage="System.Data.Common.DbConnection.ConnectionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ConnectionTimeout { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.ConnectionTimeout</InterfaceMember>
@@ -377,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As DbCommand" />
       <MemberSignature Language="F#" Value="member this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbConnection.CreateCommand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -408,6 +418,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.CreateDbCommand" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDbCommand () As DbCommand" />
       <MemberSignature Language="F#" Value="abstract member CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbConnection.CreateDbCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbCommand ^ CreateDbCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -446,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Database As String" />
       <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.Common.DbConnection.Database" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.Database</InterfaceMember>
@@ -486,6 +498,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DataSource As String" />
       <MemberSignature Language="F#" Value="member this.DataSource : string" Usage="System.Data.Common.DbConnection.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DataSource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -523,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.DbProviderFactory" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DbProviderFactory As DbProviderFactory" />
       <MemberSignature Language="F#" Value="member this.DbProviderFactory : System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbConnection.DbProviderFactory" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbProviderFactory ^ DbProviderFactory { System::Data::Common::DbProviderFactory ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -552,6 +566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dbConnection.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -575,6 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dbConnection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -597,6 +613,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.EnlistTransaction(System.Transactions.Transaction)" />
       <MemberSignature Language="F#" Value="abstract member EnlistTransaction : System.Transactions.Transaction -&gt; unit&#xA;override this.EnlistTransaction : System.Transactions.Transaction -&gt; unit" Usage="dbConnection.EnlistTransaction transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -654,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchema () As DataTable" />
       <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Data.DataTable&#xA;override this.GetSchema : unit -&gt; System.Data.DataTable" Usage="dbConnection.GetSchema " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -691,6 +709,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.GetSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchema (collectionName As String) As DataTable" />
       <MemberSignature Language="F#" Value="abstract member GetSchema : string -&gt; System.Data.DataTable&#xA;override this.GetSchema : string -&gt; System.Data.DataTable" Usage="dbConnection.GetSchema collectionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -733,6 +752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.GetSchema(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
       <MemberSignature Language="F#" Value="abstract member GetSchema : string * string[] -&gt; System.Data.DataTable&#xA;override this.GetSchema : string * string[] -&gt; System.Data.DataTable" Usage="dbConnection.GetSchema (collectionName, restrictionValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -781,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.OnStateChange(System.Data.StateChangeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStateChange (stateChange As StateChangeEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnStateChange : System.Data.StateChangeEventArgs -&gt; unit&#xA;override this.OnStateChange : System.Data.StateChangeEventArgs -&gt; unit" Usage="dbConnection.OnStateChange stateChange" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStateChange(System::Data::StateChangeEventArgs ^ stateChange);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -824,6 +845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Open ()" />
       <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="dbConnection.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Open();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.Open</InterfaceMember>
@@ -882,6 +904,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.OpenAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.OpenAsync : unit -&gt; System.Threading.Tasks.Task" Usage="dbConnection.OpenAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ OpenAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -923,6 +946,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OpenAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.OpenAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member OpenAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OpenAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dbConnection.OpenAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ OpenAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -972,6 +996,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.ServerVersion" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ServerVersion As String" />
       <MemberSignature Language="F#" Value="member this.ServerVersion : string" Usage="System.Data.Common.DbConnection.ServerVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ServerVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1009,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property State As ConnectionState" />
       <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.Common.DbConnection.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbConnection.State</InterfaceMember>
@@ -1047,6 +1073,7 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Common.DbConnection.StateChange" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event StateChange As StateChangeEventHandler " />
       <MemberSignature Language="F#" Value="member this.StateChange : System.Data.StateChangeEventHandler " Usage="member this.StateChange : System.Data.StateChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Data::StateChangeEventHandler ^ StateChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1092,6 +1119,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbTransaction System.Data.IDbConnection.BeginTransaction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.System#Data#IDbConnection#BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Function BeginTransaction () As IDbTransaction Implements IDbConnection.BeginTransaction" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbTransaction ^ System.Data.IDbConnection.BeginTransaction() = System::Data::IDbConnection::BeginTransaction;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.BeginTransaction</InterfaceMember>
@@ -1133,6 +1161,7 @@
       <MemberSignature Language="C#" Value="System.Data.IDbTransaction IDbConnection.BeginTransaction (System.Data.IsolationLevel isolationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbTransaction System.Data.IDbConnection.BeginTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.System#Data#IDbConnection#BeginTransaction(System.Data.IsolationLevel)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbTransaction ^ System.Data.IDbConnection.BeginTransaction(System::Data::IsolationLevel isolationLevel) = System::Data::IDbConnection::BeginTransaction;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.BeginTransaction(System.Data.IsolationLevel)</InterfaceMember>
@@ -1176,6 +1205,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbCommand System.Data.IDbConnection.CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.System#Data#IDbConnection#CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Function CreateCommand () As IDbCommand Implements IDbConnection.CreateCommand" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbCommand ^ System.Data.IDbConnection.CreateCommand() = System::Data::IDbConnection::CreateCommand;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDbConnection.CreateCommand</InterfaceMember>

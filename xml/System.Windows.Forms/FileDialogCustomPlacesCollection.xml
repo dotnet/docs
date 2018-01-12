@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialogCustomPlacesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class FileDialogCustomPlacesCollection&#xA;Inherits Collection(Of FileDialogCustomPlace)" />
   <TypeSignature Language="F#" Value="type FileDialogCustomPlacesCollection = class&#xA;    inherit Collection&lt;FileDialogCustomPlace&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileDialogCustomPlacesCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Forms::FileDialogCustomPlace ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlacesCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.Add(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (knownFolderGuid As Guid)" />
       <MemberSignature Language="F#" Value="override this.Add : Guid -&gt; unit" Usage="fileDialogCustomPlacesCollection.Add knownFolderGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Guid knownFolderGuid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (path As String)" />
       <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="fileDialogCustomPlacesCollection.Add path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.NamedPermissionSet" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPermissionSet&#xA;Inherits PermissionSet" />
   <TypeSignature Language="F#" Value="type NamedPermissionSet = class&#xA;    inherit PermissionSet" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamedPermissionSet sealed : System::Security::PermissionSet" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.#ctor(System.Security.NamedPermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permSet As NamedPermissionSet)" />
       <MemberSignature Language="F#" Value="new System.Security.NamedPermissionSet : System.Security.NamedPermissionSet -&gt; System.Security.NamedPermissionSet" Usage="new System.Security.NamedPermissionSet permSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new System.Security.NamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="new System.Security.NamedPermissionSet name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPermissionSet(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.#ctor(System.String,System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, state As PermissionState)" />
       <MemberSignature Language="F#" Value="new System.Security.NamedPermissionSet : string * System.Security.Permissions.PermissionState -&gt; System.Security.NamedPermissionSet" Usage="new System.Security.NamedPermissionSet (name, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPermissionSet(System::String ^ name, System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -149,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.#ctor(System.String,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, permSet As PermissionSet)" />
       <MemberSignature Language="F#" Value="new System.Security.NamedPermissionSet : string * System.Security.PermissionSet -&gt; System.Security.NamedPermissionSet" Usage="new System.Security.NamedPermissionSet (name, permSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPermissionSet(System::String ^ name, System::Security::PermissionSet ^ permSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As PermissionSet" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.PermissionSet" Usage="namedPermissionSet.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::PermissionSet ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.Copy(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy (name As String) As NamedPermissionSet" />
       <MemberSignature Language="F#" Value="override this.Copy : string -&gt; System.Security.NamedPermissionSet" Usage="namedPermissionSet.Copy name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ Copy(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -259,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.NamedPermissionSet.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Security.NamedPermissionSet.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="namedPermissionSet.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -345,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (et As SecurityElement)" />
       <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="namedPermissionSet.FromXml et" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ et);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -388,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="namedPermissionSet.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -426,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.NamedPermissionSet.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Security.NamedPermissionSet.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -465,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.NamedPermissionSet.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="namedPermissionSet.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

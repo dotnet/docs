@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathDocument&#xA;Implements IXPathNavigable" />
   <TypeSignature Language="F#" Value="type XPathDocument = class&#xA;    interface IXPathNavigable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathDocument : System::Xml::XPath::IXPathNavigable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.#ctor(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="new System.Xml.XPath.XPathDocument : System.IO.Stream -&gt; System.Xml.XPath.XPathDocument" Usage="new System.Xml.XPath.XPathDocument stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathDocument(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -85,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.#ctor(System.IO.TextReader)" />
       <MemberSignature Language="F#" Value="new System.Xml.XPath.XPathDocument : System.IO.TextReader -&gt; System.Xml.XPath.XPathDocument" Usage="new System.Xml.XPath.XPathDocument textReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathDocument(System::IO::TextReader ^ textReader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -124,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String)" />
       <MemberSignature Language="F#" Value="new System.Xml.XPath.XPathDocument : string -&gt; System.Xml.XPath.XPathDocument" Usage="new System.Xml.XPath.XPathDocument uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathDocument(System::String ^ uri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -163,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="new System.Xml.XPath.XPathDocument : System.Xml.XmlReader -&gt; System.Xml.XPath.XPathDocument" Usage="new System.Xml.XPath.XPathDocument reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathDocument(System::Xml::XmlReader ^ reader);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -210,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.#ctor(System.String,System.Xml.XmlSpace)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (uri As String, space As XmlSpace)" />
       <MemberSignature Language="F#" Value="new System.Xml.XPath.XPathDocument : string * System.Xml.XmlSpace -&gt; System.Xml.XPath.XPathDocument" Usage="new System.Xml.XPath.XPathDocument (uri, space)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathDocument(System::String ^ uri, System::Xml::XmlSpace space);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -255,6 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader,System.Xml.XmlSpace)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reader As XmlReader, space As XmlSpace)" />
       <MemberSignature Language="F#" Value="new System.Xml.XPath.XPathDocument : System.Xml.XmlReader * System.Xml.XmlSpace -&gt; System.Xml.XPath.XPathDocument" Usage="new System.Xml.XPath.XPathDocument (reader, space)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathDocument(System::Xml::XmlReader ^ reader, System::Xml::XmlSpace space);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -300,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathDocument.CreateNavigator" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateNavigator () As XPathNavigator" />
       <MemberSignature Language="F#" Value="abstract member CreateNavigator : unit -&gt; System.Xml.XPath.XPathNavigator&#xA;override this.CreateNavigator : unit -&gt; System.Xml.XPath.XPathNavigator" Usage="xPathDocument.CreateNavigator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XPath::XPathNavigator ^ CreateNavigator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.XPath.IXPathNavigable.CreateNavigator</InterfaceMember>

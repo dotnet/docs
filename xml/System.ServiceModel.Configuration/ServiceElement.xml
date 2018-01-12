@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type ServiceElement = class&#xA;    inherit ConfigurationElement&#xA;    interface IConfigurationContextProviderInternal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +50,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceName As String)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ServiceElement : string -&gt; System.ServiceModel.Configuration.ServiceElement" Usage="new System.ServiceModel.Configuration.ServiceElement serviceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceElement(System::String ^ serviceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.BehaviorConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property BehaviorConfiguration As String" />
       <MemberSignature Language="F#" Value="member this.BehaviorConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ServiceElement.BehaviorConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BehaviorConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As ServiceEndpointElementCollection" />
       <MemberSignature Language="F#" Value="member this.Endpoints : System.ServiceModel.Configuration.ServiceEndpointElementCollection" Usage="System.ServiceModel.Configuration.ServiceElement.Endpoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceEndpointElementCollection ^ Endpoints { System::ServiceModel::Configuration::ServiceEndpointElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Host" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As HostElement" />
       <MemberSignature Language="F#" Value="member this.Host : System.ServiceModel.Configuration.HostElement" Usage="System.ServiceModel.Configuration.ServiceElement.Host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::HostElement ^ Host { System::ServiceModel::Configuration::HostElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.ServiceElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="serviceElement.Reset parentElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthentication" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthentication" />
   <TypeSignature Language="F#" Value="type FormsAuthentication = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthentication sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsAuthentication();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Authenticate(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Authenticate (name As String, password As String) As Boolean" />
       <MemberSignature Language="F#" Value="static member Authenticate : string * string -&gt; bool" Usage="System.Web.Security.FormsAuthentication.Authenticate (name, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Authenticate(System::String ^ name, System::String ^ password);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookieDomain" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieDomain As String" />
       <MemberSignature Language="F#" Value="member this.CookieDomain : string" Usage="System.Web.Security.FormsAuthentication.CookieDomain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CookieDomain { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookieMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookieMode As HttpCookieMode" />
       <MemberSignature Language="F#" Value="member this.CookieMode : System.Web.HttpCookieMode" Usage="System.Web.Security.FormsAuthentication.CookieMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::HttpCookieMode CookieMode { System::Web::HttpCookieMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -260,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookiesSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CookiesSupported As Boolean" />
       <MemberSignature Language="F#" Value="member this.CookiesSupported : bool" Usage="System.Web.Security.FormsAuthentication.CookiesSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CookiesSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -308,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Decrypt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrypt (encryptedTicket As String) As FormsAuthenticationTicket" />
       <MemberSignature Language="F#" Value="static member Decrypt : string -&gt; System.Web.Security.FormsAuthenticationTicket" Usage="System.Web.Security.FormsAuthentication.Decrypt encryptedTicket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Security::FormsAuthenticationTicket ^ Decrypt(System::String ^ encryptedTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -346,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.DefaultUrl" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultUrl As String" />
       <MemberSignature Language="F#" Value="member this.DefaultUrl : string" Usage="System.Web.Security.FormsAuthentication.DefaultUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ DefaultUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -385,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EnableCrossAppRedirects As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableCrossAppRedirects : bool" Usage="System.Web.Security.FormsAuthentication.EnableCrossAppRedirects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableCrossAppRedirects { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.EnableFormsAuthentication(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub EnableFormsAuthentication (configurationData As NameValueCollection)" />
       <MemberSignature Language="F#" Value="static member EnableFormsAuthentication : System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="System.Web.Security.FormsAuthentication.EnableFormsAuthentication configurationData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EnableFormsAuthentication(System::Collections::Specialized::NameValueCollection ^ configurationData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -466,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Encrypt(System.Web.Security.FormsAuthenticationTicket)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Encrypt (ticket As FormsAuthenticationTicket) As String" />
       <MemberSignature Language="F#" Value="static member Encrypt : System.Web.Security.FormsAuthenticationTicket -&gt; string" Usage="System.Web.Security.FormsAuthentication.Encrypt ticket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Encrypt(System::Web::Security::FormsAuthenticationTicket ^ ticket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -505,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.FormsCookieName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FormsCookieName As String" />
       <MemberSignature Language="F#" Value="member this.FormsCookieName : string" Usage="System.Web.Security.FormsAuthentication.FormsCookieName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ FormsCookieName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -545,6 +557,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.FormsCookiePath" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FormsCookiePath As String" />
       <MemberSignature Language="F#" Value="member this.FormsCookiePath : string" Usage="System.Web.Security.FormsAuthentication.FormsCookiePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ FormsCookiePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -594,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.GetAuthCookie(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAuthCookie (userName As String, createPersistentCookie As Boolean) As HttpCookie" />
       <MemberSignature Language="F#" Value="static member GetAuthCookie : string * bool -&gt; System.Web.HttpCookie" Usage="System.Web.Security.FormsAuthentication.GetAuthCookie (userName, createPersistentCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::HttpCookie ^ GetAuthCookie(System::String ^ userName, bool createPersistentCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -628,6 +642,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.GetAuthCookie(System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAuthCookie (userName As String, createPersistentCookie As Boolean, strCookiePath As String) As HttpCookie" />
       <MemberSignature Language="F#" Value="static member GetAuthCookie : string * bool * string -&gt; System.Web.HttpCookie" Usage="System.Web.Security.FormsAuthentication.GetAuthCookie (userName, createPersistentCookie, strCookiePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::HttpCookie ^ GetAuthCookie(System::String ^ userName, bool createPersistentCookie, System::String ^ strCookiePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -657,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.GetRedirectUrl(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRedirectUrl (userName As String, createPersistentCookie As Boolean) As String" />
       <MemberSignature Language="F#" Value="static member GetRedirectUrl : string * bool -&gt; string" Usage="System.Web.Security.FormsAuthentication.GetRedirectUrl (userName, createPersistentCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetRedirectUrl(System::String ^ userName, bool createPersistentCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -712,6 +728,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HashPasswordForStoringInConfigFile (password As String, passwordFormat As String) As String" />
       <MemberSignature Language="F#" Value="static member HashPasswordForStoringInConfigFile : string * string -&gt; string" Usage="System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile (password, passwordFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HashPasswordForStoringInConfigFile(System::String ^ password, System::String ^ passwordFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -771,6 +788,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Initialize ()" />
       <MemberSignature Language="F#" Value="static member Initialize : unit -&gt; unit" Usage="System.Web.Security.FormsAuthentication.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -798,6 +816,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.Web.Security.FormsAuthentication.IsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -819,6 +838,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.LoginUrl" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LoginUrl As String" />
       <MemberSignature Language="F#" Value="member this.LoginUrl : string" Usage="System.Web.Security.FormsAuthentication.LoginUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ LoginUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -867,6 +887,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectFromLoginPage(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RedirectFromLoginPage (userName As String, createPersistentCookie As Boolean)" />
       <MemberSignature Language="F#" Value="static member RedirectFromLoginPage : string * bool -&gt; unit" Usage="System.Web.Security.FormsAuthentication.RedirectFromLoginPage (userName, createPersistentCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RedirectFromLoginPage(System::String ^ userName, bool createPersistentCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -923,6 +944,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectFromLoginPage(System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RedirectFromLoginPage (userName As String, createPersistentCookie As Boolean, strCookiePath As String)" />
       <MemberSignature Language="F#" Value="static member RedirectFromLoginPage : string * bool * string -&gt; unit" Usage="System.Web.Security.FormsAuthentication.RedirectFromLoginPage (userName, createPersistentCookie, strCookiePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RedirectFromLoginPage(System::String ^ userName, bool createPersistentCookie, System::String ^ strCookiePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -999,6 +1021,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectToLoginPage" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RedirectToLoginPage ()" />
       <MemberSignature Language="F#" Value="static member RedirectToLoginPage : unit -&gt; unit" Usage="System.Web.Security.FormsAuthentication.RedirectToLoginPage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RedirectToLoginPage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1036,6 +1059,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectToLoginPage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RedirectToLoginPage (extraQueryString As String)" />
       <MemberSignature Language="F#" Value="static member RedirectToLoginPage : string -&gt; unit" Usage="System.Web.Security.FormsAuthentication.RedirectToLoginPage extraQueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RedirectToLoginPage(System::String ^ extraQueryString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1076,6 +1100,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RenewTicketIfOld(System.Web.Security.FormsAuthenticationTicket)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RenewTicketIfOld (tOld As FormsAuthenticationTicket) As FormsAuthenticationTicket" />
       <MemberSignature Language="F#" Value="static member RenewTicketIfOld : System.Web.Security.FormsAuthenticationTicket -&gt; System.Web.Security.FormsAuthenticationTicket" Usage="System.Web.Security.FormsAuthentication.RenewTicketIfOld tOld" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Security::FormsAuthenticationTicket ^ RenewTicketIfOld(System::Web::Security::FormsAuthenticationTicket ^ tOld);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1109,6 +1134,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.RequireSSL" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RequireSSL As Boolean" />
       <MemberSignature Language="F#" Value="member this.RequireSSL : bool" Usage="System.Web.Security.FormsAuthentication.RequireSSL" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool RequireSSL { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1170,6 +1196,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.SetAuthCookie(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAuthCookie (userName As String, createPersistentCookie As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetAuthCookie : string * bool -&gt; unit" Usage="System.Web.Security.FormsAuthentication.SetAuthCookie (userName, createPersistentCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAuthCookie(System::String ^ userName, bool createPersistentCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1205,6 +1232,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.SetAuthCookie(System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAuthCookie (userName As String, createPersistentCookie As Boolean, strCookiePath As String)" />
       <MemberSignature Language="F#" Value="static member SetAuthCookie : string * bool * string -&gt; unit" Usage="System.Web.Security.FormsAuthentication.SetAuthCookie (userName, createPersistentCookie, strCookiePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAuthCookie(System::String ^ userName, bool createPersistentCookie, System::String ^ strCookiePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1242,6 +1270,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.SignOut" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SignOut ()" />
       <MemberSignature Language="F#" Value="static member SignOut : unit -&gt; unit" Usage="System.Web.Security.FormsAuthentication.SignOut " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SignOut();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1289,6 +1318,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.SlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SlidingExpiration As Boolean" />
       <MemberSignature Language="F#" Value="member this.SlidingExpiration : bool" Usage="System.Web.Security.FormsAuthentication.SlidingExpiration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool SlidingExpiration { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1336,6 +1366,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.TicketCompatibilityMode" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TicketCompatibilityMode As TicketCompatibilityMode" />
       <MemberSignature Language="F#" Value="member this.TicketCompatibilityMode : System.Web.Configuration.TicketCompatibilityMode" Usage="System.Web.Security.FormsAuthentication.TicketCompatibilityMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Configuration::TicketCompatibilityMode TicketCompatibilityMode { System::Web::Configuration::TicketCompatibilityMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1356,6 +1387,7 @@ This method does not create a cookie.
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Timeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan" Usage="System.Web.Security.FormsAuthentication.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeSpan Timeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

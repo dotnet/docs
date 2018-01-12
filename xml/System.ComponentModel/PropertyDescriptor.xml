@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PropertyDescriptor&#xA;Inherits MemberDescriptor" />
   <TypeSignature Language="F#" Value="type PropertyDescriptor = class&#xA;    inherit MemberDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyDescriptor abstract : System::ComponentModel::MemberDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -107,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyDescriptor : System.ComponentModel.MemberDescriptor -&gt; System.ComponentModel.PropertyDescriptor" Usage="new System.ComponentModel.PropertyDescriptor descr" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyDescriptor(System::ComponentModel::MemberDescriptor ^ descr);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -138,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor, attrs As Attribute())" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyDescriptor : System.ComponentModel.MemberDescriptor * Attribute[] -&gt; System.ComponentModel.PropertyDescriptor" Usage="new System.ComponentModel.PropertyDescriptor (descr, attrs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyDescriptor(System::ComponentModel::MemberDescriptor ^ descr, cli::array &lt;Attribute ^&gt; ^ attrs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -179,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.#ctor(System.String,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, attrs As Attribute())" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyDescriptor : string * Attribute[] -&gt; System.ComponentModel.PropertyDescriptor" Usage="new System.ComponentModel.PropertyDescriptor (name, attrs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyDescriptor(System::String ^ name, cli::array &lt;Attribute ^&gt; ^ attrs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddValueChanged (component As Object, handler As EventHandler)" />
       <MemberSignature Language="F#" Value="abstract member AddValueChanged : obj * EventHandler -&gt; unit&#xA;override this.AddValueChanged : obj * EventHandler -&gt; unit" Usage="propertyDescriptor.AddValueChanged (component, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddValueChanged(System::Object ^ component, EventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -249,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CanResetValue (component As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanResetValue : obj -&gt; bool" Usage="propertyDescriptor.CanResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CanResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -295,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.ComponentType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ComponentType As Type" />
       <MemberSignature Language="F#" Value="member this.ComponentType : Type" Usage="System.ComponentModel.PropertyDescriptor.ComponentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ComponentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -332,6 +339,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.Converter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Converter As TypeConverter" />
       <MemberSignature Language="F#" Value="member this.Converter : System.ComponentModel.TypeConverter" Usage="System.ComponentModel.PropertyDescriptor.Converter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::TypeConverter ^ Converter { System::ComponentModel::TypeConverter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -362,6 +370,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object CreateInstance(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.CreateInstance(System.Type)" />
       <MemberSignature Language="F#" Value="member this.CreateInstance : Type -&gt; obj" Usage="propertyDescriptor.CreateInstance type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ CreateInstance(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -408,6 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="propertyDescriptor.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -443,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.FillAttributes(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FillAttributes (attributeList As IList)" />
       <MemberSignature Language="F#" Value="override this.FillAttributes : System.Collections.IList -&gt; unit" Usage="propertyDescriptor.FillAttributes attributeList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FillAttributes(System::Collections::IList ^ attributeList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -493,6 +504,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildProperties () As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="member this.GetChildProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptor.GetChildProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -548,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildProperties (filter As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="member this.GetChildProperties : Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptor.GetChildProperties filter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -606,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildProperties (instance As Object) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="member this.GetChildProperties : obj -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptor.GetChildProperties instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -664,6 +678,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChildProperties (instance As Object, filter As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member GetChildProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetChildProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyDescriptor.GetChildProperties (instance, filter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(System::Object ^ instance, cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -724,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetEditor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditor (editorBaseType As Type) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetEditor : Type -&gt; obj&#xA;override this.GetEditor : Type -&gt; obj" Usage="propertyDescriptor.GetEditor editorBaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEditor(Type ^ editorBaseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -758,6 +774,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="propertyDescriptor.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -788,6 +805,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetInvocationTarget(class System.Type type, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetInvocationTarget(System.Type,System.Object)" />
       <MemberSignature Language="F#" Value="override this.GetInvocationTarget : Type * obj -&gt; obj" Usage="propertyDescriptor.GetInvocationTarget (type, instance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetInvocationTarget(Type ^ type, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -831,6 +849,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetTypeFromName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetTypeFromName (typeName As String) As Type" />
       <MemberSignature Language="F#" Value="member this.GetTypeFromName : string -&gt; Type" Usage="propertyDescriptor.GetTypeFromName typeName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Type ^ GetTypeFromName(System::String ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -872,6 +891,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (component As Object) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj" Usage="propertyDescriptor.GetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -918,6 +938,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.GetValueChangedHandler(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function GetValueChangedHandler (component As Object) As EventHandler" />
       <MemberSignature Language="F#" Value="member this.GetValueChangedHandler : obj -&gt; EventHandler" Usage="propertyDescriptor.GetValueChangedHandler component" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; EventHandler ^ GetValueChangedHandler(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -952,6 +973,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.IsLocalizable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsLocalizable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLocalizable : bool" Usage="System.ComponentModel.PropertyDescriptor.IsLocalizable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLocalizable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -991,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ComponentModel.PropertyDescriptor.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1023,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.OnValueChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged (component As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnValueChanged : obj * EventArgs -&gt; unit&#xA;override this.OnValueChanged : obj * EventArgs -&gt; unit" Usage="propertyDescriptor.OnValueChanged (component, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValueChanged(System::Object ^ component, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1065,6 +1089,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.ComponentModel.PropertyDescriptor.PropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1102,6 +1127,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveValueChanged (component As Object, handler As EventHandler)" />
       <MemberSignature Language="F#" Value="abstract member RemoveValueChanged : obj * EventHandler -&gt; unit&#xA;override this.RemoveValueChanged : obj * EventHandler -&gt; unit" Usage="propertyDescriptor.RemoveValueChanged (component, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveValueChanged(System::Object ^ component, EventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1139,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ResetValue (component As Object)" />
       <MemberSignature Language="F#" Value="abstract member ResetValue : obj -&gt; unit" Usage="propertyDescriptor.ResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1205,6 +1232,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.SerializationVisibility" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationVisibility As DesignerSerializationVisibility" />
       <MemberSignature Language="F#" Value="member this.SerializationVisibility : System.ComponentModel.DesignerSerializationVisibility" Usage="System.ComponentModel.PropertyDescriptor.SerializationVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DesignerSerializationVisibility SerializationVisibility { System::ComponentModel::DesignerSerializationVisibility get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1237,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (component As Object, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit" Usage="propertyDescriptor.SetValue (component, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(System::Object ^ component, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1297,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ShouldSerializeValue (component As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ShouldSerializeValue : obj -&gt; bool" Usage="propertyDescriptor.ShouldSerializeValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ShouldSerializeValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1346,6 +1376,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyDescriptor.SupportsChangeEvents" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsChangeEvents As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsChangeEvents : bool" Usage="System.ComponentModel.PropertyDescriptor.SupportsChangeEvents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsChangeEvents { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

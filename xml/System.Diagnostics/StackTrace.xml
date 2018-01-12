@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackTrace" />
   <TypeSignature Language="VB.NET" Value="Public Class StackTrace" />
   <TypeSignature Language="F#" Value="type StackTrace = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StackTrace" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
@@ -69,6 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fNeedFileInfo As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace fNeedFileInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Diagnostics.StackFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (frame As StackFrame)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : System.Diagnostics.StackFrame -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace frame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(System::Diagnostics::StackFrame ^ frame);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : Exception -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -245,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (skipFrames As Integer)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : int -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace skipFrames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(int skipFrames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : Exception * bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (e, fNeedFileInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception, fNeedFileInfo As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ e, bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -326,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception, skipFrames As Integer)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : Exception * int -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (e, skipFrames)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ e, int skipFrames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -371,6 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (skipFrames As Integer, fNeedFileInfo As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : int * bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (skipFrames, fNeedFileInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(int skipFrames, bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -420,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Threading.Thread,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetThread As Thread, needFileInfo As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : System.Threading.Thread * bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (targetThread, needFileInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(System::Threading::Thread ^ targetThread, bool needFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -462,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception, skipFrames As Integer, fNeedFileInfo As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : Exception * int * bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (e, skipFrames, fNeedFileInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ e, int skipFrames, bool fNeedFileInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -508,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.StackTrace.FrameCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FrameCount As Integer" />
       <MemberSignature Language="F#" Value="member this.FrameCount : int" Usage="System.Diagnostics.StackTrace.FrameCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FrameCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.GetFrame(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFrame (index As Integer) As StackFrame" />
       <MemberSignature Language="F#" Value="abstract member GetFrame : int -&gt; System.Diagnostics.StackFrame&#xA;override this.GetFrame : int -&gt; System.Diagnostics.StackFrame" Usage="stackTrace.GetFrame index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::StackFrame ^ GetFrame(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -599,6 +612,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.GetFrames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFrames () As StackFrame()" />
       <MemberSignature Language="F#" Value="abstract member GetFrames : unit -&gt; System.Diagnostics.StackFrame[]&#xA;override this.GetFrames : unit -&gt; System.Diagnostics.StackFrame[]" Usage="stackTrace.GetFrames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::StackFrame ^&gt; ^ GetFrames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -657,6 +671,7 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.StackTrace.METHODS_TO_SKIP" />
       <MemberSignature Language="VB.NET" Value="Public Const METHODS_TO_SKIP As Integer  = 0" />
       <MemberSignature Language="F#" Value="val mutable METHODS_TO_SKIP : int" Usage="System.Diagnostics.StackTrace.METHODS_TO_SKIP" />
+      <MemberSignature Language="C++ CLI" Value="public: int METHODS_TO_SKIP = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -693,6 +708,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stackTrace.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>

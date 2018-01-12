@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
   <TypeSignature Language="VB.NET" Value="Public Class FileLogTraceListener&#xA;Inherits TraceListener" />
   <TypeSignature Language="F#" Value="type FileLogTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileLogTraceListener : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -135,6 +136,7 @@
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLogTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -164,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Logging.FileLogTraceListener : string -&gt; Microsoft.VisualBasic.Logging.FileLogTraceListener" Usage="new Microsoft.VisualBasic.Logging.FileLogTraceListener name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLogTraceListener(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -197,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Append" />
       <MemberSignature Language="VB.NET" Value="Public Property Append As Boolean" />
       <MemberSignature Language="F#" Value="member this.Append : bool with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.Append" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Append { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -238,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.AutoFlush" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoFlush As Boolean" />
       <MemberSignature Language="F#" Value="member this.AutoFlush : bool with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.AutoFlush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoFlush { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -273,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseFileName As String" />
       <MemberSignature Language="F#" Value="member this.BaseFileName : string with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseFileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -317,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="fileLogTraceListener.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -344,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomLocation As String" />
       <MemberSignature Language="F#" Value="member this.CustomLocation : string with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomLocation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -380,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Delimiter" />
       <MemberSignature Language="VB.NET" Value="Public Property Delimiter As String" />
       <MemberSignature Language="F#" Value="member this.Delimiter : string with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.Delimiter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Delimiter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -408,6 +417,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskSpaceExhaustedBehavior As DiskSpaceExhaustedOption" />
       <MemberSignature Language="F#" Value="member this.DiskSpaceExhaustedBehavior : Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Logging::DiskSpaceExhaustedOption DiskSpaceExhaustedBehavior { Microsoft::VisualBasic::Logging::DiskSpaceExhaustedOption get(); void set(Microsoft::VisualBasic::Logging::DiskSpaceExhaustedOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -446,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="fileLogTraceListener.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -483,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As Encoding" />
       <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -513,6 +525,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="fileLogTraceListener.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -540,6 +553,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullLogFileName As String" />
       <MemberSignature Language="F#" Value="member this.FullLogFileName : string" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullLogFileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -587,6 +601,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.GetSupportedAttributes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSupportedAttributes () As String()" />
       <MemberSignature Language="F#" Value="override this.GetSupportedAttributes : unit -&gt; string[]" Usage="fileLogTraceListener.GetSupportedAttributes " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -617,6 +632,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.IncludeHostName" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeHostName As Boolean" />
       <MemberSignature Language="F#" Value="member this.IncludeHostName : bool with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.IncludeHostName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeHostName { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -652,6 +668,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As LogFileLocation" />
       <MemberSignature Language="F#" Value="member this.Location : Microsoft.VisualBasic.Logging.LogFileLocation with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Logging::LogFileLocation Location { Microsoft::VisualBasic::Logging::LogFileLocation get(); void set(Microsoft::VisualBasic::Logging::LogFileLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -689,6 +706,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule" />
       <MemberSignature Language="VB.NET" Value="Public Property LogFileCreationSchedule As LogFileCreationScheduleOption" />
       <MemberSignature Language="F#" Value="member this.LogFileCreationSchedule : Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Logging::LogFileCreationScheduleOption LogFileCreationSchedule { Microsoft::VisualBasic::Logging::LogFileCreationScheduleOption get(); void set(Microsoft::VisualBasic::Logging::LogFileCreationScheduleOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -727,6 +745,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxFileSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxFileSize : int64 with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxFileSize { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -764,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace" />
       <MemberSignature Language="VB.NET" Value="Public Property ReserveDiskSpace As Long" />
       <MemberSignature Language="F#" Value="member this.ReserveDiskSpace : int64 with get, set" Usage="Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ReserveDiskSpace { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -820,6 +840,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
       <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="fileLogTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -887,6 +908,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
       <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="fileLogTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -977,6 +999,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
       <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="fileLogTraceListener.TraceEvent (eventCache, source, eventType, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1044,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
       <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="fileLogTraceListener.TraceEvent (eventCache, source, eventType, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1119,6 +1143,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
       <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="fileLogTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1155,6 +1180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Logging.FileLogTraceListener.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
       <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="fileLogTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

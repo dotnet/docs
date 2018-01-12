@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeObject" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeObject" />
   <TypeSignature Language="F#" Value="type CodeObject = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeObject.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
       <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.CodeDom.CodeObject.UserData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

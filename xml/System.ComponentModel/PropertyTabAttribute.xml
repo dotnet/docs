@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyTabAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyTabAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="F#" Value="type PropertyTabAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyTabAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyTabAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tabClassName As String)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyTabAttribute : string -&gt; System.ComponentModel.PropertyTabAttribute" Usage="new System.ComponentModel.PropertyTabAttribute tabClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyTabAttribute(System::String ^ tabClassName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tabClass As Type)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyTabAttribute : Type -&gt; System.ComponentModel.PropertyTabAttribute" Usage="new System.ComponentModel.PropertyTabAttribute tabClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyTabAttribute(Type ^ tabClass);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.#ctor(System.String,System.ComponentModel.PropertyTabScope)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tabClassName As String, tabScope As PropertyTabScope)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyTabAttribute : string * System.ComponentModel.PropertyTabScope -&gt; System.ComponentModel.PropertyTabAttribute" Usage="new System.ComponentModel.PropertyTabAttribute (tabClassName, tabScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyTabAttribute(System::String ^ tabClassName, System::ComponentModel::PropertyTabScope tabScope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.#ctor(System.Type,System.ComponentModel.PropertyTabScope)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tabClass As Type, tabScope As PropertyTabScope)" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyTabAttribute : Type * System.ComponentModel.PropertyTabScope -&gt; System.ComponentModel.PropertyTabAttribute" Usage="new System.ComponentModel.PropertyTabAttribute (tabClass, tabScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyTabAttribute(Type ^ tabClass, System::ComponentModel::PropertyTabScope tabScope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.Equals(System.ComponentModel.PropertyTabAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PropertyTabAttribute) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.ComponentModel.PropertyTabAttribute -&gt; bool" Usage="propertyTabAttribute.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::ComponentModel::PropertyTabAttribute ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="propertyTabAttribute.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="propertyTabAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -351,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.InitializeArrays(System.String[],System.ComponentModel.PropertyTabScope[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeArrays (tabClassNames As String(), tabScopes As PropertyTabScope())" />
       <MemberSignature Language="F#" Value="member this.InitializeArrays : string[] * System.ComponentModel.PropertyTabScope[] -&gt; unit" Usage="propertyTabAttribute.InitializeArrays (tabClassNames, tabScopes)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeArrays(cli::array &lt;System::String ^&gt; ^ tabClassNames, cli::array &lt;System::ComponentModel::PropertyTabScope&gt; ^ tabScopes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -401,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyTabAttribute.InitializeArrays(System.Type[],System.ComponentModel.PropertyTabScope[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeArrays (tabClasses As Type(), tabScopes As PropertyTabScope())" />
       <MemberSignature Language="F#" Value="member this.InitializeArrays : Type[] * System.ComponentModel.PropertyTabScope[] -&gt; unit" Usage="propertyTabAttribute.InitializeArrays (tabClasses, tabScopes)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeArrays(cli::array &lt;Type ^&gt; ^ tabClasses, cli::array &lt;System::ComponentModel::PropertyTabScope&gt; ^ tabScopes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -451,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyTabAttribute.TabClasses" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabClasses As Type()" />
       <MemberSignature Language="F#" Value="member this.TabClasses : Type[]" Usage="System.ComponentModel.PropertyTabAttribute.TabClasses" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ TabClasses { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -488,6 +500,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyTabAttribute.TabClassNames" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property TabClassNames As String()" />
       <MemberSignature Language="F#" Value="member this.TabClassNames : string[]" Usage="System.ComponentModel.PropertyTabAttribute.TabClassNames" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property cli::array &lt;System::String ^&gt; ^ TabClassNames { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -517,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyTabAttribute.TabScopes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabScopes As PropertyTabScope()" />
       <MemberSignature Language="F#" Value="member this.TabScopes : System.ComponentModel.PropertyTabScope[]" Usage="System.ComponentModel.PropertyTabAttribute.TabScopes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ComponentModel::PropertyTabScope&gt; ^ TabScopes { cli::array &lt;System::ComponentModel::PropertyTabScope&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

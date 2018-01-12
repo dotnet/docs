@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.WeakReference`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WeakReference(Of T)&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type WeakReference&lt;'T (requires 'T : null)&gt; = class&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : classpublic ref class WeakReference sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As T)" />
       <MemberSignature Language="F#" Value="new WeakReference&lt;'T (requires 'T : null)&gt; : 'T -&gt; WeakReference&lt;'T (requires 'T : null)&gt;" Usage="new System.WeakReference&lt;'T (requires 'T : null)&gt; target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WeakReference(T target);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -101,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.#ctor(`0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As T, trackResurrection As Boolean)" />
       <MemberSignature Language="F#" Value="new WeakReference&lt;'T (requires 'T : null)&gt; : 'T * bool -&gt; WeakReference&lt;'T (requires 'T : null)&gt;" Usage="new System.WeakReference&lt;'T (requires 'T : null)&gt; (target, trackResurrection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WeakReference(T target, bool trackResurrection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -137,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="weakReference.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!WeakReference`1 ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="weakReference.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -205,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.SetTarget(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetTarget (target As T)" />
       <MemberSignature Language="F#" Value="member this.SetTarget : 'T -&gt; unit" Usage="weakReference.SetTarget target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTarget(T target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -241,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.TryGetTarget(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetTarget (ByRef target As T) As Boolean" />
       <MemberSignature Language="F#" Value="member this.TryGetTarget :  -&gt; bool" Usage="weakReference.TryGetTarget target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetTarget([Runtime::InteropServices::Out] T % target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

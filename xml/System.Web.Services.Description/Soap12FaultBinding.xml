@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12FaultBinding" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Soap12FaultBinding&#xA;Inherits SoapFaultBinding" />
   <TypeSignature Language="F#" Value="type Soap12FaultBinding = class&#xA;    inherit SoapFaultBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Soap12FaultBinding sealed : System::Web::Services::Description::SoapFaultBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Soap12FaultBinding.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Soap12FaultBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class AutomationProperties" />
   <TypeSignature Language="F#" Value="type AutomationProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AutomationProperties abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.AcceleratorKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AcceleratorKeyProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable AcceleratorKeyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.AcceleratorKeyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AcceleratorKeyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.AccessKeyProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AccessKeyProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable AccessKeyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.AccessKeyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AccessKeyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.AutomationIdProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutomationIdProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable AutomationIdProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.AutomationIdProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AutomationIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetAcceleratorKey(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAcceleratorKey (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetAcceleratorKey : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetAcceleratorKey element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAcceleratorKey(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetAccessKey(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAccessKey (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetAccessKey : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetAccessKey element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAccessKey(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetAutomationId(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAutomationId (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetAutomationId : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetAutomationId element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAutomationId(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetHelpText(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHelpText (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetHelpText : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetHelpText element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetHelpText(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsColumnHeader(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsColumnHeader (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsColumnHeader : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Automation.AutomationProperties.GetIsColumnHeader element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsColumnHeader(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsOffscreenBehavior(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsOffscreenBehavior (element As DependencyObject) As IsOffscreenBehavior" />
       <MemberSignature Language="F#" Value="static member GetIsOffscreenBehavior : System.Windows.DependencyObject -&gt; System.Windows.Automation.IsOffscreenBehavior" Usage="System.Windows.Automation.AutomationProperties.GetIsOffscreenBehavior element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::IsOffscreenBehavior GetIsOffscreenBehavior(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsRequiredForForm(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsRequiredForForm (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsRequiredForForm : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Automation.AutomationProperties.GetIsRequiredForForm element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsRequiredForForm(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -304,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsRowHeader(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsRowHeader (element As DependencyObject) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetIsRowHeader : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Automation.AutomationProperties.GetIsRowHeader element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsRowHeader(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -328,6 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetItemStatus(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetItemStatus (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetItemStatus : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetItemStatus element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetItemStatus(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -352,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetItemType(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetItemType (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetItemType : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetItemType element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetItemType(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -376,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetLabeledBy(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLabeledBy (element As DependencyObject) As UIElement" />
       <MemberSignature Language="F#" Value="static member GetLabeledBy : System.Windows.DependencyObject -&gt; System.Windows.UIElement" Usage="System.Windows.Automation.AutomationProperties.GetLabeledBy element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::UIElement ^ GetLabeledBy(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -401,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetLiveSetting(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLiveSetting (element As DependencyObject) As AutomationLiveSetting" />
       <MemberSignature Language="F#" Value="static member GetLiveSetting : System.Windows.DependencyObject -&gt; System.Windows.Automation.AutomationLiveSetting" Usage="System.Windows.Automation.AutomationProperties.GetLiveSetting element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::AutomationLiveSetting GetLiveSetting(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetName(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetName (element As DependencyObject) As String" />
       <MemberSignature Language="F#" Value="static member GetName : System.Windows.DependencyObject -&gt; string" Usage="System.Windows.Automation.AutomationProperties.GetName element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetName(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -468,6 +485,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.HelpTextProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HelpTextProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable HelpTextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.HelpTextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HelpTextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -503,6 +521,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsColumnHeaderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsColumnHeaderProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsColumnHeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.IsColumnHeaderProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsColumnHeaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -538,6 +557,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsOffscreenBehaviorProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOffscreenBehaviorProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsOffscreenBehaviorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.IsOffscreenBehaviorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOffscreenBehaviorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -573,6 +593,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsRequiredForFormProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRequiredForFormProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsRequiredForFormProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.IsRequiredForFormProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsRequiredForFormProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -608,6 +629,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsRowHeaderProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsRowHeaderProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable IsRowHeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.IsRowHeaderProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsRowHeaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -643,6 +665,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.ItemStatusProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemStatusProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ItemStatusProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.ItemStatusProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemStatusProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -678,6 +701,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.ItemTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTypeProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ItemTypeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.ItemTypeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemTypeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -713,6 +737,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.LabeledByProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabeledByProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LabeledByProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.LabeledByProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabeledByProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -748,6 +773,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.LiveSettingProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LiveSettingProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable LiveSettingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.LiveSettingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LiveSettingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -783,6 +809,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.NameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable NameProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.NameProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -802,6 +829,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetAcceleratorKey(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAcceleratorKey (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetAcceleratorKey : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetAcceleratorKey (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAcceleratorKey(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -827,6 +855,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetAccessKey(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAccessKey (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetAccessKey : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetAccessKey (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAccessKey(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -852,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetAutomationId(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAutomationId (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetAutomationId : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetAutomationId (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAutomationId(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -877,6 +907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetHelpText(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHelpText (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetHelpText : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetHelpText (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHelpText(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -902,6 +933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsColumnHeader(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsColumnHeader (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsColumnHeader : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetIsColumnHeader (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsColumnHeader(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -927,6 +959,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsOffscreenBehavior(System.Windows.DependencyObject,System.Windows.Automation.IsOffscreenBehavior)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsOffscreenBehavior (element As DependencyObject, value As IsOffscreenBehavior)" />
       <MemberSignature Language="F#" Value="static member SetIsOffscreenBehavior : System.Windows.DependencyObject * System.Windows.Automation.IsOffscreenBehavior -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetIsOffscreenBehavior (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsOffscreenBehavior(System::Windows::DependencyObject ^ element, System::Windows::Automation::IsOffscreenBehavior value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -952,6 +985,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsRequiredForForm(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsRequiredForForm (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsRequiredForForm : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetIsRequiredForForm (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsRequiredForForm(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -978,6 +1012,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsRowHeader(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsRowHeader (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetIsRowHeader : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetIsRowHeader (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsRowHeader(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1003,6 +1038,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetItemStatus(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetItemStatus (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetItemStatus : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetItemStatus (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetItemStatus(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1028,6 +1064,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetItemType(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetItemType (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetItemType : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetItemType (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetItemType(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1053,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetLabeledBy(System.Windows.DependencyObject,System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLabeledBy (element As DependencyObject, value As UIElement)" />
       <MemberSignature Language="F#" Value="static member SetLabeledBy : System.Windows.DependencyObject * System.Windows.UIElement -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetLabeledBy (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLabeledBy(System::Windows::DependencyObject ^ element, System::Windows::UIElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1078,6 +1116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetLiveSetting(System.Windows.DependencyObject,System.Windows.Automation.AutomationLiveSetting)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLiveSetting (element As DependencyObject, value As AutomationLiveSetting)" />
       <MemberSignature Language="F#" Value="static member SetLiveSetting : System.Windows.DependencyObject * System.Windows.Automation.AutomationLiveSetting -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetLiveSetting (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLiveSetting(System::Windows::DependencyObject ^ element, System::Windows::Automation::AutomationLiveSetting value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1104,6 +1143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetName(System.Windows.DependencyObject,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetName (element As DependencyObject, value As String)" />
       <MemberSignature Language="F#" Value="static member SetName : System.Windows.DependencyObject * string -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetName (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetName(System::Windows::DependencyObject ^ element, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

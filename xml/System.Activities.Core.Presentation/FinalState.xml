@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.FinalState" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FinalState" />
   <TypeSignature Language="F#" Value="type FinalState = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FinalState sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.FinalState.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FinalState();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>

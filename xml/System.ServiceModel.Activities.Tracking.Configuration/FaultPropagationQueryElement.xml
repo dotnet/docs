@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultPropagationQueryElement&#xA;Inherits TrackingQueryElement" />
   <TypeSignature Language="F#" Value="type FaultPropagationQueryElement = class&#xA;    inherit TrackingQueryElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultPropagationQueryElement : System::ServiceModel::Activities::Tracking::Configuration::TrackingQueryElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultPropagationQueryElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.FaultHandlerActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultHandlerActivityName As String" />
       <MemberSignature Language="F#" Value="member this.FaultHandlerActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.FaultHandlerActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultHandlerActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.FaultSourceActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property FaultSourceActivityName As String" />
       <MemberSignature Language="F#" Value="member this.FaultSourceActivityName : string with get, set" Usage="System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.FaultSourceActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FaultSourceActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.NewTrackingQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewTrackingQuery () As TrackingQuery" />
       <MemberSignature Language="F#" Value="override this.NewTrackingQuery : unit -&gt; System.Activities.Tracking.TrackingQuery" Usage="faultPropagationQueryElement.NewTrackingQuery " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Tracking::TrackingQuery ^ NewTrackingQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -130,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

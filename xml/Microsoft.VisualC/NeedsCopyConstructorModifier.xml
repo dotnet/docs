@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.NeedsCopyConstructorModifier" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NeedsCopyConstructorModifier" />
   <TypeSignature Language="F#" Value="type NeedsCopyConstructorModifier = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NeedsCopyConstructorModifier sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.NeedsCopyConstructorModifier.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NeedsCopyConstructorModifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>

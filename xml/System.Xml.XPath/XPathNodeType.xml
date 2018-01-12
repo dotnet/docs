@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNodeType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XPathNodeType" />
   <TypeSignature Language="F#" Value="type XPathNodeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XPathNodeType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.All" />
       <MemberSignature Language="VB.NET" Value="All" />
       <MemberSignature Language="F#" Value="All = 9" Usage="System.Xml.XPath.XPathNodeType.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Attribute" />
       <MemberSignature Language="VB.NET" Value="Attribute" />
       <MemberSignature Language="F#" Value="Attribute = 2" Usage="System.Xml.XPath.XPathNodeType.Attribute" />
+      <MemberSignature Language="C++ CLI" Value="Attribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Comment" />
       <MemberSignature Language="VB.NET" Value="Comment" />
       <MemberSignature Language="F#" Value="Comment = 8" Usage="System.Xml.XPath.XPathNodeType.Comment" />
+      <MemberSignature Language="C++ CLI" Value="Comment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Element" />
       <MemberSignature Language="VB.NET" Value="Element" />
       <MemberSignature Language="F#" Value="Element = 1" Usage="System.Xml.XPath.XPathNodeType.Element" />
+      <MemberSignature Language="C++ CLI" Value="Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Namespace" />
       <MemberSignature Language="VB.NET" Value="Namespace" />
       <MemberSignature Language="F#" Value="Namespace = 3" Usage="System.Xml.XPath.XPathNodeType.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="Namespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.ProcessingInstruction" />
       <MemberSignature Language="VB.NET" Value="ProcessingInstruction" />
       <MemberSignature Language="F#" Value="ProcessingInstruction = 7" Usage="System.Xml.XPath.XPathNodeType.ProcessingInstruction" />
+      <MemberSignature Language="C++ CLI" Value="ProcessingInstruction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Root" />
       <MemberSignature Language="VB.NET" Value="Root" />
       <MemberSignature Language="F#" Value="Root = 0" Usage="System.Xml.XPath.XPathNodeType.Root" />
+      <MemberSignature Language="C++ CLI" Value="Root" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.SignificantWhitespace" />
       <MemberSignature Language="VB.NET" Value="SignificantWhitespace" />
       <MemberSignature Language="F#" Value="SignificantWhitespace = 5" Usage="System.Xml.XPath.XPathNodeType.SignificantWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="SignificantWhitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Text" />
       <MemberSignature Language="VB.NET" Value="Text" />
       <MemberSignature Language="F#" Value="Text = 4" Usage="System.Xml.XPath.XPathNodeType.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -323,6 +333,7 @@
       <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNodeType.Whitespace" />
       <MemberSignature Language="VB.NET" Value="Whitespace" />
       <MemberSignature Language="F#" Value="Whitespace = 6" Usage="System.Xml.XPath.XPathNodeType.Whitespace" />
+      <MemberSignature Language="C++ CLI" Value="Whitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>

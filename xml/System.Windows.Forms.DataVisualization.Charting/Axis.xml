@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Axis" />
   <TypeSignature Language="VB.NET" Value="Public Class Axis&#xA;Inherits ChartNamedElement" />
   <TypeSignature Language="F#" Value="type Axis = class&#xA;    inherit ChartNamedElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Axis : System::Windows::Forms::DataVisualization::Charting::ChartNamedElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +68,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Axis();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -83,6 +85,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, valuetype System.Windows.Forms.DataVisualization.Charting.AxisName axisTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.#ctor(System.Windows.Forms.DataVisualization.Charting.ChartArea,System.Windows.Forms.DataVisualization.Charting.AxisName)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.Axis : System.Windows.Forms.DataVisualization.Charting.ChartArea * System.Windows.Forms.DataVisualization.Charting.AxisName -&gt; System.Windows.Forms.DataVisualization.Charting.Axis" Usage="new System.Windows.Forms.DataVisualization.Charting.Axis (chartArea, axisTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Axis(System::Windows::Forms::DataVisualization::Charting::ChartArea ^ chartArea, System::Windows::Forms::DataVisualization::Charting::AxisName axisTypeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ArrowStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ArrowStyle As AxisArrowStyle" />
       <MemberSignature Language="F#" Value="member this.ArrowStyle : System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.ArrowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::AxisArrowStyle ArrowStyle { System::Windows::Forms::DataVisualization::Charting::AxisArrowStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::AxisArrowStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AxisName As AxisName" />
       <MemberSignature Language="F#" Value="member this.AxisName : System.Windows.Forms.DataVisualization.Charting.AxisName" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.AxisName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::AxisName AxisName { System::Windows::Forms::DataVisualization::Charting::AxisName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Crossing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Crossing As Double" />
       <MemberSignature Language="F#" Value="member this.Crossing : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Crossing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double Crossing { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -223,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomLabels As CustomLabelsCollection" />
       <MemberSignature Language="F#" Value="member this.CustomLabels : System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::CustomLabelsCollection ^ CustomLabels { System::Windows::Forms::DataVisualization::Charting::CustomLabelsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -265,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="axis.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -289,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As AxisEnabled" />
       <MemberSignature Language="F#" Value="member this.Enabled : System.Windows.Forms.DataVisualization.Charting.AxisEnabled with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::AxisEnabled Enabled { System::Windows::Forms::DataVisualization::Charting::AxisEnabled get(); void set(System::Windows::Forms::DataVisualization::Charting::AxisEnabled value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -334,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.GetPosition(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (axisValue As Double) As Double" />
       <MemberSignature Language="F#" Value="member this.GetPosition : double -&gt; double" Usage="axis.GetPosition axisValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetPosition(double axisValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -358,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.InterlacedColor" />
       <MemberSignature Language="VB.NET" Value="Public Property InterlacedColor As Color" />
       <MemberSignature Language="F#" Value="member this.InterlacedColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.InterlacedColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color InterlacedColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -404,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
       <MemberSignature Language="F#" Value="member this.Interval : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Interval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -453,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalAutoMode As IntervalAutoMode" />
       <MemberSignature Language="F#" Value="member this.IntervalAutoMode : System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::IntervalAutoMode IntervalAutoMode { System::Windows::Forms::DataVisualization::Charting::IntervalAutoMode get(); void set(System::Windows::Forms::DataVisualization::Charting::IntervalAutoMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -485,6 +498,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalOffset As Double" />
       <MemberSignature Language="F#" Value="member this.IntervalOffset : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double IntervalOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -534,6 +548,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalOffsetType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.IntervalOffsetType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType IntervalOffsetType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -579,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalType" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.IntervalType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType IntervalType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -626,6 +642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsInterlaced" />
       <MemberSignature Language="VB.NET" Value="Public Property IsInterlaced As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInterlaced : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsInterlaced" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInterlaced { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -658,6 +675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLabelAutoFit As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLabelAutoFit : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLabelAutoFit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -693,6 +711,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsLogarithmic" />
       <MemberSignature Language="VB.NET" Value="Public Property IsLogarithmic As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsLogarithmic : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsLogarithmic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLogarithmic { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -725,6 +744,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsMarginVisible" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMarginVisible As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMarginVisible : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsMarginVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMarginVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -757,6 +777,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsMarksNextToAxis" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsMarksNextToAxis As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsMarksNextToAxis : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsMarksNextToAxis" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMarksNextToAxis { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -789,6 +810,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsReversed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReversed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReversed : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsReversed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReversed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -828,6 +850,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsStartedFromZero" />
       <MemberSignature Language="VB.NET" Value="Public Property IsStartedFromZero As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsStartedFromZero : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.IsStartedFromZero" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStartedFromZero { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -860,6 +883,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitMaxFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelAutoFitMaxFontSize As Integer" />
       <MemberSignature Language="F#" Value="member this.LabelAutoFitMaxFontSize : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitMaxFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LabelAutoFitMaxFontSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -901,6 +925,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitMinFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelAutoFitMinFontSize As Integer" />
       <MemberSignature Language="F#" Value="member this.LabelAutoFitMinFontSize : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitMinFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LabelAutoFitMinFontSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -935,6 +960,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelAutoFitStyle As LabelAutoFitStyles" />
       <MemberSignature Language="F#" Value="member this.LabelAutoFitStyle : System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::LabelAutoFitStyles LabelAutoFitStyle { System::Windows::Forms::DataVisualization::Charting::LabelAutoFitStyles get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelAutoFitStyles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -976,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LabelStyle As LabelStyle" />
       <MemberSignature Language="F#" Value="member this.LabelStyle : System.Windows.Forms.DataVisualization.Charting.LabelStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LabelStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::LabelStyle ^ LabelStyle { System::Windows::Forms::DataVisualization::Charting::LabelStyle ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1021,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor" />
       <MemberSignature Language="VB.NET" Value="Public Property LineColor As Color" />
       <MemberSignature Language="F#" Value="member this.LineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LineColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1067,6 +1095,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LineDashStyle As ChartDashStyle" />
       <MemberSignature Language="F#" Value="member this.LineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LineDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle LineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1107,6 +1136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property LineWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.LineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LineWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1147,6 +1177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LogarithmBase" />
       <MemberSignature Language="VB.NET" Value="Public Property LogarithmBase As Double" />
       <MemberSignature Language="F#" Value="member this.LogarithmBase : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.LogarithmBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LogarithmBase { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1187,6 +1218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MajorGrid" />
       <MemberSignature Language="VB.NET" Value="Public Property MajorGrid As Grid" />
       <MemberSignature Language="F#" Value="member this.MajorGrid : System.Windows.Forms.DataVisualization.Charting.Grid with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.MajorGrid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Grid ^ MajorGrid { System::Windows::Forms::DataVisualization::Charting::Grid ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Grid ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1230,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MajorTickMark" />
       <MemberSignature Language="VB.NET" Value="Public Property MajorTickMark As TickMark" />
       <MemberSignature Language="F#" Value="member this.MajorTickMark : System.Windows.Forms.DataVisualization.Charting.TickMark with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.MajorTickMark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::TickMark ^ MajorTickMark { System::Windows::Forms::DataVisualization::Charting::TickMark ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::TickMark ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1273,6 +1306,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
       <MemberSignature Language="F#" Value="member this.Maximum : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Maximum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1314,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MaximumAutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumAutoSize As Single" />
       <MemberSignature Language="F#" Value="member this.MaximumAutoSize : single with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.MaximumAutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MaximumAutoSize { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1339,6 +1374,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
       <MemberSignature Language="F#" Value="member this.Minimum : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1382,6 +1418,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MinorGrid" />
       <MemberSignature Language="VB.NET" Value="Public Property MinorGrid As Grid" />
       <MemberSignature Language="F#" Value="member this.MinorGrid : System.Windows.Forms.DataVisualization.Charting.Grid with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.MinorGrid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Grid ^ MinorGrid { System::Windows::Forms::DataVisualization::Charting::Grid ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Grid ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1425,6 +1462,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MinorTickMark" />
       <MemberSignature Language="VB.NET" Value="Public Property MinorTickMark As TickMark" />
       <MemberSignature Language="F#" Value="member this.MinorTickMark : System.Windows.Forms.DataVisualization.Charting.TickMark with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.MinorTickMark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::TickMark ^ MinorTickMark { System::Windows::Forms::DataVisualization::Charting::TickMark ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::TickMark ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1468,6 +1506,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1502,6 +1541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.PixelPositionToValue(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function PixelPositionToValue (position As Double) As Double" />
       <MemberSignature Language="F#" Value="member this.PixelPositionToValue : double -&gt; double" Usage="axis.PixelPositionToValue position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double PixelPositionToValue(double position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1526,6 +1566,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.PositionToValue(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function PositionToValue (position As Double) As Double" />
       <MemberSignature Language="F#" Value="member this.PositionToValue : double -&gt; double" Usage="axis.PositionToValue position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double PositionToValue(double position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1550,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues" />
       <MemberSignature Language="VB.NET" Value="Public Sub RoundAxisValues ()" />
       <MemberSignature Language="F#" Value="member this.RoundAxisValues : unit -&gt; unit" Usage="axis.RoundAxisValues " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RoundAxisValues();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1577,6 +1619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleBreakStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ScaleBreakStyle As AxisScaleBreakStyle" />
       <MemberSignature Language="F#" Value="member this.ScaleBreakStyle : System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.ScaleBreakStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::AxisScaleBreakStyle ^ ScaleBreakStyle { System::Windows::Forms::DataVisualization::Charting::AxisScaleBreakStyle ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::AxisScaleBreakStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1608,6 +1651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleView As AxisScaleView" />
       <MemberSignature Language="F#" Value="member this.ScaleView : System.Windows.Forms.DataVisualization.Charting.AxisScaleView with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::AxisScaleView ^ ScaleView { System::Windows::Forms::DataVisualization::Charting::AxisScaleView ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::AxisScaleView ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1639,6 +1683,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ScrollBar" />
       <MemberSignature Language="VB.NET" Value="Public Property ScrollBar As AxisScrollBar" />
       <MemberSignature Language="F#" Value="member this.ScrollBar : System.Windows.Forms.DataVisualization.Charting.AxisScrollBar with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.ScrollBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::AxisScrollBar ^ ScrollBar { System::Windows::Forms::DataVisualization::Charting::AxisScrollBar ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::AxisScrollBar ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1679,6 +1724,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.StripLines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StripLines As StripLinesCollection" />
       <MemberSignature Language="F#" Value="member this.StripLines : System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.StripLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::StripLinesCollection ^ StripLines { System::Windows::Forms::DataVisualization::Charting::StripLinesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1719,6 +1765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TextOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Property TextOrientation As TextOrientation" />
       <MemberSignature Language="F#" Value="member this.TextOrientation : System.Windows.Forms.DataVisualization.Charting.TextOrientation with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.TextOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::TextOrientation TextOrientation { System::Windows::Forms::DataVisualization::Charting::TextOrientation get(); void set(System::Windows::Forms::DataVisualization::Charting::TextOrientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1750,6 +1797,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1792,6 +1840,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TitleAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TitleAlignment As StringAlignment" />
       <MemberSignature Language="F#" Value="member this.TitleAlignment : System.Drawing.StringAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.TitleAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::StringAlignment TitleAlignment { System::Drawing::StringAlignment get(); void set(System::Drawing::StringAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1834,6 +1883,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TitleFont" />
       <MemberSignature Language="VB.NET" Value="Public Property TitleFont As Font" />
       <MemberSignature Language="F#" Value="member this.TitleFont : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.TitleFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ TitleFont { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1874,6 +1924,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TitleForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property TitleForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.TitleForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.TitleForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color TitleForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1920,6 +1971,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
       <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Axis.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1948,6 +2000,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPixelPosition(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueToPixelPosition (axisValue As Double) As Double" />
       <MemberSignature Language="F#" Value="member this.ValueToPixelPosition : double -&gt; double" Usage="axis.ValueToPixelPosition axisValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double ValueToPixelPosition(double axisValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1972,6 +2025,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPosition(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValueToPosition (axisValue As Double) As Double" />
       <MemberSignature Language="F#" Value="member this.ValueToPosition : double -&gt; double" Usage="axis.ValueToPosition axisValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double ValueToPosition(double axisValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingSource" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingSource&#xA;Inherits Component&#xA;Implements IBindingListView, ICancelAddNew, ICurrencyManagerProvider, IList, ISupportInitializeNotification, ITypedList" />
   <TypeSignature Language="F#" Value="type BindingSource = class&#xA;    inherit Component&#xA;    interface IBindingListView&#xA;    interface IBindingList&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ITypedList&#xA;    interface ICancelAddNew&#xA;    interface ISupportInitializeNotification&#xA;    interface ISupportInitialize&#xA;    interface ICurrencyManagerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingSource : System::ComponentModel::Component, System::Collections::IList, System::ComponentModel::IBindingListView, System::ComponentModel::ICancelAddNew, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList, System::Windows::Forms::ICurrencyManagerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.#ctor(System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (container As IContainer)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingSource : System.ComponentModel.IContainer -&gt; System.Windows.Forms.BindingSource" Usage="new System.Windows.Forms.BindingSource container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingSource(System::ComponentModel::IContainer ^ container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.#ctor(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataSource As Object, dataMember As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.BindingSource : obj * string -&gt; System.Windows.Forms.BindingSource" Usage="new System.Windows.Forms.BindingSource (dataSource, dataMember)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingSource(System::Object ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; int&#xA;override this.Add : obj -&gt; int" Usage="bindingSource.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -244,6 +249,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.AddingNew" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AddingNew As AddingNewEventHandler " />
       <MemberSignature Language="F#" Value="member this.AddingNew : System.ComponentModel.AddingNewEventHandler " Usage="member this.AddingNew : System.ComponentModel.AddingNewEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::AddingNewEventHandler ^ AddingNew;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -286,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.AddNew" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AddNew () As Object" />
       <MemberSignature Language="F#" Value="abstract member AddNew : unit -&gt; obj&#xA;override this.AddNew : unit -&gt; obj" Usage="bindingSource.AddNew " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ AddNew();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingList.AddNew</InterfaceMember>
@@ -346,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.AllowEdit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowEdit As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowEdit : bool" Usage="System.Windows.Forms.BindingSource.AllowEdit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowEdit { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.AllowEdit</InterfaceMember>
@@ -382,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.AllowNew" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowNew As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowNew : bool with get, set" Usage="System.Windows.Forms.BindingSource.AllowNew" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowNew { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -442,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.AllowRemove" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowRemove As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowRemove : bool" Usage="System.Windows.Forms.BindingSource.AllowRemove" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowRemove { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.AllowRemove</InterfaceMember>
@@ -487,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ApplySort(System.ComponentModel.ListSortDescriptionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplySort (sorts As ListSortDescriptionCollection)" />
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit&#xA;override this.ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit" Usage="bindingSource.ApplySort sorts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplySort(System::ComponentModel::ListSortDescriptionCollection ^ sorts);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingListView.ApplySort(System.ComponentModel.ListSortDescriptionCollection)</InterfaceMember>
@@ -526,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ApplySort (property As PropertyDescriptor, sort As ListSortDirection)" />
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit&#xA;override this.ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit" Usage="bindingSource.ApplySort (property, sort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection sort);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)</InterfaceMember>
@@ -567,6 +579,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.BindingComplete" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BindingComplete As BindingCompleteEventHandler " />
       <MemberSignature Language="F#" Value="member this.BindingComplete : System.Windows.Forms.BindingCompleteEventHandler " Usage="member this.BindingComplete : System.Windows.Forms.BindingCompleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::BindingCompleteEventHandler ^ BindingComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -606,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.CancelEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
       <MemberSignature Language="F#" Value="member this.CancelEdit : unit -&gt; unit" Usage="bindingSource.CancelEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -642,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="bindingSource.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -677,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="bindingSource.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -723,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyTo (arr As Array, index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="bindingSource.CopyTo (arr, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ arr, int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -758,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.BindingSource.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -804,6 +822,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.CurrencyManager" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrencyManager As CurrencyManager" />
       <MemberSignature Language="F#" Value="member this.CurrencyManager : System.Windows.Forms.CurrencyManager" Usage="System.Windows.Forms.BindingSource.CurrencyManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::CurrencyManager ^ CurrencyManager { System::Windows::Forms::CurrencyManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager</InterfaceMember>
@@ -839,6 +858,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Object" />
       <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.Windows.Forms.BindingSource.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -884,6 +904,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.CurrentChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CurrentChanged : EventHandler " Usage="member this.CurrentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -930,6 +951,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.CurrentItemChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CurrentItemChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.CurrentItemChanged : EventHandler " Usage="member this.CurrentItemChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CurrentItemChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -963,6 +985,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.DataError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataError As BindingManagerDataErrorEventHandler " />
       <MemberSignature Language="F#" Value="member this.DataError : System.Windows.Forms.BindingManagerDataErrorEventHandler " Usage="member this.DataError : System.Windows.Forms.BindingManagerDataErrorEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::BindingManagerDataErrorEventHandler ^ DataError;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -991,6 +1014,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.DataMember" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMember As String" />
       <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Windows.Forms.BindingSource.DataMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1034,6 +1058,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.DataMemberChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataMemberChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DataMemberChanged : EventHandler " Usage="member this.DataMemberChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataMemberChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1065,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
       <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Windows.Forms.BindingSource.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1133,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1164,6 +1191,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="bindingSource.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1203,6 +1231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.EndEdit" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndEdit ()" />
       <MemberSignature Language="F#" Value="member this.EndEdit : unit -&gt; unit" Usage="bindingSource.EndEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1238,6 +1267,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Filter As String" />
       <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Windows.Forms.BindingSource.Filter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingListView.Filter</InterfaceMember>
@@ -1301,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Find (prop As PropertyDescriptor, key As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int&#xA;override this.Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int" Usage="bindingSource.Find (prop, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Find(System::ComponentModel::PropertyDescriptor ^ prop, System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)</InterfaceMember>
@@ -1354,6 +1385,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Find(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (propertyName As String, key As Object) As Integer" />
       <MemberSignature Language="F#" Value="member this.Find : string * obj -&gt; int" Usage="bindingSource.Find (propertyName, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Find(System::String ^ propertyName, System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1400,6 +1432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="bindingSource.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1424,6 +1457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItemProperties (listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection" />
       <MemberSignature Language="F#" Value="abstract member GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="bindingSource.GetItemProperties listAccessors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
@@ -1452,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetListName(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetListName (listAccessors As PropertyDescriptor()) As String" />
       <MemberSignature Language="F#" Value="abstract member GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string&#xA;override this.GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string" Usage="bindingSource.GetListName listAccessors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
@@ -1480,6 +1515,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetRelatedCurrencyManager(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRelatedCurrencyManager (dataMember As String) As CurrencyManager" />
       <MemberSignature Language="F#" Value="abstract member GetRelatedCurrencyManager : string -&gt; System.Windows.Forms.CurrencyManager&#xA;override this.GetRelatedCurrencyManager : string -&gt; System.Windows.Forms.CurrencyManager" Usage="bindingSource.GetRelatedCurrencyManager dataMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::CurrencyManager ^ GetRelatedCurrencyManager(System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Forms.ICurrencyManagerProvider.GetRelatedCurrencyManager(System.String)</InterfaceMember>
@@ -1514,6 +1550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member IndexOf : obj -&gt; int&#xA;override this.IndexOf : obj -&gt; int" Usage="bindingSource.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -1560,6 +1597,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (index As Integer, value As Object)" />
       <MemberSignature Language="F#" Value="abstract member Insert : int * obj -&gt; unit&#xA;override this.Insert : int * obj -&gt; unit" Usage="bindingSource.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -1604,6 +1642,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsBindingSuspended" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBindingSuspended As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsBindingSuspended : bool" Usage="System.Windows.Forms.BindingSource.IsBindingSuspended" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBindingSuspended { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1630,6 +1669,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Forms.BindingSource.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1666,6 +1706,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.BindingSource.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1702,6 +1743,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsSorted" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSorted As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSorted : bool" Usage="System.Windows.Forms.BindingSource.IsSorted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSorted { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.IsSorted</InterfaceMember>
@@ -1738,6 +1780,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Forms.BindingSource.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1767,6 +1810,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As Object" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Windows.Forms.BindingSource.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1812,6 +1856,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.List" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property List As IList" />
       <MemberSignature Language="F#" Value="member this.List : System.Collections.IList" Usage="System.Windows.Forms.BindingSource.List" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ List { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1872,6 +1917,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.ListChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ListChanged As ListChangedEventHandler " />
       <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.IBindingList.ListChanged</InterfaceMember>
@@ -1918,6 +1964,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MoveFirst" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveFirst ()" />
       <MemberSignature Language="F#" Value="member this.MoveFirst : unit -&gt; unit" Usage="bindingSource.MoveFirst " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveFirst();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1961,6 +2008,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MoveLast" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveLast ()" />
       <MemberSignature Language="F#" Value="member this.MoveLast : unit -&gt; unit" Usage="bindingSource.MoveLast " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveLast();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1995,6 +2043,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveNext ()" />
       <MemberSignature Language="F#" Value="member this.MoveNext : unit -&gt; unit" Usage="bindingSource.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2038,6 +2087,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MovePrevious" />
       <MemberSignature Language="VB.NET" Value="Public Sub MovePrevious ()" />
       <MemberSignature Language="F#" Value="member this.MovePrevious : unit -&gt; unit" Usage="bindingSource.MovePrevious " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MovePrevious();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2072,6 +2122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAddingNew (e As AddingNewEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnAddingNew : System.ComponentModel.AddingNewEventArgs -&gt; unit&#xA;override this.OnAddingNew : System.ComponentModel.AddingNewEventArgs -&gt; unit" Usage="bindingSource.OnAddingNew e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAddingNew(System::ComponentModel::AddingNewEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2110,6 +2161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBindingComplete (e As BindingCompleteEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnBindingComplete : System.Windows.Forms.BindingCompleteEventArgs -&gt; unit&#xA;override this.OnBindingComplete : System.Windows.Forms.BindingCompleteEventArgs -&gt; unit" Usage="bindingSource.OnBindingComplete e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBindingComplete(System::Windows::Forms::BindingCompleteEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2145,6 +2197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCurrentChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnCurrentChanged : EventArgs -&gt; unit&#xA;override this.OnCurrentChanged : EventArgs -&gt; unit" Usage="bindingSource.OnCurrentChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCurrentChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2185,6 +2238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCurrentItemChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnCurrentItemChanged : EventArgs -&gt; unit&#xA;override this.OnCurrentItemChanged : EventArgs -&gt; unit" Usage="bindingSource.OnCurrentItemChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCurrentItemChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2223,6 +2277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnDataError(System.Windows.Forms.BindingManagerDataErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataError (e As BindingManagerDataErrorEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDataError : System.Windows.Forms.BindingManagerDataErrorEventArgs -&gt; unit&#xA;override this.OnDataError : System.Windows.Forms.BindingManagerDataErrorEventArgs -&gt; unit" Usage="bindingSource.OnDataError e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataError(System::Windows::Forms::BindingManagerDataErrorEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2258,6 +2313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataMemberChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDataMemberChanged : EventArgs -&gt; unit&#xA;override this.OnDataMemberChanged : EventArgs -&gt; unit" Usage="bindingSource.OnDataMemberChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataMemberChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2298,6 +2354,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnDataSourceChanged : EventArgs -&gt; unit&#xA;override this.OnDataSourceChanged : EventArgs -&gt; unit" Usage="bindingSource.OnDataSourceChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2336,6 +2393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnListChanged (e As ListChangedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnListChanged : System.ComponentModel.ListChangedEventArgs -&gt; unit&#xA;override this.OnListChanged : System.ComponentModel.ListChangedEventArgs -&gt; unit" Usage="bindingSource.OnListChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnListChanged(System::ComponentModel::ListChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2374,6 +2432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPositionChanged (e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPositionChanged : EventArgs -&gt; unit&#xA;override this.OnPositionChanged : EventArgs -&gt; unit" Usage="bindingSource.OnPositionChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPositionChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2412,6 +2471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As Integer" />
       <MemberSignature Language="F#" Value="member this.Position : int with get, set" Usage="System.Windows.Forms.BindingSource.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Position { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2465,6 +2525,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.PositionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PositionChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.PositionChanged : EventHandler " Usage="member this.PositionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PositionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2495,6 +2556,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.RaiseListChangedEvents" />
       <MemberSignature Language="VB.NET" Value="Public Property RaiseListChangedEvents As Boolean" />
       <MemberSignature Language="F#" Value="member this.RaiseListChangedEvents : bool with get, set" Usage="System.Windows.Forms.BindingSource.RaiseListChangedEvents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RaiseListChangedEvents { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2534,6 +2596,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (value As Object)" />
       <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="bindingSource.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -2578,6 +2641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="bindingSource.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -2633,6 +2697,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveCurrent ()" />
       <MemberSignature Language="F#" Value="member this.RemoveCurrent : unit -&gt; unit" Usage="bindingSource.RemoveCurrent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveCurrent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2671,6 +2736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveFilter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveFilter ()" />
       <MemberSignature Language="F#" Value="abstract member RemoveFilter : unit -&gt; unit&#xA;override this.RemoveFilter : unit -&gt; unit" Usage="bindingSource.RemoveFilter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveFilter();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingListView.RemoveFilter</InterfaceMember>
@@ -2705,6 +2771,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveSort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveSort ()" />
       <MemberSignature Language="F#" Value="abstract member RemoveSort : unit -&gt; unit&#xA;override this.RemoveSort : unit -&gt; unit" Usage="bindingSource.RemoveSort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSort();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveSort</InterfaceMember>
@@ -2739,6 +2806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetAllowNew" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetAllowNew ()" />
       <MemberSignature Language="F#" Value="abstract member ResetAllowNew : unit -&gt; unit&#xA;override this.ResetAllowNew : unit -&gt; unit" Usage="bindingSource.ResetAllowNew " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetAllowNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2772,6 +2840,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetBindings(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetBindings (metadataChanged As Boolean)" />
       <MemberSignature Language="F#" Value="member this.ResetBindings : bool -&gt; unit" Usage="bindingSource.ResetBindings metadataChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetBindings(bool metadataChanged);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2824,6 +2893,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetCurrentItem" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetCurrentItem ()" />
       <MemberSignature Language="F#" Value="member this.ResetCurrentItem : unit -&gt; unit" Usage="bindingSource.ResetCurrentItem " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCurrentItem();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2851,6 +2921,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetItem (itemIndex As Integer)" />
       <MemberSignature Language="F#" Value="member this.ResetItem : int -&gt; unit" Usage="bindingSource.ResetItem itemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetItem(int itemIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2896,6 +2967,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResumeBinding" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResumeBinding ()" />
       <MemberSignature Language="F#" Value="member this.ResumeBinding : unit -&gt; unit" Usage="bindingSource.ResumeBinding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResumeBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2927,6 +2999,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Property Sort As String" />
       <MemberSignature Language="F#" Value="member this.Sort : string with get, set" Usage="System.Windows.Forms.BindingSource.Sort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Sort { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2984,6 +3057,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SortDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortDescriptions As ListSortDescriptionCollection" />
       <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.ListSortDescriptionCollection" Usage="System.Windows.Forms.BindingSource.SortDescriptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ListSortDescriptionCollection ^ SortDescriptions { System::ComponentModel::ListSortDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingListView.SortDescriptions</InterfaceMember>
@@ -3024,6 +3098,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortDirection As ListSortDirection" />
       <MemberSignature Language="F#" Value="member this.SortDirection : System.ComponentModel.ListSortDirection" Usage="System.Windows.Forms.BindingSource.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ListSortDirection SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SortDirection</InterfaceMember>
@@ -3062,6 +3137,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SortProperty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SortProperty As PropertyDescriptor" />
       <MemberSignature Language="F#" Value="member this.SortProperty : System.ComponentModel.PropertyDescriptor" Usage="System.Windows.Forms.BindingSource.SortProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SortProperty</InterfaceMember>
@@ -3100,6 +3176,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsAdvancedSorting" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsAdvancedSorting As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsAdvancedSorting : bool" Usage="System.Windows.Forms.BindingSource.SupportsAdvancedSorting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAdvancedSorting { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsAdvancedSorting</InterfaceMember>
@@ -3136,6 +3213,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsChangeNotification" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsChangeNotification As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsChangeNotification : bool" Usage="System.Windows.Forms.BindingSource.SupportsChangeNotification" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsChangeNotification { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsChangeNotification</InterfaceMember>
@@ -3165,6 +3243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsFiltering" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsFiltering As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsFiltering : bool" Usage="System.Windows.Forms.BindingSource.SupportsFiltering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsFiltering { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsFiltering</InterfaceMember>
@@ -3201,6 +3280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsSearching" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsSearching As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsSearching : bool" Usage="System.Windows.Forms.BindingSource.SupportsSearching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSearching { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSearching</InterfaceMember>
@@ -3245,6 +3325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsSorting" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsSorting As Boolean" />
       <MemberSignature Language="F#" Value="member this.SupportsSorting : bool" Usage="System.Windows.Forms.BindingSource.SupportsSorting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSorting { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSorting</InterfaceMember>
@@ -3281,6 +3362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.SuspendBinding" />
       <MemberSignature Language="VB.NET" Value="Public Sub SuspendBinding ()" />
       <MemberSignature Language="F#" Value="member this.SuspendBinding : unit -&gt; unit" Usage="bindingSource.SuspendBinding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuspendBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3312,6 +3394,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Forms.BindingSource.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -3339,6 +3422,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.AddIndex(class System.ComponentModel.PropertyDescriptor property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#IBindingList#AddIndex(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Sub AddIndex (property As PropertyDescriptor) Implements IBindingList.AddIndex" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.AddIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::AddIndex;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
@@ -3372,6 +3456,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.RemoveIndex(class System.ComponentModel.PropertyDescriptor prop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveIndex (prop As PropertyDescriptor) Implements IBindingList.RemoveIndex" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveIndex(System::ComponentModel::PropertyDescriptor ^ prop) = System::ComponentModel::IBindingList::RemoveIndex;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
@@ -3404,6 +3489,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ICancelAddNew.CancelNew(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ICancelAddNew#CancelNew(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub CancelNew (position As Integer) Implements ICancelAddNew.CancelNew" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ICancelAddNew.CancelNew(int position) = System::ComponentModel::ICancelAddNew::CancelNew;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICancelAddNew.CancelNew(System.Int32)</InterfaceMember>
@@ -3437,6 +3523,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ICancelAddNew.EndNew(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ICancelAddNew#EndNew(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub EndNew (position As Integer) Implements ICancelAddNew.EndNew" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ICancelAddNew.EndNew(int position) = System::ComponentModel::ICancelAddNew::EndNew;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ICancelAddNew.EndNew(System.Int32)</InterfaceMember>
@@ -3470,6 +3557,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitialize#BeginInit" />
       <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
@@ -3492,6 +3580,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitialize#EndInit" />
       <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
@@ -3536,6 +3625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitializeNotification#IsInitialized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsInitialized As Boolean Implements ISupportInitializeNotification.IsInitialized" />
       <MemberSignature Language="F#" Usage="System.Windows.Forms.BindingSource.System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.ISupportInitializeNotification.IsInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ComponentModel.ISupportInitializeNotification.IsInitialized</InterfaceMember>

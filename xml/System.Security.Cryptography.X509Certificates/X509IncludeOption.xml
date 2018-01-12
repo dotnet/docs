@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509IncludeOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum X509IncludeOption" />
   <TypeSignature Language="F#" Value="type X509IncludeOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509IncludeOption" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.EndCertOnly" />
       <MemberSignature Language="VB.NET" Value="EndCertOnly" />
       <MemberSignature Language="F#" Value="EndCertOnly = 2" Usage="System.Security.Cryptography.X509Certificates.X509IncludeOption.EndCertOnly" />
+      <MemberSignature Language="C++ CLI" Value="EndCertOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.ExcludeRoot" />
       <MemberSignature Language="VB.NET" Value="ExcludeRoot" />
       <MemberSignature Language="F#" Value="ExcludeRoot = 1" Usage="System.Security.Cryptography.X509Certificates.X509IncludeOption.ExcludeRoot" />
+      <MemberSignature Language="C++ CLI" Value="ExcludeRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.X509Certificates.X509IncludeOption.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.WholeChain" />
       <MemberSignature Language="VB.NET" Value="WholeChain" />
       <MemberSignature Language="F#" Value="WholeChain = 3" Usage="System.Security.Cryptography.X509Certificates.X509IncludeOption.WholeChain" />
+      <MemberSignature Language="C++ CLI" Value="WholeChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

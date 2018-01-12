@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.SinglePhaseEnlistment" />
   <TypeSignature Language="VB.NET" Value="Public Class SinglePhaseEnlistment&#xA;Inherits Enlistment" />
   <TypeSignature Language="F#" Value="type SinglePhaseEnlistment = class&#xA;    inherit Enlistment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SinglePhaseEnlistment : System::Transactions::Enlistment" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.Aborted" />
       <MemberSignature Language="VB.NET" Value="Public Sub Aborted ()" />
       <MemberSignature Language="F#" Value="member this.Aborted : unit -&gt; unit" Usage="singlePhaseEnlistment.Aborted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Aborted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -95,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.Aborted(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Aborted (e As Exception)" />
       <MemberSignature Language="F#" Value="member this.Aborted : Exception -&gt; unit" Usage="singlePhaseEnlistment.Aborted e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Aborted(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.Committed" />
       <MemberSignature Language="VB.NET" Value="Public Sub Committed ()" />
       <MemberSignature Language="F#" Value="member this.Committed : unit -&gt; unit" Usage="singlePhaseEnlistment.Committed " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Committed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -173,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.InDoubt" />
       <MemberSignature Language="VB.NET" Value="Public Sub InDoubt ()" />
       <MemberSignature Language="F#" Value="member this.InDoubt : unit -&gt; unit" Usage="singlePhaseEnlistment.InDoubt " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InDoubt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -209,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Transactions.SinglePhaseEnlistment.InDoubt(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InDoubt (e As Exception)" />
       <MemberSignature Language="F#" Value="member this.InDoubt : Exception -&gt; unit" Usage="singlePhaseEnlistment.InDoubt e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InDoubt(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.FileAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileAttributes" />
   <TypeSignature Language="F#" Value="type FileAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -62,6 +63,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Archive" />
       <MemberSignature Language="VB.NET" Value="Archive" />
       <MemberSignature Language="F#" Value="Archive = 32" Usage="System.IO.FileAttributes.Archive" />
+      <MemberSignature Language="C++ CLI" Value="Archive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -94,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Compressed" />
       <MemberSignature Language="VB.NET" Value="Compressed" />
       <MemberSignature Language="F#" Value="Compressed = 2048" Usage="System.IO.FileAttributes.Compressed" />
+      <MemberSignature Language="C++ CLI" Value="Compressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -126,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Device" />
       <MemberSignature Language="VB.NET" Value="Device" />
       <MemberSignature Language="F#" Value="Device = 64" Usage="System.IO.FileAttributes.Device" />
+      <MemberSignature Language="C++ CLI" Value="Device" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -158,6 +162,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Directory" />
       <MemberSignature Language="VB.NET" Value="Directory" />
       <MemberSignature Language="F#" Value="Directory = 16" Usage="System.IO.FileAttributes.Directory" />
+      <MemberSignature Language="C++ CLI" Value="Directory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -190,6 +195,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Encrypted" />
       <MemberSignature Language="VB.NET" Value="Encrypted" />
       <MemberSignature Language="F#" Value="Encrypted = 16384" Usage="System.IO.FileAttributes.Encrypted" />
+      <MemberSignature Language="C++ CLI" Value="Encrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -222,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
       <MemberSignature Language="F#" Value="Hidden = 2" Usage="System.IO.FileAttributes.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -254,6 +261,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.IntegrityStream" />
       <MemberSignature Language="VB.NET" Value="IntegrityStream" />
       <MemberSignature Language="F#" Value="IntegrityStream = 32768" Usage="System.IO.FileAttributes.IntegrityStream" />
+      <MemberSignature Language="C++ CLI" Value="IntegrityStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -286,6 +294,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 128" Usage="System.IO.FileAttributes.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -318,6 +327,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.NoScrubData" />
       <MemberSignature Language="VB.NET" Value="NoScrubData" />
       <MemberSignature Language="F#" Value="NoScrubData = 131072" Usage="System.IO.FileAttributes.NoScrubData" />
+      <MemberSignature Language="C++ CLI" Value="NoScrubData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -350,6 +360,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.NotContentIndexed" />
       <MemberSignature Language="VB.NET" Value="NotContentIndexed" />
       <MemberSignature Language="F#" Value="NotContentIndexed = 8192" Usage="System.IO.FileAttributes.NotContentIndexed" />
+      <MemberSignature Language="C++ CLI" Value="NotContentIndexed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -382,6 +393,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Offline" />
       <MemberSignature Language="VB.NET" Value="Offline" />
       <MemberSignature Language="F#" Value="Offline = 4096" Usage="System.IO.FileAttributes.Offline" />
+      <MemberSignature Language="C++ CLI" Value="Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -414,6 +426,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
       <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.IO.FileAttributes.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -446,6 +459,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.ReparsePoint" />
       <MemberSignature Language="VB.NET" Value="ReparsePoint" />
       <MemberSignature Language="F#" Value="ReparsePoint = 1024" Usage="System.IO.FileAttributes.ReparsePoint" />
+      <MemberSignature Language="C++ CLI" Value="ReparsePoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -478,6 +492,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.SparseFile" />
       <MemberSignature Language="VB.NET" Value="SparseFile" />
       <MemberSignature Language="F#" Value="SparseFile = 512" Usage="System.IO.FileAttributes.SparseFile" />
+      <MemberSignature Language="C++ CLI" Value="SparseFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -510,6 +525,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="F#" Value="System = 4" Usage="System.IO.FileAttributes.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -542,6 +558,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Temporary" />
       <MemberSignature Language="VB.NET" Value="Temporary" />
       <MemberSignature Language="F#" Value="Temporary = 256" Usage="System.IO.FileAttributes.Temporary" />
+      <MemberSignature Language="C++ CLI" Value="Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>

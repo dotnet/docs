@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.TextReturnReader" />
   <TypeSignature Language="VB.NET" Value="Public Class TextReturnReader&#xA;Inherits MimeReturnReader" />
   <TypeSignature Language="F#" Value="type TextReturnReader = class&#xA;    inherit MimeReturnReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextReturnReader : System::Web::Services::Protocols::MimeReturnReader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextReturnReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
       <MemberSignature Language="F#" Value="override this.GetInitializer : System.Web.Services.Protocols.LogicalMethodInfo -&gt; obj" Usage="textReturnReader.GetInitializer methodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.Initialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (o As Object)" />
       <MemberSignature Language="F#" Value="override this.Initialize : obj -&gt; unit" Usage="textReturnReader.Initialize o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (response As WebResponse, responseStream As Stream) As Object" />
       <MemberSignature Language="F#" Value="override this.Read : System.Net.WebResponse * System.IO.Stream -&gt; obj" Usage="textReturnReader.Read (response, responseStream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Read(System::Net::WebResponse ^ response, System::IO::Stream ^ responseStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

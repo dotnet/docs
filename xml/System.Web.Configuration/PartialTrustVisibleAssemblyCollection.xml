@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PartialTrustVisibleAssemblyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PartialTrustVisibleAssemblyCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="F#" Value="type PartialTrustVisibleAssemblyCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PartialTrustVisibleAssemblyCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartialTrustVisibleAssemblyCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.PartialTrustVisibleAssembly partialTrustVisibleAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Add(System.Web.Configuration.PartialTrustVisibleAssembly)" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.PartialTrustVisibleAssembly -&gt; unit" Usage="partialTrustVisibleAssemblyCollection.Add partialTrustVisibleAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::PartialTrustVisibleAssembly ^ partialTrustVisibleAssembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="partialTrustVisibleAssemblyCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="partialTrustVisibleAssemblyCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="partialTrustVisibleAssemblyCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As PartialTrustVisibleAssembly" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.PartialTrustVisibleAssembly with get, set" Usage="System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::PartialTrustVisibleAssembly ^ default[int] { System::Web::Configuration::PartialTrustVisibleAssembly ^ get(int index); void set(int index, System::Web::Configuration::PartialTrustVisibleAssembly ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -184,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (key As String)" />
       <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="partialTrustVisibleAssemblyCollection.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssemblyCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="partialTrustVisibleAssemblyCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

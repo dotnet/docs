@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.TTestResult" />
   <TypeSignature Language="VB.NET" Value="Public Class TTestResult" />
   <TypeSignature Language="F#" Value="type TTestResult = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TTestResult" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.TTestResult.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TTestResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.DegreeOfFreedom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DegreeOfFreedom As Double" />
       <MemberSignature Language="F#" Value="member this.DegreeOfFreedom : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.DegreeOfFreedom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DegreeOfFreedom { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.FirstSeriesMean" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstSeriesMean As Double" />
       <MemberSignature Language="F#" Value="member this.FirstSeriesMean : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.FirstSeriesMean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FirstSeriesMean { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -79,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.FirstSeriesVariance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstSeriesVariance As Double" />
       <MemberSignature Language="F#" Value="member this.FirstSeriesVariance : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.FirstSeriesVariance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double FirstSeriesVariance { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -99,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.ProbabilityTOneTail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProbabilityTOneTail As Double" />
       <MemberSignature Language="F#" Value="member this.ProbabilityTOneTail : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.ProbabilityTOneTail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ProbabilityTOneTail { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -119,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.ProbabilityTTwoTail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProbabilityTTwoTail As Double" />
       <MemberSignature Language="F#" Value="member this.ProbabilityTTwoTail : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.ProbabilityTTwoTail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ProbabilityTTwoTail { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -139,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.SecondSeriesMean" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondSeriesMean As Double" />
       <MemberSignature Language="F#" Value="member this.SecondSeriesMean : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.SecondSeriesMean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SecondSeriesMean { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -159,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.SecondSeriesVariance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecondSeriesVariance As Double" />
       <MemberSignature Language="F#" Value="member this.SecondSeriesVariance : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.SecondSeriesVariance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SecondSeriesVariance { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.TCriticalValueOneTail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TCriticalValueOneTail As Double" />
       <MemberSignature Language="F#" Value="member this.TCriticalValueOneTail : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.TCriticalValueOneTail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TCriticalValueOneTail { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -199,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.TCriticalValueTwoTail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TCriticalValueTwoTail As Double" />
       <MemberSignature Language="F#" Value="member this.TCriticalValueTwoTail : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.TCriticalValueTwoTail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TCriticalValueTwoTail { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -219,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.TValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TValue As Double" />
       <MemberSignature Language="F#" Value="member this.TValue : double" Usage="System.Windows.Forms.DataVisualization.Charting.TTestResult.TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TValue { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

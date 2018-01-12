@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.XmlSerializerSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="F#" Value="type XmlSerializerSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.XmlSerializerSection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.CheckDeserializeAdvances" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckDeserializeAdvances As Boolean" />
       <MemberSignature Language="F#" Value="member this.CheckDeserializeAdvances : bool with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.CheckDeserializeAdvances" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckDeserializeAdvances { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -99,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.TempFilesLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property TempFilesLocation As String" />
       <MemberSignature Language="F#" Value="member this.TempFilesLocation : string with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.TempFilesLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TempFilesLocation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -124,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.XmlSerializerSection.UseLegacySerializerGeneration" />
       <MemberSignature Language="VB.NET" Value="Public Property UseLegacySerializerGeneration As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseLegacySerializerGeneration : bool with get, set" Usage="System.Xml.Serialization.Configuration.XmlSerializerSection.UseLegacySerializerGeneration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLegacySerializerGeneration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

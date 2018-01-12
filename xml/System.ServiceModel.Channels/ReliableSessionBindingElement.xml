@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ReliableSessionBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReliableSessionBindingElement&#xA;Inherits BindingElement&#xA;Implements IPolicyExportExtension" />
   <TypeSignature Language="F#" Value="type ReliableSessionBindingElement = class&#xA;    inherit BindingElement&#xA;    interface IPolicyExportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReliableSessionBindingElement sealed : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Description::IPolicyExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -74,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReliableSessionBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ordered As Boolean)" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ReliableSessionBindingElement : bool -&gt; System.ServiceModel.Channels.ReliableSessionBindingElement" Usage="new System.ServiceModel.Channels.ReliableSessionBindingElement ordered" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReliableSessionBindingElement(bool ordered);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.AcknowledgementInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property AcknowledgementInterval As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.AcknowledgementInterval : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.AcknowledgementInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AcknowledgementInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -145,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="reliableSessionBindingElement.BuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="reliableSessionBindingElement.BuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="reliableSessionBindingElement.CanBuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -274,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="reliableSessionBindingElement.CanBuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -317,6 +325,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="reliableSessionBindingElement.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -339,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowControlEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.FlowControlEnabled : bool with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FlowControlEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -368,6 +378,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="reliableSessionBindingElement.GetProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -401,6 +412,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.InactivityTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property InactivityTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.InactivityTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.InactivityTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan InactivityTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -432,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxPendingChannels" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingChannels As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxPendingChannels : int with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.MaxPendingChannels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingChannels { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -463,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxRetryCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxRetryCount As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxRetryCount : int with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.MaxRetryCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRetryCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -496,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTransferWindowSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxTransferWindowSize : int with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxTransferWindowSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -529,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.Ordered" />
       <MemberSignature Language="VB.NET" Value="Public Property Ordered As Boolean" />
       <MemberSignature Language="F#" Value="member this.Ordered : bool with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.Ordered" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Ordered { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -558,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReliableSessionBindingElement.ReliableMessagingVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property ReliableMessagingVersion As ReliableMessagingVersion" />
       <MemberSignature Language="F#" Value="member this.ReliableMessagingVersion : System.ServiceModel.ReliableMessagingVersion with get, set" Usage="System.ServiceModel.Channels.ReliableSessionBindingElement.ReliableMessagingVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ReliableMessagingVersion ^ ReliableMessagingVersion { System::ServiceModel::ReliableMessagingVersion ^ get(); void set(System::ServiceModel::ReliableMessagingVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -585,6 +602,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReliableSessionBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>

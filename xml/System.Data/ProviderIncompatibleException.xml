@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ProviderIncompatibleException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProviderIncompatibleException&#xA;Inherits EntityException" />
   <TypeSignature Language="F#" Value="type ProviderIncompatibleException = class&#xA;    inherit EntityException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProviderIncompatibleException sealed : System::Data::EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +47,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ProviderIncompatibleException.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderIncompatibleException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ProviderIncompatibleException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new System.Data.ProviderIncompatibleException : string -&gt; System.Data.ProviderIncompatibleException" Usage="new System.Data.ProviderIncompatibleException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderIncompatibleException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ProviderIncompatibleException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new System.Data.ProviderIncompatibleException : string * Exception -&gt; System.Data.ProviderIncompatibleException" Usage="new System.Data.ProviderIncompatibleException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderIncompatibleException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

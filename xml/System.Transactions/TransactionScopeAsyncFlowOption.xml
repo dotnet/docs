@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionScopeAsyncFlowOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum TransactionScopeAsyncFlowOption" />
   <TypeSignature Language="F#" Value="type TransactionScopeAsyncFlowOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TransactionScopeAsyncFlowOption" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeAsyncFlowOption.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Transactions.TransactionScopeAsyncFlowOption.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeAsyncFlowOption.Suppress" />
       <MemberSignature Language="VB.NET" Value="Suppress" />
       <MemberSignature Language="F#" Value="Suppress = 0" Usage="System.Transactions.TransactionScopeAsyncFlowOption.Suppress" />
+      <MemberSignature Language="C++ CLI" Value="Suppress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

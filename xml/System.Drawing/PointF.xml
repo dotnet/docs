@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.PointF" />
   <TypeSignature Language="VB.NET" Value="Public Structure PointF" />
   <TypeSignature Language="F#" Value="type PointF = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class PointF" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.#ctor(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single)" />
       <MemberSignature Language="F#" Value="new System.Drawing.PointF : single * single -&gt; System.Drawing.PointF" Usage="new System.Drawing.PointF (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PointF(float x, float y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Add(System.Drawing.PointF,System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (pt As PointF, sz As Size) As PointF" />
       <MemberSignature Language="F#" Value="static member Add : System.Drawing.PointF * System.Drawing.Size -&gt; System.Drawing.PointF" Usage="System.Drawing.PointF.Add (pt, sz)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Add(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Add(System.Drawing.PointF,System.Drawing.SizeF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (pt As PointF, sz As SizeF) As PointF" />
       <MemberSignature Language="F#" Value="static member Add : System.Drawing.PointF * System.Drawing.SizeF -&gt; System.Drawing.PointF" Usage="System.Drawing.PointF.Add (pt, sz)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Add(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -174,6 +178,7 @@
       <MemberSignature Language="DocId" Value="F:System.Drawing.PointF.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As PointF " />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Drawing.PointF" Usage="System.Drawing.PointF.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::PointF Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -202,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Equals(System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As PointF) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Drawing.PointF -&gt; bool" Usage="pointF.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::PointF other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -229,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="pointF.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -262,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="pointF.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -292,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.PointF.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Drawing.PointF.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pt As PointF, sz As Size) As PointF" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Drawing.PointF * System.Drawing.Size -&gt; System.Drawing.PointF" Usage="pt + sz" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator +(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -379,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.SizeF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pt As PointF, sz As SizeF) As PointF" />
       <MemberSignature Language="F#" Value="static member ( + ) : System.Drawing.PointF * System.Drawing.SizeF -&gt; System.Drawing.PointF" Usage="pt + sz" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator +(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -429,6 +440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Equality(System.Drawing.PointF,System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As PointF, right As PointF) As Boolean" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.PointF * System.Drawing.PointF -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::PointF left, System::Drawing::PointF right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -475,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Inequality(System.Drawing.PointF,System.Drawing.PointF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As PointF, right As PointF) As Boolean" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.PointF * System.Drawing.PointF -&gt; bool" Usage="System.Drawing.PointF.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::PointF left, System::Drawing::PointF right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -531,6 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pt As PointF, sz As Size) As PointF" />
       <MemberSignature Language="F#" Value="static member ( - ) : System.Drawing.PointF * System.Drawing.Size -&gt; System.Drawing.PointF" Usage="pt - sz" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator -(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -566,6 +580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.SizeF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pt As PointF, sz As SizeF) As PointF" />
       <MemberSignature Language="F#" Value="static member ( - ) : System.Drawing.PointF * System.Drawing.SizeF -&gt; System.Drawing.PointF" Usage="pt - sz" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF operator -(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -626,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Subtract(System.Drawing.PointF,System.Drawing.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (pt As PointF, sz As Size) As PointF" />
       <MemberSignature Language="F#" Value="static member Subtract : System.Drawing.PointF * System.Drawing.Size -&gt; System.Drawing.PointF" Usage="System.Drawing.PointF.Subtract (pt, sz)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Subtract(System::Drawing::PointF pt, System::Drawing::Size sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -669,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.Subtract(System.Drawing.PointF,System.Drawing.SizeF)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (pt As PointF, sz As SizeF) As PointF" />
       <MemberSignature Language="F#" Value="static member Subtract : System.Drawing.PointF * System.Drawing.SizeF -&gt; System.Drawing.PointF" Usage="System.Drawing.PointF.Subtract (pt, sz)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::PointF Subtract(System::Drawing::PointF pt, System::Drawing::SizeF sz);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -720,6 +737,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pointF.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -750,6 +768,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.PointF.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
       <MemberSignature Language="F#" Value="member this.X : single with get, set" Usage="System.Drawing.PointF.X" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -779,6 +798,7 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.PointF.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
       <MemberSignature Language="F#" Value="member this.Y : single with get, set" Usage="System.Drawing.PointF.Y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>

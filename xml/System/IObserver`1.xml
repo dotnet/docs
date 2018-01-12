@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IObserver`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObserver(Of In T)" />
   <TypeSignature Language="F#" Value="type IObserver&lt;'T&gt; = interface" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IObserver" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted ()" />
       <MemberSignature Language="F#" Value="abstract member OnCompleted : unit -&gt; unit" Usage="iObserver.OnCompleted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnCompleted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -137,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnError(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnError (error As Exception)" />
       <MemberSignature Language="F#" Value="abstract member OnError : Exception -&gt; unit" Usage="iObserver.OnError error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnError(Exception ^ error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

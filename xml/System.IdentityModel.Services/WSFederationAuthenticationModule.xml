@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />
   <TypeSignature Language="VB.NET" Value="Public Class WSFederationAuthenticationModule&#xA;Inherits HttpModuleBase" />
   <TypeSignature Language="F#" Value="type WSFederationAuthenticationModule = class&#xA;    inherit HttpModuleBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSFederationAuthenticationModule : System::IdentityModel::Services::HttpModuleBase" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +112,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationAuthenticationModule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -128,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationType As String" />
       <MemberSignature Language="F#" Value="member this.AuthenticationType : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -157,6 +160,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthorizationFailed" />
       <MemberSignature Language="VB.NET" Value="Public Event AuthorizationFailed As EventHandler(Of AuthorizationFailedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.AuthorizationFailed : EventHandler&lt;System.IdentityModel.Services.AuthorizationFailedEventArgs&gt; " Usage="member this.AuthorizationFailed : System.EventHandler&lt;System.IdentityModel.Services.AuthorizationFailedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::AuthorizationFailedEventArgs ^&gt; ^ AuthorizationFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -212,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse(System.Web.HttpRequestBase)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanReadSignInResponse (request As HttpRequestBase) As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanReadSignInResponse : System.Web.HttpRequestBase -&gt; bool" Usage="wSFederationAuthenticationModule.CanReadSignInResponse request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanReadSignInResponse(System::Web::HttpRequestBase ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -250,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse(System.Web.HttpRequestBase,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CanReadSignInResponse (request As HttpRequestBase, onPage As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member CanReadSignInResponse : System.Web.HttpRequestBase * bool -&gt; bool&#xA;override this.CanReadSignInResponse : System.Web.HttpRequestBase * bool -&gt; bool" Usage="wSFederationAuthenticationModule.CanReadSignInResponse (request, onPage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanReadSignInResponse(System::Web::HttpRequestBase ^ request, bool onPage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -296,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.CreateSignInRequest(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSignInRequest (uniqueId As String, returnUrl As String, rememberMeSet As Boolean) As SignInRequestMessage" />
       <MemberSignature Language="F#" Value="member this.CreateSignInRequest : string * string * bool -&gt; System.IdentityModel.Services.SignInRequestMessage" Usage="wSFederationAuthenticationModule.CreateSignInRequest (uniqueId, returnUrl, rememberMeSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Services::SignInRequestMessage ^ CreateSignInRequest(System::String ^ uniqueId, System::String ^ returnUrl, bool rememberMeSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -353,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub FederatedSignOut (signOutUrl As Uri, replyUrl As Uri)" />
       <MemberSignature Language="F#" Value="static member FederatedSignOut : Uri * Uri -&gt; unit" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut (signOutUrl, replyUrl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FederatedSignOut(Uri ^ signOutUrl, Uri ^ replyUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -408,6 +416,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Freshness" />
       <MemberSignature Language="VB.NET" Value="Public Property Freshness As String" />
       <MemberSignature Language="F#" Value="member this.Freshness : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Freshness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Freshness { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -437,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetFederationPassiveSignOutUrl(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFederationPassiveSignOutUrl (issuer As String, signOutReply As String, signOutQueryString As String) As String" />
       <MemberSignature Language="F#" Value="static member GetFederationPassiveSignOutUrl : string * string * string -&gt; string" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.GetFederationPassiveSignOutUrl (issuer, signOutReply, signOutQueryString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFederationPassiveSignOutUrl(System::String ^ issuer, System::String ^ signOutReply, System::String ^ signOutQueryString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -474,6 +484,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetReferencedResult(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetReferencedResult (resultPtr As String) As String" />
       <MemberSignature Language="F#" Value="abstract member GetReferencedResult : string -&gt; string&#xA;override this.GetReferencedResult : string -&gt; string" Usage="wSFederationAuthenticationModule.GetReferencedResult resultPtr" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetReferencedResult(System::String ^ resultPtr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -508,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetReturnUrlFromResponse(System.Web.HttpRequestBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetReturnUrlFromResponse (request As HttpRequestBase) As String" />
       <MemberSignature Language="F#" Value="abstract member GetReturnUrlFromResponse : System.Web.HttpRequestBase -&gt; string&#xA;override this.GetReturnUrlFromResponse : System.Web.HttpRequestBase -&gt; string" Usage="wSFederationAuthenticationModule.GetReturnUrlFromResponse request" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetReturnUrlFromResponse(System::Web::HttpRequestBase ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -556,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSecurityToken(System.IdentityModel.Services.SignInResponseMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecurityToken (message As SignInResponseMessage) As SecurityToken" />
       <MemberSignature Language="F#" Value="abstract member GetSecurityToken : System.IdentityModel.Services.SignInResponseMessage -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.GetSecurityToken : System.IdentityModel.Services.SignInResponseMessage -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSFederationAuthenticationModule.GetSecurityToken message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ GetSecurityToken(System::IdentityModel::Services::SignInResponseMessage ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -589,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSecurityToken(System.Web.HttpRequestBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSecurityToken (request As HttpRequestBase) As SecurityToken" />
       <MemberSignature Language="F#" Value="abstract member GetSecurityToken : System.Web.HttpRequestBase -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.GetSecurityToken : System.Web.HttpRequestBase -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSFederationAuthenticationModule.GetSecurityToken request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityToken ^ GetSecurityToken(System::Web::HttpRequestBase ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -626,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSessionTokenContext" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSessionTokenContext () As String" />
       <MemberSignature Language="F#" Value="abstract member GetSessionTokenContext : unit -&gt; string&#xA;override this.GetSessionTokenContext : unit -&gt; string" Usage="wSFederationAuthenticationModule.GetSessionTokenContext " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetSessionTokenContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -658,6 +673,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSignInResponseMessage(System.Web.HttpRequestBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSignInResponseMessage (request As HttpRequestBase) As SignInResponseMessage" />
       <MemberSignature Language="F#" Value="abstract member GetSignInResponseMessage : System.Web.HttpRequestBase -&gt; System.IdentityModel.Services.SignInResponseMessage&#xA;override this.GetSignInResponseMessage : System.Web.HttpRequestBase -&gt; System.IdentityModel.Services.SignInResponseMessage" Usage="wSFederationAuthenticationModule.GetSignInResponseMessage request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Services::SignInResponseMessage ^ GetSignInResponseMessage(System::Web::HttpRequestBase ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -692,6 +708,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSignOutRedirectUrl(System.IdentityModel.Services.SignOutCleanupRequestMessage)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSignOutRedirectUrl (signOutMessage As SignOutCleanupRequestMessage) As String" />
       <MemberSignature Language="F#" Value="abstract member GetSignOutRedirectUrl : System.IdentityModel.Services.SignOutCleanupRequestMessage -&gt; string&#xA;override this.GetSignOutRedirectUrl : System.IdentityModel.Services.SignOutCleanupRequestMessage -&gt; string" Usage="wSFederationAuthenticationModule.GetSignOutRedirectUrl signOutMessage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetSignOutRedirectUrl(System::IdentityModel::Services::SignOutCleanupRequestMessage ^ signOutMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -750,6 +767,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetXmlTokenFromMessage(System.IdentityModel.Services.SignInResponseMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXmlTokenFromMessage (message As SignInResponseMessage) As String" />
       <MemberSignature Language="F#" Value="abstract member GetXmlTokenFromMessage : System.IdentityModel.Services.SignInResponseMessage -&gt; string&#xA;override this.GetXmlTokenFromMessage : System.IdentityModel.Services.SignInResponseMessage -&gt; string" Usage="wSFederationAuthenticationModule.GetXmlTokenFromMessage message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXmlTokenFromMessage(System::IdentityModel::Services::SignInResponseMessage ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -785,6 +803,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.GetXmlTokenFromMessage(System.IdentityModel.Services.SignInResponseMessage,System.IdentityModel.Services.WSFederationSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXmlTokenFromMessage (message As SignInResponseMessage, federationSerializer As WSFederationSerializer) As String" />
       <MemberSignature Language="F#" Value="abstract member GetXmlTokenFromMessage : System.IdentityModel.Services.SignInResponseMessage * System.IdentityModel.Services.WSFederationSerializer -&gt; string&#xA;override this.GetXmlTokenFromMessage : System.IdentityModel.Services.SignInResponseMessage * System.IdentityModel.Services.WSFederationSerializer -&gt; string" Usage="wSFederationAuthenticationModule.GetXmlTokenFromMessage (message, federationSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXmlTokenFromMessage(System::IdentityModel::Services::SignInResponseMessage ^ message, System::IdentityModel::Services::WSFederationSerializer ^ federationSerializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -813,6 +832,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.HomeRealm" />
       <MemberSignature Language="VB.NET" Value="Public Property HomeRealm As String" />
       <MemberSignature Language="F#" Value="member this.HomeRealm : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.HomeRealm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HomeRealm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -842,6 +862,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.InitializeModule(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeModule (context As HttpApplication)" />
       <MemberSignature Language="F#" Value="override this.InitializeModule : System.Web.HttpApplication -&gt; unit" Usage="wSFederationAuthenticationModule.InitializeModule context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeModule(System::Web::HttpApplication ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -884,6 +905,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.InitializePropertiesFromConfiguration" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializePropertiesFromConfiguration ()" />
       <MemberSignature Language="F#" Value="override this.InitializePropertiesFromConfiguration : unit -&gt; unit" Usage="wSFederationAuthenticationModule.InitializePropertiesFromConfiguration " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializePropertiesFromConfiguration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -913,6 +935,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.IsSignInResponse(System.Web.HttpRequestBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSignInResponse (request As HttpRequestBase) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member IsSignInResponse : System.Web.HttpRequestBase -&gt; bool&#xA;override this.IsSignInResponse : System.Web.HttpRequestBase -&gt; bool" Usage="wSFederationAuthenticationModule.IsSignInResponse request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSignInResponse(System::Web::HttpRequestBase ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -951,6 +974,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public Property Issuer As String" />
       <MemberSignature Language="F#" Value="member this.Issuer : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Issuer { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -985,6 +1009,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAuthenticateRequest (sender As Object, args As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnAuthenticateRequest : obj * EventArgs -&gt; unit&#xA;override this.OnAuthenticateRequest : obj * EventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnAuthenticateRequest (sender, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthenticateRequest(System::Object ^ sender, EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1040,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthorizationFailed(System.IdentityModel.Services.AuthorizationFailedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAuthorizationFailed (e As AuthorizationFailedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnAuthorizationFailed : System.IdentityModel.Services.AuthorizationFailedEventArgs -&gt; unit&#xA;override this.OnAuthorizationFailed : System.IdentityModel.Services.AuthorizationFailedEventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnAuthorizationFailed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthorizationFailed(System::IdentityModel::Services::AuthorizationFailedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1072,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnEndRequest(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndRequest (sender As Object, args As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnEndRequest : obj * EventArgs -&gt; unit&#xA;override this.OnEndRequest : obj * EventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnEndRequest (sender, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndRequest(System::Object ^ sender, EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1104,6 +1131,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnPostAuthenticateRequest(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPostAuthenticateRequest (sender As Object, e As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnPostAuthenticateRequest : obj * EventArgs -&gt; unit&#xA;override this.OnPostAuthenticateRequest : obj * EventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnPostAuthenticateRequest (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPostAuthenticateRequest(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1136,6 +1164,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnRedirectingToIdentityProvider(System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRedirectingToIdentityProvider (e As RedirectingToIdentityProviderEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnRedirectingToIdentityProvider : System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs -&gt; unit&#xA;override this.OnRedirectingToIdentityProvider : System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnRedirectingToIdentityProvider e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRedirectingToIdentityProvider(System::IdentityModel::Services::RedirectingToIdentityProviderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1159,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSessionSecurityTokenCreated(System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSessionSecurityTokenCreated (args As SessionSecurityTokenCreatedEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSessionSecurityTokenCreated : System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs -&gt; unit&#xA;override this.OnSessionSecurityTokenCreated : System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnSessionSecurityTokenCreated args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSessionSecurityTokenCreated(System::IdentityModel::Services::SessionSecurityTokenCreatedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1182,6 +1212,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSignedIn(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSignedIn (args As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSignedIn : EventArgs -&gt; unit&#xA;override this.OnSignedIn : EventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnSignedIn args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSignedIn(EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1205,6 +1236,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSignedOut(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSignedOut (args As EventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSignedOut : EventArgs -&gt; unit&#xA;override this.OnSignedOut : EventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnSignedOut args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSignedOut(EventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1236,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSignInError(System.IdentityModel.Services.ErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSignInError (args As ErrorEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSignInError : System.IdentityModel.Services.ErrorEventArgs -&gt; unit&#xA;override this.OnSignInError : System.IdentityModel.Services.ErrorEventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnSignInError args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSignInError(System::IdentityModel::Services::ErrorEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1259,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSigningOut(System.IdentityModel.Services.SigningOutEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSigningOut (args As SigningOutEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSigningOut : System.IdentityModel.Services.SigningOutEventArgs -&gt; unit&#xA;override this.OnSigningOut : System.IdentityModel.Services.SigningOutEventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnSigningOut args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSigningOut(System::IdentityModel::Services::SigningOutEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1290,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSignOutError(System.IdentityModel.Services.ErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSignOutError (args As ErrorEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSignOutError : System.IdentityModel.Services.ErrorEventArgs -&gt; unit&#xA;override this.OnSignOutError : System.IdentityModel.Services.ErrorEventArgs -&gt; unit" Usage="wSFederationAuthenticationModule.OnSignOutError args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSignOutError(System::IdentityModel::Services::ErrorEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1321,6 +1356,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property PassiveRedirectEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.PassiveRedirectEnabled : bool with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PassiveRedirectEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1353,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PersistentCookiesOnPassiveRedirects" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistentCookiesOnPassiveRedirects As Boolean" />
       <MemberSignature Language="F#" Value="member this.PersistentCookiesOnPassiveRedirects : bool with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.PersistentCookiesOnPassiveRedirects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistentCookiesOnPassiveRedirects { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1382,6 +1419,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Policy" />
       <MemberSignature Language="VB.NET" Value="Public Property Policy As String" />
       <MemberSignature Language="F#" Value="member this.Policy : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Policy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Policy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1411,6 +1449,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Realm" />
       <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
       <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Realm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1447,6 +1486,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider" />
       <MemberSignature Language="VB.NET" Value="Public Event RedirectingToIdentityProvider As EventHandler(Of RedirectingToIdentityProviderEventArgs) " />
       <MemberSignature Language="F#" Value="member this.RedirectingToIdentityProvider : EventHandler&lt;System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs&gt; " Usage="member this.RedirectingToIdentityProvider : System.EventHandler&lt;System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::RedirectingToIdentityProviderEventArgs ^&gt; ^ RedirectingToIdentityProvider;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1492,6 +1532,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectToIdentityProvider(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RedirectToIdentityProvider (uniqueId As String, returnUrl As String, persist As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member RedirectToIdentityProvider : string * string * bool -&gt; unit&#xA;override this.RedirectToIdentityProvider : string * string * bool -&gt; unit" Usage="wSFederationAuthenticationModule.RedirectToIdentityProvider (uniqueId, returnUrl, persist)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RedirectToIdentityProvider(System::String ^ uniqueId, System::String ^ returnUrl, bool persist);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1550,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Reply" />
       <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
       <MemberSignature Language="F#" Value="member this.Reply : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Reply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1580,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Request" />
       <MemberSignature Language="VB.NET" Value="Public Property Request As String" />
       <MemberSignature Language="F#" Value="member this.Request : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Request { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1609,6 +1652,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequestPtr" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestPtr As String" />
       <MemberSignature Language="F#" Value="member this.RequestPtr : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.RequestPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestPtr { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1639,6 +1683,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequireHttps" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireHttps As Boolean" />
       <MemberSignature Language="F#" Value="member this.RequireHttps : bool with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.RequireHttps" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireHttps { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1660,6 +1705,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Resource" />
       <MemberSignature Language="VB.NET" Value="Public Property Resource As String" />
       <MemberSignature Language="F#" Value="member this.Resource : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.Resource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Resource { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1691,6 +1737,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenReceived" />
       <MemberSignature Language="VB.NET" Value="Public Event SecurityTokenReceived As EventHandler(Of SecurityTokenReceivedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SecurityTokenReceived : EventHandler&lt;System.IdentityModel.Services.SecurityTokenReceivedEventArgs&gt; " Usage="member this.SecurityTokenReceived : System.EventHandler&lt;System.IdentityModel.Services.SecurityTokenReceivedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SecurityTokenReceivedEventArgs ^&gt; ^ SecurityTokenReceived;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1725,6 +1772,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenValidated" />
       <MemberSignature Language="VB.NET" Value="Public Event SecurityTokenValidated As EventHandler(Of SecurityTokenValidatedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SecurityTokenValidated : EventHandler&lt;System.IdentityModel.Services.SecurityTokenValidatedEventArgs&gt; " Usage="member this.SecurityTokenValidated : System.EventHandler&lt;System.IdentityModel.Services.SecurityTokenValidatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SecurityTokenValidatedEventArgs ^&gt; ^ SecurityTokenValidated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1758,6 +1806,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SessionSecurityTokenCreated" />
       <MemberSignature Language="VB.NET" Value="Public Event SessionSecurityTokenCreated As EventHandler(Of SessionSecurityTokenCreatedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SessionSecurityTokenCreated : EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs&gt; " Usage="member this.SessionSecurityTokenCreated : System.EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SessionSecurityTokenCreatedEventArgs ^&gt; ^ SessionSecurityTokenCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1794,6 +1843,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SetPrincipalAndWriteSessionToken(System.IdentityModel.Tokens.SessionSecurityToken,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetPrincipalAndWriteSessionToken (sessionToken As SessionSecurityToken, isSession As Boolean)" />
       <MemberSignature Language="F#" Value="member this.SetPrincipalAndWriteSessionToken : System.IdentityModel.Tokens.SessionSecurityToken * bool -&gt; unit" Usage="wSFederationAuthenticationModule.SetPrincipalAndWriteSessionToken (sessionToken, isSession)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPrincipalAndWriteSessionToken(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionToken, bool isSession);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1834,6 +1884,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SignedIn" />
       <MemberSignature Language="VB.NET" Value="Public Event SignedIn As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SignedIn : EventHandler " Usage="member this.SignedIn : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SignedIn;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1865,6 +1916,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SignedOut" />
       <MemberSignature Language="VB.NET" Value="Public Event SignedOut As EventHandler " />
       <MemberSignature Language="F#" Value="member this.SignedOut : EventHandler " Usage="member this.SignedOut : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SignedOut;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1895,6 +1947,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignIn(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SignIn (ControlId As String)" />
       <MemberSignature Language="F#" Value="abstract member SignIn : string -&gt; unit&#xA;override this.SignIn : string -&gt; unit" Usage="wSFederationAuthenticationModule.SignIn ControlId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SignIn(System::String ^ ControlId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1925,6 +1978,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignInContext" />
       <MemberSignature Language="VB.NET" Value="Public Property SignInContext As String" />
       <MemberSignature Language="F#" Value="member this.SignInContext : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.SignInContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignInContext { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1957,6 +2011,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SignInError" />
       <MemberSignature Language="VB.NET" Value="Public Event SignInError As EventHandler(Of ErrorEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SignInError : EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; " Usage="member this.SignInError : System.EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::ErrorEventArgs ^&gt; ^ SignInError;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -1983,6 +2038,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SigningOut" />
       <MemberSignature Language="VB.NET" Value="Public Event SigningOut As EventHandler(Of SigningOutEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SigningOut : EventHandler&lt;System.IdentityModel.Services.SigningOutEventArgs&gt; " Usage="member this.SigningOut : System.EventHandler&lt;System.IdentityModel.Services.SigningOutEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SigningOutEventArgs ^&gt; ^ SigningOut;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2013,6 +2069,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignInQueryString" />
       <MemberSignature Language="VB.NET" Value="Public Property SignInQueryString As String" />
       <MemberSignature Language="F#" Value="member this.SignInQueryString : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.SignInQueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignInQueryString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2062,6 +2119,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SignOut ()" />
       <MemberSignature Language="F#" Value="abstract member SignOut : unit -&gt; unit&#xA;override this.SignOut : unit -&gt; unit" Usage="wSFederationAuthenticationModule.SignOut " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SignOut();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2093,6 +2151,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SignOut (isIPRequest As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SignOut : bool -&gt; unit&#xA;override this.SignOut : bool -&gt; unit" Usage="wSFederationAuthenticationModule.SignOut isIPRequest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SignOut(bool isIPRequest);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2136,6 +2195,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SignOut (redirectUrl As String)" />
       <MemberSignature Language="F#" Value="abstract member SignOut : string -&gt; unit&#xA;override this.SignOut : string -&gt; unit" Usage="wSFederationAuthenticationModule.SignOut redirectUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SignOut(System::String ^ redirectUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2172,6 +2232,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SignOut (redirectUrl As String, initiateSignoutCleanup As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SignOut : string * bool -&gt; unit&#xA;override this.SignOut : string * bool -&gt; unit" Usage="wSFederationAuthenticationModule.SignOut (redirectUrl, initiateSignoutCleanup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SignOut(System::String ^ redirectUrl, bool initiateSignoutCleanup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2211,6 +2272,7 @@
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutError" />
       <MemberSignature Language="VB.NET" Value="Public Event SignOutError As EventHandler(Of ErrorEventArgs) " />
       <MemberSignature Language="F#" Value="member this.SignOutError : EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; " Usage="member this.SignOutError : System.EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::ErrorEventArgs ^&gt; ^ SignOutError;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2239,6 +2301,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutQueryString" />
       <MemberSignature Language="VB.NET" Value="Public Property SignOutQueryString As String" />
       <MemberSignature Language="F#" Value="member this.SignOutQueryString : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutQueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignOutQueryString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2269,6 +2332,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutReply" />
       <MemberSignature Language="VB.NET" Value="Public Property SignOutReply As String" />
       <MemberSignature Language="F#" Value="member this.SignOutReply : string with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignOutReply { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2300,6 +2364,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationAuthenticationModule.VerifyProperties" />
       <MemberSignature Language="VB.NET" Value="Public Sub VerifyProperties ()" />
       <MemberSignature Language="F#" Value="member this.VerifyProperties : unit -&gt; unit" Usage="wSFederationAuthenticationModule.VerifyProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -2334,6 +2399,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.WSFederationAuthenticationModule.XmlDictionaryReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlDictionaryReaderQuotas As XmlDictionaryReaderQuotas" />
       <MemberSignature Language="F#" Value="member this.XmlDictionaryReaderQuotas : System.Xml.XmlDictionaryReaderQuotas with get, set" Usage="System.IdentityModel.Services.WSFederationAuthenticationModule.XmlDictionaryReaderQuotas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryReaderQuotas ^ XmlDictionaryReaderQuotas { System::Xml::XmlDictionaryReaderQuotas ^ get(); void set(System::Xml::XmlDictionaryReaderQuotas ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

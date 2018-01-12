@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlReader&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type XamlReader = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlReader abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="xamlReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="xamlReader.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.Xaml.XamlReader.IsDisposed" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.IsEof" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEof As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsEof : bool" Usage="System.Xaml.XamlReader.IsEof" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEof { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.Member" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Member As XamlMember" />
       <MemberSignature Language="F#" Value="member this.Member : System.Xaml.XamlMember" Usage="System.Xaml.XamlReader.Member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xaml::XamlMember ^ Member { System::Xaml::XamlMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Namespace As NamespaceDeclaration" />
       <MemberSignature Language="F#" Value="member this.Namespace : System.Xaml.NamespaceDeclaration" Usage="System.Xaml.XamlReader.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xaml::NamespaceDeclaration ^ Namespace { System::Xaml::NamespaceDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NodeType As XamlNodeType" />
       <MemberSignature Language="F#" Value="member this.NodeType : System.Xaml.XamlNodeType" Usage="System.Xaml.XamlReader.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xaml::XamlNodeType NodeType { System::Xaml::XamlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Read : unit -&gt; bool" Usage="xamlReader.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.ReadSubtree" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadSubtree () As XamlReader" />
       <MemberSignature Language="F#" Value="abstract member ReadSubtree : unit -&gt; System.Xaml.XamlReader&#xA;override this.ReadSubtree : unit -&gt; System.Xaml.XamlReader" Usage="xamlReader.ReadSubtree " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xaml::XamlReader ^ ReadSubtree();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -336,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.SchemaContext" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SchemaContext As XamlSchemaContext" />
       <MemberSignature Language="F#" Value="member this.SchemaContext : System.Xaml.XamlSchemaContext" Usage="System.Xaml.XamlReader.SchemaContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xaml::XamlSchemaContext ^ SchemaContext { System::Xaml::XamlSchemaContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -358,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.Skip" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Skip ()" />
       <MemberSignature Language="F#" Value="abstract member Skip : unit -&gt; unit&#xA;override this.Skip : unit -&gt; unit" Usage="xamlReader.Skip " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Skip();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -390,6 +403,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReader.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -413,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.Type" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Type As XamlType" />
       <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="System.Xaml.XamlReader.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -442,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReader.Value" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As Object" />
       <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Xaml.XamlReader.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

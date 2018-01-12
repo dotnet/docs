@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CriticalHandle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CriticalHandle&#xA;Inherits CriticalFinalizerObject&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type CriticalHandle = class&#xA;    inherit CriticalFinalizerObject&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CriticalHandle abstract : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Handles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (invalidHandleValue As IntPtr)" />
       <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.CriticalHandle : nativeint -&gt; System.Runtime.InteropServices.CriticalHandle" Usage="new System.Runtime.InteropServices.CriticalHandle invalidHandleValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CriticalHandle(IntPtr invalidHandleValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -111,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="criticalHandle.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="criticalHandle.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -228,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="criticalHandle.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -285,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="criticalHandle.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!CriticalHandle ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -339,6 +345,7 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CriticalHandle.handle" />
       <MemberSignature Language="VB.NET" Value="Protected handle As IntPtr " />
       <MemberSignature Language="F#" Value="val mutable handle : nativeint" Usage="System.Runtime.InteropServices.CriticalHandle.handle" />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr handle;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -383,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.CriticalHandle.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClosed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Runtime.InteropServices.CriticalHandle.IsClosed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClosed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -439,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.CriticalHandle.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="System.Runtime.InteropServices.CriticalHandle.IsInvalid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsInvalid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -493,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReleaseHandle () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member ReleaseHandle : unit -&gt; bool" Usage="criticalHandle.ReleaseHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ReleaseHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -551,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.SetHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetHandle (handle As IntPtr)" />
       <MemberSignature Language="F#" Value="member this.SetHandle : nativeint -&gt; unit" Usage="criticalHandle.SetHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetHandle(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -604,6 +615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CriticalHandle.SetHandleAsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHandleAsInvalid ()" />
       <MemberSignature Language="F#" Value="member this.SetHandleAsInvalid : unit -&gt; unit" Usage="criticalHandle.SetHandleAsInvalid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHandleAsInvalid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>

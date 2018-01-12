@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDesignerFilter" />
   <TypeSignature Language="F#" Value="type IDesignerFilter = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerFilter" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PostFilterAttributes (attributes As IDictionary)" />
       <MemberSignature Language="F#" Value="abstract member PostFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="iDesignerFilter.PostFilterAttributes attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PostFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PostFilterEvents (events As IDictionary)" />
       <MemberSignature Language="F#" Value="abstract member PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="iDesignerFilter.PostFilterEvents events" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PostFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PostFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="abstract member PostFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="iDesignerFilter.PostFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PostFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -190,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PreFilterAttributes (attributes As IDictionary)" />
       <MemberSignature Language="F#" Value="abstract member PreFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="iDesignerFilter.PreFilterAttributes attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -239,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PreFilterEvents (events As IDictionary)" />
       <MemberSignature Language="F#" Value="abstract member PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="iDesignerFilter.PreFilterEvents events" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -284,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="F#" Value="abstract member PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="iDesignerFilter.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

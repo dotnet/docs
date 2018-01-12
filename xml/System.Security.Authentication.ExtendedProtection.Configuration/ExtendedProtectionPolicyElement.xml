@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtendedProtectionPolicyElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type ExtendedProtectionPolicyElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtendedProtectionPolicyElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedProtectionPolicyElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.BuildPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildPolicy () As ExtendedProtectionPolicy" />
       <MemberSignature Language="F#" Value="member this.BuildPolicy : unit -&gt; System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" Usage="extendedProtectionPolicyElement.BuildPolicy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ BuildPolicy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.CustomServiceNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomServiceNames As ServiceNameElementCollection" />
       <MemberSignature Language="F#" Value="member this.CustomServiceNames : System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection" Usage="System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.CustomServiceNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElementCollection ^ CustomServiceNames { System::Security::Authentication::ExtendedProtection::Configuration::ServiceNameElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.PolicyEnforcement" />
       <MemberSignature Language="VB.NET" Value="Public Property PolicyEnforcement As PolicyEnforcement" />
       <MemberSignature Language="F#" Value="member this.PolicyEnforcement : System.Security.Authentication.ExtendedProtection.PolicyEnforcement with get, set" Usage="System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.PolicyEnforcement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::PolicyEnforcement PolicyEnforcement { System::Security::Authentication::ExtendedProtection::PolicyEnforcement get(); void set(System::Security::Authentication::ExtendedProtection::PolicyEnforcement value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.ProtectionScenario" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionScenario As ProtectionScenario" />
       <MemberSignature Language="F#" Value="member this.ProtectionScenario : System.Security.Authentication.ExtendedProtection.ProtectionScenario with get, set" Usage="System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement.ProtectionScenario" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ProtectionScenario ProtectionScenario { System::Security::Authentication::ExtendedProtection::ProtectionScenario get(); void set(System::Security::Authentication::ExtendedProtection::ProtectionScenario value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

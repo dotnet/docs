@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.SchemaTableColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class SchemaTableColumn" />
   <TypeSignature Language="F#" Value="type SchemaTableColumn = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemaTableColumn abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.AllowDBNull" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowDBNull As String " />
       <MemberSignature Language="F#" Value=" staticval mutable AllowDBNull : string" Usage="System.Data.Common.SchemaTableColumn.AllowDBNull" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AllowDBNull;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.BaseColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseColumnName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseColumnName : string" Usage="System.Data.Common.SchemaTableColumn.BaseColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseColumnName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.BaseSchemaName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseSchemaName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseSchemaName : string" Usage="System.Data.Common.SchemaTableColumn.BaseSchemaName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseSchemaName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.BaseTableName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseTableName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BaseTableName : string" Usage="System.Data.Common.SchemaTableColumn.BaseTableName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BaseTableName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.ColumnName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnName As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnName : string" Usage="System.Data.Common.SchemaTableColumn.ColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ColumnName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.ColumnOrdinal" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnOrdinal As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnOrdinal : string" Usage="System.Data.Common.SchemaTableColumn.ColumnOrdinal" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ColumnOrdinal;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.ColumnSize" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnSize As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ColumnSize : string" Usage="System.Data.Common.SchemaTableColumn.ColumnSize" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ColumnSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.DataType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataType As String " />
       <MemberSignature Language="F#" Value=" staticval mutable DataType : string" Usage="System.Data.Common.SchemaTableColumn.DataType" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DataType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.IsAliased" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsAliased As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsAliased : string" Usage="System.Data.Common.SchemaTableColumn.IsAliased" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsAliased;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.IsExpression" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpression As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsExpression : string" Usage="System.Data.Common.SchemaTableColumn.IsExpression" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsExpression;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -336,6 +347,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.IsKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsKey As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsKey : string" Usage="System.Data.Common.SchemaTableColumn.IsKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.IsLong" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsLong As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsLong : string" Usage="System.Data.Common.SchemaTableColumn.IsLong" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsLong;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -406,6 +419,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.IsUnique" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsUnique As String " />
       <MemberSignature Language="F#" Value=" staticval mutable IsUnique : string" Usage="System.Data.Common.SchemaTableColumn.IsUnique" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ IsUnique;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -441,6 +455,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.NonVersionedProviderType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NonVersionedProviderType As String " />
       <MemberSignature Language="F#" Value=" staticval mutable NonVersionedProviderType : string" Usage="System.Data.Common.SchemaTableColumn.NonVersionedProviderType" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NonVersionedProviderType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -469,6 +484,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.NumericPrecision" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumericPrecision As String " />
       <MemberSignature Language="F#" Value=" staticval mutable NumericPrecision : string" Usage="System.Data.Common.SchemaTableColumn.NumericPrecision" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NumericPrecision;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -497,6 +513,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.NumericScale" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumericScale As String " />
       <MemberSignature Language="F#" Value=" staticval mutable NumericScale : string" Usage="System.Data.Common.SchemaTableColumn.NumericScale" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NumericScale;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -525,6 +542,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SchemaTableColumn.ProviderType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProviderType As String " />
       <MemberSignature Language="F#" Value=" staticval mutable ProviderType : string" Usage="System.Data.Common.SchemaTableColumn.ProviderType" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ProviderType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

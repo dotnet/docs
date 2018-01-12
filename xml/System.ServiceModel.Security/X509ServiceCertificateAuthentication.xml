@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509ServiceCertificateAuthentication" />
   <TypeSignature Language="VB.NET" Value="Public Class X509ServiceCertificateAuthentication" />
   <TypeSignature Language="F#" Value="type X509ServiceCertificateAuthentication = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509ServiceCertificateAuthentication" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.X509ServiceCertificateAuthentication.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ServiceCertificateAuthentication();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
       <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::X509CertificateValidationMode CertificateValidationMode { System::ServiceModel::Security::X509CertificateValidationMode get(); void set(System::ServiceModel::Security::X509CertificateValidationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CustomCertificateValidator" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomCertificateValidator As X509CertificateValidator" />
       <MemberSignature Language="F#" Value="member this.CustomCertificateValidator : System.IdentityModel.Selectors.X509CertificateValidator with get, set" Usage="System.ServiceModel.Security.X509ServiceCertificateAuthentication.CustomCertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CustomCertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.RevocationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
       <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.ServiceModel.Security.X509ServiceCertificateAuthentication.RevocationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.TrustedStoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
       <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.ServiceModel.Security.X509ServiceCertificateAuthentication.TrustedStoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation TrustedStoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

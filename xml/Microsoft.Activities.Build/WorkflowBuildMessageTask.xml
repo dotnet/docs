@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.WorkflowBuildMessageTask" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowBuildMessageTask&#xA;Inherits Task" />
   <TypeSignature Language="F#" Value="type WorkflowBuildMessageTask = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowBuildMessageTask sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Activities.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.WorkflowBuildMessageTask.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowBuildMessageTask();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.WorkflowBuildMessageTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="workflowBuildMessageTask.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -61,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Activities.Build.WorkflowBuildMessageTask.MessageType" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageType As String" />
       <MemberSignature Language="F#" Value="member this.MessageType : string with get, set" Usage="Microsoft.Activities.Build.WorkflowBuildMessageTask.MessageType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>
@@ -81,6 +85,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Activities.Build.WorkflowBuildMessageTask.ResourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceName As String" />
       <MemberSignature Language="F#" Value="member this.ResourceName : string with get, set" Usage="Microsoft.Activities.Build.WorkflowBuildMessageTask.ResourceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Activities.Build</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ReturnOutOfFinally" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReturnOutOfFinally&#xA;Inherits ApplicationException" />
   <TypeSignature Language="F#" Value="type ReturnOutOfFinally = class&#xA;    inherit ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReturnOutOfFinally sealed : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReturnOutOfFinally.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnOutOfFinally();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.ReturnOutOfFinally : string -&gt; Microsoft.JScript.ReturnOutOfFinally" Usage="new Microsoft.JScript.ReturnOutOfFinally m" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnOutOfFinally(System::String ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
       <MemberSignature Language="F#" Value="new Microsoft.JScript.ReturnOutOfFinally : string * Exception -&gt; Microsoft.JScript.ReturnOutOfFinally" Usage="new Microsoft.JScript.ReturnOutOfFinally (m, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnOutOfFinally(System::String ^ m, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

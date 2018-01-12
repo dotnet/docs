@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Splitter" />
   <TypeSignature Language="VB.NET" Value="Public Class Splitter&#xA;Inherits Control" />
   <TypeSignature Language="F#" Value="type Splitter = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Splitter : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Splitter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.AllowDrop" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowDrop As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowDrop : bool with get, set" Usage="System.Windows.Forms.Splitter.AllowDrop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowDrop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.Anchor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Anchor As AnchorStyles" />
       <MemberSignature Language="F#" Value="member this.Anchor : System.Windows.Forms.AnchorStyles with get, set" Usage="System.Windows.Forms.Splitter.Anchor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AnchorStyles Anchor { System::Windows::Forms::AnchorStyles get(); void set(System::Windows::Forms::AnchorStyles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -171,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.Splitter.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.BackgroundImageChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.Splitter.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -275,6 +282,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.BackgroundImageLayoutChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -309,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.BorderStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
       <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.Splitter.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.CreateParams" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
       <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.Splitter.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.DefaultCursor" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultCursor As Cursor" />
       <MemberSignature Language="F#" Value="member this.DefaultCursor : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.Splitter.DefaultCursor" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::Cursor ^ DefaultCursor { System::Windows::Forms::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -395,6 +406,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.DefaultImeMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultImeMode As ImeMode" />
       <MemberSignature Language="F#" Value="member this.DefaultImeMode : System.Windows.Forms.ImeMode" Usage="System.Windows.Forms.Splitter.DefaultImeMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::ImeMode DefaultImeMode { System::Windows::Forms::ImeMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -416,6 +428,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.Splitter.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -437,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.Dock" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
       <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.Splitter.Dock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -474,6 +488,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.Enter" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Enter As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.Splitter.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -543,6 +559,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.FontChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FontChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -577,6 +594,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.Splitter.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -612,6 +630,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.ForeColorChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -646,6 +665,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.ImeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
       <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.Splitter.ImeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -681,6 +701,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.ImeModeChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -715,6 +736,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.KeyDown" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -749,6 +771,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.KeyPress" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As KeyPressEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -783,6 +806,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.KeyUp" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As KeyEventHandler " />
       <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -817,6 +841,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.Leave" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Leave As EventHandler " />
       <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -851,6 +876,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.MinExtra" />
       <MemberSignature Language="VB.NET" Value="Public Property MinExtra As Integer" />
       <MemberSignature Language="F#" Value="member this.MinExtra : int with get, set" Usage="System.Windows.Forms.Splitter.MinExtra" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinExtra { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -899,6 +925,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.MinSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MinSize : int with get, set" Usage="System.Windows.Forms.Splitter.MinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -947,6 +974,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="splitter.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -977,6 +1005,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="splitter.OnMouseDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1007,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="splitter.OnMouseMove e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1037,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="splitter.OnMouseUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1067,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.OnSplitterMoved(System.Windows.Forms.SplitterEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSplitterMoved (sevent As SplitterEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSplitterMoved : System.Windows.Forms.SplitterEventArgs -&gt; unit&#xA;override this.OnSplitterMoved : System.Windows.Forms.SplitterEventArgs -&gt; unit" Usage="splitter.OnSplitterMoved sevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSplitterMoved(System::Windows::Forms::SplitterEventArgs ^ sevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1105,6 +1137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.OnSplitterMoving(System.Windows.Forms.SplitterEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSplitterMoving (sevent As SplitterEventArgs)" />
       <MemberSignature Language="F#" Value="abstract member OnSplitterMoving : System.Windows.Forms.SplitterEventArgs -&gt; unit&#xA;override this.OnSplitterMoving : System.Windows.Forms.SplitterEventArgs -&gt; unit" Usage="splitter.OnSplitterMoving sevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSplitterMoving(System::Windows::Forms::SplitterEventArgs ^ sevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1143,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
       <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="splitter.SetBoundsCore (x, y, width, height, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1175,6 +1209,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.SplitPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitPosition As Integer" />
       <MemberSignature Language="F#" Value="member this.SplitPosition : int with get, set" Usage="System.Windows.Forms.Splitter.SplitPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitPosition { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1212,6 +1247,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.SplitterMoved" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SplitterMoved As SplitterEventHandler " />
       <MemberSignature Language="F#" Value="member this.SplitterMoved : System.Windows.Forms.SplitterEventHandler " Usage="member this.SplitterMoved : System.Windows.Forms.SplitterEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SplitterEventHandler ^ SplitterMoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1254,6 +1290,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.SplitterMoving" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SplitterMoving As SplitterEventHandler " />
       <MemberSignature Language="F#" Value="member this.SplitterMoving : System.Windows.Forms.SplitterEventHandler " Usage="member this.SplitterMoving : System.Windows.Forms.SplitterEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SplitterEventHandler ^ SplitterMoving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1296,6 +1333,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.TabStop" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
       <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.Splitter.TabStop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1332,6 +1370,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.TabStopChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TabStopChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1366,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Splitter.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.Splitter.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1407,6 +1447,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Splitter.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1441,6 +1482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Splitter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="splitter.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

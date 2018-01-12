@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask" />
   <TypeSignature Language="VB.NET" Value="Public Class GenerateTemporaryAssemblyTask&#xA;Inherits Task" />
   <TypeSignature Language="F#" Value="type GenerateTemporaryAssemblyTask = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenerateTemporaryAssemblyTask : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>XamlBuildTask</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenerateTemporaryAssemblyTask();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.ApplicationMarkupTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationMarkupTypeName As String" />
       <MemberSignature Language="F#" Value="member this.ApplicationMarkupTypeName : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.ApplicationMarkupTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationMarkupTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.CompileTargetName" />
       <MemberSignature Language="VB.NET" Value="Public Property CompileTargetName As String" />
       <MemberSignature Language="F#" Value="member this.CompileTargetName : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.CompileTargetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompileTargetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.CurrentProject" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentProject As String" />
       <MemberSignature Language="F#" Value="member this.CurrentProject : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.CurrentProject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentProject { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="generateTemporaryAssemblyTask.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.GeneratedResourcesFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property GeneratedResourcesFiles As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.GeneratedResourcesFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.GeneratedResourcesFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedResourcesFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -195,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.OutputPath" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
       <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.OutputPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -220,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.ReferencePaths" />
       <MemberSignature Language="VB.NET" Value="Public Property ReferencePaths As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.ReferencePaths : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.ReferencePaths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ReferencePaths { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>
@@ -240,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.SourceCodeFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceCodeFiles As ITaskItem()" />
       <MemberSignature Language="F#" Value="member this.SourceCodeFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Xaml.GenerateTemporaryAssemblyTask.SourceCodeFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SourceCodeFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>XamlBuildTask</AssemblyName>

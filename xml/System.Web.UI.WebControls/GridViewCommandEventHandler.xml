@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewCommandEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewCommandEventHandler(sender As Object, e As GridViewCommandEventArgs)" />
   <TypeSignature Language="F#" Value="type GridViewCommandEventHandler = delegate of obj * GridViewCommandEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void GridViewCommandEventHandler(System::Object ^ sender, GridViewCommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

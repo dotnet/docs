@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.GenericUriParserOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum GenericUriParserOptions" />
   <TypeSignature Language="F#" Value="type GenericUriParserOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GenericUriParserOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.AllowEmptyAuthority" />
       <MemberSignature Language="VB.NET" Value="AllowEmptyAuthority" />
       <MemberSignature Language="F#" Value="AllowEmptyAuthority = 2" Usage="System.GenericUriParserOptions.AllowEmptyAuthority" />
+      <MemberSignature Language="C++ CLI" Value="AllowEmptyAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +84,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.GenericUriParserOptions.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +126,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontCompressPath" />
       <MemberSignature Language="VB.NET" Value="DontCompressPath" />
       <MemberSignature Language="F#" Value="DontCompressPath = 128" Usage="System.GenericUriParserOptions.DontCompressPath" />
+      <MemberSignature Language="C++ CLI" Value="DontCompressPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +155,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontConvertPathBackslashes" />
       <MemberSignature Language="VB.NET" Value="DontConvertPathBackslashes" />
       <MemberSignature Language="F#" Value="DontConvertPathBackslashes = 64" Usage="System.GenericUriParserOptions.DontConvertPathBackslashes" />
+      <MemberSignature Language="C++ CLI" Value="DontConvertPathBackslashes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +184,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes" />
       <MemberSignature Language="VB.NET" Value="DontUnescapePathDotsAndSlashes" />
       <MemberSignature Language="F#" Value="DontUnescapePathDotsAndSlashes = 256" Usage="System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes" />
+      <MemberSignature Language="C++ CLI" Value="DontUnescapePathDotsAndSlashes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +213,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.GenericAuthority" />
       <MemberSignature Language="VB.NET" Value="GenericAuthority" />
       <MemberSignature Language="F#" Value="GenericAuthority = 1" Usage="System.GenericUriParserOptions.GenericAuthority" />
+      <MemberSignature Language="C++ CLI" Value="GenericAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +242,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.Idn" />
       <MemberSignature Language="VB.NET" Value="Idn" />
       <MemberSignature Language="F#" Value="Idn = 512" Usage="System.GenericUriParserOptions.Idn" />
+      <MemberSignature Language="C++ CLI" Value="Idn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,6 +271,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.IriParsing" />
       <MemberSignature Language="VB.NET" Value="IriParsing" />
       <MemberSignature Language="F#" Value="IriParsing = 1024" Usage="System.GenericUriParserOptions.IriParsing" />
+      <MemberSignature Language="C++ CLI" Value="IriParsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoFragment" />
       <MemberSignature Language="VB.NET" Value="NoFragment" />
       <MemberSignature Language="F#" Value="NoFragment = 32" Usage="System.GenericUriParserOptions.NoFragment" />
+      <MemberSignature Language="C++ CLI" Value="NoFragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +329,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoPort" />
       <MemberSignature Language="VB.NET" Value="NoPort" />
       <MemberSignature Language="F#" Value="NoPort = 8" Usage="System.GenericUriParserOptions.NoPort" />
+      <MemberSignature Language="C++ CLI" Value="NoPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoQuery" />
       <MemberSignature Language="VB.NET" Value="NoQuery" />
       <MemberSignature Language="F#" Value="NoQuery = 16" Usage="System.GenericUriParserOptions.NoQuery" />
+      <MemberSignature Language="C++ CLI" Value="NoQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoUserInfo" />
       <MemberSignature Language="VB.NET" Value="NoUserInfo" />
       <MemberSignature Language="F#" Value="NoUserInfo = 4" Usage="System.GenericUriParserOptions.NoUserInfo" />
+      <MemberSignature Language="C++ CLI" Value="NoUserInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

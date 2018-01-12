@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityAction" />
   <TypeSignature Language="F#" Value="type SecurityAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityAction" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.Assert" />
       <MemberSignature Language="VB.NET" Value="Assert" />
       <MemberSignature Language="F#" Value="Assert = 3" Usage="System.Security.Permissions.SecurityAction.Assert" />
+      <MemberSignature Language="C++ CLI" Value="Assert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +101,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.Demand" />
       <MemberSignature Language="VB.NET" Value="Demand" />
       <MemberSignature Language="F#" Value="Demand = 2" Usage="System.Security.Permissions.SecurityAction.Demand" />
+      <MemberSignature Language="C++ CLI" Value="Demand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +130,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.Deny" />
       <MemberSignature Language="VB.NET" Value="Deny" />
       <MemberSignature Language="F#" Value="Deny = 4" Usage="System.Security.Permissions.SecurityAction.Deny" />
+      <MemberSignature Language="C++ CLI" Value="Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +164,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />
       <MemberSignature Language="VB.NET" Value="InheritanceDemand" />
       <MemberSignature Language="F#" Value="InheritanceDemand = 7" Usage="System.Security.Permissions.SecurityAction.InheritanceDemand" />
+      <MemberSignature Language="C++ CLI" Value="InheritanceDemand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -188,6 +193,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.LinkDemand" />
       <MemberSignature Language="VB.NET" Value="LinkDemand" />
       <MemberSignature Language="F#" Value="LinkDemand = 6" Usage="System.Security.Permissions.SecurityAction.LinkDemand" />
+      <MemberSignature Language="C++ CLI" Value="LinkDemand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,6 +222,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.PermitOnly" />
       <MemberSignature Language="VB.NET" Value="PermitOnly" />
       <MemberSignature Language="F#" Value="PermitOnly = 5" Usage="System.Security.Permissions.SecurityAction.PermitOnly" />
+      <MemberSignature Language="C++ CLI" Value="PermitOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -244,6 +251,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.RequestMinimum" />
       <MemberSignature Language="VB.NET" Value="RequestMinimum" />
       <MemberSignature Language="F#" Value="RequestMinimum = 8" Usage="System.Security.Permissions.SecurityAction.RequestMinimum" />
+      <MemberSignature Language="C++ CLI" Value="RequestMinimum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +285,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.RequestOptional" />
       <MemberSignature Language="VB.NET" Value="RequestOptional" />
       <MemberSignature Language="F#" Value="RequestOptional = 9" Usage="System.Security.Permissions.SecurityAction.RequestOptional" />
+      <MemberSignature Language="C++ CLI" Value="RequestOptional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -310,6 +319,7 @@
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityAction.RequestRefuse" />
       <MemberSignature Language="VB.NET" Value="RequestRefuse" />
       <MemberSignature Language="F#" Value="RequestRefuse = 10" Usage="System.Security.Permissions.SecurityAction.RequestRefuse" />
+      <MemberSignature Language="C++ CLI" Value="RequestRefuse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

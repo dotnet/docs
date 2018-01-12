@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.StripLine" />
   <TypeSignature Language="VB.NET" Value="Public Class StripLine&#xA;Inherits ChartElement" />
   <TypeSignature Language="F#" Value="type StripLine = class&#xA;    inherit ChartElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StripLine : System::Windows::Forms::DataVisualization::Charting::ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.StripLine.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StripLine();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -73,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -120,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackGradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackGradientStyle As GradientStyle" />
       <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackGradientStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Windows::Forms::DataVisualization::Charting::GradientStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::GradientStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -168,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackHatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BackHatchStyle As ChartHatchStyle" />
       <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackHatchStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -206,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImage" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImage As String" />
       <MemberSignature Language="F#" Value="member this.BackImage : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackImage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -257,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageAlignment As ChartImageAlignmentStyle" />
       <MemberSignature Language="F#" Value="member this.BackImageAlignment : System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartImageAlignmentStyle BackImageAlignment { System::Windows::Forms::DataVisualization::Charting::ChartImageAlignmentStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartImageAlignmentStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -297,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageTransparentColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageTransparentColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackImageTransparentColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageTransparentColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackImageTransparentColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -341,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode" />
       <MemberSignature Language="VB.NET" Value="Public Property BackImageWrapMode As ChartImageWrapMode" />
       <MemberSignature Language="F#" Value="member this.BackImageWrapMode : System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackImageWrapMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartImageWrapMode BackImageWrapMode { System::Windows::Forms::DataVisualization::Charting::ChartImageWrapMode get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartImageWrapMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -387,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BackSecondaryColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackSecondaryColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BackSecondaryColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -442,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
       <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -485,6 +496,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderDashStyle As ChartDashStyle" />
       <MemberSignature Language="F#" Value="member this.BorderDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BorderDashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle BorderDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -520,6 +532,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Integer" />
       <MemberSignature Language="F#" Value="member this.BorderWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.BorderWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BorderWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -555,6 +568,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.StripLine.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="stripLine.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -579,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -610,6 +625,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -654,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
       <MemberSignature Language="F#" Value="member this.Interval : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.Interval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -692,6 +709,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalOffset As Double" />
       <MemberSignature Language="F#" Value="member this.IntervalOffset : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double IntervalOffset { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -736,6 +754,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalOffsetType" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalOffsetType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.IntervalOffsetType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalOffsetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType IntervalOffsetType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -774,6 +793,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalType" />
       <MemberSignature Language="VB.NET" Value="Public Property IntervalType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.IntervalType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.IntervalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType IntervalType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -814,6 +834,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -848,6 +869,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property StripWidth As Double" />
       <MemberSignature Language="F#" Value="member this.StripWidth : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StripWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -889,6 +911,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property StripWidthType As DateTimeIntervalType" />
       <MemberSignature Language="F#" Value="member this.StripWidthType : System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidthType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType StripWidthType { System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType get(); void set(System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -929,6 +952,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -967,6 +991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.TextAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As StringAlignment" />
       <MemberSignature Language="F#" Value="member this.TextAlignment : System.Drawing.StringAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.TextAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::StringAlignment TextAlignment { System::Drawing::StringAlignment get(); void set(System::Drawing::StringAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -998,6 +1023,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.TextLineAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextLineAlignment As StringAlignment" />
       <MemberSignature Language="F#" Value="member this.TextLineAlignment : System.Drawing.StringAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.TextLineAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::StringAlignment TextLineAlignment { System::Drawing::StringAlignment get(); void set(System::Drawing::StringAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1029,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.TextOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Property TextOrientation As TextOrientation" />
       <MemberSignature Language="F#" Value="member this.TextOrientation : System.Windows.Forms.DataVisualization.Charting.TextOrientation with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.TextOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::TextOrientation TextOrientation { System::Windows::Forms::DataVisualization::Charting::TextOrientation get(); void set(System::Windows::Forms::DataVisualization::Charting::TextOrientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -1067,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.StripLine.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
       <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.StripLine.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
